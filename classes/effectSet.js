@@ -6,11 +6,12 @@ export class EffectSet {
 		LARGEST: "45"
 	};
 	static RGB = {
-		CYAN: "85 255 255",
-		YELLOW: "255 255 85",
-		CRIMSON: "170 0 0",
 		LIME: "85 255 85",
-		PURPLE: "170 0 170"
+		PINK: "255 85 255",
+		YELLOW: "255 255 85",
+		CYAN: "85 255 255",
+		PURPLE: "170 0 170",
+		CRIMSON: "170 0 0"
 	};
 
 	static COLOUR = {
@@ -26,7 +27,8 @@ export class EffectSet {
 		STAR: "Star",
 		DIAMOND: "Diamond",
 		SQUARE: "Square",
-		MOON: "Moon"
+		MOON: "Moon",
+		PENTAGON: "Pentagon"
 	};
 	static ICON_SIZE = {
 		SMALL: "2",

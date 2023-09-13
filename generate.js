@@ -49,6 +49,9 @@ conditions = conditions.flatMap(
 conditions = conditions.flatMap(
 	(conditionSet) => conditionSet.duplicateMirrored()
 );
+conditions = conditions.flatMap(
+	(conditionSet) => conditionSet.duplicateCorrupted()
+);
 
 // Convert ConditionSets into blank Permutations, which start with no effects
 let permutations = conditions.map((
@@ -82,7 +85,7 @@ for (let permutation of permutations) {
 }
 
 for (let permutation of permutations) {
-	// Outline colour / map icon based on sockets
+	// Outline colour / map icon for special sockets
 	if (permutation.conditionSet.isTripleBlueLink) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.CYAN;
 		permutation.effectSet.mapIcon = EffectSet.ICON.STAR;
@@ -92,7 +95,7 @@ for (let permutation of permutations) {
 		permutation.effectSet.mapIcon = EffectSet.ICON.DIAMOND;
 		continue;
 	} else if (permutation.conditionSet.isWhite) {
-		permutation.effectSet.outlineColour = EffectSet.RGB.CRIMSON;
+		permutation.effectSet.outlineColour = EffectSet.RGB.PINK;
 		permutation.effectSet.mapIcon = EffectSet.ICON.SQUARE;
 		continue;
 	} else if (permutation.conditionSet.isTripleLink) {
@@ -101,8 +104,12 @@ for (let permutation of permutations) {
 		continue;
 	}
 
-	// Outline colour / map icon for mirrored
-	if (permutation.conditionSet.isMirrored) {
+	// Outline colour / map icon for mirrored/corrupted
+	if (permutation.conditionSet.isCorrupted) {
+		permutation.effectSet.outlineColour = EffectSet.RGB.CRIMSON;
+		permutation.effectSet.mapIcon = EffectSet.ICON.PENTAGON;
+		continue;
+	} else if (permutation.conditionSet.isMirrored) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.PURPLE;
 		permutation.effectSet.mapIcon = EffectSet.ICON.MOON;
 		continue;

@@ -22,6 +22,7 @@ export class ConditionSet {
 	isTripleBlueLink = null;
 
 	isMirrored = null;
+	isCorrupted = null;
 
 	#clone() {
 		let conditionSet = new ConditionSet();
@@ -35,6 +36,7 @@ export class ConditionSet {
 		conditionSet.isTripleBlueLink = this.isTripleBlueLink;
 
 		conditionSet.isMirrored = this.isMirrored;
+		conditionSet.isCorrupted = this.isCorrupted;
 
 		return conditionSet;
 	}
@@ -94,6 +96,10 @@ export class ConditionSet {
 		return this.#duplicateBoolean("isMirrored");
 	}
 
+	duplicateCorrupted() {
+		return this.#duplicateBoolean("isCorrupted");
+	}
+
 	export() {
 		let lines = [];
 
@@ -120,6 +126,10 @@ export class ConditionSet {
 		if (this.isMirrored !== null) {
 			let booleanString = this.isMirrored ? "True" : "False";
 			lines.push(`Mirrored ${booleanString}`);
+		}
+		if (this.isCorrupted !== null) {
+			let booleanString = this.isCorrupted ? "True" : "False";
+			lines.push(`Corrupted ${booleanString}`);
 		}
 
 		return lines;
