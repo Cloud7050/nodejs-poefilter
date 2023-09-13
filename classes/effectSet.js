@@ -1,9 +1,15 @@
 /* [Exports] */
 export class EffectSet {
-	static SIZE = {
-		SMALL: "2",
-		MEDIUM: "1",
-		LARGE: "0"
+	static TEXT_SIZE = {
+		SMALLEST: "18",
+		DEFAULT: "32",
+		LARGEST: "45"
+	};
+
+	static RGB = {
+		LIME: "85 255 85",
+		AQUAMARINE: "85 255 170",
+		CYAN: "85 255 255"
 	};
 
 	static COLOUR = {
@@ -20,21 +26,27 @@ export class EffectSet {
 		DIAMOND: "Diamond"
 	};
 
-	static RGB = {
-		LIME: "85 255 85",
-		AQUAMARINE: "85 255 170",
-		CYAN: "85 255 255"
+	static ICON_SIZE = {
+		SMALL: "2",
+		MEDIUM: "1",
+		LARGE: "0"
 	};
 
-	mapSize = EffectSet.SIZE.SMALL;
+	textSize = null;
+	outlineColour = null;
+
 	mapColour = null;
 	mapIcon = EffectSet.ICON.CIRCLE;
-	outlineColour = null;
+	mapSize = EffectSet.ICON_SIZE.SMALL;
+
 	beamColour = null;
 
 	export() {
 		let lines = [];
 
+		if (this.textSize !== null) {
+			lines.push(`SetFontSize ${this.textSize}`);
+		}
 		if (this.outlineColour !== null) {
 			lines.push(`SetBorderColor ${this.outlineColour}`);
 		}
