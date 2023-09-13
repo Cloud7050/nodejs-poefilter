@@ -62,6 +62,7 @@ for (let permutation of permutations) {
 		case ConditionSet.RARITY.UNIQUE:
 			permutation.effectSet.mapColour = EffectSet.COLOUR.ORANGE;
 			permutation.effectSet.mapSize = EffectSet.SIZE.LARGE;
+			permutation.effectSet.beamColour = EffectSet.COLOUR.ORANGE;
 			break;
 	}
 }

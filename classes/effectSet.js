@@ -30,6 +30,7 @@ export class EffectSet {
 	mapColour = null;
 	mapIcon = EffectSet.ICON.CIRCLE;
 	outlineColour = null;
+	beamColour = null;
 
 	export() {
 		let lines = [];
@@ -40,6 +41,10 @@ export class EffectSet {
 
 		if (this.mapColour !== null) {
 			lines.push(`MinimapIcon ${this.mapSize} ${this.mapColour} ${this.mapIcon}`);
+		}
+
+		if (this.beamColour !== null) {
+			lines.push(`PlayEffect ${this.beamColour}`);
 		}
 
 		return lines;

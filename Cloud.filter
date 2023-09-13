@@ -219,6 +219,7 @@ Show
 
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Orange Star
+	PlayEffect Orange
 
 Show
 	Rarity Unique
@@ -228,6 +229,7 @@ Show
 
 	SetBorderColor 85 255 170
 	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
 
 Show
 	Rarity Unique
@@ -237,6 +239,7 @@ Show
 
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Orange Star
+	PlayEffect Orange
 
 Show
 	Rarity Unique
@@ -246,6 +249,7 @@ Show
 
 	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
 
 Show
 	Rarity Unique
@@ -255,6 +259,7 @@ Show
 
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Orange Star
+	PlayEffect Orange
 
 Show
 	Rarity Unique
@@ -264,6 +269,7 @@ Show
 
 	SetBorderColor 85 255 170
 	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
 
 Show
 	Rarity Unique
@@ -273,6 +279,7 @@ Show
 
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Orange Star
+	PlayEffect Orange
 
 Show
 	Rarity Unique
@@ -281,4 +288,5 @@ Show
 	SocketGroup < 3BBB
 
 	MinimapIcon 0 Orange Circle
+	PlayEffect Orange
 
