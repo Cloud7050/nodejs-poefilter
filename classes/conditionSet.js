@@ -1,6 +1,6 @@
 /* [Exports] */
 export class ConditionSet {
-	static EQUIPMENT = {
+	static TYPE = {
 		USED_WEAPON: "Wands Shields",
 		UNUSED_WEAPON: 'Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers',
 		ARMOUR: 'Amulets Rings Belts Gloves Boots "Body Armours" Helmets',
@@ -13,7 +13,7 @@ export class ConditionSet {
 		UNIQUE: "Unique"
 	};
 
-	equipment = null;
+	type = null;
 	rarity = null;
 
 	isTripleLink = null;
@@ -23,7 +23,7 @@ export class ConditionSet {
 	#clone() {
 		let conditionSet = new ConditionSet();
 
-		conditionSet.equipment = this.equipment;
+		conditionSet.type = this.type;
 		conditionSet.rarity = this.rarity;
 
 		conditionSet.isTripleLink = this.isTripleLink;
@@ -54,10 +54,10 @@ export class ConditionSet {
 		);
 	}
 
-	duplicateEquipment() {
+	duplicateType() {
 		return this.#duplicateEnum(
-			"equipment",
-			ConditionSet.EQUIPMENT
+			"type",
+			ConditionSet.TYPE
 		);
 	}
 
@@ -83,7 +83,7 @@ export class ConditionSet {
 	export() {
 		let lines = [];
 
-		if (this.equipment !== null) lines.push(`Class ${this.equipment}`);
+		if (this.type !== null) lines.push(`Class ${this.type}`);
 		if (this.rarity !== null) lines.push(`Rarity ${this.rarity}`);
 
 		if (this.isTripleLink !== null) {

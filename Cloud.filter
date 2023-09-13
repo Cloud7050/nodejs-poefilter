@@ -5,7 +5,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
 
 Show
@@ -15,7 +15,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
 
 Show
@@ -25,7 +25,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
 
 Show
@@ -35,7 +35,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 255
+	SetBorderColor 85 255 85
 	MinimapIcon 2 White Cross
 
 Show
@@ -45,7 +45,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
 
 Show
@@ -55,7 +55,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
 
 Show
@@ -65,7 +65,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
 
 Show
@@ -84,7 +84,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -94,7 +94,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
 
 Show
@@ -104,7 +104,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -114,7 +114,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 255
+	SetBorderColor 85 255 85
 	MinimapIcon 2 Blue Cross
 
 Show
@@ -124,7 +124,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -134,7 +134,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
 
 Show
@@ -144,7 +144,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -154,7 +154,6 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	MinimapIcon 2 Blue Circle
 
 Show
 	Class Wands Shields
@@ -163,7 +162,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -173,7 +172,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
 
 Show
@@ -183,7 +182,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -193,7 +192,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 255
+	SetBorderColor 85 255 85
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -203,7 +202,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -213,7 +212,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
 
 Show
@@ -223,7 +222,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -243,7 +242,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -255,7 +254,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
 
@@ -267,7 +266,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -279,7 +278,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 255
+	SetBorderColor 85 255 85
 	MinimapIcon 0 Orange Cross
 	PlayEffect Orange
 
@@ -291,7 +290,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -303,7 +302,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
 
@@ -315,7 +314,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -337,7 +336,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
 
 Show
@@ -347,7 +346,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
 
 Show
@@ -375,7 +374,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
 
 Show
@@ -385,7 +384,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
 
 Show
@@ -413,7 +412,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -423,7 +422,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
 
 Show
@@ -433,7 +432,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -443,7 +442,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 255
+	SetBorderColor 85 255 85
 	MinimapIcon 2 Blue Cross
 
 Show
@@ -453,7 +452,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -463,7 +462,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
 
 Show
@@ -473,7 +472,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -483,7 +482,6 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	MinimapIcon 2 Blue Circle
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
@@ -492,7 +490,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -502,7 +500,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
 
 Show
@@ -512,7 +510,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -522,7 +520,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 255
+	SetBorderColor 85 255 85
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -532,7 +530,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -542,7 +540,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
 
 Show
@@ -552,7 +550,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -572,7 +570,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -584,7 +582,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
 
@@ -596,7 +594,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -608,7 +606,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 255
+	SetBorderColor 85 255 85
 	MinimapIcon 0 Orange Cross
 	PlayEffect Orange
 
@@ -620,7 +618,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -632,7 +630,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
 
@@ -644,7 +642,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -666,7 +664,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
 
 Show
@@ -676,7 +674,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
 
 Show
@@ -686,7 +684,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
 
 Show
@@ -696,7 +694,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 255
+	SetBorderColor 85 255 85
 	MinimapIcon 2 White Cross
 
 Show
@@ -706,7 +704,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
 
 Show
@@ -716,7 +714,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
 
 Show
@@ -726,7 +724,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
 
 Show
@@ -745,7 +743,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -755,7 +753,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
 
 Show
@@ -765,7 +763,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -775,7 +773,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 255
+	SetBorderColor 85 255 85
 	MinimapIcon 2 Blue Cross
 
 Show
@@ -785,7 +783,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -795,7 +793,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
 
 Show
@@ -805,7 +803,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
 
 Show
@@ -815,7 +813,6 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	MinimapIcon 2 Blue Circle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -824,7 +821,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -834,7 +831,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
 
 Show
@@ -844,7 +841,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -854,7 +851,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 255
+	SetBorderColor 85 255 85
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -864,7 +861,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -874,7 +871,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
 
 Show
@@ -884,7 +881,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -904,7 +901,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -916,7 +913,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
 
@@ -928,7 +925,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -940,7 +937,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 255
+	SetBorderColor 85 255 85
 	MinimapIcon 0 Orange Cross
 	PlayEffect Orange
 
@@ -952,7 +949,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -964,7 +961,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 170
+	SetBorderColor 255 255 85
 	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
 
@@ -976,7 +973,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
+	SetBorderColor 85 255 255
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
@@ -998,8 +995,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 2 White Star
+	MinimapIcon 2 White Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1008,8 +1004,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
-	MinimapIcon 2 White Diamond
+	MinimapIcon 2 White Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1018,8 +1013,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 2 White Star
+	MinimapIcon 2 White Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1028,8 +1022,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 255
-	MinimapIcon 2 White Cross
+	MinimapIcon 2 White Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1038,8 +1031,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 2 White Star
+	MinimapIcon 2 White Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1048,8 +1040,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
-	MinimapIcon 2 White Diamond
+	MinimapIcon 2 White Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1058,8 +1049,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 2 White Star
+	MinimapIcon 2 White Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1077,8 +1067,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 2 Blue Star
+	MinimapIcon 2 Blue Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1087,8 +1076,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
-	MinimapIcon 2 Blue Diamond
+	MinimapIcon 2 Blue Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1097,8 +1085,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 2 Blue Star
+	MinimapIcon 2 Blue Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1107,8 +1094,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 255
-	MinimapIcon 2 Blue Cross
+	MinimapIcon 2 Blue Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1117,8 +1103,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 2 Blue Star
+	MinimapIcon 2 Blue Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1127,8 +1112,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
-	MinimapIcon 2 Blue Diamond
+	MinimapIcon 2 Blue Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1137,8 +1121,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 2 Blue Star
+	MinimapIcon 2 Blue Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1156,8 +1139,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Star
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1166,8 +1148,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
-	MinimapIcon 1 Yellow Diamond
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1176,8 +1157,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Star
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1186,8 +1166,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 255
-	MinimapIcon 1 Yellow Cross
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1196,8 +1175,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Star
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1206,8 +1184,7 @@ Show
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
 
-	SetBorderColor 85 255 170
-	MinimapIcon 1 Yellow Diamond
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1216,8 +1193,7 @@ Show
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
 
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Star
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1236,8 +1212,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
-	MinimapIcon 0 Orange Star
+	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
 Show
@@ -1248,8 +1223,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 170
-	MinimapIcon 0 Orange Diamond
+	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
 Show
@@ -1260,8 +1234,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
-	MinimapIcon 0 Orange Star
+	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
 Show
@@ -1272,8 +1245,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 255
-	MinimapIcon 0 Orange Cross
+	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
 Show
@@ -1284,8 +1256,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
-	MinimapIcon 0 Orange Star
+	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
 Show
@@ -1296,8 +1267,7 @@ Show
 	SocketGroup < 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 170
-	MinimapIcon 0 Orange Diamond
+	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
 Show
@@ -1308,8 +1278,7 @@ Show
 	SocketGroup >= 3BBB
 
 	SetFontSize 45
-	SetBorderColor 85 255 85
-	MinimapIcon 0 Orange Star
+	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
 Show

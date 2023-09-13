@@ -6,9 +6,9 @@ export class EffectSet {
 		LARGEST: "45"
 	};
 	static RGB = {
-		LIME: "85 255 85",
-		AQUAMARINE: "85 255 170",
-		CYAN: "85 255 255"
+		CYAN: "85 255 255",
+		YELLOW: "255 255 85",
+		LIME: "85 255 85"
 	};
 
 	static COLOUR = {

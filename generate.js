@@ -27,7 +27,7 @@ import { Permutation } from "./classes/permutation.js";
 /* [Main] */
 // Generate all possibilities by duplicating ConditionSets
 let seed = new ConditionSet();
-let conditions = seed.duplicateEquipment();
+let conditions = seed.duplicateType();
 
 conditions = conditions.flatMap(
 	(conditionSet) => conditionSet.duplicateRarity()
@@ -51,14 +51,7 @@ let permutations = conditions.map((
 // Go through ConditionSets, using the power of JS to add effects only to
 // specific ones
 for (let permutation of permutations) {
-	// Different default map icon for other equipment
-	if (permutation.conditionSet.equipment === ConditionSet.EQUIPMENT.OTHER) {
-		permutation.effectSet.mapIcon = EffectSet.ICON.RAINDROP;
-	}
-}
-
-for (let permutation of permutations) {
-	// Map colour/size based on rarity
+	// Map colour/size etc based on rarity
 	switch (permutation.conditionSet.rarity) {
 		case ConditionSet.RARITY.NORMAL:
 			permutation.effectSet.mapColour = EffectSet.COLOUR.WHITE;
@@ -82,16 +75,34 @@ for (let permutation of permutations) {
 }
 
 for (let permutation of permutations) {
+	// Different default map icon for other types
+	if (permutation.conditionSet.type === ConditionSet.TYPE.OTHER) {
+		permutation.effectSet.mapIcon = EffectSet.ICON.RAINDROP;
+		continue;
+	}
+
 	// Outline colour / map icon based on sockets
 	if (permutation.conditionSet.isTripleBlueLink) {
-		permutation.effectSet.outlineColour = EffectSet.RGB.LIME;
-		permutation.effectSet.mapIcon = EffectSet.ICON.STAR;
-	} else if (permutation.conditionSet.isRgb) {
-		permutation.effectSet.outlineColour = EffectSet.RGB.AQUAMARINE;
-		permutation.effectSet.mapIcon = EffectSet.ICON.DIAMOND;
-	} else if (permutation.conditionSet.isTripleLink) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.CYAN;
+		permutation.effectSet.mapIcon = EffectSet.ICON.STAR;
+		continue;
+	} else if (permutation.conditionSet.isRgb) {
+		permutation.effectSet.outlineColour = EffectSet.RGB.YELLOW;
+		permutation.effectSet.mapIcon = EffectSet.ICON.DIAMOND;
+		continue;
+	} else if (permutation.conditionSet.isTripleLink) {
+		permutation.effectSet.outlineColour = EffectSet.RGB.LIME;
 		permutation.effectSet.mapIcon = EffectSet.ICON.CROSS;
+		continue;
+	}
+
+	// At this point, the item has no special icon.
+	// If it's too common, hide it from map to avoid equipment spam
+	if (
+		permutation.conditionSet.rarity === ConditionSet.RARITY.NORMAL
+		|| permutation.conditionSet.rarity === ConditionSet.RARITY.MAGIC
+	) {
+		permutation.effectSet.mapColour = null;
 	}
 }
 
@@ -105,14 +116,14 @@ for (let permutation of permutations) {
 
 	// For unused weapons, shrink if it isn't RGB
 	let unusedWeaponMeh = (
-		permutation.conditionSet.equipment === ConditionSet.EQUIPMENT.UNUSED_WEAPON
+		permutation.conditionSet.type === ConditionSet.TYPE.UNUSED_WEAPON
 		&& !permutation.conditionSet.isRgb
 	);
 	// For used weapons / armour, shrink if it isn't >= 3 linked sockets
 	let usedWeaponArmourMeh = (
 		(
-			permutation.conditionSet.equipment === ConditionSet.EQUIPMENT.USED_WEAPON
-			|| permutation.conditionSet.equipment === ConditionSet.EQUIPMENT.ARMOUR
+			permutation.conditionSet.type === ConditionSet.TYPE.USED_WEAPON
+			|| permutation.conditionSet.type === ConditionSet.TYPE.ARMOUR
 		)
 		&& !(
 			permutation.conditionSet.isTripleLink
