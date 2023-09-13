@@ -1,0 +1,19 @@
+Show
+	Rarity Normal
+
+	MinimapIcon 2 White Circle
+
+Show
+	Rarity Magic
+
+	MinimapIcon 2 Blue Circle
+
+Show
+	Rarity Rare
+
+	MinimapIcon 2 Yellow Circle
+
+Show
+	Rarity Unique
+
+	MinimapIcon 2 Orange Circle
