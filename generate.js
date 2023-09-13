@@ -114,7 +114,7 @@ for (let permutation of permutations) {
 			permutation.conditionSet.equipment === ConditionSet.EQUIPMENT.USED_WEAPON
 			|| permutation.conditionSet.equipment === ConditionSet.EQUIPMENT.ARMOUR
 		)
-		&& (
+		&& !(
 			permutation.conditionSet.isTripleLink
 			|| permutation.conditionSet.isRgb
 			|| permutation.conditionSet.isTripleBlueLink
