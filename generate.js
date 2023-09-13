@@ -21,6 +21,7 @@ import fs from "node:fs";
 import { ConditionSet } from "./classes/conditionSet.js";
 import { EffectSet } from "./classes/effectSet.js";
 import { Permutation } from "./classes/permutation.js";
+import { COLOUR_AQUAMARINE, COLOUR_LIME } from "./constants.js";
 
 
 
@@ -28,6 +29,16 @@ import { Permutation } from "./classes/permutation.js";
 // Generate all possibilities by duplicating ConditionSets
 let conditions = new ConditionSet();
 conditions = conditions.duplicateRarity();
+
+conditions = conditions.flatMap(
+	(conditionSet) => conditionSet.duplicateTripleLink()
+);
+conditions = conditions.flatMap(
+	(conditionSet) => conditionSet.duplicateRgb()
+);
+conditions = conditions.flatMap(
+	(conditionSet) => conditionSet.duplicateTripleBlueLink()
+);
 
 // Convert ConditionSets into blank Permutations, which start with no effects
 let permutations = conditions.map((
@@ -37,7 +48,7 @@ let permutations = conditions.map((
 // Go through ConditionSets, using the power of JS to add effects only to
 // specific ones
 for (let permutation of permutations) {
-	// Set a map colour based on rarity
+	// Map colour based on rarity
 	switch (permutation.conditionSet.rarity) {
 		case ConditionSet.RARITY.NORMAL:
 			permutation.effectSet.mapColour = EffectSet.COLOUR.WHITE;
@@ -51,6 +62,17 @@ for (let permutation of permutations) {
 		case ConditionSet.RARITY.UNIQUE:
 			permutation.effectSet.mapColour = EffectSet.COLOUR.ORANGE;
 			break;
+	}
+}
+
+for (let permutation of permutations) {
+	// Outline colours based on sockets
+	if (permutation.conditionSet.isTripleBlueLink) {
+		permutation.effectSet.outlineColour = COLOUR_LIME
+	} else if (permutation.conditionSet.isRgb) {
+		permutation.effectSet.outlineColour = COLOUR_AQUAMARINE
+	} else if (permutation.conditionSet.isTripleLink) {
+		permutation.effectSet.outlineColour = COLOUR_CYAN
 	}
 }
 
@@ -73,4 +95,6 @@ for (let permutation of permutations) {
 }
 
 // Save to filter file
-fs.writeFile("./Cloud.filter", filterBlocks, console.error);
+fs.writeFileSync("./Cloud.filter", filterBlocks);
+
+console.log("☁");

@@ -8,14 +8,19 @@ export class EffectSet {
 	};
 
 	mapColour = null;
+	outlineColour = null;
 
 	export() {
-		let strings = [];
+		let lines = [];
 
-		if (this.mapColour !== null) {
-			strings.push(`MinimapIcon 2 ${this.mapColour} Circle`);
+		if (this.outlineColour !== null) {
+			lines.push(`SetBorderColor ${this.outlineColour}`);
 		}
 
-		return strings;
+		if (this.mapColour !== null) {
+			lines.push(`MinimapIcon 2 ${this.mapColour} Circle`);
+		}
+
+		return lines;
 	}
 }

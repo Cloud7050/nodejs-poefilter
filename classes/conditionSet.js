@@ -8,8 +8,11 @@ export class ConditionSet {
 	};
 
 	rarity = null;
+	isTripleLink = null;
+	isRgb = null;
+	isTripleBlueLink = null;
 
-	clone() {
+	#clone() {
 		let conditionSet = new ConditionSet();
 
 		conditionSet.rarity = this.rarity;
@@ -17,22 +20,59 @@ export class ConditionSet {
 		return conditionSet;
 	}
 
+	#duplicateBoolean(property) {
+		return [true, false].map(
+			(boolean) => {
+				let clone = this.#clone();
+				clone[property] = boolean;
+				return clone;
+			}
+		)
+	}
+
 	duplicateRarity() {
 		return Object.values(ConditionSet.RARITY)
 			.map(
 				(rarity) => {
-					let conditionSet = this.clone();
+					let conditionSet = this.#clone();
 					conditionSet.rarity = rarity;
 					return conditionSet;
 				}
 			);
 	}
 
+	duplicateTripleLink() {
+		return this.#duplicateBoolean("isTripleLink");
+	}
+
+	duplicateRgb() {
+		return this.#duplicateBoolean("isRgb");
+	}
+
+	duplicateTripleBlueLink() {
+		return this.#duplicateBoolean("isTripleBlueLink");
+	}
+
 	export() {
-		let strings = [];
+		let lines = [];
 
-		if (this.rarity !== null) strings.push(`Rarity ${this.rarity}`);
+		if (this.rarity !== null) lines.push(`Rarity ${this.rarity}`);
 
-		return strings;
+		if (this.isTripleLink !== null) {
+			let operator = this.isTripleLink ? ">=" : "<";
+			lines.push(`SocketGroup ${operator} 3`);
+		}
+
+		if (this.isRgb !== null) {
+			let operator = this.isRgb ? ">=" : "<";
+			lines.push(`SocketGroup ${operator} 3RGB`);
+		}
+
+		if (this.isTripleBlueLink !== null) {
+			let operator = this.isTripleBlueLink ? ">=" : "<";
+			lines.push(`SocketGroup ${operator} 3BBB`);
+		}
+
+		return lines;
 	}
 }
