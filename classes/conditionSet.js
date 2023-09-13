@@ -16,6 +16,9 @@ export class ConditionSet {
 		let conditionSet = new ConditionSet();
 
 		conditionSet.rarity = this.rarity;
+		conditionSet.isTripleLink = this.isTripleLink;
+		conditionSet.isRgb = this.isRgb;
+		conditionSet.isTripleBlueLink = this.isTripleBlueLink;
 
 		return conditionSet;
 	}
@@ -27,7 +30,7 @@ export class ConditionSet {
 				clone[property] = boolean;
 				return clone;
 			}
-		)
+		);
 	}
 
 	duplicateRarity() {

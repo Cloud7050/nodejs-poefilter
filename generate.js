@@ -21,7 +21,6 @@ import fs from "node:fs";
 import { ConditionSet } from "./classes/conditionSet.js";
 import { EffectSet } from "./classes/effectSet.js";
 import { Permutation } from "./classes/permutation.js";
-import { COLOUR_AQUAMARINE, COLOUR_LIME } from "./constants.js";
 
 
 
@@ -48,7 +47,7 @@ let permutations = conditions.map((
 // Go through ConditionSets, using the power of JS to add effects only to
 // specific ones
 for (let permutation of permutations) {
-	// Map colour based on rarity
+	// Map colour/size based on rarity
 	switch (permutation.conditionSet.rarity) {
 		case ConditionSet.RARITY.NORMAL:
 			permutation.effectSet.mapColour = EffectSet.COLOUR.WHITE;
@@ -58,21 +57,26 @@ for (let permutation of permutations) {
 			break;
 		case ConditionSet.RARITY.RARE:
 			permutation.effectSet.mapColour = EffectSet.COLOUR.YELLOW;
+			permutation.effectSet.mapSize = EffectSet.SIZE.MEDIUM;
 			break;
 		case ConditionSet.RARITY.UNIQUE:
 			permutation.effectSet.mapColour = EffectSet.COLOUR.ORANGE;
+			permutation.effectSet.mapSize = EffectSet.SIZE.LARGE;
 			break;
 	}
 }
 
 for (let permutation of permutations) {
-	// Outline colours based on sockets
+	// Outline colour / map icon based on sockets
 	if (permutation.conditionSet.isTripleBlueLink) {
-		permutation.effectSet.outlineColour = COLOUR_LIME
+		permutation.effectSet.outlineColour = EffectSet.RGB.LIME;
+		permutation.effectSet.mapIcon = EffectSet.ICON.STAR;
 	} else if (permutation.conditionSet.isRgb) {
-		permutation.effectSet.outlineColour = COLOUR_AQUAMARINE
+		permutation.effectSet.outlineColour = EffectSet.RGB.AQUAMARINE;
+		permutation.effectSet.mapIcon = EffectSet.ICON.DIAMOND;
 	} else if (permutation.conditionSet.isTripleLink) {
-		permutation.effectSet.outlineColour = COLOUR_CYAN
+		permutation.effectSet.outlineColour = EffectSet.RGB.CYAN;
+		permutation.effectSet.mapIcon = EffectSet.ICON.CROSS;
 	}
 }
 

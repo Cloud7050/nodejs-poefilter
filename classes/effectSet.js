@@ -1,5 +1,11 @@
 /* [Exports] */
 export class EffectSet {
+	static SIZE = {
+		SMALL: "2",
+		MEDIUM: "1",
+		LARGE: "0"
+	};
+
 	static COLOUR = {
 		WHITE: "White",
 		BLUE: "Blue",
@@ -7,7 +13,22 @@ export class EffectSet {
 		ORANGE: "Orange"
 	};
 
+	static ICON = {
+		CIRCLE: "Circle",
+		CROSS: "Cross",
+		STAR: "Star",
+		DIAMOND: "Diamond"
+	};
+
+	static RGB = {
+		LIME: "85 255 85",
+		AQUAMARINE: "85 255 170",
+		CYAN: "85 255 255"
+	};
+
+	mapSize = EffectSet.SIZE.SMALL;
 	mapColour = null;
+	mapIcon = EffectSet.ICON.CIRCLE;
 	outlineColour = null;
 
 	export() {
@@ -18,7 +39,7 @@ export class EffectSet {
 		}
 
 		if (this.mapColour !== null) {
-			lines.push(`MinimapIcon 2 ${this.mapColour} Circle`);
+			lines.push(`MinimapIcon ${this.mapSize} ${this.mapColour} ${this.mapIcon}`);
 		}
 
 		return lines;
