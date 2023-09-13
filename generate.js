@@ -72,6 +72,8 @@ for (let permutation of permutations) {
 		case ConditionSet.RARITY.RARE:
 			permutation.effectSet.mapColour = EffectSet.COLOUR.YELLOW;
 			permutation.effectSet.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+
+			permutation.certifyValue(Permutation.VALUE.HIGH);
 			break;
 		case ConditionSet.RARITY.UNIQUE:
 			permutation.effectSet.textSize = EffectSet.TEXT_SIZE.LARGEST;
@@ -80,6 +82,8 @@ for (let permutation of permutations) {
 			permutation.effectSet.mapSize = EffectSet.ICON_SIZE.LARGE;
 
 			permutation.effectSet.beamColour = EffectSet.COLOUR.ORANGE;
+
+			permutation.certifyValue(Permutation.VALUE.HIGH);
 			break;
 	}
 }
@@ -89,18 +93,29 @@ for (let permutation of permutations) {
 	if (permutation.conditionSet.isTripleBlueLink) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.CYAN;
 		permutation.effectSet.mapIcon = EffectSet.ICON.STAR;
+
+		permutation.certifyValue(Permutation.VALUE.MEDIUM);
 		continue;
-	} else if (permutation.conditionSet.isRgb) {
+	}
+	if (permutation.conditionSet.isRgb) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.YELLOW;
 		permutation.effectSet.mapIcon = EffectSet.ICON.DIAMOND;
+
+		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
-	} else if (permutation.conditionSet.isWhite) {
+	}
+	if (permutation.conditionSet.isWhite) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.PINK;
 		permutation.effectSet.mapIcon = EffectSet.ICON.SQUARE;
+
+		permutation.certifyValue(Permutation.VALUE.MEDIUM);
 		continue;
-	} else if (permutation.conditionSet.isTripleLink) {
+	}
+	if (permutation.conditionSet.isTripleLink) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.LIME;
 		permutation.effectSet.mapIcon = EffectSet.ICON.CROSS;
+
+		permutation.certifyValue(Permutation.VALUE.MEDIUM);
 		continue;
 	}
 
@@ -108,54 +123,53 @@ for (let permutation of permutations) {
 	if (permutation.conditionSet.isCorrupted) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.CRIMSON;
 		permutation.effectSet.mapIcon = EffectSet.ICON.PENTAGON;
+
+		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
-	} else if (permutation.conditionSet.isMirrored) {
+	}
+	if (permutation.conditionSet.isMirrored) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.PURPLE;
 		permutation.effectSet.mapIcon = EffectSet.ICON.MOON;
+
+		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
 	}
 
 	// Different default map icon for other types
+	if (permutation.conditionSet.type === ConditionSet.TYPE.CURRENCY) {
+		permutation.effectSet.mapIcon = EffectSet.ICON.KITE;
+
+		permutation.certifyValue(Permutation.VALUE.HIGH);
+		continue;
+	}
 	if (permutation.conditionSet.type === ConditionSet.TYPE.OTHER) {
 		permutation.effectSet.mapIcon = EffectSet.ICON.RAINDROP;
+
+		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
 	}
 
 	// At this point, the item has no special icon.
-	// If it's too common, hide it from map to avoid equipment spam
-	if (
-		permutation.conditionSet.rarity === ConditionSet.RARITY.NORMAL
-		|| permutation.conditionSet.rarity === ConditionSet.RARITY.MAGIC
-	) {
+	// Unmap low/medium to avoid equipment spam
+	if (permutation.value <= Permutation.VALUE.MEDIUM) {
 		permutation.effectSet.mapColour = null;
 	}
 }
 
 for (let permutation of permutations) {
-	// Shrink & hide from map the meh items
+	// Shrink & unmap the meh items
 
-	// For unused weapons, shrink if it isn't RGB
-	let unusedWeaponMeh = (
-		permutation.conditionSet.type === ConditionSet.TYPE.UNUSED_WEAPON
-		&& (
-			permutation.conditionSet.rarity === ConditionSet.RARITY.NORMAL
-			|| permutation.conditionSet.rarity === ConditionSet.RARITY.MAGIC
-		)
-		&& !permutation.conditionSet.isRgb
-	);
-	// For used weapons / armour, shrink if no special sockets
+	if (permutation.value >= Permutation.VALUE.HIGH) continue;
+
+	// Shrink/unmap low/medium unused weapons
+	let unusedWeaponMeh = permutation.conditionSet.type === ConditionSet.TYPE.UNUSED_WEAPON;
+	// Shrink/unmap low used weapons / armour
 	let usedWeaponArmourMeh = (
 		(
 			permutation.conditionSet.type === ConditionSet.TYPE.USED_WEAPON
 			|| permutation.conditionSet.type === ConditionSet.TYPE.ARMOUR
 		)
-		&& permutation.conditionSet.rarity === ConditionSet.RARITY.NORMAL
-		&& !(
-			permutation.conditionSet.isTripleLink
-			|| permutation.conditionSet.isWhite
-			|| permutation.conditionSet.isRgb
-			|| permutation.conditionSet.isTripleBlueLink
-		)
+		&& permutation.value <= Permutation.VALUE.LOW
 	);
 
 	if (unusedWeaponMeh || usedWeaponArmourMeh) {
@@ -164,9 +178,6 @@ for (let permutation of permutations) {
 
 		// Hide from map
 		permutation.effectSet.mapColour = null;
-
-		// Also, undo any outline
-		permutation.effectSet.outlineColour = null;
 	}
 }
 

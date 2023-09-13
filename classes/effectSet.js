@@ -22,6 +22,7 @@ export class EffectSet {
 	};
 	static ICON = {
 		RAINDROP: "Raindrop",
+		KITE: "Kite",
 		CIRCLE: "Circle",
 		CROSS: "Cross",
 		STAR: "Star",
