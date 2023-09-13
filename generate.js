@@ -152,6 +152,6 @@ for (let permutation of permutations) {
 }
 
 // Save to filter file
-fs.writeFileSync("./Cloud.filter", filterBlocks);
+fs.writeFileSync("C:/Users/cloud/Documents/My Games/Path of Exile/Cloud.filter", filterBlocks);
 
 console.log("☁");
