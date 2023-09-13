@@ -17,6 +17,7 @@ export class ConditionSet {
 	rarity = null;
 
 	isTripleLink = null;
+	isWhite = null;
 	isRgb = null;
 	isTripleBlueLink = null;
 
@@ -29,6 +30,7 @@ export class ConditionSet {
 		conditionSet.rarity = this.rarity;
 
 		conditionSet.isTripleLink = this.isTripleLink;
+		conditionSet.isWhite = this.isWhite;
 		conditionSet.isRgb = this.isRgb;
 		conditionSet.isTripleBlueLink = this.isTripleBlueLink;
 
@@ -76,6 +78,10 @@ export class ConditionSet {
 		return this.#duplicateBoolean("isTripleLink");
 	}
 
+	duplicateWhite() {
+		return this.#duplicateBoolean("isWhite");
+	}
+
 	duplicateRgb() {
 		return this.#duplicateBoolean("isRgb");
 	}
@@ -96,7 +102,11 @@ export class ConditionSet {
 
 		if (this.isTripleLink !== null) {
 			let operator = this.isTripleLink ? ">=" : "<";
-			lines.push(`SocketGroup ${operator} 3`);
+			lines.push(`LinkedSockets ${operator} 3`);
+		}
+		if (this.isWhite !== null) {
+			let operator = this.isWhite ? ">=" : "<";
+			lines.push(`Sockets ${operator} 1W`);
 		}
 		if (this.isRgb !== null) {
 			let operator = this.isRgb ? ">=" : "<";

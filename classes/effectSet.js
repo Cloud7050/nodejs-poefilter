@@ -8,6 +8,7 @@ export class EffectSet {
 	static RGB = {
 		CYAN: "85 255 255",
 		YELLOW: "255 255 85",
+		CRIMSON: "170 0 0",
 		LIME: "85 255 85",
 		PURPLE: "170 0 170"
 	};
@@ -24,6 +25,7 @@ export class EffectSet {
 		CROSS: "Cross",
 		STAR: "Star",
 		DIAMOND: "Diamond",
+		SQUARE: "Square",
 		MOON: "Moon"
 	};
 	static ICON_SIZE = {

@@ -37,6 +37,9 @@ conditions = conditions.flatMap(
 	(conditionSet) => conditionSet.duplicateTripleLink()
 );
 conditions = conditions.flatMap(
+	(conditionSet) => conditionSet.duplicateWhite()
+);
+conditions = conditions.flatMap(
 	(conditionSet) => conditionSet.duplicateRgb()
 );
 conditions = conditions.flatMap(
@@ -88,6 +91,10 @@ for (let permutation of permutations) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.YELLOW;
 		permutation.effectSet.mapIcon = EffectSet.ICON.DIAMOND;
 		continue;
+	} else if (permutation.conditionSet.isWhite) {
+		permutation.effectSet.outlineColour = EffectSet.RGB.CRIMSON;
+		permutation.effectSet.mapIcon = EffectSet.ICON.SQUARE;
+		continue;
 	} else if (permutation.conditionSet.isTripleLink) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.LIME;
 		permutation.effectSet.mapIcon = EffectSet.ICON.CROSS;
@@ -120,24 +127,25 @@ for (let permutation of permutations) {
 for (let permutation of permutations) {
 	// Shrink & hide from map the meh items
 
-	if (permutation.conditionSet.rarity !== ConditionSet.RARITY.NORMAL) {
-		// Never shrink better than normal
-		continue;
-	}
-
 	// For unused weapons, shrink if it isn't RGB
 	let unusedWeaponMeh = (
 		permutation.conditionSet.type === ConditionSet.TYPE.UNUSED_WEAPON
+		&& (
+			permutation.conditionSet.rarity === ConditionSet.RARITY.NORMAL
+			|| permutation.conditionSet.rarity === ConditionSet.RARITY.MAGIC
+		)
 		&& !permutation.conditionSet.isRgb
 	);
-	// For used weapons / armour, shrink if it isn't >= 3 linked sockets
+	// For used weapons / armour, shrink if no special sockets
 	let usedWeaponArmourMeh = (
 		(
 			permutation.conditionSet.type === ConditionSet.TYPE.USED_WEAPON
 			|| permutation.conditionSet.type === ConditionSet.TYPE.ARMOUR
 		)
+		&& permutation.conditionSet.rarity === ConditionSet.RARITY.NORMAL
 		&& !(
 			permutation.conditionSet.isTripleLink
+			|| permutation.conditionSet.isWhite
 			|| permutation.conditionSet.isRgb
 			|| permutation.conditionSet.isTripleBlueLink
 		)
