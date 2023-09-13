@@ -26,8 +26,12 @@ import { Permutation } from "./classes/permutation.js";
 
 /* [Main] */
 // Generate all possibilities by duplicating ConditionSets
-let conditions = new ConditionSet();
-conditions = conditions.duplicateRarity();
+let seed = new ConditionSet();
+let conditions = seed.duplicateEquipment();
+
+conditions = conditions.flatMap(
+	(conditionSet) => conditionSet.duplicateRarity()
+);
 
 conditions = conditions.flatMap(
 	(conditionSet) => conditionSet.duplicateTripleLink()
@@ -81,6 +85,44 @@ for (let permutation of permutations) {
 	} else if (permutation.conditionSet.isTripleLink) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.CYAN;
 		permutation.effectSet.mapIcon = EffectSet.ICON.CROSS;
+	}
+}
+
+for (let permutation of permutations) {
+	// Shrink & hide from map the meh items
+
+	if (permutation.conditionSet.rarity !== ConditionSet.RARITY.NORMAL) {
+		// Never shrink better than normal
+		continue;
+	}
+
+	// For unused weapons, shrink if it isn't RGB
+	let unusedWeaponMeh = (
+		permutation.conditionSet.equipment === ConditionSet.EQUIPMENT.UNUSED_WEAPON
+		&& !permutation.conditionSet.isRgb
+	);
+	// For used weapons / armour, shrink if it isn't >= 3 linked sockets
+	let usedWeaponArmourMeh = (
+		(
+			permutation.conditionSet.equipment === ConditionSet.EQUIPMENT.USED_WEAPON
+			|| permutation.conditionSet.equipment === ConditionSet.EQUIPMENT.ARMOUR
+		)
+		&& (
+			permutation.conditionSet.isTripleLink
+			|| permutation.conditionSet.isRgb
+			|| permutation.conditionSet.isTripleBlueLink
+		)
+	);
+
+	if (unusedWeaponMeh || usedWeaponArmourMeh) {
+		// Shrink
+		permutation.effectSet.textSize = EffectSet.TEXT_SIZE.SMALLEST;
+
+		// Hide from map
+		permutation.effectSet.mapColour = null;
+
+		// Also, undo any outline
+		permutation.effectSet.outline = null;
 	}
 }
 

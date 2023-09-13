@@ -5,7 +5,6 @@ export class EffectSet {
 		DEFAULT: "32",
 		LARGEST: "45"
 	};
-
 	static RGB = {
 		LIME: "85 255 85",
 		AQUAMARINE: "85 255 170",
@@ -18,14 +17,12 @@ export class EffectSet {
 		YELLOW: "Yellow",
 		ORANGE: "Orange"
 	};
-
 	static ICON = {
 		CIRCLE: "Circle",
 		CROSS: "Cross",
 		STAR: "Star",
 		DIAMOND: "Diamond"
 	};
-
 	static ICON_SIZE = {
 		SMALL: "2",
 		MEDIUM: "1",
