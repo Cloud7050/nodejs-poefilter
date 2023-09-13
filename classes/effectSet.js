@@ -8,7 +8,8 @@ export class EffectSet {
 	static RGB = {
 		CYAN: "85 255 255",
 		YELLOW: "255 255 85",
-		LIME: "85 255 85"
+		LIME: "85 255 85",
+		PURPLE: "170 0 170"
 	};
 
 	static COLOUR = {
@@ -18,11 +19,12 @@ export class EffectSet {
 		ORANGE: "Orange"
 	};
 	static ICON = {
+		RAINDROP: "Raindrop",
 		CIRCLE: "Circle",
 		CROSS: "Cross",
 		STAR: "Star",
 		DIAMOND: "Diamond",
-		RAINDROP: "Raindrop"
+		MOON: "Moon"
 	};
 	static ICON_SIZE = {
 		SMALL: "2",

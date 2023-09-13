@@ -43,6 +43,10 @@ conditions = conditions.flatMap(
 	(conditionSet) => conditionSet.duplicateTripleBlueLink()
 );
 
+conditions = conditions.flatMap(
+	(conditionSet) => conditionSet.duplicateMirrored()
+);
+
 // Convert ConditionSets into blank Permutations, which start with no effects
 let permutations = conditions.map((
 	(conditionSet) => new Permutation(conditionSet)
@@ -75,12 +79,6 @@ for (let permutation of permutations) {
 }
 
 for (let permutation of permutations) {
-	// Different default map icon for other types
-	if (permutation.conditionSet.type === ConditionSet.TYPE.OTHER) {
-		permutation.effectSet.mapIcon = EffectSet.ICON.RAINDROP;
-		continue;
-	}
-
 	// Outline colour / map icon based on sockets
 	if (permutation.conditionSet.isTripleBlueLink) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.CYAN;
@@ -93,6 +91,19 @@ for (let permutation of permutations) {
 	} else if (permutation.conditionSet.isTripleLink) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.LIME;
 		permutation.effectSet.mapIcon = EffectSet.ICON.CROSS;
+		continue;
+	}
+
+	// Outline colour / map icon for mirrored
+	if (permutation.conditionSet.isMirrored) {
+		permutation.effectSet.outlineColour = EffectSet.RGB.PURPLE;
+		permutation.effectSet.mapIcon = EffectSet.ICON.MOON;
+		continue;
+	}
+
+	// Different default map icon for other types
+	if (permutation.conditionSet.type === ConditionSet.TYPE.OTHER) {
+		permutation.effectSet.mapIcon = EffectSet.ICON.RAINDROP;
 		continue;
 	}
 

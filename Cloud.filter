@@ -4,6 +4,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
@@ -14,6 +26,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Diamond
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
@@ -24,6 +48,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
@@ -34,6 +70,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 White Cross
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 85
 	MinimapIcon 2 White Cross
@@ -44,6 +92,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
@@ -54,6 +114,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Diamond
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
@@ -64,6 +136,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
@@ -74,6 +158,17 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 18
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 18
 
@@ -83,6 +178,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -93,6 +200,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Diamond
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
@@ -103,6 +222,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -113,6 +244,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 Blue Cross
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 85
 	MinimapIcon 2 Blue Cross
@@ -123,6 +266,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -133,6 +288,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Diamond
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
@@ -143,6 +310,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -153,6 +332,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Blue Moon
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 
 Show
@@ -161,6 +352,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -171,6 +374,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
@@ -181,6 +396,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -191,6 +418,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Cross
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 85
 	MinimapIcon 1 Yellow Cross
@@ -201,6 +440,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -211,6 +462,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
@@ -221,6 +484,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -231,6 +506,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 170 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	MinimapIcon 1 Yellow Circle
 
@@ -240,6 +527,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -252,6 +553,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 255 255 85
@@ -264,6 +579,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -276,6 +605,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 85
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 85
@@ -288,6 +631,20 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -300,6 +657,20 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 255 255 85
@@ -312,6 +683,20 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -324,6 +709,20 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 170 0 170
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	MinimapIcon 0 Orange Circle
@@ -335,6 +734,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
@@ -345,6 +756,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Diamond
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
@@ -355,6 +778,17 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 18
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 18
 
@@ -364,6 +798,17 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 18
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 18
 
@@ -373,6 +818,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
@@ -383,6 +840,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Diamond
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
@@ -393,6 +862,17 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 18
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 18
 
@@ -402,6 +882,17 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 18
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 18
 
@@ -411,6 +902,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -421,6 +924,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Diamond
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
@@ -431,6 +946,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -441,6 +968,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 Blue Cross
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 85
 	MinimapIcon 2 Blue Cross
@@ -451,6 +990,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -461,6 +1012,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Diamond
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
@@ -471,6 +1034,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -481,6 +1056,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Blue Moon
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 
 Show
@@ -489,6 +1076,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -499,6 +1098,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
@@ -509,6 +1120,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -519,6 +1142,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Cross
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 85
 	MinimapIcon 1 Yellow Cross
@@ -529,6 +1164,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -539,6 +1186,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
@@ -549,6 +1208,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -559,6 +1230,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 170 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	MinimapIcon 1 Yellow Circle
 
@@ -568,6 +1251,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -580,6 +1277,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 255 255 85
@@ -592,6 +1303,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -604,6 +1329,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 85
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 85
@@ -616,6 +1355,20 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -628,6 +1381,20 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 255 255 85
@@ -640,6 +1407,20 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -652,6 +1433,20 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 170 0 170
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	MinimapIcon 0 Orange Circle
@@ -663,6 +1458,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
@@ -673,6 +1480,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Diamond
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
@@ -683,6 +1502,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
@@ -693,6 +1524,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 White Cross
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 85
 	MinimapIcon 2 White Cross
@@ -703,6 +1546,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
@@ -713,6 +1568,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Diamond
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 White Diamond
@@ -723,6 +1590,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 White Star
@@ -733,6 +1612,17 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 18
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 18
 
@@ -742,6 +1632,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -752,6 +1654,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Diamond
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
@@ -762,6 +1676,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -772,6 +1698,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 Blue Cross
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 85
 	MinimapIcon 2 Blue Cross
@@ -782,6 +1720,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -792,6 +1742,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Diamond
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Diamond
@@ -802,6 +1764,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 2 Blue Star
@@ -812,6 +1786,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Blue Moon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 
 Show
@@ -820,6 +1806,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -830,6 +1828,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
@@ -840,6 +1850,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -850,6 +1872,18 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Cross
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 85
 	MinimapIcon 1 Yellow Cross
@@ -860,6 +1894,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -870,6 +1916,18 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Diamond
@@ -880,6 +1938,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Yellow Star
@@ -890,6 +1960,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 170 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	MinimapIcon 1 Yellow Circle
 
@@ -899,6 +1981,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -911,6 +2007,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 255 255 85
@@ -923,6 +2033,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -935,6 +2059,20 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 85
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 85
@@ -947,6 +2085,20 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -959,6 +2111,20 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 255 255 85
@@ -971,6 +2137,20 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	SetBorderColor 85 255 255
@@ -983,6 +2163,20 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 170 0 170
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	MinimapIcon 0 Orange Circle
@@ -994,8 +2188,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 2 White Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1003,8 +2210,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
-	MinimapIcon 2 White Raindrop
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Diamond
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1012,8 +2232,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 2 White Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1021,8 +2254,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
-	MinimapIcon 2 White Raindrop
+	SetBorderColor 85 255 85
+	MinimapIcon 2 White Cross
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1030,8 +2276,21 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 2 White Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1039,8 +2298,21 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
-	MinimapIcon 2 White Raindrop
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Diamond
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1048,8 +2320,21 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 2 White Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1057,6 +2342,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 White Moon
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	MinimapIcon 2 White Raindrop
 
@@ -1066,8 +2363,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 2 Blue Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1075,8 +2385,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
-	MinimapIcon 2 Blue Raindrop
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Diamond
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1084,8 +2407,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 2 Blue Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1093,8 +2429,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
-	MinimapIcon 2 Blue Raindrop
+	SetBorderColor 85 255 85
+	MinimapIcon 2 Blue Cross
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1102,8 +2451,21 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 2 Blue Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1111,8 +2473,21 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
-	MinimapIcon 2 Blue Raindrop
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Diamond
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1120,8 +2495,21 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 2 Blue Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1129,6 +2517,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Blue Moon
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	MinimapIcon 2 Blue Raindrop
 
@@ -1138,8 +2538,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 1 Yellow Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1147,8 +2560,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
-	MinimapIcon 1 Yellow Raindrop
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Diamond
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1156,8 +2582,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 1 Yellow Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1165,8 +2604,21 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
-	MinimapIcon 1 Yellow Raindrop
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Cross
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Cross
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1174,8 +2626,21 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 1 Yellow Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1183,8 +2648,21 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
-	MinimapIcon 1 Yellow Raindrop
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Diamond
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1192,8 +2670,21 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
-	MinimapIcon 1 Yellow Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Star
 
 Show
 	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1201,6 +2692,18 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetBorderColor 170 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	MinimapIcon 1 Yellow Raindrop
 
@@ -1210,9 +2713,24 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
 	SetFontSize 45
-	MinimapIcon 0 Orange Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
 Show
@@ -1221,9 +2739,24 @@ Show
 	SocketGroup >= 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
 	SetFontSize 45
-	MinimapIcon 0 Orange Raindrop
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
 
 Show
@@ -1232,9 +2765,24 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
 	SetFontSize 45
-	MinimapIcon 0 Orange Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
 Show
@@ -1243,9 +2791,24 @@ Show
 	SocketGroup >= 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
 	SetFontSize 45
-	MinimapIcon 0 Orange Raindrop
+	SetBorderColor 85 255 85
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetFontSize 45
+	SetBorderColor 85 255 85
+	MinimapIcon 0 Orange Cross
 	PlayEffect Orange
 
 Show
@@ -1254,9 +2817,24 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
 	SetFontSize 45
-	MinimapIcon 0 Orange Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
 Show
@@ -1265,9 +2843,24 @@ Show
 	SocketGroup < 3
 	SocketGroup >= 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
 
 	SetFontSize 45
-	MinimapIcon 0 Orange Raindrop
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
 
 Show
@@ -1276,9 +2869,24 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup >= 3BBB
+	Mirrored True
 
 	SetFontSize 45
-	MinimapIcon 0 Orange Raindrop
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+	Mirrored False
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
 Show
@@ -1287,6 +2895,20 @@ Show
 	SocketGroup < 3
 	SocketGroup < 3RGB
 	SocketGroup < 3BBB
+	Mirrored True
+
+	SetFontSize 45
+	SetBorderColor 170 0 170
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+	Mirrored False
 
 	SetFontSize 45
 	MinimapIcon 0 Orange Raindrop
