@@ -6,11 +6,11 @@ import { EffectSet } from "./effectSet.js";
 /* [Exports] */
 export class Permutation {
 	static VALUE = {
-		// May shrink, may unmap
+		// Shrink, unmap
 		LOW: 1,
-		// Never shrink, may unmap
+		// May shrink, unmap
 		MEDIUM: 2,
-		// Never shrink, never unmap
+		// Never shrink, map
 		HIGH: 3
 	};
 
