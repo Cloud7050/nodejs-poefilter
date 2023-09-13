@@ -21,7 +21,8 @@ export class EffectSet {
 		CIRCLE: "Circle",
 		CROSS: "Cross",
 		STAR: "Star",
-		DIAMOND: "Diamond"
+		DIAMOND: "Diamond",
+		RAINDROP: "Raindrop"
 	};
 	static ICON_SIZE = {
 		SMALL: "2",

@@ -51,6 +51,13 @@ let permutations = conditions.map((
 // Go through ConditionSets, using the power of JS to add effects only to
 // specific ones
 for (let permutation of permutations) {
+	// Different default map icon for other equipment
+	if (permutation.conditionSet.equipment === ConditionSet.EQUIPMENT.OTHER) {
+		permutation.effectSet.mapIcon = EffectSet.ICON.RAINDROP;
+	}
+}
+
+for (let permutation of permutations) {
 	// Map colour/size based on rarity
 	switch (permutation.conditionSet.rarity) {
 		case ConditionSet.RARITY.NORMAL:

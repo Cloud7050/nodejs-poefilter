@@ -994,3 +994,335 @@ Show
 	MinimapIcon 0 Orange Circle
 	PlayEffect Orange
 
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 White Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+
+	SetBorderColor 85 255 170
+	MinimapIcon 2 White Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 White Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 White Cross
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 White Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+
+	SetBorderColor 85 255 170
+	MinimapIcon 2 White Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 White Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Normal
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+
+	MinimapIcon 2 White Raindrop
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+
+	SetBorderColor 85 255 170
+	MinimapIcon 2 Blue Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+
+	SetBorderColor 85 255 255
+	MinimapIcon 2 Blue Cross
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+
+	SetBorderColor 85 255 170
+	MinimapIcon 2 Blue Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Magic
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+
+	MinimapIcon 2 Blue Raindrop
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+
+	SetBorderColor 85 255 170
+	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+
+	SetBorderColor 85 255 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+
+	SetBorderColor 85 255 170
+	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Rare
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+
+	MinimapIcon 1 Yellow Raindrop
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+
+	SetFontSize 45
+	SetBorderColor 85 255 85
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+
+	SetFontSize 45
+	SetBorderColor 85 255 170
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+
+	SetFontSize 45
+	SetBorderColor 85 255 85
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup >= 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+
+	SetFontSize 45
+	SetBorderColor 85 255 255
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup >= 3BBB
+
+	SetFontSize 45
+	SetBorderColor 85 255 85
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup >= 3RGB
+	SocketGroup < 3BBB
+
+	SetFontSize 45
+	SetBorderColor 85 255 170
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup >= 3BBB
+
+	SetFontSize 45
+	SetBorderColor 85 255 85
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Currency Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Active Skill Gems" "Support Skill Gems" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Stackable Currency" "Quest Items" "Critical Utility Flasks" Unarmed "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" "Delve Socketable Currency" Incubator Shard "Shard Heart" "Delve Stackable Socketable Currency" "Atlas Region Upgrade Item" "Metamorph Sample" "Harvest Seed" "Seed Enhancer" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
+	Rarity Unique
+	SocketGroup < 3
+	SocketGroup < 3RGB
+	SocketGroup < 3BBB
+
+	SetFontSize 45
+	MinimapIcon 0 Orange Raindrop
+	PlayEffect Orange
+
