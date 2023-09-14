@@ -21,70 +21,37 @@ import fs from "node:fs";
 import { ConditionSet } from "./classes/conditionSet.js";
 import { EffectSet } from "./classes/effectSet.js";
 import { Permutation } from "./classes/permutation.js";
+import { makePermutations } from "./utilities.js";
 
 
 
 /* [Main] */
-// Generate all possibilities by duplicating ConditionSets
-let seed = new ConditionSet();
-let conditions = seed.duplicateType();
-
-conditions = conditions.flatMap(
-	(conditionSet) => conditionSet.duplicateRarity()
-);
-
-conditions = conditions.flatMap(
-	(conditionSet) => conditionSet.duplicateTripleLink()
-);
-conditions = conditions.flatMap(
-	(conditionSet) => conditionSet.duplicateWhite()
-);
-conditions = conditions.flatMap(
-	(conditionSet) => conditionSet.duplicateRgb()
-);
-conditions = conditions.flatMap(
-	(conditionSet) => conditionSet.duplicateTripleBlueLink()
-);
-
-conditions = conditions.flatMap(
-	(conditionSet) => conditionSet.duplicateQuality()
-);
-conditions = conditions.flatMap(
-	(conditionSet) => conditionSet.duplicateMirrored()
-);
-conditions = conditions.flatMap(
-	(conditionSet) => conditionSet.duplicateCorrupted()
-);
-
-// Convert ConditionSets into blank Permutations, which start with no effects
-let permutations = conditions.map((
-	(conditionSet) => new Permutation(conditionSet)
-));
+let permutations = makePermutations();
 
 // Go through ConditionSets, using the power of JS to add effects only to
 // specific ones
 for (let permutation of permutations) {
 	// Map colour/size etc based on rarity
-	switch (permutation.conditionSet.rarity) {
+	switch (permutation.c.rarity) {
 		case ConditionSet.RARITY.NORMAL:
-			permutation.effectSet.mapColour = EffectSet.COLOUR.SILVER;
+			permutation.e.mapColour = EffectSet.COLOUR.SILVER;
 			break;
 		case ConditionSet.RARITY.MAGIC:
-			permutation.effectSet.mapColour = EffectSet.COLOUR.BLUE;
+			permutation.e.mapColour = EffectSet.COLOUR.BLUE;
 			break;
 		case ConditionSet.RARITY.RARE:
-			permutation.effectSet.mapColour = EffectSet.COLOUR.YELLOW;
-			permutation.effectSet.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+			permutation.e.mapColour = EffectSet.COLOUR.YELLOW;
+			permutation.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 
 			permutation.certifyValue(Permutation.VALUE.HIGH);
 			break;
 		case ConditionSet.RARITY.UNIQUE:
-			permutation.effectSet.textSize = EffectSet.TEXT_SIZE.LARGEST;
+			permutation.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 
-			permutation.effectSet.mapColour = EffectSet.COLOUR.ORANGE;
-			permutation.effectSet.mapSize = EffectSet.ICON_SIZE.LARGE;
+			permutation.e.mapColour = EffectSet.COLOUR.ORANGE;
+			permutation.e.mapSize = EffectSet.ICON_SIZE.LARGE;
 
-			permutation.effectSet.beamColour = EffectSet.COLOUR.ORANGE;
+			permutation.e.beamColour = EffectSet.COLOUR.ORANGE;
 
 			permutation.certifyValue(Permutation.VALUE.HIGH);
 			break;
@@ -93,69 +60,69 @@ for (let permutation of permutations) {
 
 for (let permutation of permutations) {
 	// Outline colour / map icon for mirrored/corrupted
-	if (permutation.conditionSet.isCorrupted) {
-		permutation.effectSet.outlineColour = EffectSet.RGB.CRIMSON;
-		permutation.effectSet.mapIcon = EffectSet.ICON.PENTAGON;
+	if (permutation.c.isCorrupted) {
+		permutation.e.outlineColour = EffectSet.RGB.CRIMSON;
+		permutation.e.mapIcon = EffectSet.ICON.PENTAGON;
 
 		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
 	}
-	if (permutation.conditionSet.isMirrored) {
-		permutation.effectSet.outlineColour = EffectSet.RGB.PURPLE;
-		permutation.effectSet.mapIcon = EffectSet.ICON.MOON;
+	if (permutation.c.isMirrored) {
+		permutation.e.outlineColour = EffectSet.RGB.PURPLE;
+		permutation.e.mapIcon = EffectSet.ICON.MOON;
 
 		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
 	}
 
 	// Outline colour / map icon for special sockets
-	if (permutation.conditionSet.isTripleBlueLink) {
-		permutation.effectSet.outlineColour = EffectSet.RGB.CYAN;
-		permutation.effectSet.mapIcon = EffectSet.ICON.STAR;
+	if (permutation.c.isTripleBlueLink) {
+		permutation.e.outlineColour = EffectSet.RGB.CYAN;
+		permutation.e.mapIcon = EffectSet.ICON.STAR;
 
 		permutation.certifyValue(Permutation.VALUE.MEDIUM);
 		continue;
 	}
-	if (permutation.conditionSet.isRgb) {
-		permutation.effectSet.outlineColour = EffectSet.RGB.YELLOW;
-		permutation.effectSet.mapIcon = EffectSet.ICON.DIAMOND;
+	if (permutation.c.isRgb) {
+		permutation.e.outlineColour = EffectSet.RGB.YELLOW;
+		permutation.e.mapIcon = EffectSet.ICON.DIAMOND;
 
 		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
 	}
-	if (permutation.conditionSet.isWhite) {
-		permutation.effectSet.outlineColour = EffectSet.RGB.PINK;
-		permutation.effectSet.mapIcon = EffectSet.ICON.SQUARE;
+	if (permutation.c.isWhite) {
+		permutation.e.outlineColour = EffectSet.RGB.PINK;
+		permutation.e.mapIcon = EffectSet.ICON.SQUARE;
 
 		permutation.certifyValue(Permutation.VALUE.MEDIUM);
 		continue;
 	}
-	if (permutation.conditionSet.isTripleLink) {
-		permutation.effectSet.outlineColour = EffectSet.RGB.LIME;
-		permutation.effectSet.mapIcon = EffectSet.ICON.CROSS;
+	if (permutation.c.isTripleLink) {
+		permutation.e.outlineColour = EffectSet.RGB.LIME;
+		permutation.e.mapIcon = EffectSet.ICON.CROSS;
 
 		permutation.certifyValue(Permutation.VALUE.MEDIUM);
 		continue;
 	}
 
 	// Different colour / default map icon for other types
-	if (permutation.conditionSet.type === ConditionSet.TYPE.GEM) {
-		permutation.effectSet.mapColour = EffectSet.COLOUR.CYAN;
-		permutation.effectSet.mapIcon = EffectSet.ICON.HOUSE;
+	if (permutation.c.type === ConditionSet.TYPE.GEM) {
+		permutation.e.mapColour = EffectSet.COLOUR.CYAN;
+		permutation.e.mapIcon = EffectSet.ICON.HOUSE;
 
 		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
 	}
-	if (permutation.conditionSet.type === ConditionSet.TYPE.CURRENCY) {
-		permutation.effectSet.mapColour = EffectSet.COLOUR.LIME;
-		permutation.effectSet.mapIcon = EffectSet.ICON.KITE;
+	if (permutation.c.type === ConditionSet.TYPE.CURRENCY) {
+		permutation.e.mapColour = EffectSet.COLOUR.LIME;
+		permutation.e.mapIcon = EffectSet.ICON.KITE;
 
 		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
 	}
-	if (permutation.conditionSet.type === ConditionSet.TYPE.OTHER) {
-		permutation.effectSet.mapColour = EffectSet.COLOUR.PINK;
-		permutation.effectSet.mapIcon = EffectSet.ICON.RAINDROP;
+	if (permutation.c.type === ConditionSet.TYPE.OTHER) {
+		permutation.e.mapColour = EffectSet.COLOUR.PINK;
+		permutation.e.mapIcon = EffectSet.ICON.RAINDROP;
 
 		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
@@ -164,7 +131,7 @@ for (let permutation of permutations) {
 	// At this point, the item has no special icon.
 	// Unmap low/medium to avoid equipment spam
 	if (permutation.value <= Permutation.VALUE.MEDIUM) {
-		permutation.effectSet.mapColour = null;
+		permutation.e.mapColour = null;
 	}
 }
 
@@ -174,22 +141,22 @@ for (let permutation of permutations) {
 	if (permutation.value >= Permutation.VALUE.HIGH) continue;
 
 	// Shrink/unmap low/medium unused weapons
-	let unusedWeaponMeh = permutation.conditionSet.type === ConditionSet.TYPE.UNUSED_WEAPON;
+	let unusedWeaponMeh = permutation.c.type === ConditionSet.TYPE.UNUSED_WEAPON;
 	// Shrink/unmap low used weapons / armour
 	let usedWeaponArmourMeh = (
 		(
-			permutation.conditionSet.type === ConditionSet.TYPE.USED_WEAPON
-			|| permutation.conditionSet.type === ConditionSet.TYPE.ARMOUR
+			permutation.c.type === ConditionSet.TYPE.USED_WEAPON
+			|| permutation.c.type === ConditionSet.TYPE.ARMOUR
 		)
 		&& permutation.value <= Permutation.VALUE.LOW
 	);
 
 	if (unusedWeaponMeh || usedWeaponArmourMeh) {
 		// Shrink
-		permutation.effectSet.textSize = EffectSet.TEXT_SIZE.SMALLEST;
+		permutation.e.textSize = EffectSet.TEXT_SIZE.SMALLEST;
 
 		// Hide from map
-		permutation.effectSet.mapColour = null;
+		permutation.e.mapColour = null;
 	}
 }
 
@@ -197,9 +164,9 @@ for (let permutation of permutations) {
 let lines = [];
 let blockCount = 0;
 for (let permutation of permutations) {
-	let effectLines = permutation.effectSet.export();
+	let effectLines = permutation.e.export();
 	if (effectLines.length <= 0) continue;
-	let conditionLines = permutation.conditionSet.export();
+	let conditionLines = permutation.c.export();
 
 	lines.push("Show");
 

@@ -6,21 +6,18 @@ import { EffectSet } from "./effectSet.js";
 /* [Exports] */
 export class Permutation {
 	static VALUE = {
-		// Shrink, unmap
-		LOW: 1,
-		// May shrink, unmap
-		MEDIUM: 2,
-		// Never shrink, map
-		HIGH: 3
+		LOW: 1, // Will shrink & unmap
+		MEDIUM: 2, // May shrink, will unmap
+		HIGH: 3 // Never shrink or unmap
 	};
 
-	effectSet = new EffectSet();
+	e = new EffectSet();
 	value = Permutation.VALUE.LOW;
 
-	conditionSet;
+	c;
 
-	constructor(_conditionSet) {
-		this.conditionSet = _conditionSet;
+	constructor(conditionSet) {
+		this.c = conditionSet;
 	}
 
 	certifyValue(_value) {

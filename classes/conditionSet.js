@@ -27,7 +27,7 @@ export class ConditionSet {
 	isMirrored = null;
 	isCorrupted = null;
 
-	#clone() {
+	clone() {
 		let conditionSet = new ConditionSet();
 
 		conditionSet.type = this.type;
@@ -43,69 +43,6 @@ export class ConditionSet {
 		conditionSet.isCorrupted = this.isCorrupted;
 
 		return conditionSet;
-	}
-
-	#duplicateEnum(property, enumObject) {
-		let values = Object.values(enumObject);
-		return values.map(
-			(value) => {
-				let clone = this.#clone();
-				clone[property] = value;
-				return clone;
-			}
-		);
-	}
-
-	#duplicateBoolean(property) {
-		return [true, false].map(
-			(boolean) => {
-				let clone = this.#clone();
-				clone[property] = boolean;
-				return clone;
-			}
-		);
-	}
-
-	duplicateType() {
-		return this.#duplicateEnum(
-			"type",
-			ConditionSet.TYPE
-		);
-	}
-
-	duplicateRarity() {
-		return this.#duplicateEnum(
-			"rarity",
-			ConditionSet.RARITY
-		);
-	}
-
-	duplicateTripleLink() {
-		return this.#duplicateBoolean("isTripleLink");
-	}
-
-	duplicateWhite() {
-		return this.#duplicateBoolean("isWhite");
-	}
-
-	duplicateRgb() {
-		return this.#duplicateBoolean("isRgb");
-	}
-
-	duplicateTripleBlueLink() {
-		return this.#duplicateBoolean("isTripleBlueLink");
-	}
-
-	duplicateQuality() {
-		return this.#duplicateBoolean("isQuality");
-	}
-
-	duplicateMirrored() {
-		return this.#duplicateBoolean("isMirrored");
-	}
-
-	duplicateCorrupted() {
-		return this.#duplicateBoolean("isCorrupted");
 	}
 
 	export() {
