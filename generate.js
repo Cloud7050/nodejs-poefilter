@@ -190,15 +190,19 @@ for (let permutation of permutations) {
 // Export all the Permutations
 let filterBlocks = "";
 for (let permutation of permutations) {
+	let effectLines = permutation.effectSet.export();
+	if (effectLines.length <= 0) continue;
+	let conditionLines = permutation.conditionSet.export();
+
 	filterBlocks += "Show\n";
 
-	for (let line of permutation.conditionSet.export()) {
+	for (let line of conditionLines) {
 		filterBlocks += `	${line}\n`;
 	}
 
 	filterBlocks += "\n";
 
-	for (let line of permutation.effectSet.export()) {
+	for (let line of effectLines) {
 		filterBlocks += `	${line}\n`;
 	}
 
