@@ -18,7 +18,10 @@ export class EffectSet {
 		WHITE: "White", // Normal
 		BLUE: "Blue", // Magic
 		YELLOW: "Yellow", // Rare
-		ORANGE: "Orange" // Unique
+		ORANGE: "Orange", // Unique
+		PINK: "Pink", // Other
+		GREEN: "Green", // Currency
+		CYAN: "Cyan" // Gem
 	};
 	static ICON = {
 		RAINDROP: "Raindrop", // Other

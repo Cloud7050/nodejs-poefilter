@@ -827,7 +827,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	MinimapIcon 2 White Raindrop
+	MinimapIcon 2 Pink Raindrop
 
 Show
 	Class Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" Incubator Shard "Shard Heart" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -1658,7 +1658,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	MinimapIcon 2 Blue Raindrop
+	MinimapIcon 2 Pink Raindrop
 
 Show
 	Class Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" Incubator Shard "Shard Heart" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -2489,7 +2489,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	MinimapIcon 1 Yellow Raindrop
+	MinimapIcon 1 Pink Raindrop
 
 Show
 	Class Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" Incubator Shard "Shard Heart" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"
@@ -3447,7 +3447,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	MinimapIcon 0 Orange Raindrop
+	MinimapIcon 0 Pink Raindrop
 	PlayEffect Orange
 
 Show
@@ -4279,7 +4279,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	MinimapIcon 2 White Kite
+	MinimapIcon 2 Green Kite
 
 Show
 	Class Currency "Stackable Currency" "Delve Socketable Currency" "Delve Stackable Socketable Currency"
@@ -5110,7 +5110,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	MinimapIcon 2 Blue Kite
+	MinimapIcon 2 Green Kite
 
 Show
 	Class Currency "Stackable Currency" "Delve Socketable Currency" "Delve Stackable Socketable Currency"
@@ -5941,7 +5941,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	MinimapIcon 1 Yellow Kite
+	MinimapIcon 1 Green Kite
 
 Show
 	Class Currency "Stackable Currency" "Delve Socketable Currency" "Delve Stackable Socketable Currency"
@@ -6899,7 +6899,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	MinimapIcon 0 Orange Kite
+	MinimapIcon 0 Green Kite
 	PlayEffect Orange
 
 Show
@@ -7731,7 +7731,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	MinimapIcon 2 White UpsideDownHouse
+	MinimapIcon 2 Cyan UpsideDownHouse
 
 Show
 	Class Gems
@@ -8562,7 +8562,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	MinimapIcon 2 Blue UpsideDownHouse
+	MinimapIcon 2 Cyan UpsideDownHouse
 
 Show
 	Class Gems
@@ -9393,7 +9393,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	MinimapIcon 1 Yellow UpsideDownHouse
+	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
 	Class Gems
@@ -10351,7 +10351,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	MinimapIcon 0 Orange UpsideDownHouse
+	MinimapIcon 0 Cyan UpsideDownHouse
 	PlayEffect Orange
 
 Show

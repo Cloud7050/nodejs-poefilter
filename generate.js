@@ -135,20 +135,23 @@ for (let permutation of permutations) {
 		continue;
 	}
 
-	// Different default map icon for other types
+	// Different colour / default map icon for other types
 	if (permutation.conditionSet.type === ConditionSet.TYPE.GEM) {
+		permutation.effectSet.mapColour = EffectSet.COLOUR.CYAN;
 		permutation.effectSet.mapIcon = EffectSet.ICON.HOUSE;
 
 		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
 	}
 	if (permutation.conditionSet.type === ConditionSet.TYPE.CURRENCY) {
+		permutation.effectSet.mapColour = EffectSet.COLOUR.GREEN;
 		permutation.effectSet.mapIcon = EffectSet.ICON.KITE;
 
 		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
 	}
 	if (permutation.conditionSet.type === ConditionSet.TYPE.OTHER) {
+		permutation.effectSet.mapColour = EffectSet.COLOUR.PINK;
 		permutation.effectSet.mapIcon = EffectSet.ICON.RAINDROP;
 
 		permutation.certifyValue(Permutation.VALUE.HIGH);
