@@ -5,23 +5,38 @@ export class EffectSet {
 		DEFAULT: "32",
 		LARGEST: "45" // Unique
 	};
+	// Avoid white, orange outlines as those are done in vanilla
 	static RGB = {
+		BLACK: "0 0 0",
+		NAVY: "0 0 170",
+		GREEN: "0 170 0",
+		TEAL: "0 170 170",
+		CRIMSON: "170 0 0", // Corrupted
+		PURPLE: "170 0 170", // Mirrored
+		ORANGE: "255 170 0",
+		SILVER: "170 170 170",
+		GREY: "85 85 85",
+		BLUE: "85 85 255",
 		LIME: "85 255 85", // Triple link
+		CYAN: "85 255 255", // Triple blue
+		ROSE: "255 85 85",
 		PINK: "255 85 255", // White
 		YELLOW: "255 255 85", // RGB
-		CYAN: "85 255 255", // Triple blue
-		PURPLE: "170 0 170", // Mirrored
-		CRIMSON: "170 0 0" // Corrupted
+		WHITE: "255 255 255"
 	};
 
 	static COLOUR = {
-		WHITE: "White", // Normal
-		BLUE: "Blue", // Magic
-		YELLOW: "Yellow", // Rare
+		BLACK: "Grey",
+		PURPLE: "Purple",
 		ORANGE: "Orange", // Unique
+		SILVER: "White", // Normal
+		BLUE: "Blue", // Magic
+		LIME: "Green", // Currency
+		CYAN: "Cyan", // Gem
+		ROSE: "Red",
 		PINK: "Pink", // Other
-		GREEN: "Green", // Currency
-		CYAN: "Cyan" // Gem
+		YELLOW: "Yellow", // Rare
+		BROWN: "Brown"
 	};
 	static ICON = {
 		RAINDROP: "Raindrop", // Other
@@ -33,7 +48,9 @@ export class EffectSet {
 		DIAMOND: "Diamond", // RGB
 		SQUARE: "Square", // White
 		MOON: "Moon", // Mirrored
-		PENTAGON: "Pentagon" // Corrupted
+		PENTAGON: "Pentagon", // Corrupted
+		HEXAGON: "Hexagon",
+		TRIANGLE: "Triangle"
 	};
 	static ICON_SIZE = {
 		SMALL: "2", // Default

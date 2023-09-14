@@ -64,7 +64,7 @@ for (let permutation of permutations) {
 	// Map colour/size etc based on rarity
 	switch (permutation.conditionSet.rarity) {
 		case ConditionSet.RARITY.NORMAL:
-			permutation.effectSet.mapColour = EffectSet.COLOUR.WHITE;
+			permutation.effectSet.mapColour = EffectSet.COLOUR.SILVER;
 			break;
 		case ConditionSet.RARITY.MAGIC:
 			permutation.effectSet.mapColour = EffectSet.COLOUR.BLUE;
@@ -144,7 +144,7 @@ for (let permutation of permutations) {
 		continue;
 	}
 	if (permutation.conditionSet.type === ConditionSet.TYPE.CURRENCY) {
-		permutation.effectSet.mapColour = EffectSet.COLOUR.GREEN;
+		permutation.effectSet.mapColour = EffectSet.COLOUR.LIME;
 		permutation.effectSet.mapIcon = EffectSet.ICON.KITE;
 
 		permutation.certifyValue(Permutation.VALUE.HIGH);
