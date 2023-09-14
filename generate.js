@@ -223,6 +223,6 @@ let filterBlocks = lines.join("\n");
 fs.writeFileSync("./Cloud.filter", filterBlocks);
 fs.writeFileSync("C:/Users/cloud/Documents/My Games/Path of Exile/Cloud.filter", filterBlocks);
 
-console.log(`Blocks: ${blockCount}`);
+console.log(`Blocks: ${blockCount}/${permutations.length}`);
 console.log(`Lines: ${lines.length}`);
 console.log("☁");
