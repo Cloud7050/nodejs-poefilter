@@ -188,29 +188,35 @@ for (let permutation of permutations) {
 }
 
 // Export all the Permutations
-let filterBlocks = "";
+let lines = [];
+let blockCount = 0;
 for (let permutation of permutations) {
 	let effectLines = permutation.effectSet.export();
 	if (effectLines.length <= 0) continue;
 	let conditionLines = permutation.conditionSet.export();
 
-	filterBlocks += "Show\n";
+	lines.push("Show");
 
-	for (let line of conditionLines) {
-		filterBlocks += `	${line}\n`;
+	for (let conditionLine of conditionLines) {
+		lines.push(`	${conditionLine}`);
 	}
 
-	filterBlocks += "\n";
+	lines.push("");
 
-	for (let line of effectLines) {
-		filterBlocks += `	${line}\n`;
+	for (let effectLine of effectLines) {
+		lines.push(`	${effectLine}`);
 	}
 
-	filterBlocks += "\n";
+	lines.push("");
+
+	blockCount++;
 }
 
 // Save to filter file
+let filterBlocks = lines.join("\n");
 fs.writeFileSync("./Cloud.filter", filterBlocks);
 fs.writeFileSync("C:/Users/cloud/Documents/My Games/Path of Exile/Cloud.filter", filterBlocks);
 
+console.log(`Blocks: ${blockCount}`);
+console.log(`Lines: ${lines.length}`);
 console.log("☁");
