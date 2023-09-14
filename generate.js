@@ -136,6 +136,12 @@ for (let permutation of permutations) {
 	}
 
 	// Different default map icon for other types
+	if (permutation.conditionSet.type === ConditionSet.TYPE.GEM) {
+		permutation.effectSet.mapIcon = EffectSet.ICON.HOUSE;
+
+		permutation.certifyValue(Permutation.VALUE.HIGH);
+		continue;
+	}
 	if (permutation.conditionSet.type === ConditionSet.TYPE.CURRENCY) {
 		permutation.effectSet.mapIcon = EffectSet.ICON.KITE;
 

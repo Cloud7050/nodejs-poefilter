@@ -1,40 +1,41 @@
 /* [Exports] */
 export class EffectSet {
 	static TEXT_SIZE = {
-		SMALLEST: "18",
+		SMALLEST: "18", // Shrink
 		DEFAULT: "32",
-		LARGEST: "45"
+		LARGEST: "45" // Unique
 	};
 	static RGB = {
-		LIME: "85 255 85",
-		PINK: "255 85 255",
-		YELLOW: "255 255 85",
-		CYAN: "85 255 255",
-		PURPLE: "170 0 170",
-		CRIMSON: "170 0 0"
+		LIME: "85 255 85", // Triple link
+		PINK: "255 85 255", // White
+		YELLOW: "255 255 85", // RGB
+		CYAN: "85 255 255", // Triple blue
+		PURPLE: "170 0 170", // Mirrored
+		CRIMSON: "170 0 0" // Corrupted
 	};
 
 	static COLOUR = {
-		WHITE: "White",
-		BLUE: "Blue",
-		YELLOW: "Yellow",
-		ORANGE: "Orange"
+		WHITE: "White", // Normal
+		BLUE: "Blue", // Magic
+		YELLOW: "Yellow", // Rare
+		ORANGE: "Orange" // Unique
 	};
 	static ICON = {
-		RAINDROP: "Raindrop",
-		KITE: "Kite",
-		CIRCLE: "Circle",
-		CROSS: "Cross",
-		STAR: "Star",
-		DIAMOND: "Diamond",
-		SQUARE: "Square",
-		MOON: "Moon",
-		PENTAGON: "Pentagon"
+		RAINDROP: "Raindrop", // Other
+		KITE: "Kite", // Currency
+		HOUSE: "UpsideDownHouse", // Gem
+		CIRCLE: "Circle", // Default equipment
+		CROSS: "Cross", // Triple link
+		STAR: "Star", // Triple blue
+		DIAMOND: "Diamond", // RGB
+		SQUARE: "Square", // White
+		MOON: "Moon", // Mirrored
+		PENTAGON: "Pentagon" // Corrupted
 	};
 	static ICON_SIZE = {
-		SMALL: "2",
-		MEDIUM: "1",
-		LARGE: "0"
+		SMALL: "2", // Default
+		MEDIUM: "1", // Rare
+		LARGE: "0" // Unique
 	};
 
 	textSize = null;
