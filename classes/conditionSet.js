@@ -1,9 +1,9 @@
 /* [Exports] */
 export class ConditionSet {
 	static TYPE = {
-		OTHER: 'Maps "Map Fragments" Jewel "Divination Card" "Misc Map Items" Leaguestones Piece "Abyss Jewel" Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" Incubator Shard "Shard Heart" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"',
+		OTHER: 'Maps "Map Fragments" "Divination Card" "Misc Map Items" Leaguestones Piece Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Critical Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item" "Pantheon Soul" "Incursion Item" Incubator Shard "Shard Heart" "Metamorph Sample" Contract "Heist Gear" "Heist Tool" "Heist Cloak" "Heist Brooch" Blueprint "Heist Target" "Expedition Logbook"',
 		CURRENCY: 'Currency "Stackable Currency" "Delve Socketable Currency" "Delve Stackable Socketable Currency"',
-		GEM: "Gems",
+		GEM: 'Gems Jewels "Abyss Jewels"',
 		UNUSED_WEAPON: 'Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres "Rune Daggers" Quivers',
 		ARMOUR: 'Amulets Rings Belts Gloves Boots "Body Armours" Helmets',
 		USED_WEAPON: "Wands Shields"
