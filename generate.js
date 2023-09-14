@@ -20,13 +20,13 @@
 import fs from "node:fs";
 import { ConditionSet } from "./classes/conditionSet.js";
 import { EffectSet } from "./classes/effectSet.js";
-import { Permutation } from "./classes/permutation.js";
-import { makePermutations } from "./utilities.js";
+import { Permutation, PermutationMaker } from "./classes/permutation.js";
 
 
 
 /* [Main] */
-let permutations = makePermutations();
+let permutations = new PermutationMaker()
+	.generate();
 
 // Go through ConditionSets, using the power of JS to add effects only to
 // specific ones
