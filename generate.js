@@ -89,6 +89,22 @@ for (let permutation of permutations) {
 }
 
 for (let permutation of permutations) {
+	// Outline colour / map icon for mirrored/corrupted
+	if (permutation.conditionSet.isCorrupted) {
+		permutation.effectSet.outlineColour = EffectSet.RGB.CRIMSON;
+		permutation.effectSet.mapIcon = EffectSet.ICON.PENTAGON;
+
+		permutation.certifyValue(Permutation.VALUE.HIGH);
+		continue;
+	}
+	if (permutation.conditionSet.isMirrored) {
+		permutation.effectSet.outlineColour = EffectSet.RGB.PURPLE;
+		permutation.effectSet.mapIcon = EffectSet.ICON.MOON;
+
+		permutation.certifyValue(Permutation.VALUE.HIGH);
+		continue;
+	}
+
 	// Outline colour / map icon for special sockets
 	if (permutation.conditionSet.isTripleBlueLink) {
 		permutation.effectSet.outlineColour = EffectSet.RGB.CYAN;
@@ -116,22 +132,6 @@ for (let permutation of permutations) {
 		permutation.effectSet.mapIcon = EffectSet.ICON.CROSS;
 
 		permutation.certifyValue(Permutation.VALUE.MEDIUM);
-		continue;
-	}
-
-	// Outline colour / map icon for mirrored/corrupted
-	if (permutation.conditionSet.isCorrupted) {
-		permutation.effectSet.outlineColour = EffectSet.RGB.CRIMSON;
-		permutation.effectSet.mapIcon = EffectSet.ICON.PENTAGON;
-
-		permutation.certifyValue(Permutation.VALUE.HIGH);
-		continue;
-	}
-	if (permutation.conditionSet.isMirrored) {
-		permutation.effectSet.outlineColour = EffectSet.RGB.PURPLE;
-		permutation.effectSet.mapIcon = EffectSet.ICON.MOON;
-
-		permutation.certifyValue(Permutation.VALUE.HIGH);
 		continue;
 	}
 
