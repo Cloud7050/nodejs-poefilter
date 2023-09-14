@@ -47,6 +47,9 @@ conditions = conditions.flatMap(
 );
 
 conditions = conditions.flatMap(
+	(conditionSet) => conditionSet.duplicateQuality()
+);
+conditions = conditions.flatMap(
 	(conditionSet) => conditionSet.duplicateMirrored()
 );
 conditions = conditions.flatMap(

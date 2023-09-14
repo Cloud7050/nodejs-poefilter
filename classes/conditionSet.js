@@ -23,6 +23,7 @@ export class ConditionSet {
 	isRgb = null;
 	isTripleBlueLink = null;
 
+	isQuality = null;
 	isMirrored = null;
 	isCorrupted = null;
 
@@ -37,6 +38,7 @@ export class ConditionSet {
 		conditionSet.isRgb = this.isRgb;
 		conditionSet.isTripleBlueLink = this.isTripleBlueLink;
 
+		conditionSet.isQuality = this.isQuality;
 		conditionSet.isMirrored = this.isMirrored;
 		conditionSet.isCorrupted = this.isCorrupted;
 
@@ -94,6 +96,10 @@ export class ConditionSet {
 		return this.#duplicateBoolean("isTripleBlueLink");
 	}
 
+	duplicateQuality() {
+		return this.#duplicateBoolean("isQuality");
+	}
+
 	duplicateMirrored() {
 		return this.#duplicateBoolean("isMirrored");
 	}
@@ -125,6 +131,10 @@ export class ConditionSet {
 			lines.push(`SocketGroup ${operator} 3BBB`);
 		}
 
+		if (this.isQuality !== null) {
+			let operator = this.isQuality ? ">" : "<=";
+			lines.push(`Quality ${operator} 0`);
+		}
 		if (this.isMirrored !== null) {
 			let booleanString = this.isMirrored ? "True" : "False";
 			lines.push(`Mirrored ${booleanString}`);
