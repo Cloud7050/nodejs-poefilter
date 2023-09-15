@@ -95,10 +95,10 @@ export class EffectSet {
 }
 
 export class Effecter {
-	#ps;
+	#permutationManager;
 
-	constructor(permutations) {
-		this.#ps = permutations;
+	constructor(permutationManager) {
+		this.#permutationManager = permutationManager;
 	}
 
 	/**
@@ -306,7 +306,7 @@ export class Effecter {
 	 * conditions.
 	 */
 	decide() {
-		for (let p of this.#ps) {
+		for (let p of this.#permutationManager.ps) {
 			Effecter.#decideOne(p);
 		}
 	}

@@ -17,49 +17,19 @@
  */
 
 /* [Imports] */
-import fs from "node:fs";
 import { Effecter } from "./classes/effectSet.js";
 import { PermutationMaker } from "./classes/permutation.js";
 
 
 
 /* [Main] */
-let permutations = new PermutationMaker()
+let permutationManager = new PermutationMaker()
 	.generate();
 
-new Effecter(permutations)
+new Effecter(permutationManager)
 	.decide();
 
-// Export all the Permutations
-let lines = [];
-let blockCount = 0;
-for (let permutation of permutations) {
-	let effectLines = permutation.e.export();
-	if (effectLines.length <= 0) continue;
-	let conditionLines = permutation.c.export();
+permutationManager.optimise();
+permutationManager.save();
 
-	lines.push("Show");
-
-	for (let conditionLine of conditionLines) {
-		lines.push(`	${conditionLine}`);
-	}
-
-	lines.push("");
-
-	for (let effectLine of effectLines) {
-		lines.push(`	${effectLine}`);
-	}
-
-	lines.push("");
-
-	blockCount++;
-}
-
-// Save to filter file
-let filterBlocks = lines.join("\n");
-fs.writeFileSync("./Cloud.filter", filterBlocks);
-fs.writeFileSync("C:/Users/cloud/Documents/My Games/Path of Exile/Cloud.filter", filterBlocks);
-
-console.log(`Blocks: ${blockCount}/${permutations.length}`);
-console.log(`Lines: ${lines.length}`);
 console.log("☁");

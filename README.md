@@ -4,8 +4,8 @@
 	1. Add property to ConditionSet class
 	1. Set property of new ConditionSet in clone()
 	1. Check property and push line in export()
-- `utilities.js`
-	1. Add duplication call in makePermutations()
+- `permutation.js`
+	1. Add duplication call in generate()
 
 ## Steps For Adding New Effect
 
