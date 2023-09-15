@@ -18,9 +18,8 @@
 
 /* [Imports] */
 import fs from "node:fs";
-import { ConditionSet } from "./classes/conditionSet.js";
-import { EffectSet } from "./classes/effectSet.js";
-import { Permutation, PermutationMaker } from "./classes/permutation.js";
+import { Effecter } from "./classes/effectSet.js";
+import { PermutationMaker } from "./classes/permutation.js";
 
 
 
@@ -28,137 +27,8 @@ import { Permutation, PermutationMaker } from "./classes/permutation.js";
 let permutations = new PermutationMaker()
 	.generate();
 
-// Go through ConditionSets, using the power of JS to add effects only to
-// specific ones
-for (let permutation of permutations) {
-	// Map colour/size etc based on rarity
-	switch (permutation.c.rarity) {
-		case ConditionSet.RARITY.NORMAL:
-			permutation.e.mapColour = EffectSet.COLOUR.SILVER;
-			break;
-		case ConditionSet.RARITY.MAGIC:
-			permutation.e.mapColour = EffectSet.COLOUR.BLUE;
-			break;
-		case ConditionSet.RARITY.RARE:
-			permutation.e.mapColour = EffectSet.COLOUR.YELLOW;
-			permutation.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
-
-			permutation.certifyValue(Permutation.VALUE.HIGH);
-			break;
-		case ConditionSet.RARITY.UNIQUE:
-			permutation.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-
-			permutation.e.mapColour = EffectSet.COLOUR.ORANGE;
-			permutation.e.mapSize = EffectSet.ICON_SIZE.LARGE;
-
-			permutation.e.beamColour = EffectSet.COLOUR.ORANGE;
-
-			permutation.certifyValue(Permutation.VALUE.HIGH);
-			break;
-	}
-}
-
-for (let permutation of permutations) {
-	// Outline colour / map icon for mirrored/corrupted
-	if (permutation.c.isCorrupted) {
-		permutation.e.outlineColour = EffectSet.RGB.CRIMSON;
-		permutation.e.mapIcon = EffectSet.ICON.PENTAGON;
-
-		permutation.certifyValue(Permutation.VALUE.HIGH);
-		continue;
-	}
-	if (permutation.c.isMirrored) {
-		permutation.e.outlineColour = EffectSet.RGB.PURPLE;
-		permutation.e.mapIcon = EffectSet.ICON.MOON;
-
-		permutation.certifyValue(Permutation.VALUE.HIGH);
-		continue;
-	}
-
-	// Outline colour / map icon for special sockets
-	if (permutation.c.isTripleBlueLink) {
-		permutation.e.outlineColour = EffectSet.RGB.CYAN;
-		permutation.e.mapIcon = EffectSet.ICON.STAR;
-
-		permutation.certifyValue(Permutation.VALUE.MEDIUM);
-		continue;
-	}
-	if (permutation.c.isRgb) {
-		permutation.e.outlineColour = EffectSet.RGB.YELLOW;
-		permutation.e.mapIcon = EffectSet.ICON.DIAMOND;
-
-		permutation.certifyValue(Permutation.VALUE.HIGH);
-		continue;
-	}
-	if (permutation.c.isWhite) {
-		permutation.e.outlineColour = EffectSet.RGB.PINK;
-		permutation.e.mapIcon = EffectSet.ICON.SQUARE;
-
-		permutation.certifyValue(Permutation.VALUE.MEDIUM);
-		continue;
-	}
-	if (permutation.c.isTripleLink) {
-		permutation.e.outlineColour = EffectSet.RGB.LIME;
-		permutation.e.mapIcon = EffectSet.ICON.CROSS;
-
-		permutation.certifyValue(Permutation.VALUE.MEDIUM);
-		continue;
-	}
-
-	// Different colour / default map icon for other types
-	if (permutation.c.type === ConditionSet.TYPE.GEM) {
-		permutation.e.mapColour = EffectSet.COLOUR.CYAN;
-		permutation.e.mapIcon = EffectSet.ICON.HOUSE;
-
-		permutation.certifyValue(Permutation.VALUE.HIGH);
-		continue;
-	}
-	if (permutation.c.type === ConditionSet.TYPE.CURRENCY) {
-		permutation.e.mapColour = EffectSet.COLOUR.LIME;
-		permutation.e.mapIcon = EffectSet.ICON.KITE;
-
-		permutation.certifyValue(Permutation.VALUE.HIGH);
-		continue;
-	}
-	if (permutation.c.type === ConditionSet.TYPE.OTHER) {
-		permutation.e.mapColour = EffectSet.COLOUR.PINK;
-		permutation.e.mapIcon = EffectSet.ICON.RAINDROP;
-
-		permutation.certifyValue(Permutation.VALUE.HIGH);
-		continue;
-	}
-
-	// At this point, the item has no special icon.
-	// Unmap low/medium to avoid equipment spam
-	if (permutation.value <= Permutation.VALUE.MEDIUM) {
-		permutation.e.mapColour = null;
-	}
-}
-
-for (let permutation of permutations) {
-	// Shrink & unmap the meh items
-
-	if (permutation.value >= Permutation.VALUE.HIGH) continue;
-
-	// Shrink/unmap low/medium unused weapons
-	let unusedWeaponMeh = permutation.c.type === ConditionSet.TYPE.UNUSED_WEAPON;
-	// Shrink/unmap low used weapons / armour
-	let usedWeaponArmourMeh = (
-		(
-			permutation.c.type === ConditionSet.TYPE.USED_WEAPON
-			|| permutation.c.type === ConditionSet.TYPE.ARMOUR
-		)
-		&& permutation.value <= Permutation.VALUE.LOW
-	);
-
-	if (unusedWeaponMeh || usedWeaponArmourMeh) {
-		// Shrink
-		permutation.e.textSize = EffectSet.TEXT_SIZE.SMALLEST;
-
-		// Hide from map
-		permutation.e.mapColour = null;
-	}
-}
+new Effecter(permutations)
+	.decide();
 
 // Export all the Permutations
 let lines = [];
