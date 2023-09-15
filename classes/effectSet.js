@@ -23,7 +23,7 @@ export class EffectSet {
 		GREY: "85 85 85",
 		BLUE: "85 85 255",
 		LIME: "85 255 85", // Triple link
-		CYAN: "85 255 255", // Triple blue
+		CYAN: "85 255 255", // Four / Four link
 		ROSE: "255 85 85",
 		PINK: "255 85 255", // White
 		YELLOW: "255 255 85", // RGB
@@ -161,7 +161,7 @@ export class Effecter {
 	 * Gives effects based on sockets.
 	 */
 	static #sockets(p) {
-		if (p.c.isTripleBlueLink) {
+		if (p.c.isFour || p.c.isFourLink) {
 			p.e.outlineColour = EffectSet.RGB.CYAN;
 			p.e.mapIcon = EffectSet.ICON.STAR;
 
@@ -203,15 +203,6 @@ export class Effecter {
 	 * Carefully grants equipment hide immunity based on various conditions.
 	 */
 	static #equipment(p) {
-		//TODO fix this logic of when to un-shrink immune. Update docs here
-		//TODO also tweak for 4 socket logic
-		//TODO then tweak the colours and icons used everywhere.
-		//TODO use quality
-		// Try to get parity between outlines and minimap colours,
-		// but with relation to text colours
-
-
-
 		// Ignore items already deemed hide immune. It is either high rarity
 		// (want to always see) or not equipment ("normal rarity" false
 		// positive)
@@ -233,7 +224,8 @@ export class Effecter {
 						if (
 							this.isTripleLink
 							|| this.isWhite
-							|| this.isTripleBlueLink
+							|| this.isFour
+							|| this.isFourLink
 						) {
 							p.isHideImmune = true;
 							break;
@@ -246,7 +238,8 @@ export class Effecter {
 						// If any sockets are especially notable, maybe we'll use it
 						if (
 							this.isTripleLink
-							|| this.isTripleBlueLink
+							|| this.isFour
+							|| this.isFourLink
 						) {
 							p.isHideImmune = true;
 							break;

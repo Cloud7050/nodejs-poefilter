@@ -5,7 +5,9 @@ export class ConditionSet {
 		CURRENCY: "Currency",
 		GEM: "Gems Jewels",
 		UNUSED_WEAPON: 'Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers',
+		// 4 sockets on gloves/boots/helmets, 6 on body armour
 		ARMOUR: 'Amulets Rings Belts Gloves Boots "Body Armours" Helmets',
+		// 3 sockets
 		USED_WEAPON: "Wands Shields"
 	};
 	static RARITY = {
@@ -21,7 +23,8 @@ export class ConditionSet {
 	isTripleLink = null;
 	isWhite = null;
 	isRgb = null;
-	isTripleBlueLink = null;
+	isFour = null;
+	isFourLink = null;
 
 	isQuality = null;
 	isMirrored = null;
@@ -36,7 +39,8 @@ export class ConditionSet {
 		conditionSet.isTripleLink = this.isTripleLink;
 		conditionSet.isWhite = this.isWhite;
 		conditionSet.isRgb = this.isRgb;
-		conditionSet.isTripleBlueLink = this.isTripleBlueLink;
+		conditionSet.isFour = this.isFour;
+		conditionSet.isFourLink = this.isFourLink;
 
 		conditionSet.isQuality = this.isQuality;
 		conditionSet.isMirrored = this.isMirrored;
@@ -63,9 +67,13 @@ export class ConditionSet {
 			let operator = this.isRgb ? ">=" : "<";
 			lines.push(`SocketGroup ${operator} 3RGB`);
 		}
-		if (this.isTripleBlueLink !== null) {
-			let operator = this.isTripleBlueLink ? ">=" : "<";
-			lines.push(`SocketGroup ${operator} 3BBB`);
+		if (this.isFour !== null) {
+			let operator = this.isFour ? ">=" : "<";
+			lines.push(`Sockets ${operator} 4`);
+		}
+		if (this.isFourLink !== null) {
+			let operator = this.isFourLink ? ">=" : "<";
+			lines.push(`LinkedSockets ${operator} 4`);
 		}
 
 		if (this.isQuality !== null) {

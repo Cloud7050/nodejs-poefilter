@@ -141,7 +141,8 @@ export class PermutationMaker {
 		this.#duplicateBoolean("isTripleLink");
 		this.#duplicateBoolean("isWhite");
 		this.#duplicateBoolean("isRgb");
-		this.#duplicateBoolean("isTripleBlueLink");
+		this.#duplicateBoolean("isFour");
+		this.#duplicateBoolean("isFourLink");
 
 		this.#duplicateBoolean("isQuality");
 		this.#duplicateBoolean("isMirrored");
