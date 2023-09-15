@@ -169,7 +169,6 @@ class PermutationManager {
 		// Save as filter files
 		let filterBlocks = lines.join("\n");
 		fs.writeFileSync("./Cloud.filter", filterBlocks);
-		fs.writeFileSync("C:/Users/cloud/Documents/My Games/Path of Exile/Cloud.filter", filterBlocks);
 
 		console.log(`Blocks: ${blockCount}/${this.ps.length}`);
 		console.log(`Lines: ${lines.length}`);
