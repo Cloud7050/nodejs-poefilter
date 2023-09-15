@@ -40,72 +40,84 @@ class PermutationManager {
 		);
 	}
 
-	#tryCondense(oldPs) {
-		let sourceP = oldPs.shift();
-		l("\n\n\noldPs:   -1");
+	#tryCondense(psOld) {
+		let pSource = psOld.shift();
+		l("=".repeat(80));
+		l("	psOld:   -1\n");
+		let cSource = pSource.c;
 
 		for (let duplicator of ConditionSet.DUPLICATORS) {
-			if (sourceP.c[duplicator.property] === null) continue;
+			if (cSource[duplicator.property] === null) {
+				// The source ConditionSet must match one of the generated ConditionSets. This is
+				// impossible when the value is null.
+				// Eg it does not make sense to try to condense null + true + false for a boolean.
+				// Instead, the source should be true/false and the variants would be the other
+				// boolean.
+				continue;
+			}
 			l(`[${duplicator.property}]`);
 
-			let cVariants = duplicator.callback(sourceP.c);
-			let i = cVariants.findIndex((c) => c.equals(sourceP.c));
-			if (i === -1) continue;
-			else cVariants.splice(i, 1);
+			let cVariants = duplicator.callback(cSource);
+			let matchIndex = cVariants.findIndex((c) => c.equals(cSource));
+			// If this throws an error, there is something wrong with the logic
+			cVariants.splice(matchIndex, 1);
 
 			// Find all variants
 			let pVariants = [];
-			for (let i = oldPs.length - 1; i >= 0; i--) {
-				let oldP = oldPs[i];
+			for (let i = psOld.length - 1; i >= 0; i--) {
+				let pOld = psOld[i];
 				let isMatch = cVariants.some(
-					(variant) => oldP.c.equals(variant)
+					(variant) => pOld.c.equals(variant)
 				);
 				if (isMatch) {
 					pVariants.push(
-						oldPs.splice(i, 1)[0]
+						psOld.splice(i, 1)[0]
 					);
 				}
 			}
-			if (pVariants.length === 0) continue;
-			l(`oldPs:   -${pVariants.length} | Found ${pVariants.length}/${cVariants.length} matches`);
+			if (pVariants.length === 0) {
+				// Nothing to condense due to no matches. Skip logging
+				continue;
+			}
+			l(`	psOld:   -${pVariants.length} | Found ${pVariants.length}/${cVariants.length} matches`);
 
-			if (cVariants.length !== pVariants.length) {
+			if (pVariants.length !== cVariants.length) {
+				// Not enough matches, cannot condense, must transfer all variants
 				this.ps.push(...pVariants);
-				l(`this.ps: +${pVariants.length} | Transferred, not enough`);
+				l(`	this.ps: +${pVariants.length} | Transferred, not enough`);
 				continue;
 			}
 
-			// Check if all variants have same effects
+			// Check if all variants & source have same effects
 			let isAllSame = pVariants.every(
-				(pVariant) => pVariant.e.equals(sourceP.e)
+				(pVariant) => pVariant.e.equals(pSource.e)
 			);
 
 			if (isAllSame) {
-				// If same, can condense using sourceP (skip its property check) and transfer
-				// only it
-				// l(sourceP.toString());
-				// l(pVariants.toString());
-				sourceP.c[duplicator.property] = null;
-				// l(sourceP.toString());
-				this.ps.push(sourceP);
-				l("this.ps: +1 | Condensed!");
+				// Can condense. Transfer pSource after setting its property to null. By removing
+				// all its variants and adding only it back with null, the property is skipped when
+				// exporting
+				cSource[duplicator.property] = null;
+				this.ps.push(pSource);
+				l("	this.ps: +1 | Condensed!");
 				return;
 			}
 
-			// If not same, must transfer all variants
+			// Not same, must transfer all variants
 			this.ps.push(...pVariants);
-			l(`this.ps: +${pVariants.length} | Transferred, not same`);
+			l(`	this.ps: +${pVariants.length} | Transferred, effects differ`);
 		}
-		this.ps.push(sourceP);
-		l("\nthis.ps: +1");
+
+		this.ps.push(pSource);
+		l("\n	this.ps: +1");
 	}
 
 	#optimiseOnce() {
-		let oldPs = this.ps;
+		let psOld = this.ps;
 		this.ps = [];
 
-		while (oldPs.length > 0) {
-			this.#tryCondense(oldPs);
+		while (psOld.length > 0) {
+			this.#tryCondense(psOld);
 		}
 	}
 
