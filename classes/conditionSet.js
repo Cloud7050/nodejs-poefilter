@@ -1,11 +1,39 @@
 /* [Main] */
 class Duplicator {
-	property;
-	callback;
+	static TYPE = {
+		BOOLEAN: "BOOLEAN",
+		ENUM: "ENUM"
+	};
 
-	constructor(_property, _callback) {
+	property;
+	values;
+
+	constructor(_property, type, enumObject = null) {
 		this.property = _property;
-		this.callback = _callback;
+
+		switch (type) {
+			case Duplicator.TYPE.BOOLEAN:
+				this.values = [true, false];
+				break;
+			case Duplicator.TYPE.ENUM:
+				this.values = Object.values(enumObject);
+				break;
+		}
+	}
+
+	/**
+	 * For each value, clone self and set the specified property to the value.
+	 *
+	 * @returns an array of ConditonSets
+	 */
+	generate(c) {
+		return this.values.map(
+			(value) => {
+				let clone = c.clone();
+				clone[this.property] = value;
+				return clone;
+			}
+		);
 	}
 }
 
@@ -30,20 +58,19 @@ export class ConditionSet {
 		UNIQUE: "Unique"
 	};
 
-	//TODO is there a better way
 	static DUPLICATORS = [
-		new Duplicator("type", (c) => c.duplicateEnum("type", ConditionSet.TYPE)),
-		new Duplicator("rarity", (c) => c.duplicateEnum("rarity", ConditionSet.RARITY)),
+		new Duplicator("type", Duplicator.TYPE.ENUM, ConditionSet.TYPE),
+		new Duplicator("rarity", Duplicator.TYPE.ENUM, ConditionSet.RARITY),
 
-		new Duplicator("isThreeLink", (c) => c.duplicateBoolean("isThreeLink")),
-		new Duplicator("isWhite", (c) => c.duplicateBoolean("isWhite")),
-		new Duplicator("isRgb", (c) => c.duplicateBoolean("isRgb")),
-		new Duplicator("isFour", (c) => c.duplicateBoolean("isFour")),
-		new Duplicator("isFourLink", (c) => c.duplicateBoolean("isFourLink")),
+		new Duplicator("isThreeLink", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isWhite", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isRgb", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isFour", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isFourLink", Duplicator.TYPE.BOOLEAN),
 
-		new Duplicator("isQuality", (c) => c.duplicateBoolean("isQuality")),
-		new Duplicator("isMirrored", (c) => c.duplicateBoolean("isMirrored")),
-		new Duplicator("isCorrupted", (c) => c.duplicateBoolean("isCorrupted"))
+		new Duplicator("isQuality", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isMirrored", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isCorrupted", Duplicator.TYPE.BOOLEAN)
 	];
 
 	type = null;
@@ -59,7 +86,7 @@ export class ConditionSet {
 	isMirrored = null;
 	isCorrupted = null;
 
-	#clone() {
+	clone() {
 		let conditionSet = new ConditionSet();
 
 		conditionSet.type = this.type;
@@ -76,29 +103,6 @@ export class ConditionSet {
 		conditionSet.isCorrupted = this.isCorrupted;
 
 		return conditionSet;
-	}
-
-	/**
-	 * For each value, clone self and set the specified property to the value.
-	 *
-	 * @returns an array of ConditonSets
-	 */
-	#duplicateForValues(property, values) {
-		return values.map(
-			(value) => {
-				let clone = this.#clone();
-				clone[property] = value;
-				return clone;
-			}
-		);
-	}
-
-	duplicateBoolean(property) {
-		return this.#duplicateForValues(property, [true, false]);
-	}
-
-	duplicateEnum(property, enumObject) {
-		return this.#duplicateForValues(property, Object.values(enumObject));
 	}
 
 	equals(other) {

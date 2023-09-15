@@ -57,7 +57,7 @@ class PermutationManager {
 			}
 			l(`[${duplicator.property}]`);
 
-			let cVariants = duplicator.callback(cSource);
+			let cVariants = duplicator.generate(cSource);
 			let matchIndex = cVariants.findIndex((c) => c.equals(cSource));
 			// If this throws an error, there is something wrong with the logic
 			cVariants.splice(matchIndex, 1);
@@ -183,9 +183,9 @@ export class PermutationMaker {
 	 * Duplicates existing ConditionSets using the specified property and
 	 * values. Replaces ConditionSets with the new conditions.
 	 */
-	#duplicate(duplicator) {
+	#useDuplicator(duplicator) {
 		this.#cs = this.#cs.flatMap(
-			(c) => duplicator.callback(c)
+			(c) => duplicator.generate(c)
 		);
 	}
 
@@ -198,7 +198,7 @@ export class PermutationMaker {
 		this.#cs = [new ConditionSet()];
 
 		for (let duplicator of ConditionSet.DUPLICATORS) {
-			this.#duplicate(duplicator);
+			this.#useDuplicator(duplicator);
 		}
 
 		return new PermutationManager(this.#cs);
