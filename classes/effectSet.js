@@ -108,10 +108,8 @@ export class Effecter {
 		switch (p.c.rarity) {
 			case ConditionSet.RARITY.UNIQUE:
 				p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-
 				p.e.mapColour = EffectSet.COLOUR.ORANGE;
 				p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
-
 				p.e.beamColour = EffectSet.COLOUR.ORANGE;
 
 				p.isHideImmune = true;
@@ -138,7 +136,6 @@ export class Effecter {
 		switch (p.c.type) {
 			case ConditionSet.TYPE.GEM:
 				p.e.outlineColour = EffectSet.RGB.CYAN;
-
 				p.e.mapColour = EffectSet.COLOUR.CYAN;
 				p.e.mapIcon = EffectSet.ICON.HOUSE;
 
@@ -146,9 +143,8 @@ export class Effecter {
 				break;
 			case ConditionSet.TYPE.CURRENCY:
 				p.e.outlineColour = EffectSet.RGB.LIME;
-
 				p.e.mapColour = EffectSet.COLOUR.LIME;
-				p.e.mapIcon = EffectSet.ICON.KITE;
+				p.e.mapIcon = EffectSet.ICON.HOUSE;
 
 				p.isHideImmune = true;
 				break;
@@ -225,10 +221,10 @@ export class Effecter {
 					case ConditionSet.RARITY.MAGIC:
 						// If any sockets are notable, maybe we'll use it
 						if (
-							this.isThreeLink
-							|| this.isWhite
-							|| this.isFour
-							|| this.isFourLink
+							p.c.isThreeLink
+							|| p.c.isWhite
+							|| p.c.isFour
+							|| p.c.isFourLink
 						) {
 							p.isHideImmune = true;
 							break;
@@ -240,9 +236,9 @@ export class Effecter {
 					case ConditionSet.RARITY.NORMAL:
 						// If any sockets are especially notable, maybe we'll use it
 						if (
-							this.isThreeLink
-							|| this.isFour
-							|| this.isFourLink
+							p.c.isThreeLink
+							|| p.c.isFour
+							|| p.c.isFourLink
 						) {
 							p.isHideImmune = true;
 							break;

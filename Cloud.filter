@@ -19640,7 +19640,7 @@ Show
 	Corrupted False
 
 	SetBorderColor 85 255 85
-	MinimapIcon 2 Green Kite
+	MinimapIcon 2 Green UpsideDownHouse
 
 Show
 	Class Currency
@@ -19700,7 +19700,7 @@ Show
 	Corrupted False
 
 	SetBorderColor 85 255 85
-	MinimapIcon 2 Green Kite
+	MinimapIcon 2 Green UpsideDownHouse
 
 Show
 	Class Currency
@@ -23480,7 +23480,7 @@ Show
 	Corrupted False
 
 	SetBorderColor 85 255 85
-	MinimapIcon 2 Green Kite
+	MinimapIcon 2 Green UpsideDownHouse
 
 Show
 	Class Currency
@@ -23540,7 +23540,7 @@ Show
 	Corrupted False
 
 	SetBorderColor 85 255 85
-	MinimapIcon 2 Green Kite
+	MinimapIcon 2 Green UpsideDownHouse
 
 Show
 	Class Currency
@@ -27320,7 +27320,7 @@ Show
 	Corrupted False
 
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Green Kite
+	MinimapIcon 1 Green UpsideDownHouse
 
 Show
 	Class Currency
@@ -27380,7 +27380,7 @@ Show
 	Corrupted False
 
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Green Kite
+	MinimapIcon 1 Green UpsideDownHouse
 
 Show
 	Class Currency
@@ -31663,7 +31663,7 @@ Show
 
 	SetFontSize 45
 	SetBorderColor 85 255 85
-	MinimapIcon 0 Green Kite
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Orange
 
 Show
@@ -31731,7 +31731,7 @@ Show
 
 	SetFontSize 45
 	SetBorderColor 85 255 85
-	MinimapIcon 0 Green Kite
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Orange
 
 Show
@@ -63482,8 +63482,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63512,8 +63512,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63527,8 +63527,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63542,8 +63542,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63572,8 +63572,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63587,8 +63587,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63602,8 +63602,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63632,8 +63632,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63647,8 +63647,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63662,8 +63662,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63692,8 +63692,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63707,8 +63707,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63722,8 +63722,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63752,8 +63752,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63767,8 +63767,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63782,8 +63782,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63812,8 +63812,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63827,8 +63827,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63962,8 +63962,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -63992,8 +63992,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64007,8 +64007,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64022,8 +64022,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64052,8 +64052,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64067,8 +64067,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64082,8 +64082,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64112,8 +64112,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64127,8 +64127,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64142,8 +64142,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64172,8 +64172,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64187,8 +64187,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64202,8 +64202,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64232,8 +64232,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64247,8 +64247,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64262,8 +64262,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64292,8 +64292,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64307,8 +64307,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64322,8 +64322,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64352,8 +64352,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64367,8 +64367,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 White Pentagon
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64382,8 +64382,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64412,8 +64412,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64427,8 +64427,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 White Pentagon
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64442,8 +64442,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64472,8 +64472,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64487,8 +64487,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64502,8 +64502,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64532,8 +64532,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64547,8 +64547,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64562,8 +64562,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64592,8 +64592,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64607,8 +64607,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64622,8 +64622,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64652,8 +64652,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64667,8 +64667,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64682,8 +64682,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64712,8 +64712,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64727,8 +64727,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64742,8 +64742,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64772,8 +64772,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64787,8 +64787,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64922,8 +64922,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64952,8 +64952,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64967,8 +64967,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -64982,8 +64982,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65012,8 +65012,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65027,8 +65027,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65042,8 +65042,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65072,8 +65072,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65087,8 +65087,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65102,8 +65102,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65132,8 +65132,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65147,8 +65147,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65162,8 +65162,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65192,8 +65192,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65207,8 +65207,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65222,8 +65222,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65252,8 +65252,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65267,8 +65267,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65282,8 +65282,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65312,8 +65312,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65327,8 +65327,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 170 170 170
+	MinimapIcon 2 White Diamond
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65342,8 +65342,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65372,8 +65372,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65387,8 +65387,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 170 170 170
+	MinimapIcon 2 White Diamond
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65402,8 +65402,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65432,8 +65432,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65447,8 +65447,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65462,8 +65462,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65492,8 +65492,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65507,8 +65507,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65522,8 +65522,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65552,8 +65552,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65567,8 +65567,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65582,8 +65582,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65612,8 +65612,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65627,8 +65627,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65642,8 +65642,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65672,8 +65672,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65687,8 +65687,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65702,8 +65702,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65732,8 +65732,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65747,8 +65747,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65882,8 +65882,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65912,8 +65912,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65927,8 +65927,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65942,8 +65942,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65972,8 +65972,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -65987,8 +65987,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66002,8 +66002,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66032,8 +66032,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66047,8 +66047,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66062,8 +66062,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66092,8 +66092,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66107,8 +66107,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66122,8 +66122,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66152,8 +66152,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66167,8 +66167,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66182,8 +66182,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66212,8 +66212,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66227,8 +66227,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66362,8 +66362,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66392,8 +66392,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66407,8 +66407,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66422,8 +66422,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66452,8 +66452,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66467,8 +66467,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66482,8 +66482,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66512,8 +66512,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66527,8 +66527,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66542,8 +66542,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66572,8 +66572,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66587,8 +66587,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66602,8 +66602,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66632,8 +66632,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66647,8 +66647,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66662,8 +66662,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66692,8 +66692,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66707,8 +66707,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66842,8 +66842,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66872,8 +66872,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66887,8 +66887,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66902,8 +66902,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66932,8 +66932,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66947,8 +66947,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66962,8 +66962,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -66992,8 +66992,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67007,8 +67007,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67022,8 +67022,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67052,8 +67052,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67067,8 +67067,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67082,8 +67082,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67112,8 +67112,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67127,8 +67127,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67142,8 +67142,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67172,8 +67172,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67187,8 +67187,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67320,8 +67320,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67350,8 +67350,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67365,8 +67365,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67380,8 +67380,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67410,8 +67410,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67425,8 +67425,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67440,8 +67440,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67470,8 +67470,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67485,8 +67485,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67500,8 +67500,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67530,8 +67530,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67545,8 +67545,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67560,8 +67560,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67590,8 +67590,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67605,8 +67605,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67620,8 +67620,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67650,8 +67650,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67665,8 +67665,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67800,8 +67800,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67830,8 +67830,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67845,8 +67845,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67860,8 +67860,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67890,8 +67890,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67905,8 +67905,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67920,8 +67920,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67950,8 +67950,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67965,8 +67965,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -67980,8 +67980,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68010,8 +68010,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68025,8 +68025,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68040,8 +68040,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68070,8 +68070,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68085,8 +68085,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68100,8 +68100,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68130,8 +68130,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68145,8 +68145,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68160,8 +68160,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68190,8 +68190,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68205,8 +68205,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 Blue Pentagon
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68220,8 +68220,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68250,8 +68250,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68265,8 +68265,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 Blue Pentagon
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68280,8 +68280,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68310,8 +68310,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68325,8 +68325,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68340,8 +68340,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68370,8 +68370,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68385,8 +68385,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68400,8 +68400,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68430,8 +68430,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68445,8 +68445,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68460,8 +68460,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68490,8 +68490,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68505,8 +68505,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68520,8 +68520,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68550,8 +68550,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68565,8 +68565,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68580,8 +68580,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68610,8 +68610,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68625,8 +68625,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68760,8 +68760,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68790,8 +68790,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68805,8 +68805,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68820,8 +68820,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68850,8 +68850,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68865,8 +68865,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68880,8 +68880,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68910,8 +68910,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68925,8 +68925,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68940,8 +68940,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68970,8 +68970,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -68985,8 +68985,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69000,8 +69000,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69030,8 +69030,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69045,8 +69045,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69060,8 +69060,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69090,8 +69090,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69105,8 +69105,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69120,8 +69120,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69150,8 +69150,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69165,8 +69165,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 170 170 170
+	MinimapIcon 2 Blue Diamond
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69180,8 +69180,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69210,8 +69210,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69225,8 +69225,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 170 170 170
+	MinimapIcon 2 Blue Diamond
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69240,8 +69240,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69270,8 +69270,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69285,8 +69285,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69300,8 +69300,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69330,8 +69330,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69345,8 +69345,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69360,8 +69360,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69390,8 +69390,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69405,8 +69405,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69420,8 +69420,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69450,8 +69450,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69465,8 +69465,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69480,8 +69480,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69510,8 +69510,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69525,8 +69525,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69540,8 +69540,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69570,8 +69570,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69585,8 +69585,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69720,8 +69720,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69750,8 +69750,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69765,8 +69765,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69780,8 +69780,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69810,8 +69810,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69825,8 +69825,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69840,8 +69840,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69870,8 +69870,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69885,8 +69885,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69900,8 +69900,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69930,8 +69930,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69945,8 +69945,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69960,8 +69960,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -69990,8 +69990,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70005,8 +70005,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70020,8 +70020,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70050,8 +70050,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70065,8 +70065,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70080,8 +70080,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70110,8 +70110,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70125,8 +70125,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 Blue Pentagon
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70140,8 +70140,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70170,8 +70170,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70185,8 +70185,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 Blue Pentagon
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70200,8 +70200,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70230,8 +70230,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70245,8 +70245,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70260,8 +70260,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70290,8 +70290,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70305,8 +70305,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70320,8 +70320,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70350,8 +70350,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70365,8 +70365,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70380,8 +70380,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70410,8 +70410,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70425,8 +70425,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70440,8 +70440,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70470,8 +70470,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70485,8 +70485,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70500,8 +70500,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70530,8 +70530,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70545,8 +70545,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70680,8 +70680,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70710,8 +70710,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70725,8 +70725,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70740,8 +70740,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70770,8 +70770,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70785,8 +70785,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70800,8 +70800,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70830,8 +70830,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70845,8 +70845,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70860,8 +70860,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70890,8 +70890,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70905,8 +70905,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70920,8 +70920,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70950,8 +70950,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70965,8 +70965,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -70980,8 +70980,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -71010,8 +71010,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -71025,8 +71025,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -79346,8 +79346,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79376,8 +79376,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79391,8 +79391,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -79406,8 +79406,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79436,8 +79436,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79451,8 +79451,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -79466,8 +79466,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79496,8 +79496,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79511,8 +79511,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -79526,8 +79526,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79556,8 +79556,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79571,8 +79571,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -79586,8 +79586,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79616,8 +79616,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79631,8 +79631,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -79646,8 +79646,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79676,8 +79676,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79691,8 +79691,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -79826,8 +79826,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79856,8 +79856,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79871,8 +79871,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -79886,8 +79886,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79916,8 +79916,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79931,8 +79931,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -79946,8 +79946,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79976,8 +79976,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -79991,8 +79991,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -80006,8 +80006,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80036,8 +80036,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80051,8 +80051,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -80066,8 +80066,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80096,8 +80096,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80111,8 +80111,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -80126,8 +80126,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80156,8 +80156,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80171,8 +80171,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -80186,8 +80186,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80216,8 +80216,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80231,8 +80231,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 White Pentagon
 
 Show
 	Class Wands Shields
@@ -80246,8 +80246,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80276,8 +80276,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80291,8 +80291,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 White Pentagon
 
 Show
 	Class Wands Shields
@@ -80306,8 +80306,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80336,8 +80336,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80351,8 +80351,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -80366,8 +80366,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80396,8 +80396,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80411,8 +80411,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -80426,8 +80426,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80456,8 +80456,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80471,8 +80471,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -80486,8 +80486,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80516,8 +80516,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80531,8 +80531,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -80546,8 +80546,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80576,8 +80576,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80591,8 +80591,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -80606,8 +80606,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80636,8 +80636,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80651,8 +80651,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -80786,8 +80786,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80816,8 +80816,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80831,8 +80831,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -80846,8 +80846,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80876,8 +80876,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80891,8 +80891,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -80906,8 +80906,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80936,8 +80936,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80951,8 +80951,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -80966,8 +80966,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -80996,8 +80996,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81011,8 +81011,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -81026,8 +81026,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81056,8 +81056,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81071,8 +81071,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -81086,8 +81086,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81116,8 +81116,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81131,8 +81131,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -81146,8 +81146,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81176,8 +81176,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81191,8 +81191,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 170 170 170
+	MinimapIcon 2 White Diamond
 
 Show
 	Class Wands Shields
@@ -81206,8 +81206,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81236,8 +81236,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81251,8 +81251,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 170 170 170
+	MinimapIcon 2 White Diamond
 
 Show
 	Class Wands Shields
@@ -81266,8 +81266,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81296,8 +81296,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81311,8 +81311,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -81326,8 +81326,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81356,8 +81356,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81371,8 +81371,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -81386,8 +81386,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81416,8 +81416,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81431,8 +81431,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -81446,8 +81446,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81476,8 +81476,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81491,8 +81491,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -81506,8 +81506,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81536,8 +81536,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81551,8 +81551,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -81566,8 +81566,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81596,8 +81596,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81611,8 +81611,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -81746,8 +81746,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81776,8 +81776,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81791,8 +81791,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -81806,8 +81806,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81836,8 +81836,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81851,8 +81851,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -81866,8 +81866,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81896,8 +81896,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81911,8 +81911,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -81926,8 +81926,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81956,8 +81956,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -81971,8 +81971,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -81986,8 +81986,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82016,8 +82016,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82031,8 +82031,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -82046,8 +82046,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82076,8 +82076,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82091,8 +82091,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -82226,8 +82226,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82256,8 +82256,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82271,8 +82271,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -82286,8 +82286,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82316,8 +82316,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82331,8 +82331,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -82346,8 +82346,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82376,8 +82376,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82391,8 +82391,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -82406,8 +82406,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82436,8 +82436,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82451,8 +82451,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -82466,8 +82466,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82496,8 +82496,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82511,8 +82511,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -82526,8 +82526,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82556,8 +82556,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82571,8 +82571,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -82706,8 +82706,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82736,8 +82736,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82751,8 +82751,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -82766,8 +82766,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82796,8 +82796,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82811,8 +82811,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -82826,8 +82826,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82856,8 +82856,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82871,8 +82871,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -82886,8 +82886,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82916,8 +82916,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82931,8 +82931,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
 
 Show
 	Class Wands Shields
@@ -82946,8 +82946,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82976,8 +82976,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -82991,8 +82991,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -83006,8 +83006,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -83036,8 +83036,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Wands Shields
@@ -83051,8 +83051,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
 
 Show
 	Class Wands Shields
@@ -83184,8 +83184,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83214,8 +83214,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83229,8 +83229,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -83244,8 +83244,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83274,8 +83274,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83289,8 +83289,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -83304,8 +83304,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83334,8 +83334,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83349,8 +83349,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -83364,8 +83364,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83394,8 +83394,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83409,8 +83409,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -83424,8 +83424,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83454,8 +83454,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83469,8 +83469,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -83484,8 +83484,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83514,8 +83514,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83529,8 +83529,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -83664,8 +83664,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83694,8 +83694,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83709,8 +83709,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -83724,8 +83724,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83754,8 +83754,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83769,8 +83769,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -83784,8 +83784,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83814,8 +83814,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83829,8 +83829,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -83844,8 +83844,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83874,8 +83874,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83889,8 +83889,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -83904,8 +83904,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83934,8 +83934,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83949,8 +83949,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -83964,8 +83964,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -83994,8 +83994,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84009,8 +84009,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -84024,8 +84024,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84054,8 +84054,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84069,8 +84069,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 Blue Pentagon
 
 Show
 	Class Wands Shields
@@ -84084,8 +84084,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84114,8 +84114,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84129,8 +84129,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 Blue Pentagon
 
 Show
 	Class Wands Shields
@@ -84144,8 +84144,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84174,8 +84174,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84189,8 +84189,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -84204,8 +84204,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84234,8 +84234,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84249,8 +84249,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -84264,8 +84264,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84294,8 +84294,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84309,8 +84309,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -84324,8 +84324,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84354,8 +84354,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84369,8 +84369,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -84384,8 +84384,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84414,8 +84414,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84429,8 +84429,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -84444,8 +84444,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84474,8 +84474,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84489,8 +84489,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -84624,8 +84624,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84654,8 +84654,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84669,8 +84669,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -84684,8 +84684,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84714,8 +84714,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84729,8 +84729,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -84744,8 +84744,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84774,8 +84774,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84789,8 +84789,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -84804,8 +84804,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84834,8 +84834,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84849,8 +84849,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -84864,8 +84864,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84894,8 +84894,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84909,8 +84909,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -84924,8 +84924,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84954,8 +84954,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -84969,8 +84969,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -84984,8 +84984,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85014,8 +85014,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85029,8 +85029,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 170 170 170
+	MinimapIcon 2 Blue Diamond
 
 Show
 	Class Wands Shields
@@ -85044,8 +85044,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85074,8 +85074,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85089,8 +85089,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 170 170 170
+	MinimapIcon 2 Blue Diamond
 
 Show
 	Class Wands Shields
@@ -85104,8 +85104,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85134,8 +85134,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85149,8 +85149,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -85164,8 +85164,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85194,8 +85194,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85209,8 +85209,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -85224,8 +85224,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85254,8 +85254,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85269,8 +85269,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -85284,8 +85284,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85314,8 +85314,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85329,8 +85329,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -85344,8 +85344,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85374,8 +85374,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85389,8 +85389,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -85404,8 +85404,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85434,8 +85434,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85449,8 +85449,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -85584,8 +85584,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85614,8 +85614,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85629,8 +85629,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -85644,8 +85644,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85674,8 +85674,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85689,8 +85689,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -85704,8 +85704,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85734,8 +85734,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85749,8 +85749,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -85764,8 +85764,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85794,8 +85794,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85809,8 +85809,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -85824,8 +85824,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85854,8 +85854,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85869,8 +85869,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -85884,8 +85884,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85914,8 +85914,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85929,8 +85929,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -85944,8 +85944,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85974,8 +85974,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -85989,8 +85989,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 Blue Pentagon
 
 Show
 	Class Wands Shields
@@ -86004,8 +86004,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86034,8 +86034,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86049,8 +86049,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 255
+	MinimapIcon 2 Blue Pentagon
 
 Show
 	Class Wands Shields
@@ -86064,8 +86064,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86094,8 +86094,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86109,8 +86109,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -86124,8 +86124,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86154,8 +86154,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86169,8 +86169,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -86184,8 +86184,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86214,8 +86214,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86229,8 +86229,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -86244,8 +86244,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86274,8 +86274,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86289,8 +86289,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -86304,8 +86304,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86334,8 +86334,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86349,8 +86349,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -86364,8 +86364,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86394,8 +86394,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86409,8 +86409,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -86544,8 +86544,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86574,8 +86574,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86589,8 +86589,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -86604,8 +86604,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86634,8 +86634,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86649,8 +86649,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -86664,8 +86664,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86694,8 +86694,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86709,8 +86709,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -86724,8 +86724,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86754,8 +86754,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86769,8 +86769,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
 
 Show
 	Class Wands Shields
@@ -86784,8 +86784,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86814,8 +86814,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86829,8 +86829,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
@@ -86844,8 +86844,8 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86874,8 +86874,8 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetFontSize 18
 	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -86889,8 +86889,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
 	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
 
 Show
 	Class Wands Shields
