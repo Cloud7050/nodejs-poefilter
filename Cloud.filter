@@ -15,6 +15,7 @@ Show
 	Rarity Normal
 	LinkedSockets >= 3
 	Sockets >= 1W
+	SocketGroup >= 3RGB
 	LinkedSockets >= 4
 	Corrupted True
 
@@ -102,55 +103,16 @@ Show
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	LinkedSockets >= 4
-	Mirrored True
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Unique
 	LinkedSockets >= 3
 	Sockets >= 1W
 	LinkedSockets >= 4
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 0 0 170
-	MinimapIcon 0 Orange Moon
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	LinkedSockets >= 4
-	Mirrored True
 	Corrupted True
 
 	SetFontSize 45
 	SetBorderColor 170 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	LinkedSockets >= 4
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
 
 Show
 	Class Wands Shields
@@ -214,10 +176,6 @@ Show
 Show
 	Class Wands Shields
 	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup >= 3RGB
-	LinkedSockets >= 4
-	Mirrored True
 	Corrupted True
 
 	SetBorderColor 170 0 0
@@ -239,6 +197,7 @@ Show
 	Class Wands Shields
 	Rarity Normal
 	LinkedSockets >= 4
+	Quality > 0
 	Corrupted True
 
 	SetBorderColor 170 0 0
@@ -428,36 +387,6 @@ Show
 
 Show
 	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Rare
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 255
-	MinimapIcon 1 Pink Hexagon
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Normal
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 255
-	MinimapIcon 2 Pink Hexagon
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Magic
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 255
-	MinimapIcon 2 Pink Hexagon
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Unique
 	Quality > 0
 	Mirrored False
@@ -466,6 +395,18 @@ Show
 	SetFontSize 45
 	SetBorderColor 85 85 255
 	MinimapIcon 0 Pink Hexagon
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Unique
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 255
+	MinimapIcon 0 Orange Hexagon
 	PlayEffect Orange
 
 Show
@@ -489,6 +430,16 @@ Show
 	MinimapIcon 2 Green Hexagon
 
 Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Magic
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 2 Pink Hexagon
+
+Show
 	Class Wands Shields
 	Rarity Magic
 	Quality > 0
@@ -519,14 +470,14 @@ Show
 	MinimapIcon 2 Cyan Hexagon
 
 Show
-	Class Wands Shields
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Normal
 	Quality > 0
 	Mirrored False
 	Corrupted False
 
 	SetBorderColor 85 85 255
-	MinimapIcon 2 White Hexagon
+	MinimapIcon 2 Pink Hexagon
 
 Show
 	Class Currency
@@ -539,16 +490,6 @@ Show
 	MinimapIcon 2 Green Hexagon
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Normal
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 255
-	MinimapIcon 2 White Hexagon
-
-Show
 	Class Wands Shields
 	Rarity Rare
 	Quality > 0
@@ -557,6 +498,42 @@ Show
 
 	SetBorderColor 85 85 255
 	MinimapIcon 1 Yellow Hexagon
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Rare
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Pink Hexagon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	LinkedSockets >= 4
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 1W
+	LinkedSockets >= 4
+	Mirrored True
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 0 0 170
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -621,60 +598,6 @@ Show
 	PlayEffect Orange
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 255
-	MinimapIcon 1 Yellow Hexagon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup >= 3RGB
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Rare
 	LinkedSockets >= 3
@@ -691,18 +614,8 @@ Show
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Normal
-	SocketGroup >= 3RGB
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	SocketGroup >= 3RGB
+	LinkedSockets >= 3
+	Sockets >= 1W
 	LinkedSockets >= 4
 	Quality > 0
 	Mirrored False
@@ -726,6 +639,17 @@ Show
 	PlayEffect Orange
 
 Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	LinkedSockets >= 3
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 2 White Hexagon
+
+Show
 	Class Currency
 	Rarity Unique
 	LinkedSockets >= 3
@@ -742,6 +666,164 @@ Show
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	SocketGroup >= 3RGB
+	LinkedSockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	SocketGroup >= 3RGB
+	Sockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 255
+	MinimapIcon 0 Orange Hexagon
+	PlayEffect Orange
+
+Show
+	Class Gems Jewels
+	Rarity Normal
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 2 Cyan Star
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 2 White Star
+
+Show
+	Class Currency
+	Rarity Normal
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 2 Green Star
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Normal
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 2 Pink Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Unique
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 85
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Magic
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 2 Pink Star
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 2 Blue Star
+
+Show
+	Class Currency
+	Rarity Magic
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 2 Green Star
+
+Show
+	Class Gems Jewels
+	Rarity Magic
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 2 Cyan Star
+
+Show
+	Class Wands Shields
 	Rarity Unique
 	LinkedSockets >= 4
 	Quality <= 0
@@ -768,129 +850,6 @@ Show
 
 Show
 	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Unique
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 85 85
-	MinimapIcon 0 Pink Star
-	PlayEffect Orange
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Wands Shields
-	Rarity Magic
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 2 Blue Star
-
-Show
-	Class Wands Shields
-	Rarity Normal
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 2 White Star
-
-Show
-	Class Wands Shields
-	Rarity Unique
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 85 85
-	MinimapIcon 0 Orange Star
-	PlayEffect Orange
-
-Show
-	Class Currency
-	Rarity Normal
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 2 Green Star
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Normal
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 2 Pink Star
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Normal
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 2 White Star
-
-Show
-	Class Gems Jewels
-	Rarity Normal
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 2 Cyan Star
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Rare
 	LinkedSockets >= 4
 	Quality <= 0
@@ -901,15 +860,17 @@ Show
 	MinimapIcon 1 Pink Star
 
 Show
-	Class Currency
-	Rarity Magic
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Unique
 	LinkedSockets >= 4
 	Quality <= 0
 	Mirrored False
 	Corrupted False
 
+	SetFontSize 45
 	SetBorderColor 255 85 85
-	MinimapIcon 2 Green Star
+	MinimapIcon 0 Pink Star
+	PlayEffect Orange
 
 Show
 	Class Currency
@@ -923,51 +884,50 @@ Show
 	MinimapIcon 1 Green Star
 
 Show
+	Class Wands Shields
+	Rarity Rare
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 1 Yellow Star
+
+Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
+	Rarity Rare
 	LinkedSockets >= 4
 	Quality <= 0
 	Mirrored False
 	Corrupted False
 
 	SetBorderColor 255 85 85
-	MinimapIcon 2 Blue Star
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Magic
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 2 Pink Star
-
-Show
-	Class Gems Jewels
-	Rarity Magic
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 2 Cyan Star
+	MinimapIcon 1 Yellow Star
 
 Show
 	Class Wands Shields
-	Rarity Unique
-	SocketGroup >= 3RGB
-	Sockets >= 4
+	Rarity Normal
+	LinkedSockets >= 4
 	Quality > 0
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
 	SetBorderColor 85 85 255
-	MinimapIcon 0 Orange Hexagon
-	PlayEffect Orange
+	MinimapIcon 2 White Hexagon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	LinkedSockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Yellow Hexagon
 
 Show
 	Class Gems Jewels
@@ -980,6 +940,16 @@ Show
 
 	SetBorderColor 170 0 0
 	MinimapIcon 2 Cyan Triangle
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	Sockets >= 4
+	Quality <= 0
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Gems Jewels
@@ -1020,47 +990,6 @@ Show
 	MinimapIcon 1 Yellow Moon
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup >= 3RGB
-	Sockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Rare
 	LinkedSockets >= 3
@@ -1091,6 +1020,19 @@ Show
 	MinimapIcon 1 Yellow Cross
 
 Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	Sockets >= 1W
+	SocketGroup >= 3RGB
+	Sockets >= 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
 	Class Gems Jewels
 	Rarity Unique
 	LinkedSockets >= 3
@@ -1104,46 +1046,6 @@ Show
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Cyan Star
 	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 85 85
-	MinimapIcon 0 Orange Star
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 2 Blue Cross
 
 Show
 	Class Currency
@@ -1182,6 +1084,68 @@ Show
 
 Show
 	Class Wands Shields
+	Rarity Magic
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Blue Cross
+
+Show
+	Class Gems Jewels
+	Rarity Magic
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Cyan Cross
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Cross
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Magic
 	Sockets >= 4
 	LinkedSockets < 4
@@ -1205,153 +1169,6 @@ Show
 	MinimapIcon 1 Cyan Cross
 
 Show
-	Class Gems Jewels
-	Rarity Normal
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 2 Cyan Cross
-
-Show
-	Class Gems Jewels
-	Rarity Unique
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Cyan Cross
-	PlayEffect Orange
-
-Show
-	Class Gems Jewels
-	Rarity Magic
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 2 Cyan Cross
-
-Show
-	Class Currency
-	Rarity Normal
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 2 Green Cross
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Wands Shields
-	Rarity Normal
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 2 White Cross
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Normal
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 2 Pink Cross
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Cross
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Normal
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 2 White Cross
-
-Show
-	Class Currency
-	Rarity Rare
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Green Cross
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Cross
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Unique
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Pink Cross
-	PlayEffect Orange
-
-Show
 	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Rare
 	Sockets >= 4
@@ -1365,17 +1182,15 @@ Show
 
 Show
 	Class Wands Shields
-	Rarity Unique
+	Rarity Rare
 	Sockets >= 4
 	LinkedSockets < 4
 	Quality <= 0
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
 	SetBorderColor 255 255 85
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
+	MinimapIcon 1 Yellow Cross
 
 Show
 	Class Currency
@@ -1392,8 +1207,286 @@ Show
 	PlayEffect Orange
 
 Show
+	Class Currency
+	Rarity Normal
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Green Cross
+
+Show
+	Class Currency
+	Rarity Rare
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Green Cross
+
+Show
 	Class Gems Jewels
 	Rarity Unique
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Cyan Cross
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Unique
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Unique
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Pink Cross
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 White Cross
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Normal
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Pink Cross
+
+Show
+	Class Gems Jewels
+	Rarity Normal
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 2 Cyan Cross
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 2 White Hexagon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 85
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	SocketGroup >= 3RGB
+	Sockets >= 4
+	LinkedSockets < 4
+	Corrupted True
+
+	SetFontSize 18
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup >= 3RGB
+	Sockets >= 4
+	LinkedSockets < 4
+	Corrupted True
+
+	SetFontSize 18
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
+	LinkedSockets < 4
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality > 0
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
+	LinkedSockets < 4
+	Mirrored True
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 0 0 170
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
+	LinkedSockets < 4
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 2 White Hexagon
+
+Show
+	Class Wands Shields
+	Rarity Normal
 	SocketGroup >= 3RGB
 	Sockets < 4
 	LinkedSockets < 4
@@ -1401,10 +1494,111 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
 	SetBorderColor 170 0 170
-	MinimapIcon 0 Cyan Raindrop
-	PlayEffect Orange
+	MinimapIcon 2 White Raindrop
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 2 White Hexagon
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	SocketGroup >= 3RGB
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Blue Raindrop
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 2 Blue Hexagon
+
+Show
+	Class Gems Jewels
+	Rarity Normal
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Cyan Raindrop
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 White Raindrop
+
+Show
+	Class Currency
+	Rarity Normal
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Green Raindrop
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Normal
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Pink Raindrop
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -1422,6 +1616,97 @@ Show
 	PlayEffect Orange
 
 Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 1 Yellow Raindrop
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 White Raindrop
+
+Show
+	Class Currency
+	Rarity Magic
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Green Raindrop
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Magic
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Pink Raindrop
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Blue Raindrop
+
+Show
+	Class Gems Jewels
+	Rarity Magic
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Cyan Raindrop
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 1 Yellow Raindrop
+
+Show
 	Class Wands Shields
 	Rarity Unique
 	SocketGroup >= 3RGB
@@ -1434,6 +1719,87 @@ Show
 	SetFontSize 45
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 170 0 170
+	MinimapIcon 2 Blue Raindrop
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Yellow Hexagon
+
+Show
+	Class Gems Jewels
+	Rarity Normal
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Cyan Triangle
+
+Show
+	Class Gems Jewels
+	Rarity Normal
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 2 Cyan Moon
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	LinkedSockets >= 3
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Gems Jewels
+	Rarity Unique
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 170 0 170
+	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
 
 Show
@@ -1481,32 +1847,6 @@ Show
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 White Raindrop
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 Blue Raindrop
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Unique
 	SocketGroup >= 3RGB
 	Sockets < 4
@@ -1519,110 +1859,6 @@ Show
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
-
-Show
-	Class Currency
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 Green Raindrop
-
-Show
-	Class Wands Shields
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 Blue Raindrop
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 Pink Raindrop
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 Blue Raindrop
-
-Show
-	Class Gems Jewels
-	Rarity Rare
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 1 Cyan Raindrop
-
-Show
-	Class Gems Jewels
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 Cyan Raindrop
-
-Show
-	Class Gems Jewels
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 Cyan Raindrop
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
@@ -1651,382 +1887,17 @@ Show
 	MinimapIcon 1 Green Raindrop
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 White Raindrop
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 1 Yellow Raindrop
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 Pink Raindrop
-
-Show
-	Class Wands Shields
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 White Raindrop
-
-Show
-	Class Currency
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 2 Green Raindrop
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 255
-	MinimapIcon 2 Blue Hexagon
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 255
-	MinimapIcon 2 White Hexagon
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
-	LinkedSockets >= 3
-	SocketGroup >= 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 White Triangle
-
-Show
-	Class Wands Shields
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 White Triangle
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Corrupted True
-
-	SetFontSize 18
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 Blue Triangle
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Corrupted True
-
-	SetFontSize 18
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Mirrored True
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Mirrored True
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 0 0 170
-	MinimapIcon 0 Orange Moon
-	PlayEffect Orange
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup >= 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Mirrored True
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Wands Shields
-	Rarity Normal
-	Sockets >= 4
-	LinkedSockets < 4
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 White Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 255
-	MinimapIcon 1 Yellow Hexagon
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup >= 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
 	Class Gems Jewels
-	Rarity Normal
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 Cyan Triangle
-
-Show
-	Class Gems Jewels
-	Rarity Normal
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 Cyan Moon
-
-Show
-	Class Wands Shields
 	Rarity Rare
-	LinkedSockets >= 3
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
 	SocketGroup >= 3RGB
-	Sockets >= 4
+	Sockets < 4
 	LinkedSockets < 4
 	Quality <= 0
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
+	SetBorderColor 170 0 170
+	MinimapIcon 1 Cyan Raindrop
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -2219,39 +2090,20 @@ Show
 	PlayEffect Orange
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
 	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
+	Rarity Normal
 	SocketGroup >= 3RGB
 	Sockets < 4
-	LinkedSockets >= 4
 	Quality <= 0
-	Mirrored False
 	Corrupted True
 
 	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
+	MinimapIcon 2 White Triangle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	LinkedSockets >= 3
 	Sockets >= 1W
 	SocketGroup >= 3RGB
 	Sockets < 4
@@ -2260,28 +2112,29 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Yellow Star
+	SetFontSize 18
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
+	Rarity Unique
 	Sockets >= 1W
 	SocketGroup >= 3RGB
 	Sockets < 4
 	LinkedSockets >= 4
 	Quality <= 0
 	Mirrored False
-	Corrupted True
+	Corrupted False
 
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
+	SetFontSize 45
+	SetBorderColor 255 85 85
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Rare
 	LinkedSockets >= 3
-	Sockets >= 1W
+	SocketGroup >= 3RGB
 	Sockets < 4
 	LinkedSockets >= 4
 	Quality <= 0
@@ -2333,16 +2186,15 @@ Show
 
 Show
 	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
+	Rarity Normal
 	SocketGroup >= 3RGB
 	Sockets < 4
 	LinkedSockets < 4
+	Quality > 0
 	Corrupted True
 
 	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
+	MinimapIcon 2 White Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -2417,6 +2269,779 @@ Show
 	MinimapIcon 2 Cyan Moon
 
 Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 1 Yellow Pentagon
+
+Show
+	Class Gems Jewels
+	Rarity Rare
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 1 Cyan Pentagon
+
+Show
+	Class Currency
+	Rarity Rare
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 1 Green Pentagon
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Rare
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 1 Pink Pentagon
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 1 Yellow Pentagon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 2 Blue Pentagon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 255
+	MinimapIcon 0 Orange Pentagon
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 1 Yellow Pentagon
+
+Show
+	Class Gems Jewels
+	Rarity Magic
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 2 Cyan Pentagon
+
+Show
+	Class Currency
+	Rarity Magic
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 2 Green Pentagon
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Magic
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 2 Pink Pentagon
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 2 Blue Pentagon
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Unique
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 255
+	MinimapIcon 0 Orange Pentagon
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 2 Blue Moon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Normal
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 2 Pink Pentagon
+
+Show
+	Class Currency
+	Rarity Normal
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 2 Green Pentagon
+
+Show
+	Class Gems Jewels
+	Rarity Unique
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 255
+	MinimapIcon 0 Cyan Pentagon
+	PlayEffect Orange
+
+Show
+	Class Gems Jewels
+	Rarity Normal
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 2 Cyan Moon
+
+Show
+	Class Gems Jewels
+	Rarity Normal
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 255
+	MinimapIcon 2 Cyan Pentagon
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 255
+	MinimapIcon 0 Orange Pentagon
+	PlayEffect Orange
+
+Show
+	Class Currency
+	Rarity Unique
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 255
+	MinimapIcon 0 Green Pentagon
+	PlayEffect Orange
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Unique
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 255
+	MinimapIcon 0 Pink Pentagon
+	PlayEffect Orange
+
+Show
+	Class Gems Jewels
+	Rarity Normal
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored True
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Cyan Triangle
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Unique
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	SocketGroup < 3RGB
+	Corrupted True
+
+	SetFontSize 18
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	SocketGroup < 3RGB
+	Corrupted True
+
+	SetFontSize 18
+
+Show
+	Class Currency
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets >= 4
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Green Triangle
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	LinkedSockets >= 3
+	SocketGroup < 3RGB
+	Sockets >= 4
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Unique
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Mirrored True
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 0 0 170
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	LinkedSockets >= 4
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 2 White Moon
+
+Show
+	Class Currency
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets >= 4
+	Mirrored True
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 0 0 170
+	MinimapIcon 0 Green Moon
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	LinkedSockets >= 3
+	SocketGroup < 3RGB
+	LinkedSockets >= 4
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	LinkedSockets >= 3
+	SocketGroup < 3RGB
+	Sockets >= 4
+	Mirrored True
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 0 0 170
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	SocketGroup < 3RGB
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
+	Class Currency
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 255
+	MinimapIcon 0 Green Hexagon
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	LinkedSockets >= 3
+	SocketGroup < 3RGB
+	Sockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 255
+	MinimapIcon 0 Orange Hexagon
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	SocketGroup < 3RGB
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
+	Class Gems Jewels
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 85
+	MinimapIcon 0 Cyan Star
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets >= 4
+	LinkedSockets < 4
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 2 White Moon
+
+Show
+	Class Wands Shields
+	Rarity Rare
+	LinkedSockets >= 3
+	SocketGroup < 3RGB
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	Mirrored True
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	LinkedSockets >= 3
+	SocketGroup < 3RGB
+	Sockets < 4
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 1 Yellow Triangle
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	Quality > 0
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 2 Blue Moon
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 255
+	MinimapIcon 0 Orange Hexagon
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 85
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Yellow Hexagon
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 White Triangle
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 2 Blue Moon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 1 Yellow Star
+
+Show
 	Class Wands Shields
 	Rarity Normal
 	LinkedSockets >= 3
@@ -2458,7 +3083,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 170 170 170
+	SetBorderColor 85 85 85
 	MinimapIcon 2 White Diamond
 
 Show
@@ -2520,6 +3145,21 @@ Show
 	SetFontSize 18
 
 Show
+	Class Gems Jewels
+	Rarity Normal
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 85
+	MinimapIcon 2 Cyan Diamond
+
+Show
 	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Normal
 	LinkedSockets >= 3
@@ -2531,7 +3171,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 170 170 170
+	SetBorderColor 85 85 85
 	MinimapIcon 2 Pink Diamond
 
 Show
@@ -2546,40 +3186,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 170 170 170
+	SetBorderColor 85 85 85
 	MinimapIcon 2 Green Diamond
-
-Show
-	Class Gems Jewels
-	Rarity Normal
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 170 170
-	MinimapIcon 2 Cyan Diamond
-
-Show
-	Class Wands Shields
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 170 170 170
-	MinimapIcon 0 Orange Diamond
-	PlayEffect Orange
 
 Show
 	Class Wands Shields
@@ -2593,7 +3201,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 170 170 170
+	SetBorderColor 85 85 85
 	MinimapIcon 1 Yellow Diamond
 
 Show
@@ -2608,8 +3216,25 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 170 170 170
+	SetBorderColor 85 85 85
 	MinimapIcon 2 Blue Diamond
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 85
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
 
 Show
 	Class Wands Shields
@@ -2623,22 +3248,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 170 170 170
+	SetBorderColor 85 85 85
 	MinimapIcon 2 White Diamond
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	LinkedSockets < 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
 
 Show
 	Class Gems Jewels
@@ -2669,6 +3280,20 @@ Show
 
 	SetBorderColor 85 255 85
 	MinimapIcon 2 Green UpsideDownHouse
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
 
 Show
 	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
@@ -2744,7 +3369,7 @@ Show
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
+	Rarity Magic
 	LinkedSockets >= 3
 	Sockets < 1W
 	SocketGroup < 3RGB
@@ -2754,14 +3379,11 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
-	SetBorderColor 170 170 170
-	MinimapIcon 0 Orange Diamond
-	PlayEffect Orange
+	SetFontSize 18
 
 Show
 	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Unique
+	Rarity Magic
 	LinkedSockets >= 3
 	Sockets < 1W
 	SocketGroup < 3RGB
@@ -2771,31 +3393,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
-	SetBorderColor 170 170 170
-	MinimapIcon 0 Pink Diamond
-	PlayEffect Orange
-
-Show
-	Class Currency
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 170 170 170
-	MinimapIcon 0 Green Diamond
-	PlayEffect Orange
+	SetBorderColor 85 85 85
+	MinimapIcon 2 Pink Diamond
 
 Show
 	Class Gems Jewels
-	Rarity Unique
+	Rarity Magic
 	LinkedSockets >= 3
 	Sockets < 1W
 	SocketGroup < 3RGB
@@ -2805,10 +3408,23 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
-	SetBorderColor 170 170 170
-	MinimapIcon 0 Cyan Diamond
-	PlayEffect Orange
+	SetBorderColor 85 85 85
+	MinimapIcon 2 Cyan Diamond
+
+Show
+	Class Currency
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 85
+	MinimapIcon 2 Green Diamond
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -2822,8 +3438,25 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 170 170 170
+	SetBorderColor 85 85 85
 	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 85
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -2837,39 +3470,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 170 170 170
+	SetBorderColor 85 85 85
 	MinimapIcon 2 Blue Diamond
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 170 170 170
-	MinimapIcon 0 Orange Diamond
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Gems Jewels
@@ -2885,6 +3487,20 @@ Show
 
 	SetBorderColor 85 255 255
 	MinimapIcon 1 Cyan UpsideDownHouse
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Currency
@@ -2960,9 +3576,9 @@ Show
 	MinimapIcon 1 Yellow Kite
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	LinkedSockets < 3
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Rare
+	LinkedSockets >= 3
 	Sockets < 1W
 	SocketGroup < 3RGB
 	Sockets < 4
@@ -2971,12 +3587,43 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
+	SetBorderColor 85 85 85
+	MinimapIcon 1 Pink Diamond
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 85
+	MinimapIcon 1 Yellow Diamond
+
+Show
+	Class Gems Jewels
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 85
+	MinimapIcon 1 Cyan Diamond
 
 Show
 	Class Currency
-	Rarity Magic
-	LinkedSockets < 3
+	Rarity Unique
+	LinkedSockets >= 3
 	Sockets < 1W
 	SocketGroup < 3RGB
 	Sockets < 4
@@ -2985,8 +3632,25 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 85 255 85
-	MinimapIcon 2 Green UpsideDownHouse
+	SetFontSize 45
+	SetBorderColor 85 85 85
+	MinimapIcon 0 Green Diamond
+	PlayEffect Orange
+
+Show
+	Class Currency
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 85
+	MinimapIcon 1 Green Diamond
 
 Show
 	Class Gems Jewels
@@ -3004,8 +3668,8 @@ Show
 	MinimapIcon 2 Cyan UpsideDownHouse
 
 Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Unique
+	Class Currency
+	Rarity Magic
 	LinkedSockets < 3
 	Sockets < 1W
 	SocketGroup < 3RGB
@@ -3015,24 +3679,8 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
-	MinimapIcon 0 Pink UpsideDownHouse
-	PlayEffect Orange
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Magic
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 170 170
-	MinimapIcon 2 Pink Diamond
+	SetBorderColor 85 255 85
+	MinimapIcon 2 Green UpsideDownHouse
 
 Show
 	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
@@ -3047,6 +3695,103 @@ Show
 	Corrupted False
 
 	MinimapIcon 2 Pink UpsideDownHouse
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Unique
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	MinimapIcon 0 Orange Kite
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
+	Class Gems Jewels
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 85
+	MinimapIcon 0 Cyan Diamond
+	PlayEffect Orange
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 85
+	MinimapIcon 0 Pink Diamond
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 85
+	MinimapIcon 0 Orange Diamond
+	PlayEffect Orange
+
+Show
+	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Rarity Unique
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	MinimapIcon 0 Pink UpsideDownHouse
+	PlayEffect Orange
 
 Show
 	Class Currency
@@ -3084,339 +3829,6 @@ Show
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
-	LinkedSockets < 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	MinimapIcon 0 Orange Kite
-	PlayEffect Orange
-
-Show
-	Class Currency
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 170 170
-	MinimapIcon 1 Green Diamond
-
-Show
-	Class Gems Jewels
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 170 170
-	MinimapIcon 1 Cyan Diamond
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 170 170
-	MinimapIcon 1 Pink Diamond
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 170 170
-	MinimapIcon 1 Yellow Diamond
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Cross
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Wands Shields
-	Rarity Magic
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 2 Blue Pentagon
-
-Show
-	Class Currency
-	Rarity Magic
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 2 Green Pentagon
-
-Show
-	Class Gems Jewels
-	Rarity Magic
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 2 Cyan Pentagon
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Magic
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 2 Pink Pentagon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 85 255
-	MinimapIcon 0 Orange Pentagon
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 1 Yellow Pentagon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 Blue Moon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 Blue Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 2 Blue Pentagon
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Normal
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 2 Pink Pentagon
-
-Show
-	Class Currency
-	Rarity Normal
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 2 Green Pentagon
-
-Show
-	Class Gems Jewels
-	Rarity Normal
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 2 Cyan Pentagon
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 85 255
-	MinimapIcon 0 Orange Pentagon
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 1 Yellow Pentagon
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Normal
 	Sockets >= 1W
 	SocketGroup < 3RGB
@@ -3429,232 +3841,12 @@ Show
 	SetFontSize 18
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Wands Shields
-	Rarity Unique
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 85 255
-	MinimapIcon 0 Orange Pentagon
-	PlayEffect Orange
-
-Show
-	Class Gems Jewels
-	Rarity Unique
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 85 255
-	MinimapIcon 0 Cyan Pentagon
-	PlayEffect Orange
-
-Show
-	Class Currency
-	Rarity Unique
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 85 255
-	MinimapIcon 0 Green Pentagon
-	PlayEffect Orange
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Rare
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 1 Pink Pentagon
-
-Show
-	Class Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
-	Rarity Unique
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 85 255
-	MinimapIcon 0 Pink Pentagon
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
-
-Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Unique
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
-
-	SetFontSize 18
-
-Show
-	Class Gems Jewels
-	Rarity Magic
 	LinkedSockets >= 3
-	Sockets < 1W
 	SocketGroup < 3RGB
 	Sockets < 4
 	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 170 170
-	MinimapIcon 2 Cyan Diamond
-
-Show
-	Class Currency
-	Rarity Magic
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 170 170
-	MinimapIcon 2 Green Diamond
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetFontSize 18
-
-Show
-	Class Currency
-	Rarity Rare
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 1 Green Pentagon
-
-Show
-	Class Gems Jewels
-	Rarity Rare
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 1 Cyan Pentagon
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 1 Yellow Pentagon
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
-	Sockets >= 1W
-	SocketGroup < 3RGB
 	Corrupted True
 
 	SetFontSize 45
@@ -3663,33 +3855,12 @@ Show
 	PlayEffect Orange
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	SocketGroup < 3RGB
-	Corrupted True
-
-	SetFontSize 18
-
-Show
-	Class Currency
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Green Triangle
-	PlayEffect Orange
-
-Show
-	Class Wands Shields
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Rare
 	LinkedSockets >= 3
 	SocketGroup < 3RGB
-	LinkedSockets >= 4
+	Sockets < 4
+	LinkedSockets < 4
 	Corrupted True
 
 	SetBorderColor 170 0 0
@@ -3700,7 +3871,9 @@ Show
 	Rarity Unique
 	LinkedSockets >= 3
 	SocketGroup < 3RGB
-	Sockets >= 4
+	Sockets < 4
+	LinkedSockets < 4
+	Mirrored True
 	Corrupted True
 
 	SetFontSize 45
@@ -3709,10 +3882,12 @@ Show
 	PlayEffect Orange
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Wands Shields
 	Rarity Unique
-	Sockets >= 1W
+	LinkedSockets >= 3
 	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
 	Mirrored True
 	Corrupted False
 
@@ -3722,289 +3897,94 @@ Show
 	PlayEffect Orange
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Wands Shields
 	Rarity Normal
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	LinkedSockets >= 4
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 White Moon
-
-Show
-	Class Currency
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 0 0 170
-	MinimapIcon 0 Green Moon
-	PlayEffect Orange
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	LinkedSockets >= 4
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Class Wands Shields
-	Rarity Unique
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	Sockets >= 4
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 0 0 170
-	MinimapIcon 0 Orange Moon
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 85 85 255
-	MinimapIcon 0 Orange Hexagon
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Magic
-	SocketGroup < 3RGB
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Currency
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 85 85 255
-	MinimapIcon 0 Green Hexagon
-	PlayEffect Orange
-
-Show
-	Class Wands Shields
-	Rarity Unique
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	Sockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 85 85 255
-	MinimapIcon 0 Orange Hexagon
-	PlayEffect Orange
-
-Show
-	Class Gems Jewels
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 85 85
-	MinimapIcon 0 Cyan Star
-	PlayEffect Orange
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	LinkedSockets < 4
-	Mirrored True
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 White Moon
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Cross
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	LinkedSockets >= 3
-	Sockets >= 1W
+	LinkedSockets < 3
 	SocketGroup < 3RGB
 	Sockets < 4
-	Mirrored True
+	LinkedSockets < 4
 	Corrupted True
 
+	SetFontSize 18
 	SetBorderColor 170 0 0
-	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Normal
-	LinkedSockets >= 3
+	LinkedSockets < 3
 	SocketGroup < 3RGB
 	Sockets < 4
+	LinkedSockets >= 4
 	Corrupted True
 
 	SetBorderColor 170 0 0
 	MinimapIcon 2 White Triangle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	LinkedSockets < 3
 	SocketGroup < 3RGB
 	Sockets < 4
+	LinkedSockets < 4
+	Corrupted True
+
+	SetFontSize 18
+	SetBorderColor 170 0 0
+
+Show
+	Class Wands Shields
+	Rarity Normal
+	LinkedSockets >= 3
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
 	Corrupted True
 
 	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
+	MinimapIcon 2 White Triangle
+
+Show
+	Class Gems Jewels
+	Rarity Normal
+	LinkedSockets < 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored True
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Cyan Triangle
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	LinkedSockets < 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 2 White Moon
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -4013,6 +3993,53 @@ Show
 	Sockets >= 1W
 	SocketGroup < 3RGB
 	Sockets < 4
+	LinkedSockets < 4
+	Mirrored True
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 0 0 170
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	LinkedSockets >= 3
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	LinkedSockets < 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets >= 3
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
 	Quality > 0
 	Mirrored False
 	Corrupted False
@@ -4024,52 +4051,11 @@ Show
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	Quality > 0
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 Blue Moon
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Rare
 	LinkedSockets >= 3
-	Sockets >= 1W
 	SocketGroup < 3RGB
 	Sockets < 4
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 Blue Triangle
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
+	LinkedSockets < 4
 	Quality > 0
 	Mirrored False
 	Corrupted False
@@ -4079,230 +4065,70 @@ Show
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 Blue Moon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 Blue Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Normal
-	Sockets >= 1W
+	LinkedSockets < 3
 	SocketGroup < 3RGB
 	Sockets < 4
 	LinkedSockets < 4
-	Mirrored True
+	Quality > 0
+	Mirrored False
 	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 White Moon
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Mirrored True
-	Corrupted True
 
 	SetFontSize 18
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Mirrored True
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 0 0 170
-	MinimapIcon 0 Orange Moon
-	PlayEffect Orange
-
-Show
-	Class Wands Shields
-	Rarity Unique
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
+	SetBorderColor 85 85 255
 
 Show
 	Class Wands Shields
 	Rarity Normal
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality > 0
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 White Triangle
-
-Show
-	Class Wands Shields
-	Rarity Unique
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 0 0 170
-	MinimapIcon 0 Orange Moon
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
 	LinkedSockets >= 3
 	SocketGroup < 3RGB
 	Sockets < 4
 	LinkedSockets < 4
 	Quality > 0
 	Mirrored False
-	Corrupted True
+	Corrupted False
 
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
+	SetBorderColor 85 85 255
+	MinimapIcon 2 White Hexagon
 
 Show
-	Class Gems Jewels
-	Rarity Rare
+	Class Wands Shields
+	Rarity Normal
 	LinkedSockets < 3
-	Sockets < 1W
 	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets >= 4
-	Quality <= 0
+	Sockets < 4
+	LinkedSockets < 4
+	Quality > 0
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Cyan Star
+	SetFontSize 18
+	SetBorderColor 85 85 255
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
 	LinkedSockets < 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets >= 4
-	Quality <= 0
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality > 0
 	Mirrored False
-	Corrupted True
+	Corrupted False
 
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
+	SetBorderColor 85 85 255
+	MinimapIcon 2 White Hexagon
 
 Show
 	Class Gems Jewels
 	Rarity Normal
+	LinkedSockets >= 3
 	Sockets >= 1W
 	SocketGroup < 3RGB
 	Sockets < 4
 	LinkedSockets < 4
 	Quality <= 0
+	Mirrored False
 	Corrupted True
 
 	SetBorderColor 170 0 0
@@ -4310,184 +4136,35 @@ Show
 
 Show
 	Class Wands Shields
-	Rarity Normal
-	LinkedSockets < 3
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Corrupted True
-
-	SetFontSize 18
-	SetBorderColor 170 0 0
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Normal
-	LinkedSockets < 3
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 White Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Normal
-	LinkedSockets < 3
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Corrupted True
-
-	SetFontSize 18
-	SetBorderColor 170 0 0
-
-Show
-	Class Wands Shields
-	Rarity Normal
+	Rarity Unique
 	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 White Triangle
-
-Show
-	Class Wands Shields
-	Rarity Magic
-	LinkedSockets < 3
 	Sockets >= 1W
 	SocketGroup < 3RGB
 	Sockets < 4
 	LinkedSockets < 4
 	Quality <= 0
-	Mirrored True
+	Mirrored False
 	Corrupted True
 
+	SetFontSize 45
 	SetBorderColor 170 0 0
-	MinimapIcon 2 Blue Triangle
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
 
 Show
 	Class Gems Jewels
-	Rarity Normal
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 Cyan Moon
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Wands Shields
-	Rarity Magic
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 Blue Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	LinkedSockets < 3
-	Sockets >= 1W
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 Blue Moon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	LinkedSockets < 3
-	Sockets >= 1W
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 Blue Triangle
-
-Show
-	Class Currency
 	Rarity Unique
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Mirrored True
+	LinkedSockets < 3
+	Sockets >= 1W
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
 	Corrupted False
 
 	SetFontSize 45
-	SetBorderColor 0 0 170
-	MinimapIcon 0 Green Moon
+	SetBorderColor 255 85 85
+	MinimapIcon 0 Cyan Star
 	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 0 0 170
-	MinimapIcon 0 Orange Moon
-	PlayEffect Orange
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -4684,6 +4361,18 @@ Show
 	MinimapIcon 1 Yellow Hexagon
 
 Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	Sockets < 1W
+	SocketGroup >= 3RGB
+	LinkedSockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Unique
 	LinkedSockets >= 3
@@ -4723,6 +4412,20 @@ Show
 	MinimapIcon 1 Green Hexagon
 
 Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	Sockets < 1W
+	SocketGroup >= 3RGB
+	Sockets >= 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 1 Yellow Star
+
+Show
 	Class Gems Jewels
 	Rarity Rare
 	Sockets < 1W
@@ -4741,13 +4444,14 @@ Show
 	Rarity Rare
 	Sockets < 1W
 	SocketGroup >= 3RGB
-	LinkedSockets >= 4
+	Sockets >= 4
+	LinkedSockets < 4
 	Quality <= 0
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Yellow Star
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Cross
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -4764,20 +4468,17 @@ Show
 	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
 	LinkedSockets >= 3
 	Sockets < 1W
-	Sockets >= 4
-	LinkedSockets < 4
+	SocketGroup >= 3RGB
+	LinkedSockets >= 4
 	Quality <= 0
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
+	SetFontSize 18
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -4792,17 +4493,16 @@ Show
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Rare
+	Rarity Normal
 	Sockets < 1W
 	SocketGroup >= 3RGB
 	Sockets >= 4
 	LinkedSockets < 4
-	Quality <= 0
+	Quality > 0
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Cross
+	SetFontSize 18
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -4939,36 +4639,6 @@ Show
 	MinimapIcon 2 Blue Triangle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Gems Jewels
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup >= 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Cyan Star
-
-Show
 	Class Gems Jewels
 	Rarity Rare
 	LinkedSockets >= 3
@@ -5028,18 +4698,19 @@ Show
 	PlayEffect Orange
 
 Show
-	Class Wands Shields
+	Class Gems Jewels
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
 	SocketGroup >= 3RGB
 	Sockets < 4
-	LinkedSockets < 4
-	Quality > 0
-	Corrupted True
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
+	SetBorderColor 255 85 85
+	MinimapIcon 1 Cyan Star
 
 Show
 	Class Wands Shields
@@ -5054,20 +4725,6 @@ Show
 
 	SetBorderColor 170 0 0
 	MinimapIcon 2 Blue Triangle
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored True
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -5096,15 +4753,6 @@ Show
 	SetBorderColor 170 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Corrupted True
-
-	SetFontSize 18
 
 Show
 	Class Currency
@@ -5123,6 +4771,48 @@ Show
 	Rarity Unique
 	Sockets < 1W
 	SocketGroup < 3RGB
+	Mirrored True
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 0 0 170
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
+
+Show
+	Class Currency
+	Rarity Unique
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Mirrored True
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 0 0 170
+	MinimapIcon 0 Green Moon
+	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Unique
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets >= 4
+	LinkedSockets >= 4
+	Mirrored True
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 0 0 170
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets >= 4
 	Quality > 0
 	Mirrored False
 	Corrupted False
@@ -5131,6 +4821,17 @@ Show
 	SetBorderColor 85 85 255
 	MinimapIcon 0 Orange Hexagon
 	PlayEffect Orange
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Normal
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
 
 Show
 	Class Currency
@@ -5147,18 +4848,18 @@ Show
 	PlayEffect Orange
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Unique
 	Sockets < 1W
 	SocketGroup < 3RGB
 	Sockets >= 4
 	LinkedSockets >= 4
-	Mirrored True
-	Corrupted False
+	Quality <= 0
+	Corrupted True
 
 	SetFontSize 45
-	SetBorderColor 0 0 170
-	MinimapIcon 0 Orange Moon
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
 
 Show
@@ -5194,48 +4895,6 @@ Show
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Unique
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 85 85 255
-	MinimapIcon 0 Orange Hexagon
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
 	LinkedSockets >= 3
 	Sockets < 1W
 	SocketGroup < 3RGB
@@ -5247,19 +4906,6 @@ Show
 	SetBorderColor 170 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	LinkedSockets < 4
-	Quality > 0
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -5278,7 +4924,23 @@ Show
 	PlayEffect Orange
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored True
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Unique
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -5287,104 +4949,26 @@ Show
 	LinkedSockets < 4
 	Quality <= 0
 	Mirrored False
-	Corrupted False
+	Corrupted True
 
 	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Orange Cross
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
 	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
+	Sockets < 4
+	LinkedSockets >= 4
 	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 85 85 255
-	MinimapIcon 0 Orange Hexagon
-	PlayEffect Orange
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
 	Corrupted True
 
 	SetBorderColor 170 0 0
 	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored True
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Mirrored True
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -5406,11 +4990,28 @@ Show
 	SocketGroup < 3RGB
 	Sockets < 4
 	LinkedSockets >= 4
+	Mirrored True
 	Corrupted True
 
 	SetFontSize 45
 	SetBorderColor 170 0 0
 	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Mirrored True
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 0 0 170
+	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
 
 Show
@@ -5440,6 +5041,20 @@ Show
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Magic
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -5450,22 +5065,6 @@ Show
 
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Blue Moon
-
-Show
-	Class Wands Shields
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 0 0 170
-	MinimapIcon 0 Orange Moon
-	PlayEffect Orange
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -5495,36 +5094,6 @@ Show
 	MinimapIcon 1 Yellow Moon
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 255
-	MinimapIcon 1 Yellow Hexagon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
 	Class Wands Shields
 	Rarity Unique
 	LinkedSockets >= 3
@@ -5541,20 +5110,36 @@ Show
 	PlayEffect Orange
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Wands Shields
 	Rarity Unique
 	LinkedSockets >= 3
 	Sockets < 1W
 	SocketGroup < 3RGB
 	Sockets < 4
+	LinkedSockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
 	Quality > 0
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
 	SetBorderColor 85 85 255
-	MinimapIcon 0 Orange Hexagon
-	PlayEffect Orange
+	MinimapIcon 1 Yellow Hexagon
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -5568,6 +5153,68 @@ Show
 
 	SetBorderColor 85 85 255
 	MinimapIcon 1 Yellow Hexagon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets >= 3
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 1 Yellow Triangle
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 255
+	MinimapIcon 0 Orange Hexagon
+	PlayEffect Orange
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -5584,23 +5231,6 @@ Show
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets < 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored True
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
 	Class Wands Shields
 	Rarity Magic
 	LinkedSockets < 3
@@ -5641,23 +5271,6 @@ Show
 
 	SetFontSize 18
 	SetBorderColor 170 0 0
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets < 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
 
 Show
 	Class Gems Jewels
@@ -5677,24 +5290,10 @@ Show
 	Sockets >= 1W
 	SocketGroup >= 3RGB
 	LinkedSockets >= 4
-	Mirrored True
 	Corrupted True
 
 	SetBorderColor 170 0 0
 	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
-	SocketGroup >= 3RGB
-	LinkedSockets >= 4
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -5723,15 +5322,6 @@ Show
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets >= 1W
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Wands Shields
-	Rarity Rare
-	LinkedSockets < 3
 	Corrupted True
 
 	SetBorderColor 170 0 0
@@ -5772,6 +5362,19 @@ Show
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets < 3
+	Sockets >= 1W
+	SocketGroup >= 3RGB
+	LinkedSockets >= 4
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Magic
 	LinkedSockets < 3
 	Sockets >= 1W
@@ -5807,38 +5410,10 @@ Show
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
-	SocketGroup >= 3RGB
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 255
-	MinimapIcon 1 Yellow Hexagon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
-	SocketGroup >= 3RGB
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Magic
 	LinkedSockets < 3
 	Sockets >= 1W
-	Quality > 0
+	LinkedSockets >= 4
 	Mirrored False
 	Corrupted True
 
@@ -5855,6 +5430,20 @@ Show
 
 	SetBorderColor 170 0 0
 	MinimapIcon 2 Blue Triangle
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets < 3
+	Sockets >= 1W
+	SocketGroup >= 3RGB
+	LinkedSockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Yellow Hexagon
 
 Show
 	Class Currency
@@ -5907,48 +5496,6 @@ Show
 	MinimapIcon 2 Blue Moon
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
-	SocketGroup >= 3RGB
-	Sockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Magic
-	LinkedSockets < 3
-	Sockets >= 1W
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 Blue Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
-	SocketGroup >= 3RGB
-	Sockets >= 4
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Yellow Star
-
-Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Rare
 	LinkedSockets < 3
@@ -5983,6 +5530,19 @@ Show
 	SocketGroup >= 3RGB
 	Sockets >= 4
 	LinkedSockets < 4
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 1 Yellow Triangle
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets < 3
+	Sockets >= 1W
+	SocketGroup >= 3RGB
+	Sockets >= 4
+	LinkedSockets < 4
 	Mirrored True
 	Corrupted False
 
@@ -5991,32 +5551,43 @@ Show
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
+	Rarity Magic
 	LinkedSockets < 3
 	Sockets >= 1W
-	SocketGroup >= 3RGB
 	Sockets >= 4
 	LinkedSockets < 4
-	Mirrored True
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
-	SocketGroup >= 3RGB
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality > 0
 	Mirrored False
 	Corrupted True
 
 	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
+	MinimapIcon 2 Blue Triangle
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	LinkedSockets < 3
+	Sockets >= 4
+	LinkedSockets < 4
+	Mirrored False
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets < 3
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -6032,18 +5603,6 @@ Show
 
 	SetBorderColor 85 85 255
 	MinimapIcon 1 Yellow Hexagon
-
-Show
-	Class Wands Shields
-	Rarity Magic
-	LinkedSockets < 3
-	Sockets >= 4
-	LinkedSockets < 4
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -6073,33 +5632,31 @@ Show
 	MinimapIcon 2 Blue Moon
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Magic
 	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 Blue Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets < 3
 	SocketGroup >= 3RGB
+	Sockets < 4
 	LinkedSockets >= 4
 	Quality <= 0
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
-	SetBorderColor 255 85 85
-	MinimapIcon 0 Orange Star
-	PlayEffect Orange
+	SetFontSize 18
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Magic
+	LinkedSockets < 3
+	Sockets >= 1W
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Mirrored False
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Wands Shields
@@ -6144,19 +5701,18 @@ Show
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
+	Rarity Magic
 	LinkedSockets < 3
+	Sockets >= 1W
 	SocketGroup >= 3RGB
-	Sockets >= 4
+	Sockets < 4
 	LinkedSockets < 4
 	Quality <= 0
-	Mirrored False
+	Mirrored True
 	Corrupted False
 
-	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
+	SetBorderColor 0 0 170
+	MinimapIcon 2 Blue Moon
 
 Show
 	Class Gems Jewels
@@ -6165,22 +5721,14 @@ Show
 	Sockets >= 1W
 	SocketGroup < 3RGB
 	Sockets >= 4
+	LinkedSockets >= 4
+	Mirrored True
 	Corrupted True
 
 	SetBorderColor 170 0 0
 	MinimapIcon 2 Cyan Triangle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets >= 4
-	Corrupted True
-
-	SetFontSize 18
-
-Show
 	Class Gems Jewels
 	Rarity Normal
 	LinkedSockets < 3
@@ -6194,17 +5742,17 @@ Show
 	MinimapIcon 2 Cyan Moon
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Gems Jewels
 	Rarity Normal
 	LinkedSockets < 3
 	Sockets >= 1W
 	SocketGroup < 3RGB
 	Sockets >= 4
-	Quality > 0
 	Mirrored False
-	Corrupted False
+	Corrupted True
 
-	SetFontSize 18
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Cyan Triangle
 
 Show
 	Class Gems Jewels
@@ -6236,17 +5784,19 @@ Show
 	MinimapIcon 2 Cyan Moon
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Gems Jewels
 	Rarity Normal
 	LinkedSockets < 3
 	Sockets >= 1W
 	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
 	Mirrored True
 	Corrupted True
 
-	SetFontSize 18
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Cyan Triangle
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -6267,26 +5817,11 @@ Show
 	Rarity Normal
 	LinkedSockets < 3
 	Sockets >= 1W
-	SocketGroup < 3RGB
 	Sockets < 4
 	LinkedSockets >= 4
 	Quality > 0
 	Mirrored False
 	Corrupted False
-
-	SetFontSize 18
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	LinkedSockets < 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted True
 
 	SetFontSize 18
 
@@ -6299,6 +5834,21 @@ Show
 	Sockets < 4
 	LinkedSockets < 4
 	Mirrored False
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	LinkedSockets < 3
+	Sockets >= 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored True
 	Corrupted True
 
 	SetBorderColor 170 0 0
@@ -6333,6 +5883,66 @@ Show
 	PlayEffect Orange
 
 Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets >= 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Gems Jewels
+	Rarity Rare
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets >= 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 1 Cyan Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Cross
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets >= 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 1 Yellow Triangle
+
+Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Rare
 	LinkedSockets < 3
@@ -6369,20 +5979,6 @@ Show
 	MinimapIcon 1 Yellow Hexagon
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets < 1W
-	SocketGroup >= 3RGB
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Yellow Star
-
-Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Rare
 	LinkedSockets < 3
@@ -6395,6 +5991,21 @@ Show
 
 	SetBorderColor 170 0 0
 	MinimapIcon 1 Yellow Triangle
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 85 85
+	MinimapIcon 1 Yellow Star
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -6700,50 +6311,14 @@ Show
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
+	Rarity Normal
 	LinkedSockets < 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 85 85 255
-	MinimapIcon 0 Orange Hexagon
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets < 3
+	Sockets >= 1W
+	SocketGroup >= 3RGB
 	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
 	Corrupted True
 
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets >= 4
-	LinkedSockets < 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
+	SetFontSize 18
 
 Show
 	Class Currency
@@ -6867,15 +6442,42 @@ Show
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
-	SocketGroup >= 3RGB
+	Rarity Normal
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets >= 4
 	Quality > 0
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
+	SetFontSize 18
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
+	LinkedSockets < 3
+	LinkedSockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
 	SetBorderColor 85 85 255
-	MinimapIcon 0 Orange Hexagon
+	MinimapIcon 2 White Hexagon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets < 3
+	SocketGroup >= 3RGB
+	Sockets >= 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 85
+	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
 Show
@@ -6895,21 +6497,17 @@ Show
 	PlayEffect Orange
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Normal
 	LinkedSockets < 3
-	Sockets >= 1W
-	SocketGroup >= 3RGB
 	Sockets >= 4
 	LinkedSockets < 4
-	Quality <= 0
+	Quality > 0
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
-	SetBorderColor 255 255 85
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
+	SetBorderColor 85 85 255
+	MinimapIcon 2 White Hexagon
 
 Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
@@ -7136,23 +6734,11 @@ Show
 	Sockets >= 1W
 	SocketGroup < 3RGB
 	Sockets < 4
-	Quality > 0
+	LinkedSockets >= 4
 	Corrupted True
 
 	SetBorderColor 170 0 0
 	MinimapIcon 2 Cyan Triangle
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Normal
-	LinkedSockets < 3
-	SocketGroup < 3RGB
-	Sockets < 4
-	Quality > 0
-	Corrupted True
-
-	SetBorderColor 170 0 0
-	MinimapIcon 2 White Triangle
 
 Show
 	Class Currency
@@ -7197,61 +6783,85 @@ Show
 	Sockets >= 1W
 	SocketGroup < 3RGB
 	Sockets < 4
-	LinkedSockets >= 4
-	Quality <= 0
+	LinkedSockets < 4
+	Mirrored False
 	Corrupted True
 
 	SetBorderColor 170 0 0
 	MinimapIcon 2 Cyan Triangle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Normal
-	LinkedSockets < 3
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets >= 3
 	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
+	LinkedSockets >= 4
+	Quality > 0
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 1 Yellow Triangle
+
+Show
+	Class Currency
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 1 Green Triangle
+
+Show
+	Class Currency
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
+	Mirrored True
+	Corrupted False
+
+	SetBorderColor 0 0 170
+	MinimapIcon 1 Green Moon
+
+Show
+	Class Currency
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Green Hexagon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets >= 4
 	Quality <= 0
-	Mirrored False
-	Corrupted True
-
-	SetFontSize 18
-
-Show
-	Class Currency
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
 	Corrupted True
 
 	SetBorderColor 170 0 0
-	MinimapIcon 1 Green Triangle
+	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Currency
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets >= 1W
 	Sockets >= 4
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Green Moon
-
-Show
-	Class Currency
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets >= 4
+	LinkedSockets < 4
 	Quality > 0
-	Mirrored False
-	Corrupted False
+	Corrupted True
 
-	SetBorderColor 85 85 255
-	MinimapIcon 1 Green Hexagon
+	SetBorderColor 170 0 0
+	MinimapIcon 1 Yellow Triangle
 
 Show
 	Class Currency
@@ -7291,6 +6901,20 @@ Show
 
 	SetBorderColor 85 85 255
 	MinimapIcon 1 Green Hexagon
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Rare
+	LinkedSockets >= 3
+	Sockets >= 1W
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 1 Yellow Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -7315,6 +6939,20 @@ Show
 	MinimapIcon 2 Blue Moon
 
 Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Magic
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup >= 3RGB
+	Sockets >= 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+
+Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Magic
 	LinkedSockets < 3
@@ -7325,6 +6963,23 @@ Show
 
 	SetBorderColor 170 0 0
 	MinimapIcon 2 Blue Triangle
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup >= 3RGB
+	Sockets < 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 255 85 85
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -7385,19 +7040,6 @@ Show
 	MinimapIcon 1 Yellow Hexagon
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets < 3
-	SocketGroup < 3RGB
-	LinkedSockets >= 4
-	Quality <= 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	MinimapIcon 1 Yellow Star
-
-Show
 	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Unique
 	LinkedSockets < 3
@@ -7418,7 +7060,7 @@ Show
 	Sockets < 1W
 	SocketGroup < 3RGB
 	Sockets < 4
-	Quality > 0
+	LinkedSockets >= 4
 	Mirrored True
 	Corrupted True
 
@@ -7446,44 +7088,12 @@ Show
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
 	Rarity Unique
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
-	Mirrored False
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-
-Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
-	Rarity Unique
 	LinkedSockets < 3
 	Sockets < 1W
 	SocketGroup < 3RGB
 	Sockets < 4
-	LinkedSockets >= 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBorderColor 85 85 255
-	MinimapIcon 0 Orange Hexagon
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets >= 4
 	Quality <= 0
-	Mirrored True
+	Mirrored False
 	Corrupted True
 
 	SetFontSize 45
@@ -7528,16 +7138,32 @@ Show
 	MinimapIcon 1 Yellow Hexagon
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
 	Rarity Rare
 	LinkedSockets >= 3
 	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Corrupted True
+	Sockets >= 4
+	LinkedSockets >= 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 170 0 0
-	MinimapIcon 1 Yellow Triangle
+	SetBorderColor 255 85 85
+	MinimapIcon 1 Yellow Star
+
+Show
+	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Rarity Rare
+	LinkedSockets >= 3
+	SocketGroup < 3RGB
+	Sockets >= 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted False
+
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Cross
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -7551,20 +7177,6 @@ Show
 
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Yellow Moon
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Rare
-	LinkedSockets >= 3
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality > 0
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 255
-	MinimapIcon 1 Yellow Hexagon
 
 Show
 	Class Gems Jewels
@@ -7617,18 +7229,19 @@ Show
 	MinimapIcon 1 Cyan Star
 
 Show
-	Class Gems Jewels
+	Class Wands Shields
 	Rarity Unique
-	LinkedSockets < 3
-	Sockets >= 1W
-	LinkedSockets >= 4
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
 	Quality <= 0
 	Mirrored False
-	Corrupted False
+	Corrupted True
 
 	SetFontSize 45
-	SetBorderColor 255 85 85
-	MinimapIcon 0 Cyan Star
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
 
 Show
@@ -7639,6 +7252,40 @@ Show
 	SocketGroup < 3RGB
 	Sockets < 4
 	LinkedSockets < 4
+	Mirrored True
+	Corrupted True
+
+	SetFontSize 45
+	SetBorderColor 170 0 0
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality > 0
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetBorderColor 85 85 255
+	MinimapIcon 0 Orange Hexagon
+	PlayEffect Orange
+
+Show
+	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Rarity Unique
+	LinkedSockets < 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality > 0
 	Mirrored False
 	Corrupted True
 
@@ -7646,6 +7293,21 @@ Show
 	SetBorderColor 170 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
+
+Show
+	Class Wands Shields
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets < 1W
+	SocketGroup < 3RGB
+	Sockets < 4
+	LinkedSockets < 4
+	Quality <= 0
+	Mirrored False
+	Corrupted True
+
+	SetBorderColor 170 0 0
+	MinimapIcon 2 Blue Triangle
 
 Show
 	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
@@ -7661,22 +7323,6 @@ Show
 	SetFontSize 45
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
-	PlayEffect Orange
-
-Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Quality <= 0
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
 
 Show
@@ -7734,21 +7380,6 @@ Show
 	SetFontSize 45
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
-	PlayEffect Orange
-
-Show
-	Class Wands Shields
-	Rarity Unique
-	LinkedSockets < 3
-	Sockets >= 1W
-	SocketGroup < 3RGB
-	Sockets < 4
-	LinkedSockets < 4
-	Corrupted True
-
-	SetFontSize 45
-	SetBorderColor 170 0 0
-	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
 
 Show

@@ -10,7 +10,6 @@ export class EffectSet {
 		DEFAULT: "32",
 		LARGEST: "45" // Unique
 	};
-	// Avoid white, orange outlines as those are done in vanilla
 	static RGB = {
 		BLACK: "0 0 0",
 		NAVY: "0 0 170", // Mirrored
@@ -19,8 +18,8 @@ export class EffectSet {
 		CRIMSON: "170 0 0", // Corrupted
 		PURPLE: "170 0 170", // RGB
 		ORANGE: "255 170 0",
-		SILVER: "170 170 170", // Three link
-		GREY: "85 85 85",
+		SILVER: "170 170 170",
+		GREY: "85 85 85", // Three link
 		BLUE: "85 85 255", // Quality
 		LIME: "85 255 85", // Currency
 		CYAN: "85 255 255", // Gem
@@ -190,7 +189,7 @@ export class Effecter {
 			p.e.outlineColour = EffectSet.RGB.PINK;
 			p.e.mapIcon = EffectSet.ICON.PENTAGON;
 		} else if (p.c.isThreeLink) {
-			p.e.outlineColour = EffectSet.RGB.SILVER;
+			p.e.outlineColour = EffectSet.RGB.GREY;
 			p.e.mapIcon = EffectSet.ICON.DIAMOND;
 		}
 	}
@@ -269,11 +268,7 @@ export class Effecter {
 						// If it's corrupted, we'll only really use it if the sockets were notable.
 						// At this point it's not notable yet corrupted, so no immunity granted
 
-						// If it's quality, maybe we'll use it
-						if (p.c.isQuality) {
-							p.isHideImmune = true;
-							break;
-						}
+						// If it's quality, just shrink it and let it stay outlined
 						break;
 				}
 				break;
