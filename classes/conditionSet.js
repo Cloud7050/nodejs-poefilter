@@ -22,7 +22,8 @@ class Duplicator {
 	}
 
 	/**
-	 * For each value, clone self and set the specified property to the value.
+	 * For each value, clone the specified ConditionSet and set the property to
+	 * the value.
 	 *
 	 * @returns an array of ConditonSets
 	 */
