@@ -10,23 +10,39 @@ export class EffectSet {
 		DEFAULT: "32",
 		LARGEST: "45" // Unique
 	};
+	// Avoid white/orange outlines as those are done in vanilla
 	static RGB = {
 		BLACK: "0 0 0",
 		NAVY: "0 0 170", // Mirrored
-		GREEN: "0 170 0",
+		GREEN: "0 170 0", // Currency
 		TEAL: "0 170 170",
-		CRIMSON: "170 0 0", // Corrupted
+		CRIMSON: "170 0 0",
 		PURPLE: "170 0 170", // RGB
 		ORANGE: "255 170 0",
 		SILVER: "170 170 170",
-		GREY: "85 85 85", // Three link
-		BLUE: "85 85 255", // Quality
-		LIME: "85 255 85", // Currency
-		CYAN: "85 255 255", // Gem
+		GREY: "85 85 85",
+		BLUE: "85 85 255",
+		LIME: "85 255 85",
+		CYAN: "85 255 255",
 		ROSE: "255 85 85", // Four link
 		PINK: "255 85 255", // White
 		YELLOW: "255 255 85", // Four
 		WHITE: "255 255 255"
+	};
+	static RGB_GAME = {
+		CURRENCY: " 170 158 130",
+		GEM: "27 162 155",
+		NORMAL: "200 200 200", // Three link
+		MAGIC: "136 136 255", // Quality
+		RARE: "255 255 119",
+		UNIQUE: "175 96 37",
+		QUEST: "74 230 58",
+		CORRUPTED: "210 0 0" // Corrupted
+	};
+	// Default alpha is 240
+	static RGBA = {
+		FADED: "0 0 0 170",
+		WHITE: "85 85 85 170"
 	};
 
 	static COLOUR = {
@@ -63,6 +79,8 @@ export class EffectSet {
 	};
 
 	textSize = null;
+	textColour = null;
+	backgroundColour = null;
 	outlineColour = null;
 
 	mapColour = null;
@@ -74,6 +92,8 @@ export class EffectSet {
 	equals(other) {
 		return (
 			this.textSize === other.textSize
+			&& this.textColour === other.textColour
+			&& this.backgroundColour === other.backgroundColour
 			&& this.outlineColour === other.outlineColour
 
 			&& this.mapColour === other.mapColour
@@ -89,6 +109,12 @@ export class EffectSet {
 
 		if (this.textSize !== null) {
 			lines.push(`SetFontSize ${this.textSize}`);
+		}
+		if (this.textColour !== null) {
+			lines.push(`SetTextColor ${this.textColour}`);
+		}
+		if (this.backgroundColour !== null) {
+			lines.push(`SetBackgroundColor ${this.backgroundColour}`);
 		}
 		if (this.outlineColour !== null) {
 			lines.push(`SetBorderColor ${this.outlineColour}`);
@@ -120,6 +146,7 @@ export class Effecter {
 		switch (p.c.rarity) {
 			case ConditionSet.RARITY.UNIQUE:
 				p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
+				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.ORANGE;
 				p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
 				p.e.beamColour = EffectSet.COLOUR.ORANGE;
@@ -147,16 +174,23 @@ export class Effecter {
 	static #defaultType(p) {
 		switch (p.c.type) {
 			case ConditionSet.TYPE.GEM:
-				p.e.outlineColour = EffectSet.RGB.CYAN;
+				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.CYAN;
 				p.e.mapIcon = EffectSet.ICON.HOUSE;
 
 				p.isHideImmune = true;
 				break;
 			case ConditionSet.TYPE.CURRENCY:
-				p.e.outlineColour = EffectSet.RGB.LIME;
+				p.e.textColour = EffectSet.RGB.GREEN;
+				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.LIME;
 				p.e.mapIcon = EffectSet.ICON.HOUSE;
+
+				p.isHideImmune = true;
+				break;
+			case ConditionSet.TYPE.QUEST:
+				p.e.backgroundColour = EffectSet.RGBA.WHITE;
+				// Map icon should be handled by game's green exclamation mark
 
 				p.isHideImmune = true;
 				break;
@@ -166,6 +200,17 @@ export class Effecter {
 
 				p.isHideImmune = true;
 				break;
+		}
+	}
+
+	/**
+	 * Gives effects based on other attributes, but able to be overwritten by
+	 * sockets.
+	 */
+	static #preSockets(p) {
+		if (p.c.isQuality) {
+			p.e.outlineColour = EffectSet.RGB_GAME.MAGIC;
+			p.e.mapIcon = EffectSet.ICON.HEXAGON;
 		}
 	}
 
@@ -189,17 +234,17 @@ export class Effecter {
 			p.e.outlineColour = EffectSet.RGB.PINK;
 			p.e.mapIcon = EffectSet.ICON.PENTAGON;
 		} else if (p.c.isThreeLink) {
-			p.e.outlineColour = EffectSet.RGB.GREY;
+			p.e.outlineColour = EffectSet.RGB_GAME.NORMAL;
 			p.e.mapIcon = EffectSet.ICON.DIAMOND;
 		}
 	}
 
 	/**
-	 * Gives effects based on other attributes.
+	 * Gives effects based on other attributes, overwriting after sockets.
 	 */
-	static #otherAttributes(p) {
+	static #postSockets(p) {
 		if (p.c.isCorrupted) {
-			p.e.outlineColour = EffectSet.RGB.CRIMSON;
+			p.e.outlineColour = EffectSet.RGB_GAME.CORRUPTED;
 			p.e.mapIcon = EffectSet.ICON.TRIANGLE;
 		} else if (p.c.isMirrored) {
 			p.e.outlineColour = EffectSet.RGB.NAVY;
@@ -207,9 +252,6 @@ export class Effecter {
 
 			// A dupe may have dropped, can be vendor reciped
 			p.isHideImmune = true;
-		} else if (p.c.isQuality) {
-			p.e.outlineColour = EffectSet.RGB.BLUE;
-			p.e.mapIcon = EffectSet.ICON.HEXAGON;
 		}
 	}
 
@@ -217,9 +259,6 @@ export class Effecter {
 	 * Carefully grants equipment hide immunity based on various conditions.
 	 */
 	static #equipment(p) {
-		// Ignore items already deemed hide immune. It is either high rarity
-		// (want to always see) or not equipment ("normal rarity" false
-		// positive)
 		if (p.isHideImmune) return;
 
 		// Items at this point should be:
@@ -255,20 +294,13 @@ export class Effecter {
 						}
 						break;
 					case ConditionSet.RARITY.NORMAL:
-						// If any sockets are especially notable, maybe we'll use it
 						if (
-							p.c.isThreeLink
-							|| p.c.isFour
+							p.c.isFour
 							|| p.c.isFourLink
 						) {
 							p.isHideImmune = true;
 							break;
 						}
-
-						// If it's corrupted, we'll only really use it if the sockets were notable.
-						// At this point it's not notable yet corrupted, so no immunity granted
-
-						// If it's quality, just shrink it and let it stay outlined
 						break;
 				}
 				break;
@@ -289,6 +321,8 @@ export class Effecter {
 		if (p.isHideImmune) return;
 
 		p.e.textSize = EffectSet.TEXT_SIZE.SMALLEST;
+		p.e.backgroundColour = EffectSet.RGBA.FADED;
+
 		if (p.isFluffOutline) p.e.outlineColour = null;
 	}
 
@@ -308,8 +342,9 @@ export class Effecter {
 		Effecter.#defaultType(p);
 
 		// Overwrite with changes
+		Effecter.#preSockets(p);
 		Effecter.#sockets(p);
-		Effecter.#otherAttributes(p);
+		Effecter.#postSockets(p);
 
 		// Precise hide immunity
 		Effecter.#equipment(p);

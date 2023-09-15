@@ -43,7 +43,8 @@ class Duplicator {
 /* [Exports] */
 export class ConditionSet {
 	static TYPE = {
-		OTHER: 'Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Quest Items" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"',
+		OTHER: 'Maps "Map Fragments" "Divination Cards" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"',
+		QUEST: '"Quest Items"',
 		CURRENCY: "Currency",
 		GEM: "Gems Jewels",
 		UNUSED_WEAPON: 'Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers',
