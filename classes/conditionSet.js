@@ -20,7 +20,7 @@ export class ConditionSet {
 	type = null;
 	rarity = null;
 
-	isTripleLink = null;
+	isThreeLink = null;
 	isWhite = null;
 	isRgb = null;
 	isFour = null;
@@ -36,7 +36,7 @@ export class ConditionSet {
 		conditionSet.type = this.type;
 		conditionSet.rarity = this.rarity;
 
-		conditionSet.isTripleLink = this.isTripleLink;
+		conditionSet.isThreeLink = this.isThreeLink;
 		conditionSet.isWhite = this.isWhite;
 		conditionSet.isRgb = this.isRgb;
 		conditionSet.isFour = this.isFour;
@@ -55,8 +55,8 @@ export class ConditionSet {
 		if (this.type !== null) lines.push(`Class ${this.type}`);
 		if (this.rarity !== null) lines.push(`Rarity ${this.rarity}`);
 
-		if (this.isTripleLink !== null) {
-			let operator = this.isTripleLink ? ">=" : "<";
+		if (this.isThreeLink !== null) {
+			let operator = this.isThreeLink ? ">=" : "<";
 			lines.push(`LinkedSockets ${operator} 3`);
 		}
 		if (this.isWhite !== null) {

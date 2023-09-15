@@ -138,7 +138,7 @@ export class PermutationMaker {
 		this.#duplicateEnum("type", ConditionSet.TYPE);
 		this.#duplicateEnum("rarity", ConditionSet.RARITY);
 
-		this.#duplicateBoolean("isTripleLink");
+		this.#duplicateBoolean("isThreeLink");
 		this.#duplicateBoolean("isWhite");
 		this.#duplicateBoolean("isRgb");
 		this.#duplicateBoolean("isFour");

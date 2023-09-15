@@ -13,20 +13,20 @@ export class EffectSet {
 	// Avoid white, orange outlines as those are done in vanilla
 	static RGB = {
 		BLACK: "0 0 0",
-		NAVY: "0 0 170",
+		NAVY: "0 0 170", // Mirrored
 		GREEN: "0 170 0",
 		TEAL: "0 170 170",
 		CRIMSON: "170 0 0", // Corrupted
-		PURPLE: "170 0 170", // Mirrored
+		PURPLE: "170 0 170", // RGB
 		ORANGE: "255 170 0",
-		SILVER: "170 170 170",
+		SILVER: "170 170 170", // Three link
 		GREY: "85 85 85",
-		BLUE: "85 85 255",
-		LIME: "85 255 85", // Triple link
-		CYAN: "85 255 255", // Four / Four link
-		ROSE: "255 85 85",
+		BLUE: "85 85 255", // Quality
+		LIME: "85 255 85", // Currency
+		CYAN: "85 255 255", // Gem
+		ROSE: "255 85 85", // Four link
 		PINK: "255 85 255", // White
-		YELLOW: "255 255 85", // RGB
+		YELLOW: "255 255 85", // Four
 		WHITE: "255 255 255"
 	};
 
@@ -44,18 +44,18 @@ export class EffectSet {
 		BROWN: "Brown"
 	};
 	static ICON = {
-		RAINDROP: "Raindrop", // Other
-		KITE: "Kite", // Currency
-		HOUSE: "UpsideDownHouse", // Gem
-		CIRCLE: "Circle", // Default equipment
-		CROSS: "Cross", // Triple link
-		STAR: "Star", // Triple blue
-		DIAMOND: "Diamond", // RGB
-		SQUARE: "Square", // White
+		HOUSE: "UpsideDownHouse", // Default other
+		KITE: "Kite", // Default equipment
+		DIAMOND: "Diamond", // Three Link
+		PENTAGON: "Pentagon", // White
+		RAINDROP: "Raindrop", // RGB
+		CROSS: "Cross", // Four
+		STAR: "Star", // Four link
+		HEXAGON: "Hexagon", // Quality
 		MOON: "Moon", // Mirrored
-		PENTAGON: "Pentagon", // Corrupted
-		HEXAGON: "Hexagon",
-		TRIANGLE: "Triangle"
+		TRIANGLE: "Triangle", // Corrupted
+		CIRCLE: "Circle",
+		SQUARE: "Square"
 	};
 	static ICON_SIZE = {
 		SMALL: "2", // Default
@@ -67,7 +67,7 @@ export class EffectSet {
 	outlineColour = null;
 
 	mapColour = null;
-	mapIcon = EffectSet.ICON.CIRCLE;
+	mapIcon = EffectSet.ICON.KITE;
 	mapSize = EffectSet.ICON_SIZE.SMALL;
 
 	beamColour = null;
@@ -137,12 +137,16 @@ export class Effecter {
 	static #defaultType(p) {
 		switch (p.c.type) {
 			case ConditionSet.TYPE.GEM:
+				p.e.outlineColour = EffectSet.RGB.CYAN;
+
 				p.e.mapColour = EffectSet.COLOUR.CYAN;
 				p.e.mapIcon = EffectSet.ICON.HOUSE;
 
 				p.isHideImmune = true;
 				break;
 			case ConditionSet.TYPE.CURRENCY:
+				p.e.outlineColour = EffectSet.RGB.LIME;
+
 				p.e.mapColour = EffectSet.COLOUR.LIME;
 				p.e.mapIcon = EffectSet.ICON.KITE;
 
@@ -150,7 +154,7 @@ export class Effecter {
 				break;
 			case ConditionSet.TYPE.OTHER:
 				p.e.mapColour = EffectSet.COLOUR.PINK;
-				p.e.mapIcon = EffectSet.ICON.RAINDROP;
+				p.e.mapIcon = EffectSet.ICON.HOUSE;
 
 				p.isHideImmune = true;
 				break;
@@ -161,25 +165,24 @@ export class Effecter {
 	 * Gives effects based on sockets.
 	 */
 	static #sockets(p) {
-		if (p.c.isFour || p.c.isFourLink) {
-			p.e.outlineColour = EffectSet.RGB.CYAN;
+		if (p.c.isFourLink) {
+			p.e.outlineColour = EffectSet.RGB.ROSE;
 			p.e.mapIcon = EffectSet.ICON.STAR;
-
-			p.isFluffOutline = true;
-		} else if (p.c.isRgb) {
+		} else if (p.c.isFour) {
 			p.e.outlineColour = EffectSet.RGB.YELLOW;
-			p.e.mapIcon = EffectSet.ICON.DIAMOND;
+			p.e.mapIcon = EffectSet.ICON.CROSS;
+		} else if (p.c.isRgb) {
+			p.e.outlineColour = EffectSet.RGB.PURPLE;
+			p.e.mapIcon = EffectSet.ICON.RAINDROP;
 
 			// Can be vendored
 			p.isHideImmune = true;
 		} else if (p.c.isWhite) {
 			p.e.outlineColour = EffectSet.RGB.PINK;
-			p.e.mapIcon = EffectSet.ICON.SQUARE;
-		} else if (p.c.isTripleLink) {
-			p.e.outlineColour = EffectSet.RGB.LIME;
-			p.e.mapIcon = EffectSet.ICON.CROSS;
-
-			p.isFluffOutline = true;
+			p.e.mapIcon = EffectSet.ICON.PENTAGON;
+		} else if (p.c.isThreeLink) {
+			p.e.outlineColour = EffectSet.RGB.SILVER;
+			p.e.mapIcon = EffectSet.ICON.DIAMOND;
 		}
 	}
 
@@ -189,9 +192,9 @@ export class Effecter {
 	static #otherAttributes(p) {
 		if (p.c.isCorrupted) {
 			p.e.outlineColour = EffectSet.RGB.CRIMSON;
-			p.e.mapIcon = EffectSet.ICON.PENTAGON;
+			p.e.mapIcon = EffectSet.ICON.TRIANGLE;
 		} else if (p.c.isMirrored) {
-			p.e.outlineColour = EffectSet.RGB.PURPLE;
+			p.e.outlineColour = EffectSet.RGB.NAVY;
 			p.e.mapIcon = EffectSet.ICON.MOON;
 
 			// A dupe may have dropped, can be vendor reciped
@@ -222,7 +225,7 @@ export class Effecter {
 					case ConditionSet.RARITY.MAGIC:
 						// If any sockets are notable, maybe we'll use it
 						if (
-							this.isTripleLink
+							this.isThreeLink
 							|| this.isWhite
 							|| this.isFour
 							|| this.isFourLink
@@ -237,7 +240,7 @@ export class Effecter {
 					case ConditionSet.RARITY.NORMAL:
 						// If any sockets are especially notable, maybe we'll use it
 						if (
-							this.isTripleLink
+							this.isThreeLink
 							|| this.isFour
 							|| this.isFourLink
 						) {
