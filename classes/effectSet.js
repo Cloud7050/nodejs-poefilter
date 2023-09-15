@@ -195,6 +195,9 @@ export class Effecter {
 
 			// A dupe may have dropped, can be vendor reciped
 			p.isHideImmune = true;
+		} else if (p.c.isQuality) {
+			p.e.outlineColour = EffectSet.RGB.BLUE;
+			p.e.mapIcon = EffectSet.ICON.HEXAGON;
 		}
 	}
 
@@ -212,7 +215,7 @@ export class Effecter {
 		// • Normal/magic
 		// • Not RGB
 		// • Not mirrored
-		// We decide based on type + rarity + sockets + corruption
+		// We decide based on type + rarity + sockets + other attributes
 
 		switch (p.c.type) {
 			case ConditionSet.TYPE.USED_WEAPON:
@@ -232,6 +235,12 @@ export class Effecter {
 
 						// If it's corrupted, we'll only really use it if the sockets were notable.
 						// At this point it's not notable yet corrupted, so no immunity granted
+
+						// If it's quality, maybe we'll use it
+						if (p.c.isQuality) {
+							p.isHideImmune = true;
+							break;
+						}
 						break;
 					case ConditionSet.RARITY.NORMAL:
 						// If any sockets are especially notable, maybe we'll use it
@@ -246,11 +255,20 @@ export class Effecter {
 
 						// If it's corrupted, we'll only really use it if the sockets were notable.
 						// At this point it's not notable yet corrupted, so no immunity granted
+
+						// If it's quality, maybe we'll use it
+						if (p.c.isQuality) {
+							p.isHideImmune = true;
+							break;
+						}
 						break;
 				}
 				break;
 			case ConditionSet.TYPE.UNUSED_WEAPON:
 				// We won't use this item, so we ignore rarity, sockets, corruption
+
+				// Force hide its outlines
+				p.isFluffOutline = true;
 				break;
 		}
 	}
