@@ -268,7 +268,7 @@ export class Effecter {
 	 * remove it too.
 	 */
 	static #shrink(p) {
-		if (p.noShrink) return;
+		if (p.isHideImmune) return;
 
 		p.e.textSize = EffectSet.TEXT_SIZE.SMALLEST;
 		if (p.isFluffOutline) p.e.outlineColour = null;
@@ -278,7 +278,7 @@ export class Effecter {
 	 * Hides from map based on previous decisions.
 	 */
 	static #unmap(p) {
-		if (p.noUnmap) return;
+		if (p.isHideImmune) return;
 
 		// Avoid equipment spam on the map
 		p.e.mapColour = null;
