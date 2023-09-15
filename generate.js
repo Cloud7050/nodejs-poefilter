@@ -19,6 +19,7 @@
 /* [Imports] */
 import { Effecter } from "./classes/effectSet.js";
 import { PermutationMaker } from "./classes/permutation.js";
+import { Logger } from "./logger.js";
 
 
 
@@ -32,4 +33,5 @@ new Effecter(permutationManager)
 permutationManager.optimise();
 permutationManager.save();
 
+Logger.save();
 console.log("☁");

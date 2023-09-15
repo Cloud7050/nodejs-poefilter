@@ -2,13 +2,17 @@
 import fs from "fs";
 import { ConditionSet } from "./conditionSet.js";
 import { EffectSet } from "./effectSet.js";
+import { Logger } from "../logger.js";
+
+
+
+/* [Main] */
+const l = Logger.l;
 
 
 
 /* [Exports] */
 export class Permutation {
-	e = new EffectSet();
-
 	isHideImmune = false;
 	/**
 	 * Whether outline is unimportant enough that, if shrunk, outline should
@@ -16,9 +20,11 @@ export class Permutation {
 	 */
 	isFluffOutline = false;
 
+	e;
 	c;
 
 	constructor(conditionSet) {
+		this.e = new EffectSet();
 		this.c = conditionSet;
 	}
 }
@@ -34,21 +40,89 @@ class PermutationManager {
 		);
 	}
 
+	#tryCondense(oldPs) {
+		let sourceP = oldPs.shift();
+		l("\n\n\noldPs:   -1");
+
+		for (let duplicator of ConditionSet.DUPLICATORS) {
+			if (sourceP.c[duplicator.property] === null) continue;
+			l(`[${duplicator.property}]`);
+
+			let cVariants = duplicator.callback(sourceP.c);
+			let i = cVariants.findIndex((c) => c.equals(sourceP.c));
+			if (i === -1) continue;
+			else cVariants.splice(i, 1);
+
+			// Find all variants
+			let pVariants = [];
+			for (let i = oldPs.length - 1; i >= 0; i--) {
+				let oldP = oldPs[i];
+				let isMatch = cVariants.some(
+					(variant) => oldP.c.equals(variant)
+				);
+				if (isMatch) {
+					pVariants.push(
+						oldPs.splice(i, 1)[0]
+					);
+				}
+			}
+			if (pVariants.length === 0) continue;
+			l(`oldPs:   -${pVariants.length} | Found ${pVariants.length}/${cVariants.length} matches`);
+
+			if (cVariants.length !== pVariants.length) {
+				this.ps.push(...pVariants);
+				l(`this.ps: +${pVariants.length} | Transferred, not enough`);
+				continue;
+			}
+
+			// Check if all variants have same effects
+			let isAllSame = pVariants.every(
+				(pVariant) => pVariant.e.equals(sourceP.e)
+			);
+
+			if (isAllSame) {
+				// If same, can condense using sourceP (skip its property check) and transfer
+				// only it
+				// l(sourceP.toString());
+				// l(pVariants.toString());
+				sourceP.c[duplicator.property] = null;
+				// l(sourceP.toString());
+				this.ps.push(sourceP);
+				l("this.ps: +1 | Condensed!");
+				return;
+			}
+
+			// If not same, must transfer all variants
+			this.ps.push(...pVariants);
+			l(`this.ps: +${pVariants.length} | Transferred, not same`);
+		}
+		this.ps.push(sourceP);
+		l("\nthis.ps: +1");
+	}
+
+	#optimiseOnce() {
+		let oldPs = this.ps;
+		this.ps = [];
+
+		while (oldPs.length > 0) {
+			this.#tryCondense(oldPs);
+		}
+	}
+
 	optimise() {
-		//TODO
-		// Remove the first permutation
+		let previousCount = this.ps.length;
+		while (true) {
+			this.#optimiseOnce();
+			let newCount = this.ps.length;
 
-		// Get its ConditionSet
+			if (newCount >= previousCount) {
+				// Couldn't optimise further
+				break;
+			}
 
-		// For each property, generate its variants
-
-		// Remove its variant from the list, if any
-
-		// If all variants have the same effects, the property can be condensed by setting it to null
-
-		// Repeat until the list is empty. Return the new list
-
-		// Recurse until there were no changes between optimisation passes
+			console.log(`Optimised ${previousCount} → ${newCount} permutations`);
+			previousCount = newCount;
+		}
 	}
 
 	save() {
@@ -99,7 +173,7 @@ export class PermutationMaker {
 	 */
 	#duplicate(duplicator) {
 		this.#cs = this.#cs.flatMap(
-			(c) => duplicator(c)
+			(c) => duplicator.callback(c)
 		);
 	}
 

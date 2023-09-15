@@ -1,3 +1,16 @@
+/* [Main] */
+class Duplicator {
+	property;
+	callback;
+
+	constructor(_property, _callback) {
+		this.property = _property;
+		this.callback = _callback;
+	}
+}
+
+
+
 /* [Exports] */
 export class ConditionSet {
 	static TYPE = {
@@ -17,19 +30,20 @@ export class ConditionSet {
 		UNIQUE: "Unique"
 	};
 
+	//TODO is there a better way
 	static DUPLICATORS = [
-		(c) => c.duplicateEnum("type", ConditionSet.TYPE),
-		(c) => c.duplicateEnum("rarity", ConditionSet.RARITY),
+		new Duplicator("type", (c) => c.duplicateEnum("type", ConditionSet.TYPE)),
+		new Duplicator("rarity", (c) => c.duplicateEnum("rarity", ConditionSet.RARITY)),
 
-		(c) => c.duplicateBoolean("isThreeLink"),
-		(c) => c.duplicateBoolean("isWhite"),
-		(c) => c.duplicateBoolean("isRgb"),
-		(c) => c.duplicateBoolean("isFour"),
-		(c) => c.duplicateBoolean("isFourLink"),
+		new Duplicator("isThreeLink", (c) => c.duplicateBoolean("isThreeLink")),
+		new Duplicator("isWhite", (c) => c.duplicateBoolean("isWhite")),
+		new Duplicator("isRgb", (c) => c.duplicateBoolean("isRgb")),
+		new Duplicator("isFour", (c) => c.duplicateBoolean("isFour")),
+		new Duplicator("isFourLink", (c) => c.duplicateBoolean("isFourLink")),
 
-		(c) => c.duplicateBoolean("isQuality"),
-		(c) => c.duplicateBoolean("isMirrored"),
-		(c) => c.duplicateBoolean("isCorrupted")
+		new Duplicator("isQuality", (c) => c.duplicateBoolean("isQuality")),
+		new Duplicator("isMirrored", (c) => c.duplicateBoolean("isMirrored")),
+		new Duplicator("isCorrupted", (c) => c.duplicateBoolean("isCorrupted"))
 	];
 
 	type = null;
@@ -85,6 +99,23 @@ export class ConditionSet {
 
 	duplicateEnum(property, enumObject) {
 		return this.#duplicateForValues(property, Object.values(enumObject));
+	}
+
+	equals(other) {
+		return (
+			this.type === other.type
+			&& this.rarity === other.rarity
+
+			&& this.isThreeLink === other.isThreeLink
+			&& this.isWhite === other.isWhite
+			&& this.isRgb === other.isRgb
+			&& this.isFour === other.isFour
+			&& this.isFourLink === other.isFourLink
+
+			&& this.isQuality === other.isQuality
+			&& this.isMirrored === other.isMirrored
+			&& this.isCorrupted === other.isCorrupted
+		);
 	}
 
 	export() {

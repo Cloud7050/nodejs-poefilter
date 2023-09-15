@@ -72,6 +72,19 @@ export class EffectSet {
 
 	beamColour = null;
 
+	equals(other) {
+		return (
+			this.textSize === other.textSize
+			&& this.outlineColour === other.outlineColour
+
+			&& this.mapColour === other.mapColour
+			&& this.mapIcon === other.mapIcon
+			&& this.mapSize === other.mapSize
+
+			&& this.beamColour === other.beamColour
+		);
+	}
+
 	export() {
 		let lines = [];
 
