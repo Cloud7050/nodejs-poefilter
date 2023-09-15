@@ -94,37 +94,13 @@ export class PermutationMaker {
 	#cs = [];
 
 	/**
-	 * For each value, clone the specified ConditionSet and set the specified
-	 * property to the value.
-	 *
-	 * @returns an array of ConditonSets
-	 */
-	static conditionsForValues(c, property, values) {
-		return values.map(
-			(value) => {
-				let clone = c.clone();
-				clone[property] = value;
-				return clone;
-			}
-		);
-	}
-
-	/**
 	 * Duplicates existing ConditionSets using the specified property and
 	 * values. Replaces ConditionSets with the new conditions.
 	 */
-	#duplicateConditions(property, values) {
+	#duplicate(duplicator) {
 		this.#cs = this.#cs.flatMap(
-			(c) => PermutationMaker.conditionsForValues(c, property, values)
+			(c) => duplicator(c)
 		);
-	}
-
-	#duplicateBoolean(property) {
-		return this.#duplicateConditions(property, [true, false]);
-	}
-
-	#duplicateEnum(property, enumObject) {
-		return this.#duplicateConditions(property, Object.values(enumObject));
 	}
 
 	/**
@@ -135,18 +111,9 @@ export class PermutationMaker {
 		// call
 		this.#cs = [new ConditionSet()];
 
-		this.#duplicateEnum("type", ConditionSet.TYPE);
-		this.#duplicateEnum("rarity", ConditionSet.RARITY);
-
-		this.#duplicateBoolean("isThreeLink");
-		this.#duplicateBoolean("isWhite");
-		this.#duplicateBoolean("isRgb");
-		this.#duplicateBoolean("isFour");
-		this.#duplicateBoolean("isFourLink");
-
-		this.#duplicateBoolean("isQuality");
-		this.#duplicateBoolean("isMirrored");
-		this.#duplicateBoolean("isCorrupted");
+		for (let duplicator of ConditionSet.DUPLICATORS) {
+			this.#duplicate(duplicator);
+		}
 
 		return new PermutationManager(this.#cs);
 	}

@@ -17,6 +17,21 @@ export class ConditionSet {
 		UNIQUE: "Unique"
 	};
 
+	static DUPLICATORS = [
+		(c) => c.duplicateEnum("type", ConditionSet.TYPE),
+		(c) => c.duplicateEnum("rarity", ConditionSet.RARITY),
+
+		(c) => c.duplicateBoolean("isThreeLink"),
+		(c) => c.duplicateBoolean("isWhite"),
+		(c) => c.duplicateBoolean("isRgb"),
+		(c) => c.duplicateBoolean("isFour"),
+		(c) => c.duplicateBoolean("isFourLink"),
+
+		(c) => c.duplicateBoolean("isQuality"),
+		(c) => c.duplicateBoolean("isMirrored"),
+		(c) => c.duplicateBoolean("isCorrupted")
+	];
+
 	type = null;
 	rarity = null;
 
@@ -30,7 +45,7 @@ export class ConditionSet {
 	isMirrored = null;
 	isCorrupted = null;
 
-	clone() {
+	#clone() {
 		let conditionSet = new ConditionSet();
 
 		conditionSet.type = this.type;
@@ -47,6 +62,29 @@ export class ConditionSet {
 		conditionSet.isCorrupted = this.isCorrupted;
 
 		return conditionSet;
+	}
+
+	/**
+	 * For each value, clone self and set the specified property to the value.
+	 *
+	 * @returns an array of ConditonSets
+	 */
+	#duplicateForValues(property, values) {
+		return values.map(
+			(value) => {
+				let clone = this.#clone();
+				clone[property] = value;
+				return clone;
+			}
+		);
+	}
+
+	duplicateBoolean(property) {
+		return this.#duplicateForValues(property, [true, false]);
+	}
+
+	duplicateEnum(property, enumObject) {
+		return this.#duplicateForValues(property, Object.values(enumObject));
 	}
 
 	export() {

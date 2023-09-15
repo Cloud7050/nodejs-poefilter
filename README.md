@@ -1,14 +1,13 @@
 ## Steps For Adding New Condition
 
-- `conditionSet.js`
-	1. Add property to ConditionSet class
+- `ConditionSet`
+	1. Add duplication lambda in DUPLICATORS
+	1. Add property
 	1. Set property of new ConditionSet in clone()
 	1. Check property and push line in export()
-- `permutation.js`
-	1. Add duplication call in generate()
 
 ## Steps For Adding New Effect
 
-- `effectSet.js`
-	1. Add property to EffectSet class
+- `EffectSet`
+	1. Add property
 	1. Check property and push line in export()
