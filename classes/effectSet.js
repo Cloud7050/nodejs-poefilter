@@ -180,6 +180,13 @@ export class Effecter {
 
 				p.isHideImmune = true;
 				break;
+			case ConditionSet.TYPE.VALUABLE:
+				p.e.backgroundColour = EffectSet.RGBA.WHITE;
+				p.e.mapColour = EffectSet.COLOUR.LIME;
+				p.e.mapIcon = EffectSet.ICON.HOUSE;
+
+				p.isHideImmune = true;
+				break;
 			case ConditionSet.TYPE.CURRENCY:
 				p.e.textColour = EffectSet.RGB.GREEN;
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
