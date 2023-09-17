@@ -67,9 +67,9 @@ export class ConditionSet {
 
 		new Duplicator("isThreeLink", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isWhite", Duplicator.TYPE.BOOLEAN),
-		new Duplicator("isRgb", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isFour", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isFourLink", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isRgb", Duplicator.TYPE.BOOLEAN),
 
 		new Duplicator("isQuality", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isMirrored", Duplicator.TYPE.BOOLEAN),
@@ -81,9 +81,9 @@ export class ConditionSet {
 
 	isThreeLink = null;
 	isWhite = null;
-	isRgb = null;
 	isFour = null;
 	isFourLink = null;
+	isRgb = null;
 
 	isQuality = null;
 	isMirrored = null;
@@ -97,9 +97,9 @@ export class ConditionSet {
 
 		conditionSet.isThreeLink = this.isThreeLink;
 		conditionSet.isWhite = this.isWhite;
-		conditionSet.isRgb = this.isRgb;
 		conditionSet.isFour = this.isFour;
 		conditionSet.isFourLink = this.isFourLink;
+		conditionSet.isRgb = this.isRgb;
 
 		conditionSet.isQuality = this.isQuality;
 		conditionSet.isMirrored = this.isMirrored;
@@ -115,9 +115,9 @@ export class ConditionSet {
 
 			&& this.isThreeLink === other.isThreeLink
 			&& this.isWhite === other.isWhite
-			&& this.isRgb === other.isRgb
 			&& this.isFour === other.isFour
 			&& this.isFourLink === other.isFourLink
+			&& this.isRgb === other.isRgb
 
 			&& this.isQuality === other.isQuality
 			&& this.isMirrored === other.isMirrored
@@ -139,10 +139,6 @@ export class ConditionSet {
 			let operator = this.isWhite ? ">=" : "<";
 			lines.push(`Sockets ${operator} 1W`);
 		}
-		if (this.isRgb !== null) {
-			let operator = this.isRgb ? ">=" : "<";
-			lines.push(`SocketGroup ${operator} 3RGB`);
-		}
 		if (this.isFour !== null) {
 			let operator = this.isFour ? ">=" : "<";
 			lines.push(`Sockets ${operator} 4`);
@@ -150,6 +146,10 @@ export class ConditionSet {
 		if (this.isFourLink !== null) {
 			let operator = this.isFourLink ? ">=" : "<";
 			lines.push(`LinkedSockets ${operator} 4`);
+		}
+		if (this.isRgb !== null) {
+			let operator = this.isRgb ? ">=" : "<";
+			lines.push(`SocketGroup ${operator} 3RGB`);
 		}
 
 		if (this.isQuality !== null) {

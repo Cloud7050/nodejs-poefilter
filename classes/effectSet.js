@@ -225,18 +225,18 @@ export class Effecter {
 	 * Gives effects based on sockets.
 	 */
 	static #sockets(p) {
-		if (p.c.isFourLink) {
-			p.e.outlineColour = EffectSet.RGB.ROSE;
-			p.e.mapIcon = EffectSet.ICON.STAR;
-		} else if (p.c.isFour) {
-			p.e.outlineColour = EffectSet.RGB.YELLOW;
-			p.e.mapIcon = EffectSet.ICON.CROSS;
-		} else if (p.c.isRgb) {
+		if (p.c.isRgb) {
 			p.e.outlineColour = EffectSet.RGB.PURPLE;
 			p.e.mapIcon = EffectSet.ICON.RAINDROP;
 
 			// Can be vendored
 			p.isHideImmune = true;
+		} else if (p.c.isFourLink) {
+			p.e.outlineColour = EffectSet.RGB.ROSE;
+			p.e.mapIcon = EffectSet.ICON.STAR;
+		} else if (p.c.isFour) {
+			p.e.outlineColour = EffectSet.RGB.YELLOW;
+			p.e.mapIcon = EffectSet.ICON.CROSS;
 		} else if (p.c.isWhite) {
 			p.e.outlineColour = EffectSet.RGB.PINK;
 			p.e.mapIcon = EffectSet.ICON.PENTAGON;
