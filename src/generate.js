@@ -17,8 +17,8 @@
  */
 
 /* [Imports] */
-import { Effecter } from "./effect/effectSet.js";
-import { PermutationMaker } from "./permutation/permutation.js";
+import { Effecter } from "./effect/effecter.js";
+import { PermutationMaker } from "./permutation/permutationMaker.js";
 import { Logger } from "./logger.js";
 
 
