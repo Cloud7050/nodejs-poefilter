@@ -1,4 +1,33 @@
 Show
+	Class Gems Jewels
+
+	SetBackgroundColor 255 255 255 210
+	MinimapIcon 2 Cyan UpsideDownHouse
+
+Show
+	Class "Divination Cards"
+
+	SetBackgroundColor 255 255 255 210
+	MinimapIcon 2 Green UpsideDownHouse
+
+Show
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
+
+	SetTextColor 0 170 0
+	SetBackgroundColor 255 255 255 210
+	MinimapIcon 2 Green UpsideDownHouse
+
+Show
+	Class "Quest Items"
+
+	SetBackgroundColor 255 255 255 210
+
+Show
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+
+	MinimapIcon 2 Pink UpsideDownHouse
+
+Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod "of Plunder"

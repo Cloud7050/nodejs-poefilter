@@ -17,20 +17,29 @@
  */
 
 /* [Imports] */
-import { Effecter } from "./effect/effecter.js";
 import { PermutationMaker } from "./permutation/permutationMaker.js";
 import { Logger } from "./logger.js";
+import { Saver } from "./saver.js";
+import { EffecterEquipment } from "./effect/effecterEquipment.js";
+import { EffecterOther } from "./effect/effecterOther.js";
 
 
 
 /* [Main] */
-let permutationManager = new PermutationMaker()
-	.generate();
-
-new Effecter(permutationManager)
+let managerOther = new PermutationMaker()
+	.generateOther();
+new EffecterOther(managerOther)
 	.decide();
+let lines = managerOther.finalise();
 
-permutationManager.finalise();
+let managerEquipment = new PermutationMaker()
+	.generateEquipment();
+new EffecterEquipment(managerEquipment)
+	.decide();
+lines.push(
+	...managerEquipment.finalise()
+);
 
+Saver.save(lines, "./build/Cloud.filter");
 Logger.save();
 console.log("☁");

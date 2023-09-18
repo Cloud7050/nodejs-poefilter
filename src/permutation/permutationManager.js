@@ -1,6 +1,4 @@
 /* [Imports] */
-import fs from "fs";
-import { ConditionSet } from "../condition/conditionSet.js";
 import { Logger } from "../logger.js";
 import { Permutation } from "./permutation.js";
 
@@ -13,14 +11,18 @@ const l = Logger.l;
 
 /* [Exports] */
 export class PermutationManager {
+	#duplicators;
+
 	ps;
 
-	constructor(cs) {
+	constructor(cs, duplicators) {
 		// Convert ConditionSets into blank Permutations, which start with no
 		// effects
 		this.ps = cs.map(
 			(c) => new Permutation(c)
 		);
+
+		this.#duplicators = duplicators;
 	}
 
 	#tryCondense(psOld) {
@@ -29,7 +31,7 @@ export class PermutationManager {
 		l("	psOld:   -1\n");
 		let cSource = pSource.c;
 
-		for (let duplicator of ConditionSet.DUPLICATORS_EQUIPMENT) {
+		for (let duplicator of this.#duplicators) {
 			if (cSource[duplicator.property] === null) {
 				// The source ConditionSet must match one of the generated ConditionSets. This is
 				// impossible when the value is null.
@@ -143,7 +145,7 @@ export class PermutationManager {
 		this.#sortBooleanFirst("isLootyBase");
 	}
 
-	#save() {
+	#export() {
 		// Convert to lines
 		let lines = [];
 		let blockCount = 0;
@@ -172,17 +174,14 @@ export class PermutationManager {
 			blockCount++;
 		}
 
-		// Save as filter files
-		let filterBlocks = lines.join("\n");
-		fs.writeFileSync("./build/Cloud.filter", filterBlocks);
-
 		console.log(`Blocks: ${blockCount}/${this.ps.length}`);
 		console.log(`Lines: ${lines.length}`);
+		return lines;
 	}
 
 	finalise() {
 		this.#optimise();
 		this.#sort();
-		this.#save();
+		return this.#export();
 	}
 }

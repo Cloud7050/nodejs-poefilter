@@ -21,15 +21,23 @@ export class PermutationMaker {
 	/**
 	 * Generates all Permutations by duplicating ConditionSets.
 	 */
-	generate() {
+	#generate(duplicators) {
 		// This is the seed used that will get replaced in the first duplicate
 		// call
 		this.#cs = [new ConditionSet()];
 
-		for (let duplicator of ConditionSet.DUPLICATORS_EQUIPMENT) {
+		for (let duplicator of duplicators) {
 			this.#useDuplicator(duplicator);
 		}
 
-		return new PermutationManager(this.#cs);
+		return new PermutationManager(this.#cs, duplicators);
+	}
+
+	generateOther() {
+		return this.#generate(ConditionSet.DUPLICATORS_OTHER);
+	}
+
+	generateEquipment() {
+		return this.#generate(ConditionSet.DUPLICATORS_EQUIPMENT);
 	}
 }

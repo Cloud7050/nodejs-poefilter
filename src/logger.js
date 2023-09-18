@@ -1,5 +1,5 @@
 /* [Imports] */
-import fs from "fs";
+import { Saver } from "./saver.js";
 
 
 
@@ -12,7 +12,6 @@ export class Logger {
 	}
 
 	static save() {
-		let string = Logger.#LINES.join("\n");
-		fs.writeFileSync("./build/log.txt", string);
+		Saver.save(Logger.#LINES, "./build/log.txt");
 	}
 }
