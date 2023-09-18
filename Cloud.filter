@@ -6,7 +6,7 @@ Show
 	SocketGroup >= 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -20,7 +20,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -34,7 +34,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -47,7 +47,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -60,7 +60,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -73,7 +73,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -85,7 +85,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -96,18 +96,18 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Unique
 	Mirrored True
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Pink Moon
 	PlayEffect Orange
@@ -119,20 +119,20 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	Mirrored True
 	Corrupted False
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Green Moon
 	PlayEffect Orange
@@ -144,7 +144,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -156,7 +156,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Green Moon
 	PlayEffect Orange
@@ -193,7 +193,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -228,7 +228,7 @@ Show
 	LinkedSockets >= 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -240,19 +240,19 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	Sockets >= 1W
 	Corrupted True
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -262,25 +262,25 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Green Triangle
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	Corrupted True
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Green Triangle
 	PlayEffect Orange
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Magic
 	Corrupted True
 
@@ -288,7 +288,7 @@ Show
 	MinimapIcon 2 Pink Triangle
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Rare
 	Corrupted True
 
@@ -296,7 +296,7 @@ Show
 	MinimapIcon 1 Pink Triangle
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Normal
 	Corrupted True
 
@@ -304,12 +304,12 @@ Show
 	MinimapIcon 2 Pink Triangle
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Unique
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Pink Triangle
 	PlayEffect Orange
@@ -319,27 +319,27 @@ Show
 	Rarity Magic
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Blue Triangle
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Normal
 	Corrupted True
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Magic
 	Corrupted True
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -348,7 +348,7 @@ Show
 	Rarity Normal
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 White Triangle
 
@@ -389,7 +389,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -403,7 +403,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -413,7 +413,7 @@ Show
 	Sockets >= 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -427,7 +427,7 @@ Show
 	MinimapIcon 1 Yellow Moon
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Normal
 	Mirrored True
 	Corrupted False
@@ -436,7 +436,7 @@ Show
 	MinimapIcon 2 Pink Moon
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Magic
 	Mirrored True
 	Corrupted False
@@ -445,7 +445,7 @@ Show
 	MinimapIcon 2 Pink Moon
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Rare
 	Mirrored True
 	Corrupted False
@@ -454,13 +454,13 @@ Show
 	MinimapIcon 1 Pink Moon
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Magic
 	Mirrored True
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -470,7 +470,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Blue Moon
 
@@ -538,7 +538,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -551,7 +551,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -566,7 +566,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -603,7 +603,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -616,20 +616,20 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	Sockets >= 1W
 	Mirrored True
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -648,18 +648,18 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 White Moon
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Normal
 	Mirrored True
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -673,7 +673,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -687,19 +687,19 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Magic
 	SocketGroup >= 3RGB
 	Mirrored False
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
@@ -710,7 +710,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
@@ -721,12 +721,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Blue Raindrop
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Magic
 	SocketGroup >= 3RGB
 	Mirrored False
@@ -773,20 +773,20 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Unique
 	SocketGroup >= 3RGB
 	Mirrored False
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Pink Raindrop
 	PlayEffect Orange
@@ -799,7 +799,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
@@ -812,7 +812,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Green Raindrop
 	PlayEffect Orange
@@ -825,25 +825,25 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Normal
 	SocketGroup >= 3RGB
 	Mirrored False
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	SocketGroup >= 3RGB
 	Mirrored False
@@ -851,7 +851,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Green Raindrop
 	PlayEffect Orange
@@ -863,7 +863,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -874,12 +874,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 White Raindrop
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Normal
 	SocketGroup >= 3RGB
 	Mirrored False
@@ -909,7 +909,7 @@ Show
 	MinimapIcon 2 White Raindrop
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Rare
 	SocketGroup >= 3RGB
 	Mirrored False
@@ -938,7 +938,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -951,7 +951,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -979,7 +979,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -1007,7 +1007,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
@@ -1022,7 +1022,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -1034,7 +1034,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Cyan Star
 
@@ -1068,12 +1068,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Unique
 	LinkedSockets >= 4
 	SocketGroup < 3RGB
@@ -1081,13 +1081,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Pink Star
 	PlayEffect Orange
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Normal
 	LinkedSockets >= 4
 	SocketGroup < 3RGB
@@ -1098,7 +1098,7 @@ Show
 	MinimapIcon 2 Pink Star
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Magic
 	LinkedSockets >= 4
 	SocketGroup < 3RGB
@@ -1109,7 +1109,7 @@ Show
 	MinimapIcon 2 Pink Star
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Rare
 	LinkedSockets >= 4
 	SocketGroup < 3RGB
@@ -1128,7 +1128,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -1142,7 +1142,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -1156,7 +1156,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Cyan Star
 	PlayEffect Orange
@@ -1171,7 +1171,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Yellow Raindrop
 
@@ -1185,7 +1185,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -1198,7 +1198,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
@@ -1226,7 +1226,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
@@ -1238,7 +1238,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Green Star
 
@@ -1250,7 +1250,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Blue Star
 
@@ -1277,7 +1277,7 @@ Show
 	MinimapIcon 2 Blue Star
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Magic
 	LinkedSockets >= 4
 	SocketGroup < 3RGB
@@ -1285,7 +1285,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Green Star
 
@@ -1312,7 +1312,7 @@ Show
 	SetBackgroundColor 0 0 0 170
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Normal
 	LinkedSockets >= 4
 	SocketGroup < 3RGB
@@ -1320,7 +1320,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Green Star
 
@@ -1354,7 +1354,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 White Star
 
@@ -1366,7 +1366,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Green Star
 
@@ -1396,7 +1396,7 @@ Show
 	MinimapIcon 1 Yellow Raindrop
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	Sockets >= 1W
 	LinkedSockets >= 4
@@ -1405,7 +1405,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
@@ -1419,12 +1419,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	LinkedSockets >= 3
 	Sockets >= 4
@@ -1436,7 +1436,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -1452,7 +1452,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -1468,7 +1468,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -1483,13 +1483,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	Sockets >= 1W
 	SocketGroup >= 3RGB
@@ -1497,7 +1497,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -1513,7 +1513,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
@@ -1540,7 +1540,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -1555,7 +1555,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -1569,7 +1569,7 @@ Show
 	Quality <= 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -1592,7 +1592,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -1609,7 +1609,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -1624,7 +1624,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -1638,7 +1638,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -1652,7 +1652,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -1667,7 +1667,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -1682,7 +1682,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -1725,7 +1725,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -1740,7 +1740,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
@@ -1755,7 +1755,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
@@ -1770,7 +1770,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -1784,7 +1784,7 @@ Show
 	SocketGroup < 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -1842,7 +1842,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -1857,7 +1857,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -1871,7 +1871,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Cyan Cross
 
@@ -1888,7 +1888,7 @@ Show
 	SetBackgroundColor 0 0 0 170
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Normal
 	Sockets >= 4
 	LinkedSockets < 4
@@ -1897,7 +1897,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Green Cross
 
@@ -1910,12 +1910,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 2 White Cross
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Normal
 	Sockets >= 4
 	LinkedSockets < 4
@@ -1959,7 +1959,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Green Cross
 
@@ -1972,7 +1972,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Green Cross
 
@@ -1986,7 +1986,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 0 Green Cross
 	PlayEffect Orange
@@ -2000,12 +2000,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Green Cross
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Magic
 	Sockets >= 4
 	LinkedSockets < 4
@@ -2014,7 +2014,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Green Cross
 
@@ -2027,7 +2027,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Blue Cross
 
@@ -2044,7 +2044,7 @@ Show
 	MinimapIcon 2 Blue Cross
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Magic
 	Sockets >= 4
 	LinkedSockets < 4
@@ -2089,7 +2089,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 0 Cyan Cross
 	PlayEffect Orange
@@ -2103,7 +2103,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 2 Cyan Cross
 
@@ -2117,7 +2117,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
@@ -2131,13 +2131,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 0 Orange Cross
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	Sockets >= 4
 	LinkedSockets < 4
@@ -2147,7 +2147,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 0 Green Cross
 	PlayEffect Orange
@@ -2162,7 +2162,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 0 Orange Cross
 	PlayEffect Orange
@@ -2177,13 +2177,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 0 Orange Cross
 	PlayEffect Orange
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Unique
 	Sockets >= 4
 	LinkedSockets < 4
@@ -2192,7 +2192,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 0 Pink Cross
 	PlayEffect Orange
@@ -2207,13 +2207,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 0 Orange Cross
 	PlayEffect Orange
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Rare
 	Sockets >= 4
 	LinkedSockets < 4
@@ -2237,7 +2237,7 @@ Show
 	MinimapIcon 1 Yellow Cross
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	Sockets >= 4
 	LinkedSockets < 4
@@ -2246,7 +2246,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Green Cross
 
@@ -2275,7 +2275,7 @@ Show
 	MinimapIcon 1 Yellow Cross
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Magic
 	Sockets >= 1W
 	Sockets < 4
@@ -2285,7 +2285,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 2 Green Pentagon
 
@@ -2303,7 +2303,7 @@ Show
 	MinimapIcon 2 Blue Pentagon
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Magic
 	Sockets >= 1W
 	Sockets < 4
@@ -2325,7 +2325,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 2 Blue Pentagon
 
@@ -2339,7 +2339,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 2 Cyan Pentagon
 
@@ -2353,7 +2353,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 2 Green Pentagon
 
@@ -2381,7 +2381,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 0 Orange Pentagon
 	PlayEffect Orange
@@ -2437,7 +2437,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 0 Orange Pentagon
 	PlayEffect Orange
@@ -2453,7 +2453,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 0 Orange Pentagon
 	PlayEffect Orange
@@ -2469,13 +2469,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 0 Orange Pentagon
 	PlayEffect Orange
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Unique
 	Sockets >= 1W
 	Sockets < 4
@@ -2485,7 +2485,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 0 Pink Pentagon
 	PlayEffect Orange
@@ -2501,7 +2501,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 0 Cyan Pentagon
 	PlayEffect Orange
@@ -2517,13 +2517,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 0 Green Pentagon
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Normal
 	Sockets >= 1W
 	Sockets < 4
@@ -2533,12 +2533,12 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 2 Green Pentagon
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	Sockets >= 1W
 	Sockets < 4
@@ -2548,12 +2548,12 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 1 Green Pentagon
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	Sockets >= 1W
 	Sockets < 4
@@ -2564,7 +2564,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 0 Green Pentagon
 	PlayEffect Orange
@@ -2580,7 +2580,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -2608,7 +2608,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 1 Green Pentagon
 
@@ -2635,12 +2635,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 1 Yellow Pentagon
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Rare
 	Sockets >= 1W
 	Sockets < 4
@@ -2662,7 +2662,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 2 Cyan Pentagon
 
@@ -2676,7 +2676,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 1 Cyan Pentagon
 
@@ -2690,12 +2690,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 2 White Pentagon
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Normal
 	Sockets >= 1W
 	Sockets < 4
@@ -2730,7 +2730,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 255
 	MinimapIcon 2 Green Pentagon
 
@@ -2784,7 +2784,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -2810,7 +2810,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -2827,7 +2827,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -2843,7 +2843,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -2858,7 +2858,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -2872,7 +2872,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -2900,7 +2900,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -2945,7 +2945,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -2962,13 +2962,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	LinkedSockets >= 3
 	LinkedSockets >= 4
@@ -2979,7 +2979,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -2994,7 +2994,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
@@ -3033,7 +3033,7 @@ Show
 	SocketGroup >= 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -3072,7 +3072,7 @@ Show
 	SocketGroup >= 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -3098,7 +3098,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -3113,7 +3113,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -3167,7 +3167,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -3197,7 +3197,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -3226,7 +3226,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -3258,7 +3258,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -3273,7 +3273,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -3289,7 +3289,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -3304,7 +3304,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Cyan Cross
 
@@ -3333,7 +3333,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Cross
 
@@ -3349,7 +3349,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -3433,7 +3433,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -3447,7 +3447,7 @@ Show
 	SocketGroup < 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -3463,13 +3463,13 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	LinkedSockets >= 3
 	Sockets >= 1W
@@ -3482,7 +3482,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -3498,7 +3498,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Cross
 
@@ -3515,7 +3515,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -3531,7 +3531,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -3558,7 +3558,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -3602,7 +3602,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -3617,7 +3617,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -3631,7 +3631,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -3644,7 +3644,7 @@ Show
 	LinkedSockets >= 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -3658,7 +3658,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -3671,7 +3671,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -3683,7 +3683,7 @@ Show
 	Sockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -3699,7 +3699,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -3715,7 +3715,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -3730,7 +3730,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -3744,7 +3744,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -3761,7 +3761,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -3777,7 +3777,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -3790,7 +3790,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -3804,7 +3804,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -3819,7 +3819,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -3832,7 +3832,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -3847,7 +3847,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -3863,7 +3863,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -3877,7 +3877,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -3892,7 +3892,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -3908,7 +3908,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -3948,7 +3948,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
@@ -3962,7 +3962,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
@@ -3978,7 +3978,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
@@ -3994,7 +3994,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -4008,7 +4008,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -4022,7 +4022,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
@@ -4037,7 +4037,7 @@ Show
 	Quality <= 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -4051,7 +4051,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -4067,7 +4067,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -4082,7 +4082,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -4098,7 +4098,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -4114,7 +4114,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -4129,7 +4129,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -4144,7 +4144,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -4173,7 +4173,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -4188,7 +4188,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -4204,7 +4204,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -4221,7 +4221,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -4253,12 +4253,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 2 Cyan Hexagon
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Magic
 	LinkedSockets < 3
 	Sockets < 1W
@@ -4270,12 +4270,12 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 2 Green Hexagon
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Magic
 	LinkedSockets < 3
 	Sockets < 1W
@@ -4301,7 +4301,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 2 Blue Hexagon
 
@@ -4332,7 +4332,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 2 Green Hexagon
 
@@ -4349,7 +4349,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 0 Orange Hexagon
 	PlayEffect Orange
@@ -4428,7 +4428,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 0 Cyan Hexagon
 	PlayEffect Orange
@@ -4446,13 +4446,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 0 Orange Hexagon
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	LinkedSockets < 3
 	Sockets < 1W
@@ -4465,13 +4465,13 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Orange
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Unique
 	LinkedSockets < 3
 	Sockets < 1W
@@ -4483,7 +4483,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 0 Pink Hexagon
 	PlayEffect Orange
@@ -4501,7 +4501,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 0 Orange Hexagon
 	PlayEffect Orange
@@ -4519,7 +4519,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Orange
@@ -4567,7 +4567,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 0 Orange Kite
 	PlayEffect Orange
 
@@ -4584,7 +4584,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 0 Orange Hexagon
 	PlayEffect Orange
@@ -4601,7 +4601,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 2 Green UpsideDownHouse
 
 Show
@@ -4631,11 +4631,11 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 2 Blue Kite
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Magic
 	LinkedSockets < 3
 	Sockets < 1W
@@ -4649,7 +4649,7 @@ Show
 	MinimapIcon 2 Pink UpsideDownHouse
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Magic
 	LinkedSockets < 3
 	Sockets < 1W
@@ -4661,7 +4661,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 2 Green UpsideDownHouse
 
 Show
@@ -4676,7 +4676,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 2 Cyan UpsideDownHouse
 
 Show
@@ -4736,7 +4736,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -4754,7 +4754,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Orange
 
@@ -4771,12 +4771,12 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 0 Orange Kite
 	PlayEffect Orange
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Unique
 	LinkedSockets < 3
 	Sockets < 1W
@@ -4788,12 +4788,12 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 0 Pink UpsideDownHouse
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	LinkedSockets < 3
 	Sockets < 1W
@@ -4806,7 +4806,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Orange
 
@@ -4823,7 +4823,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 0 Orange Kite
 	PlayEffect Orange
 
@@ -4840,7 +4840,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 0 Cyan UpsideDownHouse
 	PlayEffect Orange
 
@@ -4886,7 +4886,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 0 Orange Kite
 	PlayEffect Orange
 
@@ -4915,7 +4915,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 2 Blue Diamond
 
@@ -4930,12 +4930,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 2 Cyan Diamond
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Magic
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -4946,12 +4946,12 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 2 Green Diamond
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Magic
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -4989,7 +4989,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 2 Green Diamond
 
@@ -5005,7 +5005,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
@@ -5065,7 +5065,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 0 Cyan Diamond
 	PlayEffect Orange
@@ -5082,13 +5082,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -5100,13 +5100,13 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 0 Green Diamond
 	PlayEffect Orange
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Unique
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -5117,7 +5117,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 0 Pink Diamond
 	PlayEffect Orange
@@ -5134,7 +5134,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
@@ -5151,7 +5151,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 0 Green Diamond
 	PlayEffect Orange
@@ -5196,13 +5196,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -5214,12 +5214,12 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 1 Green Hexagon
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -5260,7 +5260,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 1 Yellow Hexagon
 
@@ -5276,7 +5276,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 1 Cyan Hexagon
 
@@ -5292,7 +5292,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 2 Green Hexagon
 
@@ -5308,7 +5308,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 1 Green UpsideDownHouse
 
 Show
@@ -5323,12 +5323,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 1 Green Hexagon
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Normal
 	LinkedSockets < 3
 	Sockets < 1W
@@ -5354,7 +5354,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 2 White Hexagon
 
@@ -5386,12 +5386,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 2 Cyan Hexagon
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Normal
 	LinkedSockets < 3
 	Sockets < 1W
@@ -5403,11 +5403,11 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 2 Green UpsideDownHouse
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Normal
 	LinkedSockets < 3
 	Sockets < 1W
@@ -5419,12 +5419,12 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 136 136 255
 	MinimapIcon 2 Green Hexagon
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -5436,7 +5436,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
@@ -5452,7 +5452,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
@@ -5467,7 +5467,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 1 Yellow Kite
 
 Show
@@ -5485,7 +5485,7 @@ Show
 	MinimapIcon 1 Yellow Kite
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -5499,7 +5499,7 @@ Show
 	MinimapIcon 1 Pink UpsideDownHouse
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -5511,7 +5511,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 1 Green UpsideDownHouse
 
 Show
@@ -5526,7 +5526,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 2 Cyan UpsideDownHouse
 
 Show
@@ -5556,11 +5556,11 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 2 White Kite
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Normal
 	LinkedSockets < 3
 	Sockets < 1W
@@ -5585,11 +5585,11 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	MinimapIcon 2 Green UpsideDownHouse
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -5600,12 +5600,12 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 1 Green Diamond
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -5643,7 +5643,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 1 Yellow Diamond
 
@@ -5658,7 +5658,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 1 Cyan Diamond
 
@@ -5673,7 +5673,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 2 Green Diamond
 
@@ -5688,12 +5688,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 1 Green Diamond
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions Trinkets "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
 	Rarity Normal
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -5717,7 +5717,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 2 White Diamond
 
@@ -5747,12 +5747,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 2 Cyan Diamond
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Normal
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -5763,12 +5763,12 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 200 200 200
 	MinimapIcon 2 Green Diamond
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -5779,7 +5779,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
@@ -5795,7 +5795,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -5838,7 +5838,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Yellow Raindrop
 
@@ -5867,7 +5867,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -5883,7 +5883,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -5900,7 +5900,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -5915,7 +5915,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -5931,7 +5931,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -5949,7 +5949,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -5980,7 +5980,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -5995,7 +5995,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -6011,7 +6011,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -6038,7 +6038,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
@@ -6065,7 +6065,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -6078,7 +6078,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -6092,7 +6092,7 @@ Show
 	SocketGroup >= 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -6107,7 +6107,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -6121,7 +6121,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -6147,7 +6147,7 @@ Show
 	LinkedSockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -6160,7 +6160,7 @@ Show
 	SocketGroup < 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -6214,7 +6214,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -6242,7 +6242,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -6299,7 +6299,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -6313,7 +6313,7 @@ Show
 	SocketGroup < 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -6356,7 +6356,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -6386,7 +6386,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Cyan Cross
 
@@ -6401,7 +6401,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Cross
 
@@ -6431,7 +6431,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Cross
 
@@ -6484,7 +6484,7 @@ Show
 	LinkedSockets >= 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -6499,13 +6499,13 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	Sockets < 1W
 	Sockets >= 4
@@ -6513,7 +6513,7 @@ Show
 	Corrupted True
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -6546,7 +6546,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -6559,7 +6559,7 @@ Show
 	Sockets >= 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -6572,7 +6572,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -6594,7 +6594,7 @@ Show
 	Sockets < 1W
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Yellow Triangle
 
@@ -6615,7 +6615,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -6630,13 +6630,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	Sockets < 1W
 	Sockets >= 4
@@ -6645,7 +6645,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -6671,7 +6671,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -6683,7 +6683,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Yellow Moon
 
@@ -6698,7 +6698,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -6714,7 +6714,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -6729,7 +6729,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
@@ -6745,12 +6745,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	Sockets < 1W
 	Sockets >= 4
@@ -6761,12 +6761,12 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	Sockets < 1W
 	Sockets >= 4
@@ -6776,7 +6776,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -6816,7 +6816,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
@@ -6829,7 +6829,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Yellow Raindrop
 
@@ -6843,7 +6843,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
@@ -6858,7 +6858,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -6874,7 +6874,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -6890,7 +6890,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -6932,7 +6932,7 @@ Show
 	SocketGroup < 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -6960,7 +6960,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -6977,7 +6977,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -6993,7 +6993,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
@@ -7009,12 +7009,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -7026,7 +7026,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
@@ -7042,7 +7042,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Cyan Cross
 
@@ -7059,7 +7059,7 @@ Show
 	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -7068,7 +7068,7 @@ Show
 	Corrupted True
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -7081,7 +7081,7 @@ Show
 	LinkedSockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -7095,7 +7095,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -7110,7 +7110,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -7138,7 +7138,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -7171,7 +7171,7 @@ Show
 	MinimapIcon 1 Yellow Raindrop
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -7181,7 +7181,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -7196,7 +7196,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -7226,12 +7226,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -7242,7 +7242,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -7258,7 +7258,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
@@ -7274,7 +7274,7 @@ Show
 	Quality <= 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -7305,7 +7305,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -7321,7 +7321,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -7350,7 +7350,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -7365,7 +7365,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -7380,7 +7380,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -7405,7 +7405,7 @@ Show
 	SocketGroup < 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -7419,7 +7419,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -7433,7 +7433,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -7447,7 +7447,7 @@ Show
 	Quality <= 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -7463,7 +7463,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -7479,7 +7479,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -7495,7 +7495,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -7537,7 +7537,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -7549,7 +7549,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -7562,7 +7562,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -7573,7 +7573,7 @@ Show
 	Sockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -7584,7 +7584,7 @@ Show
 	Sockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -7596,7 +7596,7 @@ Show
 	Sockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -7610,7 +7610,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -7623,7 +7623,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -7637,7 +7637,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -7651,7 +7651,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -7667,7 +7667,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
@@ -7683,7 +7683,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -7698,12 +7698,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	Sockets < 1W
 	Sockets < 4
@@ -7715,7 +7715,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -7729,7 +7729,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
@@ -7742,7 +7742,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -7757,7 +7757,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
@@ -7772,7 +7772,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -7789,7 +7789,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
@@ -7804,7 +7804,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -7820,7 +7820,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -7837,7 +7837,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -7852,7 +7852,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -7869,7 +7869,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -7884,7 +7884,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
@@ -7899,7 +7899,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -7914,7 +7914,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -7931,7 +7931,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -7947,7 +7947,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -7964,7 +7964,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -7981,7 +7981,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -7997,7 +7997,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
@@ -8012,7 +8012,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -8038,7 +8038,7 @@ Show
 	SocketGroup >= 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -8050,7 +8050,7 @@ Show
 	LinkedSockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -8062,7 +8062,7 @@ Show
 	LinkedSockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -8076,7 +8076,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -8091,7 +8091,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
@@ -8106,7 +8106,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -8121,7 +8121,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
@@ -8136,7 +8136,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -8150,7 +8150,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -8234,7 +8234,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -8266,12 +8266,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	LinkedSockets < 3
 	Sockets >= 1W
@@ -8282,7 +8282,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -8358,7 +8358,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -8378,7 +8378,7 @@ Show
 	MinimapIcon 2 Blue Triangle
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	LinkedSockets < 3
 	Sockets < 1W
@@ -8391,7 +8391,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -8407,7 +8407,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -8423,7 +8423,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -8439,7 +8439,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Cyan Cross
 
@@ -8454,12 +8454,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow Cross
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -8470,7 +8470,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
@@ -8485,12 +8485,12 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -8500,7 +8500,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -8514,7 +8514,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -8527,7 +8527,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -8540,7 +8540,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -8554,7 +8554,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -8569,7 +8569,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -8583,7 +8583,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -8597,13 +8597,13 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Unique
 	LinkedSockets < 3
 	Sockets < 1W
@@ -8615,7 +8615,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -8631,7 +8631,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
@@ -8661,7 +8661,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
@@ -8705,7 +8705,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -8718,7 +8718,7 @@ Show
 	SocketGroup < 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -8733,7 +8733,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -8762,7 +8762,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -8776,7 +8776,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -8788,7 +8788,7 @@ Show
 	Sockets >= 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Yellow Triangle
 
@@ -8821,7 +8821,7 @@ Show
 	Sockets >= 1W
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -8844,7 +8844,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -8869,7 +8869,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Yellow Moon
 
@@ -8881,7 +8881,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -8909,7 +8909,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
@@ -8924,7 +8924,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -8938,7 +8938,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Yellow Raindrop
 
@@ -8964,7 +8964,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -8991,7 +8991,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -9020,7 +9020,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -9036,7 +9036,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -9052,7 +9052,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Cyan Cross
 
@@ -9066,7 +9066,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
@@ -9082,7 +9082,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -9110,7 +9110,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
@@ -9139,7 +9139,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -9152,7 +9152,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -9165,7 +9165,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -9178,7 +9178,7 @@ Show
 	LinkedSockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -9215,7 +9215,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -9233,7 +9233,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
@@ -9248,7 +9248,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -9276,7 +9276,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -9292,7 +9292,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -9307,7 +9307,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
@@ -9349,7 +9349,7 @@ Show
 	SocketGroup < 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -9361,7 +9361,7 @@ Show
 	SocketGroup < 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -9404,7 +9404,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -9420,7 +9420,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -9435,7 +9435,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -9489,7 +9489,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -9515,7 +9515,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -9530,7 +9530,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -9545,7 +9545,7 @@ Show
 	Quality <= 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -9560,7 +9560,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -9576,7 +9576,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -9591,7 +9591,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -9606,7 +9606,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -9620,7 +9620,7 @@ Show
 	SocketGroup < 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -9649,7 +9649,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -9664,7 +9664,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -9678,7 +9678,7 @@ Show
 	SocketGroup >= 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -9690,7 +9690,7 @@ Show
 	LinkedSockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -9705,7 +9705,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -9720,7 +9720,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -9733,7 +9733,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -9749,7 +9749,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -9764,7 +9764,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -9779,7 +9779,7 @@ Show
 	SocketGroup >= 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -9793,7 +9793,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -9807,7 +9807,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -9832,7 +9832,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -9847,7 +9847,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -9873,7 +9873,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -9888,7 +9888,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -9915,7 +9915,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -9931,7 +9931,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -9946,7 +9946,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -9961,7 +9961,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -9977,7 +9977,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 1 Green Star
 
@@ -9993,7 +9993,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -10008,7 +10008,7 @@ Show
 	Quality <= 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -10025,7 +10025,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -10040,7 +10040,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -10054,12 +10054,12 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -10067,12 +10067,12 @@ Show
 	Corrupted True
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -10081,7 +10081,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -10095,7 +10095,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -10110,7 +10110,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -10130,7 +10130,7 @@ Show
 	MinimapIcon 2 Blue Raindrop
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -10140,7 +10140,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -10156,7 +10156,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -10171,7 +10171,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -10185,7 +10185,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -10199,7 +10199,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -10214,7 +10214,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -10242,7 +10242,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -10256,7 +10256,7 @@ Show
 	SocketGroup >= 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -10272,7 +10272,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -10289,7 +10289,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -10304,7 +10304,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -10318,7 +10318,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -10334,7 +10334,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -10349,7 +10349,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -10364,7 +10364,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -10382,7 +10382,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -10399,7 +10399,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -10417,7 +10417,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -10435,7 +10435,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -10467,7 +10467,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
@@ -10483,7 +10483,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -10513,7 +10513,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -10529,7 +10529,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -10545,7 +10545,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -10561,7 +10561,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -10591,7 +10591,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -10608,7 +10608,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -10622,7 +10622,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -10648,7 +10648,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -10677,7 +10677,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -10693,7 +10693,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -10708,7 +10708,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -10723,7 +10723,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -10737,7 +10737,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -10754,7 +10754,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -10771,7 +10771,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -10788,7 +10788,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -10805,7 +10805,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Green Star
 	PlayEffect Orange
@@ -10822,7 +10822,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -10838,7 +10838,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -10854,7 +10854,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -10868,7 +10868,7 @@ Show
 	SocketGroup >= 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -10882,7 +10882,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Green Moon
 
@@ -10897,7 +10897,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Green Raindrop
 
@@ -10910,7 +10910,7 @@ Show
 	LinkedSockets >= 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -10937,7 +10937,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -10951,7 +10951,7 @@ Show
 	LinkedSockets >= 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Yellow Triangle
 
@@ -10964,7 +10964,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -10978,7 +10978,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -10995,7 +10995,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Cyan Moon
 	PlayEffect Orange
@@ -11025,7 +11025,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Yellow Raindrop
 
@@ -11053,7 +11053,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -11068,7 +11068,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -11084,7 +11084,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
@@ -11099,7 +11099,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Yellow Moon
 
@@ -11139,7 +11139,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 2 Cyan Star
 
@@ -11155,7 +11155,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 255 85 85
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
@@ -11180,7 +11180,7 @@ Show
 	LinkedSockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Yellow Triangle
 
@@ -11193,7 +11193,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Yellow Moon
 
@@ -11209,7 +11209,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -11248,7 +11248,7 @@ Show
 	LinkedSockets >= 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Yellow Triangle
 
@@ -11274,7 +11274,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Yellow Moon
 
@@ -11312,7 +11312,7 @@ Show
 	LinkedSockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Yellow Triangle
 
@@ -11327,7 +11327,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Yellow Raindrop
 
@@ -11341,7 +11341,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Yellow Moon
 
@@ -11355,7 +11355,7 @@ Show
 	Quality <= 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -11370,7 +11370,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -11384,7 +11384,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -11399,7 +11399,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -11437,7 +11437,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -11464,7 +11464,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -11478,7 +11478,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -11506,7 +11506,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 2 Cyan Raindrop
 
@@ -11550,7 +11550,7 @@ Show
 	MinimapIcon 1 Yellow Moon
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -11559,7 +11559,7 @@ Show
 	Corrupted True
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -11578,7 +11578,7 @@ Show
 	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets < 3
 	Sockets < 1W
@@ -11589,7 +11589,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -11603,7 +11603,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -11616,7 +11616,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -11629,7 +11629,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -11645,7 +11645,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -11659,7 +11659,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -11673,7 +11673,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -11687,7 +11687,7 @@ Show
 	SocketGroup >= 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Green Triangle
 
@@ -11714,7 +11714,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
@@ -11729,7 +11729,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -11742,7 +11742,7 @@ Show
 	SocketGroup < 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -11756,7 +11756,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -11770,7 +11770,7 @@ Show
 	Mirrored True
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -11784,7 +11784,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -11799,7 +11799,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -11813,7 +11813,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -11838,7 +11838,7 @@ Show
 	Quality <= 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -11853,7 +11853,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
@@ -11868,7 +11868,7 @@ Show
 	Quality > 0
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -11895,7 +11895,7 @@ Show
 	SocketGroup >= 3RGB
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 2 Cyan Triangle
 
@@ -11912,7 +11912,7 @@ Show
 	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -11920,7 +11920,7 @@ Show
 	Corrupted True
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Green Triangle
 
@@ -11935,12 +11935,12 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 2 Cyan Moon
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -11949,12 +11949,12 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Green Moon
 
 Show
-	Class Currency
+	Class Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
 	Rarity Rare
 	LinkedSockets >= 3
 	Sockets < 1W
@@ -11964,7 +11964,7 @@ Show
 	Corrupted False
 
 	SetTextColor 0 170 0
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Green Raindrop
 
@@ -11979,7 +11979,7 @@ Show
 	Mirrored False
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -11992,7 +11992,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -12007,7 +12007,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
@@ -12020,7 +12020,7 @@ Show
 	Sockets < 4
 	Corrupted True
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 1 Cyan Triangle
 
@@ -12033,7 +12033,7 @@ Show
 	Mirrored True
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Cyan Moon
 
@@ -12047,7 +12047,7 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 1 Cyan Raindrop
 
@@ -12061,7 +12061,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Cyan Triangle
 	PlayEffect Orange
@@ -12078,7 +12078,7 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 170 0 170
 	MinimapIcon 0 Cyan Raindrop
 	PlayEffect Orange
@@ -12107,7 +12107,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
@@ -12124,7 +12124,7 @@ Show
 	Corrupted True
 
 	SetFontSize 45
-	SetBackgroundColor 85 85 85 170
+	SetBackgroundColor 255 255 255 170
 	SetBorderColor 210 0 0
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange

@@ -42,7 +42,7 @@ export class EffectSet {
 	// Default alpha is 240
 	static RGBA = {
 		FADED: "0 0 0 170",
-		WHITE: "85 85 85 170"
+		WHITE: "255 255 255 170"
 	};
 
 	static COLOUR = {
