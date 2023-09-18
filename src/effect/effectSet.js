@@ -84,6 +84,8 @@ export class EffectSet {
 
 	beamColour = null;
 
+	isSilent = null;
+
 	equals(other) {
 		return (
 			this.textSize === other.textSize
@@ -96,6 +98,8 @@ export class EffectSet {
 			&& this.mapSize === other.mapSize
 
 			&& this.beamColour === other.beamColour
+
+			&& this.isSilent === other.isSilent
 		);
 	}
 
@@ -121,6 +125,10 @@ export class EffectSet {
 
 		if (this.beamColour !== null) {
 			lines.push(`PlayEffect ${this.beamColour}`);
+		}
+
+		if (this.isSilent === true) {
+			lines.push("DisableDropSound");
 		}
 
 		return lines;

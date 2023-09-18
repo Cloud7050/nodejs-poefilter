@@ -167,6 +167,7 @@ export class EffecterEquipment extends Effecter {
 
 		p.e.textSize = EffectSet.TEXT_SIZE.SMALLEST;
 		p.e.backgroundColour = EffectSet.RGBA.FADED;
+		p.e.isSilent = true;
 
 		if (p.isFluffOutline) p.e.outlineColour = null;
 	}
