@@ -104,19 +104,7 @@ export class PermutationManager {
 		}
 	}
 
-	#sortBooleanFirst(property) {
-		this.ps.sort((p1, p2) => {
-			let c1 = p1.c[property];
-			let c2 = p2.c[property];
-			// 1 is "less than" 2, it needs to be first since its property is true
-			if (c1 && !c2) return -1;
-			// Similarly, 2 goes before 1
-			if (!c1 && c2) return 1;
-			return 0;
-		});
-	}
-
-	optimise() {
+	#optimise() {
 		let previousCount = this.ps.length;
 		while (true) {
 			this.#optimiseOnce();
@@ -132,18 +120,30 @@ export class PermutationManager {
 		}
 	}
 
+	#sortBooleanFirst(property) {
+		this.ps.sort((p1, p2) => {
+			let c1 = p1.c[property];
+			let c2 = p2.c[property];
+			// 1 is "less than" 2, it needs to be first since its property is true
+			if (c1 && !c2) return -1;
+			// Similarly, 2 goes before 1
+			if (!c1 && c2) return 1;
+			return 0;
+		});
+	}
+
 	/**
 	 * Must sort before saving, as conditions that have no inverse need to be at
 	 * the top. Eg you can check if a BaseType matches, but can't realistically
 	 * check if it doesn't match.
 	 */
-	sort() {
+	#sort() {
 		// Run sorts in reverse order, most important group last
 		this.#sortBooleanFirst("isLootyMod");
 		this.#sortBooleanFirst("isLootyBase");
 	}
 
-	save() {
+	#save() {
 		// Convert to lines
 		let lines = [];
 		let blockCount = 0;
@@ -178,5 +178,11 @@ export class PermutationManager {
 
 		console.log(`Blocks: ${blockCount}/${this.ps.length}`);
 		console.log(`Lines: ${lines.length}`);
+	}
+
+	finalise() {
+		this.#optimise();
+		this.#sort();
+		this.#save();
 	}
 }

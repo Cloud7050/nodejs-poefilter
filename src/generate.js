@@ -30,9 +30,7 @@ let permutationManager = new PermutationMaker()
 new Effecter(permutationManager)
 	.decide();
 
-permutationManager.optimise();
-permutationManager.sort();
-permutationManager.save();
+permutationManager.finalise();
 
 Logger.save();
 console.log("☁");
