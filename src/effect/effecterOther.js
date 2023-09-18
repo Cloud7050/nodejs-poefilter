@@ -12,17 +12,26 @@ export class EffecterOther extends Effecter {
 	 */
 	static #defaultType(p) {
 		switch (p.c.type) {
+			case ConditionSet.TYPE_OTHER.LABYRINTH:
+				p.e.textColour = EffectSet.RGB.GREEN;
+				p.e.backgroundColour = EffectSet.RGBA.WHITE;
+				p.e.mapColour = EffectSet.COLOUR.LIME;
+				p.e.mapIcon = EffectSet.ICON.HOUSE;
+				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+				break;
+			case ConditionSet.TYPE_OTHER.CARD:
+				p.e.backgroundColour = EffectSet.RGBA.WHITE;
+				p.e.mapColour = EffectSet.COLOUR.LIME;
+				p.e.mapIcon = EffectSet.ICON.HOUSE;
+				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+				break;
 			case ConditionSet.TYPE_OTHER.GEM:
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.CYAN;
 				p.e.mapIcon = EffectSet.ICON.HOUSE;
+				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
-			case ConditionSet.TYPE_OTHER.VALUABLE_COLOURED:
-				p.e.backgroundColour = EffectSet.RGBA.WHITE;
-				p.e.mapColour = EffectSet.COLOUR.LIME;
-				p.e.mapIcon = EffectSet.ICON.HOUSE;
-				break;
-			case ConditionSet.TYPE_OTHER.VALUABLE_RECOLOUR:
+			case ConditionSet.TYPE_OTHER.CURRENCY:
 				p.e.textColour = EffectSet.RGB.GREEN;
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.LIME;

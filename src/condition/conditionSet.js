@@ -8,9 +8,10 @@ export class ConditionSet {
 	static TYPE_OTHER = {
 		OTHER: 'Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"',
 		QUEST: '"Quest Items"',
-		VALUABLE_RECOLOUR: 'Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"',
-		VALUABLE_COLOURED: '"Divination Cards"',
-		GEM: "Gems Jewels"
+		CURRENCY: "Currency",
+		GEM: "Gems Jewels",
+		CARD: '"Divination Cards"',
+		LABYRINTH: '"Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"'
 	};
 	static TYPE_EQUIPMENT = {
 		WEAPON_UNUSED: 'Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers',
