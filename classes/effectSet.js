@@ -180,14 +180,14 @@ export class Effecter {
 
 				p.isHideImmune = true;
 				break;
-			case ConditionSet.TYPE.VALUABLE:
+			case ConditionSet.TYPE.VALUABLE_COLOURED:
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.LIME;
 				p.e.mapIcon = EffectSet.ICON.HOUSE;
 
 				p.isHideImmune = true;
 				break;
-			case ConditionSet.TYPE.CURRENCY:
+			case ConditionSet.TYPE.VALUABLE:
 				p.e.textColour = EffectSet.RGB.GREEN;
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.LIME;
@@ -276,7 +276,7 @@ export class Effecter {
 		// We decide based on type + rarity + sockets + other attributes
 
 		switch (p.c.type) {
-			case ConditionSet.TYPE.USED_WEAPON:
+			case ConditionSet.TYPE.WEAPON:
 			case ConditionSet.TYPE.ARMOUR:
 				switch (p.c.rarity) {
 					case ConditionSet.RARITY.MAGIC:
@@ -311,7 +311,7 @@ export class Effecter {
 						break;
 				}
 				break;
-			case ConditionSet.TYPE.UNUSED_WEAPON:
+			case ConditionSet.TYPE.WEAPON_UNUSED:
 				// We won't use this item, so we ignore rarity, sockets, corruption
 
 				// Force hide its outlines
