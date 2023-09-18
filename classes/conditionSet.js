@@ -65,6 +65,9 @@ export class ConditionSet {
 		new Duplicator("type", Duplicator.TYPE.ENUM, ConditionSet.TYPE),
 		new Duplicator("rarity", Duplicator.TYPE.ENUM, ConditionSet.RARITY),
 
+		new Duplicator("isLootyBase", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isLootyMod", Duplicator.TYPE.BOOLEAN),
+
 		new Duplicator("isThreeLink", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isWhite", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isFour", Duplicator.TYPE.BOOLEAN),
@@ -79,6 +82,9 @@ export class ConditionSet {
 
 	type = null;
 	rarity = null;
+
+	isLootyBase = null;
+	isLootyMod = null;
 
 	isThreeLink = null;
 	isWhite = null;
@@ -96,6 +102,9 @@ export class ConditionSet {
 
 		conditionSet.type = this.type;
 		conditionSet.rarity = this.rarity;
+
+		conditionSet.isLootyBase = this.isLootyBase;
+		conditionSet.isLootyMod = this.isLootyMod;
 
 		conditionSet.isThreeLink = this.isThreeLink;
 		conditionSet.isWhite = this.isWhite;
@@ -116,6 +125,9 @@ export class ConditionSet {
 			this.type === other.type
 			&& this.rarity === other.rarity
 
+			&& this.isLootyBase === other.isLootyBase
+			&& this.isLootyMod === other.isLootyMod
+
 			&& this.isThreeLink === other.isThreeLink
 			&& this.isWhite === other.isWhite
 			&& this.isFour === other.isFour
@@ -135,6 +147,11 @@ export class ConditionSet {
 
 		if (this.type !== null) lines.push(`Class ${this.type}`);
 		if (this.rarity !== null) lines.push(`Rarity ${this.rarity}`);
+
+		if (this.isLootyBase === true) {
+			lines.push('BaseType "Gold Amulet" "Gold Ring"');
+		}
+		if (this.isLootyMod === true) lines.push('HasExplicitMod "of Plunder"');
 
 		if (this.isThreeLink !== null) {
 			let operator = this.isThreeLink ? ">=" : "<";

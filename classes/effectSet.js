@@ -18,19 +18,19 @@ export class EffectSet {
 		TEAL: "0 170 170",
 		CRIMSON: "170 0 0",
 		PURPLE: "170 0 170", // RGB
-		ORANGE: "255 170 0",
+		// ORANGE: "255 170 0",
 		SILVER: "170 170 170",
 		GREY: "85 85 85",
 		BLUE: "85 85 255",
-		LIME: "85 255 85",
+		LIME: "85 255 85", // Looty
 		CYAN: "85 255 255",
 		ROSE: "255 85 85", // Four link
 		PINK: "255 85 255", // White
-		YELLOW: "255 255 85", // Four
-		WHITE: "255 255 255"
+		YELLOW: "255 255 85" // Four
+		// WHITE: "255 255 255"
 	};
 	static RGB_GAME = {
-		CURRENCY: " 170 158 130",
+		CURRENCY: "170 158 130",
 		GEM: "27 162 155",
 		NORMAL: "200 200 200", // Three link
 		MAGIC: "136 136 255", // Quality
@@ -42,7 +42,7 @@ export class EffectSet {
 	// Default alpha is 240
 	static RGBA = {
 		FADED: "0 0 0 170",
-		WHITE: "255 255 255 170"
+		WHITE: "255 255 255 210"
 	};
 
 	static COLOUR = {
@@ -69,7 +69,7 @@ export class EffectSet {
 		HEXAGON: "Hexagon", // Quality
 		MOON: "Moon", // Mirrored
 		TRIANGLE: "Triangle", // Corrupted
-		CIRCLE: "Circle",
+		CIRCLE: "Circle", // Looty
 		SQUARE: "Square"
 	};
 	static ICON_SIZE = {
@@ -238,6 +238,12 @@ export class Effecter {
 
 			// Can be vendored
 			p.isHideImmune = true;
+		} else if (p.c.isLootyBase || p.c.isLootyMod) {
+			p.e.outlineColour = EffectSet.RGB.LIME;
+			p.e.mapIcon = EffectSet.ICON.CIRCLE;
+
+			// May use
+			p.isHideImmune = true;
 		} else if (p.c.isFive) {
 			p.e.outlineColour = EffectSet.RGB.ROSE;
 			p.e.mapIcon = EffectSet.ICON.STAR;
@@ -279,7 +285,7 @@ export class Effecter {
 		// • Equipment, ie weapons/armour
 		// • Normal/magic
 		// • Not RGB
-		// • Not mirrored
+		// • Not looty or mirrored
 		// We decide based on type + rarity + sockets + other attributes
 
 		switch (p.c.type) {

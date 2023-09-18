@@ -31,6 +31,7 @@ new Effecter(permutationManager)
 	.decide();
 
 permutationManager.optimise();
+permutationManager.sort();
 permutationManager.save();
 
 Logger.save();
