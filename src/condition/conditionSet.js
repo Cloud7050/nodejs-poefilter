@@ -5,17 +5,19 @@ import { Duplicator } from "./duplicator.js";
 
 /* [Exports] */
 export class ConditionSet {
-	static TYPE = {
+	static TYPE_OTHER = {
 		OTHER: 'Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"',
 		QUEST: '"Quest Items"',
-		VALUABLE: 'Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"',
+		VALUABLE_RECOLOUR: 'Currency "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"',
 		VALUABLE_COLOURED: '"Divination Cards"',
-		GEM: "Gems Jewels",
+		GEM: "Gems Jewels"
+	};
+	static TYPE_EQUIPMENT = {
 		WEAPON_UNUSED: 'Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers',
 		// 4 sockets on gloves/boots/helmets, 6 on body armour
 		ARMOUR: 'Amulets Rings Belts Gloves Boots "Body Armours" Helmets',
 		// 3 sockets
-		WEAPON: "Wands Shields"
+		WEAPON_WITCH: "Wands Shields"
 	};
 	static RARITY = {
 		NORMAL: "Normal",
@@ -24,8 +26,11 @@ export class ConditionSet {
 		UNIQUE: "Unique"
 	};
 
-	static DUPLICATORS = [
-		new Duplicator("type", Duplicator.TYPE.ENUM, ConditionSet.TYPE),
+	static DUPLICATORS_OTHER = [
+		new Duplicator("type", Duplicator.TYPE.ENUM, ConditionSet.TYPE_OTHER)
+	];
+	static DUPLICATORS_EQUIPMENT = [
+		new Duplicator("type", Duplicator.TYPE.ENUM, ConditionSet.TYPE_EQUIPMENT),
 		new Duplicator("rarity", Duplicator.TYPE.ENUM, ConditionSet.RARITY),
 
 		new Duplicator("isLootyBase", Duplicator.TYPE.BOOLEAN),

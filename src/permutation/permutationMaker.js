@@ -26,7 +26,7 @@ export class PermutationMaker {
 		// call
 		this.#cs = [new ConditionSet()];
 
-		for (let duplicator of ConditionSet.DUPLICATORS) {
+		for (let duplicator of ConditionSet.DUPLICATORS_EQUIPMENT) {
 			this.#useDuplicator(duplicator);
 		}
 

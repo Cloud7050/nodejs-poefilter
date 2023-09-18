@@ -46,21 +46,21 @@ export class Effecter {
 	 */
 	static #defaultType(p) {
 		switch (p.c.type) {
-			case ConditionSet.TYPE.GEM:
+			case ConditionSet.TYPE_EQUIPMENT.GEM:
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.CYAN;
 				p.e.mapIcon = EffectSet.ICON.HOUSE;
 
 				p.isHideImmune = true;
 				break;
-			case ConditionSet.TYPE.VALUABLE_COLOURED:
+			case ConditionSet.TYPE_EQUIPMENT.VALUABLE_COLOURED:
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.LIME;
 				p.e.mapIcon = EffectSet.ICON.HOUSE;
 
 				p.isHideImmune = true;
 				break;
-			case ConditionSet.TYPE.VALUABLE:
+			case ConditionSet.TYPE_EQUIPMENT.VALUABLE_RECOLOUR:
 				p.e.textColour = EffectSet.RGB.GREEN;
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.LIME;
@@ -68,13 +68,13 @@ export class Effecter {
 
 				p.isHideImmune = true;
 				break;
-			case ConditionSet.TYPE.QUEST:
+			case ConditionSet.TYPE_EQUIPMENT.QUEST:
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				// Map icon should be handled by game's green exclamation mark
 
 				p.isHideImmune = true;
 				break;
-			case ConditionSet.TYPE.OTHER:
+			case ConditionSet.TYPE_EQUIPMENT.OTHER:
 				p.e.mapColour = EffectSet.COLOUR.PINK;
 				p.e.mapIcon = EffectSet.ICON.HOUSE;
 
@@ -162,8 +162,8 @@ export class Effecter {
 		// We decide based on type + rarity + sockets + other attributes
 
 		switch (p.c.type) {
-			case ConditionSet.TYPE.WEAPON:
-			case ConditionSet.TYPE.ARMOUR:
+			case ConditionSet.TYPE_EQUIPMENT.WEAPON_WITCH:
+			case ConditionSet.TYPE_EQUIPMENT.ARMOUR:
 				switch (p.c.rarity) {
 					case ConditionSet.RARITY.MAGIC:
 						// If any sockets are notable, maybe we'll use it
@@ -196,7 +196,7 @@ export class Effecter {
 						break;
 				}
 				break;
-			case ConditionSet.TYPE.WEAPON_UNUSED:
+			case ConditionSet.TYPE_EQUIPMENT.WEAPON_UNUSED:
 				// We won't use this item, so we ignore rarity, sockets, corruption
 
 				// Force hide its outlines

@@ -29,7 +29,7 @@ export class PermutationManager {
 		l("	psOld:   -1\n");
 		let cSource = pSource.c;
 
-		for (let duplicator of ConditionSet.DUPLICATORS) {
+		for (let duplicator of ConditionSet.DUPLICATORS_EQUIPMENT) {
 			if (cSource[duplicator.property] === null) {
 				// The source ConditionSet must match one of the generated ConditionSets. This is
 				// impossible when the value is null.
