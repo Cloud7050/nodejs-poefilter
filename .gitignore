@@ -1,2 +1,2 @@
-references/
-log.txt
+build/*
+!build/Cloud.filter

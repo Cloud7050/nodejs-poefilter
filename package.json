@@ -1,4 +1,4 @@
 {
 	"type": "module",
-	"main": "generate.js"
+	"main": "./src/generate.js"
 }

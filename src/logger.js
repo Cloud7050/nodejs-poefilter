@@ -13,6 +13,6 @@ export class Logger {
 
 	static save() {
 		let string = Logger.#LINES.join("\n");
-		fs.writeFileSync("./log.txt", string);
+		fs.writeFileSync("./build/log.txt", string);
 	}
 }

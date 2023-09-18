@@ -1,7 +1,7 @@
 /* [Imports] */
 import fs from "fs";
-import { ConditionSet } from "./conditionSet.js";
-import { EffectSet } from "./effectSet.js";
+import { ConditionSet } from "../condition/conditionSet.js";
+import { EffectSet } from "../effect/effectSet.js";
 import { Logger } from "../logger.js";
 
 
@@ -191,7 +191,7 @@ class PermutationManager {
 
 		// Save as filter files
 		let filterBlocks = lines.join("\n");
-		fs.writeFileSync("./Cloud.filter", filterBlocks);
+		fs.writeFileSync("./build/Cloud.filter", filterBlocks);
 
 		console.log(`Blocks: ${blockCount}/${this.ps.length}`);
 		console.log(`Lines: ${lines.length}`);

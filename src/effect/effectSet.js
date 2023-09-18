@@ -1,5 +1,5 @@
 /* [Imports] */
-import { ConditionSet } from "./conditionSet.js";
+import { ConditionSet } from "../condition/conditionSet.js";
 
 
 
