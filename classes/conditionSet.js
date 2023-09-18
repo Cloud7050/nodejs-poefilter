@@ -68,8 +68,9 @@ export class ConditionSet {
 		new Duplicator("isThreeLink", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isWhite", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isFour", Duplicator.TYPE.BOOLEAN),
-		new Duplicator("isFourLink", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isFive", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isRgb", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isSix", Duplicator.TYPE.BOOLEAN),
 
 		new Duplicator("isQuality", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isMirrored", Duplicator.TYPE.BOOLEAN),
@@ -82,8 +83,9 @@ export class ConditionSet {
 	isThreeLink = null;
 	isWhite = null;
 	isFour = null;
-	isFourLink = null;
+	isFive = null;
 	isRgb = null;
+	isSix = null;
 
 	isQuality = null;
 	isMirrored = null;
@@ -98,8 +100,9 @@ export class ConditionSet {
 		conditionSet.isThreeLink = this.isThreeLink;
 		conditionSet.isWhite = this.isWhite;
 		conditionSet.isFour = this.isFour;
-		conditionSet.isFourLink = this.isFourLink;
+		conditionSet.isFive = this.isFive;
 		conditionSet.isRgb = this.isRgb;
+		conditionSet.isSix = this.isSix;
 
 		conditionSet.isQuality = this.isQuality;
 		conditionSet.isMirrored = this.isMirrored;
@@ -116,8 +119,9 @@ export class ConditionSet {
 			&& this.isThreeLink === other.isThreeLink
 			&& this.isWhite === other.isWhite
 			&& this.isFour === other.isFour
-			&& this.isFourLink === other.isFourLink
+			&& this.isFive === other.isFive
 			&& this.isRgb === other.isRgb
+			&& this.isSix === other.isSix
 
 			&& this.isQuality === other.isQuality
 			&& this.isMirrored === other.isMirrored
@@ -125,6 +129,7 @@ export class ConditionSet {
 		);
 	}
 
+	// eslint-disable-next-line complexity
 	export() {
 		let lines = [];
 
@@ -143,13 +148,17 @@ export class ConditionSet {
 			let operator = this.isFour ? ">=" : "<";
 			lines.push(`Sockets ${operator} 4`);
 		}
-		if (this.isFourLink !== null) {
-			let operator = this.isFourLink ? ">=" : "<";
-			lines.push(`LinkedSockets ${operator} 4`);
+		if (this.isFive !== null) {
+			let operator = this.isFive ? ">=" : "<";
+			lines.push(`Sockets ${operator} 5`);
 		}
 		if (this.isRgb !== null) {
 			let operator = this.isRgb ? ">=" : "<";
 			lines.push(`SocketGroup ${operator} 3RGB`);
+		}
+		if (this.isSix !== null) {
+			let operator = this.isSix ? ">=" : "<";
+			lines.push(`Sockets ${operator} 6`);
 		}
 
 		if (this.isQuality !== null) {

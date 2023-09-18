@@ -225,13 +225,20 @@ export class Effecter {
 	 * Gives effects based on sockets.
 	 */
 	static #sockets(p) {
-		if (p.c.isRgb) {
+		if (p.c.isSix) {
+			p.e.outlineColour = EffectSet.RGB.ROSE;
+			p.e.mapIcon = EffectSet.ICON.STAR;
+			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+
+			// Can be vendored
+			p.isHideImmune = true;
+		} else if (p.c.isRgb) {
 			p.e.outlineColour = EffectSet.RGB.PURPLE;
 			p.e.mapIcon = EffectSet.ICON.RAINDROP;
 
 			// Can be vendored
 			p.isHideImmune = true;
-		} else if (p.c.isFourLink) {
+		} else if (p.c.isFive) {
 			p.e.outlineColour = EffectSet.RGB.ROSE;
 			p.e.mapIcon = EffectSet.ICON.STAR;
 		} else if (p.c.isFour) {
@@ -282,10 +289,9 @@ export class Effecter {
 					case ConditionSet.RARITY.MAGIC:
 						// If any sockets are notable, maybe we'll use it
 						if (
-							p.c.isThreeLink
-							|| p.c.isWhite
+							p.c.isWhite
 							|| p.c.isFour
-							|| p.c.isFourLink
+							|| p.c.isFive
 						) {
 							p.isHideImmune = true;
 							break;
@@ -303,7 +309,7 @@ export class Effecter {
 					case ConditionSet.RARITY.NORMAL:
 						if (
 							p.c.isFour
-							|| p.c.isFourLink
+							|| p.c.isFive
 						) {
 							p.isHideImmune = true;
 							break;
