@@ -183,7 +183,7 @@ export class EffecterEquipment extends Effecter {
 	}
 
 	decideOne(p) {
-		// Apply & overwrite with defaults
+		// Apply defaults
 		EffecterEquipment.#defaultRarity(p);
 
 		// Overwrite with changes
