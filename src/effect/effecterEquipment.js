@@ -152,9 +152,6 @@ export class EffecterEquipment extends Effecter {
 				break;
 			case ConditionSet.TYPE_EQUIPMENT.WEAPON_UNUSED:
 				// We won't use this item, so we ignore rarity, sockets, corruption
-
-				// Force hide its outlines
-				p.isFluffOutline = true;
 				break;
 		}
 	}
@@ -169,8 +166,6 @@ export class EffecterEquipment extends Effecter {
 		p.e.textSize = EffectSet.TEXT_SIZE.SMALLEST;
 		p.e.backgroundColour = EffectSet.RGBA.FADED;
 		p.e.isSilent = true;
-
-		if (p.isFluffOutline) p.e.outlineColour = null;
 	}
 
 	/**

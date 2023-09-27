@@ -5,17 +5,12 @@ import { EffectSet } from "../effect/effectSet.js";
 /* [Exports] */
 export class Permutation {
 	isHideImmune = false;
-	/**
-	 * Whether outline is unimportant enough that, if shrunk, outline should
-	 * also be removed
-	 */
-	isFluffOutline = false;
 
 	e;
 	c;
 
-	constructor(conditionSet) {
+	constructor(_c) {
 		this.e = new EffectSet();
-		this.c = conditionSet;
+		this.c = _c;
 	}
 }

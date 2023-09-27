@@ -54,8 +54,6 @@ Works through a system of hide immunity. Anything not hide immune by the end of 
 - Silenced
 - Removed from minimap
 
-Also has a system of fluff outlines. Anything deemed to have fluff outlines will additionally get its outline removed when shrunk & unmapped.
-
 ### Rarity
 
 - Normal
@@ -117,4 +115,4 @@ Also has a system of fluff outlines. Anything deemed to have fluff outlines will
 	- Magic
 		- Quality (hide immune)
 		- White/4/5 (hide immune)
-- Unused weapons (fluff outline)
+- Unused weapons
