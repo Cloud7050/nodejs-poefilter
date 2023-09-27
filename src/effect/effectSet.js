@@ -1,5 +1,11 @@
 /* [Exports] */
 export class EffectSet {
+	static VISIBILITY = {
+		SHOW: 3,
+		SHRINK_UNMAP: 2,
+		HIDE: 1
+	};
+
 	static TEXT_SIZE = {
 		SMALLEST: "18",
 		DEFAULT: "32",
@@ -75,7 +81,7 @@ export class EffectSet {
 		LARGE: "0"
 	};
 
-	isHide = null;
+	visibility = EffectSet.VISIBILITY.SHOW;
 
 	textSize = null;
 	textColour = null;
@@ -85,13 +91,14 @@ export class EffectSet {
 	isSilent = null;
 
 	beamColour = null;
+	/** If null colour, will not show on minimap. */
 	mapColour = null;
 	mapIcon = EffectSet.ICON.KITE;
 	mapSize = EffectSet.ICON_SIZE.SMALL;
 
 	equals(other) {
 		return (
-			this.isHide === other.isHide
+			this.visibility === other.visibility
 
 			&& this.textSize === other.textSize
 			&& this.textColour === other.textColour
@@ -108,7 +115,9 @@ export class EffectSet {
 	}
 
 	getBlockStart() {
-		return !this.isHide ? "Show" : "Hide";
+		if (this.visibility <= EffectSet.VISIBILITY.HIDE) return "Hide";
+
+		return "Show";
 	}
 
 	export() {

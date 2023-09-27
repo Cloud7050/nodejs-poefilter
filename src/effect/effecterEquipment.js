@@ -7,24 +7,31 @@ import { Effecter } from "./effecter.js";
 /* [Exports] */
 export class EffecterEquipment extends Effecter {
 	/**
+	 * Starts with everything being hidden.
+	 */
+	static #defaultVisibility(p) {
+		p.e.visibility = EffectSet.VISIBILITY.HIDE;
+	}
+
+	/**
 	 * Gives default effects based on rarity.
 	 */
 	static #defaultRarity(p) {
 		switch (p.c.rarity) {
 			case ConditionSet.RARITY.UNIQUE:
+				p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
 				p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.ORANGE;
 				p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
 				p.e.beamColour = EffectSet.COLOUR.ORANGE;
-
-				p.isHideImmune = true;
 				break;
 			case ConditionSet.RARITY.RARE:
+				p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
 				p.e.mapColour = EffectSet.COLOUR.YELLOW;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
-
-				p.isHideImmune = true;
 				break;
 			case ConditionSet.RARITY.MAGIC:
 				p.e.mapColour = EffectSet.COLOUR.BLUE;
@@ -51,24 +58,21 @@ export class EffecterEquipment extends Effecter {
 	 */
 	static #sockets(p) {
 		if (p.c.isSix) {
+			p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
 			p.e.outlineColour = EffectSet.RGB.ROSE;
 			p.e.mapIcon = EffectSet.ICON.STAR;
 			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
-
-			// Can be vendored
-			p.isHideImmune = true;
 		} else if (p.c.isRgb) {
+			p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
 			p.e.outlineColour = EffectSet.RGB.PURPLE;
 			p.e.mapIcon = EffectSet.ICON.RAINDROP;
-
-			// Can be vendored
-			p.isHideImmune = true;
 		} else if (p.c.isLootyBase || p.c.isLootyMod) {
+			p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
 			p.e.outlineColour = EffectSet.RGB.LIME;
 			p.e.mapIcon = EffectSet.ICON.CIRCLE;
-
-			// May use
-			p.isHideImmune = true;
 		} else if (p.c.isFive) {
 			p.e.outlineColour = EffectSet.RGB.ROSE;
 			p.e.mapIcon = EffectSet.ICON.STAR;
@@ -89,109 +93,94 @@ export class EffecterEquipment extends Effecter {
 	 */
 	static #postSockets(p) {
 		if (p.c.isCorrupted) {
+			p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
 			p.e.outlineColour = EffectSet.RGB_GAME.CORRUPTED;
 			p.e.mapIcon = EffectSet.ICON.TRIANGLE;
-
-			p.isHideImmune = true;
 		} else if (p.c.isMirrored) {
+			p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
 			p.e.outlineColour = EffectSet.RGB.NAVY;
 			p.e.mapIcon = EffectSet.ICON.MOON;
-
-			// A dupe may have dropped, can be vendor reciped
-			p.isHideImmune = true;
 		}
 	}
 
 	/**
-	 * Carefully grants equipment hide immunity based on various conditions.
+	 * Decides visibility for anything that isn't a guaranteed show yet, based
+	 * on various conditions.
 	 */
-	static #equipment(p) {
-		if (p.isHideImmune) return;
-
-		// Items at this point should be:
-		// • Equipment, ie weapons/armour
-		// • Normal/magic
-		// • Not RGB
-		// • Not looty or mirrored
-		// We decide based on type + rarity + sockets + other attributes
+	static #multiVisibility(p) {
+		if (p.e.visibility >= EffectSet.VISIBILITY.SHOW) return;
 
 		switch (p.c.type) {
 			case ConditionSet.TYPE_EQUIPMENT.WEAPON_WITCH:
 			case ConditionSet.TYPE_EQUIPMENT.ARMOUR:
 				switch (p.c.rarity) {
 					case ConditionSet.RARITY.MAGIC:
-						// If any sockets are notable, maybe we'll use it
+						if (p.c.isFive) {
+							p.e.visibility = EffectSet.VISIBILITY.SHOW;
+							break;
+						}
+
 						if (
-							p.c.isWhite
+							p.c.isQuality
+							|| p.c.isWhite
 							|| p.c.isFour
-							|| p.c.isFive
 						) {
-							p.isHideImmune = true;
+							p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
 							break;
 						}
 
-						// If it's corrupted, we'll only really use it if the sockets were notable.
-						// At this point it's not notable yet corrupted, so no immunity granted
-
-						// If it's quality, maybe we'll use it
-						if (p.c.isQuality) {
-							p.isHideImmune = true;
-							break;
-						}
 						break;
 					case ConditionSet.RARITY.NORMAL:
-						if (
-							p.c.isFour
-							|| p.c.isFive
-						) {
-							p.isHideImmune = true;
+						if (p.c.isFive) {
+							p.e.visibility = EffectSet.VISIBILITY.SHOW;
 							break;
 						}
+
+						if (
+							p.c.isQuality
+							|| p.c.isFour
+						) {
+							p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
+							break;
+						}
+
 						break;
 				}
 				break;
 			case ConditionSet.TYPE_EQUIPMENT.WEAPON_UNUSED:
-				// We won't use this item, so we ignore rarity, sockets, corruption
+				if (p.c.isQuality) {
+					p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
+					break;
+				}
+
 				break;
 		}
 	}
 
 	/**
-	 * Shrinks based on previous decisions. If the outline isn't worth keeping,
-	 * remove it too.
+	 * Applies shrink/unmap custom visibility.
 	 */
-	static #shrink(p) {
-		if (p.isHideImmune) return;
+	static #shrinkUnmap(p) {
+		if (p.e.visibility > EffectSet.VISIBILITY.SHRINK_UNMAP) return;
 
 		p.e.textSize = EffectSet.TEXT_SIZE.SMALLEST;
 		p.e.backgroundColour = EffectSet.RGBA.FADED;
 		p.e.isSilent = true;
-	}
-
-	/**
-	 * Hides from map based on previous decisions.
-	 */
-	static #unmap(p) {
-		if (p.isHideImmune) return;
-
-		// Avoid equipment spam on the map
 		p.e.mapColour = null;
 	}
 
 	decideOne(p) {
-		// Apply defaults
+		EffecterEquipment.#defaultVisibility(p);
 		EffecterEquipment.#defaultRarity(p);
 
-		// Overwrite with changes
 		EffecterEquipment.#preSockets(p);
 		EffecterEquipment.#sockets(p);
 		EffecterEquipment.#postSockets(p);
 
-		// Precise hide immunity
-		EffecterEquipment.#equipment(p);
+		EffecterEquipment.#multiVisibility(p);
 
-		// Overwrite with hides
-		EffecterEquipment.#shrink(p);
-		EffecterEquipment.#unmap(p);
+		EffecterEquipment.#shrinkUnmap(p);
 	}
 }

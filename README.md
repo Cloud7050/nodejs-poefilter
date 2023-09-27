@@ -47,7 +47,9 @@ Notes:
 
 ## Equipment
 
-Works through a system of hide immunity. Anything not hide immune by the end of the process gets shrunk & unmapped:
+Starts with everything being hidden. Through the processing stages, decides what is worth showing. Visibility should only go up, so the decision is made carefully.
+
+Shown items are either shown normally, or shown shrunk/unmapped:
 
 - Text resized to smallest
 - Background faded
@@ -60,9 +62,9 @@ Works through a system of hide immunity. Anything not hide immune by the end of 
 	- Minimap: Silver
 - Magic
 	- Minimap: Blue
-- Rare (hide immune)
+- Rare (show)
 	- Minimap: Yellow medium
-- Unique (hide immune)
+- Unique (show)
 	- Text resized to largest
 	- Background white
 	- Minimap: Orange large
@@ -76,13 +78,15 @@ Works through a system of hide immunity. Anything not hide immune by the end of 
 
 ### Sockets
 
-- 6 (hide immune)
+6/RGB have vendor recipes. Looty items may be used.
+
+- 6 (show)
 	- Outlined rose
 	- Minimap: Star medium
-- RGB (hide immune)
+- RGB (show)
 	- Outlined purple
 	- Minimap: Raindrop
-- Looty base/modifier (hide immune)
+- Looty base/modifier (show)
 	- Outlined lime
 	- Minimap: Circle
 - 5
@@ -100,19 +104,31 @@ Works through a system of hide immunity. Anything not hide immune by the end of 
 
 ### Post-sockets
 
-- Corrupted (hide immune)
+Corrupted may have special modifiers, which may be vendored even if not used due to sockets etc.
+
+Mirrored may have dropped dupes which may be vendored together.
+
+- Corrupted (show)
 	- Outlined corrupted colour
 	- Minimap: Triangle
-- Mirrored (hide immune)
+- Mirrored (show)
 	- Outlined navy
 	- Minimap: Moon
 
-### Equipment
+### Multi-visibility
+
+Anything whose visibility is not a blanket guaranteed show yet should be decided here based on multiple conditions.
+
+For equipment we use, based on rarity, we may use them if the sockets are notable enough.
 
 - Witch weapons / armour
 	- Normal
-		- 4/5 (hide immune)
+		- 5 (show)
+		- Quality (shrink/unmap)
+		- 4 (shrink/unmap)
 	- Magic
-		- Quality (hide immune)
-		- White/4/5 (hide immune)
+		- 5 (show)
+		- Quality (shrink/unmap)
+		- White/4 (shrink/unmap)
 - Unused weapons
+	- Quality (shrink/unmap)
