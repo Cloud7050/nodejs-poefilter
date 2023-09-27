@@ -151,8 +151,8 @@ export class ConditionSet {
 		}
 
 		if (this.isQuality !== null) {
-			let operator = this.isQuality ? ">" : "<=";
-			lines.push(`Quality ${operator} 0`);
+			let operator = this.isQuality ? ">=" : "<";
+			lines.push(`Quality ${operator} 20`);
 		}
 		if (this.isMirrored !== null) {
 			let booleanString = this.isMirrored ? "True" : "False";

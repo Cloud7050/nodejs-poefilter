@@ -72,7 +72,7 @@ Shown items are either shown normally, or shown shrunk/unmapped:
 
 ### Pre-sockets
 
-- Quality
+- Quality (show)
 	- Outlined magic colour
 	- Minimap: Hexagon
 
@@ -125,10 +125,7 @@ For equipment we use, based on rarity, we may use them if the sockets are notabl
 - Witch weapons / armour
 	- 5/looty (show)
 	- Normal
-		- Quality (shrink/unmap)
 		- 4 (shrink/unmap)
 	- Magic
-		- Quality (shrink/unmap)
 		- White/4 (shrink/unmap)
 - Unused weapons
-	- Quality (shrink/unmap)

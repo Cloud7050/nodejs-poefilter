@@ -48,6 +48,8 @@ export class EffecterEquipment extends Effecter {
 	 */
 	static #preSockets(p) {
 		if (p.c.isQuality) {
+			p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
 			p.e.outlineColour = EffectSet.RGB_GAME.MAGIC;
 			p.e.mapIcon = EffectSet.ICON.HEXAGON;
 		}
@@ -128,8 +130,7 @@ export class EffecterEquipment extends Effecter {
 				switch (p.c.rarity) {
 					case ConditionSet.RARITY.MAGIC:
 						if (
-							p.c.isQuality
-							|| p.c.isWhite
+							p.c.isWhite
 							|| p.c.isFour
 						) {
 							p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
@@ -138,10 +139,7 @@ export class EffecterEquipment extends Effecter {
 
 						break;
 					case ConditionSet.RARITY.NORMAL:
-						if (
-							p.c.isQuality
-							|| p.c.isFour
-						) {
+						if (p.c.isFour) {
 							p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
 							break;
 						}
@@ -150,11 +148,6 @@ export class EffecterEquipment extends Effecter {
 				}
 				break;
 			case ConditionSet.TYPE_EQUIPMENT.WEAPON_UNUSED:
-				if (p.c.isQuality) {
-					p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
-					break;
-				}
-
 				break;
 		}
 	}
