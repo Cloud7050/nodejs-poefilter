@@ -77,7 +77,6 @@ Also has a system of fluff outlines. Anything deemed to have fluff outlines will
 	- Minimap: Raindrop
 - Looty base/modifier (hide immune)
 	- Outlined lime
-	- Minimap: Circle
 - 5
 	- Outlined rose
 	- Minimap: Star

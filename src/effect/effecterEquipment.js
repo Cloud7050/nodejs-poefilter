@@ -66,7 +66,7 @@ export class EffecterEquipment extends Effecter {
 			p.isHideImmune = true;
 		} else if (p.c.isLootyBase || p.c.isLootyMod) {
 			p.e.outlineColour = EffectSet.RGB.LIME;
-			p.e.mapIcon = EffectSet.ICON.CIRCLE;
+			p.e.mapIcon = EffectSet.ICON.CIRCLE; //FIXME
 
 			// May use
 			p.isHideImmune = true;
@@ -92,6 +92,8 @@ export class EffecterEquipment extends Effecter {
 		if (p.c.isCorrupted) {
 			p.e.outlineColour = EffectSet.RGB_GAME.CORRUPTED;
 			p.e.mapIcon = EffectSet.ICON.TRIANGLE;
+
+			p.isHideImmune = true;
 		} else if (p.c.isMirrored) {
 			p.e.outlineColour = EffectSet.RGB.NAVY;
 			p.e.mapIcon = EffectSet.ICON.MOON;

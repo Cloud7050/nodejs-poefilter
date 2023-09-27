@@ -25,13 +25,14 @@ export class EffectSet {
 		// WHITE: "255 255 255"
 	};
 	static RGB_GAME = {
+		QUEST: "74 230 58",
 		CURRENCY: "170 158 130",
 		GEM: "27 162 155",
+		CARD: "14 186 255",
 		NORMAL: "200 200 200", // Three link
 		MAGIC: "136 136 255", // Quality
 		RARE: "255 255 119",
 		UNIQUE: "175 96 37",
-		QUEST: "74 230 58",
 		CORRUPTED: "210 0 0" // Corrupted
 	};
 	// Default alpha is 240
