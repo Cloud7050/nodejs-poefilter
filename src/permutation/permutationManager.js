@@ -140,7 +140,7 @@ export class PermutationManager {
 	 */
 	#sort() {
 		// Run sorts in reverse order, most important group last
-		this.#sortBooleanFirst("isLootyMod");
+		this.#sortBooleanFirst("isLootyModifier");
 		this.#sortBooleanFirst("isLootyBase");
 	}
 
