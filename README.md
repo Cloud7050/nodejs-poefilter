@@ -14,8 +14,8 @@ To avoid creating too many redundant permutations, there are different `Permutat
 
 Notes:
 
-- Avoid white/blue/yellow/orange/lime/teal text as vanilla does similar
-- Avoid white/orange outlines as vanilla does similar
+- Avoid white/silver/blue/yellow/orange/lime/teal text as vanilla does similar
+- Avoid white/silver/orange outlines as vanilla does similar
 - Minimap defaults are kite and small
 
 ## Others
@@ -82,25 +82,26 @@ Shown items are either shown normally, or shown shrunk/unmapped:
 
 - 6 (show)
 	- Outlined rose
-	- Minimap: Star medium
+	- Minimap: Diamond large
+	- Beam: Rose
 - RGB (show)
 	- Outlined purple
-	- Minimap: Raindrop
-- Looty base/modifier (show)
-	- Outlined lime
-	- Minimap: Circle
+	- Minimap: Raindrop medium
 - 5
-	- Outlined rose
-	- Minimap: Star
-- 4
 	- Outlined yellow
+	- Minimap: Star medium
+- Looty base/modifier
+	- Outlined lime
+	- Minimap: Circle medium
+- 4
+	- Outlined cyan
 	- Minimap: Cross
 - White
 	- Outlined pink
 	- Minimap: Pentagon
 - 3 link
-	- Outlined normal colour
-	- Minimap: Diamond
+	- Outlined grey
+	- Minimap: Kite
 
 ### Post-sockets
 
@@ -110,7 +111,7 @@ Mirrored may have dropped dupes which may be vendored together.
 
 - Corrupted (show)
 	- Outlined corrupted colour
-	- Minimap: Triangle
+	- Minimap: Triangle medium
 - Mirrored (show)
 	- Outlined navy
 	- Minimap: Moon
@@ -122,12 +123,11 @@ Anything whose visibility is not a blanket guaranteed show yet should be decided
 For equipment we use, based on rarity, we may use them if the sockets are notable enough.
 
 - Witch weapons / armour
+	- 5/looty (show)
 	- Normal
-		- 5 (show)
 		- Quality (shrink/unmap)
 		- 4 (shrink/unmap)
 	- Magic
-		- 5 (show)
 		- Quality (shrink/unmap)
 		- White/4 (shrink/unmap)
 - Unused weapons

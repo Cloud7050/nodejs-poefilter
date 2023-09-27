@@ -13,20 +13,20 @@ export class EffectSet {
 	};
 	static RGB = {
 		// BLACK: "0 0 0",
-		// NAVY: "0 0 170",
+		NAVY: "0 0 170",
 		GREEN: "0 170 0",
 		// TEAL: "0 170 170",
 		// CRIMSON: "170 0 0",
-		// PURPLE: "170 0 170",
+		PURPLE: "170 0 170",
 		// ORANGE: "255 170 0",
 		// SILVER: "170 170 170",
-		// GREY: "85 85 85",
+		GREY: "85 85 85",
 		// BLUE: "85 85 255",
-		// LIME: "85 255 85",
-		// CYAN: "85 255 255",
-		// ROSE: "255 85 85",
-		// PINK: "255 85 255",
-		// YELLOW: "255 255 85",
+		LIME: "85 255 85",
+		CYAN: "85 255 255",
+		ROSE: "255 85 85",
+		PINK: "255 85 255",
+		YELLOW: "255 255 85"
 		// WHITE: "255 255 255"
 	};
 	// These are colours from vanilla
@@ -36,10 +36,10 @@ export class EffectSet {
 		// GEM: "27 162 155",
 		// CARD: "14 186 255",
 		// NORMAL: "200 200 200",
-		// MAGIC: "136 136 255",
+		MAGIC: "136 136 255",
 		// RARE: "255 255 119",
 		// UNIQUE: "175 96 37",
-		// CORRUPTED: "210 0 0"
+		CORRUPTED: "210 0 0"
 	};
 	// Default alpha is 240
 	static RGBA = {
@@ -51,28 +51,28 @@ export class EffectSet {
 	static COLOUR = {
 		// BLACK: "Grey",
 		// PURPLE: "Purple",
-		// ORANGE: "Orange",
-		// SILVER: "White",
-		// BLUE: "Blue",
+		ORANGE: "Orange",
+		SILVER: "White",
+		BLUE: "Blue",
 		LIME: "Green",
 		CYAN: "Cyan",
-		// ROSE: "Red",
+		ROSE: "Red",
 		PINK: "Pink",
-		// YELLOW: "Yellow",
+		YELLOW: "Yellow"
 		// BROWN: "Brown"
 	};
 	static ICON = {
 		HOUSE: "UpsideDownHouse",
-		// KITE: "Kite",
-		// DIAMOND: "Diamond",
-		// PENTAGON: "Pentagon",
-		// RAINDROP: "Raindrop",
-		// CROSS: "Cross",
-		// STAR: "Star",
-		// HEXAGON: "Hexagon",
-		// MOON: "Moon",
-		// TRIANGLE: "Triangle",
-		// CIRCLE: "Circle",
+		HEXAGON: "Hexagon",
+		DIAMOND: "Diamond",
+		STAR: "Star",
+		CROSS: "Cross",
+		KITE: "Kite",
+		RAINDROP: "Raindrop",
+		CIRCLE: "Circle",
+		PENTAGON: "Pentagon",
+		TRIANGLE: "Triangle",
+		MOON: "Moon"
 		// SQUARE: "Square"
 	};
 	static ICON_SIZE = {

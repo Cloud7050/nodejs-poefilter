@@ -15,7 +15,7 @@ export class ConditionSet {
 	static TYPE_EQUIPMENT = {
 		WEAPON_UNUSED: 'Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers',
 		// 4 sockets on gloves/boots/helmets, 6 on body armour
-		ARMOUR: 'Amulets Rings Belts Gloves Boots "Body Armours" Helmets',
+		GEAR: 'Amulets Rings Belts Gloves Boots "Body Armours" Helmets',
 		// 3 sockets
 		WEAPON_WITCH: "Wands Shields"
 	};
@@ -34,7 +34,7 @@ export class ConditionSet {
 		new Duplicator("rarity", Duplicator.TYPE.ENUM, ConditionSet.RARITY),
 
 		new Duplicator("isLootyBase", Duplicator.TYPE.BOOLEAN),
-		new Duplicator("isLootyMod", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isLootyModifier", Duplicator.TYPE.BOOLEAN),
 
 		new Duplicator("isThreeLink", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isWhite", Duplicator.TYPE.BOOLEAN),
@@ -52,7 +52,7 @@ export class ConditionSet {
 	rarity = null;
 
 	isLootyBase = null;
-	isLootyMod = null;
+	isLootyModifier = null;
 
 	isThreeLink = null;
 	isWhite = null;
@@ -72,7 +72,7 @@ export class ConditionSet {
 		conditionSet.rarity = this.rarity;
 
 		conditionSet.isLootyBase = this.isLootyBase;
-		conditionSet.isLootyMod = this.isLootyMod;
+		conditionSet.isLootyModifier = this.isLootyModifier;
 
 		conditionSet.isThreeLink = this.isThreeLink;
 		conditionSet.isWhite = this.isWhite;
@@ -94,7 +94,7 @@ export class ConditionSet {
 			&& this.rarity === other.rarity
 
 			&& this.isLootyBase === other.isLootyBase
-			&& this.isLootyMod === other.isLootyMod
+			&& this.isLootyModifier === other.isLootyModifier
 
 			&& this.isThreeLink === other.isThreeLink
 			&& this.isWhite === other.isWhite
@@ -109,6 +109,10 @@ export class ConditionSet {
 		);
 	}
 
+	isLooty() {
+		return this.isLootyBase || this.isLootyModifier;
+	}
+
 	// eslint-disable-next-line complexity
 	export() {
 		let lines = [];
@@ -119,7 +123,7 @@ export class ConditionSet {
 		if (this.isLootyBase === true) {
 			lines.push('BaseType "Gold Amulet" "Gold Ring"');
 		}
-		if (this.isLootyMod === true) lines.push('HasExplicitMod Magpie\'s "of Plunder" "of Raiding"');
+		if (this.isLootyModifier === true) lines.push('HasExplicitMod Magpie\'s "of Plunder" "of Raiding"');
 
 		if (this.isThreeLink !== null) {
 			let operator = this.isThreeLink ? ">=" : "<";

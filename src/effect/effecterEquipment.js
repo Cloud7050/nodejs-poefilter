@@ -61,30 +61,32 @@ export class EffecterEquipment extends Effecter {
 			p.e.visibility = EffectSet.VISIBILITY.SHOW;
 
 			p.e.outlineColour = EffectSet.RGB.ROSE;
-			p.e.mapIcon = EffectSet.ICON.STAR;
-			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+			p.e.mapIcon = EffectSet.ICON.DIAMOND;
+			p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
+			p.e.beamColour = EffectSet.COLOUR.ROSE;
 		} else if (p.c.isRgb) {
 			p.e.visibility = EffectSet.VISIBILITY.SHOW;
 
 			p.e.outlineColour = EffectSet.RGB.PURPLE;
 			p.e.mapIcon = EffectSet.ICON.RAINDROP;
-		} else if (p.c.isLootyBase || p.c.isLootyMod) {
-			p.e.visibility = EffectSet.VISIBILITY.SHOW;
-
+			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+		} else if (p.c.isFive) {
+			p.e.outlineColour = EffectSet.RGB.YELLOW;
+			p.e.mapIcon = EffectSet.ICON.STAR;
+			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+		} else if (p.c.isLooty()) {
 			p.e.outlineColour = EffectSet.RGB.LIME;
 			p.e.mapIcon = EffectSet.ICON.CIRCLE;
-		} else if (p.c.isFive) {
-			p.e.outlineColour = EffectSet.RGB.ROSE;
-			p.e.mapIcon = EffectSet.ICON.STAR;
+			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 		} else if (p.c.isFour) {
-			p.e.outlineColour = EffectSet.RGB.YELLOW;
+			p.e.outlineColour = EffectSet.RGB.CYAN;
 			p.e.mapIcon = EffectSet.ICON.CROSS;
 		} else if (p.c.isWhite) {
 			p.e.outlineColour = EffectSet.RGB.PINK;
 			p.e.mapIcon = EffectSet.ICON.PENTAGON;
 		} else if (p.c.isThreeLink) {
-			p.e.outlineColour = EffectSet.RGB_GAME.NORMAL;
-			p.e.mapIcon = EffectSet.ICON.DIAMOND;
+			p.e.outlineColour = EffectSet.RGB.GREY;
+			p.e.mapIcon = EffectSet.ICON.KITE;
 		}
 	}
 
@@ -114,14 +116,17 @@ export class EffecterEquipment extends Effecter {
 
 		switch (p.c.type) {
 			case ConditionSet.TYPE_EQUIPMENT.WEAPON_WITCH:
-			case ConditionSet.TYPE_EQUIPMENT.ARMOUR:
+			case ConditionSet.TYPE_EQUIPMENT.GEAR:
+				if (
+					p.c.isFive
+					|| p.c.isLooty()
+				) {
+					p.e.visibility = EffectSet.VISIBILITY.SHOW;
+					break;
+				}
+
 				switch (p.c.rarity) {
 					case ConditionSet.RARITY.MAGIC:
-						if (p.c.isFive) {
-							p.e.visibility = EffectSet.VISIBILITY.SHOW;
-							break;
-						}
-
 						if (
 							p.c.isQuality
 							|| p.c.isWhite
@@ -133,11 +138,6 @@ export class EffecterEquipment extends Effecter {
 
 						break;
 					case ConditionSet.RARITY.NORMAL:
-						if (p.c.isFive) {
-							p.e.visibility = EffectSet.VISIBILITY.SHOW;
-							break;
-						}
-
 						if (
 							p.c.isQuality
 							|| p.c.isFour
