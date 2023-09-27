@@ -75,6 +75,8 @@ export class EffectSet {
 		LARGE: "0"
 	};
 
+	isHide = null;
+
 	textSize = null;
 	textColour = null;
 	backgroundColour = null;
@@ -83,14 +85,15 @@ export class EffectSet {
 	isSilent = null;
 
 	beamColour = null;
-
 	mapColour = null;
 	mapIcon = EffectSet.ICON.KITE;
 	mapSize = EffectSet.ICON_SIZE.SMALL;
 
 	equals(other) {
 		return (
-			this.textSize === other.textSize
+			this.isHide === other.isHide
+
+			&& this.textSize === other.textSize
 			&& this.textColour === other.textColour
 			&& this.backgroundColour === other.backgroundColour
 			&& this.outlineColour === other.outlineColour
@@ -98,11 +101,14 @@ export class EffectSet {
 			&& this.isSilent === other.isSilent
 
 			&& this.beamColour === other.beamColour
-
 			&& this.mapColour === other.mapColour
 			&& this.mapIcon === other.mapIcon
 			&& this.mapSize === other.mapSize
 		);
+	}
+
+	getBlockStart() {
+		return !this.isHide ? "Show" : "Hide";
 	}
 
 	export() {
@@ -128,7 +134,6 @@ export class EffectSet {
 		if (this.beamColour !== null) {
 			lines.push(`PlayEffect ${this.beamColour}`);
 		}
-
 		if (this.mapColour !== null) {
 			lines.push(`MinimapIcon ${this.mapSize} ${this.mapColour} ${this.mapIcon}`);
 		}

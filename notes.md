@@ -1,4 +1,4 @@
-## Steps For Adding New Condition
+## Steps for Adding New Condition
 
 - `ConditionSet`
 	1. Add duplication lambda in DUPLICATORS
@@ -9,7 +9,7 @@
 - `PermutationManager`
 	1. Sort property in sort() if needed
 
-## Steps For Adding New Effect
+## Steps for Adding New Effect
 
 - `EffectSet`
 	1. Add property

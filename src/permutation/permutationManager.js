@@ -156,7 +156,7 @@ export class PermutationManager {
 			}
 			let conditionLines = p.c.export();
 
-			lines.push("Show");
+			lines.push(p.e.getBlockStart());
 
 			for (let conditionLine of conditionLines) {
 				lines.push(`	${conditionLine}`);
