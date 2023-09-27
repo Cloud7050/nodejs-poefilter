@@ -1,4 +1,3 @@
-/* [Imports] */
 import { EffectSet } from "../effect/effectSet.js";
 
 

@@ -12,7 +12,11 @@ To avoid creating too many redundant permutations, there are different `Permutat
 
 # How It Looks
 
-(Minimap defaults are circle and small.)
+Notes:
+
+- Avoid white/blue/yellow/orange/lime/teal text as vanilla does similar
+- Avoid white/orange outlines as vanilla does similar
+- Minimap defaults are kite and small
 
 ## Others
 
@@ -23,9 +27,9 @@ To avoid creating too many redundant permutations, there are different `Permutat
 	- Background white
 	- Minimap: Lime house medium
 - Divination cards
-	- (Text colour stays aqua)
+	- (Text colour stays azure)
 	- Background white
-	- Minimap: Lime house medium
+	- Minimap: Cyan house medium
 - Skill gems
 	- (Text colour stays teal)
 	- Background white
@@ -37,13 +41,18 @@ To avoid creating too many redundant permutations, there are different `Permutat
 - Quest items
 	- (Text colour stays lime)
 	- Background white
-	- (Game has default green exclamation mark)
+	- (Minimap: Vanilla has green exclamation mark)
 - Others
 	- Minimap: Pink house
 
 ## Equipment
 
-Works through a system of hide immunity. Anything not hide immune by the end of the process gets shrunk & unmapped.
+Works through a system of hide immunity. Anything not hide immune by the end of the process gets shrunk & unmapped:
+
+- Text resized to smallest
+- Background faded
+- Silenced
+- Removed from minimap
 
 Also has a system of fluff outlines. Anything deemed to have fluff outlines will additionally get its outline removed when shrunk & unmapped.
 
@@ -77,6 +86,7 @@ Also has a system of fluff outlines. Anything deemed to have fluff outlines will
 	- Minimap: Raindrop
 - Looty base/modifier (hide immune)
 	- Outlined lime
+	- Minimap: Circle
 - 5
 	- Outlined rose
 	- Minimap: Star

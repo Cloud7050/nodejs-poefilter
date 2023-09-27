@@ -1,4 +1,3 @@
-/* [Imports] */
 import { Logger } from "../logger.js";
 import { Permutation } from "./permutation.js";
 

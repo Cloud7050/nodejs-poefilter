@@ -1,4 +1,3 @@
-/* [Imports] */
 import { ConditionSet } from "../condition/conditionSet.js";
 import { PermutationManager } from "./permutationManager.js";
 

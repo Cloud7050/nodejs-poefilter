@@ -1,4 +1,3 @@
-/* [Imports] */
 import { ConditionSet } from "../condition/conditionSet.js";
 import { EffectSet } from "./effectSet.js";
 import { Effecter } from "./effecter.js";
@@ -11,39 +10,36 @@ export class EffecterOther extends Effecter {
 	 * Gives default effects based on type.
 	 */
 	static #defaultType(p) {
+		p.e.mapIcon = EffectSet.ICON.HOUSE;
+
 		switch (p.c.type) {
 			case ConditionSet.TYPE_OTHER.LABYRINTH:
 				p.e.textColour = EffectSet.RGB.GREEN;
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.LIME;
-				p.e.mapIcon = EffectSet.ICON.HOUSE;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 			case ConditionSet.TYPE_OTHER.CARD:
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
-				p.e.mapColour = EffectSet.COLOUR.LIME;
-				p.e.mapIcon = EffectSet.ICON.HOUSE;
+				p.e.mapColour = EffectSet.COLOUR.CYAN;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 			case ConditionSet.TYPE_OTHER.GEM:
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.CYAN;
-				p.e.mapIcon = EffectSet.ICON.HOUSE;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 			case ConditionSet.TYPE_OTHER.CURRENCY:
 				p.e.textColour = EffectSet.RGB.GREEN;
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.LIME;
-				p.e.mapIcon = EffectSet.ICON.HOUSE;
 				break;
 			case ConditionSet.TYPE_OTHER.QUEST:
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
-				// Map should be handled by game's green exclamation mark
 				break;
 			case ConditionSet.TYPE_OTHER.OTHER:
 				p.e.mapColour = EffectSet.COLOUR.PINK;
-				p.e.mapIcon = EffectSet.ICON.HOUSE;
+
 				break;
 		}
 	}

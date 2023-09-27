@@ -16,7 +16,6 @@
  * The downside is that more blocks means more processing by the game.
  */
 
-/* [Imports] */
 import { PermutationMaker } from "./permutation/permutationMaker.js";
 import { Logger } from "./logger.js";
 import { Saver } from "./saver.js";

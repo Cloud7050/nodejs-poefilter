@@ -1,4 +1,3 @@
-/* [Imports] */
 import { ConditionSet } from "../condition/conditionSet.js";
 import { EffectSet } from "./effectSet.js";
 import { Effecter } from "./effecter.js";
@@ -66,7 +65,7 @@ export class EffecterEquipment extends Effecter {
 			p.isHideImmune = true;
 		} else if (p.c.isLootyBase || p.c.isLootyMod) {
 			p.e.outlineColour = EffectSet.RGB.LIME;
-			p.e.mapIcon = EffectSet.ICON.CIRCLE; //FIXME
+			p.e.mapIcon = EffectSet.ICON.CIRCLE;
 
 			// May use
 			p.isHideImmune = true;
