@@ -94,7 +94,7 @@ Shown items are either shown normally, or shown shrunk/unmapped:
 	- Minimap: Star medium
 - Looty base/modifier
 	- Outlined lime
-	- Minimap: Circle medium
+	- Minimap: Square medium
 - 4
 	- Outlined cyan
 	- Minimap: Cross
@@ -111,6 +111,9 @@ Corrupted may have special modifiers, which may be vendored even if not used due
 
 Mirrored may have dropped dupes which may be vendored together.
 
+- Fractured (show)
+	- Outlined navy
+	- Minimap: Circle
 - Corrupted (show)
 	- Outlined corrupted colour
 	- Minimap: Triangle medium

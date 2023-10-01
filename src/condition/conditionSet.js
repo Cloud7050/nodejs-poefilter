@@ -45,6 +45,7 @@ export class ConditionSet {
 		new Duplicator("isSix", Duplicator.TYPE.BOOLEAN),
 
 		new Duplicator("isQuality", Duplicator.TYPE.BOOLEAN),
+		new Duplicator("isFractured", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isMirrored", Duplicator.TYPE.BOOLEAN),
 		new Duplicator("isCorrupted", Duplicator.TYPE.BOOLEAN)
 	];
@@ -63,6 +64,7 @@ export class ConditionSet {
 	isSix = null;
 
 	isQuality = null;
+	isFractured = null;
 	isMirrored = null;
 	isCorrupted = null;
 
@@ -83,6 +85,7 @@ export class ConditionSet {
 		conditionSet.isSix = this.isSix;
 
 		conditionSet.isQuality = this.isQuality;
+		conditionSet.isFractured = this.isFractured;
 		conditionSet.isMirrored = this.isMirrored;
 		conditionSet.isCorrupted = this.isCorrupted;
 
@@ -105,6 +108,7 @@ export class ConditionSet {
 			&& this.isSix === other.isSix
 
 			&& this.isQuality === other.isQuality
+			&& this.isFractured === other.isFractured
 			&& this.isMirrored === other.isMirrored
 			&& this.isCorrupted === other.isCorrupted
 		);
@@ -154,6 +158,10 @@ export class ConditionSet {
 		if (this.isQuality !== null) {
 			let operator = this.isQuality ? ">=" : "<";
 			lines.push(`Quality ${operator} 20`);
+		}
+		if (this.isFractured !== null) {
+			let booleanString = this.isFractured ? "True" : "False";
+			lines.push(`FracturedItem ${booleanString}`);
 		}
 		if (this.isMirrored !== null) {
 			let booleanString = this.isMirrored ? "True" : "False";

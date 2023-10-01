@@ -78,7 +78,7 @@ export class EffecterEquipment extends Effecter {
 			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 		} else if (p.c.isLooty()) {
 			p.e.outlineColour = EffectSet.RGB.LIME;
-			p.e.mapIcon = EffectSet.ICON.CIRCLE;
+			p.e.mapIcon = EffectSet.ICON.SQUARE;
 			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 		} else if (p.c.isFour) {
 			p.e.outlineColour = EffectSet.RGB.CYAN;
@@ -96,7 +96,12 @@ export class EffecterEquipment extends Effecter {
 	 * Gives effects based on other attributes, overwriting after sockets.
 	 */
 	static #postSockets(p) {
-		if (p.c.isCorrupted) {
+		if (p.c.isFractured) {
+			p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
+			p.e.outlineColour = EffectSet.RGB.NAVY;
+			p.e.mapIcon = EffectSet.ICON.CIRCLE;
+		} else if (p.c.isCorrupted) {
 			p.e.visibility = EffectSet.VISIBILITY.SHOW;
 
 			p.e.outlineColour = EffectSet.RGB_GAME.CORRUPTED;

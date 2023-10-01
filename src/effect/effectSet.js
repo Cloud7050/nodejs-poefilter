@@ -63,17 +63,17 @@ export class EffectSet {
 	};
 	static ICON = {
 		HOUSE: "UpsideDownHouse",
+		CIRCLE: "Circle",
 		HEXAGON: "Hexagon",
 		DIAMOND: "Diamond",
 		STAR: "Star",
 		CROSS: "Cross",
 		KITE: "Kite",
 		RAINDROP: "Raindrop",
-		CIRCLE: "Circle",
+		SQUARE: "Square",
 		PENTAGON: "Pentagon",
 		TRIANGLE: "Triangle",
 		MOON: "Moon"
-		// SQUARE: "Square"
 	};
 	static ICON_SIZE = {
 		SMALL: "2",
