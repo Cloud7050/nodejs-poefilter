@@ -5,12 +5,13 @@ import { Duplicator } from "./duplicator.js";
 /* [Exports] */
 export class ConditionSet {
 	static TYPE_OTHER = {
-		OTHER: '"Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" "Map Fragments" Maps Memories "Metamorph Samples" Microtransactions "Misc Map Items" "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"',
+		OTHER: '"Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"',
 		QUEST: '"Quest Items"',
-		CURRENCY: '"Delve Stackable Socketable Currency" "Stackable Currency"',
+		LABYRINTH: '"Labyrinth Items" "Labyrinth Trinkets"',
 		GEM: 'Jewels "Skill Gems" "Support Gems"',
 		CARD: '"Divination Cards"',
-		LABYRINTH: '"Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"'
+		MAP: '"Map Fragments" Maps "Misc Map Items"',
+		CURRENCY: '"Delve Stackable Socketable Currency" "Stackable Currency"'
 	};
 	static TYPE_EQUIPMENT = {
 		WEAPON_UNUSED: 'Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves',

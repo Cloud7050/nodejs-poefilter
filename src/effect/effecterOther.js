@@ -13,11 +13,13 @@ export class EffecterOther extends Effecter {
 		p.e.mapIcon = EffectSet.ICON.HOUSE;
 
 		switch (p.c.type) {
-			case ConditionSet.TYPE_OTHER.LABYRINTH:
+			case ConditionSet.TYPE_OTHER.CURRENCY:
 				p.e.textColour = EffectSet.RGB.GREEN;
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.LIME;
-				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+				break;
+			case ConditionSet.TYPE_OTHER.MAP:
+				p.e.mapColour = EffectSet.COLOUR.BROWN;
 				break;
 			case ConditionSet.TYPE_OTHER.CARD:
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
@@ -29,17 +31,17 @@ export class EffecterOther extends Effecter {
 				p.e.mapColour = EffectSet.COLOUR.CYAN;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
-			case ConditionSet.TYPE_OTHER.CURRENCY:
+			case ConditionSet.TYPE_OTHER.LABYRINTH:
 				p.e.textColour = EffectSet.RGB.GREEN;
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.LIME;
+				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 			case ConditionSet.TYPE_OTHER.QUEST:
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				break;
 			case ConditionSet.TYPE_OTHER.OTHER:
 				p.e.mapColour = EffectSet.COLOUR.PINK;
-
 				break;
 		}
 	}

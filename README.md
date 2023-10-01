@@ -22,22 +22,24 @@ Notes:
 
 ### Type
 
-- Labyrinth items
-	- Text recoloured from default beige to green
-	- Background white
-	- Minimap: Lime house medium
-- Divination cards
-	- (Text colour stays azure)
-	- Background white
-	- Minimap: Cyan house medium
-- Skill gems
-	- (Text colour stays teal)
-	- Background white
-	- Minimap: Cyan house medium
 - Currencies
 	- Text recoloured from default beige to green
 	- Background white
 	- Minimap: Lime house
+- Map items
+	- Minimap: Brown house
+- Divination cards
+	- (Text colour stays azure)
+	- Background white
+	- Minimap: Cyan house medium
+- Gems
+	- (Text colour stays teal)
+	- Background white
+	- Minimap: Cyan house medium
+- Labyrinth items
+	- Text recoloured from default beige to green
+	- Background white
+	- Minimap: Lime house medium
 - Quest items
 	- (Text colour stays lime)
 	- Background white

@@ -1,9 +1,14 @@
 Show
-	Class "Labyrinth Items" "Labyrinth Trinkets" "Labyrinth Map Items"
+	Class "Delve Stackable Socketable Currency" "Stackable Currency"
 
 	SetTextColor 0 170 0
 	SetBackgroundColor 255 255 255 210
-	MinimapIcon 1 Green UpsideDownHouse
+	MinimapIcon 2 Green UpsideDownHouse
+
+Show
+	Class "Map Fragments" Maps "Misc Map Items"
+
+	MinimapIcon 2 Brown UpsideDownHouse
 
 Show
 	Class "Divination Cards"
@@ -18,11 +23,11 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	Class "Delve Stackable Socketable Currency" "Stackable Currency"
+	Class "Labyrinth Items" "Labyrinth Trinkets"
 
 	SetTextColor 0 170 0
 	SetBackgroundColor 255 255 255 210
-	MinimapIcon 2 Green UpsideDownHouse
+	MinimapIcon 1 Green UpsideDownHouse
 
 Show
 	Class "Quest Items"
@@ -30,7 +35,7 @@ Show
 	SetBackgroundColor 255 255 255 210
 
 Show
-	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" "Map Fragments" Maps Memories "Metamorph Samples" Microtransactions "Misc Map Items" "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
+	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
 
 	MinimapIcon 2 Pink UpsideDownHouse
 

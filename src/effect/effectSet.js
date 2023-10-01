@@ -58,8 +58,8 @@ export class EffectSet {
 		CYAN: "Cyan",
 		ROSE: "Red",
 		PINK: "Pink",
-		YELLOW: "Yellow"
-		// BROWN: "Brown"
+		YELLOW: "Yellow",
+		BROWN: "Brown"
 	};
 	static ICON = {
 		HOUSE: "UpsideDownHouse",
