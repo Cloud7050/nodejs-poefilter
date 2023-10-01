@@ -12,13 +12,13 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	Class Gems Jewels
+	Class Jewels "Skill Gems" "Support Gems"
 
 	SetBackgroundColor 255 255 255 210
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	Class Currency
+	Class "Delve Stackable Socketable Currency" "Stackable Currency"
 
 	SetTextColor 0 170 0
 	SetBackgroundColor 255 255 255 210
@@ -30,7 +30,7 @@ Show
 	SetBackgroundColor 255 255 255 210
 
 Show
-	Class Maps "Map Fragments" "Misc Map Items" Leaguestones Pieces Microtransactions "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Fishing Rods" "Hideout Doodads" "Pantheon Souls" "Incursion Items" Incubators Shards "Shard Hearts" "Metamorph Samples" Contracts "Heist Gear" "Heist Tools" "Heist Cloaks" "Heist Brooches" Blueprints "Heist Targets" "Expedition Logbooks"
+	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" "Map Fragments" Maps Memories "Metamorph Samples" Microtransactions "Misc Map Items" "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
 
 	MinimapIcon 2 Pink UpsideDownHouse
 
@@ -112,7 +112,7 @@ Show
 	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -129,7 +129,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -195,7 +195,7 @@ Show
 	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Normal
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -211,7 +211,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -230,7 +230,7 @@ Show
 	MinimapIcon 1 Orange Circle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -279,7 +279,7 @@ Show
 	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -326,7 +326,7 @@ Show
 	MinimapIcon 1 Blue Triangle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Normal
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -343,7 +343,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -377,7 +377,7 @@ Show
 	MinimapIcon 1 Blue Triangle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -397,7 +397,7 @@ Show
 	MinimapIcon 1 Orange Circle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -414,7 +414,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -431,7 +431,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -448,7 +448,7 @@ Show
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -479,7 +479,7 @@ Show
 	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -519,7 +519,7 @@ Show
 	MinimapIcon 1 Orange Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -535,7 +535,7 @@ Show
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
@@ -552,7 +552,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets >= 5
@@ -569,7 +569,7 @@ Show
 	MinimapIcon 1 Orange Star
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets >= 5
@@ -650,7 +650,7 @@ Show
 	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Normal
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -666,7 +666,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets >= 1W
@@ -684,7 +684,7 @@ Show
 	MinimapIcon 1 Orange Circle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -700,7 +700,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -715,7 +715,7 @@ Show
 	MinimapIcon 1 Blue Circle
 
 Hide
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets < 5
@@ -762,7 +762,7 @@ Show
 	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets < 3
@@ -778,7 +778,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Normal
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets < 3
@@ -793,7 +793,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets < 3
@@ -925,7 +925,7 @@ Show
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets >= 5
@@ -939,7 +939,7 @@ Show
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets >= 5
@@ -953,7 +953,7 @@ Show
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets >= 5
@@ -970,7 +970,7 @@ Show
 	MinimapIcon 1 Orange Star
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets >= 5
@@ -1114,7 +1114,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -1129,7 +1129,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -1144,7 +1144,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -1159,7 +1159,7 @@ Show
 	MinimapIcon 1 Blue Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Normal
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -1174,7 +1174,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets >= 1W
@@ -1192,7 +1192,7 @@ Show
 	MinimapIcon 1 Orange Circle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -1210,7 +1210,7 @@ Show
 	MinimapIcon 1 Orange Circle
 
 Hide
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Normal
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets < 5
@@ -1291,7 +1291,7 @@ Show
 	MinimapIcon 1 Yellow Moon
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -1358,7 +1358,7 @@ Show
 	MinimapIcon 1 Orange Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -1377,7 +1377,7 @@ Show
 	MinimapIcon 1 Orange Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Normal
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -1393,7 +1393,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
@@ -1444,7 +1444,7 @@ Show
 	MinimapIcon 1 Orange Star
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets < 3
@@ -1459,7 +1459,7 @@ Show
 	MinimapIcon 1 Blue Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Normal
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets < 3
@@ -1474,7 +1474,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets < 3
@@ -1512,7 +1512,7 @@ Show
 	MinimapIcon 1 Yellow Moon
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets < 3
@@ -1585,7 +1585,7 @@ Show
 	MinimapIcon 1 Yellow Triangle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets < 3
@@ -1652,7 +1652,7 @@ Show
 	MinimapIcon 1 Orange Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets < 3
@@ -1682,7 +1682,7 @@ Show
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Unique
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets >= 5
@@ -1699,7 +1699,7 @@ Show
 	MinimapIcon 1 Orange Star
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Unique
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets >= 5
@@ -1716,7 +1716,7 @@ Show
 	MinimapIcon 1 Orange Star
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets >= 5
@@ -1814,7 +1814,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Magic
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets < 5
@@ -1828,7 +1828,7 @@ Show
 	MinimapIcon 1 Blue Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Normal
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -1843,7 +1843,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -1858,7 +1858,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Unique
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -1876,7 +1876,7 @@ Show
 	MinimapIcon 1 Orange Circle
 
 Hide
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Normal
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets < 5
@@ -1892,7 +1892,7 @@ Hide
 	DisableDropSound
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Unique
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -2025,7 +2025,7 @@ Show
 	MinimapIcon 1 Blue Moon
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -2041,7 +2041,7 @@ Show
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets >= 5
@@ -2082,7 +2082,7 @@ Show
 	MinimapIcon 1 Blue Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -2098,7 +2098,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Unique
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -2117,7 +2117,7 @@ Show
 	MinimapIcon 1 Orange Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Magic
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -2132,7 +2132,7 @@ Show
 	MinimapIcon 1 Blue Circle
 
 Hide
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Magic
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets < 5
@@ -2148,7 +2148,7 @@ Hide
 	DisableDropSound
 
 Show
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -2163,7 +2163,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -2180,7 +2180,7 @@ Show
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets < 1W
@@ -2196,7 +2196,7 @@ Show
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -2213,7 +2213,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets < 3
@@ -2311,7 +2311,7 @@ Show
 	MinimapIcon 1 Orange Moon
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Normal
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets < 5
@@ -2325,7 +2325,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -2342,7 +2342,7 @@ Show
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets < 3
@@ -2358,7 +2358,7 @@ Show
 	MinimapIcon 1 Yellow Star
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Magic
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets < 3
@@ -2373,7 +2373,7 @@ Show
 	MinimapIcon 1 Blue Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Normal
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets < 3
@@ -2388,7 +2388,7 @@ Show
 	MinimapIcon 1 White Circle
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Unique
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets >= 5
@@ -2405,7 +2405,7 @@ Show
 	MinimapIcon 1 Orange Star
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Unique
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
@@ -2760,7 +2760,7 @@ Show
 	MinimapIcon 1 Orange Star
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Magic
 	Sockets >= 5
 	SocketGroup < 3RGB
@@ -2773,7 +2773,7 @@ Show
 	MinimapIcon 1 Blue Star
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Magic
 	Sockets >= 5
 	SocketGroup < 3RGB
@@ -2786,7 +2786,7 @@ Show
 	MinimapIcon 1 Blue Star
 
 Hide
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Normal
 	Sockets >= 5
 	SocketGroup < 3RGB
@@ -2801,7 +2801,7 @@ Hide
 	DisableDropSound
 
 Hide
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Magic
 	Sockets >= 5
 	SocketGroup < 3RGB
@@ -2816,7 +2816,7 @@ Hide
 	DisableDropSound
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Normal
 	Sockets >= 5
 	SocketGroup < 3RGB
@@ -2829,7 +2829,7 @@ Show
 	MinimapIcon 1 White Star
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Normal
 	Sockets >= 5
 	SocketGroup < 3RGB
@@ -3060,7 +3060,7 @@ Show
 	MinimapIcon 0 Orange Cross
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Normal
 	Sockets >= 4
 	Sockets < 5
@@ -3076,7 +3076,7 @@ Show
 	DisableDropSound
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Normal
 	Sockets >= 4
 	Sockets < 5
@@ -3092,7 +3092,7 @@ Show
 	DisableDropSound
 
 Hide
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Magic
 	Sockets >= 4
 	Sockets < 5
@@ -3108,7 +3108,7 @@ Hide
 	DisableDropSound
 
 Hide
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Normal
 	Sockets >= 4
 	Sockets < 5
@@ -3124,7 +3124,7 @@ Hide
 	DisableDropSound
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Magic
 	Sockets >= 4
 	Sockets < 5
@@ -3140,7 +3140,7 @@ Show
 	DisableDropSound
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Magic
 	Sockets >= 4
 	Sockets < 5
@@ -3156,7 +3156,7 @@ Show
 	DisableDropSound
 
 Show
-	Class Wands Shields
+	Class Shields Wands
 	Rarity Magic
 	Sockets >= 1W
 	Sockets < 4
@@ -3173,7 +3173,7 @@ Show
 	DisableDropSound
 
 Show
-	Class Amulets Rings Belts Gloves Boots "Body Armours" Helmets
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Magic
 	Sockets >= 1W
 	Sockets < 4
@@ -3190,7 +3190,7 @@ Show
 	DisableDropSound
 
 Hide
-	Class Bows Staves "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" Warstaves Claws Daggers "One Hand Swords" "One Hand Axes" "One Hand Maces" Sceptres Quivers
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Magic
 	Sockets >= 1W
 	Sockets < 4
