@@ -13,67 +13,55 @@ export class EffectSet {
 	};
 	static RGB = {
 		// BLACK: "0 0 0",
-		NAVY: "0 0 170",
-		GREEN: "0 170 0",
-		// TEAL: "0 170 170",
-		// CRIMSON: "170 0 0",
-		PURPLE: "170 0 170",
-		// ORANGE: "255 170 0",
-		// SILVER: "170 170 170",
-		GREY: "85 85 85",
-		// BLUE: "85 85 255",
-		LIME: "85 255 85",
-		CYAN: "85 255 255",
-		ROSE: "255 85 85",
-		PINK: "255 85 255",
-		YELLOW: "255 255 85"
-		// WHITE: "255 255 255"
-	};
-	// These are colours from vanilla
-	static RGB_GAME = {
-		// QUEST: "74 230 58",
-		// CURRENCY: "170 158 130",
-		// GEM: "27 162 155",
-		// CARD: "14 186 255",
-		// NORMAL: "200 200 200",
-		MAGIC: "136 136 255",
-		// RARE: "255 255 119",
-		// UNIQUE: "175 96 37",
-		CORRUPTED: "210 0 0"
+		NAVY: "0 0 170", // Outline colour: Mirrored
+		GREEN: "0 170 0", // Outline colour: Labyrinth items
+		TEAL: "0 170 170", // Outline colour: Gems. Quality
+		CRIMSON: "170 0 0", // Outline colour: Corrupted
+		PURPLE: "170 0 170", // Outline colour: RGB
+		ORANGE: "255 170 0", // Text colour: (Perceived) rarity unique | Outline colour: Map items unique. 6
+		SILVER: "170 170 170", // Text colour: (Perceived) rarity normal | Outline colour: 3 link
+		// GREY: "85 85 85",
+		BLUE: "85 85 255", // Text colour: (Perceived) rarity magic | Outline colour: Divination cards. 4
+		LIME: "85 255 85", // Text colour: Quest items | Outline colour: Currencies. Looty
+		// CYAN: "85 255 255",
+		// ROSE: "255 85 85",
+		// PINK: "255 85 255",
+		YELLOW: "255 255 85", // Text colour: (Perceived) rarity rare | Outline colour: Map items normal. 5
+		WHITE: "255 255 255" // Outline colour: White
 	};
 	// Default alpha is 240
 	static RGBA = {
-		FADED: "0 0 0 170",
-		WHITE: "255 255 255 210"
+		SILVER: "170 170 170 240",
+		FADED: "0 0 0 170"
 	};
 
 	// Map/beam preset colours
 	static COLOUR = {
 		// BLACK: "Grey",
 		// PURPLE: "Purple",
-		ORANGE: "Orange",
-		SILVER: "White",
-		BLUE: "Blue",
-		LIME: "Green",
-		CYAN: "Cyan",
-		ROSE: "Red",
-		PINK: "Pink",
-		YELLOW: "Yellow",
-		BROWN: "Brown"
+		ORANGE: "Orange", // Map colour: (Perceived) rarity unique
+		SILVER: "White", // Map colour: (Perceived) rarity normal
+		BLUE: "Blue", // Map colour: (Perceived) rarity magic
+		// LIME: "Green",
+		// CYAN: "Cyan",
+		// ROSE: "Red",
+		// PINK: "Pink",
+		YELLOW: "Yellow" // Map colour: (Perceived) rarity rare
+		// BROWN: "Brown"
 	};
 	static ICON = {
-		HOUSE: "UpsideDownHouse",
-		CIRCLE: "Circle",
-		HEXAGON: "Hexagon",
-		DIAMOND: "Diamond",
-		STAR: "Star",
-		CROSS: "Cross",
-		KITE: "Kite",
-		RAINDROP: "Raindrop",
-		SQUARE: "Square",
-		PENTAGON: "Pentagon",
-		TRIANGLE: "Triangle",
-		MOON: "Moon"
+		HOUSE: "UpsideDownHouse", // Others
+		KITE: "Kite", // Equipment
+		CROSS: "Cross", // 5
+		STAR: "Star", // 6
+		RAINDROP: "Raindrop", // RGB
+		MOON: "Moon" // Mirrored, corrupted
+		// CIRCLE: "Circle",
+		// HEXAGON: "Hexagon",
+		// SQUARE: "Square",
+		// DIAMOND: "Diamond",
+		// TRIANGLE: "Triangle",
+		// PENTAGON: "Pentagon",
 	};
 	static ICON_SIZE = {
 		SMALL: "2",

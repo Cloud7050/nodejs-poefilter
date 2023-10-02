@@ -7,48 +7,107 @@ import { Effecter } from "./effecter.js";
 /* [Exports] */
 export class EffecterOther extends Effecter {
 	/**
-	 * Gives default effects based on type.
+	 * Sets default background.
 	 */
-	static #defaultType(p) {
-		p.e.mapIcon = EffectSet.ICON.HOUSE;
+	static #defaultBackground(p) {
+		p.e.backgroundColour = EffectSet.RGBA.SILVER;
+	}
 
+	/**
+	 * Sets default map icon.
+	 */
+	static #defaultIcon(p) {
+		p.e.mapIcon = EffectSet.ICON.HOUSE;
+	}
+
+	/**
+	 * Gives default effects based on rarity.
+	 */
+	static #defaultRarity(p) {
+		switch (p.c.rarity) {
+			case ConditionSet.RARITY.NORMAL:
+				p.e.textColour = EffectSet.RGB.SILVER;
+				p.e.mapColour = EffectSet.COLOUR.SILVER;
+				break;
+			case ConditionSet.RARITY.MAGIC:
+				p.e.textColour = EffectSet.RGB.BLUE;
+				p.e.mapColour = EffectSet.COLOUR.BLUE;
+				break;
+			case ConditionSet.RARITY.RARE:
+				p.e.textColour = EffectSet.RGB.YELLOW;
+				p.e.mapColour = EffectSet.COLOUR.YELLOW;
+				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+				break;
+			case ConditionSet.RARITY.UNIQUE:
+				p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
+				p.e.textColour = EffectSet.RGB.ORANGE;
+				p.e.mapColour = EffectSet.COLOUR.ORANGE;
+				p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
+				p.e.beamColour = EffectSet.COLOUR.ORANGE;
+				break;
+		}
+	}
+
+	/**
+	 * Gives effects based on type.
+	 */
+	static #types(p) {
 		switch (p.c.type) {
-			case ConditionSet.TYPE_OTHER.CURRENCY:
-				p.e.textColour = EffectSet.RGB.GREEN;
-				p.e.backgroundColour = EffectSet.RGBA.WHITE;
-				p.e.mapColour = EffectSet.COLOUR.LIME;
-				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+			case ConditionSet.TYPE_OTHER.OTHER:
 				break;
-			case ConditionSet.TYPE_OTHER.MAP:
-				p.e.mapColour = EffectSet.COLOUR.BROWN;
-				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+			case ConditionSet.TYPE_OTHER.QUEST:
+				p.e.textColour = EffectSet.RGB.LIME;
 				break;
-			case ConditionSet.TYPE_OTHER.CARD:
-				p.e.backgroundColour = EffectSet.RGBA.WHITE;
-				p.e.mapColour = EffectSet.COLOUR.CYAN;
+			case ConditionSet.TYPE_OTHER.LABYRINTH:
+				p.e.textColour = EffectSet.RGB.BLUE;
+				p.e.outlineColour = EffectSet.RGB.GREEN;
+				p.e.mapColour = EffectSet.COLOUR.BLUE;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 			case ConditionSet.TYPE_OTHER.GEM:
-				p.e.backgroundColour = EffectSet.RGBA.WHITE;
-				p.e.mapColour = EffectSet.COLOUR.CYAN;
+				p.e.textColour = EffectSet.RGB.BLUE;
+				p.e.outlineColour = EffectSet.RGB.TEAL;
+				p.e.mapColour = EffectSet.COLOUR.BLUE;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
-			case ConditionSet.TYPE_OTHER.LABYRINTH:
-				p.e.textColour = EffectSet.RGB.GREEN;
-				p.e.backgroundColour = EffectSet.RGBA.WHITE;
-				p.e.mapColour = EffectSet.COLOUR.LIME;
+			case ConditionSet.TYPE_OTHER.CARD:
+				p.e.textColour = EffectSet.RGB.YELLOW;
+				p.e.outlineColour = EffectSet.RGB.BLUE;
+				p.e.mapColour = EffectSet.COLOUR.YELLOW;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
-			case ConditionSet.TYPE_OTHER.QUEST:
-				p.e.backgroundColour = EffectSet.RGBA.WHITE;
+			case ConditionSet.TYPE_OTHER.MAP:
+				switch (p.c.rarity) {
+					case ConditionSet.RARITY.NORMAL:
+						p.e.textColour = EffectSet.RGB.YELLOW;
+						p.e.outlineColour = EffectSet.RGB.YELLOW;
+						p.e.mapColour = EffectSet.COLOUR.YELLOW;
+						p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+						break;
+					case ConditionSet.RARITY.UNIQUE:
+						p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
+						p.e.textColour = EffectSet.RGB.ORANGE;
+						p.e.outlineColour = EffectSet.RGB.ORANGE;
+						p.e.mapColour = EffectSet.COLOUR.ORANGE;
+						p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
+						p.e.beamColour = EffectSet.COLOUR.ORANGE;
+						break;
+				}
 				break;
-			case ConditionSet.TYPE_OTHER.OTHER:
-				p.e.mapColour = EffectSet.COLOUR.PINK;
+			case ConditionSet.TYPE_OTHER.CURRENCY:
+				p.e.textColour = EffectSet.RGB.BLUE;
+				p.e.outlineColour = EffectSet.RGB.LIME;
+				p.e.mapColour = EffectSet.COLOUR.BLUE;
+				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 		}
 	}
 
 	decideOne(p) {
-		EffecterOther.#defaultType(p);
+		EffecterOther.#defaultBackground(p);
+		EffecterOther.#defaultIcon(p);
+		EffecterOther.#defaultRarity(p);
+
+		EffecterOther.#types(p);
 	}
 }

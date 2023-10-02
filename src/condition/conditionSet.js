@@ -28,7 +28,8 @@ export class ConditionSet {
 	};
 
 	static DUPLICATORS_OTHER = [
-		new Duplicator("type", Duplicator.TYPE.ENUM, ConditionSet.TYPE_OTHER)
+		new Duplicator("type", Duplicator.TYPE.ENUM, ConditionSet.TYPE_OTHER),
+		new Duplicator("rarity", Duplicator.TYPE.ENUM, ConditionSet.RARITY)
 	];
 	static DUPLICATORS_EQUIPMENT = [
 		new Duplicator("type", Duplicator.TYPE.ENUM, ConditionSet.TYPE_EQUIPMENT),

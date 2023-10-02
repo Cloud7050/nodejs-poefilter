@@ -14,40 +14,63 @@ To avoid creating too many redundant permutations, there are different `Permutat
 
 Notes:
 
-- Avoid white/silver/blue/yellow/orange/lime/teal text as vanilla does similar
-- Avoid white/silver/orange outlines as vanilla does similar
+- Avoid black/grey/silver text/outlines based on background colours
 - Minimap defaults are kite and small
 
 ## Others
 
+- Background: Silver
+- Minimap: House
+
+### Rarity
+
+- Normal
+	- Text colour: Silver
+	- Minimap: Silver
+- Magic
+	- Text colour: Blue
+	- Minimap: Blue
+- Rare (show)
+	- Text colour: Yellow
+	- Minimap: Yellow medium
+- Unique (show)
+	- Text size: Largest
+	- Text colour: Orange
+	- Minimap: Orange large
+	- Beam: Orange
+
 ### Type
 
-- Currencies
-	- Text recoloured from default beige to green
-	- Background white
-	- Minimap: Lime house medium
-- Map items
-	- (Text colour stays white/orange)
-	- (Outline stays white/orange)
-	- Minimap: Brown house medium
-- Divination cards
-	- (Text colour stays azure)
-	- Background white
-	- Minimap: Cyan house medium
-- Gems
-	- (Text colour stays teal)
-	- Background white
-	- Minimap: Cyan house medium
-- Labyrinth items
-	- Text recoloured from default beige to green
-	- Background white
-	- Minimap: Lime house medium
-- Quest items
-	- (Text colour stays lime)
-	- Background white
-	- (Minimap: Vanilla has green exclamation mark)
 - Others
-	- Minimap: Pink house
+- Quest items
+	- Text colour: Default lime → Lime
+	- (Minimap: Vanilla has green exclamation mark)
+- Labyrinth items
+	- Text colour: Default beige → blue
+	- Outline colour: Green
+	- Minimap: Blue medium
+- Gems
+	- Text colour: Default teal → blue
+	- Outline colour: Teal
+	- Minimap: Blue medium
+- Divination cards
+	- Text colour: Default azure → yellow
+	- Outline colour: Blue
+	- Minimap: Yellow medium
+- Map items (normal)
+	- Text colour: Default white → yellow
+	- Outline colour: Default white → yellow
+	- Minimap: Yellow medium
+- Map items (unique)
+	- Text size: Largest
+	- Text colour: Default orange → orange
+	- Outline colour: Default orange → orange
+	- Minimap: Orange large
+	- Beam: Orange
+- Currencies
+	- Text colour: Default beige → blue
+	- Outline colour: Lime
+	- Minimap: Blue medium
 
 ## Equipment
 
@@ -63,74 +86,75 @@ Shown items are either shown normally, or shown shrunk/unmapped:
 ### Rarity
 
 - Normal
+	- Text colour: Silver
 	- Minimap: Silver
 - Magic
+	- Text colour: Blue
 	- Minimap: Blue
 - Rare (show)
+	- Text colour: Yellow
 	- Minimap: Yellow medium
 - Unique (show)
-	- Text resized to largest
-	- Background white
+	- Text size: Largest
+	- Text colour: Orange
 	- Minimap: Orange large
 	- Beam: Orange
 
-### Pre-sockets
+### Overwrites
 
-- Quality (show)
-	- Outlined magic colour
-	- Minimap: Hexagon
+Reasons for showing:
 
-### Sockets
+- Fractured can vendor/use
+- Quality can vendor/use
+- RGB can vendor
+- 6 can use/vendor
+- Mirrored may have dropped dupes, which can be vendored together
+- Corrupted may have special modifiers, which can be vendored even if not used due to bricked sockets etc
 
-6/RGB have vendor recipes. Looty items may be used.
-
-- 6 (show)
-	- Outlined rose
-	- Minimap: Diamond large
-	- Beam: Rose
-- RGB (show)
-	- Outlined purple
-	- Minimap: Raindrop medium
-- 5
-	- Outlined yellow
-	- Minimap: Star medium
-- Looty base/modifier
-	- Outlined lime
-	- Minimap: Square medium
-- 4
-	- Outlined cyan
-	- Minimap: Cross
-- White
-	- Outlined pink
-	- Minimap: Pentagon
-- 3 link
-	- Outlined grey
-	- Minimap: Kite
-
-### Post-sockets
-
-Corrupted may have special modifiers, which may be vendored even if not used due to sockets etc.
-
-Mirrored may have dropped dupes which may be vendored together.
+These are in order from least to highest overwrite priority (if blocks).
 
 - Fractured (show)
-	- Outlined navy
-	- Minimap: Circle
-- Corrupted (show)
-	- Outlined corrupted colour
-	- Minimap: Triangle medium
+	- (Vanilla has orb icon)
+	- Minimap: Medium
+- Quality (show)
+	- Outline colour: Teal
+	- Minimap: Medium
+- 3 link
+	- Outline colour: Silver
+- White
+	- Outline colour: White
+	- Minimap: Medium
+- 4
+	- Outline colour: Blue
+- RGB (show)
+	- Outline colour: Purple
+	- Minimap: Raindrop medium
+- Looty base/modifier
+	- Outline colour: Lime
+	- Minimap: Medium
+- 5
+	- Outline colour: Yellow
+	- Minimap: Cross large
+- 6 (show)
+	- Text size: Largest
+	- Outline colour: Orange
+	- Minimap: Star large
+	- Beam: Orange
 - Mirrored (show)
-	- Outlined navy
-	- Minimap: Moon
+	- Outline colour: Navy
+	- Minimap: Moon medium
+- Corrupted (show)
+	- Outline colour: Crimson
+	- Minimap: Moon medium
 
 ### Multi-visibility
 
 Anything whose visibility is not a blanket guaranteed show yet should be decided here based on multiple conditions.
 
-For equipment we use, based on rarity, we may use them if the sockets are notable enough.
+For equipment we use, based on rarity, we may use them if the properties are notable enough.
 
 - Witch weapons / armour
-	- 5/looty (show)
+	- Looty/5 (show)
 	- Normal
 		- 4 (shrink/unmap)
 	- Magic

@@ -1,163 +1,291 @@
 Show
 	Class "Delve Stackable Socketable Currency" "Stackable Currency"
+	Rarity Normal
 
-	SetTextColor 0 170 0
-	SetBackgroundColor 255 255 255 210
-	MinimapIcon 1 Green UpsideDownHouse
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue UpsideDownHouse
 
 Show
 	Class "Map Fragments" Maps "Misc Map Items"
+	Rarity Normal
 
-	MinimapIcon 1 Brown UpsideDownHouse
+	SetTextColor 255 255 85
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
 	Class "Divination Cards"
+	Rarity Normal
 
-	SetBackgroundColor 255 255 255 210
-	MinimapIcon 1 Cyan UpsideDownHouse
+	SetTextColor 255 255 85
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
 	Class Jewels "Skill Gems" "Support Gems"
+	Rarity Normal
 
-	SetBackgroundColor 255 255 255 210
-	MinimapIcon 1 Cyan UpsideDownHouse
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 0 170 170
+	MinimapIcon 1 Blue UpsideDownHouse
 
 Show
 	Class "Labyrinth Items" "Labyrinth Trinkets"
+	Rarity Normal
 
-	SetTextColor 0 170 0
-	SetBackgroundColor 255 255 255 210
-	MinimapIcon 1 Green UpsideDownHouse
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 0 170 0
+	MinimapIcon 1 Blue UpsideDownHouse
 
 Show
 	Class "Quest Items"
+	Rarity Normal
 
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 85 255 85
+	SetBackgroundColor 170 170 170 240
+	MinimapIcon 2 White UpsideDownHouse
 
 Show
 	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
+	Rarity Unique
 
-	MinimapIcon 2 Pink UpsideDownHouse
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBackgroundColor 170 170 170 240
+	PlayEffect Orange
+	MinimapIcon 0 Orange UpsideDownHouse
+
+Show
+	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
+	Rarity Rare
+
+	SetTextColor 255 255 85
+	SetBackgroundColor 170 170 170 240
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
+	Rarity Magic
+
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	MinimapIcon 2 Blue UpsideDownHouse
+
+Show
+	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
+	Rarity Normal
+
+	SetTextColor 170 170 170
+	SetBackgroundColor 170 170 170 240
+	MinimapIcon 2 White UpsideDownHouse
+
+Show
+	Class "Delve Stackable Socketable Currency" "Stackable Currency"
+	Rarity Magic
+
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue UpsideDownHouse
+
+Show
+	Class "Map Fragments" Maps "Misc Map Items"
+	Rarity Magic
+
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	MinimapIcon 2 Blue UpsideDownHouse
+
+Show
+	Class "Divination Cards"
+	Rarity Magic
+
+	SetTextColor 255 255 85
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	Class Jewels "Skill Gems" "Support Gems"
+	Rarity Magic
+
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 0 170 170
+	MinimapIcon 1 Blue UpsideDownHouse
+
+Show
+	Class "Labyrinth Items" "Labyrinth Trinkets"
+	Rarity Magic
+
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 0 170 0
+	MinimapIcon 1 Blue UpsideDownHouse
+
+Show
+	Class "Quest Items"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 85 255 85
+	SetBackgroundColor 170 170 170 240
+	PlayEffect Orange
+	MinimapIcon 0 Orange UpsideDownHouse
+
+Show
+	Class "Quest Items"
+	Rarity Rare
+
+	SetTextColor 85 255 85
+	SetBackgroundColor 170 170 170 240
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	Class "Quest Items"
+	Rarity Magic
+
+	SetTextColor 85 255 85
+	SetBackgroundColor 170 170 170 240
+	MinimapIcon 2 Blue UpsideDownHouse
+
+Show
+	Class "Delve Stackable Socketable Currency" "Stackable Currency"
+	Rarity Rare
+
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue UpsideDownHouse
+
+Show
+	Class "Map Fragments" Maps "Misc Map Items"
+	Rarity Rare
+
+	SetTextColor 255 255 85
+	SetBackgroundColor 170 170 170 240
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	Class "Divination Cards"
+	Rarity Rare
+
+	SetTextColor 255 255 85
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	Class Jewels "Skill Gems" "Support Gems"
+	Rarity Rare
+
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 0 170 170
+	MinimapIcon 1 Blue UpsideDownHouse
+
+Show
+	Class "Labyrinth Items" "Labyrinth Trinkets"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 0 170 0
+	PlayEffect Orange
+	MinimapIcon 1 Blue UpsideDownHouse
+
+Show
+	Class "Labyrinth Items" "Labyrinth Trinkets"
+	Rarity Rare
+
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 0 170 0
+	MinimapIcon 1 Blue UpsideDownHouse
+
+Show
+	Class "Delve Stackable Socketable Currency" "Stackable Currency"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Blue UpsideDownHouse
+
+Show
+	Class "Map Fragments" Maps "Misc Map Items"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 255 170 0
+	PlayEffect Orange
+	MinimapIcon 0 Orange UpsideDownHouse
+
+Show
+	Class "Divination Cards"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 255 255 85
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 85 85 255
+	PlayEffect Orange
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	Class Jewels "Skill Gems" "Support Gems"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 85 85 255
+	SetBackgroundColor 170 170 170 240
+	SetBorderColor 0 170 170
+	PlayEffect Orange
+	MinimapIcon 1 Blue UpsideDownHouse
 
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 5
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 5
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 1W
 	Sockets < 5
 	SocketGroup >= 3RGB
 	Sockets < 6
 	FracturedItem True
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 1W
 	Sockets < 5
 	SocketGroup >= 3RGB
 	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-	Mirrored True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem True
-	Mirrored False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
 	Quality >= 20
 	FracturedItem False
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Rarity Rare
@@ -168,12 +296,13 @@ Show
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	Quality < 20
 	FracturedItem True
 	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -190,8 +319,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -208,16 +338,33 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Square
+	MinimapIcon 1 Orange Kite
 
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
+	Sockets < 4
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets < 4
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -225,62 +372,67 @@ Show
 	Quality < 20
 	FracturedItem True
 	Mirrored False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored True
 	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-	Mirrored True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality >= 20
-	FracturedItem True
 	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	Sockets < 1W
 	Sockets >= 4
 	Sockets < 5
@@ -289,9 +441,11 @@ Show
 	Quality < 20
 	FracturedItem True
 	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -307,8 +461,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 170 170 170
 	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
+	MinimapIcon 1 White Kite
 
 Show
 	Class Shields Wands
@@ -325,10 +480,10 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Square
+	MinimapIcon 1 Orange Kite
 
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -345,8 +500,26 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Raindrop
 
 Show
 	Rarity Magic
@@ -357,11 +530,13 @@ Show
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	Quality < 20
-	FracturedItem True
+	Quality >= 20
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
 
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -379,8 +554,25 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality >= 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Raindrop
 
 Show
 	Rarity Magic
@@ -390,11 +582,31 @@ Show
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	Quality >= 20
+	Quality < 20
 	FracturedItem True
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Raindrop
 
 Show
 	Rarity Magic
@@ -405,11 +617,13 @@ Show
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	Quality < 20
-	FracturedItem True
+	Quality >= 20
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -426,8 +640,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 170 170 170
 	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
+	MinimapIcon 1 White Kite
 
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -445,8 +660,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Rarity Magic
@@ -456,13 +672,15 @@ Show
 	Sockets >= 1W
 	Sockets < 4
 	Sockets < 5
-	SocketGroup < 3RGB
+	SocketGroup >= 3RGB
 	Sockets < 6
 	Quality < 20
-	FracturedItem True
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Raindrop
 
 Show
 	Rarity Rare
@@ -474,12 +692,32 @@ Show
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	Quality < 20
+	Quality >= 20
 	FracturedItem True
 	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -497,10 +735,10 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Square
+	MinimapIcon 1 Orange Kite
 
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -517,26 +755,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Shields Wands
@@ -553,8 +774,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -571,40 +793,28 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
+	MinimapIcon 0 Yellow Cross
 
 Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	HasExplicitMod Magpie's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets >= 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality < 20
 	FracturedItem False
-	Mirrored True
+	Mirrored False
 	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -622,10 +832,30 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Square
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Unique
+	BaseType "Gold Amulet" "Gold Ring"
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
 
 Show
 	Rarity Unique
@@ -643,10 +873,10 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Square
+	MinimapIcon 1 Orange Kite
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -662,8 +892,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
+	MinimapIcon 0 Yellow Cross
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -680,8 +911,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Shields Wands
@@ -696,10 +928,10 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Star
+	MinimapIcon 0 Orange Cross
 
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -713,20 +945,24 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
+	MinimapIcon 0 Yellow Cross
 
 Show
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
 	Sockets < 5
-	SocketGroup < 3RGB
+	SocketGroup >= 3RGB
 	Sockets < 6
-	FracturedItem False
-	Corrupted True
+	Quality >= 20
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Blue Triangle
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Raindrop
 
 Show
 	Rarity Magic
@@ -735,38 +971,47 @@ Show
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	Quality >= 20
+	Quality < 20
 	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
-
-Show
-	Rarity Magic
-	BaseType "Gold Amulet" "Gold Ring"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
+	Mirrored False
 	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Moon
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
 
 Show
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets >= 4
 	Sockets < 5
-	SocketGroup < 3RGB
+	SocketGroup >= 3RGB
 	Sockets < 6
-	Quality >= 20
+	Quality < 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Raindrop
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	Sockets >= 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
 	FracturedItem False
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Blue Square
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Rarity Magic
@@ -776,11 +1021,13 @@ Show
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	Quality < 20
-	FracturedItem True
+	Quality >= 20
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
 
 Show
 	Rarity Rare
@@ -790,13 +1037,14 @@ Show
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	Quality < 20
+	Quality >= 20
 	FracturedItem False
-	Mirrored True
+	Mirrored False
 	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -812,8 +1060,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 170 170 170
 	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
+	MinimapIcon 1 White Kite
 
 Show
 	Class Shields Wands
@@ -829,10 +1078,10 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Square
+	MinimapIcon 1 Orange Kite
 
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -848,8 +1097,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -864,8 +1114,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 85 85 255
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Blue Square
+	MinimapIcon 1 Blue Kite
 
 Hide
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -880,6 +1131,7 @@ Hide
 	Corrupted False
 
 	SetFontSize 18
+	SetTextColor 85 85 255
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 85 255 85
 	DisableDropSound
@@ -891,13 +1143,49 @@ Show
 	Sockets >= 1W
 	Sockets < 4
 	Sockets < 5
-	SocketGroup < 3RGB
+	SocketGroup >= 3RGB
 	Sockets < 6
 	Quality < 20
-	FracturedItem True
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Raindrop
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
 
 Show
 	Rarity Rare
@@ -906,15 +1194,16 @@ Show
 	Sockets < 1W
 	Sockets >= 4
 	Sockets < 5
-	SocketGroup < 3RGB
+	SocketGroup >= 3RGB
 	Sockets < 6
 	Quality < 20
 	FracturedItem False
-	Mirrored True
+	Mirrored False
 	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Class Shields Wands
@@ -930,8 +1219,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Shields Wands
@@ -946,8 +1236,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 170 170 170
 	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
+	MinimapIcon 1 White Kite
 
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -964,10 +1255,46 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Square
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Rarity Unique
@@ -975,50 +1302,50 @@ Show
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
-	SocketGroup < 3RGB
+	SocketGroup >= 3RGB
 	Sockets < 6
-	FracturedItem False
-	Corrupted True
+	Mirrored False
+	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 210 0 0
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Triangle
+	MinimapIcon 1 Orange Raindrop
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets < 3
 	Sockets < 1W
+	Sockets >= 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
 	FracturedItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Circle
-
-Show
-	Rarity Unique
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
+	Mirrored False
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Moon
+	MinimapIcon 1 Orange Kite
 
 Show
 	Rarity Unique
@@ -1035,99 +1362,68 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Square
+	MinimapIcon 1 Orange Kite
 
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	Sockets >= 1W
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	Sockets >= 1W
-	SocketGroup >= 3RGB
+	Sockets >= 5
 	Sockets < 6
 	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	Sockets >= 1W
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
+	Mirrored False
 	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	Sockets >= 1W
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	Sockets >= 1W
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	Sockets >= 1W
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
 
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets >= 5
-	SocketGroup < 3RGB
 	Sockets < 6
 	Quality >= 20
 	FracturedItem False
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	Sockets >= 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
 
 Show
 	Class Shields Wands
@@ -1141,41 +1437,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Unique
-	BaseType "Gold Amulet" "Gold Ring"
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 255 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Star
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
+	MinimapIcon 0 Yellow Cross
 
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -1190,26 +1454,61 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Star
+	MinimapIcon 0 Orange Cross
 
 Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
-	Sockets >= 1W
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets >= 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	FracturedItem False
-	Corrupted True
+	Quality >= 20
+	FracturedItem True
+	Mirrored False
+	Corrupted False
 
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 210 0 0
-	PlayEffect Orange
-	MinimapIcon 1 Orange Triangle
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Rarity Unique
@@ -1219,24 +1518,43 @@ Show
 	SocketGroup < 3RGB
 	Sockets < 6
 	FracturedItem True
+	Mirrored False
+	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Circle
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Unique
+	BaseType "Gold Amulet" "Gold Ring"
+	Sockets >= 1W
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Raindrop
 
 Show
 	Rarity Normal
 	BaseType "Gold Amulet" "Gold Ring"
 	Sockets < 5
-	SocketGroup < 3RGB
+	SocketGroup >= 3RGB
 	Sockets < 6
-	FracturedItem False
-	Corrupted True
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 210 0 0
-	MinimapIcon 1 White Triangle
+	SetTextColor 170 170 170
+	SetBorderColor 85 255 85
+	MinimapIcon 1 White Raindrop
 
 Show
 	Rarity Normal
@@ -1245,39 +1563,12 @@ Show
 	SocketGroup < 3RGB
 	Sockets < 6
 	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 White Circle
-
-Show
-	Rarity Unique
-	BaseType "Gold Amulet" "Gold Ring"
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
+	Mirrored False
 	Corrupted False
 
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Moon
-
-Show
-	Rarity Normal
-	BaseType "Gold Amulet" "Gold Ring"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 White Moon
+	SetTextColor 170 170 170
+	SetBorderColor 85 255 85
+	MinimapIcon 1 White Kite
 
 Show
 	Rarity Rare
@@ -1285,45 +1576,16 @@ Show
 	LinkedSockets >= 3
 	Sockets >= 4
 	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
+	SocketGroup >= 3RGB
 	Sockets < 6
 	Quality >= 20
 	FracturedItem False
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Rarity Unique
@@ -1338,10 +1600,10 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Square
+	MinimapIcon 1 Orange Kite
 
 Show
 	Rarity Normal
@@ -1354,23 +1616,42 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 170 170 170
 	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
+	MinimapIcon 1 White Kite
 
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	Sockets >= 1W
-	Sockets >= 4
+	LinkedSockets >= 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Class Shields Wands
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality < 20
 	FracturedItem False
-	Corrupted True
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -1385,24 +1666,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Class Shields Wands
-	Rarity Normal
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Shields Wands
@@ -1417,12 +1683,13 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 85 85 255
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Blue Square
+	MinimapIcon 1 Blue Kite
 
 Show
 	Class Shields Wands
-	Rarity Rare
+	Rarity Normal
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
 	Sockets < 5
@@ -1433,8 +1700,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 170 170 170
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 White Kite
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -1450,10 +1718,10 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Square
+	MinimapIcon 1 Orange Kite
 
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -1469,10 +1737,10 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Square
+	MinimapIcon 1 Orange Kite
 
 Hide
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -1487,6 +1755,7 @@ Hide
 	Corrupted False
 
 	SetFontSize 18
+	SetTextColor 170 170 170
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 85 255 85
 	DisableDropSound
@@ -1497,109 +1766,32 @@ Show
 	LinkedSockets >= 3
 	Sockets < 4
 	Sockets < 5
-	SocketGroup < 3RGB
+	SocketGroup >= 3RGB
 	Sockets < 6
-	FracturedItem False
-	Corrupted True
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
 
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
 	LinkedSockets >= 3
+	Sockets < 1W
 	Sockets < 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup >= 3RGB
-	Sockets < 6
+	Quality >= 20
 	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
+	Mirrored False
 	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -1615,25 +1807,9 @@ Show
 	Mirrored False
 	Corrupted False
 
+	SetTextColor 255 255 85
 	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Rarity Unique
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 210 0 0
-	PlayEffect Orange
-	MinimapIcon 1 Orange Triangle
+	MinimapIcon 1 Yellow Kite
 
 Show
 	Rarity Unique
@@ -1644,12 +1820,14 @@ Show
 	SocketGroup < 3RGB
 	Sockets < 6
 	FracturedItem True
+	Mirrored False
+	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Circle
+	MinimapIcon 1 Orange Kite
 
 Show
 	Rarity Unique
@@ -1657,2318 +1835,1841 @@ Show
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Moon
-
-Show
-	Rarity Unique
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Unique
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Class Shields Wands
-	Rarity Unique
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Normal
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
-
-Show
-	Rarity Magic
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
-
-Show
-	Rarity Unique
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 255 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Star
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Magic
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Blue Square
-
-Show
-	Class Shields Wands
-	Rarity Magic
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Blue Square
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Normal
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-	Mirrored True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Magic
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem True
-	Mirrored False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Rarity Unique
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Rarity Unique
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	BaseType "Gold Amulet" "Gold Ring"
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 255 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Star
-
-Show
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 255 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Star
-
-Show
-	Class Shields Wands
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 210 0 0
-	PlayEffect Orange
-	MinimapIcon 1 Orange Triangle
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Circle
-
-Show
-	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 White Triangle
-
-Show
-	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 White Circle
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Moon
-
-Show
-	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 White Moon
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
-
-Show
-	Class Shields Wands
-	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Blue Square
-
-Show
-	Class Shields Wands
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Class Shields Wands
-	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
-
-Show
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Hide
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
-	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 85 255 85
-	DisableDropSound
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 210 0 0
-	PlayEffect Orange
-	MinimapIcon 1 Orange Triangle
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Circle
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Moon
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 255 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Star
-
-Show
-	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Blue Triangle
-
-Show
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
-
-Show
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Moon
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets >= 4
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Blue Square
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Blue Square
-
-Hide
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
-	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 85 255 85
-	DisableDropSound
-
-Show
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets >= 1W
-	Sockets < 4
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 1W
-	Sockets < 4
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets >= 4
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 210 0 0
-	PlayEffect Orange
-	MinimapIcon 1 Orange Triangle
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Circle
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Moon
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Yellow Square
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Blue Square
-
-Show
-	Class Shields Wands
-	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets < 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 85
-	MinimapIcon 1 White Square
-
-Show
-	Class Shields Wands
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 255 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Star
-
-Show
-	Class Shields Wands
-	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 85
-	PlayEffect Orange
-	MinimapIcon 1 Orange Square
-
-Show
-	Rarity Magic
-	Sockets >= 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	PlayEffect Red
-	MinimapIcon 0 Blue Triangle
-
-Show
-	Rarity Normal
-	Sockets >= 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	PlayEffect Red
-	MinimapIcon 0 White Triangle
-
-Show
-	Rarity Unique
-	Sockets >= 6
-	FracturedItem False
-	Corrupted True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 210 0 0
-	PlayEffect Red
-	MinimapIcon 0 Orange Triangle
-
-Show
-	Rarity Rare
-	Sockets >= 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	PlayEffect Red
-	MinimapIcon 0 Yellow Triangle
-
-Show
-	Rarity Magic
-	Sockets >= 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	PlayEffect Red
-	MinimapIcon 0 Blue Circle
-
-Show
-	Rarity Normal
-	Sockets >= 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	PlayEffect Red
-	MinimapIcon 0 White Circle
-
-Show
-	Rarity Unique
-	Sockets >= 6
-	FracturedItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Red
-	MinimapIcon 0 Orange Circle
-
-Show
-	Rarity Rare
-	Sockets >= 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	PlayEffect Red
-	MinimapIcon 0 Yellow Circle
-
-Show
-	Rarity Rare
-	Sockets >= 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	PlayEffect Red
-	MinimapIcon 0 Yellow Moon
-
-Show
-	Rarity Unique
-	Sockets >= 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Red
-	MinimapIcon 0 Orange Moon
-
-Show
-	Rarity Normal
-	Sockets >= 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	PlayEffect Red
-	MinimapIcon 0 White Moon
-
-Show
-	Rarity Magic
-	Sockets >= 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	PlayEffect Red
-	MinimapIcon 0 Blue Diamond
-
-Show
-	Rarity Magic
-	Sockets >= 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	PlayEffect Red
-	MinimapIcon 0 Blue Moon
-
-Show
-	Rarity Normal
-	Sockets >= 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	PlayEffect Red
-	MinimapIcon 0 White Diamond
-
-Show
-	Rarity Unique
-	Sockets >= 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 255 85 85
-	PlayEffect Red
-	MinimapIcon 0 Orange Diamond
-
-Show
-	Rarity Rare
-	Sockets >= 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 85
-	PlayEffect Red
-	MinimapIcon 0 Yellow Diamond
-
-Show
-	Rarity Unique
 	SocketGroup >= 3RGB
 	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 210 0 0
-	PlayEffect Orange
-	MinimapIcon 1 Orange Triangle
-
-Show
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 White Triangle
-
-Show
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Blue Triangle
-
-Show
-	Rarity Unique
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Circle
-
-Show
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 White Circle
-
-Show
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
-
-Show
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Moon
-
-Show
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 White Moon
-
-Show
-	Rarity Unique
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
 	Mirrored False
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 170 0 170
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
 	PlayEffect Orange
 	MinimapIcon 1 Orange Raindrop
 
 Show
 	Rarity Unique
-	SocketGroup >= 3RGB
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup < 3RGB
 	Sockets < 6
+	Quality >= 20
 	FracturedItem False
-	Mirrored True
+	Mirrored False
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Class Shields Wands
+	Rarity Unique
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Normal
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 85 255 85
+	MinimapIcon 1 White Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Unique
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Raindrop
+
+Show
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Unique
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets >= 5
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Rarity Unique
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets >= 5
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Rarity Unique
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets >= 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Class Shields Wands
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Normal
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 85 255 85
+	MinimapIcon 1 White Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Raindrop
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
+
+Show
+	Rarity Magic
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
+
+Show
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Unique
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Unique
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Rare
+	BaseType "Gold Amulet" "Gold Ring"
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 5
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 5
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Class Shields Wands
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 1W
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Raindrop
+
+Show
+	Rarity Normal
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 85 255 85
+	MinimapIcon 1 White Kite
+
+Show
+	Rarity Normal
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 85 255 85
+	MinimapIcon 1 White Raindrop
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Normal
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 85 255 85
+	MinimapIcon 1 White Kite
+
+Show
+	Class Shields Wands
+	Rarity Magic
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
+
+Show
+	Class Shields Wands
+	Rarity Normal
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 85 255 85
+	MinimapIcon 1 White Kite
+
+Show
+	Class Shields Wands
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Hide
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Normal
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 170 170 170
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 255 85
+	DisableDropSound
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Raindrop
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets >= 5
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets >= 5
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets >= 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Rarity Magic
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Raindrop
+
+Show
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Raindrop
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets >= 4
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Magic
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Magic
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Magic
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
+
+Hide
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Magic
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 255 85
+	DisableDropSound
+
+Show
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets >= 1W
+	Sockets < 4
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 1W
+	Sockets < 4
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets >= 4
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Raindrop
+
+Show
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Normal
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 85 255 85
+	MinimapIcon 1 White Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Rare
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets >= 1W
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Magic
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Blue Kite
+
+Show
+	Class Shields Wands
+	Rarity Normal
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets < 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 85 255 85
+	MinimapIcon 1 White Kite
+
+Show
+	Class Shields Wands
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Class Shields Wands
+	Rarity Unique
+	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	LinkedSockets >= 3
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 255 85
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Magic
+	Sockets < 6
+	Corrupted True
+
+	SetTextColor 85 85 255
+	SetBorderColor 170 0 0
+	MinimapIcon 1 Blue Moon
+
+Show
+	Rarity Normal
+	Sockets < 6
+	Corrupted True
+
+	SetTextColor 170 170 170
+	SetBorderColor 170 0 0
+	MinimapIcon 1 White Moon
+
+Show
+	Rarity Rare
+	Sockets >= 6
+	Corrupted True
+
+	SetFontSize 45
+	SetTextColor 255 255 85
+	SetBorderColor 170 0 0
+	PlayEffect Orange
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Rarity Rare
+	Sockets < 6
+	Corrupted True
+
+	SetTextColor 255 255 85
+	SetBorderColor 170 0 0
+	MinimapIcon 1 Yellow Moon
+
+Show
+	Rarity Normal
+	Sockets >= 6
+	Corrupted True
+
+	SetFontSize 45
+	SetTextColor 170 170 170
+	SetBorderColor 170 0 0
+	PlayEffect Orange
+	MinimapIcon 1 White Moon
+
+Show
+	Rarity Magic
+	Sockets >= 6
+	Corrupted True
+
+	SetFontSize 45
+	SetTextColor 85 85 255
+	SetBorderColor 170 0 0
+	PlayEffect Orange
+	MinimapIcon 1 Blue Moon
+
+Show
+	Rarity Unique
+	Corrupted True
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 170 0 0
 	PlayEffect Orange
 	MinimapIcon 1 Orange Moon
 
 Show
 	Rarity Rare
-	SocketGroup >= 3RGB
 	Sockets < 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 1 Yellow Raindrop
-
-Show
-	Rarity Normal
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 1 White Raindrop
-
-Show
-	Rarity Magic
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 170 0 170
-	MinimapIcon 1 Blue Raindrop
-
-Show
-	Rarity Magic
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Blue Triangle
-
-Show
-	Rarity Normal
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 White Triangle
-
-Show
-	Rarity Unique
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 210 0 0
-	PlayEffect Orange
-	MinimapIcon 1 Orange Triangle
-
-Show
-	Rarity Magic
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Blue Circle
-
-Show
-	Rarity Normal
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 White Circle
-
-Show
-	Rarity Unique
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Circle
-
-Show
-	Rarity Unique
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
 	Mirrored True
 	Corrupted False
 
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 255 85
 	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 1 Orange Moon
+	MinimapIcon 1 Yellow Moon
 
 Show
 	Rarity Normal
-	Sockets >= 5
-	SocketGroup < 3RGB
 	Sockets < 6
-	FracturedItem False
 	Mirrored True
 	Corrupted False
 
+	SetTextColor 170 170 170
 	SetBorderColor 0 0 170
 	MinimapIcon 1 White Moon
 
 Show
 	Rarity Magic
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
+	Sockets >= 6
 	Mirrored True
 	Corrupted False
 
+	SetFontSize 45
+	SetTextColor 85 85 255
+	SetBorderColor 0 0 170
+	PlayEffect Orange
+	MinimapIcon 1 Blue Moon
+
+Show
+	Rarity Magic
+	Sockets < 6
+	Mirrored True
+	Corrupted False
+
+	SetTextColor 85 85 255
 	SetBorderColor 0 0 170
 	MinimapIcon 1 Blue Moon
 
 Show
 	Rarity Normal
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 White Star
-
-Show
-	Rarity Magic
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Blue Star
-
-Show
-	Rarity Unique
-	LinkedSockets >= 3
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
+	Sockets >= 6
+	Mirrored True
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 255 255 85
+	SetTextColor 170 170 170
+	SetBorderColor 0 0 170
 	PlayEffect Orange
-	MinimapIcon 1 Orange Star
-
-Hide
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
-	Rarity Magic
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 255 255 85
-	DisableDropSound
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Magic
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Blue Star
-
-Show
-	Class Shields Wands
-	Rarity Normal
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 White Star
-
-Show
-	Class Shields Wands
-	Rarity Magic
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Blue Star
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Normal
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 255 85
-	MinimapIcon 1 White Star
-
-Hide
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
-	Rarity Normal
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 255 255 85
-	DisableDropSound
+	MinimapIcon 1 White Moon
 
 Show
 	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Unique
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
+	Sockets >= 6
+	Mirrored False
+	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 210 0 0
+	SetTextColor 255 255 85
+	SetBorderColor 255 170 0
 	PlayEffect Orange
-	MinimapIcon 0 Orange Triangle
-
-Show
-	Rarity Normal
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 2 White Triangle
-
-Show
-	Rarity Magic
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 2 Blue Triangle
-
-Show
-	Rarity Unique
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 0 0 170
-	PlayEffect Orange
-	MinimapIcon 0 Orange Circle
-
-Show
-	Rarity Normal
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 White Circle
-
-Show
-	Rarity Magic
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 Blue Circle
+	MinimapIcon 0 Yellow Star
 
 Show
 	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Magic
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 Blue Moon
-
-Show
-	Rarity Normal
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 2 White Moon
-
-Show
-	Rarity Unique
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
+	Sockets >= 6
 	Mirrored True
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 255 85
 	SetBorderColor 0 0 170
 	PlayEffect Orange
-	MinimapIcon 0 Orange Moon
-
-Show
-	Rarity Rare
-	LinkedSockets >= 3
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
 	MinimapIcon 1 Yellow Moon
 
 Show
-	Rarity Normal
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 255
-	MinimapIcon 2 White Cross
-
-Show
-	Rarity Magic
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 255
-	MinimapIcon 2 Blue Cross
-
-Show
-	Rarity Normal
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 2 White Pentagon
-
-Show
-	Rarity Magic
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 2 Blue Pentagon
-
-Hide
-	Rarity Normal
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 255 85 255
-	DisableDropSound
-
-Show
 	Rarity Unique
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
+	Sockets >= 6
 	Mirrored False
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 255 85 255
+	SetTextColor 255 170 0
+	SetBorderColor 255 170 0
 	PlayEffect Orange
-	MinimapIcon 0 Orange Pentagon
+	MinimapIcon 0 Orange Star
 
 Show
-	Rarity Rare
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 255 85 255
-	MinimapIcon 1 Yellow Pentagon
-
-Show
-	Rarity Rare
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 255 255
-	MinimapIcon 1 Yellow Cross
-
-Show
-	Rarity Unique
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
+	Rarity Normal
+	Sockets >= 6
 	Mirrored False
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 255 255
+	SetTextColor 170 170 170
+	SetBorderColor 255 170 0
+	PlayEffect Orange
+	MinimapIcon 0 White Star
+
+Show
+	Rarity Magic
+	Sockets >= 6
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 85 85 255
+	SetBorderColor 255 170 0
+	PlayEffect Orange
+	MinimapIcon 0 Blue Star
+
+Show
+	Rarity Unique
+	Mirrored True
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 0 0 170
+	PlayEffect Orange
+	MinimapIcon 1 Orange Moon
+
+Show
+	Rarity Magic
+	Sockets >= 5
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Blue Cross
+
+Show
+	Rarity Normal
+	Sockets >= 5
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 255 255 85
+	MinimapIcon 0 White Cross
+
+Show
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 5
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
-Hide
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+Show
 	Rarity Normal
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
+	Sockets >= 5
 	Sockets < 6
-	Quality < 20
+	Quality >= 20
 	FracturedItem False
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 85 255 255
-	DisableDropSound
+	SetTextColor 170 170 170
+	SetBorderColor 255 255 85
+	MinimapIcon 0 White Cross
 
 Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Normal
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
+	Rarity Magic
+	Sockets >= 5
 	Sockets < 6
-	Quality < 20
+	Quality >= 20
 	FracturedItem False
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 85 255 255
-	DisableDropSound
+	SetTextColor 85 85 255
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Blue Cross
 
 Show
-	Class Shields Wands
-	Rarity Magic
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 85 255 255
-	DisableDropSound
-
-Show
-	Class Shields Wands
-	Rarity Normal
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 85 255 255
-	DisableDropSound
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Magic
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 85 255 255
-	DisableDropSound
-
-Hide
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
-	Rarity Magic
-	Sockets >= 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 85 255 255
-	DisableDropSound
-
-Hide
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
-	Rarity Magic
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 255 85 255
-	DisableDropSound
-
-Show
-	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
-	Rarity Magic
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 255 85 255
-	DisableDropSound
-
-Show
-	Class Shields Wands
-	Rarity Magic
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 255 85 255
-	DisableDropSound
-
-Hide
-	Rarity Normal
+	Rarity Unique
 	LinkedSockets >= 3
+	Sockets >= 5
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Rarity Magic
+	Sockets >= 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Blue Cross
+
+Show
+	Rarity Normal
+	Sockets >= 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 255 255 85
+	MinimapIcon 0 White Cross
+
+Show
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 85
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	Class Shields Wands
+	Rarity Magic
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Blue Cross
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Magic
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 255 255 85
+	MinimapIcon 0 Blue Cross
+
+Hide
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Normal
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 170 170 170
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 255 255 85
+	DisableDropSound
+
+Hide
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Magic
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 255 255 85
+	DisableDropSound
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Normal
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 255 255 85
+	MinimapIcon 0 White Cross
+
+Show
+	Class Shields Wands
+	Rarity Normal
+	Sockets >= 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 255 255 85
+	MinimapIcon 0 White Cross
+
+Show
+	Rarity Magic
+	Sockets >= 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Unique
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 170 0 170
+	PlayEffect Orange
+	MinimapIcon 1 Orange Raindrop
+
+Show
+	Rarity Normal
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 170 0 170
+	MinimapIcon 1 White Raindrop
+
+Show
+	Rarity Rare
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 170 0 170
+	MinimapIcon 1 Yellow Raindrop
+
+Show
+	Rarity Magic
+	Sockets < 5
+	SocketGroup >= 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 170 0 170
+	MinimapIcon 1 Blue Raindrop
+
+Show
+	Rarity Magic
+	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality < 20
-	FracturedItem False
+	FracturedItem True
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 85 85 85
-	DisableDropSound
+	SetTextColor 85 85 255
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Unique
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
 
 Hide
-	Rarity Magic
+	Rarity Normal
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 4
@@ -3981,42 +3682,25 @@ Hide
 	Corrupted False
 
 	SetFontSize 18
+	SetTextColor 170 170 170
 	SetBackgroundColor 0 0 0 170
 	DisableDropSound
 
 Show
-	Rarity Magic
-	LinkedSockets >= 3
-	Sockets < 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 85 85 85
-	MinimapIcon 2 Blue Kite
-
-Hide
-	Rarity Magic
-	LinkedSockets >= 3
+	Rarity Normal
+	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality < 20
-	FracturedItem False
+	FracturedItem True
 	Mirrored False
 	Corrupted False
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	SetBorderColor 85 85 85
-	DisableDropSound
+	SetTextColor 170 170 170
+	MinimapIcon 1 White Kite
 
 Show
 	Rarity Unique
@@ -4032,28 +3716,69 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
+	PlayEffect Orange
+	MinimapIcon 0 Orange Kite
+
+Hide
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 170 170 170
+	DisableDropSound
+
+Hide
+	Rarity Magic
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	DisableDropSound
+
+Show
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 170 170 170
 	PlayEffect Orange
 	MinimapIcon 0 Orange Kite
 
 Show
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	MinimapIcon 1 Yellow Kite
-
-Show
 	Rarity Normal
-	LinkedSockets < 3
+	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 4
 	Sockets < 5
@@ -4064,12 +3789,13 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 136 136 255
-	MinimapIcon 2 White Hexagon
+	SetTextColor 170 170 170
+	SetBorderColor 170 170 170
+	MinimapIcon 1 White Kite
 
 Hide
 	Rarity Normal
-	LinkedSockets < 3
+	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 4
 	Sockets < 5
@@ -4081,11 +3807,13 @@ Hide
 	Corrupted False
 
 	SetFontSize 18
+	SetTextColor 170 170 170
 	SetBackgroundColor 0 0 0 170
+	SetBorderColor 170 170 170
 	DisableDropSound
 
 Show
-	Rarity Normal
+	Rarity Unique
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 4
@@ -4097,43 +3825,28 @@ Show
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 85 85 85
-	MinimapIcon 2 White Kite
-
-Show
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
-	SetBorderColor 136 136 255
-	MinimapIcon 1 Yellow Hexagon
-
-Show
-	Rarity Unique
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored False
-	Corrupted False
-
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 136 136 255
+	SetTextColor 255 170 0
+	SetBorderColor 170 170 170
 	PlayEffect Orange
-	MinimapIcon 0 Orange Hexagon
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 170 170 170
+	MinimapIcon 1 Blue Kite
 
 Show
 	Rarity Magic
@@ -4144,12 +3857,62 @@ Show
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality >= 20
-	FracturedItem False
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 136 136 255
-	MinimapIcon 2 Blue Hexagon
+	SetTextColor 85 85 255
+	SetBorderColor 0 170 170
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Rare
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 0 170 170
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Unique
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 0 170 170
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Normal
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 0 170 170
+	MinimapIcon 1 White Kite
 
 Show
 	Rarity Unique
@@ -4159,119 +3922,611 @@ Show
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	FracturedItem False
+	FracturedItem True
 	Mirrored False
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
-	SetBorderColor 85 85 85
+	SetTextColor 255 170 0
+	SetBorderColor 170 170 170
 	PlayEffect Orange
-	MinimapIcon 0 Orange Kite
+	MinimapIcon 1 Orange Kite
 
 Show
-	Rarity Rare
+	Rarity Normal
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 170 170 170
+	MinimapIcon 1 White Kite
+
+Show
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 170 170 170
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Unique
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 255 255 255
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Rare
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 255 255 255
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 85 255
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Normal
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 85 85 255
+	MinimapIcon 1 White Kite
+
+Show
+	Rarity Unique
+	LinkedSockets >= 3
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
 	FracturedItem False
 	Mirrored False
 	Corrupted False
 
-	SetBorderColor 85 85 85
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 85 255
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Normal
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 85 85 255
+	MinimapIcon 1 White Kite
+
+Show
+	Rarity Magic
+	Sockets >= 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Magic
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 255 255 255
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Normal
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 170 170 170
+	SetBorderColor 255 255 255
+	MinimapIcon 1 White Kite
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Normal
+	Sockets >= 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 170 170 170
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Hide
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Normal
+	Sockets >= 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 170 170 170
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Show
+	Class Shields Wands
+	Rarity Magic
+	Sockets >= 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Show
+	Class Shields Wands
+	Rarity Normal
+	Sockets < 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 170 170 170
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Hide
+	Class Shields Wands
+	Rarity Normal
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 170 170 170
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 255 255 255
+	DisableDropSound
+
+Show
+	Class Shields Wands
+	Rarity Normal
+	Sockets >= 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 170 170 170
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Hide
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Magic
+	Sockets >= 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Magic
+	Sockets < 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Magic
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 255 255 255
+	DisableDropSound
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Magic
+	Sockets >= 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Hide
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Normal
+	Sockets < 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 170 170 170
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Show
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Normal
+	Sockets < 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 170 170 170
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Hide
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Normal
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 170 170 170
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 255 255 255
+	DisableDropSound
+
+Hide
+	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
+	Rarity Normal
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 170 170 170
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 255 255 255
+	DisableDropSound
+
+Hide
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Magic
+	Sockets < 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Show
+	Class Shields Wands
+	Rarity Magic
+	Sockets < 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 85 85 255
+	DisableDropSound
+
+Hide
+	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
+	Rarity Magic
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 255 255 255
+	DisableDropSound
+
+Show
+	Class Shields Wands
+	Rarity Magic
+	Sockets >= 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem False
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 18
+	SetTextColor 85 85 255
+	SetBackgroundColor 0 0 0 170
+	SetBorderColor 255 255 255
+	DisableDropSound
+
+Show
+	Rarity Rare
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets < 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
 	MinimapIcon 1 Yellow Kite
 
 Show
 	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets < 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	Quality >= 20
-	FracturedItem False
-	Mirrored True
+	Mirrored False
 	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
+	SetTextColor 255 255 85
+	SetBorderColor 170 170 170
+	MinimapIcon 1 Yellow Kite
 
 Show
-	Rarity Rare
-	LinkedSockets < 3
+	Rarity Normal
 	Sockets >= 1W
+	Sockets < 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality >= 20
 	FracturedItem False
-	Mirrored True
-	Corrupted True
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
+	SetTextColor 170 170 170
+	SetBorderColor 255 255 255
+	MinimapIcon 1 White Kite
 
 Show
-	Rarity Rare
-	LinkedSockets < 3
+	Rarity Magic
 	Sockets >= 1W
+	Sockets < 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality >= 20
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
 	FracturedItem False
 	Mirrored False
-	Corrupted True
+	Corrupted False
 
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
+	SetTextColor 85 85 255
+	SetBorderColor 255 255 255
+	MinimapIcon 1 Blue Kite
 
 Show
-	Rarity Rare
+	Rarity Magic
 	LinkedSockets < 3
-	Sockets >= 1W
+	Sockets < 1W
+	Sockets >= 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
-	Quality < 20
-	FracturedItem True
-	Mirrored True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem True
+	Quality >= 20
+	FracturedItem False
 	Mirrored False
+	Corrupted False
 
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
+	SetTextColor 85 85 255
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Blue Kite
 
 Show
-	Rarity Rare
-	LinkedSockets < 3
+	Rarity Unique
 	Sockets >= 1W
 	Sockets >= 4
 	Sockets < 5
@@ -4279,173 +4534,140 @@ Show
 	Sockets < 6
 	Quality < 20
 	FracturedItem False
-	Mirrored True
-	Corrupted True
+	Mirrored False
+	Corrupted False
 
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 85 255
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
 
 Show
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
+	Rarity Unique
+	Sockets < 1W
 	Sockets >= 4
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality < 20
 	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored True
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets >= 1W
-	Sockets < 4
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	Quality < 20
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Rare
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	SocketGroup >= 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Rare
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Corrupted True
-
-	SetBorderColor 210 0 0
-	MinimapIcon 1 Yellow Triangle
-
-Show
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem True
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Circle
-
-Show
-	Rarity Rare
-	LinkedSockets < 3
-	Sockets < 1W
-	Sockets < 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
-	Mirrored True
-	Corrupted False
-
-	SetBorderColor 0 0 170
-	MinimapIcon 1 Yellow Moon
-
-Show
-	Rarity Rare
-	Sockets >= 5
-	SocketGroup < 3RGB
-	Sockets < 6
-	FracturedItem False
 	Mirrored False
 	Corrupted False
 
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 85 255
+	PlayEffect Orange
+	MinimapIcon 0 Orange Kite
+
+Show
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Unique
+	LinkedSockets < 3
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality < 20
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 85 255
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Rare
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Yellow Kite
+
+Show
+	Rarity Unique
+	LinkedSockets < 3
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	Mirrored False
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBorderColor 85 85 255
+	PlayEffect Orange
+	MinimapIcon 1 Orange Kite
+
+Show
+	Rarity Magic
+	LinkedSockets >= 3
+	Sockets < 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	Quality >= 20
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Magic
+	LinkedSockets < 3
+	Sockets < 1W
+	Sockets >= 4
+	Sockets < 5
+	SocketGroup < 3RGB
+	Sockets < 6
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 85 85 255
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Blue Kite
+
+Show
+	Rarity Rare
+	Sockets >= 5
+	Sockets < 6
+	Mirrored False
+	Corrupted False
+
+	SetTextColor 255 255 85
 	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow Star
+	MinimapIcon 0 Yellow Cross
 
 Show
 	Rarity Unique
@@ -4459,23 +4681,21 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Star
+	MinimapIcon 0 Orange Cross
 
 Show
 	Rarity Unique
 	LinkedSockets < 3
 	Sockets >= 5
-	SocketGroup < 3RGB
 	Sockets < 6
-	FracturedItem False
 	Mirrored False
 	Corrupted False
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 210
+	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
 	PlayEffect Orange
-	MinimapIcon 1 Orange Star
+	MinimapIcon 0 Orange Cross

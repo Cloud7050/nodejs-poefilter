@@ -18,99 +18,97 @@ export class EffecterEquipment extends Effecter {
 	 */
 	static #defaultRarity(p) {
 		switch (p.c.rarity) {
-			case ConditionSet.RARITY.UNIQUE:
-				p.e.visibility = EffectSet.VISIBILITY.SHOW;
-
-				p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-				p.e.backgroundColour = EffectSet.RGBA.WHITE;
-				p.e.mapColour = EffectSet.COLOUR.ORANGE;
-				p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
-				p.e.beamColour = EffectSet.COLOUR.ORANGE;
+			case ConditionSet.RARITY.NORMAL:
+				p.e.textColour = EffectSet.RGB.SILVER;
+				p.e.mapColour = EffectSet.COLOUR.SILVER;
+				break;
+			case ConditionSet.RARITY.MAGIC:
+				p.e.textColour = EffectSet.RGB.BLUE;
+				p.e.mapColour = EffectSet.COLOUR.BLUE;
 				break;
 			case ConditionSet.RARITY.RARE:
 				p.e.visibility = EffectSet.VISIBILITY.SHOW;
 
+				p.e.textColour = EffectSet.RGB.YELLOW;
 				p.e.mapColour = EffectSet.COLOUR.YELLOW;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
-			case ConditionSet.RARITY.MAGIC:
-				p.e.mapColour = EffectSet.COLOUR.BLUE;
-				break;
-			case ConditionSet.RARITY.NORMAL:
-				p.e.mapColour = EffectSet.COLOUR.SILVER;
+			case ConditionSet.RARITY.UNIQUE:
+				p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
+				p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
+				p.e.textColour = EffectSet.RGB.ORANGE;
+				p.e.mapColour = EffectSet.COLOUR.ORANGE;
+				p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
+				p.e.beamColour = EffectSet.COLOUR.ORANGE;
 				break;
 		}
 	}
 
 	/**
-	 * Gives effects based on other attributes, but able to be overwritten by
-	 * sockets.
+	 * Gives effects based on properties, overwriting as it goes down the if
+	 * blocks.
 	 */
-	static #preSockets(p) {
+	static #overwrites(p) {
+		if (p.c.isFractured) {
+			p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
+			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+		}
 		if (p.c.isQuality) {
 			p.e.visibility = EffectSet.VISIBILITY.SHOW;
 
-			p.e.outlineColour = EffectSet.RGB_GAME.MAGIC;
-			p.e.mapIcon = EffectSet.ICON.HEXAGON;
+			p.e.outlineColour = EffectSet.RGB.TEAL;
+			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 		}
-	}
-
-	/**
-	 * Gives effects based on sockets.
-	 */
-	static #sockets(p) {
-		if (p.c.isSix) {
-			p.e.visibility = EffectSet.VISIBILITY.SHOW;
-
-			p.e.outlineColour = EffectSet.RGB.ROSE;
-			p.e.mapIcon = EffectSet.ICON.DIAMOND;
-			p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
-			p.e.beamColour = EffectSet.COLOUR.ROSE;
-		} else if (p.c.isRgb) {
+		if (p.c.isThreeLink) {
+			p.e.outlineColour = EffectSet.RGB.SILVER;
+		}
+		if (p.c.isWhite) {
+			p.e.outlineColour = EffectSet.RGB.WHITE;
+			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+		}
+		if (p.c.isFour) {
+			p.e.outlineColour = EffectSet.RGB.BLUE;
+		}
+		if (p.c.isRgb) {
 			p.e.visibility = EffectSet.VISIBILITY.SHOW;
 
 			p.e.outlineColour = EffectSet.RGB.PURPLE;
 			p.e.mapIcon = EffectSet.ICON.RAINDROP;
 			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
-		} else if (p.c.isFive) {
-			p.e.outlineColour = EffectSet.RGB.YELLOW;
-			p.e.mapIcon = EffectSet.ICON.STAR;
-			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
-		} else if (p.c.isLooty()) {
-			p.e.outlineColour = EffectSet.RGB.LIME;
-			p.e.mapIcon = EffectSet.ICON.SQUARE;
-			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
-		} else if (p.c.isFour) {
-			p.e.outlineColour = EffectSet.RGB.CYAN;
-			p.e.mapIcon = EffectSet.ICON.CROSS;
-		} else if (p.c.isWhite) {
-			p.e.outlineColour = EffectSet.RGB.PINK;
-			p.e.mapIcon = EffectSet.ICON.PENTAGON;
-		} else if (p.c.isThreeLink) {
-			p.e.outlineColour = EffectSet.RGB.GREY;
-			p.e.mapIcon = EffectSet.ICON.KITE;
 		}
-	}
-
-	/**
-	 * Gives effects based on other attributes, overwriting after sockets.
-	 */
-	static #postSockets(p) {
-		if (p.c.isFractured) {
+		if (p.c.isLooty()) {
+			p.e.outlineColour = EffectSet.RGB.LIME;
+			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+		}
+		if (p.c.isFive) {
+			p.e.outlineColour = EffectSet.RGB.YELLOW;
+			p.e.mapIcon = EffectSet.ICON.CROSS;
+			p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
+		}
+		if (p.c.isSix) {
 			p.e.visibility = EffectSet.VISIBILITY.SHOW;
 
-			p.e.outlineColour = EffectSet.RGB.NAVY;
-			p.e.mapIcon = EffectSet.ICON.CIRCLE;
-		} else if (p.c.isCorrupted) {
-			p.e.visibility = EffectSet.VISIBILITY.SHOW;
-
-			p.e.outlineColour = EffectSet.RGB_GAME.CORRUPTED;
-			p.e.mapIcon = EffectSet.ICON.TRIANGLE;
-		} else if (p.c.isMirrored) {
+			p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
+			p.e.outlineColour = EffectSet.RGB.ORANGE;
+			p.e.mapIcon = EffectSet.ICON.STAR;
+			p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
+			p.e.beamColour = EffectSet.COLOUR.ORANGE;
+		}
+		if (p.c.isMirrored) {
 			p.e.visibility = EffectSet.VISIBILITY.SHOW;
 
 			p.e.outlineColour = EffectSet.RGB.NAVY;
 			p.e.mapIcon = EffectSet.ICON.MOON;
+			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+		}
+		if (p.c.isCorrupted) {
+			p.e.visibility = EffectSet.VISIBILITY.SHOW;
+
+			p.e.outlineColour = EffectSet.RGB.CRIMSON;
+			p.e.mapIcon = EffectSet.ICON.MOON;
+			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 		}
 	}
 
@@ -125,26 +123,26 @@ export class EffecterEquipment extends Effecter {
 			case ConditionSet.TYPE_EQUIPMENT.WEAPON_WITCH:
 			case ConditionSet.TYPE_EQUIPMENT.GEAR:
 				if (
-					p.c.isFive
-					|| p.c.isLooty()
+					p.c.isLooty()
+					|| p.c.isFive
 				) {
 					p.e.visibility = EffectSet.VISIBILITY.SHOW;
 					break;
 				}
 
 				switch (p.c.rarity) {
-					case ConditionSet.RARITY.MAGIC:
-						if (
-							p.c.isWhite
-							|| p.c.isFour
-						) {
+					case ConditionSet.RARITY.NORMAL:
+						if (p.c.isFour) {
 							p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
 							break;
 						}
 
 						break;
-					case ConditionSet.RARITY.NORMAL:
-						if (p.c.isFour) {
+					case ConditionSet.RARITY.MAGIC:
+						if (
+							p.c.isWhite
+							|| p.c.isFour
+						) {
 							p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
 							break;
 						}
@@ -173,9 +171,7 @@ export class EffecterEquipment extends Effecter {
 		EffecterEquipment.#defaultVisibility(p);
 		EffecterEquipment.#defaultRarity(p);
 
-		EffecterEquipment.#preSockets(p);
-		EffecterEquipment.#sockets(p);
-		EffecterEquipment.#postSockets(p);
+		EffecterEquipment.#overwrites(p);
 
 		EffecterEquipment.#multiVisibility(p);
 
