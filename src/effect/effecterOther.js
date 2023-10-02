@@ -87,18 +87,27 @@ export class EffecterOther extends Effecter {
 					case ConditionSet.RARITY.UNIQUE:
 						p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 						p.e.textColour = EffectSet.RGB.ORANGE;
-						p.e.outlineColour = EffectSet.RGB.ORANGE;
+						p.e.outlineColour = EffectSet.RGB.YELLOW;
 						p.e.mapColour = EffectSet.COLOUR.ORANGE;
 						p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
-						p.e.beamColour = EffectSet.COLOUR.ORANGE;
+						p.e.beamColour = EffectSet.COLOUR.YELLOW;
 						break;
 				}
 				break;
 			case ConditionSet.TYPE_OTHER.CURRENCY:
-				p.e.textColour = EffectSet.RGB.BLUE;
-				p.e.outlineColour = EffectSet.RGB.LIME;
-				p.e.mapColour = EffectSet.COLOUR.BLUE;
-				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+				if (!p.c.isExpensive) {
+					p.e.textColour = EffectSet.RGB.BLUE;
+					p.e.outlineColour = EffectSet.RGB.LIME;
+					p.e.mapColour = EffectSet.COLOUR.BLUE;
+					p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+				} else {
+					p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
+					p.e.textColour = EffectSet.RGB.ORANGE;
+					p.e.outlineColour = EffectSet.RGB.LIME;
+					p.e.mapColour = EffectSet.COLOUR.ORANGE;
+					p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
+					p.e.beamColour = EffectSet.COLOUR.LIME;
+				}
 				break;
 		}
 	}

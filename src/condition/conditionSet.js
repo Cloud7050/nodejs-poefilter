@@ -29,7 +29,9 @@ export class ConditionSet {
 
 	static DUPLICATORS_OTHER = [
 		new Duplicator("type", Duplicator.TYPE.ENUM, ConditionSet.TYPE_OTHER),
-		new Duplicator("rarity", Duplicator.TYPE.ENUM, ConditionSet.RARITY)
+		new Duplicator("rarity", Duplicator.TYPE.ENUM, ConditionSet.RARITY),
+
+		new Duplicator("isExpensive", Duplicator.TYPE.BOOLEAN)
 	];
 	static DUPLICATORS_EQUIPMENT = [
 		new Duplicator("type", Duplicator.TYPE.ENUM, ConditionSet.TYPE_EQUIPMENT),
@@ -54,6 +56,7 @@ export class ConditionSet {
 	type = null;
 	rarity = null;
 
+	isExpensive = null;
 	isLootyBase = null;
 	isLootyModifier = null;
 
@@ -75,6 +78,7 @@ export class ConditionSet {
 		conditionSet.type = this.type;
 		conditionSet.rarity = this.rarity;
 
+		conditionSet.isExpensive = this.isExpensive;
 		conditionSet.isLootyBase = this.isLootyBase;
 		conditionSet.isLootyModifier = this.isLootyModifier;
 
@@ -98,6 +102,7 @@ export class ConditionSet {
 			this.type === other.type
 			&& this.rarity === other.rarity
 
+			&& this.isExpensive === other.isExpensive
 			&& this.isLootyBase === other.isLootyBase
 			&& this.isLootyModifier === other.isLootyModifier
 
@@ -126,6 +131,9 @@ export class ConditionSet {
 		if (this.type !== null) lines.push(`Class ${this.type}`);
 		if (this.rarity !== null) lines.push(`Rarity ${this.rarity}`);
 
+		if (this.isExpensive === true) {
+			lines.push('BaseType "Divine Orb"');
+		}
 		if (this.isLootyBase === true) {
 			lines.push('BaseType "Gold Amulet" "Gold Ring"');
 		}

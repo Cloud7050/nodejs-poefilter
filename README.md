@@ -30,10 +30,10 @@ Notes:
 - Magic
 	- Text colour: Blue
 	- Minimap: Blue
-- Rare (show)
+- Rare
 	- Text colour: Yellow
 	- Minimap: Yellow medium
-- Unique (show)
+- Unique
 	- Text size: Largest
 	- Text colour: Orange
 	- Minimap: Orange large
@@ -64,13 +64,19 @@ Notes:
 - Map items (unique)
 	- Text size: Largest
 	- Text colour: Default orange → orange
-	- Outline colour: Default orange → orange
+	- Outline colour: Default orange → yellow
 	- Minimap: Orange large
-	- Beam: Orange
-- Currencies
+	- Beam: Yellow
+- Currencies (inexpensive)
 	- Text colour: Default beige → blue
 	- Outline colour: Lime
 	- Minimap: Blue medium
+- Currencies (expensive)
+	- Text size: Largest
+	- Text colour: Default beige → orange
+	- Outline colour: Lime
+	- Minimap: Orange large
+	- Beam: Lime
 
 ## Equipment
 

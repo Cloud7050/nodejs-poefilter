@@ -18,7 +18,7 @@ export class EffectSet {
 		TEAL: "0 170 170", // Outline colour: Gems. Quality
 		CRIMSON: "170 0 0", // Outline colour: Corrupted
 		PURPLE: "170 0 170", // Outline colour: RGB
-		ORANGE: "255 170 0", // Text colour: (Perceived) rarity unique | Outline colour: Map items unique. 6
+		ORANGE: "255 170 0", // Text colour: (Perceived) rarity unique | Outline colour: 6
 		SILVER: "170 170 170", // Text colour: (Perceived) rarity normal | Outline colour: 3 link
 		// GREY: "85 85 85",
 		BLUE: "85 85 255", // Text colour: (Perceived) rarity magic | Outline colour: Divination cards. 4
@@ -26,7 +26,7 @@ export class EffectSet {
 		// CYAN: "85 255 255",
 		// ROSE: "255 85 85",
 		// PINK: "255 85 255",
-		YELLOW: "255 255 85", // Text colour: (Perceived) rarity rare | Outline colour: Map items normal. 5
+		YELLOW: "255 255 85", // Text colour: (Perceived) rarity rare | Outline colour: Map items. 5
 		WHITE: "255 255 255" // Outline colour: White
 	};
 	// Default alpha is 240
@@ -42,11 +42,11 @@ export class EffectSet {
 		ORANGE: "Orange", // Map colour: (Perceived) rarity unique
 		SILVER: "White", // Map colour: (Perceived) rarity normal
 		BLUE: "Blue", // Map colour: (Perceived) rarity magic
-		// LIME: "Green",
+		LIME: "Green", // Beam: Currencies expensive
 		// CYAN: "Cyan",
 		// ROSE: "Red",
 		// PINK: "Pink",
-		YELLOW: "Yellow" // Map colour: (Perceived) rarity rare
+		YELLOW: "Yellow" // Map colour: (Perceived) rarity rare | Beam: Map items unique
 		// BROWN: "Brown"
 	};
 	static ICON = {
