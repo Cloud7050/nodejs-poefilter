@@ -165,8 +165,11 @@ export class EffecterEquipment extends Effecter {
 
 		p.e.textSize = EffectSet.TEXT_SIZE.SMALLEST;
 		p.e.backgroundColour = EffectSet.RGBA.FADED;
-		p.e.isSilent = true;
 		p.e.mapColour = null;
+
+		if (p.e.visibility <= EffectSet.VISIBILITY.HIDE) {
+			p.e.isSilent = true;
+		}
 	}
 
 	decideOne(p) {

@@ -6,7 +6,7 @@ Show
 	SetTextColor 255 170 0
 	SetBackgroundColor 170 170 170 240
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Green
 	MinimapIcon 0 Orange UpsideDownHouse
 
@@ -61,7 +61,7 @@ Show
 	SetTextColor 255 255 85
 	SetBackgroundColor 170 170 170 240
 	SetBorderColor 85 85 255
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Yellow UpsideDownHouse
 
@@ -142,7 +142,7 @@ Show
 	SetTextColor 85 85 255
 	SetBackgroundColor 170 170 170 240
 	SetBorderColor 0 170 170
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -163,7 +163,7 @@ Show
 	SetTextColor 85 85 255
 	SetBackgroundColor 170 170 170 240
 	SetBorderColor 0 170 0
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -174,7 +174,7 @@ Show
 	SetFontSize 45
 	SetTextColor 85 255 85
 	SetBackgroundColor 170 170 170 240
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange UpsideDownHouse
 
@@ -185,7 +185,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBackgroundColor 170 170 170 240
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange UpsideDownHouse
 
@@ -205,7 +205,7 @@ Show
 	SetTextColor 255 170 0
 	SetBackgroundColor 170 170 170 240
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Yellow
 	MinimapIcon 0 Orange UpsideDownHouse
 
@@ -260,7 +260,7 @@ Show
 	SetTextColor 85 85 255
 	SetBackgroundColor 170 170 170 240
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -359,7 +359,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -502,7 +502,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -758,7 +758,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -856,7 +856,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -877,7 +877,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -899,7 +899,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -955,7 +955,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -1106,7 +1106,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -1284,7 +1284,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -1338,7 +1338,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Raindrop
 
@@ -1373,7 +1373,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -1394,7 +1394,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -1487,7 +1487,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -1506,7 +1506,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -1557,7 +1557,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -1574,7 +1574,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Raindrop
 
@@ -1637,7 +1637,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -1756,7 +1756,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -1776,7 +1776,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -1864,7 +1864,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -1882,7 +1882,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Raindrop
 
@@ -1902,7 +1902,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -1940,7 +1940,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -1979,7 +1979,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -2030,7 +2030,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -2048,7 +2048,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -2067,7 +2067,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -2285,7 +2285,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -2304,7 +2304,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -2384,7 +2384,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -2403,7 +2403,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -2437,7 +2437,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -2454,7 +2454,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Raindrop
 
@@ -2500,7 +2500,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -2585,7 +2585,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -2624,7 +2624,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -2643,7 +2643,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -2661,7 +2661,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Raindrop
 
@@ -2681,7 +2681,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -2698,7 +2698,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -2716,7 +2716,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -2735,7 +2735,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -2894,7 +2894,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -3055,7 +3055,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -3073,7 +3073,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Raindrop
 
@@ -3091,7 +3091,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -3197,7 +3197,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -3217,7 +3217,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -3247,7 +3247,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 255 85
 	SetBorderColor 170 0 0
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Yellow Moon
 
@@ -3268,7 +3268,7 @@ Show
 	SetFontSize 45
 	SetTextColor 170 170 170
 	SetBorderColor 170 0 0
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 White Moon
 
@@ -3280,7 +3280,7 @@ Show
 	SetFontSize 45
 	SetTextColor 85 85 255
 	SetBorderColor 170 0 0
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Blue Moon
 
@@ -3291,7 +3291,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 170 0 0
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Moon
 
@@ -3324,7 +3324,7 @@ Show
 	SetFontSize 45
 	SetTextColor 85 85 255
 	SetBorderColor 0 0 170
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Blue Moon
 
@@ -3347,7 +3347,7 @@ Show
 	SetFontSize 45
 	SetTextColor 170 170 170
 	SetBorderColor 0 0 170
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 White Moon
 
@@ -3360,7 +3360,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 255 85
 	SetBorderColor 255 170 0
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Yellow Star
 
@@ -3373,7 +3373,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 255 85
 	SetBorderColor 0 0 170
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Yellow Moon
 
@@ -3386,7 +3386,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 170 0
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Star
 
@@ -3399,7 +3399,7 @@ Show
 	SetFontSize 45
 	SetTextColor 170 170 170
 	SetBorderColor 255 170 0
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 White Star
 
@@ -3412,7 +3412,7 @@ Show
 	SetFontSize 45
 	SetTextColor 85 85 255
 	SetBorderColor 255 170 0
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Blue Star
 
@@ -3424,7 +3424,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 0 0 170
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Moon
 
@@ -3464,7 +3464,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -3507,7 +3507,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -3553,7 +3553,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -3677,7 +3677,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 170 0 170
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Raindrop
 
@@ -3748,7 +3748,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 255 170 0
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -3801,7 +3801,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 255 170 0
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Kite
 
@@ -3858,7 +3858,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 170 170 170
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Kite
 
@@ -3914,7 +3914,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 170 170 170
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -3982,7 +3982,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 0 170 170
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -4017,7 +4017,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 170 170 170
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -4066,7 +4066,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 255
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -4098,7 +4098,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 85 255
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -4131,7 +4131,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 85 255
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -4213,7 +4213,6 @@ Show
 	SetTextColor 170 170 170
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 85 85 255
-	DisableDropSound
 
 Hide
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -4251,7 +4250,6 @@ Show
 	SetTextColor 85 85 255
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 85 85 255
-	DisableDropSound
 
 Show
 	Class Shields Wands
@@ -4270,7 +4268,6 @@ Show
 	SetTextColor 170 170 170
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 85 85 255
-	DisableDropSound
 
 Hide
 	Class Shields Wands
@@ -4308,7 +4305,6 @@ Show
 	SetTextColor 170 170 170
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 85 85 255
-	DisableDropSound
 
 Hide
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -4346,7 +4342,6 @@ Show
 	SetTextColor 85 85 255
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 85 85 255
-	DisableDropSound
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -4365,7 +4360,6 @@ Show
 	SetTextColor 85 85 255
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 255 255 255
-	DisableDropSound
 
 Show
 	Class Amulets Belts "Body Armours" Boots Gloves Helmets Rings
@@ -4384,7 +4378,6 @@ Show
 	SetTextColor 85 85 255
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 85 85 255
-	DisableDropSound
 
 Hide
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -4422,7 +4415,6 @@ Show
 	SetTextColor 170 170 170
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 85 85 255
-	DisableDropSound
 
 Hide
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -4498,7 +4490,6 @@ Show
 	SetTextColor 85 85 255
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 85 85 255
-	DisableDropSound
 
 Hide
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
@@ -4536,7 +4527,6 @@ Show
 	SetTextColor 85 85 255
 	SetBackgroundColor 0 0 0 170
 	SetBorderColor 255 255 255
-	DisableDropSound
 
 Show
 	Rarity Rare
@@ -4632,7 +4622,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 85 255
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -4651,7 +4641,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 85 255
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Kite
 
@@ -4687,7 +4677,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 85 255
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -4718,7 +4708,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 85 85 255
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Orange Kite
 
@@ -4779,7 +4769,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 
@@ -4794,6 +4784,6 @@ Show
 	SetFontSize 45
 	SetTextColor 255 170 0
 	SetBorderColor 255 255 85
-	CustomAlertSound WAH.mp3
+	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross

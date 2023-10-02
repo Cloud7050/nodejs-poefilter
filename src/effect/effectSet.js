@@ -133,7 +133,7 @@ export class EffectSet {
 			lines.push("DisableDropSound");
 		}
 		if (this.sound !== null) {
-			lines.push(`CustomAlertSound ${this.sound}`);
+			lines.push(`CustomAlertSound "${this.sound}"`);
 		}
 
 		if (this.beamColour !== null) {
