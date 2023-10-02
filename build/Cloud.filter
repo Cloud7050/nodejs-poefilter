@@ -3,12 +3,12 @@ Show
 
 	SetTextColor 0 170 0
 	SetBackgroundColor 255 255 255 210
-	MinimapIcon 2 Green UpsideDownHouse
+	MinimapIcon 1 Green UpsideDownHouse
 
 Show
 	Class "Map Fragments" Maps "Misc Map Items"
 
-	MinimapIcon 2 Brown UpsideDownHouse
+	MinimapIcon 1 Brown UpsideDownHouse
 
 Show
 	Class "Divination Cards"

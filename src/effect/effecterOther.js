@@ -17,9 +17,11 @@ export class EffecterOther extends Effecter {
 				p.e.textColour = EffectSet.RGB.GREEN;
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;
 				p.e.mapColour = EffectSet.COLOUR.LIME;
+				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 			case ConditionSet.TYPE_OTHER.MAP:
 				p.e.mapColour = EffectSet.COLOUR.BROWN;
+				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 			case ConditionSet.TYPE_OTHER.CARD:
 				p.e.backgroundColour = EffectSet.RGBA.WHITE;

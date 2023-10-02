@@ -25,9 +25,11 @@ Notes:
 - Currencies
 	- Text recoloured from default beige to green
 	- Background white
-	- Minimap: Lime house
+	- Minimap: Lime house medium
 - Map items
-	- Minimap: Brown house
+	- (Text colour stays white/orange)
+	- (Outline stays white/orange)
+	- Minimap: Brown house medium
 - Divination cards
 	- (Text colour stays azure)
 	- Background white
