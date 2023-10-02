@@ -19,7 +19,7 @@ Notes:
 
 ## Others
 
-- Background: Silver
+- Background: Grey
 - Minimap: House
 
 ### Rarity
