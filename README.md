@@ -19,7 +19,7 @@ Notes:
 
 ## Others
 
-- Background: Grey
+- Background: Dark grey
 - Minimap: House
 
 ### Rarity

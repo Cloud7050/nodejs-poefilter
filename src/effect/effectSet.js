@@ -31,7 +31,7 @@ export class EffectSet {
 	};
 	// Default alpha is 240
 	static RGBA = {
-		GREY: "85 85 85 240",
+		DARK_GREY: "40 40 40 240",
 		FADED: "0 0 0 170"
 	};
 

@@ -10,7 +10,7 @@ export class EffecterOther extends Effecter {
 	 * Sets default background.
 	 */
 	static #defaultBackground(p) {
-		p.e.backgroundColour = EffectSet.RGBA.GREY;
+		p.e.backgroundColour = EffectSet.RGBA.DARK_GREY;
 	}
 
 	/**

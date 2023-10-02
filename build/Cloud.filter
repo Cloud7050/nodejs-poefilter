@@ -4,7 +4,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 255 170 0
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 85 255 85
 	CustomAlertSound "WAH.mp3"
 	PlayEffect Green
@@ -15,7 +15,7 @@ Show
 	Rarity Normal
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 0 170 170
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -24,7 +24,7 @@ Show
 	Rarity Normal
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 0 170 0
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -33,7 +33,7 @@ Show
 	Rarity Normal
 
 	SetTextColor 85 255 85
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	MinimapIcon 2 White UpsideDownHouse
 
 Show
@@ -41,7 +41,7 @@ Show
 	Rarity Normal
 
 	SetTextColor 170 170 170
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	MinimapIcon 2 White UpsideDownHouse
 
 Show
@@ -49,7 +49,7 @@ Show
 	Rarity Normal
 
 	SetTextColor 255 255 85
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 255 255 85
 	MinimapIcon 1 Yellow UpsideDownHouse
 
@@ -59,7 +59,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 255 255 85
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 85 85 255
 	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
@@ -70,7 +70,7 @@ Show
 	Rarity Magic
 
 	SetTextColor 255 255 85
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 85 85 255
 	MinimapIcon 1 Yellow UpsideDownHouse
 
@@ -79,7 +79,7 @@ Show
 	Rarity Rare
 
 	SetTextColor 255 255 85
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 85 85 255
 	MinimapIcon 1 Yellow UpsideDownHouse
 
@@ -88,7 +88,7 @@ Show
 	Rarity Normal
 
 	SetTextColor 255 255 85
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 85 85 255
 	MinimapIcon 1 Yellow UpsideDownHouse
 
@@ -97,7 +97,7 @@ Show
 	Rarity Rare
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 0 170 0
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -106,7 +106,7 @@ Show
 	Rarity Rare
 
 	SetTextColor 255 255 85
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -114,7 +114,7 @@ Show
 	Rarity Rare
 
 	SetTextColor 255 255 85
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -122,7 +122,7 @@ Show
 	Rarity Rare
 
 	SetTextColor 85 255 85
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -130,7 +130,7 @@ Show
 	Rarity Magic
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 0 170 170
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -140,7 +140,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 0 170 170
 	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
@@ -151,7 +151,7 @@ Show
 	Rarity Rare
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 0 170 170
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -161,7 +161,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 0 170 0
 	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
@@ -173,7 +173,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 85 255 85
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange UpsideDownHouse
@@ -184,7 +184,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 255 170 0
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 0 Orange UpsideDownHouse
@@ -194,7 +194,7 @@ Show
 	Rarity Magic
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	MinimapIcon 2 Blue UpsideDownHouse
 
 Show
@@ -203,7 +203,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 255 170 0
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 255 255 85
 	CustomAlertSound "WAH.mp3"
 	PlayEffect Yellow
@@ -214,7 +214,7 @@ Show
 	Rarity Magic
 
 	SetTextColor 85 255 85
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	MinimapIcon 2 Blue UpsideDownHouse
 
 Show
@@ -222,7 +222,7 @@ Show
 	Rarity Magic
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	MinimapIcon 2 Blue UpsideDownHouse
 
 Show
@@ -230,7 +230,7 @@ Show
 	Rarity Magic
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 0 170 0
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -239,7 +239,7 @@ Show
 	Rarity Magic
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 85 255 85
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -248,7 +248,7 @@ Show
 	Rarity Normal
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 85 255 85
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -258,7 +258,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 85 255 85
 	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
@@ -269,7 +269,7 @@ Show
 	Rarity Rare
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 85 85 85 240
+	SetBackgroundColor 40 40 40 240
 	SetBorderColor 85 255 85
 	MinimapIcon 1 Blue UpsideDownHouse
 
