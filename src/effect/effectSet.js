@@ -35,6 +35,10 @@ export class EffectSet {
 		FADED: "0 0 0 170"
 	};
 
+	static SOUND = {
+		WAH: "WAH.mp3"
+	};
+
 	// Map/beam preset colours
 	static COLOUR = {
 		// BLACK: "Grey",
@@ -77,6 +81,7 @@ export class EffectSet {
 	outlineColour = null;
 
 	isSilent = null;
+	sound = null;
 
 	beamColour = null;
 	/** If null colour, will not show on minimap. */
@@ -126,6 +131,9 @@ export class EffectSet {
 
 		if (this.isSilent === true) {
 			lines.push("DisableDropSound");
+		}
+		if (this.sound !== null) {
+			lines.push(`CustomAlertSound ${this.sound}`);
 		}
 
 		if (this.beamColour !== null) {

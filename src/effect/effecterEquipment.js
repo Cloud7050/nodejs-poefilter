@@ -38,6 +38,7 @@ export class EffecterEquipment extends Effecter {
 
 				p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 				p.e.textColour = EffectSet.RGB.ORANGE;
+				p.e.sound = EffectSet.SOUND.WAH;
 				p.e.mapColour = EffectSet.COLOUR.ORANGE;
 				p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
 				p.e.beamColour = EffectSet.COLOUR.ORANGE;
@@ -92,6 +93,7 @@ export class EffecterEquipment extends Effecter {
 
 			p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 			p.e.outlineColour = EffectSet.RGB.ORANGE;
+			p.e.sound = EffectSet.SOUND.WAH;
 			p.e.mapIcon = EffectSet.ICON.STAR;
 			p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
 			p.e.beamColour = EffectSet.COLOUR.ORANGE;

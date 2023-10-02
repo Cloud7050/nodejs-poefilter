@@ -15,7 +15,3 @@
 	1. Add property
 	1. Check property in equals()
 	1. Check property and push line in export()
-
-## Symlink
-
-`mklink "C:\Users\cloud\Documents\My Games\Path of Exile\Cloud.filter" C:\Users\cloud\Documents\Archives\aCode\NodeJS\PoE\ItemFilter\build\Cloud.filter`

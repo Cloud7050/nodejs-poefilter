@@ -41,6 +41,7 @@ export class EffecterOther extends Effecter {
 			case ConditionSet.RARITY.UNIQUE:
 				p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 				p.e.textColour = EffectSet.RGB.ORANGE;
+				p.e.sound = EffectSet.SOUND.WAH;
 				p.e.mapColour = EffectSet.COLOUR.ORANGE;
 				p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
 				p.e.beamColour = EffectSet.COLOUR.ORANGE;
@@ -88,6 +89,7 @@ export class EffecterOther extends Effecter {
 						p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 						p.e.textColour = EffectSet.RGB.ORANGE;
 						p.e.outlineColour = EffectSet.RGB.YELLOW;
+						p.e.sound = EffectSet.SOUND.WAH;
 						p.e.mapColour = EffectSet.COLOUR.ORANGE;
 						p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
 						p.e.beamColour = EffectSet.COLOUR.YELLOW;
@@ -104,6 +106,7 @@ export class EffecterOther extends Effecter {
 					p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 					p.e.textColour = EffectSet.RGB.ORANGE;
 					p.e.outlineColour = EffectSet.RGB.LIME;
+					p.e.sound = EffectSet.SOUND.WAH;
 					p.e.mapColour = EffectSet.COLOUR.ORANGE;
 					p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
 					p.e.beamColour = EffectSet.COLOUR.LIME;
