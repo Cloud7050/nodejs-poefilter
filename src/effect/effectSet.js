@@ -33,7 +33,7 @@ export class EffectSet {
 	static RGBA = {
 		BLACK: "0 0 0 255",
 		BLACK_FADED: "0 0 0 170",
-		BLACK_GREEN: "25 50 25 255"
+		BLACK_GREEN: "20 40 20 255"
 	};
 
 	static SOUND = {
