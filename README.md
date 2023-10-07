@@ -123,7 +123,7 @@ These are in order from least to highest overwrite priority (if blocks).
 
 - Fractured (show)
 	- (Vanilla has orb icon)
-	- Minimap: Medium
+	- Minimap: Circle medium
 - Quality (show)
 	- Outline colour: Teal
 	- Minimap: Medium

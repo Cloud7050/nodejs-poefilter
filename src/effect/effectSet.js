@@ -57,11 +57,11 @@ export class EffectSet {
 	static ICON = {
 		HOUSE: "UpsideDownHouse", // Others
 		KITE: "Kite", // Equipment
+		CIRCLE: "Circle", // Fractured
 		CROSS: "Cross", // 5
 		STAR: "Star", // 6
 		RAINDROP: "Raindrop", // RGB
 		MOON: "Moon" // Mirrored, corrupted
-		// CIRCLE: "Circle",
 		// HEXAGON: "Hexagon",
 		// SQUARE: "Square",
 		// DIAMOND: "Diamond",

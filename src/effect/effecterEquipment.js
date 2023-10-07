@@ -61,6 +61,7 @@ export class EffecterEquipment extends Effecter {
 		if (p.c.isFractured) {
 			p.e.visibility = EffectSet.VISIBILITY.SHOW;
 
+			p.e.mapIcon = EffectSet.ICON.CIRCLE;
 			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 		}
 		if (p.c.isQuality) {
