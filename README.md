@@ -19,7 +19,7 @@ Notes:
 
 ## Others
 
-- Background: Dark grey
+- Background: Black green
 - Minimap: House
 
 ### Rarity
@@ -43,7 +43,7 @@ Notes:
 
 - Others
 - Quest items
-	- Text colour: Default lime → Lime
+	- Text colour: Default lime → lime
 	- (Minimap: Vanilla has green exclamation mark)
 - Labyrinth items
 	- Text colour: Default beige → blue
@@ -84,12 +84,15 @@ Notes:
 
 Starts with everything being hidden. Through the processing stages, decides what is worth showing. Visibility should only go up, so the decision is made carefully.
 
-Shown items are either shown normally, or shown shrunk/unmapped:
+Anything not fully shown (shrunk/unmapped or hidden):
 
-- Text resized to smallest
-- Background faded
+- Text size: Smallest
+- Minimap: Removed
+
+Hidden items are additionally:
+
+- Background: Black faded
 - Silenced
-- Removed from minimap
 
 ### Rarity
 
