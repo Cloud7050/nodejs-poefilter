@@ -14,6 +14,13 @@ export class EffecterEquipment extends Effecter {
 	}
 
 	/**
+	 * Sets default background.
+	 */
+	static #defaultBackground(p) {
+		p.e.backgroundColour = EffectSet.RGBA.BLACK;
+	}
+
+	/**
 	 * Gives default effects based on rarity.
 	 */
 	static #defaultRarity(p) {
@@ -164,16 +171,17 @@ export class EffecterEquipment extends Effecter {
 		if (p.e.visibility > EffectSet.VISIBILITY.SHRINK_UNMAP) return;
 
 		p.e.textSize = EffectSet.TEXT_SIZE.SMALLEST;
-		p.e.backgroundColour = EffectSet.RGBA.FADED;
 		p.e.mapColour = null;
 
 		if (p.e.visibility <= EffectSet.VISIBILITY.HIDE) {
+			p.e.backgroundColour = EffectSet.RGBA.BLACK_FADED;
 			p.e.isSilent = true;
 		}
 	}
 
 	decideOne(p) {
 		EffecterEquipment.#defaultVisibility(p);
+		EffecterEquipment.#defaultBackground(p);
 		EffecterEquipment.#defaultRarity(p);
 
 		EffecterEquipment.#overwrites(p);

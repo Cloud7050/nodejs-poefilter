@@ -80,6 +80,8 @@ Notes:
 
 ## Equipment
 
+- Background: Black
+
 Starts with everything being hidden. Through the processing stages, decides what is worth showing. Visibility should only go up, so the decision is made carefully.
 
 Shown items are either shown normally, or shown shrunk/unmapped:
