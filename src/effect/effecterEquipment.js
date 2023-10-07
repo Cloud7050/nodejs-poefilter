@@ -17,7 +17,7 @@ export class EffecterEquipment extends Effecter {
 	 * Sets default background.
 	 */
 	static #defaultBackground(p) {
-		p.e.backgroundColour = EffectSet.RGBA.BLACK;
+		p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	}
 
 	/**
@@ -175,7 +175,7 @@ export class EffecterEquipment extends Effecter {
 		p.e.mapColour = null;
 
 		if (p.e.visibility <= EffectSet.VISIBILITY.HIDE) {
-			p.e.backgroundColour = EffectSet.RGBA.BLACK_FADED;
+			p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK_FADED;
 			p.e.isSilent = true;
 		}
 	}

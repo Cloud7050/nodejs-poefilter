@@ -19,7 +19,7 @@ Notes:
 
 ## Others
 
-- Background: Black green
+- Background: Silver
 - Minimap: House
 
 ### Rarity
@@ -47,33 +47,40 @@ Notes:
 	- (Minimap: Vanilla has green exclamation mark)
 - Labyrinth items
 	- Text colour: Default beige → blue
+	- Background: Green
 	- Outline colour: Green
 	- Minimap: Blue medium
 - Gems
 	- Text colour: Default teal → blue
+	- Background: Teal
 	- Outline colour: Teal
 	- Minimap: Blue medium
 - Divination cards
 	- Text colour: Default azure → yellow
+	- Background: Blue
 	- Outline colour: Blue
 	- Minimap: Yellow medium
 - Map items (normal)
 	- Text colour: Default white → yellow
+	- Background: Yellow
 	- Outline colour: Default white → yellow
 	- Minimap: Yellow medium
 - Map items (unique)
 	- Text size: Largest
 	- Text colour: Default orange → orange
+	- Background: Yellow
 	- Outline colour: Default orange → yellow
 	- Minimap: Orange large
 	- Beam: Yellow
 - Currencies (inexpensive)
 	- Text colour: Default beige → blue
+	- Background: Lime
 	- Outline colour: Lime
 	- Minimap: Blue medium
 - Currencies (expensive)
 	- Text size: Largest
 	- Text colour: Default beige → orange
+	- Background: Lime
 	- Outline colour: Lime
 	- Minimap: Orange large
 	- Beam: Lime

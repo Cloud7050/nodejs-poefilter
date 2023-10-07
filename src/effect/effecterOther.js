@@ -10,7 +10,7 @@ export class EffecterOther extends Effecter {
 	 * Sets default background.
 	 */
 	static #defaultBackground(p) {
-		p.e.backgroundColour = EffectSet.RGBA.BLACK_GREEN;
+		p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_SILVER;
 	}
 
 	/**
@@ -61,34 +61,37 @@ export class EffecterOther extends Effecter {
 				break;
 			case ConditionSet.TYPE_OTHER.LABYRINTH:
 				p.e.textColour = EffectSet.RGB.BLUE;
+				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_GREEN;
 				p.e.outlineColour = EffectSet.RGB.GREEN;
 				p.e.mapColour = EffectSet.COLOUR.BLUE;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 			case ConditionSet.TYPE_OTHER.GEM:
 				p.e.textColour = EffectSet.RGB.BLUE;
+				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_TEAL;
 				p.e.outlineColour = EffectSet.RGB.TEAL;
 				p.e.mapColour = EffectSet.COLOUR.BLUE;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 			case ConditionSet.TYPE_OTHER.CARD:
 				p.e.textColour = EffectSet.RGB.YELLOW;
+				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLUE;
 				p.e.outlineColour = EffectSet.RGB.BLUE;
 				p.e.mapColour = EffectSet.COLOUR.YELLOW;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 			case ConditionSet.TYPE_OTHER.MAP:
+				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_YELLOW;
+				p.e.outlineColour = EffectSet.RGB.YELLOW;
 				switch (p.c.rarity) {
 					case ConditionSet.RARITY.NORMAL:
 						p.e.textColour = EffectSet.RGB.YELLOW;
-						p.e.outlineColour = EffectSet.RGB.YELLOW;
 						p.e.mapColour = EffectSet.COLOUR.YELLOW;
 						p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 						break;
 					case ConditionSet.RARITY.UNIQUE:
 						p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 						p.e.textColour = EffectSet.RGB.ORANGE;
-						p.e.outlineColour = EffectSet.RGB.YELLOW;
 						p.e.sound = EffectSet.SOUND.WAH;
 						p.e.mapColour = EffectSet.COLOUR.ORANGE;
 						p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
@@ -97,15 +100,15 @@ export class EffecterOther extends Effecter {
 				}
 				break;
 			case ConditionSet.TYPE_OTHER.CURRENCY:
+				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_LIME;
+				p.e.outlineColour = EffectSet.RGB.LIME;
 				if (!p.c.isExpensive) {
 					p.e.textColour = EffectSet.RGB.BLUE;
-					p.e.outlineColour = EffectSet.RGB.LIME;
 					p.e.mapColour = EffectSet.COLOUR.BLUE;
 					p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				} else {
 					p.e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 					p.e.textColour = EffectSet.RGB.ORANGE;
-					p.e.outlineColour = EffectSet.RGB.LIME;
 					p.e.sound = EffectSet.SOUND.WAH;
 					p.e.mapColour = EffectSet.COLOUR.ORANGE;
 					p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
