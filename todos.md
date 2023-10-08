@@ -1,3 +1,2 @@
 - Chaos orbs style
 - Heist items style similar to quest green? Anything else green?
-- Do you still highlight looty? Do you add more, eg those that sell for alchemy shards?
