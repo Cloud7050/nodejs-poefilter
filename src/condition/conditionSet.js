@@ -16,10 +16,12 @@ export class ConditionSet {
 	};
 	static TYPE_EQUIPMENT = {
 		WEAPON_UNUSED: 'Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves',
-		// 4 sockets on gloves/boots/helmets, 6 on body armour
-		GEAR: 'Amulets Belts "Body Armours" Boots Gloves Helmets Rings',
 		// 3 sockets
-		WEAPON_WITCH: "Shields Wands"
+		WEAPON_WITCH: "Shields Wands",
+		// 4 sockets on boots/gloves/helmets
+		GEAR_4: "Amulets Belts Boots Gloves Helmets Rings",
+		// 6 sockets
+		GEAR_6: '"Body Armours"'
 	};
 	static RARITY = {
 		NORMAL: "Normal",
@@ -123,6 +125,10 @@ export class ConditionSet {
 
 	isLooty() {
 		return this.isLootyBase || this.isLootyModifier;
+	}
+
+	isFourOfFour() {
+		return this.isFour && this.type !== ConditionSet.TYPE_EQUIPMENT.GEAR_6;
 	}
 
 	// eslint-disable-next-line complexity

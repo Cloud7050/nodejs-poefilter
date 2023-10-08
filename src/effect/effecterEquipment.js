@@ -128,8 +128,11 @@ export class EffecterEquipment extends Effecter {
 		if (p.e.visibility >= EffectSet.VISIBILITY.SHOW) return;
 
 		switch (p.c.type) {
+			case ConditionSet.TYPE_EQUIPMENT.WEAPON_UNUSED:
+				break;
 			case ConditionSet.TYPE_EQUIPMENT.WEAPON_WITCH:
-			case ConditionSet.TYPE_EQUIPMENT.GEAR:
+			case ConditionSet.TYPE_EQUIPMENT.GEAR_4:
+			case ConditionSet.TYPE_EQUIPMENT.GEAR_6:
 				if (
 					p.c.isLooty()
 					|| p.c.isFive
@@ -140,7 +143,7 @@ export class EffecterEquipment extends Effecter {
 
 				switch (p.c.rarity) {
 					case ConditionSet.RARITY.NORMAL:
-						if (p.c.isFour) {
+						if (p.c.isFourOfFour()) {
 							p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
 							break;
 						}
@@ -149,7 +152,7 @@ export class EffecterEquipment extends Effecter {
 					case ConditionSet.RARITY.MAGIC:
 						if (
 							p.c.isWhite
-							|| p.c.isFour
+							|| p.c.isFourOfFour()
 						) {
 							p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
 							break;
@@ -157,8 +160,6 @@ export class EffecterEquipment extends Effecter {
 
 						break;
 				}
-				break;
-			case ConditionSet.TYPE_EQUIPMENT.WEAPON_UNUSED:
 				break;
 		}
 	}

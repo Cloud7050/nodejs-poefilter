@@ -177,10 +177,10 @@ Anything whose visibility is not a blanket guaranteed show yet should be decided
 
 For equipment we use, based on rarity, we may use them if the properties are notable enough.
 
-- Witch weapons / armour
+- Unused weapons
+- Witch weapons / gear
 	- Looty/5 (show)
 	- Normal
-		- 4 (shrink/unmap)
+		- 4 of 4 (shrink/unmap)
 	- Magic
-		- White/4 (shrink/unmap)
-- Unused weapons
+		- White / 4 of 4 (shrink/unmap)
