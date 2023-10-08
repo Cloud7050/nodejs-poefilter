@@ -62,18 +62,23 @@ Text colours are perceived rarities. Backgrounds and outlines are paired togethe
 	- Background: Blue
 	- Outline colour: Blue
 	- Minimap: Yellow medium
+- Jewels
+	- (Text colour: Based on rarity)
+	- Background: Yellow
+	- Outline colour: Yellow
+	- Minimap: (Based on rarity) hexagon >=medium
 - Map items (normal)
 	- Text colour: Default white → yellow
-	- Background: Yellow
-	- Outline colour: Default white → yellow
+	- Background: Orange
+	- Outline colour: Default white → orange
 	- Minimap: Yellow medium
 - Map items (unique)
 	- Text size: Largest
 	- Text colour: Default orange → orange
-	- Background: Yellow
-	- Outline colour: Default orange → yellow
+	- Background: Orange
+	- Outline colour: Default orange → orange
 	- Minimap: Orange large
-	- Beam: Yellow
+	- Beam: Orange
 - Currencies (inexpensive)
 	- Text colour: Default beige → blue
 	- Background: Green

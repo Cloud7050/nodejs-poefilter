@@ -80,9 +80,17 @@ export class EffecterOther extends Effecter {
 				p.e.mapColour = EffectSet.COLOUR.YELLOW;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
-			case ConditionSet.TYPE_OTHER.MAP:
+			case ConditionSet.TYPE_OTHER.JEWEL:
 				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_YELLOW;
 				p.e.outlineColour = EffectSet.RGB.YELLOW;
+				p.e.mapIcon = EffectSet.ICON.HEXAGON;
+				if (p.e.mapSize === EffectSet.ICON_SIZE.SMALL) {
+					p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
+				}
+				break;
+			case ConditionSet.TYPE_OTHER.MAP:
+				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_ORANGE;
+				p.e.outlineColour = EffectSet.RGB.ORANGE;
 				switch (p.c.rarity) {
 					case ConditionSet.RARITY.NORMAL:
 						p.e.textColour = EffectSet.RGB.YELLOW;
@@ -95,7 +103,7 @@ export class EffecterOther extends Effecter {
 						p.e.sound = EffectSet.SOUND.WAH;
 						p.e.mapColour = EffectSet.COLOUR.ORANGE;
 						p.e.mapSize = EffectSet.ICON_SIZE.LARGE;
-						p.e.beamColour = EffectSet.COLOUR.YELLOW;
+						p.e.beamColour = EffectSet.COLOUR.ORANGE;
 						break;
 				}
 				break;

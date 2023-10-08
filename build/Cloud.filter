@@ -11,7 +11,116 @@ Show
 	MinimapIcon 0 Orange UpsideDownHouse
 
 Show
-	Class Jewels "Skill Gems" "Support Gems"
+	Class "Divination Cards"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 255 255 85
+	SetBackgroundColor 20 20 60 255
+	SetBorderColor 85 85 255
+	CustomAlertSound "WAH.mp3"
+	PlayEffect Orange
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	Class "Skill Gems" "Support Gems"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 85 85 255
+	SetBackgroundColor 20 40 40 255
+	SetBorderColor 0 170 170
+	CustomAlertSound "WAH.mp3"
+	PlayEffect Orange
+	MinimapIcon 1 Blue UpsideDownHouse
+
+Show
+	Class "Map Fragments" Maps "Misc Map Items"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBackgroundColor 60 40 20 255
+	SetBorderColor 255 170 0
+	CustomAlertSound "WAH.mp3"
+	PlayEffect Orange
+	MinimapIcon 0 Orange UpsideDownHouse
+
+Show
+	Class "Quest Items"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 85 255 85
+	SetBackgroundColor 40 40 40 255
+	CustomAlertSound "WAH.mp3"
+	PlayEffect Orange
+	MinimapIcon 0 Orange UpsideDownHouse
+
+Show
+	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBackgroundColor 40 40 40 255
+	CustomAlertSound "WAH.mp3"
+	PlayEffect Orange
+	MinimapIcon 0 Orange UpsideDownHouse
+
+Show
+	Class "Labyrinth Items" "Labyrinth Trinkets"
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 85 255 85
+	SetBackgroundColor 20 60 20 255
+	SetBorderColor 85 255 85
+	CustomAlertSound "WAH.mp3"
+	PlayEffect Orange
+	MinimapIcon 1 Green UpsideDownHouse
+
+Show
+	Class Jewels
+	Rarity Magic
+
+	SetTextColor 85 85 255
+	SetBackgroundColor 60 60 20 255
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Blue Hexagon
+
+Show
+	Class Jewels
+	Rarity Rare
+
+	SetTextColor 255 255 85
+	SetBackgroundColor 60 60 20 255
+	SetBorderColor 255 255 85
+	MinimapIcon 1 Yellow Hexagon
+
+Show
+	Class Jewels
+	Rarity Normal
+
+	SetTextColor 170 170 170
+	SetBackgroundColor 60 60 20 255
+	SetBorderColor 255 255 85
+	MinimapIcon 1 White Hexagon
+
+Show
+	Class Jewels
+	Rarity Unique
+
+	SetFontSize 45
+	SetTextColor 255 170 0
+	SetBackgroundColor 60 60 20 255
+	SetBorderColor 255 255 85
+	CustomAlertSound "WAH.mp3"
+	PlayEffect Orange
+	MinimapIcon 0 Orange Hexagon
+
+Show
+	Class "Skill Gems" "Support Gems"
 	Rarity Normal
 
 	SetTextColor 85 85 255
@@ -49,34 +158,22 @@ Show
 	Rarity Normal
 
 	SetTextColor 255 255 85
-	SetBackgroundColor 60 60 20 255
-	SetBorderColor 255 255 85
-	MinimapIcon 1 Yellow UpsideDownHouse
-
-Show
-	Class "Divination Cards"
-	Rarity Unique
-
-	SetFontSize 45
-	SetTextColor 255 255 85
-	SetBackgroundColor 20 20 60 255
-	SetBorderColor 85 85 255
-	CustomAlertSound "WAH.mp3"
-	PlayEffect Orange
-	MinimapIcon 1 Yellow UpsideDownHouse
-
-Show
-	Class "Divination Cards"
-	Rarity Magic
-
-	SetTextColor 255 255 85
-	SetBackgroundColor 20 20 60 255
-	SetBorderColor 85 85 255
+	SetBackgroundColor 60 40 20 255
+	SetBorderColor 255 170 0
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
 	Class "Divination Cards"
 	Rarity Rare
+
+	SetTextColor 255 255 85
+	SetBackgroundColor 20 20 60 255
+	SetBorderColor 85 85 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	Class "Divination Cards"
+	Rarity Magic
 
 	SetTextColor 255 255 85
 	SetBackgroundColor 20 20 60 255
@@ -102,20 +199,12 @@ Show
 	MinimapIcon 1 Green UpsideDownHouse
 
 Show
-	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
-	Rarity Rare
-
-	SetTextColor 255 255 85
-	SetBackgroundColor 40 40 40 255
-	MinimapIcon 1 Yellow UpsideDownHouse
-
-Show
 	Class "Map Fragments" Maps "Misc Map Items"
 	Rarity Rare
 
 	SetTextColor 255 255 85
-	SetBackgroundColor 60 60 20 255
-	SetBorderColor 255 255 85
+	SetBackgroundColor 60 40 20 255
+	SetBorderColor 255 170 0
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -127,7 +216,15 @@ Show
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
-	Class Jewels "Skill Gems" "Support Gems"
+	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
+	Rarity Rare
+
+	SetTextColor 255 255 85
+	SetBackgroundColor 40 40 40 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	Class "Skill Gems" "Support Gems"
 	Rarity Magic
 
 	SetTextColor 85 85 255
@@ -136,80 +233,13 @@ Show
 	MinimapIcon 1 Blue UpsideDownHouse
 
 Show
-	Class Jewels "Skill Gems" "Support Gems"
-	Rarity Unique
-
-	SetFontSize 45
-	SetTextColor 85 85 255
-	SetBackgroundColor 20 40 40 255
-	SetBorderColor 0 170 170
-	CustomAlertSound "WAH.mp3"
-	PlayEffect Orange
-	MinimapIcon 1 Blue UpsideDownHouse
-
-Show
-	Class Jewels "Skill Gems" "Support Gems"
+	Class "Skill Gems" "Support Gems"
 	Rarity Rare
 
 	SetTextColor 85 85 255
 	SetBackgroundColor 20 40 40 255
 	SetBorderColor 0 170 170
 	MinimapIcon 1 Blue UpsideDownHouse
-
-Show
-	Class "Labyrinth Items" "Labyrinth Trinkets"
-	Rarity Unique
-
-	SetFontSize 45
-	SetTextColor 85 255 85
-	SetBackgroundColor 20 60 20 255
-	SetBorderColor 85 255 85
-	CustomAlertSound "WAH.mp3"
-	PlayEffect Orange
-	MinimapIcon 1 Green UpsideDownHouse
-
-Show
-	Class "Quest Items"
-	Rarity Unique
-
-	SetFontSize 45
-	SetTextColor 85 255 85
-	SetBackgroundColor 40 40 40 255
-	CustomAlertSound "WAH.mp3"
-	PlayEffect Orange
-	MinimapIcon 0 Orange UpsideDownHouse
-
-Show
-	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
-	Rarity Unique
-
-	SetFontSize 45
-	SetTextColor 255 170 0
-	SetBackgroundColor 40 40 40 255
-	CustomAlertSound "WAH.mp3"
-	PlayEffect Orange
-	MinimapIcon 0 Orange UpsideDownHouse
-
-Show
-	Class "Map Fragments" Maps "Misc Map Items"
-	Rarity Magic
-
-	SetTextColor 85 85 255
-	SetBackgroundColor 60 60 20 255
-	SetBorderColor 255 255 85
-	MinimapIcon 2 Blue UpsideDownHouse
-
-Show
-	Class "Map Fragments" Maps "Misc Map Items"
-	Rarity Unique
-
-	SetFontSize 45
-	SetTextColor 255 170 0
-	SetBackgroundColor 60 60 20 255
-	SetBorderColor 255 255 85
-	CustomAlertSound "WAH.mp3"
-	PlayEffect Yellow
-	MinimapIcon 0 Orange UpsideDownHouse
 
 Show
 	Class "Quest Items"
@@ -225,6 +255,15 @@ Show
 
 	SetTextColor 85 85 255
 	SetBackgroundColor 40 40 40 255
+	MinimapIcon 2 Blue UpsideDownHouse
+
+Show
+	Class "Map Fragments" Maps "Misc Map Items"
+	Rarity Magic
+
+	SetTextColor 85 85 255
+	SetBackgroundColor 60 40 20 255
+	SetBorderColor 255 170 0
 	MinimapIcon 2 Blue UpsideDownHouse
 
 Show

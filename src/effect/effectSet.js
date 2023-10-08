@@ -38,7 +38,7 @@ export class EffectSet {
 		BACKGROUND_TEAL: "20 40 40 255",
 		// BACKGROUND_CRIMSON: "40 20 20 255",
 		// BACKGROUND_PURPLE: "40 20 40 255",
-		// BACKGROUND_ORANGE: "60 40 20 255",
+		BACKGROUND_ORANGE: "60 40 20 255",
 		BACKGROUND_SILVER: "40 40 40 255",
 		// BACKGROUND_GREY: "20 20 20 255",
 		BACKGROUND_BLUE: "20 20 60 255",
@@ -58,25 +58,25 @@ export class EffectSet {
 	static COLOUR = {
 		// BLACK: "Grey",
 		// PURPLE: "Purple",
-		ORANGE: "Orange", // Map colour: (Perceived) rarity unique
+		ORANGE: "Orange", // Map colour: (Perceived) rarity unique | Beam: Map items unique
 		SILVER: "White", // Map colour: (Perceived) rarity normal
 		BLUE: "Blue", // Map colour: (Perceived) rarity magic
 		LIME: "Green", // Beam: Currencies expensive
 		// CYAN: "Cyan",
 		// ROSE: "Red",
 		// PINK: "Pink",
-		YELLOW: "Yellow" // Map colour: (Perceived) rarity rare | Beam: Map items unique
+		YELLOW: "Yellow" // Map colour: (Perceived) rarity rare
 		// BROWN: "Brown"
 	};
 	static ICON = {
 		HOUSE: "UpsideDownHouse", // Others
+		HEXAGON: "Hexagon", // Jewels
 		KITE: "Kite", // Equipment
 		CIRCLE: "Circle", // Fractured
 		CROSS: "Cross", // 5
 		STAR: "Star", // 6
 		RAINDROP: "Raindrop", // RGB
 		MOON: "Moon" // Mirrored, corrupted
-		// HEXAGON: "Hexagon",
 		// SQUARE: "Square",
 		// DIAMOND: "Diamond",
 		// TRIANGLE: "Triangle",

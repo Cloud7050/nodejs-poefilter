@@ -8,8 +8,9 @@ export class ConditionSet {
 		OTHER: '"Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"',
 		QUEST: '"Quest Items"',
 		LABYRINTH: '"Labyrinth Items" "Labyrinth Trinkets"',
-		GEM: 'Jewels "Skill Gems" "Support Gems"',
+		GEM: '"Skill Gems" "Support Gems"',
 		CARD: '"Divination Cards"',
+		JEWEL: "Jewels",
 		MAP: '"Map Fragments" Maps "Misc Map Items"',
 		CURRENCY: '"Delve Stackable Socketable Currency" "Stackable Currency"'
 	};
