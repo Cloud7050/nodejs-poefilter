@@ -133,7 +133,6 @@ Reasons for showing:
 - Quality can vendor/use
 - RGB can vendor
 - 6 can use/vendor
-- Mirrored may have dropped dupes, which can be vendored together
 - Corrupted may have special modifiers, which can be vendored even if not used due to bricked sockets etc
 
 These are in order from least to highest overwrite priority (if blocks).
@@ -165,7 +164,7 @@ These are in order from least to highest overwrite priority (if blocks).
 	- Outline colour: Orange
 	- Minimap: Star large
 	- Beam: Orange
-- Mirrored (show)
+- Mirrored
 	- Outline colour: Navy
 	- Minimap: Moon medium
 - Corrupted (show)

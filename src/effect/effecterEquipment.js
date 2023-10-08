@@ -107,8 +107,6 @@ export class EffecterEquipment extends Effecter {
 			p.e.beamColour = EffectSet.COLOUR.ORANGE;
 		}
 		if (p.c.isMirrored) {
-			p.e.visibility = EffectSet.VISIBILITY.SHOW;
-
 			p.e.outlineColour = EffectSet.RGB.NAVY;
 			p.e.mapIcon = EffectSet.ICON.MOON;
 			p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
