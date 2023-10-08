@@ -22,6 +22,8 @@ Notes:
 - Background: Silver
 - Minimap: House
 
+Text colours are perceived rarities. Backgrounds and outlines are paired together to identify type.
+
 ### Rarity
 
 - Normal
@@ -46,10 +48,10 @@ Notes:
 	- Text colour: Default lime → lime
 	- (Minimap: Vanilla has green exclamation mark)
 - Labyrinth items
-	- Text colour: Default beige → blue
-	- Background: Green
-	- Outline colour: Green
-	- Minimap: Blue medium
+	- Text colour: Default beige → lime
+	- Background: Lime
+	- Outline colour: Lime
+	- Minimap: Lime medium
 - Gems
 	- Text colour: Default teal → blue
 	- Background: Teal
@@ -74,14 +76,14 @@ Notes:
 	- Beam: Yellow
 - Currencies (inexpensive)
 	- Text colour: Default beige → blue
-	- Background: Lime
-	- Outline colour: Lime
+	- Background: Green
+	- Outline colour: Green
 	- Minimap: Blue medium
 - Currencies (expensive)
 	- Text size: Largest
 	- Text colour: Default beige → orange
-	- Background: Lime
-	- Outline colour: Lime
+	- Background: Green
+	- Outline colour: Green
 	- Minimap: Orange large
 	- Beam: Lime
 

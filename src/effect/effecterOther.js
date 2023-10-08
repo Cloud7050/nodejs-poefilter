@@ -60,10 +60,10 @@ export class EffecterOther extends Effecter {
 				p.e.textColour = EffectSet.RGB.LIME;
 				break;
 			case ConditionSet.TYPE_OTHER.LABYRINTH:
-				p.e.textColour = EffectSet.RGB.BLUE;
-				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_GREEN;
-				p.e.outlineColour = EffectSet.RGB.GREEN;
-				p.e.mapColour = EffectSet.COLOUR.BLUE;
+				p.e.textColour = EffectSet.RGB.LIME;
+				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_LIME;
+				p.e.outlineColour = EffectSet.RGB.LIME;
+				p.e.mapColour = EffectSet.COLOUR.LIME;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
 				break;
 			case ConditionSet.TYPE_OTHER.GEM:
@@ -100,8 +100,8 @@ export class EffecterOther extends Effecter {
 				}
 				break;
 			case ConditionSet.TYPE_OTHER.CURRENCY:
-				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_LIME;
-				p.e.outlineColour = EffectSet.RGB.LIME;
+				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_GREEN;
+				p.e.outlineColour = EffectSet.RGB.GREEN;
 				if (!p.c.isExpensive) {
 					p.e.textColour = EffectSet.RGB.BLUE;
 					p.e.mapColour = EffectSet.COLOUR.BLUE;

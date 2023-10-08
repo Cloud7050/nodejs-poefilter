@@ -14,7 +14,7 @@ export class EffectSet {
 	static RGB = {
 		// BLACK: "0 0 0",
 		NAVY: "0 0 170", // Outline colour: Mirrored
-		GREEN: "0 170 0", // Outline colour: Labyrinth items
+		GREEN: "0 170 0", // Outline colour: Currencies
 		TEAL: "0 170 170", // Outline colour: Gems. Quality
 		CRIMSON: "170 0 0", // Outline colour: Corrupted
 		PURPLE: "170 0 170", // Outline colour: RGB
@@ -22,7 +22,7 @@ export class EffectSet {
 		SILVER: "170 170 170", // Text colour: (Perceived) rarity normal | Outline colour: 3 link
 		// GREY: "85 85 85",
 		BLUE: "85 85 255", // Text colour: (Perceived) rarity magic | Outline colour: Divination cards. 4
-		LIME: "85 255 85", // Text colour: Quest items | Outline colour: Currencies. Looty
+		LIME: "85 255 85", // Text colour: Quest items | Outline colour: Labyrinth items. Looty
 		// CYAN: "85 255 255",
 		// ROSE: "255 85 85",
 		// PINK: "255 85 255",

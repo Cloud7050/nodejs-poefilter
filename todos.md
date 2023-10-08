@@ -1,6 +1,6 @@
-- Maybe rethink colour scheme especially for others
 - Change icons for non-common others
 - Jewels have rarity, split into its own section and don't hardcode
 - Rethink what makes corrupted/mirrored worth it
 - Chaos orbs style
-- Heist items style similar to quest green?
+- Heist items style similar to quest green? Anything else green?
+- Do you still highlight looty? Do you add more, eg those that sell for alchemy shards?

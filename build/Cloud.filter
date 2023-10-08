@@ -4,8 +4,8 @@ Show
 
 	SetFontSize 45
 	SetTextColor 255 170 0
-	SetBackgroundColor 20 60 20 255
-	SetBorderColor 85 255 85
+	SetBackgroundColor 20 40 20 255
+	SetBorderColor 0 170 0
 	CustomAlertSound "WAH.mp3"
 	PlayEffect Green
 	MinimapIcon 0 Orange UpsideDownHouse
@@ -23,10 +23,10 @@ Show
 	Class "Labyrinth Items" "Labyrinth Trinkets"
 	Rarity Normal
 
-	SetTextColor 85 85 255
-	SetBackgroundColor 20 40 20 255
-	SetBorderColor 0 170 0
-	MinimapIcon 1 Blue UpsideDownHouse
+	SetTextColor 85 255 85
+	SetBackgroundColor 20 60 20 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Green UpsideDownHouse
 
 Show
 	Class "Quest Items"
@@ -96,10 +96,10 @@ Show
 	Class "Labyrinth Items" "Labyrinth Trinkets"
 	Rarity Rare
 
-	SetTextColor 85 85 255
-	SetBackgroundColor 20 40 20 255
-	SetBorderColor 0 170 0
-	MinimapIcon 1 Blue UpsideDownHouse
+	SetTextColor 85 255 85
+	SetBackgroundColor 20 60 20 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Green UpsideDownHouse
 
 Show
 	Class "Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"
@@ -161,12 +161,12 @@ Show
 	Rarity Unique
 
 	SetFontSize 45
-	SetTextColor 85 85 255
-	SetBackgroundColor 20 40 20 255
-	SetBorderColor 0 170 0
+	SetTextColor 85 255 85
+	SetBackgroundColor 20 60 20 255
+	SetBorderColor 85 255 85
 	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
-	MinimapIcon 1 Blue UpsideDownHouse
+	MinimapIcon 1 Green UpsideDownHouse
 
 Show
 	Class "Quest Items"
@@ -231,6 +231,15 @@ Show
 	Class "Labyrinth Items" "Labyrinth Trinkets"
 	Rarity Magic
 
+	SetTextColor 85 255 85
+	SetBackgroundColor 20 60 20 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Green UpsideDownHouse
+
+Show
+	Class "Delve Stackable Socketable Currency" "Stackable Currency"
+	Rarity Magic
+
 	SetTextColor 85 85 255
 	SetBackgroundColor 20 40 20 255
 	SetBorderColor 0 170 0
@@ -238,20 +247,11 @@ Show
 
 Show
 	Class "Delve Stackable Socketable Currency" "Stackable Currency"
-	Rarity Magic
-
-	SetTextColor 85 85 255
-	SetBackgroundColor 20 60 20 255
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Blue UpsideDownHouse
-
-Show
-	Class "Delve Stackable Socketable Currency" "Stackable Currency"
 	Rarity Normal
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 20 60 20 255
-	SetBorderColor 85 255 85
+	SetBackgroundColor 20 40 20 255
+	SetBorderColor 0 170 0
 	MinimapIcon 1 Blue UpsideDownHouse
 
 Show
@@ -260,8 +260,8 @@ Show
 
 	SetFontSize 45
 	SetTextColor 85 85 255
-	SetBackgroundColor 20 60 20 255
-	SetBorderColor 85 255 85
+	SetBackgroundColor 20 40 20 255
+	SetBorderColor 0 170 0
 	CustomAlertSound "WAH.mp3"
 	PlayEffect Orange
 	MinimapIcon 1 Blue UpsideDownHouse
@@ -271,8 +271,8 @@ Show
 	Rarity Rare
 
 	SetTextColor 85 85 255
-	SetBackgroundColor 20 60 20 255
-	SetBorderColor 85 255 85
+	SetBackgroundColor 20 40 20 255
+	SetBorderColor 0 170 0
 	MinimapIcon 1 Blue UpsideDownHouse
 
 Show
