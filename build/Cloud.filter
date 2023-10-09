@@ -317,7 +317,7 @@ Show
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 1W
 	Sockets < 5
 	SocketGroup >= 3RGB
@@ -334,7 +334,7 @@ Show
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 1W
 	Sockets < 5
 	SocketGroup >= 3RGB
@@ -352,7 +352,7 @@ Show
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 1W
 	Sockets >= 4
 	Sockets < 5
@@ -371,7 +371,7 @@ Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 1W
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -390,7 +390,7 @@ Show
 	Class "Body Armours"
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 1W
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -409,7 +409,7 @@ Show
 	Class Shields Wands
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 1W
 	Sockets >= 4
 	Sockets < 5
@@ -428,7 +428,7 @@ Show
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 4
 	Sockets < 5
@@ -447,7 +447,7 @@ Show
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 4
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -465,7 +465,7 @@ Show
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 1W
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -483,7 +483,7 @@ Show
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -501,7 +501,7 @@ Show
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -520,7 +520,7 @@ Show
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 1W
 	Sockets >= 4
 	Sockets < 5
@@ -540,7 +540,7 @@ Show
 	Class "Body Armours"
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -559,7 +559,7 @@ Show
 Show
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 1W
 	Sockets < 4
 	Sockets < 5
@@ -577,7 +577,7 @@ Show
 Show
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 5
 	SocketGroup >= 3RGB
@@ -594,7 +594,7 @@ Show
 Show
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 4
 	Sockets < 5
@@ -613,7 +613,7 @@ Show
 	Class "Body Armours"
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 4
 	Sockets < 5
@@ -636,7 +636,7 @@ Show
 	Class "Body Armours"
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -655,7 +655,7 @@ Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -676,7 +676,7 @@ Show
 Show
 	Rarity Magic
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 1W
 	Sockets < 4
@@ -695,7 +695,7 @@ Show
 Show
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 1W
 	Sockets < 4
@@ -716,7 +716,7 @@ Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -736,7 +736,7 @@ Show
 	Class Shields Wands
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -756,7 +756,7 @@ Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -779,7 +779,7 @@ Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -799,7 +799,7 @@ Show
 	Class Shields Wands
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -822,7 +822,7 @@ Show
 	Class "Body Armours"
 	Rarity Unique
 	BaseType "Gold Amulet" "Gold Ring"
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 4
@@ -3006,7 +3006,7 @@ Show
 
 Show
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	Sockets < 6
 	FracturedItem True
@@ -3020,7 +3020,7 @@ Show
 
 Show
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	Sockets < 6
 	Quality >= 20
@@ -3035,7 +3035,7 @@ Show
 
 Show
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	SocketGroup >= 3RGB
 	Sockets < 6
 	Quality < 20
@@ -3050,7 +3050,7 @@ Show
 
 Show
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	SocketGroup >= 3RGB
 	Sockets < 6
@@ -3067,7 +3067,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3084,7 +3084,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3101,7 +3101,7 @@ Show
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3121,7 +3121,7 @@ Show
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3138,7 +3138,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3155,7 +3155,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3175,7 +3175,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality < 20
@@ -3191,7 +3191,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality < 20
@@ -3210,7 +3210,7 @@ Show
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality < 20
@@ -3226,7 +3226,7 @@ Show
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality < 20
@@ -3245,7 +3245,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality < 20
@@ -3260,7 +3260,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 1W
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -3279,7 +3279,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 1W
 	Sockets < 5
 	SocketGroup >= 3RGB
@@ -3297,7 +3297,7 @@ Show
 
 Show
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3312,7 +3312,7 @@ Show
 
 Show
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup >= 3RGB
 	Sockets < 6
@@ -3326,7 +3326,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 1W
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -3346,7 +3346,7 @@ Show
 
 Show
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3363,7 +3363,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3380,7 +3380,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 1W
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -3398,7 +3398,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 1W
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -3416,7 +3416,7 @@ Show
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -3437,7 +3437,7 @@ Show
 Hide
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3455,7 +3455,7 @@ Hide
 Show
 	Class Shields Wands
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets >= 1W
 	Sockets < 4
@@ -3474,7 +3474,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -3494,7 +3494,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -3513,7 +3513,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -3535,7 +3535,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -3557,7 +3557,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -3576,7 +3576,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -3595,7 +3595,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -3616,7 +3616,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	FracturedItem True
 	Mirrored True
@@ -3632,7 +3632,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Quality >= 20
 	FracturedItem False
@@ -3649,7 +3649,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 6
 	Quality < 20
@@ -3667,7 +3667,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 5
 	Sockets < 6
@@ -3685,7 +3685,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 5
 	Sockets < 6
@@ -3704,7 +3704,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	SocketGroup >= 3RGB
 	Sockets < 6
@@ -3723,7 +3723,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 5
 	SocketGroup >= 3RGB
@@ -3744,7 +3744,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 5
 	SocketGroup < 3RGB
@@ -3765,7 +3765,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 5
 	SocketGroup < 3RGB
@@ -3786,7 +3786,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -3807,7 +3807,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -3825,7 +3825,7 @@ Show
 
 Show
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup >= 3RGB
 	Sockets < 6
@@ -3839,7 +3839,7 @@ Show
 
 Show
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup >= 3RGB
 	Sockets < 6
@@ -3853,7 +3853,7 @@ Show
 
 Show
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 6
 	FracturedItem True
 	Mirrored True
@@ -3866,7 +3866,7 @@ Show
 
 Show
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 6
 	Quality >= 20
 	FracturedItem False
@@ -3881,7 +3881,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets >= 5
 	SocketGroup < 3RGB
@@ -3902,7 +3902,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets >= 5
 	SocketGroup < 3RGB
@@ -3923,7 +3923,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	SocketGroup < 3RGB
 	Sockets < 6
 	Quality < 20
@@ -3939,7 +3939,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3955,7 +3955,7 @@ Show
 
 Show
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3970,7 +3970,7 @@ Show
 
 Show
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -3985,7 +3985,7 @@ Show
 
 Show
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -4001,7 +4001,7 @@ Show
 
 Show
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -4018,7 +4018,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4039,7 +4039,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4060,7 +4060,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4081,7 +4081,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4099,7 +4099,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4117,7 +4117,7 @@ Show
 Show
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4135,7 +4135,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4153,7 +4153,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4171,7 +4171,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4189,7 +4189,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -4206,7 +4206,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -4223,7 +4223,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -4240,7 +4240,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -4257,7 +4257,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -4274,7 +4274,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets >= 1W
 	Sockets < 5
@@ -4296,7 +4296,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets >= 1W
 	Sockets < 5
@@ -4318,7 +4318,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets >= 1W
 	Sockets < 5
@@ -4337,7 +4337,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets >= 1W
 	Sockets >= 4
@@ -4357,7 +4357,7 @@ Show
 Hide
 	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets < 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -4375,7 +4375,7 @@ Hide
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -4394,7 +4394,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 1W
 	Sockets < 5
@@ -4413,7 +4413,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -4433,7 +4433,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	Sockets >= 5
 	SocketGroup < 3RGB
 	Sockets < 6
@@ -4452,7 +4452,7 @@ Show
 
 Show
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4469,7 +4469,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4489,7 +4489,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -4509,7 +4509,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -4528,7 +4528,7 @@ Show
 
 Show
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -4550,7 +4550,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets >= 3
 	Sockets < 1W
 	Sockets < 5
@@ -4569,7 +4569,7 @@ Show
 Show
 	Class Shields Wands
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4587,7 +4587,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -4609,7 +4609,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -4628,7 +4628,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Normal
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -4647,7 +4647,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 5
 	SocketGroup < 3RGB
@@ -4665,7 +4665,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Magic
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 1W
 	Sockets < 5
@@ -4684,7 +4684,7 @@ Show
 Show
 	Class Amulets Belts Boots Gloves Helmets Rings
 	Rarity Rare
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets < 1W
 	Sockets < 5
@@ -4703,7 +4703,7 @@ Show
 Show
 	Class "Body Armours"
 	Rarity Unique
-	HasExplicitMod Magpie's "of Plunder" "of Raiding"
+	HasExplicitMod Magpie's Pirate's "of Plunder" "of Raiding"
 	LinkedSockets < 3
 	Sockets >= 1W
 	Sockets < 5

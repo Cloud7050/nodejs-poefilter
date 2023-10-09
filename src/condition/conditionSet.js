@@ -144,7 +144,11 @@ export class ConditionSet {
 		if (this.isLootyBase === true) {
 			lines.push('BaseType "Gold Amulet" "Gold Ring"');
 		}
-		if (this.isLootyModifier === true) lines.push('HasExplicitMod Magpie\'s "of Plunder" "of Raiding"');
+		if (this.isLootyModifier === true) {
+			lines.push(
+				'HasExplicitMod Magpie\'s Pirate\'s "of Plunder" "of Raiding"'
+			);
+		}
 
 		if (this.isThreeLink !== null) {
 			let operator = this.isThreeLink ? ">=" : "<";
