@@ -34,8 +34,6 @@ export class EffecterEquipment extends Effecter {
 				p.e.mapColour = EffectSet.COLOUR.BLUE;
 				break;
 			case ConditionSet.RARITY.RARE:
-				p.e.visibility = EffectSet.VISIBILITY.SHOW;
-
 				p.e.textColour = EffectSet.RGB.YELLOW;
 				p.e.mapColour = EffectSet.COLOUR.YELLOW;
 				p.e.mapSize = EffectSet.ICON_SIZE.MEDIUM;
@@ -158,6 +156,9 @@ export class EffecterEquipment extends Effecter {
 							break;
 						}
 
+						break;
+					case ConditionSet.RARITY.RARE:
+						p.e.visibility = EffectSet.VISIBILITY.SHOW;
 						break;
 				}
 				break;

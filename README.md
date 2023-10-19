@@ -116,7 +116,7 @@ Hidden items are additionally:
 - Magic
 	- Text colour: Blue
 	- Minimap: Blue
-- Rare (show)
+- Rare
 	- Text colour: Yellow
 	- Minimap: Yellow medium
 - Unique (show)
@@ -184,3 +184,4 @@ For equipment we use, based on rarity, we may use them if the properties are not
 		- 4 of 4 (shrink/unmap)
 	- Magic
 		- White / 4 of 4 (shrink/unmap)
+	- Rare (show)
