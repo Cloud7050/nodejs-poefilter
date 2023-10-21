@@ -5,9 +5,9 @@ import { Duplicator } from "./duplicator.js";
 /* [Exports] */
 export class ConditionSet {
 	static TYPE_OTHER = {
-		OTHER: '"Atlas Upgrade Items" Blueprints Breachstones Contracts "Expedition Logbooks" "Fishing Rods" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" "Hybrid Flasks" Incubators "Incursion Items" Leaguestones "Life Flasks" "Mana Flasks" Memories "Metamorph Samples" Microtransactions "Pantheon Souls" Pieces Relics "Sanctum Research" Sentinels "Utility Flasks" "Vault Keys"',
+		OTHER: 'Contracts "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Utility Flasks" "Atlas Upgrade Items" Blueprints Breachstones "Expedition Logbooks" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Targets" "Heist Tools" "Hideout Doodads" Incubators Memories "Metamorph Samples" "Pantheon Souls" Pieces Relics "Sanctum Research" "Vault Keys"',
 		QUEST: '"Quest Items"',
-		LABYRINTH: '"Labyrinth Items" "Labyrinth Trinkets"',
+		QUESTLIKE: '"Incursion Items" "Labyrinth Items" "Labyrinth Trinkets"',
 		GEM: '"Skill Gems" "Support Gems"',
 		CARD: '"Divination Cards"',
 		JEWEL: "Jewels",
@@ -17,7 +17,7 @@ export class ConditionSet {
 	static TYPE_EQUIPMENT = {
 		WEAPON_UNUSED: 'Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Quivers Sceptres Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Warstaves',
 		// 3 sockets
-		WEAPON_WITCH: "Shields Wands",
+		WEAPON_WITCH: '"Fishing Rods" Shields Wands',
 		// 4 sockets on boots/gloves/helmets
 		GEAR_4: "Amulets Belts Boots Gloves Helmets Rings",
 		// 6 sockets

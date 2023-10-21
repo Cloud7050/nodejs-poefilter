@@ -59,7 +59,7 @@ export class EffecterOther extends Effecter {
 			case ConditionSet.TYPE_OTHER.QUEST:
 				p.e.textColour = EffectSet.RGB.LIME;
 				break;
-			case ConditionSet.TYPE_OTHER.LABYRINTH:
+			case ConditionSet.TYPE_OTHER.QUESTLIKE:
 				p.e.textColour = EffectSet.RGB.LIME;
 				p.e.backgroundColour = EffectSet.RGBA.BACKGROUND_LIME;
 				p.e.outlineColour = EffectSet.RGB.LIME;
