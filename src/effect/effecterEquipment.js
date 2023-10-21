@@ -131,26 +131,18 @@ export class EffecterEquipment extends Effecter {
 			case ConditionSet.TYPE_EQUIPMENT.WEAPON_WITCH:
 			case ConditionSet.TYPE_EQUIPMENT.GEAR_4:
 			case ConditionSet.TYPE_EQUIPMENT.GEAR_6:
-				if (
-					p.c.isLooty()
-					|| p.c.isFive
-				) {
+				if (p.c.isLooty()) {
 					p.e.visibility = EffectSet.VISIBILITY.SHOW;
 					break;
 				}
 
+
 				switch (p.c.rarity) {
 					case ConditionSet.RARITY.NORMAL:
-						if (p.c.isFourOfFour()) {
-							p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
-							break;
-						}
-
-						break;
 					case ConditionSet.RARITY.MAGIC:
 						if (
 							p.c.isWhite
-							|| p.c.isFourOfFour()
+							&& p.c.isFourOfFour()
 						) {
 							p.e.visibility = EffectSet.VISIBILITY.SHRINK_UNMAP;
 							break;

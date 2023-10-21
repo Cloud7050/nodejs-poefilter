@@ -179,9 +179,7 @@ For equipment we use, based on rarity, we may use them if the properties are not
 
 - Unused weapons
 - Witch weapons / gear
-	- Looty/5 (show)
-	- Normal
-		- 4 of 4 (shrink/unmap)
-	- Magic
-		- White / 4 of 4 (shrink/unmap)
+	- Looty (show)
+	- Normal/magic
+		- White & 4 of 4 (shrink/unmap)
 	- Rare (show)
