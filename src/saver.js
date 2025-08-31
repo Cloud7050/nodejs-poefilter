@@ -2,7 +2,6 @@ import fs from "fs";
 
 
 
-/* [Exports] */
 export class Saver {
 	static save(lines, relativePath) {
 		let string = lines.join("\n");
