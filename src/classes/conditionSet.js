@@ -20,6 +20,9 @@ export class ConditionSet {
 	category = null;
 	rarity = null;
 
+	// energyShield = null; //TODO NumericComparison
+	// energyShieldOperator = null;
+
 	getBlockEnd() {
 		return this.isContinue ? "Continue" : null;
 	}
