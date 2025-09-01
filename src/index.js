@@ -33,35 +33,43 @@ e = new EffectSet().mapCurrency();
 
 spans.push(...new Block(c, e).export());
 
-// Ignoreable: Common weapons we don't use, with no quality/sockets
+// Ignoreable: Any normal weapons/armour, with no quality/sockets
 c = new ConditionSet();
-c.category = ConditionSet.CATEGORY.WEAPON_UNUSED;
-c.rarity = ConditionSet.RARITY.NORMAL;
-c.quality = new Comparison(Comparison.OPERATOR.EQUAL, 0);
-c.sockets = new Comparison(Comparison.OPERATOR.EQUAL, 0);
+c.category = `${ConditionSet.CATEGORY.WEAPON_USED} ${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR}`;
+c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.NORMAL);
+c.noQualitySocketless();
 
 e = new EffectSet().fade();
 
 spans.push(...new Block(c, e).export());
 
-// Ignoreable: Common armour we don't use, with no quality/sockets
+// Ignoreable: Magic weapons we don't use, with no quality/sockets
+c = new ConditionSet();
+c.category = ConditionSet.CATEGORY.WEAPON_UNUSED;
+c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.MAGIC);
+c.noQualitySocketless();
+
+e = new EffectSet().fade();
+
+spans.push(...new Block(c, e).export());
+
+// Ignoreable: Magic armour we don't use (no energy shield), with no quality/sockets
 c = new ConditionSet();
 c.category = ConditionSet.CATEGORY.ARMOUR;
-c.rarity = ConditionSet.RARITY.NORMAL;
-c.quality = new Comparison(Comparison.OPERATOR.EQUAL, 0);
-c.sockets = new Comparison(Comparison.OPERATOR.EQUAL, 0);
+c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.MAGIC);
+c.noQualitySocketless();
 c.energyShield = new Comparison(Comparison.OPERATOR.EQUAL, 0);
 
 e = new EffectSet().fade();
 
 spans.push(...new Block(c, e).export());
 
-// Ignoreable: Bad common flasks, with no quality
+// Ignoreable: Bad normal/magic flasks, with no quality
 c = new ConditionSet();
 c.names = '"Lesser Life Flask" "Medium Life Flask" "Lesser Mana Flask" "Medium Mana Flask"';
 c.category = ConditionSet.CATEGORY.FLASKS;
-c.rarity = ConditionSet.RARITY.NORMAL;
-c.quality = new Comparison(Comparison.OPERATOR.EQUAL, 0);
+c.rarity = new Comparison(Comparison.OPERATOR.LTE, ConditionSet.RARITY.MAGIC);
+c.noQuality();
 
 e = new EffectSet().fade();
 

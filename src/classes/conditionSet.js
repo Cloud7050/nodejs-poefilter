@@ -1,3 +1,4 @@
+import { Comparison } from "./comparison.js";
 
 export class ConditionSet {
 	// https://poe2db.tw/us/Items
@@ -23,7 +24,7 @@ export class ConditionSet {
 	// Multi-word names must be wrapped in double quotes
 	names = null;
 	category = null;
-	rarity = null;
+	rarity = null; // Comparison
 
 	quality = null; // Comparison
 	sockets = null; // Comparison
@@ -38,7 +39,7 @@ export class ConditionSet {
 
 		if (this.names !== null) spans.push(`BaseType ${this.names}`);
 		if (this.category !== null) spans.push(`Class ${this.category}`);
-		if (this.rarity !== null) spans.push(`Rarity ${this.rarity}`);
+		if (this.rarity !== null) spans.push(this.rarity.export("Rarity"));
 
 		if (this.quality !== null) spans.push(this.quality.export("Quality"));
 		if (this.sockets !== null) spans.push(this.sockets.export("Sockets"));
@@ -52,5 +53,17 @@ export class ConditionSet {
 	continue() {
 		this.isContinue = true;
 		return this;
+	}
+
+	noQuality() {
+		this.quality = new Comparison(Comparison.OPERATOR.EQUAL, 0);
+		return this;
+	}
+	socketless() {
+		this.sockets = new Comparison(Comparison.OPERATOR.EQUAL, 0);
+		return this;
+	}
+	noQualitySocketless() {
+		return this.noQuality().socketless();
 	}
 }
