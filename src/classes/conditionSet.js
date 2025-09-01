@@ -1,7 +1,8 @@
 
 export class ConditionSet {
+	// https://poe2db.tw/us/Items
 	static CATEGORY = {
-		CURRENCY: 'Catalysts Essence "Liquid Emotions" Splinter "Stackable Currency"',
+		CURRENCY: '"Stackable Currency"', // Catalysts, Essence, Liquid Emotions, Splinter invalid
 		FLASKS: '"Life Flasks" "Mana Flasks"',
 
 		// Witch weapons
