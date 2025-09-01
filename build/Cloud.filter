@@ -14,6 +14,15 @@ Show
 	MinimapIcon -1
 
 Show
+	Class "Body Armours" Boots Gloves Helmets
+	Rarity Normal
+	BaseEnergyShield = 0
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 170
+	MinimapIcon -1
+
+Show
 	BaseType "Lesser Life Flask" "Medium Life Flask" "Lesser Mana Flask" "Medium Mana Flask"
 	Class "Life Flasks" "Mana Flasks"
 	Rarity Normal

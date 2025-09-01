@@ -40,7 +40,7 @@ export class EffectSet {
 	textSize = null;
 	backgroundColour = null;
 
-	mapEffect = null;
+	mapEffect = null; // MapEffect
 
 	getBlockStart() {
 		return this.visibility;
