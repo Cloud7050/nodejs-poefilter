@@ -3,3 +3,4 @@ Show
 	Rarity Normal
 
 	SetFontSize 18
+	SetBackgroundColor 0 0 0 170

@@ -10,11 +10,11 @@ let c = new ConditionSet();
 c.itemClass = ConditionSet.ITEM_CLASS.WEAPON_UNUSED;
 c.rarity = ConditionSet.RARITY.NORMAL;
 
-let e = new EffectSet();
-e.textSize = EffectSet.TEXT_SIZE.SMALLEST;
+let e = new EffectSet().fade();
 
 let block = new Block(c, e);
 let lines = block.export();
 
+// Save
 Saver.save(lines, "./build/Cloud.filter");
 console.log("☁");
