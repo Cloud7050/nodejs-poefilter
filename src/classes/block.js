@@ -12,10 +12,17 @@ export class Block {
 
 		spans.push(this.e.getBlockStart());
 		spans.push(...this.c.export().map(span => `	${span}`));
+
 		spans.push("");
 		spans.push(...this.e.export().map(span => `	${span}`));
-		spans.push("");
 
+		let blockEnd = this.c.getBlockEnd();
+		if (blockEnd !== null) {
+			spans.push("");
+			spans.push(`	${blockEnd}`);
+		}
+
+		spans.push("");
 		return spans;
 	}
 }
