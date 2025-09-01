@@ -75,20 +75,4 @@ export class EffectSet {
 
 		return this;
 	}
-
-	// Default minimap look
-	mapDefault() {
-		this.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.SILVER, MapEffect.ICON.KITE);
-		return this;
-	}
-
-	// Currencies
-	mapGold() {
-		this.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
-		return this;
-	}
-	mapCurrency() {
-		this.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
-		return this;
-	}
 }

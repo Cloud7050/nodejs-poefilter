@@ -3,11 +3,11 @@ export const COLOUR = {
 	// PURPLE: "Purple",
 	// ORANGE: "Orange",
 	SILVER: "White",
-	// BLUE: "Blue",
+	BLUE: "Blue",
 	LIME: "Green",
 	// CYAN: "Cyan",
 	// ROSE: "Red",
-	// PINK: "Pink",
-	// YELLOW: "Yellow",
-	// BROWN: "Brown"
+	PINK: "Pink",
+	YELLOW: "Yellow",
+	BROWN: "Brown"
 };

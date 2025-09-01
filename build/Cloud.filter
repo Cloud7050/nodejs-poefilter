@@ -1,7 +1,35 @@
 Show
 	
 
-	MinimapIcon 2 White Kite
+	MinimapIcon 2 Pink Kite
+
+	Continue
+
+Show
+	Rarity = Normal
+
+	MinimapIcon 2 White Square
+
+	Continue
+
+Show
+	Rarity = Magic
+
+	MinimapIcon 2 Blue Square
+
+	Continue
+
+Show
+	Rarity = Rare
+
+	MinimapIcon 1 Yellow Square
+
+	Continue
+
+Show
+	Rarity = Unique
+
+	MinimapIcon 0 Brown Square
 
 	Continue
 
