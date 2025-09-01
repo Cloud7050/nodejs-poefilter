@@ -16,30 +16,33 @@ e = new EffectSet().map();
 
 spans.push(...new Block(c, e).export());
 
-// Ignoreable: Common weapons we don't use
+// Ignoreable: Common weapons we don't use, with no quality
 c = new ConditionSet();
 c.category = ConditionSet.CATEGORY.WEAPON_UNUSED;
 c.rarity = ConditionSet.RARITY.NORMAL;
+c.quality = new NumberComparison(NumberComparison.OPERATOR.EQUAL, 0);
 
 e = new EffectSet().fade();
 
 spans.push(...new Block(c, e).export());
 
-// Ignoreable: Common armour we don't use
+// Ignoreable: Common armour we don't use, with no quality
 c = new ConditionSet();
 c.category = ConditionSet.CATEGORY.ARMOUR;
 c.rarity = ConditionSet.RARITY.NORMAL;
+c.quality = new NumberComparison(NumberComparison.OPERATOR.EQUAL, 0);
 c.energyShield = new NumberComparison(NumberComparison.OPERATOR.EQUAL, 0);
 
 e = new EffectSet().fade();
 
 spans.push(...new Block(c, e).export());
 
-// Ignoreable: Bad common flasks
+// Ignoreable: Bad common flasks, with no quality
 c = new ConditionSet();
 c.names = '"Lesser Life Flask" "Medium Life Flask" "Lesser Mana Flask" "Medium Mana Flask"';
 c.category = ConditionSet.CATEGORY.FLASKS;
 c.rarity = ConditionSet.RARITY.NORMAL;
+c.quality = new NumberComparison(NumberComparison.OPERATOR.EQUAL, 0);
 
 e = new EffectSet().fade();
 
