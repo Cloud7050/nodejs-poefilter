@@ -1,6 +1,7 @@
 
 export class ConditionSet {
 	static CATEGORY = {
+		CURRENCY: 'Catalysts Essence "Liquid Emotions" Splinter "Stackable Currency"',
 		FLASKS: '"Life Flasks" "Mana Flasks"',
 
 		// Witch weapons

@@ -12,7 +12,24 @@ let spans = [];
 // Default: Show everything on the minimap
 c = new ConditionSet().continue();
 
-e = new EffectSet().map();
+e = new EffectSet().mapDefault();
+
+spans.push(...new Block(c, e).export());
+
+// Currencies - gold
+c = new ConditionSet();
+c.names = "Gold";
+c.category = ConditionSet.CATEGORY.CURRENCY;
+
+e = new EffectSet().mapGold();
+
+spans.push(...new Block(c, e).export());
+
+// Currencies - other
+c = new ConditionSet();
+c.category = ConditionSet.CATEGORY.CURRENCY;
+
+e = new EffectSet().mapCurrency();
 
 spans.push(...new Block(c, e).export());
 

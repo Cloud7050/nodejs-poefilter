@@ -11,7 +11,7 @@ export class MapEffect {
 	};
 	static COLOUR = COLOUR;
 	static ICON = {
-		// CIRCLE: "Circle",
+		CIRCLE: "Circle",
 		// CROSS: "Cross",
 		// DIAMOND: "Diamond",
 		// HEXAGON: "Hexagon",
@@ -34,12 +34,6 @@ export class MapEffect {
 		this.colour = colour;
 		this.icon = icon;
 	}
-
-	static SmallSilverKite = class extends MapEffect {
-        constructor() {
-            super(MapEffect.SIZE.SMALL, MapEffect.COLOUR.SILVER, MapEffect.ICON.KITE);
-        }
-    }
 
 	isNull() {
 		return this.size === null || this.colour === null || this.icon === null;

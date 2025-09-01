@@ -6,6 +6,17 @@ Show
 	Continue
 
 Show
+	BaseType Gold
+	Class Catalysts Essence "Liquid Emotions" Splinter "Stackable Currency"
+
+	MinimapIcon 2 Green Kite
+
+Show
+	Class Catalysts Essence "Liquid Emotions" Splinter "Stackable Currency"
+
+	MinimapIcon 2 Green Circle
+
+Show
 	Class Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
 	Rarity Normal
 	Quality = 0

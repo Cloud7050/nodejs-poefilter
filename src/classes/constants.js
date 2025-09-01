@@ -4,7 +4,7 @@ export const COLOUR = {
 	// ORANGE: "Orange",
 	SILVER: "White",
 	// BLUE: "Blue",
-	// LIME: "Green",
+	LIME: "Green",
 	// CYAN: "Cyan",
 	// ROSE: "Red",
 	// PINK: "Pink",
