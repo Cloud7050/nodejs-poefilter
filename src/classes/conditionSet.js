@@ -23,8 +23,9 @@ export class ConditionSet {
 	category = null;
 	rarity = null;
 
-	quality = null; // NumberComparison
-	energyShield = null; // NumberComparison
+	quality = null; // Comparison
+	sockets = null; // Comparison
+	energyShield = null; // Comparison
 
 	getBlockEnd() {
 		return this.isContinue ? "Continue" : null;
@@ -38,6 +39,7 @@ export class ConditionSet {
 		if (this.rarity !== null) spans.push(`Rarity ${this.rarity}`);
 
 		if (this.quality !== null) spans.push(this.quality.export("Quality"));
+		if (this.sockets !== null) spans.push(this.sockets.export("Sockets"));
 		if (this.energyShield !== null) spans.push(this.energyShield.export("BaseEnergyShield"));
 
 		// Force a blank line to represent where the set goes

@@ -9,6 +9,7 @@ Show
 	Class Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
 	Rarity Normal
 	Quality = 0
+	Sockets = 0
 
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 170
@@ -18,6 +19,7 @@ Show
 	Class "Body Armours" Boots Gloves Helmets
 	Rarity Normal
 	Quality = 0
+	Sockets = 0
 	BaseEnergyShield = 0
 
 	SetFontSize 18

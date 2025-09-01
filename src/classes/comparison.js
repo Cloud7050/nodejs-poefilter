@@ -1,4 +1,4 @@
-export class NumberComparison {
+export class Comparison {
 	static OPERATOR = {
 		EQUAL: "=",
 		NE: "!", // Or "!="
