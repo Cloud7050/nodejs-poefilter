@@ -1,16 +1,21 @@
 import { Comparison } from "./comparison.js";
 
 export class ConditionSet {
-	// https://poe2db.tw/us/Items
+	// https://poe2db.tw/us/Items. Matches case-sensitive substrings
 	static CATEGORY = {
-		CURRENCY: '"Stackable Currency"', // Catalysts, Essence, Liquid Emotions, Splinter invalid
-		FLASKS: '"Life Flasks" "Mana Flasks"',
+		CURRENCY: '"Stackable Currency"',
+		// GEMS: '"Skill Gems" "Spirit Gems" "Support Gems"',
+		// RUNES: 'Socketable',
+		// JEWELS: 'Jewels',
+		// WAYSTONES: '"Map Fragments" "Misc Map Items" Waystones',
+		// OTHER: '"Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Inscribed Ultimatums" Omens "Pinnacle Keys" "Quest Items" Relics Strongboxes Tablets "Trial Coins"',
 
 		// Witch weapons
 		WEAPON_USED: '"Fishing Rods" Sceptres Wands',
 		WEAPON_UNUSED: 'Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"',
-
-		ARMOUR: '"Body Armours" Boots Gloves Helmets'
+		ARMOUR: '"Body Armours" Boots Gloves Helmets',
+		JEWELLERY: "Amulets Belts Rings",
+		CHARGED: 'Charms "Life Flasks" "Mana Flasks"'
 	};
 	static RARITY = {
 		NORMAL: "Normal",
