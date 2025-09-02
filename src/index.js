@@ -62,9 +62,9 @@ block((c, e) => { // Other
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
 
-// Ignoreable: Any normal weapons/armour, with no quality/sockets
+// Ignoreable: Any normal unused weapons/armour, with no quality/sockets
 block((c, e) => {
-	c.category = `${ConditionSet.CATEGORY.WEAPON_USED} ${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR}`;
+	c.category = `${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR}`;
 	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.NORMAL);
 	c.noQualitySocketless();
 
