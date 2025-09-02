@@ -23,7 +23,7 @@ block((c, e) => { // Others
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.PINK, MapEffect.ICON.KITE);
 });
 
-// Default: Minimap by rarity
+// Minimap by rarity
 block((c, e) => { // Normals
 	c.continue();
 	c.category = `${ConditionSet.CATEGORY.WEAPON_USED} ${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR}`;
@@ -78,6 +78,14 @@ block((c, e) => { // Other
 	c.category = ConditionSet.CATEGORY.CURRENCY;
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
+});
+//TODO medium and above for more valuable currencies
+
+// Gems
+block((c, e) => {
+	c.category = ConditionSet.CATEGORY.GEMS;
+
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
 });
 
 // Ignoreable: Normal unused weapons or any normal armour, with no quality/sockets

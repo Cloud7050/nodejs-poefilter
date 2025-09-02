@@ -4,7 +4,7 @@ export class ConditionSet {
 	// https://poe2db.tw/us/Items. Matches case-sensitive substrings
 	static CATEGORY = {
 		CURRENCY: '"Stackable Currency"',
-		// GEMS: '"Skill Gems" "Spirit Gems" "Support Gems"',
+		GEMS: '"Skill Gems" "Spirit Gems" "Support Gems"',
 		// RUNES: 'Socketable',
 		// JEWELS: 'Jewels',
 		// WAYSTONES: '"Map Fragments" "Misc Map Items" Waystones',

@@ -5,7 +5,7 @@ export const COLOUR = {
 	SILVER: "White",
 	BLUE: "Blue",
 	LIME: "Green",
-	// CYAN: "Cyan",
+	CYAN: "Cyan",
 	// ROSE: "Red",
 	PINK: "Pink",
 	YELLOW: "Yellow",

@@ -19,7 +19,7 @@ export class MapEffect {
 		KITE: "Kite",
 		// MOON: "Moon",
 		// PENTAGON: "Pentagon",
-		// RAINDROP: "Raindrop",
+		RAINDROP: "Raindrop",
 		// STAR: "Star",
 		SQUARE: "Square",
 		// TRIANGLE: "Triangle"
