@@ -24,26 +24,44 @@ block((c, e) => { // Others
 });
 
 // Default: Minimap by rarity
-block((c, e) => { // Normal
+block((c, e) => { // Normals
 	c.continue();
+	c.category = `${ConditionSet.CATEGORY.WEAPON_USED} ${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR}`;
 	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.NORMAL);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.SILVER, MapEffect.ICON.SQUARE);
 });
-block((c, e) => { // Magic
+block((c, e) => {
 	c.continue();
+	c.category = `${ConditionSet.CATEGORY.JEWELLERY} ${ConditionSet.CATEGORY.CHARGED}`;
+	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.NORMAL);
+
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.SQUARE);
+});
+block((c, e) => { // Magics
+	c.continue();
+	c.category = `${ConditionSet.CATEGORY.WEAPON_USED} ${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR}`;
 	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.MAGIC);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.BLUE, MapEffect.ICON.SQUARE);
 });
+block((c, e) => {
+	c.continue();
+	c.category = `${ConditionSet.CATEGORY.JEWELLERY} ${ConditionSet.CATEGORY.CHARGED}`;
+	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.MAGIC);
+
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.SQUARE);
+});
 block((c, e) => { // Rare
 	c.continue();
+	c.category = `${ConditionSet.CATEGORY.WEAPON_USED} ${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR} ${ConditionSet.CATEGORY.JEWELLERY} ${ConditionSet.CATEGORY.CHARGED}`;
 	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.RARE);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.SQUARE);
 });
 block((c, e) => { // Unique
 	c.continue();
+	c.category = `${ConditionSet.CATEGORY.WEAPON_USED} ${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR} ${ConditionSet.CATEGORY.JEWELLERY} ${ConditionSet.CATEGORY.CHARGED}`;
 	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.UNIQUE);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.SQUARE);
@@ -62,7 +80,7 @@ block((c, e) => { // Other
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
 
-// Ignoreable: Any normal unused weapons/armour, with no quality/sockets
+// Ignoreable: Normal unused weapons or any normal armour, with no quality/sockets
 block((c, e) => {
 	c.category = `${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR}`;
 	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.NORMAL);
