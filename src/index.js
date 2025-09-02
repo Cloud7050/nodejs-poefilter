@@ -124,7 +124,7 @@ block((c, e) => {
 block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.RUNE));
 
-	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.RAINDROP);
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLACK, MapEffect.ICON.RAINDROP);
 });
 
 // Ignoreable: Normal unused weapons or any normal armour, with no quality/sockets
