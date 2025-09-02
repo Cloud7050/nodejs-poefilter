@@ -1,2 +1,1 @@
-build/*
-!build/Cloud.filter
+build/Test.filter
