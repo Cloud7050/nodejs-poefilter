@@ -8,7 +8,8 @@ export class ConditionSet {
 		RUNES: 'Socketable',
 		// JEWELS: 'Jewels',
 		// WAYSTONES: '"Map Fragments" "Misc Map Items" Waystones',
-		// OTHER: '"Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Inscribed Ultimatums" Omens "Pinnacle Keys" "Quest Items" Relics Strongboxes Tablets "Trial Coins"',
+		// OTHER: '"Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Inscribed Ultimatums" Omens "Pinnacle Keys" Relics Strongboxes Tablets "Trial Coins"',
+		// QUEST: '"Quest Items"',
 
 		// Witch weapons
 		WEAPON_USED: '"Fishing Rods" Sceptres Wands',
