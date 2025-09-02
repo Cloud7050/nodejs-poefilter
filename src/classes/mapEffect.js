@@ -15,7 +15,7 @@ export class MapEffect {
 		// CROSS: "Cross",
 		// DIAMOND: "Diamond",
 		// HEXAGON: "Hexagon",
-		// HOUSE: "UpsideDownHouse",
+		HOUSE: "UpsideDownHouse",
 		KITE: "Kite",
 		// MOON: "Moon",
 		// PENTAGON: "Pentagon",

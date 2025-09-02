@@ -70,6 +70,11 @@ Show
 	MinimapIcon 1 Cyan Raindrop
 
 Show
+	Class Socketable
+
+	MinimapIcon 1 Cyan UpsideDownHouse
+
+Show
 	Class Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
 	Rarity = Normal
 	Quality = 0

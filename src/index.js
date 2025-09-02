@@ -88,6 +88,13 @@ block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
 });
 
+// Runes
+block((c, e) => {
+	c.category = ConditionSet.CATEGORY.RUNES;
+
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.HOUSE);
+});
+
 // Ignoreable: Normal unused weapons or any normal armour, with no quality/sockets
 block((c, e) => {
 	c.category = `${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR}`;

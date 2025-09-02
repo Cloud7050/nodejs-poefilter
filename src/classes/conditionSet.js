@@ -5,7 +5,7 @@ export class ConditionSet {
 	static CATEGORY = {
 		CURRENCY: '"Stackable Currency"',
 		GEMS: '"Skill Gems" "Spirit Gems" "Support Gems"',
-		// RUNES: 'Socketable',
+		RUNES: 'Socketable',
 		// JEWELS: 'Jewels',
 		// WAYSTONES: '"Map Fragments" "Misc Map Items" Waystones',
 		// OTHER: '"Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Inscribed Ultimatums" Omens "Pinnacle Keys" "Quest Items" Relics Strongboxes Tablets "Trial Coins"',
