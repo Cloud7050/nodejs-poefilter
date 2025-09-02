@@ -111,7 +111,7 @@ block((c, e) => {
 // Ignoreable: Bad normal/magic flasks, with no quality
 block((c, e) => {
 	c.names = '"Lesser Life Flask" "Medium Life Flask" "Lesser Mana Flask" "Medium Mana Flask"';
-	c.category = ConditionSet.CATEGORY.FLASKS;
+	c.category = ConditionSet.CATEGORY.CHARGED;
 	c.rarity = new Comparison(Comparison.OPERATOR.LTE, ConditionSet.RARITY.MAGIC);
 	c.noQuality();
 

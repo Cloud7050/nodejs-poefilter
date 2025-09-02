@@ -97,7 +97,7 @@ Show
 
 Show
 	BaseType "Lesser Life Flask" "Medium Life Flask" "Lesser Mana Flask" "Medium Mana Flask"
-	Class undefined
+	Class Charms "Life Flasks" "Mana Flasks"
 	Rarity <= Magic
 	Quality = 0
 
