@@ -6,110 +6,142 @@ Show
 	Continue
 
 Show
-	Class "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
-	Rarity = Normal
+	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
+	Rarity == Normal
 
 	MinimapIcon 2 White UpsideDownHouse
 
 	Continue
 
 Show
-	Class Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
-	Rarity = Normal
+	Class == Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
+	Rarity == Normal
 
 	MinimapIcon 1 White UpsideDownHouse
 
 	Continue
 
 Show
-	Class "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
-	Rarity = Magic
+	Class == Jewels
+	Rarity == Normal
+
+	MinimapIcon 1 White Raindrop
+
+	Continue
+
+Show
+	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
 
 	MinimapIcon 2 Blue UpsideDownHouse
 
 	Continue
 
 Show
-	Class Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
-	Rarity = Magic
+	Class == Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
+	Rarity == Magic
 
 	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
 Show
-	Class "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
-	Rarity = Rare
+	Class == Jewels
+	Rarity == Magic
+
+	MinimapIcon 1 Blue Raindrop
+
+	Continue
+
+Show
+	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
+	Rarity == Rare
 
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 	Continue
 
 Show
-	Class "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
-	Rarity = Unique
+	Class == Jewels
+	Rarity == Rare
+
+	MinimapIcon 1 Yellow Raindrop
+
+	Continue
+
+Show
+	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
+	Rarity == Unique
 
 	MinimapIcon 0 Brown UpsideDownHouse
 
 	Continue
 
 Show
-	BaseType Gold
-	Class "Stackable Currency"
+	Class == Jewels
+	Rarity == Unique
+
+	MinimapIcon 1 Brown Raindrop
+
+	Continue
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
 
 	MinimapIcon 2 Green Kite
 
 Show
-	Class "Stackable Currency"
+	Class == "Stackable Currency"
 
 	MinimapIcon 2 Green Circle
 
 Show
-	Class "Skill Gems" "Spirit Gems" "Support Gems"
+	Class == "Skill Gems" "Spirit Gems" "Support Gems" "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
 
 	MinimapIcon 1 Cyan Raindrop
 
 Show
-	Class Socketable
+	Class == Socketable
 
 	MinimapIcon 1 Pink Raindrop
 
 Show
-	Class Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
-	Rarity = Normal
-	Quality = 0
-	Sockets = 0
+	Class == Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
+	Rarity == Normal
+	Quality == 0
+	Sockets == 0
 
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 170
 	MinimapIcon -1
 
 Show
-	Class Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
-	Rarity = Magic
-	Quality = 0
-	Sockets = 0
+	Class == Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
+	Rarity == Magic
+	Quality == 0
+	Sockets == 0
 
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 170
 	MinimapIcon -1
 
 Show
-	Class "Body Armours" Boots Gloves Helmets
-	Rarity = Magic
-	Quality = 0
-	Sockets = 0
-	BaseEnergyShield = 0
+	Class == "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
+	Quality == 0
+	Sockets == 0
+	BaseEnergyShield == 0
 
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 170
 	MinimapIcon -1
 
 Show
-	BaseType "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask"
-	Class Charms "Life Flasks" "Mana Flasks"
+	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask"
+	Class == Charms "Life Flasks" "Mana Flasks"
 	Rarity <= Magic
-	Quality = 0
+	Quality == 0
 
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 170

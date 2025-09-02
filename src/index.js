@@ -3,7 +3,9 @@ import { Comparison } from "./classes/comparison.js";
 import { ConditionSet } from "./classes/conditionSet.js";
 import { EffectSet } from "./classes/effectSet.js";
 import { MapEffect } from "./classes/mapEffect.js";
+import { StringList } from "./classes/stringList.js";
 import { Saver } from "./saver.js";
+const CATEGORY = ConditionSet.CATEGORY;
 
 
 
@@ -17,7 +19,7 @@ function block(logic) {
 }
 
 // Default: Show everything on minimap
-block((c, e) => { // Others
+block((c, e) => {
 	c.continue();
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.PINK, MapEffect.ICON.KITE);
@@ -26,56 +28,86 @@ block((c, e) => { // Others
 // Minimap by rarity
 block((c, e) => { // Normals
 	c.continue();
-	c.category = `${ConditionSet.CATEGORY.WEAPON_USED} ${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR}`;
-	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.NORMAL);
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
 block((c, e) => {
 	c.continue();
-	c.category = `${ConditionSet.CATEGORY.JEWELLERY} ${ConditionSet.CATEGORY.CHARGED}`;
-	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.NORMAL);
+	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
+block((c, e) => {
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.RAINDROP);
+});
 block((c, e) => { // Magics
 	c.continue();
-	c.category = `${ConditionSet.CATEGORY.WEAPON_USED} ${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR}`;
-	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.MAGIC);
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
 block((c, e) => {
 	c.continue();
-	c.category = `${ConditionSet.CATEGORY.JEWELLERY} ${ConditionSet.CATEGORY.CHARGED}`;
-	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.MAGIC);
+	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
+block((c, e) => {
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.RAINDROP);
+});
 block((c, e) => { // Rare
 	c.continue();
-	c.category = `${ConditionSet.CATEGORY.WEAPON_USED} ${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR} ${ConditionSet.CATEGORY.JEWELLERY} ${ConditionSet.CATEGORY.CHARGED}`;
-	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.RARE);
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR,
+		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.HOUSE);
 });
+block((c, e) => {
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
+	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
+
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.RAINDROP);
+});
 block((c, e) => { // Unique
 	c.continue();
-	c.category = `${ConditionSet.CATEGORY.WEAPON_USED} ${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR} ${ConditionSet.CATEGORY.JEWELLERY} ${ConditionSet.CATEGORY.CHARGED}`;
-	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.UNIQUE);
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR,
+		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.HOUSE);
+});
+block((c, e) => {
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
+	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
+
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BROWN, MapEffect.ICON.RAINDROP);
 });
 
 // Currencies
 block((c, e) => { // Gold
-	c.names = "Gold";
-	c.category = ConditionSet.CATEGORY.CURRENCY;
+	c.names = new Comparison(new StringList("Gold"));
+	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
 block((c, e) => { // Other
-	c.category = ConditionSet.CATEGORY.CURRENCY;
+	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
@@ -83,22 +115,22 @@ block((c, e) => { // Other
 
 // Gems
 block((c, e) => {
-	c.category = ConditionSet.CATEGORY.GEMS;
+	c.category = new Comparison(new StringList(CATEGORY.GEM));
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
 });
 
 // Runes
 block((c, e) => {
-	c.category = ConditionSet.CATEGORY.RUNES;
+	c.category = new Comparison(new StringList(CATEGORY.RUNE));
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.RAINDROP);
 });
 
 // Ignoreable: Normal unused weapons or any normal armour, with no quality/sockets
 block((c, e) => {
-	c.category = `${ConditionSet.CATEGORY.WEAPON_UNUSED} ${ConditionSet.CATEGORY.ARMOUR}`;
-	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.NORMAL);
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.noQualitySocketless();
 
 	e.fade();
@@ -106,8 +138,8 @@ block((c, e) => {
 
 // Ignoreable: Magic weapons we don't use, with no quality/sockets
 block((c, e) => {
-	c.category = ConditionSet.CATEGORY.WEAPON_UNUSED;
-	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.MAGIC);
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_UNUSED));
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.noQualitySocketless();
 
 	e.fade();
@@ -115,19 +147,20 @@ block((c, e) => {
 
 // Ignoreable: Magic armour we don't use (no energy shield), with no quality/sockets
 block((c, e) => {
-	c.category = ConditionSet.CATEGORY.ARMOUR;
-	c.rarity = new Comparison(Comparison.OPERATOR.EQUAL, ConditionSet.RARITY.MAGIC);
+	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.noQualitySocketless();
-	c.energyShield = new Comparison(Comparison.OPERATOR.EQUAL, 0);
+	c.energyShield = new Comparison(0);
 
 	e.fade();
 });
 
 // Ignoreable: Bad normal/magic flasks, with no quality
 block((c, e) => {
-	c.names = '"Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask"';
-	c.category = ConditionSet.CATEGORY.CHARGED;
-	c.rarity = new Comparison(Comparison.OPERATOR.LTE, ConditionSet.RARITY.MAGIC);
+	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
+		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask"));
+	c.category = new Comparison(new StringList(CATEGORY.CHARGED));
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 	c.noQuality();
 
 	e.fade();
