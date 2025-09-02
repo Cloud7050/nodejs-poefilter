@@ -106,7 +106,7 @@ Show
 	MinimapIcon -1
 
 Show
-	BaseType "Lesser Life Flask" "Medium Life Flask" "Lesser Mana Flask" "Medium Mana Flask"
+	BaseType "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask"
 	Class Charms "Life Flasks" "Mana Flasks"
 	Rarity <= Magic
 	Quality = 0
