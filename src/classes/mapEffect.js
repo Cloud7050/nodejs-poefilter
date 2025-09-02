@@ -21,7 +21,7 @@ export class MapEffect {
 		// PENTAGON: "Pentagon",
 		RAINDROP: "Raindrop",
 		// STAR: "Star",
-		SQUARE: "Square",
+		// SQUARE: "Square",
 		// TRIANGLE: "Triangle"
 	};
 

@@ -9,7 +9,7 @@ Show
 	Class "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
 	Rarity = Normal
 
-	MinimapIcon 2 White Square
+	MinimapIcon 2 White UpsideDownHouse
 
 	Continue
 
@@ -17,7 +17,7 @@ Show
 	Class Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity = Normal
 
-	MinimapIcon 1 White Square
+	MinimapIcon 1 White UpsideDownHouse
 
 	Continue
 
@@ -25,7 +25,7 @@ Show
 	Class "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
 	Rarity = Magic
 
-	MinimapIcon 2 Blue Square
+	MinimapIcon 2 Blue UpsideDownHouse
 
 	Continue
 
@@ -33,7 +33,7 @@ Show
 	Class Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity = Magic
 
-	MinimapIcon 1 Blue Square
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -41,7 +41,7 @@ Show
 	Class "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity = Rare
 
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 Yellow UpsideDownHouse
 
 	Continue
 
@@ -49,7 +49,7 @@ Show
 	Class "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity = Unique
 
-	MinimapIcon 0 Brown Square
+	MinimapIcon 0 Brown UpsideDownHouse
 
 	Continue
 
@@ -72,7 +72,7 @@ Show
 Show
 	Class Socketable
 
-	MinimapIcon 1 Cyan UpsideDownHouse
+	MinimapIcon 1 Pink Raindrop
 
 Show
 	Class Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
