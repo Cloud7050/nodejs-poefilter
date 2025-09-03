@@ -282,7 +282,8 @@ block((c, e) => {
 // Fade: Bad normal/magic flasks, with no quality
 block((c, e) => {
 	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
-		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask"));
+		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
+		"Grand Life Flask", "Grand Mana Flask"));
 	c.category = new Comparison(new StringList(CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 	c.noQuality();
