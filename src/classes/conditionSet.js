@@ -40,6 +40,8 @@ export class ConditionSet {
 	sockets = null; // Comparison
 	energyShield = null; // Comparison
 
+	count = null; // Comparison
+
 	getBlockEnd() {
 		return this.isContinue ? "Continue" : null;
 	}
@@ -54,6 +56,8 @@ export class ConditionSet {
 		if (this.quality !== null) spans.push(this.quality.export("Quality"));
 		if (this.sockets !== null) spans.push(this.sockets.export("Sockets"));
 		if (this.energyShield !== null) spans.push(this.energyShield.export("BaseEnergyShield"));
+
+		if (this.count !== null) spans.push(this.count.export("StackSize"));
 
 		// Force a blank line to represent where the set goes
 		if (spans.length === 0) return [""];

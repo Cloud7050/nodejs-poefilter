@@ -102,8 +102,15 @@ Show
 Show
 	BaseType == Gold
 	Class == "Stackable Currency"
+	StackSize < 50
 
 	MinimapIcon 2 Green Kite
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+
+	MinimapIcon 1 Green Kite
 
 Show
 	Class == "Stackable Currency"

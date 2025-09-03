@@ -117,15 +117,21 @@ block((c, e) => {
 block((c, e) => { // Gold
 	c.names = new Comparison(new StringList("Gold"));
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+	c.count = new Comparison(50, Comparison.OPERATOR.LT);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
+});
+block((c, e) => {
+	c.names = new Comparison(new StringList("Gold"));
+	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
 block((c, e) => { // Other
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
-//TODO medium and above for more valuable currencies
 
 // Gems
 block((c, e) => {
