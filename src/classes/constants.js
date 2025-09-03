@@ -1,5 +1,5 @@
 export const COLOUR = {
-	BLACK: "Grey",
+	// BLACK: "Grey",
 	// PURPLE: "Purple",
 	// ORANGE: "Orange",
 	SILVER: "White",
