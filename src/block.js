@@ -1,11 +1,9 @@
-export class Block {
-	c;
-	e;
+import { ConditionSet } from "./conditions/conditionSet.js";
+import { EffectSet } from "./effects/effectSet.js";
 
-	constructor(c, e) {
-		this.c = c;
-		this.e = e;
-	}
+export class Block {
+	c = new ConditionSet();
+	e = new EffectSet();
 
 	export() {
 		let spans = [];

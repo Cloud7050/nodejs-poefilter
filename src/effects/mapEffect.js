@@ -1,4 +1,4 @@
-import { COLOUR } from "./constants.js";
+import { COLOUR } from "../constants.js";
 
 
 

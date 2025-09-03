@@ -1,39 +1,31 @@
-import { Block } from "./classes/block.js";
-import { Comparison } from "./classes/comparison.js";
-import { ConditionSet } from "./classes/conditionSet.js";
-import { EffectSet } from "./classes/effectSet.js";
-import { MapEffect } from "./classes/mapEffect.js";
-import { StringList } from "./classes/stringList.js";
-import { Saver } from "./saver.js";
+import { Comparison } from "./conditions/comparison.js";
+import { ConditionSet } from "./conditions/conditionSet.js";
+import { StringList } from "./conditions/stringList.js";
+import { EffectSet } from "./effects/effectSet.js";
+import { MapEffect } from "./effects/mapEffect.js";
+import { Filter } from "./filter.js";
 const CATEGORY = ConditionSet.CATEGORY;
 
 
 
-let spans = [];
-function block(logic) {
-	let c = new ConditionSet();
-	let e = new EffectSet();
-	let b = new Block(c, e);
-	logic(c, e);
-	spans.push(...b.export());
-}
+let filter = new Filter("Cloud");
 
 // Default: Minimap everything
-block((c, e) => {
+filter.block((c, e) => {
 	c.continue();
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.PINK, MapEffect.ICON.KITE);
 });
 
 // Default: Outlines
-block((c, e) => { // Quality
+filter.block((c, e) => { // Quality
 	c.continue();
 	c.hasQuality();
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.MAGIC;
 });
-block((c, e) => { // Socket
+filter.block((c, e) => { // Socket
 	c.continue();
 	c.hasSocket();
 
@@ -43,7 +35,7 @@ block((c, e) => { // Socket
 
 // Default: Minimap by rarity. Quality/socket should also be medium
 // Normal
-block((c, e) => { // Common gear, no quality/socket
+filter.block((c, e) => { // Common gear, no quality/socket
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
@@ -51,7 +43,7 @@ block((c, e) => { // Common gear, no quality/socket
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
-block((c, e) => { // Common gear, quality
+filter.block((c, e) => { // Common gear, quality
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
@@ -60,7 +52,7 @@ block((c, e) => { // Common gear, quality
 	// Already darkened above
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
-block((c, e) => { // Common gear, socket
+filter.block((c, e) => { // Common gear, socket
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
@@ -69,7 +61,7 @@ block((c, e) => { // Common gear, socket
 	// Already darkened above
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
-block((c, e) => { // Less common gear
+filter.block((c, e) => { // Less common gear
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
@@ -77,7 +69,7 @@ block((c, e) => { // Less common gear
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
-block((c, e) => {
+filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
@@ -86,7 +78,7 @@ block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.RAINDROP);
 });
 // Magic
-block((c, e) => { // Common gear, no quality/socket
+filter.block((c, e) => { // Common gear, no quality/socket
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
@@ -94,7 +86,7 @@ block((c, e) => { // Common gear, no quality/socket
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
-block((c, e) => { // Common gear, quality
+filter.block((c, e) => { // Common gear, quality
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
@@ -103,7 +95,7 @@ block((c, e) => { // Common gear, quality
 	// Already darkened above
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
-block((c, e) => { // Common gear, socket
+filter.block((c, e) => { // Common gear, socket
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
@@ -112,7 +104,7 @@ block((c, e) => { // Common gear, socket
 	// Already darkened above
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
-block((c, e) => {  // Less common gear
+filter.block((c, e) => {  // Less common gear
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
@@ -120,7 +112,7 @@ block((c, e) => {  // Less common gear
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
-block((c, e) => {
+filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
@@ -129,7 +121,7 @@ block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.RAINDROP);
 });
 // Rare
-block((c, e) => {
+filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR,
 		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
@@ -138,7 +130,7 @@ block((c, e) => {
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.HOUSE);
 });
-block((c, e) => {
+filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
@@ -147,7 +139,7 @@ block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.RAINDROP);
 });
 // Unique
-block((c, e) => {
+filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR,
 		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
@@ -158,7 +150,7 @@ block((c, e) => {
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.HOUSE);
 });
-block((c, e) => {
+filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
@@ -170,14 +162,14 @@ block((c, e) => {
 });
 
 // Currencies - https://docs.google.com/spreadsheets/d/1Cq80pjKnWF5-FmhQd1TLcWhdpivaRaSKhMGz_I4VgG4
-block((c, e) => { // Gold
+filter.block((c, e) => { // Gold
 	c.names = new Comparison(new StringList("Gold"));
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 	c.count = new Comparison(50, Comparison.OPERATOR.LT);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
-block((c, e) => {
+filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Gold"));
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 	c.count = new Comparison(200, Comparison.OPERATOR.LT);
@@ -185,7 +177,7 @@ block((c, e) => {
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
-block((c, e) => {
+filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Gold"));
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 
@@ -193,20 +185,20 @@ block((c, e) => {
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
-block((c, e) => { // Essences
+filter.block((c, e) => { // Essences
 	c.names = new Comparison(new StringList("Essence of "), Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.CIRCLE);
 });
-block((c, e) => { // Other
+filter.block((c, e) => { // Other
 	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
-block((c, e) => {
+filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Regal Orb", "Exalted Orb", "Orb of Alchemy",
 		"Chaos Orb", "Vaal Orb", "Artificer's Orb", "Lesser Jeweller's Orb",
 		"Blacksmith's Whetstone", "Arcanist's Etcher", "Armourer's Scrap", "Gemcutter's Prism",
@@ -217,7 +209,7 @@ block((c, e) => {
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.CROSS);
 });
-block((c, e) => {
+filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Orb of Annulment", "Orb of Chance", "Divine Orb",
 		"Mirror of Kalandra", "Greater Jeweller's Orb", "Perfect Jeweller's Orb"));
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
@@ -228,7 +220,7 @@ block((c, e) => {
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.ROSE, MapEffect.ICON.STAR);
 });
-block((c, e) => {
+filter.block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
@@ -236,7 +228,7 @@ block((c, e) => {
 });
 
 // Gems
-block((c, e) => {
+filter.block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.GEM));
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
@@ -244,7 +236,7 @@ block((c, e) => {
 });
 
 // Runes
-block((c, e) => {
+filter.block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.RUNE));
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
@@ -252,7 +244,7 @@ block((c, e) => {
 });
 
 // Fade: Normal unused weapons or any normal armour, with no quality/sockets
-block((c, e) => {
+filter.block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.noQualitySocketless();
@@ -261,7 +253,7 @@ block((c, e) => {
 });
 
 // Fade: Magic weapons we don't use, with no quality/sockets
-block((c, e) => {
+filter.block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_UNUSED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.noQualitySocketless();
@@ -270,7 +262,7 @@ block((c, e) => {
 });
 
 // Fade: Magic armour we don't use (no energy shield), with no quality/sockets
-block((c, e) => {
+filter.block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.noQualitySocketless();
@@ -280,7 +272,7 @@ block((c, e) => {
 });
 
 // Fade: Bad normal/magic flasks, with no quality
-block((c, e) => {
+filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
 		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
 		"Grand Life Flask", "Grand Mana Flask"));
@@ -291,6 +283,4 @@ block((c, e) => {
 	e.fade();
 });
 
-// Save
-Saver.save(spans, "./build/Cloud.filter");
-console.log("☁");
+filter.save();
