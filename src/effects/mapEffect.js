@@ -22,7 +22,7 @@ export class MapEffect {
 		RAINDROP: "Raindrop",
 		STAR: "Star",
 		// SQUARE: "Square",
-		// TRIANGLE: "Triangle"
+		TRIANGLE: "Triangle"
 	};
 
 	size;

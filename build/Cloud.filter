@@ -184,6 +184,14 @@ Show
 	MinimapIcon 1 Pink Circle
 
 Show
+	BaseType == "Bronze Key" "Silver Key" "Gold Key"
+	Class == "Stackable Currency"
+
+	SetFontSize 39
+	SetBackgroundColor 0 0 0 255
+	MinimapIcon 0 Green Triangle
+
+Show
 	BaseType == "Scroll of Wisdom" "Transmutation Shard"
 	Class == "Stackable Currency"
 

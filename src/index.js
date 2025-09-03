@@ -192,6 +192,14 @@ filter.block((c, e) => { // Essences
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.CIRCLE);
 });
+filter.block((c, e) => { // Trial keys (minimap)
+	c.names = new Comparison(new StringList("Bronze Key", "Silver Key", "Gold Key"));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.TRIANGLE);
+});
 filter.block((c, e) => { // Other
 	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
