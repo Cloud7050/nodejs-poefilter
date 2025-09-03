@@ -68,6 +68,16 @@ Show
 	Continue
 
 Show
+	Class == Relics
+	Rarity == Normal
+
+	SetFontSize 39
+	SetBackgroundColor 0 0 0 255
+	MinimapIcon 0 White Triangle
+
+	Continue
+
+Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
 	Rarity == Magic
 	Quality == 0
@@ -114,6 +124,16 @@ Show
 	Continue
 
 Show
+	Class == Relics
+	Rarity == Magic
+
+	SetFontSize 39
+	SetBackgroundColor 0 0 0 255
+	MinimapIcon 0 Blue Triangle
+
+	Continue
+
+Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Rare
 
@@ -132,9 +152,20 @@ Show
 	Continue
 
 Show
+	Class == Relics
+	Rarity == Rare
+
+	SetFontSize 39
+	SetBackgroundColor 0 0 0 255
+	MinimapIcon 0 Yellow Triangle
+
+	Continue
+
+Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Unique
 
+	SetFontSize 45
 	SetBackgroundColor 60 40 20 255
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
@@ -146,6 +177,7 @@ Show
 	Class == Jewels
 	Rarity == Unique
 
+	SetFontSize 45
 	SetBackgroundColor 60 40 20 255
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
@@ -154,16 +186,28 @@ Show
 	Continue
 
 Show
+	Class == Relics
+	Rarity == Unique
+
+	SetFontSize 45
+	SetBackgroundColor 60 40 20 255
+	PlayEffect Brown
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Brown Triangle
+
+	Continue
+
+Show
 	BaseType == Gold
 	Class == "Stackable Currency"
-	StackSize < 50
+	StackSize < 100
 
 	MinimapIcon 2 Green Kite
 
 Show
 	BaseType == Gold
 	Class == "Stackable Currency"
-	StackSize < 200
+	StackSize < 300
 
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Green Kite

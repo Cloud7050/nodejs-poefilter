@@ -8,7 +8,6 @@ export class ConditionSet {
 		GEM: new StringList("Skill Gems", "Spirit Gems", "Support Gems", "Uncut Skill Gems",
 			"Uncut Spirit Gems", "Uncut Support Gems"),
 		RUNE: new StringList("Socketable"),
-		RELIC: new StringList("Relics"),
 		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items" Waystones',
 		// OTHER: new StringList("Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Inscribed Ultimatums" Omens "Pinnacle Keys" Strongboxes Tablets "Trial Coins"',
 		QUEST: new StringList("Quest Items"),
@@ -21,7 +20,8 @@ export class ConditionSet {
 		ARMOUR: new StringList("Body Armours", "Boots", "Gloves", "Helmets"),
 		JEWELLERY: new StringList("Amulets", "Belts", "Rings"),
 		CHARGED: new StringList("Charms", "Life Flasks", "Mana Flasks"),
-		JEWEL: new StringList("Jewels")
+		JEWEL: new StringList("Jewels"),
+		RELIC: new StringList("Relics")
 	};
 	static RARITY = {
 		NORMAL: "Normal",
