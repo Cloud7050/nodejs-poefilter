@@ -52,6 +52,7 @@ block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
 block((c, e) => {
@@ -59,6 +60,7 @@ block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.RAINDROP);
 });
 block((c, e) => { // Magics
@@ -73,6 +75,7 @@ block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
 block((c, e) => {
@@ -80,6 +83,7 @@ block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.RAINDROP);
 });
 block((c, e) => { // Rare
@@ -88,6 +92,7 @@ block((c, e) => { // Rare
 		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.HOUSE);
 });
 block((c, e) => {
@@ -95,6 +100,7 @@ block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.RAINDROP);
 });
 block((c, e) => { // Unique
@@ -103,6 +109,7 @@ block((c, e) => { // Unique
 		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_ORANGE;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.HOUSE);
 });
 block((c, e) => {
@@ -110,7 +117,8 @@ block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
-	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BROWN, MapEffect.ICON.RAINDROP);
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_ORANGE;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.RAINDROP);
 });
 
 // Currencies
@@ -125,6 +133,7 @@ block((c, e) => {
 	c.names = new Comparison(new StringList("Gold"));
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
 block((c, e) => { // Other
@@ -137,6 +146,7 @@ block((c, e) => { // Other
 block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.GEM));
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
 });
 
@@ -144,6 +154,7 @@ block((c, e) => {
 block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.RUNE));
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.RAINDROP);
 });
 

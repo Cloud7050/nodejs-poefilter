@@ -31,6 +31,7 @@ Show
 	Class == Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Normal
 
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 White UpsideDownHouse
 
 	Continue
@@ -39,6 +40,7 @@ Show
 	Class == Jewels
 	Rarity == Normal
 
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 White Raindrop
 
 	Continue
@@ -55,6 +57,7 @@ Show
 	Class == Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Magic
 
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
@@ -63,6 +66,7 @@ Show
 	Class == Jewels
 	Rarity == Magic
 
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Blue Raindrop
 
 	Continue
@@ -71,6 +75,7 @@ Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Rare
 
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 	Continue
@@ -79,6 +84,7 @@ Show
 	Class == Jewels
 	Rarity == Rare
 
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Yellow Raindrop
 
 	Continue
@@ -87,6 +93,7 @@ Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Unique
 
+	SetBackgroundColor 60 40 20 255
 	MinimapIcon 0 Brown UpsideDownHouse
 
 	Continue
@@ -95,7 +102,8 @@ Show
 	Class == Jewels
 	Rarity == Unique
 
-	MinimapIcon 1 Brown Raindrop
+	SetBackgroundColor 60 40 20 255
+	MinimapIcon 0 Brown Raindrop
 
 	Continue
 
@@ -110,6 +118,7 @@ Show
 	BaseType == Gold
 	Class == "Stackable Currency"
 
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Green Kite
 
 Show
@@ -120,11 +129,13 @@ Show
 Show
 	Class == "Skill Gems" "Spirit Gems" "Support Gems" "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
 
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Cyan Raindrop
 
 Show
 	Class == Socketable
 
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Pink Raindrop
 
 Show
