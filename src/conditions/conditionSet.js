@@ -4,15 +4,7 @@ import { StringList } from "./stringList.js";
 export class ConditionSet {
 	// https://poe2db.tw/us/Items
 	static CATEGORY = {
-		CURRENCY: new StringList("Stackable Currency"),
-		GEM: new StringList("Skill Gems", "Spirit Gems", "Support Gems", "Uncut Skill Gems",
-			"Uncut Spirit Gems", "Uncut Support Gems"),
-		RUNE: new StringList("Socketable"),
-		COIN: new StringList("Trial Coins"),
-		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items" Waystones',
-		// OTHER: new StringList("Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Inscribed Ultimatums" Omens "Pinnacle Keys" Strongboxes Tablets',
-		QUEST: new StringList("Quest Items"),
-
+		// Rarity
 		WEAPON_USED: new StringList("Fishing Rods", "Sceptres", "Wands"), // Witch weapons
 		WEAPON_UNUSED: new StringList("Bows", "Bucklers", "Claws", "Crossbows", "Daggers", "Flails",
 			"Foci", "One Hand Axes", "One Hand Maces", "One Hand Swords", "Quarterstaves",
@@ -22,7 +14,17 @@ export class ConditionSet {
 		JEWELLERY: new StringList("Amulets", "Belts", "Rings"),
 		CHARGED: new StringList("Charms", "Life Flasks", "Mana Flasks"),
 		JEWEL: new StringList("Jewels"),
-		RELIC: new StringList("Relics")
+		RELIC: new StringList("Relics"),
+
+		// No rarity
+		CURRENCY: new StringList("Stackable Currency"),
+		GEM: new StringList("Skill Gems", "Spirit Gems", "Support Gems", "Uncut Skill Gems",
+			"Uncut Spirit Gems", "Uncut Support Gems"),
+		RUNE: new StringList("Socketable"),
+		COIN: new StringList("Trial Coins"),
+		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items" Waystones',
+		QUEST: new StringList("Quest Items"),
+		// OTHER: new StringList("Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Inscribed Ultimatums" Omens "Pinnacle Keys" Strongboxes Tablets'
 	};
 	static RARITY = {
 		NORMAL: "Normal",
