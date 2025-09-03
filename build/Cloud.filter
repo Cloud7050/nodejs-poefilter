@@ -198,6 +198,47 @@ Show
 	Continue
 
 Show
+	Class == Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
+	Rarity == Normal
+	Quality == 0
+	Sockets == 0
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 170
+	MinimapIcon -1
+
+Show
+	Class == Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
+	Rarity == Magic
+	Quality == 0
+	Sockets == 0
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 170
+	MinimapIcon -1
+
+Show
+	Class == "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
+	Quality == 0
+	Sockets == 0
+	BaseEnergyShield == 0
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 170
+	MinimapIcon -1
+
+Show
+	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask"
+	Class == Charms "Life Flasks" "Mana Flasks"
+	Rarity <= Magic
+	Quality == 0
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 170
+	MinimapIcon -1
+
+Show
 	BaseType == Gold
 	Class == "Stackable Currency"
 	StackSize < 100
@@ -288,44 +329,3 @@ Show
 	Class == "Quest Items"
 
 	SetBackgroundColor 0 0 0 255
-
-Show
-	Class == Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
-	Rarity == Normal
-	Quality == 0
-	Sockets == 0
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	MinimapIcon -1
-
-Show
-	Class == Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
-	Rarity == Magic
-	Quality == 0
-	Sockets == 0
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	MinimapIcon -1
-
-Show
-	Class == "Body Armours" Boots Gloves Helmets
-	Rarity == Magic
-	Quality == 0
-	Sockets == 0
-	BaseEnergyShield == 0
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	MinimapIcon -1
-
-Show
-	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask"
-	Class == Charms "Life Flasks" "Mana Flasks"
-	Rarity <= Magic
-	Quality == 0
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
-	MinimapIcon -1

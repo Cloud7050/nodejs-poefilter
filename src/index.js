@@ -201,6 +201,46 @@ filter.block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.TRIANGLE);
 });
 
+// Fade: Normal unused weapons or any normal armour, with no quality/sockets
+filter.block((c, e) => {
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+	c.noQualitySocketless();
+
+	e.fade();
+});
+
+// Fade: Magic weapons we don't use, with no quality/sockets
+filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.WEAPON_UNUSED);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.noQualitySocketless();
+
+	e.fade();
+});
+
+// Fade: Magic armour we don't use (no energy shield), with no quality/sockets
+filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.noQualitySocketless();
+	c.energyShield = new Comparison(0);
+
+	e.fade();
+});
+
+// Fade: Bad normal/magic flasks, with no quality
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
+		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
+		"Grand Life Flask", "Grand Mana Flask"));
+	c.category = new Comparison(CATEGORY.CHARGED);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+	c.noQuality();
+
+	e.fade();
+});
+
 // Currencies - https://docs.google.com/spreadsheets/d/1Cq80pjKnWF5-FmhQd1TLcWhdpivaRaSKhMGz_I4VgG4
 filter.block((c, e) => { // Gold
 	c.names = new Comparison(new StringList("Gold"));
@@ -305,46 +345,6 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.QUEST);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
-});
-
-// Fade: Normal unused weapons or any normal armour, with no quality/sockets
-filter.block((c, e) => {
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
-	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
-	c.noQualitySocketless();
-
-	e.fade();
-});
-
-// Fade: Magic weapons we don't use, with no quality/sockets
-filter.block((c, e) => {
-	c.category = new Comparison(CATEGORY.WEAPON_UNUSED);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
-	c.noQualitySocketless();
-
-	e.fade();
-});
-
-// Fade: Magic armour we don't use (no energy shield), with no quality/sockets
-filter.block((c, e) => {
-	c.category = new Comparison(CATEGORY.ARMOUR);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
-	c.noQualitySocketless();
-	c.energyShield = new Comparison(0);
-
-	e.fade();
-});
-
-// Fade: Bad normal/magic flasks, with no quality
-filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
-		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
-		"Grand Life Flask", "Grand Mana Flask"));
-	c.category = new Comparison(CATEGORY.CHARGED);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
-	c.noQuality();
-
-	e.fade();
 });
 
 filter.save();
