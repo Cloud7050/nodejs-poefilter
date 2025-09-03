@@ -10,6 +10,7 @@ export class EffectSet {
 	static TEXT_SIZE = {
 		SMALLEST: "18",
 		DEFAULT: "32",
+		LARGE: "39",
 		LARGEST: "45"
 	};
 	static RGB = {
@@ -40,7 +41,7 @@ export class EffectSet {
 		// BACKGROUND_NAVY: "20 20 40 255",
 		// BACKGROUND_GREEN: "20 40 20 255",
 		// BACKGROUND_TEAL: "20 40 40 255",
-		// BACKGROUND_CRIMSON: "40 20 20 255",
+		BACKGROUND_CRIMSON: "40 20 20 255",
 		// BACKGROUND_PURPLE: "40 20 40 255",
 		BACKGROUND_ORANGE: "60 40 20 255",
 		// BACKGROUND_SILVER: "40 40 40 255",

@@ -12,7 +12,7 @@ export class MapEffect {
 	static COLOUR = COLOUR;
 	static ICON = {
 		CIRCLE: "Circle",
-		// CROSS: "Cross",
+		CROSS: "Cross",
 		// DIAMOND: "Diamond",
 		// HEXAGON: "Hexagon",
 		HOUSE: "UpsideDownHouse",
@@ -20,7 +20,7 @@ export class MapEffect {
 		// MOON: "Moon",
 		// PENTAGON: "Pentagon",
 		RAINDROP: "Raindrop",
-		// STAR: "Star",
+		STAR: "Star",
 		// SQUARE: "Square",
 		// TRIANGLE: "Triangle"
 	};

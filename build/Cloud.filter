@@ -163,9 +163,18 @@ Show
 Show
 	BaseType == Gold
 	Class == "Stackable Currency"
+	StackSize < 200
 
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Green Kite
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+
+	SetFontSize 39
+	SetBackgroundColor 0 0 0 255
+	MinimapIcon 0 Green Kite
 
 Show
 	BaseType = "Essence of the "
@@ -179,6 +188,24 @@ Show
 	Class == "Stackable Currency"
 
 	MinimapIcon 2 Green Circle
+
+Show
+	BaseType == "Regal Orb" "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Lesser Jeweller's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher" "Armourer's Scrap" "Gemcutter's Prism" "Glassblower's Bauble" "Chance Shard"
+	Class == "Stackable Currency"
+
+	SetFontSize 39
+	SetBackgroundColor 0 0 0 255
+	MinimapIcon 0 Green Cross
+
+Show
+	BaseType == "Orb of Annulment" "Orb of Chance" "Divine Orb" "Mirror of Kalandra" "Greater Jeweller's Orb" "Perfect Jeweller's Orb"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetBackgroundColor 40 20 20 255
+	PlayEffect Red
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Red Star
 
 Show
 	Class == "Stackable Currency"

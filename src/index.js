@@ -169,7 +169,7 @@ block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.RAINDROP);
 });
 
-// Currencies
+// Currencies - https://docs.google.com/spreadsheets/d/1Cq80pjKnWF5-FmhQd1TLcWhdpivaRaSKhMGz_I4VgG4
 block((c, e) => { // Gold
 	c.names = new Comparison(new StringList("Gold"));
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
@@ -180,9 +180,18 @@ block((c, e) => { // Gold
 block((c, e) => {
 	c.names = new Comparison(new StringList("Gold"));
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+	c.count = new Comparison(200, Comparison.OPERATOR.LT);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
+});
+block((c, e) => {
+	c.names = new Comparison(new StringList("Gold"));
+	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+
+	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
 block((c, e) => { // Essences
 	c.names = new Comparison(new StringList("Essence of the "), Comparison.OPERATOR.EQUAL);
@@ -196,6 +205,28 @@ block((c, e) => { // Other
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
+});
+block((c, e) => {
+	c.names = new Comparison(new StringList("Regal Orb", "Exalted Orb", "Orb of Alchemy",
+		"Chaos Orb", "Vaal Orb", "Artificer's Orb", "Lesser Jeweller's Orb",
+		"Blacksmith's Whetstone", "Arcanist's Etcher", "Armourer's Scrap", "Gemcutter's Prism",
+		"Glassblower's Bauble", "Chance Shard"));
+	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+
+	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.CROSS);
+});
+block((c, e) => {
+	c.names = new Comparison(new StringList("Orb of Annulment", "Orb of Chance", "Divine Orb",
+		"Mirror of Kalandra", "Greater Jeweller's Orb", "Perfect Jeweller's Orb"));
+	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+
+	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_CRIMSON;
+	e.beamColour = EffectSet.COLOUR.ROSE;
+	e.sound = EffectSet.SOUND.WAH;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.ROSE, MapEffect.ICON.STAR);
 });
 block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));

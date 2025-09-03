@@ -6,7 +6,7 @@ export const COLOUR = {
 	BLUE: "Blue",
 	LIME: "Green",
 	CYAN: "Cyan",
-	// ROSE: "Red",
+	ROSE: "Red",
 	PINK: "Pink",
 	YELLOW: "Yellow",
 	BROWN: "Brown"

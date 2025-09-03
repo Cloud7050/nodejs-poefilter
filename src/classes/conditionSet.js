@@ -2,7 +2,7 @@ import { Comparison } from "./comparison.js";
 import { StringList } from "./stringList.js";
 
 export class ConditionSet {
-	// https://poe2db.tw/us/Items. Matches case-sensitive substrings
+	// https://poe2db.tw/us/Items
 	static CATEGORY = {
 		CURRENCY: new StringList("Stackable Currency"),
 		GEM: new StringList("Skill Gems", "Spirit Gems", "Support Gems", "Uncut Skill Gems",
