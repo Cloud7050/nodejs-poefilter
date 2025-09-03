@@ -154,6 +154,7 @@ block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_ORANGE;
+	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.HOUSE);
 });
 block((c, e) => {
@@ -162,6 +163,7 @@ block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_ORANGE;
+	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.RAINDROP);
 });
 

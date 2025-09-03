@@ -1,5 +1,5 @@
 Show
-	
+	#
 
 	MinimapIcon 2 Pink Kite
 
@@ -136,6 +136,7 @@ Show
 	Rarity == Unique
 
 	SetBackgroundColor 60 40 20 255
+	PlayEffect Brown
 	MinimapIcon 0 Brown UpsideDownHouse
 
 	Continue
@@ -145,6 +146,7 @@ Show
 	Rarity == Unique
 
 	SetBackgroundColor 60 40 20 255
+	PlayEffect Brown
 	MinimapIcon 0 Brown Raindrop
 
 	Continue

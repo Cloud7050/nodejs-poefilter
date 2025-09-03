@@ -59,8 +59,10 @@ export class ConditionSet {
 
 		if (this.count !== null) spans.push(this.count.export("StackSize"));
 
-		// Force a blank line to represent where the set goes
-		if (spans.length === 0) return [""];
+		if (spans.length === 0) {
+			// Force empty line to represent where the set goes
+			return ["#"];
+		}
 		return spans;
 	}
 

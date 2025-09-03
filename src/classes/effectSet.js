@@ -62,6 +62,7 @@ export class EffectSet {
 	backgroundColour = null;
 	outlineColour = null;
 
+	beamColour = null;
 	mapEffect = null; // MapEffect
 
 	getBlockStart() {
@@ -71,22 +72,17 @@ export class EffectSet {
 	export() {
 		let spans = [];
 
-		if (this.textSize !== null) {
-			spans.push(`SetFontSize ${this.textSize}`);
-		}
-		if (this.backgroundColour !== null) {
-			spans.push(`SetBackgroundColor ${this.backgroundColour}`);
-		}
-		if (this.outlineColour !== null) {
-			spans.push(`SetBorderColor ${this.outlineColour}`);
-		}
+		if (this.textSize !== null) spans.push(`SetFontSize ${this.textSize}`);
+		if (this.backgroundColour !== null) spans.push(`SetBackgroundColor ${this.backgroundColour}`);
+		if (this.outlineColour !== null) spans.push(`SetBorderColor ${this.outlineColour}`);
 
-		if (this.mapEffect !== null) {
-			spans.push(this.mapEffect.export());
-		}
+		if (this.beamColour !== null) spans.push(`PlayEffect ${this.beamColour}`);
+		if (this.mapEffect !== null) spans.push(this.mapEffect.export());
 
-		// Force a blank line to represent where the set goes
-		if (spans.length === 0) return [""];
+		if (spans.length === 0) {
+			// Force empty line to represent where the set goes
+			return ["#"];
+		}
 		return spans;
 	}
 
