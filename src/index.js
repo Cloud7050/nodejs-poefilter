@@ -137,9 +137,16 @@ block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
 block((c, e) => { // Other
+	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
+});
+block((c, e) => {
+	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
 
 // Gems
