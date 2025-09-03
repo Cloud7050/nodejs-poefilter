@@ -5,9 +5,9 @@ export class Comparison {
 		EQUAL: "=",
 		NE: "!", // Or "!="
 		LTE: "<=",
-		MTE: ">=",
+		GTE: ">=",
 		LT: "<",
-		MT: ">",
+		GT: ">",
 		EXACT: "=="
 	};
 
