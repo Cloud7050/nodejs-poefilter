@@ -8,8 +8,9 @@ export class ConditionSet {
 		GEM: new StringList("Skill Gems", "Spirit Gems", "Support Gems", "Uncut Skill Gems",
 			"Uncut Spirit Gems", "Uncut Support Gems"),
 		RUNE: new StringList("Socketable"),
+		COIN: new StringList("Trial Coins"),
 		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items" Waystones',
-		// OTHER: new StringList("Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Inscribed Ultimatums" Omens "Pinnacle Keys" Strongboxes Tablets "Trial Coins"',
+		// OTHER: new StringList("Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Inscribed Ultimatums" Omens "Pinnacle Keys" Strongboxes Tablets',
 		QUEST: new StringList("Quest Items"),
 
 		WEAPON_USED: new StringList("Fishing Rods", "Sceptres", "Wands"), // Witch weapons

@@ -291,6 +291,15 @@ filter.block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.RAINDROP);
 });
 
+// Trial coins
+filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.COIN);
+
+	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.PINK, MapEffect.ICON.TRIANGLE);
+});
+
 // Quest
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.QUEST);

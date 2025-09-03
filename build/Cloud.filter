@@ -278,6 +278,13 @@ Show
 	MinimapIcon 1 Pink Raindrop
 
 Show
+	Class == "Trial Coins"
+
+	SetFontSize 39
+	SetBackgroundColor 0 0 0 255
+	MinimapIcon 0 Pink Triangle
+
+Show
 	Class == "Quest Items"
 
 	SetBackgroundColor 0 0 0 255
