@@ -18,19 +18,19 @@ filter.block((c, e) => {
 });
 
 // Default: Outlines
-filter.block((c, e) => { // Quality
-	c.continue();
-	c.hasQuality();
-
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
-	e.outlineColour = EffectSet.RGB.MAGIC;
-});
 filter.block((c, e) => { // Socket
 	c.continue();
 	c.hasSocket();
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.NORMAL;
+});
+filter.block((c, e) => { // Quality
+	c.continue();
+	c.hasQuality();
+
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.outlineColour = EffectSet.RGB.MAGIC;
 });
 
 // Default: Minimap by rarity. Quality/socket should also be medium

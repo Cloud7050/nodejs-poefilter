@@ -6,18 +6,18 @@ Show
 	Continue
 
 Show
-	Quality > 0
-
-	SetBackgroundColor 0 0 0 255
-	SetBorderColor 136 136 255
-
-	Continue
-
-Show
 	Sockets > 0
 
 	SetBackgroundColor 0 0 0 255
 	SetBorderColor 200 200 200
+
+	Continue
+
+Show
+	Quality > 0
+
+	SetBackgroundColor 0 0 0 255
+	SetBorderColor 136 136 255
 
 	Continue
 
