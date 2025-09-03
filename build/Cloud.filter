@@ -6,6 +6,20 @@ Show
 	Continue
 
 Show
+	Quality == 0
+
+	SetBorderColor 136 136 255
+
+	Continue
+
+Show
+	Sockets == 0
+
+	SetBorderColor 200 200 200
+
+	Continue
+
+Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
 	Rarity == Normal
 

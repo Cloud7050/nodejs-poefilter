@@ -25,6 +25,20 @@ block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.PINK, MapEffect.ICON.KITE);
 });
 
+// Default: Outlines
+block((c, e) => { // Quality
+	c.continue();
+	c.hasQuality();
+
+	e.outlineColour = EffectSet.RGB.MAGIC;
+});
+block((c, e) => { // Socket
+	c.continue();
+	c.hasSocket();
+
+	e.outlineColour = EffectSet.RGB.NORMAL;
+});
+
 // Minimap by rarity
 block((c, e) => { // Normals
 	c.continue();

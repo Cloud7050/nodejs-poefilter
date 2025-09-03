@@ -12,6 +12,27 @@ export class EffectSet {
 		DEFAULT: "32",
 		LARGEST: "45"
 	};
+	static RGB = {
+		NORMAL: "200 200 200",
+		MAGIC: "136 136 255",
+
+		// BLACK: "0 0 0",
+		// NAVY: "0 0 170",
+		// GREEN: "0 170 0",
+		// TEAL: "0 170 170",
+		// CRIMSON: "170 0 0",
+		// PURPLE: "170 0 170",
+		// ORANGE: "255 170 0",
+		// SILVER: "170 170 170",
+		// GREY: "85 85 85",
+		// BLUE: "85 85 255",
+		// LIME: "85 255 85",
+		// CYAN: "85 255 255",
+		// ROSE: "255 85 85",
+		// PINK: "255 85 255",
+		// YELLOW: "255 255 85",
+		// WHITE: "255 255 255"
+	};
 	// Default alpha is 240
 	static RGBA = {
 		// BACKGROUND_BLACK: "0 0 0 255",
@@ -39,6 +60,7 @@ export class EffectSet {
 
 	textSize = null;
 	backgroundColour = null;
+	outlineColour = null;
 
 	mapEffect = null; // MapEffect
 
@@ -54,6 +76,9 @@ export class EffectSet {
 		}
 		if (this.backgroundColour !== null) {
 			spans.push(`SetBackgroundColor ${this.backgroundColour}`);
+		}
+		if (this.outlineColour !== null) {
+			spans.push(`SetBorderColor ${this.outlineColour}`);
 		}
 
 		if (this.mapEffect !== null) {

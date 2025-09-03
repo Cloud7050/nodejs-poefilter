@@ -65,8 +65,16 @@ export class ConditionSet {
 		return this;
 	}
 
+	hasQuality() {
+		this.quality = new Comparison(0, Comparison.OPERATOR.GT);
+		return this;
+	}
 	noQuality() {
 		this.quality = new Comparison(0);
+		return this;
+	}
+	hasSocket() {
+		this.sockets = new Comparison(0, Comparison.OPERATOR.GT);
 		return this;
 	}
 	socketless() {
