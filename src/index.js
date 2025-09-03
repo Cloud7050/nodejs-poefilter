@@ -194,7 +194,7 @@ block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
 block((c, e) => { // Essences
-	c.names = new Comparison(new StringList("Essence of the "), Comparison.OPERATOR.EQUAL);
+	c.names = new Comparison(new StringList("Essence of "), Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;

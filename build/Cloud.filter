@@ -177,7 +177,7 @@ Show
 	MinimapIcon 0 Green Kite
 
 Show
-	BaseType = "Essence of the "
+	BaseType = "Essence of "
 	Class == "Stackable Currency"
 
 	SetBackgroundColor 0 0 0 255
