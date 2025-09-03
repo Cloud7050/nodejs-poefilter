@@ -10,7 +10,7 @@ export class ConditionSet {
 		RUNE: new StringList("Socketable"),
 		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items" Waystones',
 		// OTHER: new StringList("Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Inscribed Ultimatums" Omens "Pinnacle Keys" Relics Strongboxes Tablets "Trial Coins"',
-		// QUEST: new StringList("Quest Items"',
+		QUEST: new StringList("Quest Items"),
 
 		WEAPON_USED: new StringList("Fishing Rods", "Sceptres", "Wands"), // Witch weapons
 		WEAPON_UNUSED: new StringList("Bows", "Bucklers", "Claws", "Crossbows", "Daggers", "Flails",

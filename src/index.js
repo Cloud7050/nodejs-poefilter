@@ -71,7 +71,7 @@ filter.block((c, e) => { // Less common gear
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
+	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
@@ -114,7 +114,7 @@ filter.block((c, e) => {  // Less common gear
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
+	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
@@ -132,7 +132,7 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
+	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
@@ -152,7 +152,7 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.JEWEL));
+	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_ORANGE;
@@ -164,14 +164,14 @@ filter.block((c, e) => {
 // Currencies - https://docs.google.com/spreadsheets/d/1Cq80pjKnWF5-FmhQd1TLcWhdpivaRaSKhMGz_I4VgG4
 filter.block((c, e) => { // Gold
 	c.names = new Comparison(new StringList("Gold"));
-	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(50, Comparison.OPERATOR.LT);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Gold"));
-	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(200, Comparison.OPERATOR.LT);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
@@ -179,7 +179,7 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Gold"));
-	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
@@ -187,14 +187,14 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => { // Essences
 	c.names = new Comparison(new StringList("Essence of "), Comparison.OPERATOR.EQUAL);
-	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.CIRCLE);
 });
 filter.block((c, e) => { // Other
 	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));
-	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
@@ -203,7 +203,7 @@ filter.block((c, e) => {
 		"Chaos Orb", "Vaal Orb", "Artificer's Orb", "Lesser Jeweller's Orb",
 		"Blacksmith's Whetstone", "Arcanist's Etcher", "Armourer's Scrap", "Gemcutter's Prism",
 		"Glassblower's Bauble", "Chance Shard"));
-	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
@@ -212,7 +212,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Orb of Annulment", "Orb of Chance", "Divine Orb",
 		"Mirror of Kalandra", "Greater Jeweller's Orb", "Perfect Jeweller's Orb"));
-	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_CRIMSON;
@@ -221,7 +221,7 @@ filter.block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.ROSE, MapEffect.ICON.STAR);
 });
 filter.block((c, e) => {
-	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
@@ -229,7 +229,7 @@ filter.block((c, e) => {
 
 // Gems
 filter.block((c, e) => {
-	c.category = new Comparison(new StringList(CATEGORY.GEM));
+	c.category = new Comparison(CATEGORY.GEM);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
@@ -237,10 +237,17 @@ filter.block((c, e) => {
 
 // Runes
 filter.block((c, e) => {
-	c.category = new Comparison(new StringList(CATEGORY.RUNE));
+	c.category = new Comparison(CATEGORY.RUNE);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.RAINDROP);
+});
+
+// Quest
+filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.QUEST);
+
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 });
 
 // Fade: Normal unused weapons or any normal armour, with no quality/sockets
@@ -254,7 +261,7 @@ filter.block((c, e) => {
 
 // Fade: Magic weapons we don't use, with no quality/sockets
 filter.block((c, e) => {
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_UNUSED));
+	c.category = new Comparison(CATEGORY.WEAPON_UNUSED);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.noQualitySocketless();
 
@@ -263,7 +270,7 @@ filter.block((c, e) => {
 
 // Fade: Magic armour we don't use (no energy shield), with no quality/sockets
 filter.block((c, e) => {
-	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
+	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.noQualitySocketless();
 	c.energyShield = new Comparison(0);
@@ -276,7 +283,7 @@ filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
 		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
 		"Grand Life Flask", "Grand Mana Flask"));
-	c.category = new Comparison(new StringList(CATEGORY.CHARGED));
+	c.category = new Comparison(CATEGORY.CHARGED);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 	c.noQuality();
 
