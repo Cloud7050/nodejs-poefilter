@@ -164,6 +164,13 @@ Show
 	MinimapIcon 1 Green Kite
 
 Show
+	BaseType = "Essence of the "
+	Class == "Stackable Currency"
+
+	SetBackgroundColor 0 0 0 255
+	MinimapIcon 1 Pink Circle
+
+Show
 	BaseType == "Scroll of Wisdom" "Transmutation Shard"
 	Class == "Stackable Currency"
 

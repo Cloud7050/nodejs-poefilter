@@ -180,6 +180,13 @@ block((c, e) => {
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
+block((c, e) => { // Essences
+	c.names = new Comparison(new StringList("Essence of the "), Comparison.OPERATOR.EQUAL);
+	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
+
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.CIRCLE);
+});
 block((c, e) => { // Other
 	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));
 	c.category = new Comparison(new StringList(CATEGORY.CURRENCY));
