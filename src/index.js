@@ -155,6 +155,7 @@ block((c, e) => {
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_ORANGE;
 	e.beamColour = EffectSet.COLOUR.BROWN;
+	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.HOUSE);
 });
 block((c, e) => {
@@ -164,6 +165,7 @@ block((c, e) => {
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_ORANGE;
 	e.beamColour = EffectSet.COLOUR.BROWN;
+	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.RAINDROP);
 });
 

@@ -137,6 +137,7 @@ Show
 
 	SetBackgroundColor 60 40 20 255
 	PlayEffect Brown
+	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown UpsideDownHouse
 
 	Continue
@@ -147,6 +148,7 @@ Show
 
 	SetBackgroundColor 60 40 20 255
 	PlayEffect Brown
+	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown Raindrop
 
 	Continue

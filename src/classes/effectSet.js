@@ -55,6 +55,10 @@ export class EffectSet {
 	};
 
 	static COLOUR = COLOUR;
+	static SOUND = {
+		WAH: "WAH.mp3",
+		DISABLE: "None"
+	};
 
 	visibility = EffectSet.VISIBILITY.SHOW;
 
@@ -63,6 +67,7 @@ export class EffectSet {
 	outlineColour = null;
 
 	beamColour = null;
+	sound = null;
 	mapEffect = null; // MapEffect
 
 	getBlockStart() {
@@ -77,6 +82,7 @@ export class EffectSet {
 		if (this.outlineColour !== null) spans.push(`SetBorderColor ${this.outlineColour}`);
 
 		if (this.beamColour !== null) spans.push(`PlayEffect ${this.beamColour}`);
+		if (this.sound !== null) spans.push(`CustomAlertSound "${this.sound}"`);
 		if (this.mapEffect !== null) spans.push(this.mapEffect.export());
 
 		if (spans.length === 0) {
