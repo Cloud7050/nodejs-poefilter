@@ -8,6 +8,7 @@ Show
 Show
 	Quality == 0
 
+	SetBackgroundColor 0 0 0 255
 	SetBorderColor 136 136 255
 
 	Continue
@@ -15,6 +16,7 @@ Show
 Show
 	Sockets == 0
 
+	SetBackgroundColor 0 0 0 255
 	SetBorderColor 200 200 200
 
 	Continue
@@ -22,8 +24,28 @@ Show
 Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
 	Rarity == Normal
+	Quality == 0
+	Sockets == 0
 
 	MinimapIcon 2 White UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
+	Rarity == Normal
+	Quality == 0
+
+	MinimapIcon 1 White UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
+	Rarity == Normal
+	Sockets == 0
+
+	MinimapIcon 1 White UpsideDownHouse
 
 	Continue
 
@@ -48,8 +70,28 @@ Show
 Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
 	Rarity == Magic
+	Quality == 0
+	Sockets == 0
 
 	MinimapIcon 2 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
+	Quality == 0
+
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
+	Sockets == 0
+
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -122,9 +164,16 @@ Show
 	MinimapIcon 1 Green Kite
 
 Show
+	BaseType == "Scroll of Wisdom" "Transmutation Shard"
 	Class == "Stackable Currency"
 
 	MinimapIcon 2 Green Circle
+
+Show
+	Class == "Stackable Currency"
+
+	SetBackgroundColor 0 0 0 255
+	MinimapIcon 1 Green Circle
 
 Show
 	Class == "Skill Gems" "Spirit Gems" "Support Gems" "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"

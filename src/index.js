@@ -13,12 +13,12 @@ let spans = [];
 function block(logic) {
 	let c = new ConditionSet();
 	let e = new EffectSet();
-	let block = new Block(c, e);
+	let b = new Block(c, e);
 	logic(c, e);
-	spans.push(...block.export());
+	spans.push(...b.export());
 }
 
-// Default: Show everything on minimap
+// Default: Minimap everything
 block((c, e) => {
 	c.continue();
 
@@ -30,24 +30,46 @@ block((c, e) => { // Quality
 	c.continue();
 	c.hasQuality();
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.MAGIC;
 });
 block((c, e) => { // Socket
 	c.continue();
 	c.hasSocket();
 
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.NORMAL;
 });
 
-// Minimap by rarity
-block((c, e) => { // Normals
+// Default: Minimap by rarity. Quality/socket should also be medium
+// Normal
+block((c, e) => { // Common gear, no quality/socket
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+	c.noQualitySocketless();
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
-block((c, e) => {
+block((c, e) => { // Common gear, quality
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+	c.hasQuality();
+
+	// Already darkened above
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
+});
+block((c, e) => { // Common gear, socket
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+	c.hasSocket();
+
+	// Already darkened above
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
+});
+block((c, e) => { // Less common gear
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
@@ -63,14 +85,34 @@ block((c, e) => {
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.RAINDROP);
 });
-block((c, e) => { // Magics
+// Magic
+block((c, e) => { // Common gear, no quality/socket
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.noQualitySocketless();
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
-block((c, e) => {
+block((c, e) => { // Common gear, quality
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.hasQuality();
+
+	// Already darkened above
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
+});
+block((c, e) => { // Common gear, socket
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.hasSocket();
+
+	// Already darkened above
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
+});
+block((c, e) => {  // Less common gear
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
@@ -86,7 +128,8 @@ block((c, e) => {
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.RAINDROP);
 });
-block((c, e) => { // Rare
+// Rare
+block((c, e) => {
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR,
 		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
@@ -103,7 +146,8 @@ block((c, e) => {
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.RAINDROP);
 });
-block((c, e) => { // Unique
+// Unique
+block((c, e) => {
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR,
 		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
@@ -165,7 +209,7 @@ block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.RAINDROP);
 });
 
-// Ignoreable: Normal unused weapons or any normal armour, with no quality/sockets
+// Fade: Normal unused weapons or any normal armour, with no quality/sockets
 block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
@@ -174,7 +218,7 @@ block((c, e) => {
 	e.fade();
 });
 
-// Ignoreable: Magic weapons we don't use, with no quality/sockets
+// Fade: Magic weapons we don't use, with no quality/sockets
 block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_UNUSED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
@@ -183,7 +227,7 @@ block((c, e) => {
 	e.fade();
 });
 
-// Ignoreable: Magic armour we don't use (no energy shield), with no quality/sockets
+// Fade: Magic armour we don't use (no energy shield), with no quality/sockets
 block((c, e) => {
 	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
@@ -193,7 +237,7 @@ block((c, e) => {
 	e.fade();
 });
 
-// Ignoreable: Bad normal/magic flasks, with no quality
+// Fade: Bad normal/magic flasks, with no quality
 block((c, e) => {
 	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
 		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask"));
