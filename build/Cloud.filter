@@ -1,7 +1,7 @@
 Show
 	#
 
-	SetFontSize 25
+	SetFontSize 27
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 2 Pink Kite
 
@@ -73,7 +73,7 @@ Show
 	Class == Relics
 	Rarity == Normal
 
-	SetFontSize 39
+	SetFontSize 37
 	MinimapIcon 0 White Triangle
 
 	Continue
@@ -130,7 +130,7 @@ Show
 	Class == Relics
 	Rarity == Magic
 
-	SetFontSize 39
+	SetFontSize 37
 	MinimapIcon 0 Blue Triangle
 
 	Continue
@@ -157,7 +157,7 @@ Show
 	Class == Relics
 	Rarity == Rare
 
-	SetFontSize 39
+	SetFontSize 37
 	MinimapIcon 0 Yellow Triangle
 
 	Continue
@@ -264,7 +264,7 @@ Show
 	BaseType == Gold
 	Class == "Stackable Currency"
 
-	SetFontSize 39
+	SetFontSize 37
 	SetTextColor 200 200 200
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 85 255 85
@@ -282,7 +282,7 @@ Show
 	BaseType == "Bronze Key" "Silver Key" "Gold Key"
 	Class == "Stackable Currency"
 
-	SetFontSize 39
+	SetFontSize 37
 	MinimapIcon 0 Green Triangle
 
 Show
@@ -306,7 +306,7 @@ Show
 	BaseType == "Regal Orb" "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Lesser Jeweller's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher" "Armourer's Scrap" "Gemcutter's Prism" "Glassblower's Bauble" "Chance Shard"
 	Class == "Stackable Currency"
 
-	SetFontSize 39
+	SetFontSize 37
 	SetTextColor 255 255 119
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Green Cross
@@ -353,7 +353,7 @@ Show
 Show
 	Class == "Trial Coins"
 
-	SetFontSize 39
+	SetFontSize 37
 	SetTextColor 0 170 0
 	MinimapIcon 0 Pink Triangle
 

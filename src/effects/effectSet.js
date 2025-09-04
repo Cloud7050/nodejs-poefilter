@@ -9,9 +9,9 @@ export class EffectSet {
 
 	static TEXT_SIZE = {
 		SMALLEST: "18",
-		SMALL: "25",
+		SMALL: "27",
 		DEFAULT: "32",
-		LARGE: "39",
+		LARGE: "37",
 		LARGEST: "45"
 	};
 	static RGB = {
