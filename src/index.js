@@ -173,7 +173,8 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-	e.backgroundColour = EffectSet.RGB.DARK_ORANGE;
+	e.textColour = EffectSet.RGB.BLACK;
+	e.backgroundColour = EffectSet.RGB.UNIQUE;
 	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.HOUSE);
@@ -184,7 +185,8 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-	e.backgroundColour = EffectSet.RGB.DARK_ORANGE;
+	e.textColour = EffectSet.RGB.BLACK;
+	e.backgroundColour = EffectSet.RGB.UNIQUE;
 	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.RAINDROP);
@@ -195,7 +197,8 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-	e.backgroundColour = EffectSet.RGB.DARK_ORANGE;
+	e.textColour = EffectSet.RGB.BLACK;
+	e.backgroundColour = EffectSet.RGB.UNIQUE;
 	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.TRIANGLE);
@@ -327,8 +330,8 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-	e.textColour = EffectSet.RGB.CRIMSON;
-	e.backgroundColour = EffectSet.RGB.DARK_CRIMSON;
+	e.textColour = EffectSet.RGB.BLACK;
+	e.backgroundColour = EffectSet.RGB.ROSE;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.beamColour = EffectSet.COLOUR.ROSE;
 	e.sound = EffectSet.SOUND.WAH;

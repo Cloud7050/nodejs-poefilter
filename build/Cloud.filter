@@ -170,7 +170,8 @@ Show
 	Rarity == Unique
 
 	SetFontSize 45
-	SetBackgroundColor 60 40 20
+	SetTextColor 0 0 0
+	SetBackgroundColor 175 96 37
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown UpsideDownHouse
@@ -182,7 +183,8 @@ Show
 	Rarity == Unique
 
 	SetFontSize 45
-	SetBackgroundColor 60 40 20
+	SetTextColor 0 0 0
+	SetBackgroundColor 175 96 37
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown Raindrop
@@ -194,7 +196,8 @@ Show
 	Rarity == Unique
 
 	SetFontSize 45
-	SetBackgroundColor 60 40 20
+	SetTextColor 0 0 0
+	SetBackgroundColor 175 96 37
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown Triangle
@@ -322,8 +325,8 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 45
-	SetTextColor 170 0 0
-	SetBackgroundColor 40 20 20
+	SetTextColor 0 0 0
+	SetBackgroundColor 255 85 85
 	SetBorderColor 85 255 85
 	PlayEffect Red
 	CustomAlertSound "WAH.mp3"
