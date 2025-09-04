@@ -17,6 +17,8 @@ export class EffectSet {
 		NORMAL: "200 200 200",
 		MAGIC: "136 136 255",
 
+		GEM: "119 206 195",
+
 		// BLACK: "0 0 0",
 		// NAVY: "0 0 170",
 		// GREEN: "0 170 0",
@@ -64,6 +66,7 @@ export class EffectSet {
 	visibility = EffectSet.VISIBILITY.SHOW;
 
 	textSize = null;
+	textColour = null;
 	backgroundColour = null;
 	outlineColour = null;
 
@@ -79,6 +82,7 @@ export class EffectSet {
 		let spans = [];
 
 		if (this.textSize !== null) spans.push(`SetFontSize ${this.textSize}`);
+		if (this.textColour !== null) spans.push(`SetTextColor ${this.textColour}`);
 		if (this.backgroundColour !== null) spans.push(`SetBackgroundColor ${this.backgroundColour}`);
 		if (this.outlineColour !== null) spans.push(`SetBorderColor ${this.outlineColour}`);
 

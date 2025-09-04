@@ -317,6 +317,13 @@ filter.block((c, e) => {
 
 // Gems
 filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.GEM_UNCUT);
+
+	e.textColour = EffectSet.RGB.GEM;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
+});
+filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.GEM);
 
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;

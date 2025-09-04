@@ -307,7 +307,14 @@ Show
 	MinimapIcon 1 Green Circle
 
 Show
-	Class == "Skill Gems" "Support Gems" "Uncut Skill Gems" "Uncut Support Gems"
+	Class == "Uncut Skill Gems" "Uncut Support Gems"
+
+	SetTextColor 119 206 195
+	SetBackgroundColor 0 0 0 255
+	MinimapIcon 1 Cyan Raindrop
+
+Show
+	Class == "Skill Gems" "Support Gems"
 
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Cyan Raindrop

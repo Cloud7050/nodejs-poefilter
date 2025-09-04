@@ -18,7 +18,8 @@ export class ConditionSet {
 
 		// No rarity
 		CURRENCY: new StringList("Stackable Currency"),
-		GEM: new StringList("Skill Gems", "Support Gems", "Uncut Skill Gems", "Uncut Support Gems"),
+		GEM_UNCUT: new StringList("Uncut Skill Gems", "Uncut Support Gems"),
+		GEM: new StringList("Skill Gems", "Support Gems"),
 		RUNE: new StringList("Socketable"),
 		COIN: new StringList("Trial Coins"),
 		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items" Waystones',
