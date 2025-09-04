@@ -327,7 +327,7 @@ Show
 	MinimapIcon 1 Green Circle
 
 Show
-	Class == "Uncut Skill Gems" "Uncut Support Gems"
+	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
 
 	SetFontSize 32
 	SetTextColor 119 206 195
