@@ -21,6 +21,7 @@ export class EffectSet {
 		// UNIQUE: "175 96 37",
 
 		GEM: "119 206 195",
+		CRAFTED: "184 218 242",
 
 		// BLACK: "0 0 0",
 		// NAVY: "0 0 170",
@@ -35,7 +36,7 @@ export class EffectSet {
 		LIME: "85 255 85",
 		// CYAN: "85 255 255",
 		// ROSE: "255 85 85",
-		// PINK: "255 85 255",
+		PINK: "255 85 255",
 		// YELLOW: "255 255 85",
 		// WHITE: "255 255 255"
 	};

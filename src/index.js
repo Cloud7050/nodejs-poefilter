@@ -275,6 +275,7 @@ filter.block((c, e) => { // Essences
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.textColour = EffectSet.RGB.PINK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.CIRCLE);
 });
 filter.block((c, e) => { // Trial keys (minimap)
@@ -355,6 +356,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.RUNE);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.textColour = EffectSet.RGB.CRAFTED;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.RAINDROP);
 });
 

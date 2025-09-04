@@ -275,6 +275,7 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 32
+	SetTextColor 255 85 255
 	MinimapIcon 1 Pink Circle
 
 Show
@@ -346,6 +347,7 @@ Show
 	Class == Socketable
 
 	SetFontSize 32
+	SetTextColor 184 218 242
 	MinimapIcon 1 Pink Raindrop
 
 Show
