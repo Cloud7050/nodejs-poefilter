@@ -15,7 +15,7 @@ filter.block((c, e) => {
 	c.continue();
 
 	e.textSize = EffectSet.TEXT_SIZE.SMALL;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.backgroundColour = EffectSet.RGBA.BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.PINK, MapEffect.ICON.KITE);
 });
 
@@ -170,7 +170,7 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_ORANGE;
+	e.backgroundColour = EffectSet.RGBA.DARK_ORANGE;
 	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.HOUSE);
@@ -181,7 +181,7 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_ORANGE;
+	e.backgroundColour = EffectSet.RGBA.DARK_ORANGE;
 	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.RAINDROP);
@@ -192,7 +192,7 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_ORANGE;
+	e.backgroundColour = EffectSet.RGBA.DARK_ORANGE;
 	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.TRIANGLE);
@@ -244,7 +244,8 @@ filter.block((c, e) => { // Gold
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(100, Comparison.OPERATOR.LT);
 
-	e.textColour = EffectSet.RGB.SILVER;
+	e.textColour = EffectSet.RGB.NORMAL;
+	e.backgroundColour = EffectSet.RGBA.TRANSPARENT;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
@@ -253,7 +254,8 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(300, Comparison.OPERATOR.LT);
 
-	e.textColour = EffectSet.RGB.SILVER;
+	e.textColour = EffectSet.RGB.NORMAL;
+	e.backgroundColour = EffectSet.RGBA.TRANSPARENT;
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
@@ -263,6 +265,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textColour = EffectSet.RGB.NORMAL;
+	e.backgroundColour = EffectSet.RGBA.TRANSPARENT;
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
@@ -318,7 +321,7 @@ filter.block((c, e) => {
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 	e.textColour = EffectSet.RGB.CRIMSON;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_CRIMSON;
+	e.backgroundColour = EffectSet.RGBA.DARK_CRIMSON;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.beamColour = EffectSet.COLOUR.ROSE;
 	e.sound = EffectSet.SOUND.WAH;

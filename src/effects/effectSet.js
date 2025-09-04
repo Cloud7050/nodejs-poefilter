@@ -29,7 +29,7 @@ export class EffectSet {
 		CRIMSON: "170 0 0",
 		// PURPLE: "170 0 170",
 		// ORANGE: "255 170 0",
-		SILVER: "170 170 170",
+		// SILVER: "170 170 170",
 		// GREY: "85 85 85",
 		// BLUE: "85 85 255",
 		LIME: "85 255 85",
@@ -41,23 +41,24 @@ export class EffectSet {
 	};
 	// Default alpha is 240
 	static RGBA = {
-		BACKGROUND_BLACK: "0 0 0 255",
-		BACKGROUND_BLACK_FADED: "0 0 0 128",
-		// BACKGROUND_NAVY: "20 20 40 255",
-		// BACKGROUND_GREEN: "20 40 20 255",
-		// BACKGROUND_TEAL: "20 40 40 255",
-		BACKGROUND_CRIMSON: "40 20 20 255",
-		// BACKGROUND_PURPLE: "40 20 40 255",
-		BACKGROUND_ORANGE: "60 40 20 255",
-		// BACKGROUND_SILVER: "40 40 40 255",
-		// BACKGROUND_GREY: "20 20 20 255",
-		// BACKGROUND_BLUE: "20 20 60 255",
-		// BACKGROUND_LIME: "20 60 20 255",
-		// BACKGROUND_CYAN: "20 60 60 255",
-		// BACKGROUND_ROSE: "60 20 20 255",
-		// BACKGROUND_PINK: "60 20 60 255",
-		// BACKGROUND_YELLOW: "60 60 20 255",
-		// BACKGROUND_WHITE: "60 60 60 255"
+		BLACK: "0 0 0 255",
+		BLACK_TRANSLUCENT: "0 0 0 128",
+		TRANSPARENT: "0 0 0 0",
+		// DARK_NAVY: "20 20 40 255",
+		// DARK_GREEN: "20 40 20 255",
+		// DARK_TEAL: "20 40 40 255",
+		DARK_CRIMSON: "40 20 20 255",
+		// DARK_PURPLE: "40 20 40 255",
+		DARK_ORANGE: "60 40 20 255",
+		// DARK_SILVER: "40 40 40 255",
+		// DARK_GREY: "20 20 20 255",
+		// DARK_BLUE: "20 20 60 255",
+		// DARK_LIME: "20 60 20 255",
+		// DARK_CYAN: "20 60 60 255",
+		// DARK_ROSE: "60 20 20 255",
+		// DARK_PINK: "60 20 60 255",
+		// DARK_YELLOW: "60 60 20 255",
+		// DARK_WHITE: "60 60 60 255"
 	};
 
 	static COLOUR = COLOUR;
@@ -103,7 +104,7 @@ export class EffectSet {
 	// Make less prominent, ignoreable
 	fade() {
 		this.textSize = EffectSet.TEXT_SIZE.SMALLEST;
-		this.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK_FADED;
+		this.backgroundColour = EffectSet.RGBA.BLACK_TRANSLUCENT;
 
 		// Explicitly put empty map effect to express intent to hide, making the filter overwrite any previous shows
 		this.mapEffect = new MapEffect();
