@@ -40,7 +40,6 @@ filter.block((c, e) => { // Common gear, no quality/socket
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.noQualitySocketless();
 
-	e.textSize = EffectSet.TEXT_SIZE.SMALL;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => { // Common gear, quality
@@ -97,7 +96,6 @@ filter.block((c, e) => { // Common gear, no quality/socket
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.noQualitySocketless();
 
-	e.textSize = EffectSet.TEXT_SIZE.SMALL;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => { // Common gear, quality
@@ -258,7 +256,6 @@ filter.block((c, e) => { // Gold
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(100, Comparison.OPERATOR.LT);
 
-	e.textSize = EffectSet.TEXT_SIZE.SMALL;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
@@ -301,9 +298,20 @@ filter.block((c, e) => { // Other
 	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.textSize = EffectSet.TEXT_SIZE.SMALL;
+	e.textColour = EffectSet.RGB.NORMAL;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
+});
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList("Orb of Transmutation", "Orb of Augmentation",
+		"Regal Shard", "Artificer's Shard"));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.textColour = EffectSet.RGB.MAGIC;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.outlineColour = EffectSet.RGB.LIME;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Regal Orb", "Exalted Orb", "Orb of Alchemy",
@@ -313,6 +321,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.textColour = EffectSet.RGB.RARE;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.CROSS);
@@ -323,6 +332,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
+	e.textColour = EffectSet.RGB.CRIMSON;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_CRIMSON;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.beamColour = EffectSet.COLOUR.ROSE;

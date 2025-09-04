@@ -26,7 +26,6 @@ Show
 	Quality == 0
 	Sockets == 0
 
-	SetFontSize 25
 	MinimapIcon 2 White UpsideDownHouse
 
 	Continue
@@ -89,7 +88,6 @@ Show
 	Quality == 0
 	Sockets == 0
 
-	SetFontSize 25
 	MinimapIcon 2 Blue UpsideDownHouse
 
 	Continue
@@ -258,7 +256,6 @@ Show
 	Class == "Stackable Currency"
 	StackSize < 100
 
-	SetFontSize 25
 	SetBorderColor 85 255 85
 	MinimapIcon 2 Green Kite
 
@@ -301,15 +298,26 @@ Show
 	BaseType == "Scroll of Wisdom" "Transmutation Shard"
 	Class == "Stackable Currency"
 
-	SetFontSize 25
+	SetTextColor 200 200 200
 	SetBorderColor 85 255 85
 	MinimapIcon 2 Green Circle
+
+Show
+	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Regal Shard" "Artificer's Shard"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 136 136 255
+	SetBackgroundColor 0 0 0 255
+	SetBorderColor 85 255 85
+	MinimapIcon 1 Green Circle
 
 Show
 	BaseType == "Regal Orb" "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Lesser Jeweller's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher" "Armourer's Scrap" "Gemcutter's Prism" "Glassblower's Bauble" "Chance Shard"
 	Class == "Stackable Currency"
 
 	SetFontSize 39
+	SetTextColor 255 255 119
 	SetBackgroundColor 0 0 0 255
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Green Cross
@@ -319,6 +327,7 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 45
+	SetTextColor 170 0 0
 	SetBackgroundColor 40 20 20 255
 	SetBorderColor 85 255 85
 	PlayEffect Red
