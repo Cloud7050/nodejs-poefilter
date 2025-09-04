@@ -14,6 +14,7 @@ let filter = new Filter("Cloud");
 filter.block((c, e) => {
 	c.continue();
 
+	e.textSize = EffectSet.TEXT_SIZE.SMALL;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.PINK, MapEffect.ICON.KITE);
 });
 
@@ -22,14 +23,12 @@ filter.block((c, e) => { // Socket
 	c.continue();
 	c.hasSocket();
 
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.NORMAL;
 });
 filter.block((c, e) => { // Quality
 	c.continue();
 	c.hasQuality();
 
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.MAGIC;
 });
 
@@ -41,6 +40,7 @@ filter.block((c, e) => { // Common gear, no quality/socket
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.noQualitySocketless();
 
+	e.textSize = EffectSet.TEXT_SIZE.SMALL;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => { // Common gear, quality
@@ -49,7 +49,8 @@ filter.block((c, e) => { // Common gear, quality
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasQuality();
 
-	// Already darkened above
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => { // Common gear, socket
@@ -58,7 +59,8 @@ filter.block((c, e) => { // Common gear, socket
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasSocket();
 
-	// Already darkened above
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => { // Less common gear
@@ -66,6 +68,7 @@ filter.block((c, e) => { // Less common gear
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
@@ -74,6 +77,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.RAINDROP);
 });
@@ -93,6 +97,7 @@ filter.block((c, e) => { // Common gear, no quality/socket
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.noQualitySocketless();
 
+	e.textSize = EffectSet.TEXT_SIZE.SMALL;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => { // Common gear, quality
@@ -101,7 +106,8 @@ filter.block((c, e) => { // Common gear, quality
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasQuality();
 
-	// Already darkened above
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => { // Common gear, socket
@@ -110,7 +116,8 @@ filter.block((c, e) => { // Common gear, socket
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasSocket();
 
-	// Already darkened above
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => {  // Less common gear
@@ -118,6 +125,7 @@ filter.block((c, e) => {  // Less common gear
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
@@ -126,6 +134,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.RAINDROP);
 });
@@ -145,6 +154,7 @@ filter.block((c, e) => {
 		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.HOUSE);
 });
@@ -153,6 +163,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.RAINDROP);
 });
@@ -247,6 +258,8 @@ filter.block((c, e) => { // Gold
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(100, Comparison.OPERATOR.LT);
 
+	e.textSize = EffectSet.TEXT_SIZE.SMALL;
+	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
 filter.block((c, e) => {
@@ -254,7 +267,9 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(300, Comparison.OPERATOR.LT);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
 filter.block((c, e) => {
@@ -263,12 +278,14 @@ filter.block((c, e) => {
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
 filter.block((c, e) => { // Essences
 	c.names = new Comparison(new StringList("Essence of "), Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.CIRCLE);
 });
@@ -284,6 +301,8 @@ filter.block((c, e) => { // Other
 	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
+	e.textSize = EffectSet.TEXT_SIZE.SMALL;
+	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
 filter.block((c, e) => {
@@ -295,6 +314,7 @@ filter.block((c, e) => {
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.CROSS);
 });
 filter.block((c, e) => {
@@ -304,6 +324,7 @@ filter.block((c, e) => {
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_CRIMSON;
+	e.outlineColour = EffectSet.RGB.LIME;
 	e.beamColour = EffectSet.COLOUR.ROSE;
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.ROSE, MapEffect.ICON.STAR);
@@ -311,7 +332,9 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
+	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
 
@@ -319,6 +342,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.GEM_UNCUT);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.textColour = EffectSet.RGB.GEM;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
@@ -326,6 +350,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.GEM);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
 });
@@ -334,6 +359,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.RUNE);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.RAINDROP);
 });
@@ -351,6 +377,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.QUEST);
 
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 });
 

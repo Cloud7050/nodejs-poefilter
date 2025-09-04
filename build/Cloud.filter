@@ -1,6 +1,7 @@
 Show
 	#
 
+	SetFontSize 25
 	MinimapIcon 2 Pink Kite
 
 	Continue
@@ -8,7 +9,6 @@ Show
 Show
 	Sockets > 0
 
-	SetBackgroundColor 0 0 0 255
 	SetBorderColor 200 200 200
 
 	Continue
@@ -16,7 +16,6 @@ Show
 Show
 	Quality > 0
 
-	SetBackgroundColor 0 0 0 255
 	SetBorderColor 136 136 255
 
 	Continue
@@ -27,6 +26,7 @@ Show
 	Quality == 0
 	Sockets == 0
 
+	SetFontSize 25
 	MinimapIcon 2 White UpsideDownHouse
 
 	Continue
@@ -36,6 +36,8 @@ Show
 	Rarity == Normal
 	Quality > 0
 
+	SetFontSize 32
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 White UpsideDownHouse
 
 	Continue
@@ -45,6 +47,8 @@ Show
 	Rarity == Normal
 	Sockets > 0
 
+	SetFontSize 32
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 White UpsideDownHouse
 
 	Continue
@@ -53,6 +57,7 @@ Show
 	Class == Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Normal
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 White UpsideDownHouse
 
@@ -62,6 +67,7 @@ Show
 	Class == Jewels
 	Rarity == Normal
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 White Raindrop
 
@@ -83,6 +89,7 @@ Show
 	Quality == 0
 	Sockets == 0
 
+	SetFontSize 25
 	MinimapIcon 2 Blue UpsideDownHouse
 
 	Continue
@@ -92,6 +99,8 @@ Show
 	Rarity == Magic
 	Quality > 0
 
+	SetFontSize 32
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
@@ -101,6 +110,8 @@ Show
 	Rarity == Magic
 	Sockets > 0
 
+	SetFontSize 32
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
@@ -109,6 +120,7 @@ Show
 	Class == Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Magic
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -118,6 +130,7 @@ Show
 	Class == Jewels
 	Rarity == Magic
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Blue Raindrop
 
@@ -137,6 +150,7 @@ Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Rare
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Yellow UpsideDownHouse
 
@@ -146,6 +160,7 @@ Show
 	Class == Jewels
 	Rarity == Rare
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Yellow Raindrop
 
@@ -243,6 +258,8 @@ Show
 	Class == "Stackable Currency"
 	StackSize < 100
 
+	SetFontSize 25
+	SetBorderColor 85 255 85
 	MinimapIcon 2 Green Kite
 
 Show
@@ -250,7 +267,9 @@ Show
 	Class == "Stackable Currency"
 	StackSize < 300
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255
+	SetBorderColor 85 255 85
 	MinimapIcon 1 Green Kite
 
 Show
@@ -259,12 +278,14 @@ Show
 
 	SetFontSize 39
 	SetBackgroundColor 0 0 0 255
+	SetBorderColor 85 255 85
 	MinimapIcon 0 Green Kite
 
 Show
 	BaseType = "Essence of "
 	Class == "Stackable Currency"
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Pink Circle
 
@@ -280,6 +301,8 @@ Show
 	BaseType == "Scroll of Wisdom" "Transmutation Shard"
 	Class == "Stackable Currency"
 
+	SetFontSize 25
+	SetBorderColor 85 255 85
 	MinimapIcon 2 Green Circle
 
 Show
@@ -288,6 +311,7 @@ Show
 
 	SetFontSize 39
 	SetBackgroundColor 0 0 0 255
+	SetBorderColor 85 255 85
 	MinimapIcon 0 Green Cross
 
 Show
@@ -296,6 +320,7 @@ Show
 
 	SetFontSize 45
 	SetBackgroundColor 40 20 20 255
+	SetBorderColor 85 255 85
 	PlayEffect Red
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Red Star
@@ -303,12 +328,15 @@ Show
 Show
 	Class == "Stackable Currency"
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255
+	SetBorderColor 85 255 85
 	MinimapIcon 1 Green Circle
 
 Show
 	Class == "Uncut Skill Gems" "Uncut Support Gems"
 
+	SetFontSize 32
 	SetTextColor 119 206 195
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Cyan Raindrop
@@ -316,12 +344,14 @@ Show
 Show
 	Class == "Skill Gems" "Support Gems"
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Cyan Raindrop
 
 Show
 	Class == Socketable
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Pink Raindrop
 
@@ -335,4 +365,5 @@ Show
 Show
 	Class == "Quest Items"
 
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 255

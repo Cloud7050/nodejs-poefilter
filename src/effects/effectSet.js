@@ -9,6 +9,7 @@ export class EffectSet {
 
 	static TEXT_SIZE = {
 		SMALLEST: "18",
+		SMALL: "25",
 		DEFAULT: "32",
 		LARGE: "39",
 		LARGEST: "45"
@@ -16,6 +17,8 @@ export class EffectSet {
 	static RGB = {
 		NORMAL: "200 200 200",
 		MAGIC: "136 136 255",
+		RARE: "255 255 119",
+		// UNIQUE: "175 96 37",
 
 		GEM: "119 206 195",
 
@@ -29,7 +32,7 @@ export class EffectSet {
 		// SILVER: "170 170 170",
 		// GREY: "85 85 85",
 		// BLUE: "85 85 255",
-		// LIME: "85 255 85",
+		LIME: "85 255 85",
 		// CYAN: "85 255 255",
 		// ROSE: "255 85 85",
 		// PINK: "255 85 255",
