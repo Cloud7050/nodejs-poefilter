@@ -29,7 +29,7 @@ export class EffectSet {
 		CRIMSON: "170 0 0",
 		// PURPLE: "170 0 170",
 		// ORANGE: "255 170 0",
-		// SILVER: "170 170 170",
+		SILVER: "170 170 170",
 		// GREY: "85 85 85",
 		// BLUE: "85 85 255",
 		LIME: "85 255 85",

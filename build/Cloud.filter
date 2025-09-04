@@ -244,6 +244,7 @@ Show
 	Class == "Stackable Currency"
 	StackSize < 100
 
+	SetTextColor 170 170 170
 	SetBorderColor 85 255 85
 	MinimapIcon 2 Green Kite
 
@@ -253,6 +254,7 @@ Show
 	StackSize < 300
 
 	SetFontSize 32
+	SetTextColor 170 170 170
 	SetBorderColor 85 255 85
 	MinimapIcon 1 Green Kite
 
@@ -261,6 +263,7 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 39
+	SetTextColor 200 200 200
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Green Kite
 

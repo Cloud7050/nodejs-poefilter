@@ -244,6 +244,7 @@ filter.block((c, e) => { // Gold
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(100, Comparison.OPERATOR.LT);
 
+	e.textColour = EffectSet.RGB.SILVER;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
@@ -252,6 +253,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(300, Comparison.OPERATOR.LT);
 
+	e.textColour = EffectSet.RGB.SILVER;
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
@@ -260,6 +262,7 @@ filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Gold"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
+	e.textColour = EffectSet.RGB.NORMAL;
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
