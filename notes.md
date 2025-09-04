@@ -33,7 +33,7 @@ This is not necessarily tied to the item's vanilla rarity or text colour. Eg exa
 - Text size: Large
 - (Text colour: Rare)
 - Background: Black
-- Minimap: Large size
+- Minimap: Large size, (cross icon)
 
 ### Largest
 
@@ -42,4 +42,4 @@ This is not necessarily tied to the item's vanilla rarity or text colour. Eg exa
 - Background: Matching background
 - Beam: Matching
 - Sound: WAH
-- Minimap: Large size
+- Minimap: Large size, (star icon)
