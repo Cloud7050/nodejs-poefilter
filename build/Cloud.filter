@@ -354,6 +354,7 @@ Show
 	Class == "Trial Coins"
 
 	SetFontSize 39
+	SetTextColor 0 170 0
 	MinimapIcon 0 Pink Triangle
 
 Show

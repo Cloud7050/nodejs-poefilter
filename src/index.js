@@ -365,6 +365,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.COIN);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.textColour = EffectSet.RGB.GREEN;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.PINK, MapEffect.ICON.TRIANGLE);
 });
 

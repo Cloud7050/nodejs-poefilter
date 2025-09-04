@@ -25,7 +25,7 @@ export class EffectSet {
 
 		// BLACK: "0 0 0",
 		// NAVY: "0 0 170",
-		// GREEN: "0 170 0",
+		GREEN: "0 170 0",
 		// TEAL: "0 170 170",
 		CRIMSON: "170 0 0",
 		// PURPLE: "170 0 170",
