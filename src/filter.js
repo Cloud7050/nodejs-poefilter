@@ -20,6 +20,11 @@ export class Filter {
 	save() {
 		let relativeFilePath = `./build/${this.name}.filter`;
 		let content = this.spans.join("\n");
+
+		if (content.includes("undefined") || content.includes("null")) {
+			console.warn("[!] Saving filter containing undefined or null text");
+		}
+
 		fs.writeFile(relativeFilePath, content, (e) => {
 			if (e !== null) console.error(e);
 			else console.log("☁");
