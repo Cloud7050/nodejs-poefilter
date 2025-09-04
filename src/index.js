@@ -15,6 +15,7 @@ filter.block((c, e) => {
 	c.continue();
 
 	e.textSize = EffectSet.TEXT_SIZE.SMALL;
+	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.PINK, MapEffect.ICON.KITE);
 });
 
@@ -49,7 +50,6 @@ filter.block((c, e) => { // Common gear, quality
 	c.hasQuality();
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => { // Common gear, socket
@@ -59,7 +59,6 @@ filter.block((c, e) => { // Common gear, socket
 	c.hasSocket();
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => { // Less common gear
@@ -68,7 +67,6 @@ filter.block((c, e) => { // Less common gear
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => {
@@ -77,7 +75,6 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.RAINDROP);
 });
 filter.block((c, e) => {
@@ -86,7 +83,6 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.SILVER, MapEffect.ICON.TRIANGLE);
 });
 // Magic
@@ -105,7 +101,6 @@ filter.block((c, e) => { // Common gear, quality
 	c.hasQuality();
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => { // Common gear, socket
@@ -115,7 +110,6 @@ filter.block((c, e) => { // Common gear, socket
 	c.hasSocket();
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => {  // Less common gear
@@ -124,7 +118,6 @@ filter.block((c, e) => {  // Less common gear
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => {
@@ -133,7 +126,6 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.RAINDROP);
 });
 filter.block((c, e) => {
@@ -142,7 +134,6 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BLUE, MapEffect.ICON.TRIANGLE);
 });
 // Rare
@@ -153,7 +144,6 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.HOUSE);
 });
 filter.block((c, e) => {
@@ -162,7 +152,6 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.YELLOW, MapEffect.ICON.RAINDROP);
 });
 filter.block((c, e) => {
@@ -171,7 +160,6 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.YELLOW, MapEffect.ICON.TRIANGLE);
 });
 // Unique
@@ -265,7 +253,6 @@ filter.block((c, e) => {
 	c.count = new Comparison(300, Comparison.OPERATOR.LT);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
@@ -274,7 +261,6 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
@@ -283,7 +269,6 @@ filter.block((c, e) => { // Essences
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.CIRCLE);
 });
 filter.block((c, e) => { // Trial keys (minimap)
@@ -291,7 +276,6 @@ filter.block((c, e) => { // Trial keys (minimap)
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.TRIANGLE);
 });
 filter.block((c, e) => { // Other
@@ -309,7 +293,6 @@ filter.block((c, e) => {
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.textColour = EffectSet.RGB.MAGIC;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
@@ -322,7 +305,6 @@ filter.block((c, e) => {
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
 	e.textColour = EffectSet.RGB.RARE;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.CROSS);
 });
@@ -343,7 +325,6 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.CIRCLE);
 });
@@ -354,14 +335,12 @@ filter.block((c, e) => {
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.textColour = EffectSet.RGB.GEM;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
 });
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.GEM);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
 });
 
@@ -370,7 +349,6 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.RUNE);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.RAINDROP);
 });
 
@@ -379,7 +357,6 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.COIN);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.PINK, MapEffect.ICON.TRIANGLE);
 });
 
@@ -388,7 +365,6 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.QUEST);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.backgroundColour = EffectSet.RGBA.BACKGROUND_BLACK;
 });
 
 filter.save();

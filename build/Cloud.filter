@@ -2,6 +2,7 @@ Show
 	#
 
 	SetFontSize 25
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 2 Pink Kite
 
 	Continue
@@ -36,7 +37,6 @@ Show
 	Quality > 0
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 White UpsideDownHouse
 
 	Continue
@@ -47,7 +47,6 @@ Show
 	Sockets > 0
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 White UpsideDownHouse
 
 	Continue
@@ -57,7 +56,6 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 White UpsideDownHouse
 
 	Continue
@@ -67,7 +65,6 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 White Raindrop
 
 	Continue
@@ -77,7 +74,6 @@ Show
 	Rarity == Normal
 
 	SetFontSize 39
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 0 White Triangle
 
 	Continue
@@ -98,7 +94,6 @@ Show
 	Quality > 0
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
@@ -109,7 +104,6 @@ Show
 	Sockets > 0
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
@@ -119,7 +113,6 @@ Show
 	Rarity == Magic
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
@@ -129,7 +122,6 @@ Show
 	Rarity == Magic
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Blue Raindrop
 
 	Continue
@@ -139,7 +131,6 @@ Show
 	Rarity == Magic
 
 	SetFontSize 39
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 0 Blue Triangle
 
 	Continue
@@ -149,7 +140,6 @@ Show
 	Rarity == Rare
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 	Continue
@@ -159,7 +149,6 @@ Show
 	Rarity == Rare
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Yellow Raindrop
 
 	Continue
@@ -169,7 +158,6 @@ Show
 	Rarity == Rare
 
 	SetFontSize 39
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 0 Yellow Triangle
 
 	Continue
@@ -217,7 +205,7 @@ Show
 	Sockets == 0
 
 	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
+	SetBackgroundColor 0 0 0 128
 	MinimapIcon -1
 
 Show
@@ -227,7 +215,7 @@ Show
 	Sockets == 0
 
 	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
+	SetBackgroundColor 0 0 0 128
 	MinimapIcon -1
 
 Show
@@ -238,7 +226,7 @@ Show
 	BaseEnergyShield == 0
 
 	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
+	SetBackgroundColor 0 0 0 128
 	MinimapIcon -1
 
 Show
@@ -248,7 +236,7 @@ Show
 	Quality == 0
 
 	SetFontSize 18
-	SetBackgroundColor 0 0 0 170
+	SetBackgroundColor 0 0 0 128
 	MinimapIcon -1
 
 Show
@@ -265,7 +253,6 @@ Show
 	StackSize < 300
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	SetBorderColor 85 255 85
 	MinimapIcon 1 Green Kite
 
@@ -274,7 +261,6 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 39
-	SetBackgroundColor 0 0 0 255
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Green Kite
 
@@ -283,7 +269,6 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Pink Circle
 
 Show
@@ -291,7 +276,6 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 39
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 0 Green Triangle
 
 Show
@@ -308,7 +292,6 @@ Show
 
 	SetFontSize 32
 	SetTextColor 136 136 255
-	SetBackgroundColor 0 0 0 255
 	SetBorderColor 85 255 85
 	MinimapIcon 1 Green Circle
 
@@ -318,7 +301,6 @@ Show
 
 	SetFontSize 39
 	SetTextColor 255 255 119
-	SetBackgroundColor 0 0 0 255
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Green Cross
 
@@ -338,7 +320,6 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	SetBorderColor 85 255 85
 	MinimapIcon 1 Green Circle
 
@@ -347,32 +328,27 @@ Show
 
 	SetFontSize 32
 	SetTextColor 119 206 195
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Cyan Raindrop
 
 Show
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Cyan Raindrop
 
 Show
 	Class == Socketable
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 1 Pink Raindrop
 
 Show
 	Class == "Trial Coins"
 
 	SetFontSize 39
-	SetBackgroundColor 0 0 0 255
 	MinimapIcon 0 Pink Triangle
 
 Show
 	Class == "Quest Items"
 
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 255

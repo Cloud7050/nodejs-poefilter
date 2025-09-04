@@ -5,41 +5,41 @@ This is not necessarily tied to the item's vanilla rarity or text colour. Eg exa
 ## Global
 
 - Text size: Small
-- Background: (Vanilla black)
+- Background: Black
 - Minimap: Small size
 
 ### Faded
 
 - Text size: Smallest
-- Background: Black & faded
+- Background: Faded black
 - Minimap: Disabled
 
 ### Small
 
 - Text size: (Small)
 - (Text colour: Normal)
-- Background: (Vanilla black)
+- Background: (Black)
 - Minimap: Small size
 
 ### Medium
 
 - Text size: Vanilla default
 - (Text colour: Magic)
-- Background: Black
+- Background: (Black)
 - Minimap: Medium size
 
 ### Large
 
 - Text size: Large
 - (Text colour: Rare)
-- Background: Black
+- Background: (Black)
 - Minimap: Large size, (cross icon)
 
 ### Largest
 
 - Text size: Largest
 - (Text colour: Crimson)
-- Background: Matching background
+- Background: Matching
 - Beam: Matching
 - Sound: WAH
 - Minimap: Large size, (star icon)
