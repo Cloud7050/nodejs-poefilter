@@ -23,7 +23,7 @@ export class EffectSet {
 		GEM: "119 206 195",
 		CRAFTED: "184 218 242",
 
-		// BLACK: "0 0 0",
+		BLACK: "0 0 0",
 		// NAVY: "0 0 170",
 		GREEN: "0 170 0",
 		// TEAL: "0 170 170",
@@ -38,28 +38,33 @@ export class EffectSet {
 		// ROSE: "255 85 85",
 		PINK: "255 85 255",
 		// YELLOW: "255 255 85",
-		// WHITE: "255 255 255"
+		// WHITE: "255 255 255",
+
+		DARK_NORMAL: "47 47 47",
+		DARK_MAGIC: "32 32 60",
+		DARK_RARE: "60 60 28",
+		DARK_UNIQUE: "41 23 9",
+
+		// DARK_NAVY: "20 20 40",
+		DARK_GREEN: "20 40 20",
+		// DARK_TEAL: "20 40 40",
+		DARK_CRIMSON: "40 20 20",
+		// DARK_PURPLE: "40 20 40",
+		DARK_ORANGE: "60 40 20",
+		// DARK_SILVER: "40 40 40",
+		// DARK_GREY: "20 20 20",
+		// DARK_BLUE: "20 20 60",
+		// DARK_LIME: "20 60 20",
+		// DARK_CYAN: "20 60 60",
+		// DARK_ROSE: "60 20 20",
+		// DARK_PINK: "60 20 60",
+		// DARK_YELLOW: "60 60 20",
+		// DARK_WHITE: "60 60 60"
 	};
 	// Default alpha is 240
 	static RGBA = {
-		BLACK: "0 0 0 255",
 		BLACK_TRANSLUCENT: "0 0 0 128",
-		TRANSPARENT: "0 0 0 0",
-		// DARK_NAVY: "20 20 40 255",
-		// DARK_GREEN: "20 40 20 255",
-		// DARK_TEAL: "20 40 40 255",
-		DARK_CRIMSON: "40 20 20 255",
-		// DARK_PURPLE: "40 20 40 255",
-		DARK_ORANGE: "60 40 20 255",
-		// DARK_SILVER: "40 40 40 255",
-		// DARK_GREY: "20 20 20 255",
-		// DARK_BLUE: "20 20 60 255",
-		// DARK_LIME: "20 60 20 255",
-		// DARK_CYAN: "20 60 60 255",
-		// DARK_ROSE: "60 20 20 255",
-		// DARK_PINK: "60 20 60 255",
-		// DARK_YELLOW: "60 60 20 255",
-		// DARK_WHITE: "60 60 60 255"
+		TRANSPARENT: "0 0 0 0"
 	};
 
 	static COLOUR = COLOUR;

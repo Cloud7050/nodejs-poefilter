@@ -15,7 +15,7 @@ filter.block((c, e) => {
 	c.continue();
 
 	e.textSize = EffectSet.TEXT_SIZE.SMALL;
-	e.backgroundColour = EffectSet.RGBA.BLACK;
+	e.backgroundColour = EffectSet.RGB.BLACK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.PINK, MapEffect.ICON.KITE);
 });
 
@@ -83,6 +83,7 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.backgroundColour = EffectSet.RGB.DARK_NORMAL;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.SILVER, MapEffect.ICON.TRIANGLE);
 });
 // Magic
@@ -134,6 +135,7 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.backgroundColour = EffectSet.RGB.DARK_MAGIC;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BLUE, MapEffect.ICON.TRIANGLE);
 });
 // Rare
@@ -160,6 +162,7 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.backgroundColour = EffectSet.RGB.DARK_RARE;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.YELLOW, MapEffect.ICON.TRIANGLE);
 });
 // Unique
@@ -170,7 +173,7 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-	e.backgroundColour = EffectSet.RGBA.DARK_ORANGE;
+	e.backgroundColour = EffectSet.RGB.DARK_ORANGE;
 	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.HOUSE);
@@ -181,7 +184,7 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-	e.backgroundColour = EffectSet.RGBA.DARK_ORANGE;
+	e.backgroundColour = EffectSet.RGB.DARK_ORANGE;
 	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.RAINDROP);
@@ -192,7 +195,7 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
-	e.backgroundColour = EffectSet.RGBA.DARK_ORANGE;
+	e.backgroundColour = EffectSet.RGB.DARK_ORANGE;
 	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.TRIANGLE);
@@ -278,11 +281,13 @@ filter.block((c, e) => { // Essences
 	e.textColour = EffectSet.RGB.PINK;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.CIRCLE);
 });
-filter.block((c, e) => { // Trial keys (minimap)
+filter.block((c, e) => { // Trial keys
 	c.names = new Comparison(new StringList("Bronze Key", "Silver Key", "Gold Key"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.textColour = EffectSet.RGB.GREEN;
+	e.backgroundColour = EffectSet.RGB.DARK_GREEN;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.TRIANGLE);
 });
 filter.block((c, e) => { // Other
@@ -312,6 +317,7 @@ filter.block((c, e) => {
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
 	e.textColour = EffectSet.RGB.RARE;
+	e.backgroundColour = EffectSet.RGB.DARK_RARE;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.CROSS);
 });
@@ -322,7 +328,7 @@ filter.block((c, e) => {
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGEST;
 	e.textColour = EffectSet.RGB.CRIMSON;
-	e.backgroundColour = EffectSet.RGBA.DARK_CRIMSON;
+	e.backgroundColour = EffectSet.RGB.DARK_CRIMSON;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.beamColour = EffectSet.COLOUR.ROSE;
 	e.sound = EffectSet.SOUND.WAH;
@@ -366,6 +372,7 @@ filter.block((c, e) => {
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
 	e.textColour = EffectSet.RGB.GREEN;
+	e.backgroundColour = EffectSet.RGB.DARK_GREEN;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.PINK, MapEffect.ICON.TRIANGLE);
 });
 

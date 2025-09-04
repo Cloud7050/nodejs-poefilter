@@ -32,14 +32,14 @@ This is not necessarily tied to the item's vanilla rarity or text colour. Eg exa
 
 - Text size: Large
 - (Text colour: Rare)
-- Background: (Black)
+- Background: Dark matching
 - Minimap: Large size, (cross icon)
 
 ### Largest
 
 - Text size: Largest
-- (Text colour: Crimson)
-- Background: Matching
+- Text colour: Black
+- Background: Text colour
 - Beam: Matching
 - Sound: WAH
 - Minimap: Large size, (star icon)
