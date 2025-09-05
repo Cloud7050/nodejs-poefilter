@@ -2,7 +2,7 @@ Show
 	#
 
 	SetFontSize 27
-	SetBackgroundColor 0 0 0
+	SetBackgroundColor 0 0 0 255
 	MinimapIcon 2 Pink Kite
 
 	Continue
@@ -74,7 +74,7 @@ Show
 	Rarity == Normal
 
 	SetFontSize 37
-	SetBackgroundColor 47 47 47
+	SetBackgroundColor 47 47 47 255
 	MinimapIcon 0 White Triangle
 
 	Continue
@@ -132,7 +132,7 @@ Show
 	Rarity == Magic
 
 	SetFontSize 37
-	SetBackgroundColor 32 32 60
+	SetBackgroundColor 32 32 60 255
 	MinimapIcon 0 Blue Triangle
 
 	Continue
@@ -160,7 +160,7 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetBackgroundColor 60 60 28
+	SetBackgroundColor 60 60 28 255
 	MinimapIcon 0 Yellow Triangle
 
 	Continue
@@ -171,7 +171,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 0 0
-	SetBackgroundColor 175 96 37
+	SetBackgroundColor 175 96 37 255
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown UpsideDownHouse
@@ -184,7 +184,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 0 0
-	SetBackgroundColor 175 96 37
+	SetBackgroundColor 175 96 37 255
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown Raindrop
@@ -197,7 +197,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 0 0
-	SetBackgroundColor 175 96 37
+	SetBackgroundColor 175 96 37 255
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown Triangle
@@ -290,7 +290,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 0 170 0
-	SetBackgroundColor 20 40 20
+	SetBackgroundColor 20 40 20 255
 	MinimapIcon 0 Green Triangle
 
 Show
@@ -316,7 +316,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 255 255 119
-	SetBackgroundColor 60 60 28
+	SetBackgroundColor 60 60 28 255
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Green Cross
 
@@ -326,7 +326,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 0 0
-	SetBackgroundColor 255 85 85
+	SetBackgroundColor 255 85 85 255
 	SetBorderColor 85 255 85
 	PlayEffect Red
 	CustomAlertSound "WAH.mp3"
@@ -364,7 +364,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 0 170 0
-	SetBackgroundColor 20 40 20
+	SetBackgroundColor 20 40 20 255
 	MinimapIcon 0 Pink Triangle
 
 Show

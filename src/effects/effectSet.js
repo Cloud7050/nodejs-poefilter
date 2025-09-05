@@ -18,7 +18,7 @@ export class EffectSet {
 		NORMAL: "200 200 200",
 		MAGIC: "136 136 255",
 		RARE: "255 255 119",
-		UNIQUE: "175 96 37",
+		// UNIQUE: "175 96 37",
 
 		GEM: "119 206 195",
 		CRAFTED: "184 218 242",
@@ -35,36 +35,57 @@ export class EffectSet {
 		// BLUE: "85 85 255",
 		LIME: "85 255 85",
 		// CYAN: "85 255 255",
-		ROSE: "255 85 85",
+		// ROSE: "255 85 85",
 		PINK: "255 85 255",
 		// YELLOW: "255 255 85",
-		// WHITE: "255 255 255",
-
-		DARK_NORMAL: "47 47 47",
-		DARK_MAGIC: "32 32 60",
-		DARK_RARE: "60 60 28",
-		DARK_UNIQUE: "41 23 9",
-
-		// DARK_NAVY: "20 20 40",
-		DARK_GREEN: "20 40 20",
-		// DARK_TEAL: "20 40 40",
-		// DARK_CRIMSON: "40 20 20",
-		// DARK_PURPLE: "40 20 40",
-		// DARK_ORANGE: "60 40 20",
-		// DARK_SILVER: "40 40 40",
-		// DARK_GREY: "20 20 20",
-		// DARK_BLUE: "20 20 60",
-		// DARK_LIME: "20 60 20",
-		// DARK_CYAN: "20 60 60",
-		// DARK_ROSE: "60 20 20",
-		// DARK_PINK: "60 20 60",
-		// DARK_YELLOW: "60 60 20",
-		// DARK_WHITE: "60 60 60"
+		// WHITE: "255 255 255"
 	};
-	// Default alpha is 240
+	// Alpha defaults to 240
 	static RGBA = {
+		// NORMAL: "200 200 200 255",
+		// MAGIC: "136 136 255 255",
+		// RARE: "255 255 119 255",
+		UNIQUE: "175 96 37 255",
+
+		BLACK: "0 0 0 255",
 		BLACK_TRANSLUCENT: "0 0 0 128",
-		TRANSPARENT: "0 0 0 0"
+		TRANSPARENT: "0 0 0 0",
+		// NAVY: "0 0 170 255",
+		// GREEN: "0 170 0 255",
+		// TEAL: "0 170 170 255",
+		// CRIMSON: "170 0 0 255",
+		// PURPLE: "170 0 170 255",
+		// ORANGE: "255 170 0 255",
+		// SILVER: "170 170 170 255",
+		// GREY: "85 85 85 255",
+		// BLUE: "85 85 255 255",
+		// LIME: "85 255 85 255",
+		// CYAN: "85 255 255 255",
+		ROSE: "255 85 85 255",
+		// PINK: "255 85 255 255",
+		// YELLOW: "255 255 85 255",
+		// WHITE: "255 255 255 255"
+
+		DARK_NORMAL: "47 47 47 255",
+		DARK_MAGIC: "32 32 60 255",
+		DARK_RARE: "60 60 28 255",
+		DARK_UNIQUE: "41 23 9 255",
+
+		// DARK_NAVY: "20 20 40 255",
+		DARK_GREEN: "20 40 20 255",
+		// DARK_TEAL: "20 40 40 255",
+		// DARK_CRIMSON: "40 20 20 255",
+		// DARK_PURPLE: "40 20 40 255",
+		// DARK_ORANGE: "60 40 20 255",
+		// DARK_SILVER: "40 40 40 255",
+		// DARK_GREY: "20 20 20 255",
+		// DARK_BLUE: "20 20 60 255",
+		// DARK_LIME: "20 60 20 255",
+		// DARK_CYAN: "20 60 60 255",
+		// DARK_ROSE: "60 20 20 255",
+		// DARK_PINK: "60 20 60 255",
+		// DARK_YELLOW: "60 60 20 255",
+		// DARK_WHITE: "60 60 60 255"
 	};
 
 	static COLOUR = COLOUR;
