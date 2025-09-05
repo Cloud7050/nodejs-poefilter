@@ -16,11 +16,11 @@ export class EffectSet {
 	};
 	static RGB = {
 		NORMAL: "200 200 200",
-		MAGIC: "136 136 255",
-		RARE: "255 255 119",
-		// UNIQUE: "175 96 37",
+		MAGIC: "123 151 255",
+		RARE: "255 225 87",
+		// UNIQUE: "241 106 33",
 
-		GEM: "119 206 195",
+		GEM_UNCUT: "116 201 190",
 		CRAFTED: "184 218 242",
 
 		BLACK: "0 0 0",
@@ -43,9 +43,9 @@ export class EffectSet {
 	// Alpha defaults to 240
 	static RGBA = {
 		// NORMAL: "200 200 200 255",
-		// MAGIC: "136 136 255 255",
-		// RARE: "255 255 119 255",
-		UNIQUE: "175 96 37 255",
+		// MAGIC: "123 151 255 255",
+		// RARE: "255 225 87 255",
+		UNIQUE: "241 106 33 255",
 
 		BLACK: "0 0 0 255",
 		BLACK_TRANSLUCENT: "0 0 0 128",
@@ -67,9 +67,9 @@ export class EffectSet {
 		// WHITE: "255 255 255 255"
 
 		DARK_NORMAL: "47 47 47 255",
-		DARK_MAGIC: "32 32 60 255",
-		DARK_RARE: "60 60 28 255",
-		DARK_UNIQUE: "41 23 9 255",
+		DARK_MAGIC: "29 36 60 255",
+		DARK_RARE: "60 53 20 255",
+		// DARK_UNIQUE: "57 25 8 255",
 
 		// DARK_NAVY: "20 20 40 255",
 		DARK_GREEN: "20 40 20 255",

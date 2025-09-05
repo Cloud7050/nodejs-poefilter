@@ -17,7 +17,7 @@ Show
 Show
 	Quality > 0
 
-	SetBorderColor 136 136 255
+	SetBorderColor 123 151 255
 
 	Continue
 
@@ -132,7 +132,7 @@ Show
 	Rarity == Magic
 
 	SetFontSize 37
-	SetBackgroundColor 32 32 60 255
+	SetBackgroundColor 29 36 60 255
 	MinimapIcon 0 Blue Triangle
 
 	Continue
@@ -160,7 +160,7 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetBackgroundColor 60 60 28 255
+	SetBackgroundColor 60 53 20 255
 	MinimapIcon 0 Yellow Triangle
 
 	Continue
@@ -171,7 +171,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 0 0
-	SetBackgroundColor 175 96 37 255
+	SetBackgroundColor 241 106 33 255
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown UpsideDownHouse
@@ -184,7 +184,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 0 0
-	SetBackgroundColor 175 96 37 255
+	SetBackgroundColor 241 106 33 255
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown Raindrop
@@ -197,7 +197,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 0 0
-	SetBackgroundColor 175 96 37 255
+	SetBackgroundColor 241 106 33 255
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown Triangle
@@ -306,7 +306,7 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 32
-	SetTextColor 136 136 255
+	SetTextColor 123 151 255
 	SetBorderColor 85 255 85
 	MinimapIcon 1 Green Circle
 
@@ -315,8 +315,8 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 255 255 119
-	SetBackgroundColor 60 60 28 255
+	SetTextColor 255 225 87
+	SetBackgroundColor 60 53 20 255
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Green Cross
 
@@ -343,7 +343,7 @@ Show
 	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
 
 	SetFontSize 32
-	SetTextColor 119 206 195
+	SetTextColor 116 201 190
 	MinimapIcon 1 Cyan Raindrop
 
 Show

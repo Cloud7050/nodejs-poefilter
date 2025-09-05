@@ -350,7 +350,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.GEM_UNCUT);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.textColour = EffectSet.RGB.GEM;
+	e.textColour = EffectSet.RGB.GEM_UNCUT;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
 });
 filter.block((c, e) => {
