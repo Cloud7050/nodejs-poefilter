@@ -10,7 +10,7 @@ const CATEGORY = ConditionSet.CATEGORY;
 
 let filter = new Filter("Cloud");
 
-// Default: Small text, solid black background, minimap everything
+// Reset: Small text, solid black background, minimap everything
 filter.block((c, e) => {
 	c.continue();
 
@@ -19,7 +19,7 @@ filter.block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.PINK, MapEffect.ICON.KITE);
 });
 
-// Default: Outlines
+// Global: Outlines
 filter.block((c, e) => { // Socket
 	c.continue();
 	c.hasSocket();
@@ -42,24 +42,23 @@ filter.multiBlock((c) => { // Good main stat
 	e.outlineColour = EffectSet.RGB.RARE;
 });
 
-// Default: Minimap by rarity. Quality/socket should also be medium
+// Global: Minimap by rarity
 // Normal
-filter.block((c, e) => { // Common gear, no quality/socket
+filter.block((c, e) => { // Reset gear
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
-	c.noQualitySocketless();
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
-filter.multiBlock((c) => { // Common gear, quality
+filter.multiBlock((c) => { // Class weapons and armour, quality
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasQuality();
-}, (c) => { // Common gear, socket
+}, (c) => { // Class weapons and armour, socket
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasSocket();
 }, (c) => { // Common gear, good main stat
@@ -67,11 +66,6 @@ filter.multiBlock((c) => { // Common gear, quality
 	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.goodMain();
-}, (c) => { // Common gear, good mod
-	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
-	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
-	c.goodMod();
 }, (c) => { // Less common gear
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
@@ -98,22 +92,21 @@ filter.block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.SILVER, MapEffect.ICON.TRIANGLE);
 });
 // Magic
-filter.block((c, e) => { // Common gear, no quality/socket
+filter.block((c, e) => { // Reset gear
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
-	c.noQualitySocketless();
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
-filter.multiBlock((c) => { // Common gear, quality
+filter.multiBlock((c) => { // Class weapons and armour, quality
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasQuality();
-}, (c) => { // Common gear, socket
+}, (c) => { // Class weapons and armour, socket
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasSocket();
 }, (c) => { // Common gear, good main stat
