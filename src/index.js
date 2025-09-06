@@ -419,7 +419,8 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 }, (c) => { // Bad normal/magic flasks
 	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
 		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
-		"Grand Life Flask", "Grand Mana Flask", "Giant Life Flask", "Giant Mana Flask"));
+		"Grand Life Flask", "Grand Mana Flask", "Giant Life Flask", "Giant Mana Flask",
+		"Colossal Life Flask", "Colossal Mana Flask"));
 	c.category = new Comparison(CATEGORY.CHARGED);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 }, (e) => {
