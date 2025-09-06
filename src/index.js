@@ -204,6 +204,34 @@ filter.block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.TRIANGLE);
 });
 
+//TODO outline above: spirit/rarity main stats
+
+// Pass with outline: Spirit/rarity mods
+// https://poe2db.tw/us/Modifiers
+filter.block((c, e) => {
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR,
+		CATEGORY.JEWELLERY));
+	c.mods = new Comparison(new StringList(
+		// x% increased spirit
+		"Lord's", "Baron's", "Viscount's", "Marquess'", "Count's", "Duke's", "Prince's", "King's", // Prefixes for sceptres
+
+		// x% increased spirit & +x to maximum mana
+		"Advisor's", "Counselor's", "Emissary's", "Minister's", "Envoy's", "Diplomat's", "Chancellor's", // Prefixes for sceptres
+
+		// +x to spirit
+		"Lady's", "Baronness'", "Viscountess'", "Marchioness'", "Countess'", // Prefixes for body armours/amulets
+		"Duchess'", "Princess'", "Queen's", // Higher prefixes for body armours
+
+		// x% increased rarity of items found
+		"Magpie's", "Collector's", "Hoarder's", "Pirate's", "Dragon's", // Prefixes for helmets/amulets/rings
+		"of Plunder", "of Raiding", "of Archaeology", "of Excavation", "of Windfall", // Suffixes for gloves/boots/helmets/amulets/rings
+	),
+	Comparison.OPERATOR.GTE,
+	1);
+
+	e.outlineColour = EffectSet.RGB.RARE;
+});
+
 // Fade: Normal/magic class weapons but are wrong skill, with no quality/sockets
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
@@ -245,7 +273,6 @@ filter.block((c, e) => {
 
 	e.fade();
 });
-
 // Fade: Magic armour we don't use (no energy shield), with no quality/sockets
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.ARMOUR);

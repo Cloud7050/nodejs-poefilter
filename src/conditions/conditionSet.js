@@ -39,12 +39,12 @@ export class ConditionSet {
 	names = null; // Comparison
 	category = null; // Comparison
 	rarity = null; // Comparison
+	count = null; // Comparison
 
 	quality = null; // Comparison
 	sockets = null; // Comparison
 	energyShield = null; // Comparison
-
-	count = null; // Comparison
+	mods = null; // Comparison, with quantity
 
 	getBlockEnd() {
 		return this.isContinue ? "Continue" : null;
@@ -56,12 +56,12 @@ export class ConditionSet {
 		if (this.names !== null) spans.push(this.names.export("BaseType"));
 		if (this.category !== null) spans.push(this.category.export("Class"));
 		if (this.rarity !== null) spans.push(this.rarity.export("Rarity"));
+		if (this.count !== null) spans.push(this.count.export("StackSize"));
 
 		if (this.quality !== null) spans.push(this.quality.export("Quality"));
 		if (this.sockets !== null) spans.push(this.sockets.export("Sockets"));
 		if (this.energyShield !== null) spans.push(this.energyShield.export("BaseEnergyShield"));
-
-		if (this.count !== null) spans.push(this.count.export("StackSize"));
+		if (this.mods !== null) spans.push(this.mods.export("HasExplicitMod"));
 
 		if (spans.length === 0) {
 			// Force empty line to represent where the set goes
