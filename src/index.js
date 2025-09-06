@@ -32,6 +32,18 @@ filter.block((c, e) => { // Quality
 
 	e.outlineColour = EffectSet.RGB.MAGIC;
 });
+filter.block((c, e) => { // Good main stat
+	c.continue();
+	c.goodMain();
+
+	e.outlineColour = EffectSet.RGB.RARE;
+});
+filter.block((c, e) => { // Good mod
+	c.continue();
+	c.goodMod();
+
+	e.outlineColour = EffectSet.RGB.RARE;
+});
 
 // Default: Minimap by rarity. Quality/socket should also be medium
 // Normal
@@ -57,6 +69,24 @@ filter.block((c, e) => { // Common gear, socket
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasSocket();
+
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
+});
+filter.block((c, e) => { // Common gear, good main stat
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+	c.goodMain();
+
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
+});
+filter.block((c, e) => { // Common gear, good mod
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+	c.goodMod();
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
@@ -109,6 +139,24 @@ filter.block((c, e) => { // Common gear, socket
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasSocket();
+
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
+});
+filter.block((c, e) => { // Common gear, good main stat
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.goodMain();
+
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
+});
+filter.block((c, e) => { // Common gear, good mod
+	c.continue();
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.goodMod();
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
@@ -202,113 +250,6 @@ filter.block((c, e) => {
 	e.beamColour = EffectSet.COLOUR.BROWN;
 	e.sound = EffectSet.SOUND.WAH;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.TRIANGLE);
-});
-
-// Pass with outline: Spirit/rarity main stats
-// https://poe2db.tw/us/Items
-filter.block((c, e) => {
-	c.names = new Comparison(new StringList(
-		// +x to spirit
-		"Corvus Mantle", "Conjurer Mantle", // Body armours
-		"Solar Amulet", // Amulets
-
-		// x% increased rarity of items found
-		"Gold Amulet", // Amulets
-		"Gold Ring", // Rings
-		"Golden Obi", // Belts
-		"Golden Charm" // Charms
-	));
-	c.category = new Comparison(new StringList(CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.CHARGED));
-
-	e.outlineColour = EffectSet.RGB.RARE;
-});
-// Pass with outline: Spirit/rarity mods
-// https://poe2db.tw/us/Modifiers
-filter.block((c, e) => {
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR,
-		CATEGORY.JEWELLERY));
-	c.mods = new Comparison(new StringList(
-		// x% increased spirit
-		"Lord's", "Baron's", "Viscount's", "Marquess'", "Count's", "Duke's", "Prince's", "King's", // Prefixes for sceptres
-
-		// x% increased spirit & +x to maximum mana
-		"Advisor's", "Counselor's", "Emissary's", "Minister's", "Envoy's", "Diplomat's", "Chancellor's", // Prefixes for sceptres
-
-		// +x to spirit
-		"Lady's", "Baronness'", "Viscountess'", "Marchioness'", "Countess'", // Prefixes for body armours/amulets
-		"Duchess'", "Princess'", "Queen's", // Higher prefixes for body armours
-
-		// x% increased rarity of items found
-		"Magpie's", "Collector's", "Hoarder's", "Pirate's", "Dragon's", // Prefixes for helmets/amulets/rings
-		"of Plunder", "of Raiding", "of Archaeology", "of Excavation", "of Windfall" // Suffixes for gloves/boots/helmets/amulets/rings
-	),
-	Comparison.OPERATOR.GTE,
-	1);
-
-	e.outlineColour = EffectSet.RGB.RARE;
-});
-
-// Fade: Normal/magic class weapons but are wrong skill, with no quality/sockets
-filter.block((c, e) => {
-	c.names = new Comparison(new StringList(
-		// https://poe2db.tw/us/Wands#WandsItem
-		"Withered Wand", // Chaos Bolt
-		// "Bone Wand", // Bone Blast
-		"Attuned Wand", // Mana Drain
-		"Siphoning Wand", // Power Siphon
-		"Volatile Wand", // Volatile Dead
-		"Galvanic Wand", // Galvanic Field
-
-		// https://poe2db.tw/us/Sceptres#SceptresItem
-		// "Rattling Sceptre", "Lupine Sceptre", "Ochre Sceptre", "Devouring Sceptre", // Skeletal Warrior
-		"Stoic Sceptre", // Discipline
-		"Omen Sceptre", // Malice
-		"Shrine Sceptre" // Purity of Fire/Ice/Lightning
-	));
-	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
-	c.noQualitySocketless();
-
-	e.fade();
-});
-
-// Fade: Normal/magic other weapons, with no quality/sockets
-filter.block((c, e) => {
-	c.category = new Comparison(CATEGORY.WEAPON_OTHER);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
-	c.noQualitySocketless();
-
-	e.fade();
-});
-
-// Fade: Normal armour, with no quality/sockets
-filter.block((c, e) => {
-	c.category = new Comparison(CATEGORY.ARMOUR);
-	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
-	c.noQualitySocketless();
-
-	e.fade();
-});
-// Fade: Magic armour we don't use (no energy shield), with no quality/sockets
-filter.block((c, e) => {
-	c.category = new Comparison(CATEGORY.ARMOUR);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
-	c.noQualitySocketless();
-	c.energyShield = new Comparison(0);
-
-	e.fade();
-});
-
-// Fade: Bad normal/magic flasks, with no quality
-filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
-		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
-		"Grand Life Flask", "Grand Mana Flask", "Giant Life Flask", "Giant Mana Flask"));
-	c.category = new Comparison(CATEGORY.CHARGED);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
-	c.noQuality();
-
-	e.fade();
 });
 
 // Currencies - https://docs.google.com/spreadsheets/d/1Cq80pjKnWF5-FmhQd1TLcWhdpivaRaSKhMGz_I4VgG4
@@ -451,6 +392,78 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.QUEST);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+});
+
+// Stop here; don't fade these (similar to the ones outlined at the start)
+filter.block((c, e) => {
+	c.hasSocket();
+});
+filter.block((c, e) => {
+	c.hasQuality();
+});
+filter.block((c, e) => {
+	c.goodMain();
+});
+filter.block((c, e) => {
+	c.goodMod();
+});
+
+// Fade: Normal/magic class weapons but are wrong skill
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList(
+		// https://poe2db.tw/us/Wands#WandsItem
+		"Withered Wand", // Chaos Bolt
+		// "Bone Wand", // Bone Blast
+		"Attuned Wand", // Mana Drain
+		"Siphoning Wand", // Power Siphon
+		"Volatile Wand", // Volatile Dead
+		"Galvanic Wand", // Galvanic Field
+
+		// https://poe2db.tw/us/Sceptres#SceptresItem
+		// "Rattling Sceptre", "Lupine Sceptre", "Ochre Sceptre", "Devouring Sceptre", // Skeletal Warrior
+		"Stoic Sceptre", // Discipline
+		"Omen Sceptre", // Malice
+		"Shrine Sceptre" // Purity of Fire/Ice/Lightning
+	));
+	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+
+	e.fade();
+});
+
+// Fade: Normal/magic other weapons
+filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.WEAPON_OTHER);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+
+	e.fade();
+});
+
+// Fade: Normal armour
+filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+
+	e.fade();
+});
+// Fade: Magic armour we don't use (no energy shield)
+filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.energyShield = new Comparison(0);
+
+	e.fade();
+});
+
+// Fade: Bad normal/magic flasks
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
+		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
+		"Grand Life Flask", "Grand Mana Flask", "Giant Life Flask", "Giant Mana Flask"));
+	c.category = new Comparison(CATEGORY.CHARGED);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+
+	e.fade();
 });
 
 filter.save();

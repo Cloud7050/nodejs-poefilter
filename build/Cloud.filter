@@ -22,6 +22,20 @@ Show
 	Continue
 
 Show
+	BaseType == "Corvus Mantle" "Conjurer Mantle" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
+
+	SetBorderColor 255 225 87
+
+	Continue
+
+Show
+	HasExplicitMod >=1 Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
+
+	SetBorderColor 255 225 87
+
+	Continue
+
+Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
 	Rarity == Normal
 	Quality == 0
@@ -45,6 +59,26 @@ Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
 	Rarity == Normal
 	Sockets > 0
+
+	SetFontSize 32
+	MinimapIcon 1 White UpsideDownHouse
+
+	Continue
+
+Show
+	BaseType == "Corvus Mantle" "Conjurer Mantle" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
+	Class == "Body Armours" Boots Gloves Helmets
+	Rarity == Normal
+
+	SetFontSize 32
+	MinimapIcon 1 White UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Fishing Rods" Sceptres Wands "Body Armours" Boots Gloves Helmets
+	Rarity == Normal
+	HasExplicitMod >=1 Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
 
 	SetFontSize 32
 	MinimapIcon 1 White UpsideDownHouse
@@ -103,6 +137,26 @@ Show
 	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
 	Rarity == Magic
 	Sockets > 0
+
+	SetFontSize 32
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	BaseType == "Corvus Mantle" "Conjurer Mantle" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
+	Class == "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
+
+	SetFontSize 32
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Fishing Rods" Sceptres Wands "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
+	HasExplicitMod >=1 Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
 
 	SetFontSize 32
 	MinimapIcon 1 Blue UpsideDownHouse
@@ -203,70 +257,6 @@ Show
 	MinimapIcon 0 Brown Triangle
 
 	Continue
-
-Show
-	BaseType == "Corvus Mantle" "Conjurer Mantle" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
-	Class == "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
-
-	SetBorderColor 255 225 87
-
-Show
-	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings
-	HasExplicitMod >=1 Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
-
-	SetBorderColor 255 225 87
-
-Show
-	BaseType == "Withered Wand" "Attuned Wand" "Siphoning Wand" "Volatile Wand" "Galvanic Wand" "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre"
-	Class == "Fishing Rods" Sceptres Wands
-	Rarity <= Magic
-	Quality == 0
-	Sockets == 0
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	MinimapIcon -1
-
-Show
-	Class == Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
-	Rarity <= Magic
-	Quality == 0
-	Sockets == 0
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	MinimapIcon -1
-
-Show
-	Class == "Body Armours" Boots Gloves Helmets
-	Rarity == Normal
-	Quality == 0
-	Sockets == 0
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	MinimapIcon -1
-
-Show
-	Class == "Body Armours" Boots Gloves Helmets
-	Rarity == Magic
-	Quality == 0
-	Sockets == 0
-	BaseEnergyShield == 0
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	MinimapIcon -1
-
-Show
-	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Giant Life Flask" "Giant Mana Flask"
-	Class == Charms "Life Flasks" "Mana Flasks"
-	Rarity <= Magic
-	Quality == 0
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	MinimapIcon -1
 
 Show
 	BaseType == Gold
@@ -394,3 +384,66 @@ Show
 	Class == "Quest Items"
 
 	SetFontSize 32
+
+Show
+	Sockets > 0
+
+	#
+
+Show
+	Quality > 0
+
+	#
+
+Show
+	BaseType == "Corvus Mantle" "Conjurer Mantle" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
+
+	#
+
+Show
+	HasExplicitMod >=1 Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
+
+	#
+
+Show
+	BaseType == "Withered Wand" "Attuned Wand" "Siphoning Wand" "Volatile Wand" "Galvanic Wand" "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre"
+	Class == "Fishing Rods" Sceptres Wands
+	Rarity <= Magic
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	MinimapIcon -1
+
+Show
+	Class == Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
+	Rarity <= Magic
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	MinimapIcon -1
+
+Show
+	Class == "Body Armours" Boots Gloves Helmets
+	Rarity == Normal
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	MinimapIcon -1
+
+Show
+	Class == "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
+	BaseEnergyShield == 0
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	MinimapIcon -1
+
+Show
+	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Giant Life Flask" "Giant Mana Flask"
+	Class == Charms "Life Flasks" "Mana Flasks"
+	Rarity <= Magic
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	MinimapIcon -1

@@ -94,4 +94,43 @@ export class ConditionSet {
 	noQualitySocketless() {
 		return this.noQuality().socketless();
 	}
+
+	goodMain() {
+		// Spirit/rarity main stats
+		// https://poe2db.tw/us/Items
+		this.names = new Comparison(new StringList(
+			// +x to spirit
+			"Corvus Mantle", "Conjurer Mantle", // Body armours
+			"Solar Amulet", // Amulets
+
+			// x% increased rarity of items found
+			"Gold Amulet", // Amulets
+			"Gold Ring", // Rings
+			"Golden Obi", // Belts
+			"Golden Charm" // Charms
+		));
+		return this;
+	}
+	goodMod() {
+		// Spirit/rarity mods
+		// https://poe2db.tw/us/Modifiers
+		this.mods = new Comparison(new StringList(
+			// x% increased spirit
+			"Lord's", "Baron's", "Viscount's", "Marquess'", "Count's", "Duke's", "Prince's", "King's", // Prefixes for sceptres
+
+			// x% increased spirit & +x to maximum mana
+			"Advisor's", "Counselor's", "Emissary's", "Minister's", "Envoy's", "Diplomat's", "Chancellor's", // Prefixes for sceptres
+
+			// +x to spirit
+			"Lady's", "Baronness'", "Viscountess'", "Marchioness'", "Countess'", // Prefixes for body armours/amulets
+			"Duchess'", "Princess'", "Queen's", // Higher prefixes for body armours
+
+			// x% increased rarity of items found
+			"Magpie's", "Collector's", "Hoarder's", "Pirate's", "Dragon's", // Prefixes for helmets/amulets/rings
+			"of Plunder", "of Raiding", "of Archaeology", "of Excavation", "of Windfall" // Suffixes for gloves/boots/helmets/amulets/rings
+		),
+		Comparison.OPERATOR.GTE,
+		1);
+		return this;
+	}
 }
