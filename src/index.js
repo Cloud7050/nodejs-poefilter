@@ -37,7 +37,7 @@ filter.block((c, e) => { // Quality
 // Normal
 filter.block((c, e) => { // Common gear, no quality/socket
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.noQualitySocketless();
 
@@ -45,7 +45,7 @@ filter.block((c, e) => { // Common gear, no quality/socket
 });
 filter.block((c, e) => { // Common gear, quality
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasQuality();
 
@@ -54,7 +54,7 @@ filter.block((c, e) => { // Common gear, quality
 });
 filter.block((c, e) => { // Common gear, socket
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasSocket();
 
@@ -89,7 +89,7 @@ filter.block((c, e) => {
 // Magic
 filter.block((c, e) => { // Common gear, no quality/socket
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.noQualitySocketless();
 
@@ -97,7 +97,7 @@ filter.block((c, e) => { // Common gear, no quality/socket
 });
 filter.block((c, e) => { // Common gear, quality
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasQuality();
 
@@ -106,7 +106,7 @@ filter.block((c, e) => { // Common gear, quality
 });
 filter.block((c, e) => { // Common gear, socket
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasSocket();
 
@@ -141,7 +141,7 @@ filter.block((c, e) => {
 // Rare
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR,
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR,
 		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
@@ -168,7 +168,7 @@ filter.block((c, e) => {
 // Unique
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_USED, CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR,
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR,
 		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
@@ -204,19 +204,43 @@ filter.block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.TRIANGLE);
 });
 
-// Fade: Normal unused weapons or any normal armour, with no quality/sockets
+// Fade: Normal/magic class weapons but are wrong skill, with no quality/sockets
 filter.block((c, e) => {
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_UNUSED, CATEGORY.ARMOUR));
-	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+	c.names = new Comparison(new StringList(
+		// https://poe2db.tw/us/Wands#WandsItem
+		"Withered Wand", // Chaos Bolt
+		// "Bone Wand", // Bone Blast
+		"Attuned Wand", // Mana Drain
+		"Siphoning Wand", // Power Siphon
+		"Volatile Wand", // Volatile Dead
+		"Galvanic Wand", // Galvanic Field
+
+		// https://poe2db.tw/us/Sceptres#SceptresItem
+		// "Rattling Sceptre", "Lupine Sceptre", "Ochre Sceptre", "Devouring Sceptre", // Skeletal Warrior
+		"Stoic Sceptre", // Discipline
+		"Omen Sceptre", // Malice
+		"Shrine Sceptre" // Purity of Fire/Ice/Lightning
+	));
+	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 	c.noQualitySocketless();
 
 	e.fade();
 });
 
-// Fade: Magic weapons we don't use, with no quality/sockets
+// Fade: Normal/magic other weapons, with no quality/sockets
 filter.block((c, e) => {
-	c.category = new Comparison(CATEGORY.WEAPON_UNUSED);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.category = new Comparison(CATEGORY.WEAPON_OTHER);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+	c.noQualitySocketless();
+
+	e.fade();
+});
+
+// Fade: Normal armour, with no quality/sockets
+filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.noQualitySocketless();
 
 	e.fade();
@@ -248,7 +272,7 @@ filter.block((c, e) => {
 filter.block((c, e) => { // Gold
 	c.names = new Comparison(new StringList("Gold"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
-	c.count = new Comparison(100, Comparison.OPERATOR.LT);
+	c.count = new Comparison(200, Comparison.OPERATOR.LT);
 
 	e.textColour = EffectSet.RGB.NORMAL;
 	e.backgroundColour = EffectSet.RGBA.TRANSPARENT;
@@ -258,7 +282,7 @@ filter.block((c, e) => { // Gold
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Gold"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
-	c.count = new Comparison(300, Comparison.OPERATOR.LT);
+	c.count = new Comparison(500, Comparison.OPERATOR.LT);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.textColour = EffectSet.RGB.NORMAL;

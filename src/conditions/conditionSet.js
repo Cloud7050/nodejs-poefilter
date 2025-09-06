@@ -5,8 +5,8 @@ export class ConditionSet {
 	// https://poe2db.tw/us/Items
 	static CATEGORY = {
 		// Rarity
-		WEAPON_USED: new StringList("Fishing Rods", "Sceptres", "Wands"), // Witch weapons
-		WEAPON_UNUSED: new StringList("Bows", "Bucklers", "Claws", "Crossbows", "Daggers", "Flails",
+		WEAPON_CLASS: new StringList("Fishing Rods", "Sceptres", "Wands"), // Witch weapons
+		WEAPON_OTHER: new StringList("Bows", "Bucklers", "Claws", "Crossbows", "Daggers", "Flails",
 			"Foci", "One Hand Axes", "One Hand Maces", "One Hand Swords", "Quarterstaves",
 			"Quivers", "Shields", "Spears", "Staves", "Traps", "Two Hand Axes", "Two Hand Maces",
 			"Two Hand Swords"),
