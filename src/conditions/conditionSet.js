@@ -96,8 +96,7 @@ export class ConditionSet {
 	}
 
 	goodMain() {
-		// Spirit/rarity main stats
-		// https://poe2db.tw/us/Items
+		// Spirit/rarity main stats - https://poe2db.tw/us/Items
 		this.names = new Comparison(new StringList(
 			// +x to spirit
 			"Corvus Mantle", "Conjurer Mantle", // Body armours
@@ -112,8 +111,7 @@ export class ConditionSet {
 		return this;
 	}
 	goodMod() {
-		// Spirit/rarity mods
-		// https://poe2db.tw/us/Modifiers
+		// Spirit/rarity mods - https://poe2db.tw/us/Modifiers
 		this.mods = new Comparison(new StringList(
 			// x% increased spirit
 			"Lord's", "Baron's", "Viscount's", "Marquess'", "Count's", "Duke's", "Prince's", "King's", // Prefixes for sceptres
