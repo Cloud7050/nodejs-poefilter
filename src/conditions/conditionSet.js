@@ -20,7 +20,7 @@ export class ConditionSet {
 		CURRENCY: new StringList("Stackable Currency"),
 		GEM_UNCUT: new StringList("Uncut Skill Gems", "Uncut Spirit Gems", "Uncut Support Gems"),
 		GEM: new StringList("Skill Gems", "Support Gems"),
-		RUNE: new StringList("Socketable"),
+		SOCKETABLE: new StringList("Socketable"),
 		COIN: new StringList("Trial Coins"),
 		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items" Waystones',
 		QUEST: new StringList("Quest Items"),

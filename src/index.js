@@ -427,9 +427,9 @@ filter.block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.CYAN, MapEffect.ICON.RAINDROP);
 });
 
-// Runes
+// Socketable eg runes
 filter.block((c, e) => {
-	c.category = new Comparison(CATEGORY.RUNE);
+	c.category = new Comparison(CATEGORY.SOCKETABLE);
 
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.textColour = EffectSet.RGB.CRAFTED;
