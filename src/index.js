@@ -51,16 +51,28 @@ filter.block((c, e) => { // Reset gear
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
-filter.multiBlock((c) => { // Class weapons and armour, quality
+filter.multiBlock((c) => { // Class weapons, quality
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
+	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasQuality();
-}, (c) => { // Class weapons and armour, socket
+}, (c) => { // Class weapons, socket
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
+	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasSocket();
+}, (c) => { // Class armour, quality
+	c.continue();
+	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+	c.hasQuality();
+	c.hasEnergyShield();
+}, (c) => { // Class armour, socket
+	c.continue();
+	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+	c.hasSocket();
+	c.hasEnergyShield();
 }, (c) => { // Common gear, good main stat
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
@@ -99,16 +111,28 @@ filter.block((c, e) => { // Reset gear
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
-filter.multiBlock((c) => { // Class weapons and armour, quality
+filter.multiBlock((c) => { // Class weapons, quality
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
+	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasQuality();
-}, (c) => { // Class weapons and armour, socket
+}, (c) => { // Class weapons, socket
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
+	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasSocket();
+}, (c) => { // Class armour, quality
+	c.continue();
+	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.hasQuality();
+	c.hasEnergyShield();
+}, (c) => { // Class armour, socket
+	c.continue();
+	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.hasSocket();
+	c.hasEnergyShield();
 }, (c) => { // Common gear, good main stat
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
@@ -388,10 +412,10 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 }, (c) => { // Normal armour
 	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
-}, (c) => { // Magic armour we don't use (no energy shield)
+}, (c) => { // Magic other armour
 	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
-	c.energyShield = new Comparison(0);
+	c.noEnergyShield();
 }, (c) => { // Bad normal/magic flasks
 	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
 		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",

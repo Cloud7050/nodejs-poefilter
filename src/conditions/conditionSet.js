@@ -92,7 +92,15 @@ export class ConditionSet {
 		return this;
 	}
 	noQualitySocketless() {
-		return this.noQuality().socketless();
+		return this.noEnergyShield().socketless();
+	}
+	hasEnergyShield() {
+		this.energyShield = new Comparison(0, Comparison.OPERATOR.GT);
+		return this;
+	}
+	noEnergyShield() {
+		this.energyShield = new Comparison(0);
+		return this;
 	}
 
 	goodMain() {
