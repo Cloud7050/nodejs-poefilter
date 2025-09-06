@@ -10,7 +10,7 @@ const CATEGORY = ConditionSet.CATEGORY;
 
 let filter = new Filter("Cloud");
 
-// Default: Minimap everything
+// Default: Small text, solid black background, minimap everything
 filter.block((c, e) => {
 	c.continue();
 
@@ -32,16 +32,13 @@ filter.block((c, e) => { // Quality
 
 	e.outlineColour = EffectSet.RGB.MAGIC;
 });
-filter.block((c, e) => { // Good main stat
+filter.multiBlock((c) => { // Good main stat
 	c.continue();
 	c.goodMain();
-
-	e.outlineColour = EffectSet.RGB.RARE;
-});
-filter.block((c, e) => { // Good mod
+}, (c) => { // Good mod
 	c.continue();
 	c.goodMod();
-
+}, (e) => {
 	e.outlineColour = EffectSet.RGB.RARE;
 });
 
@@ -55,47 +52,31 @@ filter.block((c, e) => { // Common gear, no quality/socket
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
-filter.block((c, e) => { // Common gear, quality
+filter.multiBlock((c) => { // Common gear, quality
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasQuality();
-
-	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
-});
-filter.block((c, e) => { // Common gear, socket
+}, (c) => { // Common gear, socket
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasSocket();
-
-	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
-});
-filter.block((c, e) => { // Common gear, good main stat
+}, (c) => { // Common gear, good main stat
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.goodMain();
-
-	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
-});
-filter.block((c, e) => { // Common gear, good mod
+}, (c) => { // Common gear, good mod
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.goodMod();
-
-	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
-});
-filter.block((c, e) => { // Less common gear
+}, (c) => { // Less common gear
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
-
+}, (e) => {
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.SILVER, MapEffect.ICON.HOUSE);
 });
@@ -125,47 +106,31 @@ filter.block((c, e) => { // Common gear, no quality/socket
 
 	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
-filter.block((c, e) => { // Common gear, quality
+filter.multiBlock((c) => { // Common gear, quality
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasQuality();
-
-	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
-});
-filter.block((c, e) => { // Common gear, socket
+}, (c) => { // Common gear, socket
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasSocket();
-
-	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
-});
-filter.block((c, e) => { // Common gear, good main stat
+}, (c) => { // Common gear, good main stat
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.goodMain();
-
-	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
-});
-filter.block((c, e) => { // Common gear, good mod
+}, (c) => { // Common gear, good mod
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.goodMod();
-
-	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
-});
-filter.block((c, e) => {  // Less common gear
+}, (c) => { // Less common gear
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
-
+}, (e) => {
 	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.BLUE, MapEffect.ICON.HOUSE);
 });
@@ -395,21 +360,18 @@ filter.block((c, e) => {
 });
 
 // Stop here; don't fade these (similar to the ones outlined at the start)
-filter.block((c, e) => {
+filter.multiBlock((c) => {
 	c.hasSocket();
-});
-filter.block((c, e) => {
+}, (c) => {
 	c.hasQuality();
-});
-filter.block((c, e) => {
+}, (c) => {
 	c.goodMain();
-});
-filter.block((c, e) => {
+}, (c) => {
 	c.goodMod();
-});
+}, (e) => {});
 
-// Fade: Normal/magic class weapons but are wrong skill
-filter.block((c, e) => {
+// Fade
+filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.names = new Comparison(new StringList(
 		// https://poe2db.tw/us/Wands#WandsItem
 		"Withered Wand", // Chaos Bolt
@@ -427,42 +389,23 @@ filter.block((c, e) => {
 	));
 	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
-
-	e.fade();
-});
-
-// Fade: Normal/magic other weapons
-filter.block((c, e) => {
+}, (c) => { // Normal/magic other weapons
 	c.category = new Comparison(CATEGORY.WEAPON_OTHER);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
-
-	e.fade();
-});
-
-// Fade: Normal armour
-filter.block((c, e) => {
+}, (c) => { // Normal armour
 	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
-
-	e.fade();
-});
-// Fade: Magic armour we don't use (no energy shield)
-filter.block((c, e) => {
+}, (c) => { // Magic armour we don't use (no energy shield)
 	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.energyShield = new Comparison(0);
-
-	e.fade();
-});
-
-// Fade: Bad normal/magic flasks
-filter.block((c, e) => {
+}, (c) => { // Bad normal/magic flasks
 	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
 		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
 		"Grand Life Flask", "Grand Mana Flask", "Giant Life Flask", "Giant Mana Flask"));
 	c.category = new Comparison(CATEGORY.CHARGED);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
-
+}, (e) => {
 	e.fade();
 });
 

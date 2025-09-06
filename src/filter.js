@@ -1,5 +1,7 @@
 import fs from "fs";
 import { Block } from "./block.js";
+import { ConditionSet } from "./conditions/conditionSet.js";
+import { EffectSet } from "./effects/effectSet.js";
 
 
 
@@ -15,6 +17,23 @@ export class Filter {
 		let b = new Block();
 		logic(b.c, b.e);
 		this.spans.push(...b.export());
+	}
+
+	// Many ConditionSets, but they all share the same EffectSet
+	multiBlock(...callbacks) {
+		let conditionCallbacks = callbacks.slice(0, -1);
+		let effectCallback = callbacks.at(-1);
+
+		let e = new EffectSet();
+		effectCallback(e);
+
+		conditionCallbacks.forEach((conditionCallback) => {
+			let c = new ConditionSet();
+			conditionCallback(c);
+
+			let b = new Block(c, e);
+			this.spans.push(...b.export());
+		});
 	}
 
 	save() {
