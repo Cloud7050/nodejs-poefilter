@@ -32,6 +32,24 @@ filter.block((c, e) => { // Quality
 
 	e.outlineColour = EffectSet.RGB.MAGIC;
 });
+// https://poe2db.tw/us/Items
+filter.block((c, e) => { // Spirit/rarity main stats
+	c.continue();
+	c.names = new Comparison(new StringList(
+		// +x to spirit
+		"Corvus Mantle", "Conjurer Mantle", // Body armours
+		"Solar Amulet", // Amulets
+
+		// x% increased rarity of items found
+		"Gold Amulet", // Amulets
+		"Gold Ring", // Rings
+		"Golden Obi", // Belts
+		"Golden Charm" // Charms
+	));
+	c.category = new Comparison(new StringList(CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+
+	e.outlineColour = EffectSet.RGB.RARE;
+});
 
 // Default: Minimap by rarity. Quality/socket should also be medium
 // Normal
@@ -204,8 +222,6 @@ filter.block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.BROWN, MapEffect.ICON.TRIANGLE);
 });
 
-//TODO outline above: spirit/rarity main stats
-
 // Pass with outline: Spirit/rarity mods
 // https://poe2db.tw/us/Modifiers
 filter.block((c, e) => {
@@ -224,7 +240,7 @@ filter.block((c, e) => {
 
 		// x% increased rarity of items found
 		"Magpie's", "Collector's", "Hoarder's", "Pirate's", "Dragon's", // Prefixes for helmets/amulets/rings
-		"of Plunder", "of Raiding", "of Archaeology", "of Excavation", "of Windfall", // Suffixes for gloves/boots/helmets/amulets/rings
+		"of Plunder", "of Raiding", "of Archaeology", "of Excavation", "of Windfall" // Suffixes for gloves/boots/helmets/amulets/rings
 	),
 	Comparison.OPERATOR.GTE,
 	1);
