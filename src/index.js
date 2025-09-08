@@ -375,7 +375,7 @@ filter.multiBlock((c) => {
 }, (c) => {
 	c.goodMod();
 }, (c) => {
-	c.wisdomTier = new Comparison(1, Comparison.OPERATOR.GTE);
+	c.wisdomTier = new Comparison(2, Comparison.OPERATOR.GTE);
 }, (e) => {});
 
 // Fade
