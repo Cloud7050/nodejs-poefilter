@@ -119,17 +119,44 @@ export class ConditionSet {
 		return this;
 	}
 	goodMod() {
-		// Spirit/rarity mods - https://poe2db.tw/us/Modifiers
+		// Level/spirit/rarity mods - https://poe2db.tw/us/Modifiers
+		// Less effort is put into adding/listing mods for other class weapons
 		this.mods = new Comparison(new StringList(
-			// x% increased spirit
-			"Lord's", "Baron's", "Viscount's", "Marquess'", "Count's", "Duke's", "Prince's", "King's", // Prefixes for sceptres
-
-			// x% increased spirit & +x to maximum mana
-			"Advisor's", "Counselor's", "Emissary's", "Minister's", "Envoy's", "Diplomat's", "Chancellor's", // Prefixes for sceptres
+			// +x to level of all spell skills
+			"of the Mage", "of the Enchanter", "of the Sorcerer", // Suffixes for wands/staves/amulets
+			"of the Wizard", // Higher suffixes for wands/staves
+			// +x to level of all fire spell skills
+			"of Coals", "of Cinders", "of Flames", "of Immolation", "of Inferno", // Suffixes for wands/staves
+			// +x to level of all cold spell skills
+			"of Snow", "of Sleet", "of Ice", "of Rime", "of Frostbite", // Suffixes for wands/staves
+			// +x to level of all lightning spell skills
+			"of Sparks", "of Static", "of Electricity", "of Voltage", "of Thunder", // Suffixes for wands/staves
+			// +x to level of all chaos spell skills
+			"of Anarchy", "of Turmoil", "of Ruin", "of Havoc", "of Armageddon", // Suffixes for wands/staves
+			// +x to level of all physical spell skills
+			"of Agony", "of Suffering", "of Torment", "of Desolation", "of Grief", // Suffixes for wands/staves
+			// +x to level of all minion skills
+			"of the Taskmaster", "of the Despot", // Suffixes for sceptres/helmets/amulets
+			"of the Overseer", // Higher suffixes for sceptres/amulets
+			"of the Slavedriver", // Higher suffixes for sceptres
+			// +x to level of all melee skills
+			"of Combat", "of Dueling", // Suffixes for claws/daggers/swords/axes/maces/spears/flails/quarterstaves/gloves/amulets
+			"of Conflict",  // Higher suffixes for claws/daggers/swords/axes/maces/flails/spears/quarterstaves
+			"of Battle",  // Higher suffixes for claws/daggers/swords/axes/maces/flails/spears/quarterstaves/amulets
+			"of War", // Higher suffixes for claws/daggers/swords/axes/maces/flails/spears/quarterstaves
+			// +x to level of all projectile skills
+			"of the Archer", "of the Fletcher", "of the Sharpshooter", // Suffixes for spears/bows/crossbows/amulets
+			"of the Marksman", "of the Sniper", // Higher suffixes for spears/bows/crossbows
+			// +x to level of all trap skill gems
+			"of Explosives", "of Shrapnel", "of Sabotage", "of Detonation", "of Pyrotechnics", // Suffixes for traps
 
 			// +x to spirit
 			"Lady's", "Baronness'", "Viscountess'", "Marchioness'", "Countess'", // Prefixes for body armours/amulets
 			"Duchess'", "Princess'", "Queen's", // Higher prefixes for body armours
+			// x% increased spirit
+			"Lord's", "Baron's", "Viscount's", "Marquess'", "Count's", "Duke's", "Prince's", "King's", // Prefixes for sceptres
+			// x% increased spirit & +x to maximum mana
+			"Advisor's", "Counselor's", "Emissary's", "Minister's", "Envoy's", "Diplomat's", "Chancellor's", // Prefixes for sceptres
 
 			// x% increased rarity of items found
 			"Magpie's", "Collector's", "Hoarder's", "Pirate's", "Dragon's", // Prefixes for helmets/amulets/rings

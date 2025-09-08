@@ -140,7 +140,7 @@ filter.multiBlock((c) => { // Class weapons, quality
 	c.goodMain();
 }, (c) => { // Common gear, good mod
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.goodMod();
 }, (c) => { // Less common gear
