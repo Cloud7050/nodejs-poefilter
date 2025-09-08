@@ -54,30 +54,9 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Sceptres Wands
-	Rarity == Normal
-	Sockets > 0
-
-	SetFontSize 32
-	MinimapIcon 1 White UpsideDownHouse
-
-	Continue
-
-Show
 	Class == "Body Armours" Boots Gloves Helmets
 	Rarity == Normal
 	Quality > 0
-	BaseEnergyShield > 0
-
-	SetFontSize 32
-	MinimapIcon 1 White UpsideDownHouse
-
-	Continue
-
-Show
-	Class == "Body Armours" Boots Gloves Helmets
-	Rarity == Normal
-	Sockets > 0
 	BaseEnergyShield > 0
 
 	SetFontSize 32
@@ -142,30 +121,9 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Sceptres Wands
-	Rarity == Magic
-	Sockets > 0
-
-	SetFontSize 32
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
 	Class == "Body Armours" Boots Gloves Helmets
 	Rarity == Magic
 	Quality > 0
-	BaseEnergyShield > 0
-
-	SetFontSize 32
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == "Body Armours" Boots Gloves Helmets
-	Rarity == Magic
-	Sockets > 0
 	BaseEnergyShield > 0
 
 	SetFontSize 32

@@ -56,22 +56,11 @@ filter.multiBlock((c) => { // Class weapons, quality
 	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasQuality();
-}, (c) => { // Class weapons, socket
-	c.continue();
-	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
-	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
-	c.hasSocket();
 }, (c) => { // Class armour, quality
 	c.continue();
 	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasQuality();
-	c.hasEnergyShield();
-}, (c) => { // Class armour, socket
-	c.continue();
-	c.category = new Comparison(CATEGORY.ARMOUR);
-	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
-	c.hasSocket();
 	c.hasEnergyShield();
 }, (c) => { // Common gear, good main stat
 	c.continue();
@@ -116,22 +105,11 @@ filter.multiBlock((c) => { // Class weapons, quality
 	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasQuality();
-}, (c) => { // Class weapons, socket
-	c.continue();
-	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
-	c.hasSocket();
 }, (c) => { // Class armour, quality
 	c.continue();
 	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasQuality();
-	c.hasEnergyShield();
-}, (c) => { // Class armour, socket
-	c.continue();
-	c.category = new Comparison(CATEGORY.ARMOUR);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
-	c.hasSocket();
 	c.hasEnergyShield();
 }, (c) => { // Common gear, good main stat
 	c.continue();
