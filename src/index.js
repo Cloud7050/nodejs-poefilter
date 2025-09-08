@@ -213,37 +213,6 @@ filter.block((c, e) => {
 });
 
 // Currencies - https://docs.google.com/spreadsheets/d/1Cq80pjKnWF5-FmhQd1TLcWhdpivaRaSKhMGz_I4VgG4
-filter.block((c, e) => { // Gold
-	c.names = new Comparison(new StringList("Gold"));
-	c.category = new Comparison(CATEGORY.CURRENCY);
-	c.count = new Comparison(200, Comparison.OPERATOR.LT);
-
-	e.textColour = EffectSet.RGB.NORMAL;
-	e.backgroundColour = EffectSet.RGBA.TRANSPARENT;
-	e.outlineColour = EffectSet.RGB.LIME;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
-});
-filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Gold"));
-	c.category = new Comparison(CATEGORY.CURRENCY);
-	c.count = new Comparison(500, Comparison.OPERATOR.LT);
-
-	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-	e.textColour = EffectSet.RGB.NORMAL;
-	e.backgroundColour = EffectSet.RGBA.TRANSPARENT;
-	e.outlineColour = EffectSet.RGB.LIME;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
-});
-filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Gold"));
-	c.category = new Comparison(CATEGORY.CURRENCY);
-
-	e.textSize = EffectSet.TEXT_SIZE.LARGE;
-	e.textColour = EffectSet.RGB.NORMAL;
-	e.backgroundColour = EffectSet.RGBA.TRANSPARENT;
-	e.outlineColour = EffectSet.RGB.LIME;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
-});
 filter.block((c, e) => { // Essences
 	c.names = new Comparison(new StringList("Essence of "), Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
@@ -260,6 +229,48 @@ filter.block((c, e) => { // Trial keys
 	e.textColour = EffectSet.RGB.GREEN;
 	e.backgroundColour = EffectSet.RGBA.DARK_GREEN;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.TRIANGLE);
+});
+filter.block((c, e) => { // League desecrations
+	c.names = new Comparison(new StringList("Gnawed Jawbone", "Gnawed Rib", "Gnawed Collarbone",
+		"Preserved Jawbone", "Preserved Rib", "Preserved Collarbone", "Preserved Cranium",
+		"Preserved Vertebrae", "Ancient Jawbone", "Ancient Rib", "Ancient Collarbone"));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.textColour = EffectSet.RGB.PURPLE;
+	e.backgroundColour = EffectSet.RGBA.DARK_PURPLE;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.PURPLE, MapEffect.ICON.CIRCLE);
+});
+filter.block((c, e) => { // Gold
+	c.names = new Comparison(new StringList("Gold"));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+	c.count = new Comparison(250, Comparison.OPERATOR.LT);
+
+	e.textColour = EffectSet.RGB.NORMAL;
+	e.backgroundColour = EffectSet.RGBA.TRANSPARENT;
+	e.outlineColour = EffectSet.RGB.LIME;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
+});
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList("Gold"));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+	c.count = new Comparison(750, Comparison.OPERATOR.LT);
+
+	e.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+	e.textColour = EffectSet.RGB.NORMAL;
+	e.backgroundColour = EffectSet.RGBA.TRANSPARENT;
+	e.outlineColour = EffectSet.RGB.LIME;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
+});
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList("Gold"));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.textColour = EffectSet.RGB.NORMAL;
+	e.backgroundColour = EffectSet.RGBA.TRANSPARENT;
+	e.outlineColour = EffectSet.RGB.LIME;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.KITE);
 });
 filter.block((c, e) => { // Other
 	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));
@@ -291,18 +302,6 @@ filter.block((c, e) => {
 	e.backgroundColour = EffectSet.RGBA.DARK_RARE;
 	e.outlineColour = EffectSet.RGB.LIME;
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.CROSS);
-});
-filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Gnawed Jawbone", "Gnawed Rib", "Gnawed Collarbone",
-		"Preserved Jawbone", "Preserved Rib", "Preserved Collarbone", "Preserved Cranium",
-		"Preserved Vertebrae", "Ancient Jawbone", "Ancient Rib", "Ancient Collarbone"));
-	c.category = new Comparison(CATEGORY.CURRENCY);
-
-	e.textSize = EffectSet.TEXT_SIZE.LARGE;
-	e.textColour = EffectSet.RGB.PURPLE;
-	e.backgroundColour = EffectSet.RGBA.DARK_PURPLE;
-	e.outlineColour = EffectSet.RGB.LIME;
-	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.PURPLE, MapEffect.ICON.CIRCLE);
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Orb of Annulment", "Orb of Chance", "Divine Orb",

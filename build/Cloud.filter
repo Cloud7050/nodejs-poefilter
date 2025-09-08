@@ -247,9 +247,35 @@ Show
 	Continue
 
 Show
+	BaseType = "Essence of "
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 255 85 255
+	MinimapIcon 1 Pink Circle
+
+Show
+	BaseType == "Bronze Key" "Silver Key" "Gold Key"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 0 170 0
+	SetBackgroundColor 20 40 20 255
+	MinimapIcon 0 Green Triangle
+
+Show
+	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone" "Preserved Jawbone" "Preserved Rib" "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae" "Ancient Jawbone" "Ancient Rib" "Ancient Collarbone"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 170 0 170
+	SetBackgroundColor 40 20 40 255
+	MinimapIcon 0 Purple Circle
+
+Show
 	BaseType == Gold
 	Class == "Stackable Currency"
-	StackSize < 200
+	StackSize < 250
 
 	SetTextColor 200 200 200
 	SetBackgroundColor 0 0 0 0
@@ -259,7 +285,7 @@ Show
 Show
 	BaseType == Gold
 	Class == "Stackable Currency"
-	StackSize < 500
+	StackSize < 750
 
 	SetFontSize 32
 	SetTextColor 200 200 200
@@ -276,23 +302,6 @@ Show
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Green Kite
-
-Show
-	BaseType = "Essence of "
-	Class == "Stackable Currency"
-
-	SetFontSize 32
-	SetTextColor 255 85 255
-	MinimapIcon 1 Pink Circle
-
-Show
-	BaseType == "Bronze Key" "Silver Key" "Gold Key"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 0 170 0
-	SetBackgroundColor 20 40 20 255
-	MinimapIcon 0 Green Triangle
 
 Show
 	BaseType == "Scroll of Wisdom" "Transmutation Shard"
@@ -320,16 +329,6 @@ Show
 	SetBackgroundColor 60 53 20 255
 	SetBorderColor 85 255 85
 	MinimapIcon 0 Green Cross
-
-Show
-	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone" "Preserved Jawbone" "Preserved Rib" "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae" "Ancient Jawbone" "Ancient Rib" "Ancient Collarbone"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 170 0 170
-	SetBackgroundColor 40 20 40 255
-	SetBorderColor 85 255 85
-	MinimapIcon 0 Purple Circle
 
 Show
 	BaseType == "Orb of Annulment" "Orb of Chance" "Divine Orb" "Mirror of Kalandra" "Greater Jeweller's Orb" "Perfect Jeweller's Orb"
