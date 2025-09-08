@@ -293,6 +293,18 @@ filter.block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.LIME, MapEffect.ICON.CROSS);
 });
 filter.block((c, e) => {
+	c.names = new Comparison(new StringList("Gnawed Jawbone", "Gnawed Rib", "Gnawed Collarbone",
+		"Preserved Jawbone", "Preserved Rib", "Preserved Collarbone", "Preserved Cranium",
+		"Preserved Vertebrae", "Ancient Jawbone", "Ancient Rib", "Ancient Collarbone"));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.textSize = EffectSet.TEXT_SIZE.LARGE;
+	e.textColour = EffectSet.RGB.PURPLE;
+	e.backgroundColour = EffectSet.RGBA.DARK_PURPLE;
+	e.outlineColour = EffectSet.RGB.LIME;
+	e.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, MapEffect.COLOUR.PURPLE, MapEffect.ICON.CIRCLE);
+});
+filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Orb of Annulment", "Orb of Chance", "Divine Orb",
 		"Mirror of Kalandra", "Greater Jeweller's Orb", "Perfect Jeweller's Orb"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
