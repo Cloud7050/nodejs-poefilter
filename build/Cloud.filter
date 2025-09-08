@@ -403,6 +403,11 @@ Show
 	#
 
 Show
+	UnidentifiedItemTier >= 1
+
+	#
+
+Show
 	BaseType == "Withered Wand" "Attuned Wand" "Siphoning Wand" "Volatile Wand" "Galvanic Wand" "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre"
 	Class == "Fishing Rods" Sceptres Wands
 	Rarity <= Magic
