@@ -390,10 +390,13 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 		"Galvanic Wand", // Galvanic Field
 
 		// https://poe2db.tw/us/Sceptres#SceptresItem
-		// "Rattling Sceptre", "Lupine Sceptre", "Ochre Sceptre", "Devouring Sceptre", // Skeletal Warrior
+		// "Rattling Sceptre", "Lupine Sceptre", "Ochre Sceptre", "Devouring Sceptre",
+		// "Devotional Sceptre", "Aromatic Sceptre", "Pious Sceptre", "Hallowed Sceptre" // Skeletal Warrior
 		"Stoic Sceptre", // Discipline
 		"Omen Sceptre", // Malice
-		"Shrine Sceptre" // Purity of Fire/Ice/Lightning
+		"Shrine Sceptre", // Purity of Fire/Ice/Lightning / Impurity
+		"Clasped Sceptre", // Heart of Ice
+		"Wrath Sceptre" // Fulmination
 	));
 	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
