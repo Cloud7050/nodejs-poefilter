@@ -370,7 +370,7 @@ Show
 	MinimapIcon 1 Pink Raindrop
 
 Show
-	Class == "Trial Coins"
+	Class == "Trial Coins" "Inscribed Ultimatum"
 
 	SetFontSize 37
 	SetTextColor 0 170 0

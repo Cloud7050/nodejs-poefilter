@@ -348,9 +348,9 @@ filter.block((c, e) => {
 	e.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, MapEffect.COLOUR.PINK, MapEffect.ICON.RAINDROP);
 });
 
-// Trial coins
+// Trial tickets
 filter.block((c, e) => {
-	c.category = new Comparison(CATEGORY.COIN);
+	c.category = new Comparison(CATEGORY.TICKET);
 
 	e.textSize = EffectSet.TEXT_SIZE.LARGE;
 	e.textColour = EffectSet.RGB.GREEN;
