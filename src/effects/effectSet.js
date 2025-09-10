@@ -1,5 +1,4 @@
 import { Colour } from "./colour.js";
-import { MapEffect } from "./mapEffect.js";
 
 export class EffectSet {
 	static VISIBILITY = {
@@ -19,6 +18,26 @@ export class EffectSet {
 		WAH: "WAH.mp3",
 		DISABLE: "None",
 	};
+	static MAP_SIZE = {
+		SMALL: "2",
+		MEDIUM: "1",
+		LARGE: "0",
+		DISABLE: "-1",
+	};
+	static MAP_ICON = {
+		// CIRCLE: "Circle",
+		CROSS: "Cross",
+		DIAMOND: "Diamond",
+		// HEXAGON: "Hexagon",
+		HOUSE: "UpsideDownHouse",
+		KITE: "Kite",
+		// MOON: "Moon",
+		// PENTAGON: "Pentagon",
+		// RAINDROP: "Raindrop",
+		STAR: "Star",
+		SQUARE: "Square",
+		// TRIANGLE: "Triangle",
+	};
 
 	visibility = EffectSet.VISIBILITY.SHOW;
 
@@ -29,7 +48,9 @@ export class EffectSet {
 
 	beamColour = null;
 	sound = null;
-	mapEffect = null; // MapEffect
+	mapSize = null;
+	mapColour = null;
+	mapIcon = null;
 
 	getBlockStart() {
 		return this.visibility;
@@ -45,7 +66,11 @@ export class EffectSet {
 
 		if (this.beamColour !== null) spans.push(`PlayEffect ${this.beamColour}`);
 		if (this.sound !== null) spans.push(`CustomAlertSound "${this.sound}"`);
-		if (this.mapEffect !== null) spans.push(this.mapEffect.export());
+		if (this.mapSize === EffectSet.MAP_SIZE.DISABLE) {
+			spans.push(`MinimapIcon ${EffectSet.MAP_SIZE.DISABLE}`);
+		} else if (this.mapSize !== null) {
+			spans.push(`MinimapIcon ${this.mapSize} ${this.mapColour} ${this.mapIcon}`);
+		}
 
 		if (spans.length === 0) {
 			// Force empty line to represent where the set goes
@@ -57,74 +82,71 @@ export class EffectSet {
 	fade() {
 		this.textSize = EffectSet.TEXT_SIZE.SMALLEST;
 		this.backgroundColour = Colour.BLACK_TRANSLUCENT;
-
-		// Explicitly put empty map effect to express intent to hide, making the filter overwrite any previous shows
-		this.mapEffect = new MapEffect();
-
+		this.mapSize = EffectSet.MAP_SIZE.DISABLE;
 		return this;
 	}
 
-	colourWisdom(mainColour, backgroundColour = undefined) {
-		backgroundColour = backgroundColour ?? mainColour.tone(3);
-
+	colourWisdom(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.KITE, backgroundColour = mainColour.tone(3)) {
 		this.textColour = mainColour.tone(90);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.tone(90);
+		this.mapColour = mapColour;
+		this.mapIcon = mapIcon;
 		return this;
 	}
-	colourAugment(mainColour, backgroundColour = undefined) {
-		backgroundColour = backgroundColour ?? mainColour.tone(13);
-
+	colourAugment(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.HOUSE, backgroundColour = mainColour.tone(13)) {
 		this.textColour = mainColour.tone(80);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.tone(80);
+		this.mapColour = mapColour;
+		this.mapIcon = mapIcon;
 		return this;
 	}
-	colourExalt(mainColour, backgroundColour = undefined) {
-		backgroundColour = backgroundColour ?? mainColour.tone(23);
-
+	colourExalt(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.CROSS, backgroundColour = mainColour.tone(23)) {
 		this.textColour = mainColour.tone(70);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.tone(70);
+		this.mapColour = mapColour;
+		this.mapIcon = mapIcon;
 		return this;
 	}
-	colourChance(mainColour, backgroundColour = undefined) {
-		backgroundColour = backgroundColour ?? mainColour.tone(60);
-
+	colourChance(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.STAR, backgroundColour = mainColour.tone(60)) {
 		this.textColour = mainColour.tone(10);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.tone(10);
+		this.mapColour = mapColour;
+		this.mapIcon = mapIcon;
 		return this;
 	}
-	colourDivine(mainColour, backgroundColour = undefined) {
-		backgroundColour = backgroundColour ?? mainColour.tone(90);
-
+	colourDivine(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.DIAMOND, backgroundColour = mainColour.tone(90)) {
 		this.textColour = mainColour.tone(50);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.tone(50);
+		this.mapColour = mapColour;
+		this.mapIcon = mapIcon;
 		return this;
 	}
 
-	sizeWisdom(mapColour, mapIcon = MapEffect.ICON.KITE) {
+	sizeWisdom() {
 		this.textSize = EffectSet.TEXT_SIZE.SMALL;
-		this.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, mapColour, mapIcon);
+		this.mapSize = EffectSet.MAP_SIZE.SMALL;
 		return this;
 	}
-	sizeAugment(mapColour, mapIcon = MapEffect.ICON.HOUSE) {
+	sizeAugment() {
 		this.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-		this.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, mapColour, mapIcon);
+		this.mapSize = EffectSet.MAP_SIZE.MEDIUM;
 		return this;
 	}
-	sizeExalt(mapColour, mapIcon = MapEffect.ICON.CROSS) {
+	sizeExalt() {
 		this.textSize = EffectSet.TEXT_SIZE.LARGE;
-		this.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, mapColour, mapIcon);
+		this.mapSize = EffectSet.MAP_SIZE.LARGE;
 		return this;
 	}
-	sizeChance(mapColour, beamColour = mapColour, mapIcon = MapEffect.ICON.STAR) {
+	sizeChance(beamColour = this.mapColour) {
 		this.textSize = EffectSet.TEXT_SIZE.LARGEST;
 		this.beamColour = beamColour;
 		this.sound = EffectSet.SOUND.WAH;
-		this.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, mapColour, mapIcon);
+		this.mapSize = EffectSet.MAP_SIZE.LARGE;
 		return this;
 	}
 }

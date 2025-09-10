@@ -2,7 +2,7 @@ import { Comparison } from "./conditions/comparison.js";
 import { ConditionSet } from "./conditions/conditionSet.js";
 import { StringList } from "./conditions/stringList.js";
 import { Colour } from "./effects/colour.js";
-import { MapEffect } from "./effects/mapEffect.js";
+import { EffectSet } from "./effects/effectSet.js";
 import { Filter } from "./filter.js";
 const CATEGORY = ConditionSet.CATEGORY;
 
@@ -38,7 +38,9 @@ filter.block((c, e) => {
 	c.continue();
 
 	e.backgroundColour = Colour.BLACK;
-	e.sizeWisdom(Colour.PRESET.BLACK, MapEffect.ICON.SQUARE);
+	e.mapColour = Colour.PRESET.BLACK;
+	e.mapIcon = EffectSet.MAP_ICON.SQUARE;
+	e.sizeWisdom();
 });
 
 // Currencies - https://docs.google.com/spreadsheets/d/1Cq80pjKnWF5-FmhQd1TLcWhdpivaRaSKhMGz_I4VgG4
@@ -46,104 +48,104 @@ filter.block((c, e) => { // Essences
 	c.names = new Comparison("Lesser Essence of ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourWisdom(ESSENCE_COLOUR).sizeAugment(ESSENCE_PRESET);
+	e.colourWisdom(ESSENCE_COLOUR, ESSENCE_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Greater Essence of ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourExalt(ESSENCE_COLOUR).sizeExalt(ESSENCE_PRESET);
+	e.colourExalt(ESSENCE_COLOUR, ESSENCE_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Essence of ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourAugment(ESSENCE_COLOUR).sizeExalt(ESSENCE_PRESET);
+	e.colourAugment(ESSENCE_COLOUR, ESSENCE_PRESET).sizeExalt();
 });
 filter.block((c, e) => { // Abyss
 	c.names = new Comparison(new StringList("Gnawed Jawbone", "Gnawed Rib", "Gnawed Collarbone"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourWisdom(LEAGUE_COLOUR).sizeExalt(LEAGUE_PRESET);
+	e.colourWisdom(LEAGUE_COLOUR, LEAGUE_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Preserved Jawbone", "Preserved Rib",
 		"Preserved Collarbone", "Preserved Cranium", "Preserved Vertebrae"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourAugment(LEAGUE_COLOUR).sizeExalt(LEAGUE_PRESET);
+	e.colourAugment(LEAGUE_COLOUR, LEAGUE_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Ancient Jawbone", "Ancient Rib",
 		"Ancient Collarbone"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourExalt(LEAGUE_COLOUR).sizeExalt(LEAGUE_PRESET);
+	e.colourExalt(LEAGUE_COLOUR, LEAGUE_PRESET).sizeExalt();
 });
 filter.block((c, e) => { // Trial keys
 	c.names = new Comparison("Bronze Key");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourWisdom(QUESTLIKE_COLOUR).sizeExalt(QUESTLIKE_PRESET);
+	e.colourWisdom(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Silver Key");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourAugment(QUESTLIKE_COLOUR).sizeExalt(QUESTLIKE_PRESET);
+	e.colourAugment(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Gold Key");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourExalt(QUESTLIKE_COLOUR).sizeExalt(QUESTLIKE_PRESET);
+	e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
 });
 filter.block((c, e) => { // Gold
 	c.names = new Comparison("Gold");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(250, Comparison.OPERATOR.LT);
 
-	e.colourWisdom(GOLD_COLOUR, Colour.TRANSPARENT).sizeWisdom(GOLD_PRESET);
+	e.colourWisdom(GOLD_COLOUR, GOLD_PRESET, undefined, Colour.TRANSPARENT).sizeWisdom();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Gold");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(750, Comparison.OPERATOR.LT);
 
-	e.colourAugment(GOLD_COLOUR, Colour.TRANSPARENT).sizeAugment(GOLD_PRESET);
+	e.colourAugment(GOLD_COLOUR, GOLD_PRESET, undefined, Colour.TRANSPARENT).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Gold");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(5000, Comparison.OPERATOR.LT);
 
-	e.colourExalt(GOLD_COLOUR, Colour.TRANSPARENT).sizeAugment(GOLD_PRESET);
+	e.colourExalt(GOLD_COLOUR, GOLD_PRESET, undefined, Colour.TRANSPARENT).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Gold");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourExalt(GOLD_COLOUR, Colour.TRANSPARENT).sizeExalt(GOLD_PRESET);
+	e.colourExalt(GOLD_COLOUR, GOLD_PRESET, undefined, Colour.TRANSPARENT).sizeExalt();
 });
 filter.block((c, e) => { // Other
 	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourWisdom(CURRENCY_COLOUR).sizeWisdom(CURRENCY_PRESET);
+	e.colourWisdom(CURRENCY_COLOUR, CURRENCY_PRESET).sizeWisdom();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Orb of Transmutation", "Orb of Augmentation",
 		"Regal Shard", "Artificer's Shard"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourAugment(CURRENCY_COLOUR).sizeAugment(CURRENCY_PRESET);
+	e.colourAugment(CURRENCY_COLOUR, CURRENCY_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Artificer's Orb", "Blacksmith's Whetstone",
 		"Arcanist's Etcher"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourExalt(CURRENCY_COLOUR).sizeAugment(CURRENCY_PRESET);
+	e.colourExalt(CURRENCY_COLOUR, CURRENCY_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Regal Orb", "Exalted Orb", "Orb of Alchemy",
@@ -151,39 +153,41 @@ filter.block((c, e) => {
 		"Glassblower's Bauble", "Chance Shard"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourExalt(CURRENCY_COLOUR).sizeExalt(CURRENCY_PRESET);
+	e.colourExalt(CURRENCY_COLOUR, CURRENCY_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Orb of Annulment", "Orb of Chance",
 		"Greater Jeweller's Orb"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourChance(CURRENCY_COLOUR).sizeChance(CURRENCY_PRESET);
+	e.colourChance(CURRENCY_COLOUR, CURRENCY_PRESET).sizeChance();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Divine Orb", "Mirror of Kalandra",
 		"Perfect Jeweller's Orb"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourDivine(CURRENCY_COLOUR).sizeChance(CURRENCY_PRESET);
+	e.colourDivine(CURRENCY_COLOUR, CURRENCY_PRESET).sizeChance();
 });
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.outlineColour = CURRENCY_COLOUR;
-	e.sizeExalt(CURRENCY_PRESET);
+	e.mapColour = CURRENCY_PRESET;
+	e.mapIcon = EffectSet.MAP_ICON.CROSS;
+	e.sizeExalt();
 });
 
 // Gems
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.GEM_UNCUT);
 
-	e.colourAugment(GEM_COLOUR).sizeExalt(GEM_PRESET);
+	e.colourAugment(GEM_COLOUR, GEM_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.GEM);
 
-	e.colourExalt(GEM_COLOUR).sizeAugment(GEM_PRESET);
+	e.colourExalt(GEM_COLOUR, GEM_PRESET).sizeAugment();
 });
 
 // Socketables eg runes
@@ -191,31 +195,31 @@ filter.block((c, e) => {
 	c.names = new Comparison("Lesser ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-	e.colourWisdom(SOCKETABLE_COLOUR).sizeAugment(SOCKETABLE_PRESET);
+	e.colourWisdom(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Greater ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-	e.colourExalt(SOCKETABLE_COLOUR).sizeExalt(SOCKETABLE_PRESET);
+	e.colourExalt(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(" Rune", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-	e.colourAugment(SOCKETABLE_COLOUR).sizeExalt(SOCKETABLE_PRESET);
+	e.colourAugment(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-	e.colourExalt(SOCKETABLE_COLOUR).sizeExalt(SOCKETABLE_PRESET);
+	e.colourExalt(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeExalt();
 });
 
 // Trial tickets
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.TICKET);
 
-	e.colourExalt(QUESTLIKE_COLOUR).sizeExalt(QUESTLIKE_PRESET);
+	e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
 });
 
 // Quest
@@ -223,7 +227,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.QUEST);
 
 	// Minimap args are ignored as it has a custom icon
-	e.colourExalt(QUEST_COLOUR).sizeExalt(QUEST_PRESET);
+	e.colourExalt(QUEST_COLOUR, QUEST_PRESET).sizeExalt();
 });
 
 // Rarity
@@ -233,7 +237,7 @@ filter.block((c, e) => { // Gear style reset
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
-	e.colourWisdom(GEAR_COLOUR).sizeWisdom(GEAR_PRESET);
+	e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeWisdom();
 });
 filter.multiBlock((c) => { // Class weapons, quality
 	c.continue();
@@ -256,21 +260,21 @@ filter.multiBlock((c) => { // Class weapons, quality
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (e) => {
-	e.colourWisdom(GEAR_COLOUR).sizeAugment(GEAR_PRESET);
+	e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
-	e.colourWisdom(JEWEL_COLOUR).sizeAugment(JEWEL_PRESET);
+	e.colourWisdom(JEWEL_COLOUR, JEWEL_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(CATEGORY.RELIC);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
-	e.colourWisdom(RELIC_COLOUR).sizeAugment(RELIC_PRESET);
+	e.colourWisdom(RELIC_COLOUR, RELIC_PRESET).sizeAugment();
 });
 // Magic
 filter.block((c, e) => { // Gear style reset
@@ -278,7 +282,7 @@ filter.block((c, e) => { // Gear style reset
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
-	e.colourAugment(GEAR_COLOUR).sizeWisdom(GEAR_PRESET);
+	e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeWisdom();
 });
 filter.multiBlock((c) => { // Class weapons, quality
 	c.continue();
@@ -306,21 +310,21 @@ filter.multiBlock((c) => { // Class weapons, quality
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 }, (e) => {
-	e.colourAugment(GEAR_COLOUR).sizeAugment(GEAR_PRESET);
+	e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
-	e.colourAugment(JEWEL_COLOUR).sizeExalt(JEWEL_PRESET);
+	e.colourAugment(JEWEL_COLOUR, JEWEL_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(CATEGORY.RELIC);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
-	e.colourAugment(RELIC_COLOUR).sizeExalt(RELIC_PRESET);
+	e.colourAugment(RELIC_COLOUR, RELIC_PRESET).sizeExalt();
 });
 // Rare
 filter.block((c, e) => { // Gear style reset
@@ -328,7 +332,7 @@ filter.block((c, e) => { // Gear style reset
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
-	e.colourExalt(GEAR_COLOUR).sizeAugment(GEAR_PRESET);
+	e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
 });
 filter.multiBlock((c) => { // Class weapons
 	c.continue();
@@ -354,21 +358,21 @@ filter.multiBlock((c) => { // Class weapons
 	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 }, (e) => {
-	e.colourExalt(GEAR_COLOUR).sizeExalt(GEAR_PRESET);
+	e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
-	e.colourExalt(JEWEL_COLOUR).sizeExalt(JEWEL_PRESET);
+	e.colourExalt(JEWEL_COLOUR, JEWEL_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(CATEGORY.RELIC);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
-	e.colourExalt(RELIC_COLOUR).sizeExalt(RELIC_PRESET);
+	e.colourExalt(RELIC_COLOUR, RELIC_PRESET).sizeExalt();
 });
 // Unique
 filter.block((c, e) => {
@@ -377,21 +381,21 @@ filter.block((c, e) => {
 		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
-	e.colourChance(GEAR_COLOUR).sizeChance(GEAR_PRESET);
+	e.colourChance(GEAR_COLOUR, GEAR_PRESET).sizeChance();
 });
 filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
-	e.colourChance(JEWEL_COLOUR).sizeChance(JEWEL_PRESET);
+	e.colourChance(JEWEL_COLOUR, JEWEL_PRESET).sizeChance();
 });
 filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(CATEGORY.RELIC);
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
-	e.colourChance(RELIC_COLOUR).sizeChance(RELIC_PRESET);
+	e.colourChance(RELIC_COLOUR, RELIC_PRESET).sizeChance();
 });
 
 // Overwrite outlines (highest priority first)

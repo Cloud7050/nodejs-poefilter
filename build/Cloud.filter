@@ -15,7 +15,7 @@ Show
 	SetTextColor 233 221 255 255
 	SetBackgroundColor 16 0 50 255
 	SetBorderColor 233 221 255 255
-	MinimapIcon 1 Purple UpsideDownHouse
+	MinimapIcon 1 Purple Kite
 
 Show
 	BaseType = "Greater Essence of "
@@ -35,7 +35,7 @@ Show
 	SetTextColor 208 188 255 255
 	SetBackgroundColor 42 0 107 255
 	SetBorderColor 208 188 255 255
-	MinimapIcon 0 Purple Cross
+	MinimapIcon 0 Purple UpsideDownHouse
 
 Show
 	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
@@ -45,7 +45,7 @@ Show
 	SetTextColor 248 216 255 255
 	SetBackgroundColor 24 0 37 255
 	SetBorderColor 248 216 255 255
-	MinimapIcon 0 Pink Cross
+	MinimapIcon 0 Pink Kite
 
 Show
 	BaseType == "Preserved Jawbone" "Preserved Rib" "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae"
@@ -55,7 +55,7 @@ Show
 	SetTextColor 235 178 255 255
 	SetBackgroundColor 59 0 84 255
 	SetBorderColor 235 178 255 255
-	MinimapIcon 0 Pink Cross
+	MinimapIcon 0 Pink UpsideDownHouse
 
 Show
 	BaseType == "Ancient Jawbone" "Ancient Rib" "Ancient Collarbone"
@@ -75,7 +75,7 @@ Show
 	SetTextColor 208 241 0 255
 	SetBackgroundColor 9 12 0 255
 	SetBorderColor 208 241 0 255
-	MinimapIcon 0 Green Cross
+	MinimapIcon 0 Green Kite
 
 Show
 	BaseType == "Silver Key"
@@ -85,7 +85,7 @@ Show
 	SetTextColor 183 211 0 255
 	SetBackgroundColor 30 36 0 255
 	SetBorderColor 183 211 0 255
-	MinimapIcon 0 Green Cross
+	MinimapIcon 0 Green UpsideDownHouse
 
 Show
 	BaseType == "Gold Key"
@@ -128,7 +128,7 @@ Show
 	SetTextColor 196 171 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 196 171 0 255
-	MinimapIcon 1 Yellow UpsideDownHouse
+	MinimapIcon 1 Yellow Cross
 
 Show
 	BaseType == Gold
@@ -168,7 +168,7 @@ Show
 	SetTextColor 255 137 135 255
 	SetBackgroundColor 117 0 19 255
 	SetBorderColor 255 137 135 255
-	MinimapIcon 1 Red UpsideDownHouse
+	MinimapIcon 1 Red Cross
 
 Show
 	BaseType == "Regal Orb" "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Lesser Jeweller's Orb" "Armourer's Scrap" "Gemcutter's Prism" "Glassblower's Bauble" "Chance Shard"
@@ -202,7 +202,7 @@ Show
 	SetBorderColor 238 0 50 255
 	PlayEffect Red
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Diamond
 
 Show
 	Class == "Stackable Currency"
@@ -218,7 +218,7 @@ Show
 	SetTextColor 0 220 225 255
 	SetBackgroundColor 0 38 40 255
 	SetBorderColor 0 220 225 255
-	MinimapIcon 0 Brown Cross
+	MinimapIcon 0 Brown UpsideDownHouse
 
 Show
 	Class == "Skill Gems" "Support Gems"
@@ -227,7 +227,7 @@ Show
 	SetTextColor 0 190 195 255
 	SetBackgroundColor 0 62 64 255
 	SetBorderColor 0 190 195 255
-	MinimapIcon 1 Brown UpsideDownHouse
+	MinimapIcon 1 Brown Cross
 
 Show
 	BaseType = "Lesser "
@@ -237,7 +237,7 @@ Show
 	SetTextColor 200 230 255 255
 	SetBackgroundColor 0 12 22 255
 	SetBorderColor 200 230 255 255
-	MinimapIcon 1 Cyan UpsideDownHouse
+	MinimapIcon 1 Cyan Kite
 
 Show
 	BaseType = "Greater "
@@ -257,7 +257,7 @@ Show
 	SetTextColor 136 206 255 255
 	SetBackgroundColor 0 36 55 255
 	SetBorderColor 136 206 255 255
-	MinimapIcon 0 Cyan Cross
+	MinimapIcon 0 Cyan UpsideDownHouse
 
 Show
 	Class == Socketable
@@ -307,7 +307,7 @@ Show
 	SetTextColor 223 224 255 255
 	SetBackgroundColor 0 4 52 255
 	SetBorderColor 223 224 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
+	MinimapIcon 1 Blue Kite
 
 	Continue
 
@@ -321,7 +321,7 @@ Show
 	SetTextColor 223 224 255 255
 	SetBackgroundColor 0 4 52 255
 	SetBorderColor 223 224 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
+	MinimapIcon 1 Blue Kite
 
 	Continue
 
@@ -334,7 +334,7 @@ Show
 	SetTextColor 223 224 255 255
 	SetBackgroundColor 0 4 52 255
 	SetBorderColor 223 224 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
+	MinimapIcon 1 Blue Kite
 
 	Continue
 
@@ -346,7 +346,7 @@ Show
 	SetTextColor 223 224 255 255
 	SetBackgroundColor 0 4 52 255
 	SetBorderColor 223 224 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
+	MinimapIcon 1 Blue Kite
 
 	Continue
 
@@ -358,7 +358,7 @@ Show
 	SetTextColor 213 227 255 255
 	SetBackgroundColor 0 11 30 255
 	SetBorderColor 213 227 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
+	MinimapIcon 1 Blue Kite
 
 	Continue
 
@@ -370,7 +370,7 @@ Show
 	SetTextColor 83 255 171 255
 	SetBackgroundColor 0 14 5 255
 	SetBorderColor 83 255 171 255
-	MinimapIcon 1 Green UpsideDownHouse
+	MinimapIcon 1 Green Kite
 
 	Continue
 
@@ -382,7 +382,7 @@ Show
 	SetTextColor 188 194 255 255
 	SetBackgroundColor 0 16 113 255
 	SetBorderColor 188 194 255 255
-	MinimapIcon 2 Blue Kite
+	MinimapIcon 2 Blue UpsideDownHouse
 
 	Continue
 
@@ -459,7 +459,7 @@ Show
 	SetTextColor 166 200 255 255
 	SetBackgroundColor 0 34 69 255
 	SetBorderColor 166 200 255 255
-	MinimapIcon 0 Blue Cross
+	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
 
@@ -471,7 +471,7 @@ Show
 	SetTextColor 0 227 143 255
 	SetBackgroundColor 0 40 21 255
 	SetBorderColor 0 227 143 255
-	MinimapIcon 0 Green Cross
+	MinimapIcon 0 Green UpsideDownHouse
 
 	Continue
 
@@ -483,7 +483,7 @@ Show
 	SetTextColor 153 165 255 255
 	SetBackgroundColor 0 30 170 255
 	SetBorderColor 153 165 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
+	MinimapIcon 1 Blue Cross
 
 	Continue
 
