@@ -83,6 +83,7 @@ export class Colour {
 		let colourCount = 360 / hueInterval;
 
 		let totalMaxChroma = 0;
+		let highestMaxChroma = 0;
 		for (let i = 0; i < colourCount; i++) {
 			let hue = i * hueInterval;
 
@@ -92,11 +93,13 @@ export class Colour {
 			let maxChroma = hct.chroma;
 
 			totalMaxChroma += maxChroma;
+			highestMaxChroma = Math.max(highestMaxChroma, maxChroma);
 		}
 		let averageMaxChroma = totalMaxChroma / colourCount;
+		let maxChroma = (averageMaxChroma + highestMaxChroma) / 2;
 
-		Colour.MEMO[tone] = averageMaxChroma;
-		return averageMaxChroma;
+		Colour.MEMO[tone] = maxChroma;
+		return maxChroma;
 	}
 
 	export() {
@@ -116,7 +119,7 @@ export class Colour {
 
 		// Return the resulting HCT as Colour
 		let newHct = Hct.from(hue, maxChroma, tone);
-		// console.log(`HCT ${hue} ${maxChroma} ${tone} → ${newHct.hue} ${newHct.chroma} ${newHct.tone}`);
+		console.log(`H${hue} T${tone} capped at C${maxChroma} → C${newHct.chroma} (H${newHct.hue})`);
 		let newArgb = newHct.toInt();
 		return new Colour(
 			redFromArgb(newArgb),

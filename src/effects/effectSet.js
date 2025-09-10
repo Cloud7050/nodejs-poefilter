@@ -87,14 +87,14 @@ export class EffectSet {
 	}
 
 	colourWisdom(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.KITE, backgroundColour = mainColour.tone(3)) {
-		this.textColour = mainColour.tone(90);
+		this.textColour = mainColour.tone(85);
 		this.backgroundColour = backgroundColour;
-		this.outlineColour = mainColour.tone(90);
+		this.outlineColour = mainColour.tone(85);
 		this.mapColour = mapColour;
 		this.mapIcon = mapIcon;
 		return this;
 	}
-	colourAugment(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.HOUSE, backgroundColour = mainColour.tone(13)) {
+	colourAugment(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.HOUSE, backgroundColour = mainColour.tone(10)) {
 		this.textColour = mainColour.tone(80);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.tone(80);
@@ -102,15 +102,15 @@ export class EffectSet {
 		this.mapIcon = mapIcon;
 		return this;
 	}
-	colourExalt(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.CROSS, backgroundColour = mainColour.tone(23)) {
-		this.textColour = mainColour.tone(70);
+	colourExalt(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.CROSS, backgroundColour = mainColour.tone(20)) {
+		this.textColour = mainColour.tone(75);
 		this.backgroundColour = backgroundColour;
-		this.outlineColour = mainColour.tone(70);
+		this.outlineColour = mainColour.tone(75);
 		this.mapColour = mapColour;
 		this.mapIcon = mapIcon;
 		return this;
 	}
-	colourChance(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.STAR, backgroundColour = mainColour.tone(60)) {
+	colourChance(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.STAR, backgroundColour = mainColour.tone(50)) {
 		this.textColour = mainColour.tone(10);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.tone(10);

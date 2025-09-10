@@ -12,9 +12,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 32
-	SetTextColor 233 221 255 255
-	SetBackgroundColor 14 6 31 255
-	SetBorderColor 233 221 255 255
+	SetTextColor 221 205 255 255
+	SetBackgroundColor 15 4 40 255
+	SetBorderColor 221 205 255 255
 	MinimapIcon 1 Purple Kite
 
 Show
@@ -22,9 +22,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 184 155 255 255
-	SetBackgroundColor 63 41 112 255
-	SetBorderColor 184 155 255 255
+	SetTextColor 196 172 255 255
+	SetBackgroundColor 57 26 121 255
+	SetBorderColor 196 172 255 255
 	MinimapIcon 0 Purple Cross
 
 Show
@@ -33,7 +33,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 208 188 255 255
-	SetBackgroundColor 39 24 73 255
+	SetBackgroundColor 34 13 76 255
 	SetBorderColor 208 188 255 255
 	MinimapIcon 0 Purple UpsideDownHouse
 
@@ -42,9 +42,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 248 216 255 255
-	SetBackgroundColor 20 5 27 255
-	SetBorderColor 248 216 255 255
+	SetTextColor 241 197 255 255
+	SetBackgroundColor 23 2 33 255
+	SetBorderColor 241 197 255 255
 	MinimapIcon 0 Pink Kite
 
 Show
@@ -53,7 +53,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 235 178 255 255
-	SetBackgroundColor 51 20 64 255
+	SetBackgroundColor 47 7 64 255
 	SetBorderColor 235 178 255 255
 	MinimapIcon 0 Pink UpsideDownHouse
 
@@ -62,9 +62,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 217 142 248 255
-	SetBackgroundColor 80 35 100 255
-	SetBorderColor 217 142 248 255
+	SetTextColor 228 158 255 255
+	SetBackgroundColor 77 17 103 255
+	SetBorderColor 228 158 255 255
 	MinimapIcon 0 Pink Cross
 
 Show
@@ -72,9 +72,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 220 234 152 255
+	SetTextColor 196 226 28 255
 	SetBackgroundColor 9 12 0 255
-	SetBorderColor 220 234 152 255
+	SetBorderColor 196 226 28 255
 	MinimapIcon 0 Green Kite
 
 Show
@@ -82,9 +82,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 189 208 95 255
-	SetBackgroundColor 30 36 0 255
-	SetBorderColor 189 208 95 255
+	SetTextColor 183 211 0 255
+	SetBackgroundColor 24 30 0 255
+	SetBorderColor 183 211 0 255
 	MinimapIcon 0 Green UpsideDownHouse
 
 Show
@@ -92,9 +92,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 159 181 44 255
-	SetBackgroundColor 50 59 0 255
-	SetBorderColor 159 181 44 255
+	SetTextColor 170 197 0 255
+	SetBackgroundColor 44 52 0 255
+	SetBorderColor 170 197 0 255
 	MinimapIcon 0 Green Cross
 
 Show
@@ -103,9 +103,9 @@ Show
 	StackSize < 250
 
 	SetFontSize 27
-	SetTextColor 246 227 137 255
+	SetTextColor 243 212 0 255
 	SetBackgroundColor 0 0 0 0
-	SetBorderColor 246 227 137 255
+	SetBorderColor 243 212 0 255
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -114,9 +114,9 @@ Show
 	StackSize < 750
 
 	SetFontSize 32
-	SetTextColor 222 199 72 255
+	SetTextColor 227 198 0 255
 	SetBackgroundColor 0 0 0 0
-	SetBorderColor 222 199 72 255
+	SetBorderColor 227 198 0 255
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -125,9 +125,9 @@ Show
 	StackSize < 5000
 
 	SetFontSize 32
-	SetTextColor 196 171 0 255
+	SetTextColor 211 184 0 255
 	SetBackgroundColor 0 0 0 0
-	SetBorderColor 196 171 0 255
+	SetBorderColor 211 184 0 255
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -135,9 +135,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 196 171 0 255
+	SetTextColor 211 184 0 255
 	SetBackgroundColor 0 0 0 0
-	SetBorderColor 196 171 0 255
+	SetBorderColor 211 184 0 255
 	MinimapIcon 0 Yellow Cross
 
 Show
@@ -145,9 +145,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 27
-	SetTextColor 255 218 216 255
-	SetBackgroundColor 28 4 4 255
-	SetBorderColor 255 218 216 255
+	SetTextColor 255 199 196 255
+	SetBackgroundColor 31 2 3 255
+	SetBorderColor 255 199 196 255
 	MinimapIcon 2 Red Kite
 
 Show
@@ -156,7 +156,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 255 179 176 255
-	SetBackgroundColor 65 16 18 255
+	SetBackgroundColor 61 6 10 255
 	SetBorderColor 255 179 176 255
 	MinimapIcon 1 Red UpsideDownHouse
 
@@ -165,9 +165,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 32
-	SetTextColor 255 137 135 255
-	SetBackgroundColor 101 30 32 255
-	SetBorderColor 255 137 135 255
+	SetTextColor 255 158 156 255
+	SetBackgroundColor 98 15 22 255
+	SetBorderColor 255 158 156 255
 	MinimapIcon 1 Red Cross
 
 Show
@@ -175,9 +175,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 255 137 135 255
-	SetBackgroundColor 101 30 32 255
-	SetBorderColor 255 137 135 255
+	SetTextColor 255 158 156 255
+	SetBackgroundColor 98 15 22 255
+	SetBorderColor 255 158 156 255
 	MinimapIcon 0 Red Cross
 
 Show
@@ -185,9 +185,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 45
-	SetTextColor 55 13 14 255
-	SetBackgroundColor 239 99 100 255
-	SetBorderColor 55 13 14 255
+	SetTextColor 61 6 10 255
+	SetBackgroundColor 223 52 64 255
+	SetBorderColor 61 6 10 255
 	PlayEffect Red
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Red Star
@@ -197,9 +197,9 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 45
-	SetTextColor 205 74 77 255
+	SetTextColor 223 52 64 255
 	SetBackgroundColor 255 218 216 255
-	SetBorderColor 205 74 77 255
+	SetBorderColor 223 52 64 255
 	PlayEffect Red
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Red Diamond
@@ -215,18 +215,18 @@ Show
 	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
 
 	SetFontSize 37
-	SetTextColor 68 218 223 255
-	SetBackgroundColor 0 38 40 255
-	SetBorderColor 68 218 223 255
+	SetTextColor 0 220 225 255
+	SetBackgroundColor 0 32 33 255
+	SetBorderColor 0 220 225 255
 	MinimapIcon 0 Brown UpsideDownHouse
 
 Show
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 32
-	SetTextColor 0 190 195 255
-	SetBackgroundColor 0 62 64 255
-	SetBorderColor 0 190 195 255
+	SetTextColor 0 205 210 255
+	SetBackgroundColor 0 55 56 255
+	SetBorderColor 0 205 210 255
 	MinimapIcon 1 Brown Cross
 
 Show
@@ -234,9 +234,9 @@ Show
 	Class == Socketable
 
 	SetFontSize 32
-	SetTextColor 200 230 255 255
+	SetTextColor 169 218 255 255
 	SetBackgroundColor 0 12 22 255
-	SetBorderColor 200 230 255 255
+	SetBorderColor 169 218 255 255
 	MinimapIcon 1 Cyan Kite
 
 Show
@@ -244,9 +244,9 @@ Show
 	Class == Socketable
 
 	SetFontSize 37
-	SetTextColor 17 182 255 255
-	SetBackgroundColor 0 59 86 255
-	SetBorderColor 17 182 255 255
+	SetTextColor 95 194 255 255
+	SetBackgroundColor 0 52 77 255
+	SetBorderColor 95 194 255 255
 	MinimapIcon 0 Cyan Cross
 
 Show
@@ -255,7 +255,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 136 206 255 255
-	SetBackgroundColor 0 36 55 255
+	SetBackgroundColor 0 30 46 255
 	SetBorderColor 136 206 255 255
 	MinimapIcon 0 Cyan UpsideDownHouse
 
@@ -263,27 +263,27 @@ Show
 	Class == Socketable
 
 	SetFontSize 37
-	SetTextColor 17 182 255 255
-	SetBackgroundColor 0 59 86 255
-	SetBorderColor 17 182 255 255
+	SetTextColor 95 194 255 255
+	SetBackgroundColor 0 52 77 255
+	SetBorderColor 95 194 255 255
 	MinimapIcon 0 Cyan Cross
 
 Show
 	Class == "Trial Coins" "Inscribed Ultimatum"
 
 	SetFontSize 37
-	SetTextColor 159 181 44 255
-	SetBackgroundColor 50 59 0 255
-	SetBorderColor 159 181 44 255
+	SetTextColor 170 197 0 255
+	SetBackgroundColor 44 52 0 255
+	SetBorderColor 170 197 0 255
 	MinimapIcon 0 Green Cross
 
 Show
 	Class == "Quest Items"
 
 	SetFontSize 37
-	SetTextColor 114 189 87 255
-	SetBackgroundColor 17 64 3 255
-	SetBorderColor 114 189 87 255
+	SetTextColor 105 207 71 255
+	SetBackgroundColor 11 57 0 255
+	SetBorderColor 105 207 71 255
 	MinimapIcon 0 Grey Cross
 
 Show
@@ -291,9 +291,9 @@ Show
 	Rarity == Normal
 
 	SetFontSize 27
-	SetTextColor 223 224 255 255
-	SetBackgroundColor 6 9 33 255
-	SetBorderColor 223 224 255 255
+	SetTextColor 205 209 255 255
+	SetBackgroundColor 3 6 43 255
+	SetBorderColor 205 209 255 255
 	MinimapIcon 2 Blue Kite
 
 	Continue
@@ -304,9 +304,9 @@ Show
 	Quality > 0
 
 	SetFontSize 32
-	SetTextColor 223 224 255 255
-	SetBackgroundColor 6 9 33 255
-	SetBorderColor 223 224 255 255
+	SetTextColor 205 209 255 255
+	SetBackgroundColor 3 6 43 255
+	SetBorderColor 205 209 255 255
 	MinimapIcon 1 Blue Kite
 
 	Continue
@@ -318,9 +318,9 @@ Show
 	BaseEnergyShield > 0
 
 	SetFontSize 32
-	SetTextColor 223 224 255 255
-	SetBackgroundColor 6 9 33 255
-	SetBorderColor 223 224 255 255
+	SetTextColor 205 209 255 255
+	SetBackgroundColor 3 6 43 255
+	SetBorderColor 205 209 255 255
 	MinimapIcon 1 Blue Kite
 
 	Continue
@@ -331,9 +331,9 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	SetTextColor 223 224 255 255
-	SetBackgroundColor 6 9 33 255
-	SetBorderColor 223 224 255 255
+	SetTextColor 205 209 255 255
+	SetBackgroundColor 3 6 43 255
+	SetBorderColor 205 209 255 255
 	MinimapIcon 1 Blue Kite
 
 	Continue
@@ -343,9 +343,9 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	SetTextColor 223 224 255 255
-	SetBackgroundColor 6 9 33 255
-	SetBorderColor 223 224 255 255
+	SetTextColor 205 209 255 255
+	SetBackgroundColor 3 6 43 255
+	SetBorderColor 205 209 255 255
 	MinimapIcon 1 Blue Kite
 
 	Continue
@@ -355,9 +355,9 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	SetTextColor 213 227 255 255
+	SetTextColor 190 214 255 255
 	SetBackgroundColor 0 11 30 255
-	SetBorderColor 213 227 255 255
+	SetBorderColor 190 214 255 255
 	MinimapIcon 1 Blue Kite
 
 	Continue
@@ -367,9 +367,9 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	SetTextColor 174 241 198 255
+	SetTextColor 0 242 153 255
 	SetBackgroundColor 0 14 5 255
-	SetBorderColor 174 241 198 255
+	SetBorderColor 0 242 153 255
 	MinimapIcon 1 Green Kite
 
 	Continue
@@ -380,7 +380,7 @@ Show
 
 	SetFontSize 27
 	SetTextColor 188 194 255 255
-	SetBackgroundColor 22 29 77 255
+	SetBackgroundColor 10 19 81 255
 	SetBorderColor 188 194 255 255
 	MinimapIcon 2 Blue UpsideDownHouse
 
@@ -393,7 +393,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 188 194 255 255
-	SetBackgroundColor 22 29 77 255
+	SetBackgroundColor 10 19 81 255
 	SetBorderColor 188 194 255 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -407,7 +407,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 188 194 255 255
-	SetBackgroundColor 22 29 77 255
+	SetBackgroundColor 10 19 81 255
 	SetBorderColor 188 194 255 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -420,7 +420,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 188 194 255 255
-	SetBackgroundColor 22 29 77 255
+	SetBackgroundColor 10 19 81 255
 	SetBorderColor 188 194 255 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -433,7 +433,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 188 194 255 255
-	SetBackgroundColor 22 29 77 255
+	SetBackgroundColor 10 19 81 255
 	SetBorderColor 188 194 255 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -445,7 +445,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 188 194 255 255
-	SetBackgroundColor 22 29 77 255
+	SetBackgroundColor 10 19 81 255
 	SetBorderColor 188 194 255 255
 	MinimapIcon 1 Blue UpsideDownHouse
 
@@ -457,7 +457,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 166 200 255 255
-	SetBackgroundColor 0 34 69 255
+	SetBackgroundColor 0 28 59 255
 	SetBorderColor 166 200 255 255
 	MinimapIcon 0 Blue UpsideDownHouse
 
@@ -468,9 +468,9 @@ Show
 	Rarity == Magic
 
 	SetFontSize 37
-	SetTextColor 115 219 160 255
-	SetBackgroundColor 0 40 21 255
-	SetBorderColor 115 219 160 255
+	SetTextColor 0 227 143 255
+	SetBackgroundColor 0 33 17 255
+	SetBorderColor 0 227 143 255
 	MinimapIcon 0 Green UpsideDownHouse
 
 	Continue
@@ -480,9 +480,9 @@ Show
 	Rarity == Rare
 
 	SetFontSize 32
-	SetTextColor 153 165 255 255
-	SetBackgroundColor 38 48 118 255
-	SetBorderColor 153 165 255 255
+	SetTextColor 170 180 255 255
+	SetBackgroundColor 22 36 128 255
+	SetBorderColor 170 180 255 255
 	MinimapIcon 1 Blue Cross
 
 	Continue
@@ -492,9 +492,9 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetTextColor 153 165 255 255
-	SetBackgroundColor 38 48 118 255
-	SetBorderColor 153 165 255 255
+	SetTextColor 170 180 255 255
+	SetBackgroundColor 22 36 128 255
+	SetBorderColor 170 180 255 255
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -505,9 +505,9 @@ Show
 	BaseEnergyShield > 0
 
 	SetFontSize 37
-	SetTextColor 153 165 255 255
-	SetBackgroundColor 38 48 118 255
-	SetBorderColor 153 165 255 255
+	SetTextColor 170 180 255 255
+	SetBackgroundColor 22 36 128 255
+	SetBorderColor 170 180 255 255
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -518,9 +518,9 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetTextColor 153 165 255 255
-	SetBackgroundColor 38 48 118 255
-	SetBorderColor 153 165 255 255
+	SetTextColor 170 180 255 255
+	SetBackgroundColor 22 36 128 255
+	SetBorderColor 170 180 255 255
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -531,9 +531,9 @@ Show
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
 
 	SetFontSize 37
-	SetTextColor 153 165 255 255
-	SetBackgroundColor 38 48 118 255
-	SetBorderColor 153 165 255 255
+	SetTextColor 170 180 255 255
+	SetBackgroundColor 22 36 128 255
+	SetBorderColor 170 180 255 255
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -543,9 +543,9 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetTextColor 153 165 255 255
-	SetBackgroundColor 38 48 118 255
-	SetBorderColor 153 165 255 255
+	SetTextColor 170 180 255 255
+	SetBackgroundColor 22 36 128 255
+	SetBorderColor 170 180 255 255
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -555,9 +555,9 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetTextColor 115 173 255 255
-	SetBackgroundColor 0 55 107 255
-	SetBorderColor 115 173 255 255
+	SetTextColor 142 187 255 255
+	SetBackgroundColor 0 49 95 255
+	SetBorderColor 142 187 255 255
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -567,9 +567,9 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetTextColor 50 194 127 255
-	SetBackgroundColor 0 64 37 255
-	SetBorderColor 50 194 127 255
+	SetTextColor 0 211 133 255
+	SetBackgroundColor 0 57 32 255
+	SetBorderColor 0 211 133 255
 	MinimapIcon 0 Green Cross
 
 	Continue
@@ -579,9 +579,9 @@ Show
 	Rarity == Unique
 
 	SetFontSize 45
-	SetTextColor 17 23 65 255
-	SetBackgroundColor 117 134 255 255
-	SetBorderColor 17 23 65 255
+	SetTextColor 10 19 81 255
+	SetBackgroundColor 80 102 255 255
+	SetBorderColor 10 19 81 255
 	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue Star
@@ -594,7 +594,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 28 59 255
-	SetBackgroundColor 44 145 255 255
+	SetBackgroundColor 0 119 220 255
 	SetBorderColor 0 28 59 255
 	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
@@ -608,7 +608,7 @@ Show
 
 	SetFontSize 45
 	SetTextColor 0 33 17 255
-	SetBackgroundColor 0 166 103 255
+	SetBackgroundColor 0 137 84 255
 	SetBorderColor 0 33 17 255
 	PlayEffect Green
 	CustomAlertSound "WAH.mp3"
