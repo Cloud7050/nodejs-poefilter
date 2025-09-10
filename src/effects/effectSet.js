@@ -73,7 +73,7 @@ export class EffectSet {
 		return this;
 	}
 	colourAugment(mainColour, backgroundColour = undefined) {
-		backgroundColour = backgroundColour ?? mainColour.tone(15);
+		backgroundColour = backgroundColour ?? mainColour.tone(10);
 
 		this.textColour = mainColour.tone(80);
 		this.backgroundColour = backgroundColour;
@@ -81,7 +81,7 @@ export class EffectSet {
 		return this;
 	}
 	colourExalt(mainColour, backgroundColour = undefined) {
-		backgroundColour = backgroundColour ?? mainColour.tone(25);
+		backgroundColour = backgroundColour ?? mainColour.tone(20);
 
 		this.textColour = mainColour.tone(70);
 		this.backgroundColour = backgroundColour;

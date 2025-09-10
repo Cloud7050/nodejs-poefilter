@@ -23,7 +23,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 255 116 251 255
-	SetBackgroundColor 109 0 112 255
+	SetBackgroundColor 91 0 93 255
 	SetBorderColor 255 116 251 255
 	MinimapIcon 0 Pink Cross
 
@@ -33,7 +33,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 255 170 246 255
-	SetBackgroundColor 73 0 75 255
+	SetBackgroundColor 56 0 57 255
 	SetBorderColor 255 170 246 255
 	MinimapIcon 0 Pink Cross
 
@@ -53,7 +53,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 198 198 198 255
-	SetBackgroundColor 36 38 38 255
+	SetBackgroundColor 26 28 28 255
 	SetBorderColor 198 198 198 255
 	MinimapIcon 0 White Cross
 
@@ -63,7 +63,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 171 171 171 255
-	SetBackgroundColor 58 60 60 255
+	SetBackgroundColor 47 49 49 255
 	SetBorderColor 171 171 171 255
 	MinimapIcon 0 White Cross
 
@@ -83,7 +83,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 255 170 243 255
-	SetBackgroundColor 73 0 73 255
+	SetBackgroundColor 56 0 56 255
 	SetBorderColor 255 170 243 255
 	MinimapIcon 0 Purple Cross
 
@@ -93,7 +93,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 255 117 246 255
-	SetBackgroundColor 110 0 110 255
+	SetBackgroundColor 91 0 91 255
 	SetBorderColor 255 117 246 255
 	MinimapIcon 0 Purple Cross
 
@@ -156,7 +156,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 51 228 61 255
-	SetBackgroundColor 0 45 3 255
+	SetBackgroundColor 0 34 2 255
 	SetBorderColor 51 228 61 255
 	MinimapIcon 1 Green UpsideDownHouse
 
@@ -166,7 +166,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 0 198 38 255
-	SetBackgroundColor 0 70 7 255
+	SetBackgroundColor 0 58 4 255
 	SetBorderColor 0 198 38 255
 	MinimapIcon 1 Green UpsideDownHouse
 
@@ -176,7 +176,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 0 198 38 255
-	SetBackgroundColor 0 70 7 255
+	SetBackgroundColor 0 58 4 255
 	SetBorderColor 0 198 38 255
 	MinimapIcon 0 Green Cross
 
@@ -216,7 +216,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 100 186 175 255
-	SetBackgroundColor 0 67 62 255
+	SetBackgroundColor 0 55 50 255
 	SetBorderColor 100 186 175 255
 	MinimapIcon 0 Brown Cross
 
@@ -225,7 +225,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 68 189 181 255
-	SetBackgroundColor 0 67 64 255
+	SetBackgroundColor 0 55 52 255
 	SetBorderColor 68 189 181 255
 	MinimapIcon 1 Brown UpsideDownHouse
 
@@ -245,7 +245,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 142 176 198 255
-	SetBackgroundColor 29 63 82 255
+	SetBackgroundColor 15 52 71 255
 	SetBorderColor 142 176 198 255
 	MinimapIcon 0 Cyan Cross
 
@@ -255,7 +255,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 169 203 227 255
-	SetBackgroundColor 1 41 59 255
+	SetBackgroundColor 0 30 45 255
 	SetBorderColor 169 203 227 255
 	MinimapIcon 0 Cyan Cross
 
@@ -264,7 +264,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 142 176 198 255
-	SetBackgroundColor 29 63 82 255
+	SetBackgroundColor 15 52 71 255
 	SetBorderColor 142 176 198 255
 	MinimapIcon 0 Cyan Cross
 
@@ -273,7 +273,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 171 171 171 255
-	SetBackgroundColor 58 60 60 255
+	SetBackgroundColor 47 49 49 255
 	SetBorderColor 171 171 171 255
 	MinimapIcon 0 White Cross
 
@@ -282,7 +282,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 29 198 22 255
-	SetBackgroundColor 0 70 0 255
+	SetBackgroundColor 0 58 0 255
 	SetBorderColor 29 198 22 255
 	MinimapIcon 0 Grey Cross
 
@@ -380,7 +380,7 @@ Show
 
 	SetFontSize 27
 	SetTextColor 255 181 150 255
-	SetBackgroundColor 70 23 0 255
+	SetBackgroundColor 54 15 0 255
 	SetBorderColor 255 181 150 255
 	MinimapIcon 2 Orange Kite
 
@@ -393,7 +393,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 255 181 150 255
-	SetBackgroundColor 70 23 0 255
+	SetBackgroundColor 54 15 0 255
 	SetBorderColor 255 181 150 255
 	MinimapIcon 1 Orange UpsideDownHouse
 
@@ -407,7 +407,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 255 181 150 255
-	SetBackgroundColor 70 23 0 255
+	SetBackgroundColor 54 15 0 255
 	SetBorderColor 255 181 150 255
 	MinimapIcon 1 Orange UpsideDownHouse
 
@@ -420,7 +420,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 255 181 150 255
-	SetBackgroundColor 70 23 0 255
+	SetBackgroundColor 54 15 0 255
 	SetBorderColor 255 181 150 255
 	MinimapIcon 1 Orange UpsideDownHouse
 
@@ -433,7 +433,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 255 181 150 255
-	SetBackgroundColor 70 23 0 255
+	SetBackgroundColor 54 15 0 255
 	SetBorderColor 255 181 150 255
 	MinimapIcon 1 Orange UpsideDownHouse
 
@@ -445,7 +445,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 255 181 150 255
-	SetBackgroundColor 70 23 0 255
+	SetBackgroundColor 54 15 0 255
 	SetBorderColor 255 181 150 255
 	MinimapIcon 1 Orange UpsideDownHouse
 
@@ -457,7 +457,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 226 198 62 255
-	SetBackgroundColor 45 37 0 255
+	SetBackgroundColor 34 27 0 255
 	SetBorderColor 226 198 62 255
 	MinimapIcon 0 Yellow Cross
 
@@ -469,7 +469,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 182 196 255 255
-	SetBackgroundColor 0 30 104 255
+	SetBackgroundColor 0 21 80 255
 	SetBorderColor 182 196 255 255
 	MinimapIcon 0 Blue Cross
 
@@ -481,7 +481,7 @@ Show
 
 	SetFontSize 32
 	SetTextColor 255 140 86 255
-	SetBackgroundColor 106 38 0 255
+	SetBackgroundColor 88 30 0 255
 	SetBorderColor 255 140 86 255
 	MinimapIcon 1 Orange UpsideDownHouse
 
@@ -493,7 +493,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 255 140 86 255
-	SetBackgroundColor 106 38 0 255
+	SetBackgroundColor 88 30 0 255
 	SetBorderColor 255 140 86 255
 	MinimapIcon 0 Orange Cross
 
@@ -506,7 +506,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 255 140 86 255
-	SetBackgroundColor 106 38 0 255
+	SetBackgroundColor 88 30 0 255
 	SetBorderColor 255 140 86 255
 	MinimapIcon 0 Orange Cross
 
@@ -519,7 +519,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 255 140 86 255
-	SetBackgroundColor 106 38 0 255
+	SetBackgroundColor 88 30 0 255
 	SetBorderColor 255 140 86 255
 	MinimapIcon 0 Orange Cross
 
@@ -532,7 +532,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 255 140 86 255
-	SetBackgroundColor 106 38 0 255
+	SetBackgroundColor 88 30 0 255
 	SetBorderColor 255 140 86 255
 	MinimapIcon 0 Orange Cross
 
@@ -544,7 +544,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 255 140 86 255
-	SetBackgroundColor 106 38 0 255
+	SetBackgroundColor 88 30 0 255
 	SetBorderColor 255 140 86 255
 	MinimapIcon 0 Orange Cross
 
@@ -556,7 +556,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 197 170 33 255
-	SetBackgroundColor 70 59 0 255
+	SetBackgroundColor 57 48 0 255
 	SetBorderColor 197 170 33 255
 	MinimapIcon 0 Yellow Cross
 
@@ -568,7 +568,7 @@ Show
 
 	SetFontSize 37
 	SetTextColor 144 167 255 255
-	SetBackgroundColor 5 49 150 255
+	SetBackgroundColor 0 39 128 255
 	SetBorderColor 144 167 255 255
 	MinimapIcon 0 Blue Cross
 
