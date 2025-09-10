@@ -46,9 +46,9 @@ export class Colour {
 	// static UNIQUE = new Colour(241, 106, 33);
 
 	// static GEM_UNCUT = new Colour(116, 201, 190);
-	// static GEM = new Colour(27, 162, 155);
+	// static GEM = new Colour(27, 162, 155); // UNCONFIRMED
 	// static CRAFTED = new Colour(184, 218, 242);
-	// static QUEST = new Colour(74, 230, 58);
+	// static QUEST = new Colour(74, 230, 58); // UNCONFIRMED
 
 	r;
 	g;
