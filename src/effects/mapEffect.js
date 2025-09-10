@@ -1,6 +1,3 @@
-
-
-
 export class MapEffect {
 	static SIZE = {
 		SMALL: "2",
