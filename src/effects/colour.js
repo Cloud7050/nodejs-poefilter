@@ -3,8 +3,8 @@ import { argbFromRgb, blueFromArgb, greenFromArgb, redFromArgb, TonalPalette } f
 export class Colour {
 	static PRESET = {
 		BLACK: "Grey",
-		GREY: "White",
-		// RED: "Red",
+		// GREY: "White",
+		RED: "Red",
 		BROWN: "Brown",
 		ORANGE: "Orange",
 		YELLOW: "Yellow",
@@ -18,27 +18,27 @@ export class Colour {
 	static BLACK = new Colour(0, 0, 0);
 	static BLACK_TRANSLUCENT = new Colour(0, 0, 0, 128);
 	static TRANSPARENT = new Colour(0, 0, 0, 0);
-	static WHITE = new Colour(255, 255, 255);
+	// static WHITE = new Colour(255, 255, 255);
 
 	// https://colors.artyclick.com/color-name-finder
 	// static ROSE = Colour.fromHue(0);
-	// static RED = Colour.fromHue(20);
-	static ORANGE = Colour.fromHue(40);
-	static TANGERINE = Colour.fromHue(60);
-	static GOLD = Colour.fromHue(80);
-	// static YELLOW = Colour.fromHue(100);
+	static RED = Colour.fromHue(20);
+	// static ORANGE = Colour.fromHue(40);
+	// static TANGERINE = Colour.fromHue(60);
+	// static GOLD = Colour.fromHue(80);
+	static YELLOW = Colour.fromHue(100);
 	static LIME = Colour.fromHue(120);
 	static GREEN = Colour.fromHue(140);
-	// static SEAFOAM = Colour.fromHue(160);
-	static TEAL = Colour.fromHue(180);
-	// static CYAN = Colour.fromHue(200);
+	static SEAFOAM = Colour.fromHue(160);
+	// static TEAL = Colour.fromHue(180);
+	static CYAN = Colour.fromHue(200);
 	// static SKY = Colour.fromHue(220);
 	static CERULEAN = Colour.fromHue(240);
-	// static BLUE = Colour.fromHue(260);
-	// static LAPIS = Colour.fromHue(280);
+	static BLUE = Colour.fromHue(260);
+	static LAPIS = Colour.fromHue(280);
 	static PURPLE = Colour.fromHue(300);
-	// static VIOLET = Colour.fromHue(320);
-	static PINK = Colour.fromHue(340);
+	static VIOLET = Colour.fromHue(320);
+	// static PINK = Colour.fromHue(340);
 
 	// static NORMAL = new Colour(200, 200, 200);
 	static MAGIC = new Colour(123, 151, 255);

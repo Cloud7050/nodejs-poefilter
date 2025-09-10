@@ -12,83 +12,13 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 32
-	SetTextColor 255 215 240 255
-	SetBackgroundColor 39 0 34 255
-	SetBorderColor 255 215 240 255
-	MinimapIcon 1 Pink UpsideDownHouse
-
-Show
-	BaseType = "Greater Essence of "
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 255 122 226 255
-	SetBackgroundColor 94 0 83 255
-	SetBorderColor 255 122 226 255
-	MinimapIcon 0 Pink Cross
-
-Show
-	BaseType = "Essence of "
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 255 172 231 255
-	SetBackgroundColor 58 0 50 255
-	SetBorderColor 255 172 231 255
-	MinimapIcon 0 Pink Cross
-
-Show
-	BaseType == "Bronze Key"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 226 226 226 255
-	SetBackgroundColor 15 17 18 255
-	SetBorderColor 226 226 226 255
-	MinimapIcon 0 White Cross
-
-Show
-	BaseType == "Silver Key"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 198 198 199 255
-	SetBackgroundColor 26 28 28 255
-	SetBorderColor 198 198 199 255
-	MinimapIcon 0 White Cross
-
-Show
-	BaseType == "Gold Key"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 170 171 171 255
-	SetBackgroundColor 47 49 49 255
-	SetBorderColor 170 171 171 255
-	MinimapIcon 0 White Cross
-
-Show
-	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
 	SetTextColor 233 221 255 255
 	SetBackgroundColor 23 0 65 255
 	SetBorderColor 233 221 255 255
-	MinimapIcon 0 Purple Cross
+	MinimapIcon 1 Purple UpsideDownHouse
 
 Show
-	BaseType == "Preserved Jawbone" "Preserved Rib" "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 208 188 255 255
-	SetBackgroundColor 35 0 92 255
-	SetBorderColor 208 188 255 255
-	MinimapIcon 0 Purple Cross
-
-Show
-	BaseType == "Ancient Jawbone" "Ancient Rib" "Ancient Collarbone"
+	BaseType = "Greater Essence of "
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -98,15 +28,85 @@ Show
 	MinimapIcon 0 Purple Cross
 
 Show
+	BaseType = "Essence of "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 208 188 255 255
+	SetBackgroundColor 35 0 92 255
+	SetBorderColor 208 188 255 255
+	MinimapIcon 0 Purple Cross
+
+Show
+	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 248 216 255 255
+	SetBackgroundColor 33 0 49 255
+	SetBorderColor 248 216 255 255
+	MinimapIcon 0 Pink Cross
+
+Show
+	BaseType == "Preserved Jawbone" "Preserved Rib" "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 235 178 255 255
+	SetBackgroundColor 50 0 71 255
+	SetBorderColor 235 178 255 255
+	MinimapIcon 0 Pink Cross
+
+Show
+	BaseType == "Ancient Jawbone" "Ancient Rib" "Ancient Collarbone"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 221 138 255 255
+	SetBackgroundColor 82 0 114 255
+	SetBorderColor 221 138 255 255
+	MinimapIcon 0 Pink Cross
+
+Show
+	BaseType == "Bronze Key"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 208 241 0 255
+	SetBackgroundColor 15 19 0 255
+	SetBorderColor 208 241 0 255
+	MinimapIcon 0 Green Cross
+
+Show
+	BaseType == "Silver Key"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 183 211 0 255
+	SetBackgroundColor 24 30 0 255
+	SetBorderColor 183 211 0 255
+	MinimapIcon 0 Green Cross
+
+Show
+	BaseType == "Gold Key"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 157 182 0 255
+	SetBackgroundColor 44 52 0 255
+	SetBorderColor 157 182 0 255
+	MinimapIcon 0 Green Cross
+
+Show
 	BaseType == Gold
 	Class == "Stackable Currency"
 	StackSize < 250
 
 	SetFontSize 27
-	SetTextColor 208 241 0 255
+	SetTextColor 255 226 70 255
 	SetBackgroundColor 0 0 0 0
-	SetBorderColor 208 241 0 255
-	MinimapIcon 2 Green Kite
+	SetBorderColor 255 226 70 255
+	MinimapIcon 2 Yellow Kite
 
 Show
 	BaseType == Gold
@@ -114,10 +114,10 @@ Show
 	StackSize < 750
 
 	SetFontSize 32
-	SetTextColor 183 211 0 255
+	SetTextColor 227 198 0 255
 	SetBackgroundColor 0 0 0 0
-	SetBorderColor 183 211 0 255
-	MinimapIcon 1 Green UpsideDownHouse
+	SetBorderColor 227 198 0 255
+	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
 	BaseType == Gold
@@ -125,108 +125,108 @@ Show
 	StackSize < 5000
 
 	SetFontSize 32
-	SetTextColor 157 182 0 255
+	SetTextColor 196 171 0 255
 	SetBackgroundColor 0 0 0 0
-	SetBorderColor 157 182 0 255
-	MinimapIcon 1 Green UpsideDownHouse
+	SetBorderColor 196 171 0 255
+	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
 	BaseType == Gold
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 157 182 0 255
+	SetTextColor 196 171 0 255
 	SetBackgroundColor 0 0 0 0
-	SetBorderColor 157 182 0 255
-	MinimapIcon 0 Green Cross
+	SetBorderColor 196 171 0 255
+	MinimapIcon 0 Yellow Cross
 
 Show
 	BaseType == "Scroll of Wisdom" "Transmutation Shard"
 	Class == "Stackable Currency"
 
 	SetFontSize 27
-	SetTextColor 208 241 0 255
-	SetBackgroundColor 15 19 0 255
-	SetBorderColor 208 241 0 255
-	MinimapIcon 2 Green Kite
+	SetTextColor 255 218 216 255
+	SetBackgroundColor 44 0 3 255
+	SetBorderColor 255 218 216 255
+	MinimapIcon 2 Red Kite
 
 Show
 	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Regal Shard" "Artificer's Shard"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
-	SetTextColor 183 211 0 255
-	SetBackgroundColor 24 30 0 255
-	SetBorderColor 183 211 0 255
-	MinimapIcon 1 Green UpsideDownHouse
+	SetTextColor 255 179 176 255
+	SetBackgroundColor 65 0 6 255
+	SetBorderColor 255 179 176 255
+	MinimapIcon 1 Red UpsideDownHouse
 
 Show
 	BaseType == "Artificer's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
-	SetTextColor 157 182 0 255
-	SetBackgroundColor 44 52 0 255
-	SetBorderColor 157 182 0 255
-	MinimapIcon 1 Green UpsideDownHouse
+	SetTextColor 255 137 135 255
+	SetBackgroundColor 104 0 16 255
+	SetBorderColor 255 137 135 255
+	MinimapIcon 1 Red UpsideDownHouse
 
 Show
 	BaseType == "Regal Orb" "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Lesser Jeweller's Orb" "Armourer's Scrap" "Gemcutter's Prism" "Glassblower's Bauble" "Chance Shard"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 157 182 0 255
-	SetBackgroundColor 44 52 0 255
-	SetBorderColor 157 182 0 255
-	MinimapIcon 0 Green Cross
+	SetTextColor 255 137 135 255
+	SetBackgroundColor 104 0 16 255
+	SetBorderColor 255 137 135 255
+	MinimapIcon 0 Red Cross
 
 Show
 	BaseType == "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
-	SetTextColor 24 30 0 255
-	SetBackgroundColor 133 154 0 255
-	SetBorderColor 24 30 0 255
-	PlayEffect Green
+	SetTextColor 65 0 6 255
+	SetBackgroundColor 255 83 89 255
+	SetBorderColor 65 0 6 255
+	PlayEffect Red
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Red Star
 
 Show
 	BaseType == "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
-	SetTextColor 109 127 0 255
-	SetBackgroundColor 224 255 58 255
-	SetBorderColor 109 127 0 255
-	PlayEffect Green
+	SetTextColor 238 0 50 255
+	SetBackgroundColor 255 237 235 255
+	SetBorderColor 238 0 50 255
+	PlayEffect Red
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Red Star
 
 Show
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetBorderColor 219 253 0 255
-	MinimapIcon 0 Green Cross
+	SetBorderColor 252 0 54 255
+	MinimapIcon 0 Red Cross
 
 Show
 	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
 
 	SetFontSize 37
-	SetTextColor 0 223 192 255
-	SetBackgroundColor 0 32 26 255
-	SetBorderColor 0 223 192 255
+	SetTextColor 0 220 225 255
+	SetBackgroundColor 0 32 33 255
+	SetBorderColor 0 220 225 255
 	MinimapIcon 0 Brown Cross
 
 Show
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 32
-	SetTextColor 0 193 166 255
-	SetBackgroundColor 0 56 46 255
-	SetBorderColor 0 193 166 255
+	SetTextColor 0 190 195 255
+	SetBackgroundColor 0 55 56 255
+	SetBorderColor 0 190 195 255
 	MinimapIcon 1 Brown UpsideDownHouse
 
 Show
@@ -272,10 +272,10 @@ Show
 	Class == "Trial Coins" "Inscribed Ultimatum"
 
 	SetFontSize 37
-	SetTextColor 170 171 171 255
-	SetBackgroundColor 47 49 49 255
-	SetBorderColor 170 171 171 255
-	MinimapIcon 0 White Cross
+	SetTextColor 157 182 0 255
+	SetBackgroundColor 44 52 0 255
+	SetBorderColor 157 182 0 255
+	MinimapIcon 0 Green Cross
 
 Show
 	Class == "Quest Items"
@@ -291,10 +291,10 @@ Show
 	Rarity == Normal
 
 	SetFontSize 27
-	SetTextColor 255 219 206 255
-	SetBackgroundColor 37 7 0 255
-	SetBorderColor 255 219 206 255
-	MinimapIcon 2 Orange Kite
+	SetTextColor 223 224 255 255
+	SetBackgroundColor 0 6 68 255
+	SetBorderColor 223 224 255 255
+	MinimapIcon 2 Blue Kite
 
 	Continue
 
@@ -304,10 +304,10 @@ Show
 	Quality > 0
 
 	SetFontSize 32
-	SetTextColor 255 219 206 255
-	SetBackgroundColor 37 7 0 255
-	SetBorderColor 255 219 206 255
-	MinimapIcon 1 Orange UpsideDownHouse
+	SetTextColor 223 224 255 255
+	SetBackgroundColor 0 6 68 255
+	SetBorderColor 223 224 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -318,10 +318,10 @@ Show
 	BaseEnergyShield > 0
 
 	SetFontSize 32
-	SetTextColor 255 219 206 255
-	SetBackgroundColor 37 7 0 255
-	SetBorderColor 255 219 206 255
-	MinimapIcon 1 Orange UpsideDownHouse
+	SetTextColor 223 224 255 255
+	SetBackgroundColor 0 6 68 255
+	SetBorderColor 223 224 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -331,10 +331,10 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	SetTextColor 255 219 206 255
-	SetBackgroundColor 37 7 0 255
-	SetBorderColor 255 219 206 255
-	MinimapIcon 1 Orange UpsideDownHouse
+	SetTextColor 223 224 255 255
+	SetBackgroundColor 0 6 68 255
+	SetBorderColor 223 224 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -343,10 +343,10 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	SetTextColor 255 219 206 255
-	SetBackgroundColor 37 7 0 255
-	SetBorderColor 255 219 206 255
-	MinimapIcon 1 Orange UpsideDownHouse
+	SetTextColor 223 224 255 255
+	SetBackgroundColor 0 6 68 255
+	SetBorderColor 223 224 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -355,10 +355,10 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	SetTextColor 255 220 193 255
-	SetBackgroundColor 31 12 0 255
-	SetBorderColor 255 220 193 255
-	MinimapIcon 1 Yellow UpsideDownHouse
+	SetTextColor 213 227 255 255
+	SetBackgroundColor 0 17 40 255
+	SetBorderColor 213 227 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -367,10 +367,10 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	SetTextColor 255 222 171 255
-	SetBackgroundColor 26 15 0 255
-	SetBorderColor 255 222 171 255
-	MinimapIcon 1 Blue UpsideDownHouse
+	SetTextColor 83 255 171 255
+	SetBackgroundColor 0 21 9 255
+	SetBorderColor 83 255 171 255
+	MinimapIcon 1 Green UpsideDownHouse
 
 	Continue
 
@@ -379,10 +379,10 @@ Show
 	Rarity == Magic
 
 	SetFontSize 27
-	SetTextColor 255 181 153 255
-	SetBackgroundColor 55 14 0 255
-	SetBorderColor 255 181 153 255
-	MinimapIcon 2 Orange Kite
+	SetTextColor 188 194 255 255
+	SetBackgroundColor 0 12 97 255
+	SetBorderColor 188 194 255 255
+	MinimapIcon 2 Blue Kite
 
 	Continue
 
@@ -392,10 +392,10 @@ Show
 	Quality > 0
 
 	SetFontSize 32
-	SetTextColor 255 181 153 255
-	SetBackgroundColor 55 14 0 255
-	SetBorderColor 255 181 153 255
-	MinimapIcon 1 Orange UpsideDownHouse
+	SetTextColor 188 194 255 255
+	SetBackgroundColor 0 12 97 255
+	SetBorderColor 188 194 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -406,10 +406,10 @@ Show
 	BaseEnergyShield > 0
 
 	SetFontSize 32
-	SetTextColor 255 181 153 255
-	SetBackgroundColor 55 14 0 255
-	SetBorderColor 255 181 153 255
-	MinimapIcon 1 Orange UpsideDownHouse
+	SetTextColor 188 194 255 255
+	SetBackgroundColor 0 12 97 255
+	SetBorderColor 188 194 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -419,10 +419,10 @@ Show
 	Rarity == Magic
 
 	SetFontSize 32
-	SetTextColor 255 181 153 255
-	SetBackgroundColor 55 14 0 255
-	SetBorderColor 255 181 153 255
-	MinimapIcon 1 Orange UpsideDownHouse
+	SetTextColor 188 194 255 255
+	SetBackgroundColor 0 12 97 255
+	SetBorderColor 188 194 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -432,10 +432,10 @@ Show
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
 
 	SetFontSize 32
-	SetTextColor 255 181 153 255
-	SetBackgroundColor 55 14 0 255
-	SetBorderColor 255 181 153 255
-	MinimapIcon 1 Orange UpsideDownHouse
+	SetTextColor 188 194 255 255
+	SetBackgroundColor 0 12 97 255
+	SetBorderColor 188 194 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -444,10 +444,10 @@ Show
 	Rarity == Magic
 
 	SetFontSize 32
-	SetTextColor 255 181 153 255
-	SetBackgroundColor 55 14 0 255
-	SetBorderColor 255 181 153 255
-	MinimapIcon 1 Orange UpsideDownHouse
+	SetTextColor 188 194 255 255
+	SetBackgroundColor 0 12 97 255
+	SetBorderColor 188 194 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -456,10 +456,10 @@ Show
 	Rarity == Magic
 
 	SetFontSize 37
-	SetTextColor 255 183 122 255
-	SetBackgroundColor 46 21 0 255
-	SetBorderColor 255 183 122 255
-	MinimapIcon 0 Yellow Cross
+	SetTextColor 166 200 255 255
+	SetBackgroundColor 0 28 59 255
+	SetBorderColor 166 200 255 255
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -468,10 +468,10 @@ Show
 	Rarity == Magic
 
 	SetFontSize 37
-	SetTextColor 255 186 51 255
-	SetBackgroundColor 39 25 0 255
-	SetBorderColor 255 186 51 255
-	MinimapIcon 0 Blue Cross
+	SetTextColor 0 227 143 255
+	SetBackgroundColor 0 33 17 255
+	SetBorderColor 0 227 143 255
+	MinimapIcon 0 Green Cross
 
 	Continue
 
@@ -480,10 +480,10 @@ Show
 	Rarity == Rare
 
 	SetFontSize 32
-	SetTextColor 255 140 93 255
-	SetBackgroundColor 90 28 0 255
-	SetBorderColor 255 140 93 255
-	MinimapIcon 1 Orange UpsideDownHouse
+	SetTextColor 153 165 255 255
+	SetBackgroundColor 0 25 152 255
+	SetBorderColor 153 165 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -492,10 +492,10 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetTextColor 255 140 93 255
-	SetBackgroundColor 90 28 0 255
-	SetBorderColor 255 140 93 255
-	MinimapIcon 0 Orange Cross
+	SetTextColor 153 165 255 255
+	SetBackgroundColor 0 25 152 255
+	SetBorderColor 153 165 255 255
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -505,10 +505,10 @@ Show
 	BaseEnergyShield > 0
 
 	SetFontSize 37
-	SetTextColor 255 140 93 255
-	SetBackgroundColor 90 28 0 255
-	SetBorderColor 255 140 93 255
-	MinimapIcon 0 Orange Cross
+	SetTextColor 153 165 255 255
+	SetBackgroundColor 0 25 152 255
+	SetBorderColor 153 165 255 255
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -518,10 +518,10 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetTextColor 255 140 93 255
-	SetBackgroundColor 90 28 0 255
-	SetBorderColor 255 140 93 255
-	MinimapIcon 0 Orange Cross
+	SetTextColor 153 165 255 255
+	SetBackgroundColor 0 25 152 255
+	SetBorderColor 153 165 255 255
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -531,10 +531,10 @@ Show
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
 
 	SetFontSize 37
-	SetTextColor 255 140 93 255
-	SetBackgroundColor 90 28 0 255
-	SetBorderColor 255 140 93 255
-	MinimapIcon 0 Orange Cross
+	SetTextColor 153 165 255 255
+	SetBackgroundColor 0 25 152 255
+	SetBorderColor 153 165 255 255
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -543,10 +543,10 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetTextColor 255 140 93 255
-	SetBackgroundColor 90 28 0 255
-	SetBorderColor 255 140 93 255
-	MinimapIcon 0 Orange Cross
+	SetTextColor 153 165 255 255
+	SetBackgroundColor 0 25 152 255
+	SetBorderColor 153 165 255 255
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -555,10 +555,10 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetTextColor 254 143 0 255
-	SetBackgroundColor 76 39 0 255
-	SetBorderColor 254 143 0 255
-	MinimapIcon 0 Yellow Cross
+	SetTextColor 115 173 255 255
+	SetBackgroundColor 0 49 95 255
+	SetBorderColor 115 173 255 255
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -567,10 +567,10 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetTextColor 225 159 0 255
-	SetBackgroundColor 66 44 0 255
-	SetBorderColor 225 159 0 255
-	MinimapIcon 0 Blue Cross
+	SetTextColor 0 196 123 255
+	SetBackgroundColor 0 57 32 255
+	SetBorderColor 0 196 123 255
+	MinimapIcon 0 Green Cross
 
 	Continue
 
@@ -579,40 +579,40 @@ Show
 	Rarity == Unique
 
 	SetFontSize 45
-	SetTextColor 55 14 0 255
-	SetBackgroundColor 251 92 0 255
-	SetBorderColor 55 14 0 255
-	PlayEffect Orange
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Orange Star
-
-	Continue
-
-Show
-	Class == Jewels
-	Rarity == Unique
-
-	SetFontSize 45
-	SetTextColor 46 21 0 255
-	SetBackgroundColor 216 121 0 255
-	SetBorderColor 46 21 0 255
-	PlayEffect Yellow
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Yellow Star
-
-	Continue
-
-Show
-	Class == Relics
-	Rarity == Unique
-
-	SetFontSize 45
-	SetTextColor 39 25 0 255
-	SetBackgroundColor 191 134 0 255
-	SetBorderColor 39 25 0 255
+	SetTextColor 0 12 97 255
+	SetBackgroundColor 117 134 255 255
+	SetBorderColor 0 12 97 255
 	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Jewels
+	Rarity == Unique
+
+	SetFontSize 45
+	SetTextColor 0 28 59 255
+	SetBackgroundColor 44 145 255 255
+	SetBorderColor 0 28 59 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Relics
+	Rarity == Unique
+
+	SetFontSize 45
+	SetTextColor 0 33 17 255
+	SetBackgroundColor 0 166 103 255
+	SetBorderColor 0 33 17 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green Star
 
 	Continue
 
