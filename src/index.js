@@ -165,19 +165,19 @@ filter.block((c, e) => {
 
 // Socketables eg runes
 filter.block((c, e) => {
-	c.names = new Comparison("Lesser Rune of ", Comparison.OPERATOR.EQUAL);
+	c.names = new Comparison("Lesser ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.SOCKETABLE);
 
 	e.colourWisdom(Colour.CRAFTED).sizeAugment(Colour.PRESET.CYAN);
 });
 filter.block((c, e) => {
-	c.names = new Comparison("Greater Rune of ", Comparison.OPERATOR.EQUAL);
+	c.names = new Comparison("Greater ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.SOCKETABLE);
 
 	e.colourExalt(Colour.CRAFTED).sizeExalt(Colour.PRESET.CYAN);
 });
 filter.block((c, e) => {
-	c.names = new Comparison("Rune of ", Comparison.OPERATOR.EQUAL);
+	c.names = new Comparison(" Rune", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.SOCKETABLE);
 
 	e.colourAugment(Colour.CRAFTED).sizeExalt(Colour.PRESET.CYAN);

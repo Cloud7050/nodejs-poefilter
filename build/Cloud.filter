@@ -230,7 +230,7 @@ Show
 	MinimapIcon 1 Brown UpsideDownHouse
 
 Show
-	BaseType = "Lesser Rune of "
+	BaseType = "Lesser "
 	Class == Socketable
 
 	SetFontSize 32
@@ -240,7 +240,7 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	BaseType = "Greater Rune of "
+	BaseType = "Greater "
 	Class == Socketable
 
 	SetFontSize 37
@@ -250,7 +250,7 @@ Show
 	MinimapIcon 0 Cyan Cross
 
 Show
-	BaseType = "Rune of "
+	BaseType = " Rune"
 	Class == Socketable
 
 	SetFontSize 37
