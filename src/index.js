@@ -105,27 +105,27 @@ filter.block((c, e) => { // Gold
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(250, Comparison.OPERATOR.LT);
 
-	e.colourWisdom(GOLD_COLOUR, GOLD_PRESET, undefined, Colour.TRANSPARENT).sizeWisdom();
+	e.colourWisdom(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeWisdom();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Gold");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(750, Comparison.OPERATOR.LT);
 
-	e.colourAugment(GOLD_COLOUR, GOLD_PRESET, undefined, Colour.TRANSPARENT).sizeAugment();
+	e.colourAugment(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Gold");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(5000, Comparison.OPERATOR.LT);
 
-	e.colourExalt(GOLD_COLOUR, GOLD_PRESET, undefined, Colour.TRANSPARENT).sizeAugment();
+	e.colourExalt(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Gold");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourExalt(GOLD_COLOUR, GOLD_PRESET, undefined, Colour.TRANSPARENT).sizeExalt();
+	e.colourExalt(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeExalt();
 });
 filter.block((c, e) => { // Other
 	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));

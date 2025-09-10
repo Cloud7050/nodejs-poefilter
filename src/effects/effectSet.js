@@ -86,44 +86,44 @@ export class EffectSet {
 		return this;
 	}
 
-	colourWisdom(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.KITE, backgroundColour = mainColour.brightness(3)) {
+	colourWisdom(mainColour, mapColour, backgroundColour = mainColour.brightness(3)) {
 		this.textColour = mainColour.brightness(85);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.brightness(85);
 		this.mapColour = mapColour;
-		this.mapIcon = mapIcon;
+		this.mapIcon = EffectSet.MAP_ICON.KITE;
 		return this;
 	}
-	colourAugment(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.HOUSE, backgroundColour = mainColour.brightness(10)) {
+	colourAugment(mainColour, mapColour, backgroundColour = mainColour.brightness(10)) {
 		this.textColour = mainColour.brightness(80);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.brightness(80);
 		this.mapColour = mapColour;
-		this.mapIcon = mapIcon;
+		this.mapIcon = EffectSet.MAP_ICON.HOUSE;
 		return this;
 	}
-	colourExalt(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.CROSS, backgroundColour = mainColour.brightness(20)) {
+	colourExalt(mainColour, mapColour, backgroundColour = mainColour.brightness(20)) {
 		this.textColour = mainColour.brightness(75);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.brightness(75);
 		this.mapColour = mapColour;
-		this.mapIcon = mapIcon;
+		this.mapIcon = EffectSet.MAP_ICON.CROSS;
 		return this;
 	}
-	colourChance(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.STAR, backgroundColour = mainColour.brightness(50)) {
+	colourChance(mainColour, mapColour, backgroundColour = mainColour.brightness(50)) {
 		this.textColour = mainColour.brightness(10);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.brightness(10);
 		this.mapColour = mapColour;
-		this.mapIcon = mapIcon;
+		this.mapIcon = EffectSet.MAP_ICON.STAR;
 		return this;
 	}
-	colourDivine(mainColour, mapColour, mapIcon = EffectSet.MAP_ICON.DIAMOND, backgroundColour = mainColour.brightness(90)) {
+	colourDivine(mainColour, mapColour, backgroundColour = mainColour.brightness(90)) {
 		this.textColour = mainColour.brightness(50);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.brightness(50);
 		this.mapColour = mapColour;
-		this.mapIcon = mapIcon;
+		this.mapIcon = EffectSet.MAP_ICON.DIAMOND;
 		return this;
 	}
 

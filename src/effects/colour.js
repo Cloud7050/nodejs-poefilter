@@ -2,6 +2,11 @@ import { argbFromRgb, blueFromArgb, greenFromArgb, Hct, lerp, redFromArgb, Tonal
 import { HctSolver } from "../../node_modules/@material/material-color-utilities/hct/hct_solver.js";
 
 export class Colour {
+	static #HUE_CEILING = 360;
+	static #HUE_INTERVAL = 20;
+	static #COLOUR_COUNT = Colour.#HUE_CEILING / Colour.#HUE_INTERVAL;
+	static #CHROMA_CEILING = 200; // By inspecting M3 source
+
 	static PRESET = {
 		BLACK: "Grey",
 		// GREY: "White",
@@ -64,8 +69,8 @@ export class Colour {
 	}
 
 	// Given a hue, finds the tone that maxes out chroma, ie the key colour
-	static fromHue(hue, chroma = 200) {
-		let hct = TonalPalette.fromHueAndChroma(hue, chroma).keyColor;
+	static fromHue(hue) {
+		let hct = TonalPalette.fromHueAndChroma(hue, Colour.#CHROMA_CEILING).keyColor;
 		let argb = hct.toInt();
 		return new Colour(
 			redFromArgb(argb),
@@ -74,55 +79,48 @@ export class Colour {
 		);
 	}
 
-	static MEMO_TONE = null;
+	static #MEMO_TONE = null;
 	// Finds the average tone of all the key colours
 	static #getAverageTone() {
-		if (Colour.MEMO_TONE !== null) return Colour.MEMO_TONE;
-
-		let hueInterval = 20;
-		let colourCount = 360 / hueInterval;
+		if (Colour.#MEMO_TONE !== null) return Colour.#MEMO_TONE;
 
 		let totalTone = 0;
-		for (let i = 0; i < colourCount; i++) {
-			let hue = i * hueInterval;
+		for (let i = 0; i < Colour.#COLOUR_COUNT; i++) {
+			let hue = i * Colour.#HUE_INTERVAL;
 
 			// For the given hue, find the key colour and thus its tone
-			let hct = TonalPalette.fromHueAndChroma(hue, 200).keyColor;
+			let hct = TonalPalette.fromHueAndChroma(hue, Colour.#CHROMA_CEILING).keyColor;
 			totalTone += hct.tone;
 		}
-		let averageKeyTone = totalTone / colourCount;
+		let averageTone = totalTone / Colour.#COLOUR_COUNT;
 
-		Colour.MEMO_TONE = averageKeyTone;
-		console.log("averageKeyTone " + averageKeyTone);
-		return averageKeyTone;
+		Colour.#MEMO_TONE = averageTone;
+		return averageTone;
 	}
 
-	static MEMO = {};
+	static #MEMO_CAP = {};
 	// Gets the chroma we should cap this tone to, based on the max chroma of all hues
 	static #getChromaCap(tone) {
-		if (Colour.MEMO[tone] !== undefined) return Colour.MEMO[tone];
-
-		let hueInterval = 20;
-		let colourCount = 360 / hueInterval;
+		if (Colour.#MEMO_CAP[tone] !== undefined) return Colour.#MEMO_CAP[tone];
 
 		let totalMaxChroma = 0;
 		let highestMaxChroma = 0;
-		for (let i = 0; i < colourCount; i++) {
-			let hue = i * hueInterval;
+		for (let i = 0; i < Colour.#COLOUR_COUNT; i++) {
+			let hue = i * Colour.#HUE_INTERVAL;
 
 			// For the given hue and tone, find its max chroma
-			let argb = HctSolver.solveToInt(hue, 200, tone);
+			let argb = HctSolver.solveToInt(hue, Colour.#CHROMA_CEILING, tone);
 			let hct = Hct.fromInt(argb);
 			let maxChroma = hct.chroma;
 
 			totalMaxChroma += maxChroma;
 			highestMaxChroma = Math.max(highestMaxChroma, maxChroma);
 		}
-		let averageMaxChroma = totalMaxChroma / colourCount;
-		let maxChroma = (averageMaxChroma + highestMaxChroma) / 2;
+		let averageMaxChroma = totalMaxChroma / Colour.#COLOUR_COUNT;
+		let chromaCap = (averageMaxChroma + highestMaxChroma) / 2;
 
-		Colour.MEMO[tone] = maxChroma;
-		return maxChroma;
+		Colour.#MEMO_CAP[tone] = chromaCap;
+		return chromaCap;
 	}
 
 	export() {
@@ -130,24 +128,18 @@ export class Colour {
 	}
 
 	brightness(brightness) {
-		// Brightness is our expression of how bright we want the tone to be.
-		// Instead of providing tone values directly, we make use of this hue's key colour where
-		// chroma is maxed. We bias our resulting tone around the midpoint of that tone and the
-		// average of all key colours.
+		// Brightness is our expression of how bright we want the tone to be. Instead of providing
+		// tone args directly, we use of this hue's key colour. We bias our resulting tone around
+		// the midpoint of this key colour and the average from all key colours.
 
 		// Get our tone that maxes out chroma, ie the key colour
 		let argb = argbFromRgb(this.r, this.g, this.b);
 		let hct = Hct.fromInt(argb);
 		let realBrightestTone = hct.tone;
-		console.log("realBrightestTone " + realBrightestTone);
-
-		// Find the average tone of all key colours
-		let averageBrightestTone = Colour.#getAverageTone();
 
 		// Find the tone midpoint to base our brightness around
+		let averageBrightestTone = Colour.#getAverageTone();
 		let pivotTone = (realBrightestTone + averageBrightestTone) / 2;
-		// pivotTone = realBrightestTone
-		console.log("pivotTone " + pivotTone);
 
 		// Convert our brightness to the resulting tone value
 		let tone;
@@ -156,16 +148,11 @@ export class Colour {
 		} else {
 			tone = lerp(pivotTone, 100, (brightness - 50) / 50);
 		}
-		console.log(`Brightness ${brightness} → Tone ${tone}\n`);
+		// console.log(`Brightness ${brightness} → Tone ${tone}`);
 
-		// Now we can move on to capping the chroma for this tone.
-
-		// Find the average max chroma for this tone
-		let maxChroma = Colour.#getChromaCap(tone);
-		// maxChroma = 200
-
-		// Return the resulting HCT as Colour
-		let newHct = Hct.from(hct.hue, maxChroma, tone);
+		// Finally, cap the chroma for this tone
+		let chromaCap = Colour.#getChromaCap(tone);
+		let newHct = Hct.from(hct.hue, chromaCap, tone);
 		// console.log(`H${hue} T${tone} capped at C${maxChroma} → C${newHct.chroma} (H${newHct.hue})`);
 		let newArgb = newHct.toInt();
 		return new Colour(
