@@ -65,7 +65,7 @@ export class EffectSet {
 	}
 
 	colourWisdom(mainColour, backgroundColour = undefined) {
-		backgroundColour = backgroundColour ?? mainColour.tone(5);
+		backgroundColour = backgroundColour ?? mainColour.tone(3);
 
 		this.textColour = mainColour.tone(90);
 		this.backgroundColour = backgroundColour;
@@ -73,7 +73,7 @@ export class EffectSet {
 		return this;
 	}
 	colourAugment(mainColour, backgroundColour = undefined) {
-		backgroundColour = backgroundColour ?? mainColour.tone(10);
+		backgroundColour = backgroundColour ?? mainColour.tone(13);
 
 		this.textColour = mainColour.tone(80);
 		this.backgroundColour = backgroundColour;
@@ -81,7 +81,7 @@ export class EffectSet {
 		return this;
 	}
 	colourExalt(mainColour, backgroundColour = undefined) {
-		backgroundColour = backgroundColour ?? mainColour.tone(20);
+		backgroundColour = backgroundColour ?? mainColour.tone(23);
 
 		this.textColour = mainColour.tone(70);
 		this.backgroundColour = backgroundColour;
@@ -97,7 +97,7 @@ export class EffectSet {
 		return this;
 	}
 	colourDivine(mainColour, backgroundColour = undefined) {
-		backgroundColour = backgroundColour ?? mainColour.tone(95);
+		backgroundColour = backgroundColour ?? mainColour.tone(90);
 
 		this.textColour = mainColour.tone(50);
 		this.backgroundColour = backgroundColour;
