@@ -1,4 +1,5 @@
-import { argbFromRgb, blueFromArgb, greenFromArgb, redFromArgb, TonalPalette } from "@material/material-color-utilities";
+import { argbFromRgb, blueFromArgb, greenFromArgb, Hct, redFromArgb, TonalPalette } from "@material/material-color-utilities";
+import { HctSolver } from "../../node_modules/@material/material-color-utilities/hct/hct_solver.js";
 
 export class Colour {
 	static PRESET = {
@@ -74,22 +75,53 @@ export class Colour {
 		return new Colour(r, g, b);
 	}
 
+	static MEMO = {};
+	static #getMaxChroma(tone) {
+		if (Colour.MEMO[tone] !== undefined) return Colour.MEMO[tone];
+
+		let hueInterval = 20;
+		let colourCount = 360 / hueInterval;
+
+		let totalMaxChroma = 0;
+		for (let i = 0; i < colourCount; i++) {
+			let hue = i * hueInterval;
+
+			// For the given hue and tone, find its max chroma
+			let argb = HctSolver.solveToInt(hue, 200, tone);
+			let hct = Hct.fromInt(argb);
+			let maxChroma = hct.chroma;
+
+			totalMaxChroma += maxChroma;
+		}
+		let averageMaxChroma = totalMaxChroma / colourCount;
+
+		Colour.MEMO[tone] = averageMaxChroma;
+		return averageMaxChroma;
+	}
+
 	export() {
 		return `${this.r} ${this.g} ${this.b} ${this.a}`;
 	}
 
 	// 0-100 "lightness" tone scale (higher is brighter)
 	tone(tone) {
+		// For this key colour, get its hue
 		// Convert from 0-255 RGB components, to hexadecimal int aka argb
 		let argb = argbFromRgb(this.r, this.g, this.b);
-		let palette = TonalPalette.fromInt(argb);
+		let hct = Hct.fromInt(argb);
+		let hue = hct.hue;
 
-		// https://material-foundation.github.io/material-theme-builder
-		let tonedArgb = palette.tone(tone);
+		// Find the average max chroma for this tone
+		let maxChroma = Colour.#getMaxChroma(tone);
+
+		// Return the resulting HCT as Colour
+		let newHct = Hct.from(hue, maxChroma, tone);
+		// console.log(`HCT ${hue} ${maxChroma} ${tone} → ${newHct.hue} ${newHct.chroma} ${newHct.tone}`);
+		let newArgb = newHct.toInt();
 		return new Colour(
-			redFromArgb(tonedArgb),
-			greenFromArgb(tonedArgb),
-			blueFromArgb(tonedArgb)
+			redFromArgb(newArgb),
+			greenFromArgb(newArgb),
+			blueFromArgb(newArgb)
 		);
 	}
 }
