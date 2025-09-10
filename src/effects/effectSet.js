@@ -1,10 +1,10 @@
-import { COLOUR } from "../constants.js";
+import { Colour } from "./colour.js";
 import { MapEffect } from "./mapEffect.js";
 
 export class EffectSet {
 	static VISIBILITY = {
 		SHOW: "Show",
-		HIDE: "Hide"
+		HIDE: "Hide",
 	};
 
 	static TEXT_SIZE = {
@@ -12,94 +12,20 @@ export class EffectSet {
 		SMALL: "27",
 		DEFAULT: "32",
 		LARGE: "37",
-		LARGEST: "45"
-	};
-	static RGB = {
-		NORMAL: "200 200 200",
-		MAGIC: "123 151 255",
-		RARE: "255 225 87",
-		// UNIQUE: "241 106 33",
-
-		GEM_UNCUT: "116 201 190",
-		CRAFTED: "184 218 242",
-
-		BLACK: "0 0 0",
-		// NAVY: "0 0 170",
-		GREEN: "0 170 0",
-		// TEAL: "0 170 170",
-		// CRIMSON: "170 0 0",
-		PURPLE: "170 0 170",
-		// ORANGE: "255 170 0",
-		// SILVER: "170 170 170",
-		// GREY: "85 85 85",
-		// BLUE: "85 85 255",
-		LIME: "85 255 85",
-		// CYAN: "85 255 255",
-		// ROSE: "255 85 85",
-		PINK: "255 85 255",
-		// YELLOW: "255 255 85",
-		// WHITE: "255 255 255"
-	};
-	// Alpha defaults to 240
-	static RGBA = {
-		// NORMAL: "200 200 200 255",
-		// MAGIC: "123 151 255 255",
-		// RARE: "255 225 87 255",
-		UNIQUE: "241 106 33 255",
-
-		BLACK: "0 0 0 255",
-		BLACK_TRANSLUCENT: "0 0 0 128",
-		TRANSPARENT: "0 0 0 0",
-		// NAVY: "0 0 170 255",
-		// GREEN: "0 170 0 255",
-		// TEAL: "0 170 170 255",
-		// CRIMSON: "170 0 0 255",
-		// PURPLE: "170 0 170 255",
-		// ORANGE: "255 170 0 255",
-		// SILVER: "170 170 170 255",
-		// GREY: "85 85 85 255",
-		// BLUE: "85 85 255 255",
-		// LIME: "85 255 85 255",
-		// CYAN: "85 255 255 255",
-		ROSE: "255 85 85 255",
-		// PINK: "255 85 255 255",
-		// YELLOW: "255 255 85 255",
-		// WHITE: "255 255 255 255"
-
-		DARK_NORMAL: "47 47 47 255",
-		DARK_MAGIC: "29 36 60 255",
-		DARK_RARE: "60 53 20 255",
-		// DARK_UNIQUE: "57 25 8 255",
-
-		// DARK_NAVY: "20 20 40 255",
-		DARK_GREEN: "20 40 20 255",
-		// DARK_TEAL: "20 40 40 255",
-		// DARK_CRIMSON: "40 20 20 255",
-		DARK_PURPLE: "40 20 40 255",
-		// DARK_ORANGE: "60 40 20 255",
-		// DARK_SILVER: "40 40 40 255",
-		// DARK_GREY: "20 20 20 255",
-		// DARK_BLUE: "20 20 60 255",
-		// DARK_LIME: "20 60 20 255",
-		// DARK_CYAN: "20 60 60 255",
-		// DARK_ROSE: "60 20 20 255",
-		// DARK_PINK: "60 20 60 255",
-		// DARK_YELLOW: "60 60 20 255",
-		// DARK_WHITE: "60 60 60 255"
+		LARGEST: "45",
 	};
 
-	static COLOUR = COLOUR;
 	static SOUND = {
 		WAH: "WAH.mp3",
-		DISABLE: "None"
+		DISABLE: "None",
 	};
 
 	visibility = EffectSet.VISIBILITY.SHOW;
 
 	textSize = null;
-	textColour = null;
-	backgroundColour = null;
-	outlineColour = null;
+	textColour = null; // Colour
+	backgroundColour = null; // Colour
+	outlineColour = null; // Colour
 
 	beamColour = null;
 	sound = null;
@@ -113,9 +39,9 @@ export class EffectSet {
 		let spans = [];
 
 		if (this.textSize !== null) spans.push(`SetFontSize ${this.textSize}`);
-		if (this.textColour !== null) spans.push(`SetTextColor ${this.textColour}`);
-		if (this.backgroundColour !== null) spans.push(`SetBackgroundColor ${this.backgroundColour}`);
-		if (this.outlineColour !== null) spans.push(`SetBorderColor ${this.outlineColour}`);
+		if (this.textColour !== null) spans.push(`SetTextColor ${this.textColour.export()}`); // Alpha defaults to 255
+		if (this.backgroundColour !== null) spans.push(`SetBackgroundColor ${this.backgroundColour.export()}`); // Alpha defaults to 240
+		if (this.outlineColour !== null) spans.push(`SetBorderColor ${this.outlineColour.export()}`); // Alpha defaults to 255
 
 		if (this.beamColour !== null) spans.push(`PlayEffect ${this.beamColour}`);
 		if (this.sound !== null) spans.push(`CustomAlertSound "${this.sound}"`);
@@ -128,14 +54,77 @@ export class EffectSet {
 		return spans;
 	}
 
-	// Make less prominent, ignoreable
 	fade() {
 		this.textSize = EffectSet.TEXT_SIZE.SMALLEST;
-		this.backgroundColour = EffectSet.RGBA.BLACK_TRANSLUCENT;
+		this.backgroundColour = Colour.BLACK_TRANSLUCENT;
 
 		// Explicitly put empty map effect to express intent to hide, making the filter overwrite any previous shows
 		this.mapEffect = new MapEffect();
 
+		return this;
+	}
+
+	colourWisdom(mainColour, backgroundColour = undefined) {
+		backgroundColour = backgroundColour ?? mainColour.tone(5);
+
+		this.textColour = mainColour.tone(90);
+		this.backgroundColour = backgroundColour;
+		this.outlineColour = mainColour.tone(90);
+		return this;
+	}
+	colourAugment(mainColour, backgroundColour = undefined) {
+		backgroundColour = backgroundColour ?? mainColour.tone(15);
+
+		this.textColour = mainColour.tone(80);
+		this.backgroundColour = backgroundColour;
+		this.outlineColour = mainColour.tone(80);
+		return this;
+	}
+	colourExalt(mainColour, backgroundColour = undefined) {
+		backgroundColour = backgroundColour ?? mainColour.tone(25);
+
+		this.textColour = mainColour.tone(70);
+		this.backgroundColour = backgroundColour;
+		this.outlineColour = mainColour.tone(70);
+		return this;
+	}
+	colourChance(mainColour, backgroundColour = undefined) {
+		backgroundColour = backgroundColour ?? mainColour.tone(60);
+
+		this.textColour = mainColour.tone(10);
+		this.backgroundColour = backgroundColour;
+		this.outlineColour = mainColour.tone(10);
+		return this;
+	}
+	colourDivine(mainColour, backgroundColour = undefined) {
+		backgroundColour = backgroundColour ?? mainColour.tone(95);
+
+		this.textColour = mainColour.tone(50);
+		this.backgroundColour = backgroundColour;
+		this.outlineColour = mainColour.tone(50);
+		return this;
+	}
+
+	sizeWisdom(mapColour, mapIcon = MapEffect.ICON.KITE) {
+		this.textSize = EffectSet.TEXT_SIZE.SMALL;
+		this.mapEffect = new MapEffect(MapEffect.SIZE.SMALL, mapColour, mapIcon);
+		return this;
+	}
+	sizeAugment(mapColour, mapIcon = MapEffect.ICON.HOUSE) {
+		this.textSize = EffectSet.TEXT_SIZE.DEFAULT;
+		this.mapEffect = new MapEffect(MapEffect.SIZE.MEDIUM, mapColour, mapIcon);
+		return this;
+	}
+	sizeExalt(mapColour, mapIcon = MapEffect.ICON.CROSS) {
+		this.textSize = EffectSet.TEXT_SIZE.LARGE;
+		this.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, mapColour, mapIcon);
+		return this;
+	}
+	sizeChance(mapColour, beamColour = mapColour, mapIcon = MapEffect.ICON.STAR) {
+		this.textSize = EffectSet.TEXT_SIZE.LARGEST;
+		this.beamColour = beamColour;
+		this.sound = EffectSet.SOUND.WAH;
+		this.mapEffect = new MapEffect(MapEffect.SIZE.LARGE, mapColour, mapIcon);
 		return this;
 	}
 }

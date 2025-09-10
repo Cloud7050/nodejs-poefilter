@@ -1,4 +1,3 @@
-import { COLOUR } from "../constants.js";
 
 
 
@@ -7,22 +6,21 @@ export class MapEffect {
 		SMALL: "2",
 		MEDIUM: "1",
 		LARGE: "0",
-		DISABLE: "-1"
+		DISABLE: "-1",
 	};
-	static COLOUR = COLOUR;
 	static ICON = {
-		CIRCLE: "Circle",
+		// CIRCLE: "Circle",
 		CROSS: "Cross",
-		// DIAMOND: "Diamond",
+		DIAMOND: "Diamond",
 		// HEXAGON: "Hexagon",
 		HOUSE: "UpsideDownHouse",
 		KITE: "Kite",
 		// MOON: "Moon",
 		// PENTAGON: "Pentagon",
-		RAINDROP: "Raindrop",
+		// RAINDROP: "Raindrop",
 		STAR: "Star",
-		// SQUARE: "Square",
-		TRIANGLE: "Triangle"
+		SQUARE: "Square",
+		// TRIANGLE: "Triangle",
 	};
 
 	size;

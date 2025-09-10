@@ -3,43 +3,298 @@ Show
 
 	SetFontSize 27
 	SetBackgroundColor 0 0 0 255
-	MinimapIcon 2 Pink Kite
+	MinimapIcon 2 Grey Square
 
 	Continue
 
 Show
-	Sockets > 0
+	BaseType = "Lesser Essence of "
+	Class == "Stackable Currency"
 
-	SetBorderColor 200 200 200
-
-	Continue
-
-Show
-	Quality > 0
-
-	SetBorderColor 123 151 255
-
-	Continue
+	SetFontSize 32
+	SetTextColor 255 215 247 255
+	SetBackgroundColor 38 0 39 255
+	SetBorderColor 255 215 247 255
+	MinimapIcon 1 Pink UpsideDownHouse
 
 Show
-	BaseType == "Corvus Mantle" "Conjurer Mantle" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
+	BaseType = "Greater Essence of "
+	Class == "Stackable Currency"
 
-	SetBorderColor 255 225 87
-
-	Continue
-
-Show
-	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
-
-	SetBorderColor 255 225 87
-
-	Continue
+	SetFontSize 37
+	SetTextColor 255 116 251 255
+	SetBackgroundColor 109 0 112 255
+	SetBorderColor 255 116 251 255
+	MinimapIcon 0 Pink Cross
 
 Show
-	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings
+	BaseType = "Essence of "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 170 246 255
+	SetBackgroundColor 73 0 75 255
+	SetBorderColor 255 170 246 255
+	MinimapIcon 0 Pink Cross
+
+Show
+	BaseType == "Bronze Key"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 227 226 226 255
+	SetBackgroundColor 15 17 18 255
+	SetBorderColor 227 226 226 255
+	MinimapIcon 0 White Cross
+
+Show
+	BaseType == "Silver Key"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 198 198 198 255
+	SetBackgroundColor 36 38 38 255
+	SetBorderColor 198 198 198 255
+	MinimapIcon 0 White Cross
+
+Show
+	BaseType == "Gold Key"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 171 171 171 255
+	SetBackgroundColor 58 60 60 255
+	SetBorderColor 171 171 171 255
+	MinimapIcon 0 White Cross
+
+Show
+	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 215 245 255
+	SetBackgroundColor 38 0 38 255
+	SetBorderColor 255 215 245 255
+	MinimapIcon 0 Purple Cross
+
+Show
+	BaseType == "Preserved Jawbone" "Preserved Rib" "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 170 243 255
+	SetBackgroundColor 73 0 73 255
+	SetBorderColor 255 170 243 255
+	MinimapIcon 0 Purple Cross
+
+Show
+	BaseType == "Ancient Jawbone" "Ancient Rib" "Ancient Collarbone"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 117 246 255
+	SetBackgroundColor 110 0 110 255
+	SetBorderColor 255 117 246 255
+	MinimapIcon 0 Purple Cross
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 250
+
+	SetFontSize 27
+	SetTextColor 116 255 107 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 116 255 107 255
+	MinimapIcon 2 Green Kite
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 750
+
+	SetFontSize 32
+	SetTextColor 51 228 61 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 51 228 61 255
+	MinimapIcon 1 Green UpsideDownHouse
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 5000
+
+	SetFontSize 32
+	SetTextColor 0 198 38 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 0 198 38 255
+	MinimapIcon 1 Green UpsideDownHouse
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 0 198 38 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 0 198 38 255
+	MinimapIcon 0 Green Cross
+
+Show
+	BaseType == "Scroll of Wisdom" "Transmutation Shard"
+	Class == "Stackable Currency"
+
+	SetFontSize 27
+	SetTextColor 116 255 107 255
+	SetBackgroundColor 0 21 1 255
+	SetBorderColor 116 255 107 255
+	MinimapIcon 2 Green Kite
+
+Show
+	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Regal Shard" "Artificer's Shard"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 51 228 61 255
+	SetBackgroundColor 0 45 3 255
+	SetBorderColor 51 228 61 255
+	MinimapIcon 1 Green UpsideDownHouse
+
+Show
+	BaseType == "Artificer's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 0 198 38 255
+	SetBackgroundColor 0 70 7 255
+	SetBorderColor 0 198 38 255
+	MinimapIcon 1 Green UpsideDownHouse
+
+Show
+	BaseType == "Regal Orb" "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Lesser Jeweller's Orb" "Armourer's Scrap" "Gemcutter's Prism" "Glassblower's Bauble" "Chance Shard"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 0 198 38 255
+	SetBackgroundColor 0 70 7 255
+	SetBorderColor 0 198 38 255
+	MinimapIcon 0 Green Cross
+
+Show
+	BaseType == "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 0 34 2 255
+	SetBackgroundColor 0 168 30 255
+	SetBorderColor 0 34 2 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green Star
+
+Show
+	BaseType == "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 0 139 23 255
+	SetBackgroundColor 201 255 188 255
+	SetBorderColor 0 139 23 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green Star
+
+Show
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetBorderColor 85 255 85 255
+	MinimapIcon 0 Green Cross
+
+Show
+	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
+
+	SetFontSize 37
+	SetTextColor 100 186 175 255
+	SetBackgroundColor 0 67 62 255
+	SetBorderColor 100 186 175 255
+	MinimapIcon 0 Brown Cross
+
+Show
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 32
+	SetTextColor 68 189 181 255
+	SetBackgroundColor 0 67 64 255
+	SetBorderColor 68 189 181 255
+	MinimapIcon 1 Brown UpsideDownHouse
+
+Show
+	BaseType = "Lesser Rune of "
+	Class == Socketable
+
+	SetFontSize 32
+	SetTextColor 197 231 255 255
+	SetBackgroundColor 0 19 30 255
+	SetBorderColor 197 231 255 255
+	MinimapIcon 1 Cyan UpsideDownHouse
+
+Show
+	BaseType = "Greater Rune of "
+	Class == Socketable
+
+	SetFontSize 37
+	SetTextColor 142 176 198 255
+	SetBackgroundColor 29 63 82 255
+	SetBorderColor 142 176 198 255
+	MinimapIcon 0 Cyan Cross
+
+Show
+	BaseType = "Rune of "
+	Class == Socketable
+
+	SetFontSize 37
+	SetTextColor 169 203 227 255
+	SetBackgroundColor 1 41 59 255
+	SetBorderColor 169 203 227 255
+	MinimapIcon 0 Cyan Cross
+
+Show
+	Class == Socketable
+
+	SetFontSize 37
+	SetTextColor 142 176 198 255
+	SetBackgroundColor 29 63 82 255
+	SetBorderColor 142 176 198 255
+	MinimapIcon 0 Cyan Cross
+
+Show
+	Class == "Trial Coins" "Inscribed Ultimatum"
+
+	SetFontSize 37
+	SetTextColor 171 171 171 255
+	SetBackgroundColor 58 60 60 255
+	SetBorderColor 171 171 171 255
+	MinimapIcon 0 White Cross
+
+Show
+	Class == "Quest Items"
+
+	SetFontSize 37
+	SetTextColor 29 198 22 255
+	SetBackgroundColor 0 70 0 255
+	SetBorderColor 29 198 22 255
+	MinimapIcon 0 Grey Cross
+
+Show
+	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Normal
 
-	MinimapIcon 2 White UpsideDownHouse
+	SetFontSize 27
+	SetTextColor 255 219 205 255
+	SetBackgroundColor 36 8 0 255
+	SetBorderColor 255 219 205 255
+	MinimapIcon 2 Orange Kite
 
 	Continue
 
@@ -49,7 +304,10 @@ Show
 	Quality > 0
 
 	SetFontSize 32
-	MinimapIcon 1 White UpsideDownHouse
+	SetTextColor 255 219 205 255
+	SetBackgroundColor 36 8 0 255
+	SetBorderColor 255 219 205 255
+	MinimapIcon 1 Orange UpsideDownHouse
 
 	Continue
 
@@ -60,7 +318,10 @@ Show
 	BaseEnergyShield > 0
 
 	SetFontSize 32
-	MinimapIcon 1 White UpsideDownHouse
+	SetTextColor 255 219 205 255
+	SetBackgroundColor 36 8 0 255
+	SetBorderColor 255 219 205 255
+	MinimapIcon 1 Orange UpsideDownHouse
 
 	Continue
 
@@ -70,7 +331,10 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	MinimapIcon 1 White UpsideDownHouse
+	SetTextColor 255 219 205 255
+	SetBackgroundColor 36 8 0 255
+	SetBorderColor 255 219 205 255
+	MinimapIcon 1 Orange UpsideDownHouse
 
 	Continue
 
@@ -79,7 +343,10 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	MinimapIcon 1 White UpsideDownHouse
+	SetTextColor 255 219 205 255
+	SetBackgroundColor 36 8 0 255
+	SetBorderColor 255 219 205 255
+	MinimapIcon 1 Orange UpsideDownHouse
 
 	Continue
 
@@ -88,7 +355,10 @@ Show
 	Rarity == Normal
 
 	SetFontSize 32
-	MinimapIcon 1 White Raindrop
+	SetTextColor 255 226 93 255
+	SetBackgroundColor 21 17 0 255
+	SetBorderColor 255 226 93 255
+	MinimapIcon 1 Yellow UpsideDownHouse
 
 	Continue
 
@@ -96,17 +366,23 @@ Show
 	Class == Relics
 	Rarity == Normal
 
-	SetFontSize 37
-	SetBackgroundColor 47 47 47 255
-	MinimapIcon 0 White Triangle
+	SetFontSize 32
+	SetTextColor 220 225 255 255
+	SetBackgroundColor 0 12 56 255
+	SetBorderColor 220 225 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
 Show
-	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings
+	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Magic
 
-	MinimapIcon 2 Blue UpsideDownHouse
+	SetFontSize 27
+	SetTextColor 255 181 150 255
+	SetBackgroundColor 70 23 0 255
+	SetBorderColor 255 181 150 255
+	MinimapIcon 2 Orange Kite
 
 	Continue
 
@@ -116,7 +392,10 @@ Show
 	Quality > 0
 
 	SetFontSize 32
-	MinimapIcon 1 Blue UpsideDownHouse
+	SetTextColor 255 181 150 255
+	SetBackgroundColor 70 23 0 255
+	SetBorderColor 255 181 150 255
+	MinimapIcon 1 Orange UpsideDownHouse
 
 	Continue
 
@@ -127,7 +406,10 @@ Show
 	BaseEnergyShield > 0
 
 	SetFontSize 32
-	MinimapIcon 1 Blue UpsideDownHouse
+	SetTextColor 255 181 150 255
+	SetBackgroundColor 70 23 0 255
+	SetBorderColor 255 181 150 255
+	MinimapIcon 1 Orange UpsideDownHouse
 
 	Continue
 
@@ -137,7 +419,10 @@ Show
 	Rarity == Magic
 
 	SetFontSize 32
-	MinimapIcon 1 Blue UpsideDownHouse
+	SetTextColor 255 181 150 255
+	SetBackgroundColor 70 23 0 255
+	SetBorderColor 255 181 150 255
+	MinimapIcon 1 Orange UpsideDownHouse
 
 	Continue
 
@@ -147,7 +432,10 @@ Show
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
 
 	SetFontSize 32
-	MinimapIcon 1 Blue UpsideDownHouse
+	SetTextColor 255 181 150 255
+	SetBackgroundColor 70 23 0 255
+	SetBorderColor 255 181 150 255
+	MinimapIcon 1 Orange UpsideDownHouse
 
 	Continue
 
@@ -156,7 +444,10 @@ Show
 	Rarity == Magic
 
 	SetFontSize 32
-	MinimapIcon 1 Blue UpsideDownHouse
+	SetTextColor 255 181 150 255
+	SetBackgroundColor 70 23 0 255
+	SetBorderColor 255 181 150 255
+	MinimapIcon 1 Orange UpsideDownHouse
 
 	Continue
 
@@ -164,8 +455,11 @@ Show
 	Class == Jewels
 	Rarity == Magic
 
-	SetFontSize 32
-	MinimapIcon 1 Blue Raindrop
+	SetFontSize 37
+	SetTextColor 226 198 62 255
+	SetBackgroundColor 45 37 0 255
+	SetBorderColor 226 198 62 255
+	MinimapIcon 0 Yellow Cross
 
 	Continue
 
@@ -174,8 +468,10 @@ Show
 	Rarity == Magic
 
 	SetFontSize 37
-	SetBackgroundColor 29 36 60 255
-	MinimapIcon 0 Blue Triangle
+	SetTextColor 182 196 255 255
+	SetBackgroundColor 0 30 104 255
+	SetBorderColor 182 196 255 255
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -184,7 +480,73 @@ Show
 	Rarity == Rare
 
 	SetFontSize 32
-	MinimapIcon 1 Yellow UpsideDownHouse
+	SetTextColor 255 140 86 255
+	SetBackgroundColor 106 38 0 255
+	SetBorderColor 255 140 86 255
+	MinimapIcon 1 Orange UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Fishing Rods" Sceptres Wands
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 255 140 86 255
+	SetBackgroundColor 106 38 0 255
+	SetBorderColor 255 140 86 255
+	MinimapIcon 0 Orange Cross
+
+	Continue
+
+Show
+	Class == "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
+	BaseEnergyShield > 0
+
+	SetFontSize 37
+	SetTextColor 255 140 86 255
+	SetBackgroundColor 106 38 0 255
+	SetBorderColor 255 140 86 255
+	MinimapIcon 0 Orange Cross
+
+	Continue
+
+Show
+	BaseType == "Corvus Mantle" "Conjurer Mantle" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
+	Class == "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 255 140 86 255
+	SetBackgroundColor 106 38 0 255
+	SetBorderColor 255 140 86 255
+	MinimapIcon 0 Orange Cross
+
+	Continue
+
+Show
+	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
+	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
+
+	SetFontSize 37
+	SetTextColor 255 140 86 255
+	SetBackgroundColor 106 38 0 255
+	SetBorderColor 255 140 86 255
+	MinimapIcon 0 Orange Cross
+
+	Continue
+
+Show
+	Class == Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 255 140 86 255
+	SetBackgroundColor 106 38 0 255
+	SetBorderColor 255 140 86 255
+	MinimapIcon 0 Orange Cross
 
 	Continue
 
@@ -192,8 +554,11 @@ Show
 	Class == Jewels
 	Rarity == Rare
 
-	SetFontSize 32
-	MinimapIcon 1 Yellow Raindrop
+	SetFontSize 37
+	SetTextColor 197 170 33 255
+	SetBackgroundColor 70 59 0 255
+	SetBorderColor 197 170 33 255
+	MinimapIcon 0 Yellow Cross
 
 	Continue
 
@@ -202,8 +567,10 @@ Show
 	Rarity == Rare
 
 	SetFontSize 37
-	SetBackgroundColor 60 53 20 255
-	MinimapIcon 0 Yellow Triangle
+	SetTextColor 144 167 255 255
+	SetBackgroundColor 5 49 150 255
+	SetBorderColor 144 167 255 255
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -212,11 +579,12 @@ Show
 	Rarity == Unique
 
 	SetFontSize 45
-	SetTextColor 0 0 0
-	SetBackgroundColor 241 106 33 255
-	PlayEffect Brown
+	SetTextColor 54 15 0 255
+	SetBackgroundColor 238 104 31 255
+	SetBorderColor 54 15 0 255
+	PlayEffect Orange
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Brown UpsideDownHouse
+	MinimapIcon 0 Orange Star
 
 	Continue
 
@@ -225,11 +593,12 @@ Show
 	Rarity == Unique
 
 	SetFontSize 45
-	SetTextColor 0 0 0
-	SetBackgroundColor 241 106 33 255
-	PlayEffect Brown
+	SetTextColor 34 27 0 255
+	SetBackgroundColor 168 144 0 255
+	SetBorderColor 34 27 0 255
+	PlayEffect Yellow
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Brown Raindrop
+	MinimapIcon 0 Yellow Star
 
 	Continue
 
@@ -238,167 +607,34 @@ Show
 	Rarity == Unique
 
 	SetFontSize 45
-	SetTextColor 0 0 0
-	SetBackgroundColor 241 106 33 255
-	PlayEffect Brown
+	SetTextColor 0 21 80 255
+	SetBackgroundColor 111 139 242 255
+	SetBorderColor 0 21 80 255
+	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Brown Triangle
+	MinimapIcon 0 Blue Star
 
 	Continue
-
-Show
-	BaseType = "Essence of "
-	Class == "Stackable Currency"
-
-	SetFontSize 32
-	SetTextColor 255 85 255
-	MinimapIcon 1 Pink Circle
-
-Show
-	BaseType == "Bronze Key" "Silver Key" "Gold Key"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 0 170 0
-	SetBackgroundColor 20 40 20 255
-	MinimapIcon 0 Green Triangle
-
-Show
-	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone" "Preserved Jawbone" "Preserved Rib" "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae" "Ancient Jawbone" "Ancient Rib" "Ancient Collarbone"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 170 0 170
-	SetBackgroundColor 40 20 40 255
-	MinimapIcon 0 Purple Circle
-
-Show
-	BaseType == Gold
-	Class == "Stackable Currency"
-	StackSize < 250
-
-	SetTextColor 200 200 200
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 85 255 85
-	MinimapIcon 2 Green Kite
-
-Show
-	BaseType == Gold
-	Class == "Stackable Currency"
-	StackSize < 750
-
-	SetFontSize 32
-	SetTextColor 200 200 200
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Green Kite
-
-Show
-	BaseType == Gold
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 200 200 200
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 85 255 85
-	MinimapIcon 0 Green Kite
-
-Show
-	BaseType == "Scroll of Wisdom" "Transmutation Shard"
-	Class == "Stackable Currency"
-
-	SetTextColor 200 200 200
-	SetBorderColor 85 255 85
-	MinimapIcon 2 Green Circle
-
-Show
-	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Regal Shard" "Artificer's Shard"
-	Class == "Stackable Currency"
-
-	SetFontSize 32
-	SetTextColor 123 151 255
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Green Circle
-
-Show
-	BaseType == "Regal Orb" "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Lesser Jeweller's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher" "Armourer's Scrap" "Gemcutter's Prism" "Glassblower's Bauble" "Chance Shard"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 255 225 87
-	SetBackgroundColor 60 53 20 255
-	SetBorderColor 85 255 85
-	MinimapIcon 0 Green Cross
-
-Show
-	BaseType == "Orb of Annulment" "Orb of Chance" "Divine Orb" "Mirror of Kalandra" "Greater Jeweller's Orb" "Perfect Jeweller's Orb"
-	Class == "Stackable Currency"
-
-	SetFontSize 45
-	SetTextColor 0 0 0
-	SetBackgroundColor 255 85 85 255
-	SetBorderColor 85 255 85
-	PlayEffect Red
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Red Star
-
-Show
-	Class == "Stackable Currency"
-
-	SetFontSize 32
-	SetBorderColor 85 255 85
-	MinimapIcon 1 Green Circle
-
-Show
-	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
-
-	SetFontSize 32
-	SetTextColor 116 201 190
-	MinimapIcon 1 Cyan Raindrop
-
-Show
-	Class == "Skill Gems" "Support Gems"
-
-	SetFontSize 32
-	MinimapIcon 1 Cyan Raindrop
-
-Show
-	Class == Socketable
-
-	SetFontSize 32
-	SetTextColor 184 218 242
-	MinimapIcon 1 Pink Raindrop
-
-Show
-	Class == "Trial Coins" "Inscribed Ultimatum"
-
-	SetFontSize 37
-	SetTextColor 0 170 0
-	SetBackgroundColor 20 40 20 255
-	MinimapIcon 0 Pink Triangle
-
-Show
-	Class == "Quest Items"
-
-	SetFontSize 32
-
-Show
-	Sockets > 0
-
-	#
-
-Show
-	Quality > 0
-
-	#
 
 Show
 	BaseType == "Corvus Mantle" "Conjurer Mantle" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
 
-	#
+	SetBorderColor 255 225 87 255
 
 Show
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
+
+	SetBorderColor 255 225 87 255
+
+	Continue
+
+Show
+	Quality > 0
+
+	SetBorderColor 123 151 255 255
+
+Show
+	Sockets > 0
 
 	#
 
