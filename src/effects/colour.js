@@ -128,9 +128,9 @@ export class Colour {
 	}
 
 	brightness(brightness) {
-		// Brightness is our expression of how bright we want the tone to be. Instead of providing
-		// tone args directly, we use of this hue's key colour. We bias our resulting tone around
-		// the midpoint of this key colour and the average from all key colours.
+		// Brightness is our expression of how bright we want the resulting tone to be. We bias the
+		// brightness using this key colour's tone and the average tone from all key colours. We
+		// also cap chroma instead of always maxing it, for more consistent perceived brightness.
 
 		// Get our tone that maxes out chroma, ie the key colour
 		let argb = argbFromRgb(this.r, this.g, this.b);
