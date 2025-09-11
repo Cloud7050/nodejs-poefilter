@@ -8,8 +8,12 @@ const CATEGORY = ConditionSet.CATEGORY;
 
 
 
+// ROSE
 const CURRENCY_COLOUR = Colour.RED;
 const CURRENCY_PRESET = Colour.PRESET.RED;
+// ORANGE
+// TANGERINE
+// GOLD
 const GOLD_COLOUR = Colour.YELLOW;
 const GOLD_PRESET = Colour.PRESET.YELLOW;
 const QUESTLIKE_COLOUR = Colour.LIME;
@@ -18,18 +22,21 @@ const QUEST_COLOUR = Colour.GREEN;
 const QUEST_PRESET = Colour.PRESET.BLACK;
 const RELIC_COLOUR = Colour.SEAFOAM;
 const RELIC_PRESET = Colour.PRESET.GREEN;
+// TEAL
 const GEM_COLOUR = Colour.CYAN;
 const GEM_PRESET = Colour.PRESET.BROWN;
+// SKY
 const SOCKETABLE_COLOUR = Colour.CERULEAN;
 const SOCKETABLE_PRESET = Colour.PRESET.CYAN;
 const JEWEL_COLOUR = Colour.BLUE;
 const JEWEL_PRESET = Colour.PRESET.BLUE;
 const GEAR_COLOUR = Colour.LAPIS;
 const GEAR_PRESET = Colour.PRESET.BLUE;
-const ESSENCE_COLOUR = Colour.PURPLE;
-const ESSENCE_PRESET = Colour.PRESET.PURPLE;
-const LEAGUE_COLOUR = Colour.VIOLET;
-const LEAGUE_PRESET = Colour.PRESET.PINK;
+const CRAFT_COLOUR = Colour.PURPLE;
+const CRAFT_PRESET = Colour.PRESET.PURPLE;
+const ABYSS_COLOUR = Colour.VIOLET;
+const ABYSS_PRESET = Colour.PRESET.PINK;
+// PINK
 
 let filter = new Filter("Cloud");
 
@@ -48,39 +55,40 @@ filter.block((c, e) => { // Essences
 	c.names = new Comparison("Lesser Essence of ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourWisdom(ESSENCE_COLOUR, ESSENCE_PRESET).sizeAugment();
+	e.colourWisdom(CRAFT_COLOUR, CRAFT_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Greater Essence of ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourExalt(ESSENCE_COLOUR, ESSENCE_PRESET).sizeExalt();
+	e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Essence of ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourAugment(ESSENCE_COLOUR, ESSENCE_PRESET).sizeExalt();
+	e.colourAugment(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
 });
+
 filter.block((c, e) => { // Abyss
 	c.names = new Comparison(new StringList("Gnawed Jawbone", "Gnawed Rib", "Gnawed Collarbone"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourWisdom(LEAGUE_COLOUR, LEAGUE_PRESET).sizeExalt();
+	e.colourWisdom(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Preserved Jawbone", "Preserved Rib",
 		"Preserved Collarbone", "Preserved Cranium", "Preserved Vertebrae"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourAugment(LEAGUE_COLOUR, LEAGUE_PRESET).sizeExalt();
+	e.colourAugment(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Ancient Jawbone", "Ancient Rib",
 		"Ancient Collarbone"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourExalt(LEAGUE_COLOUR, LEAGUE_PRESET).sizeExalt();
+	e.colourExalt(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
 });
 filter.block((c, e) => { // Trial keys
 	c.names = new Comparison("Bronze Key");
@@ -182,7 +190,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.OMEN);
 
-	e.colourWisdom(LEAGUE_COLOUR, LEAGUE_PRESET).sizeExalt();
+	e.colourWisdom(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
 });
 
 // Gems
