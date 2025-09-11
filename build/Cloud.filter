@@ -242,7 +242,7 @@ Show
 	MinimapIcon 0 Red Cross
 
 Show
-	Class == Omens
+	Class == Omen
 
 	SetFontSize 37
 	SetTextColor 255 201 157 255
