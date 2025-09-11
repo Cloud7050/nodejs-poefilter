@@ -212,6 +212,15 @@ Show
 	MinimapIcon 0 Red Cross
 
 Show
+	Class == Omens
+
+	SetFontSize 37
+	SetTextColor 245 208 255 255
+	SetBackgroundColor 25 2 36 255
+	SetBorderColor 245 208 255 255
+	MinimapIcon 0 Pink Kite
+
+Show
 	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
 
 	SetFontSize 37

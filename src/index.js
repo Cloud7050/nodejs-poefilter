@@ -178,6 +178,13 @@ filter.block((c, e) => {
 	e.sizeExalt();
 });
 
+// Omens
+filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.OMEN);
+
+	e.colourWisdom(LEAGUE_COLOUR, LEAGUE_PRESET).sizeExalt();
+});
+
 // Gems
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.GEM_UNCUT);
