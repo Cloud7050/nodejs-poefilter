@@ -38,6 +38,36 @@ Show
 	MinimapIcon 0 Purple UpsideDownHouse
 
 Show
+	BaseType = "Diluted Liquid "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 223 199 255
+	SetBackgroundColor 27 10 0 255
+	SetBorderColor 255 223 199 255
+	MinimapIcon 0 Orange Kite
+
+Show
+	BaseType = "Concentrated Liquid "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 201 157 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 201 157 255
+	MinimapIcon 0 Orange Cross
+
+Show
+	BaseType = "Liquid "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 212 179 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 212 179 255
+	MinimapIcon 0 Orange UpsideDownHouse
+
+Show
 	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
 	Class == "Stackable Currency"
 
@@ -215,10 +245,10 @@ Show
 	Class == Omens
 
 	SetFontSize 37
-	SetTextColor 245 208 255 255
-	SetBackgroundColor 25 2 36 255
-	SetBorderColor 245 208 255 255
-	MinimapIcon 0 Pink Kite
+	SetTextColor 255 201 157 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 201 157 255
+	MinimapIcon 0 Orange Cross
 
 Show
 	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
@@ -634,8 +664,6 @@ Show
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
 
 	SetBorderColor 255 225 87 255
-
-	Continue
 
 Show
 	Quality > 0

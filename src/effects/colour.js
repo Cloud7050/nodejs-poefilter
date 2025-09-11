@@ -30,7 +30,7 @@ export class Colour {
 	// static ROSE = Colour.fromHue(0);
 	static RED = Colour.fromHue(20);
 	// static ORANGE = Colour.fromHue(40);
-	// static TANGERINE = Colour.fromHue(60);
+	static TANGERINE = Colour.fromHue(60);
 	// static GOLD = Colour.fromHue(80);
 	static YELLOW = Colour.fromHue(100);
 	static LIME = Colour.fromHue(120);

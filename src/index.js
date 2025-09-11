@@ -12,7 +12,8 @@ const CATEGORY = ConditionSet.CATEGORY;
 const CURRENCY_COLOUR = Colour.RED;
 const CURRENCY_PRESET = Colour.PRESET.RED;
 // ORANGE
-// TANGERINE
+const CRAFT_COLOUR = Colour.TANGERINE;
+const CRAFT_PRESET = Colour.PRESET.ORANGE;
 // GOLD
 const GOLD_COLOUR = Colour.YELLOW;
 const GOLD_PRESET = Colour.PRESET.YELLOW;
@@ -32,8 +33,8 @@ const JEWEL_COLOUR = Colour.BLUE;
 const JEWEL_PRESET = Colour.PRESET.BLUE;
 const GEAR_COLOUR = Colour.LAPIS;
 const GEAR_PRESET = Colour.PRESET.BLUE;
-const CRAFT_COLOUR = Colour.PURPLE;
-const CRAFT_PRESET = Colour.PRESET.PURPLE;
+const ESSENCE_COLOUR = Colour.PURPLE;
+const ESSENCE_PRESET = Colour.PRESET.PURPLE;
 const ABYSS_COLOUR = Colour.VIOLET;
 const ABYSS_PRESET = Colour.PRESET.PINK;
 // PINK
@@ -50,27 +51,49 @@ filter.block((c, e) => {
 	e.sizeWisdom();
 });
 
-// Currencies - https://docs.google.com/spreadsheets/d/1Cq80pjKnWF5-FmhQd1TLcWhdpivaRaSKhMGz_I4VgG4
-filter.block((c, e) => { // Essences
+//// Currencies - https://docs.google.com/spreadsheets/d/1Cq80pjKnWF5-FmhQd1TLcWhdpivaRaSKhMGz_I4VgG4
+// Essences
+filter.block((c, e) => {
 	c.names = new Comparison("Lesser Essence of ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourWisdom(CRAFT_COLOUR, CRAFT_PRESET).sizeAugment();
+	e.colourWisdom(ESSENCE_COLOUR, ESSENCE_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Greater Essence of ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+	e.colourExalt(ESSENCE_COLOUR, ESSENCE_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Essence of ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
+	e.colourAugment(ESSENCE_COLOUR, ESSENCE_PRESET).sizeExalt();
+});
+
+// Liquid emotions
+filter.block((c, e) => {
+	c.names = new Comparison("Diluted Liquid ", Comparison.OPERATOR.EQUAL);
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourWisdom(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+});
+filter.block((c, e) => {
+	c.names = new Comparison("Concentrated Liquid ", Comparison.OPERATOR.EQUAL);
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+});
+filter.block((c, e) => {
+	c.names = new Comparison("Liquid ", Comparison.OPERATOR.EQUAL);
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
 	e.colourAugment(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
 });
 
-filter.block((c, e) => { // Abyss
+// Abyss
+filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Gnawed Jawbone", "Gnawed Rib", "Gnawed Collarbone"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
@@ -90,7 +113,9 @@ filter.block((c, e) => {
 
 	e.colourExalt(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
 });
-filter.block((c, e) => { // Trial keys
+
+// Trial keys
+filter.block((c, e) => {
 	c.names = new Comparison("Bronze Key");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
@@ -108,7 +133,9 @@ filter.block((c, e) => {
 
 	e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
 });
-filter.block((c, e) => { // Gold
+
+// Gold
+filter.block((c, e) => {
 	c.names = new Comparison("Gold");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(250, Comparison.OPERATOR.LT);
@@ -135,7 +162,9 @@ filter.block((c, e) => {
 
 	e.colourExalt(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeExalt();
 });
-filter.block((c, e) => { // Other
+
+// General
+filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
@@ -177,6 +206,8 @@ filter.block((c, e) => {
 
 	e.colourDivine(CURRENCY_COLOUR, CURRENCY_PRESET).sizeChance();
 });
+
+// Other
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
@@ -185,12 +216,13 @@ filter.block((c, e) => {
 	e.mapIcon = EffectSet.MAP_ICON.CROSS;
 	e.sizeExalt();
 });
+////
 
 // Omens
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.OMEN);
 
-	e.colourWisdom(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
+	e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
 });
 
 // Gems
@@ -205,7 +237,7 @@ filter.block((c, e) => {
 	e.colourExalt(GEM_COLOUR, GEM_PRESET).sizeAugment();
 });
 
-// Socketables eg runes
+// Socketables
 filter.block((c, e) => {
 	c.names = new Comparison("Lesser ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.SOCKETABLE);
@@ -245,7 +277,7 @@ filter.block((c, e) => {
 	e.colourExalt(QUEST_COLOUR, QUEST_PRESET).sizeExalt();
 });
 
-// Rarity
+//// Rarity
 // Normal
 filter.block((c, e) => { // Gear style reset
 	c.continue();
@@ -291,6 +323,7 @@ filter.block((c, e) => {
 
 	e.colourWisdom(RELIC_COLOUR, RELIC_PRESET).sizeAugment();
 });
+
 // Magic
 filter.block((c, e) => { // Gear style reset
 	c.continue();
@@ -341,6 +374,7 @@ filter.block((c, e) => {
 
 	e.colourAugment(RELIC_COLOUR, RELIC_PRESET).sizeExalt();
 });
+
 // Rare
 filter.block((c, e) => { // Gear style reset
 	c.continue();
@@ -389,6 +423,7 @@ filter.block((c, e) => {
 
 	e.colourExalt(RELIC_COLOUR, RELIC_PRESET).sizeExalt();
 });
+
 // Unique
 filter.block((c, e) => {
 	c.continue();
@@ -412,17 +447,17 @@ filter.block((c, e) => {
 
 	e.colourChance(RELIC_COLOUR, RELIC_PRESET).sizeChance();
 });
+////
 
 // Overwrite outlines (highest priority first)
-filter.multiBlock((c) => { // Good main stat
+filter.multiBlock((c) => {
 	c.goodMain();
-}, (c) => { // Good mod
-	c.continue();
+}, (c) => {
 	c.goodMod();
 }, (e) => {
 	e.outlineColour = Colour.RARE;
 });
-filter.block((c, e) => { // Quality
+filter.block((c, e) => {
 	c.hasQuality();
 
 	e.outlineColour = Colour.MAGIC;
