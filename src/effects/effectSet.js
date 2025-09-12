@@ -110,7 +110,7 @@ export class EffectSet {
 		this.mapIcon = EffectSet.MAP_ICON.CROSS;
 		return this;
 	}
-	colourChance(mainColour, mapColour, backgroundColour = mainColour.brightness(50)) {
+	colourChance(mainColour, mapColour, backgroundColour = mainColour.brightness(60)) {
 		this.textColour = mainColour.brightness(10);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.brightness(10);
@@ -118,10 +118,10 @@ export class EffectSet {
 		this.mapIcon = EffectSet.MAP_ICON.STAR;
 		return this;
 	}
-	colourDivine(mainColour, mapColour, backgroundColour = mainColour.brightness(90)) {
-		this.textColour = mainColour.brightness(50);
+	colourDivine(mainColour, mapColour, backgroundColour = mainColour.brightness(95)) {
+		this.textColour = mainColour.brightness(45);
 		this.backgroundColour = backgroundColour;
-		this.outlineColour = mainColour.brightness(50);
+		this.outlineColour = mainColour.brightness(45);
 		this.mapColour = mapColour;
 		this.mapIcon = EffectSet.MAP_ICON.DIAMOND;
 		return this;
