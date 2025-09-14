@@ -82,30 +82,31 @@ export class EffectSet {
 	fade() {
 		this.textSize = EffectSet.TEXT_SIZE.SMALLEST;
 		this.backgroundColour = Colour.BLACK_TRANSLUCENT;
+		this.outlineColour = Colour.TRANSPARENT;
 		this.mapSize = EffectSet.MAP_SIZE.DISABLE;
 		return this;
 	}
 
 	colourWisdom(mainColour, mapColour, backgroundColour = mainColour.brightness(3)) {
-		this.textColour = mainColour.brightness(85);
+		this.textColour = mainColour.brightness(87);
 		this.backgroundColour = backgroundColour;
-		this.outlineColour = mainColour.brightness(85);
+		this.outlineColour = mainColour.brightness(87);
 		this.mapColour = mapColour;
 		this.mapIcon = EffectSet.MAP_ICON.KITE;
 		return this;
 	}
 	colourAugment(mainColour, mapColour, backgroundColour = mainColour.brightness(10)) {
-		this.textColour = mainColour.brightness(80);
+		this.textColour = mainColour.brightness(77);
 		this.backgroundColour = backgroundColour;
-		this.outlineColour = mainColour.brightness(80);
+		this.outlineColour = mainColour.brightness(77);
 		this.mapColour = mapColour;
 		this.mapIcon = EffectSet.MAP_ICON.HOUSE;
 		return this;
 	}
 	colourExalt(mainColour, mapColour, backgroundColour = mainColour.brightness(20)) {
-		this.textColour = mainColour.brightness(75);
+		this.textColour = mainColour.brightness(72);
 		this.backgroundColour = backgroundColour;
-		this.outlineColour = mainColour.brightness(75);
+		this.outlineColour = mainColour.brightness(72);
 		this.mapColour = mapColour;
 		this.mapIcon = EffectSet.MAP_ICON.CROSS;
 		return this;
