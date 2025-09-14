@@ -5,11 +5,11 @@ export class ConditionSet {
 	// https://poe2db.tw/us/Items
 	static CATEGORY = {
 		// Rarity
-		WEAPON_CLASS: new StringList("Fishing Rods", "Sceptres", "Wands"), // Witch weapons
+		WEAPON_CLASS: new StringList("Fishing Rods", "Foci", "Sceptres"), // Witch weapons
 		WEAPON_OTHER: new StringList("Bows", "Bucklers", "Claws", "Crossbows", "Daggers", "Flails",
-			"Foci", "One Hand Axes", "One Hand Maces", "One Hand Swords", "Quarterstaves",
-			"Quivers", "Shields", "Spears", "Staves", "Traps", "Two Hand Axes", "Two Hand Maces",
-			"Two Hand Swords"),
+			"One Hand Axes", "One Hand Maces", "One Hand Swords", "Quarterstaves", "Quivers",
+			"Shields", "Spears", "Staves", "Traps", "Two Hand Axes", "Two Hand Maces",
+			"Two Hand Swords", "Wands"),
 		ARMOUR: new StringList("Body Armours", "Boots", "Gloves", "Helmets"),
 		JEWELLERY: new StringList("Amulets", "Belts", "Rings"),
 		CHARGED: new StringList("Charms", "Life Flasks", "Mana Flasks"),
@@ -126,7 +126,8 @@ export class ConditionSet {
 		// Less effort is put into adding/listing mods for other class weapons
 		this.mods = new Comparison(new StringList(
 			// +x to level of all spell skills
-			"of the Mage", "of the Enchanter", "of the Sorcerer", // Suffixes for wands/staves/amulets
+			"of the Mage", "of the Enchanter", // Suffixes for wands/staves/foci/amulets
+			"of the Sorcerer", // Higher suffixes for wands/staves/amulets
 			"of the Wizard", // Higher suffixes for wands/staves
 			// +x to level of all fire spell skills
 			"of Coals", "of Cinders", "of Flames", "of Immolation", "of Inferno", // Suffixes for wands/staves

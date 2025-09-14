@@ -473,14 +473,6 @@ filter.multiBlock((c) => {
 // Fade
 filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.names = new Comparison(new StringList(
-		// https://poe2db.tw/us/Wands#WandsItem
-		"Withered Wand", // Chaos Bolt
-		// "Bone Wand", // Bone Blast
-		"Attuned Wand", // Mana Drain
-		"Siphoning Wand", // Power Siphon
-		"Volatile Wand", // Volatile Dead
-		"Galvanic Wand", // Galvanic Field
-
 		// https://poe2db.tw/us/Sceptres#SceptresItem
 		// "Rattling Sceptre", "Lupine Sceptre", "Ochre Sceptre", "Devouring Sceptre",
 		// "Devotional Sceptre", "Aromatic Sceptre", "Pious Sceptre", "Hallowed Sceptre" // Skeletal Warrior

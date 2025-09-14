@@ -326,7 +326,7 @@ Show
 	MinimapIcon 0 Grey Cross
 
 Show
-	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Normal
 
 	SetFontSize 27
@@ -338,7 +338,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Sceptres Wands
+	Class == "Fishing Rods" Foci Sceptres
 	Rarity == Normal
 	Quality > 0
 
@@ -414,7 +414,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Magic
 
 	SetFontSize 27
@@ -426,7 +426,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Sceptres Wands
+	Class == "Fishing Rods" Foci Sceptres
 	Rarity == Magic
 	Quality > 0
 
@@ -466,7 +466,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets
 	Rarity == Magic
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
 
@@ -515,7 +515,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Rare
 
 	SetFontSize 32
@@ -527,7 +527,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Sceptres Wands
+	Class == "Fishing Rods" Foci Sceptres
 	Rarity == Rare
 
 	SetFontSize 37
@@ -565,7 +565,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets
 	Rarity == Rare
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
 
@@ -614,7 +614,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Sceptres Wands Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Belts Rings Charms "Life Flasks" "Mana Flasks"
 	Rarity == Unique
 
 	SetFontSize 45
@@ -681,8 +681,8 @@ Show
 	#
 
 Show
-	BaseType == "Withered Wand" "Attuned Wand" "Siphoning Wand" "Volatile Wand" "Galvanic Wand" "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre" "Clasped Sceptre" "Wrath Sceptre"
-	Class == "Fishing Rods" Sceptres Wands
+	BaseType == "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre" "Clasped Sceptre" "Wrath Sceptre"
+	Class == "Fishing Rods" Foci Sceptres
 	Rarity <= Magic
 
 	SetFontSize 18
@@ -691,7 +691,7 @@ Show
 	MinimapIcon -1
 
 Show
-	Class == Bows Bucklers Claws Crossbows Daggers Flails Foci "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
+	Class == Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
 	Rarity <= Magic
 
 	SetFontSize 18
