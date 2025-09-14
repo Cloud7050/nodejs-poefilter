@@ -178,15 +178,15 @@ filter.block((c, e) => {
 	e.colourAugment(CURRENCY_COLOUR, CURRENCY_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Artificer's Orb", "Blacksmith's Whetstone",
-		"Arcanist's Etcher"));
+	c.names = new Comparison(new StringList("Lesser Jeweller's Orb", "Artificer's Orb",
+		"Blacksmith's Whetstone", "Arcanist's Etcher"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.colourExalt(CURRENCY_COLOUR, CURRENCY_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Regal Orb", "Exalted Orb", "Orb of Alchemy",
-		"Chaos Orb", "Vaal Orb", "Lesser Jeweller's Orb", "Armourer's Scrap", "Gemcutter's Prism",
+		"Chaos Orb", "Vaal Orb", "Armourer's Scrap", "Gemcutter's Prism",
 		"Glassblower's Bauble", "Chance Shard"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 

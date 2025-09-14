@@ -191,7 +191,7 @@ Show
 	MinimapIcon 1 Red UpsideDownHouse
 
 Show
-	BaseType == "Artificer's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher"
+	BaseType == "Lesser Jeweller's Orb" "Artificer's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -201,7 +201,7 @@ Show
 	MinimapIcon 1 Red Cross
 
 Show
-	BaseType == "Regal Orb" "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Lesser Jeweller's Orb" "Armourer's Scrap" "Gemcutter's Prism" "Glassblower's Bauble" "Chance Shard"
+	BaseType == "Regal Orb" "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Armourer's Scrap" "Gemcutter's Prism" "Glassblower's Bauble" "Chance Shard"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
