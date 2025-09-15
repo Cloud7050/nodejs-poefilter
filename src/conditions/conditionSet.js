@@ -22,8 +22,8 @@ export class ConditionSet {
 		GEM_UNCUT: new StringList("Uncut Skill Gems", "Uncut Spirit Gems", "Uncut Support Gems"),
 		GEM: new StringList("Skill Gems", "Support Gems"),
 		SOCKETABLE: new StringList("Socketable"),
-		TICKET: new StringList("Trial Coins", "Inscribed Ultimatum"),
-		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items" Waystones',
+		TICKET: new StringList("Trial Coins", "Inscribed Ultimatum", "Waystones"),
+		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items"
 		QUEST: new StringList("Quest Items"),
 		// OTHER: new StringList("Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Pinnacle Keys" Strongboxes Tablets'
 	};

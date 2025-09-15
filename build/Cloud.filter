@@ -308,7 +308,7 @@ Show
 	MinimapIcon 0 Cyan Cross
 
 Show
-	Class == "Trial Coins" "Inscribed Ultimatum"
+	Class == "Trial Coins" "Inscribed Ultimatum" Waystones
 
 	SetFontSize 37
 	SetTextColor 212 238 80 255
