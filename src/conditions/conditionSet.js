@@ -14,7 +14,9 @@ export class ConditionSet {
 		JEWELLERY: new StringList("Amulets", "Belts", "Rings"),
 		CHARGED: new StringList("Charms", "Life Flasks", "Mana Flasks"),
 		JEWEL: new StringList("Jewels"),
+		WAYSTONE: new StringList("Waystones"),
 		RELIC: new StringList("Relics"),
+		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items"
 
 		// No rarity
 		CURRENCY: new StringList("Stackable Currency"),
@@ -22,8 +24,7 @@ export class ConditionSet {
 		GEM_UNCUT: new StringList("Uncut Skill Gems", "Uncut Spirit Gems", "Uncut Support Gems"),
 		GEM: new StringList("Skill Gems", "Support Gems"),
 		SOCKETABLE: new StringList("Socketable"),
-		TICKET: new StringList("Trial Coins", "Inscribed Ultimatum", "Waystones"),
-		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items"
+		TICKET: new StringList("Trial Coins", "Inscribed Ultimatum"),
 		QUEST: new StringList("Quest Items"),
 		// OTHER: new StringList("Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Pinnacle Keys" Strongboxes Tablets'
 	};

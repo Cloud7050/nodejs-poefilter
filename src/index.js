@@ -357,6 +357,13 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.continue();
+	c.category = new Comparison(CATEGORY.WAYSTONE);
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+
+	e.colourWisdom(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeAugment();
+});
+filter.block((c, e) => {
+	c.continue();
 	c.category = new Comparison(CATEGORY.RELIC);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
@@ -405,6 +412,13 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.colourAugment(JEWEL_COLOUR, JEWEL_PRESET).sizeExalt();
+});
+filter.block((c, e) => {
+	c.continue();
+	c.category = new Comparison(CATEGORY.WAYSTONE);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+
+	e.colourAugment(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
 	c.continue();
@@ -457,6 +471,13 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.continue();
+	c.category = new Comparison(CATEGORY.WAYSTONE);
+	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
+
+	e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
+});
+filter.block((c, e) => {
+	c.continue();
 	c.category = new Comparison(CATEGORY.RELIC);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
@@ -478,6 +499,13 @@ filter.block((c, e) => {
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.colourChance(JEWEL_COLOUR, JEWEL_PRESET).sizeChance();
+});
+filter.block((c, e) => {
+	c.continue();
+	c.category = new Comparison(CATEGORY.WAYSTONE);
+	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
+
+	e.colourChance(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeChance();
 });
 filter.block((c, e) => {
 	c.continue();

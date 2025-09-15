@@ -318,7 +318,7 @@ Show
 	MinimapIcon 0 Cyan Cross
 
 Show
-	Class == "Trial Coins" "Inscribed Ultimatum" Waystones
+	Class == "Trial Coins" "Inscribed Ultimatum"
 
 	SetFontSize 37
 	SetTextColor 212 238 80 255
@@ -410,6 +410,18 @@ Show
 	SetBackgroundColor 0 14 34 255
 	SetBorderColor 215 229 255 255
 	MinimapIcon 1 Blue Kite
+
+	Continue
+
+Show
+	Class == Waystones
+	Rarity == Normal
+
+	SetFontSize 32
+	SetTextColor 233 251 145 255
+	SetBackgroundColor 14 18 0 255
+	SetBorderColor 233 251 145 255
+	MinimapIcon 1 Green Kite
 
 	Continue
 
@@ -517,6 +529,18 @@ Show
 	Continue
 
 Show
+	Class == Waystones
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 219 242 110 255
+	SetBackgroundColor 36 44 0 255
+	SetBorderColor 219 242 110 255
+	MinimapIcon 0 Green UpsideDownHouse
+
+	Continue
+
+Show
 	Class == Relics
 	Rarity == Magic
 
@@ -618,6 +642,18 @@ Show
 	Continue
 
 Show
+	Class == Waystones
+	Rarity == Rare
+
+	SetFontSize 37
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	MinimapIcon 0 Green Cross
+
+	Continue
+
+Show
 	Class == Relics
 	Rarity == Rare
 
@@ -654,6 +690,20 @@ Show
 	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Waystones
+	Rarity == Unique
+
+	SetFontSize 45
+	SetTextColor 36 44 0 255
+	SetBackgroundColor 197 226 29 255
+	SetBorderColor 36 44 0 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green Star
 
 	Continue
 
