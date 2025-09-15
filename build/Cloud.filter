@@ -671,7 +671,7 @@ Show
 	SetBorderColor 123 151 255 255
 
 Show
-	Sockets > 0
+	Sockets >= 2
 
 	#
 

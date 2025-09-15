@@ -86,8 +86,8 @@ export class ConditionSet {
 		this.quality = new Comparison(0);
 		return this;
 	}
-	hasSocket() {
-		this.sockets = new Comparison(0, Comparison.OPERATOR.GT);
+	hasSockets(minimum = 2) {
+		this.sockets = new Comparison(minimum, Comparison.OPERATOR.GTE);
 		return this;
 	}
 	socketless() {

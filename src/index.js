@@ -465,7 +465,7 @@ filter.block((c, e) => {
 
 // Stop here; don't fade these
 filter.multiBlock((c) => {
-	c.hasSocket();
+	c.hasSockets();
 }, (c) => {
 	c.wisdomTier = new Comparison(2, Comparison.OPERATOR.GTE);
 }, (e) => {});
