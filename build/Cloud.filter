@@ -38,36 +38,6 @@ Show
 	MinimapIcon 0 Purple UpsideDownHouse
 
 Show
-	BaseType = "Diluted Liquid "
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 255 227 207 255
-	SetBackgroundColor 27 10 0 255
-	SetBorderColor 255 227 207 255
-	MinimapIcon 0 Orange Kite
-
-Show
-	BaseType = "Concentrated Liquid "
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 255 194 144 255
-	SetBackgroundColor 101 54 0 255
-	SetBorderColor 255 194 144 255
-	MinimapIcon 0 Orange Cross
-
-Show
-	BaseType = "Liquid "
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 255 206 166 255
-	SetBackgroundColor 57 28 0 255
-	SetBorderColor 255 206 166 255
-	MinimapIcon 0 Orange UpsideDownHouse
-
-Show
 	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
 	Class == "Stackable Currency"
 
@@ -98,6 +68,36 @@ Show
 	MinimapIcon 0 Pink Cross
 
 Show
+	BaseType = "Diluted Liquid "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 227 207 255
+	SetBackgroundColor 27 10 0 255
+	SetBorderColor 255 227 207 255
+	MinimapIcon 0 Orange Kite
+
+Show
+	BaseType = "Concentrated Liquid "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	MinimapIcon 0 Orange Cross
+
+Show
+	BaseType = "Liquid "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 206 166 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 206 166 255
+	MinimapIcon 0 Orange UpsideDownHouse
+
+Show
 	BaseType == "Bronze Key"
 	Class == "Stackable Currency"
 
@@ -126,6 +126,16 @@ Show
 	SetBackgroundColor 70 82 0 255
 	SetBorderColor 212 238 80 255
 	MinimapIcon 0 Green Cross
+
+Show
+	BaseType == "Exotic Coinage" "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 116 253 179 255
+	SetBackgroundColor 0 46 25 255
+	SetBorderColor 116 253 179 255
+	MinimapIcon 0 Green UpsideDownHouse
 
 Show
 	BaseType == Gold

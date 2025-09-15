@@ -21,8 +21,8 @@ const QUESTLIKE_COLOUR = Colour.LIME;
 const QUESTLIKE_PRESET = Colour.PRESET.GREEN;
 const QUEST_COLOUR = Colour.GREEN;
 const QUEST_PRESET = Colour.PRESET.BLACK;
-const RELIC_COLOUR = Colour.SEAFOAM;
-const RELIC_PRESET = Colour.PRESET.GREEN;
+const MECHANIC_COLOUR = Colour.SEAFOAM;
+const MECHANIC_PRESET = Colour.PRESET.GREEN;
 // TEAL
 const GEM_COLOUR = Colour.CYAN;
 const GEM_PRESET = Colour.PRESET.BROWN;
@@ -72,26 +72,6 @@ filter.block((c, e) => {
 	e.colourAugment(ESSENCE_COLOUR, ESSENCE_PRESET).sizeExalt();
 });
 
-// Liquid emotions
-filter.block((c, e) => {
-	c.names = new Comparison("Diluted Liquid ", Comparison.OPERATOR.EQUAL);
-	c.category = new Comparison(CATEGORY.CURRENCY);
-
-	e.colourWisdom(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
-});
-filter.block((c, e) => {
-	c.names = new Comparison("Concentrated Liquid ", Comparison.OPERATOR.EQUAL);
-	c.category = new Comparison(CATEGORY.CURRENCY);
-
-	e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
-});
-filter.block((c, e) => {
-	c.names = new Comparison("Liquid ", Comparison.OPERATOR.EQUAL);
-	c.category = new Comparison(CATEGORY.CURRENCY);
-
-	e.colourAugment(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
-});
-
 // Abyss
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Gnawed Jawbone", "Gnawed Rib", "Gnawed Collarbone"));
@@ -114,6 +94,26 @@ filter.block((c, e) => {
 	e.colourExalt(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
 });
 
+// Liquid emotions
+filter.block((c, e) => {
+	c.names = new Comparison("Diluted Liquid ", Comparison.OPERATOR.EQUAL);
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourWisdom(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+});
+filter.block((c, e) => {
+	c.names = new Comparison("Concentrated Liquid ", Comparison.OPERATOR.EQUAL);
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+});
+filter.block((c, e) => {
+	c.names = new Comparison("Liquid ", Comparison.OPERATOR.EQUAL);
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourAugment(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+});
+
 // Trial keys
 filter.block((c, e) => {
 	c.names = new Comparison("Bronze Key");
@@ -132,6 +132,15 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
+});
+
+// Expedition
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList("Exotic Coinage", "Broken Circle Artifact",
+		"Black Scythe Artifact", "Order Artifact", "Sun Artifact"));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourAugment(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
 });
 
 // Gold
@@ -351,7 +360,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.RELIC);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
-	e.colourWisdom(RELIC_COLOUR, RELIC_PRESET).sizeAugment();
+	e.colourWisdom(MECHANIC_COLOUR, MECHANIC_PRESET).sizeAugment();
 });
 
 // Magic
@@ -402,7 +411,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.RELIC);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
-	e.colourAugment(RELIC_COLOUR, RELIC_PRESET).sizeExalt();
+	e.colourAugment(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
 });
 
 // Rare
@@ -451,7 +460,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.RELIC);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
-	e.colourExalt(RELIC_COLOUR, RELIC_PRESET).sizeExalt();
+	e.colourExalt(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
 });
 
 // Unique
@@ -475,7 +484,7 @@ filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.RELIC);
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
-	e.colourChance(RELIC_COLOUR, RELIC_PRESET).sizeChance();
+	e.colourChance(MECHANIC_COLOUR, MECHANIC_PRESET).sizeChance();
 });
 ////
 
