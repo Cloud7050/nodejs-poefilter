@@ -86,20 +86,9 @@ export class ConditionSet {
 		this.quality = new Comparison(0, Comparison.OPERATOR.GT);
 		return this;
 	}
-	noQuality() {
-		this.quality = new Comparison(0);
-		return this;
-	}
 	hasSockets(minimum = 2) {
 		this.sockets = new Comparison(minimum, Comparison.OPERATOR.GTE);
 		return this;
-	}
-	socketless() {
-		this.sockets = new Comparison(0);
-		return this;
-	}
-	noQualitySocketless() {
-		return this.noEnergyShield().socketless();
 	}
 	onlyEnergyShield() {
 		this.energyShield = new Comparison(0, Comparison.OPERATOR.GT);
@@ -107,8 +96,12 @@ export class ConditionSet {
 		this.evasion = new Comparison(0);
 		return this;
 	}
-	noEnergyShield() {
-		this.energyShield = new Comparison(0);
+	hasArmour() {
+		this.armour = new Comparison(0, Comparison.OPERATOR.GT);
+		return this;
+	}
+	hasEvasion() {
+		this.evasion = new Comparison(0, Comparison.OPERATOR.GT);
 		return this;
 	}
 

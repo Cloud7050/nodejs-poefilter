@@ -727,7 +727,17 @@ Show
 Show
 	Class == "Body Armours" Boots Gloves Helmets
 	Rarity == Magic
-	BaseEnergyShield == 0
+	BaseArmour > 0
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	SetBorderColor 0 0 0 0
+	MinimapIcon -1
+
+Show
+	Class == "Body Armours" Boots Gloves Helmets
+	Rarity == Magic
+	BaseEvasion > 0
 
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 128
