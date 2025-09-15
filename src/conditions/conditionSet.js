@@ -46,6 +46,8 @@ export class ConditionSet {
 	quality = null; // Comparison
 	sockets = null; // Comparison
 	energyShield = null; // Comparison
+	armour = null; // Comparison
+	evasion = null; // Comparison
 	mods = null; // Comparison, with quantity
 
 	getBlockEnd() {
@@ -64,6 +66,8 @@ export class ConditionSet {
 		if (this.quality !== null) spans.push(this.quality.export("Quality"));
 		if (this.sockets !== null) spans.push(this.sockets.export("Sockets"));
 		if (this.energyShield !== null) spans.push(this.energyShield.export("BaseEnergyShield"));
+		if (this.armour !== null) spans.push(this.armour.export("BaseArmour"));
+		if (this.evasion !== null) spans.push(this.evasion.export("BaseEvasion"));
 		if (this.mods !== null) spans.push(this.mods.export("HasExplicitMod"));
 
 		if (spans.length === 0) {
@@ -97,8 +101,10 @@ export class ConditionSet {
 	noQualitySocketless() {
 		return this.noEnergyShield().socketless();
 	}
-	hasEnergyShield() {
+	onlyEnergyShield() {
 		this.energyShield = new Comparison(0, Comparison.OPERATOR.GT);
+		this.armour = new Comparison(0);
+		this.evasion = new Comparison(0);
 		return this;
 	}
 	noEnergyShield() {

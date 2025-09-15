@@ -335,7 +335,7 @@ filter.multiBlock((c) => { // Class weapons, quality
 	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasQuality();
-	c.hasEnergyShield();
+	c.onlyEnergyShield();
 }, (c) => { // Common gear, good main stat
 	c.continue();
 	c.category = new Comparison(CATEGORY.ARMOUR);
@@ -381,7 +381,7 @@ filter.multiBlock((c) => { // Class weapons, quality
 	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasQuality();
-	c.hasEnergyShield();
+	c.onlyEnergyShield();
 }, (c) => { // Common gear, good main stat
 	c.continue();
 	c.category = new Comparison(CATEGORY.ARMOUR);
@@ -430,7 +430,7 @@ filter.multiBlock((c) => { // Class weapons
 	c.continue();
 	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
-	c.hasEnergyShield();
+	c.onlyEnergyShield();
 }, (c) => { // Common gear, good main stat
 	c.continue();
 	c.category = new Comparison(CATEGORY.ARMOUR);

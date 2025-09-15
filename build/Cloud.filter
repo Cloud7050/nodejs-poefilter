@@ -365,6 +365,8 @@ Show
 	Rarity == Normal
 	Quality > 0
 	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
 
 	SetFontSize 32
 	SetTextColor 215 218 255 255
@@ -453,6 +455,8 @@ Show
 	Rarity == Magic
 	Quality > 0
 	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
 
 	SetFontSize 32
 	SetTextColor 182 190 255 255
@@ -552,6 +556,8 @@ Show
 	Class == "Body Armours" Boots Gloves Helmets
 	Rarity == Rare
 	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
