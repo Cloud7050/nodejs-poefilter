@@ -165,43 +165,73 @@ filter.block((c, e) => {
 
 // General
 filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Scroll of Wisdom", "Transmutation Shard"));
+	c.names = new Comparison(new StringList(
+		"Scroll of Wisdom", // 1 / 680 exalts
+		"Transmutation Shard", // 1 / 500 exalts
+		"Artificer's Shard", // 1 / 340 exalts
+	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.colourWisdom(CURRENCY_COLOUR, CURRENCY_PRESET).sizeWisdom();
 });
 filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Orb of Transmutation", "Orb of Augmentation",
-		"Regal Shard", "Artificer's Shard"));
+	c.names = new Comparison(new StringList(
+		"Lesser Jeweller's Orb", // 1 / 70 exalts
+		"Orb of Transmutation", // 1 / 50 exalts
+		"Regal Shard", // 1 / 49 exalts
+		"Artificer's Orb", // 1 / 34 exalts
+		"Orb of Augmentation", // 1 / 33 exalts
+	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.colourAugment(CURRENCY_COLOUR, CURRENCY_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Lesser Jeweller's Orb", "Artificer's Orb",
-		"Blacksmith's Whetstone", "Arcanist's Etcher"));
+	c.names = new Comparison(new StringList(
+		"Greater Orb of Transmutation", // 1 / 600 exalts
+		"Orb of Alchemy", // 1 / 98 exalts
+		"Greater Orb of Augmentation", // 1 / 29.5 exalts
+		"Greater Jeweller's Orb", // 1 / 13 exalts
+		"Blacksmith's Whetstone", // 1 / 12 exalts
+		"Arcanist's Etcher", // 1 / 4.9 exalts
+		"Regal Orb", // 1 / 4.9 exalts
+		"Glassblower's Bauble", // 1 / 4.4 exalts
+		"Armourer's Scrap", // 1 / 3.9 exalts
+		"Gemcutter's Prism", // 1 / 3.8 exalts
+		"Greater Regal Orb", // 1 / 2.5 exalts
+		"Vaal Orb", // 1 / 1.4 exalts
+	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.colourExalt(CURRENCY_COLOUR, CURRENCY_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Regal Orb", "Exalted Orb", "Orb of Alchemy",
-		"Chaos Orb", "Vaal Orb", "Armourer's Scrap", "Gemcutter's Prism",
-		"Glassblower's Bauble", "Chance Shard"));
+	c.names = new Comparison(new StringList(
+		"Exalted Orb",
+		"Chance Shard", // 2 exalts
+		"Greater Exalted Orb", // 3 exalts
+	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.colourExalt(CURRENCY_COLOUR, CURRENCY_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Orb of Annulment", "Orb of Chance",
-		"Greater Jeweller's Orb"));
+	c.names = new Comparison(new StringList(
+		"Chaos Orb", // 4.9 exalts
+		"Greater Chaos Orb", // 16 exalts
+		"Orb of Chance" // 20 exalts
+	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.colourChance(CURRENCY_COLOUR, CURRENCY_PRESET).sizeChance();
 });
 filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Divine Orb", "Mirror of Kalandra",
-		"Perfect Jeweller's Orb"));
+	c.names = new Comparison(new StringList(
+		"Perfect Jeweller's Orb", // 32 exalts
+		"Orb of Annulment", // 63.5 exalts
+		"Divine Orb", // 200 exalts
+		"Mirror of Kalandra" // 671 divines
+	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.colourDivine(CURRENCY_COLOUR, CURRENCY_PRESET).sizeChance();
