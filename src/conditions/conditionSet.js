@@ -111,7 +111,7 @@ export class ConditionSet {
 		// Spirit/rarity main stats - https://poe2db.tw/us/Items
 		this.names = new Comparison(new StringList(
 			// +x to spirit
-			"Corvus Mantle", "Conjurer Mantle", // Body armours
+			// "Corvus Mantle", "Conjurer Mantle", // Body armours (for other)
 			"Solar Amulet", // Amulets
 
 			// x% increased rarity of items found
