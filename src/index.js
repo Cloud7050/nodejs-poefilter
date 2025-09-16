@@ -573,6 +573,10 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 		"Gargantuan Mana Flask", "Transcendent Life Flask", "Transcendent Mana Flask"));
 	c.category = new Comparison(CATEGORY.CHARGED);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+}, (c) => { // Normal best flasks
+	c.names = new Comparison(new StringList("Ultimate Life Flask", "Ultimate Mana Flask"));
+	c.category = new Comparison(CATEGORY.CHARGED);
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (e) => {
 	e.fade();
 });

@@ -803,3 +803,13 @@ Show
 	SetBackgroundColor 0 0 0 128
 	SetBorderColor 0 0 0 0
 	MinimapIcon -1
+
+Show
+	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+	Class == Charms "Life Flasks" "Mana Flasks"
+	Rarity == Normal
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	SetBorderColor 0 0 0 0
+	MinimapIcon -1
