@@ -31,21 +31,21 @@ Show
 	BaseType = "Essence of "
 	Class == "Stackable Currency"
 
-	SetFontSize 37
+	SetFontSize 32
 	SetTextColor 205 184 255 255
 	SetBackgroundColor 35 14 79 255
 	SetBorderColor 205 184 255 255
-	MinimapIcon 0 Purple UpsideDownHouse
+	MinimapIcon 1 Purple UpsideDownHouse
 
 Show
 	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
 	Class == "Stackable Currency"
 
-	SetFontSize 37
+	SetFontSize 32
 	SetTextColor 247 214 255 255
 	SetBackgroundColor 25 2 36 255
 	SetBorderColor 247 214 255 255
-	MinimapIcon 0 Pink Kite
+	MinimapIcon 1 Pink Kite
 
 Show
 	BaseType == "Preserved Jawbone" "Preserved Rib" "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae"
@@ -302,11 +302,11 @@ Show
 	BaseType = " Rune"
 	Class == Socketable
 
-	SetFontSize 37
+	SetFontSize 32
 	SetTextColor 174 220 255 255
 	SetBackgroundColor 0 38 58 255
 	SetBorderColor 174 220 255 255
-	MinimapIcon 0 Cyan UpsideDownHouse
+	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
 	Class == Socketable

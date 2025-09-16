@@ -69,7 +69,7 @@ filter.block((c, e) => {
 	c.names = new Comparison("Essence of ", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourAugment(ESSENCE_COLOUR, ESSENCE_PRESET).sizeExalt();
+	e.colourAugment(ESSENCE_COLOUR, ESSENCE_PRESET).sizeAugment();
 });
 
 // Abyss
@@ -77,7 +77,7 @@ filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Gnawed Jawbone", "Gnawed Rib", "Gnawed Collarbone"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourWisdom(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
+	e.colourWisdom(ABYSS_COLOUR, ABYSS_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Preserved Jawbone", "Preserved Rib",
@@ -293,7 +293,7 @@ filter.block((c, e) => {
 	c.names = new Comparison(" Rune", Comparison.OPERATOR.EQUAL);
 	c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-	e.colourAugment(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeExalt();
+	e.colourAugment(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.SOCKETABLE);
