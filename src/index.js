@@ -320,7 +320,7 @@ filter.block((c, e) => {
 // Normal
 filter.block((c, e) => { // Gear style reset
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeWisdom();
@@ -350,6 +350,13 @@ filter.multiBlock((c) => { // Class weapons, quality
 });
 filter.block((c, e) => {
 	c.continue();
+	c.category = new Comparison(CATEGORY.BELT);
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+
+	e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
+});
+filter.block((c, e) => {
+	c.continue();
 	c.category = new Comparison(CATEGORY.JEWEL);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
@@ -373,7 +380,7 @@ filter.block((c, e) => {
 // Magic
 filter.block((c, e) => { // Gear style reset
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeWisdom();
@@ -401,7 +408,7 @@ filter.multiBlock((c) => { // Class weapons, quality
 	c.goodMod();
 }, (c) => { // Less common gear
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 }, (e) => {
 	e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
@@ -431,7 +438,7 @@ filter.block((c, e) => {
 // Rare
 filter.block((c, e) => { // Gear style reset
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
@@ -457,7 +464,7 @@ filter.multiBlock((c) => { // Class weapons
 	c.goodMod();
 }, (c) => { // Less common gear
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 }, (e) => {
 	e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
@@ -488,7 +495,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR,
-		CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+		CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.colourChance(GEAR_COLOUR, GEAR_PRESET).sizeChance();
