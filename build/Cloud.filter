@@ -140,7 +140,7 @@ Show
 Show
 	BaseType == Gold
 	Class == "Stackable Currency"
-	StackSize < 250
+	StackSize < 500
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -151,7 +151,7 @@ Show
 Show
 	BaseType == Gold
 	Class == "Stackable Currency"
-	StackSize < 750
+	StackSize < 1250
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
