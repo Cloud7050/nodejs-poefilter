@@ -802,11 +802,6 @@ Show
 	SetBorderColor 123 151 255 255
 
 Show
-	Sockets >= 2
-
-	#
-
-Show
 	UnidentifiedItemTier >= 2
 
 	#
