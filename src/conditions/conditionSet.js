@@ -16,6 +16,7 @@ export class ConditionSet {
 		CHARGED: new StringList("Charms", "Life Flasks", "Mana Flasks"),
 		JEWEL: new StringList("Jewels"),
 		WAYSTONE: new StringList("Waystones"),
+		TABLET: new StringList("Tablet"),
 		RELIC: new StringList("Relics"),
 		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items"
 
@@ -27,7 +28,7 @@ export class ConditionSet {
 		SOCKETABLE: new StringList("Socketable"),
 		TICKET: new StringList("Trial Coins", "Inscribed Ultimatum"),
 		QUEST: new StringList("Quest Items"),
-		// OTHER: new StringList("Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Pinnacle Keys" Strongboxes Tablets'
+		// OTHER: new StringList("Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Pinnacle Keys" Strongboxes
 	};
 	static RARITY = {
 		NORMAL: "Normal",

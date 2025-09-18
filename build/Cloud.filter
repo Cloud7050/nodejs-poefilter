@@ -437,7 +437,7 @@ Show
 	Continue
 
 Show
-	Class == Relics
+	Class == Tablet Relics
 	Rarity == Normal
 
 	SetFontSize 32
@@ -608,7 +608,7 @@ Show
 	Continue
 
 Show
-	Class == Relics
+	Class == Tablet Relics
 	Rarity == Magic
 
 	SetFontSize 37
@@ -719,7 +719,7 @@ Show
 	Continue
 
 Show
-	Class == Relics
+	Class == Tablet Relics
 	Rarity == Rare
 
 	SetFontSize 37
@@ -773,7 +773,7 @@ Show
 	Continue
 
 Show
-	Class == Relics
+	Class == Tablet Relics
 	Rarity == Unique
 
 	SetFontSize 45
@@ -802,7 +802,7 @@ Show
 	SetBorderColor 123 151 255 255
 
 Show
-	UnidentifiedItemTier >= 2
+	UnidentifiedItemTier >= 3
 
 	#
 

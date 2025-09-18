@@ -370,7 +370,7 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(CATEGORY.RELIC);
+	c.category = new Comparison(new StringList(CATEGORY.TABLET, CATEGORY.RELIC));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.colourWisdom(MECHANIC_COLOUR, MECHANIC_PRESET).sizeAugment();
@@ -453,7 +453,7 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(CATEGORY.RELIC);
+	c.category = new Comparison(new StringList(CATEGORY.TABLET, CATEGORY.RELIC));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.colourAugment(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
@@ -507,7 +507,7 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(CATEGORY.RELIC);
+	c.category = new Comparison(new StringList(CATEGORY.TABLET, CATEGORY.RELIC));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.colourExalt(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
@@ -538,7 +538,7 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(CATEGORY.RELIC);
+	c.category = new Comparison(new StringList(CATEGORY.TABLET, CATEGORY.RELIC));
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.colourChance(MECHANIC_COLOUR, MECHANIC_PRESET).sizeChance();
@@ -561,7 +561,7 @@ filter.block((c, e) => {
 
 // Stop here; don't fade these
 filter.multiBlock((c) => {
-	c.wisdomTier = new Comparison(2, Comparison.OPERATOR.GTE);
+	c.wisdomTier = new Comparison(3, Comparison.OPERATOR.GTE);
 }, (e) => {});
 
 // Fade
