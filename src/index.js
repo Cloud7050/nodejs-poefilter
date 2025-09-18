@@ -273,7 +273,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.GEM);
 
-	e.colourExalt(GEM_COLOUR, GEM_PRESET).sizeAugment();
+	e.colourExalt(GEM_COLOUR, GEM_PRESET).sizeExalt();
 });
 
 // Socketables
