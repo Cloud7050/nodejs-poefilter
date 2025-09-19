@@ -275,6 +275,11 @@ filter.block((c, e) => {
 
 // Gems
 filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.SUPPORT_UNCUT);
+
+	e.colourAugment(GEM_COLOUR, GEM_PRESET).sizeAugment();
+});
+filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.GEM_UNCUT);
 
 	e.colourAugment(GEM_COLOUR, GEM_PRESET).sizeExalt();
