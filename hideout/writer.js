@@ -44,7 +44,7 @@ let changes = {
 		S
 	),
 	"Recombinator": new Location(
-		MID.add(RIGHT.magnitude(25)).add(DOWN.magnitude(17)),
+		MID.add(RIGHT.magnitude(28)).add(DOWN.magnitude(17)),
 		S
 	),
 	"Reforging Bench": new Location(
@@ -66,16 +66,20 @@ let changes = {
 		SE
 	),
 	"Gwennen": new Location(
-		MID.add(LEFT.magnitude(22)),
+		MID.add(LEFT.magnitude(24)),
 		E
 	),
 	"Dannig": new Location(
-		MID.add(LEFT.magnitude(22)).add(DOWN.magnitude(15)),
+		MID.add(LEFT.magnitude(24)).add(DOWN.magnitude(15)),
 		NE
 	),
 	"Zelina": new Location(
-		MID.add(LEFT.magnitude(22)).add(UP.magnitude(15)),
+		MID.add(LEFT.magnitude(24)).add(UP.magnitude(15)),
 		SE
+	),
+	"Tujen": new Location(
+		MID.add(LEFT.magnitude(36)).add(DOWN.magnitude(15)),
+		E
 	),
 
 	// Up
