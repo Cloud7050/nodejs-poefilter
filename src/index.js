@@ -134,6 +134,15 @@ filter.block((c, e) => {
 	e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
 });
 
+// Splinters
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList("Breach Splinter", "Simulacrum Splinter",
+		"Petition Splinter", "Runic Splinter"));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
+});
+
 // Expedition
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList("Exotic Coinage", "Broken Circle Artifact",

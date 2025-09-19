@@ -128,6 +128,16 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
+	BaseType == "Breach Splinter" "Simulacrum Splinter" "Petition Splinter" "Runic Splinter"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	MinimapIcon 0 Green Cross
+
+Show
 	BaseType == "Exotic Coinage" "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact"
 	Class == "Stackable Currency"
 
