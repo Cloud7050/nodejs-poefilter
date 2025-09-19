@@ -145,11 +145,17 @@ filter.block((c, e) => {
 
 // Expedition
 filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Exotic Coinage", "Broken Circle Artifact",
-		"Black Scythe Artifact", "Order Artifact", "Sun Artifact"));
+	c.names = new Comparison(new StringList("Broken Circle Artifact", "Black Scythe Artifact",
+		"Order Artifact", "Sun Artifact"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourAugment(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
+	e.colourAugment(MECHANIC_COLOUR, MECHANIC_PRESET).sizeAugment();
+});
+filter.block((c, e) => {
+	c.names = new Comparison("Exotic Coinage");
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourExalt(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
 });
 
 // Gold
