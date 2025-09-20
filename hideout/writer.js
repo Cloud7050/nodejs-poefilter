@@ -2,103 +2,68 @@ import fs from "fs";
 import { Location } from "./location.js";
 import { Vector } from "./vector.js";
 
-const MID = new Vector(548, 443);
-
-const RIGHT = new Vector(1, -1);
-const LEFT = new Vector(-1, 1);
-const UP = new Vector(1, 1);
-const DOWN = new Vector(-1, -1);
-
 // Rotation range is 0 - 65535 (2^16 - 1)
-const SE = 65536 * (0/8);
-const E = 65536 * (1/8);
-const NE = 65536 * (2/8);
-const N = 65536 * (3/8);
-const NW = 65536 * (4/8);
-const W = 65536 * (5/8);
-const SW = 65536 * (6/8);
-const S = 65536 * (7/8);
+const SE = 65536 * (0/16);
+const E_SE = 65536 * (1/16);
+const E = 65536 * (2/16);
+const E_NE = 65536 * (3/16);
+const NE = 65536 * (4/16);
+const N_NE = 65536 * (5/16);
+const N = 65536 * (6/16);
+const N_NW = 65536 * (7/16);
+const NW = 65536 * (8/16);
+const W_NW = 65536 * (9/16);
+const W = 65536 * (10/16);
+const W_SW = 65536 * (11/16);
+const SW = 65536 * (12/16);
+const S_SW = 65536 * (13/16);
+const S = 65536 * (14/16);
+const S_SE = 65536 * (15/16);
+
+function at(r, u = 0, v = 0) {
+	const MID = new Vector(546, 445);
+	const RIGHT = new Vector(1, -1);
+	const LEFT = new Vector(-1, 1);
+	const UP = new Vector(1, 1);
+	const DOWN = new Vector(-1, -1);
+
+	let vector = MID.add(RIGHT.magnitude(u)).add(UP.magnitude(v));
+	return new Location(vector, r);
+}
 
 let changes = {
 	// Mid
-	"Waypoint": new Location(
-		MID,
-		S
-	),
+	"Waypoint": at(S),
 
 	// Right
-	"Stash": new Location(
-		MID.add(RIGHT.magnitude(15)),
-		S
-	),
-	"Guild Stash": new Location(
-		MID.add(RIGHT.magnitude(15)).add(DOWN.magnitude(12)),
-		S
-	),
-	"Salvage Bench": new Location(
-		MID.add(RIGHT.magnitude(15)).add(UP.magnitude(12)),
-		S
-	),
-	"Relic Locker": new Location(
-		MID.add(RIGHT.magnitude(25)),
-		S
-	),
-	"Recombinator": new Location(
-		MID.add(RIGHT.magnitude(28)).add(DOWN.magnitude(17)),
-		S
-	),
-	"Reforging Bench": new Location(
-		MID.add(RIGHT.magnitude(30)).add(UP.magnitude(15)),
-		S
-	),
+	"Salvage Bench": at(S, 15, 12),
+	"Stash": at(S, 15),
+	"Guild Stash": at(S, 15, -12),
+
+	"Reforging Bench": at(S, 30, 15),
+	"Relic Locker": at(S, 25),
+	"Recombinator": at(S, 28, -17),
 
 	// Left
-	"Ange": new Location(
-		MID.add(LEFT.magnitude(12)),
-		E
-	),
-	"Doryani": new Location(
-		MID.add(LEFT.magnitude(12)).add(DOWN.magnitude(15)),
-		NE
-	),
-	"Zolin": new Location(
-		MID.add(LEFT.magnitude(12)).add(UP.magnitude(15)),
-		SE
-	),
-	"Gwennen": new Location(
-		MID.add(LEFT.magnitude(24)),
-		E
-	),
-	"Dannig": new Location(
-		MID.add(LEFT.magnitude(24)).add(DOWN.magnitude(15)),
-		NE
-	),
-	"Zelina": new Location(
-		MID.add(LEFT.magnitude(24)).add(UP.magnitude(15)),
-		SE
-	),
-	"Tujen": new Location(
-		MID.add(LEFT.magnitude(36)).add(DOWN.magnitude(15)),
-		E
-	),
+	"Zolin": at(SE, -12, 15),
+	"Ange": at(E, -12),
+	"Doryani": at(NE, -12, -15),
+
+	"Zelina": at(E_SE, -24, 15),
+	"Dannig": at(E, -24),
+
+	"Gwennen": at(E_SE, -36, 15),
+	"Tujen": at(E, -36),
+	"Rog": at(E_NE, -36, -15),
 
 	// Up
-	"Well": new Location(
-		MID.add(UP.magnitude(15)),
-		S
-	),
+	"Well": at(S, 0, 15),
 
 	// Down
-	"Ziggurat Map Device": new Location(
-		MID.add(DOWN.magnitude(42)),
-		S
-	),
+	"Ziggurat Map Device": at(S, 0, -42),
 
 	// Other
-	"Alva": new Location(
-		MID.add(DOWN.magnitude(48)).add(RIGHT.magnitude(55)),
-		W
-	),
+	"Alva": at(W_NW, 50, -55),
 };
 
 let text = fs.readFileSync("./hideout/in.hideout", "utf8", (e) => {
