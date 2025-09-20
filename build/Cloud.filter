@@ -253,7 +253,7 @@ Show
 	MinimapIcon 0 Red Star
 
 Show
-	BaseType == "Perfect Jeweller's Orb" "Orb of Annulment" "Divine Orb" "Mirror of Kalandra"
+	BaseType == "Perfect Jeweller's Orb" "Fracturing Orb" "Orb of Annulment" "Divine Orb" "Hinekora's Lock" "Mirror of Kalandra"
 	Class == "Stackable Currency"
 
 	SetFontSize 45

@@ -243,7 +243,7 @@ filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
 		"Chaos Orb", // 4.9 exalts
 		"Greater Chaos Orb", // 16 exalts
-		"Orb of Chance" // 20 exalts
+		"Orb of Chance", // 20 exalts
 	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
@@ -252,9 +252,11 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
 		"Perfect Jeweller's Orb", // 32 exalts
-		"Orb of Annulment", // 63.5 exalts
-		"Divine Orb", // 200 exalts
-		"Mirror of Kalandra" // 671 divines
+		"Fracturing Orb", // 78 exalts
+		"Orb of Annulment", // 88 exalts
+		"Divine Orb", // 282 exalts
+		"Hinekora's Lock", // 195 divines
+		"Mirror of Kalandra", // 724 divines
 	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
