@@ -18,7 +18,6 @@ export class ConditionSet {
 		WAYSTONE: new StringList("Waystones"),
 		TABLET: new StringList("Tablet"),
 		RELIC: new StringList("Relics"),
-		// WAYSTONE: new StringList("Map Fragments" "Misc Map Items"
 
 		// No rarity
 		CURRENCY: new StringList("Stackable Currency"),
@@ -28,8 +27,8 @@ export class ConditionSet {
 		GEM: new StringList("Skill Gems", "Support Gems"),
 		SOCKETABLE: new StringList("Socketable"),
 		TICKET: new StringList("Trial Coins", "Inscribed Ultimatum"),
+		VAULT: new StringList("Vault Keys"),
 		QUEST: new StringList("Quest Items"),
-		// OTHER: new StringList("Divination Cards" "Expedition Logbooks" "Hideout Doodads" Hideouts "Pinnacle Keys" Strongboxes
 	};
 	static RARITY = {
 		NORMAL: "Normal",

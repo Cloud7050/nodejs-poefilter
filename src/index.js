@@ -330,6 +330,13 @@ filter.block((c, e) => {
 	e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
 });
 
+// Vault keys
+filter.block((c, e) => {
+	c.category = new Comparison(CATEGORY.VAULT);
+
+	e.colourChance(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeChance();
+});
+
 // Quest
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.QUEST);

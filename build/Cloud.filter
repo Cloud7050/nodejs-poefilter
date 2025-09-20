@@ -356,6 +356,17 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
+	Class == "Vault Keys"
+
+	SetFontSize 45
+	SetTextColor 36 44 0 255
+	SetBackgroundColor 197 226 29 255
+	SetBorderColor 36 44 0 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green Star
+
+Show
 	Class == "Quest Items"
 
 	SetFontSize 37
