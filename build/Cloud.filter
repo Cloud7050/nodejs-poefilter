@@ -376,7 +376,7 @@ Show
 	MinimapIcon 0 Grey Cross
 
 Show
-	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts Charms "Life Flasks" "Mana Flasks"
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Normal
 
 	SetFontSize 27
@@ -388,7 +388,7 @@ Show
 	Continue
 
 Show
-	Class == Amulets Rings Charms "Life Flasks" "Mana Flasks"
+	Class == Amulets Rings "Life Flasks" "Mana Flasks" Charms
 	Rarity == Normal
 
 	SetFontSize 32
@@ -453,6 +453,21 @@ Show
 	Continue
 
 Show
+	BaseType == "Heavy Belt"
+	Class == Belts
+	Rarity == Normal
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
 	Class == Jewels
 	Rarity == Normal
 
@@ -489,7 +504,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts Charms "Life Flasks" "Mana Flasks"
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Magic
 
 	SetFontSize 27
@@ -501,7 +516,7 @@ Show
 	Continue
 
 Show
-	Class == Amulets Rings Belts Charms "Life Flasks" "Mana Flasks"
+	Class == Amulets Rings Belts Charms
 	Rarity == Magic
 
 	SetFontSize 32
@@ -595,7 +610,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Foci Sceptres Amulets Rings Belts Charms "Life Flasks" "Mana Flasks"
+	Class == "Fishing Rods" Foci Sceptres Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Magic
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
 
@@ -614,6 +629,19 @@ Show
 	BaseArmour == 0
 	BaseEvasion == 0
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+	Class == "Life Flasks" "Mana Flasks"
+	Rarity == Magic
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -660,7 +688,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts Charms "Life Flasks" "Mana Flasks"
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Rare
 
 	SetFontSize 32
@@ -672,7 +700,7 @@ Show
 	Continue
 
 Show
-	Class == Amulets Rings Belts Charms "Life Flasks" "Mana Flasks"
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Rare
 
 	SetFontSize 37
@@ -771,7 +799,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts Charms "Life Flasks" "Mana Flasks"
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Unique
 
 	SetFontSize 45
@@ -896,7 +924,7 @@ Show
 
 Show
 	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
-	Class == Charms "Life Flasks" "Mana Flasks"
+	Class == "Life Flasks" "Mana Flasks"
 	Rarity <= Magic
 
 	SetFontSize 18
@@ -906,7 +934,7 @@ Show
 
 Show
 	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
-	Class == Charms "Life Flasks" "Mana Flasks"
+	Class == "Life Flasks" "Mana Flasks"
 	Rarity == Normal
 
 	SetFontSize 18

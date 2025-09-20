@@ -349,14 +349,14 @@ filter.block((c, e) => {
 // Normal
 filter.block((c, e) => { // Gear style reset
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeWisdom();
 });
 filter.multiBlock((c) => { // Less common gear
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.FLASK, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (c) => { // Class weapons, quality
 	c.continue();
@@ -376,12 +376,20 @@ filter.multiBlock((c) => { // Good main stat (always for class)
 	c.continue();
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.goodMain();
-}, (c) => { // Valuable base
+}, (c) => { // Valuable belt
 	c.continue();
 	c.category = new Comparison(CATEGORY.BELT);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (e) => {
 	e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
+});
+filter.block((c, e) => { // Highly valuable belt
+	c.continue();
+	c.names = new Comparison("Heavy Belt");
+	c.category = new Comparison(CATEGORY.BELT);
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+
+	e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeChance();
 });
 filter.block((c, e) => {
 	c.continue();
@@ -408,14 +416,14 @@ filter.block((c, e) => {
 // Magic
 filter.block((c, e) => { // Gear style reset
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeWisdom();
 });
 filter.multiBlock((c) => { // Less common gear
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 }, (c) => { // Class weapons, quality
 	c.continue();
@@ -454,7 +462,7 @@ filter.multiBlock((c) => { // Good main stat (always for class)
 	c.goodMain();
 }, (c) => { // Good mod (for class)
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.goodMod();
 }, (c) => {
@@ -463,6 +471,11 @@ filter.multiBlock((c) => { // Good main stat (always for class)
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.onlyEnergyShield();
 	c.goodMod();
+}, (c) => { // Potentially valuable flask
+	c.continue();
+	c.names = new Comparison(new StringList("Ultimate Life Flask", "Ultimate Mana Flask"));
+	c.category = new Comparison(CATEGORY.FLASK);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 }, (e) => {
 	e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
 });
@@ -491,14 +504,14 @@ filter.block((c, e) => {
 // Rare
 filter.block((c, e) => { // Gear style reset
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
 });
 filter.multiBlock((c) => { // Less common gear
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
+	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 }, (c) => { // Class weapons
 	c.continue();
@@ -546,7 +559,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.continue();
 	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR,
-		CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARGED));
+		CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.colourChance(GEAR_COLOUR, GEAR_PRESET).sizeChance();
@@ -627,11 +640,11 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 		"Grand Life Flask", "Grand Mana Flask", "Giant Life Flask", "Giant Mana Flask",
 		"Colossal Life Flask", "Colossal Mana Flask", "Gargantuan Life Flask",
 		"Gargantuan Mana Flask", "Transcendent Life Flask", "Transcendent Mana Flask"));
-	c.category = new Comparison(CATEGORY.CHARGED);
+	c.category = new Comparison(CATEGORY.FLASK);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 }, (c) => { // Normal best flasks
 	c.names = new Comparison(new StringList("Ultimate Life Flask", "Ultimate Mana Flask"));
-	c.category = new Comparison(CATEGORY.CHARGED);
+	c.category = new Comparison(CATEGORY.FLASK);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (e) => {
 	e.fade();
