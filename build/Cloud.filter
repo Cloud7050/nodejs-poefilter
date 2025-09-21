@@ -141,21 +141,21 @@ Show
 	BaseType == "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact"
 	Class == "Stackable Currency"
 
-	SetFontSize 32
+	SetFontSize 27
 	SetTextColor 116 253 179 255
 	SetBackgroundColor 0 46 25 255
 	SetBorderColor 116 253 179 255
-	MinimapIcon 1 Green UpsideDownHouse
+	MinimapIcon 2 Green UpsideDownHouse
 
 Show
 	BaseType == "Exotic Coinage"
 	Class == "Stackable Currency"
 
-	SetFontSize 37
+	SetFontSize 32
 	SetTextColor 33 252 162 255
 	SetBackgroundColor 0 86 51 255
 	SetBorderColor 33 252 162 255
-	MinimapIcon 0 Green Cross
+	MinimapIcon 1 Green Cross
 
 Show
 	BaseType == Gold
@@ -347,7 +347,7 @@ Show
 	MinimapIcon 0 Cyan Cross
 
 Show
-	Class == "Trial Coins" "Inscribed Ultimatum"
+	Class == "Trial Coins" "Inscribed Ultimatum" "Expedition Logbooks"
 
 	SetFontSize 37
 	SetTextColor 212 238 80 255

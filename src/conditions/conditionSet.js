@@ -27,7 +27,7 @@ export class ConditionSet {
 		SUPPORT_UNCUT: new StringList("Uncut Support Gems"),
 		GEM: new StringList("Skill Gems", "Support Gems"),
 		SOCKETABLE: new StringList("Socketable"),
-		TICKET: new StringList("Trial Coins", "Inscribed Ultimatum"),
+		TICKET: new StringList("Trial Coins", "Inscribed Ultimatum", "Expedition Logbooks"),
 		VAULT: new StringList("Vault Keys"),
 		QUEST: new StringList("Quest Items"),
 	};

@@ -149,13 +149,13 @@ filter.block((c, e) => {
 		"Order Artifact", "Sun Artifact"));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourAugment(MECHANIC_COLOUR, MECHANIC_PRESET).sizeAugment();
+	e.colourAugment(MECHANIC_COLOUR, MECHANIC_PRESET).sizeWisdom();
 });
 filter.block((c, e) => {
 	c.names = new Comparison("Exotic Coinage");
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourExalt(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
+	e.colourExalt(MECHANIC_COLOUR, MECHANIC_PRESET).sizeAugment();
 });
 
 // Gold
@@ -323,7 +323,7 @@ filter.block((c, e) => {
 	e.colourExalt(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeExalt();
 });
 
-// Trial tickets
+// Mechanic entry tickets
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.TICKET);
 
