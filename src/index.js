@@ -497,14 +497,14 @@ filter.block((c, e) => {
 // Rare
 filter.block((c, e) => { // Gear style reset
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
 });
 filter.multiBlock((c) => { // Less common gear
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
+	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.BELT));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 }, (c) => { // Class weapons
 	c.continue();

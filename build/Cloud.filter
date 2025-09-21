@@ -676,7 +676,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts
 	Rarity == Rare
 
 	SetFontSize 32
@@ -688,7 +688,7 @@ Show
 	Continue
 
 Show
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Amulets Rings Belts
 	Rarity == Rare
 
 	SetFontSize 37
