@@ -894,6 +894,16 @@ Show
 	MinimapIcon -1
 
 Show
+	Class == Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
+	Rarity == Rare
+	UnidentifiedItemTier < 2
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	SetBorderColor 0 0 0 0
+	MinimapIcon -1
+
+Show
 	Class == "Body Armours" Boots Gloves Helmets
 	Rarity == Normal
 
