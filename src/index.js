@@ -603,6 +603,9 @@ filter.block((c, e) => {
 
 // Stop here; don't fade these
 filter.multiBlock((c) => {
+	//TODO once encountered, highlight these differently
+	c.names = new Comparison("Exceptional ", Comparison.OPERATOR.EQUAL);
+}, (c) => {
 	c.wisdomTier = new Comparison(3, Comparison.OPERATOR.GTE);
 }, (e) => {});
 
