@@ -480,7 +480,7 @@ Show
 	Continue
 
 Show
-	Class == Tablet Relics
+	Class == Tablet
 	Rarity == Normal
 
 	SetFontSize 32
@@ -775,7 +775,7 @@ Show
 	Continue
 
 Show
-	Class == Tablet Relics
+	Class == Tablet
 	Rarity == Rare
 
 	SetFontSize 37

@@ -400,7 +400,7 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.TABLET, CATEGORY.RELIC));
+	c.category = new Comparison(new StringList(CATEGORY.TABLET));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.colourWisdom(MECHANIC_COLOUR, MECHANIC_PRESET).sizeAugment();
@@ -542,7 +542,7 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.TABLET, CATEGORY.RELIC));
+	c.category = new Comparison(new StringList(CATEGORY.TABLET));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.colourExalt(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
