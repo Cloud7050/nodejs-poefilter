@@ -468,18 +468,6 @@ Show
 	Continue
 
 Show
-	Class == Jewels
-	Rarity == Normal
-
-	SetFontSize 32
-	SetTextColor 215 229 255 255
-	SetBackgroundColor 0 14 34 255
-	SetBorderColor 215 229 255 255
-	MinimapIcon 1 Blue Kite
-
-	Continue
-
-Show
 	Class == Waystones
 	Rarity == Normal
 

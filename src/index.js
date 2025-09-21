@@ -393,13 +393,6 @@ filter.block((c, e) => { // Highly valuable belt
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(CATEGORY.JEWEL);
-	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
-
-	e.colourWisdom(JEWEL_COLOUR, JEWEL_PRESET).sizeAugment();
-});
-filter.block((c, e) => {
-	c.continue();
 	c.category = new Comparison(CATEGORY.WAYSTONE);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
