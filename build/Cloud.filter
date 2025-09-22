@@ -272,6 +272,18 @@ Show
 	MinimapIcon 0 Red Cross
 
 Show
+	BaseType == "Omen of Abyssal Echoes"
+	Class == Omen
+
+	SetFontSize 45
+	SetTextColor 57 28 0 255
+	SetBackgroundColor 255 166 84 255
+	SetBorderColor 57 28 0 255
+	PlayEffect Orange
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Orange Star
+
+Show
 	Class == Omen
 
 	SetFontSize 37

@@ -276,6 +276,14 @@ filter.block((c, e) => {
 
 // Omens
 filter.block((c, e) => {
+	c.names = new Comparison(new StringList(
+		"Omen of Abyssal Echoes", // 73 exalts
+	));
+	c.category = new Comparison(CATEGORY.OMEN);
+
+	e.colourChance(CRAFT_COLOUR, CRAFT_PRESET).sizeChance();
+});
+filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.OMEN);
 
 	e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
