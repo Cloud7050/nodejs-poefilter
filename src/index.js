@@ -599,7 +599,7 @@ filter.block((c, e) => {
 	e.outlineColour = Colour.MAGIC;
 });
 
-// Stop here; don't fade these
+// Stop here; don't hide these
 filter.multiBlock((c) => {
 	//TODO once encountered, highlight these differently
 	c.names = new Comparison("Exceptional ", Comparison.OPERATOR.EQUAL);
@@ -607,7 +607,7 @@ filter.multiBlock((c) => {
 	c.wisdomTier = new Comparison(3, Comparison.OPERATOR.GTE);
 }, (e) => {});
 
-// Fade
+// Hide
 filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.names = new Comparison(new StringList(
 		// https://poe2db.tw/us/Sceptres#SceptresItem
@@ -638,6 +638,16 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 }, (c) => {
 	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.hasEvasion();
+}, (c) => { // Rare other armour that isn't at least unidentified tier 2
+	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
+	c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LT);
+	c.hasArmour();
+}, (c) => {
+	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
+	c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LT);
 	c.hasEvasion();
 }, (c) => { // Normal other rings
 	c.names = new Comparison(new StringList(

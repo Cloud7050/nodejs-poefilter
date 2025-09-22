@@ -939,6 +939,28 @@ Hide
 	MinimapIcon -1
 
 Hide
+	Class == "Body Armours" Boots Gloves Helmets
+	Rarity == Rare
+	UnidentifiedItemTier < 2
+	BaseArmour > 0
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	SetBorderColor 0 0 0 0
+	MinimapIcon -1
+
+Hide
+	Class == "Body Armours" Boots Gloves Helmets
+	Rarity == Rare
+	UnidentifiedItemTier < 2
+	BaseEvasion > 0
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	SetBorderColor 0 0 0 0
+	MinimapIcon -1
+
+Hide
 	BaseType == "Iron Ring" "Emerald Ring" "Unset Ring"
 	Class == Amulets Rings
 	Rarity == Normal
