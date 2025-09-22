@@ -926,6 +926,16 @@ Show
 	MinimapIcon -1
 
 Show
+	BaseType == "Iron Ring" "Emerald Ring" "Unset Ring"
+	Class == Amulets Rings
+	Rarity == Normal
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	SetBorderColor 0 0 0 0
+	MinimapIcon -1
+
+Show
 	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity <= Magic

@@ -634,6 +634,14 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.category = new Comparison(CATEGORY.ARMOUR);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasEvasion();
+}, (c) => { // Normal other rings
+	c.names = new Comparison(new StringList(
+		"Iron Ring", // +1-4 phys damage to attacks
+		"Emerald Ring", // Flat accuracy
+		"Unset Ring", // Skill slot
+	));
+	c.category = new Comparison(CATEGORY.JEWELLERY);
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (c) => { // Bad normal/magic flasks
 	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
 		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
