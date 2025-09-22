@@ -388,7 +388,7 @@ Show
 	Continue
 
 Show
-	Class == Amulets Rings "Life Flasks" "Mana Flasks" Charms
+	Class == Amulets Rings Charms
 	Rarity == Normal
 
 	SetFontSize 32
@@ -442,6 +442,19 @@ Show
 
 Show
 	Class == Belts
+	Rarity == Normal
+
+	SetFontSize 37
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+	Class == "Life Flasks" "Mana Flasks"
 	Rarity == Normal
 
 	SetFontSize 37
@@ -939,16 +952,6 @@ Hide
 	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity <= Magic
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
-
-Hide
-	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
-	Class == "Life Flasks" "Mana Flasks"
-	Rarity == Normal
 
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 128

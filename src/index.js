@@ -356,7 +356,7 @@ filter.block((c, e) => { // Gear style reset
 });
 filter.multiBlock((c) => { // Less common gear
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.FLASK, CATEGORY.CHARM));
+	c.category = new Comparison(new StringList(CATEGORY.JEWELLERY, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (c) => { // Class weapons, quality
 	c.continue();
@@ -379,6 +379,11 @@ filter.multiBlock((c) => { // Good main stat (always for class)
 }, (c) => { // Valuable belt
 	c.continue();
 	c.category = new Comparison(CATEGORY.BELT);
+	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+}, (c) => { // Potentially valuable flask
+	c.continue();
+	c.names = new Comparison(new StringList("Ultimate Life Flask", "Ultimate Mana Flask"));
+	c.category = new Comparison(CATEGORY.FLASK);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (e) => {
 	e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
@@ -650,10 +655,6 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 		"Gargantuan Mana Flask", "Transcendent Life Flask", "Transcendent Mana Flask"));
 	c.category = new Comparison(CATEGORY.FLASK);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
-}, (c) => { // Normal best flasks
-	c.names = new Comparison(new StringList("Ultimate Life Flask", "Ultimate Mana Flask"));
-	c.category = new Comparison(CATEGORY.FLASK);
-	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (e) => {
 	e.fade().hide();
 });
