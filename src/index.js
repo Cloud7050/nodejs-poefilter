@@ -277,11 +277,20 @@ filter.block((c, e) => {
 // Omens
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
-		"Omen of Abyssal Echoes", // 73 exalts
+		"Omen of Sinistral Necromancy", // 8 exalts
 	));
 	c.category = new Comparison(CATEGORY.OMEN);
 
 	e.colourChance(CRAFT_COLOUR, CRAFT_PRESET).sizeChance();
+});
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList(
+		"Omen of Abyssal Echoes", // 68 exalts
+		"Omen of Light", // 3.5 divines
+	));
+	c.category = new Comparison(CATEGORY.OMEN);
+
+	e.colourDivine(CRAFT_COLOUR, CRAFT_PRESET).sizeChance();
 });
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.OMEN);
