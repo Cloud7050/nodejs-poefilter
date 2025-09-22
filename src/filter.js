@@ -40,8 +40,9 @@ export class Filter {
 		let relativeFilePath = `./build/${this.name}.filter`;
 		let content = this.spans.join("\n");
 
-		if (content.includes("undefined") || content.includes("null")) {
-			console.warn("[!] Saving filter containing undefined or null text");
+		const BUGGY_TEXT = ["undefined", "null", "[object Object]"];
+		if (BUGGY_TEXT.some((text) => content.includes(text))) {
+			console.warn("[!] Saving filter containing potentially buggy text!");
 		}
 
 		fs.writeFile(relativeFilePath, content, (e) => {

@@ -552,7 +552,7 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.TABLET));
+	c.category = new Comparison(CATEGORY.TABLET);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.colourExalt(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
@@ -633,7 +633,7 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 	c.wisdomTier = new Comparison(1);
 }, (c) => { // Normal armour
-	c.category = new Comparison(CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS);
+	c.category = new Comparison(new StringList(CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (c) => { // Magic other armour
 	c.category = new Comparison(CATEGORY.ARMOUR_TOP);

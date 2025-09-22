@@ -923,7 +923,7 @@ Hide
 	MinimapIcon -1
 
 Hide
-	Class [object Object] "Body Armours" Gloves Helmets
+	Class == "Body Armours" Gloves Helmets Boots
 	Rarity == Normal
 
 	SetFontSize 18
