@@ -349,7 +349,7 @@ filter.block((c, e) => {
 // Normal
 filter.block((c, e) => { // Gear style reset
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 
 	e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeWisdom();
@@ -365,7 +365,7 @@ filter.multiBlock((c) => { // Less common gear
 	c.hasQuality();
 }, (c) => { // Class armour, quality
 	c.continue();
-	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 	c.hasQuality();
 	c.onlyEnergyShield();
@@ -414,7 +414,7 @@ filter.block((c, e) => {
 // Magic
 filter.block((c, e) => { // Gear style reset
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 
 	e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeWisdom();
@@ -430,26 +430,31 @@ filter.multiBlock((c) => { // Less common gear
 	c.hasQuality();
 }, (c) => { // Class armour, quality
 	c.continue();
-	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasQuality();
 	c.onlyEnergyShield();
 }, (c) => { // Good mod (for other)
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_OTHER));
+	c.category = new Comparison(CATEGORY.WEAPON_OTHER);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.goodMod();
 }, (c) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
+	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasArmour();
 	c.goodMod();
 }, (c) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
+	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasEvasion();
+	c.goodMod();
+}, (c) => {
+	c.continue();
+	c.category = new Comparison(CATEGORY.BOOTS);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.goodMod();
 }, (e) => {
 	e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
@@ -465,7 +470,7 @@ filter.multiBlock((c) => { // Good main stat (always for class)
 	c.goodMod();
 }, (c) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.ARMOUR));
+	c.category = new Comparison(new StringList(CATEGORY.ARMOUR_TOP));
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.onlyEnergyShield();
 	c.goodMod();
@@ -502,7 +507,7 @@ filter.block((c, e) => {
 // Rare
 filter.block((c, e) => { // Gear style reset
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS, CATEGORY.JEWELLERY, CATEGORY.BELT));
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 
 	e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
@@ -517,7 +522,7 @@ filter.multiBlock((c) => { // Less common gear
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 }, (c) => { // Class armour
 	c.continue();
-	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 	c.onlyEnergyShield();
 }, (c) => { // Good main stat (always for class)
@@ -556,8 +561,7 @@ filter.block((c, e) => {
 // Unique
 filter.block((c, e) => {
 	c.continue();
-	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR,
-		CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
+	c.category = new Comparison(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY.WEAPON_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM));
 	c.rarity = new Comparison(ConditionSet.RARITY.UNIQUE);
 
 	e.colourChance(GEAR_COLOUR, GEAR_PRESET).sizeChance();
@@ -624,31 +628,39 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 }, (c) => { // Normal/magic other weapons
 	c.category = new Comparison(CATEGORY.WEAPON_OTHER);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
-}, (c) => { // Rare other weapons that aren't at least unidentified tier 2
+}, (c) => { // Rare other weapons that are low unidentified tier
 	c.category = new Comparison(CATEGORY.WEAPON_OTHER);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
-	c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LT);
+	c.wisdomTier = new Comparison(1);
 }, (c) => { // Normal armour
-	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.category = new Comparison(CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (c) => { // Magic other armour
-	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasArmour();
 }, (c) => {
-	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 	c.hasEvasion();
-}, (c) => { // Rare other armour that isn't at least unidentified tier 2
-	c.category = new Comparison(CATEGORY.ARMOUR);
+}, (c) => {
+	// Class doesn't use most boots, it uses unique
+	c.category = new Comparison(CATEGORY.BOOTS);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+}, (c) => { // Rare other armour that is low unidentified tier
+	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
-	c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LT);
+	c.wisdomTier = new Comparison(1);
 	c.hasArmour();
 }, (c) => {
-	c.category = new Comparison(CATEGORY.ARMOUR);
+	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
-	c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LT);
+	c.wisdomTier = new Comparison(1);
 	c.hasEvasion();
+}, (c) => {
+	c.category = new Comparison(CATEGORY.BOOTS);
+	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
+	c.wisdomTier = new Comparison(1);
 }, (c) => { // Normal other rings
 	c.names = new Comparison(new StringList(
 		"Iron Ring", // +1-4 phys damage to attacks
@@ -657,6 +669,10 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	));
 	c.category = new Comparison(CATEGORY.JEWELLERY);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+}, (c) => { // Magic belts
+	// Class doesn't use most belts, it uses unique
+	c.category = new Comparison(CATEGORY.BELT);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 }, (c) => { // Bad normal/magic flasks
 	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
 		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",

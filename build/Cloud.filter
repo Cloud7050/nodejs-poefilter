@@ -376,7 +376,7 @@ Show
 	MinimapIcon 0 Grey Cross
 
 Show
-	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Gloves Helmets Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Normal
 
 	SetFontSize 27
@@ -413,7 +413,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Boots Gloves Helmets
+	Class == "Body Armours" Gloves Helmets
 	Rarity == Normal
 	Quality > 0
 	BaseEnergyShield > 0
@@ -505,7 +505,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Gloves Helmets Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Magic
 
 	SetFontSize 27
@@ -542,7 +542,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Boots Gloves Helmets
+	Class == "Body Armours" Gloves Helmets
 	Rarity == Magic
 	Quality > 0
 	BaseEnergyShield > 0
@@ -571,7 +571,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Boots Gloves Helmets
+	Class == "Body Armours" Gloves Helmets
 	Rarity == Magic
 	BaseArmour > 0
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
@@ -585,9 +585,22 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Boots Gloves Helmets
+	Class == "Body Armours" Gloves Helmets
 	Rarity == Magic
 	BaseEvasion > 0
+	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Boots
+	Rarity == Magic
 	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" "of Explosives" "of Shrapnel" "of Sabotage" "of Detonation" "of Pyrotechnics" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
 
 	SetFontSize 32
@@ -624,7 +637,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Boots Gloves Helmets
+	Class == "Body Armours" Gloves Helmets
 	Rarity == Magic
 	BaseEnergyShield > 0
 	BaseArmour == 0
@@ -689,7 +702,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Gloves Helmets Boots Amulets Rings Belts
 	Rarity == Rare
 
 	SetFontSize 32
@@ -725,7 +738,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Boots Gloves Helmets
+	Class == "Body Armours" Gloves Helmets
 	Rarity == Rare
 	BaseEnergyShield > 0
 	BaseArmour == 0
@@ -800,7 +813,7 @@ Show
 	Continue
 
 Show
-	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Boots Gloves Helmets Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == "Fishing Rods" Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Gloves Helmets Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Unique
 
 	SetFontSize 45
@@ -902,7 +915,7 @@ Hide
 Hide
 	Class == Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
 	Rarity == Rare
-	UnidentifiedItemTier < 2
+	UnidentifiedItemTier == 1
 
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 128
@@ -910,7 +923,7 @@ Hide
 	MinimapIcon -1
 
 Hide
-	Class == "Body Armours" Boots Gloves Helmets
+	Class [object Object] "Body Armours" Gloves Helmets
 	Rarity == Normal
 
 	SetFontSize 18
@@ -919,7 +932,7 @@ Hide
 	MinimapIcon -1
 
 Hide
-	Class == "Body Armours" Boots Gloves Helmets
+	Class == "Body Armours" Gloves Helmets
 	Rarity == Magic
 	BaseArmour > 0
 
@@ -929,7 +942,7 @@ Hide
 	MinimapIcon -1
 
 Hide
-	Class == "Body Armours" Boots Gloves Helmets
+	Class == "Body Armours" Gloves Helmets
 	Rarity == Magic
 	BaseEvasion > 0
 
@@ -939,9 +952,18 @@ Hide
 	MinimapIcon -1
 
 Hide
-	Class == "Body Armours" Boots Gloves Helmets
+	Class == Boots
+	Rarity == Magic
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	SetBorderColor 0 0 0 0
+	MinimapIcon -1
+
+Hide
+	Class == "Body Armours" Gloves Helmets
 	Rarity == Rare
-	UnidentifiedItemTier < 2
+	UnidentifiedItemTier == 1
 	BaseArmour > 0
 
 	SetFontSize 18
@@ -950,10 +972,20 @@ Hide
 	MinimapIcon -1
 
 Hide
-	Class == "Body Armours" Boots Gloves Helmets
+	Class == "Body Armours" Gloves Helmets
 	Rarity == Rare
-	UnidentifiedItemTier < 2
+	UnidentifiedItemTier == 1
 	BaseEvasion > 0
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	SetBorderColor 0 0 0 0
+	MinimapIcon -1
+
+Hide
+	Class == Boots
+	Rarity == Rare
+	UnidentifiedItemTier == 1
 
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 128
@@ -964,6 +996,15 @@ Hide
 	BaseType == "Iron Ring" "Emerald Ring" "Unset Ring"
 	Class == Amulets Rings
 	Rarity == Normal
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	SetBorderColor 0 0 0 0
+	MinimapIcon -1
+
+Hide
+	Class == Belts
+	Rarity == Magic
 
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 128
