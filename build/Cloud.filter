@@ -1017,7 +1017,7 @@ Hide
 	MinimapIcon -1
 
 Hide
-	BaseType == "Iron Ring" "Emerald Ring" "Unset Ring"
+	BaseType == "Crimson Amulet" "Amber Amulet" "Jade Amulet" "Iron Ring" "Emerald Ring" "Unset Ring"
 	Class == Amulets Rings
 	Rarity == Normal
 
