@@ -1,11 +1,6 @@
 import { Colour } from "./colour.js";
 
 export class EffectSet {
-	static VISIBILITY = {
-		SHOW: "Show",
-		HIDE: "Hide",
-	};
-
 	static TEXT_SIZE = {
 		SMALLEST: "18",
 		SMALL: "27",
@@ -39,7 +34,7 @@ export class EffectSet {
 		// TRIANGLE: "Triangle",
 	};
 
-	visibility = EffectSet.VISIBILITY.SHOW;
+	isVisible = true;
 
 	textSize = null;
 	textColour = null; // Colour
@@ -53,7 +48,7 @@ export class EffectSet {
 	mapIcon = null;
 
 	getBlockStart() {
-		return this.visibility;
+		return this.isVisible ? "Show" : "Hide";
 	}
 
 	export() {
@@ -84,6 +79,11 @@ export class EffectSet {
 		this.backgroundColour = Colour.BLACK_TRANSLUCENT;
 		this.outlineColour = Colour.TRANSPARENT;
 		this.mapSize = EffectSet.MAP_SIZE.DISABLE;
+		return this;
+	}
+
+	hide() {
+		this.isVisible = false;
 		return this;
 	}
 

@@ -867,7 +867,7 @@ Show
 
 	#
 
-Show
+Hide
 	BaseType == "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre" "Clasped Sceptre" "Wrath Sceptre"
 	Class == "Fishing Rods" Foci Sceptres
 	Rarity <= Magic
@@ -877,7 +877,7 @@ Show
 	SetBorderColor 0 0 0 0
 	MinimapIcon -1
 
-Show
+Hide
 	Class == Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
 	Rarity <= Magic
 
@@ -886,7 +886,7 @@ Show
 	SetBorderColor 0 0 0 0
 	MinimapIcon -1
 
-Show
+Hide
 	Class == Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
 	Rarity == Rare
 	UnidentifiedItemTier < 2
@@ -896,7 +896,7 @@ Show
 	SetBorderColor 0 0 0 0
 	MinimapIcon -1
 
-Show
+Hide
 	Class == "Body Armours" Boots Gloves Helmets
 	Rarity == Normal
 
@@ -905,7 +905,7 @@ Show
 	SetBorderColor 0 0 0 0
 	MinimapIcon -1
 
-Show
+Hide
 	Class == "Body Armours" Boots Gloves Helmets
 	Rarity == Magic
 	BaseArmour > 0
@@ -915,7 +915,7 @@ Show
 	SetBorderColor 0 0 0 0
 	MinimapIcon -1
 
-Show
+Hide
 	Class == "Body Armours" Boots Gloves Helmets
 	Rarity == Magic
 	BaseEvasion > 0
@@ -925,7 +925,7 @@ Show
 	SetBorderColor 0 0 0 0
 	MinimapIcon -1
 
-Show
+Hide
 	BaseType == "Iron Ring" "Emerald Ring" "Unset Ring"
 	Class == Amulets Rings
 	Rarity == Normal
@@ -935,7 +935,7 @@ Show
 	SetBorderColor 0 0 0 0
 	MinimapIcon -1
 
-Show
+Hide
 	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity <= Magic
@@ -945,7 +945,7 @@ Show
 	SetBorderColor 0 0 0 0
 	MinimapIcon -1
 
-Show
+Hide
 	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity == Normal

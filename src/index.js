@@ -655,7 +655,7 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.category = new Comparison(CATEGORY.FLASK);
 	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
 }, (e) => {
-	e.fade();
+	e.fade().hide();
 });
 
 filter.save();
