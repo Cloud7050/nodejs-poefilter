@@ -982,6 +982,16 @@ Hide
 	MinimapIcon -1
 
 Hide
+	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus"
+	Class == "Fishing Rods" Foci Sceptres
+	Rarity <= Magic
+
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 128
+	SetBorderColor 0 0 0 0
+	MinimapIcon -1
+
+Hide
 	Class == Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves Traps "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
 	Rarity <= Magic
 
