@@ -309,10 +309,57 @@ filter.block((c, e) => {
 
 	e.colourAugment(GEM_COLOUR, GEM_PRESET).sizeExalt();
 });
+// Lineage, >= 30 exalts
+filter.block((c, e) => {
+	c.names = new Comparison(
+		new StringList("Atalui's Bloodletting", "Ratha's Assault", "Arjun's Medal",
+			"Ixchel's Torment", "Romira's Requital", "Dialla's Desire", "Kalisa's Crescendo",
+			"Uul-Netol's Embrace", "Rakiata's Flow", "Rigwald's Ferocity", "Uhtred's Omen",
+			"Uhtred's Augury"),
+		Comparison.OPERATOR.EQUAL
+	);
+	c.category = new Comparison(CATEGORY.GEM);
+
+	e.colourDivine(GEM_COLOUR, GEM_PRESET).sizeChance();
+});
+// Lineage, >= 1 exalt
+filter.block((c, e) => {
+	c.names = new Comparison(
+		new StringList("Einhar's Beastrite", "Brutus' Brain", "Ailith's Chimes", "Tecrod's Revenge",
+			"Doedre's Undoing", "Kaom's Madness", "Sione's Temper", "Tawhoa's Tending",
+			"Piety's Mercy", "Kulemak's Dominion", "Xoph's Pyre", "Esh's Radiance",
+			"Tul's Stillness", "Garukhan's Resolve", "Uhtred's Exodus", "Daresso's Passion",
+			"Atziri's Allure", "Zarokh's Refrain", "Varashta's Blessing", "Arbiter's Ignition"),
+		Comparison.OPERATOR.EQUAL
+	);
+	c.category = new Comparison(CATEGORY.GEM);
+
+	e.colourChance(GEM_COLOUR, GEM_PRESET).sizeChance();
+});
+// Lineage, < 1 exalt
+filter.block((c, e) => {
+	c.names = new Comparison(
+		new StringList("Uruk's Smelting", "Paquate's Pact", "Vilenta's Propulsion", "Tacati's Ire",
+			"Ahn's Citadel", "Kurgal's Leash", "Arakaali's Lust"),
+		Comparison.OPERATOR.EQUAL
+	);
+	c.category = new Comparison(CATEGORY.GEM);
+
+	e.colourChance(GEM_COLOUR, GEM_PRESET).sizeExalt();
+});
+filter.multiBlock((c) => {
+	c.category = new Comparison(CATEGORY.GEM);
+	c.hasQuality();
+}, (c) => {
+	c.category = new Comparison(CATEGORY.GEM);
+	c.hasSockets(4);
+}, (e) => {
+	e.colourExalt(GEM_COLOUR, GEM_PRESET).sizeExalt();
+});
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.GEM);
 
-	e.colourExalt(GEM_COLOUR, GEM_PRESET).sizeExalt();
+	e.colourExalt(GEM_COLOUR, GEM_PRESET).sizeWisdom();
 });
 
 // Socketables

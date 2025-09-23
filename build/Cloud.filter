@@ -323,13 +323,67 @@ Show
 	MinimapIcon 0 Brown UpsideDownHouse
 
 Show
+	BaseType = "Atalui's Bloodletting" "Ratha's Assault" "Arjun's Medal" "Ixchel's Torment" "Romira's Requital" "Dialla's Desire" "Kalisa's Crescendo" "Uul-Netol's Embrace" "Rakiata's Flow" "Rigwald's Ferocity" "Uhtred's Omen" "Uhtred's Augury"
 	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 45
+	SetTextColor 0 194 198 255
+	SetBackgroundColor 226 255 255 255
+	SetBorderColor 0 194 198 255
+	PlayEffect Brown
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Brown Diamond
+
+Show
+	BaseType = "Einhar's Beastrite" "Brutus' Brain" "Ailith's Chimes" "Tecrod's Revenge" "Doedre's Undoing" "Kaom's Madness" "Sione's Temper" "Tawhoa's Tending" "Piety's Mercy" "Kulemak's Dominion" "Xoph's Pyre" "Esh's Radiance" "Tul's Stillness" "Garukhan's Resolve" "Uhtred's Exodus" "Daresso's Passion" "Atziri's Allure" "Zarokh's Refrain" "Varashta's Blessing" "Arbiter's Ignition"
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 45
+	SetTextColor 0 45 46 255
+	SetBackgroundColor 0 230 236 255
+	SetBorderColor 0 45 46 255
+	PlayEffect Brown
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Brown Star
+
+Show
+	BaseType = "Uruk's Smelting" "Paquate's Pact" "Vilenta's Propulsion" "Tacati's Ire" "Ahn's Citadel" "Kurgal's Leash" "Arakaali's Lust"
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 37
+	SetTextColor 0 45 46 255
+	SetBackgroundColor 0 230 236 255
+	SetBorderColor 0 45 46 255
+	MinimapIcon 0 Brown Star
+
+Show
+	Class == "Skill Gems" "Support Gems"
+	Quality > 0
 
 	SetFontSize 37
 	SetTextColor 0 246 252 255
 	SetBackgroundColor 0 83 86 255
 	SetBorderColor 0 246 252 255
 	MinimapIcon 0 Brown Cross
+
+Show
+	Class == "Skill Gems" "Support Gems"
+	Sockets >= 4
+
+	SetFontSize 37
+	SetTextColor 0 246 252 255
+	SetBackgroundColor 0 83 86 255
+	SetBorderColor 0 246 252 255
+	MinimapIcon 0 Brown Cross
+
+Show
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 27
+	SetTextColor 0 246 252 255
+	SetBackgroundColor 0 83 86 255
+	SetBorderColor 0 246 252 255
+	MinimapIcon 2 Brown Cross
 
 Show
 	BaseType = "Lesser "
