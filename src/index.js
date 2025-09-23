@@ -677,9 +677,8 @@ filter.multiBlock((c) => {
 
 // Hide
 filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
+	// https://poe2db.tw/us/Sceptres#SceptresItem
 	c.names = new Comparison(new StringList(
-		// https://poe2db.tw/us/Sceptres#SceptresItem
-		// "Rattling Sceptre", // Skeletal Warrior
 		"Stoic Sceptre", // Discipline
 		"Omen Sceptre", // Malice
 		"Shrine Sceptre", // Purity of Fire/Ice/Lightning / Impurity
@@ -689,6 +688,7 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 }, (c) => { // Normal/magic class foci but are low bases
+	// https://poe2db.tw/us/Foci#FociItem
 	c.names = new Comparison(new StringList("Twig Focus", "Woven Focus", "Antler Focus",
 		"Engraved Focus", "Tonal Focus", "Crystal Focus", "Voodoo Focus", "Plumed Focus",
 		"Runed Focus", "Whorl Focus", "Arrayed Focus"));
