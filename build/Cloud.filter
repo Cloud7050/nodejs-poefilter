@@ -972,7 +972,7 @@ Show
 	#
 
 Hide
-	BaseType == "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre" "Clasped Sceptre" "Wrath Sceptre"
+	BaseType == "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre" "Wrath Sceptre"
 	Class == Foci Sceptres
 	Rarity <= Magic
 
@@ -1049,7 +1049,7 @@ Hide
 	MinimapIcon -1
 
 Hide
-	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Druidic Circlet" "Vermeil Circlet" "Avian Tiara" "Jade Tiara" "Desert Circlet" "Noble Circlet" "Sandsworn Tiara" "Twilight Tiara" "Jungle Tiara" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "Imperial Robe" "River Raiment" "Plated Raiment" "Adherent's Raiment" "Ceremonial Robe" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Ominous Gloves" "Pauascale Gloves" "Embellished Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves"
+	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "Imperial Robe" "River Raiment" "Plated Raiment" "Adherent's Raiment" "Ceremonial Robe" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves"
 	Class == "Body Armours" Gloves Helmets
 	Rarity == Magic
 	BaseEnergyShield > 0

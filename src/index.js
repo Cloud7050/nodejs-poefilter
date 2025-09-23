@@ -681,8 +681,7 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.names = new Comparison(new StringList(
 		"Stoic Sceptre", // Discipline
 		"Omen Sceptre", // Malice
-		"Shrine Sceptre", // Purity of Fire/Ice/Lightning / Impurity
-		"Clasped Sceptre", // Heart of Ice
+		"Shrine Sceptre", // Purity of Fire/Ice/Lightning
 		"Wrath Sceptre", // Fulmination
 	));
 	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
@@ -721,7 +720,7 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.names = new Comparison(new StringList(
 		// https://poe2db.tw/us/Helmets
 		"Twig Circlet", "Wicker Tiara", "Beaded Circlet", "Chain Tiara", "Feathered Tiara",
-		"Gold Circlet", "Druidic Circlet", "Vermeil Circlet", "Avian Tiara", "Jade Tiara", "Desert Circlet", "Noble Circlet", "Sandsworn Tiara", "Twilight Tiara", "Jungle Tiara",
+		"Gold Circlet", "Vermeil Circlet", "Jade Tiara", "Sandsworn Tiara", "Jungle Tiara",
 
 		// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
 		"Tattered Robe", "Feathered Robe", "Hexer's Robe", "Bone Raiment", "Silk Robe",
@@ -730,8 +729,7 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 
 		// https://poe2db.tw/us/Gloves
 		"Torn Gloves", "Sombre Gloves", "Stitched Gloves", "Jewelled Gloves", "Intricate Gloves",
-		"Ominous Gloves", "Pauascale Gloves", "Embellished Gloves", "Embroidered Gloves",
-		"Baroque Gloves", "Gold Gloves",
+		"Pauascale Gloves", "Embroidered Gloves", "Baroque Gloves", "Gold Gloves",
 	));
 	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
