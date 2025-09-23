@@ -725,7 +725,7 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 		// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
 		"Tattered Robe", "Feathered Robe", "Hexer's Robe", "Bone Raiment", "Silk Robe",
 		"Keth Raiment", "Votive Raiment", "Altar Robe", "Elementalist Robe", "Mystic Raiment",
-		"Imperial Robe", "River Raiment", "Plated Raiment", "Adherent's Raiment", "Ceremonial Robe",
+		"River Raiment", "Adherent's Raiment", "Ceremonial Robe",
 
 		// https://poe2db.tw/us/Gloves
 		"Torn Gloves", "Sombre Gloves", "Stitched Gloves", "Jewelled Gloves", "Intricate Gloves",
