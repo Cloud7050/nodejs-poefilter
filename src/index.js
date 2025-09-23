@@ -716,6 +716,26 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	// Class doesn't use most boots, it uses unique
 	c.category = new Comparison(CATEGORY.BOOTS);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+}, (c) => { // Magic class armour tops but are low bases
+	//TODO check which bases you actually get atm
+	c.names = new Comparison(new StringList(
+		// https://poe2db.tw/us/Helmets
+		"Twig Circlet", "Wicker Tiara", "Beaded Circlet", "Chain Tiara", "Feathered Tiara",
+		"Gold Circlet", "Druidic Circlet", "Vermeil Circlet", "Avian Tiara", "Jade Tiara", "Desert Circlet", "Noble Circlet", "Sandsworn Tiara", "Twilight Tiara", "Jungle Tiara",
+
+		// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
+		"Tattered Robe", "Feathered Robe", "Hexer's Robe", "Bone Raiment", "Silk Robe",
+		"Keth Raiment", "Votive Raiment", "Altar Robe", "Elementalist Robe", "Mystic Raiment",
+		"Imperial Robe", "River Raiment", "Plated Raiment", "Adherent's Raiment", "Ceremonial Robe",
+
+		// https://poe2db.tw/us/Gloves
+		"Torn Gloves", "Sombre Gloves", "Stitched Gloves", "Jewelled Gloves", "Intricate Gloves",
+		"Ominous Gloves", "Pauascale Gloves", "Embellished Gloves", "Embroidered Gloves",
+		"Baroque Gloves", "Gold Gloves",
+	));
+	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.onlyEnergyShield();
 }, (c) => { // Rare other armour that is low unidentified tier
 	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
