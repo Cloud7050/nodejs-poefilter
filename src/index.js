@@ -716,7 +716,6 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.category = new Comparison(CATEGORY.BOOTS);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
 }, (c) => { // Magic class armour tops but are low bases
-	//TODO check which bases you actually get atm
 	c.names = new Comparison(new StringList(
 		// https://poe2db.tw/us/Helmets
 		"Twig Circlet", "Wicker Tiara", "Beaded Circlet", "Chain Tiara", "Feathered Tiara",
@@ -729,7 +728,8 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 
 		// https://poe2db.tw/us/Gloves
 		"Torn Gloves", "Sombre Gloves", "Stitched Gloves", "Jewelled Gloves", "Intricate Gloves",
-		"Pauascale Gloves", "Embroidered Gloves", "Baroque Gloves", "Gold Gloves",
+		"Pauascale Gloves", "Embroidered Gloves", "Baroque Gloves",
+		// "Gold Gloves",
 	));
 	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
