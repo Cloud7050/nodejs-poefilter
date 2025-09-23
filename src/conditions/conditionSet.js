@@ -5,11 +5,11 @@ export class ConditionSet {
 	// https://poe2db.tw/us/Items
 	static CATEGORY = {
 		// Rarity
-		WEAPON_CLASS: new StringList("Fishing Rods", "Foci", "Sceptres"), // Witch weapons
+		WEAPON_CLASS: new StringList("Foci", "Sceptres"), // Witch weapons
 		WEAPON_OTHER: new StringList("Bows", "Bucklers", "Claws", "Crossbows", "Daggers", "Flails",
 			"One Hand Axes", "One Hand Maces", "One Hand Swords", "Quarterstaves", "Quivers",
-			"Shields", "Spears", "Staves", "Traps", "Two Hand Axes", "Two Hand Maces",
-			"Two Hand Swords", "Wands"),
+			"Shields", "Spears", "Staves", "Two Hand Axes", "Two Hand Maces", "Two Hand Swords",
+			"Wands"),
 		ARMOUR_TOP: new StringList("Body Armours", "Gloves", "Helmets"),
 		BOOTS: new StringList("Boots"),
 		JEWELLERY: new StringList("Amulets", "Rings"),
@@ -155,8 +155,6 @@ export class ConditionSet {
 			// +x to level of all projectile skills
 			"of the Archer", "of the Fletcher", "of the Sharpshooter", // Suffixes for spears/bows/crossbows/amulets
 			"of the Marksman", "of the Sniper", // Higher suffixes for spears/bows/crossbows
-			// +x to level of all trap skill gems
-			"of Explosives", "of Shrapnel", "of Sabotage", "of Detonation", "of Pyrotechnics", // Suffixes for traps
 
 			// +x to spirit
 			"Lady's", "Baronness'", "Viscountess'", "Marchioness'", "Countess'", // Prefixes for body armours/amulets
