@@ -976,90 +976,57 @@ Hide
 	Class == Foci Sceptres
 	Rarity <= Magic
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus"
 	Class == Foci Sceptres
 	Rarity <= Magic
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	Class == Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
 	Rarity <= Magic
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	Class == Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
 	Rarity == Rare
 	UnidentifiedItemTier == 1
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
-
-Hide
-	Class == "Body Armours" Gloves Helmets Boots
-	Rarity == Normal
-
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	Class == "Body Armours" Gloves Helmets
-	Rarity == Magic
+	Rarity <= Magic
 	BaseArmour > 0
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	Class == "Body Armours" Gloves Helmets
-	Rarity == Magic
+	Rarity <= Magic
 	BaseEvasion > 0
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	Class == Boots
-	Rarity == Magic
+	Rarity <= Magic
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "River Raiment" "Adherent's Raiment" "Ceremonial Robe" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves"
 	Class == "Body Armours" Gloves Helmets
-	Rarity == Magic
+	Rarity <= Magic
 	BaseEnergyShield > 0
 	BaseArmour == 0
 	BaseEvasion == 0
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	Class == "Body Armours" Gloves Helmets
@@ -1067,10 +1034,7 @@ Hide
 	UnidentifiedItemTier == 1
 	BaseArmour > 0
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	Class == "Body Armours" Gloves Helmets
@@ -1078,46 +1042,31 @@ Hide
 	UnidentifiedItemTier == 1
 	BaseEvasion > 0
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	Class == Boots
 	Rarity == Rare
 	UnidentifiedItemTier == 1
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	BaseType == "Crimson Amulet" "Amber Amulet" "Jade Amulet" "Iron Ring" "Emerald Ring" "Unset Ring"
 	Class == Amulets Rings
 	Rarity == Normal
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	Class == Belts
 	Rarity == Magic
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#
 
 Hide
 	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity <= Magic
 
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 128
-	SetBorderColor 0 0 0 0
-	MinimapIcon -1
+	#

@@ -700,22 +700,19 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.category = new Comparison(CATEGORY.WEAPON_OTHER);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 	c.wisdomTier = new Comparison(1);
-}, (c) => { // Normal armour
-	c.category = new Comparison(new StringList(CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS));
-	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
-}, (c) => { // Magic other armour
+}, (c) => { // Normal/magic other armour
 	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 	c.hasArmour();
 }, (c) => {
 	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 	c.hasEvasion();
 }, (c) => {
 	// Class doesn't use most boots, it uses unique
 	c.category = new Comparison(CATEGORY.BOOTS);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
-}, (c) => { // Magic class armour tops but are low bases
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+}, (c) => { // Normal/magic class armour tops but are low bases
 	c.names = new Comparison(new StringList(
 		// https://poe2db.tw/us/Helmets
 		"Twig Circlet", "Wicker Tiara", "Beaded Circlet", "Chain Tiara", "Feathered Tiara",
@@ -732,7 +729,7 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 		// "Gold Gloves",
 	));
 	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
-	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 	c.onlyEnergyShield();
 }, (c) => { // Rare other armour that is low unidentified tier
 	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
@@ -773,7 +770,7 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.category = new Comparison(CATEGORY.FLASK);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 }, (e) => {
-	e.fade().hide();
+	e.hide();
 });
 
 filter.save();
