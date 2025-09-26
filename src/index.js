@@ -804,9 +804,9 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.wisdomTier = new Comparison(1);
 }, (c) => { // Normal other jewellery
 	c.names = new Comparison(new StringList(
-		"Crimson Amulet", // 2-4 life regen
-		"Amber Amulet", // Strength
-		"Jade Amulet", // Dexterity
+		// "Crimson Amulet", // 2-4 life regen
+		// "Amber Amulet", // Strength
+		// "Jade Amulet", // Dexterity
 
 		"Iron Ring", // +1-4 phys damage to attacks
 		"Emerald Ring", // Flat accuracy
