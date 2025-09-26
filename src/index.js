@@ -214,6 +214,7 @@ filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
 		"Greater Orb of Transmutation", // 1 / 600 exalts
 		"Greater Orb of Augmentation", // 1 / 29.5 exalts
+		"Perfect Orb of Transmutation", // 1 / 24 exalts
 		"Greater Jeweller's Orb", // 1 / 13 exalts
 		"Blacksmith's Whetstone", // 1 / 12 exalts
 		"Arcanist's Etcher", // 1 / 4.9 exalts
@@ -231,6 +232,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
 		"Exalted Orb",
+		"Perfect Orb of Augmentation", // 1.18 exalts
 		"Vaal Orb", // 1.2 exalts
 		"Chance Shard", // 2.2 exalts
 		"Greater Exalted Orb", // 2.8 exalts
@@ -243,6 +245,7 @@ filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
 		"Chaos Orb", // 11.9 exalts
 		"Perfect Jeweller's Orb", // 15 exalts
+		"Perfect Regal Orb", // 15 exalts
 		"Orb of Chance", // 22 exalts
 	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
@@ -255,6 +258,8 @@ filter.block((c, e) => {
 		"Fracturing Orb", // 70 exalts
 		"Orb of Annulment", // 159 exalts
 		"Divine Orb", // 384.75 exalts
+		"Perfect Chaos Orb", // 2 divines
+		"Perfect Exalted Orb", // 2.33 divines
 		"Hinekora's Lock", // 242 divines
 		"Mirror of Kalandra", // 1100 divines
 	));

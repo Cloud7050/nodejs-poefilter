@@ -221,7 +221,7 @@ Show
 	MinimapIcon 1 Red UpsideDownHouse
 
 Show
-	BaseType == "Greater Orb of Transmutation" "Greater Orb of Augmentation" "Greater Jeweller's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher" "Regal Orb" "Glassblower's Bauble" "Armourer's Scrap" "Gemcutter's Prism" "Greater Regal Orb" "Orb of Alchemy"
+	BaseType == "Greater Orb of Transmutation" "Greater Orb of Augmentation" "Perfect Orb of Transmutation" "Greater Jeweller's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher" "Regal Orb" "Glassblower's Bauble" "Armourer's Scrap" "Gemcutter's Prism" "Greater Regal Orb" "Orb of Alchemy"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -231,7 +231,7 @@ Show
 	MinimapIcon 1 Red Cross
 
 Show
-	BaseType == "Exalted Orb" "Vaal Orb" "Chance Shard" "Greater Exalted Orb"
+	BaseType == "Exalted Orb" "Perfect Orb of Augmentation" "Vaal Orb" "Chance Shard" "Greater Exalted Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -241,7 +241,7 @@ Show
 	MinimapIcon 0 Red Cross
 
 Show
-	BaseType == "Chaos Orb" "Perfect Jeweller's Orb" "Orb of Chance"
+	BaseType == "Chaos Orb" "Perfect Jeweller's Orb" "Perfect Regal Orb" "Orb of Chance"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -253,7 +253,7 @@ Show
 	MinimapIcon 0 Red Star
 
 Show
-	BaseType == "Greater Chaos Orb" "Fracturing Orb" "Orb of Annulment" "Divine Orb" "Hinekora's Lock" "Mirror of Kalandra"
+	BaseType == "Greater Chaos Orb" "Fracturing Orb" "Orb of Annulment" "Divine Orb" "Perfect Chaos Orb" "Perfect Exalted Orb" "Hinekora's Lock" "Mirror of Kalandra"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
