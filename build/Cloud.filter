@@ -191,6 +191,17 @@ Show
 	SetBorderColor 33 252 162 255
 	MinimapIcon 1 Green Cross
 
+Hide
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 50
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
 Show
 	BaseType == Gold
 	Class == "Stackable Currency"
@@ -205,7 +216,7 @@ Show
 Show
 	BaseType == Gold
 	Class == "Stackable Currency"
-	StackSize < 1250
+	StackSize < 2500
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255

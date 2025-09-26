@@ -195,6 +195,14 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.names = new Comparison("Gold");
 	c.category = new Comparison(CATEGORY.CURRENCY);
+	c.count = new Comparison(50, Comparison.OPERATOR.LT);
+
+	e.hide();
+	e.colourWisdom(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeWisdom();
+});
+filter.block((c, e) => {
+	c.names = new Comparison("Gold");
+	c.category = new Comparison(CATEGORY.CURRENCY);
 	c.count = new Comparison(500, Comparison.OPERATOR.LT);
 
 	e.colourWisdom(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeWisdom();
@@ -202,7 +210,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.names = new Comparison("Gold");
 	c.category = new Comparison(CATEGORY.CURRENCY);
-	c.count = new Comparison(1250, Comparison.OPERATOR.LT);
+	c.count = new Comparison(2500, Comparison.OPERATOR.LT);
 
 	e.colourAugment(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeAugment();
 });
