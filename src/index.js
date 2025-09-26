@@ -693,9 +693,25 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 }, (c) => { // Normal/magic class foci but are low bases
 	// https://poe2db.tw/us/Foci#FociItem
-	c.names = new Comparison(new StringList("Twig Focus", "Woven Focus", "Antler Focus",
-		"Engraved Focus", "Tonal Focus", "Crystal Focus", "Voodoo Focus", "Plumed Focus",
-		"Runed Focus", "Whorl Focus", "Arrayed Focus"));
+	c.names = new Comparison(new StringList(
+		"Twig Focus", // 12 ES
+		"Woven Focus", // 15 ES, L6
+		"Antler Focus", // 17 ES, L10
+		"Engraved Focus", // 21 ES, L16
+		"Tonal Focus", // 25 ES, L22
+		"Crystal Focus", // 28 ES, L26
+		"Voodoo Focus", // 32 ES, L33
+		"Plumed Focus", // 34 ES, L36
+		"Runed Focus", // 40 ES, L45
+		"Whorl Focus", // 43 ES, L51
+		"Arrayed Focus", // 45 ES, L54
+		"Cultist Focus", // 49 ES, L59
+		"Hallowed Focus", // 50 ES, L61
+		"Druidic Focus", // 52 ES, L65
+		// "Leyline Focus", // 58 ES, L70
+		// "Sacred Focus", // 63 ES, L75
+		// "Tasalian Focus", // 68 ES, L80
+	));
 	c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 }, (c) => { // Normal/magic other weapons
