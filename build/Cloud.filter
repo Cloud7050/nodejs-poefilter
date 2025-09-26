@@ -307,11 +307,11 @@ Show
 Show
 	Class == "Uncut Support Gems"
 
-	SetFontSize 32
+	SetFontSize 37
 	SetTextColor 80 250 255 255
 	SetBackgroundColor 0 45 46 255
 	SetBorderColor 80 250 255 255
-	MinimapIcon 1 Brown UpsideDownHouse
+	MinimapIcon 0 Brown UpsideDownHouse
 
 Show
 	Class == "Uncut Skill Gems" "Uncut Spirit Gems"
