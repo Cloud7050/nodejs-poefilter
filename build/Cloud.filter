@@ -48,7 +48,17 @@ Show
 	MinimapIcon 1 Pink Kite
 
 Show
-	BaseType == "Preserved Jawbone" "Preserved Rib" "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae"
+	BaseType == "Preserved Rib" "Preserved Jawbone"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 236 183 255 255
+	SetBackgroundColor 52 9 71 255
+	SetBorderColor 236 183 255 255
+	MinimapIcon 1 Pink UpsideDownHouse
+
+Show
+	BaseType == "Preserved Collarbone"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -58,7 +68,7 @@ Show
 	MinimapIcon 0 Pink UpsideDownHouse
 
 Show
-	BaseType == "Ancient Jawbone" "Ancient Rib" "Ancient Collarbone"
+	BaseType == "Preserved Vertebrae"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -66,6 +76,30 @@ Show
 	SetBackgroundColor 89 21 118 255
 	SetBorderColor 231 167 255 255
 	MinimapIcon 0 Pink Cross
+
+Show
+	BaseType == "Preserved Cranium"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 231 167 255 255
+	SetBackgroundColor 89 21 118 255
+	SetBorderColor 231 167 255 255
+	PlayEffect Pink
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Pink Cross
+
+Show
+	BaseType == "Ancient Rib" "Ancient Jawbone" "Ancient Collarbone"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 191 62 248 255
+	SetBackgroundColor 255 238 255 255
+	SetBorderColor 191 62 248 255
+	PlayEffect Pink
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Pink Diamond
 
 Show
 	BaseType = "Diluted Liquid "
@@ -201,7 +235,7 @@ Show
 	MinimapIcon 0 Yellow Cross
 
 Show
-	BaseType == "Scroll of Wisdom" "Transmutation Shard" "Artificer's Shard"
+	BaseType == "Scroll of Wisdom" "Greater Orb of Transmutation" "Transmutation Shard" "Artificer's Shard"
 	Class == "Stackable Currency"
 
 	SetFontSize 27
@@ -211,7 +245,7 @@ Show
 	MinimapIcon 2 Red Kite
 
 Show
-	BaseType == "Lesser Jeweller's Orb" "Orb of Transmutation" "Regal Shard" "Artificer's Orb" "Orb of Augmentation"
+	BaseType == "Lesser Jeweller's Orb" "Orb of Transmutation" "Regal Shard" "Artificer's Orb" "Orb of Augmentation" "Greater Orb of Augmentation" "Perfect Orb of Transmutation" "Greater Jeweller's Orb" "Blacksmith's Whetstone"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -221,7 +255,7 @@ Show
 	MinimapIcon 1 Red UpsideDownHouse
 
 Show
-	BaseType == "Greater Orb of Transmutation" "Greater Orb of Augmentation" "Perfect Orb of Transmutation" "Greater Jeweller's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher" "Regal Orb" "Glassblower's Bauble" "Armourer's Scrap" "Gemcutter's Prism" "Greater Regal Orb" "Orb of Alchemy"
+	BaseType == "Arcanist's Etcher" "Regal Orb" "Glassblower's Bauble" "Armourer's Scrap" "Gemcutter's Prism" "Greater Regal Orb" "Orb of Alchemy"
 	Class == "Stackable Currency"
 
 	SetFontSize 32

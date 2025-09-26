@@ -74,24 +74,57 @@ filter.block((c, e) => {
 
 // Abyss
 filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Gnawed Jawbone", "Gnawed Rib", "Gnawed Collarbone"));
+	c.names = new Comparison(new StringList(
+		"Gnawed Jawbone", // 1 / 10 exalts
+		"Gnawed Rib", // 1 / 10 exalts
+		"Gnawed Collarbone", // 1 / 1.5 exalts
+	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.colourWisdom(ABYSS_COLOUR, ABYSS_PRESET).sizeAugment();
 });
 filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Preserved Jawbone", "Preserved Rib",
-		"Preserved Collarbone", "Preserved Cranium", "Preserved Vertebrae"));
+	c.names = new Comparison(new StringList(
+		"Preserved Rib", // 1 / 25 exalts
+		"Preserved Jawbone", // 1 / 15 exalts
+	));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourAugment(ABYSS_COLOUR, ABYSS_PRESET).sizeAugment();
+});
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList(
+		"Preserved Collarbone", // 3.5 exalts
+	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.colourAugment(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
 });
 filter.block((c, e) => {
-	c.names = new Comparison(new StringList("Ancient Jawbone", "Ancient Rib",
-		"Ancient Collarbone"));
+	c.names = new Comparison(new StringList(
+		"Preserved Vertebrae", // 1.2 exalts
+	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
 	e.colourExalt(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
+});
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList(
+		"Preserved Cranium", // 14 exalts
+	));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourExalt(ABYSS_COLOUR, ABYSS_PRESET).sizeChance();
+});
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList(
+		"Ancient Rib", // 1.5 divs
+		"Ancient Jawbone", // 3 divs
+		"Ancient Collarbone", // 4 divs
+	));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourDivine(ABYSS_COLOUR, ABYSS_PRESET).sizeChance();
 });
 
 // Liquid emotions
@@ -191,6 +224,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
 		"Scroll of Wisdom", // 1 / 680 exalts
+		"Greater Orb of Transmutation", // 1 / 600 exalts
 		"Transmutation Shard", // 1 / 500 exalts
 		"Artificer's Shard", // 1 / 340 exalts
 	));
@@ -205,6 +239,10 @@ filter.block((c, e) => {
 		"Regal Shard", // 1 / 49 exalts
 		"Artificer's Orb", // 1 / 34 exalts
 		"Orb of Augmentation", // 1 / 33 exalts
+		"Greater Orb of Augmentation", // 1 / 29.5 exalts
+		"Perfect Orb of Transmutation", // 1 / 24 exalts
+		"Greater Jeweller's Orb", // 1 / 13 exalts
+		"Blacksmith's Whetstone", // 1 / 12 exalts
 	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
@@ -212,11 +250,6 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
-		"Greater Orb of Transmutation", // 1 / 600 exalts
-		"Greater Orb of Augmentation", // 1 / 29.5 exalts
-		"Perfect Orb of Transmutation", // 1 / 24 exalts
-		"Greater Jeweller's Orb", // 1 / 13 exalts
-		"Blacksmith's Whetstone", // 1 / 12 exalts
 		"Arcanist's Etcher", // 1 / 4.9 exalts
 		"Regal Orb", // 1 / 4.18 exalts
 		"Glassblower's Bauble", // 1 / 4.4 exalts
