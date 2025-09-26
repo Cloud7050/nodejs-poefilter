@@ -736,18 +736,54 @@ filter.multiBlock((c) => { // Normal/magic class weapons but are wrong skill
 }, (c) => { // Normal/magic class armour tops but are low bases
 	c.names = new Comparison(new StringList(
 		// https://poe2db.tw/us/Helmets
-		"Twig Circlet", "Wicker Tiara", "Beaded Circlet", "Chain Tiara", "Feathered Tiara",
-		"Gold Circlet", "Vermeil Circlet", "Jade Tiara", "Sandsworn Tiara", "Jungle Tiara",
+		"Twig Circlet", // 19 ES
+		"Wicker Tiara", // 28 ES, L10
+		"Beaded Circlet", // 34 ES, L16
+		"Chain Tiara", // 44 ES, L26
+		"Feathered Tiara", // 51 ES, L33
+		"Gold Circlet", // 58 ES, L40
+		"Vermeil Circlet", // 63 ES, L45
+		"Jade Tiara", // 69 ES, L50
+		"Sandsworn Tiara", // 73 ES, L54
+		"Jungle Tiara", // 78 ES, L59
+		"Skycrown Tiara", // 84 ES, L65
+		// "Sorcerous Tiara", // 92 ES, L70
+		// "Kamasan Tiara", // 78 ES, L75
+		// "Ancestral Tiara", // 78 ES, L80
 
 		// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
-		"Tattered Robe", "Feathered Robe", "Hexer's Robe", "Bone Raiment", "Silk Robe",
-		"Keth Raiment", "Votive Raiment", "Altar Robe", "Elementalist Robe", "Mystic Raiment",
-		"River Raiment", "Adherent's Raiment", "Ceremonial Robe",
+		"Tattered Robe", // 28 ES
+		"Feathered Robe", // 35 ES, L5
+		"Hexer's Robe", // 44 ES, L11
+		"Bone Raiment", // 52 ES, L16
+		"Silk Robe", // 61 ES, L22
+		"Keth Raiment", // 70 ES, L28
+		"Votive Raiment", // 78 ES, L33
+		"Altar Robe", // 89 ES, L40
+		"Elementalist Robe", // 97 ES, L45
+		"Mystic Raiment", // 103 ES, L49
+		"River Raiment", // 111 ES, L54
+		"Adherent's Raiment", // 119 ES,  L59
+		"Ceremonial Robe", /// 123 ES, L62
+		// "Vile Robe", /// 184 ES, L65
+		// "Flowing Raiment", /// 153 ES, L70, 40–50% increased Mana Regeneration Rate
+		// "Sacramental Robe", /// 153 ES, L75, 40–50% faster start of Energy Shield Recharge
+		// "Feathered Raiment", /// 153 ES, L80, 5–10% of Damage is taken from Mana before Life
 
 		// https://poe2db.tw/us/Gloves
-		"Torn Gloves", "Sombre Gloves", "Stitched Gloves", "Jewelled Gloves", "Intricate Gloves",
-		"Pauascale Gloves", "Embroidered Gloves", "Baroque Gloves",
-		// "Gold Gloves",
+		"Torn Gloves", // 9 ES
+		"Sombre Gloves", // 15 ES, L12
+		"Stitched Gloves", // 17 ES, L16
+		"Jewelled Gloves", // 22 ES, L26
+		"Intricate Gloves", // 26 ES, L33
+		"Pauascale Gloves", // 32 ES, L45
+		"Embroidered Gloves", // 35 ES, L52
+		"Baroque Gloves", // 36 ES, L54
+		"Gold Gloves", // 39 ES, L59
+		// "Grim Gloves", // 42 ES, L65
+		// "Opulent Gloves", // 46 ES, L70
+		// "Vaal Gloves", // 50 ES, L75
+		// "Sirenscale Gloves", // 54 ES, L80
 	));
 	c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
