@@ -213,17 +213,16 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
 		"Greater Orb of Transmutation", // 1 / 600 exalts
-		"Orb of Alchemy", // 1 / 98 exalts
 		"Greater Orb of Augmentation", // 1 / 29.5 exalts
 		"Greater Jeweller's Orb", // 1 / 13 exalts
 		"Blacksmith's Whetstone", // 1 / 12 exalts
 		"Arcanist's Etcher", // 1 / 4.9 exalts
-		"Regal Orb", // 1 / 4.9 exalts
+		"Regal Orb", // 1 / 4.18 exalts
 		"Glassblower's Bauble", // 1 / 4.4 exalts
 		"Armourer's Scrap", // 1 / 3.9 exalts
 		"Gemcutter's Prism", // 1 / 3.8 exalts
-		"Greater Regal Orb", // 1 / 2.5 exalts
-		"Vaal Orb", // 1 / 1.4 exalts
+		"Greater Regal Orb", // 1 / 2.75 exalts
+		"Orb of Alchemy", // 1 / 1.55 exalts
 	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
@@ -232,8 +231,9 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
 		"Exalted Orb",
-		"Chance Shard", // 2 exalts
-		"Greater Exalted Orb", // 3 exalts
+		"Vaal Orb", // 1.2 exalts
+		"Chance Shard", // 2.2 exalts
+		"Greater Exalted Orb", // 2.8 exalts
 	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
@@ -241,9 +241,9 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
-		"Chaos Orb", // 4.9 exalts
-		"Greater Chaos Orb", // 16 exalts
-		"Orb of Chance", // 20 exalts
+		"Chaos Orb", // 11.9 exalts
+		"Perfect Jeweller's Orb", // 15 exalts
+		"Orb of Chance", // 22 exalts
 	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
@@ -251,12 +251,12 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
-		"Perfect Jeweller's Orb", // 32 exalts
-		"Fracturing Orb", // 78 exalts
-		"Orb of Annulment", // 88 exalts
-		"Divine Orb", // 282 exalts
-		"Hinekora's Lock", // 195 divines
-		"Mirror of Kalandra", // 724 divines
+		"Greater Chaos Orb", // 37.5 exalts
+		"Fracturing Orb", // 70 exalts
+		"Orb of Annulment", // 159 exalts
+		"Divine Orb", // 384.75 exalts
+		"Hinekora's Lock", // 242 divines
+		"Mirror of Kalandra", // 1100 divines
 	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
