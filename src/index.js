@@ -258,13 +258,13 @@ filter.block((c, e) => {
 });
 filter.block((c, e) => {
 	c.names = new Comparison(new StringList(
+		"Orb of Alchemy", // 1 / 7.5 exalts
 		"Arcanist's Etcher", // 1 / 4.9 exalts
 		"Regal Orb", // 1 / 4.18 exalts
 		"Glassblower's Bauble", // 1 / 4.4 exalts
 		"Armourer's Scrap", // 1 / 3.9 exalts
 		"Gemcutter's Prism", // 1 / 3.8 exalts
 		"Greater Regal Orb", // 1 / 2.75 exalts
-		"Orb of Alchemy", // 1 / 1.55 exalts
 	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
