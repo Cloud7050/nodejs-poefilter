@@ -403,7 +403,7 @@ Show
 
 Show
 	Class == "Skill Gems" "Support Gems"
-	Quality > 0
+	Quality >= 1
 
 	SetFontSize 37
 	SetTextColor 0 246 252 255
@@ -499,7 +499,7 @@ Show
 	MinimapIcon 0 Grey Cross
 
 Show
-	Class == Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Gloves Helmets Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots
 	Rarity == Normal
 
 	SetFontSize 27
@@ -511,7 +511,7 @@ Show
 	Continue
 
 Show
-	Class == Amulets Rings Charms
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Normal
 
 	SetFontSize 32
@@ -523,22 +523,187 @@ Show
 	Continue
 
 Show
-	Class == Foci Sceptres
+	Class == Sceptres Foci Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots
+	Rarity == Magic
+
+	SetFontSize 27
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 2 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Magic
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Sceptres Foci Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots
+	Rarity == Rare
+
+	SetFontSize 32
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 1 Blue Cross
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Rare
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Sceptres Foci Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Unique
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 10 20 83 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Sceptres Foci
 	Rarity == Normal
-	Quality > 0
+	Quality >= 1
 
 	SetFontSize 32
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
 	MinimapIcon 1 Blue Kite
+
+	Continue
+
+Show
+	Class == Sceptres Foci
+	Rarity == Magic
+	Quality >= 1
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Sceptres
+	Rarity == Magic
+	HasExplicitMod >=1 Duke's Prince's King's Chancellor's "of the Overseer" "of the Slavedriver"
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Foci
+	Rarity == Magic
+	HasExplicitMod >=1 "of the Enchanter"
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Sceptres Foci
+	Rarity == Rare
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
+	Rarity == Magic
+	HasExplicitMod >=1 Duke's Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Bucklers Quivers Shields
+	Rarity == Magic
+	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
+	Rarity == Rare
+	HasExplicitMod >=1 Duke's Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Bucklers Quivers Shields
+	Rarity == Rare
+	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
 Show
 	Class == "Body Armours" Gloves Helmets
 	Rarity == Normal
-	Quality > 0
+	Quality >= 1
 	BaseEnergyShield > 0
 	BaseArmour == 0
 	BaseEvasion == 0
@@ -552,7 +717,137 @@ Show
 	Continue
 
 Show
-	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Magic
+	Quality >= 1
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Magic
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall"
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Rare
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Magic
+	BaseArmour > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Magic
+	BaseEvasion > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Boots
+	Rarity == Magic
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Rare
+	BaseArmour > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Rare
+	BaseEvasion > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Boots
+	Rarity == Rare
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Normal
 
 	SetFontSize 37
@@ -604,138 +899,8 @@ Show
 	Continue
 
 Show
-	Class == Waystones
-	Rarity == Normal
-
-	SetFontSize 32
-	SetTextColor 233 251 145 255
-	SetBackgroundColor 14 18 0 255
-	SetBorderColor 233 251 145 255
-	MinimapIcon 1 Green Kite
-
-	Continue
-
-Show
-	Class == Tablet
-	Rarity == Normal
-
-	SetFontSize 32
-	SetTextColor 186 255 210 255
-	SetBackgroundColor 0 20 8 255
-	SetBorderColor 186 255 210 255
-	MinimapIcon 1 Green Kite
-
-	Continue
-
-Show
-	Class == Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Gloves Helmets Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	Rarity == Magic
-
-	SetFontSize 27
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 2 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Amulets Rings Belts Charms
-	Rarity == Magic
-
-	SetFontSize 32
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Foci Sceptres
-	Rarity == Magic
-	Quality > 0
-
-	SetFontSize 32
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == "Body Armours" Gloves Helmets
-	Rarity == Magic
-	Quality > 0
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
-
-	SetFontSize 32
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
-	Rarity == Magic
-	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
-
-	SetFontSize 32
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == "Body Armours" Gloves Helmets
-	Rarity == Magic
-	BaseArmour > 0
-	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
-
-	SetFontSize 32
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == "Body Armours" Gloves Helmets
-	Rarity == Magic
-	BaseEvasion > 0
-	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
-
-	SetFontSize 32
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Boots
-	Rarity == Magic
-	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
-
-	SetFontSize 32
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
+	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Magic
 
 	SetFontSize 37
@@ -747,25 +912,9 @@ Show
 	Continue
 
 Show
-	Class == Foci Sceptres Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Magic
-	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
-
-	SetFontSize 37
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 0 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == "Body Armours" Gloves Helmets
-	Rarity == Magic
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
-	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
+	HasExplicitMod >=1 Countess' "of the Despot" "of the Overseer" Pirate's Dragon's "of Excavation" "of Windfall"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -801,105 +950,6 @@ Show
 	Continue
 
 Show
-	Class == Waystones
-	Rarity == Magic
-
-	SetFontSize 37
-	SetTextColor 219 242 110 255
-	SetBackgroundColor 36 44 0 255
-	SetBorderColor 219 242 110 255
-	MinimapIcon 0 Green UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Tablet Relics
-	Rarity == Magic
-
-	SetFontSize 37
-	SetTextColor 116 253 179 255
-	SetBackgroundColor 0 46 25 255
-	SetBorderColor 116 253 179 255
-	MinimapIcon 0 Green UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Gloves Helmets Boots Amulets Rings Belts
-	Rarity == Rare
-
-	SetFontSize 32
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 166 176 255 255
-	MinimapIcon 1 Blue Cross
-
-	Continue
-
-Show
-	Class == Amulets Rings Belts
-	Rarity == Rare
-
-	SetFontSize 37
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 166 176 255 255
-	MinimapIcon 0 Blue Cross
-
-	Continue
-
-Show
-	Class == Foci Sceptres
-	Rarity == Rare
-
-	SetFontSize 37
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 166 176 255 255
-	MinimapIcon 0 Blue Cross
-
-	Continue
-
-Show
-	Class == "Body Armours" Gloves Helmets
-	Rarity == Rare
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
-
-	SetFontSize 37
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 166 176 255 255
-	MinimapIcon 0 Blue Cross
-
-	Continue
-
-Show
-	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
-	Rarity == Rare
-
-	SetFontSize 37
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 166 176 255 255
-	MinimapIcon 0 Blue Cross
-
-	Continue
-
-Show
-	Rarity == Rare
-	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
-
-	SetFontSize 37
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 166 176 255 255
-	MinimapIcon 0 Blue Cross
-
-	Continue
-
-Show
 	Class == Jewels
 	Rarity == Rare
 
@@ -908,44 +958,6 @@ Show
 	SetBackgroundColor 0 61 116 255
 	SetBorderColor 164 199 255 255
 	MinimapIcon 0 Blue Cross
-
-	Continue
-
-Show
-	Class == Waystones
-	Rarity == Rare
-
-	SetFontSize 37
-	SetTextColor 212 238 80 255
-	SetBackgroundColor 70 82 0 255
-	SetBorderColor 212 238 80 255
-	MinimapIcon 0 Green Cross
-
-	Continue
-
-Show
-	Class == Tablet
-	Rarity == Rare
-
-	SetFontSize 37
-	SetTextColor 33 252 162 255
-	SetBackgroundColor 0 86 51 255
-	SetBorderColor 33 252 162 255
-	MinimapIcon 0 Green Cross
-
-	Continue
-
-Show
-	Class == Foci Sceptres Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands "Body Armours" Gloves Helmets Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	Rarity == Unique
-
-	SetFontSize 45
-	SetTextColor 10 20 83 255
-	SetBackgroundColor 126 142 255 255
-	SetBorderColor 10 20 83 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Star
 
 	Continue
 
@@ -965,6 +977,42 @@ Show
 
 Show
 	Class == Waystones
+	Rarity == Normal
+
+	SetFontSize 32
+	SetTextColor 233 251 145 255
+	SetBackgroundColor 14 18 0 255
+	SetBorderColor 233 251 145 255
+	MinimapIcon 1 Green Kite
+
+	Continue
+
+Show
+	Class == Waystones
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 219 242 110 255
+	SetBackgroundColor 36 44 0 255
+	SetBorderColor 219 242 110 255
+	MinimapIcon 0 Green UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Waystones
+	Rarity == Rare
+
+	SetFontSize 37
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	MinimapIcon 0 Green Cross
+
+	Continue
+
+Show
+	Class == Waystones
 	Rarity == Unique
 
 	SetFontSize 45
@@ -974,6 +1022,42 @@ Show
 	PlayEffect Green
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Green Star
+
+	Continue
+
+Show
+	Class == Tablet
+	Rarity == Normal
+
+	SetFontSize 32
+	SetTextColor 186 255 210 255
+	SetBackgroundColor 0 20 8 255
+	SetBorderColor 186 255 210 255
+	MinimapIcon 1 Green Kite
+
+	Continue
+
+Show
+	Class == Tablet Relics
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 116 253 179 255
+	SetBackgroundColor 0 46 25 255
+	SetBorderColor 116 253 179 255
+	MinimapIcon 0 Green UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Tablet
+	Rarity == Rare
+
+	SetFontSize 37
+	SetTextColor 33 252 162 255
+	SetBackgroundColor 0 86 51 255
+	SetBorderColor 33 252 162 255
+	MinimapIcon 0 Green Cross
 
 	Continue
 
@@ -992,19 +1076,45 @@ Show
 	Continue
 
 Show
-	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Obi" "Golden Charm"
+	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm" "Golden Obi"
 
 	SetBorderColor 255 225 87 255
 
 Show
-	HasExplicitMod >=1 "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Wizard" "of Coals" "of Cinders" "of Flames" "of Immolation" "of Inferno" "of Snow" "of Sleet" "of Ice" "of Rime" "of Frostbite" "of Sparks" "of Static" "of Electricity" "of Voltage" "of Thunder" "of Anarchy" "of Turmoil" "of Ruin" "of Havoc" "of Armageddon" "of Agony" "of Suffering" "of Torment" "of Desolation" "of Grief" "of the Taskmaster" "of the Despot" "of the Overseer" "of the Slavedriver" "of Combat" "of Dueling" "of Conflict" "of Battle" "of War" "of the Archer" "of the Fletcher" "of the Sharpshooter" "of the Marksman" "of the Sniper" Lady's Baronness' Viscountess' Marchioness' Countess' Duchess' Princess' Queen's Lord's Baron's Viscount's Marquess' Count's Duke's Prince's King's Advisor's Counselor's Emissary's Minister's Envoy's Diplomat's Chancellor's Magpie's Collector's Hoarder's Pirate's Dragon's "of Plunder" "of Raiding" "of Archaeology" "of Excavation" "of Windfall"
+	Class == Sceptres Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
+	HasExplicitMod >=1 Duke's Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
 	SetBorderColor 255 225 87 255
 
 Show
-	Quality > 0
+	Class == Foci Bucklers Quivers Shields
+	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+
+	SetBorderColor 255 225 87 255
+
+Show
+	Class == "Body Armours" Gloves Helmets Boots
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+
+	SetBorderColor 255 225 87 255
+
+Show
+	Class == Amulets Rings
+	HasExplicitMod >=1 Countess' "of the Despot" "of the Overseer" Pirate's Dragon's "of Excavation" "of Windfall" "of the Enchanter" "of the Sorcerer" "of Dueling" "of Battle" "of the Fletcher" "of the Sharpshooter"
+
+	SetBorderColor 255 225 87 255
+
+Show
+	Quality >= 5
 
 	SetBorderColor 123 151 255 255
+
+Show
+	Quality >= 1
+
+	SetBorderColor 123 151 255 255
+
+	Continue
 
 Show
 	BaseType = "Exceptional "
@@ -1012,54 +1122,34 @@ Show
 	#
 
 Show
-	UnidentifiedItemTier >= 3
+	UnidentifiedItemTier >= 4
 
 	#
 
 Hide
 	BaseType == "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre" "Wrath Sceptre"
-	Class == Foci Sceptres
+	Class == Sceptres
 	Rarity <= Magic
 
 	#
 
 Hide
 	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus"
-	Class == Foci Sceptres
+	Class == Foci
 	Rarity <= Magic
 
 	#
 
 Hide
-	Class == Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
+	Class == Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields
 	Rarity <= Magic
 
 	#
 
 Hide
-	Class == Bows Bucklers Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Quivers Shields Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
+	Class == Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields
 	Rarity == Rare
-	UnidentifiedItemTier == 1
-
-	#
-
-Hide
-	Class == "Body Armours" Gloves Helmets
-	Rarity <= Magic
-	BaseArmour > 0
-
-	#
-
-Hide
-	Class == "Body Armours" Gloves Helmets
-	Rarity <= Magic
-	BaseEvasion > 0
-
-	#
-
-Hide
-	Class == Boots
-	Rarity <= Magic
+	UnidentifiedItemTier <= 2
 
 	#
 
@@ -1075,8 +1165,28 @@ Hide
 
 Hide
 	Class == "Body Armours" Gloves Helmets
+	Rarity <= Magic
+	BaseArmour > 0
+
+	#
+
+Hide
+	Class == "Body Armours" Gloves Helmets
+	Rarity <= Magic
+	BaseEvasion > 0
+
+	#
+
+Hide
+	Class == Boots
+	Rarity <= Magic
+
+	#
+
+Hide
+	Class == "Body Armours" Gloves Helmets
 	Rarity == Rare
-	UnidentifiedItemTier == 1
+	UnidentifiedItemTier <= 2
 	BaseArmour > 0
 
 	#
@@ -1084,7 +1194,7 @@ Hide
 Hide
 	Class == "Body Armours" Gloves Helmets
 	Rarity == Rare
-	UnidentifiedItemTier == 1
+	UnidentifiedItemTier <= 2
 	BaseEvasion > 0
 
 	#
@@ -1092,7 +1202,7 @@ Hide
 Hide
 	Class == Boots
 	Rarity == Rare
-	UnidentifiedItemTier == 1
+	UnidentifiedItemTier <= 2
 
 	#
 

@@ -41,9 +41,14 @@ export class Filter {
 		let content = this.spans.join("\n");
 
 		const BUGGY_TEXT = ["undefined", "null", "[object Object]"];
-		if (BUGGY_TEXT.some((text) => content.includes(text))) {
-			console.warn("[!] Saving filter containing potentially buggy text!");
-		}
+		BUGGY_TEXT.some((text) => {
+			let isBuggy = content.includes(text);
+			if (isBuggy) {
+				console.warn("[!] Saving filter containing potentially buggy text:");
+				console.warn(text);
+			}
+			return isBuggy;
+		});
 
 		fs.writeFile(relativeFilePath, content, (e) => {
 			if (e !== null) console.error(e);

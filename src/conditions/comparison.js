@@ -16,6 +16,12 @@ export class Comparison {
 	value; // StringList or string/number
 
 	constructor(value, operator = Comparison.OPERATOR.EXACT, quantity = null) {
+		if (!Object.values(Comparison.OPERATOR).includes(operator)) {
+			console.error("ERR Comparison received invalid operator:");
+			console.error(operator);
+			throw new Error();
+		}
+
 		this.operator = operator;
 		this.quantity = quantity;
 		this.value = value;
