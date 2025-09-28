@@ -368,7 +368,39 @@ Show
 	MinimapIcon 0 Brown UpsideDownHouse
 
 Show
-	BaseType = "Atalui's Bloodletting" "Ratha's Assault" "Arjun's Medal" "Ixchel's Torment" "Romira's Requital" "Dialla's Desire" "Kalisa's Crescendo" "Uul-Netol's Embrace" "Rakiata's Flow" "Rigwald's Ferocity" "Uhtred's Omen" "Uhtred's Augury"
+	BaseType = "Daresso's Passion" "Arakaali's Lust" "Kurgal's Leash" "Tacati's Ire" "Sione's Temper" "Uruk's Smelting" "Paquate's Pact" "Vilenta's Propulsion" "Tecrod's Revenge" "Kulemak's Dominion" "Ahn's Citadel" "Varashta's Blessing" "Einhar's Beastrite" "Doedre's Undoing" "Kaom's Madness" "Tawhoa's Tending" "Atziri's Allure" "Zarokh's Refrain"
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 32
+	SetTextColor 0 45 46 255
+	SetBackgroundColor 0 230 236 255
+	SetBorderColor 0 45 46 255
+	MinimapIcon 1 Brown Star
+
+Show
+	BaseType = "Brutus' Brain" "Piety's Mercy" "Arbiter's Ignition" "Xoph's Pyre" "Garukhan's Resolve" "Ailith's Chimes"
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 37
+	SetTextColor 0 45 46 255
+	SetBackgroundColor 0 230 236 255
+	SetBorderColor 0 45 46 255
+	MinimapIcon 0 Brown Star
+
+Show
+	BaseType = "Uhtred's Exodus" "Tul's Stillness"
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 45
+	SetTextColor 0 45 46 255
+	SetBackgroundColor 0 230 236 255
+	SetBorderColor 0 45 46 255
+	PlayEffect Brown
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Brown Star
+
+Show
+	BaseType = "Esh's Radiance" "Rigwald's Ferocity" "Ixchel's Torment" "Atalui's Bloodletting" "Ratha's Assault" "Uul-Netol's Embrace" "Uhtred's Omen" "Kalisa's Crescendo" "Rakiata's Flow" "Romira's Requital" "Uhtred's Augury" "Arjun's Medal" "Dialla's Desire"
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 45
@@ -378,28 +410,6 @@ Show
 	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown Diamond
-
-Show
-	BaseType = "Einhar's Beastrite" "Brutus' Brain" "Ailith's Chimes" "Tecrod's Revenge" "Doedre's Undoing" "Kaom's Madness" "Sione's Temper" "Tawhoa's Tending" "Piety's Mercy" "Kulemak's Dominion" "Xoph's Pyre" "Esh's Radiance" "Tul's Stillness" "Garukhan's Resolve" "Uhtred's Exodus" "Daresso's Passion" "Atziri's Allure" "Zarokh's Refrain" "Varashta's Blessing" "Arbiter's Ignition"
-	Class == "Skill Gems" "Support Gems"
-
-	SetFontSize 45
-	SetTextColor 0 45 46 255
-	SetBackgroundColor 0 230 236 255
-	SetBorderColor 0 45 46 255
-	PlayEffect Brown
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Brown Star
-
-Show
-	BaseType = "Uruk's Smelting" "Paquate's Pact" "Vilenta's Propulsion" "Tacati's Ire" "Ahn's Citadel" "Kurgal's Leash" "Arakaali's Lust"
-	Class == "Skill Gems" "Support Gems"
-
-	SetFontSize 37
-	SetTextColor 0 45 46 255
-	SetBackgroundColor 0 230 236 255
-	SetBorderColor 0 45 46 255
-	MinimapIcon 0 Brown Star
 
 Show
 	Class == "Skill Gems" "Support Gems"

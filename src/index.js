@@ -355,44 +355,87 @@ filter.block((c, e) => {
 
 	e.colourAugment(GEM_COLOUR, GEM_PRESET).sizeExalt();
 });
-// Lineage, >= 30 exalts
+// Lineage
 filter.block((c, e) => {
 	c.names = new Comparison(
-		new StringList("Atalui's Bloodletting", "Ratha's Assault", "Arjun's Medal",
-			"Ixchel's Torment", "Romira's Requital", "Dialla's Desire", "Kalisa's Crescendo",
-			"Uul-Netol's Embrace", "Rakiata's Flow", "Rigwald's Ferocity", "Uhtred's Omen",
-			"Uhtred's Augury"),
+		new StringList(
+			"Daresso's Passion", // 1 / 10 exalts
+			"Arakaali's Lust", // 1 / 10 exalts
+			"Kurgal's Leash", // 1 / 5 exalts
+			"Tacati's Ire", // 1 / 4 exalts
+			"Sione's Temper", // 1 / 3 exalts
+			"Uruk's Smelting", // 1 / 2 exalts
+			"Paquate's Pact", // 1 / 2 exalts
+			"Vilenta's Propulsion", // 1 / 2 exalts
+			"Tecrod's Revenge", // 1 / 2 exalts
+			"Kulemak's Dominion", // 1 / 2 exalts
+			"Ahn's Citadel", // 1 / 2 exalts
+			"Varashta's Blessing", // 1 / 2 exalts
+			"Einhar's Beastrite", // 1 exalt
+			"Doedre's Undoing", // 1 exalt
+			"Kaom's Madness", // 1 exalt
+			"Tawhoa's Tending", // 1 exalt
+			"Atziri's Allure", // 1 exalt
+			"Zarokh's Refrain", // 1 exalt
+		),
 		Comparison.OPERATOR.EQUAL
 	);
 	c.category = new Comparison(CATEGORY.GEM);
 
-	e.colourDivine(GEM_COLOUR, GEM_PRESET).sizeChance();
+	e.colourChance(GEM_COLOUR, GEM_PRESET).sizeAugment();
 });
-// Lineage, >= 1 exalt
 filter.block((c, e) => {
 	c.names = new Comparison(
-		new StringList("Einhar's Beastrite", "Brutus' Brain", "Ailith's Chimes", "Tecrod's Revenge",
-			"Doedre's Undoing", "Kaom's Madness", "Sione's Temper", "Tawhoa's Tending",
-			"Piety's Mercy", "Kulemak's Dominion", "Xoph's Pyre", "Esh's Radiance",
-			"Tul's Stillness", "Garukhan's Resolve", "Uhtred's Exodus", "Daresso's Passion",
-			"Atziri's Allure", "Zarokh's Refrain", "Varashta's Blessing", "Arbiter's Ignition"),
-		Comparison.OPERATOR.EQUAL
-	);
-	c.category = new Comparison(CATEGORY.GEM);
-
-	e.colourChance(GEM_COLOUR, GEM_PRESET).sizeChance();
-});
-// Lineage, < 1 exalt
-filter.block((c, e) => {
-	c.names = new Comparison(
-		new StringList("Uruk's Smelting", "Paquate's Pact", "Vilenta's Propulsion", "Tacati's Ire",
-			"Ahn's Citadel", "Kurgal's Leash", "Arakaali's Lust"),
+		new StringList(
+			"Brutus' Brain", // 2 exalts
+			"Piety's Mercy", // 2 exalts
+			"Arbiter's Ignition", // 2 exalts
+			"Xoph's Pyre", // 3 exalts
+			"Garukhan's Resolve", // 3 exalts
+			"Ailith's Chimes", // 5 exalts
+		),
 		Comparison.OPERATOR.EQUAL
 	);
 	c.category = new Comparison(CATEGORY.GEM);
 
 	e.colourChance(GEM_COLOUR, GEM_PRESET).sizeExalt();
 });
+filter.block((c, e) => {
+	c.names = new Comparison(
+		new StringList(
+			"Uhtred's Exodus", // 14 exalts
+			"Tul's Stillness", // 15 exalts
+		),
+		Comparison.OPERATOR.EQUAL
+	);
+	c.category = new Comparison(CATEGORY.GEM);
+
+	e.colourChance(GEM_COLOUR, GEM_PRESET).sizeChance();
+});
+filter.block((c, e) => {
+	c.names = new Comparison(
+		new StringList(
+			"Esh's Radiance", // 40 exalts
+			"Rigwald's Ferocity", // 40 exalts
+			"Ixchel's Torment", // 138 exalts
+			"Atalui's Bloodletting", // 3 divs
+			"Ratha's Assault", // 4 divs
+			"Uul-Netol's Embrace", // 6 divs
+			"Uhtred's Omen", // 6 divs
+			"Kalisa's Crescendo", // 13 divs
+			"Rakiata's Flow", // 18 divs
+			"Romira's Requital", // 19 divs
+			"Uhtred's Augury", // 30 divs
+			"Arjun's Medal", // 34 divs
+			"Dialla's Desire", // 36 divs
+		),
+		Comparison.OPERATOR.EQUAL
+	);
+	c.category = new Comparison(CATEGORY.GEM);
+
+	e.colourDivine(GEM_COLOUR, GEM_PRESET).sizeChance();
+});
+//
 filter.multiBlock((c) => {
 	c.category = new Comparison(CATEGORY.GEM);
 	c.hasQuality();
