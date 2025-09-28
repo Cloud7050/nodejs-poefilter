@@ -317,7 +317,37 @@ Show
 	MinimapIcon 0 Red Cross
 
 Show
-	BaseType == "Omen of Sinistral Necromancy"
+	BaseType == "Omen of Gambling" "Omen of the Liege" "Omen of Refreshment"
+	Class == Omen
+
+	SetFontSize 32
+	SetTextColor 255 206 166 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 206 166 255
+	MinimapIcon 1 Orange UpsideDownHouse
+
+Show
+	BaseType == "Omen of the Blackblooded" "Omen of Dextral Necromancy" "Omen of the Sovereign" "Omen of Resurgence" "Omen of Greater Exaltation"
+	Class == Omen
+
+	SetFontSize 32
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	MinimapIcon 1 Orange Cross
+
+Show
+	BaseType == "Omen of the Ancients" "Omen of Putrefaction" "Omen of Chaotic Quantity" "Omen of Chaotic Monsters" "Omen of Sinistral Exaltation" "Omen of the Blessed" "Omen of Dextral Exaltation" "Omen of Bartering" "Omen of Homogenising Coronation" "Omen of Catalysing Exaltation" "Omen of Answered Prayers" "Omen of Corruption" "Omen of Amelioration"
+	Class == Omen
+
+	SetFontSize 37
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	MinimapIcon 0 Orange Cross
+
+Show
+	BaseType == "Omen of Sinistral Necromancy" "Omen of Chaotic Rarity" "Omen of Dextral Crystallisation" "Omen of Reinforcements" "Omen of Recombination" "Omen of the Hunt" "Omen of Sinistral Crystallisation"
 	Class == Omen
 
 	SetFontSize 45
@@ -329,7 +359,7 @@ Show
 	MinimapIcon 0 Orange Star
 
 Show
-	BaseType == "Omen of Abyssal Echoes" "Omen of Light"
+	BaseType == "Omen of Secret Compartments" "Omen of Homogenising Exaltation" "Omen of Abyssal Echoes" "Omen of Sanctification" "Omen of Dextral Erasure" "Omen of Whittling" "Omen of Dextral Annulment" "Omen of Sinistral Erasure" "Omen of Light" "Omen of Sinistral Annulment" "Omen of Chance"
 	Class == Omen
 
 	SetFontSize 45
@@ -339,15 +369,6 @@ Show
 	PlayEffect Orange
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Orange Diamond
-
-Show
-	Class == Omen
-
-	SetFontSize 37
-	SetTextColor 255 194 144 255
-	SetBackgroundColor 101 54 0 255
-	SetBorderColor 255 194 144 255
-	MinimapIcon 0 Orange Cross
 
 Show
 	Class == "Uncut Support Gems"
