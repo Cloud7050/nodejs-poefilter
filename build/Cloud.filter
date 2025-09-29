@@ -492,6 +492,30 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
+	BaseType == "Soul Core of Puhuarte" "Soul Core of Zalatl" "Soul Core of Opiloti" "Soul Core of Tzamoto" "Soul Core of Ticaba" "Soul Core of Quipolatl" "Soul Core of Citaqualotl" "Soul Core of Cholotl" "Soul Core of Atmohua" "Soul Core of Zantipi" "Soul Core of Topotante" "Soul Core of Xopec"
+	Class == Socketable
+
+	SetFontSize 45
+	SetTextColor 0 38 58 255
+	SetBackgroundColor 97 195 255 255
+	SetBorderColor 0 38 58 255
+	PlayEffect Cyan
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Cyan Star
+
+Show
+	BaseType == "Soul Core of Azcapa" "Soul Core of Tacati" "Soul Core of Jiquani"
+	Class == Socketable
+
+	SetFontSize 45
+	SetTextColor 0 160 226 255
+	SetBackgroundColor 240 247 255 255
+	SetBorderColor 0 160 226 255
+	PlayEffect Cyan
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Cyan Diamond
+
+Show
 	Class == Socketable
 
 	SetFontSize 37
