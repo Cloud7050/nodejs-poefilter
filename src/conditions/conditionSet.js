@@ -34,6 +34,7 @@ export class ConditionSet {
 		SOCKETABLE: new StringList("Socketable"),
 		TICKET: new StringList("Trial Coins", "Inscribed Ultimatum", "Expedition Logbooks"),
 		VAULT: new StringList("Vault Keys"),
+		FRAGMENT: new StringList("Map Fragments"),
 		QUEST: new StringList("Quest Items"),
 		////
 	};

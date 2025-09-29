@@ -534,7 +534,7 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
-	Class == "Vault Keys"
+	Class == "Vault Keys" "Map Fragments"
 
 	SetFontSize 45
 	SetTextColor 36 44 0 255

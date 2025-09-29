@@ -566,9 +566,9 @@ filter.block((c, e) => {
 	e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
 });
 
-// Vault keys
+// Map keys
 filter.block((c, e) => {
-	c.category = new Comparison(CATEGORY.VAULT);
+	c.category = new Comparison(new StringList(CATEGORY.VAULT, CATEGORY.FRAGMENT));
 
 	e.colourChance(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeChance();
 });
