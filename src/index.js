@@ -1049,7 +1049,7 @@ filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
 	c.category = new Comparison(CATEGORY.BOOTS);
 	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
 	c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LTE);
-}, (c) => { // Normal other jewellery
+}, (c) => { // Normal/magic other jewellery
 	c.names = new Comparison(new StringList(
 		// "Crimson Amulet", // 2-4 life regen
 		// "Amber Amulet", // Strength
@@ -1060,7 +1060,7 @@ filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
 		"Unset Ring", // Skill slot
 	));
 	c.category = new Comparison(CATEGORY.JEWELLERY);
-	c.rarity = new Comparison(ConditionSet.RARITY.NORMAL);
+	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
 }, (c) => { // Magic belts
 	// Class doesn't use most belts, it uses unique
 	c.category = new Comparison(CATEGORY.BELT);

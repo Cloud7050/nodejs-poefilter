@@ -1240,7 +1240,7 @@ Hide
 Hide
 	BaseType == "Iron Ring" "Emerald Ring" "Unset Ring"
 	Class == Amulets Rings
-	Rarity == Normal
+	Rarity <= Magic
 
 	#
 
