@@ -1096,6 +1096,10 @@ filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
 	// Class doesn't use most belts, it uses unique
 	c.category = new Comparison(CATEGORY.BELT);
 	c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+}, (c) => { // Rare belts that are low unidentified tier
+	c.category = new Comparison(CATEGORY.BELT);
+	c.rarity = new Comparison(ConditionSet.RARITY.RARE);
+	c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LTE);
 }, (c) => { // Bad normal/magic flasks
 	c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
 		"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
