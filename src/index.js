@@ -1046,7 +1046,7 @@ filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
 		"Embroidered Gloves", // 35 ES, L52
 		"Baroque Gloves", // 36 ES, L54
 		"Gold Gloves", // 39 ES, L59
-		// "Grim Gloves", // 42 ES, L65
+		"Grim Gloves", // 42 ES, L65
 		// "Opulent Gloves", // 46 ES, L70
 		// "Vaal Gloves", // 50 ES, L75
 		// "Sirenscale Gloves", // 54 ES, L80
