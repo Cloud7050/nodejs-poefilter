@@ -416,6 +416,7 @@ filter.block((c, e) => {
 			"Kurgal's Leash", // 1 / 5 exalts
 			"Tacati's Ire", // 1 / 4 exalts
 			"Sione's Temper", // 1 / 3 exalts
+			"Romira's Requital", // 1 / 3 exalts
 			"Uruk's Smelting", // 1 / 2 exalts
 			"Paquate's Pact", // 1 / 2 exalts
 			"Vilenta's Propulsion", // 1 / 2 exalts
@@ -445,6 +446,7 @@ filter.block((c, e) => {
 			"Xoph's Pyre", // 3 exalts
 			"Garukhan's Resolve", // 3 exalts
 			"Ailith's Chimes", // 5 exalts
+			"Kalisa's Crescendo", // 5 exalts
 		),
 		Comparison.OPERATOR.EQUAL
 	);
@@ -474,9 +476,7 @@ filter.block((c, e) => {
 			"Ratha's Assault", // 4 divs
 			"Uul-Netol's Embrace", // 6 divs
 			"Uhtred's Omen", // 6 divs
-			"Kalisa's Crescendo", // 13 divs
 			"Rakiata's Flow", // 18 divs
-			"Romira's Requital", // 19 divs
 			"Uhtred's Augury", // 30 divs
 			"Arjun's Medal", // 34 divs
 			"Dialla's Desire", // 36 divs
