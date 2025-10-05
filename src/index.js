@@ -1082,7 +1082,7 @@ filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
 	c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LTE);
 }, (c) => { // Normal/magic other jewellery
 	c.names = new Comparison(new StringList(
-		// "Crimson Amulet", // 2-4 life regen
+		"Crimson Amulet", // 2-4 life regen
 		// "Amber Amulet", // Strength
 		// "Jade Amulet", // Dexterity
 

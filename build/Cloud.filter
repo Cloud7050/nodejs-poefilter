@@ -1262,7 +1262,7 @@ Hide
 	#
 
 Hide
-	BaseType == "Iron Ring" "Emerald Ring" "Unset Ring"
+	BaseType == "Crimson Amulet" "Iron Ring" "Emerald Ring" "Unset Ring"
 	Class == Amulets Rings
 	Rarity <= Magic
 
