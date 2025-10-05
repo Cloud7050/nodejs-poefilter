@@ -124,7 +124,7 @@ filter.block((c, e) => {
 	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourDivine(ABYSS_COLOUR, ABYSS_PRESET).sizeChance();
+	e.colourDivine(ABYSS_COLOUR, ABYSS_PRESET).sizeDivine();
 });
 
 // Liquid emotions
@@ -348,7 +348,7 @@ filter.block((c, e) => {
 	));
 	c.category = new Comparison(CATEGORY.CURRENCY);
 
-	e.colourDivine(CURRENCY_COLOUR, CURRENCY_PRESET).sizeChance();
+	e.colourDivine(CURRENCY_COLOUR, CURRENCY_PRESET).sizeDivine();
 });
 
 // Other
@@ -435,7 +435,7 @@ filter.block((c, e) => {
 	));
 	c.category = new Comparison(CATEGORY.OMEN);
 
-	e.colourDivine(CRAFT_COLOUR, CRAFT_PRESET).sizeChance();
+	e.colourDivine(CRAFT_COLOUR, CRAFT_PRESET).sizeDivine();
 });
 
 // Gems
@@ -527,7 +527,7 @@ filter.block((c, e) => {
 	);
 	c.category = new Comparison(CATEGORY.GEM);
 
-	e.colourDivine(GEM_COLOUR, GEM_PRESET).sizeChance();
+	e.colourDivine(GEM_COLOUR, GEM_PRESET).sizeDivine();
 });
 //
 filter.multiBlock((c) => {
@@ -592,7 +592,7 @@ filter.block((c, e) => {
 	));
 	c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-	e.colourDivine(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeChance();
+	e.colourDivine(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeDivine();
 });
 //
 filter.block((c, e) => {

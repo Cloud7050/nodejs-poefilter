@@ -10,7 +10,9 @@ export class EffectSet {
 	};
 
 	static SOUND = {
-		WAH: "WAH.mp3",
+		// Custom sounds default to 100 volume, of 0-300
+		WAH: "\"WAH.mp3\"",
+		RENOIR: "\"renoir.wav\" 200",
 		DISABLE: "None",
 	};
 	static MAP_SIZE = {
@@ -60,7 +62,7 @@ export class EffectSet {
 		if (this.outlineColour !== null) spans.push(`SetBorderColor ${this.outlineColour.export()}`); // Alpha defaults to 255
 
 		if (this.beamColour !== null) spans.push(`PlayEffect ${this.beamColour}`);
-		if (this.sound !== null) spans.push(`CustomAlertSound "${this.sound}"`);
+		if (this.sound !== null) spans.push(`CustomAlertSound ${this.sound}`);
 		if (this.mapSize === EffectSet.MAP_SIZE.DISABLE) {
 			spans.push(`MinimapIcon ${EffectSet.MAP_SIZE.DISABLE}`);
 		} else if (this.mapSize !== null) {
@@ -147,6 +149,13 @@ export class EffectSet {
 		this.textSize = EffectSet.TEXT_SIZE.LARGEST;
 		this.beamColour = beamColour;
 		this.sound = EffectSet.SOUND.WAH;
+		this.mapSize = EffectSet.MAP_SIZE.LARGE;
+		return this;
+	}
+	sizeDivine(beamColour = this.mapColour) {
+		this.textSize = EffectSet.TEXT_SIZE.LARGEST;
+		this.beamColour = beamColour;
+		this.sound = EffectSet.SOUND.RENOIR;
 		this.mapSize = EffectSet.MAP_SIZE.LARGE;
 		return this;
 	}
