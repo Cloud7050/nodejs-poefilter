@@ -147,6 +147,48 @@ filter.block((c, e) => {
 	e.colourAugment(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
 });
 
+// Catalysts
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList(
+		"Skittering Catalyst", // 1 / 33.5 exalts (speed)
+		"Uul-Netol's Catalyst", // 1 / 20 exalts (physical)
+		"Adaptive Catalyst", // 1 / 13.33 exalts (attribute)
+		"Carapace Catalyst", // 1 / 11.5 exalts (defence)
+		"Sibilant Catalyst", // 1 / 11 exalts (caster)
+	));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourAugment(CRAFT_COLOUR, CRAFT_PRESET).sizeAugment();
+});
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList(
+		"Chayula's Catalyst", // 1 / 9 exalts (chaos)
+		"Neural Catalyst", // 1 / 8 exalts (mana)
+		"Xoph's Catalyst", // 1 / 8 exalts (fire)
+		"Tul's Catalyst", // 1 / 7.89 exalts (cold)
+	));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeAugment();
+});
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList(
+		"Flesh Catalyst", // 1.24 exalts (life)
+		"Esh's Catalyst", // 6.5 exalts (lightning)
+	));
+	c.category = new Comparison(CATEGORY.CURRENCY);
+
+	e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+});
+filter.block((c, e) => {
+	c.names = new Comparison(new StringList(
+		"Reaver Catalyst", // 10 exalts (attack)
+	));
+	c.category = new Comparison(CATEGORY.OMEN);
+
+	e.colourChance(CRAFT_COLOUR, CRAFT_PRESET).sizeChance();
+});
+
 // Trial keys
 filter.block((c, e) => {
 	c.names = new Comparison("Bronze Key");
