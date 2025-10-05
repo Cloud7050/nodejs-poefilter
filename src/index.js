@@ -984,9 +984,16 @@ filter.multiBlock((c) => {
 	e.outlineColour = Colour.RARE;
 });
 filter.multiBlock((c) => {
-	c.hasQuality(5);
+	// Never hide >= 10 quality
+	c.hasQuality(10);
 }, (c) => {
-	c.continue(); // 1-4% quality isn't immune to hiding below
+	// Never hide >= 5 quality if it's 6 spots or less
+	c.hasQuality(5);
+	c.height = new Comparison(3, Comparison.OPERATOR.LTE);
+	c.width = new Comparison(2, Comparison.OPERATOR.LTE);
+}, (c) => {
+	// Still outline all other >= 1 quality, but they aren't immune to hiding below
+	c.continue();
 	c.hasQuality();
 }, (e) => {
 	e.outlineColour = Colour.MAGIC;

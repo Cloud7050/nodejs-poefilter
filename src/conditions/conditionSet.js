@@ -53,6 +53,8 @@ export class ConditionSet {
 	rarity = null; // Comparison
 	wisdomTier = null; // Comparison
 	count = null; // Comparison
+	height = null; // Comparison
+	width = null; // Comparison
 
 	quality = null; // Comparison
 	sockets = null; // Comparison
@@ -73,6 +75,8 @@ export class ConditionSet {
 		if (this.rarity !== null) spans.push(this.rarity.export("Rarity"));
 		if (this.wisdomTier !== null) spans.push(this.wisdomTier.export("UnidentifiedItemTier"));
 		if (this.count !== null) spans.push(this.count.export("StackSize"));
+		if (this.height !== null) spans.push(this.height.export("Height"));
+		if (this.width !== null) spans.push(this.width.export("Width"));
 
 		if (this.quality !== null) spans.push(this.quality.export("Quality"));
 		if (this.sockets !== null) spans.push(this.sockets.export("Sockets"));
