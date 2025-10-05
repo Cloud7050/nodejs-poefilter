@@ -1028,7 +1028,7 @@ filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
 		"Cultist Focus", // 49 ES, L59
 		"Hallowed Focus", // 50 ES, L61
 		"Druidic Focus", // 52 ES, L65
-		// "Leyline Focus", // 58 ES, L70
+		"Leyline Focus", // 58 ES, L70
 		// "Sacred Focus", // 63 ES, L75
 		// "Tasalian Focus", // 68 ES, L80
 	));
@@ -1055,7 +1055,7 @@ filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
 		"Sandsworn Tiara", // 73 ES, L54
 		"Jungle Tiara", // 78 ES, L59
 		"Skycrown Tiara", // 84 ES, L65
-		// "Sorcerous Tiara", // 92 ES, L70
+		"Sorcerous Tiara", // 92 ES, L70
 		// "Kamasan Tiara", // 101 ES, L75
 		// "Ancestral Tiara", // 109 ES, L80
 
@@ -1089,7 +1089,7 @@ filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
 		"Baroque Gloves", // 36 ES, L54
 		"Gold Gloves", // 39 ES, L59
 		"Grim Gloves", // 42 ES, L65
-		// "Opulent Gloves", // 46 ES, L70
+		"Opulent Gloves", // 46 ES, L70
 		// "Vaal Gloves", // 50 ES, L75
 		// "Sirenscale Gloves", // 54 ES, L80
 	));
