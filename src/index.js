@@ -984,6 +984,10 @@ filter.multiBlock((c) => {
 	e.outlineColour = Colour.RARE;
 });
 filter.multiBlock((c) => {
+	// Never hide any quality charms as you can't add quality manually
+	c.category = new Comparison(CATEGORY.CHARM);
+	c.hasQuality();
+}, (c) => {
 	// Never hide >= 10 quality
 	c.hasQuality(10);
 }, (c) => {

@@ -1202,6 +1202,12 @@ Show
 	SetBorderColor 255 225 87 255
 
 Show
+	Class == Charms
+	Quality >= 1
+
+	SetBorderColor 123 151 255 255
+
+Show
 	Quality >= 10
 
 	SetBorderColor 123 151 255 255
