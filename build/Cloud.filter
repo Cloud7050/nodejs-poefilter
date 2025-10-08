@@ -587,13 +587,13 @@ Show
 	MinimapIcon 0 Green Star
 
 Show
-	Class == "Quest Items"
+	Class == "Quest Items" "Instance Local Items"
 
 	SetFontSize 37
 	SetTextColor 143 245 106 255
 	SetBackgroundColor 21 86 0 255
 	SetBorderColor 143 245 106 255
-	MinimapIcon 0 Grey Cross
+	MinimapIcon 0 Green Cross
 
 Show
 	Class == Sceptres Foci Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots

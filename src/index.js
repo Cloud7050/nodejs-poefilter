@@ -20,7 +20,7 @@ const GOLD_PRESET = Colour.PRESET.YELLOW;
 const QUESTLIKE_COLOUR = Colour.LIME;
 const QUESTLIKE_PRESET = Colour.PRESET.GREEN;
 const QUEST_COLOUR = Colour.GREEN;
-const QUEST_PRESET = Colour.PRESET.BLACK;
+const QUEST_PRESET = Colour.PRESET.GREEN;
 const MECHANIC_COLOUR = Colour.SEAFOAM;
 const MECHANIC_PRESET = Colour.PRESET.GREEN;
 // TEAL
@@ -619,7 +619,7 @@ filter.block((c, e) => {
 filter.block((c, e) => {
 	c.category = new Comparison(CATEGORY.QUEST);
 
-	// Minimap args are ignored as it has a custom icon
+	// True quest items have custom minimap icon overrides
 	e.colourExalt(QUEST_COLOUR, QUEST_PRESET).sizeExalt();
 });
 
