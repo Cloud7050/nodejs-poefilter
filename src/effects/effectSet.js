@@ -12,7 +12,7 @@ export class EffectSet {
 	static SOUND = {
 		// Custom sounds default to 100 volume, of 0-300
 		WAH: "\"WAH.mp3\"",
-		RENOIR: "\"renoir.wav\" 200",
+		RENOIR: "\"renoir.wav\" 250",
 		DISABLE: "None",
 	};
 	static MAP_SIZE = {

@@ -98,7 +98,7 @@ Show
 	SetBackgroundColor 255 238 255 255
 	SetBorderColor 191 62 248 255
 	PlayEffect Pink
-	CustomAlertSound "renoir.wav" 200
+	CustomAlertSound "renoir.wav" 250
 	MinimapIcon 0 Pink Diamond
 
 Show
@@ -348,7 +348,7 @@ Show
 	SetBackgroundColor 255 241 240 255
 	SetBorderColor 240 65 75 255
 	PlayEffect Red
-	CustomAlertSound "renoir.wav" 200
+	CustomAlertSound "renoir.wav" 250
 	MinimapIcon 0 Red Diamond
 
 Show
@@ -409,7 +409,7 @@ Show
 	SetBackgroundColor 255 244 238 255
 	SetBorderColor 226 126 0 255
 	PlayEffect Orange
-	CustomAlertSound "renoir.wav" 200
+	CustomAlertSound "renoir.wav" 250
 	MinimapIcon 0 Orange Diamond
 
 Show
@@ -471,7 +471,7 @@ Show
 	SetBackgroundColor 226 255 255 255
 	SetBorderColor 0 194 198 255
 	PlayEffect Brown
-	CustomAlertSound "renoir.wav" 200
+	CustomAlertSound "renoir.wav" 250
 	MinimapIcon 0 Brown Diamond
 
 Show
@@ -554,7 +554,7 @@ Show
 	SetBackgroundColor 240 247 255 255
 	SetBorderColor 0 160 226 255
 	PlayEffect Cyan
-	CustomAlertSound "renoir.wav" 200
+	CustomAlertSound "renoir.wav" 250
 	MinimapIcon 0 Cyan Diamond
 
 Show
