@@ -1213,8 +1213,15 @@ Show
 	SetBorderColor 123 151 255 255
 
 Show
-	Height <= 3
+	Height <= 2
 	Width <= 2
+	Quality >= 5
+
+	SetBorderColor 123 151 255 255
+
+Show
+	Height <= 4
+	Width == 1
 	Quality >= 5
 
 	SetBorderColor 123 151 255 255

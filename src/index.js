@@ -991,10 +991,15 @@ filter.multiBlock((c) => {
 	// Never hide >= 10 quality
 	c.hasQuality(10);
 }, (c) => {
-	// Never hide >= 5 quality if it's 6 spots or less
+	// Never hide >= 5 quality if it's 4 spots or less
 	c.hasQuality(5);
-	c.height = new Comparison(3, Comparison.OPERATOR.LTE);
+	c.height = new Comparison(2, Comparison.OPERATOR.LTE);
 	c.width = new Comparison(2, Comparison.OPERATOR.LTE);
+}, (c) => {
+	// Never hide >= 5 quality if it's 4 spots or less
+	c.hasQuality(5);
+	c.height = new Comparison(4, Comparison.OPERATOR.LTE);
+	c.width = new Comparison(1);
 }, (c) => {
 	// Still outline all other >= 1 quality, but they aren't immune to hiding below
 	c.continue();
