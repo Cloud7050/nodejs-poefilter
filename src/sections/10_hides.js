@@ -41,7 +41,7 @@ export function sectionHides(filter) {
 	}, (c) => { // Rare other weapons that are low unidentified tier
 		c.category = new Comparison([CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER]);
 		c.rarity = new Comparison(RARITY.RARE);
-		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
+		c.wisdomTier = new Comparison(3, OPERATOR.LTE);
 	}, (c) => { // Normal/magic class armour tops but are low bases
 		c.names = new Comparison([
 			// https://poe2db.tw/us/Helmets
@@ -112,17 +112,17 @@ export function sectionHides(filter) {
 	}, (c) => { // Rare other armour that is low unidentified tier
 		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
-		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
+		c.wisdomTier = new Comparison(3, OPERATOR.LTE);
 		c.hasArmour();
 	}, (c) => {
 		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
-		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
+		c.wisdomTier = new Comparison(3, OPERATOR.LTE);
 		c.hasEvasion();
 	}, (c) => {
 		c.category = new Comparison(CATEGORY.BOOTS);
 		c.rarity = new Comparison(RARITY.RARE);
-		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
+		c.wisdomTier = new Comparison(3, OPERATOR.LTE);
 	}, (c) => { // Normal/magic other jewellery
 		c.names = new Comparison([
 			"Crimson Amulet", // 2-4 life regen
@@ -142,7 +142,7 @@ export function sectionHides(filter) {
 	}, (c) => { // Rare belts that are low unidentified tier
 		c.category = new Comparison(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.RARE);
-		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
+		c.wisdomTier = new Comparison(3, OPERATOR.LTE);
 	}, (c) => { // Bad normal/magic flasks
 		c.names = new Comparison(["Lesser Life Flask", "Lesser Mana Flask", "Medium Life Flask",
 			"Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask", "Grand Life Flask",
