@@ -1,5 +1,6 @@
+import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
-import { CATEGORY, RARITY } from "../conditions/conditionSet.js";
+import { RARITY } from "../conditions/conditionSet.js";
 import { PAIR_GEAR, PAIR_JEWEL, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../index.js";
 
 export function sectionRarity(filter) {
@@ -20,14 +21,14 @@ function reset(filter) {
 	// Normal
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS, CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS]);
+		c.category = new Comparison(CATEGORY.GEAR_COMMON);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
 		e.colourWisdom(PAIR_GEAR).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM]);
+		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
 		e.colourWisdom(PAIR_GEAR).sizeAugment();
@@ -36,14 +37,14 @@ function reset(filter) {
 	// Magic
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS, CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS]);
+		c.category = new Comparison(CATEGORY.GEAR_COMMON);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
 		e.colourAugment(PAIR_GEAR).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM]);
+		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
 		e.colourAugment(PAIR_GEAR).sizeAugment();
@@ -52,14 +53,14 @@ function reset(filter) {
 	// Rare
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS, CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS]);
+		c.category = new Comparison(CATEGORY.GEAR_COMMON);
 		c.rarity = new Comparison(RARITY.RARE);
 
 		e.colourExalt(PAIR_GEAR).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM]);
+		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.RARE);
 
 		e.colourExalt(PAIR_GEAR).sizeExalt();
@@ -68,7 +69,7 @@ function reset(filter) {
 	// Unique
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS, CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM]);
+		c.category = new Comparison(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
 		e.colourChance(PAIR_GEAR).sizeChance();
@@ -79,7 +80,7 @@ function classWeapons(filter) {
 	// Normal
 	filter.block((c, e) => { // Quality
 		c.continue();
-		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS]);
+		c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.hasQuality();
 
@@ -89,7 +90,7 @@ function classWeapons(filter) {
 	// Magic
 	filter.block((c, e) => { // Quality
 		c.continue();
-		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS]);
+		c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.hasQuality();
 
@@ -112,7 +113,7 @@ function classWeapons(filter) {
 	// Rare
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS]);
+		c.category = new Comparison(CATEGORY.WEAPON_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 
 		e.colourExalt(PAIR_GEAR).sizeExalt();
@@ -245,7 +246,7 @@ function uncommon(filter) {
 	// Normal
 	filter.multiBlock((c) => { // Good main (class)
 		c.continue();
-		c.category = new Comparison([CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM]);
+		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.goodMain();
 	}, (c) => { // Normal belts
@@ -272,12 +273,12 @@ function uncommon(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Good main (class)
 		c.continue();
-		c.category = new Comparison([CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM]);
+		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodMain();
 	}, (c) => { // Good mod (class)
 		c.continue();
-		c.category = new Comparison([CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM]);
+		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModJewellery();
 	}, (c) => { // Magic best flasks

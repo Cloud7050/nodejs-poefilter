@@ -1,5 +1,5 @@
+import { CATEGORY } from "../conditions/category.js";
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
-import { CATEGORY } from "../conditions/conditionSet.js";
 import { PAIR_SOCKETABLE } from "../index.js";
 
 export function sectionSocketables(filter) {

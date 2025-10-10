@@ -1,5 +1,5 @@
+import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
-import { CATEGORY } from "../conditions/conditionSet.js";
 import { PAIR_QUEST, PAIR_QUESTLIKE } from "../index.js";
 
 export function sectionMisc(filter) {
@@ -20,7 +20,7 @@ function tickets(filter) {
 // Map keys
 function keys(filter) {
 	filter.block((c, e) => {
-		c.category = new Comparison([CATEGORY.VAULT, CATEGORY.FRAGMENT]);
+		c.category = new Comparison(CATEGORY.KEY);
 
 		e.colourChance(PAIR_QUESTLIKE).sizeChance();
 	});

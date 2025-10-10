@@ -1,43 +1,6 @@
 import { Comparison, OPERATOR } from "./comparison.js";
-import { StringList } from "./stringList.js";
 
 export class ConditionSet {
-	// https://poe2db.tw/us/Items
-	static CATEGORY = {
-		//// Rarity
-		// Witch weapons
-		MAIN_CLASS: new StringList("Sceptres"),
-		OFF_CLASS: new StringList("Foci"),
-		//
-		MAIN_OTHER: new StringList("Bows", "Claws", "Crossbows", "Daggers", "Flails",
-			"One Hand Axes", "One Hand Maces", "One Hand Swords", "Quarterstaves", "Spears",
-			"Staves", "Two Hand Axes", "Two Hand Maces", "Two Hand Swords", "Wands"),
-		OFF_OTHER: new StringList("Bucklers", "Quivers", "Shields"),
-		ARMOUR_TOP: new StringList("Body Armours", "Gloves", "Helmets"),
-		BOOTS: new StringList("Boots"),
-		JEWELLERY: new StringList("Amulets", "Rings"),
-		BELT: new StringList("Belts"),
-		FLASK: new StringList("Life Flasks", "Mana Flasks"),
-		CHARM: new StringList("Charms"),
-		JEWEL: new StringList("Jewels"),
-		WAYSTONE: new StringList("Waystones"),
-		TABLET: new StringList("Tablet"),
-		RELIC: new StringList("Relics"),
-		////
-
-		//// No rarity
-		CURRENCY: new StringList("Stackable Currency"),
-		OMEN: new StringList("Omen"),
-		GEM_UNCUT: new StringList("Uncut Skill Gems", "Uncut Spirit Gems"),
-		SUPPORT_UNCUT: new StringList("Uncut Support Gems"),
-		GEM: new StringList("Skill Gems", "Support Gems"),
-		SOCKETABLE: new StringList("Socketable"),
-		TICKET: new StringList("Trial Coins", "Inscribed Ultimatum", "Expedition Logbooks"),
-		VAULT: new StringList("Vault Keys"),
-		FRAGMENT: new StringList("Map Fragments"),
-		QUEST: new StringList("Quest Items", "Instance Local Items"),
-		////
-	};
 	static RARITY = {
 		NORMAL: "Normal",
 		MAGIC: "Magic",
@@ -385,5 +348,4 @@ export class ConditionSet {
 		return this;
 	}
 }
-export const CATEGORY = ConditionSet.CATEGORY;
 export const RARITY = ConditionSet.RARITY;

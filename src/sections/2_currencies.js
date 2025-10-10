@@ -1,5 +1,5 @@
+import { CATEGORY } from "../conditions/category.js";
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
-import { CATEGORY } from "../conditions/conditionSet.js";
 import { Colour } from "../effects/colour.js";
 import { EffectSet } from "../effects/effectSet.js";
 import { PAIR_ABYSS, PAIR_CRAFT, PAIR_CURRENCY, PAIR_ESSENCE, PAIR_GOLD, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../index.js";

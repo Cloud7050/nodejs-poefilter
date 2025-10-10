@@ -1,5 +1,6 @@
+import { CATEGORY } from "../conditions/category.js";
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
-import { CATEGORY, RARITY } from "../conditions/conditionSet.js";
+import { RARITY } from "../conditions/conditionSet.js";
 
 export function sectionHides(filter) {
 	filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
@@ -36,10 +37,10 @@ export function sectionHides(filter) {
 		c.category = new Comparison(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (c) => { // Normal/magic other weapons
-		c.category = new Comparison([CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER]);
+		c.category = new Comparison(CATEGORY.WEAPON_OTHER);
 		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (c) => { // Rare other weapons that are low unidentified tier
-		c.category = new Comparison([CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER]);
+		c.category = new Comparison(CATEGORY.WEAPON_OTHER);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.wisdomTier = new Comparison(3, OPERATOR.LTE);
 	}, (c) => { // Normal/magic class armour tops but are low bases

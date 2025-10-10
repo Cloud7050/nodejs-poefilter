@@ -1,5 +1,5 @@
+import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
-import { CATEGORY } from "../conditions/conditionSet.js";
 import { PAIR_CRAFT } from "../index.js";
 
 

@@ -1,5 +1,5 @@
+import { CATEGORY } from "../conditions/category.js";
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
-import { CATEGORY } from "../conditions/conditionSet.js";
 import { Colour } from "../effects/colour.js";
 
 // Overwrite outlines (highest priority first). Also acts like a whitelist
@@ -8,13 +8,13 @@ export function sectionOutlines(filter) {
 	filter.multiBlock((c) => {
 		c.goodMain(true);
 	}, (c) => {
-		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.MAIN_OTHER]);
+		c.category = new Comparison(CATEGORY.MAIN);
 		c.goodModMainhand(true);
 	}, (c) => {
-		c.category = new Comparison([CATEGORY.OFF_CLASS, CATEGORY.OFF_OTHER]);
+		c.category = new Comparison(CATEGORY.OFF);
 		c.goodModOffhand(true);
 	}, (c) => {
-		c.category = new Comparison([CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS]);
+		c.category = new Comparison(CATEGORY.ARMOUR);
 		c.goodModArmour(true);
 	}, (c) => {
 		c.category = new Comparison(CATEGORY.JEWELLERY);
