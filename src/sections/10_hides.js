@@ -3,7 +3,16 @@ import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 
 export function sectionHides(filter) {
-	filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
+	filter.multiBlock((c) => { // Low value currency
+		c.names = new Comparison([
+			"Transmutation Shard",
+			"Artificer's Shard",
+			"Regal Shard",
+			"Lesser Jeweller's Orb",
+			"Blacksmith's Whetstone",
+		]);
+		c.category = new Comparison(CATEGORY.CURRENCY);
+	}, (c) => { // Normal/magic class mainhands but are wrong skill
 		// https://poe2db.tw/us/Sceptres#SceptresItem
 		c.names = new Comparison([
 			"Stoic Sceptre", // Discipline

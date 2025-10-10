@@ -1254,6 +1254,12 @@ Show
 	#
 
 Hide
+	BaseType == "Transmutation Shard" "Artificer's Shard" "Regal Shard" "Lesser Jeweller's Orb" "Blacksmith's Whetstone"
+	Class == "Stackable Currency"
+
+	#
+
+Hide
 	BaseType == "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre" "Wrath Sceptre"
 	Class == Sceptres
 	Rarity <= Magic
