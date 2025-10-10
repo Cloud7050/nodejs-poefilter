@@ -97,7 +97,7 @@
 #   [2802] Tier 1 and 2 uniques
 #   [2803] Multi-Unique bases.
 #   [2804] Low tier exceptions
-#   [2805] Tier 3 uniques 
+#   [2805] Tier 3 uniques
 #   [2806] Tier 4 uniques
 # [[2900]] Splinters, Tablets, Fragments
 # [[3000]] Misc Map Items
@@ -3526,7 +3526,7 @@ Show # $type->uniques $tier->corrupteduniques !uniques_b
 	MinimapIcon 1 Brown Star
 
 #------------------------------------
-#   [2805] Tier 3 uniques 
+#   [2805] Tier 3 uniques
 #------------------------------------
 
 Hide # %H5 $type->uniques $tier->t3boss !uniques_xbossdrop

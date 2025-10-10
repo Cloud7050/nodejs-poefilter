@@ -52,7 +52,7 @@ export class Filter {
 
 		fs.writeFile(relativeFilePath, content, (e) => {
 			if (e !== null) console.error(e);
-			else console.log("☁");
+			else console.log(`Saved ${relativeFilePath}.`);
 		});
 	}
 }
