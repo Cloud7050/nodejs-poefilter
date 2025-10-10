@@ -1,6 +1,6 @@
 import { Comparison } from "../conditions/comparison.js";
 import { CATEGORY, RARITY } from "../conditions/conditionSet.js";
-import { GEAR_COLOUR, GEAR_PRESET, JEWEL_COLOUR, JEWEL_PRESET, MECHANIC_COLOUR, MECHANIC_PRESET, QUESTLIKE_COLOUR, QUESTLIKE_PRESET } from "../index.js";
+import { PAIR_GEAR, PAIR_JEWEL, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../index.js";
 
 export function sectionRarity(filter) {
 	reset(filter);
@@ -23,14 +23,14 @@ function reset(filter) {
 		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS, CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS]);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
-		e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeWisdom();
+		e.colourWisdom(PAIR_GEAR).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison([CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM]);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
-		e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
+		e.colourWisdom(PAIR_GEAR).sizeAugment();
 	});
 
 	// Magic
@@ -39,14 +39,14 @@ function reset(filter) {
 		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS, CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS]);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
-		e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeWisdom();
+		e.colourAugment(PAIR_GEAR).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison([CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM]);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
-		e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
+		e.colourAugment(PAIR_GEAR).sizeAugment();
 	});
 
 	// Rare
@@ -55,14 +55,14 @@ function reset(filter) {
 		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS, CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS]);
 		c.rarity = new Comparison(RARITY.RARE);
 
-		e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
+		e.colourExalt(PAIR_GEAR).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison([CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM]);
 		c.rarity = new Comparison(RARITY.RARE);
 
-		e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeExalt();
 	});
 
 	// Unique
@@ -71,7 +71,7 @@ function reset(filter) {
 		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS, CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER, CATEGORY.ARMOUR_TOP, CATEGORY.BOOTS, CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK, CATEGORY.CHARM]);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		e.colourChance(GEAR_COLOUR, GEAR_PRESET).sizeChance();
+		e.colourChance(PAIR_GEAR).sizeChance();
 	});
 }
 
@@ -83,7 +83,7 @@ function classWeapons(filter) {
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.hasQuality();
 
-		e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
+		e.colourWisdom(PAIR_GEAR).sizeAugment();
 	});
 
 	// Magic
@@ -93,7 +93,7 @@ function classWeapons(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.hasQuality();
 
-		e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
+		e.colourAugment(PAIR_GEAR).sizeAugment();
 	});
 	filter.multiBlock((c) => { // Good mod (main class)
 		c.continue();
@@ -106,7 +106,7 @@ function classWeapons(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModOffhand();
 	}, (e) => {
-		e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
+		e.colourAugment(PAIR_GEAR).sizeExalt();
 	});
 
 	// Rare
@@ -115,7 +115,7 @@ function classWeapons(filter) {
 		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_CLASS]);
 		c.rarity = new Comparison(RARITY.RARE);
 
-		e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeExalt();
 	});
 }
 
@@ -132,7 +132,7 @@ function otherWeapons(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModOffhand(true);
 	}, (e) => {
-		e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
+		e.colourAugment(PAIR_GEAR).sizeAugment();
 	});
 
 	// Rare
@@ -147,7 +147,7 @@ function otherWeapons(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModOffhand(true);
 	}, (e) => {
-		e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeExalt();
 	});
 }
 
@@ -160,7 +160,7 @@ function classArmour(filter) {
 		c.hasQuality();
 		c.onlyEnergyShield();
 
-		e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
+		e.colourWisdom(PAIR_GEAR).sizeAugment();
 	});
 
 	// Magic
@@ -171,7 +171,7 @@ function classArmour(filter) {
 		c.hasQuality();
 		c.onlyEnergyShield();
 
-		e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
+		e.colourAugment(PAIR_GEAR).sizeAugment();
 	});
 	filter.block((c, e) => { // Good mod (class)
 		c.continue();
@@ -180,7 +180,7 @@ function classArmour(filter) {
 		c.onlyEnergyShield();
 		c.goodModArmour();
 
-		e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
+		e.colourAugment(PAIR_GEAR).sizeExalt();
 	});
 
 	// Rare
@@ -190,7 +190,7 @@ function classArmour(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.onlyEnergyShield();
 
-		e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeExalt();
 	});
 }
 
@@ -214,7 +214,7 @@ function otherArmour(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModArmour(true);
 	}, (e) => {
-		e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeAugment();
+		e.colourAugment(PAIR_GEAR).sizeAugment();
 	});
 
 	// Rare
@@ -236,7 +236,7 @@ function otherArmour(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModArmour(true);
 	}, (e) => {
-		e.colourExalt(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeExalt();
 	});
 }
 
@@ -258,7 +258,7 @@ function uncommon(filter) {
 		c.category = new Comparison(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.NORMAL);
 	}, (e) => {
-		e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
+		e.colourWisdom(PAIR_GEAR).sizeExalt();
 	});
 	filter.block((c, e) => { // Normal heavy belts
 		c.continue();
@@ -266,7 +266,7 @@ function uncommon(filter) {
 		c.category = new Comparison(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
-		e.colourWisdom(GEAR_COLOUR, GEAR_PRESET).sizeChance();
+		e.colourWisdom(PAIR_GEAR).sizeChance();
 	});
 
 	// Magic
@@ -286,7 +286,7 @@ function uncommon(filter) {
 		c.category = new Comparison(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.MAGIC);
 	}, (e) => {
-		e.colourAugment(GEAR_COLOUR, GEAR_PRESET).sizeExalt();
+		e.colourAugment(PAIR_GEAR).sizeExalt();
 	});
 }
 
@@ -296,21 +296,21 @@ function jewels(filter) {
 		c.category = new Comparison(CATEGORY.JEWEL);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
-		e.colourAugment(JEWEL_COLOUR, JEWEL_PRESET).sizeExalt();
+		e.colourAugment(PAIR_JEWEL).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison(CATEGORY.JEWEL);
 		c.rarity = new Comparison(RARITY.RARE);
 
-		e.colourExalt(JEWEL_COLOUR, JEWEL_PRESET).sizeExalt();
+		e.colourExalt(PAIR_JEWEL).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison(CATEGORY.JEWEL);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		e.colourChance(JEWEL_COLOUR, JEWEL_PRESET).sizeChance();
+		e.colourChance(PAIR_JEWEL).sizeChance();
 	});
 }
 
@@ -320,28 +320,28 @@ function waystones(filter) {
 		c.category = new Comparison(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
-		e.colourWisdom(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeAugment();
+		e.colourWisdom(PAIR_QUESTLIKE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
-		e.colourAugment(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
+		e.colourAugment(PAIR_QUESTLIKE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.RARE);
 
-		e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
+		e.colourExalt(PAIR_QUESTLIKE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		e.colourChance(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeChance();
+		e.colourChance(PAIR_QUESTLIKE).sizeChance();
 	});
 }
 
@@ -352,27 +352,27 @@ function mechanics(filter) {
 		c.category = new Comparison([CATEGORY.TABLET]);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
-		e.colourWisdom(MECHANIC_COLOUR, MECHANIC_PRESET).sizeAugment();
+		e.colourWisdom(PAIR_MECHANIC).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison([CATEGORY.TABLET, CATEGORY.RELIC]);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
-		e.colourAugment(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
+		e.colourAugment(PAIR_MECHANIC).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.RARE);
 
-		e.colourExalt(MECHANIC_COLOUR, MECHANIC_PRESET).sizeExalt();
+		e.colourExalt(PAIR_MECHANIC).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison([CATEGORY.TABLET, CATEGORY.RELIC]);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		e.colourChance(MECHANIC_COLOUR, MECHANIC_PRESET).sizeChance();
+		e.colourChance(PAIR_MECHANIC).sizeChance();
 	});
 }

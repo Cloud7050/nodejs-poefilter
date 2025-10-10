@@ -1,18 +1,19 @@
 import { Comparison } from "../conditions/comparison.js";
 import { CATEGORY } from "../conditions/conditionSet.js";
-import { GEM_COLOUR, GEM_PRESET } from "../index.js";
+import { PAIR_GEM } from "../index.js";
+
 
 export function sectionGems(filter) {
 	// Uncut
 	filter.block((c, e) => {
 		c.category = new Comparison(CATEGORY.SUPPORT_UNCUT);
 
-		e.colourAugment(GEM_COLOUR, GEM_PRESET).sizeExalt();
+		e.colourAugment(PAIR_GEM).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.category = new Comparison(CATEGORY.GEM_UNCUT);
 
-		e.colourAugment(GEM_COLOUR, GEM_PRESET).sizeExalt();
+		e.colourAugment(PAIR_GEM).sizeExalt();
 	});
 
 	// Lineage
@@ -40,7 +41,7 @@ export function sectionGems(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.GEM);
 
-		e.colourChance(GEM_COLOUR, GEM_PRESET).sizeAugment();
+		e.colourChance(PAIR_GEM).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -54,7 +55,7 @@ export function sectionGems(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.GEM);
 
-		e.colourChance(GEM_COLOUR, GEM_PRESET).sizeExalt();
+		e.colourChance(PAIR_GEM).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -63,7 +64,7 @@ export function sectionGems(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.GEM);
 
-		e.colourChance(GEM_COLOUR, GEM_PRESET).sizeChance();
+		e.colourChance(PAIR_GEM).sizeChance();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -81,7 +82,7 @@ export function sectionGems(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.GEM);
 
-		e.colourDivine(GEM_COLOUR, GEM_PRESET).sizeDivine();
+		e.colourDivine(PAIR_GEM).sizeDivine();
 	});
 
 	//// Cut
@@ -93,14 +94,14 @@ export function sectionGems(filter) {
 		c.category = new Comparison(CATEGORY.GEM);
 		c.hasSockets(5);
 	}, (e) => {
-		e.colourExalt(GEM_COLOUR, GEM_PRESET).sizeExalt();
+		e.colourExalt(PAIR_GEM).sizeExalt();
 	});
 
 	// BASE basic
 	filter.block((c, e) => {
 		c.category = new Comparison(CATEGORY.GEM);
 
-		e.colourExalt(GEM_COLOUR, GEM_PRESET).sizeWisdom();
+		e.colourExalt(PAIR_GEM).sizeWisdom();
 	});
 	////
 }

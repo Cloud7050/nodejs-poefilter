@@ -89,7 +89,7 @@ export class EffectSet {
 		return this;
 	}
 
-	colourWisdom(mainColour, mapColour, backgroundColour = mainColour.brightness(3)) {
+	colourWisdom([mainColour, mapColour], backgroundColour = mainColour.brightness(3)) {
 		this.textColour = mainColour.brightness(87);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.brightness(87);
@@ -97,7 +97,7 @@ export class EffectSet {
 		this.mapIcon = EffectSet.MAP_ICON.KITE;
 		return this;
 	}
-	colourAugment(mainColour, mapColour, backgroundColour = mainColour.brightness(10)) {
+	colourAugment([mainColour, mapColour], backgroundColour = mainColour.brightness(10)) {
 		this.textColour = mainColour.brightness(77);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.brightness(77);
@@ -105,7 +105,7 @@ export class EffectSet {
 		this.mapIcon = EffectSet.MAP_ICON.HOUSE;
 		return this;
 	}
-	colourExalt(mainColour, mapColour, backgroundColour = mainColour.brightness(20)) {
+	colourExalt([mainColour, mapColour], backgroundColour = mainColour.brightness(20)) {
 		this.textColour = mainColour.brightness(72);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.brightness(72);
@@ -113,7 +113,7 @@ export class EffectSet {
 		this.mapIcon = EffectSet.MAP_ICON.CROSS;
 		return this;
 	}
-	colourChance(mainColour, mapColour, backgroundColour = mainColour.brightness(60)) {
+	colourChance([mainColour, mapColour], backgroundColour = mainColour.brightness(60)) {
 		this.textColour = mainColour.brightness(10);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.brightness(10);
@@ -121,7 +121,7 @@ export class EffectSet {
 		this.mapIcon = EffectSet.MAP_ICON.STAR;
 		return this;
 	}
-	colourDivine(mainColour, mapColour, backgroundColour = mainColour.brightness(95)) {
+	colourDivine([mainColour, mapColour], backgroundColour = mainColour.brightness(95)) {
 		this.textColour = mainColour.brightness(45);
 		this.backgroundColour = backgroundColour;
 		this.outlineColour = mainColour.brightness(45);

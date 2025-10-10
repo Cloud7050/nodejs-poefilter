@@ -12,34 +12,22 @@ import { sectionOutlines } from "./sections/8_outlines.js";
 import { sectionWhitelist } from "./sections/9_whitelist.js";
 
 // ROSE
-export const CURRENCY_COLOUR = Colour.RED;
-export const CURRENCY_PRESET = PRESET.RED;
+export const PAIR_CURRENCY = [Colour.RED, PRESET.RED];
 // ORANGE
-export const CRAFT_COLOUR = Colour.TANGERINE;
-export const CRAFT_PRESET = PRESET.ORANGE;
+export const PAIR_CRAFT = [Colour.TANGERINE, PRESET.ORANGE];
 // GOLD
-export const GOLD_COLOUR = Colour.YELLOW;
-export const GOLD_PRESET = PRESET.YELLOW;
-export const QUESTLIKE_COLOUR = Colour.LIME;
-export const QUESTLIKE_PRESET = PRESET.GREEN;
-export const QUEST_COLOUR = Colour.GREEN;
-export const QUEST_PRESET = PRESET.GREEN;
-export const MECHANIC_COLOUR = Colour.SEAFOAM;
-export const MECHANIC_PRESET = PRESET.BROWN;
+export const PAIR_GOLD = [Colour.YELLOW, PRESET.YELLOW];
+export const PAIR_QUESTLIKE = [Colour.LIME, PRESET.GREEN];
+export const PAIR_QUEST = [Colour.GREEN, PRESET.GREEN];
+export const PAIR_MECHANIC = [Colour.SEAFOAM, PRESET.BROWN];
 // TEAL
-export const GEM_COLOUR = Colour.CYAN;
-export const GEM_PRESET = PRESET.GREY;
+export const PAIR_GEM = [Colour.CYAN, PRESET.GREY];
 // SKY
-export const SOCKETABLE_COLOUR = Colour.CERULEAN;
-export const SOCKETABLE_PRESET = PRESET.CYAN;
-export const JEWEL_COLOUR = Colour.BLUE;
-export const JEWEL_PRESET = PRESET.BLUE;
-export const GEAR_COLOUR = Colour.LAPIS;
-export const GEAR_PRESET = PRESET.BLUE;
-export const ESSENCE_COLOUR = Colour.PURPLE;
-export const ESSENCE_PRESET = PRESET.PURPLE;
-export const ABYSS_COLOUR = Colour.VIOLET;
-export const ABYSS_PRESET = PRESET.PINK;
+export const PAIR_SOCKETABLE = [Colour.CERULEAN, PRESET.CYAN];
+export const PAIR_JEWEL = [Colour.BLUE, PRESET.BLUE];
+export const PAIR_GEAR = [Colour.LAPIS, PRESET.BLUE];
+export const PAIR_ESSENCE = [Colour.PURPLE, PRESET.PURPLE];
+export const PAIR_ABYSS = [Colour.VIOLET, PRESET.PINK];
 // PINK
 
 let main = new Filter("Cloud");

@@ -1,6 +1,6 @@
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { CATEGORY } from "../conditions/conditionSet.js";
-import { SOCKETABLE_COLOUR, SOCKETABLE_PRESET } from "../index.js";
+import { PAIR_SOCKETABLE } from "../index.js";
 
 export function sectionSocketables(filter) {
 	// Runes
@@ -8,19 +8,19 @@ export function sectionSocketables(filter) {
 		c.names = new Comparison("Lesser ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-		e.colourWisdom(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeAugment();
+		e.colourWisdom(PAIR_SOCKETABLE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Greater ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-		e.colourExalt(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeExalt();
+		e.colourExalt(PAIR_SOCKETABLE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(" Rune", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-		e.colourAugment(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeAugment();
+		e.colourAugment(PAIR_SOCKETABLE).sizeAugment();
 	});
 
 	// Normal soul cores
@@ -41,7 +41,7 @@ export function sectionSocketables(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-		e.colourChance(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeChance();
+		e.colourChance(PAIR_SOCKETABLE).sizeChance();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -51,13 +51,13 @@ export function sectionSocketables(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-		e.colourDivine(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeDivine();
+		e.colourDivine(PAIR_SOCKETABLE).sizeDivine();
 	});
 
 	// BASE other
 	filter.block((c, e) => {
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
 
-		e.colourExalt(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeExalt();
+		e.colourExalt(PAIR_SOCKETABLE).sizeExalt();
 	});
 }

@@ -2,7 +2,7 @@ import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { CATEGORY } from "../conditions/conditionSet.js";
 import { Colour } from "../effects/colour.js";
 import { EffectSet } from "../effects/effectSet.js";
-import { ABYSS_COLOUR, ABYSS_PRESET, CRAFT_COLOUR, CRAFT_PRESET, CURRENCY_COLOUR, CURRENCY_PRESET, ESSENCE_COLOUR, ESSENCE_PRESET, GOLD_COLOUR, GOLD_PRESET, MECHANIC_COLOUR, MECHANIC_PRESET, QUESTLIKE_COLOUR, QUESTLIKE_PRESET } from "../index.js";
+import { PAIR_ABYSS, PAIR_CRAFT, PAIR_CURRENCY, PAIR_ESSENCE, PAIR_GOLD, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../index.js";
 
 // https://poe2scout.com/economy/currency
 export function sectionCurrencies(filter) {
@@ -22,7 +22,7 @@ function general(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourWisdom(CURRENCY_COLOUR, CURRENCY_PRESET).sizeWisdom();
+		e.colourWisdom(PAIR_CURRENCY).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -38,7 +38,7 @@ function general(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourAugment(CURRENCY_COLOUR, CURRENCY_PRESET).sizeAugment();
+		e.colourAugment(PAIR_CURRENCY).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -52,7 +52,7 @@ function general(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(CURRENCY_COLOUR, CURRENCY_PRESET).sizeAugment();
+		e.colourExalt(PAIR_CURRENCY).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -64,7 +64,7 @@ function general(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(CURRENCY_COLOUR, CURRENCY_PRESET).sizeExalt();
+		e.colourExalt(PAIR_CURRENCY).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -75,7 +75,7 @@ function general(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourChance(CURRENCY_COLOUR, CURRENCY_PRESET).sizeChance();
+		e.colourChance(PAIR_CURRENCY).sizeChance();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -90,7 +90,7 @@ function general(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourDivine(CURRENCY_COLOUR, CURRENCY_PRESET).sizeDivine();
+		e.colourDivine(PAIR_CURRENCY).sizeDivine();
 	});
 }
 
@@ -100,19 +100,19 @@ function other(filter) {
 		c.names = new Comparison("Lesser Essence of ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourWisdom(ESSENCE_COLOUR, ESSENCE_PRESET).sizeAugment();
+		e.colourWisdom(PAIR_ESSENCE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Greater Essence of ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(ESSENCE_COLOUR, ESSENCE_PRESET).sizeExalt();
+		e.colourExalt(PAIR_ESSENCE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Essence of ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourAugment(ESSENCE_COLOUR, ESSENCE_PRESET).sizeAugment();
+		e.colourAugment(PAIR_ESSENCE).sizeAugment();
 	});
 
 	// Abyss
@@ -124,7 +124,7 @@ function other(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourWisdom(ABYSS_COLOUR, ABYSS_PRESET).sizeAugment();
+		e.colourWisdom(PAIR_ABYSS).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -133,7 +133,7 @@ function other(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourAugment(ABYSS_COLOUR, ABYSS_PRESET).sizeAugment();
+		e.colourAugment(PAIR_ABYSS).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -141,7 +141,7 @@ function other(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourAugment(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
+		e.colourAugment(PAIR_ABYSS).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -149,7 +149,7 @@ function other(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(ABYSS_COLOUR, ABYSS_PRESET).sizeExalt();
+		e.colourExalt(PAIR_ABYSS).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -157,7 +157,7 @@ function other(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(ABYSS_COLOUR, ABYSS_PRESET).sizeChance();
+		e.colourExalt(PAIR_ABYSS).sizeChance();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -167,7 +167,7 @@ function other(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourDivine(ABYSS_COLOUR, ABYSS_PRESET).sizeDivine();
+		e.colourDivine(PAIR_ABYSS).sizeDivine();
 	});
 
 	// Liquid emotions
@@ -175,19 +175,19 @@ function other(filter) {
 		c.names = new Comparison("Diluted Liquid ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourWisdom(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+		e.colourWisdom(PAIR_CRAFT).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Concentrated Liquid ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+		e.colourExalt(PAIR_CRAFT).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Liquid ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourAugment(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+		e.colourAugment(PAIR_CRAFT).sizeExalt();
 	});
 
 	// Catalysts
@@ -201,7 +201,7 @@ function other(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourAugment(CRAFT_COLOUR, CRAFT_PRESET).sizeAugment();
+		e.colourAugment(PAIR_CRAFT).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -212,7 +212,7 @@ function other(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeAugment();
+		e.colourExalt(PAIR_CRAFT).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -221,7 +221,7 @@ function other(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+		e.colourExalt(PAIR_CRAFT).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -229,7 +229,7 @@ function other(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.OMEN);
 
-		e.colourChance(CRAFT_COLOUR, CRAFT_PRESET).sizeChance();
+		e.colourChance(PAIR_CRAFT).sizeChance();
 	});
 
 	// Trial keys
@@ -237,19 +237,19 @@ function other(filter) {
 		c.names = new Comparison("Bronze Key");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourWisdom(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeAugment();
+		e.colourWisdom(PAIR_QUESTLIKE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Silver Key");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourAugment(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
+		e.colourAugment(PAIR_QUESTLIKE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold Key");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
+		e.colourExalt(PAIR_QUESTLIKE).sizeExalt();
 	});
 
 	// Splinters
@@ -258,7 +258,7 @@ function other(filter) {
 			"Petition Splinter", "Runic Splinter"]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
+		e.colourExalt(PAIR_QUESTLIKE).sizeExalt();
 	});
 
 	// Expedition
@@ -267,13 +267,13 @@ function other(filter) {
 			"Order Artifact", "Sun Artifact"]);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourWisdom(MECHANIC_COLOUR, MECHANIC_PRESET).sizeWisdom();
+		e.colourWisdom(PAIR_MECHANIC).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Exotic Coinage");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourAugment(MECHANIC_COLOUR, MECHANIC_PRESET).sizeAugment();
+		e.colourAugment(PAIR_MECHANIC).sizeAugment();
 	});
 
 	// Gold
@@ -283,34 +283,34 @@ function other(filter) {
 		c.count = new Comparison(50, OPERATOR.LT);
 
 		e.hide();
-		e.colourWisdom(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeWisdom();
+		e.colourWisdom(PAIR_GOLD, Colour.TRANSPARENT).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 		c.count = new Comparison(500, OPERATOR.LT);
 
-		e.colourWisdom(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeWisdom();
+		e.colourWisdom(PAIR_GOLD, Colour.TRANSPARENT).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 		c.count = new Comparison(2500, OPERATOR.LT);
 
-		e.colourAugment(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeAugment();
+		e.colourAugment(PAIR_GOLD, Colour.TRANSPARENT).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 		c.count = new Comparison(5000, OPERATOR.LT);
 
-		e.colourExalt(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeAugment();
+		e.colourExalt(PAIR_GOLD, Colour.TRANSPARENT).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeExalt();
+		e.colourExalt(PAIR_GOLD, Colour.TRANSPARENT).sizeExalt();
 	});
 }
 
@@ -318,8 +318,9 @@ function base(filter) {
 	filter.block((c, e) => {
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.outlineColour = CURRENCY_COLOUR;
-		e.mapColour = CURRENCY_PRESET;
+		let [currencyColour, currencyPreset] = PAIR_CURRENCY;
+		e.outlineColour = currencyColour;
+		e.mapColour = currencyPreset;
 		e.mapIcon = EffectSet.MAP_ICON.CROSS;
 		e.sizeExalt();
 	});

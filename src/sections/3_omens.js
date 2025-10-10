@@ -1,6 +1,7 @@
 import { Comparison } from "../conditions/comparison.js";
 import { CATEGORY } from "../conditions/conditionSet.js";
-import { CRAFT_COLOUR, CRAFT_PRESET } from "../index.js";
+import { PAIR_CRAFT } from "../index.js";
+
 
 export function sectionOmens(filter) {
 	filter.block((c, e) => {
@@ -11,7 +12,7 @@ export function sectionOmens(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.OMEN);
 
-		e.colourAugment(CRAFT_COLOUR, CRAFT_PRESET).sizeAugment();
+		e.colourAugment(PAIR_CRAFT).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -23,7 +24,7 @@ export function sectionOmens(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.OMEN);
 
-		e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeAugment();
+		e.colourExalt(PAIR_CRAFT).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -43,7 +44,7 @@ export function sectionOmens(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.OMEN);
 
-		e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
+		e.colourExalt(PAIR_CRAFT).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -57,7 +58,7 @@ export function sectionOmens(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.OMEN);
 
-		e.colourChance(CRAFT_COLOUR, CRAFT_PRESET).sizeChance();
+		e.colourChance(PAIR_CRAFT).sizeChance();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison([
@@ -75,6 +76,6 @@ export function sectionOmens(filter) {
 		]);
 		c.category = new Comparison(CATEGORY.OMEN);
 
-		e.colourDivine(CRAFT_COLOUR, CRAFT_PRESET).sizeDivine();
+		e.colourDivine(PAIR_CRAFT).sizeDivine();
 	});
 }

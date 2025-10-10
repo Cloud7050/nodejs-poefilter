@@ -1,6 +1,6 @@
 import { Comparison } from "../conditions/comparison.js";
 import { CATEGORY } from "../conditions/conditionSet.js";
-import { QUEST_COLOUR, QUEST_PRESET, QUESTLIKE_COLOUR, QUESTLIKE_PRESET } from "../index.js";
+import { PAIR_QUEST, PAIR_QUESTLIKE } from "../index.js";
 
 export function sectionMisc(filter) {
 	tickets(filter);
@@ -13,7 +13,7 @@ function tickets(filter) {
 	filter.block((c, e) => {
 		c.category = new Comparison(CATEGORY.TICKET);
 
-		e.colourExalt(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeExalt();
+		e.colourExalt(PAIR_QUESTLIKE).sizeExalt();
 	});
 }
 
@@ -22,7 +22,7 @@ function keys(filter) {
 	filter.block((c, e) => {
 		c.category = new Comparison([CATEGORY.VAULT, CATEGORY.FRAGMENT]);
 
-		e.colourChance(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeChance();
+		e.colourChance(PAIR_QUESTLIKE).sizeChance();
 	});
 }
 
@@ -31,6 +31,6 @@ function quest(filter) {
 		c.category = new Comparison(CATEGORY.QUEST);
 
 		// True quest items have custom minimap icon overrides
-		e.colourExalt(QUEST_COLOUR, QUEST_PRESET).sizeExalt();
+		e.colourExalt(PAIR_QUEST).sizeExalt();
 	});
 }
