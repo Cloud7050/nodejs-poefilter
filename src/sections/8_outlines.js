@@ -1,4 +1,4 @@
-import { Comparison } from "../conditions/comparison.js";
+import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { CATEGORY } from "../conditions/conditionSet.js";
 import { StringList } from "../conditions/stringList.js";
 import { Colour } from "../effects/colour.js";
@@ -35,12 +35,12 @@ export function sectionOutlines(filter) {
 	}, (c) => {
 		// Never hide >= 5 quality if it's 4 spots or less
 		c.hasQuality(5);
-		c.height = new Comparison(2, Comparison.OPERATOR.LTE);
-		c.width = new Comparison(2, Comparison.OPERATOR.LTE);
+		c.height = new Comparison(2, OPERATOR.LTE);
+		c.width = new Comparison(2, OPERATOR.LTE);
 	}, (c) => {
 		// Never hide >= 5 quality if it's 4 spots or less
 		c.hasQuality(5);
-		c.height = new Comparison(4, Comparison.OPERATOR.LTE);
+		c.height = new Comparison(4, OPERATOR.LTE);
 		c.width = new Comparison(1);
 	}, (c) => {
 		// Still outline all other >= 1 quality, but they aren't immune to hiding below

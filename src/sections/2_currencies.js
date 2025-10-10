@@ -1,4 +1,4 @@
-import { Comparison } from "../conditions/comparison.js";
+import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { CATEGORY } from "../conditions/conditionSet.js";
 import { StringList } from "../conditions/stringList.js";
 import { Colour } from "../effects/colour.js";
@@ -98,19 +98,19 @@ function general(filter) {
 function other(filter) {
 	// Essences
 	filter.block((c, e) => {
-		c.names = new Comparison("Lesser Essence of ", Comparison.OPERATOR.EQUAL);
+		c.names = new Comparison("Lesser Essence of ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourWisdom(ESSENCE_COLOUR, ESSENCE_PRESET).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Greater Essence of ", Comparison.OPERATOR.EQUAL);
+		c.names = new Comparison("Greater Essence of ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourExalt(ESSENCE_COLOUR, ESSENCE_PRESET).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Essence of ", Comparison.OPERATOR.EQUAL);
+		c.names = new Comparison("Essence of ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourAugment(ESSENCE_COLOUR, ESSENCE_PRESET).sizeAugment();
@@ -173,19 +173,19 @@ function other(filter) {
 
 	// Liquid emotions
 	filter.block((c, e) => {
-		c.names = new Comparison("Diluted Liquid ", Comparison.OPERATOR.EQUAL);
+		c.names = new Comparison("Diluted Liquid ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourWisdom(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Concentrated Liquid ", Comparison.OPERATOR.EQUAL);
+		c.names = new Comparison("Concentrated Liquid ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourExalt(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Liquid ", Comparison.OPERATOR.EQUAL);
+		c.names = new Comparison("Liquid ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourAugment(CRAFT_COLOUR, CRAFT_PRESET).sizeExalt();
@@ -281,7 +281,7 @@ function other(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
-		c.count = new Comparison(50, Comparison.OPERATOR.LT);
+		c.count = new Comparison(50, OPERATOR.LT);
 
 		e.hide();
 		e.colourWisdom(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeWisdom();
@@ -289,21 +289,21 @@ function other(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
-		c.count = new Comparison(500, Comparison.OPERATOR.LT);
+		c.count = new Comparison(500, OPERATOR.LT);
 
 		e.colourWisdom(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
-		c.count = new Comparison(2500, Comparison.OPERATOR.LT);
+		c.count = new Comparison(2500, OPERATOR.LT);
 
 		e.colourAugment(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
-		c.count = new Comparison(5000, Comparison.OPERATOR.LT);
+		c.count = new Comparison(5000, OPERATOR.LT);
 
 		e.colourExalt(GOLD_COLOUR, GOLD_PRESET, Colour.TRANSPARENT).sizeAugment();
 	});

@@ -1,4 +1,4 @@
-import { Comparison } from "./comparison.js";
+import { Comparison, OPERATOR } from "./comparison.js";
 import { StringList } from "./stringList.js";
 
 export class ConditionSet {
@@ -98,25 +98,25 @@ export class ConditionSet {
 	}
 
 	hasQuality(minimum = 1) {
-		this.quality = new Comparison(minimum, Comparison.OPERATOR.GTE);
+		this.quality = new Comparison(minimum, OPERATOR.GTE);
 		return this;
 	}
 	hasSockets(minimum = 2) {
-		this.sockets = new Comparison(minimum, Comparison.OPERATOR.GTE);
+		this.sockets = new Comparison(minimum, OPERATOR.GTE);
 		return this;
 	}
 	onlyEnergyShield() {
-		this.energyShield = new Comparison(0, Comparison.OPERATOR.GT);
+		this.energyShield = new Comparison(0, OPERATOR.GT);
 		this.armour = new Comparison(0);
 		this.evasion = new Comparison(0);
 		return this;
 	}
 	hasArmour() {
-		this.armour = new Comparison(0, Comparison.OPERATOR.GT);
+		this.armour = new Comparison(0, OPERATOR.GT);
 		return this;
 	}
 	hasEvasion() {
-		this.evasion = new Comparison(0, Comparison.OPERATOR.GT);
+		this.evasion = new Comparison(0, OPERATOR.GT);
 		return this;
 	}
 
@@ -248,7 +248,7 @@ export class ConditionSet {
 			"of the Sniper", // 5 | 7, IL81
 			////
 		);
-		this.mods = new Comparison(new StringList(...phrases), Comparison.OPERATOR.GTE, 1);
+		this.mods = new Comparison(new StringList(...phrases), OPERATOR.GTE, 1);
 		return this;
 	}
 	goodModOffhand(includeOther = false) {
@@ -266,7 +266,7 @@ export class ConditionSet {
 			"of the Fletcher", // 2, IL41
 			////
 		);
-		this.mods = new Comparison(new StringList(...phrases), Comparison.OPERATOR.GTE, 1);
+		this.mods = new Comparison(new StringList(...phrases), OPERATOR.GTE, 1);
 		return this;
 	}
 	goodModArmour(includeOther = false) {
@@ -321,7 +321,7 @@ export class ConditionSet {
 			"of Dueling", // 2, IL41
 			////
 		);
-		this.mods = new Comparison(new StringList(...phrases), Comparison.OPERATOR.GTE, 1);
+		this.mods = new Comparison(new StringList(...phrases), OPERATOR.GTE, 1);
 		return this;
 	}
 	goodModJewellery(includeOther = false) {
@@ -379,7 +379,7 @@ export class ConditionSet {
 			"of the Sharpshooter", // 3, IL75
 			////
 		);
-		this.mods = new Comparison(new StringList(...phrases), Comparison.OPERATOR.GTE, 1);
+		this.mods = new Comparison(new StringList(...phrases), OPERATOR.GTE, 1);
 		return this;
 	}
 }

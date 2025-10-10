@@ -1,5 +1,5 @@
-import { Comparison } from "../conditions/comparison.js";
-import { CATEGORY, ConditionSet } from "../conditions/conditionSet.js";
+import { Comparison, OPERATOR } from "../conditions/comparison.js";
+import { CATEGORY, RARITY } from "../conditions/conditionSet.js";
 import { StringList } from "../conditions/stringList.js";
 
 export function sectionHides(filter) {
@@ -12,7 +12,7 @@ export function sectionHides(filter) {
 			"Wrath Sceptre", // Fulmination
 		));
 		c.category = new Comparison(CATEGORY.MAIN_CLASS);
-		c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (c) => { // Normal/magic class offhands but are low bases
 		// https://poe2db.tw/us/Foci#FociItem
 		c.names = new Comparison(new StringList(
@@ -35,14 +35,14 @@ export function sectionHides(filter) {
 			// "Tasalian Focus", // 68 ES, L80
 		));
 		c.category = new Comparison(CATEGORY.OFF_CLASS);
-		c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (c) => { // Normal/magic other weapons
 		c.category = new Comparison(new StringList(CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER));
-		c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (c) => { // Rare other weapons that are low unidentified tier
 		c.category = new Comparison(new StringList(CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER));
-		c.rarity = new Comparison(ConditionSet.RARITY.RARE);
-		c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
 	}, (c) => { // Normal/magic class armour tops but are low bases
 		c.names = new Comparison(new StringList(
 			// https://poe2db.tw/us/Helmets
@@ -96,34 +96,34 @@ export function sectionHides(filter) {
 			// "Sirenscale Gloves", // 54 ES, L80
 		));
 		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 		c.onlyEnergyShield();
 	}, (c) => { // Normal/magic other armour
 		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 		c.hasArmour();
 	}, (c) => {
 		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 		c.hasEvasion();
 	}, (c) => {
 		// Class doesn't use most boots, it uses unique
 		c.category = new Comparison(CATEGORY.BOOTS);
-		c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (c) => { // Rare other armour that is low unidentified tier
 		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(ConditionSet.RARITY.RARE);
-		c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
 		c.hasArmour();
 	}, (c) => {
 		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(ConditionSet.RARITY.RARE);
-		c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
 		c.hasEvasion();
 	}, (c) => {
 		c.category = new Comparison(CATEGORY.BOOTS);
-		c.rarity = new Comparison(ConditionSet.RARITY.RARE);
-		c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
 	}, (c) => { // Normal/magic other jewellery
 		c.names = new Comparison(new StringList(
 			"Crimson Amulet", // 2-4 life regen
@@ -135,15 +135,15 @@ export function sectionHides(filter) {
 			"Unset Ring", // Skill slot
 		));
 		c.category = new Comparison(CATEGORY.JEWELLERY);
-		c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (c) => { // Magic belts
 		// Class doesn't use most belts, it uses unique
 		c.category = new Comparison(CATEGORY.BELT);
-		c.rarity = new Comparison(ConditionSet.RARITY.MAGIC);
+		c.rarity = new Comparison(RARITY.MAGIC);
 	}, (c) => { // Rare belts that are low unidentified tier
 		c.category = new Comparison(CATEGORY.BELT);
-		c.rarity = new Comparison(ConditionSet.RARITY.RARE);
-		c.wisdomTier = new Comparison(2, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
 	}, (c) => { // Bad normal/magic flasks
 		c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
 			"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
@@ -151,7 +151,7 @@ export function sectionHides(filter) {
 			"Colossal Life Flask", "Colossal Mana Flask", "Gargantuan Life Flask",
 			"Gargantuan Mana Flask", "Transcendent Life Flask", "Transcendent Mana Flask"));
 		c.category = new Comparison(CATEGORY.FLASK);
-		c.rarity = new Comparison(ConditionSet.RARITY.MAGIC, Comparison.OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (e) => {
 		e.hide();
 	});

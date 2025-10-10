@@ -1,4 +1,4 @@
-import { Colour } from "./effects/colour.js";
+import { Colour, PRESET } from "./effects/colour.js";
 import { Filter } from "./filter.js";
 import { sectionHides } from "./sections/10_hides.js";
 import { sectionGlobal } from "./sections/1_global.js";
@@ -13,33 +13,33 @@ import { sectionWhitelist } from "./sections/9_whitelist.js";
 
 // ROSE
 export const CURRENCY_COLOUR = Colour.RED;
-export const CURRENCY_PRESET = Colour.PRESET.RED;
+export const CURRENCY_PRESET = PRESET.RED;
 // ORANGE
 export const CRAFT_COLOUR = Colour.TANGERINE;
-export const CRAFT_PRESET = Colour.PRESET.ORANGE;
+export const CRAFT_PRESET = PRESET.ORANGE;
 // GOLD
 export const GOLD_COLOUR = Colour.YELLOW;
-export const GOLD_PRESET = Colour.PRESET.YELLOW;
+export const GOLD_PRESET = PRESET.YELLOW;
 export const QUESTLIKE_COLOUR = Colour.LIME;
-export const QUESTLIKE_PRESET = Colour.PRESET.GREEN;
+export const QUESTLIKE_PRESET = PRESET.GREEN;
 export const QUEST_COLOUR = Colour.GREEN;
-export const QUEST_PRESET = Colour.PRESET.GREEN;
+export const QUEST_PRESET = PRESET.GREEN;
 export const MECHANIC_COLOUR = Colour.SEAFOAM;
-export const MECHANIC_PRESET = Colour.PRESET.BROWN;
+export const MECHANIC_PRESET = PRESET.BROWN;
 // TEAL
 export const GEM_COLOUR = Colour.CYAN;
-export const GEM_PRESET = Colour.PRESET.GREY;
+export const GEM_PRESET = PRESET.GREY;
 // SKY
 export const SOCKETABLE_COLOUR = Colour.CERULEAN;
-export const SOCKETABLE_PRESET = Colour.PRESET.CYAN;
+export const SOCKETABLE_PRESET = PRESET.CYAN;
 export const JEWEL_COLOUR = Colour.BLUE;
-export const JEWEL_PRESET = Colour.PRESET.BLUE;
+export const JEWEL_PRESET = PRESET.BLUE;
 export const GEAR_COLOUR = Colour.LAPIS;
-export const GEAR_PRESET = Colour.PRESET.BLUE;
+export const GEAR_PRESET = PRESET.BLUE;
 export const ESSENCE_COLOUR = Colour.PURPLE;
-export const ESSENCE_PRESET = Colour.PRESET.PURPLE;
+export const ESSENCE_PRESET = PRESET.PURPLE;
 export const ABYSS_COLOUR = Colour.VIOLET;
-export const ABYSS_PRESET = Colour.PRESET.PINK;
+export const ABYSS_PRESET = PRESET.PINK;
 // PINK
 
 let main = new Filter("Cloud");

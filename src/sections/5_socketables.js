@@ -1,4 +1,4 @@
-import { Comparison } from "../conditions/comparison.js";
+import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { CATEGORY } from "../conditions/conditionSet.js";
 import { StringList } from "../conditions/stringList.js";
 import { SOCKETABLE_COLOUR, SOCKETABLE_PRESET } from "../index.js";
@@ -6,19 +6,19 @@ import { SOCKETABLE_COLOUR, SOCKETABLE_PRESET } from "../index.js";
 export function sectionSocketables(filter) {
 	// Runes
 	filter.block((c, e) => {
-		c.names = new Comparison("Lesser ", Comparison.OPERATOR.EQUAL);
+		c.names = new Comparison("Lesser ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
 
 		e.colourWisdom(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Greater ", Comparison.OPERATOR.EQUAL);
+		c.names = new Comparison("Greater ", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
 
 		e.colourExalt(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison(" Rune", Comparison.OPERATOR.EQUAL);
+		c.names = new Comparison(" Rune", OPERATOR.EQUAL);
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
 
 		e.colourAugment(SOCKETABLE_COLOUR, SOCKETABLE_PRESET).sizeAugment();

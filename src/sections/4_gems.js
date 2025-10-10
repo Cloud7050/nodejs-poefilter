@@ -1,4 +1,4 @@
-import { Comparison } from "../conditions/comparison.js";
+import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { CATEGORY } from "../conditions/conditionSet.js";
 import { StringList } from "../conditions/stringList.js";
 import { GEM_COLOUR, GEM_PRESET } from "../index.js";
@@ -40,7 +40,7 @@ export function sectionGems(filter) {
 				"Atziri's Allure", // 1 exalt
 				"Zarokh's Refrain", // 1 exalt
 			),
-			Comparison.OPERATOR.EQUAL
+			OPERATOR.EQUAL
 		);
 		c.category = new Comparison(CATEGORY.GEM);
 
@@ -57,7 +57,7 @@ export function sectionGems(filter) {
 				"Ailith's Chimes", // 5 exalts
 				"Kalisa's Crescendo", // 5 exalts
 			),
-			Comparison.OPERATOR.EQUAL
+			OPERATOR.EQUAL
 		);
 		c.category = new Comparison(CATEGORY.GEM);
 
@@ -69,7 +69,7 @@ export function sectionGems(filter) {
 				"Uhtred's Exodus", // 14 exalts
 				"Tul's Stillness", // 15 exalts
 			),
-			Comparison.OPERATOR.EQUAL
+			OPERATOR.EQUAL
 		);
 		c.category = new Comparison(CATEGORY.GEM);
 
@@ -90,7 +90,7 @@ export function sectionGems(filter) {
 				"Arjun's Medal", // 34 divs
 				"Dialla's Desire", // 36 divs
 			),
-			Comparison.OPERATOR.EQUAL
+			OPERATOR.EQUAL
 		);
 		c.category = new Comparison(CATEGORY.GEM);
 
