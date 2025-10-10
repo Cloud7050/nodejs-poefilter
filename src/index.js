@@ -30,20 +30,25 @@ export const PAIR_ESSENCE = [Colour.PURPLE, PRESET.PURPLE];
 export const PAIR_ABYSS = [Colour.VIOLET, PRESET.PINK];
 // PINK
 
-let main = new Filter("Cloud");
+function makeFilter(name, showRares = false) {
+	let main = new Filter(name);
 
-sectionGlobal(main);
+	sectionGlobal(main);
 
-sectionCurrencies(main);
-sectionOmens(main);
-sectionGems(main);
-sectionSocketables(main);
-sectionMisc(main);
-sectionRarity(main);
+	sectionCurrencies(main);
+	sectionOmens(main);
+	sectionGems(main);
+	sectionSocketables(main);
+	sectionMisc(main);
+	sectionRarity(main);
 
-sectionOutlines(main);
-sectionWhitelist(main);
+	sectionOutlines(main);
+	sectionWhitelist(main, showRares);
 
-sectionHides(main);
+	sectionHides(main);
 
-main.save();
+	main.save();
+}
+
+makeFilter("Cloud");
+makeFilter("Show Rares", true);

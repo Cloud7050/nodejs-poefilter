@@ -1,0 +1,1361 @@
+Show
+	#
+
+	SetFontSize 37
+	SetBackgroundColor 0 0 0 255
+	MinimapIcon 0 Grey Circle
+
+	Continue
+
+Show
+	BaseType == "Scroll of Wisdom" "Greater Orb of Transmutation" "Transmutation Shard" "Artificer's Shard"
+	Class == "Stackable Currency"
+
+	SetFontSize 27
+	SetTextColor 255 217 215 255
+	SetBackgroundColor 35 2 3 255
+	SetBorderColor 255 217 215 255
+	MinimapIcon 2 Red Kite
+
+Show
+	BaseType == "Lesser Jeweller's Orb" "Orb of Transmutation" "Regal Shard" "Artificer's Orb" "Orb of Augmentation" "Greater Orb of Augmentation" "Perfect Orb of Transmutation" "Greater Jeweller's Orb" "Blacksmith's Whetstone"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 255 187 185 255
+	SetBackgroundColor 68 8 12 255
+	SetBorderColor 255 187 185 255
+	MinimapIcon 1 Red UpsideDownHouse
+
+Show
+	BaseType == "Orb of Alchemy" "Arcanist's Etcher" "Regal Orb" "Glassblower's Bauble" "Armourer's Scrap" "Gemcutter's Prism" "Greater Regal Orb"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 255 172 169 255
+	SetBackgroundColor 115 20 27 255
+	SetBorderColor 255 172 169 255
+	MinimapIcon 1 Red Cross
+
+Show
+	BaseType == "Exalted Orb" "Perfect Orb of Augmentation" "Vaal Orb" "Chance Shard" "Greater Exalted Orb"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 172 169 255
+	SetBackgroundColor 115 20 27 255
+	SetBorderColor 255 172 169 255
+	MinimapIcon 0 Red Cross
+
+Show
+	BaseType == "Chaos Orb" "Perfect Jeweller's Orb" "Perfect Regal Orb" "Orb of Chance"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 68 8 12 255
+	SetBackgroundColor 255 131 130 255
+	SetBorderColor 68 8 12 255
+	PlayEffect Red
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Red Star
+
+Show
+	BaseType == "Greater Chaos Orb" "Fracturing Orb" "Orb of Annulment" "Divine Orb" "Perfect Chaos Orb" "Perfect Exalted Orb" "Hinekora's Lock" "Mirror of Kalandra"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 240 65 75 255
+	SetBackgroundColor 255 241 240 255
+	SetBorderColor 240 65 75 255
+	PlayEffect Red
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Red Diamond
+
+Show
+	BaseType = "Lesser Essence of "
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 228 215 255 255
+	SetBackgroundColor 16 4 42 255
+	SetBorderColor 228 215 255 255
+	MinimapIcon 1 Purple Kite
+
+Show
+	BaseType = "Greater Essence of "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 194 169 255 255
+	SetBackgroundColor 61 28 129 255
+	SetBorderColor 194 169 255 255
+	MinimapIcon 0 Purple Cross
+
+Show
+	BaseType = "Essence of "
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 205 184 255 255
+	SetBackgroundColor 35 14 79 255
+	SetBorderColor 205 184 255 255
+	MinimapIcon 1 Purple UpsideDownHouse
+
+Show
+	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 247 214 255 255
+	SetBackgroundColor 25 2 36 255
+	SetBorderColor 247 214 255 255
+	MinimapIcon 1 Pink Kite
+
+Show
+	BaseType == "Preserved Rib" "Preserved Jawbone"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 236 183 255 255
+	SetBackgroundColor 52 9 71 255
+	SetBorderColor 236 183 255 255
+	MinimapIcon 1 Pink UpsideDownHouse
+
+Show
+	BaseType == "Preserved Collarbone"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 236 183 255 255
+	SetBackgroundColor 52 9 71 255
+	SetBorderColor 236 183 255 255
+	MinimapIcon 0 Pink UpsideDownHouse
+
+Show
+	BaseType == "Preserved Vertebrae"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 231 167 255 255
+	SetBackgroundColor 89 21 118 255
+	SetBorderColor 231 167 255 255
+	MinimapIcon 0 Pink Cross
+
+Show
+	BaseType == "Preserved Cranium"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 231 167 255 255
+	SetBackgroundColor 89 21 118 255
+	SetBorderColor 231 167 255 255
+	PlayEffect Pink
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Pink Cross
+
+Show
+	BaseType == "Ancient Rib" "Ancient Jawbone" "Ancient Collarbone"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 191 62 248 255
+	SetBackgroundColor 255 238 255 255
+	SetBorderColor 191 62 248 255
+	PlayEffect Pink
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Pink Diamond
+
+Show
+	BaseType = "Diluted Liquid "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 227 207 255
+	SetBackgroundColor 27 10 0 255
+	SetBorderColor 255 227 207 255
+	MinimapIcon 0 Orange Kite
+
+Show
+	BaseType = "Concentrated Liquid "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	MinimapIcon 0 Orange Cross
+
+Show
+	BaseType = "Liquid "
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 206 166 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 206 166 255
+	MinimapIcon 0 Orange UpsideDownHouse
+
+Show
+	BaseType == "Skittering Catalyst" "Uul-Netol's Catalyst" "Adaptive Catalyst" "Carapace Catalyst" "Sibilant Catalyst"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 255 206 166 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 206 166 255
+	MinimapIcon 1 Orange UpsideDownHouse
+
+Show
+	BaseType == "Chayula's Catalyst" "Neural Catalyst" "Xoph's Catalyst" "Tul's Catalyst"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	MinimapIcon 1 Orange Cross
+
+Show
+	BaseType == "Flesh Catalyst" "Esh's Catalyst"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	MinimapIcon 0 Orange Cross
+
+Show
+	BaseType == "Reaver Catalyst"
+	Class == Omen
+
+	SetFontSize 45
+	SetTextColor 57 28 0 255
+	SetBackgroundColor 255 166 84 255
+	SetBorderColor 57 28 0 255
+	PlayEffect Orange
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Orange Star
+
+Show
+	BaseType == "Bronze Key"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 233 251 145 255
+	SetBackgroundColor 14 18 0 255
+	SetBorderColor 233 251 145 255
+	MinimapIcon 1 Green Kite
+
+Show
+	BaseType == "Silver Key"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 219 242 110 255
+	SetBackgroundColor 36 44 0 255
+	SetBorderColor 219 242 110 255
+	MinimapIcon 0 Green UpsideDownHouse
+
+Show
+	BaseType == "Gold Key"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	MinimapIcon 0 Green Cross
+
+Show
+	BaseType == "Breach Splinter" "Simulacrum Splinter" "Petition Splinter" "Runic Splinter"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	MinimapIcon 0 Green Cross
+
+Show
+	BaseType == "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact"
+	Class == "Stackable Currency"
+
+	SetFontSize 27
+	SetTextColor 186 255 210 255
+	SetBackgroundColor 0 20 8 255
+	SetBorderColor 186 255 210 255
+	MinimapIcon 2 Brown Kite
+
+Show
+	BaseType == "Exotic Coinage"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 116 253 179 255
+	SetBackgroundColor 0 46 25 255
+	SetBorderColor 116 253 179 255
+	MinimapIcon 1 Brown UpsideDownHouse
+
+Hide
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 50
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 500
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 2500
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 5000
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+Show
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetBorderColor 252 0 54 255
+	MinimapIcon 0 Red Cross
+
+Show
+	BaseType == "Omen of Gambling" "Omen of the Liege" "Omen of Refreshment"
+	Class == Omen
+
+	SetFontSize 32
+	SetTextColor 255 206 166 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 206 166 255
+	MinimapIcon 1 Orange UpsideDownHouse
+
+Show
+	BaseType == "Omen of the Blackblooded" "Omen of Dextral Necromancy" "Omen of the Sovereign" "Omen of Resurgence" "Omen of Greater Exaltation"
+	Class == Omen
+
+	SetFontSize 32
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	MinimapIcon 1 Orange Cross
+
+Show
+	BaseType == "Omen of the Ancients" "Omen of Putrefaction" "Omen of Chaotic Quantity" "Omen of Chaotic Monsters" "Omen of Sinistral Exaltation" "Omen of the Blessed" "Omen of Dextral Exaltation" "Omen of Bartering" "Omen of Homogenising Coronation" "Omen of Catalysing Exaltation" "Omen of Answered Prayers" "Omen of Corruption" "Omen of Amelioration"
+	Class == Omen
+
+	SetFontSize 37
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	MinimapIcon 0 Orange Cross
+
+Show
+	BaseType == "Omen of Sinistral Necromancy" "Omen of Chaotic Rarity" "Omen of Dextral Crystallisation" "Omen of Reinforcements" "Omen of Recombination" "Omen of the Hunt" "Omen of Sinistral Crystallisation"
+	Class == Omen
+
+	SetFontSize 45
+	SetTextColor 57 28 0 255
+	SetBackgroundColor 255 166 84 255
+	SetBorderColor 57 28 0 255
+	PlayEffect Orange
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Orange Star
+
+Show
+	BaseType == "Omen of Secret Compartments" "Omen of Homogenising Exaltation" "Omen of Abyssal Echoes" "Omen of Sanctification" "Omen of Dextral Erasure" "Omen of Whittling" "Omen of Dextral Annulment" "Omen of Sinistral Erasure" "Omen of Light" "Omen of Sinistral Annulment" "Omen of Chance"
+	Class == Omen
+
+	SetFontSize 45
+	SetTextColor 226 126 0 255
+	SetBackgroundColor 255 244 238 255
+	SetBorderColor 226 126 0 255
+	PlayEffect Orange
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Orange Diamond
+
+Show
+	Class == "Uncut Support Gems"
+
+	SetFontSize 37
+	SetTextColor 80 250 255 255
+	SetBackgroundColor 0 45 46 255
+	SetBorderColor 80 250 255 255
+	MinimapIcon 0 White UpsideDownHouse
+
+Show
+	Class == "Uncut Skill Gems" "Uncut Spirit Gems"
+
+	SetFontSize 37
+	SetTextColor 80 250 255 255
+	SetBackgroundColor 0 45 46 255
+	SetBorderColor 80 250 255 255
+	MinimapIcon 0 White UpsideDownHouse
+
+Show
+	BaseType == "Daresso's Passion" "Arakaali's Lust" "Kurgal's Leash" "Tacati's Ire" "Sione's Temper" "Romira's Requital" "Uruk's Smelting" "Paquate's Pact" "Vilenta's Propulsion" "Tecrod's Revenge" "Kulemak's Dominion" "Ahn's Citadel" "Varashta's Blessing" "Einhar's Beastrite" "Doedre's Undoing" "Kaom's Madness" "Tawhoa's Tending" "Atziri's Allure" "Zarokh's Refrain"
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 32
+	SetTextColor 0 45 46 255
+	SetBackgroundColor 0 230 236 255
+	SetBorderColor 0 45 46 255
+	MinimapIcon 1 White Star
+
+Show
+	BaseType == "Brutus' Brain" "Piety's Mercy" "Arbiter's Ignition" "Xoph's Pyre" "Garukhan's Resolve" "Ailith's Chimes" "Kalisa's Crescendo"
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 37
+	SetTextColor 0 45 46 255
+	SetBackgroundColor 0 230 236 255
+	SetBorderColor 0 45 46 255
+	MinimapIcon 0 White Star
+
+Show
+	BaseType == "Uhtred's Exodus" "Tul's Stillness"
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 45
+	SetTextColor 0 45 46 255
+	SetBackgroundColor 0 230 236 255
+	SetBorderColor 0 45 46 255
+	PlayEffect White
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 White Star
+
+Show
+	BaseType == "Esh's Radiance" "Rigwald's Ferocity" "Ixchel's Torment" "Atalui's Bloodletting" "Ratha's Assault" "Uul-Netol's Embrace" "Uhtred's Omen" "Rakiata's Flow" "Uhtred's Augury" "Arjun's Medal" "Dialla's Desire"
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 45
+	SetTextColor 0 194 198 255
+	SetBackgroundColor 226 255 255 255
+	SetBorderColor 0 194 198 255
+	PlayEffect White
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 White Diamond
+
+Show
+	Class == "Skill Gems" "Support Gems"
+	Quality >= 1
+
+	SetFontSize 37
+	SetTextColor 0 246 252 255
+	SetBackgroundColor 0 83 86 255
+	SetBorderColor 0 246 252 255
+	MinimapIcon 0 White Cross
+
+Show
+	Class == "Skill Gems" "Support Gems"
+	Sockets >= 5
+
+	SetFontSize 37
+	SetTextColor 0 246 252 255
+	SetBackgroundColor 0 83 86 255
+	SetBorderColor 0 246 252 255
+	MinimapIcon 0 White Cross
+
+Show
+	Class == "Skill Gems" "Support Gems"
+
+	SetFontSize 27
+	SetTextColor 0 246 252 255
+	SetBackgroundColor 0 83 86 255
+	SetBorderColor 0 246 252 255
+	MinimapIcon 2 White Cross
+
+Show
+	BaseType = "Lesser "
+	Class == Socketable
+
+	SetFontSize 32
+	SetTextColor 212 235 255 255
+	SetBackgroundColor 0 16 28 255
+	SetBorderColor 212 235 255 255
+	MinimapIcon 1 Cyan Kite
+
+Show
+	BaseType = "Greater "
+	Class == Socketable
+
+	SetFontSize 37
+	SetTextColor 154 213 255 255
+	SetBackgroundColor 0 70 101 255
+	SetBorderColor 154 213 255 255
+	MinimapIcon 0 Cyan Cross
+
+Show
+	BaseType = " Rune"
+	Class == Socketable
+
+	SetFontSize 32
+	SetTextColor 174 220 255 255
+	SetBackgroundColor 0 38 58 255
+	SetBorderColor 174 220 255 255
+	MinimapIcon 1 Cyan UpsideDownHouse
+
+Show
+	BaseType == "Soul Core of Puhuarte" "Soul Core of Zalatl" "Soul Core of Opiloti" "Soul Core of Tzamoto" "Soul Core of Ticaba" "Soul Core of Quipolatl" "Soul Core of Citaqualotl" "Soul Core of Cholotl" "Soul Core of Atmohua" "Soul Core of Zantipi" "Soul Core of Topotante" "Soul Core of Xopec"
+	Class == Socketable
+
+	SetFontSize 45
+	SetTextColor 0 38 58 255
+	SetBackgroundColor 97 195 255 255
+	SetBorderColor 0 38 58 255
+	PlayEffect Cyan
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Cyan Star
+
+Show
+	BaseType == "Soul Core of Azcapa" "Soul Core of Tacati" "Soul Core of Jiquani"
+	Class == Socketable
+
+	SetFontSize 45
+	SetTextColor 0 160 226 255
+	SetBackgroundColor 240 247 255 255
+	SetBorderColor 0 160 226 255
+	PlayEffect Cyan
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Cyan Diamond
+
+Show
+	Class == Socketable
+
+	SetFontSize 37
+	SetTextColor 154 213 255 255
+	SetBackgroundColor 0 70 101 255
+	SetBorderColor 154 213 255 255
+	MinimapIcon 0 Cyan Cross
+
+Show
+	Class == "Trial Coins" "Inscribed Ultimatum" "Expedition Logbooks"
+
+	SetFontSize 37
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	MinimapIcon 0 Green Cross
+
+Show
+	Class == "Vault Keys" "Map Fragments"
+
+	SetFontSize 45
+	SetTextColor 36 44 0 255
+	SetBackgroundColor 197 226 29 255
+	SetBorderColor 36 44 0 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green Star
+
+Show
+	Class == "Quest Items" "Instance Local Items"
+
+	SetFontSize 37
+	SetTextColor 143 245 106 255
+	SetBackgroundColor 21 86 0 255
+	SetBorderColor 143 245 106 255
+	MinimapIcon 0 Green Cross
+
+Show
+	Class == Sceptres Foci Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots
+	Rarity == Normal
+
+	SetFontSize 27
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 2 Blue Kite
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Normal
+
+	SetFontSize 32
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 1 Blue Kite
+
+	Continue
+
+Show
+	Class == Sceptres Foci Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots
+	Rarity == Magic
+
+	SetFontSize 27
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 2 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Magic
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Sceptres Foci Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots
+	Rarity == Rare
+
+	SetFontSize 32
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 1 Blue Cross
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Rare
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Sceptres Foci Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Unique
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 10 20 83 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Sceptres Foci
+	Rarity == Normal
+	Quality >= 1
+
+	SetFontSize 32
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 1 Blue Kite
+
+	Continue
+
+Show
+	Class == Sceptres Foci
+	Rarity == Magic
+	Quality >= 1
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Sceptres
+	Rarity == Magic
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver"
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Foci
+	Rarity == Magic
+	HasExplicitMod >=1 "of the Enchanter"
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Sceptres Foci
+	Rarity == Rare
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
+	Rarity == Magic
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Bucklers Quivers Shields
+	Rarity == Magic
+	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
+	Rarity == Rare
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Bucklers Quivers Shields
+	Rarity == Rare
+	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Normal
+	Quality >= 1
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 32
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 1 Blue Kite
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Magic
+	Quality >= 1
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Magic
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall"
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Rare
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Magic
+	BaseArmour > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Magic
+	BaseEvasion > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Boots
+	Rarity == Magic
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Rare
+	BaseArmour > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Rare
+	BaseEvasion > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Boots
+	Rarity == Rare
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Normal
+
+	SetFontSize 37
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Class == Belts
+	Rarity == Normal
+
+	SetFontSize 37
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+	Class == "Life Flasks" "Mana Flasks"
+	Rarity == Normal
+
+	SetFontSize 37
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	BaseType == "Heavy Belt"
+	Class == Belts
+	Rarity == Normal
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Magic
+	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall"
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+	Class == "Life Flasks" "Mana Flasks"
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Jewels
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 182 209 255 255
+	SetBackgroundColor 0 33 68 255
+	SetBorderColor 182 209 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Jewels
+	Rarity == Rare
+
+	SetFontSize 37
+	SetTextColor 164 199 255 255
+	SetBackgroundColor 0 61 116 255
+	SetBorderColor 164 199 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Jewels
+	Rarity == Unique
+
+	SetFontSize 45
+	SetTextColor 0 33 68 255
+	SetBackgroundColor 120 175 255 255
+	SetBorderColor 0 33 68 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Waystones
+	Rarity == Normal
+
+	SetFontSize 32
+	SetTextColor 233 251 145 255
+	SetBackgroundColor 14 18 0 255
+	SetBorderColor 233 251 145 255
+	MinimapIcon 1 Green Kite
+
+	Continue
+
+Show
+	Class == Waystones
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 219 242 110 255
+	SetBackgroundColor 36 44 0 255
+	SetBorderColor 219 242 110 255
+	MinimapIcon 0 Green UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Waystones
+	Rarity == Rare
+
+	SetFontSize 37
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	MinimapIcon 0 Green Cross
+
+	Continue
+
+Show
+	Class == Waystones
+	Rarity == Unique
+
+	SetFontSize 45
+	SetTextColor 36 44 0 255
+	SetBackgroundColor 197 226 29 255
+	SetBorderColor 36 44 0 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green Star
+
+	Continue
+
+Show
+	Class == Tablet
+	Rarity == Normal
+
+	SetFontSize 32
+	SetTextColor 186 255 210 255
+	SetBackgroundColor 0 20 8 255
+	SetBorderColor 186 255 210 255
+	MinimapIcon 1 Brown Kite
+
+	Continue
+
+Show
+	Class == Tablet Relics
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 116 253 179 255
+	SetBackgroundColor 0 46 25 255
+	SetBorderColor 116 253 179 255
+	MinimapIcon 0 Brown UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Tablet
+	Rarity == Rare
+
+	SetFontSize 37
+	SetTextColor 33 252 162 255
+	SetBackgroundColor 0 86 51 255
+	SetBorderColor 33 252 162 255
+	MinimapIcon 0 Brown Cross
+
+	Continue
+
+Show
+	Class == Tablet Relics
+	Rarity == Unique
+
+	SetFontSize 45
+	SetTextColor 0 46 25 255
+	SetBackgroundColor 0 237 150 255
+	SetBorderColor 0 46 25 255
+	PlayEffect Brown
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Brown Star
+
+	Continue
+
+Show
+	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm" "Golden Obi"
+
+	SetBorderColor 255 225 87 255
+
+Show
+	Class == Sceptres Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+
+	SetBorderColor 255 225 87 255
+
+Show
+	Class == Foci Bucklers Quivers Shields
+	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+
+	SetBorderColor 255 225 87 255
+
+Show
+	Class == "Body Armours" Gloves Helmets Boots
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetBorderColor 255 225 87 255
+
+Show
+	Class == Amulets Rings
+	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall" "of the Sorcerer" "of Battle" "of the Sharpshooter"
+
+	SetBorderColor 255 225 87 255
+
+Show
+	Class == Charms
+	Quality >= 1
+
+	SetBorderColor 123 151 255 255
+
+Show
+	Quality >= 10
+
+	SetBorderColor 123 151 255 255
+
+Show
+	Height <= 2
+	Width <= 2
+	Quality >= 5
+
+	SetBorderColor 123 151 255 255
+
+Show
+	Height <= 4
+	Width == 1
+	Quality >= 5
+
+	SetBorderColor 123 151 255 255
+
+Show
+	Quality >= 1
+
+	SetBorderColor 123 151 255 255
+
+	Continue
+
+Show
+	BaseType = "Exceptional "
+
+	#
+
+Show
+	ItemLevel >= 82
+
+	#
+
+Show
+	UnidentifiedItemTier >= 4
+
+	#
+
+Show
+	Rarity >= Rare
+
+	#
+
+Hide
+	BaseType == "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre" "Wrath Sceptre"
+	Class == Sceptres
+	Rarity <= Magic
+
+	#
+
+Hide
+	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus"
+	Class == Foci
+	Rarity <= Magic
+
+	#
+
+Hide
+	Class == Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields
+	Rarity <= Magic
+
+	#
+
+Hide
+	Class == Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands Bucklers Quivers Shields
+	Rarity == Rare
+	UnidentifiedItemTier <= 3
+
+	#
+
+Hide
+	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Skycrown Tiara" "Sorcerous Tiara" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "River Raiment" "Adherent's Raiment" "Ceremonial Robe" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves" "Grim Gloves" "Opulent Gloves"
+	Class == "Body Armours" Gloves Helmets
+	Rarity <= Magic
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	#
+
+Hide
+	Class == "Body Armours" Gloves Helmets
+	Rarity <= Magic
+	BaseArmour > 0
+
+	#
+
+Hide
+	Class == "Body Armours" Gloves Helmets
+	Rarity <= Magic
+	BaseEvasion > 0
+
+	#
+
+Hide
+	Class == Boots
+	Rarity <= Magic
+
+	#
+
+Hide
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Rare
+	UnidentifiedItemTier <= 3
+	BaseArmour > 0
+
+	#
+
+Hide
+	Class == "Body Armours" Gloves Helmets
+	Rarity == Rare
+	UnidentifiedItemTier <= 3
+	BaseEvasion > 0
+
+	#
+
+Hide
+	Class == Boots
+	Rarity == Rare
+	UnidentifiedItemTier <= 3
+
+	#
+
+Hide
+	BaseType == "Crimson Amulet" "Iron Ring" "Emerald Ring" "Unset Ring"
+	Class == Amulets Rings
+	Rarity <= Magic
+
+	#
+
+Hide
+	Class == Belts
+	Rarity == Magic
+
+	#
+
+Hide
+	Class == Belts
+	Rarity == Rare
+	UnidentifiedItemTier <= 3
+
+	#
+
+Hide
+	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
+	Class == "Life Flasks" "Mana Flasks"
+	Rarity <= Magic
+
+	#
