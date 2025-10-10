@@ -1,6 +1,7 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
+import { NameManager } from "../conditions/nameManager.js";
 
 export function sectionHides(filter) {
 	filter.multiBlock((c) => { // Low value currency
@@ -154,11 +155,7 @@ export function sectionHides(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.wisdomTier = new Comparison(3, OPERATOR.LTE);
 	}, (c) => { // Bad normal/magic flasks
-		c.names = new Comparison(["Lesser Life Flask", "Lesser Mana Flask", "Medium Life Flask",
-			"Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask", "Grand Life Flask",
-			"Grand Mana Flask", "Giant Life Flask", "Giant Mana Flask", "Colossal Life Flask",
-			"Colossal Mana Flask", "Gargantuan Life Flask", "Gargantuan Mana Flask",
-			"Transcendent Life Flask", "Transcendent Mana Flask"]);
+		c.names = new Comparison(NameManager.getFlasksBad());
 		c.category = new Comparison(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (e) => {
