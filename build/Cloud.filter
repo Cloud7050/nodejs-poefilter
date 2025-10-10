@@ -1239,6 +1239,11 @@ Show
 	#
 
 Show
+	ItemLevel >= 82
+
+	#
+
+Show
 	UnidentifiedItemTier >= 4
 
 	#
