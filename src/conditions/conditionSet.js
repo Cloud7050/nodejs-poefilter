@@ -138,7 +138,7 @@ export class ConditionSet {
 			// x% increased Rarity of Items found
 			"Golden Obi", // Belts
 		);
-		this.names = new Comparison(new StringList(...phrases));
+		this.names = new Comparison(phrases);
 		return this;
 	}
 
@@ -248,7 +248,7 @@ export class ConditionSet {
 			"of the Sniper", // 5 | 7, IL81
 			////
 		);
-		this.mods = new Comparison(new StringList(...phrases), OPERATOR.GTE, 1);
+		this.mods = new Comparison(phrases, OPERATOR.GTE, 1);
 		return this;
 	}
 	goodModOffhand(includeOther = false) {
@@ -266,7 +266,7 @@ export class ConditionSet {
 			"of the Fletcher", // 2, IL41
 			////
 		);
-		this.mods = new Comparison(new StringList(...phrases), OPERATOR.GTE, 1);
+		this.mods = new Comparison(phrases, OPERATOR.GTE, 1);
 		return this;
 	}
 	goodModArmour(includeOther = false) {
@@ -321,7 +321,7 @@ export class ConditionSet {
 			"of Dueling", // 2, IL41
 			////
 		);
-		this.mods = new Comparison(new StringList(...phrases), OPERATOR.GTE, 1);
+		this.mods = new Comparison(phrases, OPERATOR.GTE, 1);
 		return this;
 	}
 	goodModJewellery(includeOther = false) {
@@ -379,7 +379,7 @@ export class ConditionSet {
 			"of the Sharpshooter", // 3, IL75
 			////
 		);
-		this.mods = new Comparison(new StringList(...phrases), OPERATOR.GTE, 1);
+		this.mods = new Comparison(phrases, OPERATOR.GTE, 1);
 		return this;
 	}
 }

@@ -1,21 +1,20 @@
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { CATEGORY, RARITY } from "../conditions/conditionSet.js";
-import { StringList } from "../conditions/stringList.js";
 
 export function sectionHides(filter) {
 	filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
 		// https://poe2db.tw/us/Sceptres#SceptresItem
-		c.names = new Comparison(new StringList(
+		c.names = new Comparison([
 			"Stoic Sceptre", // Discipline
 			"Omen Sceptre", // Malice
 			"Shrine Sceptre", // Purity of Fire/Ice/Lightning
 			"Wrath Sceptre", // Fulmination
-		));
+		]);
 		c.category = new Comparison(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (c) => { // Normal/magic class offhands but are low bases
 		// https://poe2db.tw/us/Foci#FociItem
-		c.names = new Comparison(new StringList(
+		c.names = new Comparison([
 			"Twig Focus", // 12 ES
 			"Woven Focus", // 15 ES, L6
 			"Antler Focus", // 17 ES, L10
@@ -33,18 +32,18 @@ export function sectionHides(filter) {
 			"Leyline Focus", // 58 ES, L70
 			// "Sacred Focus", // 63 ES, L75
 			// "Tasalian Focus", // 68 ES, L80
-		));
+		]);
 		c.category = new Comparison(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (c) => { // Normal/magic other weapons
-		c.category = new Comparison(new StringList(CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER));
+		c.category = new Comparison([CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER]);
 		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (c) => { // Rare other weapons that are low unidentified tier
-		c.category = new Comparison(new StringList(CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER));
+		c.category = new Comparison([CATEGORY.MAIN_OTHER, CATEGORY.OFF_OTHER]);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
 	}, (c) => { // Normal/magic class armour tops but are low bases
-		c.names = new Comparison(new StringList(
+		c.names = new Comparison([
 			// https://poe2db.tw/us/Helmets
 			"Twig Circlet", // 19 ES
 			"Wicker Tiara", // 28 ES, L10
@@ -94,7 +93,7 @@ export function sectionHides(filter) {
 			"Opulent Gloves", // 46 ES, L70
 			// "Vaal Gloves", // 50 ES, L75
 			// "Sirenscale Gloves", // 54 ES, L80
-		));
+		]);
 		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 		c.onlyEnergyShield();
@@ -125,7 +124,7 @@ export function sectionHides(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
 	}, (c) => { // Normal/magic other jewellery
-		c.names = new Comparison(new StringList(
+		c.names = new Comparison([
 			"Crimson Amulet", // 2-4 life regen
 			// "Amber Amulet", // Strength
 			// "Jade Amulet", // Dexterity
@@ -133,7 +132,7 @@ export function sectionHides(filter) {
 			"Iron Ring", // +1-4 phys damage to attacks
 			"Emerald Ring", // Flat accuracy
 			"Unset Ring", // Skill slot
-		));
+		]);
 		c.category = new Comparison(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (c) => { // Magic belts
@@ -145,11 +144,11 @@ export function sectionHides(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.wisdomTier = new Comparison(2, OPERATOR.LTE);
 	}, (c) => { // Bad normal/magic flasks
-		c.names = new Comparison(new StringList("Lesser Life Flask", "Lesser Mana Flask",
+		c.names = new Comparison(["Lesser Life Flask", "Lesser Mana Flask",
 			"Medium Life Flask", "Medium Mana Flask", "Greater Life Flask", "Greater Mana Flask",
 			"Grand Life Flask", "Grand Mana Flask", "Giant Life Flask", "Giant Mana Flask",
 			"Colossal Life Flask", "Colossal Mana Flask", "Gargantuan Life Flask",
-			"Gargantuan Mana Flask", "Transcendent Life Flask", "Transcendent Mana Flask"));
+			"Gargantuan Mana Flask", "Transcendent Life Flask", "Transcendent Mana Flask"]);
 		c.category = new Comparison(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
 	}, (e) => {

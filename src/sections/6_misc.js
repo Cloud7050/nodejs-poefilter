@@ -1,6 +1,5 @@
 import { Comparison } from "../conditions/comparison.js";
 import { CATEGORY } from "../conditions/conditionSet.js";
-import { StringList } from "../conditions/stringList.js";
 import { QUEST_COLOUR, QUEST_PRESET, QUESTLIKE_COLOUR, QUESTLIKE_PRESET } from "../index.js";
 
 export function sectionMisc(filter) {
@@ -21,7 +20,7 @@ function tickets(filter) {
 // Map keys
 function keys(filter) {
 	filter.block((c, e) => {
-		c.category = new Comparison(new StringList(CATEGORY.VAULT, CATEGORY.FRAGMENT));
+		c.category = new Comparison([CATEGORY.VAULT, CATEGORY.FRAGMENT]);
 
 		e.colourChance(QUESTLIKE_COLOUR, QUESTLIKE_PRESET).sizeChance();
 	});
