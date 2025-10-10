@@ -51,6 +51,7 @@ export class ConditionSet {
 	names = null; // Comparison
 	category = null; // Comparison
 	rarity = null; // Comparison
+	ilvl = null // Comparison
 	wisdomTier = null; // Comparison
 	count = null; // Comparison
 	height = null; // Comparison
@@ -73,6 +74,7 @@ export class ConditionSet {
 		if (this.names !== null) spans.push(this.names.export("BaseType"));
 		if (this.category !== null) spans.push(this.category.export("Class"));
 		if (this.rarity !== null) spans.push(this.rarity.export("Rarity"));
+		if (this.ilvl !== null) spans.push(this.wisdomTier.export("ItemLevel"));
 		if (this.wisdomTier !== null) spans.push(this.wisdomTier.export("UnidentifiedItemTier"));
 		if (this.count !== null) spans.push(this.count.export("StackSize"));
 		if (this.height !== null) spans.push(this.height.export("Height"));
