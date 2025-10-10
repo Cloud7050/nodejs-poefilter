@@ -12,24 +12,7 @@ goto :main
 setlocal EnableDelayedExpansion
 set "SOURCE=%~1"
 set "DESTINATION=%~2"
-echo Symlink requested: !SOURCE! -^> !DESTINATION!
-if exist "!DESTINATION!" (
-	set "isSymlink=false"
-	fsutil reparsePoint query "!DESTINATION!" >nul
-	if %ERRORLEVEL%==0 (
-		set "isSymlink=true"
-	)
-
-    if "!isSymlink!"=="true" (
-		echo Deleting existing symlink...
-		del "!DESTINATION!"
-    ) else (
-		echo Destination is a real file that may not be safe to overwrite. Skipped symlink creation.
-        endlocal
-        goto :eof
-    )
-)
-echo Creating symlink...
+echo !SOURCE! -^> !DESTINATION!
 mklink "%DESTINATION%" "%SOURCE%" >nul
 endlocal
 goto :eof
@@ -37,6 +20,23 @@ goto :eof
 
 
 :main
+echo Deleting old symlinks...
+echo(
+for %%F in ("%OUT%*") do (
+	setlocal EnableDelayedExpansion
+
+	set "isSymlink=false"
+	fsutil reparsepoint query "%%~fF" >nul && set "isSymlink=true"
+
+    if "!isSymlink!"=="true" (
+		echo Deleting %%~nxF...
+		del "%%~fF"
+    )
+
+	endlocal
+)
+
+echo(
 echo Linking .filter files...
 echo(
 for %%F in ("%IN_FILTERS%*.filter") do (
@@ -60,4 +60,5 @@ for %%F in ("%IN_SOUNDS%*") do (
 	call :createLink "%%~fF" "%OUT%%%~nxF"
 )
 
+echo(
 pause
