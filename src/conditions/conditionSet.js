@@ -154,7 +154,7 @@ export class ConditionSet {
 			// "Viscount's", // 33-38, IL16
 			// "Marquess'", // 39-44, IL33
 			// "Count's", // 45-50, IL46
-			"Duke's", // 51-55, IL60
+			// "Duke's", // 51-55, IL60
 			"Prince's", // 56-60, IL75
 			"King's", // 61-65, IL82
 			////
@@ -312,7 +312,7 @@ export class ConditionSet {
 			// "of Plunder", // 6-10, IL3
 			// "of Raiding", // 11-14, IL24
 			// "of Archaeology", // 15-18, IL40
-			"of Excavation", // 19-21, IL63
+			// "of Excavation", // 19-21, IL63
 			"of Windfall", // 22-25, IL75
 			////
 		];
@@ -340,7 +340,7 @@ export class ConditionSet {
 			//// +x to Level of all Minion Skills
 			// Amulets
 			// "of the Taskmaster", // 1, IL5
-			"of the Despot", // 2, IL41
+			// "of the Despot", // 2, IL41
 			"of the Overseer", // 3, IL75
 			////
 
@@ -355,7 +355,7 @@ export class ConditionSet {
 			// "of Plunder", // 6-10, IL3
 			// "of Raiding", // 11-14, IL24
 			// "of Archaeology", // 15-18, IL40
-			"of Excavation", // 19-21, IL63
+			// "of Excavation", // 19-21, IL63
 			"of Windfall", // 22-25, IL75
 			////
 		];
@@ -363,21 +363,21 @@ export class ConditionSet {
 			//// +x to Level of all Spell Skills
 			// Amulets
 			// "of the Mage", // 1, IL5
-			"of the Enchanter", // 2, IL41
+			// "of the Enchanter", // 2, IL41
 			"of the Sorcerer", // 3, IL75
 			////
 
 			//// +x to Level of all Melee Skills
 			// Amulets
 			// "of Combat", // 1, IL5
-			"of Dueling", // 2, IL41
+			// "of Dueling", // 2, IL41
 			"of Battle", // 3, IL75
 			////
 
 			//// +x to Level of all Projectile Skills
 			// Amulets
 			// "of the Archer", // 1, IL5
-			"of the Fletcher", // 2, IL41
+			// "of the Fletcher", // 2, IL41
 			"of the Sharpshooter", // 3, IL75
 			////
 		);

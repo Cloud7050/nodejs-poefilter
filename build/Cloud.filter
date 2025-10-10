@@ -710,7 +710,7 @@ Show
 Show
 	Class == Sceptres
 	Rarity == Magic
-	HasExplicitMod >=1 Duke's Prince's King's Chancellor's "of the Overseer" "of the Slavedriver"
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -748,7 +748,7 @@ Show
 Show
 	Class == Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
 	Rarity == Magic
-	HasExplicitMod >=1 Duke's Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
 	SetFontSize 32
 	SetTextColor 182 190 255 255
@@ -774,7 +774,7 @@ Show
 Show
 	Class == Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
 	Rarity == Rare
-	HasExplicitMod >=1 Duke's Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -835,7 +835,7 @@ Show
 	BaseEnergyShield > 0
 	BaseArmour == 0
 	BaseEvasion == 0
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall"
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -864,7 +864,7 @@ Show
 	Class == "Body Armours" Gloves Helmets
 	Rarity == Magic
 	BaseArmour > 0
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 32
 	SetTextColor 182 190 255 255
@@ -878,7 +878,7 @@ Show
 	Class == "Body Armours" Gloves Helmets
 	Rarity == Magic
 	BaseEvasion > 0
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 32
 	SetTextColor 182 190 255 255
@@ -891,7 +891,7 @@ Show
 Show
 	Class == Boots
 	Rarity == Magic
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 32
 	SetTextColor 182 190 255 255
@@ -905,7 +905,7 @@ Show
 	Class == "Body Armours" Gloves Helmets
 	Rarity == Rare
 	BaseArmour > 0
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -919,7 +919,7 @@ Show
 	Class == "Body Armours" Gloves Helmets
 	Rarity == Rare
 	BaseEvasion > 0
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -932,7 +932,7 @@ Show
 Show
 	Class == Boots
 	Rarity == Rare
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1011,7 +1011,7 @@ Show
 Show
 	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Magic
-	HasExplicitMod >=1 Countess' "of the Despot" "of the Overseer" Pirate's Dragon's "of Excavation" "of Windfall"
+	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1179,7 +1179,7 @@ Show
 
 Show
 	Class == Sceptres Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears Staves "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
-	HasExplicitMod >=1 Duke's Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
 	SetBorderColor 255 225 87 255
 
@@ -1191,13 +1191,13 @@ Show
 
 Show
 	Class == "Body Armours" Gloves Helmets Boots
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Excavation" "of Windfall" "of Dueling"
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetBorderColor 255 225 87 255
 
 Show
 	Class == Amulets Rings
-	HasExplicitMod >=1 Countess' "of the Despot" "of the Overseer" Pirate's Dragon's "of Excavation" "of Windfall" "of the Enchanter" "of the Sorcerer" "of Dueling" "of Battle" "of the Fletcher" "of the Sharpshooter"
+	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall" "of the Sorcerer" "of Battle" "of the Sharpshooter"
 
 	SetBorderColor 255 225 87 255
 
