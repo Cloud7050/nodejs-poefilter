@@ -253,11 +253,6 @@ function uncommon(filter) {
 		c.continue();
 		c.category = new Comparison(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.NORMAL);
-	}, (c) => { // Normal best flasks
-		c.continue();
-		c.names = new Comparison(["Ultimate Life Flask", "Ultimate Mana Flask"]);
-		c.category = new Comparison(CATEGORY.FLASK);
-		c.rarity = new Comparison(RARITY.NORMAL);
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR).sizeExalt();
 	});
@@ -281,11 +276,6 @@ function uncommon(filter) {
 		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModJewellery();
-	}, (c) => { // Magic best flasks
-		c.continue();
-		c.names = new Comparison(["Ultimate Life Flask", "Ultimate Mana Flask"]);
-		c.category = new Comparison(CATEGORY.FLASK);
-		c.rarity = new Comparison(RARITY.MAGIC);
 	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeExalt();
 	});
