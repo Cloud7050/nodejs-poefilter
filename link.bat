@@ -41,10 +41,11 @@ echo Linking .filter files...
 echo(
 for %%F in ("%IN_FILTERS%*.filter") do (
 	setlocal EnableDelayedExpansion
-	if "!%%~nF:~0,1!"=="_" (
+	set "name=%%~nF"
+	if "!name:~0,1!"=="_" (
 		endlocal
 
-		echo Skipping: %%~nxF
+		echo Skipping: %%~fF
 	) else (
 		endlocal
 
