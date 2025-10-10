@@ -383,3 +383,5 @@ export class ConditionSet {
 		return this;
 	}
 }
+export const CATEGORY = ConditionSet.CATEGORY;
+export const RARITY = ConditionSet.RARITY;

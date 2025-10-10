@@ -1,11 +1,75 @@
 Show
 	#
 
-	SetFontSize 27
+	SetFontSize 37
 	SetBackgroundColor 0 0 0 255
-	MinimapIcon 2 Grey Square
+	MinimapIcon 0 Grey Circle
 
 	Continue
+
+Show
+	BaseType == "Scroll of Wisdom" "Greater Orb of Transmutation" "Transmutation Shard" "Artificer's Shard"
+	Class == "Stackable Currency"
+
+	SetFontSize 27
+	SetTextColor 255 217 215 255
+	SetBackgroundColor 35 2 3 255
+	SetBorderColor 255 217 215 255
+	MinimapIcon 2 Red Kite
+
+Show
+	BaseType == "Lesser Jeweller's Orb" "Orb of Transmutation" "Regal Shard" "Artificer's Orb" "Orb of Augmentation" "Greater Orb of Augmentation" "Perfect Orb of Transmutation" "Greater Jeweller's Orb" "Blacksmith's Whetstone"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 255 187 185 255
+	SetBackgroundColor 68 8 12 255
+	SetBorderColor 255 187 185 255
+	MinimapIcon 1 Red UpsideDownHouse
+
+Show
+	BaseType == "Orb of Alchemy" "Arcanist's Etcher" "Regal Orb" "Glassblower's Bauble" "Armourer's Scrap" "Gemcutter's Prism" "Greater Regal Orb"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 255 172 169 255
+	SetBackgroundColor 115 20 27 255
+	SetBorderColor 255 172 169 255
+	MinimapIcon 1 Red Cross
+
+Show
+	BaseType == "Exalted Orb" "Perfect Orb of Augmentation" "Vaal Orb" "Chance Shard" "Greater Exalted Orb"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 255 172 169 255
+	SetBackgroundColor 115 20 27 255
+	SetBorderColor 255 172 169 255
+	MinimapIcon 0 Red Cross
+
+Show
+	BaseType == "Chaos Orb" "Perfect Jeweller's Orb" "Perfect Regal Orb" "Orb of Chance"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 68 8 12 255
+	SetBackgroundColor 255 131 130 255
+	SetBorderColor 68 8 12 255
+	PlayEffect Red
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Red Star
+
+Show
+	BaseType == "Greater Chaos Orb" "Fracturing Orb" "Orb of Annulment" "Divine Orb" "Perfect Chaos Orb" "Perfect Exalted Orb" "Hinekora's Lock" "Mirror of Kalandra"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 240 65 75 255
+	SetBackgroundColor 255 241 240 255
+	SetBorderColor 240 65 75 255
+	PlayEffect Red
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Red Diamond
 
 Show
 	BaseType = "Lesser Essence of "
@@ -177,11 +241,11 @@ Show
 	BaseType == "Bronze Key"
 	Class == "Stackable Currency"
 
-	SetFontSize 37
+	SetFontSize 32
 	SetTextColor 233 251 145 255
 	SetBackgroundColor 14 18 0 255
 	SetBorderColor 233 251 145 255
-	MinimapIcon 0 Green Kite
+	MinimapIcon 1 Green Kite
 
 Show
 	BaseType == "Silver Key"
@@ -218,20 +282,20 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 27
-	SetTextColor 116 253 179 255
-	SetBackgroundColor 0 46 25 255
-	SetBorderColor 116 253 179 255
-	MinimapIcon 2 Green UpsideDownHouse
+	SetTextColor 186 255 210 255
+	SetBackgroundColor 0 20 8 255
+	SetBorderColor 186 255 210 255
+	MinimapIcon 2 Brown Kite
 
 Show
 	BaseType == "Exotic Coinage"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
-	SetTextColor 33 252 162 255
-	SetBackgroundColor 0 86 51 255
-	SetBorderColor 33 252 162 255
-	MinimapIcon 1 Green Cross
+	SetTextColor 116 253 179 255
+	SetBackgroundColor 0 46 25 255
+	SetBorderColor 116 253 179 255
+	MinimapIcon 1 Brown UpsideDownHouse
 
 Hide
 	BaseType == Gold
@@ -286,70 +350,6 @@ Show
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
 	MinimapIcon 0 Yellow Cross
-
-Show
-	BaseType == "Scroll of Wisdom" "Greater Orb of Transmutation" "Transmutation Shard" "Artificer's Shard"
-	Class == "Stackable Currency"
-
-	SetFontSize 27
-	SetTextColor 255 217 215 255
-	SetBackgroundColor 35 2 3 255
-	SetBorderColor 255 217 215 255
-	MinimapIcon 2 Red Kite
-
-Show
-	BaseType == "Lesser Jeweller's Orb" "Orb of Transmutation" "Regal Shard" "Artificer's Orb" "Orb of Augmentation" "Greater Orb of Augmentation" "Perfect Orb of Transmutation" "Greater Jeweller's Orb" "Blacksmith's Whetstone"
-	Class == "Stackable Currency"
-
-	SetFontSize 32
-	SetTextColor 255 187 185 255
-	SetBackgroundColor 68 8 12 255
-	SetBorderColor 255 187 185 255
-	MinimapIcon 1 Red UpsideDownHouse
-
-Show
-	BaseType == "Orb of Alchemy" "Arcanist's Etcher" "Regal Orb" "Glassblower's Bauble" "Armourer's Scrap" "Gemcutter's Prism" "Greater Regal Orb"
-	Class == "Stackable Currency"
-
-	SetFontSize 32
-	SetTextColor 255 172 169 255
-	SetBackgroundColor 115 20 27 255
-	SetBorderColor 255 172 169 255
-	MinimapIcon 1 Red Cross
-
-Show
-	BaseType == "Exalted Orb" "Perfect Orb of Augmentation" "Vaal Orb" "Chance Shard" "Greater Exalted Orb"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 255 172 169 255
-	SetBackgroundColor 115 20 27 255
-	SetBorderColor 255 172 169 255
-	MinimapIcon 0 Red Cross
-
-Show
-	BaseType == "Chaos Orb" "Perfect Jeweller's Orb" "Perfect Regal Orb" "Orb of Chance"
-	Class == "Stackable Currency"
-
-	SetFontSize 45
-	SetTextColor 68 8 12 255
-	SetBackgroundColor 255 131 130 255
-	SetBorderColor 68 8 12 255
-	PlayEffect Red
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Red Star
-
-Show
-	BaseType == "Greater Chaos Orb" "Fracturing Orb" "Orb of Annulment" "Divine Orb" "Perfect Chaos Orb" "Perfect Exalted Orb" "Hinekora's Lock" "Mirror of Kalandra"
-	Class == "Stackable Currency"
-
-	SetFontSize 45
-	SetTextColor 240 65 75 255
-	SetBackgroundColor 255 241 240 255
-	SetBorderColor 240 65 75 255
-	PlayEffect Red
-	CustomAlertSound "renoir.wav" 250
-	MinimapIcon 0 Red Diamond
 
 Show
 	Class == "Stackable Currency"
@@ -419,7 +419,7 @@ Show
 	SetTextColor 80 250 255 255
 	SetBackgroundColor 0 45 46 255
 	SetBorderColor 80 250 255 255
-	MinimapIcon 0 Brown UpsideDownHouse
+	MinimapIcon 0 White UpsideDownHouse
 
 Show
 	Class == "Uncut Skill Gems" "Uncut Spirit Gems"
@@ -428,7 +428,7 @@ Show
 	SetTextColor 80 250 255 255
 	SetBackgroundColor 0 45 46 255
 	SetBorderColor 80 250 255 255
-	MinimapIcon 0 Brown UpsideDownHouse
+	MinimapIcon 0 White UpsideDownHouse
 
 Show
 	BaseType = "Daresso's Passion" "Arakaali's Lust" "Kurgal's Leash" "Tacati's Ire" "Sione's Temper" "Romira's Requital" "Uruk's Smelting" "Paquate's Pact" "Vilenta's Propulsion" "Tecrod's Revenge" "Kulemak's Dominion" "Ahn's Citadel" "Varashta's Blessing" "Einhar's Beastrite" "Doedre's Undoing" "Kaom's Madness" "Tawhoa's Tending" "Atziri's Allure" "Zarokh's Refrain"
@@ -438,7 +438,7 @@ Show
 	SetTextColor 0 45 46 255
 	SetBackgroundColor 0 230 236 255
 	SetBorderColor 0 45 46 255
-	MinimapIcon 1 Brown Star
+	MinimapIcon 1 White Star
 
 Show
 	BaseType = "Brutus' Brain" "Piety's Mercy" "Arbiter's Ignition" "Xoph's Pyre" "Garukhan's Resolve" "Ailith's Chimes" "Kalisa's Crescendo"
@@ -448,7 +448,7 @@ Show
 	SetTextColor 0 45 46 255
 	SetBackgroundColor 0 230 236 255
 	SetBorderColor 0 45 46 255
-	MinimapIcon 0 Brown Star
+	MinimapIcon 0 White Star
 
 Show
 	BaseType = "Uhtred's Exodus" "Tul's Stillness"
@@ -458,9 +458,9 @@ Show
 	SetTextColor 0 45 46 255
 	SetBackgroundColor 0 230 236 255
 	SetBorderColor 0 45 46 255
-	PlayEffect Brown
+	PlayEffect White
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Brown Star
+	MinimapIcon 0 White Star
 
 Show
 	BaseType = "Esh's Radiance" "Rigwald's Ferocity" "Ixchel's Torment" "Atalui's Bloodletting" "Ratha's Assault" "Uul-Netol's Embrace" "Uhtred's Omen" "Rakiata's Flow" "Uhtred's Augury" "Arjun's Medal" "Dialla's Desire"
@@ -470,9 +470,9 @@ Show
 	SetTextColor 0 194 198 255
 	SetBackgroundColor 226 255 255 255
 	SetBorderColor 0 194 198 255
-	PlayEffect Brown
+	PlayEffect White
 	CustomAlertSound "renoir.wav" 250
-	MinimapIcon 0 Brown Diamond
+	MinimapIcon 0 White Diamond
 
 Show
 	Class == "Skill Gems" "Support Gems"
@@ -482,17 +482,17 @@ Show
 	SetTextColor 0 246 252 255
 	SetBackgroundColor 0 83 86 255
 	SetBorderColor 0 246 252 255
-	MinimapIcon 0 Brown Cross
+	MinimapIcon 0 White Cross
 
 Show
 	Class == "Skill Gems" "Support Gems"
-	Sockets >= 4
+	Sockets >= 5
 
 	SetFontSize 37
 	SetTextColor 0 246 252 255
 	SetBackgroundColor 0 83 86 255
 	SetBorderColor 0 246 252 255
-	MinimapIcon 0 Brown Cross
+	MinimapIcon 0 White Cross
 
 Show
 	Class == "Skill Gems" "Support Gems"
@@ -501,7 +501,7 @@ Show
 	SetTextColor 0 246 252 255
 	SetBackgroundColor 0 83 86 255
 	SetBorderColor 0 246 252 255
-	MinimapIcon 2 Brown Cross
+	MinimapIcon 2 White Cross
 
 Show
 	BaseType = "Lesser "
@@ -1130,7 +1130,7 @@ Show
 	SetTextColor 186 255 210 255
 	SetBackgroundColor 0 20 8 255
 	SetBorderColor 186 255 210 255
-	MinimapIcon 1 Green Kite
+	MinimapIcon 1 Brown Kite
 
 	Continue
 
@@ -1142,7 +1142,7 @@ Show
 	SetTextColor 116 253 179 255
 	SetBackgroundColor 0 46 25 255
 	SetBorderColor 116 253 179 255
-	MinimapIcon 0 Green UpsideDownHouse
+	MinimapIcon 0 Brown UpsideDownHouse
 
 	Continue
 
@@ -1154,7 +1154,7 @@ Show
 	SetTextColor 33 252 162 255
 	SetBackgroundColor 0 86 51 255
 	SetBorderColor 33 252 162 255
-	MinimapIcon 0 Green Cross
+	MinimapIcon 0 Brown Cross
 
 	Continue
 
@@ -1166,9 +1166,9 @@ Show
 	SetTextColor 0 46 25 255
 	SetBackgroundColor 0 237 150 255
 	SetBorderColor 0 46 25 255
-	PlayEffect Green
+	PlayEffect Brown
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Brown Star
 
 	Continue
 

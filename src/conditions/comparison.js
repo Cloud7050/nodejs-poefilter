@@ -24,7 +24,7 @@ export class Comparison {
 
 		this.operator = operator;
 		this.quantity = quantity;
-		this.value = value;
+		this.value = Array.isArray(value) ? new StringList(...value) : value;
 	}
 
 	export(name) {
@@ -33,3 +33,4 @@ export class Comparison {
 		return `${name} ${this.operator}${quantity} ${value}`;
 	}
 }
+export const OPERATOR = Comparison.OPERATOR;

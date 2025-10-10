@@ -9,7 +9,7 @@ export class Colour {
 
 	static PRESET = {
 		BLACK: "Grey",
-		// GREY: "White",
+		GREY: "White",
 		RED: "Red",
 		BROWN: "Brown",
 		ORANGE: "Orange",
@@ -162,3 +162,4 @@ export class Colour {
 		);
 	}
 }
+export const PRESET = Colour.PRESET;

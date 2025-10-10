@@ -22,7 +22,7 @@ export class EffectSet {
 		DISABLE: "-1",
 	};
 	static MAP_ICON = {
-		// CIRCLE: "Circle",
+		CIRCLE: "Circle",
 		CROSS: "Cross",
 		DIAMOND: "Diamond",
 		// HEXAGON: "Hexagon",
@@ -32,7 +32,7 @@ export class EffectSet {
 		// PENTAGON: "Pentagon",
 		// RAINDROP: "Raindrop",
 		STAR: "Star",
-		SQUARE: "Square",
+		// SQUARE: "Square",
 		// TRIANGLE: "Triangle",
 	};
 
