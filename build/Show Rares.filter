@@ -576,7 +576,7 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
-	Class == "Vault Keys" "Map Fragments"
+	Class == "Vault Keys"
 
 	SetFontSize 45
 	SetTextColor 36 44 0 255
@@ -585,6 +585,17 @@ Show
 	PlayEffect Green
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Green Star
+
+Show
+	Class == "Map Fragments"
+
+	SetFontSize 45
+	SetTextColor 166 192 0 255
+	SetBackgroundColor 249 253 217 255
+	SetBorderColor 166 192 0 255
+	PlayEffect Green
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Green Diamond
 
 Show
 	Class == "Quest Items" "Instance Local Items"

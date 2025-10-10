@@ -46,7 +46,6 @@ const SOCKETABLE = new StringList("Socketable");
 const TICKET = new StringList("Trial Coins", "Inscribed Ultimatum", "Expedition Logbooks");
 const VAULT = new StringList("Vault Keys");
 const FRAGMENT = new StringList("Map Fragments");
-const KEY = new StringList(VAULT, FRAGMENT);
 const QUEST = new StringList("Quest Items", "Instance Local Items");
 ////
 
@@ -88,6 +87,5 @@ export const CATEGORY = {
 	TICKET,
 	VAULT,
 	FRAGMENT,
-	KEY,
 	QUEST,
 };

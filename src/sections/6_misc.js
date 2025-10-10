@@ -20,9 +20,15 @@ function tickets(filter) {
 // Map keys
 function keys(filter) {
 	filter.block((c, e) => {
-		c.category = new Comparison(CATEGORY.KEY);
+		c.category = new Comparison(CATEGORY.VAULT);
 
 		e.colourChance(PAIR_QUESTLIKE).sizeChance();
+	});
+
+	filter.block((c, e) => {
+		c.category = new Comparison(CATEGORY.FRAGMENT);
+
+		e.colourDivine(PAIR_QUESTLIKE).sizeDivine();
 	});
 }
 
