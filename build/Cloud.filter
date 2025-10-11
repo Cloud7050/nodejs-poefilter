@@ -8,7 +8,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Scroll of Wisdom" "Greater Orb of Transmutation" "Transmutation Shard" "Artificer's Shard"
+	BaseType == "Transmutation Shard" "Regal Shard" "Artificer's Shard" "Greater Orb of Transmutation" "Orb of Transmutation" "Greater Orb of Augmentation" "Regal Orb" "Artificer's Orb" "Blacksmith's Whetstone" "Lesser Jeweller's Orb" "Greater Jeweller's Orb" "Scroll of Wisdom" "Orb of Augmentation"
 	Class == "Stackable Currency"
 
 	SetFontSize 27
@@ -18,7 +18,7 @@ Show
 	MinimapIcon 2 Red Kite
 
 Show
-	BaseType == "Lesser Jeweller's Orb" "Orb of Transmutation" "Regal Shard" "Artificer's Orb" "Orb of Augmentation" "Greater Orb of Augmentation" "Perfect Orb of Transmutation" "Greater Jeweller's Orb" "Blacksmith's Whetstone"
+	BaseType == "Orb of Alchemy" "Glassblower's Bauble" "Perfect Orb of Transmutation" "Greater Regal Orb" "Armourer's Scrap" "Gemcutter's Prism" "Arcanist's Etcher" "Chance Shard" "Vaal Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -28,17 +28,7 @@ Show
 	MinimapIcon 1 Red UpsideDownHouse
 
 Show
-	BaseType == "Orb of Alchemy" "Arcanist's Etcher" "Regal Orb" "Glassblower's Bauble" "Armourer's Scrap" "Gemcutter's Prism" "Greater Regal Orb"
-	Class == "Stackable Currency"
-
-	SetFontSize 32
-	SetTextColor 255 172 169 255
-	SetBackgroundColor 115 20 27 255
-	SetBorderColor 255 172 169 255
-	MinimapIcon 1 Red Cross
-
-Show
-	BaseType == "Exalted Orb" "Perfect Orb of Augmentation" "Vaal Orb" "Chance Shard" "Greater Exalted Orb"
+	BaseType == "Exalted Orb" "Perfect Orb of Augmentation" "Greater Exalted Orb" "Orb of Chance" "Perfect Regal Orb" "Perfect Jeweller's Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -48,7 +38,7 @@ Show
 	MinimapIcon 0 Red Cross
 
 Show
-	BaseType == "Chaos Orb" "Perfect Jeweller's Orb" "Perfect Regal Orb" "Orb of Chance"
+	BaseType == "Chaos Orb" "Greater Chaos Orb" "Fracturing Orb" "Orb of Annulment"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -60,7 +50,7 @@ Show
 	MinimapIcon 0 Red Star
 
 Show
-	BaseType == "Greater Chaos Orb" "Fracturing Orb" "Orb of Annulment" "Divine Orb" "Perfect Chaos Orb" "Perfect Exalted Orb" "Hinekora's Lock" "Mirror of Kalandra"
+	BaseType == "Divine Orb" "Perfect Exalted Orb" "Perfect Chaos Orb" "Hinekora's Lock" "Mirror of Kalandra"
 	Class == "Stackable Currency"
 
 	SetFontSize 45

@@ -1,4 +1,4 @@
-import { Name } from "./name.js";
+import { DIV, Name } from "./name.js";
 import { StringList } from "./stringList.js";
 
 export class NameManager {
@@ -10,10 +10,56 @@ export class NameManager {
 		);
 	}
 
+	static getCurrencies(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Transmutation Shard", 1 / 30000),
+			new Name("Regal Shard", 1 / 7500),
+			new Name("Artificer's Shard", 1 / 5000),
+			new Name("Greater Orb of Transmutation", 1 / 4000),
+			new Name("Orb of Transmutation", 1 / 3000),
+			new Name("Greater Orb of Augmentation", 1 / 1000),
+			new Name("Regal Orb", 1 / 750),
+			new Name("Artificer's Orb", 1 / 500),
+			new Name("Blacksmith's Whetstone", 1 / 500),
+			new Name("Lesser Jeweller's Orb", 1 / 400),
+			new Name("Greater Jeweller's Orb", 1 / 250),
+			new Name("Scroll of Wisdom", 1 / 200),
+			new Name("Orb of Augmentation", 1 / 200),
+
+			new Name("Orb of Alchemy", 1 / 100),
+			new Name("Glassblower's Bauble", 1 / 100),
+			new Name("Perfect Orb of Transmutation", 1 / 80),
+			new Name("Greater Regal Orb", 1 / 79),
+			new Name("Armourer's Scrap", 1 / 50),
+			new Name("Gemcutter's Prism", 1 / 20),
+			new Name("Arcanist's Etcher", 1 / 7.5),
+			new Name("Chance Shard", 1 / 5),
+			new Name("Vaal Orb", 1 / 4),
+
+			new Name("Exalted Orb", 1),
+			new Name("Perfect Orb of Augmentation", 1),
+			new Name("Greater Exalted Orb", 2.7),
+			new Name("Orb of Chance", 5),
+			new Name("Perfect Regal Orb", 13),
+			new Name("Perfect Jeweller's Orb", 16),
+
+			new Name("Chaos Orb", 22.5),
+			new Name("Greater Chaos Orb", 61),
+			new Name("Fracturing Orb", 230),
+			new Name("Orb of Annulment", 1 / 2.36 * DIV),
+
+			new Name("Divine Orb", DIV),
+			new Name("Perfect Exalted Orb", 1.67 * DIV),
+			new Name("Perfect Chaos Orb", 2.25 * DIV),
+			new Name("Hinekora's Lock", 475 * DIV),
+			new Name("Mirror of Kalandra", 1403 * DIV),
+		).filter(min, max);
+	}
+
 	// static getFlasksGood() {
 	// 	return new NameManager(
 	// 		"Ultimate Life Flask", "Ultimate Mana Flask",
-	// 	).export();
+	// 	);
 	// }
 	static getFlasksBad() {
 		return new NameManager(
@@ -25,7 +71,7 @@ export class NameManager {
 			"Colossal Life Flask", "Colossal Mana Flask",
 			"Gargantuan Life Flask", "Gargantuan Mana Flask",
 			"Transcendent Life Flask", "Transcendent Mana Flask",
-		).export();
+		);
 	}
 
 	static getCurrenciesBad() {
@@ -35,7 +81,7 @@ export class NameManager {
 			"Regal Shard",
 			"Lesser Jeweller's Orb",
 			"Blacksmith's Whetstone",
-		).export();
+		);
 	}
 	static getMainClassLow() {
 		return new NameManager(
@@ -44,7 +90,7 @@ export class NameManager {
 			"Omen Sceptre", // Malice
 			"Shrine Sceptre", // Purity of Fire/Ice/Lightning
 			"Wrath Sceptre", // Fulmination
-		).export();
+		);
 	}
 	static getOffClassLow() {
 		return new NameManager(
@@ -66,7 +112,7 @@ export class NameManager {
 			"Leyline Focus", // 58 ES, L70
 			// "Sacred Focus", // 63 ES, L75
 			// "Tasalian Focus", // 68 ES, L80
-		).export();
+		);
 	}
 	static getArmourClassLow() {
 		return new NameManager(
@@ -119,7 +165,7 @@ export class NameManager {
 			"Opulent Gloves", // 46 ES, L70
 			// "Vaal Gloves", // 50 ES, L75
 			// "Sirenscale Gloves", // 54 ES, L80
-		).export();
+		);
 	}
 	static getJewelleryOther() {
 		return new NameManager(
@@ -130,7 +176,21 @@ export class NameManager {
 			"Iron Ring", // +1-4 phys damage to attacks
 			"Emerald Ring", // Flat accuracy
 			"Unset Ring", // Skill slot
-		).export();
+		);
+	}
+
+	// Inclusive of min, exclusive of max
+	filter(min = null, max = null) {
+		let names = this.names.filter((name) => {
+			let passMin = true;
+			if (min !== null) passMin = name.value === null || name.value >= min;
+
+			let passMax = true;
+			if (max !== null) passMax = name.value === null || name.value < max;
+
+			return passMin && passMax;
+		});
+		return new NameManager(...names);
 	}
 
 	export() {

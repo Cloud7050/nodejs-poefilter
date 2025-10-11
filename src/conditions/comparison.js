@@ -1,3 +1,4 @@
+import { NameManager } from "./nameManager.js";
 import { StringList } from "./stringList.js";
 
 export class Comparison {
@@ -24,7 +25,14 @@ export class Comparison {
 
 		this.operator = operator;
 		this.quantity = quantity;
-		this.value = Array.isArray(value) ? new StringList(...value) : value;
+
+		if (Array.isArray(value)) {
+			this.value = new StringList(...value);
+		} else if (value instanceof NameManager) {
+			this.value = value.export();
+		} else {
+			this.value = value;
+		}
 	}
 
 	export(name) {

@@ -1,10 +1,11 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
+import { DIV } from "../conditions/name.js";
+import { NameManager } from "../conditions/nameManager.js";
 import { Colour } from "../effects/colour.js";
 import { EffectSet } from "../effects/effectSet.js";
 import { PAIR_ABYSS, PAIR_CRAFT, PAIR_CURRENCY, PAIR_ESSENCE, PAIR_GOLD, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../index.js";
 
-// https://poe2scout.com/economy/currency
 export function sectionCurrencies(filter) {
 	general(filter);
 	other(filter);
@@ -14,80 +15,31 @@ export function sectionCurrencies(filter) {
 
 function general(filter) {
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Scroll of Wisdom", // 1 / 680 exalts
-			"Greater Orb of Transmutation", // 1 / 600 exalts
-			"Transmutation Shard", // 1 / 500 exalts
-			"Artificer's Shard", // 1 / 340 exalts
-		]);
+		c.names = new Comparison(NameManager.getCurrencies(null, 1 / 100));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourWisdom(PAIR_CURRENCY).sizeWisdom();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Lesser Jeweller's Orb", // 1 / 70 exalts
-			"Orb of Transmutation", // 1 / 50 exalts
-			"Regal Shard", // 1 / 49 exalts
-			"Artificer's Orb", // 1 / 34 exalts
-			"Orb of Augmentation", // 1 / 33 exalts
-			"Greater Orb of Augmentation", // 1 / 29.5 exalts
-			"Perfect Orb of Transmutation", // 1 / 24 exalts
-			"Greater Jeweller's Orb", // 1 / 13 exalts
-			"Blacksmith's Whetstone", // 1 / 12 exalts
-		]);
+		c.names = new Comparison(NameManager.getCurrencies(1 / 100, 1));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_CURRENCY).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Orb of Alchemy", // 1 / 7.5 exalts
-			"Arcanist's Etcher", // 1 / 4.9 exalts
-			"Regal Orb", // 1 / 4.18 exalts
-			"Glassblower's Bauble", // 1 / 4.4 exalts
-			"Armourer's Scrap", // 1 / 3.9 exalts
-			"Gemcutter's Prism", // 1 / 3.8 exalts
-			"Greater Regal Orb", // 1 / 2.75 exalts
-		]);
-		c.category = new Comparison(CATEGORY.CURRENCY);
-
-		e.colourExalt(PAIR_CURRENCY).sizeAugment();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Exalted Orb",
-			"Perfect Orb of Augmentation", // 1.18 exalts
-			"Vaal Orb", // 1.2 exalts
-			"Chance Shard", // 2.2 exalts
-			"Greater Exalted Orb", // 2.8 exalts
-		]);
+		c.names = new Comparison(NameManager.getCurrencies(1, 20));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_CURRENCY).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Chaos Orb", // 11.9 exalts
-			"Perfect Jeweller's Orb", // 15 exalts
-			"Perfect Regal Orb", // 15 exalts
-			"Orb of Chance", // 22 exalts
-		]);
+		c.names = new Comparison(NameManager.getCurrencies(20, DIV));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourChance(PAIR_CURRENCY).sizeChance();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Greater Chaos Orb", // 37.5 exalts
-			"Fracturing Orb", // 70 exalts
-			"Orb of Annulment", // 159 exalts
-			"Divine Orb", // 384.75 exalts
-			"Perfect Chaos Orb", // 2 divs
-			"Perfect Exalted Orb", // 2.33 divs
-			"Hinekora's Lock", // 242 divs
-			"Mirror of Kalandra", // 1100 divs
-		]);
+		c.names = new Comparison(NameManager.getCurrencies(DIV));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourDivine(PAIR_CURRENCY).sizeDivine();
