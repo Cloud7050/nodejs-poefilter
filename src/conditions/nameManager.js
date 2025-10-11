@@ -112,6 +112,21 @@ export class NameManager {
 		).filter(min, max);
 	}
 
+	static getArtifacts(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Order Artifact", 1 / 40), // Armour
+			new Name("Broken Circle Artifact", 1 / 38), // Weapons
+
+			new Name("Black Scythe Artifact", 1 / 4), // Jewellery/belts
+			new Name("Sun Artifact", 1 / 4), // Wildcard
+		).filter(min, max);
+	}
+	static getCoinage(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Exotic Coinage", 2),
+		).filter(min, max);
+	}
+
 	// static getFlasksGood() {
 	// 	return new NameManager(
 	// 		"Ultimate Life Flask", "Ultimate Mana Flask",

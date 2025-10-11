@@ -181,17 +181,22 @@ function other(filter) {
 
 	// Expedition
 	filter.block((c, e) => {
-		c.names = new Comparison(["Broken Circle Artifact", "Black Scythe Artifact",
-			"Order Artifact", "Sun Artifact"]);
+		c.names = new Comparison(NameManager.getArtifacts(null, 1 / 10));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourWisdom(PAIR_MECHANIC).sizeWisdom();
+		e.colourAugment(PAIR_MECHANIC).sizeWisdom();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Exotic Coinage");
+		c.names = new Comparison(NameManager.getArtifacts(1 / 10));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_MECHANIC).sizeAugment();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getCoinage());
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourExalt(PAIR_MECHANIC).sizeExalt();
 	});
 
 	// Gold

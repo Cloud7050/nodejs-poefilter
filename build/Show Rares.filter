@@ -266,17 +266,17 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
-	BaseType == "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact"
+	BaseType == "Order Artifact" "Broken Circle Artifact"
 	Class == "Stackable Currency"
 
 	SetFontSize 27
-	SetTextColor 186 255 210 255
-	SetBackgroundColor 0 20 8 255
-	SetBorderColor 186 255 210 255
-	MinimapIcon 2 Brown Kite
+	SetTextColor 116 253 179 255
+	SetBackgroundColor 0 46 25 255
+	SetBorderColor 116 253 179 255
+	MinimapIcon 2 Brown UpsideDownHouse
 
 Show
-	BaseType == "Exotic Coinage"
+	BaseType == "Black Scythe Artifact" "Sun Artifact"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -284,6 +284,16 @@ Show
 	SetBackgroundColor 0 46 25 255
 	SetBorderColor 116 253 179 255
 	MinimapIcon 1 Brown UpsideDownHouse
+
+Show
+	BaseType == "Exotic Coinage"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 33 252 162 255
+	SetBackgroundColor 0 86 51 255
+	SetBorderColor 33 252 162 255
+	MinimapIcon 0 Brown Cross
 
 Hide
 	BaseType == Gold
