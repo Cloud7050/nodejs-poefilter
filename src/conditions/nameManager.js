@@ -60,6 +60,115 @@ export class NameManager {
 		).filter(min, max);
 	}
 
+	static getEssences1(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Lesser Essence of Battle", 1 / 5),
+			new Name("Lesser Essence of the Body", 1 / 5),
+			new Name("Lesser Essence of Grounding", 1 / 4),
+			new Name("Lesser Essence of Insulation", 1 / 4),
+			new Name("Lesser Essence of Thawing", 1 / 4),
+			new Name("Lesser Essence of the Infinite", 1 / 4),
+			new Name("Lesser Essence of Haste", 1 / 3),
+			new Name("Lesser Essence of Ice", 1 / 2),
+			new Name("Lesser Essence of Ruin", 1 / 2),
+			new Name("Lesser Essence of the Mind", 1 / 2),
+			new Name("Lesser Essence of Seeking", 1 / 2),
+
+			new Name("Lesser Essence of Abrasion", 1),
+			new Name("Lesser Essence of Alacrity", 1),
+			new Name("Lesser Essence of Electricity", 1),
+			new Name("Lesser Essence of Enhancement", 1),
+			new Name("Lesser Essence of Flames", 1),
+			new Name("Lesser Essence of Sorcery", 1),
+			new Name("Lesser Essence of Command", 2),
+			new Name("Lesser Essence of Opulence", 10),
+
+		).filter(min, max);
+	}
+
+	static getEssences2(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Essence of Battle", 1 / 5),
+			new Name("Essence of Enhancement", 1 / 4),
+			new Name("Essence of Flames", 1 / 2),
+			new Name("Essence of Ice", 1 / 2),
+			new Name("Essence of Sorcery", 1 / 2),
+
+			new Name("Essence of Insulation", 1),
+			new Name("Essence of Seeking", 1),
+			new Name("Essence of Thawing", 1),
+			new Name("Essence of the Infinite", 1),
+			new Name("Essence of the Mind", 1),
+			new Name("Essence of the Body", 1.5),
+			new Name("Essence of Alacrity", 2),
+			new Name("Essence of Command", 2),
+			new Name("Essence of Grounding", 3),
+			new Name("Essence of Electricity", 4),
+			new Name("Essence of Ruin", 4.33),
+			new Name("Essence of Haste", 8),
+			new Name("Essence of Abrasion", 10),
+
+			new Name("Essence of Opulence", 47),
+		).filter(min, max);
+	}
+
+	static getEssences3(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Greater Essence of Sorcery", 1 / 80),
+			new Name("Greater Essence of Ice", 1 / 35),
+			new Name("Greater Essence of the Mind", 1 / 31),
+			new Name("Greater Essence of Flames", 1 / 30),
+			new Name("Greater Essence of Electricity", 1 / 24),
+			new Name("Perfect Essence of Thawing", 1 / 22),
+			new Name("Greater Essence of Battle", 1 / 20),
+			new Name("Greater Essence of the Body", 1 / 20),
+			new Name("Greater Essence of the Infinite", 1 / 20),
+			new Name("Perfect Essence of Command", 1 / 20),
+			new Name("Greater Essence of Abrasion", 1 / 15),
+			new Name("Greater Essence of Ruin", 1 / 9),
+			new Name("Perfect Essence of Ruin", 1 / 7),
+			new Name("Greater Essence of Command", 1 / 5),
+			new Name("Greater Essence of Enhancement", 1 / 5),
+			new Name("Greater Essence of Haste", 1 / 3),
+			new Name("Greater Essence of Seeking", 1 / 3),
+			new Name("Perfect Essence of the Infinite", 1 / 3),
+			new Name("Greater Essence of Grounding", 1 / 2),
+			new Name("Greater Essence of Insulation", 1 / 2),
+			new Name("Greater Essence of Thawing", 1 / 2),
+			new Name("Perfect Essence of Alacrity", 1 / 2),
+			new Name("Perfect Essence of Insulation", 1 / 2),
+			new Name("Perfect Essence of the Mind", 1 / 2),
+			new Name("Perfect Essence of the Body", 1 / 1.5),
+
+			new Name("Greater Essence of Alacrity", 1),
+			new Name("Perfect Essence of Grounding", 1),
+			new Name("Perfect Essence of Ice", 2),
+			new Name("Perfect Essence of Seeking", 2.5),
+			new Name("Perfect Essence of Sorcery", 2.5),
+			new Name("Perfect Essence of Battle", 3.33),
+			new Name("Perfect Essence of Flames", 4),
+			new Name("Perfect Essence of Opulence", 4),
+			new Name("Perfect Essence of Abrasion", 5),
+			new Name("Perfect Essence of Electricity", 8),
+			new Name("Greater Essence of Opulence", 10),
+			new Name("Perfect Essence of Enhancement", 12),
+
+			new Name("Perfect Essence of Haste", 25),
+		).filter(min, max);
+	}
+
+	static getEssences4(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Essence of Insanity", 1.5),
+
+			new Name("Essence of Delirium", 46),
+			new Name("Essence of the Abyss", 54),
+			new Name("Essence of Hysteria", 500),
+
+			new Name("Essence of Horror", 3 * DIV),
+		).filter(min, max);
+	}
+
 	static getAbyss1(min = undefined, max = undefined) {
 		return new NameManager(
 			new Name("Gnawed Jawbone", 1 / 20),

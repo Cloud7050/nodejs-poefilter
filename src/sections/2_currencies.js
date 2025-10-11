@@ -56,22 +56,73 @@ function general(filter) {
 function other(filter) {
 	// Essences
 	filter.block((c, e) => {
-		c.names = new Comparison("Lesser Essence of ", OPERATOR.EQUAL);
+		c.names = new Comparison(NameManager.getEssences1(null, 1));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourWisdom(PAIR_ESSENCE).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Greater Essence of ", OPERATOR.EQUAL);
+		c.names = new Comparison(NameManager.getEssences1(1));
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourWisdom(PAIR_ESSENCE).sizeExalt();
+	});
+
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getEssences2(null, 1));
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourAugment(PAIR_ESSENCE).sizeAugment();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getEssences2(1, 20));
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourAugment(PAIR_ESSENCE).sizeExalt();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getEssences2(20));
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourAugment(PAIR_ESSENCE).sizeChance();
+	});
+
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getEssences3(null, 1));
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourExalt(PAIR_ESSENCE).sizeAugment();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getEssences3(1, 20));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_ESSENCE).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Essence of ", OPERATOR.EQUAL);
+		c.names = new Comparison(NameManager.getEssences3(20));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourAugment(PAIR_ESSENCE).sizeAugment();
+		e.colourExalt(PAIR_ESSENCE).sizeChance();
+	});
+
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getEssences4(null, 20));
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourChance(PAIR_ESSENCE).sizeExalt();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getEssences4(20, DIV));
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourChance(PAIR_ESSENCE).sizeChance();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getEssences4(DIV));
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourDivine(PAIR_ESSENCE).sizeDivine();
 	});
 
 	// Abyss
@@ -81,6 +132,7 @@ function other(filter) {
 
 		e.colourWisdom(PAIR_ABYSS).sizeAugment();
 	});
+
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getAbyss2(null, 1));
 		c.category = new Comparison(CATEGORY.CURRENCY);
@@ -93,6 +145,7 @@ function other(filter) {
 
 		e.colourAugment(PAIR_ABYSS).sizeExalt();
 	});
+
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getAbyss3(null, 20));
 		c.category = new Comparison(CATEGORY.CURRENCY);
@@ -119,12 +172,14 @@ function other(filter) {
 
 		e.colourAugment(PAIR_CRAFT).sizeExalt();
 	});
+
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEmotions2());
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_CRAFT).sizeExalt();
 	});
+
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEmotions3());
 		c.category = new Comparison(CATEGORY.CURRENCY);
@@ -205,6 +260,7 @@ function other(filter) {
 
 		e.colourAugment(PAIR_MECHANIC).sizeAugment();
 	});
+
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCoinage());
 		c.category = new Comparison(CATEGORY.CURRENCY);

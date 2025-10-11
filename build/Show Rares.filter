@@ -72,7 +72,7 @@ Show
 	MinimapIcon 0 Red Diamond
 
 Show
-	BaseType = "Lesser Essence of "
+	BaseType == "Lesser Essence of Battle" "Lesser Essence of the Body" "Lesser Essence of Grounding" "Lesser Essence of Insulation" "Lesser Essence of Thawing" "Lesser Essence of the Infinite" "Lesser Essence of Haste" "Lesser Essence of Ice" "Lesser Essence of Ruin" "Lesser Essence of the Mind" "Lesser Essence of Seeking"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -82,7 +82,59 @@ Show
 	MinimapIcon 1 Purple Kite
 
 Show
-	BaseType = "Greater Essence of "
+	BaseType == "Lesser Essence of Abrasion" "Lesser Essence of Alacrity" "Lesser Essence of Electricity" "Lesser Essence of Enhancement" "Lesser Essence of Flames" "Lesser Essence of Sorcery" "Lesser Essence of Command" "Lesser Essence of Opulence"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 228 215 255 255
+	SetBackgroundColor 16 4 42 255
+	SetBorderColor 228 215 255 255
+	MinimapIcon 0 Purple Kite
+
+Show
+	BaseType == "Essence of Battle" "Essence of Enhancement" "Essence of Flames" "Essence of Ice" "Essence of Sorcery"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 205 184 255 255
+	SetBackgroundColor 35 14 79 255
+	SetBorderColor 205 184 255 255
+	MinimapIcon 1 Purple UpsideDownHouse
+
+Show
+	BaseType == "Essence of Insulation" "Essence of Seeking" "Essence of Thawing" "Essence of the Infinite" "Essence of the Mind" "Essence of the Body" "Essence of Alacrity" "Essence of Command" "Essence of Grounding" "Essence of Electricity" "Essence of Ruin" "Essence of Haste" "Essence of Abrasion"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 205 184 255 255
+	SetBackgroundColor 35 14 79 255
+	SetBorderColor 205 184 255 255
+	MinimapIcon 0 Purple UpsideDownHouse
+
+Show
+	BaseType == "Essence of Opulence"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 205 184 255 255
+	SetBackgroundColor 35 14 79 255
+	SetBorderColor 205 184 255 255
+	PlayEffect Purple
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Purple UpsideDownHouse
+
+Show
+	BaseType == "Greater Essence of Sorcery" "Greater Essence of Ice" "Greater Essence of the Mind" "Greater Essence of Flames" "Greater Essence of Electricity" "Perfect Essence of Thawing" "Greater Essence of Battle" "Greater Essence of the Body" "Greater Essence of the Infinite" "Perfect Essence of Command" "Greater Essence of Abrasion" "Greater Essence of Ruin" "Perfect Essence of Ruin" "Greater Essence of Command" "Greater Essence of Enhancement" "Greater Essence of Haste" "Greater Essence of Seeking" "Perfect Essence of the Infinite" "Greater Essence of Grounding" "Greater Essence of Insulation" "Greater Essence of Thawing" "Perfect Essence of Alacrity" "Perfect Essence of Insulation" "Perfect Essence of the Mind" "Perfect Essence of the Body"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 194 169 255 255
+	SetBackgroundColor 61 28 129 255
+	SetBorderColor 194 169 255 255
+	MinimapIcon 1 Purple Cross
+
+Show
+	BaseType == "Greater Essence of Alacrity" "Perfect Essence of Grounding" "Perfect Essence of Ice" "Perfect Essence of Seeking" "Perfect Essence of Sorcery" "Perfect Essence of Battle" "Perfect Essence of Flames" "Perfect Essence of Opulence" "Perfect Essence of Abrasion" "Perfect Essence of Electricity" "Greater Essence of Opulence" "Perfect Essence of Enhancement"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -92,14 +144,50 @@ Show
 	MinimapIcon 0 Purple Cross
 
 Show
-	BaseType = "Essence of "
+	BaseType == "Perfect Essence of Haste"
 	Class == "Stackable Currency"
 
-	SetFontSize 32
-	SetTextColor 205 184 255 255
-	SetBackgroundColor 35 14 79 255
-	SetBorderColor 205 184 255 255
-	MinimapIcon 1 Purple UpsideDownHouse
+	SetFontSize 45
+	SetTextColor 194 169 255 255
+	SetBackgroundColor 61 28 129 255
+	SetBorderColor 194 169 255 255
+	PlayEffect Purple
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Purple Cross
+
+Show
+	BaseType == "Essence of Insanity"
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 35 14 79 255
+	SetBackgroundColor 168 132 255 255
+	SetBorderColor 35 14 79 255
+	MinimapIcon 0 Purple Star
+
+Show
+	BaseType == "Essence of Delirium" "Essence of the Abyss" "Essence of Hysteria"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 35 14 79 255
+	SetBackgroundColor 168 132 255 255
+	SetBorderColor 35 14 79 255
+	PlayEffect Purple
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Purple Star
+
+Show
+	BaseType == "Essence of Horror"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 133 75 255 255
+	SetBackgroundColor 247 239 255 255
+	SetBorderColor 133 75 255 255
+	PlayEffect Purple
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Purple Diamond
 
 Show
 	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
