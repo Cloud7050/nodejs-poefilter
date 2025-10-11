@@ -367,7 +367,17 @@ Show
 	MinimapIcon 0 Red Cross
 
 Show
-	BaseType == "Omen of Gambling" "Omen of the Liege" "Omen of Refreshment"
+	BaseType == "Omen of Gambling"
+	Class == Omen
+
+	SetFontSize 27
+	SetTextColor 255 206 166 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 206 166 255
+	MinimapIcon 2 Orange UpsideDownHouse
+
+Show
+	BaseType == "Omen of Refreshment" "Omen of the Ancients" "Omen of Greater Exaltation"
 	Class == Omen
 
 	SetFontSize 32
@@ -377,17 +387,7 @@ Show
 	MinimapIcon 1 Orange UpsideDownHouse
 
 Show
-	BaseType == "Omen of the Blackblooded" "Omen of Dextral Necromancy" "Omen of the Sovereign" "Omen of Resurgence" "Omen of Greater Exaltation"
-	Class == Omen
-
-	SetFontSize 32
-	SetTextColor 255 194 144 255
-	SetBackgroundColor 101 54 0 255
-	SetBorderColor 255 194 144 255
-	MinimapIcon 1 Orange Cross
-
-Show
-	BaseType == "Omen of the Ancients" "Omen of Putrefaction" "Omen of Chaotic Quantity" "Omen of Chaotic Monsters" "Omen of Sinistral Exaltation" "Omen of the Blessed" "Omen of Dextral Exaltation" "Omen of Bartering" "Omen of Homogenising Coronation" "Omen of Catalysing Exaltation" "Omen of Answered Prayers" "Omen of Corruption" "Omen of Amelioration"
+	BaseType == "Omen of Dextral Exaltation" "Omen of Homogenising Coronation" "Omen of Resurgence" "Omen of Sinistral Exaltation" "Omen of Chaotic Quantity" "Omen of Bartering" "Omen of Answered Prayers" "Omen of the Blessed" "Omen of Amelioration" "Omen of Catalysing Exaltation" "Omen of Chaotic Monsters" "Omen of Secret Compartments" "Omen of Corruption"
 	Class == Omen
 
 	SetFontSize 37
@@ -397,7 +397,7 @@ Show
 	MinimapIcon 0 Orange Cross
 
 Show
-	BaseType == "Omen of Sinistral Necromancy" "Omen of Chaotic Rarity" "Omen of Dextral Crystallisation" "Omen of Reinforcements" "Omen of Recombination" "Omen of the Hunt" "Omen of Sinistral Crystallisation"
+	BaseType == "Omen of Dextral Crystallisation" "Omen of the Hunt" "Omen of Chaotic Rarity" "Omen of Recombination" "Omen of Reinforcements" "Omen of Homogenising Exaltation" "Omen of Sinistral Crystallisation" "Omen of Sanctification"
 	Class == Omen
 
 	SetFontSize 45
@@ -409,7 +409,7 @@ Show
 	MinimapIcon 0 Orange Star
 
 Show
-	BaseType == "Omen of Secret Compartments" "Omen of Homogenising Exaltation" "Omen of Abyssal Echoes" "Omen of Sanctification" "Omen of Dextral Erasure" "Omen of Whittling" "Omen of Dextral Annulment" "Omen of Sinistral Erasure" "Omen of Light" "Omen of Sinistral Annulment" "Omen of Chance"
+	BaseType == "Omen of Dextral Erasure" "Omen of Whittling" "Omen of Dextral Annulment" "Omen of Sinistral Erasure" "Omen of Sinistral Annulment" "Omen of Chance"
 	Class == Omen
 
 	SetFontSize 45
@@ -419,6 +419,40 @@ Show
 	PlayEffect Orange
 	CustomAlertSound "renoir.wav" 250
 	MinimapIcon 0 Orange Diamond
+
+Show
+	BaseType == "Omen of the Liege" "Omen of Putrefaction" "Omen of Dextral Necromancy" "Omen of the Sovereign" "Omen of the Blackblooded"
+	Class == Omen
+
+	SetFontSize 32
+	SetTextColor 236 183 255 255
+	SetBackgroundColor 52 9 71 255
+	SetBorderColor 236 183 255 255
+	MinimapIcon 1 Pink UpsideDownHouse
+
+Show
+	BaseType == "Omen of Sinistral Necromancy" "Omen of Abyssal Echoes"
+	Class == Omen
+
+	SetFontSize 45
+	SetTextColor 52 9 71 255
+	SetBackgroundColor 216 127 255 255
+	SetBorderColor 52 9 71 255
+	PlayEffect Pink
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Pink Star
+
+Show
+	BaseType == "Omen of Light"
+	Class == Omen
+
+	SetFontSize 45
+	SetTextColor 191 62 248 255
+	SetBackgroundColor 255 238 255 255
+	SetBorderColor 191 62 248 255
+	PlayEffect Pink
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Pink Diamond
 
 Show
 	Class == "Uncut Support Gems"

@@ -10,14 +10,14 @@ export class NameManager {
 		);
 	}
 
-	static getCurrenciesBad() {
+	static getCurrenciesBad(min = undefined, max = undefined) {
 		return new NameManager(
 			new Name("Transmutation Shard", 1 / 30000),
 			new Name("Regal Shard", 1 / 7500),
 			new Name("Artificer's Shard", 1 / 5000),
-			new Name("Lesser Jeweller's Orb", 1 / 400),
 			new Name("Blacksmith's Whetstone", 1 / 500),
-		);
+			new Name("Lesser Jeweller's Orb", 1 / 400),
+		).filter(min, max);
 	}
 	static getCurrencies(min = undefined, max = undefined) {
 		return new NameManager(
@@ -128,6 +128,60 @@ export class NameManager {
 	static getCoinage(min = undefined, max = undefined) {
 		return new NameManager(
 			new Name("Exotic Coinage", 2),
+		).filter(min, max);
+	}
+
+	static getOmens(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Omen of Gambling", 1 / 800),
+
+			new Name("Omen of Refreshment", 1 / 20),
+			new Name("Omen of the Ancients", 1 / 3),
+			new Name("Omen of Greater Exaltation", 1 / 3),
+
+			new Name("Omen of Dextral Exaltation", 3),
+			new Name("Omen of Homogenising Coronation", 3.5),
+			new Name("Omen of Resurgence", 4),
+			new Name("Omen of Sinistral Exaltation", 4),
+			new Name("Omen of Chaotic Quantity", 7),
+			new Name("Omen of Bartering", 7.2),
+			new Name("Omen of Answered Prayers", 9),
+			new Name("Omen of the Blessed", 10),
+			new Name("Omen of Amelioration", 10),
+			new Name("Omen of Catalysing Exaltation", 11),
+			new Name("Omen of Chaotic Monsters", 13),
+			new Name("Omen of Secret Compartments", 16),
+			new Name("Omen of Corruption", 18.33),
+
+			new Name("Omen of Dextral Crystallisation", 20),
+			new Name("Omen of the Hunt", 23),
+			new Name("Omen of Chaotic Rarity", 25),
+			new Name("Omen of Recombination", 28),
+			new Name("Omen of Reinforcements", 77),
+			new Name("Omen of Homogenising Exaltation", 80),
+			new Name("Omen of Sinistral Crystallisation", 101),
+			new Name("Omen of Sanctification", 334),
+
+			new Name("Omen of Dextral Erasure", 2.18 * DIV),
+			new Name("Omen of Whittling", 2.5 * DIV),
+			new Name("Omen of Dextral Annulment", 3.5 * DIV),
+			new Name("Omen of Sinistral Erasure", 4 * DIV),
+			new Name("Omen of Sinistral Annulment", 5.06 * DIV),
+			new Name("Omen of Chance", 6.5 * DIV),
+		).filter(min, max);
+	}
+	static getOmensAbyss(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Omen of the Liege", 1 / 90), // Amanamu
+			new Name("Omen of Putrefaction", 1 / 14),
+			new Name("Omen of Dextral Necromancy", 1 / 12),
+			new Name("Omen of the Sovereign", 1 / 10), // Ulaman
+			new Name("Omen of the Blackblooded", 1 / 8), // Kurgal
+
+			new Name("Omen of Sinistral Necromancy", 26.5),
+			new Name("Omen of Abyssal Echoes", 68),
+
+			new Name("Omen of Light", 3.4 * DIV),
 		).filter(min, max);
 	}
 
