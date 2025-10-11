@@ -28,10 +28,10 @@ for %%F in ("%OUT%*") do (
 	set "isSymlink=false"
 	fsutil reparsepoint query "%%~fF" >nul && set "isSymlink=true"
 
-    if "!isSymlink!"=="true" (
+	if "!isSymlink!"=="true" (
 		echo Deleting %%~nxF...
 		del "%%~fF"
-    )
+	)
 
 	endlocal
 )
