@@ -576,7 +576,7 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	BaseType == "Soul Core of Puhuarte" "Soul Core of Zalatl" "Soul Core of Opiloti" "Soul Core of Tzamoto" "Soul Core of Ticaba" "Soul Core of Quipolatl" "Soul Core of Citaqualotl" "Soul Core of Cholotl" "Soul Core of Atmohua" "Soul Core of Zantipi" "Soul Core of Topotante" "Soul Core of Xopec"
+	BaseType == "Soul Core of Xopec" "Soul Core of Puhuarte" "Soul Core of Atmohua" "Soul Core of Zalatl" "Soul Core of Zantipi" "Soul Core of Quipolatl" "Soul Core of Ticaba" "Soul Core of Tzamoto" "Soul Core of Citaqualotl" "Soul Core of Cholotl" "Soul Core of Opiloti" "Soul Core of Topotante" "Soul Core of Tacati" "Soul Core of Azcapa"
 	Class == Socketable
 
 	SetFontSize 45
@@ -588,7 +588,7 @@ Show
 	MinimapIcon 0 Cyan Star
 
 Show
-	BaseType == "Soul Core of Azcapa" "Soul Core of Tacati" "Soul Core of Jiquani"
+	BaseType == "Soul Core of Jiquani"
 	Class == Socketable
 
 	SetFontSize 45

@@ -185,6 +185,27 @@ export class NameManager {
 		).filter(min, max);
 	}
 
+	static getSocketables(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Soul Core of Xopec", 34),
+			new Name("Soul Core of Puhuarte", 35),
+			new Name("Soul Core of Atmohua", 36),
+			new Name("Soul Core of Zalatl", 40),
+			new Name("Soul Core of Zantipi", 42),
+			new Name("Soul Core of Quipolatl", 44),
+			new Name("Soul Core of Ticaba", 47),
+			new Name("Soul Core of Tzamoto", 52),
+			new Name("Soul Core of Citaqualotl", 53),
+			new Name("Soul Core of Cholotl", 60),
+			new Name("Soul Core of Opiloti", 65),
+			new Name("Soul Core of Topotante", 66),
+			new Name("Soul Core of Tacati", 84),
+			new Name("Soul Core of Azcapa", 125),
+
+			new Name("Soul Core of Jiquani", 6 * DIV),
+		).filter(min, max);
+	}
+
 	// static getFlasksGood() {
 	// 	return new NameManager(
 	// 		"Ultimate Life Flask", "Ultimate Mana Flask",
