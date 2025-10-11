@@ -102,6 +102,16 @@ export class NameManager {
 		).filter(min, max);
 	}
 
+	static getSplinters(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Breach Splinter", 1 / 9),
+
+			new Name("Petition Splinter", 1.29),
+			new Name("Simulacrum Splinter", 1.85),
+			new Name("Runic Splinter", 6.7),
+		).filter(min, max);
+	}
+
 	// static getFlasksGood() {
 	// 	return new NameManager(
 	// 		"Ultimate Life Flask", "Ultimate Mana Flask",

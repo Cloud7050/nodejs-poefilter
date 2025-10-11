@@ -178,10 +178,10 @@ Show
 	Class == "Stackable Currency"
 
 	SetFontSize 27
-	SetTextColor 255 227 207 255
-	SetBackgroundColor 27 10 0 255
-	SetBorderColor 255 227 207 255
-	MinimapIcon 2 Orange Kite
+	SetTextColor 255 206 166 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 206 166 255
+	MinimapIcon 2 Orange UpsideDownHouse
 
 Show
 	BaseType == "Tul's Catalyst" "Chayula's Catalyst"
@@ -246,7 +246,17 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
-	BaseType == "Breach Splinter" "Simulacrum Splinter" "Petition Splinter" "Runic Splinter"
+	BaseType == "Breach Splinter"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 219 242 110 255
+	SetBackgroundColor 36 44 0 255
+	SetBorderColor 219 242 110 255
+	MinimapIcon 1 Green UpsideDownHouse
+
+Show
+	BaseType == "Petition Splinter" "Simulacrum Splinter" "Runic Splinter"
 	Class == "Stackable Currency"
 
 	SetFontSize 37

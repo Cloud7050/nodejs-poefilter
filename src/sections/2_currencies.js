@@ -124,7 +124,7 @@ function other(filter) {
 		c.names = new Comparison(NameManager.getCatalysts(null, 1 / 10));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourWisdom(PAIR_CRAFT).sizeWisdom();
+		e.colourAugment(PAIR_CRAFT).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCatalysts(1 / 10, 1));
@@ -167,8 +167,13 @@ function other(filter) {
 
 	// Splinters
 	filter.block((c, e) => {
-		c.names = new Comparison(["Breach Splinter", "Simulacrum Splinter",
-			"Petition Splinter", "Runic Splinter"]);
+		c.names = new Comparison(NameManager.getSplinters(null, 1));
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourAugment(PAIR_QUESTLIKE).sizeAugment();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getSplinters(1));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_QUESTLIKE).sizeExalt();
