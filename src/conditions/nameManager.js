@@ -56,7 +56,7 @@ export class NameManager {
 			new Name("Perfect Exalted Orb", 1.67 * DIV),
 			new Name("Perfect Chaos Orb", 2.25 * DIV),
 			new Name("Hinekora's Lock", 475 * DIV),
-			new Name("Mirror of Kalandra", 1403 * DIV),
+			new Name("Mirror of Kalandra", 1361 * DIV),
 		).filter(min, max);
 	}
 
@@ -80,8 +80,8 @@ export class NameManager {
 			new Name("Preserved Vertebrae", 3.6),
 			new Name("Preserved Cranium", 10),
 
-			new Name("Ancient Rib", 1.6 * DIV),
-			new Name("Ancient Jawbone", 4.25 * DIV),
+			new Name("Ancient Rib", 1.5 * DIV),
+			new Name("Ancient Jawbone", 3 * DIV),
 			new Name("Ancient Collarbone", 6 * DIV),
 		).filter(min, max);
 	}
@@ -190,8 +190,8 @@ export class NameManager {
 			new Name("Omen of Whittling", 2.5 * DIV),
 			new Name("Omen of Dextral Annulment", 3.5 * DIV),
 			new Name("Omen of Sinistral Erasure", 4 * DIV),
-			new Name("Omen of Sinistral Annulment", 5.06 * DIV),
-			new Name("Omen of Chance", 6.5 * DIV),
+			new Name("Omen of Sinistral Annulment", 5.33 * DIV),
+			new Name("Omen of Chance", 6 * DIV),
 		).filter(min, max);
 	}
 	static getOmensAbyss(min = undefined, max = undefined) {
@@ -205,7 +205,54 @@ export class NameManager {
 			new Name("Omen of Sinistral Necromancy", 26.5),
 			new Name("Omen of Abyssal Echoes", 68),
 
-			new Name("Omen of Light", 3.4 * DIV),
+			new Name("Omen of Light", 3.33 * DIV),
+		).filter(min, max);
+	}
+
+	static getGems(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Tacati's Ire", 1 / 9),
+			new Name("Daresso's Passion", 1 / 8),
+			new Name("Romira's Requital", 1 / 7),
+			new Name("Kurgal's Leash", 1 / 6),
+			new Name("Vilenta's Propulsion", 1 / 4),
+			new Name("Arakaali's Lust", 1 / 3),
+			new Name("Uruk's Smelting", 1 / 2),
+			new Name("Varashta's Blessing", 1 / 2),
+			new Name("Tawhoa's Tending", 1 / 2),
+			new Name("Sione's Temper", 1 / 2),
+			new Name("Ahn's Citadel", 1 / 2),
+
+			new Name("Paquate's Pact", 1),
+			new Name("Kaom's Madness", 1),
+			new Name("Tecrod's Revenge", 1),
+			new Name("Kalisa's Crescendo", 1),
+			new Name("Zarokh's Refrain", 1),
+			new Name("Doedre's Undoing", 1),
+			new Name("Kulemak's Dominion", 1),
+			new Name("Einhar's Beastrite", 1),
+			new Name("Atziri's Allure", 1),
+			new Name("Brutus' Brain", 2),
+			new Name("Xoph's Pyre", 2),
+			new Name("Arbiter's Ignition", 2.5),
+			new Name("Piety's Mercy", 5),
+			new Name("Ailith's Chimes", 6),
+			new Name("Garukhan's Resolve", 14),
+			new Name("Uhtred's Exodus", 16),
+
+			new Name("Tul's Stillness", 60),
+			new Name("Esh's Radiance", 65),
+			new Name("Rigwald's Ferocity", 90),
+			new Name("Ixchel's Torment", 225),
+
+			new Name("Uhtred's Omen", 6 * DIV),
+			new Name("Ratha's Assault", 6 * DIV),
+			new Name("Uul-Netol's Embrace", 11 * DIV),
+			new Name("Atalui's Bloodletting", 16 * DIV),
+			new Name("Rakiata's Flow", 20 * DIV),
+			new Name("Dialla's Desire", 30 * DIV),
+			new Name("Arjun's Medal", 41 * DIV),
+			new Name("Uhtred's Augury", 50 * DIV),
 		).filter(min, max);
 	}
 

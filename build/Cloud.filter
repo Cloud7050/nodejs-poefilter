@@ -485,7 +485,7 @@ Show
 	MinimapIcon 0 White UpsideDownHouse
 
 Show
-	BaseType == "Daresso's Passion" "Arakaali's Lust" "Kurgal's Leash" "Tacati's Ire" "Sione's Temper" "Romira's Requital" "Uruk's Smelting" "Paquate's Pact" "Vilenta's Propulsion" "Tecrod's Revenge" "Kulemak's Dominion" "Ahn's Citadel" "Varashta's Blessing" "Einhar's Beastrite" "Doedre's Undoing" "Kaom's Madness" "Tawhoa's Tending" "Atziri's Allure" "Zarokh's Refrain"
+	BaseType == "Tacati's Ire" "Daresso's Passion" "Romira's Requital" "Kurgal's Leash" "Vilenta's Propulsion" "Arakaali's Lust" "Uruk's Smelting" "Varashta's Blessing" "Tawhoa's Tending" "Sione's Temper" "Ahn's Citadel"
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 32
@@ -495,7 +495,7 @@ Show
 	MinimapIcon 1 White Star
 
 Show
-	BaseType == "Brutus' Brain" "Piety's Mercy" "Arbiter's Ignition" "Xoph's Pyre" "Garukhan's Resolve" "Ailith's Chimes" "Kalisa's Crescendo"
+	BaseType == "Paquate's Pact" "Kaom's Madness" "Tecrod's Revenge" "Kalisa's Crescendo" "Zarokh's Refrain" "Doedre's Undoing" "Kulemak's Dominion" "Einhar's Beastrite" "Atziri's Allure" "Brutus' Brain" "Xoph's Pyre" "Arbiter's Ignition" "Piety's Mercy" "Ailith's Chimes" "Garukhan's Resolve" "Uhtred's Exodus"
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 37
@@ -505,7 +505,7 @@ Show
 	MinimapIcon 0 White Star
 
 Show
-	BaseType == "Uhtred's Exodus" "Tul's Stillness"
+	BaseType == "Tul's Stillness" "Esh's Radiance" "Rigwald's Ferocity" "Ixchel's Torment"
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 45
@@ -517,7 +517,7 @@ Show
 	MinimapIcon 0 White Star
 
 Show
-	BaseType == "Esh's Radiance" "Rigwald's Ferocity" "Ixchel's Torment" "Atalui's Bloodletting" "Ratha's Assault" "Uul-Netol's Embrace" "Uhtred's Omen" "Rakiata's Flow" "Uhtred's Augury" "Arjun's Medal" "Dialla's Desire"
+	BaseType == "Uhtred's Omen" "Ratha's Assault" "Uul-Netol's Embrace" "Atalui's Bloodletting" "Rakiata's Flow" "Dialla's Desire" "Arjun's Medal" "Uhtred's Augury"
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 45
