@@ -7,8 +7,18 @@ Show
 
 	Continue
 
+Hide
+	BaseType == "Transmutation Shard" "Regal Shard" "Artificer's Shard" "Blacksmith's Whetstone" "Lesser Jeweller's Orb"
+	Class == "Stackable Currency"
+
+	SetFontSize 27
+	SetTextColor 255 217 215 255
+	SetBackgroundColor 35 2 3 255
+	SetBorderColor 255 217 215 255
+	MinimapIcon 2 Red Kite
+
 Show
-	BaseType == "Transmutation Shard" "Regal Shard" "Artificer's Shard" "Greater Orb of Transmutation" "Orb of Transmutation" "Greater Orb of Augmentation" "Regal Orb" "Artificer's Orb" "Blacksmith's Whetstone" "Lesser Jeweller's Orb" "Greater Jeweller's Orb" "Scroll of Wisdom" "Orb of Augmentation"
+	BaseType == "Greater Orb of Transmutation" "Orb of Transmutation" "Greater Orb of Augmentation" "Regal Orb" "Artificer's Orb" "Greater Jeweller's Orb" "Scroll of Wisdom" "Orb of Augmentation"
 	Class == "Stackable Currency"
 
 	SetFontSize 27
@@ -1233,12 +1243,6 @@ Show
 
 Show
 	Rarity >= Rare
-
-	#
-
-Hide
-	BaseType == "Transmutation Shard" "Artificer's Shard" "Regal Shard" "Lesser Jeweller's Orb" "Blacksmith's Whetstone"
-	Class == "Stackable Currency"
 
 	#
 

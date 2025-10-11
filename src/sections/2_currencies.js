@@ -15,6 +15,13 @@ export function sectionCurrencies(filter) {
 
 function general(filter) {
 	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getCurrenciesBad());
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.hide();
+		e.colourWisdom(PAIR_CURRENCY).sizeWisdom();
+	});
+	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCurrencies(null, 1 / 100));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 

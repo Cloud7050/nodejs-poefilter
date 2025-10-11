@@ -4,10 +4,7 @@ import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 
 export function sectionHides(filter) {
-	filter.multiBlock((c) => { // Low value currency
-		c.names = new Comparison(NameManager.getCurrenciesBad());
-		c.category = new Comparison(CATEGORY.CURRENCY);
-	}, (c) => { // Normal/magic class mainhands but are wrong skill
+	filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
 		c.names = new Comparison(NameManager.getMainClassLow());
 		c.category = new Comparison(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);

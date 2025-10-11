@@ -10,18 +10,22 @@ export class NameManager {
 		);
 	}
 
-	static getCurrencies(min = undefined, max = undefined) {
+	static getCurrenciesBad() {
 		return new NameManager(
 			new Name("Transmutation Shard", 1 / 30000),
 			new Name("Regal Shard", 1 / 7500),
 			new Name("Artificer's Shard", 1 / 5000),
+			new Name("Lesser Jeweller's Orb", 1 / 400),
+			new Name("Blacksmith's Whetstone", 1 / 500),
+		);
+	}
+	static getCurrencies(min = undefined, max = undefined) {
+		return new NameManager(
 			new Name("Greater Orb of Transmutation", 1 / 4000),
 			new Name("Orb of Transmutation", 1 / 3000),
 			new Name("Greater Orb of Augmentation", 1 / 1000),
 			new Name("Regal Orb", 1 / 750),
 			new Name("Artificer's Orb", 1 / 500),
-			new Name("Blacksmith's Whetstone", 1 / 500),
-			new Name("Lesser Jeweller's Orb", 1 / 400),
 			new Name("Greater Jeweller's Orb", 1 / 250),
 			new Name("Scroll of Wisdom", 1 / 200),
 			new Name("Orb of Augmentation", 1 / 200),
@@ -145,15 +149,6 @@ export class NameManager {
 		);
 	}
 
-	static getCurrenciesBad() {
-		return new NameManager(
-			"Transmutation Shard",
-			"Artificer's Shard",
-			"Regal Shard",
-			"Lesser Jeweller's Orb",
-			"Blacksmith's Whetstone",
-		);
-	}
 	static getMainClassLow() {
 		return new NameManager(
 			// https://poe2db.tw/us/Sceptres#SceptresItem
