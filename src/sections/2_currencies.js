@@ -121,41 +121,25 @@ function other(filter) {
 
 	// Catalysts
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Skittering Catalyst", // 1 / 33.5 exalts (speed)
-			"Uul-Netol's Catalyst", // 1 / 20 exalts (physical)
-			"Adaptive Catalyst", // 1 / 13.33 exalts (attribute)
-			"Carapace Catalyst", // 1 / 11.5 exalts (defence)
-			"Sibilant Catalyst", // 1 / 11 exalts (caster)
-		]);
+		c.names = new Comparison(NameManager.getCatalysts(null, 1 / 10));
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourWisdom(PAIR_CRAFT).sizeWisdom();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getCatalysts(1 / 10, 1));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_CRAFT).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Chayula's Catalyst", // 1 / 9 exalts (chaos)
-			"Neural Catalyst", // 1 / 8 exalts (mana)
-			"Xoph's Catalyst", // 1 / 8 exalts (fire)
-			"Tul's Catalyst", // 1 / 7.89 exalts (cold)
-		]);
-		c.category = new Comparison(CATEGORY.CURRENCY);
-
-		e.colourExalt(PAIR_CRAFT).sizeAugment();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Flesh Catalyst", // 1.24 exalts (life)
-			"Esh's Catalyst", // 6.5 exalts (lightning)
-		]);
+		c.names = new Comparison(NameManager.getCatalysts(1, 10));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_CRAFT).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Reaver Catalyst", // 10 exalts (attack)
-		]);
+		c.names = new Comparison(NameManager.getCatalysts(10));
 		c.category = new Comparison(CATEGORY.OMEN);
 
 		e.colourChance(PAIR_CRAFT).sizeChance();

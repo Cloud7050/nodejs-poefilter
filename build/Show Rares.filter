@@ -174,7 +174,17 @@ Show
 	MinimapIcon 0 Orange UpsideDownHouse
 
 Show
-	BaseType == "Skittering Catalyst" "Uul-Netol's Catalyst" "Adaptive Catalyst" "Carapace Catalyst" "Sibilant Catalyst"
+	BaseType == "Skittering Catalyst" "Adaptive Catalyst" "Uul-Netol's Catalyst" "Sibilant Catalyst" "Carapace Catalyst" "Xoph's Catalyst" "Neural Catalyst"
+	Class == "Stackable Currency"
+
+	SetFontSize 27
+	SetTextColor 255 227 207 255
+	SetBackgroundColor 27 10 0 255
+	SetBorderColor 255 227 207 255
+	MinimapIcon 2 Orange Kite
+
+Show
+	BaseType == "Tul's Catalyst" "Chayula's Catalyst"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -182,16 +192,6 @@ Show
 	SetBackgroundColor 57 28 0 255
 	SetBorderColor 255 206 166 255
 	MinimapIcon 1 Orange UpsideDownHouse
-
-Show
-	BaseType == "Chayula's Catalyst" "Neural Catalyst" "Xoph's Catalyst" "Tul's Catalyst"
-	Class == "Stackable Currency"
-
-	SetFontSize 32
-	SetTextColor 255 194 144 255
-	SetBackgroundColor 101 54 0 255
-	SetBorderColor 255 194 144 255
-	MinimapIcon 1 Orange Cross
 
 Show
 	BaseType == "Flesh Catalyst" "Esh's Catalyst"
