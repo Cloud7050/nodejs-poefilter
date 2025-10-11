@@ -56,6 +56,32 @@ export class NameManager {
 		).filter(min, max);
 	}
 
+	static getAbyss1(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Gnawed Jawbone", 1 / 20),
+			new Name("Gnawed Rib", 1 / 20),
+			new Name("Gnawed Collarbone", 1 / 2),
+		).filter(min, max);
+	}
+	static getAbyss2(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Preserved Jawbone", 1 / 100),
+			new Name("Preserved Rib", 1 / 50),
+
+			new Name("Preserved Collarbone", 1.4),
+		).filter(min, max);
+	}
+	static getAbyss3(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Preserved Vertebrae", 3.6),
+			new Name("Preserved Cranium", 10),
+
+			new Name("Ancient Rib", 1.6 * DIV),
+			new Name("Ancient Jawbone", 4.25 * DIV),
+			new Name("Ancient Collarbone", 6 * DIV),
+		).filter(min, max);
+	}
+
 	// static getFlasksGood() {
 	// 	return new NameManager(
 	// 		"Ultimate Life Flask", "Ultimate Mana Flask",

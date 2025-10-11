@@ -69,54 +69,31 @@ function other(filter) {
 
 	// Abyss
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Gnawed Jawbone", // 1 / 10 exalts
-			"Gnawed Rib", // 1 / 10 exalts
-			"Gnawed Collarbone", // 1 / 1.5 exalts
-		]);
+		c.names = new Comparison(NameManager.getAbyss1());
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourWisdom(PAIR_ABYSS).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Preserved Rib", // 1 / 25 exalts
-			"Preserved Jawbone", // 1 / 15 exalts
-		]);
+		c.names = new Comparison(NameManager.getAbyss2(null, 1));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_ABYSS).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Preserved Collarbone", // 3.5 exalts
-		]);
+		c.names = new Comparison(NameManager.getAbyss2(1));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_ABYSS).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Preserved Vertebrae", // 1.2 exalts
-		]);
+		c.names = new Comparison(NameManager.getAbyss3(null, 20));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_ABYSS).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Preserved Cranium", // 14 exalts
-		]);
-		c.category = new Comparison(CATEGORY.CURRENCY);
-
-		e.colourExalt(PAIR_ABYSS).sizeChance();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison([
-			"Ancient Rib", // 1.5 divs
-			"Ancient Jawbone", // 3 divs
-			"Ancient Collarbone", // 4 divs
-		]);
+		c.names = new Comparison(NameManager.getAbyss3(20));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourDivine(PAIR_ABYSS).sizeDivine();
