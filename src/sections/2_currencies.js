@@ -108,22 +108,28 @@ function other(filter) {
 
 	// Liquid emotions
 	filter.block((c, e) => {
-		c.names = new Comparison("Diluted Liquid ", OPERATOR.EQUAL);
+		c.names = new Comparison(NameManager.getEmotions1(null, 1));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourWisdom(PAIR_CRAFT).sizeExalt();
+		e.colourAugment(PAIR_CRAFT).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Concentrated Liquid ", OPERATOR.EQUAL);
+		c.names = new Comparison(NameManager.getEmotions1(1));
+		c.category = new Comparison(CATEGORY.CURRENCY);
+
+		e.colourAugment(PAIR_CRAFT).sizeExalt();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getEmotions2());
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_CRAFT).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Liquid ", OPERATOR.EQUAL);
+		c.names = new Comparison(NameManager.getEmotions3());
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourAugment(PAIR_CRAFT).sizeExalt();
+		e.colourChance(PAIR_CRAFT).sizeChance();
 	});
 
 	// Catalysts

@@ -154,17 +154,27 @@ Show
 	MinimapIcon 0 Pink Diamond
 
 Show
-	BaseType = "Diluted Liquid "
+	BaseType == "Diluted Liquid Ire"
+	Class == "Stackable Currency"
+
+	SetFontSize 32
+	SetTextColor 255 206 166 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 206 166 255
+	MinimapIcon 1 Orange UpsideDownHouse
+
+Show
+	BaseType == "Diluted Liquid Greed" "Diluted Liquid Guilt"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
-	SetTextColor 255 227 207 255
-	SetBackgroundColor 27 10 0 255
-	SetBorderColor 255 227 207 255
-	MinimapIcon 0 Orange Kite
+	SetTextColor 255 206 166 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 206 166 255
+	MinimapIcon 0 Orange UpsideDownHouse
 
 Show
-	BaseType = "Concentrated Liquid "
+	BaseType == "Liquid Envy" "Liquid Paranoia" "Liquid Despair" "Liquid Disgust"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -174,14 +184,16 @@ Show
 	MinimapIcon 0 Orange Cross
 
 Show
-	BaseType = "Liquid "
+	BaseType == "Concentrated Liquid Suffering" "Concentrated Liquid Fear" "Concentrated Liquid Isolation"
 	Class == "Stackable Currency"
 
-	SetFontSize 37
-	SetTextColor 255 206 166 255
-	SetBackgroundColor 57 28 0 255
-	SetBorderColor 255 206 166 255
-	MinimapIcon 0 Orange UpsideDownHouse
+	SetFontSize 45
+	SetTextColor 57 28 0 255
+	SetBackgroundColor 255 166 84 255
+	SetBorderColor 57 28 0 255
+	PlayEffect Orange
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Orange Star
 
 Show
 	BaseType == "Skittering Catalyst" "Adaptive Catalyst" "Uul-Netol's Catalyst" "Sibilant Catalyst" "Carapace Catalyst" "Xoph's Catalyst" "Neural Catalyst"
