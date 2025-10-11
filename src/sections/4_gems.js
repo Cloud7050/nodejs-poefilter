@@ -60,7 +60,7 @@ export function sectionGems(filter) {
 	filter.block((c, e) => {
 		c.category = new Comparison(CATEGORY.GEM);
 
-		e.colourExalt(PAIR_GEM).sizeWisdom();
+		e.colourExalt(PAIR_GEM).sizeAugment();
 	});
 	////
 }

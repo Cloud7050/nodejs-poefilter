@@ -311,7 +311,7 @@ function waystones(filter) {
 		c.category = new Comparison(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
-		e.colourWisdom(PAIR_QUESTLIKE).sizeAugment();
+		e.colourWisdom(PAIR_QUESTLIKE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.continue();
@@ -343,7 +343,7 @@ function mechanics(filter) {
 		c.category = new Comparison([CATEGORY.TABLET]);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
-		e.colourWisdom(PAIR_MECHANIC).sizeAugment();
+		e.colourWisdom(PAIR_MECHANIC).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.continue();
