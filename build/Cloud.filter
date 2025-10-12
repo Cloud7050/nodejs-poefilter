@@ -1383,7 +1383,7 @@ Hide
 	#
 
 Hide
-	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus"
+	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus" "Sacred Focus"
 	Class == Foci
 	Rarity <= Magic
 

@@ -431,7 +431,7 @@ export class NameManager {
 			"Hallowed Focus", // 50 ES, L61
 			"Druidic Focus", // 52 ES, L65
 			"Leyline Focus", // 58 ES, L70
-			// "Sacred Focus", // 63 ES, L75
+			"Sacred Focus", // 63 ES, L75
 			// "Tasalian Focus", // 68 ES, L80
 		);
 	}
