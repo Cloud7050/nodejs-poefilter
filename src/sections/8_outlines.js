@@ -4,6 +4,7 @@ import { Colour } from "../effects/colour.js";
 
 // Overwrite outlines (highest priority first). Also acts like a whitelist
 export function sectionOutlines(filter) {
+	//// Non-whitelist outlines (continues). Lowest priority first as they can get overwritten below
 	// Corrupted
 	filter.block((c, e) => {
 		// No whitelist. But is lowest priority outline as others below can overwrite it
@@ -13,6 +14,16 @@ export function sectionOutlines(filter) {
 		e.outlineColour = Colour.CORRUPTED;
 	});
 
+	// Any quality
+	filter.block((c, e) => {
+		c.continue();
+		c.hasQuality();
+
+		e.outlineColour = Colour.MAGIC;
+	});
+	////
+
+	//// Whitelist outlines (no continues). Highest priority first as they stop immediately
 	// Good mods
 	filter.multiBlock((c) => {
 		c.goodMain(true);
@@ -30,6 +41,17 @@ export function sectionOutlines(filter) {
 		c.goodModJewellery(true);
 	}, (e) => {
 		e.outlineColour = Colour.RARE;
+	});
+
+	// IL 81/82
+	filter.multiBlock((c) => {
+		c.category = new Comparison(CATEGORY.WEAPON_CASTER);
+		c.ilvl = new Comparison(81, OPERATOR.GTE);
+	}, (c) => {
+		c.category = new Comparison(CATEGORY.GEAR);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+	}, (e) => {
+		e.outlineColour = Colour.NORMAL;
 	});
 
 	// Quality
@@ -50,11 +72,8 @@ export function sectionOutlines(filter) {
 		c.hasQuality(5);
 		c.height = new Comparison(4, OPERATOR.LTE);
 		c.width = new Comparison(1);
-	}, (c) => {
-		// Still outline all other >= 1 quality, but they aren't immune to hiding below
-		c.continue();
-		c.hasQuality();
 	}, (e) => {
 		e.outlineColour = Colour.MAGIC;
 	});
+	////
 }

@@ -9,13 +9,16 @@ const OFF_CLASS = new StringList("Foci");
 const WEAPON_CLASS =  new StringList(MAIN_CLASS, OFF_CLASS);
 
 // Other weapons
-const MAIN_OTHER = new StringList("Bows", "Claws", "Crossbows", "Daggers", "Flails",
-	"One Hand Axes", "One Hand Maces", "One Hand Swords", "Quarterstaves", "Spears", "Staves",
-	"Two Hand Axes", "Two Hand Maces", "Two Hand Swords", "Wands");
+const MAIN_OTHER_CASTER = new StringList("Staves", "Wands");
+const MAIN_OTHER_ATTACKER = new StringList("Bows", "Claws", "Crossbows", "Daggers", "Flails",
+	"One Hand Axes", "One Hand Maces", "One Hand Swords", "Quarterstaves", "Spears",
+	"Two Hand Axes", "Two Hand Maces", "Two Hand Swords");
+const MAIN_OTHER = new StringList(MAIN_OTHER_CASTER, MAIN_OTHER_ATTACKER);
 const OFF_OTHER = new StringList("Bucklers", "Quivers", "Shields");
 const WEAPON_OTHER = new StringList(MAIN_OTHER, OFF_OTHER);
 const MAIN = new StringList(MAIN_CLASS, MAIN_OTHER);
 const OFF = new StringList(OFF_CLASS, OFF_OTHER);
+const WEAPON_CASTER = new StringList(MAIN_CLASS, MAIN_OTHER_CASTER);
 const WEAPON = new StringList(WEAPON_CLASS, WEAPON_OTHER);
 
 const ARMOUR_TOP = new StringList("Body Armours", "Gloves", "Helmets");
@@ -39,8 +42,8 @@ const RELIC = new StringList("Relics");
 //// No rarity
 const CURRENCY = new StringList("Stackable Currency");
 const OMEN = new StringList("Omen");
-const GEM_UNCUT = new StringList("Uncut Skill Gems", "Uncut Spirit Gems");
-const SUPPORT_UNCUT = new StringList("Uncut Support Gems");
+const GEM_UNCUT_MAIN = new StringList("Uncut Skill Gems", "Uncut Spirit Gems");
+const GEM_UNCUT_SUPPORT = new StringList("Uncut Support Gems");
 const GEM = new StringList("Skill Gems", "Support Gems");
 const SOCKETABLE = new StringList("Socketable");
 const TICKET = new StringList("Trial Coins", "Inscribed Ultimatum", "Expedition Logbooks");
@@ -54,11 +57,14 @@ export const CATEGORY = {
 	OFF_CLASS,
 	WEAPON_CLASS,
 
+	MAIN_OTHER_CASTER,
+	MAIN_OTHER_ATTACKER,
 	MAIN_OTHER,
 	OFF_OTHER,
 	WEAPON_OTHER,
 	MAIN,
 	OFF,
+	WEAPON_CASTER,
 	WEAPON,
 
 	ARMOUR_TOP,
@@ -80,8 +86,8 @@ export const CATEGORY = {
 
 	CURRENCY,
 	OMEN,
-	GEM_UNCUT,
-	SUPPORT_UNCUT,
+	GEM_UNCUT_MAIN,
+	GEM_UNCUT_SUPPORT,
 	GEM,
 	SOCKETABLE,
 	TICKET,

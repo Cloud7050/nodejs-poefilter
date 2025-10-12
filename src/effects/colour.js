@@ -46,7 +46,7 @@ export class Colour {
 	static VIOLET = Colour.fromHue(320);
 	// static PINK = Colour.fromHue(340);
 
-	// static NORMAL = new Colour(200, 200, 200);
+	static NORMAL = new Colour(200, 200, 200);
 	static MAGIC = new Colour(123, 151, 255);
 	static RARE = new Colour(255, 225, 87);
 	// static UNIQUE = new Colour(241, 106, 33);
