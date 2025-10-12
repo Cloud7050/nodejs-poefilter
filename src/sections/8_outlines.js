@@ -4,6 +4,15 @@ import { Colour } from "../effects/colour.js";
 
 // Overwrite outlines (highest priority first). Also acts like a whitelist
 export function sectionOutlines(filter) {
+	// Corrupted
+	filter.block((c, e) => {
+		// No whitelist. But is lowest priority outline as others below can overwrite it
+		c.continue();
+		c.isCorrupted = true;
+
+		e.outlineColour = Colour.CORRUPTED;
+	});
+
 	// Good mods
 	filter.multiBlock((c) => {
 		c.goodMain(true);

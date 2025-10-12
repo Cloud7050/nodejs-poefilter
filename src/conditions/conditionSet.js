@@ -22,6 +22,7 @@ export class ConditionSet {
 
 	quality = null; // Comparison
 	sockets = null; // Comparison
+	isCorrupted = null; // bool
 	energyShield = null; // Comparison
 	armour = null; // Comparison
 	evasion = null; // Comparison
@@ -45,6 +46,7 @@ export class ConditionSet {
 
 		if (this.quality !== null) spans.push(this.quality.export("Quality"));
 		if (this.sockets !== null) spans.push(this.sockets.export("Sockets"));
+		if (this.isCorrupted !== null) spans.push(`Corrupted ${this.isCorrupted ? "True" : "False"}`);
 		if (this.energyShield !== null) spans.push(this.energyShield.export("BaseEnergyShield"));
 		if (this.armour !== null) spans.push(this.armour.export("BaseArmour"));
 		if (this.evasion !== null) spans.push(this.evasion.export("BaseEvasion"));

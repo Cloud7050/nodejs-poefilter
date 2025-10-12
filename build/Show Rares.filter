@@ -1300,6 +1300,13 @@ Show
 	Continue
 
 Show
+	Corrupted True
+
+	SetBorderColor 210 0 0 255
+
+	Continue
+
+Show
 	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm" "Golden Obi"
 
 	SetBorderColor 255 225 87 255

@@ -51,6 +51,7 @@ export class Colour {
 	static RARE = new Colour(255, 225, 87);
 	// static UNIQUE = new Colour(241, 106, 33);
 
+	static CORRUPTED = new Colour(210, 0, 0);
 	// static GEM_UNCUT = new Colour(116, 201, 190);
 	// static GEM = new Colour(27, 162, 155); // UNCONFIRMED
 	// static CRAFTED = new Colour(184, 218, 242);
