@@ -31,23 +31,23 @@ export const PAIR_ABYSS = [Colour.VIOLET, PRESET.PINK];
 // PINK
 
 function makeFilter(name, showRares = false) {
-	let main = new Filter(name);
+	let filter = new Filter(name);
 
-	sectionGlobal(main);
+	sectionGlobal(filter);
 
-	sectionCurrencies(main);
-	sectionOmens(main);
-	sectionGems(main);
-	sectionSocketables(main);
-	sectionMisc(main);
-	sectionRarity(main);
+	sectionCurrencies(filter);
+	sectionOmens(filter);
+	sectionGems(filter);
+	sectionSocketables(filter);
+	sectionMisc(filter);
+	sectionRarity(filter);
 
-	sectionOutlines(main);
-	sectionWhitelist(main, showRares);
+	sectionOutlines(filter);
+	sectionWhitelist(filter, showRares);
 
-	sectionHides(main);
+	sectionHides(filter);
 
-	main.save();
+	filter.save();
 }
 
 makeFilter("Cloud");
