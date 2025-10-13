@@ -450,7 +450,7 @@ export class NameManager {
 			"Jungle Tiara", // 78 ES, L59
 			"Skycrown Tiara", // 84 ES, L65
 			"Sorcerous Tiara", // 92 ES, L70
-			// "Kamasan Tiara", // 101 ES, L75
+			"Kamasan Tiara", // 101 ES, L75
 			// "Ancestral Tiara", // 109 ES, L80
 
 			// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
