@@ -42,11 +42,13 @@ const RELIC = new StringList("Relics");
 //// No rarity
 const CURRENCY = new StringList("Stackable Currency");
 const OMEN = new StringList("Omen");
-const GEM_UNCUT_MAIN = new StringList("Uncut Skill Gems", "Uncut Spirit Gems");
-const GEM_UNCUT_SUPPORT = new StringList("Uncut Support Gems");
+const UNCUT_MAIN = new StringList("Uncut Skill Gems", "Uncut Spirit Gems");
+const UNCUT_SUPPORT = new StringList("Uncut Support Gems");
 const GEM = new StringList("Skill Gems", "Support Gems");
 const SOCKETABLE = new StringList("Socketable");
-const TICKET = new StringList("Trial Coins", "Inscribed Ultimatum", "Expedition Logbooks");
+const SEKHEMA = new StringList("Trial Coins");
+const CHAOS = new StringList("Inscribed Ultimatum");
+const LOGBOOK = new StringList("Expedition Logbooks");
 const VAULT = new StringList("Vault Keys");
 const FRAGMENT = new StringList("Map Fragments");
 const QUEST = new StringList("Quest Items", "Instance Local Items");
@@ -86,11 +88,13 @@ export const CATEGORY = {
 
 	CURRENCY,
 	OMEN,
-	GEM_UNCUT_MAIN,
-	GEM_UNCUT_SUPPORT,
+	UNCUT_MAIN,
+	UNCUT_SUPPORT,
 	GEM,
 	SOCKETABLE,
-	TICKET,
+	SEKHEMA,
+	CHAOS,
+	LOGBOOK,
 	VAULT,
 	FRAGMENT,
 	QUEST,

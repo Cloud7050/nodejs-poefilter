@@ -8,12 +8,12 @@ import { PAIR_GEM } from "../index.js";
 export function sectionGems(filter) {
 	// Uncut
 	filter.block((c, e) => {
-		c.category = new Comparison(CATEGORY.GEM_UNCUT_SUPPORT);
+		c.category = new Comparison(CATEGORY.UNCUT_SUPPORT);
 
 		e.colourAugment(PAIR_GEM).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.category = new Comparison(CATEGORY.GEM_UNCUT_MAIN);
+		c.category = new Comparison(CATEGORY.UNCUT_MAIN);
 
 		e.colourAugment(PAIR_GEM).sizeExalt();
 	});

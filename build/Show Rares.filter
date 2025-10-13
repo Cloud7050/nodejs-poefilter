@@ -709,12 +709,206 @@ Show
 	MinimapIcon 0 Cyan Cross
 
 Show
-	Class == "Trial Coins" "Inscribed Ultimatum" "Expedition Logbooks"
+	Class == "Trial Coins"
+	ItemLevel <= 25
+
+	SetFontSize 37
+	SetTextColor 233 251 145 255
+	SetBackgroundColor 14 18 0 255
+	SetBorderColor 233 251 145 255
+	MinimapIcon 0 Green Kite
+
+Show
+	Class == "Trial Coins"
+	ItemLevel <= 44
+
+	SetFontSize 32
+	SetTextColor 233 251 145 255
+	SetBackgroundColor 14 18 0 255
+	SetBorderColor 233 251 145 255
+	MinimapIcon 1 Green Kite
+
+Show
+	Class == "Trial Coins"
+	ItemLevel == 45
+
+	SetFontSize 45
+	SetTextColor 233 251 145 255
+	SetBackgroundColor 14 18 0 255
+	SetBorderColor 233 251 145 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green Kite
+
+Show
+	Class == "Trial Coins"
+	ItemLevel <= 59
+
+	SetFontSize 32
+	SetTextColor 233 251 145 255
+	SetBackgroundColor 14 18 0 255
+	SetBorderColor 233 251 145 255
+	MinimapIcon 1 Green Kite
+
+Show
+	Class == "Trial Coins"
+	ItemLevel <= 65
+
+	SetFontSize 45
+	SetTextColor 219 242 110 255
+	SetBackgroundColor 36 44 0 255
+	SetBorderColor 219 242 110 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green UpsideDownHouse
+
+Show
+	Class == "Trial Coins"
+	ItemLevel <= 67
+
+	SetFontSize 37
+	SetTextColor 219 242 110 255
+	SetBackgroundColor 36 44 0 255
+	SetBorderColor 219 242 110 255
+	MinimapIcon 0 Green UpsideDownHouse
+
+Show
+	Class == "Trial Coins"
+	ItemLevel <= 74
+
+	SetFontSize 32
+	SetTextColor 219 242 110 255
+	SetBackgroundColor 36 44 0 255
+	SetBorderColor 219 242 110 255
+	MinimapIcon 1 Green UpsideDownHouse
+
+Show
+	Class == "Trial Coins"
+	ItemLevel == 75
+
+	SetFontSize 45
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green Cross
+
+Show
+	Class == "Trial Coins"
+	ItemLevel == 76
 
 	SetFontSize 37
 	SetTextColor 212 238 80 255
 	SetBackgroundColor 70 82 0 255
 	SetBorderColor 212 238 80 255
+	MinimapIcon 0 Green Cross
+
+Show
+	Class == "Trial Coins"
+	ItemLevel >= 77
+
+	SetFontSize 32
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	MinimapIcon 1 Green Cross
+
+Show
+	Class == "Inscribed Ultimatum"
+	ItemLevel <= 52
+
+	SetFontSize 45
+	SetTextColor 233 251 145 255
+	SetBackgroundColor 14 18 0 255
+	SetBorderColor 233 251 145 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green Kite
+
+Show
+	Class == "Inscribed Ultimatum"
+	ItemLevel <= 59
+
+	SetFontSize 37
+	SetTextColor 233 251 145 255
+	SetBackgroundColor 14 18 0 255
+	SetBorderColor 233 251 145 255
+	MinimapIcon 0 Green Kite
+
+Show
+	Class == "Inscribed Ultimatum"
+	ItemLevel <= 61
+
+	SetFontSize 45
+	SetTextColor 219 242 110 255
+	SetBackgroundColor 36 44 0 255
+	SetBorderColor 219 242 110 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green UpsideDownHouse
+
+Show
+	Class == "Inscribed Ultimatum"
+	ItemLevel <= 65
+
+	SetFontSize 37
+	SetTextColor 219 242 110 255
+	SetBackgroundColor 36 44 0 255
+	SetBorderColor 219 242 110 255
+	MinimapIcon 0 Green UpsideDownHouse
+
+Show
+	Class == "Inscribed Ultimatum"
+	ItemLevel <= 74
+
+	SetFontSize 32
+	SetTextColor 219 242 110 255
+	SetBackgroundColor 36 44 0 255
+	SetBorderColor 219 242 110 255
+	MinimapIcon 1 Green UpsideDownHouse
+
+Show
+	Class == "Inscribed Ultimatum"
+	ItemLevel <= 77
+
+	SetFontSize 45
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Green Cross
+
+Show
+	Class == "Inscribed Ultimatum"
+	ItemLevel == 78
+
+	SetFontSize 37
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	MinimapIcon 0 Green Cross
+
+Show
+	Class == "Inscribed Ultimatum"
+	ItemLevel <= 80
+
+	SetFontSize 32
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	MinimapIcon 1 Green Cross
+
+Show
+	Class == "Expedition Logbooks"
+
+	SetFontSize 45
+	SetTextColor 212 238 80 255
+	SetBackgroundColor 70 82 0 255
+	SetBorderColor 212 238 80 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Green Cross
 
 Show
