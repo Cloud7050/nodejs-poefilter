@@ -18,7 +18,6 @@ const OFF_OTHER = new StringList("Bucklers", "Quivers", "Shields");
 const WEAPON_OTHER = new StringList(MAIN_OTHER, OFF_OTHER);
 const MAIN = new StringList(MAIN_CLASS, MAIN_OTHER);
 const OFF = new StringList(OFF_CLASS, OFF_OTHER);
-const WEAPON_CASTER = new StringList(MAIN_CLASS, MAIN_OTHER_CASTER);
 const WEAPON = new StringList(WEAPON_CLASS, WEAPON_OTHER);
 
 const HELMET = new StringList("Helmets");
@@ -69,7 +68,6 @@ export const CATEGORY = {
 	WEAPON_OTHER,
 	MAIN,
 	OFF,
-	WEAPON_CASTER,
 	WEAPON,
 
 	HELMET,

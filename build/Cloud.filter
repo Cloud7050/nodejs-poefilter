@@ -1522,7 +1522,7 @@ Show
 	SetBorderColor 255 225 87 255
 
 Show
-	Class == Sceptres Staves Wands Charms
+	Class == Staves Wands Charms
 	ItemLevel >= 81
 
 	SetBorderColor 200 200 200 255

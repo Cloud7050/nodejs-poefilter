@@ -46,7 +46,7 @@ export function sectionOutlines(filter) {
 
 	// BiS ilvl
 	filter.multiBlock((c) => {
-		c.category = new Comparison([CATEGORY.WEAPON_CASTER, CATEGORY.CHARM]);
+		c.category = new Comparison([CATEGORY.MAIN_OTHER_CASTER, CATEGORY.CHARM]);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 	}, (c) => {
 		c.category = new Comparison(CATEGORY.GEAR_COMMON);
