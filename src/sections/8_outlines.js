@@ -51,7 +51,7 @@ export function sectionOutlines(filter) {
 	}, (c) => {
 		c.category = new Comparison(CATEGORY.GEAR_COMMON);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(70, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
 	}, (c) => {
 		c.category = new Comparison([CATEGORY.JEWELLERY, CATEGORY.BELT]);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);

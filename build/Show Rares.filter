@@ -1530,7 +1530,7 @@ Show
 Show
 	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields Helmets "Body Armours" Gloves Boots
 	ItemLevel >= 82
-	DropLevel >= 70
+	DropLevel >= 65
 
 	SetBorderColor 200 200 200 255
 
