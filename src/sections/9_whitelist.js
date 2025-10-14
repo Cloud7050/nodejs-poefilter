@@ -8,7 +8,7 @@ export function sectionWhitelist(filter, showRares) {
 			//TODO once encountered, highlight these differently. Could be 21-30% quality or extra socket
 			c.names = new Comparison("Exceptional ", OPERATOR.EQUAL);
 		}, (c) => {
-			c.wisdomTier = new Comparison(4, OPERATOR.GTE);
+			c.wisdomTier = new Comparison(5, OPERATOR.GTE);
 		}
 	];
 	if (showRares) {
