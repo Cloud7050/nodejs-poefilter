@@ -10,11 +10,12 @@ const WEAPON_CLASS =  new StringList(MAIN_CLASS, OFF_CLASS);
 
 // Other weapons
 const MAIN_OTHER_CASTER = new StringList("Staves", "Wands");
-const MAIN_OTHER_ATTACKER = new StringList("Bows", "Claws", "Crossbows", "Daggers", "Flails",
-	"One Hand Axes", "One Hand Maces", "One Hand Swords", "Quarterstaves", "Spears",
-	"Two Hand Axes", "Two Hand Maces", "Two Hand Swords");
+const MAIN_OTHER_ATTACKER = new StringList("Bows", "Crossbows", "One Hand Maces", "Quarterstaves",
+	"Spears", "Two Hand Maces");
 const MAIN_OTHER = new StringList(MAIN_OTHER_CASTER, MAIN_OTHER_ATTACKER);
-const OFF_OTHER = new StringList("Bucklers", "Quivers", "Shields");
+const OFF_OTHER_BLOCK = new StringList("Bucklers", "Shields");
+const OFF_OTHER_QUIVER = new StringList("Quivers");
+const OFF_OTHER = new StringList(OFF_OTHER_BLOCK, OFF_OTHER_QUIVER);
 const WEAPON_OTHER = new StringList(MAIN_OTHER, OFF_OTHER);
 const MAIN = new StringList(MAIN_CLASS, MAIN_OTHER);
 const OFF = new StringList(OFF_CLASS, OFF_OTHER);
@@ -64,6 +65,8 @@ export const CATEGORY = {
 	MAIN_OTHER_CASTER,
 	MAIN_OTHER_ATTACKER,
 	MAIN_OTHER,
+	OFF_OTHER_BLOCK,
+	OFF_OTHER_QUIVER,
 	OFF_OTHER,
 	WEAPON_OTHER,
 	MAIN,

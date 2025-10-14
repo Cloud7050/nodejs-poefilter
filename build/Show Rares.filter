@@ -943,7 +943,7 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields Helmets "Body Armours" Gloves Boots
+	Class == Sceptres Foci Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
 	Rarity == Normal
 
 	SetFontSize 27
@@ -967,7 +967,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields Helmets "Body Armours" Gloves Boots
+	Class == Sceptres Foci Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
 	Rarity == Magic
 
 	SetFontSize 27
@@ -991,7 +991,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields Helmets "Body Armours" Gloves Boots
+	Class == Sceptres Foci Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
 	Rarity == Rare
 
 	SetFontSize 32
@@ -1015,7 +1015,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Unique
 
 	SetFontSize 45
@@ -1093,7 +1093,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
+	Class == Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces"
 	Rarity == Magic
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
@@ -1106,7 +1106,7 @@ Show
 	Continue
 
 Show
-	Class == Bucklers Quivers Shields
+	Class == Bucklers Shields Quivers
 	Rarity == Magic
 	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
 
@@ -1119,7 +1119,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
+	Class == Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces"
 	Rarity == Rare
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
@@ -1132,7 +1132,7 @@ Show
 	Continue
 
 Show
-	Class == Bucklers Quivers Shields
+	Class == Bucklers Shields Quivers
 	Rarity == Rare
 	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
 
@@ -1498,13 +1498,13 @@ Show
 	SetBorderColor 255 225 87 255
 
 Show
-	Class == Sceptres Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
+	Class == Sceptres Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces"
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
 	SetBorderColor 255 225 87 255
 
 Show
-	Class == Foci Bucklers Quivers Shields
+	Class == Foci Bucklers Shields Quivers
 	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
 
 	SetBorderColor 255 225 87 255
@@ -1528,15 +1528,29 @@ Show
 	SetBorderColor 200 200 200 255
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields Helmets "Body Armours" Gloves Boots
+	Class == Sceptres Quivers Amulets Rings Belts
+	ItemLevel >= 82
+
+	SetBorderColor 200 200 200 255
+
+Show
+	Class == "Body Armours"
 	ItemLevel >= 82
 	DropLevel >= 65
 
 	SetBorderColor 200 200 200 255
 
 Show
-	Class == Amulets Rings Belts
+	Class == Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces"
 	ItemLevel >= 82
+	DropLevel >= 77
+
+	SetBorderColor 200 200 200 255
+
+Show
+	Class == Foci Bucklers Shields Helmets Gloves Boots
+	ItemLevel >= 82
+	DropLevel >= 80
 
 	SetBorderColor 200 200 200 255
 
@@ -1652,13 +1666,13 @@ Hide
 	#
 
 Hide
-	Class == Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields
+	Class == Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers
 	Rarity <= Magic
 
 	#
 
 Hide
-	Class == Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields
+	Class == Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers
 	Rarity == Rare
 	UnidentifiedItemTier <= 4
 

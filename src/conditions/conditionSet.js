@@ -102,7 +102,7 @@ export class ConditionSet {
 		];
 		if (includeOther) phrases.push(
 			// +x to Spirit
-			// "Corvus Mantle", "Conjurer Mantle", // Body armours
+			// "Conjurer Mantle", // Body armours
 
 			// x% increased Rarity of Items found
 			"Golden Obi", // Belts
