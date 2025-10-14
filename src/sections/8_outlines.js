@@ -49,7 +49,11 @@ export function sectionOutlines(filter) {
 		c.category = new Comparison([CATEGORY.WEAPON_CASTER, CATEGORY.CHARM]);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 	}, (c) => {
-		c.category = new Comparison([CATEGORY.GEAR_COMMON, CATEGORY.JEWELLERY, CATEGORY.BELT]);
+		c.category = new Comparison(CATEGORY.GEAR_COMMON);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(70, OPERATOR.GTE);
+	}, (c) => {
+		c.category = new Comparison([CATEGORY.JEWELLERY, CATEGORY.BELT]);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 	}, (c) => {
 		c.names = new Comparison(NameManager.getFlasksGood());

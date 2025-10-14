@@ -1543,7 +1543,14 @@ Show
 	SetBorderColor 200 200 200 255
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots Amulets Rings Belts
+	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots
+	ItemLevel >= 82
+	DropLevel >= 70
+
+	SetBorderColor 200 200 200 255
+
+Show
+	Class == Amulets Rings Belts
 	ItemLevel >= 82
 
 	SetBorderColor 200 200 200 255
