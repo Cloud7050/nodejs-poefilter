@@ -141,7 +141,7 @@ function tickets(filter) {
 	});
 	filter.block((c, e) => {
 		c.category = new Comparison(CATEGORY.CHAOS);
-		c.ilvl = new Comparison(80, OPERATOR.LTE);
+		c.ilvl = new Comparison(79, OPERATOR.GTE);
 
 		e.colourExalt(PAIR_QUESTLIKE).sizeAugment();
 	});

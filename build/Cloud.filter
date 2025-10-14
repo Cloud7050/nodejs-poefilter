@@ -892,7 +892,7 @@ Show
 
 Show
 	Class == "Inscribed Ultimatum"
-	ItemLevel <= 80
+	ItemLevel >= 79
 
 	SetFontSize 32
 	SetTextColor 212 238 80 255
