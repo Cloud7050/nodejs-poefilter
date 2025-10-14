@@ -484,7 +484,7 @@ export class NameManager {
 			"Gold Gloves", // 39 ES, L59
 			"Grim Gloves", // 42 ES, L65
 			"Opulent Gloves", // 46 ES, L70
-			// "Vaal Gloves", // 50 ES, L75
+			"Vaal Gloves", // 50 ES, L75
 			// "Sirenscale Gloves", // 54 ES, L80
 		);
 	}
