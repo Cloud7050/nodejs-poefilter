@@ -1618,7 +1618,7 @@ Hide
 Hide
 	Class == Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields
 	Rarity == Rare
-	UnidentifiedItemTier <= 3
+	UnidentifiedItemTier <= 4
 
 	#
 
@@ -1655,7 +1655,7 @@ Hide
 Hide
 	Class == "Body Armours" Gloves Helmets
 	Rarity == Rare
-	UnidentifiedItemTier <= 3
+	UnidentifiedItemTier <= 4
 	BaseArmour > 0
 
 	#
@@ -1663,7 +1663,7 @@ Hide
 Hide
 	Class == "Body Armours" Gloves Helmets
 	Rarity == Rare
-	UnidentifiedItemTier <= 3
+	UnidentifiedItemTier <= 4
 	BaseEvasion > 0
 
 	#
@@ -1671,7 +1671,7 @@ Hide
 Hide
 	Class == Boots
 	Rarity == Rare
-	UnidentifiedItemTier <= 3
+	UnidentifiedItemTier <= 4
 
 	#
 
@@ -1691,7 +1691,7 @@ Hide
 Hide
 	Class == Belts
 	Rarity == Rare
-	UnidentifiedItemTier <= 3
+	UnidentifiedItemTier <= 4
 
 	#
 
