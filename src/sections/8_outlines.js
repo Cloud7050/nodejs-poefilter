@@ -1,5 +1,6 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
+import { NameManager } from "../conditions/nameManager.js";
 import { Colour } from "../effects/colour.js";
 
 // Overwrite outlines (highest priority first). Also acts like a whitelist
@@ -43,13 +44,17 @@ export function sectionOutlines(filter) {
 		e.outlineColour = Colour.RARE;
 	});
 
-	// IL 81/82
+	// BiS ilvl
 	filter.multiBlock((c) => {
-		c.category = new Comparison(CATEGORY.WEAPON_CASTER);
+		c.category = new Comparison([CATEGORY.WEAPON_CASTER, CATEGORY.CHARM]);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 	}, (c) => {
-		c.category = new Comparison(CATEGORY.GEAR);
+		c.category = new Comparison([CATEGORY.GEAR_COMMON, CATEGORY.JEWELLERY, CATEGORY.BELT]);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
+	}, (c) => {
+		c.names = new Comparison(NameManager.getFlasksGood());
+		c.category = new Comparison(CATEGORY.FLASK);
+		c.ilvl = new Comparison(83, OPERATOR.GTE);
 	}, (e) => {
 		e.outlineColour = Colour.NORMAL;
 	});

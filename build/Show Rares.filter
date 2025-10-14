@@ -1537,14 +1537,21 @@ Show
 	SetBorderColor 255 225 87 255
 
 Show
-	Class == Sceptres Staves Wands
+	Class == Sceptres Staves Wands Charms
 	ItemLevel >= 81
 
 	SetBorderColor 200 200 200 255
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots Amulets Rings Belts
 	ItemLevel >= 82
+
+	SetBorderColor 200 200 200 255
+
+Show
+	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+	Class == "Life Flasks" "Mana Flasks"
+	ItemLevel >= 83
 
 	SetBorderColor 200 200 200 255
 
