@@ -943,7 +943,7 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots
+	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields Helmets "Body Armours" Gloves Boots
 	Rarity == Normal
 
 	SetFontSize 27
@@ -967,7 +967,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots
+	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields Helmets "Body Armours" Gloves Boots
 	Rarity == Magic
 
 	SetFontSize 27
@@ -991,7 +991,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots
+	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields Helmets "Body Armours" Gloves Boots
 	Rarity == Rare
 
 	SetFontSize 32
@@ -1015,7 +1015,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Unique
 
 	SetFontSize 45
@@ -1145,7 +1145,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Normal
 	Quality >= 1
 	BaseEnergyShield > 0
@@ -1161,7 +1161,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	Quality >= 1
 	BaseEnergyShield > 0
@@ -1177,7 +1177,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	BaseEnergyShield > 0
 	BaseArmour == 0
@@ -1193,7 +1193,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	BaseEnergyShield > 0
 	BaseArmour == 0
@@ -1208,7 +1208,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	BaseArmour > 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
@@ -1222,7 +1222,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	BaseEvasion > 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
@@ -1249,7 +1249,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	BaseArmour > 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
@@ -1263,7 +1263,7 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	BaseEvasion > 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
@@ -1310,21 +1310,6 @@ Show
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
-	MinimapIcon 0 Blue Kite
-
-	Continue
-
-Show
-	BaseType == "Heavy Belt"
-	Class == Belts
-	Rarity == Normal
-
-	SetFontSize 45
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 215 218 255 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue Kite
 
 	Continue
@@ -1525,7 +1510,7 @@ Show
 	SetBorderColor 255 225 87 255
 
 Show
-	Class == "Body Armours" Gloves Helmets Boots
+	Class == Helmets "Body Armours" Gloves Boots
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetBorderColor 255 225 87 255
@@ -1543,7 +1528,7 @@ Show
 	SetBorderColor 200 200 200 255
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields "Body Armours" Gloves Helmets Boots
+	Class == Sceptres Foci Staves Wands Bows Claws Crossbows Daggers Flails "One Hand Axes" "One Hand Maces" "One Hand Swords" Quarterstaves Spears "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Bucklers Quivers Shields Helmets "Body Armours" Gloves Boots
 	ItemLevel >= 82
 	DropLevel >= 70
 
@@ -1588,6 +1573,56 @@ Show
 	SetBorderColor 123 151 255 255
 
 Show
+	BaseType == "Viper Cap"
+	Class == Helmets
+	Rarity == Normal
+
+	SetFontSize 37
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 0 Blue Kite
+
+Show
+	BaseType == "Heavy Belt"
+	Class == Belts
+	Rarity == Normal
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+Show
+	BaseType == "Martyr Crown"
+	Class == Helmets
+	Rarity == Normal
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+Show
+	BaseType == "Silver Charm"
+	Class == Charms
+	Rarity == Normal
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+Show
 	BaseType = "Exceptional "
 
 	#
@@ -1626,7 +1661,7 @@ Hide
 
 Hide
 	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Skycrown Tiara" "Sorcerous Tiara" "Kamasan Tiara" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "River Raiment" "Adherent's Raiment" "Ceremonial Robe" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves" "Grim Gloves" "Opulent Gloves"
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity <= Magic
 	BaseEnergyShield > 0
 	BaseArmour == 0
@@ -1635,14 +1670,14 @@ Hide
 	#
 
 Hide
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity <= Magic
 	BaseArmour > 0
 
 	#
 
 Hide
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity <= Magic
 	BaseEvasion > 0
 
@@ -1655,7 +1690,7 @@ Hide
 	#
 
 Hide
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	UnidentifiedItemTier <= 4
 	BaseArmour > 0
@@ -1663,7 +1698,7 @@ Hide
 	#
 
 Hide
-	Class == "Body Armours" Gloves Helmets
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	UnidentifiedItemTier <= 4
 	BaseEvasion > 0

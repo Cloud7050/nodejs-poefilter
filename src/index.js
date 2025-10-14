@@ -1,6 +1,7 @@
 import { Colour, PRESET } from "./effects/colour.js";
 import { Filter } from "./filter.js";
-import { sectionHides } from "./sections/10_hides.js";
+import { sectionWhitelist } from "./sections/10_whitelist.js";
+import { sectionHides } from "./sections/11_hides.js";
 import { sectionGlobal } from "./sections/1_global.js";
 import { sectionCurrencies } from "./sections/2_currencies.js";
 import { sectionOmens } from "./sections/3_omens.js";
@@ -9,7 +10,7 @@ import { sectionSocketables } from "./sections/5_socketables.js";
 import { sectionMisc } from "./sections/6_misc.js";
 import { sectionRarity } from "./sections/7_rarity.js";
 import { sectionOutlines } from "./sections/8_outlines.js";
-import { sectionWhitelist } from "./sections/9_whitelist.js";
+import { sectionNamelist } from "./sections/9_namelist.js";
 
 // ROSE
 export const PAIR_CURRENCY = [Colour.RED, PRESET.RED];
@@ -43,6 +44,7 @@ function makeFilter(name, showRares = false) {
 	sectionRarity(filter);
 
 	sectionOutlines(filter);
+	sectionNamelist(filter);
 	sectionWhitelist(filter, showRares);
 
 	sectionHides(filter);

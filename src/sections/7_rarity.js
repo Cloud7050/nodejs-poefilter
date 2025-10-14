@@ -256,14 +256,6 @@ function uncommon(filter) {
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR).sizeExalt();
 	});
-	filter.block((c, e) => { // Normal heavy belts
-		c.continue();
-		c.names = new Comparison("Heavy Belt");
-		c.category = new Comparison(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.NORMAL);
-
-		e.colourWisdom(PAIR_GEAR).sizeChance();
-	});
 
 	// Magic
 	filter.multiBlock((c) => { // Good main (class)

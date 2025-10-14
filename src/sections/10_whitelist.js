@@ -9,8 +9,9 @@ export function sectionWhitelist(filter, showRares) {
 			c.names = new Comparison("Exceptional ", OPERATOR.EQUAL);
 		}, (c) => {
 			c.wisdomTier = new Comparison(5, OPERATOR.GTE);
-		}
+		},
 	];
+
 	if (showRares) {
 		cs.push((c) => {
 			c.rarity = new Comparison(RARITY.RARE, OPERATOR.GTE);
