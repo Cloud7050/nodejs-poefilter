@@ -470,7 +470,7 @@ export class NameManager {
 			// "Vile Robe", /// 184 ES, L65
 			// "Flowing Raiment", /// 153 ES, L70, 40–50% increased Mana Regeneration Rate
 			// "Sacramental Robe", /// 153 ES, L75, 40–50% faster start of Energy Shield Recharge
-			// "Feathered Raiment", /// 153 ES, L80, 5–10% of Damage is taken from Mana before Life
+			"Feathered Raiment", /// 153 ES, L80, 5–10% of Damage is taken from Mana before Life
 
 			// https://poe2db.tw/us/Gloves
 			"Torn Gloves", // 9 ES
