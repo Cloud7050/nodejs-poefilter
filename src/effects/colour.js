@@ -24,7 +24,7 @@ export class Colour {
 	static BLACK = new Colour(0, 0, 0);
 	static BLACK_TRANSLUCENT = new Colour(0, 0, 0, 128);
 	static TRANSPARENT = new Colour(0, 0, 0, 0);
-	// static WHITE = new Colour(255, 255, 255);
+	static WHITE = new Colour(255, 255, 255);
 
 	// https://colors.artyclick.com/color-name-finder
 	// static ROSE = Colour.fromHue(0);
@@ -46,7 +46,7 @@ export class Colour {
 	static VIOLET = Colour.fromHue(320);
 	// static PINK = Colour.fromHue(340);
 
-	static NORMAL = new Colour(200, 200, 200);
+	// static NORMAL = new Colour(200, 200, 200);
 	static MAGIC = new Colour(123, 151, 255);
 	static RARE = new Colour(255, 225, 87);
 	// static UNIQUE = new Colour(241, 106, 33);

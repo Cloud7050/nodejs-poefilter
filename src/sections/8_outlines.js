@@ -68,7 +68,7 @@ export function sectionOutlines(filter) {
 		c.category = new Comparison(CATEGORY.FLASK);
 		c.ilvl = new Comparison(83, OPERATOR.GTE);
 	}, (e) => {
-		e.outlineColour = Colour.NORMAL;
+		e.outlineColour = Colour.WHITE;
 	});
 
 	// Quality

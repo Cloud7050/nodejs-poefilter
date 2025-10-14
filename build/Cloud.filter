@@ -1513,41 +1513,41 @@ Show
 	Class == Staves Wands Charms
 	ItemLevel >= 81
 
-	SetBorderColor 200 200 200 255
+	SetBorderColor 255 255 255 255
 
 Show
 	Class == Sceptres Quivers Amulets Rings Belts
 	ItemLevel >= 82
 
-	SetBorderColor 200 200 200 255
+	SetBorderColor 255 255 255 255
 
 Show
 	Class == "Body Armours"
 	ItemLevel >= 82
 	DropLevel >= 65
 
-	SetBorderColor 200 200 200 255
+	SetBorderColor 255 255 255 255
 
 Show
 	Class == Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces"
 	ItemLevel >= 82
 	DropLevel >= 77
 
-	SetBorderColor 200 200 200 255
+	SetBorderColor 255 255 255 255
 
 Show
 	Class == Foci Bucklers Shields Helmets Gloves Boots
 	ItemLevel >= 82
 	DropLevel >= 80
 
-	SetBorderColor 200 200 200 255
+	SetBorderColor 255 255 255 255
 
 Show
 	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
 	ItemLevel >= 83
 
-	SetBorderColor 200 200 200 255
+	SetBorderColor 255 255 255 255
 
 Show
 	Class == Charms
