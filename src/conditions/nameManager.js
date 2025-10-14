@@ -234,7 +234,6 @@ export class NameManager {
 
 			new Name("Flesh Catalyst", 2), // Life
 			new Name("Esh's Catalyst", 5), // Lightning
-
 			new Name("Reaver Catalyst", 13), // Attack
 		).filter(min, max);
 	}

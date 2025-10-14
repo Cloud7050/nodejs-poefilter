@@ -201,16 +201,10 @@ function other(filter) {
 		e.colourAugment(PAIR_CRAFT).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getCatalysts(1, 10));
+		c.names = new Comparison(NameManager.getCatalysts(1));
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_CRAFT).sizeExalt();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getCatalysts(10));
-		c.category = new Comparison(CATEGORY.OMEN);
-
-		e.colourChance(PAIR_CRAFT).sizeChance();
 	});
 
 	// Trial keys

@@ -304,7 +304,7 @@ Show
 	MinimapIcon 1 Orange UpsideDownHouse
 
 Show
-	BaseType == "Flesh Catalyst" "Esh's Catalyst"
+	BaseType == "Flesh Catalyst" "Esh's Catalyst" "Reaver Catalyst"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -312,18 +312,6 @@ Show
 	SetBackgroundColor 101 54 0 255
 	SetBorderColor 255 194 144 255
 	MinimapIcon 0 Orange Cross
-
-Show
-	BaseType == "Reaver Catalyst"
-	Class == Omen
-
-	SetFontSize 45
-	SetTextColor 57 28 0 255
-	SetBackgroundColor 255 166 84 255
-	SetBorderColor 57 28 0 255
-	PlayEffect Orange
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Orange Star
 
 Show
 	BaseType == "Bronze Key"
