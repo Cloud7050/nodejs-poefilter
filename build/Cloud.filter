@@ -1556,21 +1556,21 @@ Show
 	SetBorderColor 123 151 255 255
 
 Show
-	Quality >= 10
+	Quality >= 15
 
 	SetBorderColor 123 151 255 255
 
 Show
 	Height <= 2
 	Width <= 2
-	Quality >= 5
+	Quality >= 10
 
 	SetBorderColor 123 151 255 255
 
 Show
 	Height <= 4
 	Width == 1
-	Quality >= 5
+	Quality >= 10
 
 	SetBorderColor 123 151 255 255
 

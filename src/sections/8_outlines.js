@@ -77,16 +77,16 @@ export function sectionOutlines(filter) {
 		c.category = new Comparison(CATEGORY.CHARM);
 		c.hasQuality();
 	}, (c) => {
-		// Never hide >= 10 quality
-		c.hasQuality(10);
+		// Never hide >= 15 quality
+		c.hasQuality(15);
 	}, (c) => {
-		// Never hide >= 5 quality if it's 4 spots or less
-		c.hasQuality(5);
+		// Never hide >= 10 quality if it's 4 spots or less
+		c.hasQuality(10);
 		c.height = new Comparison(2, OPERATOR.LTE);
 		c.width = new Comparison(2, OPERATOR.LTE);
 	}, (c) => {
-		// Never hide >= 5 quality if it's 4 spots or less
-		c.hasQuality(5);
+		// Never hide >= 10 quality if it's 4 spots or less
+		c.hasQuality(10);
 		c.height = new Comparison(4, OPERATOR.LTE);
 		c.width = new Comparison(1);
 	}, (e) => {
