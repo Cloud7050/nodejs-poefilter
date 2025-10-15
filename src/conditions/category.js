@@ -9,9 +9,13 @@ const OFF_CLASS = new StringList("Foci");
 const WEAPON_CLASS =  new StringList(MAIN_CLASS, OFF_CLASS);
 
 // Other weapons
-const MAIN_OTHER_CASTER = new StringList("Staves", "Wands");
-const MAIN_OTHER_ATTACKER = new StringList("Bows", "Crossbows", "One Hand Maces", "Quarterstaves",
-	"Spears", "Two Hand Maces");
+const MAIN_OTHER_CASTER_ONE = new StringList("Wands");
+const MAIN_OTHER_CASTER_TWO = new StringList("Staves");
+const MAIN_OTHER_CASTER = new StringList(MAIN_OTHER_CASTER_ONE, MAIN_OTHER_CASTER_TWO);
+const MAIN_OTHER_ATTACKER_ONE = new StringList("One Hand Maces", "Spears");
+const MAIN_OTHER_ATTACKER_TWO = new StringList("Bows", "Crossbows", "Quarterstaves",
+	"Two Hand Maces");
+const MAIN_OTHER_ATTACKER = new StringList(MAIN_OTHER_ATTACKER_ONE, MAIN_OTHER_ATTACKER_TWO);
 const MAIN_OTHER = new StringList(MAIN_OTHER_CASTER, MAIN_OTHER_ATTACKER);
 const OFF_OTHER_BLOCK = new StringList("Bucklers", "Shields");
 const OFF_OTHER_QUIVER = new StringList("Quivers");
@@ -27,6 +31,8 @@ const GLOVE = new StringList("Gloves");
 const ARMOUR_TOP = new StringList(HELMET, BODY, GLOVE);
 const BOOTS = new StringList("Boots");
 const ARMOUR = new StringList(ARMOUR_TOP, BOOTS);
+const SOCKET_ONE = new StringList(WEAPON_CLASS, MAIN_OTHER_CASTER_ONE, MAIN_OTHER_ATTACKER_ONE, OFF_OTHER_BLOCK, HELMET, GLOVE, BOOTS);
+const SOCKET_TWO = new StringList(MAIN_OTHER_CASTER_TWO, MAIN_OTHER_ATTACKER_TWO, BODY);
 const GEAR_COMMON = new StringList(WEAPON, ARMOUR);
 const JEWELLERY = new StringList("Amulets", "Rings");
 const BELT = new StringList("Belts");
@@ -62,7 +68,11 @@ export const CATEGORY = {
 	OFF_CLASS,
 	WEAPON_CLASS,
 
+	MAIN_OTHER_CASTER_ONE,
+	MAIN_OTHER_CASTER_TWO,
 	MAIN_OTHER_CASTER,
+	MAIN_OTHER_ATTACKER_ONE,
+	MAIN_OTHER_ATTACKER_TWO,
 	MAIN_OTHER_ATTACKER,
 	MAIN_OTHER,
 	OFF_OTHER_BLOCK,
@@ -79,6 +89,8 @@ export const CATEGORY = {
 	ARMOUR_TOP,
 	BOOTS,
 	ARMOUR,
+	SOCKET_ONE,
+	SOCKET_TWO,
 	GEAR_COMMON,
 	JEWELLERY,
 	BELT,

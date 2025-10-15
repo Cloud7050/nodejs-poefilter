@@ -1019,7 +1019,7 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
 	Rarity == Normal
 
 	SetFontSize 27
@@ -1043,7 +1043,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
 	Rarity == Magic
 
 	SetFontSize 27
@@ -1067,7 +1067,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
 	Rarity == Rare
 
 	SetFontSize 32
@@ -1091,7 +1091,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Unique
 
 	SetFontSize 45
@@ -1169,7 +1169,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces"
+	Class == Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Magic
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
@@ -1195,7 +1195,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces"
+	Class == Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Rare
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
@@ -1570,12 +1570,164 @@ Show
 	Continue
 
 Show
+	Rarity == Normal
+	Quality >= 21
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Normal
+	Sockets >= 2
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Normal
+	Sockets >= 3
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+Show
+	Rarity == Magic
+	Quality >= 21
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Magic
+	Sockets >= 2
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Magic
+	Sockets >= 3
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+Show
+	Rarity == Rare
+	Quality >= 21
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Rare
+	Sockets >= 2
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Rare
+	Sockets >= 3
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+Show
+	Rarity == Unique
+	Quality >= 21
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Unique
+	Sockets >= 2
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Unique
+	Sockets >= 3
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+Show
 	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm" "Golden Obi"
 
 	SetBorderColor 255 225 87 255
 
 Show
-	Class == Sceptres Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces"
+	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
 	SetBorderColor 255 225 87 255
@@ -1599,7 +1751,7 @@ Show
 	SetBorderColor 255 225 87 255
 
 Show
-	Class == Staves Wands Charms
+	Class == Wands Staves Charms
 	ItemLevel >= 81
 
 	SetBorderColor 255 255 255 255
@@ -1618,7 +1770,7 @@ Show
 	SetBorderColor 255 255 255 255
 
 Show
-	Class == Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces"
+	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	ItemLevel >= 82
 	DropLevel >= 77
 
@@ -1718,11 +1870,6 @@ Show
 	MinimapIcon 0 Blue Kite
 
 Show
-	BaseType = "Exceptional "
-
-	#
-
-Show
 	UnidentifiedItemTier >= 5
 
 	#
@@ -1758,13 +1905,13 @@ Hide
 	#
 
 Hide
-	Class == Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers
+	Class == Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
 	Rarity <= Magic
 
 	#
 
 Hide
-	Class == Staves Wands Bows Crossbows "One Hand Maces" Quarterstaves Spears "Two Hand Maces" Bucklers Shields Quivers
+	Class == Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
 	Rarity == Rare
 	UnidentifiedItemTier <= 4
 

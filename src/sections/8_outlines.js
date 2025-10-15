@@ -1,7 +1,9 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
+import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { Colour } from "../effects/colour.js";
+import { PAIR_GEAR } from "../index.js";
 
 // Overwrite outlines (highest priority first). Also acts like a whitelist
 export function sectionOutlines(filter) {
@@ -25,6 +27,71 @@ export function sectionOutlines(filter) {
 	////
 
 	//// Whitelist outlines (no continues). Highest priority first as they stop immediately
+	// Exceptional
+	filter.multiBlock((c) => {
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.hasQuality(21);
+	}, (c) => {
+		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.hasSockets(2);
+	}, (c) => {
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.hasSockets(3);
+	}, (e) => {
+		e.colourWisdom(PAIR_GEAR).sizeChance();
+		e.outlineColour = Colour.UNIQUE;
+	});
+
+	filter.multiBlock((c) => {
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.hasQuality(21);
+	}, (c) => {
+		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.hasSockets(2);
+	}, (c) => {
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.hasSockets(3);
+	}, (e) => {
+		e.colourAugment(PAIR_GEAR).sizeChance();
+		e.outlineColour = Colour.UNIQUE;
+	});
+
+	filter.multiBlock((c) => {
+		c.rarity = new Comparison(RARITY.RARE);
+		c.hasQuality(21);
+	}, (c) => {
+		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.hasSockets(2);
+	}, (c) => {
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.hasSockets(3);
+	}, (e) => {
+		e.colourExalt(PAIR_GEAR).sizeChance();
+		e.outlineColour = Colour.UNIQUE;
+	});
+
+	filter.multiBlock((c) => {
+		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.hasQuality(21);
+	}, (c) => {
+		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.hasSockets(2);
+	}, (c) => {
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.hasSockets(3);
+	}, (e) => {
+		e.colourChance(PAIR_GEAR).sizeChance();
+		e.outlineColour = Colour.UNIQUE;
+	});
+
 	// Good mods
 	filter.multiBlock((c) => {
 		c.goodMain(true);

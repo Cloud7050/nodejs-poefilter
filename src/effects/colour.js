@@ -49,7 +49,7 @@ export class Colour {
 	// static NORMAL = new Colour(200, 200, 200);
 	static MAGIC = new Colour(123, 151, 255);
 	static RARE = new Colour(255, 225, 87);
-	// static UNIQUE = new Colour(241, 106, 33);
+	static UNIQUE = new Colour(241, 106, 33);
 
 	static CORRUPTED = new Colour(210, 0, 0);
 	// static GEM_UNCUT = new Colour(116, 201, 190);

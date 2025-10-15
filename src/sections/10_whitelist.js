@@ -5,9 +5,6 @@ import { RARITY } from "../conditions/conditionSet.js";
 export function sectionWhitelist(filter, showRares) {
 	let cs = [
 		(c) => {
-			//TODO once encountered, highlight these differently. Could be 21-30% quality or extra socket
-			c.names = new Comparison("Exceptional ", OPERATOR.EQUAL);
-		}, (c) => {
 			c.wisdomTier = new Comparison(5, OPERATOR.GTE);
 		},
 	];
