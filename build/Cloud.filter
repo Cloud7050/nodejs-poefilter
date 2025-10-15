@@ -71,6 +71,60 @@ Show
 	CustomAlertSound "renoir.wav" 250
 	MinimapIcon 0 Red Diamond
 
+Hide
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 50
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 500
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 2500
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+	StackSize < 5000
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	BaseType == Gold
+	Class == "Stackable Currency"
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
 Show
 	BaseType == "Lesser Essence of Battle" "Lesser Essence of the Body" "Lesser Essence of Grounding" "Lesser Essence of Insulation" "Lesser Essence of Thawing" "Lesser Essence of the Infinite" "Lesser Essence of Haste" "Lesser Essence of Ice" "Lesser Essence of Ruin" "Lesser Essence of the Mind" "Lesser Essence of Seeking"
 	Class == "Stackable Currency"
@@ -392,60 +446,6 @@ Show
 	SetBackgroundColor 0 86 51 255
 	SetBorderColor 33 252 162 255
 	MinimapIcon 0 Brown Cross
-
-Hide
-	BaseType == Gold
-	Class == "Stackable Currency"
-	StackSize < 50
-
-	SetFontSize 27
-	SetTextColor 255 239 173 255
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 255 239 173 255
-	MinimapIcon 2 Yellow Kite
-
-Show
-	BaseType == Gold
-	Class == "Stackable Currency"
-	StackSize < 500
-
-	SetFontSize 27
-	SetTextColor 255 239 173 255
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 255 239 173 255
-	MinimapIcon 2 Yellow Kite
-
-Show
-	BaseType == Gold
-	Class == "Stackable Currency"
-	StackSize < 2500
-
-	SetFontSize 32
-	SetTextColor 255 227 74 255
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 255 227 74 255
-	MinimapIcon 1 Yellow UpsideDownHouse
-
-Show
-	BaseType == Gold
-	Class == "Stackable Currency"
-	StackSize < 5000
-
-	SetFontSize 32
-	SetTextColor 252 220 0 255
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 252 220 0 255
-	MinimapIcon 1 Yellow Cross
-
-Show
-	BaseType == Gold
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 252 220 0 255
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 252 220 0 255
-	MinimapIcon 0 Yellow Cross
 
 Show
 	Class == "Stackable Currency"

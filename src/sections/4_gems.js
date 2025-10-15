@@ -4,9 +4,13 @@ import { DIV } from "../conditions/name.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { PAIR_GEM } from "../index.js";
 
-
 export function sectionGems(filter) {
-	// Uncut
+	uncut(filter);
+	lineage(filter);
+	cut(filter);
+}
+
+function uncut(filter) {
 	filter.block((c, e) => {
 		c.category = new Comparison(CATEGORY.UNCUT_SUPPORT);
 
@@ -17,8 +21,9 @@ export function sectionGems(filter) {
 
 		e.colourAugment(PAIR_GEM).sizeExalt();
 	});
+}
 
-	// Lineage
+function lineage(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getGems(null, 1));
 		c.category = new Comparison(CATEGORY.GEM);
@@ -43,8 +48,9 @@ export function sectionGems(filter) {
 
 		e.colourDivine(PAIR_GEM).sizeDivine();
 	});
+}
 
-	//// Cut
+function cut(filter) {
 	// Crafted on
 	filter.multiBlock((c) => {
 		c.category = new Comparison(CATEGORY.GEM);
@@ -62,5 +68,4 @@ export function sectionGems(filter) {
 
 		e.colourExalt(PAIR_GEM).sizeAugment();
 	});
-	////
 }

@@ -4,8 +4,12 @@ import { DIV } from "../conditions/name.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { PAIR_ABYSS, PAIR_CRAFT } from "../index.js";
 
-
 export function sectionOmens(filter) {
+	ritual(filter);
+	abyss(filter);
+}
+
+function ritual(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getOmens(null, 1 / 100));
 		c.category = new Comparison(CATEGORY.OMEN);
@@ -36,8 +40,9 @@ export function sectionOmens(filter) {
 
 		e.colourDivine(PAIR_CRAFT).sizeDivine();
 	});
+}
 
-	// Abyss
+function abyss(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getOmensAbyss(null, 1));
 		c.category = new Comparison(CATEGORY.OMEN);

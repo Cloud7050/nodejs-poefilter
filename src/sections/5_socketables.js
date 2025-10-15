@@ -6,7 +6,13 @@ import { PAIR_SOCKETABLE } from "../index.js";
 
 //TODO talismans x2 sets, prefix named soul cores, 4 abyssal eyes
 export function sectionSocketables(filter) {
-	// Runes
+	runes(filter);
+	other(filter);
+
+	base(filter);
+}
+
+function runes(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes1(null, 1));
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
@@ -76,8 +82,9 @@ export function sectionSocketables(filter) {
 
 		e.colourDivine(PAIR_SOCKETABLE).sizeDivine();
 	});
+}
 
-	// Other socketables
+function other(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getSocketables(null, DIV));
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
@@ -90,8 +97,9 @@ export function sectionSocketables(filter) {
 
 		e.colourDivine(PAIR_SOCKETABLE).sizeDivine();
 	});
+}
 
-	// BASE other
+function base(filter) {
 	filter.block((c, e) => {
 		c.category = new Comparison(CATEGORY.SOCKETABLE);
 
