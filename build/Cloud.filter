@@ -1805,10 +1805,12 @@ Show
 	SetBorderColor 255 255 255 255
 
 Show
-	Class == Sceptres Quivers Amulets Rings Belts
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts
 	ItemLevel >= 82
 
 	SetBorderColor 255 255 255 255
+
+	Continue
 
 Show
 	Class == "Body Armours"

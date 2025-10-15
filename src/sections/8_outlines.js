@@ -128,8 +128,12 @@ export function sectionOutlines(filter) {
 		c.category = new Comparison([CATEGORY.MAIN_OTHER_CASTER, CATEGORY.CHARM]);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 	}, (c) => {
-		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_OTHER_QUIVER, CATEGORY.JEWELLERY, CATEGORY.BELT]);
+		// Outline as BiS regardless of drop level, but don't whitelist yet
+		c.continue();
+		// c.category = new Comparison([CATEGORY.WEAPON_CLASS, CATEGORY.MAIN_OTHER_ATTACKER, CATEGORY.OFF_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT]);
+		c.category = new Comparison([CATEGORY.GEAR_COMMON, CATEGORY.JEWELLERY, CATEGORY.BELT]);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level: new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_OTHER_QUIVER, CATEGORY.JEWELLERY, CATEGORY.BELT]);
 	}, (c) => {
 		c.category = new Comparison(CATEGORY.BODY);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
