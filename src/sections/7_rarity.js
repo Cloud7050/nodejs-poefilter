@@ -253,6 +253,7 @@ function uncommon(filter) {
 		c.continue();
 		c.category = new Comparison(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.NORMAL);
+		c.isCorrupted = false;
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR).sizeExalt();
 	});

@@ -1381,6 +1381,7 @@ Show
 Show
 	Class == Belts
 	Rarity == Normal
+	Corrupted False
 
 	SetFontSize 37
 	SetTextColor 215 218 255 255
@@ -1666,6 +1667,7 @@ Show
 	BaseType == "Viper Cap"
 	Class == Helmets
 	Rarity == Normal
+	Corrupted False
 
 	SetFontSize 37
 	SetTextColor 215 218 255 255
@@ -1677,6 +1679,7 @@ Show
 	BaseType == "Heavy Belt"
 	Class == Belts
 	Rarity == Normal
+	Corrupted False
 
 	SetFontSize 45
 	SetTextColor 215 218 255 255
@@ -1690,6 +1693,7 @@ Show
 	BaseType == "Martyr Crown"
 	Class == Helmets
 	Rarity == Normal
+	Corrupted False
 
 	SetFontSize 45
 	SetTextColor 215 218 255 255
@@ -1703,6 +1707,7 @@ Show
 	BaseType == "Silver Charm"
 	Class == Charms
 	Rarity == Normal
+	Corrupted False
 
 	SetFontSize 45
 	SetTextColor 215 218 255 255
