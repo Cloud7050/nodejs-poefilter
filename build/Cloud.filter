@@ -634,7 +634,7 @@ Show
 	MinimapIcon 1 White Cross
 
 Show
-	BaseType = "Lesser "
+	BaseType == "Lesser Desert Rune" "Lesser Mind Rune" "Lesser Vision Rune" "Lesser Rebirth Rune" "Lesser Stone Rune" "Lesser Glacial Rune"
 	Class == Socketable
 
 	SetFontSize 32
@@ -644,17 +644,29 @@ Show
 	MinimapIcon 1 Cyan Kite
 
 Show
-	BaseType = "Greater "
+	BaseType == "Lesser Inspiration Rune" "Lesser Body Rune" "Lesser Robust Rune" "Lesser Resolve Rune"
 	Class == Socketable
 
 	SetFontSize 37
-	SetTextColor 154 213 255 255
-	SetBackgroundColor 0 70 101 255
-	SetBorderColor 154 213 255 255
-	MinimapIcon 0 Cyan Cross
+	SetTextColor 212 235 255 255
+	SetBackgroundColor 0 16 28 255
+	SetBorderColor 212 235 255 255
+	MinimapIcon 0 Cyan Kite
 
 Show
-	BaseType = " Rune"
+	BaseType == "Lesser Inspiration Rune" "Lesser Body Rune" "Lesser Robust Rune" "Lesser Resolve Rune"
+	Class == Socketable
+
+	SetFontSize 45
+	SetTextColor 212 235 255 255
+	SetBackgroundColor 0 16 28 255
+	SetBorderColor 212 235 255 255
+	PlayEffect Cyan
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Cyan Kite
+
+Show
+	BaseType == "Resolve Rune" "Inspiration Rune" "Mind Rune" "Vision Rune" "Stone Rune" "Robust Rune"
 	Class == Socketable
 
 	SetFontSize 32
@@ -662,6 +674,82 @@ Show
 	SetBackgroundColor 0 38 58 255
 	SetBorderColor 174 220 255 255
 	MinimapIcon 1 Cyan UpsideDownHouse
+
+Show
+	BaseType == "Desert Rune" "Rebirth Rune" "Adept Rune" "Body Rune" "Glacial Rune" "Storm Rune"
+	Class == Socketable
+
+	SetFontSize 37
+	SetTextColor 174 220 255 255
+	SetBackgroundColor 0 38 58 255
+	SetBorderColor 174 220 255 255
+	MinimapIcon 0 Cyan UpsideDownHouse
+
+Show
+	BaseType == "Iron Rune"
+	Class == Socketable
+
+	SetFontSize 45
+	SetTextColor 174 220 255 255
+	SetBackgroundColor 0 38 58 255
+	SetBorderColor 174 220 255 255
+	PlayEffect Cyan
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Cyan UpsideDownHouse
+
+Show
+	BaseType == "Greater Stone Rune" "Greater Adept Rune" "Greater Body Rune" "Greater Resolve Rune" "Greater Robust Rune" "Greater Rebirth Rune" "Greater Inspiration Rune" "Greater Mind Rune" "Greater Iron Rune" "Greater Vision Rune" "Greater Desert Rune" "Greater Storm Rune" "Greater Glacial Rune"
+	Class == Socketable
+
+	SetFontSize 32
+	SetTextColor 154 213 255 255
+	SetBackgroundColor 0 70 101 255
+	SetBorderColor 154 213 255 255
+	MinimapIcon 1 Cyan Cross
+
+Show
+	BaseType == "Craiceann's Rune of Recovery" "Lady Hestra's Rune of Winter" "Fenumus' Rune of Draining" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "Saqawal's Rune of Erosion"
+	Class == Socketable
+
+	SetFontSize 32
+	SetTextColor 0 38 58 255
+	SetBackgroundColor 97 195 255 255
+	SetBorderColor 0 38 58 255
+	MinimapIcon 1 Cyan Star
+
+Show
+	BaseType == "Greater Rune of Nobility" "Farrul's Rune of the Hunt" "Thane Girt's Rune of Wildness" "Craiceann's Rune of Warding" "Thane Grannell's Rune of Mastery" "Fenumus' Rune of Agony" "Greater Rune of Leadership" "The Greatwolf's Rune of Willpower" "Farrul's Rune of Grace" "Saqawal's Rune of Memory" "Fenumus' Rune of Spinning" "Thane Leld's Rune of Spring" "Courtesan Mannan's Rune of Cruelty"
+	Class == Socketable
+
+	SetFontSize 37
+	SetTextColor 0 38 58 255
+	SetBackgroundColor 97 195 255 255
+	SetBorderColor 0 38 58 255
+	MinimapIcon 0 Cyan Star
+
+Show
+	BaseType == "Greater Rune of Tithing" "Greater Rune of Alacrity" "Saqawal's Rune of the Sky"
+	Class == Socketable
+
+	SetFontSize 45
+	SetTextColor 0 38 58 255
+	SetBackgroundColor 97 195 255 255
+	SetBorderColor 0 38 58 255
+	PlayEffect Cyan
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Cyan Star
+
+Show
+	BaseType == "Countess Seske's Rune of Archery" "Farrul's Rune of the Chase" "Hedgewitch Assandra's Rune of Wisdom"
+	Class == Socketable
+
+	SetFontSize 45
+	SetTextColor 0 160 226 255
+	SetBackgroundColor 240 247 255 255
+	SetBorderColor 0 160 226 255
+	PlayEffect Cyan
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Cyan Diamond
 
 Show
 	BaseType == "Soul Core of Xopec" "Soul Core of Puhuarte" "Soul Core of Atmohua" "Soul Core of Zalatl" "Soul Core of Zantipi" "Soul Core of Quipolatl" "Soul Core of Ticaba" "Soul Core of Tzamoto" "Soul Core of Citaqualotl" "Soul Core of Cholotl" "Soul Core of Opiloti" "Soul Core of Topotante" "Soul Core of Tacati" "Soul Core of Azcapa"

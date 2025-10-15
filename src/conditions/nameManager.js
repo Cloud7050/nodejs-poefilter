@@ -364,6 +364,94 @@ export class NameManager {
 		).filter(min, max);
 	}
 
+	static getRunes1(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Lesser Desert Rune", 1 / 4),
+			new Name("Lesser Mind Rune", 1 / 3),
+			new Name("Lesser Vision Rune", 1 / 3),
+			new Name("Lesser Rebirth Rune", 1 / 3),
+			new Name("Lesser Stone Rune", 1 / 3),
+			new Name("Lesser Glacial Rune", 1 / 2),
+
+			new Name("Lesser Inspiration Rune", 1),
+			new Name("Lesser Body Rune", 2),
+			new Name("Lesser Robust Rune", 5),
+			new Name("Lesser Resolve Rune", 10),
+
+			new Name("Lesser Storm Rune", 21),
+			new Name("Lesser Iron Rune", 22),
+			new Name("Lesser Adept Rune", 30),
+		).filter(min, max);
+	}
+	static getRunes2(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Resolve Rune", 1 / 5),
+			new Name("Inspiration Rune", 1 / 3),
+			new Name("Mind Rune", 1 / 2),
+			new Name("Vision Rune", 1 / 2),
+			new Name("Stone Rune", 1 / 2),
+			new Name("Robust Rune", 1 / 2),
+
+			new Name("Desert Rune", 1),
+			new Name("Rebirth Rune", 1),
+			new Name("Adept Rune", 1),
+			new Name("Body Rune", 2),
+			new Name("Glacial Rune", 3),
+			new Name("Storm Rune", 14),
+
+			new Name("Iron Rune", 45),
+		).filter(min, max);
+	}
+	static getRunes3(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Greater Stone Rune", 1 / 40),
+			new Name("Greater Adept Rune", 1 / 25),
+			new Name("Greater Body Rune", 1 / 25),
+			new Name("Greater Resolve Rune", 1 / 15),
+			new Name("Greater Robust Rune", 1 / 15),
+			new Name("Greater Rebirth Rune", 1 / 15),
+			new Name("Greater Inspiration Rune", 1 / 10),
+			new Name("Greater Mind Rune", 1 / 5),
+			new Name("Greater Iron Rune", 1 / 5),
+			new Name("Greater Vision Rune", 1 / 3),
+			new Name("Greater Desert Rune", 1 / 3),
+			new Name("Greater Storm Rune", 1 / 3),
+			new Name("Greater Glacial Rune", 1 / 2),
+		).filter(min, max);
+	}
+	static getRunes4(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Craiceann's Rune of Recovery", 1 / 10),
+			new Name("Lady Hestra's Rune of Winter", 1 / 8),
+			new Name("Fenumus' Rune of Draining", 1 / 5),
+			new Name("Thane Myrk's Rune of Summer", 1 / 3),
+			new Name("The Greatwolf's Rune of Claws", 1 / 3),
+			new Name("Saqawal's Rune of Erosion", 1 / 2),
+
+			new Name("Greater Rune of Nobility", 1),
+			new Name("Farrul's Rune of the Hunt", 1),
+			new Name("Thane Girt's Rune of Wildness", 1),
+			new Name("Craiceann's Rune of Warding", 1),
+			new Name("Thane Grannell's Rune of Mastery", 1),
+			new Name("Fenumus' Rune of Agony", 2),
+			new Name("Greater Rune of Leadership", 5),
+			new Name("The Greatwolf's Rune of Willpower", 5),
+			new Name("Farrul's Rune of Grace", 9),
+			new Name("Saqawal's Rune of Memory", 10),
+			new Name("Fenumus' Rune of Spinning", 11),
+			new Name("Thane Leld's Rune of Spring", 13),
+			new Name("Courtesan Mannan's Rune of Cruelty", 16),
+
+			new Name("Greater Rune of Tithing", 26),
+			new Name("Greater Rune of Alacrity", 40),
+			new Name("Saqawal's Rune of the Sky", 74),
+
+			new Name("Countess Seske's Rune of Archery", 4 * DIV),
+			new Name("Farrul's Rune of the Chase", 10 * DIV),
+			new Name("Hedgewitch Assandra's Rune of Wisdom", 21 * DIV),
+		).filter(min, max);
+	}
+
 	static getSocketables(min = undefined, max = undefined) {
 		return new NameManager(
 			new Name("Soul Core of Xopec", 34),
