@@ -1570,6 +1570,19 @@ Show
 	Continue
 
 Show
+	Class == Charms
+	Rarity == Normal
+	Quality >= 1
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+Show
 	Rarity == Normal
 	Quality >= 21
 
@@ -1595,7 +1608,6 @@ Show
 	MinimapIcon 0 Blue Kite
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
 	Rarity == Normal
 	Sockets >= 3
 
@@ -1606,6 +1618,19 @@ Show
 	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue Kite
+
+Show
+	Class == Charms
+	Rarity == Magic
+	Quality >= 1
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
 
 Show
 	Rarity == Magic
@@ -1633,7 +1658,6 @@ Show
 	MinimapIcon 0 Blue UpsideDownHouse
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
 	Rarity == Magic
 	Sockets >= 3
 
@@ -1644,6 +1668,19 @@ Show
 	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue UpsideDownHouse
+
+Show
+	Class == Charms
+	Rarity == Rare
+	Quality >= 1
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
 
 Show
 	Rarity == Rare
@@ -1671,7 +1708,6 @@ Show
 	MinimapIcon 0 Blue Cross
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
 	Rarity == Rare
 	Sockets >= 3
 
@@ -1682,6 +1718,19 @@ Show
 	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue Cross
+
+Show
+	Class == Charms
+	Rarity == Unique
+	Quality >= 1
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
 
 Show
 	Rarity == Unique
@@ -1709,7 +1758,6 @@ Show
 	MinimapIcon 0 Blue Star
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
 	Rarity == Unique
 	Sockets >= 3
 
@@ -1789,12 +1837,6 @@ Show
 	ItemLevel >= 83
 
 	SetBorderColor 255 255 255 255
-
-Show
-	Class == Charms
-	Quality >= 1
-
-	SetBorderColor 123 151 255 255
 
 Show
 	Quality >= 15

@@ -29,6 +29,10 @@ export function sectionOutlines(filter) {
 	//// Whitelist outlines (no continues). Highest priority first as they stop immediately
 	// Exceptional
 	filter.multiBlock((c) => {
+		c.category = new Comparison(CATEGORY.CHARM);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.hasQuality();
+	}, (c) => {
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.hasQuality(21);
 	}, (c) => {
@@ -36,7 +40,6 @@ export function sectionOutlines(filter) {
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.hasSockets(2);
 	}, (c) => {
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.hasSockets(3);
 	}, (e) => {
@@ -45,6 +48,10 @@ export function sectionOutlines(filter) {
 	});
 
 	filter.multiBlock((c) => {
+		c.category = new Comparison(CATEGORY.CHARM);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.hasQuality();
+	}, (c) => {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.hasQuality(21);
 	}, (c) => {
@@ -52,7 +59,6 @@ export function sectionOutlines(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.hasSockets(2);
 	}, (c) => {
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.hasSockets(3);
 	}, (e) => {
@@ -61,6 +67,10 @@ export function sectionOutlines(filter) {
 	});
 
 	filter.multiBlock((c) => {
+		c.category = new Comparison(CATEGORY.CHARM);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.hasQuality();
+	}, (c) => {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.hasQuality(21);
 	}, (c) => {
@@ -68,7 +78,6 @@ export function sectionOutlines(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.hasSockets(2);
 	}, (c) => {
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.hasSockets(3);
 	}, (e) => {
@@ -77,6 +86,10 @@ export function sectionOutlines(filter) {
 	});
 
 	filter.multiBlock((c) => {
+		c.category = new Comparison(CATEGORY.CHARM);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.hasQuality();
+	}, (c) => {
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.hasQuality(21);
 	}, (c) => {
@@ -84,7 +97,6 @@ export function sectionOutlines(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.hasSockets(2);
 	}, (c) => {
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.hasSockets(3);
 	}, (e) => {
@@ -140,10 +152,6 @@ export function sectionOutlines(filter) {
 
 	// Quality
 	filter.multiBlock((c) => {
-		// Never hide any quality charms as you can't add quality manually
-		c.category = new Comparison(CATEGORY.CHARM);
-		c.hasQuality();
-	}, (c) => {
 		// Never hide >= 15 quality
 		c.hasQuality(15);
 	}, (c) => {
