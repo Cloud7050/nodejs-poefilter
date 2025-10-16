@@ -1813,6 +1813,12 @@ Show
 	Continue
 
 Show
+	Class == Sceptres Quivers Amulets Rings Belts
+	ItemLevel >= 82
+
+	SetBorderColor 255 255 255 255
+
+Show
 	Class == "Body Armours"
 	ItemLevel >= 82
 	DropLevel >= 65
