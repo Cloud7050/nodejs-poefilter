@@ -473,11 +473,11 @@ export class NameManager {
 		).filter(min, max);
 	}
 
-	static getFlasksGood() {
-		return new NameManager(
-			"Ultimate Life Flask", "Ultimate Mana Flask",
-		);
-	}
+	// static getFlasksGood() {
+	// 	return new NameManager(
+	// 		"Ultimate Life Flask", "Ultimate Mana Flask",
+	// 	);
+	// }
 	static getFlasksBad() {
 		return new NameManager(
 			"Lesser Life Flask", "Lesser Mana Flask",

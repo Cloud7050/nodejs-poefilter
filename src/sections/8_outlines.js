@@ -1,177 +1,285 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
-import { NameManager } from "../conditions/nameManager.js";
 import { Colour } from "../effects/colour.js";
 import { PAIR_GEAR } from "../index.js";
 
-// Overwrite outlines (highest priority first). Also acts like a whitelist
+// Overwrite outlines. Lowest priority first as they can get overwritten below
 export function sectionOutlines(filter) {
-	//// Non-whitelist outlines (continues). Lowest priority first as they can get overwritten below
-	// Corrupted
-	filter.block((c, e) => {
-		// No whitelist. But is lowest priority outline as others below can overwrite it
-		c.continue();
-		c.isCorrupted = true;
+	quality(filter);
+	corrupted(filter);
+	bis(filter);
+	goodMods(filter);
+	exceptional(filter);
+}
 
-		e.outlineColour = Colour.CORRUPTED;
-	});
-
-	// Any quality
+function quality(filter) {
 	filter.block((c, e) => {
 		c.continue();
 		c.hasQuality();
 
 		e.outlineColour = Colour.MAGIC;
 	});
-	////
+}
 
-	//// Whitelist outlines (no continues). Highest priority first as they stop immediately
-	// Exceptional
+function corrupted(filter) {
+	filter.block((c, e) => {
+		c.continue();
+		c.isCorrupted = true;
+
+		e.outlineColour = Colour.CORRUPTED;
+	});
+	filter.block((c, e) => {
+		c.continue();
+		c.hasEnchant();
+
+		e.outlineColour = Colour.CRAFTED;
+	});
+}
+
+// BiS ilvl
+function bis(filter) {
 	filter.multiBlock((c) => {
+		c.continue();
+		c.category = new Comparison([CATEGORY.MAIN_OTHER_CASTER, CATEGORY.CHARM]);
+		c.ilvl = new Comparison(81, OPERATOR.GTE);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison([CATEGORY.GEAR_COMMON, CATEGORY.JEWELLERY, CATEGORY.BELT]);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.FLASK);
+		c.ilvl = new Comparison(83, OPERATOR.GTE);
+	}, (e) => {
+		e.outlineColour = Colour.WHITE;
+	});
+}
+
+// Good base/mods
+function goodMods(filter) {
+	filter.multiBlock((c) => {
+		c.continue();
+		c.goodBase(true);
+		c.category = new Comparison(CATEGORY.GEAR);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.MAIN);
+		c.goodModMainhand(true);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.OFF);
+		c.goodModOffhand(true);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.ARMOUR);
+		c.goodModArmour(true);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.JEWELLERY);
+		c.goodModJewellery(true);
+	}, (e) => {
+		e.outlineColour = Colour.RARE;
+	});
+}
+
+// Exceptional, or quality charm
+function exceptional(filter) {
+	// When both exceptional and corrupted, only outlines when sure it has exceptional-only stats,
+	// else it retains the corrupted outline from above
+	filter.multiBlock((c) => {
+		c.continue();
 		c.category = new Comparison(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.NORMAL);
+		c.isCorrupted = false;
 		c.hasQuality();
 	}, (c) => {
+		c.continue();
 		c.rarity = new Comparison(RARITY.NORMAL);
+		c.isCorrupted = false;
 		c.hasQuality(21);
 	}, (c) => {
+		c.continue();
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.hasQuality(21);
+		c.hasEnchant();
+	}, (c) => {
+		c.continue();
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.hasQuality(24);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.isCorrupted = false;
+		c.hasSockets(2);
+	}, (c) => {
+		c.continue();
 		c.category = new Comparison(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.hasSockets(2);
+		c.hasEnchant();
 	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.isCorrupted = false;
+		c.hasSockets(3);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.hasSockets(3);
+		c.hasEnchant();
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR).sizeChance();
 		e.outlineColour = Colour.UNIQUE;
 	});
 
 	filter.multiBlock((c) => {
+		c.continue();
 		c.category = new Comparison(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.isCorrupted = false;
 		c.hasQuality();
 	}, (c) => {
+		c.continue();
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.isCorrupted = false;
 		c.hasQuality(21);
 	}, (c) => {
+		c.continue();
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.hasQuality(21);
+		c.hasEnchant();
+	}, (c) => {
+		c.continue();
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.hasQuality(24);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.isCorrupted = false;
+		c.hasSockets(2);
+	}, (c) => {
+		c.continue();
 		c.category = new Comparison(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.hasSockets(2);
+		c.hasEnchant();
 	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.isCorrupted = false;
+		c.hasSockets(3);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.hasSockets(3);
+		c.hasEnchant();
 	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeChance();
 		e.outlineColour = Colour.UNIQUE;
 	});
 
 	filter.multiBlock((c) => {
+		c.continue();
 		c.category = new Comparison(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.RARE);
+		c.isCorrupted = false;
 		c.hasQuality();
 	}, (c) => {
+		c.continue();
 		c.rarity = new Comparison(RARITY.RARE);
+		c.isCorrupted = false;
 		c.hasQuality(21);
 	}, (c) => {
+		c.continue();
+		c.rarity = new Comparison(RARITY.RARE);
+		c.hasQuality(21);
+		c.hasEnchant();
+	}, (c) => {
+		c.continue();
+		c.rarity = new Comparison(RARITY.RARE);
+		c.hasQuality(24);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.isCorrupted = false;
+		c.hasSockets(2);
+	}, (c) => {
+		c.continue();
 		c.category = new Comparison(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.hasSockets(2);
+		c.hasEnchant();
 	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.isCorrupted = false;
+		c.hasSockets(3);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.hasSockets(3);
+		c.hasEnchant();
 	}, (e) => {
 		e.colourExalt(PAIR_GEAR).sizeChance();
 		e.outlineColour = Colour.UNIQUE;
 	});
 
 	filter.multiBlock((c) => {
+		c.continue();
 		c.category = new Comparison(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.isCorrupted = false;
 		c.hasQuality();
 	}, (c) => {
+		c.continue();
 		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.isCorrupted = false;
 		c.hasQuality(21);
 	}, (c) => {
+		c.continue();
+		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.hasQuality(21);
+		c.hasEnchant();
+	}, (c) => {
+		c.continue();
+		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.hasQuality(24);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.isCorrupted = false;
+		c.hasSockets(2);
+	}, (c) => {
+		c.continue();
 		c.category = new Comparison(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.hasSockets(2);
+		c.hasEnchant();
 	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.isCorrupted = false;
+		c.hasSockets(3);
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.hasSockets(3);
+		c.hasEnchant();
 	}, (e) => {
 		e.colourChance(PAIR_GEAR).sizeChance();
 		e.outlineColour = Colour.UNIQUE;
 	});
-
-	// Good mods
-	filter.multiBlock((c) => {
-		c.goodMain(true);
-	}, (c) => {
-		c.category = new Comparison(CATEGORY.MAIN);
-		c.goodModMainhand(true);
-	}, (c) => {
-		c.category = new Comparison(CATEGORY.OFF);
-		c.goodModOffhand(true);
-	}, (c) => {
-		c.category = new Comparison(CATEGORY.ARMOUR);
-		c.goodModArmour(true);
-	}, (c) => {
-		c.category = new Comparison(CATEGORY.JEWELLERY);
-		c.goodModJewellery(true);
-	}, (e) => {
-		e.outlineColour = Colour.RARE;
-	});
-
-	// BiS ilvl
-	filter.multiBlock((c) => {
-		c.category = new Comparison([CATEGORY.MAIN_OTHER_CASTER, CATEGORY.CHARM]);
-		c.ilvl = new Comparison(81, OPERATOR.GTE);
-	}, (c) => {
-		// Outline as BiS regardless of drop level, but don't whitelist yet
-		c.continue();
-		// c.category = new Comparison([CATEGORY.WEAPON_CLASS, CATEGORY.MAIN_OTHER_ATTACKER, CATEGORY.OFF_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT]);
-		c.category = new Comparison([CATEGORY.GEAR_COMMON, CATEGORY.JEWELLERY, CATEGORY.BELT]);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-	}, (c) => {
-		c.category = new Comparison([CATEGORY.MAIN_CLASS, CATEGORY.OFF_OTHER_QUIVER, CATEGORY.JEWELLERY, CATEGORY.BELT]);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-	}, (c) => {
-		c.category = new Comparison(CATEGORY.BODY);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-	}, (c) => {
-		c.category = new Comparison(CATEGORY.MAIN_OTHER_ATTACKER);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(77, OPERATOR.GTE);
-	}, (c) => {
-		c.category = new Comparison([CATEGORY.OFF_CLASS, CATEGORY.OFF_OTHER_BLOCK, CATEGORY.HELMET, CATEGORY.GLOVE, CATEGORY.BOOTS]);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
-	}, (c) => {
-		c.names = new Comparison(NameManager.getFlasksGood());
-		c.category = new Comparison(CATEGORY.FLASK);
-		c.ilvl = new Comparison(83, OPERATOR.GTE);
-	}, (e) => {
-		e.outlineColour = Colour.WHITE;
-	});
-
-	// Quality
-	filter.multiBlock((c) => {
-		// Never hide >= 15 quality
-		c.hasQuality(15);
-	}, (c) => {
-		// Never hide >= 10 quality if it's 4 spots or less
-		c.hasQuality(10);
-		c.height = new Comparison(2, OPERATOR.LTE);
-		c.width = new Comparison(2, OPERATOR.LTE);
-	}, (c) => {
-		// Never hide >= 10 quality if it's 4 spots or less
-		c.hasQuality(10);
-		c.height = new Comparison(4, OPERATOR.LTE);
-		c.width = new Comparison(1);
-	}, (e) => {
-		e.outlineColour = Colour.MAGIC;
-	});
-	////
 }

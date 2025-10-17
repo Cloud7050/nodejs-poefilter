@@ -1,5 +1,5 @@
 import { CATEGORY } from "../conditions/category.js";
-import { Comparison } from "../conditions/comparison.js";
+import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { PAIR_GEAR, PAIR_JEWEL, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../index.js";
 
@@ -10,7 +10,9 @@ export function sectionRarity(filter) {
 	otherWeapons(filter);
 	classArmour(filter);
 	otherArmour(filter);
-	uncommon(filter);
+	classUncommon(filter);
+	otherUncommon(filter);
+
 	jewels(filter);
 	waystones(filter);
 	mechanics(filter);
@@ -21,14 +23,7 @@ function reset(filter) {
 	// Normal
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR_COMMON);
-		c.rarity = new Comparison(RARITY.NORMAL);
-
-		e.colourWisdom(PAIR_GEAR).sizeWisdom();
-	});
-	filter.block((c, e) => {
-		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
+		c.category = new Comparison(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
 		e.colourWisdom(PAIR_GEAR).sizeAugment();
@@ -37,15 +32,17 @@ function reset(filter) {
 	// Magic
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR_COMMON);
+		c.category = new Comparison(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.isLowTier();
 
 		e.colourAugment(PAIR_GEAR).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
+		c.category = new Comparison(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.isMaxTier();
 
 		e.colourAugment(PAIR_GEAR).sizeAugment();
 	});
@@ -53,15 +50,17 @@ function reset(filter) {
 	// Rare
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR_COMMON);
+		c.category = new Comparison(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.RARE);
+		c.isLowTier();
 
-		e.colourExalt(PAIR_GEAR).sizeAugment();
+		e.colourExalt(PAIR_GEAR).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
+		c.category = new Comparison(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.RARE);
+		c.isMaxTier();
 
 		e.colourExalt(PAIR_GEAR).sizeExalt();
 	});
@@ -78,74 +77,203 @@ function reset(filter) {
 
 function classWeapons(filter) {
 	// Normal
-	filter.block((c, e) => { // Quality
+	filter.multiBlock((c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.WEAPON_CLASS);
+		c.category = new Comparison(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.NORMAL);
-		c.hasQuality();
-
-		e.colourWisdom(PAIR_GEAR).sizeAugment();
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isCorrupted = false;
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isCorrupted = false;
+	}, (e) => {
+		e.colourWisdom(PAIR_GEAR).sizeExalt();
 	});
 
 	// Magic
-	filter.block((c, e) => { // Quality
-		c.continue();
-		c.category = new Comparison(CATEGORY.WEAPON_CLASS);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.hasQuality();
-
-		e.colourAugment(PAIR_GEAR).sizeAugment();
-	});
-	filter.multiBlock((c) => { // Good mod (main class)
+	filter.multiBlock((c) => { // Low tier
 		c.continue();
 		c.category = new Comparison(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
-		c.goodModMainhand();
-	}, (c) => { // Good mod (off class)
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isLowTier();
+		c.isCorrupted = false;
+	}, (c) => { // Low tier
 		c.continue();
 		c.category = new Comparison(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isLowTier();
+		c.isCorrupted = false;
+	}, (e) => {
+		e.colourAugment(PAIR_GEAR).sizeAugment();
+	});
+
+	filter.multiBlock((c) => { // Max tier
+		c.continue();
+		c.category = new Comparison(CATEGORY.MAIN_CLASS);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isMaxTier();
+		c.isCorrupted = false;
+	}, (c) => { // Max tier
+		c.continue();
+		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isMaxTier();
+		c.isCorrupted = false;
+	}, (c) => { // Good mod (class mainhand)
+		c.continue();
+		c.category = new Comparison(CATEGORY.MAIN_CLASS);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isCorrupted = false;
+		c.goodModMainhand();
+	}, (c) => { // Good mod (class offhand)
+		c.continue();
+		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isCorrupted = false;
 		c.goodModOffhand();
 	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeExalt();
 	});
 
 	// Rare
-	filter.block((c, e) => {
+	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.WEAPON_CLASS);
+		c.category = new Comparison(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isLowTier();
+	}, (c) => { // Low tier
+		c.continue();
+		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isLowTier();
+	}, (e) => {
+		e.colourExalt(PAIR_GEAR).sizeAugment();
+	});
 
+	filter.multiBlock((c) => { // Max tier
+		c.continue();
+		c.category = new Comparison(CATEGORY.MAIN_CLASS);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isMaxTier();
+	}, (c) => { // Max tier
+		c.continue();
+		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isMaxTier();
+	}, (c) => { // Good mod (class mainhand)
+		c.continue();
+		c.category = new Comparison(CATEGORY.MAIN_CLASS);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.goodModMainhand();
+	}, (c) => { // Good mod (class offhand)
+		c.continue();
+		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.goodModOffhand();
+	}, (e) => {
 		e.colourExalt(PAIR_GEAR).sizeExalt();
 	});
 }
 
 function otherWeapons(filter) {
 	// Magic
-	filter.multiBlock((c) => { // Good mod (main other)
+	filter.multiBlock((c) => { // Good mod (other mainhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_OTHER);
+		c.category = new Comparison(CATEGORY.MAIN_OTHER_CASTER);
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(81, OPERATOR.GTE);
+		// Any drop level
+		c.isCorrupted = false;
 		c.goodModMainhand(true);
-	}, (c) => { // Good mod (off other)
+	}, (c) => { // Good mod (other mainhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_OTHER);
+		c.category = new Comparison(CATEGORY.MAIN_OTHER_ATTACKER);
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(77, OPERATOR.GTE);
+		c.isCorrupted = false;
+		c.goodModMainhand(true);
+	}, (c) => { // Good mod (other offhand)
+		c.continue();
+		c.category = new Comparison(CATEGORY.OFF_OTHER_QUIVER);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isCorrupted = false;
+		c.goodModOffhand(true);
+	}, (c) => { // Good mod (other offhand)
+		c.continue();
+		c.category = new Comparison(CATEGORY.OFF_OTHER_BLOCK);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isCorrupted = false;
 		c.goodModOffhand(true);
 	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeAugment();
 	});
 
 	// Rare
-	filter.multiBlock((c) => { // Good mod (main other)
+	filter.multiBlock((c) => { // Good mod (other mainhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_OTHER);
+		c.category = new Comparison(CATEGORY.MAIN_OTHER_CASTER);
 		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(81, OPERATOR.GTE);
+		// Any drop level
+		c.isCorrupted = false;
 		c.goodModMainhand(true);
-	}, (c) => { // Good mod (off other)
+	}, (c) => { // Good mod (other mainhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_OTHER);
+		c.category = new Comparison(CATEGORY.MAIN_OTHER_ATTACKER);
 		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(77, OPERATOR.GTE);
+		c.isCorrupted = false;
+		c.goodModMainhand(true);
+	}, (c) => { // Good mod (other offhand)
+		c.continue();
+		c.category = new Comparison(CATEGORY.OFF_OTHER_QUIVER);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isCorrupted = false;
+		c.goodModOffhand(true);
+	}, (c) => { // Good mod (other offhand)
+		c.continue();
+		c.category = new Comparison(CATEGORY.OFF_OTHER_BLOCK);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isCorrupted = false;
 		c.goodModOffhand(true);
 	}, (e) => {
 		e.colourExalt(PAIR_GEAR).sizeExalt();
@@ -154,123 +282,345 @@ function otherWeapons(filter) {
 
 function classArmour(filter) {
 	// Normal
-	filter.block((c, e) => { // Quality
+	filter.multiBlock((c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
+		c.category = new Comparison(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.NORMAL);
-		c.hasQuality();
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
+		c.isCorrupted = false;
 		c.onlyEnergyShield();
-
-		e.colourWisdom(PAIR_GEAR).sizeAugment();
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isCorrupted = false;
+		c.onlyEnergyShield();
+	}, (e) => {
+		e.colourWisdom(PAIR_GEAR).sizeExalt();
 	});
 
 	// Magic
-	filter.block((c, e) => { // Quality
+	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
+		c.category = new Comparison(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.MAGIC);
-		c.hasQuality();
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
+		c.isLowTier();
+		c.isCorrupted = false;
 		c.onlyEnergyShield();
-
+	}, (c) => { // Low tier
+		c.continue();
+		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isLowTier();
+		c.isCorrupted = false;
+		c.onlyEnergyShield();
+	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeAugment();
 	});
-	filter.block((c, e) => { // Good mod (class)
+
+	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
+		c.category = new Comparison(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
+		c.isMaxTier();
+		c.isCorrupted = false;
+		c.onlyEnergyShield();
+	}, (c) => { // Max tier
+		c.continue();
+		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isMaxTier();
+		c.isCorrupted = false;
+		c.onlyEnergyShield();
+	}, (c) => { // Good mod (class)
+		c.continue();
+		c.category = new Comparison(CATEGORY.BODY);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
+		c.isCorrupted = false;
 		c.onlyEnergyShield();
 		c.goodModArmour();
-
+	}, (c) => { // Good mod (class)
+		c.continue();
+		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isCorrupted = false;
+		c.onlyEnergyShield();
+		c.goodModArmour();
+	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeExalt();
 	});
 
 	// Rare
-	filter.block((c, e) => {
+	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
+		c.category = new Comparison(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
+		c.isLowTier();
 		c.onlyEnergyShield();
+	}, (c) => { // Low tier
+		c.continue();
+		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isLowTier();
+		c.onlyEnergyShield();
+	}, (e) => {
+		e.colourExalt(PAIR_GEAR).sizeAugment();
+	});
 
+	filter.multiBlock((c) => { // Max tier
+		c.continue();
+		c.category = new Comparison(CATEGORY.BODY);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
+		c.isMaxTier();
+		c.isCorrupted = false;
+		c.onlyEnergyShield();
+	}, (c) => { // Max tier
+		c.continue();
+		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isMaxTier();
+		c.isCorrupted = false;
+		c.onlyEnergyShield();
+	}, (c) => { // Good mod (class)
+		c.continue();
+		c.category = new Comparison(CATEGORY.BODY);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
+		c.isCorrupted = false;
+		c.onlyEnergyShield();
+		c.goodModArmour();
+	}, (c) => { // Good mod (class)
+		c.continue();
+		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isCorrupted = false;
+		c.onlyEnergyShield();
+		c.goodModArmour();
+	}, (e) => {
 		e.colourExalt(PAIR_GEAR).sizeExalt();
 	});
 }
 
 function otherArmour(filter) {
 	// Magic
-	filter.multiBlock((c) => { // Good mod (top other)
+	filter.multiBlock((c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
+		c.category = new Comparison(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
+		c.isCorrupted = false;
 		c.hasArmour();
 		c.goodModArmour(true);
-	}, (c) => { // Good mod (top other)
+	}, (c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
+		c.category = new Comparison(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
+		c.isCorrupted = false;
 		c.hasEvasion();
 		c.goodModArmour(true);
-	}, (c) => { // Good mod (boots other)
+	}, (c) => { // Good mod (other top)
+		c.continue();
+		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isCorrupted = false;
+		c.hasArmour();
+		c.goodModArmour(true);
+	}, (c) => { // Good mod (other top)
+		c.continue();
+		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isCorrupted = false;
+		c.hasEvasion();
+		c.goodModArmour(true);
+	}, (c) => { // Good mod (other boots)
 		c.continue();
 		c.category = new Comparison(CATEGORY.BOOTS);
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.isCorrupted = false;
 		c.goodModArmour(true);
 	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeAugment();
 	});
 
 	// Rare
-	filter.multiBlock((c) => { // Good mod (top other)
+	filter.multiBlock((c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
+		c.category = new Comparison(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
 		c.hasArmour();
 		c.goodModArmour(true);
-	}, (c) => { // Good mod (top other)
+	}, (c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison(CATEGORY.ARMOUR_TOP);
+		c.category = new Comparison(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(65, OPERATOR.GTE);
 		c.hasEvasion();
 		c.goodModArmour(true);
-	}, (c) => { // Good mod (boots other)
+	}, (c) => { // Good mod (other top)
+		c.continue();
+		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.hasArmour();
+		c.goodModArmour(true);
+	}, (c) => { // Good mod (other top)
+		c.continue();
+		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
+		c.hasEvasion();
+		c.goodModArmour(true);
+	}, (c) => { // Good mod (other boots)
 		c.continue();
 		c.category = new Comparison(CATEGORY.BOOTS);
 		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.goodModArmour(true);
 	}, (e) => {
 		e.colourExalt(PAIR_GEAR).sizeExalt();
 	});
 }
 
-// Less common gear
-function uncommon(filter) {
+function classUncommon(filter) {
 	// Normal
-	filter.multiBlock((c) => { // Good main (class)
+	filter.multiBlock((c) => { // Good base
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
+		c.goodBase();
+		c.category = new Comparison(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.NORMAL);
-		c.goodMain();
-	}, (c) => { // Normal belts
+		c.ilvl = new Comparison(81, OPERATOR.GTE);
+		// Any drop level
+		c.isCorrupted = false;
+	}, (c) => { // Good base
 		c.continue();
-		c.category = new Comparison(CATEGORY.BELT);
+		c.goodBase();
+		c.category = new Comparison(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
 		c.isCorrupted = false;
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR).sizeExalt();
 	});
 
 	// Magic
-	filter.multiBlock((c) => { // Good main (class)
+	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
+		c.category = new Comparison(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.MAGIC);
-		c.goodMain();
-	}, (c) => { // Good mod (class)
+		c.ilvl = new Comparison(81, OPERATOR.GTE);
+		// Any drop level
+		c.isLowTier();
+		c.isCorrupted = false;
+	}, (c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR_UNCOMMON);
+		c.category = new Comparison(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isLowTier();
+		c.isCorrupted = false;
+	}, (e) => {
+		e.colourAugment(PAIR_GEAR).sizeAugment();
+	});
+
+	filter.multiBlock((c) => { // Max tier
+		c.continue();
+		c.category = new Comparison(CATEGORY.CHARM);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(81, OPERATOR.GTE);
+		// Any drop level
+		c.isMaxTier();
+		c.isCorrupted = false;
+	}, (c) => { // Max tier
+		c.continue();
+		c.category = new Comparison(CATEGORY.JEWELLERY);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isMaxTier();
+		c.isCorrupted = false;
+	}, (c) => { // Good base
+		c.continue();
+		c.goodBase();
+		c.category = new Comparison(CATEGORY.CHARM);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(81, OPERATOR.GTE);
+		// Any drop level
+		c.isCorrupted = false;
+	}, (c) => { // Good base
+		c.continue();
+		c.goodBase();
+		c.category = new Comparison(CATEGORY.JEWELLERY);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isCorrupted = false;
+	}, (c) => { // Good mod (class jewellery)
+		c.continue();
+		c.category = new Comparison(CATEGORY.JEWELLERY);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		// Any drop level
+		c.isCorrupted = false;
 		c.goodModJewellery();
 	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeExalt();
+	});
+}
+
+function otherUncommon(filter) {
+	// Normal
+	filter.multiBlock((c) => { // Belts
+		c.continue();
+		c.category = new Comparison(CATEGORY.BELT);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		// Any ilvl
+		// Any drop level
+		c.isCorrupted = false;
+	}, (e) => {
+		e.colourWisdom(PAIR_GEAR).sizeExalt();
 	});
 }
 
@@ -280,15 +630,17 @@ function jewels(filter) {
 		c.category = new Comparison(CATEGORY.JEWEL);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
-		e.colourAugment(PAIR_JEWEL).sizeExalt();
+		e.colourAugment(PAIR_JEWEL).sizeAugment();
 	});
+
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison(CATEGORY.JEWEL);
 		c.rarity = new Comparison(RARITY.RARE);
 
-		e.colourExalt(PAIR_JEWEL).sizeExalt();
+		e.colourExalt(PAIR_JEWEL).sizeAugment();
 	});
+
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison(CATEGORY.JEWEL);
@@ -304,28 +656,23 @@ function waystones(filter) {
 		c.category = new Comparison(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
-		e.colourWisdom(PAIR_QUESTLIKE).sizeExalt();
+		e.colourWisdom(PAIR_QUESTLIKE).sizeChance();
 	});
+
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
-		e.colourAugment(PAIR_QUESTLIKE).sizeExalt();
+		e.colourAugment(PAIR_QUESTLIKE).sizeChance();
 	});
+
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.RARE);
 
-		e.colourExalt(PAIR_QUESTLIKE).sizeExalt();
-	});
-	filter.block((c, e) => {
-		c.continue();
-		c.category = new Comparison(CATEGORY.WAYSTONE);
-		c.rarity = new Comparison(RARITY.UNIQUE);
-
-		e.colourChance(PAIR_QUESTLIKE).sizeChance();
+		e.colourExalt(PAIR_QUESTLIKE).sizeChance();
 	});
 }
 
@@ -333,18 +680,33 @@ function waystones(filter) {
 function mechanics(filter) {
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.TABLET]);
+		c.category = new Comparison(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
 		e.colourWisdom(PAIR_MECHANIC).sizeExalt();
 	});
-	filter.block((c, e) => {
-		c.continue();
-		c.category = new Comparison([CATEGORY.TABLET, CATEGORY.RELIC]);
-		c.rarity = new Comparison(RARITY.MAGIC);
 
+	filter.multiBlock((c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.RELIC);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.isLowTier();
+	}, (e) => {
+		e.colourAugment(PAIR_MECHANIC).sizeAugment();
+	});
+	filter.multiBlock((c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.RELIC);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.isMaxTier();
+	}, (c) => {
+		c.continue();
+		c.category = new Comparison(CATEGORY.TABLET);
+		c.rarity = new Comparison(RARITY.MAGIC);
+	}, (e) => {
 		e.colourAugment(PAIR_MECHANIC).sizeExalt();
 	});
+
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison(CATEGORY.TABLET);
@@ -352,6 +714,7 @@ function mechanics(filter) {
 
 		e.colourExalt(PAIR_MECHANIC).sizeExalt();
 	});
+
 	filter.block((c, e) => {
 		c.continue();
 		c.category = new Comparison([CATEGORY.TABLET, CATEGORY.RELIC]);

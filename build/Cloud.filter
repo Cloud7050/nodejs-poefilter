@@ -1019,19 +1019,7 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
-	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
-	Rarity == Normal
-
-	SetFontSize 27
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 215 218 255 255
-	MinimapIcon 2 Blue Kite
-
-	Continue
-
-Show
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Normal
 
 	SetFontSize 32
@@ -1043,8 +1031,9 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Magic
+	UnidentifiedItemTier <= 4
 
 	SetFontSize 27
 	SetTextColor 182 190 255 255
@@ -1055,8 +1044,9 @@ Show
 	Continue
 
 Show
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Magic
+	UnidentifiedItemTier == 5
 
 	SetFontSize 32
 	SetTextColor 182 190 255 255
@@ -1067,20 +1057,22 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Rare
+	UnidentifiedItemTier <= 4
 
-	SetFontSize 32
+	SetFontSize 27
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
-	MinimapIcon 1 Blue Cross
+	MinimapIcon 2 Blue Cross
 
 	Continue
 
 Show
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Rare
+	UnidentifiedItemTier == 5
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1105,22 +1097,56 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci
+	Class == Sceptres
 	Rarity == Normal
-	Quality >= 1
+	ItemLevel >= 82
+	Corrupted False
 
-	SetFontSize 32
+	SetFontSize 37
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
-	MinimapIcon 1 Blue Kite
+	MinimapIcon 0 Blue Kite
 
 	Continue
 
 Show
-	Class == Sceptres Foci
+	Class == Foci
+	Rarity == Normal
+	ItemLevel >= 82
+	DropLevel >= 80
+	Corrupted False
+
+	SetFontSize 37
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Class == Sceptres
 	Rarity == Magic
-	Quality >= 1
+	ItemLevel >= 82
+	UnidentifiedItemTier <= 4
+	Corrupted False
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Foci
+	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 80
+	UnidentifiedItemTier <= 4
+	Corrupted False
 
 	SetFontSize 32
 	SetTextColor 182 190 255 255
@@ -1133,6 +1159,39 @@ Show
 Show
 	Class == Sceptres
 	Rarity == Magic
+	ItemLevel >= 82
+	UnidentifiedItemTier == 5
+	Corrupted False
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Foci
+	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 80
+	UnidentifiedItemTier == 5
+	Corrupted False
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Sceptres
+	Rarity == Magic
+	ItemLevel >= 82
+	Corrupted False
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver"
 
 	SetFontSize 37
@@ -1146,6 +1205,9 @@ Show
 Show
 	Class == Foci
 	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 80
+	Corrupted False
 	HasExplicitMod >=1 "of the Enchanter"
 
 	SetFontSize 37
@@ -1157,8 +1219,39 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci
+	Class == Sceptres
 	Rarity == Rare
+	ItemLevel >= 82
+	UnidentifiedItemTier <= 4
+
+	SetFontSize 32
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 1 Blue Cross
+
+	Continue
+
+Show
+	Class == Foci
+	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 80
+	UnidentifiedItemTier <= 4
+
+	SetFontSize 32
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 1 Blue Cross
+
+	Continue
+
+Show
+	Class == Sceptres
+	Rarity == Rare
+	ItemLevel >= 82
+	UnidentifiedItemTier == 5
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1169,8 +1262,54 @@ Show
 	Continue
 
 Show
-	Class == Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	Class == Foci
+	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 80
+	UnidentifiedItemTier == 5
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Sceptres
+	Rarity == Rare
+	ItemLevel >= 82
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Foci
+	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 80
+	HasExplicitMod >=1 "of the Enchanter"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Wands Staves
 	Rarity == Magic
+	ItemLevel >= 81
+	Corrupted False
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
 	SetFontSize 32
@@ -1182,8 +1321,26 @@ Show
 	Continue
 
 Show
-	Class == Bucklers Shields Quivers
+	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 77
+	Corrupted False
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Quivers
+	Rarity == Magic
+	ItemLevel >= 82
+	Corrupted False
 	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
 
 	SetFontSize 32
@@ -1195,8 +1352,26 @@ Show
 	Continue
 
 Show
-	Class == Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	Class == Bucklers Shields
+	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 80
+	Corrupted False
+	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Wands Staves
 	Rarity == Rare
+	ItemLevel >= 81
+	Corrupted False
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
 	SetFontSize 37
@@ -1208,8 +1383,26 @@ Show
 	Continue
 
 Show
-	Class == Bucklers Shields Quivers
+	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 77
+	Corrupted False
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Quivers
+	Rarity == Rare
+	ItemLevel >= 82
+	Corrupted False
 	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
 
 	SetFontSize 37
@@ -1221,25 +1414,64 @@ Show
 	Continue
 
 Show
-	Class == Helmets "Body Armours" Gloves
+	Class == Bucklers Shields
+	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 80
+	Corrupted False
+	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == "Body Armours"
 	Rarity == Normal
-	Quality >= 1
+	ItemLevel >= 82
+	DropLevel >= 65
+	Corrupted False
 	BaseEnergyShield > 0
 	BaseArmour == 0
 	BaseEvasion == 0
 
-	SetFontSize 32
+	SetFontSize 37
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
-	MinimapIcon 1 Blue Kite
+	MinimapIcon 0 Blue Kite
 
 	Continue
 
 Show
-	Class == Helmets "Body Armours" Gloves
+	Class == Helmets Gloves
+	Rarity == Normal
+	ItemLevel >= 82
+	DropLevel >= 80
+	Corrupted False
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 37
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Class == "Body Armours"
 	Rarity == Magic
-	Quality >= 1
+	ItemLevel >= 82
+	DropLevel >= 65
+	UnidentifiedItemTier <= 4
+	Corrupted False
 	BaseEnergyShield > 0
 	BaseArmour == 0
 	BaseEvasion == 0
@@ -1253,8 +1485,68 @@ Show
 	Continue
 
 Show
-	Class == Helmets "Body Armours" Gloves
+	Class == Helmets Gloves
 	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 80
+	UnidentifiedItemTier <= 4
+	Corrupted False
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Body Armours"
+	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 65
+	UnidentifiedItemTier == 5
+	Corrupted False
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Helmets Gloves
+	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 80
+	UnidentifiedItemTier == 5
+	Corrupted False
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Body Armours"
+	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 65
+	Corrupted False
 	BaseEnergyShield > 0
 	BaseArmour == 0
 	BaseEvasion == 0
@@ -1269,8 +1561,67 @@ Show
 	Continue
 
 Show
-	Class == Helmets "Body Armours" Gloves
+	Class == Helmets Gloves
+	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 80
+	Corrupted False
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall"
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == "Body Armours"
 	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 65
+	UnidentifiedItemTier <= 4
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 32
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 1 Blue Cross
+
+	Continue
+
+Show
+	Class == Helmets Gloves
+	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 80
+	UnidentifiedItemTier <= 4
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 32
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 1 Blue Cross
+
+	Continue
+
+Show
+	Class == "Body Armours"
+	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 65
+	UnidentifiedItemTier == 5
+	Corrupted False
 	BaseEnergyShield > 0
 	BaseArmour == 0
 	BaseEvasion == 0
@@ -1284,8 +1635,68 @@ Show
 	Continue
 
 Show
-	Class == Helmets "Body Armours" Gloves
+	Class == Helmets Gloves
+	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 80
+	UnidentifiedItemTier == 5
+	Corrupted False
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == "Body Armours"
+	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 65
+	Corrupted False
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Helmets Gloves
+	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 80
+	Corrupted False
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == "Body Armours"
 	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 65
+	Corrupted False
 	BaseArmour > 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
@@ -1298,8 +1709,45 @@ Show
 	Continue
 
 Show
-	Class == Helmets "Body Armours" Gloves
+	Class == "Body Armours"
 	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 65
+	Corrupted False
+	BaseEvasion > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Helmets Gloves
+	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 80
+	Corrupted False
+	BaseArmour > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Helmets Gloves
+	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 80
+	Corrupted False
 	BaseEvasion > 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
@@ -1314,6 +1762,9 @@ Show
 Show
 	Class == Boots
 	Rarity == Magic
+	ItemLevel >= 82
+	DropLevel >= 80
+	Corrupted False
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 32
@@ -1325,8 +1776,10 @@ Show
 	Continue
 
 Show
-	Class == Helmets "Body Armours" Gloves
+	Class == "Body Armours"
 	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 65
 	BaseArmour > 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
@@ -1339,8 +1792,42 @@ Show
 	Continue
 
 Show
-	Class == Helmets "Body Armours" Gloves
+	Class == "Body Armours"
 	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 65
+	BaseEvasion > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Helmets Gloves
+	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 80
+	BaseArmour > 0
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Helmets Gloves
+	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 80
 	BaseEvasion > 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
@@ -1355,6 +1842,8 @@ Show
 Show
 	Class == Boots
 	Rarity == Rare
+	ItemLevel >= 82
+	DropLevel >= 80
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 37
@@ -1366,15 +1855,137 @@ Show
 	Continue
 
 Show
-	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	BaseType == "Gold Amulet" "Gold Ring" "Golden Charm" "Solar Amulet"
+	Class == Charms
 	Rarity == Normal
+	ItemLevel >= 81
+	Corrupted False
 
 	SetFontSize 37
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
 	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	BaseType == "Gold Amulet" "Gold Ring" "Golden Charm" "Solar Amulet"
+	Class == Amulets Rings
+	Rarity == Normal
+	ItemLevel >= 82
+	Corrupted False
+
+	SetFontSize 37
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Class == Charms
+	Rarity == Magic
+	ItemLevel >= 81
+	UnidentifiedItemTier <= 4
+	Corrupted False
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Amulets Rings
+	Rarity == Magic
+	ItemLevel >= 82
+	UnidentifiedItemTier <= 4
+	Corrupted False
+
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Charms
+	Rarity == Magic
+	ItemLevel >= 81
+	UnidentifiedItemTier == 5
+	Corrupted False
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Amulets Rings
+	Rarity == Magic
+	ItemLevel >= 82
+	UnidentifiedItemTier == 5
+	Corrupted False
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	BaseType == "Gold Amulet" "Gold Ring" "Golden Charm" "Solar Amulet"
+	Class == Charms
+	Rarity == Magic
+	ItemLevel >= 81
+	Corrupted False
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	BaseType == "Gold Amulet" "Gold Ring" "Golden Charm" "Solar Amulet"
+	Class == Amulets Rings
+	Rarity == Magic
+	ItemLevel >= 82
+	Corrupted False
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Amulets Rings
+	Rarity == Magic
+	ItemLevel >= 82
+	Corrupted False
+	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall"
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
 
@@ -1392,40 +2003,14 @@ Show
 	Continue
 
 Show
-	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	Rarity == Magic
-
-	SetFontSize 37
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 0 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	Rarity == Magic
-	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall"
-
-	SetFontSize 37
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 0 Blue UpsideDownHouse
-
-	Continue
-
-Show
 	Class == Jewels
 	Rarity == Magic
 
-	SetFontSize 37
+	SetFontSize 32
 	SetTextColor 182 209 255 255
 	SetBackgroundColor 0 33 68 255
 	SetBorderColor 182 209 255 255
-	MinimapIcon 0 Blue UpsideDownHouse
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -1433,11 +2018,11 @@ Show
 	Class == Jewels
 	Rarity == Rare
 
-	SetFontSize 37
+	SetFontSize 32
 	SetTextColor 164 199 255 255
 	SetBackgroundColor 0 61 116 255
 	SetBorderColor 164 199 255 255
-	MinimapIcon 0 Blue Cross
+	MinimapIcon 1 Blue Cross
 
 	Continue
 
@@ -1459,10 +2044,12 @@ Show
 	Class == Waystones
 	Rarity == Normal
 
-	SetFontSize 37
+	SetFontSize 45
 	SetTextColor 233 251 145 255
 	SetBackgroundColor 14 18 0 255
 	SetBorderColor 233 251 145 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Green Kite
 
 	Continue
@@ -1471,10 +2058,12 @@ Show
 	Class == Waystones
 	Rarity == Magic
 
-	SetFontSize 37
+	SetFontSize 45
 	SetTextColor 219 242 110 255
 	SetBackgroundColor 36 44 0 255
 	SetBorderColor 219 242 110 255
+	PlayEffect Green
+	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Green UpsideDownHouse
 
 	Continue
@@ -1483,25 +2072,13 @@ Show
 	Class == Waystones
 	Rarity == Rare
 
-	SetFontSize 37
+	SetFontSize 45
 	SetTextColor 212 238 80 255
 	SetBackgroundColor 70 82 0 255
 	SetBorderColor 212 238 80 255
-	MinimapIcon 0 Green Cross
-
-	Continue
-
-Show
-	Class == Waystones
-	Rarity == Unique
-
-	SetFontSize 45
-	SetTextColor 36 44 0 255
-	SetBackgroundColor 197 226 29 255
-	SetBorderColor 36 44 0 255
 	PlayEffect Green
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Green Cross
 
 	Continue
 
@@ -1518,7 +2095,33 @@ Show
 	Continue
 
 Show
-	Class == Tablet Relics
+	Class == Relics
+	Rarity == Magic
+	UnidentifiedItemTier <= 4
+
+	SetFontSize 32
+	SetTextColor 116 253 179 255
+	SetBackgroundColor 0 46 25 255
+	SetBorderColor 116 253 179 255
+	MinimapIcon 1 Brown UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Relics
+	Rarity == Magic
+	UnidentifiedItemTier == 5
+
+	SetFontSize 37
+	SetTextColor 116 253 179 255
+	SetBackgroundColor 0 46 25 255
+	SetBorderColor 116 253 179 255
+	MinimapIcon 0 Brown UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Tablet
 	Rarity == Magic
 
 	SetFontSize 37
@@ -1556,13 +2159,6 @@ Show
 	Continue
 
 Show
-	Corrupted True
-
-	SetBorderColor 210 0 0 255
-
-	Continue
-
-Show
 	Quality >= 1
 
 	SetBorderColor 123 151 255 255
@@ -1570,239 +2166,27 @@ Show
 	Continue
 
 Show
-	Class == Charms
-	Rarity == Normal
-	Quality >= 1
+	Corrupted True
 
-	SetFontSize 45
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Kite
+	SetBorderColor 210 0 0 255
+
+	Continue
 
 Show
-	Rarity == Normal
-	Quality >= 21
+	Corrupted True
+	AnyEnchantment True
 
-	SetFontSize 45
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Kite
+	SetBorderColor 184 218 242 255
 
-Show
-	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
-	Rarity == Normal
-	Sockets >= 2
-
-	SetFontSize 45
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Kite
-
-Show
-	Rarity == Normal
-	Sockets >= 3
-
-	SetFontSize 45
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Kite
-
-Show
-	Class == Charms
-	Rarity == Magic
-	Quality >= 1
-
-	SetFontSize 45
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue UpsideDownHouse
-
-Show
-	Rarity == Magic
-	Quality >= 21
-
-	SetFontSize 45
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue UpsideDownHouse
-
-Show
-	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
-	Rarity == Magic
-	Sockets >= 2
-
-	SetFontSize 45
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue UpsideDownHouse
-
-Show
-	Rarity == Magic
-	Sockets >= 3
-
-	SetFontSize 45
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue UpsideDownHouse
-
-Show
-	Class == Charms
-	Rarity == Rare
-	Quality >= 1
-
-	SetFontSize 45
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Cross
-
-Show
-	Rarity == Rare
-	Quality >= 21
-
-	SetFontSize 45
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Cross
-
-Show
-	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
-	Rarity == Rare
-	Sockets >= 2
-
-	SetFontSize 45
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Cross
-
-Show
-	Rarity == Rare
-	Sockets >= 3
-
-	SetFontSize 45
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Cross
-
-Show
-	Class == Charms
-	Rarity == Unique
-	Quality >= 1
-
-	SetFontSize 45
-	SetTextColor 10 20 83 255
-	SetBackgroundColor 126 142 255 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Star
-
-Show
-	Rarity == Unique
-	Quality >= 21
-
-	SetFontSize 45
-	SetTextColor 10 20 83 255
-	SetBackgroundColor 126 142 255 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Star
-
-Show
-	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
-	Rarity == Unique
-	Sockets >= 2
-
-	SetFontSize 45
-	SetTextColor 10 20 83 255
-	SetBackgroundColor 126 142 255 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Star
-
-Show
-	Rarity == Unique
-	Sockets >= 3
-
-	SetFontSize 45
-	SetTextColor 10 20 83 255
-	SetBackgroundColor 126 142 255 255
-	SetBorderColor 241 106 33 255
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Star
-
-Show
-	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm" "Golden Obi"
-
-	SetBorderColor 255 225 87 255
-
-Show
-	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
-	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
-
-	SetBorderColor 255 225 87 255
-
-Show
-	Class == Foci Bucklers Shields Quivers
-	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
-
-	SetBorderColor 255 225 87 255
-
-Show
-	Class == Helmets "Body Armours" Gloves Boots
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
-
-	SetBorderColor 255 225 87 255
-
-Show
-	Class == Amulets Rings
-	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall" "of the Sorcerer" "of Battle" "of the Sharpshooter"
-
-	SetBorderColor 255 225 87 255
+	Continue
 
 Show
 	Class == Wands Staves Charms
 	ItemLevel >= 81
 
 	SetBorderColor 255 255 255 255
+
+	Continue
 
 Show
 	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts
@@ -1813,57 +2197,560 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Quivers Amulets Rings Belts
-	ItemLevel >= 82
-
-	SetBorderColor 255 255 255 255
-
-Show
-	Class == "Body Armours"
-	ItemLevel >= 82
-	DropLevel >= 65
-
-	SetBorderColor 255 255 255 255
-
-Show
-	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
-	ItemLevel >= 82
-	DropLevel >= 77
-
-	SetBorderColor 255 255 255 255
-
-Show
-	Class == Foci Bucklers Shields Helmets Gloves Boots
-	ItemLevel >= 82
-	DropLevel >= 80
-
-	SetBorderColor 255 255 255 255
-
-Show
-	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
 	ItemLevel >= 83
 
 	SetBorderColor 255 255 255 255
 
-Show
-	Quality >= 15
-
-	SetBorderColor 123 151 255 255
+	Continue
 
 Show
-	Height <= 2
-	Width <= 2
-	Quality >= 10
+	BaseType == "Gold Amulet" "Gold Ring" "Golden Charm" "Solar Amulet"
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 
-	SetBorderColor 123 151 255 255
+	SetBorderColor 255 225 87 255
+
+	Continue
 
 Show
-	Height <= 4
-	Width == 1
-	Quality >= 10
+	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
-	SetBorderColor 123 151 255 255
+	SetBorderColor 255 225 87 255
+
+	Continue
+
+Show
+	Class == Foci Bucklers Shields Quivers
+	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+
+	SetBorderColor 255 225 87 255
+
+	Continue
+
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	SetBorderColor 255 225 87 255
+
+	Continue
+
+Show
+	Class == Amulets Rings
+	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall" "of the Sorcerer" "of Battle" "of the Sharpshooter"
+
+	SetBorderColor 255 225 87 255
+
+	Continue
+
+Show
+	Class == Charms
+	Rarity == Normal
+	Quality >= 1
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Rarity == Normal
+	Quality >= 21
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Rarity == Normal
+	Quality >= 21
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Rarity == Normal
+	Quality >= 24
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Normal
+	Sockets >= 2
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Normal
+	Sockets >= 2
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Normal
+	Sockets >= 3
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Normal
+	Sockets >= 3
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Class == Charms
+	Rarity == Magic
+	Quality >= 1
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Rarity == Magic
+	Quality >= 21
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Rarity == Magic
+	Quality >= 21
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Rarity == Magic
+	Quality >= 24
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Magic
+	Sockets >= 2
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Magic
+	Sockets >= 2
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Magic
+	Sockets >= 3
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Magic
+	Sockets >= 3
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Charms
+	Rarity == Rare
+	Quality >= 1
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Rarity == Rare
+	Quality >= 21
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Rarity == Rare
+	Quality >= 21
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Rarity == Rare
+	Quality >= 24
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Rare
+	Sockets >= 2
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Rare
+	Sockets >= 2
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Rare
+	Sockets >= 3
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Rare
+	Sockets >= 3
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Charms
+	Rarity == Unique
+	Quality >= 1
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Rarity == Unique
+	Quality >= 21
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Rarity == Unique
+	Quality >= 21
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Rarity == Unique
+	Quality >= 24
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Unique
+	Sockets >= 2
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Rarity == Unique
+	Sockets >= 2
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Unique
+	Sockets >= 3
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Rarity == Unique
+	Sockets >= 3
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
 
 Show
 	BaseType == "Viper Cap"
@@ -1872,9 +2759,6 @@ Show
 	Corrupted False
 
 	SetFontSize 37
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 215 218 255 255
 	MinimapIcon 0 Blue Kite
 
 Show
@@ -1884,9 +2768,6 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 215 218 255 255
 	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue Kite
@@ -1898,9 +2779,6 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 215 218 255 255
 	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue Kite
@@ -1912,15 +2790,84 @@ Show
 	Corrupted False
 
 	SetFontSize 45
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 215 218 255 255
 	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue Kite
 
 Show
-	UnidentifiedItemTier >= 5
+	Quality >= 15
+
+	#
+
+Show
+	Class == Charms
+	Quality >= 1
+	Corrupted False
+
+	#
+
+Show
+	Quality >= 21
+
+	#
+
+Show
+	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
+	Sockets >= 2
+
+	#
+
+Show
+	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Sockets >= 3
+
+	#
+
+Show
+	Rarity >= Rare
+	Corrupted True
+	AnyEnchantment True
+
+	#
+
+Show
+	Rarity == Unique
+	Corrupted True
+
+	#
+
+Show
+	BaseType == "Gold Amulet" "Gold Ring" "Golden Charm" "Solar Amulet"
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+
+	#
+
+Show
+	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+
+	#
+
+Show
+	Class == Foci Bucklers Shields Quivers
+	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+
+	#
+
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+
+	#
+
+Show
+	Class == Amulets Rings
+	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall" "of the Sorcerer" "of Battle" "of the Sharpshooter"
+
+	#
+
+Show
+	UnidentifiedItemTier == 5
 
 	#
 

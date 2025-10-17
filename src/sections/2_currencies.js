@@ -3,7 +3,6 @@ import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { DIV } from "../conditions/name.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { Colour } from "../effects/colour.js";
-import { EffectSet } from "../effects/effectSet.js";
 import { PAIR_ABYSS, PAIR_CRAFT, PAIR_CURRENCY, PAIR_ESSENCE, PAIR_GOLD, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../index.js";
 
 export function sectionCurrencies(filter) {
@@ -68,34 +67,39 @@ function gold(filter) {
 		c.count = new Comparison(50, OPERATOR.LT);
 
 		e.hide();
-		e.colourWisdom(PAIR_GOLD, Colour.TRANSPARENT).sizeWisdom();
+		e.colourWisdom(PAIR_GOLD).sizeWisdom();
+		e.backgroundColour = Colour.TRANSPARENT;
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 		c.count = new Comparison(500, OPERATOR.LT);
 
-		e.colourWisdom(PAIR_GOLD, Colour.TRANSPARENT).sizeWisdom();
+		e.colourWisdom(PAIR_GOLD).sizeWisdom();
+		e.backgroundColour = Colour.TRANSPARENT;
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 		c.count = new Comparison(2500, OPERATOR.LT);
 
-		e.colourAugment(PAIR_GOLD, Colour.TRANSPARENT).sizeAugment();
+		e.colourAugment(PAIR_GOLD).sizeAugment();
+		e.backgroundColour = Colour.TRANSPARENT;
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 		c.count = new Comparison(5000, OPERATOR.LT);
 
-		e.colourExalt(PAIR_GOLD, Colour.TRANSPARENT).sizeAugment();
+		e.colourExalt(PAIR_GOLD).sizeAugment();
+		e.backgroundColour = Colour.TRANSPARENT;
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		e.colourExalt(PAIR_GOLD, Colour.TRANSPARENT).sizeExalt();
+		e.colourExalt(PAIR_GOLD).sizeExalt();
+		e.backgroundColour = Colour.TRANSPARENT;
 	});
 }
 
@@ -321,10 +325,8 @@ function base(filter) {
 	filter.block((c, e) => {
 		c.category = new Comparison(CATEGORY.CURRENCY);
 
-		let [currencyColour, currencyPreset] = PAIR_CURRENCY;
+		e.colourExalt(PAIR_CURRENCY, true).sizeExalt();
+		let [currencyColour, _currencyPreset] = PAIR_CURRENCY;
 		e.outlineColour = currencyColour;
-		e.mapColour = currencyPreset;
-		e.mapIcon = EffectSet.MAP_ICON.CROSS;
-		e.sizeExalt();
 	});
 }

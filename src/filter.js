@@ -36,6 +36,11 @@ export class Filter {
 		});
 	}
 
+	multiWhitelist(...callbacks) {
+		// No effect, so it just exits the filter early
+		this.multiBlock(...callbacks, (_e) => {});
+	}
+
 	save() {
 		let relativeFilePath = `./build/${this.name}.filter`;
 		let content = this.spans.join("\n");

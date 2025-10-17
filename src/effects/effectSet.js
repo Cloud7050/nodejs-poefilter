@@ -89,47 +89,58 @@ export class EffectSet {
 		return this;
 	}
 
-	colourWisdom([mainColour, mapColour], backgroundColour = mainColour.brightness(3)) {
-		this.textColour = mainColour.brightness(87);
-		this.backgroundColour = backgroundColour;
-		this.outlineColour = mainColour.brightness(87);
+	colourWisdom([mainColour, mapColour], mapOnly = false) {
+		if (!mapOnly) {
+			this.textColour = mainColour.brightness(87);
+			this.backgroundColour = mainColour.brightness(3);
+			this.outlineColour = mainColour.brightness(87);
+		}
 		this.mapColour = mapColour;
 		this.mapIcon = EffectSet.MAP_ICON.KITE;
 		return this;
 	}
-	colourAugment([mainColour, mapColour], backgroundColour = mainColour.brightness(10)) {
-		this.textColour = mainColour.brightness(77);
-		this.backgroundColour = backgroundColour;
-		this.outlineColour = mainColour.brightness(77);
+	colourAugment([mainColour, mapColour], mapOnly = false) {
+		if (!mapOnly) {
+			this.textColour = mainColour.brightness(77);
+			this.backgroundColour = mainColour.brightness(10);
+			this.outlineColour = mainColour.brightness(77);
+		}
 		this.mapColour = mapColour;
 		this.mapIcon = EffectSet.MAP_ICON.HOUSE;
 		return this;
 	}
-	colourExalt([mainColour, mapColour], backgroundColour = mainColour.brightness(20)) {
-		this.textColour = mainColour.brightness(72);
-		this.backgroundColour = backgroundColour;
-		this.outlineColour = mainColour.brightness(72);
+	colourExalt([mainColour, mapColour], mapOnly = false) {
+		if (!mapOnly) {
+			this.textColour = mainColour.brightness(72);
+			this.backgroundColour = mainColour.brightness(20);
+			this.outlineColour = mainColour.brightness(72);
+		}
 		this.mapColour = mapColour;
 		this.mapIcon = EffectSet.MAP_ICON.CROSS;
 		return this;
 	}
-	colourChance([mainColour, mapColour], backgroundColour = mainColour.brightness(60)) {
-		this.textColour = mainColour.brightness(10);
-		this.backgroundColour = backgroundColour;
-		this.outlineColour = mainColour.brightness(10);
+	colourChance([mainColour, mapColour], mapOnly = false) {
+		if (!mapOnly) {
+			this.textColour = mainColour.brightness(10);
+			this.backgroundColour = mainColour.brightness(60);
+			this.outlineColour = mainColour.brightness(10);
+		}
 		this.mapColour = mapColour;
 		this.mapIcon = EffectSet.MAP_ICON.STAR;
 		return this;
 	}
-	colourDivine([mainColour, mapColour], backgroundColour = mainColour.brightness(95)) {
-		this.textColour = mainColour.brightness(45);
-		this.backgroundColour = backgroundColour;
-		this.outlineColour = mainColour.brightness(45);
+	colourDivine([mainColour, mapColour], mapOnly = false) {
+		if (!mapOnly) {
+			this.textColour = mainColour.brightness(45);
+			this.backgroundColour = mainColour.brightness(95);
+			this.outlineColour = mainColour.brightness(45);
+		}
 		this.mapColour = mapColour;
 		this.mapIcon = EffectSet.MAP_ICON.DIAMOND;
 		return this;
 	}
 
+	// These will require a colour call as well for the map export to work
 	sizeWisdom() {
 		this.textSize = EffectSet.TEXT_SIZE.SMALL;
 		this.mapSize = EffectSet.MAP_SIZE.SMALL;
@@ -145,16 +156,16 @@ export class EffectSet {
 		this.mapSize = EffectSet.MAP_SIZE.LARGE;
 		return this;
 	}
-	sizeChance(beamColour = this.mapColour) {
+	sizeChance() {
 		this.textSize = EffectSet.TEXT_SIZE.LARGEST;
-		this.beamColour = beamColour;
+		this.beamColour = this.mapColour;
 		this.sound = EffectSet.SOUND.WAH;
 		this.mapSize = EffectSet.MAP_SIZE.LARGE;
 		return this;
 	}
-	sizeDivine(beamColour = this.mapColour) {
+	sizeDivine() {
 		this.textSize = EffectSet.TEXT_SIZE.LARGEST;
-		this.beamColour = beamColour;
+		this.beamColour = this.mapColour;
 		this.sound = EffectSet.SOUND.RENOIR;
 		this.mapSize = EffectSet.MAP_SIZE.LARGE;
 		return this;

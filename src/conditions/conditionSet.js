@@ -24,6 +24,7 @@ export class ConditionSet {
 	quality = null; // Comparison
 	sockets = null; // Comparison
 	isCorrupted = null; // bool
+	isEnchanted = null; // bool
 	energyShield = null; // Comparison
 	armour = null; // Comparison
 	evasion = null; // Comparison
@@ -49,6 +50,7 @@ export class ConditionSet {
 		if (this.quality !== null) spans.push(this.quality.export("Quality"));
 		if (this.sockets !== null) spans.push(this.sockets.export("Sockets"));
 		if (this.isCorrupted !== null) spans.push(`Corrupted ${this.isCorrupted ? "True" : "False"}`);
+		if (this.isEnchanted !== null) spans.push(`AnyEnchantment ${this.isEnchanted ? "True" : "False"}`);
 		if (this.energyShield !== null) spans.push(this.energyShield.export("BaseEnergyShield"));
 		if (this.armour !== null) spans.push(this.armour.export("BaseArmour"));
 		if (this.evasion !== null) spans.push(this.evasion.export("BaseEvasion"));
@@ -66,14 +68,31 @@ export class ConditionSet {
 		return this;
 	}
 
+	isLowTier() {
+		this.wisdomTier = new Comparison(4, OPERATOR.LTE);
+		return this;
+	}
+	isMaxTier() {
+		this.wisdomTier = new Comparison(5);
+		return this;
+	}
+
 	hasQuality(minimum = 1) {
 		this.quality = new Comparison(minimum, OPERATOR.GTE);
 		return this;
 	}
+
 	hasSockets(minimum = 2) {
 		this.sockets = new Comparison(minimum, OPERATOR.GTE);
 		return this;
 	}
+
+	hasEnchant() {
+		this.isCorrupted = true;
+		this.isEnchanted = true;
+		return this;
+	}
+
 	onlyEnergyShield() {
 		this.energyShield = new Comparison(0, OPERATOR.GT);
 		this.armour = new Comparison(0);
@@ -89,24 +108,17 @@ export class ConditionSet {
 		return this;
 	}
 
-	goodMain(includeOther = false) {
+	goodBase(includeOther = false) {
 		// https://poe2db.tw/us/Items
 		let phrases = [
-			// +x to Spirit
-			"Solar Amulet", // Amulets
-
 			// x% increased Rarity of Items found
 			"Gold Amulet", // Amulets
 			"Gold Ring", // Rings
-			"Golden Charm" // Charms
-		];
-		if (includeOther) phrases.push(
-			// +x to Spirit
-			// "Conjurer Mantle", // Body armours
+			"Golden Charm", // Charms
 
-			// x% increased Rarity of Items found
-			"Golden Obi", // Belts
-		);
+			// +x to Spirit
+			"Solar Amulet", // Amulets
+		];
 		this.names = new Comparison(phrases);
 		return this;
 	}
