@@ -68,6 +68,11 @@ export class ConditionSet {
 		return this;
 	}
 
+	categories(...stringLists) {
+		this.category = new Comparison(stringLists);
+		return this;
+	}
+
 	isLowTier() {
 		this.wisdomTier = new Comparison(4, OPERATOR.LTE);
 		return this;

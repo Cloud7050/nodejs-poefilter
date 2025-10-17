@@ -23,38 +23,38 @@ export function sectionCurrencies(filter) {
 function general(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCurrenciesBad());
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.hide();
 		e.colourWisdom(PAIR_CURRENCY).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCurrencies(null, 1 / 100));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourWisdom(PAIR_CURRENCY).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCurrencies(1 / 100, 1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_CURRENCY).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCurrencies(1, 20));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_CURRENCY).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCurrencies(20, DIV));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourChance(PAIR_CURRENCY).sizeChance();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCurrencies(DIV));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourDivine(PAIR_CURRENCY).sizeDivine();
 	});
@@ -63,7 +63,7 @@ function general(filter) {
 function gold(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 		c.count = new Comparison(50, OPERATOR.LT);
 
 		e.hide();
@@ -72,7 +72,7 @@ function gold(filter) {
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 		c.count = new Comparison(500, OPERATOR.LT);
 
 		e.colourWisdom(PAIR_GOLD).sizeWisdom();
@@ -80,7 +80,7 @@ function gold(filter) {
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 		c.count = new Comparison(2500, OPERATOR.LT);
 
 		e.colourAugment(PAIR_GOLD).sizeAugment();
@@ -88,7 +88,7 @@ function gold(filter) {
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 		c.count = new Comparison(5000, OPERATOR.LT);
 
 		e.colourExalt(PAIR_GOLD).sizeAugment();
@@ -96,7 +96,7 @@ function gold(filter) {
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold");
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_GOLD).sizeExalt();
 		e.backgroundColour = Colour.TRANSPARENT;
@@ -106,70 +106,70 @@ function gold(filter) {
 function essences(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEssences1(null, 1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourWisdom(PAIR_ESSENCE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEssences1(1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourWisdom(PAIR_ESSENCE).sizeExalt();
 	});
 
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEssences2(null, 1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_ESSENCE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEssences2(1, 20));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_ESSENCE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEssences2(20));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_ESSENCE).sizeChance();
 	});
 
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEssences3(null, 1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_ESSENCE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEssences3(1, 20));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_ESSENCE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEssences3(20));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_ESSENCE).sizeChance();
 	});
 
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEssences4(null, 20));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourChance(PAIR_ESSENCE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEssences4(20, DIV));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourChance(PAIR_ESSENCE).sizeChance();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEssences4(DIV));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourDivine(PAIR_ESSENCE).sizeDivine();
 	});
@@ -178,33 +178,33 @@ function essences(filter) {
 function abyss(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getAbyss1());
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourWisdom(PAIR_ABYSS).sizeAugment();
 	});
 
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getAbyss2(null, 1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_ABYSS).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getAbyss2(1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_ABYSS).sizeExalt();
 	});
 
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getAbyss3(null, 20));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_ABYSS).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getAbyss3(20));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourDivine(PAIR_ABYSS).sizeDivine();
 	});
@@ -214,27 +214,27 @@ function abyss(filter) {
 function delirium(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEmotions1(null, 1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_CRAFT).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEmotions1(1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_CRAFT).sizeExalt();
 	});
 
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEmotions2());
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_CRAFT).sizeExalt();
 	});
 
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getEmotions3());
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourChance(PAIR_CRAFT).sizeChance();
 	});
@@ -244,19 +244,19 @@ function delirium(filter) {
 function ritual(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCatalysts(null, 1 / 10));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_CRAFT).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCatalysts(1 / 10, 1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_CRAFT).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCatalysts(1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_CRAFT).sizeExalt();
 	});
@@ -266,19 +266,19 @@ function ritual(filter) {
 function keys(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison("Bronze Key");
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourWisdom(PAIR_QUESTLIKE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Silver Key");
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_QUESTLIKE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison("Gold Key");
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_QUESTLIKE).sizeExalt();
 	});
@@ -287,13 +287,13 @@ function keys(filter) {
 function splinters(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getSplinters(null, 1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_QUESTLIKE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getSplinters(1));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_QUESTLIKE).sizeExalt();
 	});
@@ -302,20 +302,20 @@ function splinters(filter) {
 function expedition(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getArtifacts(null, 1 / 10));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_MECHANIC).sizeWisdom();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getArtifacts(1 / 10));
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_MECHANIC).sizeAugment();
 	});
 
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getCoinage());
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_MECHANIC).sizeExalt();
 	});
@@ -323,7 +323,7 @@ function expedition(filter) {
 
 function base(filter) {
 	filter.block((c, e) => {
-		c.category = new Comparison(CATEGORY.CURRENCY);
+		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_CURRENCY, true).sizeExalt();
 		let [currencyColour, _currencyPreset] = PAIR_CURRENCY;

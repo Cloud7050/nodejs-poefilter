@@ -12,12 +12,12 @@ export function sectionGems(filter) {
 
 function uncut(filter) {
 	filter.block((c, e) => {
-		c.category = new Comparison(CATEGORY.UNCUT_SUPPORT);
+		c.categories(CATEGORY.UNCUT_SUPPORT);
 
 		e.colourAugment(PAIR_GEM).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.category = new Comparison(CATEGORY.UNCUT_MAIN);
+		c.categories(CATEGORY.UNCUT_MAIN);
 
 		e.colourAugment(PAIR_GEM).sizeExalt();
 	});
@@ -26,25 +26,25 @@ function uncut(filter) {
 function lineage(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getGems(null, 1));
-		c.category = new Comparison(CATEGORY.GEM);
+		c.categories(CATEGORY.GEM);
 
 		e.colourChance(PAIR_GEM).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getGems(1, 20));
-		c.category = new Comparison(CATEGORY.GEM);
+		c.categories(CATEGORY.GEM);
 
 		e.colourChance(PAIR_GEM).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getGems(20, DIV));
-		c.category = new Comparison(CATEGORY.GEM);
+		c.categories(CATEGORY.GEM);
 
 		e.colourChance(PAIR_GEM).sizeChance();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getGems(DIV));
-		c.category = new Comparison(CATEGORY.GEM);
+		c.categories(CATEGORY.GEM);
 
 		e.colourDivine(PAIR_GEM).sizeDivine();
 	});
@@ -53,10 +53,10 @@ function lineage(filter) {
 function cut(filter) {
 	// Crafted on
 	filter.multiBlock((c) => {
-		c.category = new Comparison(CATEGORY.GEM);
+		c.categories(CATEGORY.GEM);
 		c.hasQuality();
 	}, (c) => {
-		c.category = new Comparison(CATEGORY.GEM);
+		c.categories(CATEGORY.GEM);
 		c.hasSockets(5);
 	}, (e) => {
 		e.colourExalt(PAIR_GEM).sizeExalt();
@@ -64,7 +64,7 @@ function cut(filter) {
 
 	// BASE basic
 	filter.block((c, e) => {
-		c.category = new Comparison(CATEGORY.GEM);
+		c.categories(CATEGORY.GEM);
 
 		e.colourExalt(PAIR_GEM).sizeAugment();
 	});

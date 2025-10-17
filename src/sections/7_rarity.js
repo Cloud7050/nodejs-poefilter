@@ -23,7 +23,7 @@ function reset(filter) {
 	// Normal
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR);
+		c.categories(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
 		e.colourWisdom(PAIR_GEAR).sizeAugment();
@@ -32,7 +32,7 @@ function reset(filter) {
 	// Magic
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR);
+		c.categories(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isLowTier();
 
@@ -40,7 +40,7 @@ function reset(filter) {
 	});
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR);
+		c.categories(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isMaxTier();
 
@@ -50,7 +50,7 @@ function reset(filter) {
 	// Rare
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR);
+		c.categories(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isLowTier();
 
@@ -58,7 +58,7 @@ function reset(filter) {
 	});
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR);
+		c.categories(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isMaxTier();
 
@@ -68,7 +68,7 @@ function reset(filter) {
 	// Unique
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.GEAR);
+		c.categories(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
 		e.colourChance(PAIR_GEAR).sizeChance();
@@ -79,14 +79,14 @@ function classWeapons(filter) {
 	// Normal
 	filter.multiBlock((c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_CLASS);
+		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
 		c.isCorrupted = false;
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -98,7 +98,7 @@ function classWeapons(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_CLASS);
+		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
@@ -106,7 +106,7 @@ function classWeapons(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -118,7 +118,7 @@ function classWeapons(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_CLASS);
+		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
@@ -126,7 +126,7 @@ function classWeapons(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Max tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -134,7 +134,7 @@ function classWeapons(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Good mod (class mainhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_CLASS);
+		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
@@ -142,7 +142,7 @@ function classWeapons(filter) {
 		c.goodModMainhand();
 	}, (c) => { // Good mod (class offhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -155,14 +155,14 @@ function classWeapons(filter) {
 	// Rare
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_CLASS);
+		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
 		c.isLowTier();
 	}, (c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -173,28 +173,28 @@ function classWeapons(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_CLASS);
+		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
 		c.isMaxTier();
 	}, (c) => { // Max tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isMaxTier();
 	}, (c) => { // Good mod (class mainhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_CLASS);
+		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
 		c.goodModMainhand();
 	}, (c) => { // Good mod (class offhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_CLASS);
+		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -208,7 +208,7 @@ function otherWeapons(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Good mod (other mainhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_OTHER_CASTER);
+		c.categories(CATEGORY.MAIN_OTHER_CASTER);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 		// Any drop level
@@ -216,7 +216,7 @@ function otherWeapons(filter) {
 		c.goodModMainhand(true);
 	}, (c) => { // Good mod (other mainhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_OTHER_ATTACKER);
+		c.categories(CATEGORY.MAIN_OTHER_ATTACKER);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(77, OPERATOR.GTE);
@@ -224,7 +224,7 @@ function otherWeapons(filter) {
 		c.goodModMainhand(true);
 	}, (c) => { // Good mod (other offhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_OTHER_QUIVER);
+		c.categories(CATEGORY.OFF_OTHER_QUIVER);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
@@ -232,7 +232,7 @@ function otherWeapons(filter) {
 		c.goodModOffhand(true);
 	}, (c) => { // Good mod (other offhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_OTHER_BLOCK);
+		c.categories(CATEGORY.OFF_OTHER_BLOCK);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -245,7 +245,7 @@ function otherWeapons(filter) {
 	// Rare
 	filter.multiBlock((c) => { // Good mod (other mainhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_OTHER_CASTER);
+		c.categories(CATEGORY.MAIN_OTHER_CASTER);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 		// Any drop level
@@ -253,7 +253,7 @@ function otherWeapons(filter) {
 		c.goodModMainhand(true);
 	}, (c) => { // Good mod (other mainhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN_OTHER_ATTACKER);
+		c.categories(CATEGORY.MAIN_OTHER_ATTACKER);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(77, OPERATOR.GTE);
@@ -261,7 +261,7 @@ function otherWeapons(filter) {
 		c.goodModMainhand(true);
 	}, (c) => { // Good mod (other offhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_OTHER_QUIVER);
+		c.categories(CATEGORY.OFF_OTHER_QUIVER);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
@@ -269,7 +269,7 @@ function otherWeapons(filter) {
 		c.goodModOffhand(true);
 	}, (c) => { // Good mod (other offhand)
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF_OTHER_BLOCK);
+		c.categories(CATEGORY.OFF_OTHER_BLOCK);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -284,7 +284,7 @@ function classArmour(filter) {
 	// Normal
 	filter.multiBlock((c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.BODY);
+		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(65, OPERATOR.GTE);
@@ -292,7 +292,7 @@ function classArmour(filter) {
 		c.onlyEnergyShield();
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -305,7 +305,7 @@ function classArmour(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.BODY);
+		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(65, OPERATOR.GTE);
@@ -314,7 +314,7 @@ function classArmour(filter) {
 		c.onlyEnergyShield();
 	}, (c) => { // Low tier
 		c.continue();
-		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -327,7 +327,7 @@ function classArmour(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.BODY);
+		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(65, OPERATOR.GTE);
@@ -336,7 +336,7 @@ function classArmour(filter) {
 		c.onlyEnergyShield();
 	}, (c) => { // Max tier
 		c.continue();
-		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -345,7 +345,7 @@ function classArmour(filter) {
 		c.onlyEnergyShield();
 	}, (c) => { // Good mod (class)
 		c.continue();
-		c.category = new Comparison(CATEGORY.BODY);
+		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(65, OPERATOR.GTE);
@@ -354,7 +354,7 @@ function classArmour(filter) {
 		c.goodModArmour();
 	}, (c) => { // Good mod (class)
 		c.continue();
-		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -368,7 +368,7 @@ function classArmour(filter) {
 	// Rare
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.BODY);
+		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(65, OPERATOR.GTE);
@@ -376,7 +376,7 @@ function classArmour(filter) {
 		c.onlyEnergyShield();
 	}, (c) => { // Low tier
 		c.continue();
-		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -388,7 +388,7 @@ function classArmour(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.BODY);
+		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(65, OPERATOR.GTE);
@@ -397,7 +397,7 @@ function classArmour(filter) {
 		c.onlyEnergyShield();
 	}, (c) => { // Max tier
 		c.continue();
-		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -406,7 +406,7 @@ function classArmour(filter) {
 		c.onlyEnergyShield();
 	}, (c) => { // Good mod (class)
 		c.continue();
-		c.category = new Comparison(CATEGORY.BODY);
+		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(65, OPERATOR.GTE);
@@ -415,7 +415,7 @@ function classArmour(filter) {
 		c.goodModArmour();
 	}, (c) => { // Good mod (class)
 		c.continue();
-		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -431,7 +431,7 @@ function otherArmour(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison(CATEGORY.BODY);
+		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(65, OPERATOR.GTE);
@@ -440,7 +440,7 @@ function otherArmour(filter) {
 		c.goodModArmour(true);
 	}, (c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison(CATEGORY.BODY);
+		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(65, OPERATOR.GTE);
@@ -449,7 +449,7 @@ function otherArmour(filter) {
 		c.goodModArmour(true);
 	}, (c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -458,7 +458,7 @@ function otherArmour(filter) {
 		c.goodModArmour(true);
 	}, (c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -467,7 +467,7 @@ function otherArmour(filter) {
 		c.goodModArmour(true);
 	}, (c) => { // Good mod (other boots)
 		c.continue();
-		c.category = new Comparison(CATEGORY.BOOTS);
+		c.categories(CATEGORY.BOOTS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -480,7 +480,7 @@ function otherArmour(filter) {
 	// Rare
 	filter.multiBlock((c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison(CATEGORY.BODY);
+		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(65, OPERATOR.GTE);
@@ -488,7 +488,7 @@ function otherArmour(filter) {
 		c.goodModArmour(true);
 	}, (c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison(CATEGORY.BODY);
+		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(65, OPERATOR.GTE);
@@ -496,7 +496,7 @@ function otherArmour(filter) {
 		c.goodModArmour(true);
 	}, (c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -504,7 +504,7 @@ function otherArmour(filter) {
 		c.goodModArmour(true);
 	}, (c) => { // Good mod (other top)
 		c.continue();
-		c.category = new Comparison([CATEGORY.HELMET, CATEGORY.GLOVE]);
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -512,7 +512,7 @@ function otherArmour(filter) {
 		c.goodModArmour(true);
 	}, (c) => { // Good mod (other boots)
 		c.continue();
-		c.category = new Comparison(CATEGORY.BOOTS);
+		c.categories(CATEGORY.BOOTS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.dropLevel = new Comparison(80, OPERATOR.GTE);
@@ -527,7 +527,7 @@ function classUncommon(filter) {
 	filter.multiBlock((c) => { // Good base
 		c.continue();
 		c.goodBase();
-		c.category = new Comparison(CATEGORY.CHARM);
+		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 		// Any drop level
@@ -535,7 +535,7 @@ function classUncommon(filter) {
 	}, (c) => { // Good base
 		c.continue();
 		c.goodBase();
-		c.category = new Comparison(CATEGORY.JEWELLERY);
+		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
@@ -547,7 +547,7 @@ function classUncommon(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.CHARM);
+		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 		// Any drop level
@@ -555,7 +555,7 @@ function classUncommon(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Low tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.JEWELLERY);
+		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
@@ -567,7 +567,7 @@ function classUncommon(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.CHARM);
+		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 		// Any drop level
@@ -575,7 +575,7 @@ function classUncommon(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Max tier
 		c.continue();
-		c.category = new Comparison(CATEGORY.JEWELLERY);
+		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
@@ -584,7 +584,7 @@ function classUncommon(filter) {
 	}, (c) => { // Good base
 		c.continue();
 		c.goodBase();
-		c.category = new Comparison(CATEGORY.CHARM);
+		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 		// Any drop level
@@ -592,14 +592,14 @@ function classUncommon(filter) {
 	}, (c) => { // Good base
 		c.continue();
 		c.goodBase();
-		c.category = new Comparison(CATEGORY.JEWELLERY);
+		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
 		c.isCorrupted = false;
 	}, (c) => { // Good mod (class jewellery)
 		c.continue();
-		c.category = new Comparison(CATEGORY.JEWELLERY);
+		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		// Any drop level
@@ -614,7 +614,7 @@ function otherUncommon(filter) {
 	// Normal
 	filter.multiBlock((c) => { // Belts
 		c.continue();
-		c.category = new Comparison(CATEGORY.BELT);
+		c.categories(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		// Any ilvl
 		// Any drop level
@@ -627,7 +627,7 @@ function otherUncommon(filter) {
 function jewels(filter) {
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.JEWEL);
+		c.categories(CATEGORY.JEWEL);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
 		e.colourAugment(PAIR_JEWEL).sizeAugment();
@@ -635,7 +635,7 @@ function jewels(filter) {
 
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.JEWEL);
+		c.categories(CATEGORY.JEWEL);
 		c.rarity = new Comparison(RARITY.RARE);
 
 		e.colourExalt(PAIR_JEWEL).sizeAugment();
@@ -643,7 +643,7 @@ function jewels(filter) {
 
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.JEWEL);
+		c.categories(CATEGORY.JEWEL);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
 		e.colourChance(PAIR_JEWEL).sizeChance();
@@ -653,7 +653,7 @@ function jewels(filter) {
 function waystones(filter) {
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.WAYSTONE);
+		c.categories(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
 		e.colourWisdom(PAIR_QUESTLIKE).sizeChance();
@@ -661,7 +661,7 @@ function waystones(filter) {
 
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.WAYSTONE);
+		c.categories(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
 		e.colourAugment(PAIR_QUESTLIKE).sizeChance();
@@ -669,7 +669,7 @@ function waystones(filter) {
 
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.WAYSTONE);
+		c.categories(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.RARE);
 
 		e.colourExalt(PAIR_QUESTLIKE).sizeChance();
@@ -680,7 +680,7 @@ function waystones(filter) {
 function mechanics(filter) {
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.TABLET);
+		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
 		e.colourWisdom(PAIR_MECHANIC).sizeExalt();
@@ -688,7 +688,7 @@ function mechanics(filter) {
 
 	filter.multiBlock((c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.RELIC);
+		c.categories(CATEGORY.RELIC);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isLowTier();
 	}, (e) => {
@@ -696,12 +696,12 @@ function mechanics(filter) {
 	});
 	filter.multiBlock((c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.RELIC);
+		c.categories(CATEGORY.RELIC);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isMaxTier();
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.TABLET);
+		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.MAGIC);
 	}, (e) => {
 		e.colourAugment(PAIR_MECHANIC).sizeExalt();
@@ -709,7 +709,7 @@ function mechanics(filter) {
 
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.TABLET);
+		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.RARE);
 
 		e.colourExalt(PAIR_MECHANIC).sizeExalt();
@@ -717,7 +717,7 @@ function mechanics(filter) {
 
 	filter.block((c, e) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.TABLET, CATEGORY.RELIC]);
+		c.categories(CATEGORY.TABLET, CATEGORY.RELIC);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
 		e.colourChance(PAIR_MECHANIC).sizeChance();

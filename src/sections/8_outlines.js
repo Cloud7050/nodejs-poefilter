@@ -41,15 +41,15 @@ function corrupted(filter) {
 function bis(filter) {
 	filter.multiBlock((c) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.MAIN_OTHER_CASTER, CATEGORY.CHARM]);
+		c.categories(CATEGORY.MAIN_OTHER_CASTER, CATEGORY.CHARM);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison([CATEGORY.GEAR_COMMON, CATEGORY.JEWELLERY, CATEGORY.BELT]);
+		c.categories(CATEGORY.GEAR_COMMON, CATEGORY.JEWELLERY, CATEGORY.BELT);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.FLASK);
+		c.categories(CATEGORY.FLASK);
 		c.ilvl = new Comparison(83, OPERATOR.GTE);
 	}, (e) => {
 		e.outlineColour = Colour.WHITE;
@@ -61,22 +61,22 @@ function goodMods(filter) {
 	filter.multiBlock((c) => {
 		c.continue();
 		c.goodBase(true);
-		c.category = new Comparison(CATEGORY.GEAR);
+		c.categories(CATEGORY.GEAR);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.MAIN);
+		c.categories(CATEGORY.MAIN);
 		c.goodModMainhand(true);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.OFF);
+		c.categories(CATEGORY.OFF);
 		c.goodModOffhand(true);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.ARMOUR);
+		c.categories(CATEGORY.ARMOUR);
 		c.goodModArmour(true);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.JEWELLERY);
+		c.categories(CATEGORY.JEWELLERY);
 		c.goodModJewellery(true);
 	}, (e) => {
 		e.outlineColour = Colour.RARE;
@@ -89,7 +89,7 @@ function exceptional(filter) {
 	// else it retains the corrupted outline from above
 	filter.multiBlock((c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.CHARM);
+		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.isCorrupted = false;
 		c.hasQuality();
@@ -109,25 +109,25 @@ function exceptional(filter) {
 		c.hasQuality(24);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.categories(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.isCorrupted = false;
 		c.hasSockets(2);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.categories(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.hasSockets(2);
 		c.hasEnchant();
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.categories(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.isCorrupted = false;
 		c.hasSockets(3);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.categories(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.hasSockets(3);
 		c.hasEnchant();
@@ -138,7 +138,7 @@ function exceptional(filter) {
 
 	filter.multiBlock((c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.CHARM);
+		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isCorrupted = false;
 		c.hasQuality();
@@ -158,25 +158,25 @@ function exceptional(filter) {
 		c.hasQuality(24);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.categories(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isCorrupted = false;
 		c.hasSockets(2);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.categories(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.hasSockets(2);
 		c.hasEnchant();
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.categories(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isCorrupted = false;
 		c.hasSockets(3);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.categories(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.hasSockets(3);
 		c.hasEnchant();
@@ -187,7 +187,7 @@ function exceptional(filter) {
 
 	filter.multiBlock((c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.CHARM);
+		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isCorrupted = false;
 		c.hasQuality();
@@ -207,25 +207,25 @@ function exceptional(filter) {
 		c.hasQuality(24);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.categories(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isCorrupted = false;
 		c.hasSockets(2);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.categories(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.hasSockets(2);
 		c.hasEnchant();
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.categories(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isCorrupted = false;
 		c.hasSockets(3);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.categories(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.hasSockets(3);
 		c.hasEnchant();
@@ -236,7 +236,7 @@ function exceptional(filter) {
 
 	filter.multiBlock((c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.CHARM);
+		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.isCorrupted = false;
 		c.hasQuality();
@@ -256,25 +256,25 @@ function exceptional(filter) {
 		c.hasQuality(24);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.categories(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.isCorrupted = false;
 		c.hasSockets(2);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_ONE);
+		c.categories(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.hasSockets(2);
 		c.hasEnchant();
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.categories(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.isCorrupted = false;
 		c.hasSockets(3);
 	}, (c) => {
 		c.continue();
-		c.category = new Comparison(CATEGORY.SOCKET_TWO);
+		c.categories(CATEGORY.SOCKET_TWO);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.hasSockets(3);
 		c.hasEnchant();

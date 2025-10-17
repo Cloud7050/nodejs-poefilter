@@ -15,70 +15,70 @@ export function sectionSocketables(filter) {
 function runes(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes1(null, 1));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourWisdom(PAIR_SOCKETABLE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes1(1, 20));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourWisdom(PAIR_SOCKETABLE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes1(1, 20));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourWisdom(PAIR_SOCKETABLE).sizeChance();
 	});
 
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes2(null, 1));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourAugment(PAIR_SOCKETABLE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes2(1, 20));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourAugment(PAIR_SOCKETABLE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes2(20));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourAugment(PAIR_SOCKETABLE).sizeChance();
 	});
 
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes3());
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourExalt(PAIR_SOCKETABLE).sizeAugment();
 	});
 
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes4(null, 1));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourChance(PAIR_SOCKETABLE).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes4(1, 20));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourChance(PAIR_SOCKETABLE).sizeExalt();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes4(20, DIV));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourChance(PAIR_SOCKETABLE).sizeChance();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getRunes4(DIV));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourDivine(PAIR_SOCKETABLE).sizeDivine();
 	});
@@ -87,13 +87,13 @@ function runes(filter) {
 function other(filter) {
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getSocketables(null, DIV));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourChance(PAIR_SOCKETABLE).sizeChance();
 	});
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getSocketables(DIV));
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourDivine(PAIR_SOCKETABLE).sizeDivine();
 	});
@@ -101,7 +101,7 @@ function other(filter) {
 
 function base(filter) {
 	filter.block((c, e) => {
-		c.category = new Comparison(CATEGORY.SOCKETABLE);
+		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourExalt(PAIR_SOCKETABLE).sizeExalt();
 	});
