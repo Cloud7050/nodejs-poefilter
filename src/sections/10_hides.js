@@ -22,11 +22,13 @@ function classWeapons(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Class mainhands: Wrong skill base
-		c.names = new Comparison(NameManager.getMainClassLow());
+		c.names = new Comparison(NameManager.getMainClassOther());
 		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		// Allow wrong skill bases if they are BiS ilvl
+		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Class offhands: Bad base
-		c.names = new Comparison(NameManager.getOffClassLow());
+		c.names = new Comparison(NameManager.getOffClassBad());
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});
@@ -68,7 +70,7 @@ function classArmour(filter) {
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 		c.onlyEnergyShield();
 	}, (c) => { // Class armour: Bad base
-		c.names = new Comparison(NameManager.getArmourClassLow());
+		c.names = new Comparison(NameManager.getArmourClassBad());
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});
@@ -147,10 +149,12 @@ function classUncommon(filter) {
 		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isLowTier(3);
-	}, (c) => { // Jewellery: Bad base
+	}, (c) => { // Jewellery: Wrong base
 		c.names = new Comparison(NameManager.getJewelleryOther());
 		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		// Allow wrong bases if they are BiS ilvl
+		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Flasks: Bad base
 		c.names = new Comparison(NameManager.getFlasksBad());
 		c.categories(CATEGORY.FLASK);

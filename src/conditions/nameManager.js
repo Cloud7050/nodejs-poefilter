@@ -473,7 +473,7 @@ export class NameManager {
 		).filter(min, max);
 	}
 
-	static getMainClassLow() {
+	static getMainClassOther() {
 		return new NameManager(
 			// https://poe2db.tw/us/Sceptres#SceptresItem
 			"Stoic Sceptre", // Discipline
@@ -482,7 +482,7 @@ export class NameManager {
 			"Wrath Sceptre", // Fulmination
 		);
 	}
-	static getOffClassLow() {
+	static getOffClassBad() {
 		return new NameManager(
 			// https://poe2db.tw/us/Foci#FociItem
 			"Twig Focus", // 12 ES
@@ -504,7 +504,7 @@ export class NameManager {
 			// "Tasalian Focus", // 68 ES, L80
 		);
 	}
-	static getArmourClassLow() {
+	static getArmourClassBad() {
 		return new NameManager(
 			// https://poe2db.tw/us/Helmets
 			"Twig Circlet", // 19 ES

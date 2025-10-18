@@ -2896,6 +2896,7 @@ Hide
 	BaseType == "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre" "Wrath Sceptre"
 	Class == Sceptres
 	Rarity < Unique
+	ItemLevel < 82
 
 	#
 
@@ -3085,6 +3086,7 @@ Hide
 	BaseType == "Crimson Amulet" "Iron Ring" "Emerald Ring" "Unset Ring"
 	Class == Amulets Rings
 	Rarity < Unique
+	ItemLevel < 82
 
 	#
 
