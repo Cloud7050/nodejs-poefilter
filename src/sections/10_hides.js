@@ -3,85 +3,177 @@ import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 
-//TODO account for everything here except for whitelisted traits
 export function sectionHides(filter) {
-	filter.multiBlock((c) => { // Normal/magic class mainhands but are wrong skill
+	classWeapons(filter);
+	otherWeapons(filter);
+	classArmour(filter);
+	otherArmour(filter);
+	classUncommon(filter);
+	otherUncommon(filter);
+}
+
+function classWeapons(filter) {
+	filter.multiHide((c) => { // Class weapons: Remaining corrupts
+		c.categories(CATEGORY.WEAPON_CLASS);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.isCorrupted = true;
+	}, (c) => { // Class weapons: Too low ilvl
+		c.categories(CATEGORY.WEAPON_CLASS);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
+	}, (c) => { // Class mainhands: Wrong skill base
 		c.names = new Comparison(NameManager.getMainClassLow());
 		c.categories(CATEGORY.MAIN_CLASS);
-		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
-	}, (c) => { // Rare class mainhands but are wrong skill & low wisdom tier
-		c.names = new Comparison(NameManager.getMainClassLow());
-		c.categories(CATEGORY.MAIN_CLASS);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.isLowTier();
-	}, (c) => { // Normal/magic class offhands but are low bases
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	}, (c) => { // Class offhands: Bad base
 		c.names = new Comparison(NameManager.getOffClassLow());
 		c.categories(CATEGORY.OFF_CLASS);
-		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
-	}, (c) => { // Rare class offhands but are low bases & low wisdom tier
-		c.names = new Comparison(NameManager.getOffClassLow());
-		c.categories(CATEGORY.OFF_CLASS);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.isLowTier();
-	}, (c) => { // Normal/magic other weapons
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	});
+}
+
+function otherWeapons(filter) {
+	filter.multiHide((c) => { // Other weapons: Remaining corrupts
 		c.categories(CATEGORY.WEAPON_OTHER);
-		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
-	}, (c) => { // Rare other weapons that are low wisdom tier
-		c.categories(CATEGORY.WEAPON_OTHER);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.isLowTier();
-	}, (c) => { // Normal/magic class armour tops but are low bases
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.isCorrupted = true;
+	}, (c) => { // Other caster mainhands: Too low ilvl
+		c.categories(CATEGORY.MAIN_OTHER_CASTER);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.ilvl = new Comparison(81, OPERATOR.LT);
+	}, (c) => { // Other attacker mainhands / offhands: Too low ilvl
+		c.categories(CATEGORY.MAIN_OTHER_ATTACKER, CATEGORY.OFF_OTHER);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
+	}, (c) => { // Other attacker mainhands: Bad base
+		c.categories(CATEGORY.MAIN_OTHER_ATTACKER);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.dropLevel = new Comparison(77, OPERATOR.LT);
+	}, (c) => { // Other shields: Bad base
+		c.categories(CATEGORY.OFF_OTHER_BLOCK);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.dropLevel = new Comparison(80, OPERATOR.LT);
+	});
+}
+
+function classArmour(filter) {
+	filter.multiHide((c) => { // Class armour: Remaining corrupts
+		c.categories(CATEGORY.ARMOUR_TOP);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.isCorrupted = true;
+		c.onlyEnergyShield();
+	}, (c) => { // Class armour: Too low ilvl
+		c.categories(CATEGORY.ARMOUR_TOP);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
+		c.onlyEnergyShield();
+	}, (c) => { // Class armour: Bad base
 		c.names = new Comparison(NameManager.getArmourClassLow());
 		c.categories(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
-	}, (c) => { // Rare class armour tops but are low bases & low wisdom tier
-		c.names = new Comparison(NameManager.getArmourClassLow());
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	});
+}
+
+function otherArmour(filter) {
+	filter.multiHide((c) => { // Other armour (armour): Remaining corrupts
 		c.categories(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.isLowTier();
-	}, (c) => { // Normal/magic other armour
-		c.categories(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.isCorrupted = true;
 		c.hasArmour();
-	}, (c) => {
+	}, (c) => { // Other armour (evasion): Remaining corrupts
 		c.categories(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.isCorrupted = true;
 		c.hasEvasion();
-	}, (c) => {
-		// Class doesn't use most boots, it uses unique
+	}, (c) => { // Boots: Remaining corrupts
 		c.categories(CATEGORY.BOOTS);
-		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
-	}, (c) => { // Rare other armour that is low wisdom tier
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.isCorrupted = true;
+	}, (c) => { // Other armour (armour): Too low ilvl
 		c.categories(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.isLowTier();
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
 		c.hasArmour();
-	}, (c) => {
+	}, (c) => { // Other armour (evasion): Too low ilvl
 		c.categories(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.isLowTier();
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
 		c.hasEvasion();
-	}, (c) => {
+	}, (c) => { // Boots: Too low ilvl
 		c.categories(CATEGORY.BOOTS);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
+	}, (c) => { // Other body (armour): Bad base
+		c.categories(CATEGORY.BODY);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.dropLevel = new Comparison(65, OPERATOR.LT);
+		c.hasArmour();
+	}, (c) => { // Other body (evasion): Bad base
+		c.categories(CATEGORY.BODY);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.dropLevel = new Comparison(65, OPERATOR.LT);
+		c.hasEvasion();
+	}, (c) => { // Other helmets/gloves (armour): Bad base
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.dropLevel = new Comparison(80, OPERATOR.LT);
+		c.hasArmour();
+	}, (c) => { // Other helmets/gloves (evasion): Bad base
+		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.dropLevel = new Comparison(80, OPERATOR.LT);
+		c.hasEvasion();
+	}, (c) => { // Boots: Bad base
+		c.categories(CATEGORY.BOOTS);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.dropLevel = new Comparison(80, OPERATOR.LT);
+	});
+}
+
+function classUncommon(filter) {
+	filter.multiHide((c) => { // Class uncommons: Remaining corrupts
+		c.categories(CATEGORY.JEWELLERY, CATEGORY.CHARGED);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.isCorrupted = true;
+	}, (c) => { // Charged: Too low ilvl
+		c.categories(CATEGORY.CHARGED);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.ilvl = new Comparison(67, OPERATOR.LT);
+	}, (c) => { // Jewellery: Too low ilvl
+		c.categories(CATEGORY.JEWELLERY);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.ilvl = new Comparison(75, OPERATOR.LT);
+	}, (c) => { // Jewellery: Too low wisdom tier
+		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.RARE);
-		c.isLowTier();
-	}, (c) => { // Normal/magic other jewellery
+		c.isLowTier(3);
+	}, (c) => { // Jewellery: Bad base
 		c.names = new Comparison(NameManager.getJewelleryOther());
 		c.categories(CATEGORY.JEWELLERY);
-		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
-	}, (c) => { // Magic belts
-		// Class doesn't use most belts, it uses unique
-		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.MAGIC);
-	}, (c) => { // Rare belts that are low wisdom tier
-		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.isLowTier();
-	}, (c) => { // Bad normal/magic flasks
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	}, (c) => { // Flasks: Bad base
 		c.names = new Comparison(NameManager.getFlasksBad());
 		c.categories(CATEGORY.FLASK);
-		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LTE);
-	}, (e) => {
-		e.hide();
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	});
+}
+
+function otherUncommon(filter) {
+	filter.multiHide((c) => { // Belts: Remaining corrupts
+		c.categories(CATEGORY.BELT);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.isCorrupted = true;
+	}, (c) => { // Belts: Too low ilvl
+		c.categories(CATEGORY.BELT);
+		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LT);
+		c.ilvl = new Comparison(71, OPERATOR.LT);
+	}, (c) => { // Belts: Too low ilvl
+		c.categories(CATEGORY.BELT);
+		c.rarity = new Comparison(RARITY.RARE, OPERATOR.LT);
+		c.ilvl = new Comparison(71, OPERATOR.LT);
+	}, (c) => { // Belts: Too low wisdom tier
+		c.categories(CATEGORY.BELT);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.isLowTier(3);
 	});
 }

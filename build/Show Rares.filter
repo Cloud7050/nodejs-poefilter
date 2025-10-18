@@ -2802,7 +2802,6 @@ Show
 Show
 	Class == Charms
 	Quality >= 1
-	Corrupted False
 
 	#
 
@@ -2824,7 +2823,15 @@ Show
 	#
 
 Show
-	Rarity >= Rare
+	Rarity == Rare
+	Corrupted True
+	AnyEnchantment True
+	HasExplicitMod >=4 a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+	#
+
+Show
+	Rarity == Unique
 	Corrupted True
 	AnyEnchantment True
 
@@ -2877,129 +2884,246 @@ Show
 	#
 
 Hide
-	BaseType == "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre" "Wrath Sceptre"
-	Class == Sceptres
-	Rarity <= Magic
+	Class == Sceptres Foci
+	Rarity < Unique
+	Corrupted True
+
+	#
+
+Hide
+	Class == Sceptres Foci
+	Rarity < Unique
+	ItemLevel < 82
 
 	#
 
 Hide
 	BaseType == "Stoic Sceptre" "Omen Sceptre" "Shrine Sceptre" "Wrath Sceptre"
 	Class == Sceptres
-	Rarity == Rare
-	UnidentifiedItemTier <= 4
+	Rarity < Unique
 
 	#
 
 Hide
 	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus" "Sacred Focus"
 	Class == Foci
-	Rarity <= Magic
-
-	#
-
-Hide
-	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus" "Sacred Focus"
-	Class == Foci
-	Rarity == Rare
-	UnidentifiedItemTier <= 4
+	Rarity < Unique
 
 	#
 
 Hide
 	Class == Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
-	Rarity <= Magic
+	Rarity < Unique
+	Corrupted True
 
 	#
 
 Hide
-	Class == Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
-	Rarity == Rare
-	UnidentifiedItemTier <= 4
+	Class == Wands Staves
+	Rarity < Unique
+	ItemLevel < 81
+
+	#
+
+Hide
+	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
+	Rarity < Unique
+	ItemLevel < 82
+
+	#
+
+Hide
+	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	Rarity < Unique
+	DropLevel < 77
+
+	#
+
+Hide
+	Class == Bucklers Shields
+	Rarity < Unique
+	DropLevel < 80
+
+	#
+
+Hide
+	Class == Helmets "Body Armours" Gloves
+	Rarity < Unique
+	Corrupted True
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
+
+	#
+
+Hide
+	Class == Helmets "Body Armours" Gloves
+	Rarity < Unique
+	ItemLevel < 82
+	BaseEnergyShield > 0
+	BaseArmour == 0
+	BaseEvasion == 0
 
 	#
 
 Hide
 	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Skycrown Tiara" "Sorcerous Tiara" "Kamasan Tiara" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "River Raiment" "Adherent's Raiment" "Ceremonial Robe" "Feathered Raiment" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves" "Grim Gloves" "Opulent Gloves" "Vaal Gloves"
 	Class == Helmets "Body Armours" Gloves
-	Rarity <= Magic
-
-	#
-
-Hide
-	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Skycrown Tiara" "Sorcerous Tiara" "Kamasan Tiara" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "River Raiment" "Adherent's Raiment" "Ceremonial Robe" "Feathered Raiment" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves" "Grim Gloves" "Opulent Gloves" "Vaal Gloves"
-	Class == Helmets "Body Armours" Gloves
-	Rarity == Rare
-	UnidentifiedItemTier <= 4
+	Rarity < Unique
 
 	#
 
 Hide
 	Class == Helmets "Body Armours" Gloves
-	Rarity <= Magic
+	Rarity < Unique
+	Corrupted True
 	BaseArmour > 0
 
 	#
 
 Hide
 	Class == Helmets "Body Armours" Gloves
-	Rarity <= Magic
+	Rarity < Unique
+	Corrupted True
 	BaseEvasion > 0
 
 	#
 
 Hide
 	Class == Boots
-	Rarity <= Magic
+	Rarity < Unique
+	Corrupted True
 
 	#
 
 Hide
 	Class == Helmets "Body Armours" Gloves
-	Rarity == Rare
-	UnidentifiedItemTier <= 4
+	Rarity < Unique
+	ItemLevel < 82
 	BaseArmour > 0
 
 	#
 
 Hide
 	Class == Helmets "Body Armours" Gloves
-	Rarity == Rare
-	UnidentifiedItemTier <= 4
+	Rarity < Unique
+	ItemLevel < 82
 	BaseEvasion > 0
 
 	#
 
 Hide
 	Class == Boots
+	Rarity < Unique
+	ItemLevel < 82
+
+	#
+
+Hide
+	Class == "Body Armours"
+	Rarity < Unique
+	DropLevel < 65
+	BaseArmour > 0
+
+	#
+
+Hide
+	Class == "Body Armours"
+	Rarity < Unique
+	DropLevel < 65
+	BaseEvasion > 0
+
+	#
+
+Hide
+	Class == Helmets Gloves
+	Rarity < Unique
+	DropLevel < 80
+	BaseArmour > 0
+
+	#
+
+Hide
+	Class == Helmets Gloves
+	Rarity < Unique
+	DropLevel < 80
+	BaseEvasion > 0
+
+	#
+
+Hide
+	Class == Boots
+	Rarity < Unique
+	DropLevel < 80
+
+	#
+
+Hide
+	Class == Amulets Rings "Life Flasks" "Mana Flasks" Charms
+	Rarity < Unique
+	Corrupted True
+
+	#
+
+Hide
+	Class == "Life Flasks" "Mana Flasks" Charms
+	Rarity < Unique
+	ItemLevel < 67
+
+	#
+
+Hide
+	Class == Amulets Rings
+	Rarity < Unique
+	ItemLevel < 75
+
+	#
+
+Hide
+	Class == Amulets Rings
 	Rarity == Rare
-	UnidentifiedItemTier <= 4
+	UnidentifiedItemTier <= 3
 
 	#
 
 Hide
 	BaseType == "Crimson Amulet" "Iron Ring" "Emerald Ring" "Unset Ring"
 	Class == Amulets Rings
-	Rarity <= Magic
-
-	#
-
-Hide
-	Class == Belts
-	Rarity == Magic
-
-	#
-
-Hide
-	Class == Belts
-	Rarity == Rare
-	UnidentifiedItemTier <= 4
+	Rarity < Unique
 
 	#
 
 Hide
 	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
-	Rarity <= Magic
+	Rarity < Unique
+
+	#
+
+Hide
+	Class == Belts
+	Rarity < Unique
+	Corrupted True
+
+	#
+
+Hide
+	Class == Belts
+	Rarity < Magic
+	ItemLevel < 71
+
+	#
+
+Hide
+	Class == Belts
+	Rarity < Rare
+	ItemLevel < 71
+
+	#
+
+Hide
+	Class == Belts
+	Rarity == Rare
+	UnidentifiedItemTier <= 3
 
 	#

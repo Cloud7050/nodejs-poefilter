@@ -54,9 +54,7 @@ function outline(filter) {
 
 	// Corrupted/exceptional
 	filter.multiWhitelist((c) => { // Quality charm
-		// If corrupted, require already overcapped quality below
 		c.categories(CATEGORY.CHARM);
-		c.isCorrupted = false;
 		c.hasQuality();
 	}, (c) => { // Excess quality
 		c.hasQuality(21);
@@ -69,47 +67,19 @@ function outline(filter) {
 	});
 
 	// Corrupted
-	filter.multiWhitelist((c) => { // Enchanted rare+
-		c.rarity = new Comparison(RARITY.RARE, OPERATOR.GTE);
+	filter.multiWhitelist((c) => { // Enchanted rare with at least 4 mods
+		c.rarity = new Comparison(RARITY.RARE);
+		c.hasEnchant();
+		c.hasModCount(4, OPERATOR.GTE);
+	}, (c) => { // Enchanted unique
+		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.hasEnchant();
 	}, (c) => { // Corrupted unique (potentially sanctified)
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.isCorrupted = true;
 	});
 
-	// BiS ilvl works via explicit blacklist in hides section, alongside sizing whitelist in rarity section
-	//TODO
-	// filter.multiBlock((c) => {
-	// 	c.categories([CATEGORY.MAIN_OTHER_CASTER, CATEGORY.CHARM]);
-	// 	c.ilvl = new Comparison(81, OPERATOR.GTE);
-	// }, (c) => {
-	// 	// Outline as BiS regardless of drop level, but don't whitelist yet
-	// 	c.continue();
-	// 	// c.categories([CATEGORY.WEAPON_CLASS, CATEGORY.MAIN_OTHER_ATTACKER, CATEGORY.OFF_OTHER, CATEGORY.ARMOUR, CATEGORY.JEWELLERY, CATEGORY.BELT]);
-	// 	c.categories([CATEGORY.GEAR_COMMON, CATEGORY.JEWELLERY, CATEGORY.BELT]);
-	// 	c.ilvl = new Comparison(82, OPERATOR.GTE);
-	// }, (c) => {
-	// 	c.categories([CATEGORY.MAIN_CLASS, CATEGORY.OFF_OTHER_QUIVER, CATEGORY.JEWELLERY, CATEGORY.BELT]);
-	// 	c.ilvl = new Comparison(82, OPERATOR.GTE);
-	// }, (c) => {
-	// 	c.categories(CATEGORY.BODY);
-	// 	c.ilvl = new Comparison(82, OPERATOR.GTE);
-	// 	c.dropLevel = new Comparison(65, OPERATOR.GTE);
-	// }, (c) => {
-	// 	c.categories(CATEGORY.MAIN_OTHER_ATTACKER);
-	// 	c.ilvl = new Comparison(82, OPERATOR.GTE);
-	// 	c.dropLevel = new Comparison(77, OPERATOR.GTE);
-	// }, (c) => {
-	// 	c.categories([CATEGORY.OFF_CLASS, CATEGORY.OFF_OTHER_BLOCK, CATEGORY.HELMET, CATEGORY.GLOVE, CATEGORY.BOOTS]);
-	// 	c.ilvl = new Comparison(82, OPERATOR.GTE);
-	// 	c.dropLevel = new Comparison(80, OPERATOR.GTE);
-	// }, (c) => {
-	// 	c.names = new Comparison(NameManager.getFlasksGood());
-	// 	c.categories(CATEGORY.FLASK);
-	// 	c.ilvl = new Comparison(83, OPERATOR.GTE);
-	// }, (e) => {
-	// 	e.outlineColour = Colour.WHITE;
-	// });
+	// BiS ilvl works via explicit blacklist in hides section, alongside specific sizing in rarity section
 
 	// Good base/mods
 	filter.multiWhitelist((c) => {

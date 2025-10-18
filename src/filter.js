@@ -40,6 +40,9 @@ export class Filter {
 		// No effect, so it just exits the filter early
 		this.multiBlock(...callbacks, (_e) => {});
 	}
+	multiHide(...callbacks) {
+		this.multiBlock(...callbacks, (e) => e.hide());
+	}
 
 	save() {
 		let relativeFilePath = `./build/${this.name}.filter`;

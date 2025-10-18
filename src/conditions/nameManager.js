@@ -473,24 +473,6 @@ export class NameManager {
 		).filter(min, max);
 	}
 
-	// static getFlasksGood() {
-	// 	return new NameManager(
-	// 		"Ultimate Life Flask", "Ultimate Mana Flask",
-	// 	);
-	// }
-	static getFlasksBad() {
-		return new NameManager(
-			"Lesser Life Flask", "Lesser Mana Flask",
-			"Medium Life Flask", "Medium Mana Flask",
-			"Greater Life Flask", "Greater Mana Flask",
-			"Grand Life Flask", "Grand Mana Flask",
-			"Giant Life Flask", "Giant Mana Flask",
-			"Colossal Life Flask", "Colossal Mana Flask",
-			"Gargantuan Life Flask", "Gargantuan Mana Flask",
-			"Transcendent Life Flask", "Transcendent Mana Flask",
-		);
-	}
-
 	static getMainClassLow() {
 		return new NameManager(
 			// https://poe2db.tw/us/Sceptres#SceptresItem
@@ -584,6 +566,23 @@ export class NameManager {
 			"Iron Ring", // +1-4 phys damage to attacks
 			"Emerald Ring", // Flat accuracy
 			"Unset Ring", // Skill slot
+		);
+	}
+	// static getFlasksGood() {
+	// 	return new NameManager(
+	// 		"Ultimate Life Flask", "Ultimate Mana Flask",
+	// 	);
+	// }
+	static getFlasksBad() {
+		return new NameManager(
+			"Lesser Life Flask", "Lesser Mana Flask",
+			"Medium Life Flask", "Medium Mana Flask",
+			"Greater Life Flask", "Greater Mana Flask",
+			"Grand Life Flask", "Grand Mana Flask",
+			"Giant Life Flask", "Giant Mana Flask",
+			"Colossal Life Flask", "Colossal Mana Flask",
+			"Gargantuan Life Flask", "Gargantuan Mana Flask",
+			"Transcendent Life Flask", "Transcendent Mana Flask",
 		);
 	}
 

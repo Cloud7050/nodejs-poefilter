@@ -73,8 +73,8 @@ export class ConditionSet {
 		return this;
 	}
 
-	isLowTier() {
-		this.wisdomTier = new Comparison(4, OPERATOR.LTE);
+	isLowTier(maximum = 4) {
+		this.wisdomTier = new Comparison(maximum, OPERATOR.LTE);
 		return this;
 	}
 	isMaxTier() {
@@ -110,6 +110,12 @@ export class ConditionSet {
 	}
 	hasEvasion() {
 		this.evasion = new Comparison(0, OPERATOR.GT);
+		return this;
+	}
+
+	hasModCount(count, operator = OPERATOR.EXACT) {
+		const LETTERS = [..."abcdefghijklmnopqrstuvwxyz"];
+		this.mods = new Comparison(LETTERS, operator, count);
 		return this;
 	}
 

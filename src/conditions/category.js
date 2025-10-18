@@ -34,7 +34,9 @@ const ARMOUR = new StringList(ARMOUR_TOP, BOOTS);
 const SOCKET_ONE = new StringList(WEAPON_CLASS, MAIN_OTHER_CASTER_ONE, MAIN_OTHER_ATTACKER_ONE, OFF_OTHER_BLOCK, HELMET, GLOVE, BOOTS);
 const SOCKET_TWO = new StringList(MAIN_OTHER_CASTER_TWO, MAIN_OTHER_ATTACKER_TWO, BODY);
 const GEAR_COMMON = new StringList(WEAPON, ARMOUR);
-const JEWELLERY = new StringList("Amulets", "Rings");
+const AMULET = new StringList("Amulets");
+const RING = new StringList("Rings");
+const JEWELLERY = new StringList(AMULET, RING);
 const BELT = new StringList("Belts");
 const FLASK = new StringList("Life Flasks", "Mana Flasks");
 const CHARM = new StringList("Charms");
@@ -92,6 +94,8 @@ export const CATEGORY = {
 	SOCKET_ONE,
 	SOCKET_TWO,
 	GEAR_COMMON,
+	AMULET,
+	RING,
 	JEWELLERY,
 	BELT,
 	FLASK,
