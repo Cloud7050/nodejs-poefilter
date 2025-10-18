@@ -2940,6 +2940,13 @@ Hide
 	#
 
 Hide
+	BaseType == "Broadhead Quiver" "Fire Quiver" "Sacral Quiver" "Two-Point Quiver" "Blunt Quiver" "Toxic Quiver" "Serrated Quiver"
+	Class == Quivers
+	Rarity < Unique
+
+	#
+
+Hide
 	Class == Bucklers Shields
 	Rarity < Unique
 	DropLevel < 80

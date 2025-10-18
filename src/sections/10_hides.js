@@ -45,9 +45,13 @@ function otherWeapons(filter) {
 		c.categories(CATEGORY.MAIN_OTHER_ATTACKER, CATEGORY.OFF_OTHER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Other attacker mainhands: Bad base
+	}, (c) => { // Other mainhands: Bad base
 		c.names = new Comparison(NameManager.getMainOtherBad());
 		c.categories(CATEGORY.MAIN_OTHER);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	}, (c) => { // Other quivers: Bad base
+		c.names = new Comparison(NameManager.getOffOtherBad());
+		c.categories(CATEGORY.OFF_OTHER_QUIVER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	}, (c) => { // Other shields: Bad base
 		c.categories(CATEGORY.OFF_OTHER_BLOCK);

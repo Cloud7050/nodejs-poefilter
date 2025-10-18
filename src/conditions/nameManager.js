@@ -664,6 +664,22 @@ export class NameManager {
 			// "Ruination Maul", // 113-138 phys, 5% cc, x1.1, L79, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
 		);
 	}
+	static getOffOtherBad() {
+		return new NameManager(
+			// https://poe2db.tw/us/Quivers#QuiversItem
+			"Broadhead Quiver", // Adds 1 to 3 Physical Damage to Attacks
+			"Fire Quiver", // L8, Adds 3 to 5 Fire damage to Attacks
+			"Sacral Quiver", // L16, Gain 2–3 Life per Enemy Hit with Attacks
+			"Two-Point Quiver", // L24, 20–30% increased Accuracy Rating
+			"Blunt Quiver", // L33, 25–40% increased Stun Buildup
+			"Toxic Quiver", // L39, 20–30% chance to Poison on Hit with Attacks
+			"Serrated Quiver", // L44, Attacks have 20–30% chance to cause Bleeding
+			// "Primed Quiver", // L51, 7–10% increased Attack Speed
+			// "Penetrating Quiver", // L55, 100% chance to Pierce an Enemy
+			// "Volant Quiver", // L61, 20–30% increased Arrow Speed
+			// "Visceral Quiver", // L65, 20–30% increased Critical Hit Chance for Attacks
+		);
+	}
 	static getArmourClassOther() {
 		return new NameManager(
 			// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
