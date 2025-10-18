@@ -21,12 +21,6 @@ function classWeapons(filter) {
 		c.categories(CATEGORY.WEAPON_CLASS);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Class mainhands: Wrong skill base
-		c.names = new Comparison(NameManager.getMainClassOther());
-		c.categories(CATEGORY.MAIN_CLASS);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		// Allow wrong skill bases if they are BiS ilvl
-		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Class mainhands: Bad base
 		c.names = new Comparison(NameManager.getMainClassBad());
 		c.categories(CATEGORY.MAIN_CLASS);
