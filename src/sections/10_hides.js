@@ -53,7 +53,7 @@ function otherWeapons(filter) {
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Other attacker mainhands: Bad base
 		c.names = new Comparison(NameManager.getMainOtherBad());
-		c.categories(CATEGORY.MAIN_OTHER_ATTACKER);
+		c.categories(CATEGORY.MAIN_OTHER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	}, (c) => { // Other shields: Bad base
 		c.categories(CATEGORY.OFF_OTHER_BLOCK);

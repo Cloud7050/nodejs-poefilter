@@ -511,6 +511,26 @@ export class NameManager {
 	}
 	static getMainOtherBad() {
 		return new NameManager(
+			// https://poe2db.tw/us/Wands#WandsItem
+			// "Withered Wand", // Chaos Bolt
+			"Bone Wand", // Bone Blast
+			// "Attuned Wand", // Mana Drain
+			// "Siphoning Wand", // Power Siphon
+			"Volatile Wand", // Volatile Dead
+			// "Galvanic Wand", // Galvanic Field
+			// "Dueling Wand", // Spellslinger
+
+			// https://poe2db.tw/us/Staves#StavesItem
+			"Ashen Staff", // Firebolt
+			"Gelid Staff", // Freezing Shards
+			// "Voltaic Staff", // Lightning Bolt
+			"Pyrophyte Staff", // Solar Orb
+			// "Chiming Staff", // Sigil of Power
+			// "Reaping Staff", // Reap
+			// "Roaring Staff", // Unleash
+			// "Paralysing Staff", // Enervating Nova
+			// "Sanctified Staff", // Consecrate
+
 			// https://poe2db.tw/us/One_Hand_Maces#OneHandMacesItem
 			"Wooden Club", // 6-10 phys, 5% cc, x1.45
 			"Smithing Hammer", // 5.5-9 phys, 5.5-9 fire, 5% cc, x1.45, L4
