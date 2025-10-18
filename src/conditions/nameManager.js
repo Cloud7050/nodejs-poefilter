@@ -478,8 +478,13 @@ export class NameManager {
 			// https://poe2db.tw/us/Sceptres#SceptresItem
 			"Stoic Sceptre", // Discipline
 			"Omen Sceptre", // Malice
-			"Shrine Sceptre", // Purity of Fire/Ice/Lightning
 			"Wrath Sceptre", // Fulmination
+		);
+	}
+	static getMainClassBad() {
+		return new NameManager(
+			// https://poe2db.tw/us/Sceptres#SceptresItem
+			"Shrine Sceptre", // Purity of Fire/Ice/Lightning
 		);
 	}
 	static getOffClassBad() {
@@ -502,6 +507,141 @@ export class NameManager {
 			"Leyline Focus", // 58 ES, L70
 			"Sacred Focus", // 63 ES, L75
 			// "Tasalian Focus", // 68 ES, L80
+		);
+	}
+	static getMainOtherBad() {
+		return new NameManager(
+			// https://poe2db.tw/us/One_Hand_Maces#OneHandMacesItem
+			"Wooden Club", // 6-10 phys, 5% cc, x1.45
+			"Smithing Hammer", // 5.5-9 phys, 5.5-9 fire, 5% cc, x1.45, L4
+			"Slim Mace", // 11-17 phys, 5% cc, x1.55, L10
+			"Spiked Club", // 15-24 phys, 5% cc, x1.45, L16
+			"Warpick", // 18-24 phys, 7% cc, x1.45, L22
+			"Plated Mace", // 18-38 phys, 5% cc, x1.4, L26
+			"Brigand Mace", // 28-38 phys, 5% cc, x1.45, L33
+			"Construct Hammer", // 31-38 phys, 5% cc, x1.4, L36, 40% chance to Daze on Hit
+			"Morning Star", // 33-49 phys, 6.5% cc, x1.45, L45
+			"Jade Club", // 31-51 phys, 5% cc, x1.45, L49, Always Hits
+			"Marching Mace", // 33-69 phys, 5% cc, x1.4, L54
+			"Bandit Mace", // 45-61 phys, 5% cc, x1.45, L59
+			"Structured Hammer", // 49-60 phys, 5% cc, x1.4, L62, 40% chance to Daze on Hit
+			"Flanged Mace", // 45-67 phys, 5% cc, x1.55, L67
+			"Crown Mace", // 43-89 phys, 5% cc, x1.4, L72
+			"Molten Hammer", // 35.5-59 phys, 35.5-59 fire, 5% cc, x1.45, L77
+			// "Marauding Mace", // 51-84 phys, 5% cc, x1.45, L77
+			// "Strife Pick", // 49-66 phys, 7% cc, x1.45, L78, +5–10% to Critical Damage Bonus
+			// "Akoyan Club", // 46-76 phys, 5% cc, x1.45, L78, Always Hits
+			// "Fortified Hammer", // 60-73 phys, 5% cc, x1.4, L79, 40% chance to Daze on Hit
+
+			// https://poe2db.tw/us/Spears#SpearsItem
+			"Hardwood Spear", // 5-9 phys, 5% cc, x1.6
+			"Ironhead Spear", // 7-13 phys, 5% cc, x1.6, L5
+			"Hunting Spear", // 10-18 phys, 5% cc, x1.55, L10, 15–25% chance to Maim on Hit
+			"Winged Spear", // 12-22 phys, 5% cc, x1.65, L16
+			"War Spear", // 14-26 phys, 5% cc, x1.6, L21, 25–35% increased Projectile Speed with this Weapon
+			"Forked Spear", // 17-32 phys, 5% cc, x1.6, L26
+			"Barbed Spear", // 20-38 phys, 6.5% cc, x1.6, L33
+			"Broad Spear", // 26-48 phys, 5% cc, x1.5, L40
+			"Crossblade Spear", // 28-51 phys, 5% cc, x1.55, L45
+			"Seaglass Spear", // 31-57 phys, 7% cc, x1.5, L51
+			"Branched Spear", // 31-58 phys, 5% cc, x1.6, L54
+			"Jagged Spear", // 33-61 phys, 6.5% cc, x1.6, L59
+			"Helix Spear", // 37-68 phys, 5% cc, x1.6, L65
+			"Orichalcum Spear", // 38-70 phys, 5% cc, x1.6, L67
+			"Pronged Spear", // 40-75 phys, 5% cc, x1.6, L72
+			// "Spiked Spear", // 41-76 phys, 6.5% cc, x1.6, L77
+			// "Stalking Spear", // 44-82 phys, 5% cc, x1.55, L77, 15–25% chance to Maim on Hit
+			// "Akoyan Spear", // 43-80 phys, 7% cc, x1.5, L78
+			// "Flying Spear", // 41-76 phys, 5% cc, x1.6, L78, 25–35% increased Projectile Speed with this Weapon
+			// "Grand Spear", // 46-85 phys, 5% cc, x1.5, L79
+
+			// https://poe2db.tw/us/Bows#BowsItem
+			"Crude Bow", // 6-9 phys, x1.2
+			"Shortbow", // 7-14 phys, x1.25, L5
+			"Warden Bow", // 12-18 phys, x1.15, L11, 20–30% chance to Chain an additional time
+			"Recurve Bow", // 15-31 phys, x1.1, L16
+			"Composite Bow", // 19-31 phys, x1.2, L22
+			"Dualstring Bow", // 16-31 phys, x1.1, L28, Bow Attacks fire an additional Arrow
+			"Cultist Bow", // 10-17 phys, 19-37 chaos, x1.2, L33
+			"Zealot Bow", // 31-47 phys, x1.2, L39
+			"Artillery Bow", // 39-72 phys, x1.15, L45, 50% reduced Projectile Range
+			"Tribal Bow", // 38-57 phys, x1.2, L50
+			"Twin Bow", // 32-60 phys, x1.1, L54, Bow Attacks fire an additional Arrow
+			"Adherent Bow", // 21-34 phys, 31-59 chaos, x1.2, L59
+			"Militant Bow", // 46-69 phys, x1.2, L62
+			"Ironwood Shortbow", // 41-76 phys, x1.25, L67
+			"Cavalry Bow", // 49-82 phys, x1.2, L72
+			// "Guardian Bow", // 53-80 phys, x1.15, L77, 20–30% chance to Chain an additional time
+			// "Warmonger Bow", // 56-84 phys, x1.2, L77
+			// "Obliterator Bow", // 62-115 phys, x1.15, L78, 50% reduced Projectile Range
+			// "Gemini Bow", // 39-72 phys, x1.1, L78, Bow Attacks fire an additional Arrow
+			// "Fanatic Bow", // 42-70 phys, 43-71 chaos, x1.2, L79
+
+			// https://poe2db.tw/us/Crossbows#CrossbowsItem
+			"Makeshift Crossbow", // 7-12 phys, 5% cc, x1.6, r0.8
+			"Tense Crossbow", // 8-15 phys, 5% cc, x1.6, r0.85, L4, 20–30% increased Bolt Speed
+			"Sturdy Crossbow", // 11-26 phys, 5% cc, x1.55, r0.75, L10
+			"Varnished Crossbow", // 12-36 phys, 5% cc, x1.6, r0.8, L16
+			"Dyad Crossbow", // 9-37 phys, 5% cc, x1.6, r1.1, L20, Loads an additional bolt
+			"Alloy Crossbow", // 12-50 phys, 5% cc, x1.7, r0.7, L26
+			"Bombard Crossbow", // 14-56 phys, 5% cc, x1.65, r0.75, L33, Grenade Skills Fire an additional Projectile
+			"Construct Crossbow", // 18-72 phys, 5% cc, x1.6, r0.8, L38
+			"Blackfire Crossbow", // 20-80 phys, 7% cc, x1.6, r0.85, L45
+			"Piercing Crossbow", // 21-84 phys, 5% cc, x1.65, r0.85, L50, 20–30% chance to Pierce an Enemy
+			"Twin Crossbow", // 20-82 phys, 5% cc, x1.6, r1.1, L54, Loads an additional bolt
+			"Cannonade Crossbow", // 23-90 phys, 5% cc, x1.65, r0.75, L59, Grenade Skills Fire an additional Projectile
+			"Bleak Crossbow", // 27-109 phys, 5% cc, x1.6, r0.8, L62
+			"Stout Crossbow", // 30-119 phys, 5% cc, x1.55, r0.75, L67
+			"Engraved Crossbow", // 31-124 phys, 5% cc, x1.6, r0.8, L72
+			// "Flexed Crossbow", // 32-127 phys, 5% cc, x1.6, r0.85, L77, 20–30% increased Bolt Speed
+			// "Desolate Crossbow", // 33-132 phys, 5% cc, x1.6, r0.8, L77
+			// "Gemini Crossbow", // 28-112 phys, 5% cc, x1.6, r1.1, L78, Loads an additional bolt
+			// "Elegant Crossbow", // 31-123 phys, 5% cc, x1.65, r0.85, L78, 20–30% chance to Pierce an Enemy
+			// "Siege Crossbow", // 29-115 phys, 5% cc, x1.65, r0.75, L79, Grenade Skills Fire an additional Projectile
+
+			// https://poe2db.tw/us/Quarterstaves#QuarterstavesItem
+			"Wrapped Quarterstaff", // 7-12 phys, 10% cc, x1.4
+			"Long Quarterstaff", // 9-18 phys, 10% cc, x1.4, L4, 16% increased Melee Strike Range with this weapon
+			"Gothic Quarterstaff", // 16-26 phys, 11.5% cc, x1.4, L11
+			"Crackling Quarterstaff", // 5-22 phys, 1-35 lightning, 10% cc, x1.4, L16
+			"Crescent Quarterstaff", // 19-39 phys, 10% cc, x1.5, L20
+			"Steelpoint Quarterstaff", // 28-51 phys, 10% cc, x1.4, L28
+			"Slicing Quarterstaff", // 29-60 phys, 10% cc, x1.4, L33
+			"Barrier Quarterstaff", // 33-55 phys, 10% cc, x1.4, L37, +10–15% to Block chance
+			"Hefty Quarterstaff", // 39-80 phys, 10% cc, x1.35, L45
+			"Smooth Quarterstaff", // 64-87 phys, 0% cc, x1.5, L49
+			"Waxing Quarterstaff", // 39-82 phys, 10% cc, x1.5, L54
+			"Bladed Quarterstaff", // 45-94 phys, 10% cc, x1.4, L59
+			"Guardian Quarterstaff", // 49-82 phys, 10% cc, x1.4, L62, +10–15% to Block chance
+			"Sinister Quarterstaff", // 55-92 phys, 11.5% cc, x1.4, L67
+			"Lunar Quarterstaff", // 50-103 phys, 10% cc, x1.5, L72
+			// "Striking Quarterstaff", // 53-111 phys, 10% cc, x1.4, L77, 16% increased Melee Strike Range with this weapon
+			// "Razor Quarterstaff", // 65-108 phys, 10% cc, x1.4, L77
+			"Dreaming Quarterstaff", // 99-133 phys, 0% cc, x1.5, L78
+			"Bolting Quarterstaff", // 24-97 phys, 1-100 lightning, 10% cc, x1.4, L78
+			// "Aegis Quarterstaff", // 58-97 phys, 10% cc, x1.4, L79, +10–15% to Block chance
+
+			// https://poe2db.tw/us/Two_Hand_Maces#TwoHandMacesItem
+			"Felled Greatclub", // 13-18 phys, 5% cc, x1.1
+			"Oak Greathammer", // 14-26 phys, 5% cc, x1.05, L4, Causes 30–50% increased Stun Buildup
+			"Forge Maul", // 29-39 phys, 5% cc, x1.05, L11
+			"Studded Greatclub", // 32-48 phys, 5% cc, x1.1, L16
+			"Cultist Greathammer", // 32-43 phys, 5% cc, x1.05, L22, Strikes deal Splash damage to targets within 1.5 metres
+			"Temple Maul", // 35-72 phys, 5% cc, x1.2, L28
+			"Leaden Greathammer", // 58-78 phys, 5% cc, x1.1, L33
+			"Crumbling Maul", // 62-75 phys, 5% cc, x1.1, L38, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
+			"Pointed Maul", // 68-102 phys, 6.5% cc, x1.1, L45
+			"Totemic Greatclub", // 73-99 phys, 5% cc, x1.1, L50, Crushes Enemies on Hit
+			"Solemn Maul", // 59-123 phys, 5% cc, x1.2, L54
+			"Heavy Greathammer", // 94-127 phys, 5% cc, x1.1, L59
+			"Disintegrating Maul", // 93-114 phys, 5% cc, x1.1, L62, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
+			"Anvil Maul", // 112-151 phys, 5% cc, x1.05, L67
+			"Sacred Maul", // 76-158 phys, 5% cc, x1.2, L72
+			"Ironwood Greathammer", // 94-174 phys, 5% cc, x1.05, L77, Causes 30–50% increased Stun Buildup
+			// "Massive Greathammer", // 119-161 phys, 5% cc, x1.1, L77
+			// "Tawhoan Greatclub", // 107-145 phys, 5% cc, x1.1, L78, Crushes Enemies on Hit
+			// "Fanatic Greathammer", // 89-120 phys, 5% cc, x1.05, L78, Strikes deal Splash damage to targets within 1.5 metres
+			// "Ruination Maul", // 113-138 phys, 5% cc, x1.1, L79, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
 		);
 	}
 	static getArmourClassBad() {

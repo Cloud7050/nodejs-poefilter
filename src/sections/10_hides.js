@@ -27,6 +27,10 @@ function classWeapons(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		// Allow wrong skill bases if they are BiS ilvl
 		c.ilvl = new Comparison(82, OPERATOR.LT);
+	}, (c) => { // Class mainhands: Bad base
+		c.names = new Comparison(NameManager.getMainClassBad());
+		c.categories(CATEGORY.MAIN_CLASS);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	}, (c) => { // Class offhands: Bad base
 		c.names = new Comparison(NameManager.getOffClassBad());
 		c.categories(CATEGORY.OFF_CLASS);
@@ -48,9 +52,9 @@ function otherWeapons(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Other attacker mainhands: Bad base
+		c.names = new Comparison(NameManager.getMainOtherBad());
 		c.categories(CATEGORY.MAIN_OTHER_ATTACKER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.dropLevel = new Comparison(77, OPERATOR.LT);
 	}, (c) => { // Other shields: Bad base
 		c.categories(CATEGORY.OFF_OTHER_BLOCK);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
