@@ -3131,6 +3131,13 @@ Hide
 
 Hide
 	Class == Belts
+	Rarity == Magic
+	UnidentifiedItemTier <= 3
+
+	#
+
+Hide
+	Class == Belts
 	Rarity == Rare
 	UnidentifiedItemTier <= 3
 
