@@ -150,12 +150,14 @@ function classUncommon(filter) {
 	}, (c) => { // Jewellery: Too low wisdom tier
 		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.RARE);
-		c.isLowTier(3);
+		c.isLowTier(2);
+		// Allow BiS ilvl
+		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Jewellery: Wrong base
 		c.names = new Comparison(NameManager.getJewelleryOther());
 		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		// Allow wrong bases if they are BiS ilvl
+		// Allow BiS ilvl
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Flasks: Bad base
 		c.names = new Comparison(NameManager.getFlasksBad());
@@ -172,18 +174,10 @@ function otherUncommon(filter) {
 	}, (c) => { // Belts (magic): Too low ilvl
 		c.categories(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.MAGIC, OPERATOR.LT);
-		c.ilvl = new Comparison(71, OPERATOR.LT);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Belts (rare): Too low ilvl
 		c.categories(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.RARE, OPERATOR.LT);
-		c.ilvl = new Comparison(71, OPERATOR.LT);
-	}, (c) => { // Belts (magic): Too low wisdom tier
-		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.isLowTier(3);
-	}, (c) => { // Belts (rare): Too low wisdom tier
-		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.isLowTier(3);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
 	});
 }

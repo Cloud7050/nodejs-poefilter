@@ -3089,7 +3089,8 @@ Hide
 Hide
 	Class == Amulets Rings
 	Rarity == Rare
-	UnidentifiedItemTier <= 3
+	ItemLevel < 82
+	UnidentifiedItemTier <= 2
 
 	#
 
@@ -3118,27 +3119,13 @@ Hide
 Hide
 	Class == Belts
 	Rarity < Magic
-	ItemLevel < 71
+	ItemLevel < 82
 
 	#
 
 Hide
 	Class == Belts
 	Rarity < Rare
-	ItemLevel < 71
-
-	#
-
-Hide
-	Class == Belts
-	Rarity == Magic
-	UnidentifiedItemTier <= 3
-
-	#
-
-Hide
-	Class == Belts
-	Rarity == Rare
-	UnidentifiedItemTier <= 3
+	ItemLevel < 82
 
 	#
