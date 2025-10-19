@@ -3113,14 +3113,14 @@ Hide
 
 Hide
 	Class == Belts
-	Rarity < Magic
+	Rarity == Magic
 	ItemLevel < 82
 
 	#
 
 Hide
 	Class == Belts
-	Rarity < Rare
+	Rarity == Rare
 	ItemLevel < 82
 
 	#
