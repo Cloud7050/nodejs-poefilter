@@ -890,10 +890,10 @@ export class NameManager {
 			new Name("Elegant Plate", TIER.BAD), // 315 A, L54
 			new Name("Heavy Plate", TIER.BAD), // 340 A, L59
 			new Name("Stone Cuirass", TIER.BAD), // 355 A, L62
+			new Name("Utzaal Cuirass", TIER.BAD), // 445 A, L75, 30–40% increased Stun Threshold
 
 			new Name("Soldier Cuirass", TIER.OTHER), // 524 A, L65
 			new Name("Ornate Plate", TIER.OTHER), // 445 A, L70, Regenerate 1.5–2.5% of maximum Life per second
-			new Name("Utzaal Cuirass", TIER.OTHER), // 445 A, L75, 30–40% increased Stun Threshold
 			new Name("Warlord Cuirass", TIER.OTHER), // 445 A, L80, +15–25% of Armour also applies to Elemental Damage
 
 			new Name("Leather Vest", TIER.BAD), // 30 V
@@ -909,10 +909,10 @@ export class NameManager {
 			new Name("Layered Vest", TIER.BAD), // 285 V, L54
 			new Name("Runner Vest", TIER.BAD), // 309 V, L59
 			new Name("Lizardscale Coat", TIER.BAD), // 324 V, L62
+			new Name("Swiftstalker Coat", TIER.BAD), // 406 V, L65, 20–30% reduced Slowing Potency of Debuffs on You
+			new Name("Wyrmscale Coat", TIER.BAD), // 406 V, L75, 30–40% increased Elemental Ailment Threshold
 
-			new Name("Swiftstalker Coat", TIER.OTHER), // 406 V, L65, 20–30% reduced Slowing Potency of Debuffs on You
 			new Name("Slipstrike Vest", TIER.OTHER), // 487 V, L70
-			new Name("Wyrmscale Coat", TIER.OTHER), // 406 V, L75, 30–40% increased Elemental Ailment Threshold
 			new Name("Corsair Coat", TIER.OTHER), // 406 V, L80, 10–20% reduced Movement Speed Penalty from using Skills while moving
 
 			new Name("Chain Mail", TIER.BAD), // 25 A, 16 V
@@ -926,11 +926,10 @@ export class NameManager {
 			new Name("Mantled Mail", TIER.BAD), // 173 A, 157 V, L54
 			new Name("Trailblazer Armour", TIER.BAD), // 187 A, 170 V, L59
 			new Name("Golden Mail", TIER.BAD), // 195 A, 178 V, L62
-
-			new Name("Dastard Armour", TIER.OTHER), // 245 A, 223 V, L65, +60–80 to maximum Life
-			new Name("Shrouded Mail", TIER.OTHER), // 245 A, 223 V, L70, +20–25% to Fire/Cold/Lightning Resistance
-			new Name("Death Mail", TIER.OTHER), // 294 A, 268 V, L75
-			new Name("Thane Mail", TIER.OTHER), // 245 A, 223 V, L80, Hits against you have 15–25% reduced Critical Damage Bonus
+			new Name("Dastard Armour", TIER.BAD), // 245 A, 223 V, L65, +60–80 to maximum Life
+			new Name("Shrouded Mail", TIER.BAD), // 245 A, 223 V, L70, +20–25% to Fire/Cold/Lightning Resistance
+			new Name("Death Mail", TIER.BAD), // 294 A, 268 V, L75
+			new Name("Thane Mail", TIER.BAD), // 245 A, 223 V, L80, Hits against you have 15–25% reduced Critical Damage Bonus
 
 			new Name("Pilgrim Vestments", TIER.BAD), // 25 A, 16 ES
 			new Name("Pelt Mantle", TIER.BAD), // 50 A, 23 ES, L10
@@ -943,11 +942,10 @@ export class NameManager {
 			new Name("Occultist Mantle", TIER.BAD), // 173 A, 61 ES, L54
 			new Name("Plated Vestments", TIER.BAD), // 187 A, 65 ES, L59
 			new Name("Heartcarver Mantle", TIER.BAD), // 195 A, 68 ES, L62
-
-			new Name("Wolfskin Mantle", TIER.OTHER), // 294 A, 101 ES, L65
-			new Name("Conjurer Mantle", TIER.OTHER), // 245 A, 84 ES, L70, +20–30 to Spirit
-			new Name("Death Mantle", TIER.OTHER), // 245 A, 84 ES, L75, +1% to all Maximum Elemental Resistances
-			new Name("Seastorm Mantle", TIER.OTHER), // 245 A, 84 ES, L80, 8–14% of Damage taken Recouped as Life
+			new Name("Wolfskin Mantle", TIER.BAD), // 294 A, 101 ES, L65
+			new Name("Conjurer Mantle", TIER.BAD), // 245 A, 84 ES, L70, +20–30 to Spirit
+			new Name("Death Mantle", TIER.BAD), // 245 A, 84 ES, L75, +1% to all Maximum Elemental Resistances
+			new Name("Seastorm Mantle", TIER.BAD), // 245 A, 84 ES, L80, 8–14% of Damage taken Recouped as Life
 
 			new Name("Hermit Garb", TIER.BAD), // 16 V, 16 ES
 			new Name("Waxed Jacket", TIER.BAD), // 43 V, 24 ES, L11
@@ -960,11 +958,11 @@ export class NameManager {
 			new Name("Itinerant Jacket", TIER.BAD), // 157 V, 61 ES, L54
 			new Name("Hatungo Garb", TIER.BAD), // 170 V, 65 ES, L59
 			new Name("Hawker's Jacket", TIER.BAD), // 178 V, 68 ES, L62
+			new Name("Rambler Jacket", TIER.BAD), // 223 V, 84 ES, L70, +7–13% to Chaos Resistance
+			new Name("Austere Garb", TIER.BAD), // 223 V, 84 ES, L80, 10–15% reduced Elemental Ailment Duration on you
 
 			new Name("Sleek Jacket", TIER.OTHER), // 268 V, 101 ES, L65
-			new Name("Rambler Jacket", TIER.OTHER), // 223 V, 84 ES, L70, +7–13% to Chaos Resistance
 			new Name("Falconer's Jacket", TIER.OTHER), // 223 V, 84 ES, L75, 5% increased Movement Speed
-			new Name("Austere Garb", TIER.OTHER), // 223 V, 84 ES, L80, 10–15% reduced Elemental Ailment Duration on you
 
 			// https://poe2db.tw/us/Gloves
 			new Name("Torn Gloves", TIER.BAD), // 9 ES
