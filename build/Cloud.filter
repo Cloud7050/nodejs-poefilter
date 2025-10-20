@@ -1112,10 +1112,10 @@ Show
 	Continue
 
 Show
+	BaseType == "Tasalian Focus"
 	Class == Foci
 	Rarity == Normal
 	ItemLevel >= 82
-	DropLevel >= 80
 	Corrupted False
 
 	SetFontSize 37
@@ -1143,10 +1143,10 @@ Show
 	Continue
 
 Show
+	BaseType == "Tasalian Focus"
 	Class == Foci
 	Rarity == Magic
 	ItemLevel >= 82
-	DropLevel >= 80
 	UnidentifiedItemTier <= 4
 	Corrupted False
 
@@ -1175,10 +1175,10 @@ Show
 	Continue
 
 Show
+	BaseType == "Tasalian Focus"
 	Class == Foci
 	Rarity == Magic
 	ItemLevel >= 82
-	DropLevel >= 80
 	UnidentifiedItemTier == 5
 	Corrupted False
 
@@ -1207,10 +1207,10 @@ Show
 	Continue
 
 Show
+	BaseType == "Tasalian Focus"
 	Class == Foci
 	Rarity == Magic
 	ItemLevel >= 82
-	DropLevel >= 80
 	Corrupted False
 	HasExplicitMod >=1 "of the Enchanter"
 
@@ -1238,10 +1238,10 @@ Show
 	Continue
 
 Show
+	BaseType == "Tasalian Focus"
 	Class == Foci
 	Rarity == Rare
 	ItemLevel >= 82
-	DropLevel >= 80
 	UnidentifiedItemTier <= 4
 
 	SetFontSize 32
@@ -1268,10 +1268,10 @@ Show
 	Continue
 
 Show
+	BaseType == "Tasalian Focus"
 	Class == Foci
 	Rarity == Rare
 	ItemLevel >= 82
-	DropLevel >= 80
 	UnidentifiedItemTier == 5
 
 	SetFontSize 37
@@ -1298,10 +1298,10 @@ Show
 	Continue
 
 Show
+	BaseType == "Tasalian Focus"
 	Class == Foci
 	Rarity == Rare
 	ItemLevel >= 82
-	DropLevel >= 80
 	HasExplicitMod >=1 "of the Enchanter"
 
 	SetFontSize 37

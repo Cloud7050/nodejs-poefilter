@@ -26,7 +26,7 @@ function classWeapons(filter) {
 		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	}, (c) => { // Class offhands: Bad base
-		c.names = new Comparison(NameManager.getOffClassBad());
+		c.names = new Comparison(NameManager.getOffClass(TIER.BAD));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});

@@ -87,10 +87,10 @@ function classWeapons(filter) {
 		c.isCorrupted = false;
 	}, (c) => {
 		c.continue();
+		c.names = new Comparison(NameManager.getOffClass(TIER.CLASS));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isCorrupted = false;
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR).sizeExalt();
@@ -107,10 +107,10 @@ function classWeapons(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Low tier
 		c.continue();
+		c.names = new Comparison(NameManager.getOffClass(TIER.CLASS));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isLowTier();
 		c.isCorrupted = false;
 	}, (e) => {
@@ -127,10 +127,10 @@ function classWeapons(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Max tier
 		c.continue();
+		c.names = new Comparison(NameManager.getOffClass(TIER.CLASS));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isMaxTier();
 		c.isCorrupted = false;
 	}, (c) => { // Good mod (class mainhand)
@@ -143,10 +143,10 @@ function classWeapons(filter) {
 		c.goodModMainhand();
 	}, (c) => { // Good mod (class offhand)
 		c.continue();
+		c.names = new Comparison(NameManager.getOffClass(TIER.CLASS));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isCorrupted = false;
 		c.goodModOffhand();
 	}, (e) => {
@@ -163,10 +163,10 @@ function classWeapons(filter) {
 		c.isLowTier();
 	}, (c) => { // Low tier
 		c.continue();
+		c.names = new Comparison(NameManager.getOffClass(TIER.CLASS));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isLowTier();
 	}, (e) => {
 		e.colourExalt(PAIR_GEAR).sizeAugment();
@@ -181,10 +181,10 @@ function classWeapons(filter) {
 		c.isMaxTier();
 	}, (c) => { // Max tier
 		c.continue();
+		c.names = new Comparison(NameManager.getOffClass(TIER.CLASS));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isMaxTier();
 	}, (c) => { // Good mod (class mainhand)
 		c.continue();
@@ -195,10 +195,10 @@ function classWeapons(filter) {
 		c.goodModMainhand();
 	}, (c) => { // Good mod (class offhand)
 		c.continue();
+		c.names = new Comparison(NameManager.getOffClass(TIER.CLASS));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.goodModOffhand();
 	}, (e) => {
 		e.colourExalt(PAIR_GEAR).sizeExalt();
