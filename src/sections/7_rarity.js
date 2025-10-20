@@ -209,18 +209,18 @@ function otherWeapons(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Good mod (other mainhand)
 		c.continue();
+		c.names = new Comparison(NameManager.getMainOther(TIER.OTHER));
 		c.categories(CATEGORY.MAIN_OTHER_CASTER);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
-		// Any drop level
 		c.isCorrupted = false;
 		c.goodModMainhand(true);
 	}, (c) => { // Good mod (other mainhand)
 		c.continue();
+		c.names = new Comparison(NameManager.getMainOther(TIER.OTHER));
 		c.categories(CATEGORY.MAIN_OTHER_ATTACKER);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(77, OPERATOR.GTE);
 		c.isCorrupted = false;
 		c.goodModMainhand(true);
 	}, (c) => { // Good mod (other offhand)
@@ -246,18 +246,18 @@ function otherWeapons(filter) {
 	// Rare
 	filter.multiBlock((c) => { // Good mod (other mainhand)
 		c.continue();
+		c.names = new Comparison(NameManager.getMainOther(TIER.OTHER));
 		c.categories(CATEGORY.MAIN_OTHER_CASTER);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
-		// Any drop level
 		c.isCorrupted = false;
 		c.goodModMainhand(true);
 	}, (c) => { // Good mod (other mainhand)
 		c.continue();
+		c.names = new Comparison(NameManager.getMainOther(TIER.OTHER));
 		c.categories(CATEGORY.MAIN_OTHER_ATTACKER);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(77, OPERATOR.GTE);
 		c.isCorrupted = false;
 		c.goodModMainhand(true);
 	}, (c) => { // Good mod (other offhand)

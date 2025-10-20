@@ -514,160 +514,168 @@ export class NameManager {
 			new Name("Tasalian Focus", TIER.CLASS), // 68 ES, L80
 		).exact(tier);
 	}
-	static getMainOtherBad() {
+	static getMainOther(tier) {
 		return new NameManager(
 			// https://poe2db.tw/us/Wands#WandsItem
-			// "Withered Wand", // Chaos Bolt
-			"Bone Wand", // Bone Blast
-			// "Attuned Wand", // Mana Drain
-			// "Siphoning Wand", // Power Siphon
-			"Volatile Wand", // Volatile Dead
-			// "Galvanic Wand", // Galvanic Field
-			// "Dueling Wand", // Spellslinger
+			new Name("Bone Wand", TIER.BAD), // Bone Blast
+			new Name("Volatile Wand", TIER.BAD), // Volatile Dead
+
+			new Name("Withered Wand", TIER.OTHER), // Chaos Bolt
+			new Name("Attuned Wand", TIER.OTHER), // Mana Drain
+			new Name("Siphoning Wand", TIER.OTHER), // Power Siphon
+			new Name("Galvanic Wand", TIER.OTHER), // Galvanic Field
+			new Name("Dueling Wand", TIER.OTHER), // Spellslinger
 
 			// https://poe2db.tw/us/Staves#StavesItem
-			"Ashen Staff", // Firebolt
-			"Gelid Staff", // Freezing Shards
-			// "Voltaic Staff", // Lightning Bolt
-			"Pyrophyte Staff", // Solar Orb
-			// "Chiming Staff", // Sigil of Power
-			// "Reaping Staff", // Reap
-			// "Roaring Staff", // Unleash
-			// "Paralysing Staff", // Enervating Nova
-			// "Sanctified Staff", // Consecrate
+			new Name("Ashen Staff", TIER.BAD), // Firebolt
+			new Name("Gelid Staff", TIER.BAD), // Freezing Shards
+			new Name("Pyrophyte Staff", TIER.BAD), // Solar Orb
+
+			new Name("Voltaic Staff", TIER.OTHER), // Lightning Bolt
+			new Name("Chiming Staff", TIER.OTHER), // Sigil of Power
+			new Name("Reaping Staff", TIER.OTHER), // Reap
+			new Name("Roaring Staff", TIER.OTHER), // Unleash
+			new Name("Paralysing Staff", TIER.OTHER), // Enervating Nova
+			new Name("Sanctified Staff", TIER.OTHER), // Consecrate
 
 			// https://poe2db.tw/us/One_Hand_Maces#OneHandMacesItem
-			"Wooden Club", // 6-10 phys, 5% cc, x1.45
-			"Smithing Hammer", // 5.5-9 phys, 5.5-9 fire, 5% cc, x1.45, L4
-			"Slim Mace", // 11-17 phys, 5% cc, x1.55, L10
-			"Spiked Club", // 15-24 phys, 5% cc, x1.45, L16
-			"Warpick", // 18-24 phys, 7% cc, x1.45, L22
-			"Plated Mace", // 18-38 phys, 5% cc, x1.4, L26
-			"Brigand Mace", // 28-38 phys, 5% cc, x1.45, L33
-			"Construct Hammer", // 31-38 phys, 5% cc, x1.4, L36, 40% chance to Daze on Hit
-			"Morning Star", // 33-49 phys, 6.5% cc, x1.45, L45
-			"Jade Club", // 31-51 phys, 5% cc, x1.45, L49, Always Hits
-			"Marching Mace", // 33-69 phys, 5% cc, x1.4, L54
-			"Bandit Mace", // 45-61 phys, 5% cc, x1.45, L59
-			"Structured Hammer", // 49-60 phys, 5% cc, x1.4, L62, 40% chance to Daze on Hit
-			"Flanged Mace", // 45-67 phys, 5% cc, x1.55, L67
-			"Crown Mace", // 43-89 phys, 5% cc, x1.4, L72
-			"Molten Hammer", // 35.5-59 phys, 35.5-59 fire, 5% cc, x1.45, L77
-			// "Marauding Mace", // 51-84 phys, 5% cc, x1.45, L77
-			// "Strife Pick", // 49-66 phys, 7% cc, x1.45, L78, +5–10% to Critical Damage Bonus
-			// "Akoyan Club", // 46-76 phys, 5% cc, x1.45, L78, Always Hits
-			// "Fortified Hammer", // 60-73 phys, 5% cc, x1.4, L79, 40% chance to Daze on Hit
+			new Name("Wooden Club", TIER.BAD), // 6-10 phys, 5% cc, x1.45
+			new Name("Smithing Hammer", TIER.BAD), // 5.5-9 phys, 5.5-9 fire, 5% cc, x1.45, L4
+			new Name("Slim Mace", TIER.BAD), // 11-17 phys, 5% cc, x1.55, L10
+			new Name("Spiked Club", TIER.BAD), // 15-24 phys, 5% cc, x1.45, L16
+			new Name("Warpick",  TIER.BAD), // 18-24 phys, 7% cc, x1.45, L22
+			new Name("Plated Mace", TIER.BAD), // 18-38 phys, 5% cc, x1.4, L26
+			new Name("Brigand Mace", TIER.BAD), // 28-38 phys, 5% cc, x1.45, L33
+			new Name("Construct Hammer", TIER.BAD), // 31-38 phys, 5% cc, x1.4, L36, 40% chance to Daze on Hit
+			new Name("Morning Star", TIER.BAD), // 33-49 phys, 6.5% cc, x1.45, L45
+			new Name("Jade Club", TIER.BAD), // 31-51 phys, 5% cc, x1.45, L49, Always Hits
+			new Name("Marching Mace", TIER.BAD), // 33-69 phys, 5% cc, x1.4, L54
+			new Name("Bandit Mace", TIER.BAD), // 45-61 phys, 5% cc, x1.45, L59
+			new Name("Structured Hammer", TIER.BAD), // 49-60 phys, 5% cc, x1.4, L62, 40% chance to Daze on Hit
+			new Name("Flanged Mace", TIER.BAD), // 45-67 phys, 5% cc, x1.55, L67
+			new Name("Crown Mace", TIER.BAD), // 43-89 phys, 5% cc, x1.4, L72
+			new Name("Molten Hammer", TIER.BAD), // 35.5-59 phys, 35.5-59 fire, 5% cc, x1.45, L77
+
+			new Name("Marauding Mace", TIER.OTHER), // 51-84 phys, 5% cc, x1.45, L77
+			new Name("Strife Pick", TIER.OTHER), // 49-66 phys, 7% cc, x1.45, L78, +5–10% to Critical Damage Bonus
+			new Name("Akoyan Club", TIER.OTHER), // 46-76 phys, 5% cc, x1.45, L78, Always Hits
+			new Name("Fortified Hammer", TIER.OTHER), // 60-73 phys, 5% cc, x1.4, L79, 40% chance to Daze on Hit
 
 			// https://poe2db.tw/us/Spears#SpearsItem
-			"Hardwood Spear", // 5-9 phys, 5% cc, x1.6
-			"Ironhead Spear", // 7-13 phys, 5% cc, x1.6, L5
-			"Hunting Spear", // 10-18 phys, 5% cc, x1.55, L10, 15–25% chance to Maim on Hit
-			"Winged Spear", // 12-22 phys, 5% cc, x1.65, L16
-			"War Spear", // 14-26 phys, 5% cc, x1.6, L21, 25–35% increased Projectile Speed with this Weapon
-			"Forked Spear", // 17-32 phys, 5% cc, x1.6, L26
-			"Barbed Spear", // 20-38 phys, 6.5% cc, x1.6, L33
-			"Broad Spear", // 26-48 phys, 5% cc, x1.5, L40
-			"Crossblade Spear", // 28-51 phys, 5% cc, x1.55, L45
-			"Seaglass Spear", // 31-57 phys, 7% cc, x1.5, L51
-			"Branched Spear", // 31-58 phys, 5% cc, x1.6, L54
-			"Jagged Spear", // 33-61 phys, 6.5% cc, x1.6, L59
-			"Helix Spear", // 37-68 phys, 5% cc, x1.6, L65
-			"Orichalcum Spear", // 38-70 phys, 5% cc, x1.6, L67
-			"Pronged Spear", // 40-75 phys, 5% cc, x1.6, L72
-			// "Spiked Spear", // 41-76 phys, 6.5% cc, x1.6, L77
-			// "Stalking Spear", // 44-82 phys, 5% cc, x1.55, L77, 15–25% chance to Maim on Hit
-			// "Akoyan Spear", // 43-80 phys, 7% cc, x1.5, L78
-			// "Flying Spear", // 41-76 phys, 5% cc, x1.6, L78, 25–35% increased Projectile Speed with this Weapon
-			// "Grand Spear", // 46-85 phys, 5% cc, x1.5, L79
+			new Name("Hardwood Spear", TIER.BAD), // 5-9 phys, 5% cc, x1.6
+			new Name("Ironhead Spear", TIER.BAD), // 7-13 phys, 5% cc, x1.6, L5
+			new Name("Hunting Spear", TIER.BAD), // 10-18 phys, 5% cc, x1.55, L10, 15–25% chance to Maim on Hit
+			new Name("Winged Spear", TIER.BAD), // 12-22 phys, 5% cc, x1.65, L16
+			new Name("War Spear", TIER.BAD), // 14-26 phys, 5% cc, x1.6, L21, 25–35% increased Projectile Speed with this Weapon
+			new Name("Forked Spear", TIER.BAD), // 17-32 phys, 5% cc, x1.6, L26
+			new Name("Barbed Spear", TIER.BAD), // 20-38 phys, 6.5% cc, x1.6, L33
+			new Name("Broad Spear", TIER.BAD), // 26-48 phys, 5% cc, x1.5, L40
+			new Name("Crossblade Spear", TIER.BAD), // 28-51 phys, 5% cc, x1.55, L45
+			new Name("Seaglass Spear", TIER.BAD), // 31-57 phys, 7% cc, x1.5, L51
+			new Name("Branched Spear", TIER.BAD), // 31-58 phys, 5% cc, x1.6, L54
+			new Name("Jagged Spear", TIER.BAD), // 33-61 phys, 6.5% cc, x1.6, L59
+			new Name("Helix Spear", TIER.BAD), // 37-68 phys, 5% cc, x1.6, L65
+			new Name("Orichalcum Spear", TIER.BAD), // 38-70 phys, 5% cc, x1.6, L67
+			new Name("Pronged Spear", TIER.BAD), // 40-75 phys, 5% cc, x1.6, L72
+
+			new Name("Spiked Spear", TIER.OTHER), // 41-76 phys, 6.5% cc, x1.6, L77
+			new Name("Stalking Spear", TIER.OTHER), // 44-82 phys, 5% cc, x1.55, L77, 15–25% chance to Maim on Hit
+			new Name("Akoyan Spear", TIER.OTHER), // 43-80 phys, 7% cc, x1.5, L78
+			new Name("Flying Spear", TIER.OTHER), // 41-76 phys, 5% cc, x1.6, L78, 25–35% increased Projectile Speed with this Weapon
+			new Name("Grand Spear", TIER.OTHER), // 46-85 phys, 5% cc, x1.5, L79
 
 			// https://poe2db.tw/us/Bows#BowsItem
-			"Crude Bow", // 6-9 phys, x1.2
-			"Shortbow", // 7-14 phys, x1.25, L5
-			"Warden Bow", // 12-18 phys, x1.15, L11, 20–30% chance to Chain an additional time
-			"Recurve Bow", // 15-31 phys, x1.1, L16
-			"Composite Bow", // 19-31 phys, x1.2, L22
-			"Dualstring Bow", // 16-31 phys, x1.1, L28, Bow Attacks fire an additional Arrow
-			"Cultist Bow", // 10-17 phys, 19-37 chaos, x1.2, L33
-			"Zealot Bow", // 31-47 phys, x1.2, L39
-			"Artillery Bow", // 39-72 phys, x1.15, L45, 50% reduced Projectile Range
-			"Tribal Bow", // 38-57 phys, x1.2, L50
-			"Twin Bow", // 32-60 phys, x1.1, L54, Bow Attacks fire an additional Arrow
-			"Adherent Bow", // 21-34 phys, 31-59 chaos, x1.2, L59
-			"Militant Bow", // 46-69 phys, x1.2, L62
-			"Ironwood Shortbow", // 41-76 phys, x1.25, L67
-			"Cavalry Bow", // 49-82 phys, x1.2, L72
-			// "Guardian Bow", // 53-80 phys, x1.15, L77, 20–30% chance to Chain an additional time
-			// "Warmonger Bow", // 56-84 phys, x1.2, L77
-			// "Obliterator Bow", // 62-115 phys, x1.15, L78, 50% reduced Projectile Range
-			// "Gemini Bow", // 39-72 phys, x1.1, L78, Bow Attacks fire an additional Arrow
-			// "Fanatic Bow", // 42-70 phys, 43-71 chaos, x1.2, L79
+			new Name("Crude Bow", TIER.BAD), // 6-9 phys, x1.2
+			new Name("Shortbow", TIER.BAD), // 7-14 phys, x1.25, L5
+			new Name("Warden Bow", TIER.BAD), // 12-18 phys, x1.15, L11, 20–30% chance to Chain an additional time
+			new Name("Recurve Bow", TIER.BAD), // 15-31 phys, x1.1, L16
+			new Name("Composite Bow", TIER.BAD), // 19-31 phys, x1.2, L22
+			new Name("Dualstring Bow", TIER.BAD), // 16-31 phys, x1.1, L28, Bow Attacks fire an additional Arrow
+			new Name("Cultist Bow", TIER.BAD), // 10-17 phys, 19-37 chaos, x1.2, L33
+			new Name("Zealot Bow", TIER.BAD), // 31-47 phys, x1.2, L39
+			new Name("Artillery Bow", TIER.BAD), // 39-72 phys, x1.15, L45, 50% reduced Projectile Range
+			new Name("Tribal Bow", TIER.BAD), // 38-57 phys, x1.2, L50
+			new Name("Twin Bow", TIER.BAD), // 32-60 phys, x1.1, L54, Bow Attacks fire an additional Arrow
+			new Name("Adherent Bow", TIER.BAD), // 21-34 phys, 31-59 chaos, x1.2, L59
+			new Name("Militant Bow", TIER.BAD), // 46-69 phys, x1.2, L62
+			new Name("Ironwood Shortbow", TIER.BAD), // 41-76 phys, x1.25, L67
+			new Name("Cavalry Bow", TIER.BAD), // 49-82 phys, x1.2, L72
+
+			new Name("Guardian Bow", TIER.OTHER), // 53-80 phys, x1.15, L77, 20–30% chance to Chain an additional time
+			new Name("Warmonger Bow", TIER.OTHER), // 56-84 phys, x1.2, L77
+			new Name("Obliterator Bow", TIER.OTHER), // 62-115 phys, x1.15, L78, 50% reduced Projectile Range
+			new Name("Gemini Bow", TIER.OTHER), // 39-72 phys, x1.1, L78, Bow Attacks fire an additional Arrow
+			new Name("Fanatic Bow", TIER.OTHER), // 42-70 phys, 43-71 chaos, x1.2, L79
 
 			// https://poe2db.tw/us/Crossbows#CrossbowsItem
-			"Makeshift Crossbow", // 7-12 phys, 5% cc, x1.6, r0.8
-			"Tense Crossbow", // 8-15 phys, 5% cc, x1.6, r0.85, L4, 20–30% increased Bolt Speed
-			"Sturdy Crossbow", // 11-26 phys, 5% cc, x1.55, r0.75, L10
-			"Varnished Crossbow", // 12-36 phys, 5% cc, x1.6, r0.8, L16
-			"Dyad Crossbow", // 9-37 phys, 5% cc, x1.6, r1.1, L20, Loads an additional bolt
-			"Alloy Crossbow", // 12-50 phys, 5% cc, x1.7, r0.7, L26
-			"Bombard Crossbow", // 14-56 phys, 5% cc, x1.65, r0.75, L33, Grenade Skills Fire an additional Projectile
-			"Construct Crossbow", // 18-72 phys, 5% cc, x1.6, r0.8, L38
-			"Blackfire Crossbow", // 20-80 phys, 7% cc, x1.6, r0.85, L45
-			"Piercing Crossbow", // 21-84 phys, 5% cc, x1.65, r0.85, L50, 20–30% chance to Pierce an Enemy
-			"Twin Crossbow", // 20-82 phys, 5% cc, x1.6, r1.1, L54, Loads an additional bolt
-			"Cannonade Crossbow", // 23-90 phys, 5% cc, x1.65, r0.75, L59, Grenade Skills Fire an additional Projectile
-			"Bleak Crossbow", // 27-109 phys, 5% cc, x1.6, r0.8, L62
-			"Stout Crossbow", // 30-119 phys, 5% cc, x1.55, r0.75, L67
-			"Engraved Crossbow", // 31-124 phys, 5% cc, x1.6, r0.8, L72
-			// "Flexed Crossbow", // 32-127 phys, 5% cc, x1.6, r0.85, L77, 20–30% increased Bolt Speed
-			// "Desolate Crossbow", // 33-132 phys, 5% cc, x1.6, r0.8, L77
-			// "Gemini Crossbow", // 28-112 phys, 5% cc, x1.6, r1.1, L78, Loads an additional bolt
-			// "Elegant Crossbow", // 31-123 phys, 5% cc, x1.65, r0.85, L78, 20–30% chance to Pierce an Enemy
-			// "Siege Crossbow", // 29-115 phys, 5% cc, x1.65, r0.75, L79, Grenade Skills Fire an additional Projectile
+			new Name("Makeshift Crossbow", TIER.BAD), // 7-12 phys, 5% cc, x1.6, r0.8
+			new Name("Tense Crossbow", TIER.BAD), // 8-15 phys, 5% cc, x1.6, r0.85, L4, 20–30% increased Bolt Speed
+			new Name("Sturdy Crossbow", TIER.BAD), // 11-26 phys, 5% cc, x1.55, r0.75, L10
+			new Name("Varnished Crossbow", TIER.BAD), // 12-36 phys, 5% cc, x1.6, r0.8, L16
+			new Name("Dyad Crossbow", TIER.BAD), // 9-37 phys, 5% cc, x1.6, r1.1, L20, Loads an additional bolt
+			new Name("Alloy Crossbow", TIER.BAD), // 12-50 phys, 5% cc, x1.7, r0.7, L26
+			new Name("Bombard Crossbow", TIER.BAD), // 14-56 phys, 5% cc, x1.65, r0.75, L33, Grenade Skills Fire an additional Projectile
+			new Name("Construct Crossbow", TIER.BAD), // 18-72 phys, 5% cc, x1.6, r0.8, L38
+			new Name("Blackfire Crossbow", TIER.BAD), // 20-80 phys, 7% cc, x1.6, r0.85, L45
+			new Name("Piercing Crossbow", TIER.BAD), // 21-84 phys, 5% cc, x1.65, r0.85, L50, 20–30% chance to Pierce an Enemy
+			new Name("Twin Crossbow", TIER.BAD), // 20-82 phys, 5% cc, x1.6, r1.1, L54, Loads an additional bolt
+			new Name("Cannonade Crossbow", TIER.BAD), // 23-90 phys, 5% cc, x1.65, r0.75, L59, Grenade Skills Fire an additional Projectile
+			new Name("Bleak Crossbow", TIER.BAD), // 27-109 phys, 5% cc, x1.6, r0.8, L62
+			new Name("Stout Crossbow", TIER.BAD), // 30-119 phys, 5% cc, x1.55, r0.75, L67
+			new Name("Engraved Crossbow", TIER.BAD), // 31-124 phys, 5% cc, x1.6, r0.8, L72
+
+			new Name("Flexed Crossbow", TIER.OTHER), // 32-127 phys, 5% cc, x1.6, r0.85, L77, 20–30% increased Bolt Speed
+			new Name("Desolate Crossbow", TIER.OTHER), // 33-132 phys, 5% cc, x1.6, r0.8, L77
+			new Name("Gemini Crossbow", TIER.OTHER), // 28-112 phys, 5% cc, x1.6, r1.1, L78, Loads an additional bolt
+			new Name("Elegant Crossbow", TIER.OTHER), // 31-123 phys, 5% cc, x1.65, r0.85, L78, 20–30% chance to Pierce an Enemy
+			new Name("Siege Crossbow", TIER.OTHER), // 29-115 phys, 5% cc, x1.65, r0.75, L79, Grenade Skills Fire an additional Projectile
 
 			// https://poe2db.tw/us/Quarterstaves#QuarterstavesItem
-			"Wrapped Quarterstaff", // 7-12 phys, 10% cc, x1.4
-			"Long Quarterstaff", // 9-18 phys, 10% cc, x1.4, L4, 16% increased Melee Strike Range with this weapon
-			"Gothic Quarterstaff", // 16-26 phys, 11.5% cc, x1.4, L11
-			"Crackling Quarterstaff", // 5-22 phys, 1-35 lightning, 10% cc, x1.4, L16
-			"Crescent Quarterstaff", // 19-39 phys, 10% cc, x1.5, L20
-			"Steelpoint Quarterstaff", // 28-51 phys, 10% cc, x1.4, L28
-			"Slicing Quarterstaff", // 29-60 phys, 10% cc, x1.4, L33
-			"Barrier Quarterstaff", // 33-55 phys, 10% cc, x1.4, L37, +10–15% to Block chance
-			"Hefty Quarterstaff", // 39-80 phys, 10% cc, x1.35, L45
-			"Smooth Quarterstaff", // 64-87 phys, 0% cc, x1.5, L49
-			"Waxing Quarterstaff", // 39-82 phys, 10% cc, x1.5, L54
-			"Bladed Quarterstaff", // 45-94 phys, 10% cc, x1.4, L59
-			"Guardian Quarterstaff", // 49-82 phys, 10% cc, x1.4, L62, +10–15% to Block chance
-			"Sinister Quarterstaff", // 55-92 phys, 11.5% cc, x1.4, L67
-			"Lunar Quarterstaff", // 50-103 phys, 10% cc, x1.5, L72
-			// "Striking Quarterstaff", // 53-111 phys, 10% cc, x1.4, L77, 16% increased Melee Strike Range with this weapon
-			// "Razor Quarterstaff", // 65-108 phys, 10% cc, x1.4, L77
-			"Dreaming Quarterstaff", // 99-133 phys, 0% cc, x1.5, L78
-			"Bolting Quarterstaff", // 24-97 phys, 1-100 lightning, 10% cc, x1.4, L78
-			// "Aegis Quarterstaff", // 58-97 phys, 10% cc, x1.4, L79, +10–15% to Block chance
+			new Name("Wrapped Quarterstaff", TIER.BAD), // 7-12 phys, 10% cc, x1.4
+			new Name("Long Quarterstaff", TIER.BAD), // 9-18 phys, 10% cc, x1.4, L4, 16% increased Melee Strike Range with this weapon
+			new Name("Gothic Quarterstaff", TIER.BAD), // 16-26 phys, 11.5% cc, x1.4, L11
+			new Name("Crackling Quarterstaff", TIER.BAD), // 5-22 phys, 1-35 lightning, 10% cc, x1.4, L16
+			new Name("Crescent Quarterstaff", TIER.BAD), // 19-39 phys, 10% cc, x1.5, L20
+			new Name("Steelpoint Quarterstaff", TIER.BAD), // 28-51 phys, 10% cc, x1.4, L28
+			new Name("Slicing Quarterstaff", TIER.BAD), // 29-60 phys, 10% cc, x1.4, L33
+			new Name("Barrier Quarterstaff", TIER.BAD), // 33-55 phys, 10% cc, x1.4, L37, +10–15% to Block chance
+			new Name("Hefty Quarterstaff", TIER.BAD), // 39-80 phys, 10% cc, x1.35, L45
+			new Name("Smooth Quarterstaff", TIER.BAD), // 64-87 phys, 0% cc, x1.5, L49
+			new Name("Waxing Quarterstaff", TIER.BAD), // 39-82 phys, 10% cc, x1.5, L54
+			new Name("Bladed Quarterstaff", TIER.BAD), // 45-94 phys, 10% cc, x1.4, L59
+			new Name("Guardian Quarterstaff", TIER.BAD), // 49-82 phys, 10% cc, x1.4, L62, +10–15% to Block chance
+			new Name("Sinister Quarterstaff", TIER.BAD), // 55-92 phys, 11.5% cc, x1.4, L67
+			new Name("Lunar Quarterstaff", TIER.BAD), // 50-103 phys, 10% cc, x1.5, L72
+			new Name("Dreaming Quarterstaff", TIER.BAD), // 99-133 phys, 0% cc, x1.5, L78
+			new Name("Bolting Quarterstaff", TIER.BAD), // 24-97 phys, 1-100 lightning, 10% cc, x1.4, L78
+
+			new Name("Striking Quarterstaff", TIER.OTHER), // 53-111 phys, 10% cc, x1.4, L77, 16% increased Melee Strike Range with this weapon
+			new Name("Razor Quarterstaff", TIER.OTHER), // 65-108 phys, 10% cc, x1.4, L77
+			new Name("Aegis Quarterstaff", TIER.OTHER), // 58-97 phys, 10% cc, x1.4, L79, +10–15% to Block chance
 
 			// https://poe2db.tw/us/Two_Hand_Maces#TwoHandMacesItem
-			"Felled Greatclub", // 13-18 phys, 5% cc, x1.1
-			"Oak Greathammer", // 14-26 phys, 5% cc, x1.05, L4, Causes 30–50% increased Stun Buildup
-			"Forge Maul", // 29-39 phys, 5% cc, x1.05, L11
-			"Studded Greatclub", // 32-48 phys, 5% cc, x1.1, L16
-			"Cultist Greathammer", // 32-43 phys, 5% cc, x1.05, L22, Strikes deal Splash damage to targets within 1.5 metres
-			"Temple Maul", // 35-72 phys, 5% cc, x1.2, L28
-			"Leaden Greathammer", // 58-78 phys, 5% cc, x1.1, L33
-			"Crumbling Maul", // 62-75 phys, 5% cc, x1.1, L38, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
-			"Pointed Maul", // 68-102 phys, 6.5% cc, x1.1, L45
-			"Totemic Greatclub", // 73-99 phys, 5% cc, x1.1, L50, Crushes Enemies on Hit
-			"Solemn Maul", // 59-123 phys, 5% cc, x1.2, L54
-			"Heavy Greathammer", // 94-127 phys, 5% cc, x1.1, L59
-			"Disintegrating Maul", // 93-114 phys, 5% cc, x1.1, L62, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
-			"Anvil Maul", // 112-151 phys, 5% cc, x1.05, L67
-			"Sacred Maul", // 76-158 phys, 5% cc, x1.2, L72
-			"Ironwood Greathammer", // 94-174 phys, 5% cc, x1.05, L77, Causes 30–50% increased Stun Buildup
-			// "Massive Greathammer", // 119-161 phys, 5% cc, x1.1, L77
-			// "Tawhoan Greatclub", // 107-145 phys, 5% cc, x1.1, L78, Crushes Enemies on Hit
-			// "Fanatic Greathammer", // 89-120 phys, 5% cc, x1.05, L78, Strikes deal Splash damage to targets within 1.5 metres
-			// "Ruination Maul", // 113-138 phys, 5% cc, x1.1, L79, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
-		);
+			new Name("Felled Greatclub", TIER.BAD), // 13-18 phys, 5% cc, x1.1
+			new Name("Oak Greathammer", TIER.BAD), // 14-26 phys, 5% cc, x1.05, L4, Causes 30–50% increased Stun Buildup
+			new Name("Forge Maul", TIER.BAD), // 29-39 phys, 5% cc, x1.05, L11
+			new Name("Studded Greatclub", TIER.BAD), // 32-48 phys, 5% cc, x1.1, L16
+			new Name("Cultist Greathammer", TIER.BAD), // 32-43 phys, 5% cc, x1.05, L22, Strikes deal Splash damage to targets within 1.5 metres
+			new Name("Temple Maul", TIER.BAD), // 35-72 phys, 5% cc, x1.2, L28
+			new Name("Leaden Greathammer", TIER.BAD), // 58-78 phys, 5% cc, x1.1, L33
+			new Name("Crumbling Maul", TIER.BAD), // 62-75 phys, 5% cc, x1.1, L38, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
+			new Name("Pointed Maul", TIER.BAD), // 68-102 phys, 6.5% cc, x1.1, L45
+			new Name("Totemic Greatclub", TIER.BAD), // 73-99 phys, 5% cc, x1.1, L50, Crushes Enemies on Hit
+			new Name("Solemn Maul", TIER.BAD), // 59-123 phys, 5% cc, x1.2, L54
+			new Name("Heavy Greathammer", TIER.BAD), // 94-127 phys, 5% cc, x1.1, L59
+			new Name("Disintegrating Maul", TIER.BAD), // 93-114 phys, 5% cc, x1.1, L62, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
+			new Name("Anvil Maul", TIER.BAD), // 112-151 phys, 5% cc, x1.05, L67
+			new Name("Sacred Maul", TIER.BAD), // 76-158 phys, 5% cc, x1.2, L72
+			new Name("Ironwood Greathammer", TIER.BAD), // 94-174 phys, 5% cc, x1.05, L77, Causes 30–50% increased Stun Buildup
+
+			new Name("Massive Greathammer", TIER.OTHER), // 119-161 phys, 5% cc, x1.1, L77
+			new Name("Tawhoan Greatclub", TIER.OTHER), // 107-145 phys, 5% cc, x1.1, L78, Crushes Enemies on Hit
+			new Name("Fanatic Greathammer", TIER.OTHER), // 89-120 phys, 5% cc, x1.05, L78, Strikes deal Splash damage to targets within 1.5 metres
+			new Name("Ruination Maul", TIER.OTHER), // 113-138 phys, 5% cc, x1.1, L79, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
+		).exact(tier);
 	}
 	static getOffOtherBad() {
 		return new NameManager(

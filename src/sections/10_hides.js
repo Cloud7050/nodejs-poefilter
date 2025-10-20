@@ -46,7 +46,7 @@ function otherWeapons(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Other mainhands: Bad base
-		c.names = new Comparison(NameManager.getMainOtherBad());
+		c.names = new Comparison(NameManager.getMainOther(TIER.BAD));
 		c.categories(CATEGORY.MAIN_OTHER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	}, (c) => { // Other quivers: Bad base

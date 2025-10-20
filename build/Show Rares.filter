@@ -1313,6 +1313,7 @@ Show
 	Continue
 
 Show
+	BaseType == "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Voltaic Staff" "Chiming Staff" "Reaping Staff" "Roaring Staff" "Paralysing Staff" "Sanctified Staff" "Marauding Mace" "Strife Pick" "Akoyan Club" "Fortified Hammer" "Spiked Spear" "Stalking Spear" "Akoyan Spear" "Flying Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Fanatic Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Aegis Quarterstaff" "Massive Greathammer" "Tawhoan Greatclub" "Fanatic Greathammer" "Ruination Maul"
 	Class == Wands Staves
 	Rarity == Magic
 	ItemLevel >= 81
@@ -1328,10 +1329,10 @@ Show
 	Continue
 
 Show
+	BaseType == "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Voltaic Staff" "Chiming Staff" "Reaping Staff" "Roaring Staff" "Paralysing Staff" "Sanctified Staff" "Marauding Mace" "Strife Pick" "Akoyan Club" "Fortified Hammer" "Spiked Spear" "Stalking Spear" "Akoyan Spear" "Flying Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Fanatic Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Aegis Quarterstaff" "Massive Greathammer" "Tawhoan Greatclub" "Fanatic Greathammer" "Ruination Maul"
 	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Magic
 	ItemLevel >= 82
-	DropLevel >= 77
 	Corrupted False
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
@@ -1375,6 +1376,7 @@ Show
 	Continue
 
 Show
+	BaseType == "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Voltaic Staff" "Chiming Staff" "Reaping Staff" "Roaring Staff" "Paralysing Staff" "Sanctified Staff" "Marauding Mace" "Strife Pick" "Akoyan Club" "Fortified Hammer" "Spiked Spear" "Stalking Spear" "Akoyan Spear" "Flying Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Fanatic Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Aegis Quarterstaff" "Massive Greathammer" "Tawhoan Greatclub" "Fanatic Greathammer" "Ruination Maul"
 	Class == Wands Staves
 	Rarity == Rare
 	ItemLevel >= 81
@@ -1390,10 +1392,10 @@ Show
 	Continue
 
 Show
+	BaseType == "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Voltaic Staff" "Chiming Staff" "Reaping Staff" "Roaring Staff" "Paralysing Staff" "Sanctified Staff" "Marauding Mace" "Strife Pick" "Akoyan Club" "Fortified Hammer" "Spiked Spear" "Stalking Spear" "Akoyan Spear" "Flying Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Fanatic Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Aegis Quarterstaff" "Massive Greathammer" "Tawhoan Greatclub" "Fanatic Greathammer" "Ruination Maul"
 	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Rare
 	ItemLevel >= 82
-	DropLevel >= 77
 	Corrupted False
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
