@@ -125,7 +125,7 @@ export class ConditionSet {
 		return this;
 	}
 
-	goodBase(includeOther = false) {
+	goodBase(includeOther = false) { //TODO
 		// https://poe2db.tw/us/Items
 		let phrases = [
 			// x% increased Rarity of Items found

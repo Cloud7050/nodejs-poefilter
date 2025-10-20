@@ -1733,6 +1733,23 @@ Show
 	Continue
 
 Show
+	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+	Class == "Life Flasks" "Mana Flasks"
+	Rarity == Normal
+	ItemLevel >= 83
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
 	Class == Charms
 	Rarity == Magic
 	ItemLevel >= 81
@@ -1833,6 +1850,23 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+	Class == "Life Flasks" "Mana Flasks"
+	Rarity == Magic
+	ItemLevel >= 83
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue

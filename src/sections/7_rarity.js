@@ -467,6 +467,16 @@ function classUncommon(filter) {
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR).sizeExalt();
 	});
+	filter.multiBlock((c) => { // Good base
+		c.continue();
+		c.names = new Comparison(NameManager.getFlasks(TIER.CLASS));
+		c.categories(CATEGORY.FLASK);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(83, OPERATOR.GTE);
+		c.isCorrupted = false;
+	}, (e) => {
+		e.colourWisdom(PAIR_GEAR).sizeChance();
+	});
 
 	// Magic
 	filter.multiBlock((c) => { // Low tier
@@ -531,6 +541,16 @@ function classUncommon(filter) {
 		c.goodModJewellery();
 	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeExalt();
+	});
+	filter.multiBlock((c) => { // Good base
+		c.continue();
+		c.names = new Comparison(NameManager.getFlasks(TIER.CLASS));
+		c.categories(CATEGORY.FLASK);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(83, OPERATOR.GTE);
+		c.isCorrupted = false;
+	}, (e) => {
+		e.colourAugment(PAIR_GEAR).sizeChance();
 	});
 }
 
