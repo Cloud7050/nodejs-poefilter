@@ -49,14 +49,10 @@ function otherWeapons(filter) {
 		c.names = new Comparison(NameManager.getMainOther(TIER.BAD));
 		c.categories(CATEGORY.MAIN_OTHER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	}, (c) => { // Other quivers: Bad base
-		c.names = new Comparison(NameManager.getOffOtherBad());
-		c.categories(CATEGORY.OFF_OTHER_QUIVER);
+	}, (c) => { // Other offhands: Bad base
+		c.names = new Comparison(NameManager.getOffOther(TIER.BAD));
+		c.categories(CATEGORY.OFF_OTHER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	}, (c) => { // Other shields: Bad base
-		c.categories(CATEGORY.OFF_OTHER_BLOCK);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.dropLevel = new Comparison(80, OPERATOR.LT);
 	});
 }
 

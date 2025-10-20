@@ -677,21 +677,97 @@ export class NameManager {
 			new Name("Ruination Maul", TIER.OTHER), // 113-138 phys, 5% cc, x1.1, L79, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
 		).exact(tier);
 	}
-	static getOffOtherBad() {
+	static getOffOther(tier) {
 		return new NameManager(
 			// https://poe2db.tw/us/Quivers#QuiversItem
-			"Broadhead Quiver", // Adds 1 to 3 Physical Damage to Attacks
-			"Fire Quiver", // L8, Adds 3 to 5 Fire damage to Attacks
-			"Sacral Quiver", // L16, Gain 2–3 Life per Enemy Hit with Attacks
-			"Two-Point Quiver", // L24, 20–30% increased Accuracy Rating
-			"Blunt Quiver", // L33, 25–40% increased Stun Buildup
-			"Toxic Quiver", // L39, 20–30% chance to Poison on Hit with Attacks
-			"Serrated Quiver", // L44, Attacks have 20–30% chance to cause Bleeding
-			// "Primed Quiver", // L51, 7–10% increased Attack Speed
-			// "Penetrating Quiver", // L55, 100% chance to Pierce an Enemy
-			// "Volant Quiver", // L61, 20–30% increased Arrow Speed
-			// "Visceral Quiver", // L65, 20–30% increased Critical Hit Chance for Attacks
-		);
+			new Name("Broadhead Quiver", TIER.BAD), // Adds 1 to 3 Physical Damage to Attacks
+			new Name("Fire Quiver", TIER.BAD), // L8, Adds 3 to 5 Fire damage to Attacks
+			new Name("Sacral Quiver", TIER.BAD), // L16, Gain 2–3 Life per Enemy Hit with Attacks
+			new Name("Two-Point Quiver", TIER.BAD), // L24, 20–30% increased Accuracy Rating
+			new Name("Blunt Quiver", TIER.BAD), // L33, 25–40% increased Stun Buildup
+			new Name("Toxic Quiver", TIER.BAD), // L39, 20–30% chance to Poison on Hit with Attacks
+			new Name("Serrated Quiver", TIER.BAD), // L44, Attacks have 20–30% chance to cause Bleeding
+
+			new Name("Primed Quiver", TIER.OTHER), // L51, 7–10% increased Attack Speed
+			new Name("Penetrating Quiver", TIER.OTHER), // L55, 100% chance to Pierce an Enemy
+			new Name("Volant Quiver", TIER.OTHER), // L61, 20–30% increased Arrow Speed
+			new Name("Visceral Quiver", TIER.OTHER), // L65, 20–30% increased Critical Hit Chance for Attacks
+
+			// https://poe2db.tw/us/Bucklers#BucklersItem
+			new Name("Leather Buckler", TIER.BAD), // 10 V
+			new Name("Wooden Buckler", TIER.BAD), // 16 V, L5
+			new Name("Plated Buckler", TIER.BAD), // 26 V, L11
+			new Name("Iron Buckler", TIER.BAD), // 33 V, L16
+			new Name("Ridged Buckler", TIER.BAD), // 43 V, L22
+			new Name("Spiked Buckler", TIER.BAD), // 49 V, L26
+			new Name("Ringed Buckler", TIER.BAD), // 60 V, L33
+			new Name("Edged Buckler", TIER.BAD), // 70 V, L39
+			new Name("Laminate Buckler", TIER.BAD), // 79 V, L45
+			new Name("Pearl Buckler", TIER.BAD), // 87 V, L50
+			new Name("Ornate Buckler", TIER.BAD), // 90 V, L52
+			new Name("Spikeward Buckler", TIER.BAD), // 93 V, L54
+			new Name("Jingling Buckler", TIER.BAD), // 101 V, L59
+			new Name("Bladeguard Buckler", TIER.BAD), // 105 V, L61
+			new Name("Ornate Buckler", TIER.BAD), // 111 V, L65
+			new Name("Gutspike Buckler", TIER.BAD), // 122 V, L70
+			new Name("Ancient Buckler", TIER.BAD), // 133 V, L75
+
+			new Name("Desert Buckler", TIER.OTHER), // 144 V, L80
+
+			// https://poe2db.tw/us/Shields#ShieldsItem
+			new Name("Splintered Tower Shield", TIER.BAD), // 18 A
+			new Name("Painted Tower Shield", TIER.BAD), // 29 A, L6
+			new Name("Braced Tower Shield", TIER.BAD), // 41 A, L12
+			new Name("Barricade Tower Shield", TIER.BAD), // 50 A, L16
+			new Name("Effigial Tower Shield", TIER.BAD), // 60 A, L21
+			new Name("Rampart Tower Shield", TIER.BAD), // 75 A, L28
+			new Name("Heraldric Tower Shield", TIER.BAD), // 85 A, L33
+			new Name("Stone Tower Shield", TIER.BAD), // 91 A, L36
+			new Name("Crucible Tower Shield", TIER.BAD), // 110 A, L45
+			new Name("Ancestor Tower Shield", TIER.BAD), // 121 A, L50
+			new Name("Bulwark Tower Shield", TIER.BAD), // 129 A, L54
+			new Name("Noble Tower Shield", TIER.BAD), // 139 A, L59
+			new Name("Goldworked Tower Shield", TIER.BAD), // 144 A, L61
+			new Name("Royal Tower Shield", TIER.BAD), // 152 A, L65
+			new Name("Fortress Tower Shield", TIER.BAD), // 167 A, L70
+			new Name("Vaal Tower Shield", TIER.BAD), // 182 A, L75
+
+			new Name("Tawhoan Tower Shield", TIER.OTHER), // 197 A, L80
+
+			new Name("Hardwood Targe", TIER.BAD), // 10 A, 7 V
+			new Name("Pelage Targe", TIER.BAD), // 18 A, 14 V, L8
+			new Name("Studded Targe", TIER.BAD), // 27 A, 23 V, L16
+			new Name("Crescent Targe", TIER.BAD), // 39 A, 34 V, L26
+			new Name("Chiseled Targe", TIER.BAD), // 47 A, 41 V, L33
+			new Name("Feathered Targe", TIER.BAD), // 51 A, 46 V, L37
+			new Name("Stratified Targe", TIER.BAD), // 62 A, 56 V, L46
+			new Name("Carved Targe", TIER.BAD), // 67 A, 61 V, L51
+			new Name("Polished Targe", TIER.BAD), // 71 A, 64 V, L54
+			new Name("Stone Targe", TIER.BAD), // 77 A, 70 V, L59
+			new Name("Avian Targe", TIER.BAD), // 80 A, 73 V, L62
+			new Name("Mammoth Targe", TIER.BAD), // 84 A, 76 V, L65
+			new Name("Baroque Targe", TIER.BAD), // 92 A, 84V, L70
+			new Name("Soaring Targe", TIER.BAD), // 100 A, 91 V, L75
+
+			new Name("Golden Targe", TIER.OTHER), // 109 A, 99 V, L80
+
+			new Name("Blazon Crest Shield", TIER.BAD), // 10 A, 6 ES
+			new Name("Sigil Crest Shield", TIER.BAD), // 17 A, 8 ES, L7
+			new Name("Emblem Crest Shield", TIER.BAD), // 27 A, 12 ES, L16
+			new Name("Jingling Crest Shield", TIER.BAD), // 41 A, 16 ES, L28
+			new Name("Sectarian Crest Shield", TIER.BAD), // 47 A, 18 ES, L33
+			new Name("Omen Crest Shield", TIER.BAD), // 50 A, 19 ES, L36
+			new Name("Wayward Crest Shield", TIER.BAD), // 61 A, 22 ES, L45
+			new Name("Seer Crest Shield", TIER.BAD), // 66 A, 24 ES, L50
+			new Name("Dekharan Crest Shield", TIER.BAD), // 71 A, 25 ES, L54
+			new Name("Quartered Crest Shield", TIER.BAD), // 77 A, 27 ES, L59
+			new Name("Glowering Crest Shield", TIER.BAD), // 80 A, 28 ES, L62
+			new Name("Intricate Crest Shield", TIER.BAD), // 84 A, 29 ES, L65
+			new Name("Sekheman Crest Shield", TIER.BAD), // 92 A, 32 ES, L70
+			new Name("Vaal Crest Shield", TIER.BAD), // 100 A, 35 ES, L75
+
+			new Name("Blacksteel Crest Shield", TIER.OTHER), // 109 A, 37 ES, L80
+		).exact(tier);
 	}
 	static getArmourClassOther() {
 		return new NameManager(
