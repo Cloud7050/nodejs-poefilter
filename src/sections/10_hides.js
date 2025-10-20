@@ -1,7 +1,7 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison, OPERATOR } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
-import { NameManager } from "../conditions/nameManager.js";
+import { NameManager, TIER } from "../conditions/nameManager.js";
 
 export function sectionHides(filter) {
 	classWeapons(filter);
@@ -22,7 +22,7 @@ function classWeapons(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Class mainhands: Bad base
-		c.names = new Comparison(NameManager.getMainClassBad());
+		c.names = new Comparison(NameManager.getMainClass(TIER.BAD));
 		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	}, (c) => { // Class offhands: Bad base

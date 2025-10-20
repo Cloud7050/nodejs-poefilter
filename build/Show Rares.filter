@@ -1097,6 +1097,7 @@ Show
 	Continue
 
 Show
+	BaseType == "Rattling Sceptre"
 	Class == Sceptres
 	Rarity == Normal
 	ItemLevel >= 82
@@ -1126,6 +1127,7 @@ Show
 	Continue
 
 Show
+	BaseType == "Rattling Sceptre"
 	Class == Sceptres
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1157,6 +1159,7 @@ Show
 	Continue
 
 Show
+	BaseType == "Rattling Sceptre"
 	Class == Sceptres
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1188,6 +1191,7 @@ Show
 	Continue
 
 Show
+	BaseType == "Rattling Sceptre"
 	Class == Sceptres
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1219,6 +1223,7 @@ Show
 	Continue
 
 Show
+	BaseType == "Rattling Sceptre"
 	Class == Sceptres
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1248,6 +1253,7 @@ Show
 	Continue
 
 Show
+	BaseType == "Rattling Sceptre"
 	Class == Sceptres
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1277,6 +1283,7 @@ Show
 	Continue
 
 Show
+	BaseType == "Rattling Sceptre"
 	Class == Sceptres
 	Rarity == Rare
 	ItemLevel >= 82

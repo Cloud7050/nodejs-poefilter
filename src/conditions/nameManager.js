@@ -2,6 +2,12 @@ import { DIV, Name } from "./name.js";
 import { StringList } from "./stringList.js";
 
 export class NameManager {
+	static TIER = {
+		BAD: -1,
+		OTHER: 0,
+		CLASS: 1,
+	}
+
 	names;
 
 	constructor (...names) {
@@ -473,19 +479,17 @@ export class NameManager {
 		).filter(min, max);
 	}
 
-	static getMainClassOther() {
+	static getMainClass(tier) {
 		return new NameManager(
 			// https://poe2db.tw/us/Sceptres#SceptresItem
-			"Stoic Sceptre", // Discipline
-			"Omen Sceptre", // Malice
-			"Wrath Sceptre", // Fulmination
-		);
-	}
-	static getMainClassBad() {
-		return new NameManager(
-			// https://poe2db.tw/us/Sceptres#SceptresItem
-			"Shrine Sceptre", // Purity of Fire/Ice/Lightning
-		);
+			new Name("Shrine Sceptre", TIER.BAD), // Purity of Fire/Ice/Lightning
+
+			new Name("Stoic Sceptre", TIER.OTHER), // Discipline
+			new Name("Omen Sceptre", TIER.OTHER), // Malice
+			new Name("Wrath Sceptre", TIER.OTHER), // Fulmination
+
+			new Name("Rattling Sceptre", TIER.CLASS), // Skeletal Warrior
+		).exact(tier);
 	}
 	static getOffClassBad() {
 		return new NameManager(
@@ -781,6 +785,11 @@ export class NameManager {
 		return new NameManager(...names);
 	}
 
+	exact(value) {
+		let names = this.names.filter((name) => name.value === value);
+		return new NameManager(...names);
+	}
+
 	export() {
 		this.names.sort((a, b) => a.compare(b));
 		return new StringList(
@@ -788,3 +797,4 @@ export class NameManager {
 		);
 	}
 }
+export const TIER = NameManager.TIER;
