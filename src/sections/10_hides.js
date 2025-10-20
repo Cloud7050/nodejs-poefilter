@@ -68,7 +68,7 @@ function classArmour(filter) {
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 		c.onlyEnergyShield();
 	}, (c) => { // Class armour: Bad base
-		c.names = new Comparison(NameManager.getArmourClass(TIER.BAD));
+		c.names = new Comparison(NameManager.getArmour(TIER.BAD));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});

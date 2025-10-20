@@ -269,7 +269,7 @@ function classArmour(filter) {
 	// Normal
 	filter.multiBlock((c) => {
 		c.continue();
-		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -282,7 +282,7 @@ function classArmour(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -295,7 +295,7 @@ function classArmour(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -304,7 +304,7 @@ function classArmour(filter) {
 		c.onlyEnergyShield();
 	}, (c) => { // Good mod (class)
 		c.continue();
-		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -318,7 +318,7 @@ function classArmour(filter) {
 	// Rare
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -330,7 +330,7 @@ function classArmour(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -339,7 +339,7 @@ function classArmour(filter) {
 		c.onlyEnergyShield();
 	}, (c) => { // Good mod (class)
 		c.continue();
-		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);

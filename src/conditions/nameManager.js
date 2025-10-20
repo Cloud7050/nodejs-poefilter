@@ -763,7 +763,7 @@ export class NameManager {
 			new Name("Blacksteel Crest Shield", TIER.OTHER), // 109 A, 37 ES, L80
 		).exact(tier);
 	}
-	static getArmourClass(tier) {
+	static getArmour(tier) {
 		return new NameManager(
 			// https://poe2db.tw/us/Helmets
 			new Name("Twig Circlet", TIER.BAD), // 19 ES
@@ -781,6 +781,80 @@ export class NameManager {
 			new Name("Kamasan Tiara", TIER.BAD), // 101 ES, L75
 
 			new Name("Ancestral Tiara", TIER.CLASS), // 109 ES, L80
+
+			new Name("Rusted Greathelm", TIER.BAD), // 29 A
+			new Name("Soldier Greathelm", TIER.BAD), // 66 A, L12
+			new Name("Wrapped Greathelm", TIER.BAD), // 79 A, L16
+			new Name("Spired Greathelm", TIER.BAD), // 116 A, L27
+			new Name("Elite Greathelm", TIER.BAD), // 136 A, L33
+			new Name("Warrior Greathelm", TIER.BAD), // 146 A, L36
+			new Name("Commander Greathelm", TIER.BAD), // 176 A, L45
+			new Name("Fierce Greathelm", TIER.BAD), // 196 A, L51
+			new Name("Elegant Greathelm", TIER.BAD), // 206 A, L54
+			new Name("Noble Greathelm", TIER.BAD), // 223 A, L59
+			new Name("Warmonger Greathelm", TIER.BAD), // 243 A, L65
+			new Name("Masked Greathelm", TIER.BAD), // 267 A, L70
+			new Name("Paragon Greathelm", TIER.BAD), // 292 A, L75
+
+			new Name("Imperial Greathelm", TIER.OTHER), // 316 A, L80
+
+			new Name("Shabby Hood", TIER.BAD), // 19 V
+			new Name("Felt Cap", TIER.BAD), // 48 V, L10
+			new Name("Lace Hood", TIER.BAD), // 67 V, L16
+			new Name("Swathed Cap", TIER.BAD), // 98 V, L26
+			new Name("Hunter Hood", TIER.BAD), // 121 V, L33
+			new Name("Viper Cap", TIER.BAD), // 136 V, L38
+			new Name("Corsair Cap", TIER.BAD), // 158 V, L45
+			new Name("Leatherbound Hood", TIER.BAD), // 174 V, L50
+			new Name("Wrapped Cap", TIER.BAD), // 187 V, L54
+			new Name("Deerstalker Hood", TIER.BAD), // 203 V, L59
+			new Name("Woven Cap", TIER.BAD), // 222 V, L65
+			new Name("Desert Cap", TIER.BAD), // 244 V, L70
+			new Name("Trapper Hood", TIER.BAD), // 266 V, L75
+
+			new Name("Freebooter Cap", TIER.OTHER), // 288 V, L80
+
+			new Name("Brimmed Helm", TIER.BAD), // 23 A, 18 V, L5
+			new Name("Guarded Helm", TIER.BAD), // 34 A, 28 V, L11
+			new Name("Visored Helm", TIER.BAD), // 44 A, 37 V, L16
+			new Name("Cowled Helm", TIER.BAD), // 62 A, 54 V, L26
+			new Name("Shielded Helm", TIER.BAD), // 75 A, 66 V, L33
+			new Name("Closed Helm", TIER.BAD), // 97 A, 87 V, L45
+			new Name("Cabalist Helm", TIER.BAD), // 113 A, 103 V, L54
+			new Name("Gladiatorial Helm", TIER.BAD), // 123 A, 111 V, L59
+			new Name("Warded Helm", TIER.BAD), // 134 A, 122 V, L65
+			new Name("Cryptic Helm", TIER.BAD), // 147 A, 134 V, L70
+			new Name("Champion Helm", TIER.BAD), // 160 A, 146 V, L75
+
+			new Name("Gladiatorial Helm", TIER.OTHER), // 174 A, 159 V, L80
+
+			new Name("Iron Crown", TIER.BAD), // 23 A, 12 ES, L5
+			new Name("Horned Crown", TIER.BAD), // 33 A, 15 ES, L10
+			new Name("Cultist Crown", TIER.BAD), // 44 A, 19 ES, L16
+			new Name("Martyr Crown", TIER.BAD), // 66 A, 25 ES, L28
+			new Name("Heavy Crown", TIER.BAD), // 75 A, 28 ES, L33
+			new Name("Spiritbone Crown", TIER.BAD), // 97 A, 35 ES, L45
+			new Name("Hallowed Crown", TIER.BAD), // 113 A, 40 ES, L54
+			new Name("Inquisitor Crown", TIER.BAD), // 123 A, 43 ES, L59
+			new Name("Druidic Crown", TIER.BAD), // 134 A, 46 ES, L65
+			new Name("Saintly Crown", TIER.BAD), // 147 A, 51 ES, L70
+			new Name("Divine Crown", TIER.BAD), // 160 A, 55 ES, L75
+
+			new Name("Cryptic Crown", TIER.OTHER), // 174 A, 60 ES, L80
+
+			new Name("Hewn Mask", TIER.BAD), // 18 V, 12 ES, L5
+			new Name("Face Mask", TIER.BAD), // 26 V, 15 ES, L10
+			new Name("Hooded Mask", TIER.BAD), // 37 V, 19 ES, L16
+			new Name("Veiled Mask", TIER.BAD), // 58 V, 25 ES, L28
+			new Name("Tribal Mask", TIER.BAD), // 66 V, 28 ES, L33
+			new Name("Solid Mask", TIER.BAD), // 87 V, 35 ES, L45
+			new Name("Pariah Mask", TIER.BAD), // 103 V, 40 ES, L54
+			new Name("Avian Mask", TIER.BAD), // 111 V, 43 ES, L59
+			new Name("Brigand Mask", TIER.BAD), // 122 V, 46 ES, L65
+			new Name("Faridun Mask", TIER.BAD), // 134 V, 51 ES, L70
+			new Name("Soaring Mask", TIER.BAD), // 146 V, 55 ES, L75
+
+			new Name("Grinning Mask", TIER.OTHER), // 159 V, 60 ES, L80
 
 			// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
 			new Name("Tattered Robe", TIER.BAD), // 28 ES
