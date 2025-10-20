@@ -1409,10 +1409,10 @@ Show
 	Continue
 
 Show
-	Class == "Body Armours"
+	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Normal
 	ItemLevel >= 82
-	DropLevel >= 65
 	Corrupted False
 	BaseEnergyShield > 0
 	BaseArmour == 0
@@ -1427,28 +1427,10 @@ Show
 	Continue
 
 Show
-	Class == Helmets Gloves
-	Rarity == Normal
-	ItemLevel >= 82
-	DropLevel >= 80
-	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
-
-	SetFontSize 37
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 215 218 255 255
-	MinimapIcon 0 Blue Kite
-
-	Continue
-
-Show
-	Class == "Body Armours"
+	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	ItemLevel >= 82
-	DropLevel >= 65
 	UnidentifiedItemTier <= 4
 	Corrupted False
 	BaseEnergyShield > 0
@@ -1464,29 +1446,10 @@ Show
 	Continue
 
 Show
-	Class == Helmets Gloves
+	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	ItemLevel >= 82
-	DropLevel >= 80
-	UnidentifiedItemTier <= 4
-	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
-
-	SetFontSize 32
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == "Body Armours"
-	Rarity == Magic
-	ItemLevel >= 82
-	DropLevel >= 65
 	UnidentifiedItemTier == 5
 	Corrupted False
 	BaseEnergyShield > 0
@@ -1502,29 +1465,10 @@ Show
 	Continue
 
 Show
-	Class == Helmets Gloves
+	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	ItemLevel >= 82
-	DropLevel >= 80
-	UnidentifiedItemTier == 5
-	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
-
-	SetFontSize 37
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 0 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == "Body Armours"
-	Rarity == Magic
-	ItemLevel >= 82
-	DropLevel >= 65
 	Corrupted False
 	BaseEnergyShield > 0
 	BaseArmour == 0
@@ -1540,29 +1484,10 @@ Show
 	Continue
 
 Show
-	Class == Helmets Gloves
-	Rarity == Magic
-	ItemLevel >= 82
-	DropLevel >= 80
-	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall"
-
-	SetFontSize 37
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 0 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == "Body Armours"
+	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	ItemLevel >= 82
-	DropLevel >= 65
 	UnidentifiedItemTier <= 4
 	BaseEnergyShield > 0
 	BaseArmour == 0
@@ -1577,28 +1502,10 @@ Show
 	Continue
 
 Show
-	Class == Helmets Gloves
+	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	ItemLevel >= 82
-	DropLevel >= 80
-	UnidentifiedItemTier <= 4
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
-
-	SetFontSize 32
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 166 176 255 255
-	MinimapIcon 1 Blue Cross
-
-	Continue
-
-Show
-	Class == "Body Armours"
-	Rarity == Rare
-	ItemLevel >= 82
-	DropLevel >= 65
 	UnidentifiedItemTier == 5
 	Corrupted False
 	BaseEnergyShield > 0
@@ -1614,48 +1521,10 @@ Show
 	Continue
 
 Show
-	Class == Helmets Gloves
+	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	ItemLevel >= 82
-	DropLevel >= 80
-	UnidentifiedItemTier == 5
-	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
-
-	SetFontSize 37
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 166 176 255 255
-	MinimapIcon 0 Blue Cross
-
-	Continue
-
-Show
-	Class == "Body Armours"
-	Rarity == Rare
-	ItemLevel >= 82
-	DropLevel >= 65
-	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall"
-
-	SetFontSize 37
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 166 176 255 255
-	MinimapIcon 0 Blue Cross
-
-	Continue
-
-Show
-	Class == Helmets Gloves
-	Rarity == Rare
-	ItemLevel >= 82
-	DropLevel >= 80
 	Corrupted False
 	BaseEnergyShield > 0
 	BaseArmour == 0

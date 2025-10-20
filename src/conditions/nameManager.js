@@ -769,63 +769,62 @@ export class NameManager {
 			new Name("Blacksteel Crest Shield", TIER.OTHER), // 109 A, 37 ES, L80
 		).exact(tier);
 	}
-	static getArmourClassOther() {
-		return new NameManager(
-			// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
-			"Feathered Raiment", /// 153 ES, L80, 5–10% of Damage is taken from Mana before Life
-		);
-	}
-	static getArmourClassBad() {
+	static getArmourClass(tier) {
 		return new NameManager(
 			// https://poe2db.tw/us/Helmets
-			"Twig Circlet", // 19 ES
-			"Wicker Tiara", // 28 ES, L10
-			"Beaded Circlet", // 34 ES, L16
-			"Chain Tiara", // 44 ES, L26
-			"Feathered Tiara", // 51 ES, L33
-			"Gold Circlet", // 58 ES, L40
-			"Vermeil Circlet", // 63 ES, L45
-			"Jade Tiara", // 69 ES, L50
-			"Sandsworn Tiara", // 73 ES, L54
-			"Jungle Tiara", // 78 ES, L59
-			"Skycrown Tiara", // 84 ES, L65
-			"Sorcerous Tiara", // 92 ES, L70
-			"Kamasan Tiara", // 101 ES, L75
-			// "Ancestral Tiara", // 109 ES, L80
+			new Name("Twig Circlet", TIER.BAD), // 19 ES
+			new Name("Wicker Tiara", TIER.BAD), // 28 ES, L10
+			new Name("Beaded Circlet", TIER.BAD), // 34 ES, L16
+			new Name("Chain Tiara", TIER.BAD), // 44 ES, L26
+			new Name("Feathered Tiara", TIER.BAD), // 51 ES, L33
+			new Name("Gold Circlet", TIER.BAD), // 58 ES, L40
+			new Name("Vermeil Circlet", TIER.BAD), // 63 ES, L45
+			new Name("Jade Tiara", TIER.BAD), // 69 ES, L50
+			new Name("Sandsworn Tiara", TIER.BAD), // 73 ES, L54
+			new Name("Jungle Tiara", TIER.BAD), // 78 ES, L59
+			new Name("Skycrown Tiara", TIER.BAD), // 84 ES, L65
+			new Name("Sorcerous Tiara", TIER.BAD), // 92 ES, L70
+			new Name("Kamasan Tiara", TIER.BAD), // 101 ES, L75
+
+			new Name("Ancestral Tiara", TIER.CLASS), // 109 ES, L80
 
 			// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
-			"Tattered Robe", // 28 ES
-			"Feathered Robe", // 35 ES, L5
-			"Hexer's Robe", // 44 ES, L11
-			"Bone Raiment", // 52 ES, L16
-			"Silk Robe", // 61 ES, L22
-			"Keth Raiment", // 70 ES, L28
-			"Votive Raiment", // 78 ES, L33
-			"Altar Robe", // 89 ES, L40
-			"Elementalist Robe", // 97 ES, L45
-			"Mystic Raiment", // 103 ES, L49
-			"River Raiment", // 111 ES, L54
-			"Adherent's Raiment", // 119 ES,  L59
-			"Ceremonial Robe", /// 123 ES, L62
-			// "Vile Robe", /// 184 ES, L65
-			// "Flowing Raiment", /// 153 ES, L70, 40–50% increased Mana Regeneration Rate
-			// "Sacramental Robe", /// 153 ES, L75, 40–50% faster start of Energy Shield Recharge
+			new Name("Tattered Robe", TIER.BAD), // 28 ES
+			new Name("Feathered Robe", TIER.BAD), // 35 ES, L5
+			new Name("Hexer's Robe", TIER.BAD), // 44 ES, L11
+			new Name("Bone Raiment", TIER.BAD), // 52 ES, L16
+			new Name("Silk Robe", TIER.BAD), // 61 ES, L22
+			new Name("Keth Raiment", TIER.BAD), // 70 ES, L28
+			new Name("Votive Raiment", TIER.BAD), // 78 ES, L33
+			new Name("Altar Robe", TIER.BAD), // 89 ES, L40
+			new Name("Elementalist Robe", TIER.BAD), // 97 ES, L45
+			new Name("Mystic Raiment", TIER.BAD), // 103 ES, L49
+			new Name("River Raiment", TIER.BAD), // 111 ES, L54
+			new Name("Adherent's Raiment", TIER.BAD), // 119 ES, L59
+			new Name("Ceremonial Robe", TIER.BAD), /// 123 ES, L62
+
+			new Name("Feathered Raiment", TIER.OTHER), /// 153 ES, L80, 5–10% of Damage is taken from Mana before Life
+
+			new Name("Vile Robe", TIER.CLASS), /// 184 ES, L65
+			new Name("Flowing Raiment", TIER.CLASS), /// 153 ES, L70, 40–50% increased Mana Regeneration Rate
+			new Name("Sacramental Robe", TIER.CLASS), /// 153 ES, L75, 40–50% faster start of Energy Shield Recharge
 
 			// https://poe2db.tw/us/Gloves
-			"Torn Gloves", // 9 ES
-			"Sombre Gloves", // 15 ES, L12
-			"Stitched Gloves", // 17 ES, L16
-			"Jewelled Gloves", // 22 ES, L26
-			"Intricate Gloves", // 26 ES, L33
-			"Pauascale Gloves", // 32 ES, L45
-			"Embroidered Gloves", // 35 ES, L52
-			"Baroque Gloves", // 36 ES, L54
-			"Gold Gloves", // 39 ES, L59
-			"Grim Gloves", // 42 ES, L65
-			"Opulent Gloves", // 46 ES, L70
-			"Vaal Gloves", // 50 ES, L75
-			// "Sirenscale Gloves", // 54 ES, L80
-		);
+			new Name("Torn Gloves", TIER.BAD), // 9 ES
+			new Name("Sombre Gloves", TIER.BAD), // 15 ES, L12
+			new Name("Stitched Gloves", TIER.BAD), // 17 ES, L16
+			new Name("Jewelled Gloves", TIER.BAD), // 22 ES, L26
+			new Name("Intricate Gloves", TIER.BAD), // 26 ES, L33
+			new Name("Pauascale Gloves", TIER.BAD), // 32 ES, L45
+			new Name("Embroidered Gloves", TIER.BAD), // 35 ES, L52
+			new Name("Baroque Gloves", TIER.BAD), // 36 ES, L54
+			new Name("Gold Gloves", TIER.BAD), // 39 ES, L59
+			new Name("Grim Gloves", TIER.BAD), // 42 ES, L65
+			new Name("Opulent Gloves", TIER.BAD), // 46 ES, L70
+			new Name("Vaal Gloves", TIER.BAD), // 50 ES, L75
+
+			new Name("Sirenscale Gloves", TIER.CLASS), // 54 ES, L80
+		).exact(tier);
 	}
 	static getJewelleryOther() {
 		return new NameManager(

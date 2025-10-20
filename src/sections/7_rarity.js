@@ -269,18 +269,10 @@ function classArmour(filter) {
 	// Normal
 	filter.multiBlock((c) => {
 		c.continue();
-		c.categories(CATEGORY.BODY);
+		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-		c.isCorrupted = false;
-		c.onlyEnergyShield();
-	}, (c) => {
-		c.continue();
-		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
-		c.rarity = new Comparison(RARITY.NORMAL);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isCorrupted = false;
 		c.onlyEnergyShield();
 	}, (e) => {
@@ -290,19 +282,10 @@ function classArmour(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.categories(CATEGORY.BODY);
+		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-		c.isLowTier();
-		c.isCorrupted = false;
-		c.onlyEnergyShield();
-	}, (c) => { // Low tier
-		c.continue();
-		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isLowTier();
 		c.isCorrupted = false;
 		c.onlyEnergyShield();
@@ -312,37 +295,19 @@ function classArmour(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.categories(CATEGORY.BODY);
+		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-		c.isMaxTier();
-		c.isCorrupted = false;
-		c.onlyEnergyShield();
-	}, (c) => { // Max tier
-		c.continue();
-		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isMaxTier();
 		c.isCorrupted = false;
 		c.onlyEnergyShield();
 	}, (c) => { // Good mod (class)
 		c.continue();
-		c.categories(CATEGORY.BODY);
+		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-		c.isCorrupted = false;
-		c.onlyEnergyShield();
-		c.goodModArmour();
-	}, (c) => { // Good mod (class)
-		c.continue();
-		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isCorrupted = false;
 		c.onlyEnergyShield();
 		c.goodModArmour();
@@ -353,18 +318,10 @@ function classArmour(filter) {
 	// Rare
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.categories(CATEGORY.BODY);
+		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-		c.isLowTier();
-		c.onlyEnergyShield();
-	}, (c) => { // Low tier
-		c.continue();
-		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isLowTier();
 		c.onlyEnergyShield();
 	}, (e) => {
@@ -373,37 +330,19 @@ function classArmour(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.categories(CATEGORY.BODY);
+		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-		c.isMaxTier();
-		c.isCorrupted = false;
-		c.onlyEnergyShield();
-	}, (c) => { // Max tier
-		c.continue();
-		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isMaxTier();
 		c.isCorrupted = false;
 		c.onlyEnergyShield();
 	}, (c) => { // Good mod (class)
 		c.continue();
-		c.categories(CATEGORY.BODY);
+		c.names = new Comparison(NameManager.getArmourClass(TIER.CLASS));
+		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-		c.isCorrupted = false;
-		c.onlyEnergyShield();
-		c.goodModArmour();
-	}, (c) => { // Good mod (class)
-		c.continue();
-		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isCorrupted = false;
 		c.onlyEnergyShield();
 		c.goodModArmour();
