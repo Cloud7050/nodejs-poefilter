@@ -171,13 +171,9 @@ function otherUncommon(filter) {
 		c.categories(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.isCorrupted = true;
-	}, (c) => { // Belts (magic): Too low ilvl
+	}, (c) => { // Belts: Too low ilvl
 		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Belts (rare): Too low ilvl
-		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.RARE);
+		c.rarity = new Comparison([RARITY.MAGIC, RARITY.RARE]);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	});
 }

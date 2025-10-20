@@ -3125,14 +3125,7 @@ Hide
 
 Hide
 	Class == Belts
-	Rarity == Magic
-	ItemLevel < 82
-
-	#
-
-Hide
-	Class == Belts
-	Rarity == Rare
+	Rarity == Magic Rare
 	ItemLevel < 82
 
 	#
