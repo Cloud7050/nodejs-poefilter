@@ -482,19 +482,19 @@ export class NameManager {
 	static getMain(tier) {
 		return new NameManager(
 			// https://poe2db.tw/us/Sceptres#SceptresItem
-			new Name("Shrine Sceptre", TIER.BAD), // Purity of Fire/Ice/Lightning
+			new Name("Omen Sceptre", TIER.BAD), // Malice
+			new Name("Wrath Sceptre", TIER.BAD), // Fulmination
 
+			new Name("Shrine Sceptre", TIER.OTHER), // Purity of Fire/Ice/Lightning
 			new Name("Stoic Sceptre", TIER.OTHER), // Discipline
-			new Name("Omen Sceptre", TIER.OTHER), // Malice
-			new Name("Wrath Sceptre", TIER.OTHER), // Fulmination
 
 			new Name("Rattling Sceptre", TIER.CLASS), // Skeletal Warrior
 
 			// https://poe2db.tw/us/Wands#WandsItem
 			new Name("Bone Wand", TIER.BAD), // Bone Blast
 			new Name("Volatile Wand", TIER.BAD), // Volatile Dead
+			new Name("Withered Wand", TIER.BAD), // Chaos Bolt
 
-			new Name("Withered Wand", TIER.OTHER), // Chaos Bolt
 			new Name("Attuned Wand", TIER.OTHER), // Mana Drain
 			new Name("Siphoning Wand", TIER.OTHER), // Power Siphon
 			new Name("Galvanic Wand", TIER.OTHER), // Galvanic Field
@@ -504,13 +504,13 @@ export class NameManager {
 			new Name("Ashen Staff", TIER.BAD), // Firebolt
 			new Name("Gelid Staff", TIER.BAD), // Freezing Shards
 			new Name("Pyrophyte Staff", TIER.BAD), // Solar Orb
+			new Name("Voltaic Staff", TIER.BAD), // Lightning Bolt
+			new Name("Roaring Staff", TIER.BAD), // Unleash
+			new Name("Paralysing Staff", TIER.BAD), // Enervating Nova
+			new Name("Sanctified Staff", TIER.BAD), // Consecrate
 
-			new Name("Voltaic Staff", TIER.OTHER), // Lightning Bolt
-			new Name("Chiming Staff", TIER.OTHER), // Sigil of Power
 			new Name("Reaping Staff", TIER.OTHER), // Reap
-			new Name("Roaring Staff", TIER.OTHER), // Unleash
-			new Name("Paralysing Staff", TIER.OTHER), // Enervating Nova
-			new Name("Sanctified Staff", TIER.OTHER), // Consecrate
+			new Name("Chiming Staff", TIER.OTHER), // Sigil of Power
 
 			// https://poe2db.tw/us/One_Hand_Maces#OneHandMacesItem
 			new Name("Wooden Club", TIER.BAD), // 6-10 phys, 5% cc, x1.45
@@ -529,11 +529,11 @@ export class NameManager {
 			new Name("Flanged Mace", TIER.BAD), // 45-67 phys, 5% cc, x1.55, L67
 			new Name("Crown Mace", TIER.BAD), // 43-89 phys, 5% cc, x1.4, L72
 			new Name("Molten Hammer", TIER.BAD), // 35.5-59 phys, 35.5-59 fire, 5% cc, x1.45, L77
+			new Name("Marauding Mace", TIER.BAD), // 51-84 phys, 5% cc, x1.45, L77
+			new Name("Strife Pick", TIER.BAD), // 49-66 phys, 7% cc, x1.45, L78, +5–10% to Critical Damage Bonus
+			new Name("Fortified Hammer", TIER.BAD), // 60-73 phys, 5% cc, x1.4, L79, 40% chance to Daze on Hit
 
-			new Name("Marauding Mace", TIER.OTHER), // 51-84 phys, 5% cc, x1.45, L77
-			new Name("Strife Pick", TIER.OTHER), // 49-66 phys, 7% cc, x1.45, L78, +5–10% to Critical Damage Bonus
 			new Name("Akoyan Club", TIER.OTHER), // 46-76 phys, 5% cc, x1.45, L78, Always Hits
-			new Name("Fortified Hammer", TIER.OTHER), // 60-73 phys, 5% cc, x1.4, L79, 40% chance to Daze on Hit
 
 			// https://poe2db.tw/us/Spears#SpearsItem
 			new Name("Hardwood Spear", TIER.BAD), // 5-9 phys, 5% cc, x1.6
@@ -551,11 +551,11 @@ export class NameManager {
 			new Name("Helix Spear", TIER.BAD), // 37-68 phys, 5% cc, x1.6, L65
 			new Name("Orichalcum Spear", TIER.BAD), // 38-70 phys, 5% cc, x1.6, L67
 			new Name("Pronged Spear", TIER.BAD), // 40-75 phys, 5% cc, x1.6, L72
+			new Name("Stalking Spear", TIER.BAD), // 44-82 phys, 5% cc, x1.55, L77, 15–25% chance to Maim on Hit
 
 			new Name("Spiked Spear", TIER.OTHER), // 41-76 phys, 6.5% cc, x1.6, L77
-			new Name("Stalking Spear", TIER.OTHER), // 44-82 phys, 5% cc, x1.55, L77, 15–25% chance to Maim on Hit
-			new Name("Akoyan Spear", TIER.OTHER), // 43-80 phys, 7% cc, x1.5, L78
 			new Name("Flying Spear", TIER.OTHER), // 41-76 phys, 5% cc, x1.6, L78, 25–35% increased Projectile Speed with this Weapon
+			new Name("Akoyan Spear", TIER.OTHER), // 43-80 phys, 7% cc, x1.5, L78
 			new Name("Grand Spear", TIER.OTHER), // 46-85 phys, 5% cc, x1.5, L79
 
 			// https://poe2db.tw/us/Bows#BowsItem
@@ -574,12 +574,12 @@ export class NameManager {
 			new Name("Militant Bow", TIER.BAD), // 46-69 phys, x1.2, L62
 			new Name("Ironwood Shortbow", TIER.BAD), // 41-76 phys, x1.25, L67
 			new Name("Cavalry Bow", TIER.BAD), // 49-82 phys, x1.2, L72
+			new Name("Guardian Bow", TIER.BAD), // 53-80 phys, x1.15, L77, 20–30% chance to Chain an additional time
+			new Name("Fanatic Bow", TIER.BAD), // 42-70 phys, 43-71 chaos, x1.2, L79
 
-			new Name("Guardian Bow", TIER.OTHER), // 53-80 phys, x1.15, L77, 20–30% chance to Chain an additional time
 			new Name("Warmonger Bow", TIER.OTHER), // 56-84 phys, x1.2, L77
 			new Name("Obliterator Bow", TIER.OTHER), // 62-115 phys, x1.15, L78, 50% reduced Projectile Range
 			new Name("Gemini Bow", TIER.OTHER), // 39-72 phys, x1.1, L78, Bow Attacks fire an additional Arrow
-			new Name("Fanatic Bow", TIER.OTHER), // 42-70 phys, 43-71 chaos, x1.2, L79
 
 			// https://poe2db.tw/us/Crossbows#CrossbowsItem
 			new Name("Makeshift Crossbow", TIER.BAD), // 7-12 phys, 5% cc, x1.6, r0.8
@@ -597,11 +597,11 @@ export class NameManager {
 			new Name("Bleak Crossbow", TIER.BAD), // 27-109 phys, 5% cc, x1.6, r0.8, L62
 			new Name("Stout Crossbow", TIER.BAD), // 30-119 phys, 5% cc, x1.55, r0.75, L67
 			new Name("Engraved Crossbow", TIER.BAD), // 31-124 phys, 5% cc, x1.6, r0.8, L72
+			new Name("Flexed Crossbow", TIER.BAD), // 32-127 phys, 5% cc, x1.6, r0.85, L77, 20–30% increased Bolt Speed
+			new Name("Elegant Crossbow", TIER.BAD), // 31-123 phys, 5% cc, x1.65, r0.85, L78, 20–30% chance to Pierce an Enemy
 
-			new Name("Flexed Crossbow", TIER.OTHER), // 32-127 phys, 5% cc, x1.6, r0.85, L77, 20–30% increased Bolt Speed
 			new Name("Desolate Crossbow", TIER.OTHER), // 33-132 phys, 5% cc, x1.6, r0.8, L77
 			new Name("Gemini Crossbow", TIER.OTHER), // 28-112 phys, 5% cc, x1.6, r1.1, L78, Loads an additional bolt
-			new Name("Elegant Crossbow", TIER.OTHER), // 31-123 phys, 5% cc, x1.65, r0.85, L78, 20–30% chance to Pierce an Enemy
 			new Name("Siege Crossbow", TIER.OTHER), // 29-115 phys, 5% cc, x1.65, r0.75, L79, Grenade Skills Fire an additional Projectile
 
 			// https://poe2db.tw/us/Quarterstaves#QuarterstavesItem
@@ -620,12 +620,12 @@ export class NameManager {
 			new Name("Guardian Quarterstaff", TIER.BAD), // 49-82 phys, 10% cc, x1.4, L62, +10–15% to Block chance
 			new Name("Sinister Quarterstaff", TIER.BAD), // 55-92 phys, 11.5% cc, x1.4, L67
 			new Name("Lunar Quarterstaff", TIER.BAD), // 50-103 phys, 10% cc, x1.5, L72
-			new Name("Dreaming Quarterstaff", TIER.BAD), // 99-133 phys, 0% cc, x1.5, L78
-			new Name("Bolting Quarterstaff", TIER.BAD), // 24-97 phys, 1-100 lightning, 10% cc, x1.4, L78
+			new Name("Striking Quarterstaff", TIER.BAD), // 53-111 phys, 10% cc, x1.4, L77, 16% increased Melee Strike Range with this weapon
+			new Name("Aegis Quarterstaff", TIER.BAD), // 58-97 phys, 10% cc, x1.4, L79, +10–15% to Block chance
 
-			new Name("Striking Quarterstaff", TIER.OTHER), // 53-111 phys, 10% cc, x1.4, L77, 16% increased Melee Strike Range with this weapon
 			new Name("Razor Quarterstaff", TIER.OTHER), // 65-108 phys, 10% cc, x1.4, L77
-			new Name("Aegis Quarterstaff", TIER.OTHER), // 58-97 phys, 10% cc, x1.4, L79, +10–15% to Block chance
+			new Name("Dreaming Quarterstaff", TIER.OTHER), // 99-133 phys, 0% cc, x1.5, L78
+			new Name("Bolting Quarterstaff", TIER.OTHER), // 24-97 phys, 1-100 lightning, 10% cc, x1.4, L78
 
 			// https://poe2db.tw/us/Two_Hand_Maces#TwoHandMacesItem
 			new Name("Felled Greatclub", TIER.BAD), // 13-18 phys, 5% cc, x1.1
@@ -643,12 +643,12 @@ export class NameManager {
 			new Name("Disintegrating Maul", TIER.BAD), // 93-114 phys, 5% cc, x1.1, L62, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
 			new Name("Anvil Maul", TIER.BAD), // 112-151 phys, 5% cc, x1.05, L67
 			new Name("Sacred Maul", TIER.BAD), // 76-158 phys, 5% cc, x1.2, L72
-			new Name("Ironwood Greathammer", TIER.BAD), // 94-174 phys, 5% cc, x1.05, L77, Causes 30–50% increased Stun Buildup
+			new Name("Fanatic Greathammer", TIER.BAD), // 89-120 phys, 5% cc, x1.05, L78, Strikes deal Splash damage to targets within 1.5 metres
+			new Name("Ruination Maul", TIER.BAD), // 113-138 phys, 5% cc, x1.1, L79, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
 
+			new Name("Ironwood Greathammer", TIER.OTHER), // 94-174 phys, 5% cc, x1.05, L77, Causes 30–50% increased Stun Buildup
 			new Name("Massive Greathammer", TIER.OTHER), // 119-161 phys, 5% cc, x1.1, L77
 			new Name("Tawhoan Greatclub", TIER.OTHER), // 107-145 phys, 5% cc, x1.1, L78, Crushes Enemies on Hit
-			new Name("Fanatic Greathammer", TIER.OTHER), // 89-120 phys, 5% cc, x1.05, L78, Strikes deal Splash damage to targets within 1.5 metres
-			new Name("Ruination Maul", TIER.OTHER), // 113-138 phys, 5% cc, x1.1, L79, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
 		).exact(tier);
 	}
 	static getOff(tier) {
@@ -674,16 +674,16 @@ export class NameManager {
 			new Name("Tasalian Focus", TIER.CLASS), // 68 ES, L80
 
 			// https://poe2db.tw/us/Quivers#QuiversItem
-			new Name("Broadhead Quiver", TIER.BAD), // Adds 1 to 3 Physical Damage to Attacks
 			new Name("Fire Quiver", TIER.BAD), // L8, Adds 3 to 5 Fire damage to Attacks
 			new Name("Sacral Quiver", TIER.BAD), // L16, Gain 2–3 Life per Enemy Hit with Attacks
 			new Name("Two-Point Quiver", TIER.BAD), // L24, 20–30% increased Accuracy Rating
 			new Name("Blunt Quiver", TIER.BAD), // L33, 25–40% increased Stun Buildup
 			new Name("Toxic Quiver", TIER.BAD), // L39, 20–30% chance to Poison on Hit with Attacks
 			new Name("Serrated Quiver", TIER.BAD), // L44, Attacks have 20–30% chance to cause Bleeding
+			new Name("Penetrating Quiver", TIER.BAD), // L55, 100% chance to Pierce an Enemy
 
+			new Name("Broadhead Quiver", TIER.OTHER), // Adds 1 to 3 Physical Damage to Attacks
 			new Name("Primed Quiver", TIER.OTHER), // L51, 7–10% increased Attack Speed
-			new Name("Penetrating Quiver", TIER.OTHER), // L55, 100% chance to Pierce an Enemy
 			new Name("Volant Quiver", TIER.OTHER), // L61, 20–30% increased Arrow Speed
 			new Name("Visceral Quiver", TIER.OTHER), // L65, 20–30% increased Critical Hit Chance for Attacks
 
