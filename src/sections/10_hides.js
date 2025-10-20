@@ -156,7 +156,7 @@ function classUncommon(filter) {
 		// Allow BiS ilvl
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Flasks: Bad base
-		c.names = new Comparison(NameManager.getFlasksBad());
+		c.names = new Comparison(NameManager.getFlasks(TIER.BAD));
 		c.categories(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});

@@ -826,7 +826,7 @@ export class NameManager {
 			new Name("Sirenscale Gloves", TIER.CLASS), // 54 ES, L80
 		).exact(tier);
 	}
-	static getJewelleryOther() {
+	static getJewelleryOther() { //TODO
 		return new NameManager(
 			"Crimson Amulet", // 2-4 life regen
 			// "Amber Amulet", // Strength
@@ -837,22 +837,28 @@ export class NameManager {
 			"Unset Ring", // Skill slot
 		);
 	}
-	// static getFlasksGood() {
-	// 	return new NameManager(
-	// 		"Ultimate Life Flask", "Ultimate Mana Flask",
-	// 	);
-	// }
-	static getFlasksBad() {
+	static getFlasks(tier) {
 		return new NameManager(
-			"Lesser Life Flask", "Lesser Mana Flask",
-			"Medium Life Flask", "Medium Mana Flask",
-			"Greater Life Flask", "Greater Mana Flask",
-			"Grand Life Flask", "Grand Mana Flask",
-			"Giant Life Flask", "Giant Mana Flask",
-			"Colossal Life Flask", "Colossal Mana Flask",
-			"Gargantuan Life Flask", "Gargantuan Mana Flask",
-			"Transcendent Life Flask", "Transcendent Mana Flask",
-		);
+			new Name("Lesser Life Flask", TIER.BAD),
+			new Name("Lesser Mana Flask", TIER.BAD),
+			new Name("Medium Life Flask", TIER.BAD),
+			new Name("Medium Mana Flask", TIER.BAD),
+			new Name("Greater Life Flask", TIER.BAD),
+			new Name("Greater Mana Flask", TIER.BAD),
+			new Name("Grand Life Flask", TIER.BAD),
+			new Name("Grand Mana Flask", TIER.BAD),
+			new Name("Giant Life Flask", TIER.BAD),
+			new Name("Giant Mana Flask", TIER.BAD),
+			new Name("Colossal Life Flask", TIER.BAD),
+			new Name("Colossal Mana Flask", TIER.BAD),
+			new Name("Gargantuan Life Flask", TIER.BAD),
+			new Name("Gargantuan Mana Flask", TIER.BAD),
+			new Name("Transcendent Life Flask", TIER.BAD),
+			new Name("Transcendent Mana Flask", TIER.BAD),
+
+			new Name("Ultimate Life Flask", TIER.CLASS),
+			new Name("Ultimate Mana Flask", TIER.CLASS),
+		).exact(tier);
 	}
 
 	// Inclusive of min, exclusive of max
