@@ -1553,7 +1553,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	BaseType == "Imperial Greathelm" "Freebooter Cap" "Gladiatorial Helm" "Cryptic Crown" "Grinning Mask" "Feathered Raiment" "Soldier Cuirass" "Ornate Plate" "Warlord Cuirass" "Slipstrike Vest" "Corsair Coat" "Sleek Jacket" "Falconer's Jacket" "Massive Mitts" "Polished Bracers" "Blacksteel Gauntlets" "Adherent Cuffs" "Secured Wraps"
 	Class == Helmets Gloves
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1617,7 +1617,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	BaseType == "Imperial Greathelm" "Freebooter Cap" "Gladiatorial Helm" "Cryptic Crown" "Grinning Mask" "Feathered Raiment" "Soldier Cuirass" "Ornate Plate" "Warlord Cuirass" "Slipstrike Vest" "Corsair Coat" "Sleek Jacket" "Falconer's Jacket" "Massive Mitts" "Polished Bracers" "Blacksteel Gauntlets" "Adherent Cuffs" "Secured Wraps"
 	Class == Helmets Gloves
 	Rarity == Rare
 	ItemLevel >= 82

@@ -366,7 +366,7 @@ function otherArmour(filter) {
 		c.goodModArmour(true);
 	}, (c) => { // Good mod (other top)
 		c.continue();
-		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.OTHER));
 		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -403,7 +403,7 @@ function otherArmour(filter) {
 		c.goodModArmour(true);
 	}, (c) => { // Good mod (other top)
 		c.continue();
-		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.OTHER));
 		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
