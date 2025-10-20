@@ -479,7 +479,7 @@ export class NameManager {
 		).filter(min, max);
 	}
 
-	static getMainClass(tier) {
+	static getMain(tier) {
 		return new NameManager(
 			// https://poe2db.tw/us/Sceptres#SceptresItem
 			new Name("Shrine Sceptre", TIER.BAD), // Purity of Fire/Ice/Lightning
@@ -489,33 +489,7 @@ export class NameManager {
 			new Name("Wrath Sceptre", TIER.OTHER), // Fulmination
 
 			new Name("Rattling Sceptre", TIER.CLASS), // Skeletal Warrior
-		).exact(tier);
-	}
-	static getOffClass(tier) {
-		return new NameManager(
-			// https://poe2db.tw/us/Foci#FociItem
-			new Name("Twig Focus", TIER.BAD), // 12 ES
-			new Name("Woven Focus", TIER.BAD), // 15 ES, L6
-			new Name("Antler Focus", TIER.BAD), // 17 ES, L10
-			new Name("Engraved Focus", TIER.BAD), // 21 ES, L16
-			new Name("Tonal Focus", TIER.BAD), // 25 ES, L22
-			new Name("Crystal Focus", TIER.BAD), // 28 ES, L26
-			new Name("Voodoo Focus", TIER.BAD), // 32 ES, L33
-			new Name("Plumed Focus", TIER.BAD), // 34 ES, L36
-			new Name("Runed Focus", TIER.BAD), // 40 ES, L45
-			new Name("Whorl Focus", TIER.BAD), // 43 ES, L51
-			new Name("Arrayed Focus", TIER.BAD), // 45 ES, L54
-			new Name("Cultist Focus", TIER.BAD), // 49 ES, L59
-			new Name("Hallowed Focus", TIER.BAD), // 50 ES, L61
-			new Name("Druidic Focus", TIER.BAD), // 52 ES, L65
-			new Name("Leyline Focus", TIER.BAD), // 58 ES, L70
-			new Name("Sacred Focus", TIER.BAD), // 63 ES, L75
 
-			new Name("Tasalian Focus", TIER.CLASS), // 68 ES, L80
-		).exact(tier);
-	}
-	static getMainOther(tier) {
-		return new NameManager(
 			// https://poe2db.tw/us/Wands#WandsItem
 			new Name("Bone Wand", TIER.BAD), // Bone Blast
 			new Name("Volatile Wand", TIER.BAD), // Volatile Dead
@@ -677,8 +651,28 @@ export class NameManager {
 			new Name("Ruination Maul", TIER.OTHER), // 113-138 phys, 5% cc, x1.1, L79, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
 		).exact(tier);
 	}
-	static getOffOther(tier) {
+	static getOff(tier) {
 		return new NameManager(
+			// https://poe2db.tw/us/Foci#FociItem
+			new Name("Twig Focus", TIER.BAD), // 12 ES
+			new Name("Woven Focus", TIER.BAD), // 15 ES, L6
+			new Name("Antler Focus", TIER.BAD), // 17 ES, L10
+			new Name("Engraved Focus", TIER.BAD), // 21 ES, L16
+			new Name("Tonal Focus", TIER.BAD), // 25 ES, L22
+			new Name("Crystal Focus", TIER.BAD), // 28 ES, L26
+			new Name("Voodoo Focus", TIER.BAD), // 32 ES, L33
+			new Name("Plumed Focus", TIER.BAD), // 34 ES, L36
+			new Name("Runed Focus", TIER.BAD), // 40 ES, L45
+			new Name("Whorl Focus", TIER.BAD), // 43 ES, L51
+			new Name("Arrayed Focus", TIER.BAD), // 45 ES, L54
+			new Name("Cultist Focus", TIER.BAD), // 49 ES, L59
+			new Name("Hallowed Focus", TIER.BAD), // 50 ES, L61
+			new Name("Druidic Focus", TIER.BAD), // 52 ES, L65
+			new Name("Leyline Focus", TIER.BAD), // 58 ES, L70
+			new Name("Sacred Focus", TIER.BAD), // 63 ES, L75
+
+			new Name("Tasalian Focus", TIER.CLASS), // 68 ES, L80
+
 			// https://poe2db.tw/us/Quivers#QuiversItem
 			new Name("Broadhead Quiver", TIER.BAD), // Adds 1 to 3 Physical Damage to Attacks
 			new Name("Fire Quiver", TIER.BAD), // L8, Adds 3 to 5 Fire damage to Attacks

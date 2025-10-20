@@ -22,11 +22,11 @@ function classWeapons(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Class mainhands: Bad base
-		c.names = new Comparison(NameManager.getMainClass(TIER.BAD));
+		c.names = new Comparison(NameManager.getMain(TIER.BAD));
 		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	}, (c) => { // Class offhands: Bad base
-		c.names = new Comparison(NameManager.getOffClass(TIER.BAD));
+		c.names = new Comparison(NameManager.getOff(TIER.BAD));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});
@@ -46,11 +46,11 @@ function otherWeapons(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Other mainhands: Bad base
-		c.names = new Comparison(NameManager.getMainOther(TIER.BAD));
+		c.names = new Comparison(NameManager.getMain(TIER.BAD));
 		c.categories(CATEGORY.MAIN_OTHER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	}, (c) => { // Other offhands: Bad base
-		c.names = new Comparison(NameManager.getOffOther(TIER.BAD));
+		c.names = new Comparison(NameManager.getOff(TIER.BAD));
 		c.categories(CATEGORY.OFF_OTHER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});
