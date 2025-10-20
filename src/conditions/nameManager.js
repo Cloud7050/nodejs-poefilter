@@ -892,6 +892,67 @@ export class NameManager {
 			new Name("Vaal Gloves", TIER.BAD), // 50 ES, L75
 
 			new Name("Sirenscale Gloves", TIER.CLASS), // 54 ES, L80
+
+			new Name("Stocky Mitts", TIER.BAD), // 15 A
+			new Name("Riveted Mitts", TIER.BAD), // 31 A, L11
+			new Name("Tempered Mitts", TIER.BAD), // 40 A, L16
+			new Name("Bolstered Mitts", TIER.BAD), // 58 A, L27
+			new Name("Moulded Mitts", TIER.BAD), // 68 A, L33
+			new Name("Detailed Mitts", TIER.BAD), // 88 A, L45
+			new Name("Ancient Mitts", TIER.BAD), // 103 A, L54
+			new Name("Feathered Mitts", TIER.BAD), // 111 A, L59
+			new Name("Knightly Mitts", TIER.BAD), // 122 A, L65
+			new Name("Ornate Mitts", TIER.BAD), // 134 A, L70
+			new Name("Vaal Mitts", TIER.BAD), // 146 A, L75
+
+			new Name("Massive Mitts", TIER.OTHER), // 158 A, L80
+
+			new Name("Suede Bracers", TIER.BAD), // 10 V
+			new Name("Firm Bracers", TIER.BAD), // 26 V, L11
+			new Name("Bound Bracers", TIER.BAD), // 33 V, L16
+			new Name("Sectioned Bracers", TIER.BAD), // 52 V, L28
+			new Name("Spined Bracers", TIER.BAD), // 60 V, L33
+			new Name("Fine Bracers", TIER.BAD), // 79 V, L45
+			new Name("Refined Bracers", TIER.BAD), // 93 V, L54
+			new Name("Spiked Bracers", TIER.BAD), // 101 V, L59
+			new Name("Stalking Bracers", TIER.BAD), // 111 V, L65
+			new Name("Grand Bracers", TIER.BAD), // 122 V, L70
+			new Name("Barbed Bracers", TIER.BAD), // 133 V, L75
+
+			new Name("Polished Bracers", TIER.OTHER), // 144 V, L80
+
+			new Name("Ringmail Gauntlets", TIER.BAD), // 13 A, 10 V, L6
+			new Name("Layered Gauntlets", TIER.BAD), // 22 A, 18 V, L16
+			new Name("Doubled Gauntlets", TIER.BAD), // 37 A, 33 V, L33
+			new Name("Plate Gauntlets", TIER.BAD), // 48 A, 44 V, L45
+			new Name("Zealot Gauntlets", TIER.BAD), // 61 A, 56 V, L59
+			new Name("Steelmail Gauntlets", TIER.BAD), // 67 A, 61 V, L65
+			new Name("Commander Gauntlets", TIER.BAD), // 74 A, 67 V, L70
+			new Name("Cultist Gauntlets", TIER.BAD), // 80 A, 73 V, L75
+
+			new Name("Blacksteel Gauntlets", TIER.OTHER), // 87 A, 79 V, L80
+
+			new Name("Rope Cuffs", TIER.BAD), // 12 A, 6 ES, L5
+			new Name("Aged Cuffs", TIER.BAD), // 22 A, 9 ES, L16
+			new Name("Goldcast Cuffs", TIER.BAD), // 37 A, 14 ES, L33
+			new Name("Verisium Cuffs", TIER.BAD), // 48 A, 17 ES, L45
+			new Name("Ornate Cuffs", TIER.BAD), // 61 A, 21 ES, L59
+			new Name("Bound Cuffs", TIER.BAD), // 67 A, 23 ES, L65
+			new Name("Ancient Cuffs", TIER.BAD), // 74 A, 25 ES, L70
+			new Name("Gleaming Cuffs", TIER.BAD), // 80 A, 28 ES, L75
+
+			new Name("Adherent Cuffs", TIER.OTHER), // 87 A, 30 ES, L80
+
+			new Name("Gauze Wraps", TIER.BAD), // 8 V, 6 ES, L4
+			new Name("Linen Wraps", TIER.BAD), // 18 V, 9 ES, L16
+			new Name("Spiral Wraps", TIER.BAD), // 33 V, 14 ES, L33
+			new Name("Buckled Wraps", TIER.BAD), // 44 V, 17 ES, L45
+			new Name("Adorned Wraps", TIER.BAD), // 56 V, 21 ES, L59
+			new Name("War Wraps", TIER.BAD), // 61 V, 23 ES, L65
+			new Name("Elegant Wraps", TIER.BAD), // 67 V, 25 ES, L70
+			new Name("Vaal Wraps", TIER.BAD), // 73 V, 28 ES, L75
+
+			new Name("Secured Wraps", TIER.OTHER), // 79 V, 30 ES, L80
 		).exact(tier);
 	}
 	static getJewelleryOther() { //TODO

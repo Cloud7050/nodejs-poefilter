@@ -57,53 +57,24 @@ function otherWeapons(filter) {
 }
 
 function classArmour(filter) {
-	filter.multiHide((c) => { // Class armour: Remaining corrupts
-		c.categories(CATEGORY.ARMOUR_TOP);
+	filter.multiHide((c) => { // Any armour: Remaining corrupts
+		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.isCorrupted = true;
-		c.onlyEnergyShield();
-	}, (c) => { // Class armour: Too low ilvl
-		c.categories(CATEGORY.ARMOUR_TOP);
+	}, (c) => { // Any armour: Too low ilvl
+		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
-		c.onlyEnergyShield();
 	}, (c) => { // Class armour: Bad base
 		c.names = new Comparison(NameManager.getArmour(TIER.BAD));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.onlyEnergyShield();
 	});
 }
 
 function otherArmour(filter) {
-	filter.multiHide((c) => { // Other armour (armour): Remaining corrupts
-		c.categories(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.isCorrupted = true;
-		c.hasArmour();
-	}, (c) => { // Other armour (evasion): Remaining corrupts
-		c.categories(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.isCorrupted = true;
-		c.hasEvasion();
-	}, (c) => { // Boots: Remaining corrupts
-		c.categories(CATEGORY.BOOTS);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.isCorrupted = true;
-	}, (c) => { // Other armour (armour): Too low ilvl
-		c.categories(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
-		c.hasArmour();
-	}, (c) => { // Other armour (evasion): Too low ilvl
-		c.categories(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
-		c.hasEvasion();
-	}, (c) => { // Boots: Too low ilvl
-		c.categories(CATEGORY.BOOTS);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Other body (armour): Bad base
+	filter.multiHide((c) => { // Other body (armour): Bad base
 		c.categories(CATEGORY.BODY);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.dropLevel = new Comparison(65, OPERATOR.LT);
@@ -114,15 +85,9 @@ function otherArmour(filter) {
 		c.dropLevel = new Comparison(65, OPERATOR.LT);
 		c.hasEvasion();
 	}, (c) => { // Other helmets/gloves (armour): Bad base
+		c.names = new Comparison(NameManager.getArmour(TIER.BAD));
 		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.dropLevel = new Comparison(80, OPERATOR.LT);
-		c.hasArmour();
-	}, (c) => { // Other helmets/gloves (evasion): Bad base
-		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.dropLevel = new Comparison(80, OPERATOR.LT);
-		c.hasEvasion();
 	}, (c) => { // Boots: Bad base
 		c.categories(CATEGORY.BOOTS);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);

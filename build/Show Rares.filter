@@ -1414,9 +1414,6 @@ Show
 	Rarity == Normal
 	ItemLevel >= 82
 	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
 
 	SetFontSize 37
 	SetTextColor 215 218 255 255
@@ -1433,9 +1430,6 @@ Show
 	ItemLevel >= 82
 	UnidentifiedItemTier <= 4
 	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
 
 	SetFontSize 32
 	SetTextColor 182 190 255 255
@@ -1452,9 +1446,6 @@ Show
 	ItemLevel >= 82
 	UnidentifiedItemTier == 5
 	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1470,9 +1461,6 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall"
 
 	SetFontSize 37
@@ -1489,9 +1477,6 @@ Show
 	Rarity == Rare
 	ItemLevel >= 82
 	UnidentifiedItemTier <= 4
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
 
 	SetFontSize 32
 	SetTextColor 166 176 255 255
@@ -1508,9 +1493,6 @@ Show
 	ItemLevel >= 82
 	UnidentifiedItemTier == 5
 	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1526,9 +1508,6 @@ Show
 	Rarity == Rare
 	ItemLevel >= 82
 	Corrupted False
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall"
 
 	SetFontSize 37
@@ -1574,29 +1553,11 @@ Show
 	Continue
 
 Show
+	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
 	Class == Helmets Gloves
 	Rarity == Magic
 	ItemLevel >= 82
-	DropLevel >= 80
 	Corrupted False
-	BaseArmour > 0
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
-
-	SetFontSize 32
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Helmets Gloves
-	Rarity == Magic
-	ItemLevel >= 82
-	DropLevel >= 80
-	Corrupted False
-	BaseEvasion > 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 32
@@ -1656,27 +1617,10 @@ Show
 	Continue
 
 Show
+	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
 	Class == Helmets Gloves
 	Rarity == Rare
 	ItemLevel >= 82
-	DropLevel >= 80
-	BaseArmour > 0
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
-
-	SetFontSize 37
-	SetTextColor 166 176 255 255
-	SetBackgroundColor 23 38 134 255
-	SetBorderColor 166 176 255 255
-	MinimapIcon 0 Blue Cross
-
-	Continue
-
-Show
-	Class == Helmets Gloves
-	Rarity == Rare
-	ItemLevel >= 82
-	DropLevel >= 80
-	BaseEvasion > 0
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 37
@@ -2829,75 +2773,26 @@ Hide
 	#
 
 Hide
-	Class == Helmets "Body Armours" Gloves
+	Class == Helmets "Body Armours" Gloves Boots
 	Rarity < Unique
 	Corrupted True
+
+	#
+
+Hide
+	Class == Helmets "Body Armours" Gloves Boots
+	Rarity < Unique
+	ItemLevel < 82
+
+	#
+
+Hide
+	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Skycrown Tiara" "Sorcerous Tiara" "Kamasan Tiara" "Rusted Greathelm" "Soldier Greathelm" "Wrapped Greathelm" "Spired Greathelm" "Elite Greathelm" "Warrior Greathelm" "Commander Greathelm" "Fierce Greathelm" "Elegant Greathelm" "Noble Greathelm" "Warmonger Greathelm" "Masked Greathelm" "Paragon Greathelm" "Shabby Hood" "Felt Cap" "Lace Hood" "Swathed Cap" "Hunter Hood" "Viper Cap" "Corsair Cap" "Leatherbound Hood" "Wrapped Cap" "Deerstalker Hood" "Woven Cap" "Desert Cap" "Trapper Hood" "Brimmed Helm" "Guarded Helm" "Visored Helm" "Cowled Helm" "Shielded Helm" "Closed Helm" "Cabalist Helm" "Gladiatorial Helm" "Warded Helm" "Cryptic Helm" "Champion Helm" "Iron Crown" "Horned Crown" "Cultist Crown" "Martyr Crown" "Heavy Crown" "Spiritbone Crown" "Hallowed Crown" "Inquisitor Crown" "Druidic Crown" "Saintly Crown" "Divine Crown" "Hewn Mask" "Face Mask" "Hooded Mask" "Veiled Mask" "Tribal Mask" "Solid Mask" "Pariah Mask" "Avian Mask" "Brigand Mask" "Faridun Mask" "Soaring Mask" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "River Raiment" "Adherent's Raiment" "Ceremonial Robe" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves" "Grim Gloves" "Opulent Gloves" "Vaal Gloves" "Stocky Mitts" "Riveted Mitts" "Tempered Mitts" "Bolstered Mitts" "Moulded Mitts" "Detailed Mitts" "Ancient Mitts" "Feathered Mitts" "Knightly Mitts" "Ornate Mitts" "Vaal Mitts" "Suede Bracers" "Firm Bracers" "Bound Bracers" "Sectioned Bracers" "Spined Bracers" "Fine Bracers" "Refined Bracers" "Spiked Bracers" "Stalking Bracers" "Grand Bracers" "Barbed Bracers" "Ringmail Gauntlets" "Layered Gauntlets" "Doubled Gauntlets" "Plate Gauntlets" "Zealot Gauntlets" "Steelmail Gauntlets" "Commander Gauntlets" "Cultist Gauntlets" "Rope Cuffs" "Aged Cuffs" "Goldcast Cuffs" "Verisium Cuffs" "Ornate Cuffs" "Bound Cuffs" "Ancient Cuffs" "Gleaming Cuffs" "Gauze Wraps" "Linen Wraps" "Spiral Wraps" "Buckled Wraps" "Adorned Wraps" "War Wraps" "Elegant Wraps" "Vaal Wraps"
+	Class == Helmets "Body Armours" Gloves
+	Rarity < Unique
 	BaseEnergyShield > 0
 	BaseArmour == 0
 	BaseEvasion == 0
-
-	#
-
-Hide
-	Class == Helmets "Body Armours" Gloves
-	Rarity < Unique
-	ItemLevel < 82
-	BaseEnergyShield > 0
-	BaseArmour == 0
-	BaseEvasion == 0
-
-	#
-
-Hide
-	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Skycrown Tiara" "Sorcerous Tiara" "Kamasan Tiara" "Rusted Greathelm" "Soldier Greathelm" "Wrapped Greathelm" "Spired Greathelm" "Elite Greathelm" "Warrior Greathelm" "Commander Greathelm" "Fierce Greathelm" "Elegant Greathelm" "Noble Greathelm" "Warmonger Greathelm" "Masked Greathelm" "Paragon Greathelm" "Shabby Hood" "Felt Cap" "Lace Hood" "Swathed Cap" "Hunter Hood" "Viper Cap" "Corsair Cap" "Leatherbound Hood" "Wrapped Cap" "Deerstalker Hood" "Woven Cap" "Desert Cap" "Trapper Hood" "Brimmed Helm" "Guarded Helm" "Visored Helm" "Cowled Helm" "Shielded Helm" "Closed Helm" "Cabalist Helm" "Gladiatorial Helm" "Warded Helm" "Cryptic Helm" "Champion Helm" "Iron Crown" "Horned Crown" "Cultist Crown" "Martyr Crown" "Heavy Crown" "Spiritbone Crown" "Hallowed Crown" "Inquisitor Crown" "Druidic Crown" "Saintly Crown" "Divine Crown" "Hewn Mask" "Face Mask" "Hooded Mask" "Veiled Mask" "Tribal Mask" "Solid Mask" "Pariah Mask" "Avian Mask" "Brigand Mask" "Faridun Mask" "Soaring Mask" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "River Raiment" "Adherent's Raiment" "Ceremonial Robe" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves" "Grim Gloves" "Opulent Gloves" "Vaal Gloves"
-	Class == Helmets "Body Armours" Gloves
-	Rarity < Unique
-
-	#
-
-Hide
-	Class == Helmets "Body Armours" Gloves
-	Rarity < Unique
-	Corrupted True
-	BaseArmour > 0
-
-	#
-
-Hide
-	Class == Helmets "Body Armours" Gloves
-	Rarity < Unique
-	Corrupted True
-	BaseEvasion > 0
-
-	#
-
-Hide
-	Class == Boots
-	Rarity < Unique
-	Corrupted True
-
-	#
-
-Hide
-	Class == Helmets "Body Armours" Gloves
-	Rarity < Unique
-	ItemLevel < 82
-	BaseArmour > 0
-
-	#
-
-Hide
-	Class == Helmets "Body Armours" Gloves
-	Rarity < Unique
-	ItemLevel < 82
-	BaseEvasion > 0
-
-	#
-
-Hide
-	Class == Boots
-	Rarity < Unique
-	ItemLevel < 82
 
 	#
 
@@ -2918,18 +2813,9 @@ Hide
 	#
 
 Hide
+	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Skycrown Tiara" "Sorcerous Tiara" "Kamasan Tiara" "Rusted Greathelm" "Soldier Greathelm" "Wrapped Greathelm" "Spired Greathelm" "Elite Greathelm" "Warrior Greathelm" "Commander Greathelm" "Fierce Greathelm" "Elegant Greathelm" "Noble Greathelm" "Warmonger Greathelm" "Masked Greathelm" "Paragon Greathelm" "Shabby Hood" "Felt Cap" "Lace Hood" "Swathed Cap" "Hunter Hood" "Viper Cap" "Corsair Cap" "Leatherbound Hood" "Wrapped Cap" "Deerstalker Hood" "Woven Cap" "Desert Cap" "Trapper Hood" "Brimmed Helm" "Guarded Helm" "Visored Helm" "Cowled Helm" "Shielded Helm" "Closed Helm" "Cabalist Helm" "Gladiatorial Helm" "Warded Helm" "Cryptic Helm" "Champion Helm" "Iron Crown" "Horned Crown" "Cultist Crown" "Martyr Crown" "Heavy Crown" "Spiritbone Crown" "Hallowed Crown" "Inquisitor Crown" "Druidic Crown" "Saintly Crown" "Divine Crown" "Hewn Mask" "Face Mask" "Hooded Mask" "Veiled Mask" "Tribal Mask" "Solid Mask" "Pariah Mask" "Avian Mask" "Brigand Mask" "Faridun Mask" "Soaring Mask" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "River Raiment" "Adherent's Raiment" "Ceremonial Robe" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves" "Grim Gloves" "Opulent Gloves" "Vaal Gloves" "Stocky Mitts" "Riveted Mitts" "Tempered Mitts" "Bolstered Mitts" "Moulded Mitts" "Detailed Mitts" "Ancient Mitts" "Feathered Mitts" "Knightly Mitts" "Ornate Mitts" "Vaal Mitts" "Suede Bracers" "Firm Bracers" "Bound Bracers" "Sectioned Bracers" "Spined Bracers" "Fine Bracers" "Refined Bracers" "Spiked Bracers" "Stalking Bracers" "Grand Bracers" "Barbed Bracers" "Ringmail Gauntlets" "Layered Gauntlets" "Doubled Gauntlets" "Plate Gauntlets" "Zealot Gauntlets" "Steelmail Gauntlets" "Commander Gauntlets" "Cultist Gauntlets" "Rope Cuffs" "Aged Cuffs" "Goldcast Cuffs" "Verisium Cuffs" "Ornate Cuffs" "Bound Cuffs" "Ancient Cuffs" "Gleaming Cuffs" "Gauze Wraps" "Linen Wraps" "Spiral Wraps" "Buckled Wraps" "Adorned Wraps" "War Wraps" "Elegant Wraps" "Vaal Wraps"
 	Class == Helmets Gloves
 	Rarity < Unique
-	DropLevel < 80
-	BaseArmour > 0
-
-	#
-
-Hide
-	Class == Helmets Gloves
-	Rarity < Unique
-	DropLevel < 80
-	BaseEvasion > 0
 
 	#
 
