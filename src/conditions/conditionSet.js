@@ -36,25 +36,31 @@ export class ConditionSet {
 
 	export() {
 		let spans = [];
+		function handle(props, spanCallback) {
+			if (props === null) return;
 
-		if (this.names !== null) spans.push(this.names.export("BaseType"));
-		if (this.category !== null) spans.push(this.category.export("Class"));
-		if (this.rarity !== null) spans.push(this.rarity.export("Rarity"));
-		if (this.ilvl !== null) spans.push(this.ilvl.export("ItemLevel"));
-		if (this.dropLevel !== null) spans.push(this.dropLevel.export("DropLevel"));
-		if (this.wisdomTier !== null) spans.push(this.wisdomTier.export("UnidentifiedItemTier"));
-		if (this.count !== null) spans.push(this.count.export("StackSize"));
-		if (this.height !== null) spans.push(this.height.export("Height"));
-		if (this.width !== null) spans.push(this.width.export("Width"));
+			if (!Array.isArray(props)) props = [props];
+			for (let prop of props) spans.push(spanCallback(prop));
+		}
 
-		if (this.quality !== null) spans.push(this.quality.export("Quality"));
-		if (this.sockets !== null) spans.push(this.sockets.export("Sockets"));
-		if (this.isCorrupted !== null) spans.push(`Corrupted ${this.isCorrupted ? "True" : "False"}`);
-		if (this.isEnchanted !== null) spans.push(`AnyEnchantment ${this.isEnchanted ? "True" : "False"}`);
-		if (this.energyShield !== null) spans.push(this.energyShield.export("BaseEnergyShield"));
-		if (this.armour !== null) spans.push(this.armour.export("BaseArmour"));
-		if (this.evasion !== null) spans.push(this.evasion.export("BaseEvasion"));
-		if (this.mods !== null) spans.push(this.mods.export("HasExplicitMod"));
+		handle(this.names, (prop) => prop.export("BaseType"));
+		handle(this.category, (prop) => prop.export("Class"));
+		handle(this.rarity, (prop) => prop.export("Rarity"));
+		handle(this.ilvl, (prop) => prop.export("ItemLevel"));
+		handle(this.dropLevel, (prop) => prop.export("DropLevel"));
+		handle(this.wisdomTier, (prop) => prop.export("UnidentifiedItemTier"));
+		handle(this.count, (prop) => prop.export("StackSize"));
+		handle(this.height, (prop) => prop.export("Height"));
+		handle(this.width, (prop) => prop.export("Width"));
+
+		handle(this.quality, (prop) => prop.export("Quality"));
+		handle(this.sockets, (prop) => prop.export("Sockets"));
+		handle(this.isCorrupted, (prop) => `Corrupted ${this.isCorrupted ? "True" : "False"}`);
+		handle(this.isEnchanted, (prop) => `AnyEnchantment ${this.isEnchanted ? "True" : "False"}`);
+		handle(this.energyShield, (prop) => prop.export("BaseEnergyShield"));
+		handle(this.armour, (prop) => prop.export("BaseArmour"));
+		handle(this.evasion, (prop) => prop.export("BaseEvasion"));
+		handle(this.mods, (prop) => prop.export("HasExplicitMod"));
 
 		if (spans.length === 0) {
 			// Force empty line to represent where the set goes
