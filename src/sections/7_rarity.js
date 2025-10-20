@@ -346,28 +346,10 @@ function classArmour(filter) {
 
 function otherArmour(filter) {
 	// Magic
-	filter.multiBlock((c) => { // Good mod (other top)
-		c.continue();
-		c.categories(CATEGORY.BODY);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-		c.isCorrupted = false;
-		c.hasArmour();
-		c.goodModArmour(true);
-	}, (c) => { // Good mod (other top)
-		c.continue();
-		c.categories(CATEGORY.BODY);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-		c.isCorrupted = false;
-		c.hasEvasion();
-		c.goodModArmour(true);
-	}, (c) => { // Good mod (other top)
+	filter.multiBlock((c) => { // Good mod (other tops)
 		c.continue();
 		c.names = new Comparison(NameManager.getArmour(TIER.OTHER));
-		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
+		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.isCorrupted = false;
@@ -385,26 +367,10 @@ function otherArmour(filter) {
 	});
 
 	// Rare
-	filter.multiBlock((c) => { // Good mod (other top)
-		c.continue();
-		c.categories(CATEGORY.BODY);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-		c.hasArmour();
-		c.goodModArmour(true);
-	}, (c) => { // Good mod (other top)
-		c.continue();
-		c.categories(CATEGORY.BODY);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(65, OPERATOR.GTE);
-		c.hasEvasion();
-		c.goodModArmour(true);
-	}, (c) => { // Good mod (other top)
+	filter.multiBlock((c) => { // Good mod (other tops)
 		c.continue();
 		c.names = new Comparison(NameManager.getArmour(TIER.OTHER));
-		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
+		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.goodModArmour(true);

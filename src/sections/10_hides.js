@@ -65,30 +65,15 @@ function classArmour(filter) {
 		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Class armour: Bad base
+	}, (c) => { // Any tops: Bad base
 		c.names = new Comparison(NameManager.getArmour(TIER.BAD));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.onlyEnergyShield();
 	});
 }
 
 function otherArmour(filter) {
-	filter.multiHide((c) => { // Other body (armour): Bad base
-		c.categories(CATEGORY.BODY);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.dropLevel = new Comparison(65, OPERATOR.LT);
-		c.hasArmour();
-	}, (c) => { // Other body (evasion): Bad base
-		c.categories(CATEGORY.BODY);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.dropLevel = new Comparison(65, OPERATOR.LT);
-		c.hasEvasion();
-	}, (c) => { // Other helmets/gloves (armour): Bad base
-		c.names = new Comparison(NameManager.getArmour(TIER.BAD));
-		c.categories(CATEGORY.HELMET, CATEGORY.GLOVE);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	}, (c) => { // Boots: Bad base
+	filter.multiHide((c) => { // Boots: Bad base
 		c.categories(CATEGORY.BOOTS);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.dropLevel = new Comparison(80, OPERATOR.LT);
