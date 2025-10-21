@@ -705,8 +705,7 @@ export class NameManager {
 			new Name("Ornate Buckler", TIER.BAD), // 111 V, L65
 			new Name("Gutspike Buckler", TIER.BAD), // 122 V, L70
 			new Name("Ancient Buckler", TIER.BAD), // 133 V, L75
-
-			new Name("Desert Buckler", TIER.OTHER), // 144 V, L80
+			new Name("Desert Buckler", TIER.BAD), // 144 V, L80
 
 			// https://poe2db.tw/us/Shields#ShieldsItem
 			new Name("Splintered Tower Shield", TIER.BAD), // 18 A
@@ -742,8 +741,7 @@ export class NameManager {
 			new Name("Mammoth Targe", TIER.BAD), // 84 A, 76 V, L65
 			new Name("Baroque Targe", TIER.BAD), // 92 A, 84V, L70
 			new Name("Soaring Targe", TIER.BAD), // 100 A, 91 V, L75
-
-			new Name("Golden Targe", TIER.OTHER), // 109 A, 99 V, L80
+			new Name("Golden Targe", TIER.BAD), // 109 A, 99 V, L80
 
 			new Name("Blazon Crest Shield", TIER.BAD), // 10 A, 6 ES
 			new Name("Sigil Crest Shield", TIER.BAD), // 17 A, 8 ES, L7
@@ -759,8 +757,7 @@ export class NameManager {
 			new Name("Intricate Crest Shield", TIER.BAD), // 84 A, 29 ES, L65
 			new Name("Sekheman Crest Shield", TIER.BAD), // 92 A, 32 ES, L70
 			new Name("Vaal Crest Shield", TIER.BAD), // 100 A, 35 ES, L75
-
-			new Name("Blacksteel Crest Shield", TIER.OTHER), // 109 A, 37 ES, L80
+			new Name("Blacksteel Crest Shield", TIER.BAD), // 109 A, 37 ES, L80
 		).exact(tier);
 	}
 	static getArmour(tier) {
@@ -795,8 +792,7 @@ export class NameManager {
 			new Name("Warmonger Greathelm", TIER.BAD), // 243 A, L65
 			new Name("Masked Greathelm", TIER.BAD), // 267 A, L70
 			new Name("Paragon Greathelm", TIER.BAD), // 292 A, L75
-
-			new Name("Imperial Greathelm", TIER.OTHER), // 316 A, L80
+			new Name("Imperial Greathelm", TIER.BAD), // 316 A, L80
 
 			new Name("Shabby Hood", TIER.BAD), // 19 V
 			new Name("Felt Cap", TIER.BAD), // 48 V, L10
@@ -821,12 +817,10 @@ export class NameManager {
 			new Name("Shielded Helm", TIER.BAD), // 75 A, 66 V, L33
 			new Name("Closed Helm", TIER.BAD), // 97 A, 87 V, L45
 			new Name("Cabalist Helm", TIER.BAD), // 113 A, 103 V, L54
-			new Name("Gladiatorial Helm", TIER.BAD), // 123 A, 111 V, L59
 			new Name("Warded Helm", TIER.BAD), // 134 A, 122 V, L65
 			new Name("Cryptic Helm", TIER.BAD), // 147 A, 134 V, L70
 			new Name("Champion Helm", TIER.BAD), // 160 A, 146 V, L75
-
-			new Name("Gladiatorial Helm", TIER.OTHER), // 174 A, 159 V, L80
+			new Name("Gladiatorial Helm", TIER.BAD), // 174 A, 159 V, L80
 
 			new Name("Iron Crown", TIER.BAD), // 23 A, 12 ES, L5
 			new Name("Horned Crown", TIER.BAD), // 33 A, 15 ES, L10
@@ -839,8 +833,7 @@ export class NameManager {
 			new Name("Druidic Crown", TIER.BAD), // 134 A, 46 ES, L65
 			new Name("Saintly Crown", TIER.BAD), // 147 A, 51 ES, L70
 			new Name("Divine Crown", TIER.BAD), // 160 A, 55 ES, L75
-
-			new Name("Cryptic Crown", TIER.OTHER), // 174 A, 60 ES, L80
+			new Name("Cryptic Crown", TIER.BAD), // 174 A, 60 ES, L80
 
 			new Name("Hewn Mask", TIER.BAD), // 18 V, 12 ES, L5
 			new Name("Face Mask", TIER.BAD), // 26 V, 15 ES, L10
@@ -1016,8 +1009,7 @@ export class NameManager {
 			new Name("Steelmail Gauntlets", TIER.BAD), // 67 A, 61 V, L65
 			new Name("Commander Gauntlets", TIER.BAD), // 74 A, 67 V, L70
 			new Name("Cultist Gauntlets", TIER.BAD), // 80 A, 73 V, L75
-
-			new Name("Blacksteel Gauntlets", TIER.OTHER), // 87 A, 79 V, L80
+			new Name("Blacksteel Gauntlets", TIER.BAD), // 87 A, 79 V, L80
 
 			new Name("Rope Cuffs", TIER.BAD), // 12 A, 6 ES, L5
 			new Name("Aged Cuffs", TIER.BAD), // 22 A, 9 ES, L16
@@ -1027,8 +1019,7 @@ export class NameManager {
 			new Name("Bound Cuffs", TIER.BAD), // 67 A, 23 ES, L65
 			new Name("Ancient Cuffs", TIER.BAD), // 74 A, 25 ES, L70
 			new Name("Gleaming Cuffs", TIER.BAD), // 80 A, 28 ES, L75
-
-			new Name("Adherent Cuffs", TIER.OTHER), // 87 A, 30 ES, L80
+			new Name("Adherent Cuffs", TIER.BAD), // 87 A, 30 ES, L80
 
 			new Name("Gauze Wraps", TIER.BAD), // 8 V, 6 ES, L4
 			new Name("Linen Wraps", TIER.BAD), // 18 V, 9 ES, L16
