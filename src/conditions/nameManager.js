@@ -494,8 +494,8 @@ export class NameManager {
 			new Name("Bone Wand", TIER.BAD), // Bone Blast
 			new Name("Volatile Wand", TIER.BAD), // Volatile Dead
 			new Name("Withered Wand", TIER.BAD), // Chaos Bolt
+			new Name("Attuned Wand", TIER.BAD), // Mana Drain
 
-			new Name("Attuned Wand", TIER.OTHER), // Mana Drain
 			new Name("Siphoning Wand", TIER.OTHER), // Power Siphon
 			new Name("Galvanic Wand", TIER.OTHER), // Galvanic Field
 			new Name("Dueling Wand", TIER.OTHER), // Spellslinger
@@ -508,8 +508,8 @@ export class NameManager {
 			new Name("Roaring Staff", TIER.BAD), // Unleash
 			new Name("Paralysing Staff", TIER.BAD), // Enervating Nova
 			new Name("Sanctified Staff", TIER.BAD), // Consecrate
+			new Name("Reaping Staff", TIER.BAD), // Reap
 
-			new Name("Reaping Staff", TIER.OTHER), // Reap
 			new Name("Chiming Staff", TIER.OTHER), // Sigil of Power
 
 			// https://poe2db.tw/us/One_Hand_Maces#OneHandMacesItem
@@ -807,8 +807,7 @@ export class NameManager {
 			new Name("Woven Cap", TIER.BAD), // 222 V, L65
 			new Name("Desert Cap", TIER.BAD), // 244 V, L70
 			new Name("Trapper Hood", TIER.BAD), // 266 V, L75
-
-			new Name("Freebooter Cap", TIER.OTHER), // 288 V, L80
+			new Name("Freebooter Cap", TIER.BAD), // 288 V, L80
 
 			new Name("Brimmed Helm", TIER.BAD), // 23 A, 18 V, L5
 			new Name("Guarded Helm", TIER.BAD), // 34 A, 28 V, L11
@@ -846,8 +845,7 @@ export class NameManager {
 			new Name("Brigand Mask", TIER.BAD), // 122 V, 46 ES, L65
 			new Name("Faridun Mask", TIER.BAD), // 134 V, 51 ES, L70
 			new Name("Soaring Mask", TIER.BAD), // 146 V, 55 ES, L75
-
-			new Name("Grinning Mask", TIER.OTHER), // 159 V, 60 ES, L80
+			new Name("Grinning Mask", TIER.BAD), // 159 V, 60 ES, L80
 
 			// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
 			new Name("Tattered Robe", TIER.BAD), // 28 ES
@@ -883,10 +881,10 @@ export class NameManager {
 			new Name("Elegant Plate", TIER.BAD), // 315 A, L54
 			new Name("Heavy Plate", TIER.BAD), // 340 A, L59
 			new Name("Stone Cuirass", TIER.BAD), // 355 A, L62
+			new Name("Ornate Plate", TIER.BAD), // 445 A, L70, Regenerate 1.5–2.5% of maximum Life per second
 			new Name("Utzaal Cuirass", TIER.BAD), // 445 A, L75, 30–40% increased Stun Threshold
 
 			new Name("Soldier Cuirass", TIER.OTHER), // 524 A, L65
-			new Name("Ornate Plate", TIER.OTHER), // 445 A, L70, Regenerate 1.5–2.5% of maximum Life per second
 			new Name("Warlord Cuirass", TIER.OTHER), // 445 A, L80, +15–25% of Armour also applies to Elemental Damage
 
 			new Name("Leather Vest", TIER.BAD), // 30 V
@@ -904,9 +902,9 @@ export class NameManager {
 			new Name("Lizardscale Coat", TIER.BAD), // 324 V, L62
 			new Name("Swiftstalker Coat", TIER.BAD), // 406 V, L65, 20–30% reduced Slowing Potency of Debuffs on You
 			new Name("Wyrmscale Coat", TIER.BAD), // 406 V, L75, 30–40% increased Elemental Ailment Threshold
+			new Name("Corsair Coat", TIER.BAD), // 406 V, L80, 10–20% reduced Movement Speed Penalty from using Skills while moving
 
 			new Name("Slipstrike Vest", TIER.OTHER), // 487 V, L70
-			new Name("Corsair Coat", TIER.OTHER), // 406 V, L80, 10–20% reduced Movement Speed Penalty from using Skills while moving
 
 			new Name("Chain Mail", TIER.BAD), // 25 A, 16 V
 			new Name("Rogue Armour", TIER.BAD), // 53 A, 43 V, L11
@@ -1031,6 +1029,78 @@ export class NameManager {
 			new Name("Vaal Wraps", TIER.BAD), // 73 V, 28 ES, L75
 
 			new Name("Secured Wraps", TIER.OTHER), // 79 V, 30 ES, L80
+
+			// https://poe2db.tw/us/Boots#BootsItem
+			new Name("Straw Sandals", TIER.BAD), // 14 ES
+			new Name("Wrapped Sandals", TIER.BAD), // 22 ES, L11
+			new Name("Lattice Sandals", TIER.BAD), // 25 ES, L16
+			new Name("Silk Slippers", TIER.BAD), // 34 ES, L27
+			new Name("Feathered Sandals", TIER.BAD), // 38 ES, L33
+			new Name("Flax Sandals", TIER.BAD), // 48 ES, L45
+			new Name("Elegant Slippers", TIER.BAD), // 54 ES, L54
+			new Name("Dunerunner Sandals", TIER.BAD), // 58 ES, L59
+			new Name("Bound Sandals", TIER.BAD), // 63 ES, L65
+			new Name("Luxurious Slippers", TIER.BAD), // 69 ES, L70
+			new Name("Sandsworn Sandals", TIER.BAD), // 75 ES, L75
+
+			new Name("Sekhema Sandals", TIER.OTHER), // 82 ES, L80
+
+			new Name("Rough Greaves", TIER.BAD), // 22 A
+			new Name("Iron Greaves", TIER.BAD), // 47 A, L11
+			new Name("Bronze Greaves", TIER.BAD), // 60 A, L16
+			new Name("Trimmed Greaves", TIER.BAD), // 87 A, L27
+			new Name("Stone Greaves", TIER.BAD), // 102 A, L33
+			new Name("Reefsteel Greaves", TIER.BAD), // 132 A, L45
+			new Name("Elegant Greaves", TIER.BAD), // 155 A, L54
+			new Name("Carved Greaves", TIER.BAD), // 167 A, L59
+			new Name("Bulwark Greaves", TIER.BAD), // 182 A, L65
+			new Name("Ornate Greaves", TIER.BAD), // 200 A, L70
+			new Name("Vaal Greaves", TIER.BAD), // 219 A, L75
+			new Name("Tasalian Greaves", TIER.BAD), // 237 A, L80
+
+			new Name("Rawhide Boots", TIER.BAD), // 15 V
+			new Name("Laced Boots", TIER.BAD), // 38 V, L11
+			new Name("Embossed Boots", TIER.BAD), // 50 V, L16
+			new Name("Steeltoe Boots", TIER.BAD), // 79 V, L28
+			new Name("Lizardscale Boots", TIER.BAD), // 90 V, L33
+			new Name("Flared Boots", TIER.BAD), // 119 V, L45
+			new Name("Studded Boots", TIER.BAD), // 140 V, L54
+			new Name("Serpentscale Boots", TIER.BAD), // 152 V, L59
+			new Name("Cinched Boots", TIER.BAD), // 166 V, L65
+			new Name("Cavalry Boots", TIER.BAD), // 183 V, L70
+			new Name("Dragonscale Boots", TIER.BAD), // 200 V, L75
+			new Name("Drakeskin Boots", TIER.BAD), // 216 V, L80
+
+			new Name("Mail Sabatons", TIER.BAD), // 19 A, 15 V, L6
+			new Name("Braced Sabatons", TIER.BAD), // 33 A, 28 V, L16
+			new Name("Stacked Sabatons", TIER.BAD), // 56 A, 50 V, L33
+			new Name("Covered Sabatons", TIER.BAD), // 73 A, 65 V, L45
+			new Name("Bastion Sabatons", TIER.BAD), // 92 A, 84 V, L59
+			new Name("Veteran Sabatons", TIER.BAD), // 100 A, 91 V, L65
+			new Name("Noble Sabatons", TIER.BAD), // 110 A, 101 V, L70
+			new Name("Fortress Sabatons", TIER.BAD), // 120 A, 110 V, L75
+			new Name("Blacksteel Sabatons", TIER.BAD), // 130 A, 119 V, L80
+
+			new Name("Padded Leggings", TIER.BAD), // 18 A, 9 ES, L5
+			new Name("Secured Leggings", TIER.BAD), // 33 A, 14 ES, L16
+			new Name("Pelt Leggings", TIER.BAD), // 56 A, 21 ES, L33
+			new Name("Weaver Leggings", TIER.BAD), // 73 A, 26 ES, L45
+			new Name("Shamanistic Leggings", TIER.BAD), // 92 A, 32 ES, L59
+			new Name("Faithful Leggings", TIER.BAD), // 100 A, 35 ES, L65
+			new Name("Apostle Leggings", TIER.BAD), // 110 A, 38 ES, L70
+			new Name("Warlock Leggings", TIER.BAD), // 120 A, 42 ES, L75
+			new Name("Cryptic Leggings", TIER.BAD), // 130 A, 45 ES, L80
+
+			new Name("Frayed Shoes", TIER.BAD), // 13 V, 9 ES, L5
+			new Name("Threaded Shoes", TIER.BAD), // 28 V, 14 ES, L16
+			new Name("Hunting Shoes", TIER.BAD), // 50 V, 21 ES, L33
+			new Name("Steelpoint Shoes", TIER.BAD), // 65 V, 26 ES, L45
+			new Name("Treerunner Shoes", TIER.BAD), // 84 V, 32 ES, L59
+			new Name("Wanderer Shoes", TIER.BAD), // 91 V, 35 ES, L65
+			new Name("Charmed Shoes", TIER.BAD), // 101 V, 38 ES, L70
+			new Name("Quickslip Shoes", TIER.BAD), // 110 V, 42 ES, L75
+
+			new Name("Daggerfoot Shoes", TIER.OTHER), // 119 V, 45 ES, L80
 		).exact(tier);
 	}
 	static getJewelleryOther() { //TODO

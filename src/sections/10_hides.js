@@ -6,8 +6,7 @@ import { NameManager, TIER } from "../conditions/nameManager.js";
 export function sectionHides(filter) {
 	classWeapons(filter);
 	otherWeapons(filter);
-	classArmour(filter);
-	otherArmour(filter);
+	armour(filter);
 	classUncommon(filter);
 	otherUncommon(filter);
 }
@@ -56,27 +55,19 @@ function otherWeapons(filter) {
 	});
 }
 
-function classArmour(filter) {
-	filter.multiHide((c) => { // Any armour: Remaining corrupts
+function armour(filter) {
+	filter.multiHide((c) => { // Remaining corrupts
 		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.isCorrupted = true;
-	}, (c) => { // Any armour: Too low ilvl
+	}, (c) => { // Too low ilvl
 		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Any tops: Bad base
+	}, (c) => { // Bad base
 		c.names = new Comparison(NameManager.getArmour(TIER.BAD));
-		c.categories(CATEGORY.ARMOUR_TOP);
+		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	});
-}
-
-function otherArmour(filter) {
-	filter.multiHide((c) => { // Boots: Bad base
-		c.categories(CATEGORY.BOOTS);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.dropLevel = new Comparison(80, OPERATOR.LT);
 	});
 }
 

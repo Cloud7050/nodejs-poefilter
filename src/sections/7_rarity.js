@@ -346,20 +346,12 @@ function classArmour(filter) {
 
 function otherArmour(filter) {
 	// Magic
-	filter.multiBlock((c) => { // Good mod (other tops)
+	filter.multiBlock((c) => { // Good mod (other)
 		c.continue();
 		c.names = new Comparison(NameManager.getArmour(TIER.OTHER));
-		c.categories(CATEGORY.ARMOUR_TOP);
+		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.isCorrupted = false;
-		c.goodModArmour(true);
-	}, (c) => { // Good mod (other boots)
-		c.continue();
-		c.categories(CATEGORY.BOOTS);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.isCorrupted = false;
 		c.goodModArmour(true);
 	}, (e) => {
@@ -367,19 +359,12 @@ function otherArmour(filter) {
 	});
 
 	// Rare
-	filter.multiBlock((c) => { // Good mod (other tops)
+	filter.multiBlock((c) => { // Good mod (other)
 		c.continue();
 		c.names = new Comparison(NameManager.getArmour(TIER.OTHER));
-		c.categories(CATEGORY.ARMOUR_TOP);
+		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.goodModArmour(true);
-	}, (c) => { // Good mod (other boots)
-		c.continue();
-		c.categories(CATEGORY.BOOTS);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.dropLevel = new Comparison(80, OPERATOR.GTE);
 		c.goodModArmour(true);
 	}, (e) => {
 		e.colourExalt(PAIR_GEAR).sizeExalt();
