@@ -4,53 +4,32 @@ import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager, TIER } from "../conditions/nameManager.js";
 
 export function sectionHides(filter) {
-	classWeapons(filter);
-	otherWeapons(filter);
+	weapons(filter);
 	armour(filter);
 	classUncommon(filter);
 	otherUncommon(filter);
 }
 
-function classWeapons(filter) {
-	filter.multiHide((c) => { // Class weapons: Remaining corrupts
-		c.categories(CATEGORY.WEAPON_CLASS);
+function weapons(filter) {
+	filter.multiHide((c) => { // Remaining corrupts
+		c.categories(CATEGORY.WEAPON);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.isCorrupted = true;
-	}, (c) => { // Class weapons: Too low ilvl
-		c.categories(CATEGORY.WEAPON_CLASS);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Class mainhands: Bad base
-		c.names = new Comparison(NameManager.getMain(TIER.BAD));
-		c.categories(CATEGORY.MAIN_CLASS);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	}, (c) => { // Class offhands: Bad base
-		c.names = new Comparison(NameManager.getOff(TIER.BAD));
-		c.categories(CATEGORY.OFF_CLASS);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	});
-}
-
-function otherWeapons(filter) {
-	filter.multiHide((c) => { // Other weapons: Remaining corrupts
-		c.categories(CATEGORY.WEAPON_OTHER);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.isCorrupted = true;
-	}, (c) => { // Other caster mainhands: Too low ilvl
+	}, (c) => { // Too low ilvl (other caster mainhands)
 		c.categories(CATEGORY.MAIN_OTHER_CASTER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(81, OPERATOR.LT);
-	}, (c) => { // Other attacker mainhands / offhands: Too low ilvl
-		c.categories(CATEGORY.MAIN_OTHER_ATTACKER, CATEGORY.OFF_OTHER);
+	}, (c) => { // Too low ilvl (class weapons, other attacker mainhands, other offhands)
+		c.categories(CATEGORY.WEAPON_CLASS, CATEGORY.MAIN_OTHER_ATTACKER, CATEGORY.OFF_OTHER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Other mainhands: Bad base
+	}, (c) => { // Bad base (mainhands)
 		c.names = new Comparison(NameManager.getMain(TIER.BAD));
-		c.categories(CATEGORY.MAIN_OTHER);
+		c.categories(CATEGORY.MAIN);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	}, (c) => { // Other offhands: Bad base
+	}, (c) => { // Bad base (offhands)
 		c.names = new Comparison(NameManager.getOff(TIER.BAD));
-		c.categories(CATEGORY.OFF_OTHER);
+		c.categories(CATEGORY.OFF);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});
 }

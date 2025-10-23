@@ -2608,35 +2608,7 @@ Show
 	#
 
 Hide
-	Class == Sceptres Foci
-	Rarity < Unique
-	Corrupted True
-
-	#
-
-Hide
-	Class == Sceptres Foci
-	Rarity < Unique
-	ItemLevel < 82
-
-	#
-
-Hide
-	BaseType == "Omen Sceptre" "Wrath Sceptre" "Bone Wand" "Volatile Wand" "Withered Wand" "Attuned Wand" "Ashen Staff" "Gelid Staff" "Pyrophyte Staff" "Voltaic Staff" "Roaring Staff" "Paralysing Staff" "Sanctified Staff" "Reaping Staff" "Wooden Club" "Smithing Hammer" "Slim Mace" "Spiked Club" Warpick "Plated Mace" "Brigand Mace" "Construct Hammer" "Morning Star" "Jade Club" "Marching Mace" "Bandit Mace" "Structured Hammer" "Flanged Mace" "Crown Mace" "Molten Hammer" "Marauding Mace" "Strife Pick" "Fortified Hammer" "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Branched Spear" "Jagged Spear" "Helix Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Crude Bow" Shortbow "Warden Bow" "Recurve Bow" "Composite Bow" "Dualstring Bow" "Cultist Bow" "Zealot Bow" "Artillery Bow" "Tribal Bow" "Twin Bow" "Adherent Bow" "Militant Bow" "Ironwood Shortbow" "Cavalry Bow" "Guardian Bow" "Fanatic Bow" "Makeshift Crossbow" "Tense Crossbow" "Sturdy Crossbow" "Varnished Crossbow" "Dyad Crossbow" "Alloy Crossbow" "Bombard Crossbow" "Construct Crossbow" "Blackfire Crossbow" "Piercing Crossbow" "Twin Crossbow" "Cannonade Crossbow" "Bleak Crossbow" "Stout Crossbow" "Engraved Crossbow" "Flexed Crossbow" "Elegant Crossbow" "Wrapped Quarterstaff" "Long Quarterstaff" "Gothic Quarterstaff" "Crackling Quarterstaff" "Crescent Quarterstaff" "Steelpoint Quarterstaff" "Slicing Quarterstaff" "Barrier Quarterstaff" "Hefty Quarterstaff" "Smooth Quarterstaff" "Waxing Quarterstaff" "Bladed Quarterstaff" "Guardian Quarterstaff" "Sinister Quarterstaff" "Lunar Quarterstaff" "Striking Quarterstaff" "Aegis Quarterstaff" "Felled Greatclub" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Cultist Greathammer" "Temple Maul" "Leaden Greathammer" "Crumbling Maul" "Pointed Maul" "Totemic Greatclub" "Solemn Maul" "Heavy Greathammer" "Disintegrating Maul" "Anvil Maul" "Sacred Maul" "Fanatic Greathammer" "Ruination Maul"
-	Class == Sceptres
-	Rarity < Unique
-
-	#
-
-Hide
-	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus" "Sacred Focus" "Fire Quiver" "Sacral Quiver" "Two-Point Quiver" "Blunt Quiver" "Toxic Quiver" "Serrated Quiver" "Penetrating Quiver" "Leather Buckler" "Wooden Buckler" "Plated Buckler" "Iron Buckler" "Ridged Buckler" "Spiked Buckler" "Ringed Buckler" "Edged Buckler" "Laminate Buckler" "Pearl Buckler" "Ornate Buckler" "Spikeward Buckler" "Jingling Buckler" "Bladeguard Buckler" "Ornate Buckler" "Gutspike Buckler" "Ancient Buckler" "Desert Buckler" "Splintered Tower Shield" "Painted Tower Shield" "Braced Tower Shield" "Barricade Tower Shield" "Effigial Tower Shield" "Rampart Tower Shield" "Heraldric Tower Shield" "Stone Tower Shield" "Crucible Tower Shield" "Ancestor Tower Shield" "Bulwark Tower Shield" "Noble Tower Shield" "Goldworked Tower Shield" "Royal Tower Shield" "Fortress Tower Shield" "Vaal Tower Shield" "Hardwood Targe" "Pelage Targe" "Studded Targe" "Crescent Targe" "Chiseled Targe" "Feathered Targe" "Stratified Targe" "Carved Targe" "Polished Targe" "Stone Targe" "Avian Targe" "Mammoth Targe" "Baroque Targe" "Soaring Targe" "Golden Targe" "Blazon Crest Shield" "Sigil Crest Shield" "Emblem Crest Shield" "Jingling Crest Shield" "Sectarian Crest Shield" "Omen Crest Shield" "Wayward Crest Shield" "Seer Crest Shield" "Dekharan Crest Shield" "Quartered Crest Shield" "Glowering Crest Shield" "Intricate Crest Shield" "Sekheman Crest Shield" "Vaal Crest Shield" "Blacksteel Crest Shield"
-	Class == Foci
-	Rarity < Unique
-
-	#
-
-Hide
-	Class == Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
 	Rarity < Unique
 	Corrupted True
 
@@ -2650,7 +2622,7 @@ Hide
 	#
 
 Hide
-	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
+	Class == Sceptres Foci "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
 	Rarity < Unique
 	ItemLevel < 82
 
@@ -2658,14 +2630,14 @@ Hide
 
 Hide
 	BaseType == "Omen Sceptre" "Wrath Sceptre" "Bone Wand" "Volatile Wand" "Withered Wand" "Attuned Wand" "Ashen Staff" "Gelid Staff" "Pyrophyte Staff" "Voltaic Staff" "Roaring Staff" "Paralysing Staff" "Sanctified Staff" "Reaping Staff" "Wooden Club" "Smithing Hammer" "Slim Mace" "Spiked Club" Warpick "Plated Mace" "Brigand Mace" "Construct Hammer" "Morning Star" "Jade Club" "Marching Mace" "Bandit Mace" "Structured Hammer" "Flanged Mace" "Crown Mace" "Molten Hammer" "Marauding Mace" "Strife Pick" "Fortified Hammer" "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Branched Spear" "Jagged Spear" "Helix Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Crude Bow" Shortbow "Warden Bow" "Recurve Bow" "Composite Bow" "Dualstring Bow" "Cultist Bow" "Zealot Bow" "Artillery Bow" "Tribal Bow" "Twin Bow" "Adherent Bow" "Militant Bow" "Ironwood Shortbow" "Cavalry Bow" "Guardian Bow" "Fanatic Bow" "Makeshift Crossbow" "Tense Crossbow" "Sturdy Crossbow" "Varnished Crossbow" "Dyad Crossbow" "Alloy Crossbow" "Bombard Crossbow" "Construct Crossbow" "Blackfire Crossbow" "Piercing Crossbow" "Twin Crossbow" "Cannonade Crossbow" "Bleak Crossbow" "Stout Crossbow" "Engraved Crossbow" "Flexed Crossbow" "Elegant Crossbow" "Wrapped Quarterstaff" "Long Quarterstaff" "Gothic Quarterstaff" "Crackling Quarterstaff" "Crescent Quarterstaff" "Steelpoint Quarterstaff" "Slicing Quarterstaff" "Barrier Quarterstaff" "Hefty Quarterstaff" "Smooth Quarterstaff" "Waxing Quarterstaff" "Bladed Quarterstaff" "Guardian Quarterstaff" "Sinister Quarterstaff" "Lunar Quarterstaff" "Striking Quarterstaff" "Aegis Quarterstaff" "Felled Greatclub" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Cultist Greathammer" "Temple Maul" "Leaden Greathammer" "Crumbling Maul" "Pointed Maul" "Totemic Greatclub" "Solemn Maul" "Heavy Greathammer" "Disintegrating Maul" "Anvil Maul" "Sacred Maul" "Fanatic Greathammer" "Ruination Maul"
-	Class == Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity < Unique
 
 	#
 
 Hide
 	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus" "Sacred Focus" "Fire Quiver" "Sacral Quiver" "Two-Point Quiver" "Blunt Quiver" "Toxic Quiver" "Serrated Quiver" "Penetrating Quiver" "Leather Buckler" "Wooden Buckler" "Plated Buckler" "Iron Buckler" "Ridged Buckler" "Spiked Buckler" "Ringed Buckler" "Edged Buckler" "Laminate Buckler" "Pearl Buckler" "Ornate Buckler" "Spikeward Buckler" "Jingling Buckler" "Bladeguard Buckler" "Ornate Buckler" "Gutspike Buckler" "Ancient Buckler" "Desert Buckler" "Splintered Tower Shield" "Painted Tower Shield" "Braced Tower Shield" "Barricade Tower Shield" "Effigial Tower Shield" "Rampart Tower Shield" "Heraldric Tower Shield" "Stone Tower Shield" "Crucible Tower Shield" "Ancestor Tower Shield" "Bulwark Tower Shield" "Noble Tower Shield" "Goldworked Tower Shield" "Royal Tower Shield" "Fortress Tower Shield" "Vaal Tower Shield" "Hardwood Targe" "Pelage Targe" "Studded Targe" "Crescent Targe" "Chiseled Targe" "Feathered Targe" "Stratified Targe" "Carved Targe" "Polished Targe" "Stone Targe" "Avian Targe" "Mammoth Targe" "Baroque Targe" "Soaring Targe" "Golden Targe" "Blazon Crest Shield" "Sigil Crest Shield" "Emblem Crest Shield" "Jingling Crest Shield" "Sectarian Crest Shield" "Omen Crest Shield" "Wayward Crest Shield" "Seer Crest Shield" "Dekharan Crest Shield" "Quartered Crest Shield" "Glowering Crest Shield" "Intricate Crest Shield" "Sekheman Crest Shield" "Vaal Crest Shield" "Blacksteel Crest Shield"
-	Class == Bucklers Shields Quivers
+	Class == Foci Bucklers Shields Quivers
 	Rarity < Unique
 
 	#
