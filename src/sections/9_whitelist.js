@@ -47,11 +47,6 @@ function chance(filter) {
 
 // Whitelist logic for items from outline section
 function outline(filter) {
-	// Quality
-	filter.multiWhitelist((c) => {
-		c.hasQuality(15);
-	});
-
 	// Corrupted/exceptional
 	filter.multiWhitelist((c) => { // Quality charm
 		c.categories(CATEGORY.CHARM);
