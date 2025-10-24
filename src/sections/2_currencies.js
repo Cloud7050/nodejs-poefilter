@@ -1,7 +1,8 @@
 import { CATEGORY } from "../conditions/category.js";
-import { Comparison, OPERATOR } from "../conditions/comparison.js";
+import { Comparison } from "../conditions/comparison.js";
 import { DIV } from "../conditions/name.js";
 import { NameManager } from "../conditions/nameManager.js";
+import { OPERATOR } from "../conditions/operator.js";
 import { Colour } from "../effects/colour.js";
 import { PAIR_ABYSS, PAIR_CRAFT, PAIR_CURRENCY, PAIR_ESSENCE, PAIR_GOLD, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../index.js";
 

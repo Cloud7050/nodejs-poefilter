@@ -1,24 +1,15 @@
 import { NameManager } from "./nameManager.js";
+import { OPERATOR } from "./operator.js";
 import { StringList } from "./stringList.js";
 
 export class Comparison {
-	static OPERATOR = {
-		EQUAL: "=",
-		NE: "!", // Or "!="
-		LTE: "<=",
-		GTE: ">=",
-		LT: "<",
-		GT: ">",
-		EXACT: "=="
-	};
-
 	operator;
 	quantity; // number (optional). Goes between the operator and value, eg the 2 in ">=2 Pirate's"
 	value; // StringList or string/number
 
-	constructor(value, operator = Comparison.OPERATOR.EXACT, quantity = null) {
-		if (!Object.values(Comparison.OPERATOR).includes(operator)) {
-			console.error("ERR Comparison received invalid operator:");
+	constructor(value, operator = OPERATOR.EXACT, quantity = null) {
+		if (!Object.values(OPERATOR).includes(operator)) {
+			console.error("ERR Comparison constructor received invalid operator:");
 			console.error(operator);
 			throw new Error();
 		}
@@ -41,4 +32,3 @@ export class Comparison {
 		return `${name} ${this.operator}${quantity} ${value}`;
 	}
 }
-export const OPERATOR = Comparison.OPERATOR;

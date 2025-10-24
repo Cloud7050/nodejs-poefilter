@@ -1,4 +1,5 @@
-import { Comparison, OPERATOR } from "./comparison.js";
+import { Comparison } from "./comparison.js";
+import { OPERATOR } from "./operator.js";
 
 export class ConditionSet {
 	static RARITY = {

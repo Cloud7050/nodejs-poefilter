@@ -1,5 +1,6 @@
 import { CATEGORY } from "../conditions/category.js";
-import { Comparison, OPERATOR } from "../conditions/comparison.js";
+import { Comparison } from "../conditions/comparison.js";
+import { OPERATOR } from "../conditions/operator.js";
 import { PAIR_QUEST, PAIR_QUESTLIKE } from "../index.js";
 
 export function sectionMisc(filter) {

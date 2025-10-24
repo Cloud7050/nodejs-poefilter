@@ -1,6 +1,7 @@
 import { CATEGORY } from "../conditions/category.js";
-import { Comparison, OPERATOR } from "../conditions/comparison.js";
+import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
+import { OPERATOR } from "../conditions/operator.js";
 import { Colour } from "../effects/colour.js";
 import { PAIR_GEAR } from "../index.js";
 
