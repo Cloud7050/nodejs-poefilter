@@ -7,8 +7,7 @@ import { OPERATOR } from "../conditions/operator.js";
 export function sectionHides(filter) {
 	weapons(filter);
 	armour(filter);
-	classUncommon(filter);
-	otherUncommon(filter);
+	uncommon(filter);
 }
 
 function weapons(filter) {
@@ -24,12 +23,12 @@ function weapons(filter) {
 		c.categories(CATEGORY.WEAPON_CLASS, CATEGORY.MAIN_OTHER_ATTACKER, CATEGORY.OFF_OTHER);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Bad base (mainhands)
-		c.names = new Comparison(NameManager.getMain(TIER.BAD, OPERATOR.LTE));
+	}, (c) => { // Trash base (mainhands)
+		c.names = new Comparison(NameManager.getMain(TIER.NEVER, OPERATOR.LTE));
 		c.categories(CATEGORY.MAIN);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	}, (c) => { // Bad base (offhands)
-		c.names = new Comparison(NameManager.getOff(TIER.BAD, OPERATOR.LTE));
+	}, (c) => { // Trash base (offhands)
+		c.names = new Comparison(NameManager.getOff(TIER.NEVER, OPERATOR.LTE));
 		c.categories(CATEGORY.OFF);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});
@@ -44,53 +43,38 @@ function armour(filter) {
 		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Bad base
-		c.names = new Comparison(NameManager.getArmour(TIER.BAD, OPERATOR.LTE));
+	}, (c) => { // Trash base
+		c.names = new Comparison(NameManager.getArmour(TIER.NEVER, OPERATOR.LTE));
 		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});
 }
 
-function classUncommon(filter) {
-	filter.multiHide((c) => { // Class uncommons: Remaining corrupts
-		c.categories(CATEGORY.JEWELLERY, CATEGORY.CHARGED);
+function uncommon(filter) {
+	filter.multiHide((c) => { // Remaining corrupts
+		c.categories(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.isCorrupted = true;
-	}, (c) => { // Charged: Too low ilvl
+	}, (c) => { // Too low ilvl (charged)
 		c.categories(CATEGORY.CHARGED);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(67, OPERATOR.LT);
-	}, (c) => { // Jewellery: Too low ilvl
+	}, (c) => { // Too low ilvl (jewellery)
 		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(75, OPERATOR.LT);
-	}, (c) => { // Jewellery: Too low wisdom tier
+	}, (c) => { // Too low rare wisdom tier (jewellery)
 		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isLowTier(2);
-		// Allow BiS ilvl
-		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Jewellery: Wrong base
-		c.names = new Comparison(NameManager.getJewelleryOther());
-		c.categories(CATEGORY.JEWELLERY);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		// Allow BiS ilvl
-		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Flasks: Bad base
-		c.names = new Comparison(NameManager.getFlasks(TIER.BAD, OPERATOR.LTE));
-		c.categories(CATEGORY.FLASK);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	});
-}
-
-function otherUncommon(filter) {
-	filter.multiHide((c) => { // Belts: Remaining corrupts
-		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.isCorrupted = true;
-	}, (c) => { // Belts: Too low ilvl
+		c.ilvl = new Comparison(82, OPERATOR.LT); // Allow BiS ilvl
+	}, (c) => { // Too low ilvl (belts)
 		c.categories(CATEGORY.BELT);
 		c.rarity = new Comparison([RARITY.MAGIC, RARITY.RARE]);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
+	}, (c) => { // Trash base
+		c.names = new Comparison(NameManager.getUncommon(TIER.NEVER, OPERATOR.LTE));
+		c.categories(CATEGORY.GEAR_UNCOMMON);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});
 }

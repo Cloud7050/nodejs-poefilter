@@ -173,21 +173,7 @@ function classWeapons(filter) {
 		e.colourExalt(PAIR_GEAR).sizeAugment();
 	});
 
-	filter.multiBlock((c) => { // Max tier
-		c.continue();
-		c.names = new Comparison(NameManager.getMain(TIER.CLASS, OPERATOR.GTE));
-		c.categories(CATEGORY.MAIN_CLASS);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.isMaxTier();
-	}, (c) => { // Max tier
-		c.continue();
-		c.names = new Comparison(NameManager.getOff(TIER.CLASS, OPERATOR.GTE));
-		c.categories(CATEGORY.OFF_CLASS);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.isMaxTier();
-	}, (c) => { // Good mod (class mainhand)
+	filter.multiBlock((c) => { // Good mod (class mainhand)
 		c.continue();
 		c.names = new Comparison(NameManager.getMain(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN_CLASS);
@@ -208,7 +194,7 @@ function classWeapons(filter) {
 
 function otherWeapons(filter) {
 	// Magic
-	filter.multiBlock((c) => { // Good mod (other mainhand)
+	filter.multiBlock((c) => { // Good mod (other caster mainhand)
 		c.continue();
 		c.names = new Comparison(NameManager.getMain(TIER.OTHER));
 		c.categories(CATEGORY.MAIN_OTHER_CASTER);
@@ -216,7 +202,7 @@ function otherWeapons(filter) {
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 		c.isCorrupted = false;
 		c.goodModMainhand(true);
-	}, (c) => { // Good mod (other mainhand)
+	}, (c) => { // Good mod (other attacker mainhand)
 		c.continue();
 		c.names = new Comparison(NameManager.getMain(TIER.OTHER));
 		c.categories(CATEGORY.MAIN_OTHER_ATTACKER);
@@ -233,7 +219,7 @@ function otherWeapons(filter) {
 		c.isCorrupted = false;
 		c.goodModOffhand(true);
 	}, (e) => {
-		e.colourAugment(PAIR_GEAR).sizeAugment();
+		e.colourAugment(PAIR_GEAR).sizeExalt();
 	});
 
 	// Rare
@@ -324,15 +310,7 @@ function classArmour(filter) {
 		e.colourExalt(PAIR_GEAR).sizeAugment();
 	});
 
-	filter.multiBlock((c) => { // Max tier
-		c.continue();
-		c.names = new Comparison(NameManager.getArmour(TIER.CLASS, OPERATOR.GTE));
-		c.categories(CATEGORY.ARMOUR_TOP);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		c.isMaxTier();
-		c.isCorrupted = false;
-	}, (c) => { // Good mod (class)
+	filter.multiBlock((c) => { // Good mod (class)
 		c.continue();
 		c.names = new Comparison(NameManager.getArmour(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.ARMOUR_TOP);
@@ -356,7 +334,7 @@ function otherArmour(filter) {
 		c.isCorrupted = false;
 		c.goodModArmour(true);
 	}, (e) => {
-		e.colourAugment(PAIR_GEAR).sizeAugment();
+		e.colourAugment(PAIR_GEAR).sizeExalt();
 	});
 
 	// Rare
@@ -374,28 +352,27 @@ function otherArmour(filter) {
 
 function classUncommon(filter) {
 	// Normal
-	filter.multiBlock((c) => { // Good base
+	filter.multiBlock((c) => { // Charms
 		c.continue();
-		c.goodBase();
+		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
-		// Any drop level
 		c.isCorrupted = false;
-	}, (c) => { // Good base
+	}, (c) => { // Jewellery
 		c.continue();
-		c.goodBase();
+		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		// Any drop level
 		c.isCorrupted = false;
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR).sizeExalt();
 	});
-	filter.multiBlock((c) => { // Good base
+
+	filter.multiBlock((c) => { // Flasks
 		c.continue();
-		c.names = new Comparison(NameManager.getFlasks(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(83, OPERATOR.GTE);
@@ -405,78 +382,88 @@ function classUncommon(filter) {
 	});
 
 	// Magic
-	filter.multiBlock((c) => { // Low tier
+	filter.multiBlock((c) => { // Low tier (charms)
 		c.continue();
+		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
-		// Any drop level
 		c.isLowTier();
 		c.isCorrupted = false;
-	}, (c) => { // Low tier
+	}, (c) => { // Low tier (jewellery)
 		c.continue();
-		c.categories(CATEGORY.JEWELLERY);
+		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		// Any drop level
 		c.isLowTier();
 		c.isCorrupted = false;
 	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeAugment();
 	});
 
-	filter.multiBlock((c) => { // Max tier
+	filter.multiBlock((c) => { // Max tier (charms)
 		c.continue();
+		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
-		// Any drop level
 		c.isMaxTier();
 		c.isCorrupted = false;
-	}, (c) => { // Max tier
+	}, (c) => { // Max tier (jewellery)
 		c.continue();
-		c.categories(CATEGORY.JEWELLERY);
+		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		// Any drop level
 		c.isMaxTier();
-		c.isCorrupted = false;
-	}, (c) => { // Good base
-		c.continue();
-		c.goodBase();
-		c.categories(CATEGORY.CHARM);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(81, OPERATOR.GTE);
-		// Any drop level
-		c.isCorrupted = false;
-	}, (c) => { // Good base
-		c.continue();
-		c.goodBase();
-		c.categories(CATEGORY.JEWELLERY);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		// Any drop level
 		c.isCorrupted = false;
 	}, (c) => { // Good mod (class jewellery)
 		c.continue();
-		c.categories(CATEGORY.JEWELLERY);
+		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
-		// Any drop level
 		c.isCorrupted = false;
 		c.goodModJewellery();
 	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeExalt();
 	});
-	filter.multiBlock((c) => { // Good base
+
+	filter.multiBlock((c) => { // Flasks
 		c.continue();
-		c.names = new Comparison(NameManager.getFlasks(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(83, OPERATOR.GTE);
 		c.isCorrupted = false;
 	}, (e) => {
 		e.colourAugment(PAIR_GEAR).sizeChance();
+	});
+
+	// Rare
+	filter.multiBlock((c) => { // Low tier (class jewellery)
+		c.continue();
+		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.categories(CATEGORY.AMULET, CATEGORY.RING);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.isLowTier();
+		c.isCorrupted = false;
+	}, (e) => {
+		e.colourExalt(PAIR_GEAR).sizeAugment();
+	});
+
+	filter.multiBlock((c) => { // Good mod (class jewellery)
+		c.continue();
+		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.categories(CATEGORY.AMULET, CATEGORY.RING);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.isCorrupted = false;
+		c.goodModJewellery();
+	}, (e) => {
+		e.colourExalt(PAIR_GEAR).sizeExalt();
 	});
 }
 
@@ -487,10 +474,35 @@ function otherUncommon(filter) {
 		c.categories(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		// Any ilvl
-		// Any drop level
 		c.isCorrupted = false;
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR).sizeExalt();
+	});
+
+	// Magic
+	filter.multiBlock((c) => { // Good mod (other jewellery)
+		c.continue();
+		c.names = new Comparison(NameManager.getUncommon(TIER.OTHER));
+		c.categories(CATEGORY.AMULET, CATEGORY.RING);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.isCorrupted = false;
+		c.goodModJewellery();
+	}, (e) => {
+		e.colourAugment(PAIR_GEAR).sizeExalt();
+	});
+
+	// Rare
+	filter.multiBlock((c) => { // Good mod (other jewellery)
+		c.continue();
+		c.names = new Comparison(NameManager.getUncommon(TIER.OTHER));
+		c.categories(CATEGORY.AMULET, CATEGORY.RING);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.isCorrupted = false;
+		c.goodModJewellery();
+	}, (e) => {
+		e.colourExalt(PAIR_GEAR).sizeExalt();
 	});
 }
 

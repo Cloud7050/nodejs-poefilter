@@ -80,8 +80,8 @@ function outline(filter) {
 
 	// Good base/mods
 	filter.multiWhitelist((c) => {
-		c.goodBase(true);
-		c.categories(CATEGORY.GEAR);
+		c.names = new Comparison(NameManager.getUncommon(TIER.OUTLINE));
+		c.categories(CATEGORY.GEAR_UNCOMMON);
 	}, (c) => {
 		c.names = new Comparison(NameManager.getMain(TIER.BAD, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN);
@@ -95,8 +95,8 @@ function outline(filter) {
 		c.categories(CATEGORY.ARMOUR);
 		c.goodModArmour(true);
 	}, (c) => {
-		//TODO
-		c.categories(CATEGORY.JEWELLERY);
+		c.names = new Comparison(NameManager.getUncommon(TIER.BAD, OPERATOR.GTE));
+		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.goodModJewellery(true);
 	});
 }
@@ -115,12 +115,8 @@ function other(filter) {
 		c.categories(CATEGORY.ARMOUR);
 		c.isMaxTier();
 	}, (c) => {
-		//TODO
-		c.categories(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARM);
-		c.isMaxTier();
-	}, (c) => {
-		c.names = new Comparison(NameManager.getFlasks(TIER.BAD, OPERATOR.GTE));
-		c.categories(CATEGORY.FLASK);
+		c.names = new Comparison(NameManager.getUncommon(TIER.BAD, OPERATOR.GTE));
+		c.categories(CATEGORY.GEAR_UNCOMMON);
 		c.isMaxTier();
 	});
 }

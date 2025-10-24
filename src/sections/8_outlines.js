@@ -1,6 +1,7 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
+import { NameManager, TIER } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
 import { Colour } from "../effects/colour.js";
 import { PAIR_GEAR } from "../index.js";
@@ -61,8 +62,8 @@ function bis(filter) {
 function goodMods(filter) {
 	filter.multiBlock((c) => {
 		c.continue();
-		c.goodBase(true);
-		c.categories(CATEGORY.GEAR);
+		c.names = new Comparison(NameManager.getUncommon(TIER.OUTLINE));
+		c.categories(CATEGORY.GEAR_UNCOMMON);
 	}, (c) => {
 		c.continue();
 		c.categories(CATEGORY.MAIN);

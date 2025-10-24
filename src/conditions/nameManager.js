@@ -1120,38 +1120,98 @@ export class NameManager {
 			new Name("Daggerfoot Shoes", TIER.OTHER), // 119 V, 45 ES, L80
 		).compare(tier, operator);
 	}
-	static getJewelleryOther() { //TODO
+	//NOTE Fractured Lake ilvl normally caps at 80 (T16), so we put them as class tier for more lenient filtering vs BiS ilvl
+	static getUncommon(tier, operator = undefined) {
 		return new NameManager(
-			"Crimson Amulet", // 2-4 life regen
-			// "Amber Amulet", // Strength
-			// "Jade Amulet", // Dexterity
+			// https://poe2db.tw/us/Amulets
+			new Name("Crimson Amulet", TIER.OTHER), // 2–4 Life Regeneration per second
+			new Name("Azure Amulet", TIER.OTHER), // 20–30% increased Mana Regeneration Rate
+			new Name("Amber Amulet", TIER.OTHER), // L8, +10–15 to Strength
+			new Name("Jade Amulet", TIER.OTHER), // L8, +10–15 to Dexterity
+			new Name("Lapis Amulet", TIER.OTHER), // L8, +10–15 to Intelligence
+			new Name("Lunar Amulet", TIER.OTHER), // L14, +20–30 to maximum Energy Shield
+			new Name("Bloodstone Amulet", TIER.OTHER), // L18, +30–40 to maximum Life
+			new Name("Stellar Amulet", TIER.OTHER), // L25, +5–7 to all Attributes
+			new Name("Pearlescent Amulet", TIER.OTHER), // L8, +7–10% to all Elemental Resistances
 
-			"Iron Ring", // +1-4 phys damage to attacks
-			"Emerald Ring", // Flat accuracy
-			"Unset Ring", // Skill slot
-		);
-	}
-	static getFlasks(tier, operator = undefined) {
-		return new NameManager(
-			new Name("Lesser Life Flask", TIER.NEVER),
-			new Name("Lesser Mana Flask", TIER.NEVER),
-			new Name("Medium Life Flask", TIER.NEVER),
-			new Name("Medium Mana Flask", TIER.NEVER),
-			new Name("Greater Life Flask", TIER.NEVER),
-			new Name("Greater Mana Flask", TIER.NEVER),
-			new Name("Grand Life Flask", TIER.NEVER),
-			new Name("Grand Mana Flask", TIER.NEVER),
-			new Name("Giant Life Flask", TIER.NEVER),
-			new Name("Giant Mana Flask", TIER.NEVER),
-			new Name("Colossal Life Flask", TIER.NEVER),
-			new Name("Colossal Mana Flask", TIER.NEVER),
-			new Name("Gargantuan Life Flask", TIER.NEVER),
-			new Name("Gargantuan Mana Flask", TIER.NEVER),
-			new Name("Transcendent Life Flask", TIER.NEVER),
-			new Name("Transcendent Mana Flask", TIER.NEVER),
+			new Name("Dusk Amulet", TIER.CLASS), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Amulet", TIER.CLASS), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Amulet", TIER.CLASS), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Amulet", TIER.CLASS), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 
-			new Name("Ultimate Life Flask", TIER.CLASS),
-			new Name("Ultimate Mana Flask", TIER.CLASS),
+			new Name("Solar Amulet", TIER.OUTLINE), // L30, +10–15 to Spirit
+			new Name("Gold Amulet", TIER.OUTLINE), // L35, 12–20% increased Rarity of Items found
+
+			// https://poe2db.tw/us/Rings
+			new Name("Emerald Ring", TIER.NEVER), // L26, +120–160 to Accuracy Rating
+
+			new Name("Iron Ring", TIER.OTHER), // Adds 1 to 4 Physical Damage to Attacks
+			new Name("Lazuli Ring", TIER.OTHER), // +20–30 to maximum Mana
+			new Name("Ruby Ring", TIER.OTHER), // L8, +20–30% to Fire Resistance
+			new Name("Sapphire Ring", TIER.OTHER), // L12, +20–30% to Cold Resistance
+			new Name("Topaz Ring", TIER.OTHER), // L16, +20–30% to Lightning Resistance
+			new Name("Amethyst Ring", TIER.OTHER), // L20, +7–13% to Chaos Resistance
+			new Name("Pearl Ring", TIER.OTHER), // L32, 7–10% increased Cast Speed
+			new Name("Prismatic Ring", TIER.OTHER), // L35, +7–10% to all Elemental Resistances
+			new Name("Unset Ring", TIER.OTHER), // L44, Grants 1 additional Skill Slot
+
+			new Name("Breach Ring", TIER.CLASS), // L40, Maximum Quality is 40%
+			new Name("Dusk Ring", TIER.CLASS), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Ring", TIER.CLASS), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Ring", TIER.CLASS), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Ring", TIER.CLASS), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+
+			new Name("Gold Ring", TIER.OUTLINE), // L40, 6–15% increased Rarity of Items found
+
+			// https://poe2db.tw/us/Belts
+			new Name("Rawhide Belt", TIER.OTHER), // 20–30% increased Life Recovery from Flasks
+			new Name("Linen Belt", TIER.OTHER), // 20–30% increased Mana Recovery from Flasks
+			new Name("Wide Belt", TIER.OTHER), // L14, 20–30% increased Flask Charges gained
+			new Name("Long Belt", TIER.OTHER), // L20, 15–20% increased Charm Effect Duration
+			new Name("Plate Belt", TIER.OTHER), // L25, +100–140 to Armour
+			new Name("Ornate Belt", TIER.OTHER), // L31, 10–15% reduced Charm Charges used
+			new Name("Mail Belt", TIER.OTHER), // L40, 10–15% reduced Flask Charges used
+			new Name("Double Belt", TIER.OTHER), // L44, 20–30% increased Charm Charges gained
+			new Name("Heavy Belt", TIER.OTHER), // L50, 20–30% increased Stun Threshold
+			new Name("Utility Belt", TIER.OTHER), // L55, 20% of Flask Recovery applied Instantly
+			new Name("Fine Belt", TIER.OTHER), // L62, Flasks gain 0.17 charges per Second
+
+			// https://poe2db.tw/us/Flasks
+			new Name("Lesser Life Flask", TIER.NEVER), // 50, 10/60, 3s
+			new Name("Lesser Mana Flask", TIER.NEVER), // 50, 10/60, 2s
+			new Name("Medium Life Flask", TIER.NEVER), // L4, 90, 10/65, 5s
+			new Name("Medium Mana Flask", TIER.NEVER), // L4, 70, 10/65, 3s
+			new Name("Greater Life Flask", TIER.NEVER), // L10, 150, 10/70, 4s
+			new Name("Greater Mana Flask", TIER.NEVER), // L10, 90, 10/70, 2.5s
+			new Name("Grand Life Flask", TIER.NEVER), // L16, 260, 10/75, 5s
+			new Name("Grand Mana Flask", TIER.NEVER), // L16, 110, 10/75, 2.5s
+			new Name("Giant Life Flask", TIER.NEVER), // L23, 340, 10/75, 4s
+			new Name("Giant Mana Flask", TIER.NEVER), // L23, 165, 10/75, 3.5s
+			new Name("Colossal Life Flask", TIER.NEVER), // L30, 450, 10/75, 4s
+			new Name("Colossal Mana Flask", TIER.NEVER), // L30, 165, 10/75, 2.5s
+			new Name("Gargantuan Life Flask", TIER.NEVER), // L40, 710, 10/75, 5s
+			new Name("Gargantuan Mana Flask", TIER.NEVER), // L40, 185, 10/75, 2s
+			new Name("Transcendent Life Flask", TIER.NEVER), // L50, 840, 10/75, 4s
+			new Name("Transcendent Mana Flask", TIER.NEVER), // L50, 285, 10/75, 3.5s
+
+			new Name("Ultimate Life Flask", TIER.CLASS), // L60, 920, 10/75, 3s
+			new Name("Ultimate Mana Flask", TIER.CLASS), // L60, 310, 10/75, 3s
+
+			// https://poe2db.tw/us/Charms
+			new Name("Ruby Charm", TIER.OTHER), // L5, 20/40, 4s, +25% to Fire Resistance
+			new Name("Sapphire Charm", TIER.OTHER), // L5, 20/40, 4s, +25% to Cold Resistance
+			new Name("Topaz Charm", TIER.OTHER), // L5, 20/40, 4s, +25% to Lightning Resistance
+			new Name("Silver Charm", TIER.OTHER), // L10, 20/40, 3s, Your speed is unaffected by Slows
+			new Name("Thawing Charm", TIER.OTHER), // L12, 40/40, 3s, Grants Immunity to Freeze
+			new Name("Antidote Charm", TIER.OTHER), // L24, 20/40, 3s, Grants Immunity to Poison
+			new Name("Dousing Charm", TIER.OTHER), // L32, 30/40, 3s, Grants Immunity to Ignite
+			new Name("Grounding Charm", TIER.OTHER), // L32, 30/40, 3s, Grants Immunity to Shock
+			new Name("Amethyst Charm", TIER.OTHER), // L40, 30/40, 4s, +18% to Chaos Resistance
+
+			new Name("Stone Charm", TIER.CLASS), // L8, 20/40, 3s, Cannot be Stunned
+			new Name("Staunching Charm", TIER.CLASS), // L18, 30/40, 3s, Grants Immunity to Bleeding
+
+			new Name("Golden Charm", TIER.OUTLINE), // L50, 80/80, 1s, 15% increased Rarity of Items found
 		).compare(tier, operator);
 	}
 

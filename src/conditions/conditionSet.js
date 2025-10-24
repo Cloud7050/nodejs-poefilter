@@ -126,21 +126,6 @@ export class ConditionSet {
 		return this;
 	}
 
-	goodBase(includeOther = false) { //TODO
-		// https://poe2db.tw/us/Items
-		let phrases = [
-			// x% increased Rarity of Items found
-			"Gold Amulet", // Amulets
-			"Gold Ring", // Rings
-			"Golden Charm", // Charms
-
-			// +x to Spirit
-			"Solar Amulet", // Amulets
-		];
-		this.names = new Comparison(phrases);
-		return this;
-	}
-
 	goodModMainhand(includeOther = false) {
 		// https://poe2db.tw/us/Modifiers
 		let phrases = [
