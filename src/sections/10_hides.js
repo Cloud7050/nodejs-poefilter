@@ -25,11 +25,11 @@ function weapons(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Bad base (mainhands)
-		c.names = new Comparison(NameManager.getMain(TIER.BAD));
+		c.names = new Comparison(NameManager.getMain(TIER.BAD, OPERATOR.LTE));
 		c.categories(CATEGORY.MAIN);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	}, (c) => { // Bad base (offhands)
-		c.names = new Comparison(NameManager.getOff(TIER.BAD));
+		c.names = new Comparison(NameManager.getOff(TIER.BAD, OPERATOR.LTE));
 		c.categories(CATEGORY.OFF);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});
@@ -45,7 +45,7 @@ function armour(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Bad base
-		c.names = new Comparison(NameManager.getArmour(TIER.BAD));
+		c.names = new Comparison(NameManager.getArmour(TIER.BAD, OPERATOR.LTE));
 		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});
@@ -77,7 +77,7 @@ function classUncommon(filter) {
 		// Allow BiS ilvl
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Flasks: Bad base
-		c.names = new Comparison(NameManager.getFlasks(TIER.BAD));
+		c.names = new Comparison(NameManager.getFlasks(TIER.BAD, OPERATOR.LTE));
 		c.categories(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});

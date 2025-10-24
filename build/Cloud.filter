@@ -1313,7 +1313,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Shrine Sceptre" "Stoic Sceptre" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Chiming Staff" "Akoyan Club" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Desolate Crossbow" "Gemini Crossbow" "Siege Crossbow" "Razor Quarterstaff" "Dreaming Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub"
+	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Dreaming Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
 	Class == Wands Staves
 	Rarity == Magic
 	ItemLevel >= 81
@@ -1329,7 +1329,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Shrine Sceptre" "Stoic Sceptre" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Chiming Staff" "Akoyan Club" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Desolate Crossbow" "Gemini Crossbow" "Siege Crossbow" "Razor Quarterstaff" "Dreaming Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub"
+	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Dreaming Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
 	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1345,7 +1345,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Broadhead Quiver" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield"
+	BaseType == "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield"
 	Class == Bucklers Shields Quivers
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1361,7 +1361,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Shrine Sceptre" "Stoic Sceptre" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Chiming Staff" "Akoyan Club" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Desolate Crossbow" "Gemini Crossbow" "Siege Crossbow" "Razor Quarterstaff" "Dreaming Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub"
+	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Dreaming Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
 	Class == Wands Staves
 	Rarity == Rare
 	ItemLevel >= 81
@@ -1377,7 +1377,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Shrine Sceptre" "Stoic Sceptre" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Chiming Staff" "Akoyan Club" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Desolate Crossbow" "Gemini Crossbow" "Siege Crossbow" "Razor Quarterstaff" "Dreaming Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub"
+	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Dreaming Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
 	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1393,7 +1393,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Broadhead Quiver" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield"
+	BaseType == "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield"
 	Class == Bucklers Shields Quivers
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1409,7 +1409,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Normal
 	ItemLevel >= 82
@@ -1424,7 +1424,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1440,7 +1440,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1456,7 +1456,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1472,7 +1472,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1487,7 +1487,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1503,7 +1503,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Flowing Raiment" "Sacramental Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1519,7 +1519,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Feathered Raiment" "Soldier Cuirass" "Warlord Cuirass" "Slipstrike Vest" "Sleek Jacket" "Falconer's Jacket" "Massive Mitts" "Polished Bracers" "Secured Wraps" "Sekhema Sandals" "Daggerfoot Shoes"
+	BaseType == "Sacramental Robe" "Warlord Cuirass" "Slipstrike Vest" "Sleek Jacket" "Falconer's Jacket" "Polished Bracers" "Sekhema Sandals" "Drakeskin Boots" "Daggerfoot Shoes"
 	Class == Helmets "Body Armours" Gloves Boots
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1535,7 +1535,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Feathered Raiment" "Soldier Cuirass" "Warlord Cuirass" "Slipstrike Vest" "Sleek Jacket" "Falconer's Jacket" "Massive Mitts" "Polished Bracers" "Secured Wraps" "Sekhema Sandals" "Daggerfoot Shoes"
+	BaseType == "Sacramental Robe" "Warlord Cuirass" "Slipstrike Vest" "Sleek Jacket" "Falconer's Jacket" "Polished Bracers" "Sekhema Sandals" "Drakeskin Boots" "Daggerfoot Shoes"
 	Class == Helmets "Body Armours" Gloves Boots
 	Rarity == Rare
 	ItemLevel >= 82
@@ -2574,18 +2574,21 @@ Show
 	#
 
 Show
+	BaseType == "Volatile Wand" "Reaping Staff" "Molten Hammer" "Marauding Mace" "Fanatic Bow" "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Dreaming Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul" "Rattling Sceptre"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
 
 	#
 
 Show
+	BaseType == "Toxic Quiver" "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield" "Tasalian Focus"
 	Class == Foci Bucklers Shields Quivers
 	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
 
 	#
 
 Show
+	BaseType == "Feathered Raiment" "Flowing Raiment" "Soldier Cuirass" "Corsair Coat" "Death Mail" "Rambler Jacket" "Massive Mitts" "Adherent Cuffs" "Secured Wraps" "Tasalian Greaves" "Cryptic Leggings" "Sacramental Robe" "Warlord Cuirass" "Slipstrike Vest" "Sleek Jacket" "Falconer's Jacket" "Polished Bracers" "Sekhema Sandals" "Drakeskin Boots" "Daggerfoot Shoes" "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
 	Class == Helmets "Body Armours" Gloves Boots
 	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
 
@@ -2598,6 +2601,35 @@ Show
 	#
 
 Show
+	BaseType == "Volatile Wand" "Reaping Staff" "Molten Hammer" "Marauding Mace" "Fanatic Bow" "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Dreaming Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul" "Rattling Sceptre"
+	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	UnidentifiedItemTier == 5
+
+	#
+
+Show
+	BaseType == "Toxic Quiver" "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield" "Tasalian Focus"
+	Class == Foci Bucklers Shields Quivers
+	UnidentifiedItemTier == 5
+
+	#
+
+Show
+	BaseType == "Feathered Raiment" "Flowing Raiment" "Soldier Cuirass" "Corsair Coat" "Death Mail" "Rambler Jacket" "Massive Mitts" "Adherent Cuffs" "Secured Wraps" "Tasalian Greaves" "Cryptic Leggings" "Sacramental Robe" "Warlord Cuirass" "Slipstrike Vest" "Sleek Jacket" "Falconer's Jacket" "Polished Bracers" "Sekhema Sandals" "Drakeskin Boots" "Daggerfoot Shoes" "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
+	Class == Helmets "Body Armours" Gloves Boots
+	UnidentifiedItemTier == 5
+
+	#
+
+Show
+	Class == Amulets Rings Belts Charms
+	UnidentifiedItemTier == 5
+
+	#
+
+Show
+	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+	Class == "Life Flasks" "Mana Flasks"
 	UnidentifiedItemTier == 5
 
 	#
@@ -2624,14 +2656,14 @@ Hide
 	#
 
 Hide
-	BaseType == "Omen Sceptre" "Wrath Sceptre" "Bone Wand" "Volatile Wand" "Withered Wand" "Attuned Wand" "Ashen Staff" "Gelid Staff" "Pyrophyte Staff" "Voltaic Staff" "Roaring Staff" "Paralysing Staff" "Sanctified Staff" "Reaping Staff" "Wooden Club" "Smithing Hammer" "Slim Mace" "Spiked Club" Warpick "Plated Mace" "Brigand Mace" "Construct Hammer" "Morning Star" "Jade Club" "Marching Mace" "Bandit Mace" "Structured Hammer" "Flanged Mace" "Crown Mace" "Molten Hammer" "Marauding Mace" "Strife Pick" "Fortified Hammer" "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Branched Spear" "Jagged Spear" "Helix Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Crude Bow" Shortbow "Warden Bow" "Recurve Bow" "Composite Bow" "Dualstring Bow" "Cultist Bow" "Zealot Bow" "Artillery Bow" "Tribal Bow" "Twin Bow" "Adherent Bow" "Militant Bow" "Ironwood Shortbow" "Cavalry Bow" "Guardian Bow" "Fanatic Bow" "Makeshift Crossbow" "Tense Crossbow" "Sturdy Crossbow" "Varnished Crossbow" "Dyad Crossbow" "Alloy Crossbow" "Bombard Crossbow" "Construct Crossbow" "Blackfire Crossbow" "Piercing Crossbow" "Twin Crossbow" "Cannonade Crossbow" "Bleak Crossbow" "Stout Crossbow" "Engraved Crossbow" "Flexed Crossbow" "Elegant Crossbow" "Wrapped Quarterstaff" "Long Quarterstaff" "Gothic Quarterstaff" "Crackling Quarterstaff" "Crescent Quarterstaff" "Steelpoint Quarterstaff" "Slicing Quarterstaff" "Barrier Quarterstaff" "Hefty Quarterstaff" "Smooth Quarterstaff" "Waxing Quarterstaff" "Bladed Quarterstaff" "Guardian Quarterstaff" "Sinister Quarterstaff" "Lunar Quarterstaff" "Striking Quarterstaff" "Aegis Quarterstaff" "Felled Greatclub" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Cultist Greathammer" "Temple Maul" "Leaden Greathammer" "Crumbling Maul" "Pointed Maul" "Totemic Greatclub" "Solemn Maul" "Heavy Greathammer" "Disintegrating Maul" "Anvil Maul" "Sacred Maul" "Fanatic Greathammer" "Ruination Maul"
+	BaseType == "Bone Wand" "Pyrophyte Staff" "Voltaic Staff" "Roaring Staff" "Paralysing Staff" "Sanctified Staff" "Wooden Club" "Smithing Hammer" "Slim Mace" "Spiked Club" Warpick "Plated Mace" "Brigand Mace" "Construct Hammer" "Morning Star" "Jade Club" "Marching Mace" "Bandit Mace" "Structured Hammer" "Flanged Mace" "Crown Mace" "Strife Pick" "Fortified Hammer" "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Branched Spear" "Jagged Spear" "Helix Spear" "Orichalcum Spear" "Pronged Spear" "Crude Bow" Shortbow "Warden Bow" "Recurve Bow" "Composite Bow" "Dualstring Bow" "Cultist Bow" "Zealot Bow" "Artillery Bow" "Tribal Bow" "Twin Bow" "Adherent Bow" "Militant Bow" "Ironwood Shortbow" "Cavalry Bow" "Makeshift Crossbow" "Tense Crossbow" "Sturdy Crossbow" "Varnished Crossbow" "Dyad Crossbow" "Alloy Crossbow" "Bombard Crossbow" "Construct Crossbow" "Blackfire Crossbow" "Piercing Crossbow" "Twin Crossbow" "Cannonade Crossbow" "Bleak Crossbow" "Stout Crossbow" "Engraved Crossbow" "Wrapped Quarterstaff" "Long Quarterstaff" "Gothic Quarterstaff" "Crackling Quarterstaff" "Crescent Quarterstaff" "Steelpoint Quarterstaff" "Slicing Quarterstaff" "Barrier Quarterstaff" "Hefty Quarterstaff" "Smooth Quarterstaff" "Waxing Quarterstaff" "Bladed Quarterstaff" "Guardian Quarterstaff" "Sinister Quarterstaff" "Lunar Quarterstaff" "Aegis Quarterstaff" "Felled Greatclub" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Cultist Greathammer" "Temple Maul" "Leaden Greathammer" "Crumbling Maul" "Pointed Maul" "Totemic Greatclub" "Solemn Maul" "Heavy Greathammer" "Disintegrating Maul" "Anvil Maul" "Sacred Maul" "Fanatic Greathammer" "Volatile Wand" "Reaping Staff" "Molten Hammer" "Marauding Mace" "Fanatic Bow"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity < Unique
 
 	#
 
 Hide
-	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus" "Sacred Focus" "Fire Quiver" "Sacral Quiver" "Two-Point Quiver" "Blunt Quiver" "Toxic Quiver" "Serrated Quiver" "Penetrating Quiver" "Leather Buckler" "Wooden Buckler" "Plated Buckler" "Iron Buckler" "Ridged Buckler" "Spiked Buckler" "Ringed Buckler" "Edged Buckler" "Laminate Buckler" "Pearl Buckler" "Ornate Buckler" "Spikeward Buckler" "Jingling Buckler" "Bladeguard Buckler" "Ornate Buckler" "Gutspike Buckler" "Ancient Buckler" "Desert Buckler" "Splintered Tower Shield" "Painted Tower Shield" "Braced Tower Shield" "Barricade Tower Shield" "Effigial Tower Shield" "Rampart Tower Shield" "Heraldric Tower Shield" "Stone Tower Shield" "Crucible Tower Shield" "Ancestor Tower Shield" "Bulwark Tower Shield" "Noble Tower Shield" "Goldworked Tower Shield" "Royal Tower Shield" "Fortress Tower Shield" "Vaal Tower Shield" "Hardwood Targe" "Pelage Targe" "Studded Targe" "Crescent Targe" "Chiseled Targe" "Feathered Targe" "Stratified Targe" "Carved Targe" "Polished Targe" "Stone Targe" "Avian Targe" "Mammoth Targe" "Baroque Targe" "Soaring Targe" "Golden Targe" "Blazon Crest Shield" "Sigil Crest Shield" "Emblem Crest Shield" "Jingling Crest Shield" "Sectarian Crest Shield" "Omen Crest Shield" "Wayward Crest Shield" "Seer Crest Shield" "Dekharan Crest Shield" "Quartered Crest Shield" "Glowering Crest Shield" "Intricate Crest Shield" "Sekheman Crest Shield" "Vaal Crest Shield" "Blacksteel Crest Shield"
+	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus" "Sacred Focus" "Fire Quiver" "Sacral Quiver" "Blunt Quiver" "Serrated Quiver" "Leather Buckler" "Wooden Buckler" "Plated Buckler" "Iron Buckler" "Ridged Buckler" "Spiked Buckler" "Ringed Buckler" "Edged Buckler" "Laminate Buckler" "Pearl Buckler" "Ornate Buckler" "Spikeward Buckler" "Jingling Buckler" "Bladeguard Buckler" "Ornate Buckler" "Gutspike Buckler" "Ancient Buckler" "Desert Buckler" "Splintered Tower Shield" "Painted Tower Shield" "Braced Tower Shield" "Barricade Tower Shield" "Effigial Tower Shield" "Rampart Tower Shield" "Heraldric Tower Shield" "Stone Tower Shield" "Crucible Tower Shield" "Ancestor Tower Shield" "Bulwark Tower Shield" "Noble Tower Shield" "Goldworked Tower Shield" "Royal Tower Shield" "Fortress Tower Shield" "Vaal Tower Shield" "Hardwood Targe" "Pelage Targe" "Studded Targe" "Crescent Targe" "Chiseled Targe" "Feathered Targe" "Stratified Targe" "Carved Targe" "Polished Targe" "Stone Targe" "Avian Targe" "Mammoth Targe" "Baroque Targe" "Soaring Targe" "Golden Targe" "Blazon Crest Shield" "Sigil Crest Shield" "Emblem Crest Shield" "Jingling Crest Shield" "Sectarian Crest Shield" "Omen Crest Shield" "Wayward Crest Shield" "Seer Crest Shield" "Dekharan Crest Shield" "Quartered Crest Shield" "Glowering Crest Shield" "Intricate Crest Shield" "Sekheman Crest Shield" "Vaal Crest Shield" "Blacksteel Crest Shield" "Toxic Quiver"
 	Class == Foci Bucklers Shields Quivers
 	Rarity < Unique
 
@@ -2652,7 +2684,7 @@ Hide
 	#
 
 Hide
-	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Skycrown Tiara" "Sorcerous Tiara" "Kamasan Tiara" "Rusted Greathelm" "Soldier Greathelm" "Wrapped Greathelm" "Spired Greathelm" "Elite Greathelm" "Warrior Greathelm" "Commander Greathelm" "Fierce Greathelm" "Elegant Greathelm" "Noble Greathelm" "Warmonger Greathelm" "Masked Greathelm" "Paragon Greathelm" "Imperial Greathelm" "Shabby Hood" "Felt Cap" "Lace Hood" "Swathed Cap" "Hunter Hood" "Viper Cap" "Corsair Cap" "Leatherbound Hood" "Wrapped Cap" "Deerstalker Hood" "Woven Cap" "Desert Cap" "Trapper Hood" "Freebooter Cap" "Brimmed Helm" "Guarded Helm" "Visored Helm" "Cowled Helm" "Shielded Helm" "Closed Helm" "Cabalist Helm" "Warded Helm" "Cryptic Helm" "Champion Helm" "Gladiatorial Helm" "Iron Crown" "Horned Crown" "Cultist Crown" "Martyr Crown" "Heavy Crown" "Spiritbone Crown" "Hallowed Crown" "Inquisitor Crown" "Druidic Crown" "Saintly Crown" "Divine Crown" "Cryptic Crown" "Hewn Mask" "Face Mask" "Hooded Mask" "Veiled Mask" "Tribal Mask" "Solid Mask" "Pariah Mask" "Avian Mask" "Brigand Mask" "Faridun Mask" "Soaring Mask" "Grinning Mask" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "River Raiment" "Adherent's Raiment" "Ceremonial Robe" "Rusted Cuirass" "Fur Plate" "Iron Cuirass" "Raider Plate" "Maraketh Cuirass" "Steel Plate" "Full Plate" "Vaal Cuirass" "Juggernaut Plate" "Chieftain Cuirass" "Elegant Plate" "Heavy Plate" "Stone Cuirass" "Ornate Plate" "Utzaal Cuirass" "Leather Vest" "Quilted Vest" "Pathfinder Coat" "Shrouded Vest" "Rhoahide Coat" "Studded Vest" "Scout's Vest" "Serpentscale Coat" "Corsair Vest" "Smuggler Coat" "Layered Vest" "Runner Vest" "Lizardscale Coat" "Swiftstalker Coat" "Wyrmscale Coat" "Corsair Coat" "Chain Mail" "Rogue Armour" "Vagabond Armour" "Cloaked Mail" "Explorer Armour" "Scale Mail" "Knight Armour" "Ancestral Mail" "Mantled Mail" "Trailblazer Armour" "Golden Mail" "Dastard Armour" "Shrouded Mail" "Death Mail" "Thane Mail" "Pilgrim Vestments" "Pelt Mantle" "Mail Vestments" "Shaman Mantle" "Ironclad Vestments" "Sacrificial Mantle" "Cleric Vestments" "Tideseer Mantle" "Occultist Mantle" "Plated Vestments" "Heartcarver Mantle" "Wolfskin Mantle" "Conjurer Mantle" "Death Mantle" "Seastorm Mantle" "Hermit Garb" "Waxed Jacket" "Marabout Garb" "Wayfarer Jacket" "Anchorite Garb" "Scalper's Jacket" "Scoundrel Jacket" "Ascetic Garb" "Itinerant Jacket" "Hatungo Garb" "Hawker's Jacket" "Rambler Jacket" "Austere Garb" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves" "Grim Gloves" "Opulent Gloves" "Vaal Gloves" "Stocky Mitts" "Riveted Mitts" "Tempered Mitts" "Bolstered Mitts" "Moulded Mitts" "Detailed Mitts" "Ancient Mitts" "Feathered Mitts" "Knightly Mitts" "Ornate Mitts" "Vaal Mitts" "Suede Bracers" "Firm Bracers" "Bound Bracers" "Sectioned Bracers" "Spined Bracers" "Fine Bracers" "Refined Bracers" "Spiked Bracers" "Stalking Bracers" "Grand Bracers" "Barbed Bracers" "Ringmail Gauntlets" "Layered Gauntlets" "Doubled Gauntlets" "Plate Gauntlets" "Zealot Gauntlets" "Steelmail Gauntlets" "Commander Gauntlets" "Cultist Gauntlets" "Blacksteel Gauntlets" "Rope Cuffs" "Aged Cuffs" "Goldcast Cuffs" "Verisium Cuffs" "Ornate Cuffs" "Bound Cuffs" "Ancient Cuffs" "Gleaming Cuffs" "Adherent Cuffs" "Gauze Wraps" "Linen Wraps" "Spiral Wraps" "Buckled Wraps" "Adorned Wraps" "War Wraps" "Elegant Wraps" "Vaal Wraps" "Straw Sandals" "Wrapped Sandals" "Lattice Sandals" "Silk Slippers" "Feathered Sandals" "Flax Sandals" "Elegant Slippers" "Dunerunner Sandals" "Bound Sandals" "Luxurious Slippers" "Sandsworn Sandals" "Rough Greaves" "Iron Greaves" "Bronze Greaves" "Trimmed Greaves" "Stone Greaves" "Reefsteel Greaves" "Elegant Greaves" "Carved Greaves" "Bulwark Greaves" "Ornate Greaves" "Vaal Greaves" "Tasalian Greaves" "Rawhide Boots" "Laced Boots" "Embossed Boots" "Steeltoe Boots" "Lizardscale Boots" "Flared Boots" "Studded Boots" "Serpentscale Boots" "Cinched Boots" "Cavalry Boots" "Dragonscale Boots" "Drakeskin Boots" "Mail Sabatons" "Braced Sabatons" "Stacked Sabatons" "Covered Sabatons" "Bastion Sabatons" "Veteran Sabatons" "Noble Sabatons" "Fortress Sabatons" "Blacksteel Sabatons" "Padded Leggings" "Secured Leggings" "Pelt Leggings" "Weaver Leggings" "Shamanistic Leggings" "Faithful Leggings" "Apostle Leggings" "Warlock Leggings" "Cryptic Leggings" "Frayed Shoes" "Threaded Shoes" "Hunting Shoes" "Steelpoint Shoes" "Treerunner Shoes" "Wanderer Shoes" "Charmed Shoes" "Quickslip Shoes"
+	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Skycrown Tiara" "Sorcerous Tiara" "Kamasan Tiara" "Rusted Greathelm" "Soldier Greathelm" "Wrapped Greathelm" "Spired Greathelm" "Elite Greathelm" "Warrior Greathelm" "Commander Greathelm" "Fierce Greathelm" "Elegant Greathelm" "Noble Greathelm" "Warmonger Greathelm" "Masked Greathelm" "Paragon Greathelm" "Imperial Greathelm" "Shabby Hood" "Felt Cap" "Lace Hood" "Swathed Cap" "Hunter Hood" "Viper Cap" "Corsair Cap" "Leatherbound Hood" "Wrapped Cap" "Deerstalker Hood" "Woven Cap" "Desert Cap" "Trapper Hood" "Freebooter Cap" "Brimmed Helm" "Guarded Helm" "Visored Helm" "Cowled Helm" "Shielded Helm" "Closed Helm" "Cabalist Helm" "Warded Helm" "Cryptic Helm" "Champion Helm" "Gladiatorial Helm" "Iron Crown" "Horned Crown" "Cultist Crown" "Martyr Crown" "Heavy Crown" "Spiritbone Crown" "Hallowed Crown" "Inquisitor Crown" "Druidic Crown" "Saintly Crown" "Divine Crown" "Cryptic Crown" "Hewn Mask" "Face Mask" "Hooded Mask" "Veiled Mask" "Tribal Mask" "Solid Mask" "Pariah Mask" "Avian Mask" "Brigand Mask" "Faridun Mask" "Soaring Mask" "Grinning Mask" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "River Raiment" "Adherent's Raiment" "Ceremonial Robe" "Rusted Cuirass" "Fur Plate" "Iron Cuirass" "Raider Plate" "Maraketh Cuirass" "Steel Plate" "Full Plate" "Vaal Cuirass" "Juggernaut Plate" "Chieftain Cuirass" "Elegant Plate" "Heavy Plate" "Stone Cuirass" "Ornate Plate" "Utzaal Cuirass" "Leather Vest" "Quilted Vest" "Pathfinder Coat" "Shrouded Vest" "Rhoahide Coat" "Studded Vest" "Scout's Vest" "Serpentscale Coat" "Corsair Vest" "Smuggler Coat" "Layered Vest" "Runner Vest" "Lizardscale Coat" "Swiftstalker Coat" "Wyrmscale Coat" "Chain Mail" "Rogue Armour" "Vagabond Armour" "Cloaked Mail" "Explorer Armour" "Scale Mail" "Knight Armour" "Ancestral Mail" "Mantled Mail" "Trailblazer Armour" "Golden Mail" "Dastard Armour" "Shrouded Mail" "Thane Mail" "Pilgrim Vestments" "Pelt Mantle" "Mail Vestments" "Shaman Mantle" "Ironclad Vestments" "Sacrificial Mantle" "Cleric Vestments" "Tideseer Mantle" "Occultist Mantle" "Plated Vestments" "Heartcarver Mantle" "Wolfskin Mantle" "Conjurer Mantle" "Death Mantle" "Seastorm Mantle" "Hermit Garb" "Waxed Jacket" "Marabout Garb" "Wayfarer Jacket" "Anchorite Garb" "Scalper's Jacket" "Scoundrel Jacket" "Ascetic Garb" "Itinerant Jacket" "Hatungo Garb" "Hawker's Jacket" "Austere Garb" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves" "Grim Gloves" "Opulent Gloves" "Vaal Gloves" "Stocky Mitts" "Riveted Mitts" "Tempered Mitts" "Bolstered Mitts" "Moulded Mitts" "Detailed Mitts" "Ancient Mitts" "Feathered Mitts" "Knightly Mitts" "Ornate Mitts" "Vaal Mitts" "Suede Bracers" "Firm Bracers" "Bound Bracers" "Sectioned Bracers" "Spined Bracers" "Fine Bracers" "Refined Bracers" "Spiked Bracers" "Stalking Bracers" "Grand Bracers" "Barbed Bracers" "Ringmail Gauntlets" "Layered Gauntlets" "Doubled Gauntlets" "Plate Gauntlets" "Zealot Gauntlets" "Steelmail Gauntlets" "Commander Gauntlets" "Cultist Gauntlets" "Blacksteel Gauntlets" "Rope Cuffs" "Aged Cuffs" "Goldcast Cuffs" "Verisium Cuffs" "Ornate Cuffs" "Bound Cuffs" "Ancient Cuffs" "Gleaming Cuffs" "Gauze Wraps" "Linen Wraps" "Spiral Wraps" "Buckled Wraps" "Adorned Wraps" "War Wraps" "Elegant Wraps" "Vaal Wraps" "Straw Sandals" "Wrapped Sandals" "Lattice Sandals" "Silk Slippers" "Feathered Sandals" "Flax Sandals" "Elegant Slippers" "Dunerunner Sandals" "Bound Sandals" "Luxurious Slippers" "Sandsworn Sandals" "Rough Greaves" "Iron Greaves" "Bronze Greaves" "Trimmed Greaves" "Stone Greaves" "Reefsteel Greaves" "Elegant Greaves" "Carved Greaves" "Bulwark Greaves" "Ornate Greaves" "Vaal Greaves" "Rawhide Boots" "Laced Boots" "Embossed Boots" "Steeltoe Boots" "Lizardscale Boots" "Flared Boots" "Studded Boots" "Serpentscale Boots" "Cinched Boots" "Cavalry Boots" "Dragonscale Boots" "Mail Sabatons" "Braced Sabatons" "Stacked Sabatons" "Covered Sabatons" "Bastion Sabatons" "Veteran Sabatons" "Noble Sabatons" "Fortress Sabatons" "Blacksteel Sabatons" "Padded Leggings" "Secured Leggings" "Pelt Leggings" "Weaver Leggings" "Shamanistic Leggings" "Faithful Leggings" "Apostle Leggings" "Warlock Leggings" "Frayed Shoes" "Threaded Shoes" "Hunting Shoes" "Steelpoint Shoes" "Treerunner Shoes" "Wanderer Shoes" "Charmed Shoes" "Quickslip Shoes" "Feathered Raiment" "Flowing Raiment" "Soldier Cuirass" "Corsair Coat" "Death Mail" "Rambler Jacket" "Massive Mitts" "Adherent Cuffs" "Secured Wraps" "Tasalian Greaves" "Cryptic Leggings"
 	Class == Helmets "Body Armours" Gloves Boots
 	Rarity < Unique
 

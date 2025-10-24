@@ -81,14 +81,14 @@ function classWeapons(filter) {
 	// Normal
 	filter.multiBlock((c) => {
 		c.continue();
-		c.names = new Comparison(NameManager.getMain(TIER.CLASS));
+		c.names = new Comparison(NameManager.getMain(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.isCorrupted = false;
 	}, (c) => {
 		c.continue();
-		c.names = new Comparison(NameManager.getOff(TIER.CLASS));
+		c.names = new Comparison(NameManager.getOff(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -100,7 +100,7 @@ function classWeapons(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.names = new Comparison(NameManager.getMain(TIER.CLASS));
+		c.names = new Comparison(NameManager.getMain(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -108,7 +108,7 @@ function classWeapons(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Low tier
 		c.continue();
-		c.names = new Comparison(NameManager.getOff(TIER.CLASS));
+		c.names = new Comparison(NameManager.getOff(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -120,7 +120,7 @@ function classWeapons(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.names = new Comparison(NameManager.getMain(TIER.CLASS));
+		c.names = new Comparison(NameManager.getMain(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -128,7 +128,7 @@ function classWeapons(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Max tier
 		c.continue();
-		c.names = new Comparison(NameManager.getOff(TIER.CLASS));
+		c.names = new Comparison(NameManager.getOff(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -136,7 +136,7 @@ function classWeapons(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Good mod (class mainhand)
 		c.continue();
-		c.names = new Comparison(NameManager.getMain(TIER.CLASS));
+		c.names = new Comparison(NameManager.getMain(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -144,7 +144,7 @@ function classWeapons(filter) {
 		c.goodModMainhand();
 	}, (c) => { // Good mod (class offhand)
 		c.continue();
-		c.names = new Comparison(NameManager.getOff(TIER.CLASS));
+		c.names = new Comparison(NameManager.getOff(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -157,14 +157,14 @@ function classWeapons(filter) {
 	// Rare
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.names = new Comparison(NameManager.getMain(TIER.CLASS));
+		c.names = new Comparison(NameManager.getMain(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.isLowTier();
 	}, (c) => { // Low tier
 		c.continue();
-		c.names = new Comparison(NameManager.getOff(TIER.CLASS));
+		c.names = new Comparison(NameManager.getOff(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -175,28 +175,28 @@ function classWeapons(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.names = new Comparison(NameManager.getMain(TIER.CLASS));
+		c.names = new Comparison(NameManager.getMain(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.isMaxTier();
 	}, (c) => { // Max tier
 		c.continue();
-		c.names = new Comparison(NameManager.getOff(TIER.CLASS));
+		c.names = new Comparison(NameManager.getOff(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.isMaxTier();
 	}, (c) => { // Good mod (class mainhand)
 		c.continue();
-		c.names = new Comparison(NameManager.getMain(TIER.CLASS));
+		c.names = new Comparison(NameManager.getMain(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
 		c.goodModMainhand();
 	}, (c) => { // Good mod (class offhand)
 		c.continue();
-		c.names = new Comparison(NameManager.getOff(TIER.CLASS));
+		c.names = new Comparison(NameManager.getOff(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.OFF_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -270,7 +270,7 @@ function classArmour(filter) {
 	// Normal
 	filter.multiBlock((c) => {
 		c.continue();
-		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -282,7 +282,7 @@ function classArmour(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -294,7 +294,7 @@ function classArmour(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -302,7 +302,7 @@ function classArmour(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Good mod (class)
 		c.continue();
-		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -315,7 +315,7 @@ function classArmour(filter) {
 	// Rare
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
-		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -326,7 +326,7 @@ function classArmour(filter) {
 
 	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -334,7 +334,7 @@ function classArmour(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Good mod (class)
 		c.continue();
-		c.names = new Comparison(NameManager.getArmour(TIER.CLASS));
+		c.names = new Comparison(NameManager.getArmour(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.ARMOUR_TOP);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -395,7 +395,7 @@ function classUncommon(filter) {
 	});
 	filter.multiBlock((c) => { // Good base
 		c.continue();
-		c.names = new Comparison(NameManager.getFlasks(TIER.CLASS));
+		c.names = new Comparison(NameManager.getFlasks(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(83, OPERATOR.GTE);
@@ -470,7 +470,7 @@ function classUncommon(filter) {
 	});
 	filter.multiBlock((c) => { // Good base
 		c.continue();
-		c.names = new Comparison(NameManager.getFlasks(TIER.CLASS));
+		c.names = new Comparison(NameManager.getFlasks(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(83, OPERATOR.GTE);

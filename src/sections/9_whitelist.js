@@ -1,6 +1,7 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
+import { NameManager, TIER } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
 import { PAIR_GEAR } from "../index.js";
 
@@ -82,15 +83,19 @@ function outline(filter) {
 		c.goodBase(true);
 		c.categories(CATEGORY.GEAR);
 	}, (c) => {
+		c.names = new Comparison(NameManager.getMain(TIER.BAD, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN);
 		c.goodModMainhand(true);
 	}, (c) => {
+		c.names = new Comparison(NameManager.getOff(TIER.BAD, OPERATOR.GTE));
 		c.categories(CATEGORY.OFF);
 		c.goodModOffhand(true);
 	}, (c) => {
+		c.names = new Comparison(NameManager.getArmour(TIER.BAD, OPERATOR.GTE));
 		c.categories(CATEGORY.ARMOUR);
 		c.goodModArmour(true);
 	}, (c) => {
+		//TODO
 		c.categories(CATEGORY.JEWELLERY);
 		c.goodModJewellery(true);
 	});
@@ -98,6 +103,24 @@ function outline(filter) {
 
 function other(filter) {
 	filter.multiWhitelist((c) => {
+		c.names = new Comparison(NameManager.getMain(TIER.BAD, OPERATOR.GTE));
+		c.categories(CATEGORY.MAIN);
+		c.isMaxTier();
+	}, (c) => {
+		c.names = new Comparison(NameManager.getOff(TIER.BAD, OPERATOR.GTE));
+		c.categories(CATEGORY.OFF);
+		c.isMaxTier();
+	}, (c) => {
+		c.names = new Comparison(NameManager.getArmour(TIER.BAD, OPERATOR.GTE));
+		c.categories(CATEGORY.ARMOUR);
+		c.isMaxTier();
+	}, (c) => {
+		//TODO
+		c.categories(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.CHARM);
+		c.isMaxTier();
+	}, (c) => {
+		c.names = new Comparison(NameManager.getFlasks(TIER.BAD, OPERATOR.GTE));
+		c.categories(CATEGORY.FLASK);
 		c.isMaxTier();
 	});
 }
