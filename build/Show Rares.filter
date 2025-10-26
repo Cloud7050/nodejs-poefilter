@@ -18,7 +18,7 @@ Hide
 	MinimapIcon 2 Red Kite
 
 Show
-	BaseType == "Greater Orb of Transmutation" "Orb of Alchemy" "Greater Orb of Augmentation" "Greater Jeweller's Orb" "Orb of Augmentation" "Scroll of Wisdom"
+	BaseType == "Greater Orb of Transmutation" "Orb of Transmutation" "Orb of Alchemy" "Greater Orb of Augmentation" "Greater Jeweller's Orb" "Orb of Augmentation" "Greater Regal Orb" "Scroll of Wisdom"
 	Class == "Stackable Currency"
 
 	SetFontSize 27
@@ -28,7 +28,7 @@ Show
 	MinimapIcon 2 Red Kite
 
 Show
-	BaseType == "Regal Orb" "Artificer's Orb" "Perfect Orb of Transmutation" "Greater Regal Orb" "Armourer's Scrap" "Orb of Transmutation" "Gemcutter's Prism" "Arcanist's Etcher" "Chance Shard" "Vaal Orb"
+	BaseType == "Regal Orb" "Artificer's Orb" "Armourer's Scrap" "Perfect Orb of Transmutation" "Arcanist's Etcher" "Gemcutter's Prism" "Chance Shard"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -38,7 +38,7 @@ Show
 	MinimapIcon 1 Red UpsideDownHouse
 
 Show
-	BaseType == "Glassblower's Bauble" "Exalted Orb" "Perfect Orb of Augmentation" "Greater Exalted Orb" "Orb of Chance" "Perfect Regal Orb" "Perfect Jeweller's Orb"
+	BaseType == "Glassblower's Bauble" "Perfect Orb of Augmentation" "Exalted Orb" "Vaal Orb" "Orb of Chance" "Greater Exalted Orb" "Perfect Regal Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -48,7 +48,7 @@ Show
 	MinimapIcon 0 Red Cross
 
 Show
-	BaseType == "Chaos Orb" "Greater Chaos Orb" "Fracturing Orb" "Orb of Annulment"
+	BaseType == "Perfect Jeweller's Orb" "Chaos Orb" "Greater Chaos Orb" "Fracturing Orb" "Orb of Annulment"
 	Class == "Stackable Currency"
 
 	SetFontSize 45

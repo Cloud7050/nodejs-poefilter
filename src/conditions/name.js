@@ -1,5 +1,5 @@
 export class Name {
-	static DIV = 824; // Exalts per divine
+	static DIV = 1440; // Exalts per divine
 
 	name;
 	value;
