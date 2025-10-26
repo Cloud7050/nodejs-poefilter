@@ -2692,9 +2692,16 @@ Hide
 	#
 
 Hide
-	Class == "Life Flasks" "Mana Flasks" Charms
+	Class == "Mana Flasks" Charms
 	Rarity < Unique
 	ItemLevel < 67
+
+	#
+
+Hide
+	Class == "Life Flasks"
+	Rarity < Unique
+	ItemLevel < 82
 
 	#
 

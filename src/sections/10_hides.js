@@ -55,10 +55,14 @@ function uncommon(filter) {
 		c.categories(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.isCorrupted = true;
-	}, (c) => { // Too low ilvl (charged)
-		c.categories(CATEGORY.CHARGED);
+	}, (c) => { // Too low ilvl (mana flasks, charms)
+		c.categories(CATEGORY.FLASK_MANA, CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(67, OPERATOR.LT);
+	}, (c) => { // Too low ilvl (life flasks)
+		c.categories(CATEGORY.FLASK_LIFE);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Too low ilvl (jewellery)
 		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);

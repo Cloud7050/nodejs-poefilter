@@ -38,7 +38,9 @@ const AMULET = new StringList("Amulets");
 const RING = new StringList("Rings");
 const JEWELLERY = new StringList(AMULET, RING);
 const BELT = new StringList("Belts");
-const FLASK = new StringList("Life Flasks", "Mana Flasks");
+const FLASK_LIFE = new StringList("Life Flasks");
+const FLASK_MANA = new StringList("Mana Flasks");
+const FLASK = new StringList(FLASK_LIFE, FLASK_MANA);
 const CHARM = new StringList("Charms");
 const CHARGED = new StringList(FLASK, CHARM);
 const GEAR_UNCOMMON = new StringList(JEWELLERY, BELT, CHARGED);
@@ -98,6 +100,8 @@ export const CATEGORY = {
 	RING,
 	JEWELLERY,
 	BELT,
+	FLASK_LIFE,
+	FLASK_MANA,
 	FLASK,
 	CHARM,
 	CHARGED,
