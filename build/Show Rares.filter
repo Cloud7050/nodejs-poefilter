@@ -2028,6 +2028,39 @@ Show
 	Continue
 
 Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Normal
+	Sockets >= 1
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Normal
+	Sockets >= 1
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
+
+Show
 	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
 	Rarity == Normal
 	Sockets >= 2
@@ -2155,6 +2188,39 @@ Show
 	Continue
 
 Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Magic
+	Sockets >= 1
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Magic
+	Sockets >= 1
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
 	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
 	Rarity == Magic
 	Sockets >= 2
@@ -2282,6 +2348,39 @@ Show
 	Continue
 
 Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Rare
+	Sockets >= 1
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Rare
+	Sockets >= 1
+	Corrupted True
+	AnyEnchantment True
+
+	SetFontSize 45
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
 	Class == Sceptres Foci Wands "One Hand Maces" Spears Bucklers Shields Helmets Gloves Boots
 	Rarity == Rare
 	Sockets >= 2
@@ -2397,6 +2496,39 @@ Show
 Show
 	Rarity == Unique
 	Quality >= 24
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Unique
+	Sockets >= 1
+	Corrupted False
+
+	SetFontSize 45
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 241 106 33 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Star
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Unique
+	Sockets >= 1
+	Corrupted True
+	AnyEnchantment True
 
 	SetFontSize 45
 	SetTextColor 10 20 83 255

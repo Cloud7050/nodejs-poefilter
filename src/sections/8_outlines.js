@@ -111,6 +111,18 @@ function exceptional(filter) {
 		c.hasQuality(24);
 	}, (c) => {
 		c.continue();
+		c.categories(CATEGORY.GEAR_UNCOMMON);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.isCorrupted = false;
+		c.hasSockets(1);
+	}, (c) => {
+		c.continue();
+		c.categories(CATEGORY.GEAR_UNCOMMON);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.hasSockets(1);
+		c.hasEnchant();
+	}, (c) => {
+		c.continue();
 		c.categories(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.isCorrupted = false;
@@ -158,6 +170,18 @@ function exceptional(filter) {
 		c.continue();
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.hasQuality(24);
+	}, (c) => {
+		c.continue();
+		c.categories(CATEGORY.GEAR_UNCOMMON);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.isCorrupted = false;
+		c.hasSockets(1);
+	}, (c) => {
+		c.continue();
+		c.categories(CATEGORY.GEAR_UNCOMMON);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.hasSockets(1);
+		c.hasEnchant();
 	}, (c) => {
 		c.continue();
 		c.categories(CATEGORY.SOCKET_ONE);
@@ -209,6 +233,18 @@ function exceptional(filter) {
 		c.hasQuality(24);
 	}, (c) => {
 		c.continue();
+		c.categories(CATEGORY.GEAR_UNCOMMON);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.isCorrupted = false;
+		c.hasSockets(1);
+	}, (c) => {
+		c.continue();
+		c.categories(CATEGORY.GEAR_UNCOMMON);
+		c.rarity = new Comparison(RARITY.RARE);
+		c.hasSockets(1);
+		c.hasEnchant();
+	}, (c) => {
+		c.continue();
 		c.categories(CATEGORY.SOCKET_ONE);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isCorrupted = false;
@@ -256,6 +292,18 @@ function exceptional(filter) {
 		c.continue();
 		c.rarity = new Comparison(RARITY.UNIQUE);
 		c.hasQuality(24);
+	}, (c) => {
+		c.continue();
+		c.categories(CATEGORY.GEAR_UNCOMMON);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.isCorrupted = false;
+		c.hasSockets(1);
+	}, (c) => {
+		c.continue();
+		c.categories(CATEGORY.GEAR_UNCOMMON);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+		c.hasSockets(1);
+		c.hasEnchant();
 	}, (c) => {
 		c.continue();
 		c.categories(CATEGORY.SOCKET_ONE);
