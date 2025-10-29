@@ -1906,7 +1906,7 @@ Show
 	Class == Wands Staves Charms
 	ItemLevel >= 81
 
-	SetBorderColor 255 255 255 255
+	SetBorderColor 74 230 58 255
 
 	Continue
 
@@ -1914,7 +1914,7 @@ Show
 	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts
 	ItemLevel >= 82
 
-	SetBorderColor 255 255 255 255
+	SetBorderColor 74 230 58 255
 
 	Continue
 
@@ -1922,7 +1922,7 @@ Show
 	Class == "Life Flasks" "Mana Flasks"
 	ItemLevel >= 83
 
-	SetBorderColor 255 255 255 255
+	SetBorderColor 74 230 58 255
 
 	Continue
 

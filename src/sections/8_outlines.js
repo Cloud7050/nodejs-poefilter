@@ -35,7 +35,7 @@ function corrupted(filter) {
 		c.continue();
 		c.hasEnchant();
 
-		e.outlineColour = Colour.CRAFTED;
+		e.outlineColour = Colour.CRAFTED; //TODO test
 	});
 }
 
@@ -54,7 +54,7 @@ function bis(filter) {
 		c.categories(CATEGORY.FLASK);
 		c.ilvl = new Comparison(83, OPERATOR.GTE);
 	}, (e) => {
-		e.outlineColour = Colour.WHITE;
+		e.outlineColour = Colour.QUEST;
 	});
 }
 

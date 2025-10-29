@@ -24,7 +24,6 @@ export class Colour {
 	static BLACK = new Colour(0, 0, 0);
 	static BLACK_TRANSLUCENT = new Colour(0, 0, 0, 128);
 	static TRANSPARENT = new Colour(0, 0, 0, 0);
-	static WHITE = new Colour(255, 255, 255);
 
 	// https://colors.artyclick.com/color-name-finder
 	// static ROSE = Colour.fromHue(0);
@@ -53,9 +52,9 @@ export class Colour {
 
 	static CORRUPTED = new Colour(210, 0, 0);
 	static CRAFTED = new Colour(184, 218, 242);
-	// static GEM_UNCUT = new Colour(116, 201, 190);
+	// static GEM_TEXT = new Colour(116, 201, 190);
 	// static GEM = new Colour(27, 162, 155); // UNCONFIRMED
-	// static QUEST = new Colour(74, 230, 58); // UNCONFIRMED
+	static QUEST = new Colour(74, 230, 58); // UNCONFIRMED
 
 	r;
 	g;
