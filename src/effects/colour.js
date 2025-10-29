@@ -51,10 +51,11 @@ export class Colour {
 	static UNIQUE = new Colour(241, 106, 33);
 
 	static CORRUPTED = new Colour(210, 0, 0);
-	static CRAFTED = new Colour(184, 218, 242);
+	static CHAOS = new Colour(208, 32, 144);
+	static QUEST = new Colour(74, 230, 58); // UNCONFIRMED
+	// static CRAFTED = new Colour(184, 218, 242);
 	// static GEM_TEXT = new Colour(116, 201, 190);
 	// static GEM = new Colour(27, 162, 155); // UNCONFIRMED
-	static QUEST = new Colour(74, 230, 58); // UNCONFIRMED
 
 	r;
 	g;

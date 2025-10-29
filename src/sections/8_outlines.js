@@ -35,7 +35,7 @@ function corrupted(filter) {
 		c.continue();
 		c.hasEnchant();
 
-		e.outlineColour = Colour.CRAFTED; //TODO test
+		e.outlineColour = Colour.CHAOS;
 	});
 }
 

@@ -1898,7 +1898,7 @@ Show
 	Corrupted True
 	AnyEnchantment True
 
-	SetBorderColor 184 218 242 255
+	SetBorderColor 208 32 144 255
 
 	Continue
 
