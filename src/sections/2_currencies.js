@@ -244,23 +244,23 @@ function delirium(filter) {
 // Catalysts
 function ritual(filter) {
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getCatalysts(null, 1 / 10));
+		c.names = new Comparison(NameManager.getCatalysts(null, 1 / 100));
 		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_CRAFT).sizeWisdom();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getCatalysts(1 / 10, 1));
+		c.names = new Comparison(NameManager.getCatalysts(1 / 100, 1));
 		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_CRAFT).sizeAugment();
 	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getCatalysts(1));
-		c.categories(CATEGORY.CURRENCY);
+	// filter.block((c, e) => {
+	// 	c.names = new Comparison(NameManager.getCatalysts(1));
+	// 	c.categories(CATEGORY.CURRENCY);
 
-		e.colourExalt(PAIR_CRAFT).sizeExalt();
-	});
+	// 	e.colourExalt(PAIR_CRAFT).sizeExalt();
+	// });
 }
 
 // Sekhema keys

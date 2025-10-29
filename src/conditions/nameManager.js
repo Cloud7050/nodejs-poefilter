@@ -230,20 +230,19 @@ export class NameManager {
 
 	static getCatalysts(min = undefined, max = undefined) {
 		return new NameManager(
-			new Name("Skittering Catalyst", 1 / 30), // Speed
-			new Name("Adaptive Catalyst", 1 / 25), // Attribute
-			new Name("Uul-Netol's Catalyst", 1 / 17), // Physical
-			new Name("Sibilant Catalyst", 1 / 15), // Caster
-			new Name("Carapace Catalyst", 1 / 12.6), // Defence
-			new Name("Xoph's Catalyst", 1 / 12), // Fire
-			new Name("Neural Catalyst", 1 / 11), // Mana
+			new Name("Skittering Catalyst", 1 / 400), // Speed
+			new Name("Uul-Netol's Catalyst", 1 / 200), // Physical
+			new Name("Neural Catalyst", 1 / 200), // Mana
+			new Name("Sibilant Catalyst", 1 / 150), // Caster
 
-			new Name("Tul's Catalyst", 1 / 8), // Cold
-			new Name("Chayula's Catalyst", 1 / 7), // Chaos
-
-			new Name("Flesh Catalyst", 2), // Life
-			new Name("Esh's Catalyst", 5), // Lightning
-			new Name("Reaver Catalyst", 13), // Attack
+			new Name("Adaptive Catalyst", 1 / 100), // Attribute
+			new Name("Carapace Catalyst", 1 / 100), // Defence
+			new Name("Chayula's Catalyst", 1 / 100), // Chaos
+			new Name("Xoph's Catalyst", 1 / 80), // Fire
+			new Name("Tul's Catalyst", 1 / 30), // Cold
+			new Name("Flesh Catalyst", 1 / 30), // Life
+			new Name("Reaver Catalyst", 1 / 3), // Attack
+			new Name("Esh's Catalyst", 1 / 1.27), // Lightning
 		).range(min, max);
 	}
 
