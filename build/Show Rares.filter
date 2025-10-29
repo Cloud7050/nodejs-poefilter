@@ -1196,7 +1196,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver"
+	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1257,7 +1257,7 @@ Show
 	Class == Sceptres
 	Rarity == Rare
 	ItemLevel >= 82
-	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver"
+	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1288,7 +1288,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 81
 	Corrupted False
-	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1304,7 +1304,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1336,7 +1336,7 @@ Show
 	Rarity == Rare
 	ItemLevel >= 81
 	Corrupted False
-	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1352,7 +1352,7 @@ Show
 	Rarity == Rare
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1431,7 +1431,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall"
+	HasExplicitMod >=1 "of the Despot" Queen's Hellion's Dragon's "of Windfall"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1462,7 +1462,7 @@ Show
 	Rarity == Rare
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall"
+	HasExplicitMod >=1 "of the Despot" Queen's Hellion's Dragon's "of Windfall"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1478,7 +1478,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+	HasExplicitMod >=1 "of the Despot" Queen's Hellion's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1493,7 +1493,7 @@ Show
 	Class == Helmets "Body Armours" Gloves Boots
 	Rarity == Rare
 	ItemLevel >= 82
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+	HasExplicitMod >=1 "of the Despot" Queen's Hellion's Dragon's "of Windfall" "of Dueling"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1620,7 +1620,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall"
+	HasExplicitMod >=1 Countess' "of the Overseer" Dragon's "of Windfall"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1669,7 +1669,7 @@ Show
 	Rarity == Rare
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall"
+	HasExplicitMod >=1 Countess' "of the Overseer" Dragon's "of Windfall"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1698,7 +1698,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall"
+	HasExplicitMod >=1 Countess' "of the Overseer" Dragon's "of Windfall"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1714,7 +1714,7 @@ Show
 	Rarity == Rare
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall"
+	HasExplicitMod >=1 Countess' "of the Overseer" Dragon's "of Windfall"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1936,7 +1936,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
-	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
 
 	SetBorderColor 255 225 87 255
 
@@ -1952,7 +1952,7 @@ Show
 
 Show
 	Class == Helmets "Body Armours" Gloves Boots
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+	HasExplicitMod >=1 "of the Despot" Queen's Hellion's Dragon's "of Windfall" "of Dueling"
 
 	SetBorderColor 255 225 87 255
 
@@ -1960,7 +1960,7 @@ Show
 
 Show
 	Class == Amulets Rings
-	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall" "of the Sorcerer" "of Battle" "of the Sharpshooter"
+	HasExplicitMod >=1 Countess' "of the Overseer" Dragon's "of Windfall" "of the Sorcerer" "of Battle" "of the Sharpshooter"
 
 	SetBorderColor 255 225 87 255
 
@@ -2575,7 +2575,7 @@ Show
 Show
 	BaseType == "Volatile Wand" "Reaping Staff" "Molten Hammer" "Marauding Mace" "Fanatic Bow" "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Dreaming Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul" "Rattling Sceptre"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
-	HasExplicitMod >=1 Prince's King's Chancellor's "of the Overseer" "of the Slavedriver" "of the Sorcerer" "of the Wizard" "of Immolation" "of Inferno" "of Rime" "of Frostbite" "of Voltage" "of Thunder" "of Havoc" "of Armageddon" "of Desolation" "of Grief" "of Battle" "of War" "of the Marksman" "of the Sniper"
+	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
 
 	#
 
@@ -2589,14 +2589,14 @@ Show
 Show
 	BaseType == "Feathered Raiment" "Flowing Raiment" "Soldier Cuirass" "Corsair Coat" "Death Mail" "Rambler Jacket" "Massive Mitts" "Adherent Cuffs" "Secured Wraps" "Tasalian Greaves" "Cryptic Leggings" "Sacramental Robe" "Warlord Cuirass" "Slipstrike Vest" "Sleek Jacket" "Falconer's Jacket" "Polished Bracers" "Sekhema Sandals" "Drakeskin Boots" "Daggerfoot Shoes" "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
 	Class == Helmets "Body Armours" Gloves Boots
-	HasExplicitMod >=1 "of the Despot" Princess' Queen's Cheetah's Hellion's Pirate's Dragon's "of Windfall" "of Dueling"
+	HasExplicitMod >=1 "of the Despot" Queen's Hellion's Dragon's "of Windfall" "of Dueling"
 
 	#
 
 Show
 	BaseType == "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Pearlescent Amulet" "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Unset Ring" "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Double Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Silver Charm" "Thawing Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Amethyst Charm" "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
 	Class == Amulets Rings
-	HasExplicitMod >=1 Countess' "of the Overseer" Pirate's Dragon's "of Windfall" "of the Sorcerer" "of Battle" "of the Sharpshooter"
+	HasExplicitMod >=1 Countess' "of the Overseer" Dragon's "of Windfall" "of the Sorcerer" "of Battle" "of the Sharpshooter"
 
 	#
 

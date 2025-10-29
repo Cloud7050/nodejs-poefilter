@@ -137,7 +137,7 @@ export class ConditionSet {
 			// "Marquess'", // 39-44, IL33
 			// "Count's", // 45-50, IL46
 			// "Duke's", // 51-55, IL60
-			"Prince's", // 56-60, IL75
+			// "Prince's", // 56-60, IL75
 			"King's", // 61-65, IL82
 			////
 
@@ -156,7 +156,7 @@ export class ConditionSet {
 			// Sceptres
 			// "of the Taskmaster", // 1, IL2
 			// "of the Despot", // 2, IL25
-			"of the Overseer", // 3, IL55
+			// "of the Overseer", // 3, IL55
 			"of the Slavedriver", // 4, IL78
 			////
 		];
@@ -165,7 +165,7 @@ export class ConditionSet {
 			// Wands/staves
 			// "of the Mage", // 2, IL5
 			// "of the Enchanter", // 3, IL25
-			"of the Sorcerer", // 4, IL55
+			// "of the Sorcerer", // 4, IL55
 			"of the Wizard", // 5-6, IL78
 			////
 
@@ -174,7 +174,7 @@ export class ConditionSet {
 			// "of Coals", // 2, IL2
 			// "of Cinders", // 3, IL18
 			// "of Flames", // 4, IL36
-			"of Immolation", // 5-6, IL55
+			// "of Immolation", // 5-6, IL55
 			"of Inferno", // 7, IL81
 			////
 
@@ -183,7 +183,7 @@ export class ConditionSet {
 			// "of Snow", // 2, IL2
 			// "of Sleet", // 3, IL18
 			// "of Ice", // 4, IL36
-			"of Rime", // 5-6, IL55
+			// "of Rime", // 5-6, IL55
 			"of Frostbite", // 7, IL81
 			////
 
@@ -192,7 +192,7 @@ export class ConditionSet {
 			// "of Sparks", // 2, IL2
 			// "of Static", // 3, IL18
 			// "of Electricity", // 4, IL36
-			"of Voltage", // 5-6, IL55
+			// "of Voltage", // 5-6, IL55
 			"of Thunder", // 7, IL81
 			////
 
@@ -201,7 +201,7 @@ export class ConditionSet {
 			// "of Anarchy", // 2, IL2
 			// "of Turmoil", // 3, IL18
 			// "of Ruin", // 4, IL36
-			"of Havoc", // 5-6, IL55
+			// "of Havoc", // 5-6, IL55 //NOTE is also T5 crit chance on bows
 			"of Armageddon", // 7, IL81
 			////
 
@@ -210,7 +210,7 @@ export class ConditionSet {
 			// "of Agony", // 2, IL2
 			// "of Suffering", // 3, IL18
 			// "of Torment", // 4, IL36
-			"of Desolation", // 5-6, IL55
+			// "of Desolation", // 5-6, IL55
 			"of Grief", // 7, IL81
 			////
 
@@ -219,7 +219,7 @@ export class ConditionSet {
 			// "of Combat", // 1 | 2, IL2
 			// "of Dueling", // 2 | 3, IL18
 			// "of Conflict", // 3 | 4, IL36
-			"of Battle", // 4 | 5-6, IL55
+			// "of Battle", // 4 | 5-6, IL55
 			"of War", // 5 | 7, IL81
 			////
 
@@ -228,7 +228,7 @@ export class ConditionSet {
 			// "of the Archer", // 1 | 2, IL2
 			// "of the Fletcher", // 2 | 3, IL18
 			// "of the Sharpshooter", // 3 | 4, IL36
-			"of the Marksman", // 4 | 5-6, IL55
+			// "of the Marksman", // 4 | 5-6, IL55
 			"of the Sniper", // 5 | 7, IL81
 			////
 		);
@@ -269,7 +269,7 @@ export class ConditionSet {
 			// "Marchioness'", // 43-46, IL46
 			// "Countess'", // 47-50, IL54
 			// "Duchess'", // 51-53, IL60
-			"Princess'", // 54-56, IL65
+			// "Princess'", // 54-56, IL65
 			"Queen's", // 57-61, IL78
 			////
 
@@ -279,7 +279,7 @@ export class ConditionSet {
 			// "Sprinter's", // 15, IL16
 			// "Stallion's", // 20, IL33
 			// "Gazelle's", // 25, IL46
-			"Cheetah's", // 30, IL65
+			// "Cheetah's", // 30, IL65
 			"Hellion's", // 35, IL82
 			////
 
@@ -288,7 +288,7 @@ export class ConditionSet {
 			// "Magpie's", // 8-11, IL10
 			// "Collector's", // 12-15, IL29
 			// "Hoarder's", // 16-19, IL47
-			"Pirate's", // 20-22, IL65
+			// "Pirate's", // 20-22, IL65
 			"Dragon's", // 23-25, IL81
 			// Helmets/gloves/boots
 			// "of Plunder", // 6-10, IL3
@@ -331,7 +331,7 @@ export class ConditionSet {
 			// "Magpie's", // 8-11, IL10
 			// "Collector's", // 12-15, IL29
 			// "Hoarder's", // 16-19, IL47
-			"Pirate's", // 20-22, IL65
+			// "Pirate's", // 20-22, IL65
 			"Dragon's", // 23-25, IL81
 			// Amulets/rings
 			// "of Plunder", // 6-10, IL3
