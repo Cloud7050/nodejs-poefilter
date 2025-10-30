@@ -26,6 +26,7 @@ export class NameManager {
 			new Name("Regal Shard", 1 / 1000),
 			new Name("Blacksmith's Whetstone", 1 / 450),
 			new Name("Lesser Jeweller's Orb", 1 / 300),
+			new Name("Greater Jeweller's Orb", 1 / 300),
 		).range(min, max);
 	}
 	static getCurrencies(min = undefined, max = undefined) {
@@ -34,7 +35,6 @@ export class NameManager {
 			new Name("Orb of Transmutation", 1 / 3000),
 			new Name("Orb of Alchemy", 1 / 598),
 			new Name("Greater Orb of Augmentation", 1 / 500),
-			new Name("Greater Jeweller's Orb", 1 / 300),
 			new Name("Orb of Augmentation", 1 / 200),
 			new Name("Greater Regal Orb", 1 / 150),
 			new Name("Scroll of Wisdom", 1 / 139),
