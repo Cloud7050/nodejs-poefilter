@@ -1029,8 +1029,7 @@ export class NameManager {
 			new Name("Bound Cuffs", TIER.NEVER), // 67 A, 23 ES, L65
 			new Name("Ancient Cuffs", TIER.NEVER), // 74 A, 25 ES, L70
 			new Name("Gleaming Cuffs", TIER.NEVER), // 80 A, 28 ES, L75
-
-			new Name("Adherent Cuffs", TIER.BAD), // 87 A, 30 ES, L80
+			new Name("Adherent Cuffs", TIER.NEVER), // 87 A, 30 ES, L80
 
 			new Name("Gauze Wraps", TIER.NEVER), // 8 V, 6 ES, L4
 			new Name("Linen Wraps", TIER.NEVER), // 18 V, 9 ES, L16
