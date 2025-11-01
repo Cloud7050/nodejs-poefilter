@@ -3,31 +3,31 @@ import { Location } from "./location.js";
 import { Vector } from "./vector.js";
 
 const N = rotation(22.5 * 0);
-const N_NW = rotation(22.5 * 1);
-const NW = rotation(22.5 * 2);
-const W_NW = rotation(22.5 * 3);
-const W = rotation(22.5 * 4);
-const W_SW = rotation(22.5 * 5);
-const SW = rotation(22.5 * 6);
-const S_SW = rotation(22.5 * 7);
+const N_NE = rotation(22.5 * 1);
+const NE = rotation(22.5 * 2);
+const E_NE = rotation(22.5 * 3);
+const E = rotation(22.5 * 4);
+const E_SE = rotation(22.5 * 5);
+const SE = rotation(22.5 * 6);
+const S_SE = rotation(22.5 * 7);
 const S = rotation(22.5 * 8);
-const S_SE = rotation(22.5 * 9);
-const SE = rotation(22.5 * 10);
-const E_SE = rotation(22.5 * 11);
-const E = rotation(22.5 * 12);
-const E_NE = rotation(22.5 * 13);
-const NE = rotation(22.5 * 14);
-const N_NE = rotation(22.5 * 15);
+const S_SW = rotation(22.5 * 9);
+const SW = rotation(22.5 * 10);
+const W_SW = rotation(22.5 * 11);
+const W = rotation(22.5 * 12);
+const W_NW = rotation(22.5 * 13);
+const NW = rotation(22.5 * 14);
+const N_NW = rotation(22.5 * 15);
 
 function rotation(angle) {
-	// Rotation range is 0 - 65535 (2^16 - 1)
+	// Rotation range is 0 - 65535 (2^16 - 1), and goes anti-clockwise
 	const ROTATION_CAP = 65536;
 
 	// Config treats SE as 0, so we convert layman angle to map angle
-	let mapAngle = (angle + 135) % 360;
+	let mapAngle = (angle - 135) % 360;
 
 	let factor = mapAngle / 360;
-	return ROTATION_CAP * factor;
+	return ROTATION_CAP - (ROTATION_CAP * factor);
 }
 
 function at(r, u = 0, v = 0) {
@@ -40,9 +40,9 @@ function at(r, u = 0, v = 0) {
 	return new Location(vector, r);
 }
 
-function radial(radius, standAngle, lookAngle = undefined) {
-	let u = Math.cos(standAngle) * radius;
-	let v = Math.sin(standAngle) * radius;
+function radial(radius, standAngle = 0, lookAngle = undefined) {
+	let u = Math.sin(standAngle / 180 * Math.PI) * radius;
+	let v = Math.cos(standAngle / 180 * Math.PI) * radius;
 
 	if (lookAngle === undefined) {
 		// Default to looking at origin
@@ -50,7 +50,7 @@ function radial(radius, standAngle, lookAngle = undefined) {
 	}
 
 	let r = rotation(lookAngle);
-	return at(r, u, v);
+	return at(Math.round(r), Math.round(u), Math.round(v));
 }
 
 let changes = {
@@ -58,11 +58,11 @@ let changes = {
 	"Waypoint": at(S),
 
 	// Right
-	"Salvage Bench": at(S, 15, 12),
-	"Stash": at(S, 15),
-	"Guild Stash": at(S, 15, -12),
+	"Reforging Bench": radial(15, 50),
+	"Stash": radial(15, 90, 90),
+	"Guild Stash": radial(15, 130),
 
-	"Reforging Bench": at(S, 30, 15),
+	"Salvage Bench": at(S, 30, 15),
 	"Relic Locker": at(S, 25),
 	"Recombinator": at(S, 28, -17),
 
