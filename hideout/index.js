@@ -98,9 +98,10 @@ let changes = {
 	"Wardrobe Decoration": at(S, 0, 65),
 
 	// Other
+	"Griffin Fledgling Pet": radial(50, 90),
+	"Hiveborn Crawler Pet": radial(50, 120),
+
 	"Alva": at(E_NE, -69, -55),
-	"Hiveborn Crawler Pet": at(S, -30, 30),
-	"Griffin Fledgling Pet": at(S, -30, 30),
 };
 
 let hideout = new Hideout("Export");
