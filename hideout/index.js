@@ -23,18 +23,26 @@ function rotation(angle) {
 	// Rotation range is 0 - 65535 (2^16 - 1), and goes anti-clockwise
 	const ROTATION_CAP = 65536;
 
-	// Config treats SE as 0, so we convert layman angle to map angle
-	let mapAngle = (angle - 135) % 360;
+	// Config treats SE as 0, so we convert our layman angle to a further clockwise map angle, then
+	// to their anti-clockwise angle
+	let clockwiseAngle = (angle - 135) % 360;
+	let antiClockwiseAngle = 360 - clockwiseAngle;
 
-	let factor = mapAngle / 360;
-	return ROTATION_CAP - (ROTATION_CAP * factor);
+	let factor = antiClockwiseAngle / 360;
+	return Math.round(ROTATION_CAP * factor);
 }
 
-function at(r, u = 0, v = 0) {
+function at(r = undefined, u = 0, v = 0) {
 	const RIGHT = new Vector(1, -1);
 	const LEFT = new Vector(-1, 1);
 	const UP = new Vector(1, 1);
 	const DOWN = new Vector(-1, -1);
+
+	if (r === undefined) {
+		// Default to looking at origin
+		let lookAngle = new Vector(-u, -v).getAngle();
+		r = rotation(lookAngle);
+	}
 
 	let vector = RIGHT.magnitude(u).add(UP.magnitude(v));
 	return new Location(vector, r);
@@ -49,8 +57,7 @@ function radial(radius, standAngle = 0, lookAngle = undefined) {
 		lookAngle = new Vector(-u, -v).getAngle();
 	}
 
-	let r = rotation(lookAngle);
-	return at(Math.round(r), Math.round(u), Math.round(v));
+	return at(rotation(lookAngle), Math.round(u), Math.round(v));
 }
 
 let changes = {
@@ -58,37 +65,40 @@ let changes = {
 	"Waypoint": at(S),
 
 	// Right
-	"Reforging Bench": radial(15, 50),
-	"Stash": radial(15, 90, 90),
-	"Guild Stash": radial(15, 130),
+	"Salvage Bench": at(S, 13, 16),
+	"Reforging Bench": at(S, 13, 8),
+	"Stash": at(S, 13),
+	"Guild Stash": at(S, 13, -8),
 
-	"Salvage Bench": at(S, 30, 15),
-	"Relic Locker": at(S, 25),
-	"Recombinator": at(S, 28, -17),
+	"Recombinator": at(S, 23),
+	"Relic Locker": at(S, 23, -8),
+
+	"Well": at(S, 13, -20),
 
 	// Left
-	"Zolin": at(SE, -12, 15),
-	"Ange": at(E, -12),
-	"Sphinx Mystic Hideout Decoration": at(S, -12, -15),
+	"Ange": radial(12, 270),
 
-	"Zelina": at(E_SE, -24, 15),
-	"Dannig": at(E, -24),
-	"Doryani": at(E_NE, -24, -15),
-
-	"Gwennen": at(E_SE, -36, 15),
-	"Tujen": at(E, -36),
-	"Rog": at(E_NE, -36, -15),
+	"Sphinx Mystic Hideout Decoration": at(SE, -24, -10),
 
 	// Up
-	"Well": at(S, 0, 15),
-
-	"Wardrobe Decoration": at(S, 0, 30),
+	"Doryani": radial(25, 0),
+	"Zolin": radial(25, -25),
+	"Zelina": radial(25, -50),
 
 	// Down
-	"Ziggurat Map Device": at(S, 0, -42),
+	"Ziggurat Map Device": at(S, 0, -40),
+
+	// Far left
+	"Tujen": radial(40, 312),
+	"Rog": radial(40, 298),
+	"Gwennen": radial(40, 284),
+	"Dannig": radial(40, 270),
+
+	// Far up
+	"Wardrobe Decoration": at(S, 0, 65),
 
 	// Other
-	"Alva": at(NE, -20, -20),
+	"Alva": at(E_NE, -69, -55),
 	"Hiveborn Crawler Pet": at(S, -30, 30),
 	"Griffin Fledgling Pet": at(S, -30, 30),
 };
