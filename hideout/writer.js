@@ -66,7 +66,7 @@ let changes = {
 	"Alva": at(W_NW, 50, -55),
 };
 
-let text = fs.readFileSync("./hideout/in.hideout", "utf8", (e) => {
+let text = fs.readFileSync("./hideout/export.hideout", "utf8", (e) => {
 	if (e !== null) console.error(e);
 });
 let spans = text.split("\n");
@@ -93,7 +93,7 @@ for (let i = 0; i < spans.length; i++) {
 	}
 }
 
-fs.writeFile("./hideout/out.hideout", spans.join("\n"), (e) => {
+fs.writeFile("./hideout/new.hideout", spans.join("\n"), (e) => {
 	if (e !== null) console.error(e);
 	else console.log("☁");
 });
