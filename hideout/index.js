@@ -73,29 +73,27 @@ let changes = {
 	"Recombinator": at(S, 23),
 	"Relic Locker": at(S, 23, -8),
 
-	"Well": at(S, 13, -20),
-
 	// Left
-	"Ange": radial(12, 270),
+	"Sphinx Mystic Hideout Decoration": at(S, -7, 28),
+	"Well": at(S, -11, -16),
 
-	"Sphinx Mystic Hideout Decoration": at(SE, -24, -10),
+	"Ziggurat Map Device": at(NW, -30),
 
 	// Up
-	"Doryani": radial(25, 0),
-	"Zolin": radial(25, -25),
-	"Zelina": radial(25, -50),
+	"Wardrobe Decoration": at(S, 0, 65),
 
 	// Down
-	"Ziggurat Map Device": at(S, 0, -40),
+	"Ange": radial(18, 180),
 
-	// Far left
-	"Tujen": radial(40, 312),
-	"Rog": radial(40, 298),
-	"Gwennen": radial(40, 284),
-	"Dannig": radial(40, 270),
+	// Lower arc
+	"Doryani": radial(35, 180),
+	"Zolin": radial(35, 195),
+	"Zelina": radial(35, 210),
 
-	// Far up
-	"Wardrobe Decoration": at(S, 0, 65),
+	"Dannig": radial(35, 165),
+	"Gwennen": radial(35, 150),
+	"Rog": radial(35, 135),
+	"Tujen": radial(35, 120),
 
 	// Other
 	"Griffin Fledgling Pet": radial(50, 90),
