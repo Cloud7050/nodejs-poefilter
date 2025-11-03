@@ -25,10 +25,10 @@ function rotation(angle) {
 
 	// Config treats SE as 0, so we convert our layman angle to a further clockwise map angle, then
 	// to their anti-clockwise angle
-	let clockwiseAngle = (angle - 135) % 360;
+	let clockwiseAngle = angle - 135;
 	let antiClockwiseAngle = 360 - clockwiseAngle;
 
-	let factor = antiClockwiseAngle / 360;
+	let factor = (antiClockwiseAngle % 360) / 360;
 	return Math.round(ROTATION_CAP * factor);
 }
 
@@ -77,7 +77,7 @@ let changes = {
 	"Sphinx Mystic Hideout Decoration": at(S, -7, 28),
 	"Well": at(S, -11, -16),
 
-	"Ziggurat Map Device": at(NW, -30),
+	"Ziggurat Map Device": at(rotation(-30), -30),
 
 	// Up
 	"Wardrobe Decoration": at(S, 0, 65),
