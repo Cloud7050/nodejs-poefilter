@@ -625,12 +625,11 @@ export class NameManager {
 			new Name("Guardian Quarterstaff", TIER.NEVER), // 49-82 phys, 10% cc, x1.4, L62, +10–15% to Block chance
 			new Name("Sinister Quarterstaff", TIER.NEVER), // 55-92 phys, 11.5% cc, x1.4, L67
 			new Name("Lunar Quarterstaff", TIER.NEVER), // 50-103 phys, 10% cc, x1.5, L72
+			new Name("Dreaming Quarterstaff", TIER.NEVER), // 99-133 phys, 0% cc, x1.5, L78
 			new Name("Aegis Quarterstaff", TIER.NEVER), // 58-97 phys, 10% cc, x1.4, L79, +10–15% to Block chance
 
 			new Name("Striking Quarterstaff", TIER.OTHER), // 53-111 phys, 10% cc, x1.4, L77, 16% increased Melee Strike Range with this weapon
-
 			new Name("Razor Quarterstaff", TIER.OTHER), // 65-108 phys, 10% cc, x1.4, L77
-			new Name("Dreaming Quarterstaff", TIER.OTHER), // 99-133 phys, 0% cc, x1.5, L78
 			new Name("Bolting Quarterstaff", TIER.OTHER), // 24-97 phys, 1-100 lightning, 10% cc, x1.4, L78
 
 			// https://poe2db.tw/us/Two_Hand_Maces#TwoHandMacesItem
