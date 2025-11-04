@@ -493,8 +493,7 @@ export class NameManager {
 
 			// https://poe2db.tw/us/Wands#WandsItem
 			new Name("Bone Wand", TIER.NEVER), // Bone Blast
-
-			new Name("Volatile Wand", TIER.BAD), // Volatile Dead
+			new Name("Volatile Wand", TIER.NEVER), // Volatile Dead
 
 			new Name("Withered Wand", TIER.OTHER), // Chaos Bolt
 			new Name("Attuned Wand", TIER.OTHER), // Mana Drain
