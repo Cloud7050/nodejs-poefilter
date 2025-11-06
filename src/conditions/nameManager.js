@@ -462,19 +462,36 @@ export class NameManager {
 
 	static getSocketables(min = undefined, max = undefined) {
 		return new NameManager(
+			new Name("Talisman of Grold", 1 / 19),
 			new Name("Zalatl's Soul Core of Insulation", 1 / 18),
 			new Name("Hayoxi's Soul Core of Heatproofing", 1 / 9),
 			new Name("Topotante's Soul Core of Dampening", 1 / 8),
 			new Name("Xipocado's Soul Core of Dominion", 1 / 3),
 			new Name("Cholotl's Soul Core of War", 1 / 3),
+			new Name("Bear Talisman", 1 / 2),
+			new Name("Stag Talisman", 1 / 2),
 
 			new Name("Guatelitzi's Soul Core of Endurance", 1),
 			new Name("Citaqualotl's Soul Core of Foulness", 1),
 			new Name("Tacati's Soul Core of Affliction", 1),
 			new Name("Uromoti's Soul Core of Attenuation", 1),
+			new Name("Primate Talisman", 1),
+			new Name("Boar Talisman", 1),
+			new Name("Serpent Talisman", 1),
+			new Name("Wolf Talisman", 1),
+			new Name("Cat Talisman", 1),
+			new Name("Owl Talisman", 1),
+			new Name("Ox Talisman", 1),
+			new Name("Talisman of Thruldana", 1),
+			new Name("Talisman of Maxarius", 1),
+			new Name("Talisman of Egrin", 1),
+			new Name("Talisman of Eeshta", 3.5),
+			new Name("Fox Talisman", 4),
 			new Name("Opiloti's Soul Core of Assault", 5),
 			new Name("Quipolatl's Soul Core of Flow", 5),
+			new Name("Rabbit Talisman", 5),
 			new Name("Xopec's Soul Core of Power", 6),
+			new Name("Talisman of Ralakesh", 18),
 
 			new Name("Tzamoto's Soul Core of Ferocity", 24),
 			new Name("Atmohua's Soul Core of Retreat", 28),
@@ -493,6 +510,7 @@ export class NameManager {
 			new Name("Soul Core of Tacati", 121),
 			new Name("Soul Core of Citaqualotl", 179),
 			new Name("Soul Core of Azcapa", 275),
+			new Name("Talisman of Sirrius", 1010),
 
 			new Name("Soul Core of Jiquani", 6 * DIV),
 		).range(min, max);
@@ -1274,7 +1292,7 @@ export class NameManager {
 		// Alphabetical sort
 		this.names.sort((a, b) => a.name.localeCompare(b));
 		// Then custom value sort
-		this.names.sort((a, b) => a.compare(b));
+		// this.names.sort((a, b) => a.compare(b));
 
 		return new StringList(
 			...this.names.map(name => name.name)

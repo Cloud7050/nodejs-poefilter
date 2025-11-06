@@ -742,7 +742,7 @@ Show
 	MinimapIcon 0 Cyan Diamond
 
 Show
-	BaseType == "Zalatl's Soul Core of Insulation" "Hayoxi's Soul Core of Heatproofing" "Topotante's Soul Core of Dampening" "Xipocado's Soul Core of Dominion" "Cholotl's Soul Core of War"
+	BaseType == "Talisman of Grold" "Zalatl's Soul Core of Insulation" "Hayoxi's Soul Core of Heatproofing" "Topotante's Soul Core of Dampening" "Xipocado's Soul Core of Dominion" "Cholotl's Soul Core of War" "Bear Talisman" "Stag Talisman"
 	Class == Socketable
 
 	SetFontSize 32
@@ -752,7 +752,7 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	BaseType == "Guatelitzi's Soul Core of Endurance" "Citaqualotl's Soul Core of Foulness" "Tacati's Soul Core of Affliction" "Uromoti's Soul Core of Attenuation" "Opiloti's Soul Core of Assault" "Quipolatl's Soul Core of Flow" "Xopec's Soul Core of Power"
+	BaseType == "Guatelitzi's Soul Core of Endurance" "Citaqualotl's Soul Core of Foulness" "Tacati's Soul Core of Affliction" "Uromoti's Soul Core of Attenuation" "Primate Talisman" "Boar Talisman" "Serpent Talisman" "Wolf Talisman" "Cat Talisman" "Owl Talisman" "Ox Talisman" "Talisman of Thruldana" "Talisman of Maxarius" "Talisman of Egrin" "Talisman of Eeshta" "Fox Talisman" "Opiloti's Soul Core of Assault" "Quipolatl's Soul Core of Flow" "Rabbit Talisman" "Xopec's Soul Core of Power" "Talisman of Ralakesh"
 	Class == Socketable
 
 	SetFontSize 37
@@ -762,7 +762,7 @@ Show
 	MinimapIcon 0 Cyan Cross
 
 Show
-	BaseType == "Tzamoto's Soul Core of Ferocity" "Atmohua's Soul Core of Retreat" "Soul Core of Zantipi" "Soul Core of Ticaba" "Soul Core of Xopec" "Soul Core of Tzamoto" "Soul Core of Cholotl" "Soul Core of Opiloti" "Soul Core of Atmohua" "Soul Core of Zalatl" "Soul Core of Puhuarte" "Soul Core of Topotante" "Soul Core of Quipolatl" "Estazunti's Soul Core of Convalescence" "Soul Core of Tacati" "Soul Core of Citaqualotl" "Soul Core of Azcapa"
+	BaseType == "Tzamoto's Soul Core of Ferocity" "Atmohua's Soul Core of Retreat" "Soul Core of Zantipi" "Soul Core of Ticaba" "Soul Core of Xopec" "Soul Core of Tzamoto" "Soul Core of Cholotl" "Soul Core of Opiloti" "Soul Core of Atmohua" "Soul Core of Zalatl" "Soul Core of Puhuarte" "Soul Core of Topotante" "Soul Core of Quipolatl" "Estazunti's Soul Core of Convalescence" "Soul Core of Tacati" "Soul Core of Citaqualotl" "Soul Core of Azcapa" "Talisman of Sirrius"
 	Class == Socketable
 
 	SetFontSize 45
@@ -1514,7 +1514,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == Charms
 	Rarity == Normal
 	ItemLevel >= 81
@@ -1529,7 +1529,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == Amulets Rings
 	Rarity == Normal
 	ItemLevel >= 82
@@ -1544,7 +1544,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity == Normal
 	ItemLevel >= 83
@@ -1561,7 +1561,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == Charms
 	Rarity == Magic
 	ItemLevel >= 81
@@ -1577,7 +1577,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == Amulets Rings
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1593,7 +1593,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == Charms
 	Rarity == Magic
 	ItemLevel >= 81
@@ -1609,7 +1609,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == Amulets Rings
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1625,7 +1625,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == Amulets Rings
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1641,7 +1641,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity == Magic
 	ItemLevel >= 83
@@ -1658,7 +1658,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == Amulets Rings
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1674,7 +1674,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == Amulets Rings
 	Rarity == Rare
 	ItemLevel >= 82
@@ -2715,56 +2715,56 @@ Show
 	#
 
 Show
-	BaseType == "Reaping Staff" "Molten Hammer" "Marauding Mace" "Fanatic Bow" "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul" "Rattling Sceptre"
+	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Rattling Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Reaping Staff" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Molten Hammer" "Marauding Mace" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Fanatic Bow" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
 
 	#
 
 Show
-	BaseType == "Toxic Quiver" "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield" "Tasalian Focus"
+	BaseType == "Tasalian Focus" "Toxic Quiver" "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield"
 	Class == Foci Bucklers Shields Quivers
 	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
 
 	#
 
 Show
-	BaseType == "Feathered Raiment" "Flowing Raiment" "Soldier Cuirass" "Corsair Coat" "Death Mail" "Rambler Jacket" "Massive Mitts" "Secured Wraps" "Tasalian Greaves" "Cryptic Leggings" "Sacramental Robe" "Warlord Cuirass" "Slipstrike Vest" "Sleek Jacket" "Falconer's Jacket" "Polished Bracers" "Sekhema Sandals" "Drakeskin Boots" "Daggerfoot Shoes" "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Feathered Raiment" "Flowing Raiment" "Sacramental Robe" "Vile Robe" "Soldier Cuirass" "Warlord Cuirass" "Corsair Coat" "Slipstrike Vest" "Death Mail" "Rambler Jacket" "Sleek Jacket" "Falconer's Jacket" "Sirenscale Gloves" "Massive Mitts" "Polished Bracers" "Secured Wraps" "Sekhema Sandals" "Tasalian Greaves" "Drakeskin Boots" "Cryptic Leggings" "Daggerfoot Shoes"
 	Class == Helmets "Body Armours" Gloves Boots
 	HasExplicitMod >=1 "of the Despot" Queen's Hellion's Dragon's "of Windfall" "of Dueling"
 
 	#
 
 Show
-	BaseType == "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Pearlescent Amulet" "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Unset Ring" "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Double Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Silver Charm" "Thawing Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Amethyst Charm" "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Pearlescent Amulet" "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Unset Ring" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Double Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Silver Charm" "Thawing Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Amethyst Charm" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == Amulets Rings
 	HasExplicitMod >=1 Countess' "of the Overseer" Dragon's "of Windfall" "of the Sorcerer" "of Battle" "of the Sharpshooter"
 
 	#
 
 Show
-	BaseType == "Reaping Staff" "Molten Hammer" "Marauding Mace" "Fanatic Bow" "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul" "Rattling Sceptre"
+	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Rattling Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Reaping Staff" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Molten Hammer" "Marauding Mace" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Fanatic Bow" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	UnidentifiedItemTier == 5
 
 	#
 
 Show
-	BaseType == "Toxic Quiver" "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield" "Tasalian Focus"
+	BaseType == "Tasalian Focus" "Toxic Quiver" "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield"
 	Class == Foci Bucklers Shields Quivers
 	UnidentifiedItemTier == 5
 
 	#
 
 Show
-	BaseType == "Feathered Raiment" "Flowing Raiment" "Soldier Cuirass" "Corsair Coat" "Death Mail" "Rambler Jacket" "Massive Mitts" "Secured Wraps" "Tasalian Greaves" "Cryptic Leggings" "Sacramental Robe" "Warlord Cuirass" "Slipstrike Vest" "Sleek Jacket" "Falconer's Jacket" "Polished Bracers" "Sekhema Sandals" "Drakeskin Boots" "Daggerfoot Shoes" "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Feathered Raiment" "Flowing Raiment" "Sacramental Robe" "Vile Robe" "Soldier Cuirass" "Warlord Cuirass" "Corsair Coat" "Slipstrike Vest" "Death Mail" "Rambler Jacket" "Sleek Jacket" "Falconer's Jacket" "Sirenscale Gloves" "Massive Mitts" "Polished Bracers" "Secured Wraps" "Sekhema Sandals" "Tasalian Greaves" "Drakeskin Boots" "Cryptic Leggings" "Daggerfoot Shoes"
 	Class == Helmets "Body Armours" Gloves Boots
 	UnidentifiedItemTier == 5
 
 	#
 
 Show
-	BaseType == "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Pearlescent Amulet" "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Unset Ring" "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Double Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Silver Charm" "Thawing Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Amethyst Charm" "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Pearlescent Amulet" "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Unset Ring" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Double Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Silver Charm" "Thawing Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Amethyst Charm" "Stone Charm" "Staunching Charm" "Golden Charm"
 	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	UnidentifiedItemTier == 5
 
