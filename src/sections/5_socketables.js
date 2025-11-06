@@ -115,6 +115,8 @@ function base(filter) {
 	filter.block((c, e) => {
 		c.categories(CATEGORY.SOCKETABLE);
 
-		e.colourExalt(PAIR_SOCKETABLE).sizeExalt();
+		e.colourExalt(PAIR_SOCKETABLE, true).sizeExalt();
+		let [socketableColour, _socketablePreset] = PAIR_SOCKETABLE;
+		e.outlineColour = socketableColour;
 	});
 }
