@@ -742,7 +742,27 @@ Show
 	MinimapIcon 0 Cyan Diamond
 
 Show
-	BaseType == "Soul Core of Zantipi" "Soul Core of Ticaba" "Soul Core of Xopec" "Soul Core of Tzamoto" "Soul Core of Cholotl" "Soul Core of Opiloti" "Soul Core of Atmohua" "Soul Core of Zalatl" "Soul Core of Puhuarte" "Soul Core of Topotante" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Citaqualotl" "Soul Core of Azcapa"
+	BaseType == "Zalatl's Soul Core of Insulation" "Hayoxi's Soul Core of Heatproofing" "Topotante's Soul Core of Dampening" "Xipocado's Soul Core of Dominion" "Cholotl's Soul Core of War"
+	Class == Socketable
+
+	SetFontSize 32
+	SetTextColor 174 220 255 255
+	SetBackgroundColor 0 38 58 255
+	SetBorderColor 174 220 255 255
+	MinimapIcon 1 Cyan UpsideDownHouse
+
+Show
+	BaseType == "Guatelitzi's Soul Core of Endurance" "Citaqualotl's Soul Core of Foulness" "Tacati's Soul Core of Affliction" "Uromoti's Soul Core of Attenuation" "Opiloti's Soul Core of Assault" "Quipolatl's Soul Core of Flow" "Xopec's Soul Core of Power"
+	Class == Socketable
+
+	SetFontSize 37
+	SetTextColor 154 213 255 255
+	SetBackgroundColor 0 70 101 255
+	SetBorderColor 154 213 255 255
+	MinimapIcon 0 Cyan Cross
+
+Show
+	BaseType == "Tzamoto's Soul Core of Ferocity" "Atmohua's Soul Core of Retreat" "Soul Core of Zantipi" "Soul Core of Ticaba" "Soul Core of Xopec" "Soul Core of Tzamoto" "Soul Core of Cholotl" "Soul Core of Opiloti" "Soul Core of Atmohua" "Soul Core of Zalatl" "Soul Core of Puhuarte" "Soul Core of Topotante" "Soul Core of Quipolatl" "Estazunti's Soul Core of Convalescence" "Soul Core of Tacati" "Soul Core of Citaqualotl" "Soul Core of Azcapa"
 	Class == Socketable
 
 	SetFontSize 45

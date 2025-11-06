@@ -462,6 +462,22 @@ export class NameManager {
 
 	static getSocketables(min = undefined, max = undefined) {
 		return new NameManager(
+			new Name("Zalatl's Soul Core of Insulation", 1 / 18),
+			new Name("Hayoxi's Soul Core of Heatproofing", 1 / 9),
+			new Name("Topotante's Soul Core of Dampening", 1 / 8),
+			new Name("Xipocado's Soul Core of Dominion", 1 / 3),
+			new Name("Cholotl's Soul Core of War", 1 / 3),
+
+			new Name("Guatelitzi's Soul Core of Endurance", 1),
+			new Name("Citaqualotl's Soul Core of Foulness", 1),
+			new Name("Tacati's Soul Core of Affliction", 1),
+			new Name("Uromoti's Soul Core of Attenuation", 1),
+			new Name("Opiloti's Soul Core of Assault", 5),
+			new Name("Quipolatl's Soul Core of Flow", 5),
+			new Name("Xopec's Soul Core of Power", 6),
+
+			new Name("Tzamoto's Soul Core of Ferocity", 24),
+			new Name("Atmohua's Soul Core of Retreat", 28),
 			new Name("Soul Core of Zantipi", 40.5),
 			new Name("Soul Core of Ticaba", 45),
 			new Name("Soul Core of Xopec", 50),
@@ -473,6 +489,7 @@ export class NameManager {
 			new Name("Soul Core of Puhuarte", 80),
 			new Name("Soul Core of Topotante", 100),
 			new Name("Soul Core of Quipolatl", 105),
+			new Name("Estazunti's Soul Core of Convalescence", 110),
 			new Name("Soul Core of Tacati", 121),
 			new Name("Soul Core of Citaqualotl", 179),
 			new Name("Soul Core of Azcapa", 275),
@@ -1252,6 +1269,8 @@ export class NameManager {
 	}
 
 	export() {
+		if (this.names.length === 0) console.warn("[!] Exporting block with no names!");
+
 		// Alphabetical sort
 		this.names.sort((a, b) => a.name.localeCompare(b));
 		// Then custom value sort

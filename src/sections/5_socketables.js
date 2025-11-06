@@ -86,7 +86,19 @@ function runes(filter) {
 
 function other(filter) {
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getSocketables(null, DIV));
+		c.names = new Comparison(NameManager.getSocketables(null, 1));
+		c.categories(CATEGORY.SOCKETABLE);
+
+		e.colourAugment(PAIR_SOCKETABLE).sizeAugment();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getSocketables(1, 20));
+		c.categories(CATEGORY.SOCKETABLE);
+
+		e.colourExalt(PAIR_SOCKETABLE).sizeExalt();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getSocketables(20, DIV));
 		c.categories(CATEGORY.SOCKETABLE);
 
 		e.colourChance(PAIR_SOCKETABLE).sizeChance();
