@@ -752,7 +752,7 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	BaseType == "Guatelitzi's Soul Core of Endurance" "Citaqualotl's Soul Core of Foulness" "Tacati's Soul Core of Affliction" "Uromoti's Soul Core of Attenuation" "Primate Talisman" "Boar Talisman" "Serpent Talisman" "Wolf Talisman" "Cat Talisman" "Owl Talisman" "Ox Talisman" "Talisman of Thruldana" "Talisman of Maxarius" "Talisman of Egrin" "Talisman of Eeshta" "Fox Talisman" "Opiloti's Soul Core of Assault" "Quipolatl's Soul Core of Flow" "Rabbit Talisman" "Xopec's Soul Core of Power" "Talisman of Ralakesh"
+	BaseType == "Guatelitzi's Soul Core of Endurance" "Citaqualotl's Soul Core of Foulness" "Tacati's Soul Core of Affliction" "Uromoti's Soul Core of Attenuation" "Primate Talisman" "Boar Talisman" "Serpent Talisman" "Wolf Talisman" "Cat Talisman" "Owl Talisman" "Ox Talisman" "Talisman of Thruldana" "Talisman of Maxarius" "Talisman of Egrin" "Talisman of Eeshta" "Fox Talisman" "Opiloti's Soul Core of Assault" "Quipolatl's Soul Core of Flow" "Rabbit Talisman" "Xopec's Soul Core of Power" "Ulaman's Gaze" "Talisman of Ralakesh"
 	Class == Socketable
 
 	SetFontSize 37
@@ -762,7 +762,7 @@ Show
 	MinimapIcon 0 Cyan Cross
 
 Show
-	BaseType == "Tzamoto's Soul Core of Ferocity" "Atmohua's Soul Core of Retreat" "Soul Core of Zantipi" "Soul Core of Ticaba" "Soul Core of Xopec" "Soul Core of Tzamoto" "Soul Core of Cholotl" "Soul Core of Opiloti" "Soul Core of Atmohua" "Soul Core of Zalatl" "Soul Core of Puhuarte" "Soul Core of Topotante" "Soul Core of Quipolatl" "Estazunti's Soul Core of Convalescence" "Soul Core of Tacati" "Soul Core of Citaqualotl" "Soul Core of Azcapa" "Talisman of Sirrius"
+	BaseType == "Tzamoto's Soul Core of Ferocity" "Atmohua's Soul Core of Retreat" "Soul Core of Zantipi" "Soul Core of Ticaba" "Amanamu's Gaze" "Soul Core of Xopec" "Soul Core of Tzamoto" "Soul Core of Cholotl" "Soul Core of Opiloti" "Soul Core of Atmohua" "Soul Core of Zalatl" "Soul Core of Puhuarte" "Tecrod's Gaze" "Soul Core of Topotante" "Soul Core of Quipolatl" "Estazunti's Soul Core of Convalescence" "Soul Core of Tacati" "Soul Core of Citaqualotl" "Kurgal's Gaze" "Soul Core of Azcapa" "Talisman of Sirrius"
 	Class == Socketable
 
 	SetFontSize 45
