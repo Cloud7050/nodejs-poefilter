@@ -21,9 +21,11 @@ export class NameManager {
 
 	static getCurrenciesBad(min = undefined, max = undefined) {
 		return new NameManager(
-			new Name("Transmutation Shard", 1 / 30000),
+			new Name("Transmutation Shard", 1 / 10000),
+			new Name("Greater Orb of Transmutation", 1 / 4000),
+			new Name("Regal Shard", 1 / 2000),
+			new Name("Greater Orb of Augmentation", 1 / 2000),
 			new Name("Artificer's Shard", 1 / 1000),
-			new Name("Regal Shard", 1 / 1000),
 			new Name("Blacksmith's Whetstone", 1 / 450),
 			new Name("Lesser Jeweller's Orb", 1 / 300),
 			new Name("Greater Jeweller's Orb", 1 / 300),
@@ -31,28 +33,26 @@ export class NameManager {
 	}
 	static getCurrencies(min = undefined, max = undefined) {
 		return new NameManager(
-			new Name("Greater Orb of Transmutation", 1 / 6000),
-			new Name("Orb of Transmutation", 1 / 3000),
+			new Name("Orb of Transmutation", 1 / 1000),
 			new Name("Orb of Alchemy", 1 / 598),
-			new Name("Greater Orb of Augmentation", 1 / 500),
-			new Name("Orb of Augmentation", 1 / 200),
-			new Name("Greater Regal Orb", 1 / 150),
+			new Name("Orb of Augmentation", 1 / 400),
+			new Name("Regal Orb", 1 / 200),
 			new Name("Scroll of Wisdom", 1 / 139),
 
-			new Name("Regal Orb", 1 / 100),
 			new Name("Artificer's Orb", 1 / 100),
 			new Name("Armourer's Scrap", 1 / 95),
+			new Name("Greater Regal Orb", 1 / 60),
 			new Name("Perfect Orb of Transmutation", 1 / 50),
 			new Name("Arcanist's Etcher", 1 / 12),
 			new Name("Gemcutter's Prism", 1 / 10),
-			new Name("Chance Shard", 1 / 4),
+			new Name("Chance Shard", 1 / 10),
 
 			new Name("Glassblower's Bauble", 1),
 			new Name("Perfect Orb of Augmentation", 1),
 			new Name("Exalted Orb", 1),
-			new Name("Vaal Orb", 1.4),
-			new Name("Orb of Chance", 2.5),
-			new Name("Greater Exalted Orb", 2.5),
+			new Name("Orb of Chance", 1),
+			new Name("Greater Exalted Orb", 2.14),
+			new Name("Vaal Orb", 3.92),
 			new Name("Perfect Regal Orb", 13),
 
 			new Name("Perfect Jeweller's Orb", 20),
