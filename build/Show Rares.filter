@@ -264,7 +264,7 @@ Show
 	MinimapIcon 1 Pink UpsideDownHouse
 
 Show
-	BaseType == "Preserved Collarbone"
+	BaseType == "Preserved Collarbone" "Preserved Vertebrae" "Preserved Cranium"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -272,16 +272,6 @@ Show
 	SetBackgroundColor 52 9 71 255
 	SetBorderColor 236 183 255 255
 	MinimapIcon 0 Pink UpsideDownHouse
-
-Show
-	BaseType == "Preserved Vertebrae" "Preserved Cranium"
-	Class == "Stackable Currency"
-
-	SetFontSize 37
-	SetTextColor 231 167 255 255
-	SetBackgroundColor 89 21 118 255
-	SetBorderColor 231 167 255 255
-	MinimapIcon 0 Pink Cross
 
 Show
 	BaseType == "Ancient Rib" "Ancient Jawbone" "Ancient Collarbone"

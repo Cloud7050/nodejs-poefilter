@@ -191,13 +191,12 @@ export class NameManager {
 			new Name("Preserved Rib", 1 / 50),
 
 			new Name("Preserved Collarbone", 1.4),
+			new Name("Preserved Vertebrae", 3.6),
+			new Name("Preserved Cranium", 10),
 		).range(min, max);
 	}
 	static getAbyss3(min = undefined, max = undefined) {
 		return new NameManager(
-			new Name("Preserved Vertebrae", 3.6),
-			new Name("Preserved Cranium", 10),
-
 			new Name("Ancient Rib", 1.5 * DIV),
 			new Name("Ancient Jawbone", 3 * DIV),
 			new Name("Ancient Collarbone", 6 * DIV),

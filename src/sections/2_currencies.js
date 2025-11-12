@@ -197,14 +197,14 @@ function abyss(filter) {
 		e.colourAugment(PAIR_ABYSS).sizeExalt();
 	});
 
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getAbyss3(null, 20));
-		c.categories(CATEGORY.CURRENCY);
+	// filter.block((c, e) => {
+	// 	c.names = new Comparison(NameManager.getAbyss3(null, 20));
+	// 	c.categories(CATEGORY.CURRENCY);
 
-		e.colourExalt(PAIR_ABYSS).sizeExalt();
-	});
+	// 	e.colourExalt(PAIR_ABYSS).sizeExalt();
+	// });
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getAbyss3(20));
+		c.names = new Comparison(NameManager.getAbyss3());
 		c.categories(CATEGORY.CURRENCY);
 
 		e.colourDivine(PAIR_ABYSS).sizeDivine();
