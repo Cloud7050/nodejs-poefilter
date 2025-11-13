@@ -74,7 +74,7 @@ function uncommon(filter) {
 		c.ilvl = new Comparison(82, OPERATOR.LT); // Allow BiS ilvl
 	}, (c) => { // Too low ilvl (belts)
 		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison([RARITY.MAGIC, RARITY.RARE]);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Trash base
 		c.names = new Comparison(NameManager.getUncommon(TIER.NEVER, OPERATOR.LTE));

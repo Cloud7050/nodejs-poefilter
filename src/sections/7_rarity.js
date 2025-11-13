@@ -468,17 +468,6 @@ function classUncommon(filter) {
 }
 
 function otherUncommon(filter) {
-	// Normal
-	filter.multiBlock((c) => { // Belts
-		c.continue();
-		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.NORMAL);
-		// Any ilvl
-		c.isCorrupted = false;
-	}, (e) => {
-		e.colourWisdom(PAIR_GEAR).sizeExalt();
-	});
-
 	// Magic
 	filter.multiBlock((c) => { // Good mod (other jewellery)
 		c.continue();

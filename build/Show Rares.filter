@@ -1678,19 +1678,6 @@ Show
 	Continue
 
 Show
-	Class == Belts
-	Rarity == Normal
-	Corrupted False
-
-	SetFontSize 37
-	SetTextColor 215 218 255 255
-	SetBackgroundColor 3 7 44 255
-	SetBorderColor 215 218 255 255
-	MinimapIcon 0 Blue Kite
-
-	Continue
-
-Show
 	BaseType == "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Pearlescent Amulet" "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Unset Ring" "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Double Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Silver Charm" "Thawing Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Amethyst Charm"
 	Class == Amulets Rings
 	Rarity == Magic
@@ -2857,7 +2844,7 @@ Hide
 
 Hide
 	Class == Belts
-	Rarity == Magic Rare
+	Rarity < Unique
 	ItemLevel < 82
 
 	#
