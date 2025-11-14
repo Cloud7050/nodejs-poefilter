@@ -7,7 +7,9 @@ import { OPERATOR } from "../conditions/operator.js";
 export function sectionHides(filter) {
 	weapons(filter);
 	armour(filter);
-	uncommon(filter);
+	uncommons(filter);
+
+	uniques(filter);
 }
 
 function weapons(filter) {
@@ -50,7 +52,7 @@ function armour(filter) {
 	});
 }
 
-function uncommon(filter) {
+function uncommons(filter) {
 	filter.multiHide((c) => { // Remaining corrupts
 		c.categories(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
@@ -82,3 +84,10 @@ function uncommon(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});
 }
+
+function uniques(filter) {
+		filter.multiHide((c) => { // Trash uniques
+			c.names = new Comparison(NameManager.getUniques(TIER.NEVER, OPERATOR.LTE));
+			c.rarity = new Comparison(RARITY.UNIQUE);
+		});
+	}

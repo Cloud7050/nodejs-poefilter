@@ -2855,3 +2855,9 @@ Hide
 	Rarity < Unique
 
 	#
+
+Hide
+	BaseType == "Bone Wand" "Cultist Greathammer" "Dyad Crossbow" "Ironhead Spear" "Leaden Greathammer" "Recurve Bow" "Temple Maul" "Voltaic Staff" "Withered Wand" "Anchorite Garb" "Assassin Garb" "Bone Raiment" "Braced Tower Shield" "Chain Mail" "Elite Greathelm" "Embossed Boots" "Fierce Greathelm" "Firm Bracers" "Full Plate" "Gold Circlet" "Guarded Helm" "Havoc Raiment" "Hewn Mask" "Horned Crown" "Lace Hood" "Leather Vest" "Mail Vestments" "Maraketh Cuirass" "Ornate Buckler" "Plated Buckler" "Rampart Tower Shield" "Riveted Mitts" "Rough Greaves" "Sacrificial Mantle" "Shielded Helm" "Spiritbone Crown" "Splintered Tower Shield" "Stacked Sabatons" "Straw Sandals" "Threaded Shoes" "Vaal Cuirass" "Warrior Greathelm" "Wooden Buckler" "Linen Belt" "Mail Belt" "Prismatic Ring" "Ruby Ring"
+	Rarity == Unique
+
+	#

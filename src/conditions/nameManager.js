@@ -1251,7 +1251,63 @@ export class NameManager {
 	static getUniques(tier, operator = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Unique_item
-			// new Name("", TIER.NEVER), //
+			new Name("Bone Wand", TIER.NEVER), // Sanguine Diviner
+			new Name("Cultist Greathammer", TIER.NEVER), // The Empty Roar
+			new Name("Dyad Crossbow", TIER.NEVER), // Double Vision
+			new Name("Ironhead Spear", TIER.NEVER), // Tyranny's Grip
+			new Name("Leaden Greathammer", TIER.NEVER), // Chober Chaber
+			new Name("Recurve Bow", TIER.NEVER), // Splinterheart
+			new Name("Temple Maul", TIER.NEVER), // Shyaba
+			new Name("Voltaic Staff", TIER.NEVER), // Earthbound
+			new Name("Withered Wand", TIER.NEVER), // The Wicked Quill
+
+			new Name("Anchorite Garb", TIER.NEVER), // Redflare Conduit
+			new Name("Assassin Garb", TIER.NEVER), // Cospri's Will
+			new Name("Bone Raiment", TIER.NEVER), // Necromantle
+			new Name("Braced Tower Shield", TIER.NEVER), // Doomgate
+			new Name("Chain Mail", TIER.NEVER), // Coat of Red
+			new Name("Elite Greathelm", TIER.NEVER), // Deidbell
+			new Name("Embossed Boots", TIER.NEVER), // Gamblesprint
+			new Name("Fierce Greathelm", TIER.NEVER), // Blood Price
+			new Name("Firm Bracers", TIER.NEVER), // Grip of Winter
+			new Name("Full Plate", TIER.NEVER), // Kingsguard
+			new Name("Gold Circlet", TIER.NEVER), // Atziri's Disdain
+			new Name("Guarded Helm", TIER.NEVER), // Erian's Cobble
+			new Name("Havoc Raiment", TIER.NEVER), // Cloak of Defiance
+			new Name("Hewn Mask", TIER.NEVER), // The Hollow Mask
+			new Name("Horned Crown", TIER.NEVER), // Bronzebeard
+			new Name("Lace Hood", TIER.NEVER), // Radiant Grief
+			new Name("Leather Vest", TIER.NEVER), // Bristleboar
+			new Name("Mail Vestments", TIER.NEVER), // Icetomb
+			new Name("Maraketh Cuirass", TIER.NEVER), // Titanrot Cataphract
+			new Name("Ornate Buckler", TIER.NEVER), // Calgyra's Arc
+			new Name("Plated Buckler", TIER.NEVER), // Rondel de Ezo
+			new Name("Rampart Tower Shield", TIER.NEVER), // Lycosidae
+			new Name("Riveted Mitts", TIER.NEVER), // Treefingers
+			new Name("Rough Greaves", TIER.NEVER), // Legionstride
+			new Name("Sacrificial Mantle", TIER.NEVER), // Soul Mantle
+			new Name("Shielded Helm", TIER.NEVER), // The Vile Knight
+			new Name("Spiritbone Crown", TIER.NEVER), // Keeper of the Arc
+			new Name("Splintered Tower Shield", TIER.NEVER), // Dionadair
+			new Name("Stacked Sabatons", TIER.NEVER), // Obern's Bastion
+			new Name("Straw Sandals", TIER.NEVER), // Luminous Pace
+			new Name("Threaded Shoes", TIER.NEVER), // Ghostmarch
+			new Name("Vaal Cuirass", TIER.NEVER), // Greed's Embrace
+			new Name("Warrior Greathelm", TIER.NEVER), // Corona of the Red Sun
+			new Name("Wooden Buckler", TIER.NEVER), // Nocturne
+
+			new Name("Linen Belt", TIER.NEVER), // Keelhaul, Umbilicus Immortalis
+			new Name("Mail Belt", TIER.NEVER), // Coward's Legacy
+			new Name("Prismatic Ring", TIER.NEVER), // Gifts from Above
+			new Name("Ruby Ring", TIER.NEVER), // Cracklecreep, Blistering Bond
+
+			new Name("Crude Bow", TIER.OTHER), // Widowhail
+
+			new Name("Wrapped Sandals", TIER.OTHER), // Wanderlust
+
+			new Name("Amethyst Ring", TIER.OTHER), // Ming's Heart, Blackflame. GOOD: Original Sin
+
+			new Name("Lattice Sandals", TIER.CLASS), // Bones of Ullr
 		).compare(tier, operator);
 	}
 
