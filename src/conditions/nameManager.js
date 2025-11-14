@@ -1155,7 +1155,7 @@ export class NameManager {
 		).compare(tier, operator);
 	}
 	//NOTE Fractured Lake ilvl normally caps at 80 (T16), so we put them as class tier for more lenient filtering vs BiS ilvl
-	static getUncommon(tier, operator = undefined) {
+	static getUncommons(tier, operator = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Amulets
 			new Name("Crimson Amulet", TIER.OTHER), // 2–4 Life Regeneration per second
@@ -1246,6 +1246,12 @@ export class NameManager {
 			new Name("Staunching Charm", TIER.CLASS), // L18, 30/40, 3s, Grants Immunity to Bleeding
 
 			new Name("Golden Charm", TIER.OUTLINE), // L50, 80/80, 1s, 15% increased Rarity of Items found
+		).compare(tier, operator);
+	}
+	static getUniques(tier, operator = undefined) {
+		return new NameManager(
+			// https://poe2db.tw/us/Unique_item
+			// new Name("", TIER.NEVER), //
 		).compare(tier, operator);
 	}
 

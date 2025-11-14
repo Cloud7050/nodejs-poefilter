@@ -77,7 +77,7 @@ function uncommon(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Trash base
-		c.names = new Comparison(NameManager.getUncommon(TIER.NEVER, OPERATOR.LTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.NEVER, OPERATOR.LTE));
 		c.categories(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	});

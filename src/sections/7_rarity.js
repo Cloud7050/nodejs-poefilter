@@ -354,14 +354,14 @@ function classUncommon(filter) {
 	// Normal
 	filter.multiBlock((c) => { // Charms
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 		c.isCorrupted = false;
 	}, (c) => { // Jewellery
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -372,7 +372,7 @@ function classUncommon(filter) {
 
 	filter.multiBlock((c) => { // Flasks
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(83, OPERATOR.GTE);
@@ -384,7 +384,7 @@ function classUncommon(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Low tier (charms)
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
@@ -392,7 +392,7 @@ function classUncommon(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Low tier (jewellery)
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -404,7 +404,7 @@ function classUncommon(filter) {
 
 	filter.multiBlock((c) => { // Max tier (charms)
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
@@ -412,7 +412,7 @@ function classUncommon(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Max tier (jewellery)
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -420,7 +420,7 @@ function classUncommon(filter) {
 		c.isCorrupted = false;
 	}, (c) => { // Good mod (class jewellery)
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -432,7 +432,7 @@ function classUncommon(filter) {
 
 	filter.multiBlock((c) => { // Flasks
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(83, OPERATOR.GTE);
@@ -444,7 +444,7 @@ function classUncommon(filter) {
 	// Rare
 	filter.multiBlock((c) => { // Low tier (class jewellery)
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -456,7 +456,7 @@ function classUncommon(filter) {
 
 	filter.multiBlock((c) => { // Good mod (class jewellery)
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.CLASS, OPERATOR.GTE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.CLASS, OPERATOR.GTE));
 		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -471,7 +471,7 @@ function otherUncommon(filter) {
 	// Magic
 	filter.multiBlock((c) => { // Good mod (other jewellery)
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.OTHER));
+		c.names = new Comparison(NameManager.getUncommons(TIER.OTHER));
 		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);
@@ -484,7 +484,7 @@ function otherUncommon(filter) {
 	// Rare
 	filter.multiBlock((c) => { // Good mod (other jewellery)
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.OTHER));
+		c.names = new Comparison(NameManager.getUncommons(TIER.OTHER));
 		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(82, OPERATOR.GTE);

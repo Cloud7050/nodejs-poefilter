@@ -62,7 +62,7 @@ function bis(filter) {
 function goodMods(filter) {
 	filter.multiBlock((c) => {
 		c.continue();
-		c.names = new Comparison(NameManager.getUncommon(TIER.OUTLINE));
+		c.names = new Comparison(NameManager.getUncommons(TIER.OUTLINE));
 		c.categories(CATEGORY.GEAR_UNCOMMON);
 	}, (c) => {
 		c.continue();
