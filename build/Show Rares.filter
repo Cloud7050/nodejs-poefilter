@@ -1194,7 +1194,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver"
+	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1255,7 +1255,7 @@ Show
 	Class == Sceptres
 	Rarity == Rare
 	ItemLevel >= 82
-	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver"
+	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1286,7 +1286,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 81
 	Corrupted False
-	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
+	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" "of Many"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1302,7 +1302,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
+	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" "of Many"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1334,7 +1334,7 @@ Show
 	Rarity == Rare
 	ItemLevel >= 81
 	Corrupted False
-	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
+	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" "of Many"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1350,7 +1350,7 @@ Show
 	Rarity == Rare
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
+	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" "of Many"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1921,7 +1921,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
-	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
+	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" "of Many"
 
 	SetBorderColor 255 225 87 255
 
@@ -2692,7 +2692,7 @@ Show
 Show
 	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Rattling Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Reaping Staff" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Molten Hammer" "Marauding Mace" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Fanatic Bow" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
-	HasExplicitMod >=1 King's Chancellor's "of the Slavedriver" "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of War" "of the Sniper"
+	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" "of Many"
 
 	#
 

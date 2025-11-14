@@ -129,6 +129,18 @@ export class ConditionSet {
 	goodModMainhand(includeOther = false) {
 		// https://poe2db.tw/us/Modifiers
 		let phrases = [
+			//// Allies in your Presence deal x% increased Damage
+			// Sceptres
+			// "Coercive", // 25-34, IL1
+			// "Agitative", // 35-44, IL8
+			// "Instigative", // 45-54, IL16
+			// "Provocative", // 55-64, IL33
+			// "Persuasive", // 65-74, IL46
+			// "Motivating", // 75-84, IL60
+			// "Inspirational", // 90-104, IL70
+			"Empowering", // 105-119, IL82
+			////
+
 			//// x% increased Spirit
 			// Sceptres
 			// "Lord's", // 30-36, IL1
@@ -161,6 +173,78 @@ export class ConditionSet {
 			////
 		];
 		if (includeOther) phrases.push(
+			//// x% increased Spell Damage
+			// Wands | Staves
+			// "Apprentice's", // 25-34 | 35-49, IL1
+			// "Adept's", // 35-44 | 50-64, IL8
+			// "Scholar's", // 45-54 | 65-79, IL16
+			// "Professor's", // 55-64 | 80-94, IL33
+			// "Occultist's", // 65-74 | 95-109, IL46
+			// "Incanter's", // 75-89 | 110-129, IL60
+			// "Glyphic", // 90-104 | 130-149, IL70
+			"Runic", // 105-119 | 150-169, IL80
+			////
+
+			//// x% increased Fire Damage
+			// Wands
+			// "Searing", // 25-34 | 35-49, IL2
+			// "Sizzling", // 35-44 | 50-64, IL8
+			// "Blistering", // 45-54 | 65-79, IL16
+			// "Cauterising", // 55-64 | 80-94, IL33
+			// "Smoldering", // 65-74 | 95-109, IL46
+			// "Magmatic", // 75-89 | 110-129, IL60
+			// "Volcanic", // 90-104 | 130-149, IL70
+			"Pyromancer's", // 105-119 | 150-169, IL81
+			////
+
+			//// x% increased Cold Damage
+			// Wands
+			// "Bitter", // 25-34 | 35-49, IL2
+			// "Biting", // 35-44 | 50-64, IL8
+			// "Alpine", // 45-54 | 65-79, IL16
+			// "Snowy", // 55-64 | 80-94, IL33
+			// "Hailing", // 65-74 | 95-109, IL46
+			// "Arctic", // 75-89 | 110-129, IL60
+			// "Crystalline", // 90-104 | 130-149, IL70
+			"Cryomancer's", // 105-119 | 150-169, IL81
+			////
+
+			//// x% increased Lightning Damage
+			// Wands
+			// "Charged", // 25-34 | 35-49, IL2
+			// "Hissing", // 35-44 | 50-64, IL8
+			// "Bolting", // 45-54 | 65-79, IL16
+			// "Coursing", // 55-64 | 80-94, IL33
+			// "Striking", // 65-74 | 95-109, IL46
+			// "Smiting", // 75-89 | 110-129, IL60
+			// "Ionising", // 90-104 | 130-149, IL70
+			"Electromancer's", // 105-119 | 150-169, IL81
+			////
+
+			//// x% increased Chaos Damage
+			// Wands
+			// "Impure", // 25-34 | 35-49, IL2
+			// "Tainted", // 35-44 | 50-64, IL8
+			// "Clouded", // 45-54 | 65-79, IL16
+			// "Darkened", // 55-64 | 80-94, IL33
+			// "Malignant", // 65-74 | 95-109, IL46
+			// "Vile", // 75-89 | 110-129, IL60
+			// "Twisted", // 90-104 | 130-149, IL70
+			"Malevolent", // 105-119 | 150-169, IL81
+			////
+
+			//// x% increased Spell Physical Damage
+			// Wands
+			// "Punishing", // 25-34 | 35-49, IL2
+			// "Unforgiving", // 35-44 | 50-64, IL8
+			// "Vengeful", // 45-54 | 65-79, IL16
+			// "Sadistic", // 55-64 | 80-94, IL33
+			// "Pitiless", // 65-74 | 95-109, IL46
+			// "Agonising", // 75-89 | 110-129, IL60
+			// "Oppressor's", // 90-104 | 130-149, IL70
+			"Torturer's", // 105-119 | 150-169, IL81
+			////
+
 			//// +x to Level of all Spell Skills
 			// Wands/staves
 			// "of the Mage", // 2, IL5
@@ -214,8 +298,75 @@ export class ConditionSet {
 			"of Grief", // 7, IL81
 			////
 
+			//// Adds x to x Physical Damage
+			// Spears/one hand maces/bows | quarterstaves/two hand maces/crossbows
+			// "Glinting", // 1-2 - 4-5 | 2-3 - 5-7, IL1
+			// "Burnished", // 4-6 - 7-11 | 5-8 - 10-15, IL8
+			// "Polished", // 6-9 - 11-16 | 8-12 - 15-22, IL16
+			// "Honed", // 8-12 - 14-21 | 11-17 - 20-30, IL33
+			// "Gleaming", // 10-15 - 18-26 | 14-21 - 25-37, IL46
+			// "Annealed", // 13-20 - 23-35 | 19-29 - 33-49, IL54
+			// "Razor-sharp", // 16-24 - 28-42 | 23-35 - 39-59, IL60
+			// "Tempered", // 21-31 - 36-53 | 29-44 - 50-75, IL65
+			"Flaring", // 26-39 - 44-66 | 37-55 - 63-94, IL75
+			////
+
+			//// Adds x to x Fire Damage
+			// Spears/one hand maces/bows | quarterstaves/two hand maces/crossbows
+			// "Heated", // 1-2 - 3-5 | 2-4 - 5-7, IL1
+			// "Smouldering", // 4-6 - 7-10 | 6-9 - 10-16, IL8
+			// "Smoking", // 7-11 - 13-19 | 11-17 - 19-28, IL16
+			// "Burning", // 13-19 - 21-29 | 19-27 - 30-42, IL33
+			// "Flaming", // 20-24 - 32-37 | 30-37 - 45-56, IL46
+			// "Scorching", // 25-33 - 38-54 | 39-53 - 59-80, IL54
+			// "Incinerating", // 35-44 - 56-71 | 56-70 - 84-107, IL60
+			// "Blasting", // 47-59 - 74-97 | 73-97 - 112-149, IL65
+			// "Cremating", // 62-85 - 101-129 | 102-130 - 155-198, IL75
+			"Carbonising", // 88-101 - 133-154 | 135-156 - 205-236, IL81
+			////
+
+			//// Adds x to x Cold Damage
+			// Spears/one hand maces/bows | quarterstaves/two hand maces/crossbows
+			// "Frosted", // 1-2 - 3-4 | 2-3 - 4-6, IL1
+			// "Chilled", // 3-5 - 6-9 | 5-8 - 9-14, IL8
+			// "Icy", // 6-9 - 10-16 | 10-14 - 15-23, IL16
+			// "Frigid", // 11-15 - 17-24 | 16-23 - 25-35, IL33
+			// "Freezing", // 17-20 - 26-32 | 25-30 -38-46, IL46
+			// "Frozen", // 22-29 - 34-44 | 32-43 - 49-66, IL54
+			// "Glaciated", // 31-38 - 47-59 | 46-57 - 70-88, IL60
+			// "Polar", // 40-53 - 62-80 | 60-80 - 92-121, IL65
+			// "Entombing", // 55-69 - 83-106 | 84-107 - 126-161, IL75
+			"Crystalising", // 72-81 - 110-123 | 112-124 - 168-189, IL81
+			////
+
+			//// Adds x to x Lightning Damage
+			// Spears/one hand maces/bows | quarterstaves/two hand maces/crossbows
+			// "Humming", // 1 - 4-6 | 1 - 7-10, IL1
+			// "Buzzing", // 1 - 13-19 | 1-2 - 19-27, IL8
+			// "Snapping", // 1-2 - 20-30 | 1-3 - 31-43, IL16
+			// "Crackling", // 1-2 - 36-52 | 1-4 - 53-76, IL33
+			// "Sparking", // 1-3 - 55-60 | 1-4 - 80-88, IL46
+			// "Arcing", // 1-4 - 63-82 | 1-6 - 93-122, IL54
+			// "Shocking", // 1-6 - 85-107 | 1-8 - 128-162, IL60
+			// "Discharging", // 1-8 - 111-152 | 1-13 - 168-231, IL65
+			// "Electrocuting", // 1-10 - 157-196 | 1-16 - 239-300, IL75
+			"Vapourising", // 1-12 - 202-234 | 1-19 - 310-358, IL81
+			////
+
+			//// x% increased Physical Damage
+			// Spears/quarterstaves/bows/crossbows / one/two hand maces
+			// "Heavy", // 40-49, IL1
+			// "Serrated", // 50-64, IL8
+			// "Wicked", // 65-84, IL16
+			// "Vicious", // 85-109, IL33
+			// "Bloodthirsty", // 110-134, IL46
+			// "Cruel", // 135-154, IL60
+			// "Tyrannical", // 155-169, IL75
+			"Merciless", // 170-179, IL82
+			////
+
 			//// +x to Level of all Melee Skills
-			// Claws/daggers/spears/flails / one hand swords/axes/maces | quarterstaves / two hand swords/axes/maces
+			// Spears/one hand maces | quarterstaves/two hand maces
 			// "of Combat", // 1 | 2, IL2
 			// "of Dueling", // 2 | 3, IL18
 			// "of Conflict", // 3 | 4, IL36
@@ -230,6 +381,12 @@ export class ConditionSet {
 			// "of the Sharpshooter", // 3 | 4, IL36
 			// "of the Marksman", // 4 | 5-6, IL55
 			"of the Sniper", // 5 | 7, IL81
+			////
+
+			//// Bow Attacks fire x additional Arrows
+			// Bows
+			// "of Splintering", // 1, IL55
+			"of Many", // 2, IL82
 			////
 		);
 		this.mods = new Comparison(phrases, OPERATOR.GTE, 1);
