@@ -1308,6 +1308,14 @@ export class NameManager {
 			new Name("Amethyst Ring", TIER.OTHER), // Ming's Heart, Blackflame. GOOD: Original Sin
 
 			new Name("Lattice Sandals", TIER.CLASS), // Bones of Ullr
+
+			// https://poe2db.tw/us/Relics#RelicsUnique_Unique
+			new Name("Amphora Relic", TIER.NEVER), // The Peacemaker's Draught
+			new Name("Tapestry Relic", TIER.NEVER), // The Burden of Leadership
+			new Name("Seal Relic", TIER.NEVER), // The Changing Seasons
+
+			new Name("Vase Relic", TIER.OTHER), // The Desperate Alliance
+			new Name("Incense Relic", TIER.OTHER), // The Last Flame
 		).compare(tier, operator);
 	}
 
