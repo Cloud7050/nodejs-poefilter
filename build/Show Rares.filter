@@ -8,7 +8,7 @@ Show
 	Continue
 
 Hide
-	BaseType == "Transmutation Shard" "Greater Orb of Transmutation" "Regal Shard" "Artificer's Shard" "Greater Orb of Augmentation" "Lesser Jeweller's Orb" "Blacksmith's Whetstone" "Greater Jeweller's Orb"
+	BaseType == "Artificer's Shard" "Blacksmith's Whetstone" "Greater Jeweller's Orb" "Greater Orb of Augmentation" "Greater Orb of Transmutation" "Lesser Jeweller's Orb" "Regal Shard" "Transmutation Shard"
 	Class == "Stackable Currency"
 
 	SetFontSize 27
@@ -18,7 +18,7 @@ Hide
 	MinimapIcon 2 Red Kite
 
 Show
-	BaseType == "Orb of Transmutation" "Orb of Alchemy" "Orb of Augmentation" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Armourer's Scrap" "Scroll of Wisdom" "Perfect Orb of Transmutation"
+	BaseType == "Armourer's Scrap" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Orb of Augmentation" "Orb of Transmutation" "Perfect Orb of Transmutation" "Regal Orb" "Scroll of Wisdom"
 	Class == "Stackable Currency"
 
 	SetFontSize 27
@@ -28,7 +28,7 @@ Show
 	MinimapIcon 2 Red Kite
 
 Show
-	BaseType == "Greater Regal Orb" "Arcanist's Etcher" "Gemcutter's Prism" "Chance Shard"
+	BaseType == "Arcanist's Etcher" "Chance Shard" "Gemcutter's Prism" "Greater Regal Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -38,7 +38,7 @@ Show
 	MinimapIcon 1 Red UpsideDownHouse
 
 Show
-	BaseType == "Perfect Orb of Augmentation" "Exalted Orb" "Orb of Chance" "Greater Exalted Orb" "Vaal Orb" "Perfect Regal Orb"
+	BaseType == "Exalted Orb" "Greater Exalted Orb" "Orb of Chance" "Perfect Orb of Augmentation" "Perfect Regal Orb" "Vaal Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -48,7 +48,7 @@ Show
 	MinimapIcon 0 Red Cross
 
 Show
-	BaseType == "Perfect Jeweller's Orb" "Chaos Orb" "Greater Chaos Orb" "Fracturing Orb" "Orb of Annulment"
+	BaseType == "Chaos Orb" "Fracturing Orb" "Greater Chaos Orb" "Orb of Annulment" "Perfect Jeweller's Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -60,7 +60,7 @@ Show
 	MinimapIcon 0 Red Star
 
 Show
-	BaseType == "Divine Orb" "Perfect Exalted Orb" "Perfect Chaos Orb" "Hinekora's Lock" "Mirror of Kalandra"
+	BaseType == "Divine Orb" "Hinekora's Lock" "Mirror of Kalandra" "Perfect Chaos Orb" "Perfect Exalted Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -126,7 +126,7 @@ Show
 	MinimapIcon 0 Yellow Cross
 
 Show
-	BaseType == "Lesser Essence of Battle" "Lesser Essence of the Body" "Lesser Essence of Grounding" "Lesser Essence of Insulation" "Lesser Essence of Thawing" "Lesser Essence of the Infinite" "Lesser Essence of Haste" "Lesser Essence of Ice" "Lesser Essence of Ruin" "Lesser Essence of the Mind" "Lesser Essence of Seeking"
+	BaseType == "Lesser Essence of Battle" "Lesser Essence of Grounding" "Lesser Essence of Haste" "Lesser Essence of Ice" "Lesser Essence of Insulation" "Lesser Essence of Ruin" "Lesser Essence of Seeking" "Lesser Essence of Thawing" "Lesser Essence of the Body" "Lesser Essence of the Infinite" "Lesser Essence of the Mind"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -136,7 +136,7 @@ Show
 	MinimapIcon 1 Purple Kite
 
 Show
-	BaseType == "Lesser Essence of Abrasion" "Lesser Essence of Alacrity" "Lesser Essence of Electricity" "Lesser Essence of Enhancement" "Lesser Essence of Flames" "Lesser Essence of Sorcery" "Lesser Essence of Command" "Lesser Essence of Opulence"
+	BaseType == "Lesser Essence of Abrasion" "Lesser Essence of Alacrity" "Lesser Essence of Command" "Lesser Essence of Electricity" "Lesser Essence of Enhancement" "Lesser Essence of Flames" "Lesser Essence of Opulence" "Lesser Essence of Sorcery"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -156,7 +156,7 @@ Show
 	MinimapIcon 1 Purple UpsideDownHouse
 
 Show
-	BaseType == "Essence of Insulation" "Essence of Seeking" "Essence of Thawing" "Essence of the Infinite" "Essence of the Mind" "Essence of the Body" "Essence of Alacrity" "Essence of Command" "Essence of Grounding" "Essence of Electricity" "Essence of Ruin" "Essence of Haste" "Essence of Abrasion"
+	BaseType == "Essence of Abrasion" "Essence of Alacrity" "Essence of Command" "Essence of Electricity" "Essence of Grounding" "Essence of Haste" "Essence of Insulation" "Essence of Ruin" "Essence of Seeking" "Essence of Thawing" "Essence of the Body" "Essence of the Infinite" "Essence of the Mind"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -178,7 +178,7 @@ Show
 	MinimapIcon 0 Purple UpsideDownHouse
 
 Show
-	BaseType == "Greater Essence of Sorcery" "Greater Essence of Ice" "Greater Essence of the Mind" "Greater Essence of Flames" "Greater Essence of Electricity" "Perfect Essence of Thawing" "Greater Essence of Battle" "Greater Essence of the Body" "Greater Essence of the Infinite" "Perfect Essence of Command" "Greater Essence of Abrasion" "Greater Essence of Ruin" "Perfect Essence of Ruin" "Greater Essence of Command" "Greater Essence of Enhancement" "Greater Essence of Haste" "Greater Essence of Seeking" "Perfect Essence of the Infinite" "Greater Essence of Grounding" "Greater Essence of Insulation" "Greater Essence of Thawing" "Perfect Essence of Alacrity" "Perfect Essence of Insulation" "Perfect Essence of the Mind" "Perfect Essence of the Body"
+	BaseType == "Greater Essence of Abrasion" "Greater Essence of Battle" "Greater Essence of Command" "Greater Essence of Electricity" "Greater Essence of Enhancement" "Greater Essence of Flames" "Greater Essence of Grounding" "Greater Essence of Haste" "Greater Essence of Ice" "Greater Essence of Insulation" "Greater Essence of Ruin" "Greater Essence of Seeking" "Greater Essence of Sorcery" "Greater Essence of Thawing" "Greater Essence of the Body" "Greater Essence of the Infinite" "Greater Essence of the Mind" "Perfect Essence of Alacrity" "Perfect Essence of Command" "Perfect Essence of Insulation" "Perfect Essence of Ruin" "Perfect Essence of Thawing" "Perfect Essence of the Body" "Perfect Essence of the Infinite" "Perfect Essence of the Mind"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -188,7 +188,7 @@ Show
 	MinimapIcon 1 Purple Cross
 
 Show
-	BaseType == "Greater Essence of Alacrity" "Perfect Essence of Grounding" "Perfect Essence of Ice" "Perfect Essence of Seeking" "Perfect Essence of Sorcery" "Perfect Essence of Battle" "Perfect Essence of Flames" "Perfect Essence of Opulence" "Perfect Essence of Abrasion" "Perfect Essence of Electricity" "Greater Essence of Opulence" "Perfect Essence of Enhancement"
+	BaseType == "Greater Essence of Alacrity" "Greater Essence of Opulence" "Perfect Essence of Abrasion" "Perfect Essence of Battle" "Perfect Essence of Electricity" "Perfect Essence of Enhancement" "Perfect Essence of Flames" "Perfect Essence of Grounding" "Perfect Essence of Ice" "Perfect Essence of Opulence" "Perfect Essence of Seeking" "Perfect Essence of Sorcery"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -220,7 +220,7 @@ Show
 	MinimapIcon 0 Purple Star
 
 Show
-	BaseType == "Essence of Delirium" "Essence of the Abyss" "Essence of Hysteria"
+	BaseType == "Essence of Delirium" "Essence of Hysteria" "Essence of the Abyss"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -244,7 +244,7 @@ Show
 	MinimapIcon 0 Purple Diamond
 
 Show
-	BaseType == "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
+	BaseType == "Gnawed Collarbone" "Gnawed Jawbone" "Gnawed Rib"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -264,7 +264,7 @@ Show
 	MinimapIcon 1 Pink UpsideDownHouse
 
 Show
-	BaseType == "Preserved Collarbone" "Preserved Vertebrae" "Preserved Cranium"
+	BaseType == "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -274,7 +274,7 @@ Show
 	MinimapIcon 0 Pink UpsideDownHouse
 
 Show
-	BaseType == "Ancient Rib" "Ancient Jawbone" "Ancient Collarbone"
+	BaseType == "Ancient Collarbone" "Ancient Jawbone" "Ancient Rib"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -306,7 +306,7 @@ Show
 	MinimapIcon 0 Orange UpsideDownHouse
 
 Show
-	BaseType == "Liquid Envy" "Liquid Paranoia" "Liquid Despair" "Liquid Disgust"
+	BaseType == "Liquid Despair" "Liquid Disgust" "Liquid Envy" "Liquid Paranoia"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -316,7 +316,7 @@ Show
 	MinimapIcon 0 Orange Cross
 
 Show
-	BaseType == "Concentrated Liquid Suffering" "Concentrated Liquid Fear" "Concentrated Liquid Isolation"
+	BaseType == "Concentrated Liquid Fear" "Concentrated Liquid Isolation" "Concentrated Liquid Suffering"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -328,7 +328,7 @@ Show
 	MinimapIcon 0 Orange Star
 
 Show
-	BaseType == "Skittering Catalyst" "Uul-Netol's Catalyst" "Neural Catalyst" "Sibilant Catalyst"
+	BaseType == "Neural Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Uul-Netol's Catalyst"
 	Class == "Stackable Currency"
 
 	SetFontSize 27
@@ -338,7 +338,7 @@ Show
 	MinimapIcon 2 Orange UpsideDownHouse
 
 Show
-	BaseType == "Adaptive Catalyst" "Carapace Catalyst" "Chayula's Catalyst" "Xoph's Catalyst" "Tul's Catalyst" "Flesh Catalyst" "Reaver Catalyst" "Esh's Catalyst"
+	BaseType == "Adaptive Catalyst" "Carapace Catalyst" "Chayula's Catalyst" "Esh's Catalyst" "Flesh Catalyst" "Reaver Catalyst" "Tul's Catalyst" "Xoph's Catalyst"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -388,7 +388,7 @@ Show
 	MinimapIcon 1 Green UpsideDownHouse
 
 Show
-	BaseType == "Petition Splinter" "Simulacrum Splinter" "Runic Splinter"
+	BaseType == "Petition Splinter" "Runic Splinter" "Simulacrum Splinter"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -398,7 +398,7 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
-	BaseType == "Order Artifact" "Broken Circle Artifact"
+	BaseType == "Broken Circle Artifact" "Order Artifact"
 	Class == "Stackable Currency"
 
 	SetFontSize 27
@@ -445,7 +445,7 @@ Show
 	MinimapIcon 2 Orange UpsideDownHouse
 
 Show
-	BaseType == "Omen of Refreshment" "Omen of the Ancients" "Omen of Greater Exaltation"
+	BaseType == "Omen of Greater Exaltation" "Omen of Refreshment" "Omen of the Ancients"
 	Class == Omen
 
 	SetFontSize 32
@@ -455,7 +455,7 @@ Show
 	MinimapIcon 1 Orange UpsideDownHouse
 
 Show
-	BaseType == "Omen of Dextral Exaltation" "Omen of Homogenising Coronation" "Omen of Resurgence" "Omen of Sinistral Exaltation" "Omen of Chaotic Quantity" "Omen of Bartering" "Omen of Answered Prayers" "Omen of the Blessed" "Omen of Amelioration" "Omen of Catalysing Exaltation" "Omen of Chaotic Monsters" "Omen of Secret Compartments" "Omen of Corruption"
+	BaseType == "Omen of Amelioration" "Omen of Answered Prayers" "Omen of Bartering" "Omen of Catalysing Exaltation" "Omen of Chaotic Monsters" "Omen of Chaotic Quantity" "Omen of Corruption" "Omen of Dextral Exaltation" "Omen of Homogenising Coronation" "Omen of Resurgence" "Omen of Secret Compartments" "Omen of Sinistral Exaltation" "Omen of the Blessed"
 	Class == Omen
 
 	SetFontSize 37
@@ -465,7 +465,7 @@ Show
 	MinimapIcon 0 Orange Cross
 
 Show
-	BaseType == "Omen of Dextral Crystallisation" "Omen of the Hunt" "Omen of Chaotic Rarity" "Omen of Recombination" "Omen of Reinforcements" "Omen of Homogenising Exaltation" "Omen of Sinistral Crystallisation" "Omen of Sanctification"
+	BaseType == "Omen of Chaotic Rarity" "Omen of Dextral Crystallisation" "Omen of Homogenising Exaltation" "Omen of Recombination" "Omen of Reinforcements" "Omen of Sanctification" "Omen of Sinistral Crystallisation" "Omen of the Hunt"
 	Class == Omen
 
 	SetFontSize 45
@@ -477,7 +477,7 @@ Show
 	MinimapIcon 0 Orange Star
 
 Show
-	BaseType == "Omen of Dextral Erasure" "Omen of Whittling" "Omen of Dextral Annulment" "Omen of Sinistral Erasure" "Omen of Sinistral Annulment" "Omen of Chance"
+	BaseType == "Omen of Chance" "Omen of Dextral Annulment" "Omen of Dextral Erasure" "Omen of Sinistral Annulment" "Omen of Sinistral Erasure" "Omen of Whittling"
 	Class == Omen
 
 	SetFontSize 45
@@ -489,7 +489,7 @@ Show
 	MinimapIcon 0 Orange Diamond
 
 Show
-	BaseType == "Omen of the Liege" "Omen of Putrefaction" "Omen of Dextral Necromancy" "Omen of the Sovereign" "Omen of the Blackblooded"
+	BaseType == "Omen of Dextral Necromancy" "Omen of Putrefaction" "Omen of the Blackblooded" "Omen of the Liege" "Omen of the Sovereign"
 	Class == Omen
 
 	SetFontSize 32
@@ -499,7 +499,7 @@ Show
 	MinimapIcon 1 Pink UpsideDownHouse
 
 Show
-	BaseType == "Omen of Sinistral Necromancy" "Omen of Abyssal Echoes"
+	BaseType == "Omen of Abyssal Echoes" "Omen of Sinistral Necromancy"
 	Class == Omen
 
 	SetFontSize 45
@@ -541,7 +541,7 @@ Show
 	MinimapIcon 0 White UpsideDownHouse
 
 Show
-	BaseType == "Tacati's Ire" "Daresso's Passion" "Romira's Requital" "Kurgal's Leash" "Vilenta's Propulsion" "Arakaali's Lust" "Uruk's Smelting" "Varashta's Blessing" "Tawhoa's Tending" "Sione's Temper" "Ahn's Citadel"
+	BaseType == "Ahn's Citadel" "Arakaali's Lust" "Daresso's Passion" "Kurgal's Leash" "Romira's Requital" "Sione's Temper" "Tacati's Ire" "Tawhoa's Tending" "Uruk's Smelting" "Varashta's Blessing" "Vilenta's Propulsion"
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 32
@@ -551,7 +551,7 @@ Show
 	MinimapIcon 1 White Star
 
 Show
-	BaseType == "Paquate's Pact" "Kaom's Madness" "Tecrod's Revenge" "Kalisa's Crescendo" "Zarokh's Refrain" "Doedre's Undoing" "Kulemak's Dominion" "Einhar's Beastrite" "Atziri's Allure" "Brutus' Brain" "Xoph's Pyre" "Arbiter's Ignition" "Piety's Mercy" "Ailith's Chimes" "Garukhan's Resolve" "Uhtred's Exodus"
+	BaseType == "Ailith's Chimes" "Arbiter's Ignition" "Atziri's Allure" "Brutus' Brain" "Doedre's Undoing" "Einhar's Beastrite" "Garukhan's Resolve" "Kalisa's Crescendo" "Kaom's Madness" "Kulemak's Dominion" "Paquate's Pact" "Piety's Mercy" "Tecrod's Revenge" "Uhtred's Exodus" "Xoph's Pyre" "Zarokh's Refrain"
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 37
@@ -561,7 +561,7 @@ Show
 	MinimapIcon 0 White Star
 
 Show
-	BaseType == "Tul's Stillness" "Esh's Radiance" "Rigwald's Ferocity" "Ixchel's Torment"
+	BaseType == "Esh's Radiance" "Ixchel's Torment" "Rigwald's Ferocity" "Tul's Stillness"
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 45
@@ -573,7 +573,7 @@ Show
 	MinimapIcon 0 White Star
 
 Show
-	BaseType == "Uhtred's Omen" "Ratha's Assault" "Uul-Netol's Embrace" "Atalui's Bloodletting" "Rakiata's Flow" "Dialla's Desire" "Arjun's Medal" "Uhtred's Augury"
+	BaseType == "Arjun's Medal" "Atalui's Bloodletting" "Dialla's Desire" "Rakiata's Flow" "Ratha's Assault" "Uhtred's Augury" "Uhtred's Omen" "Uul-Netol's Embrace"
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 45
@@ -614,7 +614,7 @@ Show
 	MinimapIcon 1 White Cross
 
 Show
-	BaseType == "Lesser Desert Rune" "Lesser Mind Rune" "Lesser Vision Rune" "Lesser Rebirth Rune" "Lesser Stone Rune" "Lesser Glacial Rune"
+	BaseType == "Lesser Desert Rune" "Lesser Glacial Rune" "Lesser Mind Rune" "Lesser Rebirth Rune" "Lesser Stone Rune" "Lesser Vision Rune"
 	Class == Socketable
 
 	SetFontSize 32
@@ -624,7 +624,7 @@ Show
 	MinimapIcon 1 Cyan Kite
 
 Show
-	BaseType == "Lesser Inspiration Rune" "Lesser Body Rune" "Lesser Robust Rune" "Lesser Resolve Rune"
+	BaseType == "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
 	Class == Socketable
 
 	SetFontSize 37
@@ -634,7 +634,7 @@ Show
 	MinimapIcon 0 Cyan Kite
 
 Show
-	BaseType == "Lesser Inspiration Rune" "Lesser Body Rune" "Lesser Robust Rune" "Lesser Resolve Rune"
+	BaseType == "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
 	Class == Socketable
 
 	SetFontSize 45
@@ -646,7 +646,7 @@ Show
 	MinimapIcon 0 Cyan Kite
 
 Show
-	BaseType == "Resolve Rune" "Inspiration Rune" "Mind Rune" "Vision Rune" "Stone Rune" "Robust Rune"
+	BaseType == "Inspiration Rune" "Mind Rune" "Resolve Rune" "Robust Rune" "Stone Rune" "Vision Rune"
 	Class == Socketable
 
 	SetFontSize 32
@@ -656,7 +656,7 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	BaseType == "Desert Rune" "Rebirth Rune" "Adept Rune" "Body Rune" "Glacial Rune" "Storm Rune"
+	BaseType == "Adept Rune" "Body Rune" "Desert Rune" "Glacial Rune" "Rebirth Rune" "Storm Rune"
 	Class == Socketable
 
 	SetFontSize 37
@@ -678,7 +678,7 @@ Show
 	MinimapIcon 0 Cyan UpsideDownHouse
 
 Show
-	BaseType == "Greater Stone Rune" "Greater Adept Rune" "Greater Body Rune" "Greater Resolve Rune" "Greater Robust Rune" "Greater Rebirth Rune" "Greater Inspiration Rune" "Greater Mind Rune" "Greater Iron Rune" "Greater Vision Rune" "Greater Desert Rune" "Greater Storm Rune" "Greater Glacial Rune"
+	BaseType == "Greater Adept Rune" "Greater Body Rune" "Greater Desert Rune" "Greater Glacial Rune" "Greater Inspiration Rune" "Greater Iron Rune" "Greater Mind Rune" "Greater Rebirth Rune" "Greater Resolve Rune" "Greater Robust Rune" "Greater Stone Rune" "Greater Storm Rune" "Greater Vision Rune"
 	Class == Socketable
 
 	SetFontSize 32
@@ -688,7 +688,7 @@ Show
 	MinimapIcon 1 Cyan Cross
 
 Show
-	BaseType == "Craiceann's Rune of Recovery" "Lady Hestra's Rune of Winter" "Fenumus' Rune of Draining" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "Saqawal's Rune of Erosion"
+	BaseType == "Craiceann's Rune of Recovery" "Fenumus' Rune of Draining" "Lady Hestra's Rune of Winter" "Saqawal's Rune of Erosion" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws"
 	Class == Socketable
 
 	SetFontSize 32
@@ -698,7 +698,7 @@ Show
 	MinimapIcon 1 Cyan Star
 
 Show
-	BaseType == "Greater Rune of Nobility" "Farrul's Rune of the Hunt" "Thane Girt's Rune of Wildness" "Craiceann's Rune of Warding" "Thane Grannell's Rune of Mastery" "Fenumus' Rune of Agony" "Greater Rune of Leadership" "The Greatwolf's Rune of Willpower" "Farrul's Rune of Grace" "Saqawal's Rune of Memory" "Fenumus' Rune of Spinning" "Thane Leld's Rune of Spring" "Courtesan Mannan's Rune of Cruelty"
+	BaseType == "Courtesan Mannan's Rune of Cruelty" "Craiceann's Rune of Warding" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Fenumus' Rune of Agony" "Fenumus' Rune of Spinning" "Greater Rune of Leadership" "Greater Rune of Nobility" "Saqawal's Rune of Memory" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "The Greatwolf's Rune of Willpower"
 	Class == Socketable
 
 	SetFontSize 37
@@ -708,7 +708,7 @@ Show
 	MinimapIcon 0 Cyan Star
 
 Show
-	BaseType == "Greater Rune of Tithing" "Greater Rune of Alacrity" "Saqawal's Rune of the Sky"
+	BaseType == "Greater Rune of Alacrity" "Greater Rune of Tithing" "Saqawal's Rune of the Sky"
 	Class == Socketable
 
 	SetFontSize 45
@@ -732,7 +732,7 @@ Show
 	MinimapIcon 0 Cyan Diamond
 
 Show
-	BaseType == "Talisman of Grold" "Zalatl's Soul Core of Insulation" "Hayoxi's Soul Core of Heatproofing" "Topotante's Soul Core of Dampening" "Xipocado's Soul Core of Dominion" "Cholotl's Soul Core of War" "Bear Talisman" "Stag Talisman"
+	BaseType == "Bear Talisman" "Cholotl's Soul Core of War" "Hayoxi's Soul Core of Heatproofing" "Stag Talisman" "Talisman of Grold" "Topotante's Soul Core of Dampening" "Xipocado's Soul Core of Dominion" "Zalatl's Soul Core of Insulation"
 	Class == Socketable
 
 	SetFontSize 32
@@ -742,7 +742,7 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	BaseType == "Guatelitzi's Soul Core of Endurance" "Citaqualotl's Soul Core of Foulness" "Tacati's Soul Core of Affliction" "Uromoti's Soul Core of Attenuation" "Primate Talisman" "Boar Talisman" "Serpent Talisman" "Wolf Talisman" "Cat Talisman" "Owl Talisman" "Ox Talisman" "Talisman of Thruldana" "Talisman of Maxarius" "Talisman of Egrin" "Talisman of Eeshta" "Fox Talisman" "Opiloti's Soul Core of Assault" "Quipolatl's Soul Core of Flow" "Rabbit Talisman" "Xopec's Soul Core of Power" "Ulaman's Gaze" "Talisman of Ralakesh"
+	BaseType == "Boar Talisman" "Cat Talisman" "Citaqualotl's Soul Core of Foulness" "Fox Talisman" "Guatelitzi's Soul Core of Endurance" "Opiloti's Soul Core of Assault" "Owl Talisman" "Ox Talisman" "Primate Talisman" "Quipolatl's Soul Core of Flow" "Rabbit Talisman" "Serpent Talisman" "Tacati's Soul Core of Affliction" "Talisman of Eeshta" "Talisman of Egrin" "Talisman of Maxarius" "Talisman of Ralakesh" "Talisman of Thruldana" "Ulaman's Gaze" "Uromoti's Soul Core of Attenuation" "Wolf Talisman" "Xopec's Soul Core of Power"
 	Class == Socketable
 
 	SetFontSize 37
@@ -752,7 +752,7 @@ Show
 	MinimapIcon 0 Cyan Cross
 
 Show
-	BaseType == "Tzamoto's Soul Core of Ferocity" "Atmohua's Soul Core of Retreat" "Soul Core of Zantipi" "Soul Core of Ticaba" "Amanamu's Gaze" "Soul Core of Xopec" "Soul Core of Tzamoto" "Soul Core of Cholotl" "Soul Core of Opiloti" "Soul Core of Atmohua" "Soul Core of Zalatl" "Soul Core of Puhuarte" "Tecrod's Gaze" "Soul Core of Topotante" "Soul Core of Quipolatl" "Estazunti's Soul Core of Convalescence" "Soul Core of Tacati" "Soul Core of Citaqualotl" "Kurgal's Gaze" "Soul Core of Azcapa" "Talisman of Sirrius"
+	BaseType == "Amanamu's Gaze" "Atmohua's Soul Core of Retreat" "Estazunti's Soul Core of Convalescence" "Kurgal's Gaze" "Soul Core of Atmohua" "Soul Core of Azcapa" "Soul Core of Cholotl" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Puhuarte" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zalatl" "Soul Core of Zantipi" "Talisman of Sirrius" "Tecrod's Gaze" "Tzamoto's Soul Core of Ferocity"
 	Class == Socketable
 
 	SetFontSize 45
@@ -1281,7 +1281,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Ashen Staff" "Attuned Wand" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gelid Staff" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == Wands Staves
 	Rarity == Magic
 	ItemLevel >= 81
@@ -1297,7 +1297,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Ashen Staff" "Attuned Wand" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gelid Staff" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1313,7 +1313,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield"
+	BaseType == "Broadhead Quiver" "Penetrating Quiver" "Primed Quiver" "Tawhoan Tower Shield" "Two-Point Quiver" "Visceral Quiver" "Volant Quiver"
 	Class == Bucklers Shields Quivers
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1329,7 +1329,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Ashen Staff" "Attuned Wand" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gelid Staff" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == Wands Staves
 	Rarity == Rare
 	ItemLevel >= 81
@@ -1345,7 +1345,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Ashen Staff" "Attuned Wand" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gelid Staff" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1361,7 +1361,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield"
+	BaseType == "Broadhead Quiver" "Penetrating Quiver" "Primed Quiver" "Tawhoan Tower Shield" "Two-Point Quiver" "Visceral Quiver" "Volant Quiver"
 	Class == Bucklers Shields Quivers
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1377,7 +1377,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Sirenscale Gloves" "Vile Robe"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Normal
 	ItemLevel >= 82
@@ -1392,7 +1392,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Sirenscale Gloves" "Vile Robe"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1408,7 +1408,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Sirenscale Gloves" "Vile Robe"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1424,7 +1424,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Sirenscale Gloves" "Vile Robe"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1440,7 +1440,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Sirenscale Gloves" "Vile Robe"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1455,7 +1455,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ancestral Tiara" "Vile Robe" "Sirenscale Gloves"
+	BaseType == "Ancestral Tiara" "Sirenscale Gloves" "Vile Robe"
 	Class == Helmets "Body Armours" Gloves
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1471,7 +1471,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Sacramental Robe" "Warlord Cuirass" "Slipstrike Vest" "Sleek Jacket" "Falconer's Jacket" "Polished Bracers" "Sekhema Sandals" "Drakeskin Boots" "Daggerfoot Shoes"
+	BaseType == "Daggerfoot Shoes" "Drakeskin Boots" "Falconer's Jacket" "Polished Bracers" "Sacramental Robe" "Sekhema Sandals" "Sleek Jacket" "Slipstrike Vest" "Warlord Cuirass"
 	Class == Helmets "Body Armours" Gloves Boots
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1487,7 +1487,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Sacramental Robe" "Warlord Cuirass" "Slipstrike Vest" "Sleek Jacket" "Falconer's Jacket" "Polished Bracers" "Sekhema Sandals" "Drakeskin Boots" "Daggerfoot Shoes"
+	BaseType == "Daggerfoot Shoes" "Drakeskin Boots" "Falconer's Jacket" "Polished Bracers" "Sacramental Robe" "Sekhema Sandals" "Sleek Jacket" "Slipstrike Vest" "Warlord Cuirass"
 	Class == Helmets "Body Armours" Gloves Boots
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1502,7 +1502,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == Charms
 	Rarity == Normal
 	ItemLevel >= 81
@@ -1517,7 +1517,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == Amulets Rings
 	Rarity == Normal
 	ItemLevel >= 82
@@ -1532,7 +1532,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity == Normal
 	ItemLevel >= 83
@@ -1549,7 +1549,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == Charms
 	Rarity == Magic
 	ItemLevel >= 81
@@ -1565,7 +1565,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == Amulets Rings
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1581,7 +1581,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == Charms
 	Rarity == Magic
 	ItemLevel >= 81
@@ -1597,7 +1597,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == Amulets Rings
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1613,7 +1613,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == Amulets Rings
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1629,7 +1629,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity == Magic
 	ItemLevel >= 83
@@ -1646,7 +1646,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == Amulets Rings
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1662,7 +1662,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Life Flask" "Ultimate Mana Flask"
 	Class == Amulets Rings
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1678,7 +1678,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Pearlescent Amulet" "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Unset Ring" "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Double Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Silver Charm" "Thawing Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Amethyst Charm"
+	BaseType == "Amber Amulet" "Amethyst Charm" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Crimson Amulet" "Double Belt" "Dousing Charm" "Fine Belt" "Grounding Charm" "Heavy Belt" "Iron Ring" "Jade Amulet" "Lapis Amulet" "Lazuli Ring" "Linen Belt" "Long Belt" "Lunar Amulet" "Mail Belt" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Plate Belt" "Prismatic Ring" "Rawhide Belt" "Ruby Charm" "Ruby Ring" "Sapphire Charm" "Sapphire Ring" "Silver Charm" "Stellar Amulet" "Thawing Charm" "Topaz Charm" "Topaz Ring" "Unset Ring" "Utility Belt" "Wide Belt"
 	Class == Amulets Rings
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1694,7 +1694,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Pearlescent Amulet" "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Unset Ring" "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Double Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Silver Charm" "Thawing Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Amethyst Charm"
+	BaseType == "Amber Amulet" "Amethyst Charm" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Crimson Amulet" "Double Belt" "Dousing Charm" "Fine Belt" "Grounding Charm" "Heavy Belt" "Iron Ring" "Jade Amulet" "Lapis Amulet" "Lazuli Ring" "Linen Belt" "Long Belt" "Lunar Amulet" "Mail Belt" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Plate Belt" "Prismatic Ring" "Rawhide Belt" "Ruby Charm" "Ruby Ring" "Sapphire Charm" "Sapphire Ring" "Silver Charm" "Stellar Amulet" "Thawing Charm" "Topaz Charm" "Topaz Ring" "Unset Ring" "Utility Belt" "Wide Belt"
 	Class == Amulets Rings
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1920,7 +1920,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Gold Amulet" "Gold Ring" "Golden Charm" "Solar Amulet"
 	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 
 	SetBorderColor 255 225 87 255
@@ -2692,62 +2692,62 @@ Show
 	#
 
 Show
-	BaseType == "Solar Amulet" "Gold Amulet" "Gold Ring" "Golden Charm"
+	BaseType == "Gold Amulet" "Gold Ring" "Golden Charm" "Solar Amulet"
 	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 
 	#
 
 Show
-	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Rattling Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Reaping Staff" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Molten Hammer" "Marauding Mace" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Fanatic Bow" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Ashen Staff" "Attuned Wand" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Fanatic Bow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gelid Staff" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Marauding Mace" "Massive Greathammer" "Molten Hammer" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Razor Quarterstaff" "Reaping Staff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" "of Many"
 
 	#
 
 Show
-	BaseType == "Tasalian Focus" "Toxic Quiver" "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield"
+	BaseType == "Broadhead Quiver" "Penetrating Quiver" "Primed Quiver" "Tasalian Focus" "Tawhoan Tower Shield" "Toxic Quiver" "Two-Point Quiver" "Visceral Quiver" "Volant Quiver"
 	Class == Foci Bucklers Shields Quivers
 	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
 
 	#
 
 Show
-	BaseType == "Ancestral Tiara" "Feathered Raiment" "Flowing Raiment" "Sacramental Robe" "Vile Robe" "Soldier Cuirass" "Warlord Cuirass" "Corsair Coat" "Slipstrike Vest" "Death Mail" "Rambler Jacket" "Sleek Jacket" "Falconer's Jacket" "Sirenscale Gloves" "Massive Mitts" "Polished Bracers" "Secured Wraps" "Sekhema Sandals" "Tasalian Greaves" "Drakeskin Boots" "Cryptic Leggings" "Daggerfoot Shoes"
+	BaseType == "Ancestral Tiara" "Corsair Coat" "Cryptic Leggings" "Daggerfoot Shoes" "Death Mail" "Drakeskin Boots" "Falconer's Jacket" "Feathered Raiment" "Flowing Raiment" "Massive Mitts" "Polished Bracers" "Rambler Jacket" "Sacramental Robe" "Secured Wraps" "Sekhema Sandals" "Sirenscale Gloves" "Sleek Jacket" "Slipstrike Vest" "Soldier Cuirass" "Tasalian Greaves" "Vile Robe" "Warlord Cuirass"
 	Class == Helmets "Body Armours" Gloves Boots
 	HasExplicitMod >=1 "of the Despot" Queen's Hellion's Dragon's "of Windfall" "of Dueling"
 
 	#
 
 Show
-	BaseType == "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Pearlescent Amulet" "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Unset Ring" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Double Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Silver Charm" "Thawing Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Amethyst Charm" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Amber Amulet" "Amethyst Charm" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Breach Ring" "Crimson Amulet" "Double Belt" "Dousing Charm" "Dusk Amulet" "Dusk Ring" "Fine Belt" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Grounding Charm" "Heavy Belt" "Iron Ring" "Jade Amulet" "Lapis Amulet" "Lazuli Ring" "Linen Belt" "Long Belt" "Lunar Amulet" "Mail Belt" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Penumbra Amulet" "Penumbra Ring" "Plate Belt" "Prismatic Ring" "Rawhide Belt" "Ruby Charm" "Ruby Ring" "Sapphire Charm" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Staunching Charm" "Stellar Amulet" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Topaz Charm" "Topaz Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Unset Ring" "Utility Belt" "Wide Belt"
 	Class == Amulets Rings
 	HasExplicitMod >=1 Countess' "of the Overseer" Dragon's "of Windfall" "of the Sorcerer" "of Battle" "of the Sharpshooter"
 
 	#
 
 Show
-	BaseType == "Omen Sceptre" "Wrath Sceptre" "Stoic Sceptre" "Shrine Sceptre" "Rattling Sceptre" "Withered Wand" "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand" "Reaping Staff" "Ashen Staff" "Gelid Staff" "Chiming Staff" "Molten Hammer" "Marauding Mace" "Akoyan Club" "Stalking Spear" "Spiked Spear" "Flying Spear" "Akoyan Spear" "Grand Spear" "Fanatic Bow" "Guardian Bow" "Warmonger Bow" "Obliterator Bow" "Gemini Bow" "Flexed Crossbow" "Desolate Crossbow" "Gemini Crossbow" "Elegant Crossbow" "Siege Crossbow" "Striking Quarterstaff" "Razor Quarterstaff" "Bolting Quarterstaff" "Ironwood Greathammer" "Massive Greathammer" "Tawhoan Greatclub" "Ruination Maul"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Ashen Staff" "Attuned Wand" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Fanatic Bow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gelid Staff" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Marauding Mace" "Massive Greathammer" "Molten Hammer" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Razor Quarterstaff" "Reaping Staff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	UnidentifiedItemTier == 5
 
 	#
 
 Show
-	BaseType == "Tasalian Focus" "Toxic Quiver" "Broadhead Quiver" "Two-Point Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Tawhoan Tower Shield"
+	BaseType == "Broadhead Quiver" "Penetrating Quiver" "Primed Quiver" "Tasalian Focus" "Tawhoan Tower Shield" "Toxic Quiver" "Two-Point Quiver" "Visceral Quiver" "Volant Quiver"
 	Class == Foci Bucklers Shields Quivers
 	UnidentifiedItemTier == 5
 
 	#
 
 Show
-	BaseType == "Ancestral Tiara" "Feathered Raiment" "Flowing Raiment" "Sacramental Robe" "Vile Robe" "Soldier Cuirass" "Warlord Cuirass" "Corsair Coat" "Slipstrike Vest" "Death Mail" "Rambler Jacket" "Sleek Jacket" "Falconer's Jacket" "Sirenscale Gloves" "Massive Mitts" "Polished Bracers" "Secured Wraps" "Sekhema Sandals" "Tasalian Greaves" "Drakeskin Boots" "Cryptic Leggings" "Daggerfoot Shoes"
+	BaseType == "Ancestral Tiara" "Corsair Coat" "Cryptic Leggings" "Daggerfoot Shoes" "Death Mail" "Drakeskin Boots" "Falconer's Jacket" "Feathered Raiment" "Flowing Raiment" "Massive Mitts" "Polished Bracers" "Rambler Jacket" "Sacramental Robe" "Secured Wraps" "Sekhema Sandals" "Sirenscale Gloves" "Sleek Jacket" "Slipstrike Vest" "Soldier Cuirass" "Tasalian Greaves" "Vile Robe" "Warlord Cuirass"
 	Class == Helmets "Body Armours" Gloves Boots
 	UnidentifiedItemTier == 5
 
 	#
 
 Show
-	BaseType == "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Pearlescent Amulet" "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet" "Solar Amulet" "Gold Amulet" "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Unset Ring" "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Gold Ring" "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Double Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Silver Charm" "Thawing Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Amethyst Charm" "Stone Charm" "Staunching Charm" "Golden Charm"
+	BaseType == "Amber Amulet" "Amethyst Charm" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Breach Ring" "Crimson Amulet" "Double Belt" "Dousing Charm" "Dusk Amulet" "Dusk Ring" "Fine Belt" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Grounding Charm" "Heavy Belt" "Iron Ring" "Jade Amulet" "Lapis Amulet" "Lazuli Ring" "Linen Belt" "Long Belt" "Lunar Amulet" "Mail Belt" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Penumbra Amulet" "Penumbra Ring" "Plate Belt" "Prismatic Ring" "Rawhide Belt" "Ruby Charm" "Ruby Ring" "Sapphire Charm" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Staunching Charm" "Stellar Amulet" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Topaz Charm" "Topaz Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Unset Ring" "Utility Belt" "Wide Belt"
 	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	UnidentifiedItemTier == 5
 
@@ -2780,14 +2780,14 @@ Hide
 	#
 
 Hide
-	BaseType == "Bone Wand" "Volatile Wand" "Pyrophyte Staff" "Voltaic Staff" "Roaring Staff" "Paralysing Staff" "Sanctified Staff" "Wooden Club" "Smithing Hammer" "Slim Mace" "Spiked Club" Warpick "Plated Mace" "Brigand Mace" "Construct Hammer" "Morning Star" "Jade Club" "Marching Mace" "Bandit Mace" "Structured Hammer" "Flanged Mace" "Crown Mace" "Strife Pick" "Fortified Hammer" "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Branched Spear" "Jagged Spear" "Helix Spear" "Orichalcum Spear" "Pronged Spear" "Crude Bow" Shortbow "Warden Bow" "Recurve Bow" "Composite Bow" "Dualstring Bow" "Cultist Bow" "Zealot Bow" "Artillery Bow" "Tribal Bow" "Twin Bow" "Adherent Bow" "Militant Bow" "Ironwood Shortbow" "Cavalry Bow" "Makeshift Crossbow" "Tense Crossbow" "Sturdy Crossbow" "Varnished Crossbow" "Dyad Crossbow" "Alloy Crossbow" "Bombard Crossbow" "Construct Crossbow" "Blackfire Crossbow" "Piercing Crossbow" "Twin Crossbow" "Cannonade Crossbow" "Bleak Crossbow" "Stout Crossbow" "Engraved Crossbow" "Wrapped Quarterstaff" "Long Quarterstaff" "Gothic Quarterstaff" "Crackling Quarterstaff" "Crescent Quarterstaff" "Steelpoint Quarterstaff" "Slicing Quarterstaff" "Barrier Quarterstaff" "Hefty Quarterstaff" "Smooth Quarterstaff" "Waxing Quarterstaff" "Bladed Quarterstaff" "Guardian Quarterstaff" "Sinister Quarterstaff" "Lunar Quarterstaff" "Dreaming Quarterstaff" "Aegis Quarterstaff" "Felled Greatclub" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Cultist Greathammer" "Temple Maul" "Leaden Greathammer" "Crumbling Maul" "Pointed Maul" "Totemic Greatclub" "Solemn Maul" "Heavy Greathammer" "Disintegrating Maul" "Anvil Maul" "Sacred Maul" "Fanatic Greathammer"
+	BaseType == "Adherent Bow" "Aegis Quarterstaff" "Alloy Crossbow" "Anvil Maul" "Artillery Bow" "Bandit Mace" "Barbed Spear" "Barrier Quarterstaff" "Blackfire Crossbow" "Bladed Quarterstaff" "Bleak Crossbow" "Bombard Crossbow" "Bone Wand" "Branched Spear" "Brigand Mace" "Broad Spear" "Cannonade Crossbow" "Cavalry Bow" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crossblade Spear" "Crown Mace" "Crude Bow" "Crumbling Maul" "Cultist Bow" "Cultist Greathammer" "Disintegrating Maul" "Dreaming Quarterstaff" "Dualstring Bow" "Dyad Crossbow" "Engraved Crossbow" "Fanatic Greathammer" "Felled Greatclub" "Flanged Mace" "Forge Maul" "Forked Spear" "Fortified Hammer" "Gothic Quarterstaff" "Guardian Quarterstaff" "Hardwood Spear" "Heavy Greathammer" "Hefty Quarterstaff" "Helix Spear" "Hunting Spear" "Ironhead Spear" "Ironwood Shortbow" "Jade Club" "Jagged Spear" "Leaden Greathammer" "Long Quarterstaff" "Lunar Quarterstaff" "Makeshift Crossbow" "Marching Mace" "Militant Bow" "Morning Star" "Oak Greathammer" "Orichalcum Spear" "Paralysing Staff" "Piercing Crossbow" "Plated Mace" "Pointed Maul" "Pronged Spear" "Pyrophyte Staff" "Recurve Bow" "Roaring Staff" "Sacred Maul" "Sanctified Staff" "Seaglass Spear" Shortbow "Sinister Quarterstaff" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Smooth Quarterstaff" "Solemn Maul" "Spiked Club" "Steelpoint Quarterstaff" "Stout Crossbow" "Strife Pick" "Structured Hammer" "Studded Greatclub" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Totemic Greatclub" "Tribal Bow" "Twin Bow" "Twin Crossbow" "Varnished Crossbow" "Volatile Wand" "Voltaic Staff" "War Spear" "Warden Bow" Warpick "Waxing Quarterstaff" "Winged Spear" "Wooden Club" "Wrapped Quarterstaff" "Zealot Bow"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity < Unique
 
 	#
 
 Hide
-	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Runed Focus" "Whorl Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus" "Sacred Focus" "Fire Quiver" "Sacral Quiver" "Blunt Quiver" "Serrated Quiver" "Leather Buckler" "Wooden Buckler" "Plated Buckler" "Iron Buckler" "Ridged Buckler" "Spiked Buckler" "Ringed Buckler" "Edged Buckler" "Laminate Buckler" "Pearl Buckler" "Ornate Buckler" "Spikeward Buckler" "Jingling Buckler" "Bladeguard Buckler" "Ornate Buckler" "Gutspike Buckler" "Ancient Buckler" "Desert Buckler" "Splintered Tower Shield" "Painted Tower Shield" "Braced Tower Shield" "Barricade Tower Shield" "Effigial Tower Shield" "Rampart Tower Shield" "Heraldric Tower Shield" "Stone Tower Shield" "Crucible Tower Shield" "Ancestor Tower Shield" "Bulwark Tower Shield" "Noble Tower Shield" "Goldworked Tower Shield" "Royal Tower Shield" "Fortress Tower Shield" "Vaal Tower Shield" "Hardwood Targe" "Pelage Targe" "Studded Targe" "Crescent Targe" "Chiseled Targe" "Feathered Targe" "Stratified Targe" "Carved Targe" "Polished Targe" "Stone Targe" "Avian Targe" "Mammoth Targe" "Baroque Targe" "Soaring Targe" "Golden Targe" "Blazon Crest Shield" "Sigil Crest Shield" "Emblem Crest Shield" "Jingling Crest Shield" "Sectarian Crest Shield" "Omen Crest Shield" "Wayward Crest Shield" "Seer Crest Shield" "Dekharan Crest Shield" "Quartered Crest Shield" "Glowering Crest Shield" "Intricate Crest Shield" "Sekheman Crest Shield" "Vaal Crest Shield" "Blacksteel Crest Shield"
+	BaseType == "Ancestor Tower Shield" "Ancient Buckler" "Antler Focus" "Arrayed Focus" "Avian Targe" "Baroque Targe" "Barricade Tower Shield" "Blacksteel Crest Shield" "Bladeguard Buckler" "Blazon Crest Shield" "Blunt Quiver" "Braced Tower Shield" "Bulwark Tower Shield" "Carved Targe" "Chiseled Targe" "Crescent Targe" "Crucible Tower Shield" "Crystal Focus" "Cultist Focus" "Dekharan Crest Shield" "Desert Buckler" "Druidic Focus" "Edged Buckler" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Feathered Targe" "Fire Quiver" "Fortress Tower Shield" "Glowering Crest Shield" "Golden Targe" "Goldworked Tower Shield" "Gutspike Buckler" "Hallowed Focus" "Hardwood Targe" "Heraldric Tower Shield" "Intricate Crest Shield" "Iron Buckler" "Jingling Buckler" "Jingling Crest Shield" "Laminate Buckler" "Leather Buckler" "Leyline Focus" "Mammoth Targe" "Noble Tower Shield" "Omen Crest Shield" "Ornate Buckler" "Ornate Buckler" "Painted Tower Shield" "Pearl Buckler" "Pelage Targe" "Plated Buckler" "Plumed Focus" "Polished Targe" "Quartered Crest Shield" "Rampart Tower Shield" "Ridged Buckler" "Ringed Buckler" "Royal Tower Shield" "Runed Focus" "Sacral Quiver" "Sacred Focus" "Sectarian Crest Shield" "Seer Crest Shield" "Sekheman Crest Shield" "Serrated Quiver" "Sigil Crest Shield" "Soaring Targe" "Spiked Buckler" "Spikeward Buckler" "Splintered Tower Shield" "Stone Targe" "Stone Tower Shield" "Stratified Targe" "Studded Targe" "Tonal Focus" "Twig Focus" "Vaal Crest Shield" "Vaal Tower Shield" "Voodoo Focus" "Wayward Crest Shield" "Whorl Focus" "Wooden Buckler" "Woven Focus"
 	Class == Foci Bucklers Shields Quivers
 	Rarity < Unique
 
@@ -2808,7 +2808,7 @@ Hide
 	#
 
 Hide
-	BaseType == "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Vermeil Circlet" "Jade Tiara" "Sandsworn Tiara" "Jungle Tiara" "Skycrown Tiara" "Sorcerous Tiara" "Kamasan Tiara" "Rusted Greathelm" "Soldier Greathelm" "Wrapped Greathelm" "Spired Greathelm" "Elite Greathelm" "Warrior Greathelm" "Commander Greathelm" "Fierce Greathelm" "Elegant Greathelm" "Noble Greathelm" "Warmonger Greathelm" "Masked Greathelm" "Paragon Greathelm" "Imperial Greathelm" "Shabby Hood" "Felt Cap" "Lace Hood" "Swathed Cap" "Hunter Hood" "Viper Cap" "Corsair Cap" "Leatherbound Hood" "Wrapped Cap" "Deerstalker Hood" "Woven Cap" "Desert Cap" "Trapper Hood" "Freebooter Cap" "Brimmed Helm" "Guarded Helm" "Visored Helm" "Cowled Helm" "Shielded Helm" "Closed Helm" "Cabalist Helm" "Warded Helm" "Cryptic Helm" "Champion Helm" "Gladiatorial Helm" "Iron Crown" "Horned Crown" "Cultist Crown" "Martyr Crown" "Heavy Crown" "Spiritbone Crown" "Hallowed Crown" "Inquisitor Crown" "Druidic Crown" "Saintly Crown" "Divine Crown" "Cryptic Crown" "Hewn Mask" "Face Mask" "Hooded Mask" "Veiled Mask" "Tribal Mask" "Solid Mask" "Pariah Mask" "Avian Mask" "Brigand Mask" "Faridun Mask" "Soaring Mask" "Grinning Mask" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Mystic Raiment" "River Raiment" "Adherent's Raiment" "Ceremonial Robe" "Rusted Cuirass" "Fur Plate" "Iron Cuirass" "Raider Plate" "Maraketh Cuirass" "Steel Plate" "Full Plate" "Vaal Cuirass" "Juggernaut Plate" "Chieftain Cuirass" "Elegant Plate" "Heavy Plate" "Stone Cuirass" "Ornate Plate" "Utzaal Cuirass" "Leather Vest" "Quilted Vest" "Pathfinder Coat" "Shrouded Vest" "Rhoahide Coat" "Studded Vest" "Scout's Vest" "Serpentscale Coat" "Corsair Vest" "Smuggler Coat" "Layered Vest" "Runner Vest" "Lizardscale Coat" "Swiftstalker Coat" "Wyrmscale Coat" "Chain Mail" "Rogue Armour" "Vagabond Armour" "Cloaked Mail" "Explorer Armour" "Scale Mail" "Knight Armour" "Ancestral Mail" "Mantled Mail" "Trailblazer Armour" "Golden Mail" "Dastard Armour" "Shrouded Mail" "Thane Mail" "Pilgrim Vestments" "Pelt Mantle" "Mail Vestments" "Shaman Mantle" "Ironclad Vestments" "Sacrificial Mantle" "Cleric Vestments" "Tideseer Mantle" "Occultist Mantle" "Plated Vestments" "Heartcarver Mantle" "Wolfskin Mantle" "Conjurer Mantle" "Death Mantle" "Seastorm Mantle" "Hermit Garb" "Waxed Jacket" "Marabout Garb" "Wayfarer Jacket" "Anchorite Garb" "Scalper's Jacket" "Scoundrel Jacket" "Ascetic Garb" "Itinerant Jacket" "Hatungo Garb" "Hawker's Jacket" "Austere Garb" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Embroidered Gloves" "Baroque Gloves" "Gold Gloves" "Grim Gloves" "Opulent Gloves" "Vaal Gloves" "Stocky Mitts" "Riveted Mitts" "Tempered Mitts" "Bolstered Mitts" "Moulded Mitts" "Detailed Mitts" "Ancient Mitts" "Feathered Mitts" "Knightly Mitts" "Ornate Mitts" "Vaal Mitts" "Suede Bracers" "Firm Bracers" "Bound Bracers" "Sectioned Bracers" "Spined Bracers" "Fine Bracers" "Refined Bracers" "Spiked Bracers" "Stalking Bracers" "Grand Bracers" "Barbed Bracers" "Ringmail Gauntlets" "Layered Gauntlets" "Doubled Gauntlets" "Plate Gauntlets" "Zealot Gauntlets" "Steelmail Gauntlets" "Commander Gauntlets" "Cultist Gauntlets" "Blacksteel Gauntlets" "Rope Cuffs" "Aged Cuffs" "Goldcast Cuffs" "Verisium Cuffs" "Ornate Cuffs" "Bound Cuffs" "Ancient Cuffs" "Gleaming Cuffs" "Adherent Cuffs" "Gauze Wraps" "Linen Wraps" "Spiral Wraps" "Buckled Wraps" "Adorned Wraps" "War Wraps" "Elegant Wraps" "Vaal Wraps" "Straw Sandals" "Wrapped Sandals" "Lattice Sandals" "Silk Slippers" "Feathered Sandals" "Flax Sandals" "Elegant Slippers" "Dunerunner Sandals" "Bound Sandals" "Luxurious Slippers" "Sandsworn Sandals" "Rough Greaves" "Iron Greaves" "Bronze Greaves" "Trimmed Greaves" "Stone Greaves" "Reefsteel Greaves" "Elegant Greaves" "Carved Greaves" "Bulwark Greaves" "Ornate Greaves" "Vaal Greaves" "Rawhide Boots" "Laced Boots" "Embossed Boots" "Steeltoe Boots" "Lizardscale Boots" "Flared Boots" "Studded Boots" "Serpentscale Boots" "Cinched Boots" "Cavalry Boots" "Dragonscale Boots" "Mail Sabatons" "Braced Sabatons" "Stacked Sabatons" "Covered Sabatons" "Bastion Sabatons" "Veteran Sabatons" "Noble Sabatons" "Fortress Sabatons" "Blacksteel Sabatons" "Padded Leggings" "Secured Leggings" "Pelt Leggings" "Weaver Leggings" "Shamanistic Leggings" "Faithful Leggings" "Apostle Leggings" "Warlock Leggings" "Frayed Shoes" "Threaded Shoes" "Hunting Shoes" "Steelpoint Shoes" "Treerunner Shoes" "Wanderer Shoes" "Charmed Shoes" "Quickslip Shoes"
+	BaseType == "Adherent Cuffs" "Adherent's Raiment" "Adorned Wraps" "Aged Cuffs" "Altar Robe" "Ancestral Mail" "Anchorite Garb" "Ancient Cuffs" "Ancient Mitts" "Apostle Leggings" "Ascetic Garb" "Austere Garb" "Avian Mask" "Barbed Bracers" "Baroque Gloves" "Bastion Sabatons" "Beaded Circlet" "Blacksteel Gauntlets" "Blacksteel Sabatons" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Bound Cuffs" "Bound Sandals" "Braced Sabatons" "Brigand Mask" "Brimmed Helm" "Bronze Greaves" "Buckled Wraps" "Bulwark Greaves" "Cabalist Helm" "Carved Greaves" "Cavalry Boots" "Ceremonial Robe" "Chain Mail" "Chain Tiara" "Champion Helm" "Charmed Shoes" "Chieftain Cuirass" "Cinched Boots" "Cleric Vestments" "Cloaked Mail" "Closed Helm" "Commander Gauntlets" "Commander Greathelm" "Conjurer Mantle" "Corsair Cap" "Corsair Vest" "Covered Sabatons" "Cowled Helm" "Cryptic Crown" "Cryptic Helm" "Cultist Crown" "Cultist Gauntlets" "Dastard Armour" "Death Mantle" "Deerstalker Hood" "Desert Cap" "Detailed Mitts" "Divine Crown" "Doubled Gauntlets" "Dragonscale Boots" "Druidic Crown" "Dunerunner Sandals" "Elegant Greathelm" "Elegant Greaves" "Elegant Plate" "Elegant Slippers" "Elegant Wraps" "Elementalist Robe" "Elite Greathelm" "Embossed Boots" "Embroidered Gloves" "Explorer Armour" "Face Mask" "Faithful Leggings" "Faridun Mask" "Feathered Mitts" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fierce Greathelm" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Fortress Sabatons" "Frayed Shoes" "Freebooter Cap" "Full Plate" "Fur Plate" "Gauze Wraps" "Gladiatorial Helm" "Gleaming Cuffs" "Gold Circlet" "Gold Gloves" "Goldcast Cuffs" "Golden Mail" "Grand Bracers" "Grim Gloves" "Grinning Mask" "Guarded Helm" "Hallowed Crown" "Hatungo Garb" "Hawker's Jacket" "Heartcarver Mantle" "Heavy Crown" "Heavy Plate" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Hunting Shoes" "Imperial Greathelm" "Inquisitor Crown" "Intricate Gloves" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Juggernaut Plate" "Jungle Tiara" "Kamasan Tiara" "Keth Raiment" "Knight Armour" "Knightly Mitts" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Lizardscale Coat" "Luxurious Slippers" "Mail Sabatons" "Mail Vestments" "Mantled Mail" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Masked Greathelm" "Moulded Mitts" "Mystic Raiment" "Noble Greathelm" "Noble Sabatons" "Occultist Mantle" "Opulent Gloves" "Ornate Cuffs" "Ornate Greaves" "Ornate Mitts" "Ornate Plate" "Padded Leggings" "Paragon Greathelm" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Pelt Leggings" "Pelt Mantle" "Pilgrim Vestments" "Plate Gauntlets" "Plated Vestments" "Quickslip Shoes" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Reefsteel Greaves" "Refined Bracers" "Rhoahide Coat" "Ringmail Gauntlets" "River Raiment" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Runner Vest" "Rusted Cuirass" "Rusted Greathelm" "Sacrificial Mantle" "Saintly Crown" "Sandsworn Sandals" "Sandsworn Tiara" "Scale Mail" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Seastorm Mantle" "Sectioned Bracers" "Secured Leggings" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shaman Mantle" "Shamanistic Leggings" "Shielded Helm" "Shrouded Mail" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Skycrown Tiara" "Smuggler Coat" "Soaring Mask" "Soldier Greathelm" "Solid Mask" "Sombre Gloves" "Sorcerous Tiara" "Spiked Bracers" "Spined Bracers" "Spiral Wraps" "Spired Greathelm" "Spiritbone Crown" "Stacked Sabatons" "Stalking Bracers" "Steel Plate" "Steelmail Gauntlets" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Stone Cuirass" "Stone Greaves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Tattered Robe" "Tempered Mitts" "Thane Mail" "Threaded Shoes" "Tideseer Mantle" "Torn Gloves" "Trailblazer Armour" "Trapper Hood" "Treerunner Shoes" "Tribal Mask" "Trimmed Greaves" "Twig Circlet" "Utzaal Cuirass" "Vaal Cuirass" "Vaal Gloves" "Vaal Greaves" "Vaal Mitts" "Vaal Wraps" "Vagabond Armour" "Veiled Mask" "Verisium Cuffs" "Vermeil Circlet" "Veteran Sabatons" "Viper Cap" "Visored Helm" "Votive Raiment" "Wanderer Shoes" "War Wraps" "Warded Helm" "Warlock Leggings" "Warmonger Greathelm" "Warrior Greathelm" "Waxed Jacket" "Wayfarer Jacket" "Weaver Leggings" "Wicker Tiara" "Wolfskin Mantle" "Woven Cap" "Wrapped Cap" "Wrapped Greathelm" "Wrapped Sandals" "Wyrmscale Coat" "Zealot Gauntlets"
 	Class == Helmets "Body Armours" Gloves Boots
 	Rarity < Unique
 
@@ -2858,14 +2858,14 @@ Hide
 	#
 
 Hide
-	BaseType == "Emerald Ring" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
+	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Emerald Ring" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
 	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity < Unique
 
 	#
 
 Hide
-	BaseType == "Bone Wand" "Cultist Greathammer" "Dyad Crossbow" "Ironhead Spear" "Leaden Greathammer" "Recurve Bow" "Temple Maul" "Voltaic Staff" "Withered Wand" "Anchorite Garb" "Assassin Garb" "Bone Raiment" "Braced Tower Shield" "Chain Mail" "Elite Greathelm" "Embossed Boots" "Fierce Greathelm" "Firm Bracers" "Full Plate" "Gold Circlet" "Guarded Helm" "Havoc Raiment" "Hewn Mask" "Horned Crown" "Lace Hood" "Leather Vest" "Mail Vestments" "Maraketh Cuirass" "Ornate Buckler" "Plated Buckler" "Rampart Tower Shield" "Riveted Mitts" "Rough Greaves" "Sacrificial Mantle" "Shielded Helm" "Spiritbone Crown" "Splintered Tower Shield" "Stacked Sabatons" "Straw Sandals" "Threaded Shoes" "Vaal Cuirass" "Warrior Greathelm" "Wooden Buckler" "Linen Belt" "Mail Belt" "Prismatic Ring" "Ruby Ring" "Amphora Relic" "Tapestry Relic" "Seal Relic"
+	BaseType == "Amphora Relic" "Anchorite Garb" "Assassin Garb" "Bone Raiment" "Bone Wand" "Braced Tower Shield" "Chain Mail" "Cultist Greathammer" "Dyad Crossbow" "Elite Greathelm" "Embossed Boots" "Fierce Greathelm" "Firm Bracers" "Full Plate" "Gold Circlet" "Guarded Helm" "Havoc Raiment" "Hewn Mask" "Horned Crown" "Ironhead Spear" "Lace Hood" "Leaden Greathammer" "Leather Vest" "Linen Belt" "Mail Belt" "Mail Vestments" "Maraketh Cuirass" "Ornate Buckler" "Plated Buckler" "Prismatic Ring" "Rampart Tower Shield" "Recurve Bow" "Riveted Mitts" "Rough Greaves" "Ruby Ring" "Sacrificial Mantle" "Seal Relic" "Shielded Helm" "Spiritbone Crown" "Splintered Tower Shield" "Stacked Sabatons" "Straw Sandals" "Tapestry Relic" "Temple Maul" "Threaded Shoes" "Vaal Cuirass" "Voltaic Staff" "Warrior Greathelm" "Withered Wand" "Wooden Buckler"
 	Rarity == Unique
 
 	#
