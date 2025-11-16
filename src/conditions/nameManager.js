@@ -1260,12 +1260,15 @@ export class NameManager {
 			new Name("Temple Maul", TIER.NEVER), // Shyaba
 			new Name("Voltaic Staff", TIER.NEVER), // Earthbound
 			new Name("Withered Wand", TIER.NEVER), // The Wicked Quill
+			new Name("Wooden Club", TIER.NEVER), // Brynhand's Mark
 
 			new Name("Anchorite Garb", TIER.NEVER), // Redflare Conduit
 			new Name("Assassin Garb", TIER.NEVER), // Cospri's Will
+			new Name("Barricade Tower Shield", TIER.NEVER), // Window to Paradise
 			new Name("Bone Raiment", TIER.NEVER), // Necromantle
 			new Name("Braced Tower Shield", TIER.NEVER), // Doomgate
 			new Name("Chain Mail", TIER.NEVER), // Coat of Red
+			new Name("Crucible Tower Shield", TIER.NEVER), // Svalinn
 			new Name("Elite Greathelm", TIER.NEVER), // Deidbell
 			new Name("Embossed Boots", TIER.NEVER), // Gamblesprint
 			new Name("Fierce Greathelm", TIER.NEVER), // Blood Price
@@ -1276,6 +1279,7 @@ export class NameManager {
 			new Name("Havoc Raiment", TIER.NEVER), // Cloak of Defiance
 			new Name("Hewn Mask", TIER.NEVER), // The Hollow Mask
 			new Name("Horned Crown", TIER.NEVER), // Bronzebeard
+			new Name("Keth Raiment", TIER.NEVER), // Prayers for Rain
 			new Name("Lace Hood", TIER.NEVER), // Radiant Grief
 			new Name("Leather Vest", TIER.NEVER), // Bristleboar
 			new Name("Mail Vestments", TIER.NEVER), // Icetomb
@@ -1301,21 +1305,23 @@ export class NameManager {
 			new Name("Prismatic Ring", TIER.NEVER), // Gifts from Above
 			new Name("Ruby Ring", TIER.NEVER), // Cracklecreep, Blistering Bond
 
+			new Name("Barbed Spear", TIER.OTHER), // Saitha's Spear
 			new Name("Crude Bow", TIER.OTHER), // Widowhail
 
 			new Name("Wrapped Sandals", TIER.OTHER), // Wanderlust
 
-			new Name("Amethyst Ring", TIER.OTHER), // Ming's Heart, Blackflame. GOOD: Original Sin
+			new Name("Amethyst Ring", TIER.OTHER), // Blackflame, Ming's Heart. GOOD: Original Sin
+			new Name("Pearl Ring", TIER.OTHER), // Evergrasping Ring, Heartbound Loop. GOOD: Snakepit
 
 			new Name("Lattice Sandals", TIER.CLASS), // Bones of Ullr
 
 			// https://poe2db.tw/us/Relics#RelicsUnique_Unique
 			new Name("Amphora Relic", TIER.NEVER), // The Peacemaker's Draught
-			new Name("Tapestry Relic", TIER.NEVER), // The Burden of Leadership
 			new Name("Seal Relic", TIER.NEVER), // The Changing Seasons
+			new Name("Tapestry Relic", TIER.NEVER), // The Burden of Leadership
 
-			new Name("Vase Relic", TIER.OTHER), // The Desperate Alliance
 			new Name("Incense Relic", TIER.OTHER), // The Last Flame
+			new Name("Vase Relic", TIER.OTHER), // The Desperate Alliance
 		).compare(tier, operator);
 	}
 
