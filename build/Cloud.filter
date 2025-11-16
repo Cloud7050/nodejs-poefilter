@@ -1888,6 +1888,14 @@ Show
 	Continue
 
 Show
+	Class == Relics
+	ItemLevel >= 80
+
+	SetBorderColor 74 230 58 255
+
+	Continue
+
+Show
 	Class == Wands Staves Charms
 	ItemLevel >= 81
 

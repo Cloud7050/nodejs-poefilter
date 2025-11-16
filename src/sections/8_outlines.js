@@ -43,6 +43,10 @@ function corrupted(filter) {
 function bis(filter) {
 	filter.multiBlock((c) => {
 		c.continue();
+		c.categories(CATEGORY.RELIC);
+		c.ilvl = new Comparison(80, OPERATOR.GTE);
+	}, (c) => {
+		c.continue();
 		c.categories(CATEGORY.MAIN_OTHER_CASTER, CATEGORY.CHARM);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 	}, (c) => {
