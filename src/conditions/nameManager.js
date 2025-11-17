@@ -1275,6 +1275,7 @@ export class NameManager {
 			new Name("Firm Bracers", TIER.NEVER), // Grip of Winter
 			new Name("Full Plate", TIER.NEVER), // Kingsguard
 			new Name("Gold Circlet", TIER.NEVER), // Atziri's Disdain
+			new Name("Goldcast Cuffs", TIER.NEVER), // Blueflame Bracers
 			new Name("Guarded Helm", TIER.NEVER), // Erian's Cobble
 			new Name("Havoc Raiment", TIER.NEVER), // Cloak of Defiance
 			new Name("Hewn Mask", TIER.NEVER), // The Hollow Mask
