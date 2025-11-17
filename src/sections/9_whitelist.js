@@ -129,6 +129,6 @@ function other(filter) {
 
 function rares(filter) {
 	filter.multiWhitelist((c) => {
-		c.rarity = new Comparison(RARITY.RARE, OPERATOR.GTE);
+		c.rarity = new Comparison(RARITY.RARE);
 	});
 }

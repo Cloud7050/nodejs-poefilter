@@ -2754,7 +2754,7 @@ Show
 	#
 
 Show
-	Rarity >= Rare
+	Rarity == Rare
 
 	#
 
