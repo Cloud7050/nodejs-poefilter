@@ -545,11 +545,11 @@ export class NameManager {
 			new Name("Roaring Staff", TIER.NEVER), // Unleash
 			new Name("Paralysing Staff", TIER.NEVER), // Enervating Nova
 			new Name("Sanctified Staff", TIER.NEVER), // Consecrate
+			new Name("Gelid Staff", TIER.NEVER), // Freezing Shards
 
 			new Name("Reaping Staff", TIER.BAD), // Reap
 
 			new Name("Ashen Staff", TIER.OTHER), // Firebolt
-			new Name("Gelid Staff", TIER.OTHER), // Freezing Shards
 			new Name("Chiming Staff", TIER.OTHER), // Sigil of Power
 
 			// https://poe2db.tw/us/One_Hand_Maces#OneHandMacesItem
