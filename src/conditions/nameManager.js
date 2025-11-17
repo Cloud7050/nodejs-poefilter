@@ -1300,10 +1300,12 @@ export class NameManager {
 			new Name("Warrior Greathelm", TIER.NEVER), // Corona of the Red Sun
 			new Name("Wooden Buckler", TIER.NEVER), // Nocturne
 
+			new Name("Antidote Charm", TIER.NEVER), // Arakaali's Gift
 			new Name("Linen Belt", TIER.NEVER), // Keelhaul, Umbilicus Immortalis
 			new Name("Mail Belt", TIER.NEVER), // Coward's Legacy
 			new Name("Prismatic Ring", TIER.NEVER), // Gifts from Above
 			new Name("Ruby Ring", TIER.NEVER), // Cracklecreep, Blistering Bond
+			new Name("Sapphire Charm", TIER.NEVER), // Breath of the Mountains
 
 			new Name("Barbed Spear", TIER.OTHER), // Saitha's Spear
 			new Name("Crude Bow", TIER.OTHER), // Widowhail
