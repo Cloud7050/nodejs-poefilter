@@ -57,25 +57,16 @@ function uncommons(filter) {
 		c.categories(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.isCorrupted = true;
-	}, (c) => { // Too low ilvl (mana flasks, charms)
-		c.categories(CATEGORY.FLASK_MANA, CATEGORY.CHARM);
+	}, (c) => { // Too low ilvl (charms)
+		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(67, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (life flasks)
-		c.categories(CATEGORY.FLASK_LIFE);
+	}, (c) => { // Too low ilvl (mana flasks)
+		c.categories(CATEGORY.FLASK_MANA);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (jewellery)
-		c.categories(CATEGORY.JEWELLERY);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(75, OPERATOR.LT);
-	}, (c) => { // Too low rare wisdom tier (jewellery)
-		c.categories(CATEGORY.JEWELLERY);
-		c.rarity = new Comparison(RARITY.RARE);
-		c.isLowTier(2);
-		c.ilvl = new Comparison(82, OPERATOR.LT); // Allow BiS ilvl
-	}, (c) => { // Too low ilvl (belts)
-		c.categories(CATEGORY.BELT);
+		c.ilvl = new Comparison(80, OPERATOR.LT);
+	}, (c) => { // Too low ilvl (jewellery, belts, life flasks)
+		c.categories(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK_LIFE);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Trash base

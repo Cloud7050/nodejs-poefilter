@@ -2817,36 +2817,21 @@ Hide
 	#
 
 Hide
-	Class == "Mana Flasks" Charms
+	Class == Charms
 	Rarity < Unique
 	ItemLevel < 67
 
 	#
 
 Hide
-	Class == "Life Flasks"
+	Class == "Mana Flasks"
 	Rarity < Unique
-	ItemLevel < 82
+	ItemLevel < 80
 
 	#
 
 Hide
-	Class == Amulets Rings
-	Rarity < Unique
-	ItemLevel < 75
-
-	#
-
-Hide
-	Class == Amulets Rings
-	Rarity == Rare
-	ItemLevel < 82
-	UnidentifiedItemTier <= 2
-
-	#
-
-Hide
-	Class == Belts
+	Class == Amulets Rings Belts "Life Flasks"
 	Rarity < Unique
 	ItemLevel < 82
 
