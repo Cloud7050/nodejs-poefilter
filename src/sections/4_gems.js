@@ -59,21 +59,10 @@ function lineage(filter) {
 }
 
 function cut(filter) {
-	// Crafted on
-	filter.multiBlock((c) => {
-		c.categories(CATEGORY.GEM);
-		c.hasQuality();
-	}, (c) => {
-		c.categories(CATEGORY.GEM);
-		c.hasSockets(5);
-	}, (e) => {
-		e.colourExalt(PAIR_GEM).sizeExalt();
-	});
-
-	// BASE basic
+	// BASE
 	filter.block((c, e) => {
 		c.categories(CATEGORY.GEM);
 
-		e.colourExalt(PAIR_GEM).sizeAugment();
+		e.colourWisdom(PAIR_GEM).sizeWisdom();
 	});
 }
