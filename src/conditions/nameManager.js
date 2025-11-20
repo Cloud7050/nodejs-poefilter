@@ -4,6 +4,7 @@ import { StringList } from "./stringList.js";
 
 export class NameManager {
 	static TIER = {
+		LOW: -3,
 		NEVER: -2,
 		BAD: -1,
 		OTHER: 0,
@@ -522,429 +523,444 @@ export class NameManager {
 	static getMain(tier, operator = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Sceptres#SceptresItem
-			new Name("Omen Sceptre", TIER.OTHER), // Malice
-			new Name("Wrath Sceptre", TIER.OTHER), // Fulmination
-			new Name("Stoic Sceptre", TIER.OTHER), // Discipline
+			new Name("Omen Sceptre", TIER.NEVER), // Malice
+			new Name("Wrath Sceptre", TIER.NEVER), // Fulmination
+
 			new Name("Shrine Sceptre", TIER.OTHER), // Purity of Fire/Ice/Lightning
+			new Name("Stoic Sceptre", TIER.OTHER), // Discipline
 
 			new Name("Rattling Sceptre", TIER.CLASS), // Skeletal Warrior
 
 			// https://poe2db.tw/us/Wands#WandsItem
 			new Name("Bone Wand", TIER.NEVER), // Bone Blast
-			new Name("Volatile Wand", TIER.NEVER), // Volatile Dead
-			new Name("Attuned Wand", TIER.NEVER), // Mana Drain
 			new Name("Siphoning Wand", TIER.NEVER), // Power Siphon
+			new Name("Volatile Wand", TIER.NEVER), // Volatile Dead
 
-			new Name("Withered Wand", TIER.OTHER), // Chaos Bolt
-			new Name("Galvanic Wand", TIER.OTHER), // Galvanic Field
+			new Name("Attuned Wand", TIER.BAD), // Mana Drain
+			new Name("Galvanic Wand", TIER.BAD), // Galvanic Field
+			new Name("Withered Wand", TIER.BAD), // Chaos Bolt
+
 			new Name("Dueling Wand", TIER.OTHER), // Spellslinger
 
 			// https://poe2db.tw/us/Staves#StavesItem
-			new Name("Pyrophyte Staff", TIER.NEVER), // Solar Orb
-			new Name("Voltaic Staff", TIER.NEVER), // Lightning Bolt
-			new Name("Roaring Staff", TIER.NEVER), // Unleash
-			new Name("Paralysing Staff", TIER.NEVER), // Enervating Nova
-			new Name("Sanctified Staff", TIER.NEVER), // Consecrate
 			new Name("Gelid Staff", TIER.NEVER), // Freezing Shards
-			new Name("Ashen Staff", TIER.NEVER), // Firebolt
+			new Name("Paralysing Staff", TIER.NEVER), // Enervating Nova
+			new Name("Pyrophyte Staff", TIER.NEVER), // Solar Orb
+			new Name("Reaping Staff", TIER.NEVER), // Reap
+			new Name("Roaring Staff", TIER.NEVER), // Unleash
+			new Name("Sanctified Staff", TIER.NEVER), // Consecrate
+			new Name("Voltaic Staff", TIER.NEVER), // Lightning Bolt
 
-			new Name("Reaping Staff", TIER.BAD), // Reap
-
+			new Name("Ashen Staff", TIER.OTHER), // Firebolt
 			new Name("Chiming Staff", TIER.OTHER), // Sigil of Power
 
 			// https://poe2db.tw/us/One_Hand_Maces#OneHandMacesItem
-			new Name("Wooden Club", TIER.NEVER), // 6-10 phys, 5% cc, x1.45
-			new Name("Smithing Hammer", TIER.NEVER), // 5.5-9 phys, 5.5-9 fire, 5% cc, x1.45, L4
-			new Name("Slim Mace", TIER.NEVER), // 11-17 phys, 5% cc, x1.55, L10
-			new Name("Spiked Club", TIER.NEVER), // 15-24 phys, 5% cc, x1.45, L16
-			new Name("Warpick",  TIER.NEVER), // 18-24 phys, 7% cc, x1.45, L22
-			new Name("Plated Mace", TIER.NEVER), // 18-38 phys, 5% cc, x1.4, L26
-			new Name("Brigand Mace", TIER.NEVER), // 28-38 phys, 5% cc, x1.45, L33
-			new Name("Construct Hammer", TIER.NEVER), // 31-38 phys, 5% cc, x1.4, L36, 40% chance to Daze on Hit
-			new Name("Morning Star", TIER.NEVER), // 33-49 phys, 6.5% cc, x1.45, L45
-			new Name("Jade Club", TIER.NEVER), // 31-51 phys, 5% cc, x1.45, L49, Always Hits
-			new Name("Marching Mace", TIER.NEVER), // 33-69 phys, 5% cc, x1.4, L54
-			new Name("Bandit Mace", TIER.NEVER), // 45-61 phys, 5% cc, x1.45, L59
-			new Name("Structured Hammer", TIER.NEVER), // 49-60 phys, 5% cc, x1.4, L62, 40% chance to Daze on Hit
-			new Name("Flanged Mace", TIER.NEVER), // 45-67 phys, 5% cc, x1.55, L67
-			new Name("Crown Mace", TIER.NEVER), // 43-89 phys, 5% cc, x1.4, L72
+			new Name("Wooden Club", TIER.LOW), // 6-10 phys, 5% cc, x1.45
+			new Name("Smithing Hammer", TIER.LOW), // 5.5-9 phys, 5.5-9 fire, 5% cc, x1.45, L4
+			new Name("Slim Mace", TIER.LOW), // 11-17 phys, 5% cc, x1.55, L10
+			new Name("Spiked Club", TIER.LOW), // 15-24 phys, 5% cc, x1.45, L16
+			new Name("Warpick",  TIER.LOW), // 18-24 phys, 7% cc, x1.45, L22
+			new Name("Plated Mace", TIER.LOW), // 18-38 phys, 5% cc, x1.4, L26
+			new Name("Brigand Mace", TIER.LOW), // 28-38 phys, 5% cc, x1.45, L33
+			new Name("Construct Hammer", TIER.LOW), // 31-38 phys, 5% cc, x1.4, L36, 40% chance to Daze on Hit
+			new Name("Morning Star", TIER.LOW), // 33-49 phys, 6.5% cc, x1.45, L45
+			new Name("Jade Club", TIER.LOW), // 31-51 phys, 5% cc, x1.45, L49, Always Hits
+			new Name("Marching Mace", TIER.LOW), // 33-69 phys, 5% cc, x1.4, L54
+			new Name("Bandit Mace", TIER.LOW), // 45-61 phys, 5% cc, x1.45, L59
+			new Name("Structured Hammer", TIER.LOW), // 49-60 phys, 5% cc, x1.4, L62, 40% chance to Daze on Hit
+			new Name("Flanged Mace", TIER.LOW), // 45-67 phys, 5% cc, x1.55, L67
+			new Name("Crown Mace", TIER.LOW), // 43-89 phys, 5% cc, x1.4, L72
+
+			new Name("Akoyan Club", TIER.NEVER), // 46-76 phys, 5% cc, x1.45, L78, Always Hits
 			new Name("Strife Pick", TIER.NEVER), // 49-66 phys, 7% cc, x1.45, L78, +5–10% to Critical Damage Bonus
-			new Name("Fortified Hammer", TIER.NEVER), // 60-73 phys, 5% cc, x1.4, L79, 40% chance to Daze on Hit
 
-			new Name("Molten Hammer", TIER.BAD), // 35.5-59 phys, 35.5-59 fire, 5% cc, x1.45, L77
 			new Name("Marauding Mace", TIER.BAD), // 51-84 phys, 5% cc, x1.45, L77
-
-			new Name("Akoyan Club", TIER.OTHER), // 46-76 phys, 5% cc, x1.45, L78, Always Hits
+			new Name("Molten Hammer", TIER.BAD), // 35.5-59 phys, 35.5-59 fire, 5% cc, x1.45, L77
+			new Name("Fortified Hammer", TIER.BAD), // 60-73 phys, 5% cc, x1.4, L79, 40% chance to Daze on Hit
 
 			// https://poe2db.tw/us/Spears#SpearsItem
-			new Name("Hardwood Spear", TIER.NEVER), // 5-9 phys, 5% cc, x1.6
-			new Name("Ironhead Spear", TIER.NEVER), // 7-13 phys, 5% cc, x1.6, L5
-			new Name("Hunting Spear", TIER.NEVER), // 10-18 phys, 5% cc, x1.55, L10, 15–25% chance to Maim on Hit
-			new Name("Winged Spear", TIER.NEVER), // 12-22 phys, 5% cc, x1.65, L16
-			new Name("War Spear", TIER.NEVER), // 14-26 phys, 5% cc, x1.6, L21, 25–35% increased Projectile Speed with this Weapon
-			new Name("Forked Spear", TIER.NEVER), // 17-32 phys, 5% cc, x1.6, L26
-			new Name("Barbed Spear", TIER.NEVER), // 20-38 phys, 6.5% cc, x1.6, L33
-			new Name("Broad Spear", TIER.NEVER), // 26-48 phys, 5% cc, x1.5, L40
-			new Name("Crossblade Spear", TIER.NEVER), // 28-51 phys, 5% cc, x1.55, L45
-			new Name("Seaglass Spear", TIER.NEVER), // 31-57 phys, 7% cc, x1.5, L51
-			new Name("Branched Spear", TIER.NEVER), // 31-58 phys, 5% cc, x1.6, L54
-			new Name("Jagged Spear", TIER.NEVER), // 33-61 phys, 6.5% cc, x1.6, L59
-			new Name("Helix Spear", TIER.NEVER), // 37-68 phys, 5% cc, x1.6, L65
-			new Name("Orichalcum Spear", TIER.NEVER), // 38-70 phys, 5% cc, x1.6, L67
-			new Name("Pronged Spear", TIER.NEVER), // 40-75 phys, 5% cc, x1.6, L72
+			new Name("Hardwood Spear", TIER.LOW), // 5-9 phys, 5% cc, x1.6
+			new Name("Ironhead Spear", TIER.LOW), // 7-13 phys, 5% cc, x1.6, L5
+			new Name("Hunting Spear", TIER.LOW), // 10-18 phys, 5% cc, x1.55, L10, 15–25% chance to Maim on Hit
+			new Name("Winged Spear", TIER.LOW), // 12-22 phys, 5% cc, x1.65, L16
+			new Name("War Spear", TIER.LOW), // 14-26 phys, 5% cc, x1.6, L21, 25–35% increased Projectile Speed with this Weapon
+			new Name("Forked Spear", TIER.LOW), // 17-32 phys, 5% cc, x1.6, L26
+			new Name("Barbed Spear", TIER.LOW), // 20-38 phys, 6.5% cc, x1.6, L33
+			new Name("Broad Spear", TIER.LOW), // 26-48 phys, 5% cc, x1.5, L40
+			new Name("Crossblade Spear", TIER.LOW), // 28-51 phys, 5% cc, x1.55, L45
+			new Name("Seaglass Spear", TIER.LOW), // 31-57 phys, 7% cc, x1.5, L51
+			new Name("Branched Spear", TIER.LOW), // 31-58 phys, 5% cc, x1.6, L54
+			new Name("Jagged Spear", TIER.LOW), // 33-61 phys, 6.5% cc, x1.6, L59
+			new Name("Helix Spear", TIER.LOW), // 37-68 phys, 5% cc, x1.6, L65
+			new Name("Orichalcum Spear", TIER.LOW), // 38-70 phys, 5% cc, x1.6, L67
+			new Name("Pronged Spear", TIER.LOW), // 40-75 phys, 5% cc, x1.6, L72
 
-			new Name("Stalking Spear", TIER.OTHER), // 44-82 phys, 5% cc, x1.55, L77, 15–25% chance to Maim on Hit
+			new Name("Stalking Spear", TIER.BAD), // 44-82 phys, 5% cc, x1.55, L77, 15–25% chance to Maim on Hit
+			new Name("Flying Spear", TIER.BAD), // 41-76 phys, 5% cc, x1.6, L78, 25–35% increased Projectile Speed with this Weapon
+			new Name("Akoyan Spear", TIER.BAD), // 43-80 phys, 7% cc, x1.5, L78
+			new Name("Grand Spear", TIER.BAD), // 46-85 phys, 5% cc, x1.5, L79
+
 			new Name("Spiked Spear", TIER.OTHER), // 41-76 phys, 6.5% cc, x1.6, L77
-			new Name("Flying Spear", TIER.OTHER), // 41-76 phys, 5% cc, x1.6, L78, 25–35% increased Projectile Speed with this Weapon
-			new Name("Akoyan Spear", TIER.OTHER), // 43-80 phys, 7% cc, x1.5, L78
-			new Name("Grand Spear", TIER.OTHER), // 46-85 phys, 5% cc, x1.5, L79
 
 			// https://poe2db.tw/us/Bows#BowsItem
-			new Name("Crude Bow", TIER.NEVER), // 6-9 phys, x1.2
-			new Name("Shortbow", TIER.NEVER), // 7-14 phys, x1.25, L5
-			new Name("Warden Bow", TIER.NEVER), // 12-18 phys, x1.15, L11, 20–30% chance to Chain an additional time
-			new Name("Recurve Bow", TIER.NEVER), // 15-31 phys, x1.1, L16
-			new Name("Composite Bow", TIER.NEVER), // 19-31 phys, x1.2, L22
-			new Name("Dualstring Bow", TIER.NEVER), // 16-31 phys, x1.1, L28, Bow Attacks fire an additional Arrow
-			new Name("Cultist Bow", TIER.NEVER), // 10-17 phys, 19-37 chaos, x1.2, L33
-			new Name("Zealot Bow", TIER.NEVER), // 31-47 phys, x1.2, L39
-			new Name("Artillery Bow", TIER.NEVER), // 39-72 phys, x1.15, L45, 50% reduced Projectile Range
-			new Name("Tribal Bow", TIER.NEVER), // 38-57 phys, x1.2, L50
-			new Name("Twin Bow", TIER.NEVER), // 32-60 phys, x1.1, L54, Bow Attacks fire an additional Arrow
-			new Name("Adherent Bow", TIER.NEVER), // 21-34 phys, 31-59 chaos, x1.2, L59
-			new Name("Militant Bow", TIER.NEVER), // 46-69 phys, x1.2, L62
-			new Name("Ironwood Shortbow", TIER.NEVER), // 41-76 phys, x1.25, L67
-			new Name("Cavalry Bow", TIER.NEVER), // 49-82 phys, x1.2, L72
+			new Name("Crude Bow", TIER.LOW), // 6-9 phys, x1.2
+			new Name("Shortbow", TIER.LOW), // 7-14 phys, x1.25, L5
+			new Name("Warden Bow", TIER.LOW), // 12-18 phys, x1.15, L11, 20–30% chance to Chain an additional time
+			new Name("Recurve Bow", TIER.LOW), // 15-31 phys, x1.1, L16
+			new Name("Composite Bow", TIER.LOW), // 19-31 phys, x1.2, L22
+			new Name("Dualstring Bow", TIER.LOW), // 16-31 phys, x1.1, L28, Bow Attacks fire an additional Arrow
+			new Name("Cultist Bow", TIER.LOW), // 10-17 phys, 19-37 chaos, x1.2, L33
+			new Name("Zealot Bow", TIER.LOW), // 31-47 phys, x1.2, L39
+			new Name("Artillery Bow", TIER.LOW), // 39-72 phys, x1.15, L45, 50% reduced Projectile Range
+			new Name("Tribal Bow", TIER.LOW), // 38-57 phys, x1.2, L50
+			new Name("Twin Bow", TIER.LOW), // 32-60 phys, x1.1, L54, Bow Attacks fire an additional Arrow
+			new Name("Adherent Bow", TIER.LOW), // 21-34 phys, 31-59 chaos, x1.2, L59
+			new Name("Militant Bow", TIER.LOW), // 46-69 phys, x1.2, L62
+			new Name("Ironwood Shortbow", TIER.LOW), // 41-76 phys, x1.25, L67
+			new Name("Cavalry Bow", TIER.LOW), // 49-82 phys, x1.2, L72
 
-			new Name("Fanatic Bow", TIER.BAD), // 42-70 phys, 43-71 chaos, x1.2, L79
+			new Name("Guardian Bow", TIER.NEVER), // 53-80 phys, x1.15, L77, 20–30% chance to Chain an additional time
+			new Name("Fanatic Bow", TIER.NEVER), // 42-70 phys, 43-71 chaos, x1.2, L79
 
-			new Name("Guardian Bow", TIER.OTHER), // 53-80 phys, x1.15, L77, 20–30% chance to Chain an additional time
 			new Name("Warmonger Bow", TIER.OTHER), // 56-84 phys, x1.2, L77
-			new Name("Obliterator Bow", TIER.OTHER), // 62-115 phys, x1.15, L78, 50% reduced Projectile Range
 			new Name("Gemini Bow", TIER.OTHER), // 39-72 phys, x1.1, L78, Bow Attacks fire an additional Arrow
+			new Name("Obliterator Bow", TIER.OTHER), // 62-115 phys, x1.15, L78, 50% reduced Projectile Range
 
 			// https://poe2db.tw/us/Crossbows#CrossbowsItem
-			new Name("Makeshift Crossbow", TIER.NEVER), // 7-12 phys, 5% cc, x1.6, r0.8
-			new Name("Tense Crossbow", TIER.NEVER), // 8-15 phys, 5% cc, x1.6, r0.85, L4, 20–30% increased Bolt Speed
-			new Name("Sturdy Crossbow", TIER.NEVER), // 11-26 phys, 5% cc, x1.55, r0.75, L10
-			new Name("Varnished Crossbow", TIER.NEVER), // 12-36 phys, 5% cc, x1.6, r0.8, L16
-			new Name("Dyad Crossbow", TIER.NEVER), // 9-37 phys, 5% cc, x1.6, r1.1, L20, Loads an additional bolt
-			new Name("Alloy Crossbow", TIER.NEVER), // 12-50 phys, 5% cc, x1.7, r0.7, L26
-			new Name("Bombard Crossbow", TIER.NEVER), // 14-56 phys, 5% cc, x1.65, r0.75, L33, Grenade Skills Fire an additional Projectile
-			new Name("Construct Crossbow", TIER.NEVER), // 18-72 phys, 5% cc, x1.6, r0.8, L38
-			new Name("Blackfire Crossbow", TIER.NEVER), // 20-80 phys, 7% cc, x1.6, r0.85, L45
-			new Name("Piercing Crossbow", TIER.NEVER), // 21-84 phys, 5% cc, x1.65, r0.85, L50, 20–30% chance to Pierce an Enemy
-			new Name("Twin Crossbow", TIER.NEVER), // 20-82 phys, 5% cc, x1.6, r1.1, L54, Loads an additional bolt
-			new Name("Cannonade Crossbow", TIER.NEVER), // 23-90 phys, 5% cc, x1.65, r0.75, L59, Grenade Skills Fire an additional Projectile
-			new Name("Bleak Crossbow", TIER.NEVER), // 27-109 phys, 5% cc, x1.6, r0.8, L62
-			new Name("Stout Crossbow", TIER.NEVER), // 30-119 phys, 5% cc, x1.55, r0.75, L67
-			new Name("Engraved Crossbow", TIER.NEVER), // 31-124 phys, 5% cc, x1.6, r0.8, L72
+			new Name("Makeshift Crossbow", TIER.LOW), // 7-12 phys, 5% cc, x1.6, r0.8
+			new Name("Tense Crossbow", TIER.LOW), // 8-15 phys, 5% cc, x1.6, r0.85, L4, 20–30% increased Bolt Speed
+			new Name("Sturdy Crossbow", TIER.LOW), // 11-26 phys, 5% cc, x1.55, r0.75, L10
+			new Name("Varnished Crossbow", TIER.LOW), // 12-36 phys, 5% cc, x1.6, r0.8, L16
+			new Name("Dyad Crossbow", TIER.LOW), // 9-37 phys, 5% cc, x1.6, r1.1, L20, Loads an additional bolt
+			new Name("Alloy Crossbow", TIER.LOW), // 12-50 phys, 5% cc, x1.7, r0.7, L26
+			new Name("Bombard Crossbow", TIER.LOW), // 14-56 phys, 5% cc, x1.65, r0.75, L33, Grenade Skills Fire an additional Projectile
+			new Name("Construct Crossbow", TIER.LOW), // 18-72 phys, 5% cc, x1.6, r0.8, L38
+			new Name("Blackfire Crossbow", TIER.LOW), // 20-80 phys, 7% cc, x1.6, r0.85, L45
+			new Name("Piercing Crossbow", TIER.LOW), // 21-84 phys, 5% cc, x1.65, r0.85, L50, 20–30% chance to Pierce an Enemy
+			new Name("Twin Crossbow", TIER.LOW), // 20-82 phys, 5% cc, x1.6, r1.1, L54, Loads an additional bolt
+			new Name("Cannonade Crossbow", TIER.LOW), // 23-90 phys, 5% cc, x1.65, r0.75, L59, Grenade Skills Fire an additional Projectile
+			new Name("Bleak Crossbow", TIER.LOW), // 27-109 phys, 5% cc, x1.6, r0.8, L62
+			new Name("Stout Crossbow", TIER.LOW), // 30-119 phys, 5% cc, x1.55, r0.75, L67
+			new Name("Engraved Crossbow", TIER.LOW), // 31-124 phys, 5% cc, x1.6, r0.8, L72
 
-			new Name("Flexed Crossbow", TIER.OTHER), // 32-127 phys, 5% cc, x1.6, r0.85, L77, 20–30% increased Bolt Speed
+			new Name("Flexed Crossbow", TIER.BAD), // 32-127 phys, 5% cc, x1.6, r0.85, L77, 20–30% increased Bolt Speed
+			new Name("Elegant Crossbow", TIER.BAD), // 31-123 phys, 5% cc, x1.65, r0.85, L78, 20–30% chance to Pierce an Enemy
+			new Name("Siege Crossbow", TIER.BAD), // 29-115 phys, 5% cc, x1.65, r0.75, L79, Grenade Skills Fire an additional Projectile
+
 			new Name("Desolate Crossbow", TIER.OTHER), // 33-132 phys, 5% cc, x1.6, r0.8, L77
 			new Name("Gemini Crossbow", TIER.OTHER), // 28-112 phys, 5% cc, x1.6, r1.1, L78, Loads an additional bolt
-			new Name("Elegant Crossbow", TIER.OTHER), // 31-123 phys, 5% cc, x1.65, r0.85, L78, 20–30% chance to Pierce an Enemy
-			new Name("Siege Crossbow", TIER.OTHER), // 29-115 phys, 5% cc, x1.65, r0.75, L79, Grenade Skills Fire an additional Projectile
 
 			// https://poe2db.tw/us/Quarterstaves#QuarterstavesItem
-			new Name("Wrapped Quarterstaff", TIER.NEVER), // 7-12 phys, 10% cc, x1.4
-			new Name("Long Quarterstaff", TIER.NEVER), // 9-18 phys, 10% cc, x1.4, L4, 16% increased Melee Strike Range with this weapon
-			new Name("Gothic Quarterstaff", TIER.NEVER), // 16-26 phys, 11.5% cc, x1.4, L11
-			new Name("Crackling Quarterstaff", TIER.NEVER), // 5-22 phys, 1-35 lightning, 10% cc, x1.4, L16
-			new Name("Crescent Quarterstaff", TIER.NEVER), // 19-39 phys, 10% cc, x1.5, L20
-			new Name("Steelpoint Quarterstaff", TIER.NEVER), // 28-51 phys, 10% cc, x1.4, L28
-			new Name("Slicing Quarterstaff", TIER.NEVER), // 29-60 phys, 10% cc, x1.4, L33
-			new Name("Barrier Quarterstaff", TIER.NEVER), // 33-55 phys, 10% cc, x1.4, L37, +10–15% to Block chance
-			new Name("Hefty Quarterstaff", TIER.NEVER), // 39-80 phys, 10% cc, x1.35, L45
-			new Name("Smooth Quarterstaff", TIER.NEVER), // 64-87 phys, 0% cc, x1.5, L49
-			new Name("Waxing Quarterstaff", TIER.NEVER), // 39-82 phys, 10% cc, x1.5, L54
-			new Name("Bladed Quarterstaff", TIER.NEVER), // 45-94 phys, 10% cc, x1.4, L59
-			new Name("Guardian Quarterstaff", TIER.NEVER), // 49-82 phys, 10% cc, x1.4, L62, +10–15% to Block chance
-			new Name("Sinister Quarterstaff", TIER.NEVER), // 55-92 phys, 11.5% cc, x1.4, L67
-			new Name("Lunar Quarterstaff", TIER.NEVER), // 50-103 phys, 10% cc, x1.5, L72
-			new Name("Dreaming Quarterstaff", TIER.NEVER), // 99-133 phys, 0% cc, x1.5, L78
+			new Name("Wrapped Quarterstaff", TIER.LOW), // 7-12 phys, 10% cc, x1.4
+			new Name("Long Quarterstaff", TIER.LOW), // 9-18 phys, 10% cc, x1.4, L4, 16% increased Melee Strike Range with this weapon
+			new Name("Gothic Quarterstaff", TIER.LOW), // 16-26 phys, 11.5% cc, x1.4, L11
+			new Name("Crackling Quarterstaff", TIER.LOW), // 5-22 phys, 1-35 lightning, 10% cc, x1.4, L16
+			new Name("Crescent Quarterstaff", TIER.LOW), // 19-39 phys, 10% cc, x1.5, L20
+			new Name("Steelpoint Quarterstaff", TIER.LOW), // 28-51 phys, 10% cc, x1.4, L28
+			new Name("Slicing Quarterstaff", TIER.LOW), // 29-60 phys, 10% cc, x1.4, L33
+			new Name("Barrier Quarterstaff", TIER.LOW), // 33-55 phys, 10% cc, x1.4, L37, +10–15% to Block chance
+			new Name("Hefty Quarterstaff", TIER.LOW), // 39-80 phys, 10% cc, x1.35, L45
+			new Name("Smooth Quarterstaff", TIER.LOW), // 64-87 phys, 0% cc, x1.5, L49
+			new Name("Waxing Quarterstaff", TIER.LOW), // 39-82 phys, 10% cc, x1.5, L54
+			new Name("Bladed Quarterstaff", TIER.LOW), // 45-94 phys, 10% cc, x1.4, L59
+			new Name("Guardian Quarterstaff", TIER.LOW), // 49-82 phys, 10% cc, x1.4, L62, +10–15% to Block chance
+			new Name("Sinister Quarterstaff", TIER.LOW), // 55-92 phys, 11.5% cc, x1.4, L67
+			new Name("Lunar Quarterstaff", TIER.LOW), // 50-103 phys, 10% cc, x1.5, L72
+
 			new Name("Aegis Quarterstaff", TIER.NEVER), // 58-97 phys, 10% cc, x1.4, L79, +10–15% to Block chance
 
+			new Name("Razor Quarterstaff", TIER.BAD), // 65-108 phys, 10% cc, x1.4, L77
+			new Name("Bolting Quarterstaff", TIER.BAD), // 24-97 phys, 1-100 lightning, 10% cc, x1.4, L78
+			new Name("Dreaming Quarterstaff", TIER.BAD), // 99-133 phys, 0% cc, x1.5, L78
+
 			new Name("Striking Quarterstaff", TIER.OTHER), // 53-111 phys, 10% cc, x1.4, L77, 16% increased Melee Strike Range with this weapon
-			new Name("Razor Quarterstaff", TIER.OTHER), // 65-108 phys, 10% cc, x1.4, L77
-			new Name("Bolting Quarterstaff", TIER.OTHER), // 24-97 phys, 1-100 lightning, 10% cc, x1.4, L78
 
 			// https://poe2db.tw/us/Two_Hand_Maces#TwoHandMacesItem
-			new Name("Felled Greatclub", TIER.NEVER), // 13-18 phys, 5% cc, x1.1
-			new Name("Oak Greathammer", TIER.NEVER), // 14-26 phys, 5% cc, x1.05, L4, Causes 30–50% increased Stun Buildup
-			new Name("Forge Maul", TIER.NEVER), // 29-39 phys, 5% cc, x1.05, L11
-			new Name("Studded Greatclub", TIER.NEVER), // 32-48 phys, 5% cc, x1.1, L16
-			new Name("Cultist Greathammer", TIER.NEVER), // 32-43 phys, 5% cc, x1.05, L22, Strikes deal Splash damage to targets within 1.5 metres
-			new Name("Temple Maul", TIER.NEVER), // 35-72 phys, 5% cc, x1.2, L28
-			new Name("Leaden Greathammer", TIER.NEVER), // 58-78 phys, 5% cc, x1.1, L33
-			new Name("Crumbling Maul", TIER.NEVER), // 62-75 phys, 5% cc, x1.1, L38, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
-			new Name("Pointed Maul", TIER.NEVER), // 68-102 phys, 6.5% cc, x1.1, L45
-			new Name("Totemic Greatclub", TIER.NEVER), // 73-99 phys, 5% cc, x1.1, L50, Crushes Enemies on Hit
-			new Name("Solemn Maul", TIER.NEVER), // 59-123 phys, 5% cc, x1.2, L54
-			new Name("Heavy Greathammer", TIER.NEVER), // 94-127 phys, 5% cc, x1.1, L59
-			new Name("Disintegrating Maul", TIER.NEVER), // 93-114 phys, 5% cc, x1.1, L62, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
-			new Name("Anvil Maul", TIER.NEVER), // 112-151 phys, 5% cc, x1.05, L67
-			new Name("Sacred Maul", TIER.NEVER), // 76-158 phys, 5% cc, x1.2, L72
+			new Name("Felled Greatclub", TIER.LOW), // 13-18 phys, 5% cc, x1.1
+			new Name("Oak Greathammer", TIER.LOW), // 14-26 phys, 5% cc, x1.05, L4, Causes 30–50% increased Stun Buildup
+			new Name("Forge Maul", TIER.LOW), // 29-39 phys, 5% cc, x1.05, L11
+			new Name("Studded Greatclub", TIER.LOW), // 32-48 phys, 5% cc, x1.1, L16
+			new Name("Cultist Greathammer", TIER.LOW), // 32-43 phys, 5% cc, x1.05, L22, Strikes deal Splash damage to targets within 1.5 metres
+			new Name("Temple Maul", TIER.LOW), // 35-72 phys, 5% cc, x1.2, L28
+			new Name("Leaden Greathammer", TIER.LOW), // 58-78 phys, 5% cc, x1.1, L33
+			new Name("Crumbling Maul", TIER.LOW), // 62-75 phys, 5% cc, x1.1, L38, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
+			new Name("Pointed Maul", TIER.LOW), // 68-102 phys, 6.5% cc, x1.1, L45
+			new Name("Totemic Greatclub", TIER.LOW), // 73-99 phys, 5% cc, x1.1, L50, Crushes Enemies on Hit
+			new Name("Solemn Maul", TIER.LOW), // 59-123 phys, 5% cc, x1.2, L54
+			new Name("Heavy Greathammer", TIER.LOW), // 94-127 phys, 5% cc, x1.1, L59
+			new Name("Disintegrating Maul", TIER.LOW), // 93-114 phys, 5% cc, x1.1, L62, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
+			new Name("Anvil Maul", TIER.LOW), // 112-151 phys, 5% cc, x1.05, L67
+			new Name("Sacred Maul", TIER.LOW), // 76-158 phys, 5% cc, x1.2, L72
+
 			new Name("Fanatic Greathammer", TIER.NEVER), // 89-120 phys, 5% cc, x1.05, L78, Strikes deal Splash damage to targets within 1.5 metres
+			new Name("Ruination Maul", TIER.NEVER), // 113-138 phys, 5% cc, x1.1, L79, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
 
 			new Name("Ironwood Greathammer", TIER.OTHER), // 94-174 phys, 5% cc, x1.05, L77, Causes 30–50% increased Stun Buildup
 			new Name("Massive Greathammer", TIER.OTHER), // 119-161 phys, 5% cc, x1.1, L77
 			new Name("Tawhoan Greatclub", TIER.OTHER), // 107-145 phys, 5% cc, x1.1, L78, Crushes Enemies on Hit
-			new Name("Ruination Maul", TIER.OTHER), // 113-138 phys, 5% cc, x1.1, L79, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
 		).compare(tier, operator);
 	}
 	static getOff(tier, operator = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Foci#FociItem
-			new Name("Twig Focus", TIER.NEVER), // 12 ES
-			new Name("Woven Focus", TIER.NEVER), // 15 ES, L6
-			new Name("Antler Focus", TIER.NEVER), // 17 ES, L10
-			new Name("Engraved Focus", TIER.NEVER), // 21 ES, L16
-			new Name("Tonal Focus", TIER.NEVER), // 25 ES, L22
-			new Name("Crystal Focus", TIER.NEVER), // 28 ES, L26
-			new Name("Voodoo Focus", TIER.NEVER), // 32 ES, L33
-			new Name("Plumed Focus", TIER.NEVER), // 34 ES, L36
-			new Name("Runed Focus", TIER.NEVER), // 40 ES, L45
-			new Name("Whorl Focus", TIER.NEVER), // 43 ES, L51
-			new Name("Arrayed Focus", TIER.NEVER), // 45 ES, L54
-			new Name("Cultist Focus", TIER.NEVER), // 49 ES, L59
-			new Name("Hallowed Focus", TIER.NEVER), // 50 ES, L61
-			new Name("Druidic Focus", TIER.NEVER), // 52 ES, L65
-			new Name("Leyline Focus", TIER.NEVER), // 58 ES, L70
-			new Name("Sacred Focus", TIER.NEVER), // 63 ES, L75
+			new Name("Twig Focus", TIER.LOW), // 12 ES
+			new Name("Woven Focus", TIER.LOW), // 15 ES, L6
+			new Name("Antler Focus", TIER.LOW), // 17 ES, L10
+			new Name("Engraved Focus", TIER.LOW), // 21 ES, L16
+			new Name("Tonal Focus", TIER.LOW), // 25 ES, L22
+			new Name("Crystal Focus", TIER.LOW), // 28 ES, L26
+			new Name("Voodoo Focus", TIER.LOW), // 32 ES, L33
+			new Name("Plumed Focus", TIER.LOW), // 34 ES, L36
+			new Name("Runed Focus", TIER.LOW), // 40 ES, L45
+			new Name("Whorl Focus", TIER.LOW), // 43 ES, L51
+			new Name("Arrayed Focus", TIER.LOW), // 45 ES, L54
+			new Name("Cultist Focus", TIER.LOW), // 49 ES, L59
+			new Name("Hallowed Focus", TIER.LOW), // 50 ES, L61
+			new Name("Druidic Focus", TIER.LOW), // 52 ES, L65
+			new Name("Leyline Focus", TIER.LOW), // 58 ES, L70
+			new Name("Sacred Focus", TIER.LOW), // 63 ES, L75
 
 			new Name("Tasalian Focus", TIER.CLASS), // 68 ES, L80
 
 			// https://poe2db.tw/us/Quivers#QuiversItem
-			new Name("Fire Quiver", TIER.NEVER), // L8, Adds 3 to 5 Fire damage to Attacks
-			new Name("Sacral Quiver", TIER.NEVER), // L16, Gain 2–3 Life per Enemy Hit with Attacks
-			new Name("Blunt Quiver", TIER.NEVER), // L33, 25–40% increased Stun Buildup
+			new Name("Broadhead Quiver", TIER.NEVER), // Adds 1 to 3 Physical Damage to Attacks
+			new Name("Two-Point Quiver", TIER.NEVER), // L24, 20–30% increased Accuracy Rating
 			new Name("Serrated Quiver", TIER.NEVER), // L44, Attacks have 20–30% chance to cause Bleeding
 
 			new Name("Toxic Quiver", TIER.BAD), // L39, 20–30% chance to Poison on Hit with Attacks
+			new Name("Primed Quiver", TIER.BAD), // L51, 7–10% increased Attack Speed
 
-			new Name("Broadhead Quiver", TIER.OTHER), // Adds 1 to 3 Physical Damage to Attacks
-			new Name("Two-Point Quiver", TIER.OTHER), // L24, 20–30% increased Accuracy Rating
-			new Name("Primed Quiver", TIER.OTHER), // L51, 7–10% increased Attack Speed
+			new Name("Fire Quiver", TIER.OTHER), // L8, Adds 3 to 5 Fire damage to Attacks
+			new Name("Sacral Quiver", TIER.OTHER), // L16, Gain 2–3 Life per Enemy Hit with Attacks
+			new Name("Blunt Quiver", TIER.OTHER), // L33, 25–40% increased Stun Buildup
 			new Name("Penetrating Quiver", TIER.OTHER), // L55, 100% chance to Pierce an Enemy
 			new Name("Volant Quiver", TIER.OTHER), // L61, 20–30% increased Arrow Speed
 			new Name("Visceral Quiver", TIER.OTHER), // L65, 20–30% increased Critical Hit Chance for Attacks
 
 			// https://poe2db.tw/us/Bucklers#BucklersItem
-			new Name("Leather Buckler", TIER.NEVER), // 10 V
-			new Name("Wooden Buckler", TIER.NEVER), // 16 V, L5
-			new Name("Plated Buckler", TIER.NEVER), // 26 V, L11
-			new Name("Iron Buckler", TIER.NEVER), // 33 V, L16
-			new Name("Ridged Buckler", TIER.NEVER), // 43 V, L22
-			new Name("Spiked Buckler", TIER.NEVER), // 49 V, L26
-			new Name("Ringed Buckler", TIER.NEVER), // 60 V, L33
-			new Name("Edged Buckler", TIER.NEVER), // 70 V, L39
-			new Name("Laminate Buckler", TIER.NEVER), // 79 V, L45
-			new Name("Pearl Buckler", TIER.NEVER), // 87 V, L50
-			new Name("Ornate Buckler", TIER.NEVER), // 90 V, L52
-			new Name("Spikeward Buckler", TIER.NEVER), // 93 V, L54
-			new Name("Jingling Buckler", TIER.NEVER), // 101 V, L59
-			new Name("Bladeguard Buckler", TIER.NEVER), // 105 V, L61
-			new Name("Ornate Buckler", TIER.NEVER), // 111 V, L65
-			new Name("Gutspike Buckler", TIER.NEVER), // 122 V, L70
-			new Name("Ancient Buckler", TIER.NEVER), // 133 V, L75
+			new Name("Leather Buckler", TIER.LOW), // 10 V
+			new Name("Wooden Buckler", TIER.LOW), // 16 V, L5
+			new Name("Plated Buckler", TIER.LOW), // 26 V, L11
+			new Name("Iron Buckler", TIER.LOW), // 33 V, L16
+			new Name("Ridged Buckler", TIER.LOW), // 43 V, L22
+			new Name("Spiked Buckler", TIER.LOW), // 49 V, L26
+			new Name("Ringed Buckler", TIER.LOW), // 60 V, L33
+			new Name("Edged Buckler", TIER.LOW), // 70 V, L39
+			new Name("Laminate Buckler", TIER.LOW), // 79 V, L45
+			new Name("Pearl Buckler", TIER.LOW), // 87 V, L50
+			new Name("Ornate Buckler", TIER.LOW), // 90 V, L52
+			new Name("Spikeward Buckler", TIER.LOW), // 93 V, L54
+			new Name("Jingling Buckler", TIER.LOW), // 101 V, L59
+			new Name("Bladeguard Buckler", TIER.LOW), // 105 V, L61
+			new Name("Ornate Buckler", TIER.LOW), // 111 V, L65
+			new Name("Gutspike Buckler", TIER.LOW), // 122 V, L70
+			new Name("Ancient Buckler", TIER.LOW), // 133 V, L75
+
 			new Name("Desert Buckler", TIER.NEVER), // 144 V, L80
 
 			// https://poe2db.tw/us/Shields#ShieldsItem
-			new Name("Splintered Tower Shield", TIER.NEVER), // 18 A
-			new Name("Painted Tower Shield", TIER.NEVER), // 29 A, L6
-			new Name("Braced Tower Shield", TIER.NEVER), // 41 A, L12
-			new Name("Barricade Tower Shield", TIER.NEVER), // 50 A, L16
-			new Name("Effigial Tower Shield", TIER.NEVER), // 60 A, L21
-			new Name("Rampart Tower Shield", TIER.NEVER), // 75 A, L28
-			new Name("Heraldric Tower Shield", TIER.NEVER), // 85 A, L33
-			new Name("Stone Tower Shield", TIER.NEVER), // 91 A, L36
-			new Name("Crucible Tower Shield", TIER.NEVER), // 110 A, L45
-			new Name("Ancestor Tower Shield", TIER.NEVER), // 121 A, L50
-			new Name("Bulwark Tower Shield", TIER.NEVER), // 129 A, L54
-			new Name("Noble Tower Shield", TIER.NEVER), // 139 A, L59
-			new Name("Goldworked Tower Shield", TIER.NEVER), // 144 A, L61
-			new Name("Royal Tower Shield", TIER.NEVER), // 152 A, L65
-			new Name("Fortress Tower Shield", TIER.NEVER), // 167 A, L70
-			new Name("Vaal Tower Shield", TIER.NEVER), // 182 A, L75
+			new Name("Splintered Tower Shield", TIER.LOW), // 18 A
+			new Name("Painted Tower Shield", TIER.LOW), // 29 A, L6
+			new Name("Braced Tower Shield", TIER.LOW), // 41 A, L12
+			new Name("Barricade Tower Shield", TIER.LOW), // 50 A, L16
+			new Name("Effigial Tower Shield", TIER.LOW), // 60 A, L21
+			new Name("Rampart Tower Shield", TIER.LOW), // 75 A, L28
+			new Name("Heraldric Tower Shield", TIER.LOW), // 85 A, L33
+			new Name("Stone Tower Shield", TIER.LOW), // 91 A, L36
+			new Name("Crucible Tower Shield", TIER.LOW), // 110 A, L45
+			new Name("Ancestor Tower Shield", TIER.LOW), // 121 A, L50
+			new Name("Bulwark Tower Shield", TIER.LOW), // 129 A, L54
+			new Name("Noble Tower Shield", TIER.LOW), // 139 A, L59
+			new Name("Goldworked Tower Shield", TIER.LOW), // 144 A, L61
+			new Name("Royal Tower Shield", TIER.LOW), // 152 A, L65
+			new Name("Fortress Tower Shield", TIER.LOW), // 167 A, L70
+			new Name("Vaal Tower Shield", TIER.LOW), // 182 A, L75
 
-			new Name("Tawhoan Tower Shield", TIER.OTHER), // 197 A, L80
+			new Name("Tawhoan Tower Shield", TIER.BAD), // 197 A, L80
 
-			new Name("Hardwood Targe", TIER.NEVER), // 10 A, 7 V
-			new Name("Pelage Targe", TIER.NEVER), // 18 A, 14 V, L8
-			new Name("Studded Targe", TIER.NEVER), // 27 A, 23 V, L16
-			new Name("Crescent Targe", TIER.NEVER), // 39 A, 34 V, L26
-			new Name("Chiseled Targe", TIER.NEVER), // 47 A, 41 V, L33
-			new Name("Feathered Targe", TIER.NEVER), // 51 A, 46 V, L37
-			new Name("Stratified Targe", TIER.NEVER), // 62 A, 56 V, L46
-			new Name("Carved Targe", TIER.NEVER), // 67 A, 61 V, L51
-			new Name("Polished Targe", TIER.NEVER), // 71 A, 64 V, L54
-			new Name("Stone Targe", TIER.NEVER), // 77 A, 70 V, L59
-			new Name("Avian Targe", TIER.NEVER), // 80 A, 73 V, L62
-			new Name("Mammoth Targe", TIER.NEVER), // 84 A, 76 V, L65
-			new Name("Baroque Targe", TIER.NEVER), // 92 A, 84V, L70
-			new Name("Soaring Targe", TIER.NEVER), // 100 A, 91 V, L75
+			new Name("Hardwood Targe", TIER.LOW), // 10 A, 7 V
+			new Name("Pelage Targe", TIER.LOW), // 18 A, 14 V, L8
+			new Name("Studded Targe", TIER.LOW), // 27 A, 23 V, L16
+			new Name("Crescent Targe", TIER.LOW), // 39 A, 34 V, L26
+			new Name("Chiseled Targe", TIER.LOW), // 47 A, 41 V, L33
+			new Name("Feathered Targe", TIER.LOW), // 51 A, 46 V, L37
+			new Name("Stratified Targe", TIER.LOW), // 62 A, 56 V, L46
+			new Name("Carved Targe", TIER.LOW), // 67 A, 61 V, L51
+			new Name("Polished Targe", TIER.LOW), // 71 A, 64 V, L54
+			new Name("Stone Targe", TIER.LOW), // 77 A, 70 V, L59
+			new Name("Avian Targe", TIER.LOW), // 80 A, 73 V, L62
+			new Name("Mammoth Targe", TIER.LOW), // 84 A, 76 V, L65
+			new Name("Baroque Targe", TIER.LOW), // 92 A, 84V, L70
+			new Name("Soaring Targe", TIER.LOW), // 100 A, 91 V, L75
+
 			new Name("Golden Targe", TIER.NEVER), // 109 A, 99 V, L80
 
-			new Name("Blazon Crest Shield", TIER.NEVER), // 10 A, 6 ES
-			new Name("Sigil Crest Shield", TIER.NEVER), // 17 A, 8 ES, L7
-			new Name("Emblem Crest Shield", TIER.NEVER), // 27 A, 12 ES, L16
-			new Name("Jingling Crest Shield", TIER.NEVER), // 41 A, 16 ES, L28
-			new Name("Sectarian Crest Shield", TIER.NEVER), // 47 A, 18 ES, L33
-			new Name("Omen Crest Shield", TIER.NEVER), // 50 A, 19 ES, L36
-			new Name("Wayward Crest Shield", TIER.NEVER), // 61 A, 22 ES, L45
-			new Name("Seer Crest Shield", TIER.NEVER), // 66 A, 24 ES, L50
-			new Name("Dekharan Crest Shield", TIER.NEVER), // 71 A, 25 ES, L54
-			new Name("Quartered Crest Shield", TIER.NEVER), // 77 A, 27 ES, L59
-			new Name("Glowering Crest Shield", TIER.NEVER), // 80 A, 28 ES, L62
-			new Name("Intricate Crest Shield", TIER.NEVER), // 84 A, 29 ES, L65
-			new Name("Sekheman Crest Shield", TIER.NEVER), // 92 A, 32 ES, L70
-			new Name("Vaal Crest Shield", TIER.NEVER), // 100 A, 35 ES, L75
+			new Name("Blazon Crest Shield", TIER.LOW), // 10 A, 6 ES
+			new Name("Sigil Crest Shield", TIER.LOW), // 17 A, 8 ES, L7
+			new Name("Emblem Crest Shield", TIER.LOW), // 27 A, 12 ES, L16
+			new Name("Jingling Crest Shield", TIER.LOW), // 41 A, 16 ES, L28
+			new Name("Sectarian Crest Shield", TIER.LOW), // 47 A, 18 ES, L33
+			new Name("Omen Crest Shield", TIER.LOW), // 50 A, 19 ES, L36
+			new Name("Wayward Crest Shield", TIER.LOW), // 61 A, 22 ES, L45
+			new Name("Seer Crest Shield", TIER.LOW), // 66 A, 24 ES, L50
+			new Name("Dekharan Crest Shield", TIER.LOW), // 71 A, 25 ES, L54
+			new Name("Quartered Crest Shield", TIER.LOW), // 77 A, 27 ES, L59
+			new Name("Glowering Crest Shield", TIER.LOW), // 80 A, 28 ES, L62
+			new Name("Intricate Crest Shield", TIER.LOW), // 84 A, 29 ES, L65
+			new Name("Sekheman Crest Shield", TIER.LOW), // 92 A, 32 ES, L70
+			new Name("Vaal Crest Shield", TIER.LOW), // 100 A, 35 ES, L75
+
 			new Name("Blacksteel Crest Shield", TIER.NEVER), // 109 A, 37 ES, L80
 		).compare(tier, operator);
 	}
 	static getArmour(tier, operator = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Helmets
-			new Name("Twig Circlet", TIER.NEVER), // 19 ES
-			new Name("Wicker Tiara", TIER.NEVER), // 28 ES, L10
-			new Name("Beaded Circlet", TIER.NEVER), // 34 ES, L16
-			new Name("Chain Tiara", TIER.NEVER), // 44 ES, L26
-			new Name("Feathered Tiara", TIER.NEVER), // 51 ES, L33
-			new Name("Gold Circlet", TIER.NEVER), // 58 ES, L40
-			new Name("Vermeil Circlet", TIER.NEVER), // 63 ES, L45
-			new Name("Jade Tiara", TIER.NEVER), // 69 ES, L50
-			new Name("Sandsworn Tiara", TIER.NEVER), // 73 ES, L54
-			new Name("Jungle Tiara", TIER.NEVER), // 78 ES, L59
-			new Name("Skycrown Tiara", TIER.NEVER), // 84 ES, L65
-			new Name("Sorcerous Tiara", TIER.NEVER), // 92 ES, L70
-			new Name("Kamasan Tiara", TIER.NEVER), // 101 ES, L75
+			new Name("Twig Circlet", TIER.LOW), // 19 ES
+			new Name("Wicker Tiara", TIER.LOW), // 28 ES, L10
+			new Name("Beaded Circlet", TIER.LOW), // 34 ES, L16
+			new Name("Chain Tiara", TIER.LOW), // 44 ES, L26
+			new Name("Feathered Tiara", TIER.LOW), // 51 ES, L33
+			new Name("Gold Circlet", TIER.LOW), // 58 ES, L40
+			new Name("Vermeil Circlet", TIER.LOW), // 63 ES, L45
+			new Name("Jade Tiara", TIER.LOW), // 69 ES, L50
+			new Name("Sandsworn Tiara", TIER.LOW), // 73 ES, L54
+			new Name("Jungle Tiara", TIER.LOW), // 78 ES, L59
+			new Name("Skycrown Tiara", TIER.LOW), // 84 ES, L65
+			new Name("Sorcerous Tiara", TIER.LOW), // 92 ES, L70
+			new Name("Kamasan Tiara", TIER.LOW), // 101 ES, L75
 
 			new Name("Ancestral Tiara", TIER.CLASS), // 109 ES, L80
 
-			new Name("Rusted Greathelm", TIER.NEVER), // 29 A
-			new Name("Soldier Greathelm", TIER.NEVER), // 66 A, L12
-			new Name("Wrapped Greathelm", TIER.NEVER), // 79 A, L16
-			new Name("Spired Greathelm", TIER.NEVER), // 116 A, L27
-			new Name("Elite Greathelm", TIER.NEVER), // 136 A, L33
-			new Name("Warrior Greathelm", TIER.NEVER), // 146 A, L36
-			new Name("Commander Greathelm", TIER.NEVER), // 176 A, L45
-			new Name("Fierce Greathelm", TIER.NEVER), // 196 A, L51
-			new Name("Elegant Greathelm", TIER.NEVER), // 206 A, L54
-			new Name("Noble Greathelm", TIER.NEVER), // 223 A, L59
-			new Name("Warmonger Greathelm", TIER.NEVER), // 243 A, L65
-			new Name("Masked Greathelm", TIER.NEVER), // 267 A, L70
-			new Name("Paragon Greathelm", TIER.NEVER), // 292 A, L75
+			new Name("Rusted Greathelm", TIER.LOW), // 29 A
+			new Name("Soldier Greathelm", TIER.LOW), // 66 A, L12
+			new Name("Wrapped Greathelm", TIER.LOW), // 79 A, L16
+			new Name("Spired Greathelm", TIER.LOW), // 116 A, L27
+			new Name("Elite Greathelm", TIER.LOW), // 136 A, L33
+			new Name("Warrior Greathelm", TIER.LOW), // 146 A, L36
+			new Name("Commander Greathelm", TIER.LOW), // 176 A, L45
+			new Name("Fierce Greathelm", TIER.LOW), // 196 A, L51
+			new Name("Elegant Greathelm", TIER.LOW), // 206 A, L54
+			new Name("Noble Greathelm", TIER.LOW), // 223 A, L59
+			new Name("Warmonger Greathelm", TIER.LOW), // 243 A, L65
+			new Name("Masked Greathelm", TIER.LOW), // 267 A, L70
+			new Name("Paragon Greathelm", TIER.LOW), // 292 A, L75
+
 			new Name("Imperial Greathelm", TIER.NEVER), // 316 A, L80
 
-			new Name("Shabby Hood", TIER.NEVER), // 19 V
-			new Name("Felt Cap", TIER.NEVER), // 48 V, L10
-			new Name("Lace Hood", TIER.NEVER), // 67 V, L16
-			new Name("Swathed Cap", TIER.NEVER), // 98 V, L26
-			new Name("Hunter Hood", TIER.NEVER), // 121 V, L33
-			new Name("Viper Cap", TIER.NEVER), // 136 V, L38
-			new Name("Corsair Cap", TIER.NEVER), // 158 V, L45
-			new Name("Leatherbound Hood", TIER.NEVER), // 174 V, L50
-			new Name("Wrapped Cap", TIER.NEVER), // 187 V, L54
-			new Name("Deerstalker Hood", TIER.NEVER), // 203 V, L59
-			new Name("Woven Cap", TIER.NEVER), // 222 V, L65
-			new Name("Desert Cap", TIER.NEVER), // 244 V, L70
-			new Name("Trapper Hood", TIER.NEVER), // 266 V, L75
+			new Name("Shabby Hood", TIER.LOW), // 19 V
+			new Name("Felt Cap", TIER.LOW), // 48 V, L10
+			new Name("Lace Hood", TIER.LOW), // 67 V, L16
+			new Name("Swathed Cap", TIER.LOW), // 98 V, L26
+			new Name("Hunter Hood", TIER.LOW), // 121 V, L33
+			new Name("Viper Cap", TIER.LOW), // 136 V, L38
+			new Name("Corsair Cap", TIER.LOW), // 158 V, L45
+			new Name("Leatherbound Hood", TIER.LOW), // 174 V, L50
+			new Name("Wrapped Cap", TIER.LOW), // 187 V, L54
+			new Name("Deerstalker Hood", TIER.LOW), // 203 V, L59
+			new Name("Woven Cap", TIER.LOW), // 222 V, L65
+			new Name("Desert Cap", TIER.LOW), // 244 V, L70
+			new Name("Trapper Hood", TIER.LOW), // 266 V, L75
+
 			new Name("Freebooter Cap", TIER.NEVER), // 288 V, L80
 
-			new Name("Brimmed Helm", TIER.NEVER), // 23 A, 18 V, L5
-			new Name("Guarded Helm", TIER.NEVER), // 34 A, 28 V, L11
-			new Name("Visored Helm", TIER.NEVER), // 44 A, 37 V, L16
-			new Name("Cowled Helm", TIER.NEVER), // 62 A, 54 V, L26
-			new Name("Shielded Helm", TIER.NEVER), // 75 A, 66 V, L33
-			new Name("Closed Helm", TIER.NEVER), // 97 A, 87 V, L45
-			new Name("Cabalist Helm", TIER.NEVER), // 113 A, 103 V, L54
-			new Name("Warded Helm", TIER.NEVER), // 134 A, 122 V, L65
-			new Name("Cryptic Helm", TIER.NEVER), // 147 A, 134 V, L70
-			new Name("Champion Helm", TIER.NEVER), // 160 A, 146 V, L75
+			new Name("Brimmed Helm", TIER.LOW), // 23 A, 18 V, L5
+			new Name("Guarded Helm", TIER.LOW), // 34 A, 28 V, L11
+			new Name("Visored Helm", TIER.LOW), // 44 A, 37 V, L16
+			new Name("Cowled Helm", TIER.LOW), // 62 A, 54 V, L26
+			new Name("Shielded Helm", TIER.LOW), // 75 A, 66 V, L33
+			new Name("Closed Helm", TIER.LOW), // 97 A, 87 V, L45
+			new Name("Cabalist Helm", TIER.LOW), // 113 A, 103 V, L54
+			new Name("Warded Helm", TIER.LOW), // 134 A, 122 V, L65
+			new Name("Cryptic Helm", TIER.LOW), // 147 A, 134 V, L70
+			new Name("Champion Helm", TIER.LOW), // 160 A, 146 V, L75
+
 			new Name("Gladiatorial Helm", TIER.NEVER), // 174 A, 159 V, L80
 
-			new Name("Iron Crown", TIER.NEVER), // 23 A, 12 ES, L5
-			new Name("Horned Crown", TIER.NEVER), // 33 A, 15 ES, L10
-			new Name("Cultist Crown", TIER.NEVER), // 44 A, 19 ES, L16
-			new Name("Martyr Crown", TIER.NEVER), // 66 A, 25 ES, L28
-			new Name("Heavy Crown", TIER.NEVER), // 75 A, 28 ES, L33
-			new Name("Spiritbone Crown", TIER.NEVER), // 97 A, 35 ES, L45
-			new Name("Hallowed Crown", TIER.NEVER), // 113 A, 40 ES, L54
-			new Name("Inquisitor Crown", TIER.NEVER), // 123 A, 43 ES, L59
-			new Name("Druidic Crown", TIER.NEVER), // 134 A, 46 ES, L65
-			new Name("Saintly Crown", TIER.NEVER), // 147 A, 51 ES, L70
-			new Name("Divine Crown", TIER.NEVER), // 160 A, 55 ES, L75
+			new Name("Iron Crown", TIER.LOW), // 23 A, 12 ES, L5
+			new Name("Horned Crown", TIER.LOW), // 33 A, 15 ES, L10
+			new Name("Cultist Crown", TIER.LOW), // 44 A, 19 ES, L16
+			new Name("Martyr Crown", TIER.LOW), // 66 A, 25 ES, L28
+			new Name("Heavy Crown", TIER.LOW), // 75 A, 28 ES, L33
+			new Name("Spiritbone Crown", TIER.LOW), // 97 A, 35 ES, L45
+			new Name("Hallowed Crown", TIER.LOW), // 113 A, 40 ES, L54
+			new Name("Inquisitor Crown", TIER.LOW), // 123 A, 43 ES, L59
+			new Name("Druidic Crown", TIER.LOW), // 134 A, 46 ES, L65
+			new Name("Saintly Crown", TIER.LOW), // 147 A, 51 ES, L70
+			new Name("Divine Crown", TIER.LOW), // 160 A, 55 ES, L75
+
 			new Name("Cryptic Crown", TIER.NEVER), // 174 A, 60 ES, L80
 
-			new Name("Hewn Mask", TIER.NEVER), // 18 V, 12 ES, L5
-			new Name("Face Mask", TIER.NEVER), // 26 V, 15 ES, L10
-			new Name("Hooded Mask", TIER.NEVER), // 37 V, 19 ES, L16
-			new Name("Veiled Mask", TIER.NEVER), // 58 V, 25 ES, L28
-			new Name("Tribal Mask", TIER.NEVER), // 66 V, 28 ES, L33
-			new Name("Solid Mask", TIER.NEVER), // 87 V, 35 ES, L45
-			new Name("Pariah Mask", TIER.NEVER), // 103 V, 40 ES, L54
-			new Name("Avian Mask", TIER.NEVER), // 111 V, 43 ES, L59
-			new Name("Brigand Mask", TIER.NEVER), // 122 V, 46 ES, L65
-			new Name("Faridun Mask", TIER.NEVER), // 134 V, 51 ES, L70
-			new Name("Soaring Mask", TIER.NEVER), // 146 V, 55 ES, L75
+			new Name("Hewn Mask", TIER.LOW), // 18 V, 12 ES, L5
+			new Name("Face Mask", TIER.LOW), // 26 V, 15 ES, L10
+			new Name("Hooded Mask", TIER.LOW), // 37 V, 19 ES, L16
+			new Name("Veiled Mask", TIER.LOW), // 58 V, 25 ES, L28
+			new Name("Tribal Mask", TIER.LOW), // 66 V, 28 ES, L33
+			new Name("Solid Mask", TIER.LOW), // 87 V, 35 ES, L45
+			new Name("Pariah Mask", TIER.LOW), // 103 V, 40 ES, L54
+			new Name("Avian Mask", TIER.LOW), // 111 V, 43 ES, L59
+			new Name("Brigand Mask", TIER.LOW), // 122 V, 46 ES, L65
+			new Name("Faridun Mask", TIER.LOW), // 134 V, 51 ES, L70
+			new Name("Soaring Mask", TIER.LOW), // 146 V, 55 ES, L75
+
 			new Name("Grinning Mask", TIER.NEVER), // 159 V, 60 ES, L80
 
 			// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
-			new Name("Tattered Robe", TIER.NEVER), // 28 ES
-			new Name("Feathered Robe", TIER.NEVER), // 35 ES, L5
-			new Name("Hexer's Robe", TIER.NEVER), // 44 ES, L11
-			new Name("Bone Raiment", TIER.NEVER), // 52 ES, L16
-			new Name("Silk Robe", TIER.NEVER), // 61 ES, L22
-			new Name("Keth Raiment", TIER.NEVER), // 70 ES, L28
-			new Name("Votive Raiment", TIER.NEVER), // 78 ES, L33
-			new Name("Altar Robe", TIER.NEVER), // 89 ES, L40
-			new Name("Elementalist Robe", TIER.NEVER), // 97 ES, L45
-			new Name("Mystic Raiment", TIER.NEVER), // 103 ES, L49
-			new Name("River Raiment", TIER.NEVER), // 111 ES, L54
-			new Name("Adherent's Raiment", TIER.NEVER), // 119 ES, L59
-			new Name("Ceremonial Robe", TIER.NEVER), /// 123 ES, L62
+			new Name("Tattered Robe", TIER.LOW), // 28 ES
+			new Name("Feathered Robe", TIER.LOW), // 35 ES, L5
+			new Name("Hexer's Robe", TIER.LOW), // 44 ES, L11
+			new Name("Bone Raiment", TIER.LOW), // 52 ES, L16
+			new Name("Silk Robe", TIER.LOW), // 61 ES, L22
+			new Name("Keth Raiment", TIER.LOW), // 70 ES, L28
+			new Name("Votive Raiment", TIER.LOW), // 78 ES, L33
+			new Name("Altar Robe", TIER.LOW), // 89 ES, L40
+			new Name("Elementalist Robe", TIER.LOW), // 97 ES, L45
+			new Name("Mystic Raiment", TIER.LOW), // 103 ES, L49
+			new Name("River Raiment", TIER.LOW), // 111 ES, L54
+			new Name("Adherent's Raiment", TIER.LOW), // 119 ES, L59
+			new Name("Ceremonial Robe", TIER.LOW), /// 123 ES, L62
 
-			new Name("Feathered Raiment", TIER.BAD), /// 153 ES, L80, 5–10% of Damage is taken from Mana before Life
-			new Name("Flowing Raiment", TIER.BAD), /// 153 ES, L70, 40–50% increased Mana Regeneration Rate
+			new Name("Sacramental Robe", TIER.BAD), /// 153 ES, L75, 40–50% faster start of Energy Shield Recharge
 
-			new Name("Sacramental Robe", TIER.OTHER), /// 153 ES, L75, 40–50% faster start of Energy Shield Recharge
+			new Name("Flowing Raiment", TIER.OTHER), /// 153 ES, L70, 40–50% increased Mana Regeneration Rate
+			new Name("Feathered Raiment", TIER.OTHER), /// 153 ES, L80, 5–10% of Damage is taken from Mana before Life
 
 			new Name("Vile Robe", TIER.CLASS), /// 184 ES, L65
 
-			new Name("Rusted Cuirass", TIER.NEVER), // 45 A
-			new Name("Fur Plate", TIER.NEVER), // 60 A, L4
-			new Name("Iron Cuirass", TIER.NEVER), // 96 A, L11
-			new Name("Raider Plate", TIER.NEVER), // 121 A, L16
-			new Name("Maraketh Cuirass", TIER.NEVER), // 141 A, L20
-			new Name("Steel Plate", TIER.NEVER), // 177 A, L27
-			new Name("Full Plate", TIER.NEVER), // 208 A, L33
-			new Name("Vaal Cuirass", TIER.NEVER), // 228 A, L37
-			new Name("Juggernaut Plate", TIER.NEVER), // 269 A, L45
-			new Name("Chieftain Cuirass", TIER.NEVER), // 294 A, L50
-			new Name("Elegant Plate", TIER.NEVER), // 315 A, L54
-			new Name("Heavy Plate", TIER.NEVER), // 340 A, L59
-			new Name("Stone Cuirass", TIER.NEVER), // 355 A, L62
+			new Name("Rusted Cuirass", TIER.LOW), // 45 A
+			new Name("Fur Plate", TIER.LOW), // 60 A, L4
+			new Name("Iron Cuirass", TIER.LOW), // 96 A, L11
+			new Name("Raider Plate", TIER.LOW), // 121 A, L16
+			new Name("Maraketh Cuirass", TIER.LOW), // 141 A, L20
+			new Name("Steel Plate", TIER.LOW), // 177 A, L27
+			new Name("Full Plate", TIER.LOW), // 208 A, L33
+			new Name("Vaal Cuirass", TIER.LOW), // 228 A, L37
+			new Name("Juggernaut Plate", TIER.LOW), // 269 A, L45
+			new Name("Chieftain Cuirass", TIER.LOW), // 294 A, L50
+			new Name("Elegant Plate", TIER.LOW), // 315 A, L54
+			new Name("Heavy Plate", TIER.LOW), // 340 A, L59
+			new Name("Stone Cuirass", TIER.LOW), // 355 A, L62
+
 			new Name("Ornate Plate", TIER.NEVER), // 445 A, L70, Regenerate 1.5–2.5% of maximum Life per second
 			new Name("Utzaal Cuirass", TIER.NEVER), // 445 A, L75, 30–40% increased Stun Threshold
 
-			new Name("Soldier Cuirass", TIER.BAD), // 524 A, L65
-
+			new Name("Soldier Cuirass", TIER.OTHER), // 524 A, L65
 			new Name("Warlord Cuirass", TIER.OTHER), // 445 A, L80, +15–25% of Armour also applies to Elemental Damage
 
-			new Name("Leather Vest", TIER.NEVER), // 30 V
-			new Name("Quilted Vest", TIER.NEVER), // 44 V, L4
-			new Name("Pathfinder Coat", TIER.NEVER), // 78 V, L11
-			new Name("Shrouded Vest", TIER.NEVER), // 102 V, L16
-			new Name("Rhoahide Coat", TIER.NEVER), // 131 V, L22
-			new Name("Studded Vest", TIER.NEVER), // 150 V, L26
-			new Name("Scout's Vest", TIER.NEVER), // 184 V, L33
-			new Name("Serpentscale Coat", TIER.NEVER), // 198 V, L36
-			new Name("Corsair Vest", TIER.NEVER), // 242 V, L45
-			new Name("Smuggler Coat", TIER.NEVER), // 271 V, L51
-			new Name("Layered Vest", TIER.NEVER), // 285 V, L54
-			new Name("Runner Vest", TIER.NEVER), // 309 V, L59
-			new Name("Lizardscale Coat", TIER.NEVER), // 324 V, L62
+			new Name("Leather Vest", TIER.LOW), // 30 V
+			new Name("Quilted Vest", TIER.LOW), // 44 V, L4
+			new Name("Pathfinder Coat", TIER.LOW), // 78 V, L11
+			new Name("Shrouded Vest", TIER.LOW), // 102 V, L16
+			new Name("Rhoahide Coat", TIER.LOW), // 131 V, L22
+			new Name("Studded Vest", TIER.LOW), // 150 V, L26
+			new Name("Scout's Vest", TIER.LOW), // 184 V, L33
+			new Name("Serpentscale Coat", TIER.LOW), // 198 V, L36
+			new Name("Corsair Vest", TIER.LOW), // 242 V, L45
+			new Name("Smuggler Coat", TIER.LOW), // 271 V, L51
+			new Name("Layered Vest", TIER.LOW), // 285 V, L54
+			new Name("Runner Vest", TIER.LOW), // 309 V, L59
+			new Name("Lizardscale Coat", TIER.LOW), // 324 V, L62
+
 			new Name("Swiftstalker Coat", TIER.NEVER), // 406 V, L65, 20–30% reduced Slowing Potency of Debuffs on You
 			new Name("Wyrmscale Coat", TIER.NEVER), // 406 V, L75, 30–40% increased Elemental Ailment Threshold
 
@@ -952,50 +968,53 @@ export class NameManager {
 
 			new Name("Slipstrike Vest", TIER.OTHER), // 487 V, L70
 
-			new Name("Chain Mail", TIER.NEVER), // 25 A, 16 V
-			new Name("Rogue Armour", TIER.NEVER), // 53 A, 43 V, L11
-			new Name("Vagabond Armour", TIER.NEVER), // 67 A, 56 V, L16
-			new Name("Cloaked Mail", TIER.NEVER), // 95 A, 83 V, L26
-			new Name("Explorer Armour", TIER.NEVER), // 114 A, 101 V, L33
-			new Name("Scale Mail", TIER.NEVER), // 125 A, 112 V, L37
-			new Name("Knight Armour", TIER.NEVER), // 148 A, 133 V, L45
-			new Name("Ancestral Mail", TIER.NEVER), // 162 A, 146 V, L50
-			new Name("Mantled Mail", TIER.NEVER), // 173 A, 157 V, L54
-			new Name("Trailblazer Armour", TIER.NEVER), // 187 A, 170 V, L59
-			new Name("Golden Mail", TIER.NEVER), // 195 A, 178 V, L62
+			new Name("Chain Mail", TIER.LOW), // 25 A, 16 V
+			new Name("Rogue Armour", TIER.LOW), // 53 A, 43 V, L11
+			new Name("Vagabond Armour", TIER.LOW), // 67 A, 56 V, L16
+			new Name("Cloaked Mail", TIER.LOW), // 95 A, 83 V, L26
+			new Name("Explorer Armour", TIER.LOW), // 114 A, 101 V, L33
+			new Name("Scale Mail", TIER.LOW), // 125 A, 112 V, L37
+			new Name("Knight Armour", TIER.LOW), // 148 A, 133 V, L45
+			new Name("Ancestral Mail", TIER.LOW), // 162 A, 146 V, L50
+			new Name("Mantled Mail", TIER.LOW), // 173 A, 157 V, L54
+			new Name("Trailblazer Armour", TIER.LOW), // 187 A, 170 V, L59
+			new Name("Golden Mail", TIER.LOW), // 195 A, 178 V, L62
+
 			new Name("Dastard Armour", TIER.NEVER), // 245 A, 223 V, L65, +60–80 to maximum Life
 			new Name("Shrouded Mail", TIER.NEVER), // 245 A, 223 V, L70, +20–25% to Fire/Cold/Lightning Resistance
+			new Name("Death Mail", TIER.NEVER), // 294 A, 268 V, L75
 			new Name("Thane Mail", TIER.NEVER), // 245 A, 223 V, L80, Hits against you have 15–25% reduced Critical Damage Bonus
 
-			new Name("Death Mail", TIER.BAD), // 294 A, 268 V, L75
+			new Name("Pilgrim Vestments", TIER.LOW), // 25 A, 16 ES
+			new Name("Pelt Mantle", TIER.LOW), // 50 A, 23 ES, L10
+			new Name("Mail Vestments", TIER.LOW), // 67 A, 28 ES, L16
+			new Name("Shaman Mantle", TIER.LOW), // 100 A, 39 ES, L28
+			new Name("Ironclad Vestments", TIER.LOW), // 114 A, 43 ES, L33
+			new Name("Sacrificial Mantle", TIER.LOW), // 123 A, 46 ES, L36
+			new Name("Cleric Vestments", TIER.LOW), // 148 A, 53 ES, L45
+			new Name("Tideseer Mantle", TIER.LOW), // 165 A, 58 ES, L51
+			new Name("Occultist Mantle", TIER.LOW), // 173 A, 61 ES, L54
+			new Name("Plated Vestments", TIER.LOW), // 187 A, 65 ES, L59
+			new Name("Heartcarver Mantle", TIER.LOW), // 195 A, 68 ES, L62
 
-			new Name("Pilgrim Vestments", TIER.NEVER), // 25 A, 16 ES
-			new Name("Pelt Mantle", TIER.NEVER), // 50 A, 23 ES, L10
-			new Name("Mail Vestments", TIER.NEVER), // 67 A, 28 ES, L16
-			new Name("Shaman Mantle", TIER.NEVER), // 100 A, 39 ES, L28
-			new Name("Ironclad Vestments", TIER.NEVER), // 114 A, 43 ES, L33
-			new Name("Sacrificial Mantle", TIER.NEVER), // 123 A, 46 ES, L36
-			new Name("Cleric Vestments", TIER.NEVER), // 148 A, 53 ES, L45
-			new Name("Tideseer Mantle", TIER.NEVER), // 165 A, 58 ES, L51
-			new Name("Occultist Mantle", TIER.NEVER), // 173 A, 61 ES, L54
-			new Name("Plated Vestments", TIER.NEVER), // 187 A, 65 ES, L59
-			new Name("Heartcarver Mantle", TIER.NEVER), // 195 A, 68 ES, L62
-			new Name("Wolfskin Mantle", TIER.NEVER), // 294 A, 101 ES, L65
 			new Name("Conjurer Mantle", TIER.NEVER), // 245 A, 84 ES, L70, +20–30 to Spirit
 			new Name("Death Mantle", TIER.NEVER), // 245 A, 84 ES, L75, +1% to all Maximum Elemental Resistances
 			new Name("Seastorm Mantle", TIER.NEVER), // 245 A, 84 ES, L80, 8–14% of Damage taken Recouped as Life
 
-			new Name("Hermit Garb", TIER.NEVER), // 16 V, 16 ES
-			new Name("Waxed Jacket", TIER.NEVER), // 43 V, 24 ES, L11
-			new Name("Marabout Garb", TIER.NEVER), // 56 V, 28 ES, L16
-			new Name("Wayfarer Jacket", TIER.NEVER), // 88 V, 39 ES, L28
-			new Name("Anchorite Garb", TIER.NEVER), // 101 V, 43 ES, L33
-			new Name("Scalper's Jacket", TIER.NEVER), // 117 V, 48 ES, L39
-			new Name("Scoundrel Jacket", TIER.NEVER), // 133 V, 53 ES, L45
-			new Name("Ascetic Garb", TIER.NEVER), // 149 V, 58 ES, L51
-			new Name("Itinerant Jacket", TIER.NEVER), // 157 V, 61 ES, L54
-			new Name("Hatungo Garb", TIER.NEVER), // 170 V, 65 ES, L59
-			new Name("Hawker's Jacket", TIER.NEVER), // 178 V, 68 ES, L62
+			new Name("Wolfskin Mantle", TIER.BAD), // 294 A, 101 ES, L65
+
+			new Name("Hermit Garb", TIER.LOW), // 16 V, 16 ES
+			new Name("Waxed Jacket", TIER.LOW), // 43 V, 24 ES, L11
+			new Name("Marabout Garb", TIER.LOW), // 56 V, 28 ES, L16
+			new Name("Wayfarer Jacket", TIER.LOW), // 88 V, 39 ES, L28
+			new Name("Anchorite Garb", TIER.LOW), // 101 V, 43 ES, L33
+			new Name("Scalper's Jacket", TIER.LOW), // 117 V, 48 ES, L39
+			new Name("Scoundrel Jacket", TIER.LOW), // 133 V, 53 ES, L45
+			new Name("Ascetic Garb", TIER.LOW), // 149 V, 58 ES, L51
+			new Name("Itinerant Jacket", TIER.LOW), // 157 V, 61 ES, L54
+			new Name("Hatungo Garb", TIER.LOW), // 170 V, 65 ES, L59
+			new Name("Hawker's Jacket", TIER.LOW), // 178 V, 68 ES, L62
+
 			new Name("Austere Garb", TIER.NEVER), // 223 V, 84 ES, L80, 10–15% reduced Elemental Ailment Duration on you
 
 			new Name("Rambler Jacket", TIER.BAD), // 223 V, 84 ES, L70, +7–13% to Chaos Resistance
@@ -1004,161 +1023,165 @@ export class NameManager {
 			new Name("Falconer's Jacket", TIER.OTHER), // 223 V, 84 ES, L75, 5% increased Movement Speed
 
 			// https://poe2db.tw/us/Gloves
-			new Name("Torn Gloves", TIER.NEVER), // 9 ES
-			new Name("Sombre Gloves", TIER.NEVER), // 15 ES, L12
-			new Name("Stitched Gloves", TIER.NEVER), // 17 ES, L16
-			new Name("Jewelled Gloves", TIER.NEVER), // 22 ES, L26
-			new Name("Intricate Gloves", TIER.NEVER), // 26 ES, L33
-			new Name("Pauascale Gloves", TIER.NEVER), // 32 ES, L45
-			new Name("Embroidered Gloves", TIER.NEVER), // 35 ES, L52
-			new Name("Baroque Gloves", TIER.NEVER), // 36 ES, L54
-			new Name("Gold Gloves", TIER.NEVER), // 39 ES, L59
-			new Name("Grim Gloves", TIER.NEVER), // 42 ES, L65
-			new Name("Opulent Gloves", TIER.NEVER), // 46 ES, L70
-			new Name("Vaal Gloves", TIER.NEVER), // 50 ES, L75
+			new Name("Torn Gloves", TIER.LOW), // 9 ES
+			new Name("Sombre Gloves", TIER.LOW), // 15 ES, L12
+			new Name("Stitched Gloves", TIER.LOW), // 17 ES, L16
+			new Name("Jewelled Gloves", TIER.LOW), // 22 ES, L26
+			new Name("Intricate Gloves", TIER.LOW), // 26 ES, L33
+			new Name("Pauascale Gloves", TIER.LOW), // 32 ES, L45
+			new Name("Embroidered Gloves", TIER.LOW), // 35 ES, L52
+			new Name("Baroque Gloves", TIER.LOW), // 36 ES, L54
+			new Name("Gold Gloves", TIER.LOW), // 39 ES, L59
+			new Name("Grim Gloves", TIER.LOW), // 42 ES, L65
+			new Name("Opulent Gloves", TIER.LOW), // 46 ES, L70
+			new Name("Vaal Gloves", TIER.LOW), // 50 ES, L75
 
 			new Name("Sirenscale Gloves", TIER.CLASS), // 54 ES, L80
 
-			new Name("Stocky Mitts", TIER.NEVER), // 15 A
-			new Name("Riveted Mitts", TIER.NEVER), // 31 A, L11
-			new Name("Tempered Mitts", TIER.NEVER), // 40 A, L16
-			new Name("Bolstered Mitts", TIER.NEVER), // 58 A, L27
-			new Name("Moulded Mitts", TIER.NEVER), // 68 A, L33
-			new Name("Detailed Mitts", TIER.NEVER), // 88 A, L45
-			new Name("Ancient Mitts", TIER.NEVER), // 103 A, L54
-			new Name("Feathered Mitts", TIER.NEVER), // 111 A, L59
-			new Name("Knightly Mitts", TIER.NEVER), // 122 A, L65
-			new Name("Ornate Mitts", TIER.NEVER), // 134 A, L70
-			new Name("Vaal Mitts", TIER.NEVER), // 146 A, L75
+			new Name("Stocky Mitts", TIER.LOW), // 15 A
+			new Name("Riveted Mitts", TIER.LOW), // 31 A, L11
+			new Name("Tempered Mitts", TIER.LOW), // 40 A, L16
+			new Name("Bolstered Mitts", TIER.LOW), // 58 A, L27
+			new Name("Moulded Mitts", TIER.LOW), // 68 A, L33
+			new Name("Detailed Mitts", TIER.LOW), // 88 A, L45
+			new Name("Ancient Mitts", TIER.LOW), // 103 A, L54
+			new Name("Feathered Mitts", TIER.LOW), // 111 A, L59
+			new Name("Knightly Mitts", TIER.LOW), // 122 A, L65
+			new Name("Ornate Mitts", TIER.LOW), // 134 A, L70
+			new Name("Vaal Mitts", TIER.LOW), // 146 A, L75
 
 			new Name("Massive Mitts", TIER.BAD), // 158 A, L80
 
-			new Name("Suede Bracers", TIER.NEVER), // 10 V
-			new Name("Firm Bracers", TIER.NEVER), // 26 V, L11
-			new Name("Bound Bracers", TIER.NEVER), // 33 V, L16
-			new Name("Sectioned Bracers", TIER.NEVER), // 52 V, L28
-			new Name("Spined Bracers", TIER.NEVER), // 60 V, L33
-			new Name("Fine Bracers", TIER.NEVER), // 79 V, L45
-			new Name("Refined Bracers", TIER.NEVER), // 93 V, L54
-			new Name("Spiked Bracers", TIER.NEVER), // 101 V, L59
-			new Name("Stalking Bracers", TIER.NEVER), // 111 V, L65
-			new Name("Grand Bracers", TIER.NEVER), // 122 V, L70
-			new Name("Barbed Bracers", TIER.NEVER), // 133 V, L75
+			new Name("Suede Bracers", TIER.LOW), // 10 V
+			new Name("Firm Bracers", TIER.LOW), // 26 V, L11
+			new Name("Bound Bracers", TIER.LOW), // 33 V, L16
+			new Name("Sectioned Bracers", TIER.LOW), // 52 V, L28
+			new Name("Spined Bracers", TIER.LOW), // 60 V, L33
+			new Name("Fine Bracers", TIER.LOW), // 79 V, L45
+			new Name("Refined Bracers", TIER.LOW), // 93 V, L54
+			new Name("Spiked Bracers", TIER.LOW), // 101 V, L59
+			new Name("Stalking Bracers", TIER.LOW), // 111 V, L65
+			new Name("Grand Bracers", TIER.LOW), // 122 V, L70
+			new Name("Barbed Bracers", TIER.LOW), // 133 V, L75
 
-			new Name("Polished Bracers", TIER.OTHER), // 144 V, L80
+			new Name("Polished Bracers", TIER.NEVER), // 144 V, L80
 
-			new Name("Ringmail Gauntlets", TIER.NEVER), // 13 A, 10 V, L6
-			new Name("Layered Gauntlets", TIER.NEVER), // 22 A, 18 V, L16
-			new Name("Doubled Gauntlets", TIER.NEVER), // 37 A, 33 V, L33
-			new Name("Plate Gauntlets", TIER.NEVER), // 48 A, 44 V, L45
-			new Name("Zealot Gauntlets", TIER.NEVER), // 61 A, 56 V, L59
-			new Name("Steelmail Gauntlets", TIER.NEVER), // 67 A, 61 V, L65
-			new Name("Commander Gauntlets", TIER.NEVER), // 74 A, 67 V, L70
-			new Name("Cultist Gauntlets", TIER.NEVER), // 80 A, 73 V, L75
+			new Name("Ringmail Gauntlets", TIER.LOW), // 13 A, 10 V, L6
+			new Name("Layered Gauntlets", TIER.LOW), // 22 A, 18 V, L16
+			new Name("Doubled Gauntlets", TIER.LOW), // 37 A, 33 V, L33
+			new Name("Plate Gauntlets", TIER.LOW), // 48 A, 44 V, L45
+			new Name("Zealot Gauntlets", TIER.LOW), // 61 A, 56 V, L59
+			new Name("Steelmail Gauntlets", TIER.LOW), // 67 A, 61 V, L65
+			new Name("Commander Gauntlets", TIER.LOW), // 74 A, 67 V, L70
+			new Name("Cultist Gauntlets", TIER.LOW), // 80 A, 73 V, L75
+
 			new Name("Blacksteel Gauntlets", TIER.NEVER), // 87 A, 79 V, L80
 
-			new Name("Rope Cuffs", TIER.NEVER), // 12 A, 6 ES, L5
-			new Name("Aged Cuffs", TIER.NEVER), // 22 A, 9 ES, L16
-			new Name("Goldcast Cuffs", TIER.NEVER), // 37 A, 14 ES, L33
-			new Name("Verisium Cuffs", TIER.NEVER), // 48 A, 17 ES, L45
-			new Name("Ornate Cuffs", TIER.NEVER), // 61 A, 21 ES, L59
-			new Name("Bound Cuffs", TIER.NEVER), // 67 A, 23 ES, L65
-			new Name("Ancient Cuffs", TIER.NEVER), // 74 A, 25 ES, L70
-			new Name("Gleaming Cuffs", TIER.NEVER), // 80 A, 28 ES, L75
+			new Name("Rope Cuffs", TIER.LOW), // 12 A, 6 ES, L5
+			new Name("Aged Cuffs", TIER.LOW), // 22 A, 9 ES, L16
+			new Name("Goldcast Cuffs", TIER.LOW), // 37 A, 14 ES, L33
+			new Name("Verisium Cuffs", TIER.LOW), // 48 A, 17 ES, L45
+			new Name("Ornate Cuffs", TIER.LOW), // 61 A, 21 ES, L59
+			new Name("Bound Cuffs", TIER.LOW), // 67 A, 23 ES, L65
+			new Name("Ancient Cuffs", TIER.LOW), // 74 A, 25 ES, L70
+			new Name("Gleaming Cuffs", TIER.LOW), // 80 A, 28 ES, L75
+
 			new Name("Adherent Cuffs", TIER.NEVER), // 87 A, 30 ES, L80
 
-			new Name("Gauze Wraps", TIER.NEVER), // 8 V, 6 ES, L4
-			new Name("Linen Wraps", TIER.NEVER), // 18 V, 9 ES, L16
-			new Name("Spiral Wraps", TIER.NEVER), // 33 V, 14 ES, L33
-			new Name("Buckled Wraps", TIER.NEVER), // 44 V, 17 ES, L45
-			new Name("Adorned Wraps", TIER.NEVER), // 56 V, 21 ES, L59
-			new Name("War Wraps", TIER.NEVER), // 61 V, 23 ES, L65
-			new Name("Elegant Wraps", TIER.NEVER), // 67 V, 25 ES, L70
-			new Name("Vaal Wraps", TIER.NEVER), // 73 V, 28 ES, L75
+			new Name("Gauze Wraps", TIER.LOW), // 8 V, 6 ES, L4
+			new Name("Linen Wraps", TIER.LOW), // 18 V, 9 ES, L16
+			new Name("Spiral Wraps", TIER.LOW), // 33 V, 14 ES, L33
+			new Name("Buckled Wraps", TIER.LOW), // 44 V, 17 ES, L45
+			new Name("Adorned Wraps", TIER.LOW), // 56 V, 21 ES, L59
+			new Name("War Wraps", TIER.LOW), // 61 V, 23 ES, L65
+			new Name("Elegant Wraps", TIER.LOW), // 67 V, 25 ES, L70
+			new Name("Vaal Wraps", TIER.LOW), // 73 V, 28 ES, L75
 
 			new Name("Secured Wraps", TIER.BAD), // 79 V, 30 ES, L80
 
 			// https://poe2db.tw/us/Boots#BootsItem
-			new Name("Straw Sandals", TIER.NEVER), // 14 ES
-			new Name("Wrapped Sandals", TIER.NEVER), // 22 ES, L11
-			new Name("Lattice Sandals", TIER.NEVER), // 25 ES, L16
-			new Name("Silk Slippers", TIER.NEVER), // 34 ES, L27
-			new Name("Feathered Sandals", TIER.NEVER), // 38 ES, L33
-			new Name("Flax Sandals", TIER.NEVER), // 48 ES, L45
-			new Name("Elegant Slippers", TIER.NEVER), // 54 ES, L54
-			new Name("Dunerunner Sandals", TIER.NEVER), // 58 ES, L59
-			new Name("Bound Sandals", TIER.NEVER), // 63 ES, L65
-			new Name("Luxurious Slippers", TIER.NEVER), // 69 ES, L70
-			new Name("Sandsworn Sandals", TIER.NEVER), // 75 ES, L75
+			new Name("Straw Sandals", TIER.LOW), // 14 ES
+			new Name("Wrapped Sandals", TIER.LOW), // 22 ES, L11
+			new Name("Lattice Sandals", TIER.LOW), // 25 ES, L16
+			new Name("Silk Slippers", TIER.LOW), // 34 ES, L27
+			new Name("Feathered Sandals", TIER.LOW), // 38 ES, L33
+			new Name("Flax Sandals", TIER.LOW), // 48 ES, L45
+			new Name("Elegant Slippers", TIER.LOW), // 54 ES, L54
+			new Name("Dunerunner Sandals", TIER.LOW), // 58 ES, L59
+			new Name("Bound Sandals", TIER.LOW), // 63 ES, L65
+			new Name("Luxurious Slippers", TIER.LOW), // 69 ES, L70
+			new Name("Sandsworn Sandals", TIER.LOW), // 75 ES, L75
 
 			new Name("Sekhema Sandals", TIER.OTHER), // 82 ES, L80
 
-			new Name("Rough Greaves", TIER.NEVER), // 22 A
-			new Name("Iron Greaves", TIER.NEVER), // 47 A, L11
-			new Name("Bronze Greaves", TIER.NEVER), // 60 A, L16
-			new Name("Trimmed Greaves", TIER.NEVER), // 87 A, L27
-			new Name("Stone Greaves", TIER.NEVER), // 102 A, L33
-			new Name("Reefsteel Greaves", TIER.NEVER), // 132 A, L45
-			new Name("Elegant Greaves", TIER.NEVER), // 155 A, L54
-			new Name("Carved Greaves", TIER.NEVER), // 167 A, L59
-			new Name("Bulwark Greaves", TIER.NEVER), // 182 A, L65
-			new Name("Ornate Greaves", TIER.NEVER), // 200 A, L70
-			new Name("Vaal Greaves", TIER.NEVER), // 219 A, L75
+			new Name("Rough Greaves", TIER.LOW), // 22 A
+			new Name("Iron Greaves", TIER.LOW), // 47 A, L11
+			new Name("Bronze Greaves", TIER.LOW), // 60 A, L16
+			new Name("Trimmed Greaves", TIER.LOW), // 87 A, L27
+			new Name("Stone Greaves", TIER.LOW), // 102 A, L33
+			new Name("Reefsteel Greaves", TIER.LOW), // 132 A, L45
+			new Name("Elegant Greaves", TIER.LOW), // 155 A, L54
+			new Name("Carved Greaves", TIER.LOW), // 167 A, L59
+			new Name("Bulwark Greaves", TIER.LOW), // 182 A, L65
+			new Name("Ornate Greaves", TIER.LOW), // 200 A, L70
+			new Name("Vaal Greaves", TIER.LOW), // 219 A, L75
 
 			new Name("Tasalian Greaves", TIER.BAD), // 237 A, L80
 
-			new Name("Rawhide Boots", TIER.NEVER), // 15 V
-			new Name("Laced Boots", TIER.NEVER), // 38 V, L11
-			new Name("Embossed Boots", TIER.NEVER), // 50 V, L16
-			new Name("Steeltoe Boots", TIER.NEVER), // 79 V, L28
-			new Name("Lizardscale Boots", TIER.NEVER), // 90 V, L33
-			new Name("Flared Boots", TIER.NEVER), // 119 V, L45
-			new Name("Studded Boots", TIER.NEVER), // 140 V, L54
-			new Name("Serpentscale Boots", TIER.NEVER), // 152 V, L59
-			new Name("Cinched Boots", TIER.NEVER), // 166 V, L65
-			new Name("Cavalry Boots", TIER.NEVER), // 183 V, L70
-			new Name("Dragonscale Boots", TIER.NEVER), // 200 V, L75
+			new Name("Rawhide Boots", TIER.LOW), // 15 V
+			new Name("Laced Boots", TIER.LOW), // 38 V, L11
+			new Name("Embossed Boots", TIER.LOW), // 50 V, L16
+			new Name("Steeltoe Boots", TIER.LOW), // 79 V, L28
+			new Name("Lizardscale Boots", TIER.LOW), // 90 V, L33
+			new Name("Flared Boots", TIER.LOW), // 119 V, L45
+			new Name("Studded Boots", TIER.LOW), // 140 V, L54
+			new Name("Serpentscale Boots", TIER.LOW), // 152 V, L59
+			new Name("Cinched Boots", TIER.LOW), // 166 V, L65
+			new Name("Cavalry Boots", TIER.LOW), // 183 V, L70
+			new Name("Dragonscale Boots", TIER.LOW), // 200 V, L75
 
-			new Name("Drakeskin Boots", TIER.OTHER), // 216 V, L80
+			new Name("Drakeskin Boots", TIER.NEVER), // 216 V, L80
 
-			new Name("Mail Sabatons", TIER.NEVER), // 19 A, 15 V, L6
-			new Name("Braced Sabatons", TIER.NEVER), // 33 A, 28 V, L16
-			new Name("Stacked Sabatons", TIER.NEVER), // 56 A, 50 V, L33
-			new Name("Covered Sabatons", TIER.NEVER), // 73 A, 65 V, L45
-			new Name("Bastion Sabatons", TIER.NEVER), // 92 A, 84 V, L59
-			new Name("Veteran Sabatons", TIER.NEVER), // 100 A, 91 V, L65
-			new Name("Noble Sabatons", TIER.NEVER), // 110 A, 101 V, L70
-			new Name("Fortress Sabatons", TIER.NEVER), // 120 A, 110 V, L75
+			new Name("Mail Sabatons", TIER.LOW), // 19 A, 15 V, L6
+			new Name("Braced Sabatons", TIER.LOW), // 33 A, 28 V, L16
+			new Name("Stacked Sabatons", TIER.LOW), // 56 A, 50 V, L33
+			new Name("Covered Sabatons", TIER.LOW), // 73 A, 65 V, L45
+			new Name("Bastion Sabatons", TIER.LOW), // 92 A, 84 V, L59
+			new Name("Veteran Sabatons", TIER.LOW), // 100 A, 91 V, L65
+			new Name("Noble Sabatons", TIER.LOW), // 110 A, 101 V, L70
+			new Name("Fortress Sabatons", TIER.LOW), // 120 A, 110 V, L75
+
 			new Name("Blacksteel Sabatons", TIER.NEVER), // 130 A, 119 V, L80
 
-			new Name("Padded Leggings", TIER.NEVER), // 18 A, 9 ES, L5
-			new Name("Secured Leggings", TIER.NEVER), // 33 A, 14 ES, L16
-			new Name("Pelt Leggings", TIER.NEVER), // 56 A, 21 ES, L33
-			new Name("Weaver Leggings", TIER.NEVER), // 73 A, 26 ES, L45
-			new Name("Shamanistic Leggings", TIER.NEVER), // 92 A, 32 ES, L59
-			new Name("Faithful Leggings", TIER.NEVER), // 100 A, 35 ES, L65
-			new Name("Apostle Leggings", TIER.NEVER), // 110 A, 38 ES, L70
-			new Name("Warlock Leggings", TIER.NEVER), // 120 A, 42 ES, L75
+			new Name("Padded Leggings", TIER.LOW), // 18 A, 9 ES, L5
+			new Name("Secured Leggings", TIER.LOW), // 33 A, 14 ES, L16
+			new Name("Pelt Leggings", TIER.LOW), // 56 A, 21 ES, L33
+			new Name("Weaver Leggings", TIER.LOW), // 73 A, 26 ES, L45
+			new Name("Shamanistic Leggings", TIER.LOW), // 92 A, 32 ES, L59
+			new Name("Faithful Leggings", TIER.LOW), // 100 A, 35 ES, L65
+			new Name("Apostle Leggings", TIER.LOW), // 110 A, 38 ES, L70
+			new Name("Warlock Leggings", TIER.LOW), // 120 A, 42 ES, L75
 
-			new Name("Cryptic Leggings", TIER.BAD), // 130 A, 45 ES, L80
+			new Name("Cryptic Leggings", TIER.NEVER), // 130 A, 45 ES, L80
 
-			new Name("Frayed Shoes", TIER.NEVER), // 13 V, 9 ES, L5
-			new Name("Threaded Shoes", TIER.NEVER), // 28 V, 14 ES, L16
-			new Name("Hunting Shoes", TIER.NEVER), // 50 V, 21 ES, L33
-			new Name("Steelpoint Shoes", TIER.NEVER), // 65 V, 26 ES, L45
-			new Name("Treerunner Shoes", TIER.NEVER), // 84 V, 32 ES, L59
-			new Name("Wanderer Shoes", TIER.NEVER), // 91 V, 35 ES, L65
-			new Name("Charmed Shoes", TIER.NEVER), // 101 V, 38 ES, L70
-			new Name("Quickslip Shoes", TIER.NEVER), // 110 V, 42 ES, L75
+			new Name("Frayed Shoes", TIER.LOW), // 13 V, 9 ES, L5
+			new Name("Threaded Shoes", TIER.LOW), // 28 V, 14 ES, L16
+			new Name("Hunting Shoes", TIER.LOW), // 50 V, 21 ES, L33
+			new Name("Steelpoint Shoes", TIER.LOW), // 65 V, 26 ES, L45
+			new Name("Treerunner Shoes", TIER.LOW), // 84 V, 32 ES, L59
+			new Name("Wanderer Shoes", TIER.LOW), // 91 V, 35 ES, L65
+			new Name("Charmed Shoes", TIER.LOW), // 101 V, 38 ES, L70
+			new Name("Quickslip Shoes", TIER.LOW), // 110 V, 42 ES, L75
 
-			new Name("Daggerfoot Shoes", TIER.OTHER), // 119 V, 45 ES, L80
+			new Name("Daggerfoot Shoes", TIER.BAD), // 119 V, 45 ES, L80
 		).compare(tier, operator);
 	}
 	//NOTE Fractured Lake ilvl normally caps at 80 (T16), so we put them as class tier for more lenient filtering vs BiS ilvl
 	static getUncommons(tier, operator = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Amulets
-			new Name("Crimson Amulet", TIER.OTHER), // 2–4 Life Regeneration per second
+			new Name("Crimson Amulet", TIER.NEVER), // 2–4 Life Regeneration per second
+
 			new Name("Azure Amulet", TIER.OTHER), // 20–30% increased Mana Regeneration Rate
 			new Name("Amber Amulet", TIER.OTHER), // L8, +10–15 to Strength
 			new Name("Jade Amulet", TIER.OTHER), // L8, +10–15 to Dexterity
@@ -1172,18 +1195,19 @@ export class NameManager {
 			new Name("Gloam Amulet", TIER.CLASS), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
 			new Name("Penumbra Amulet", TIER.CLASS), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
 			new Name("Tenebrous Amulet", TIER.CLASS), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			new Name("Gold Amulet", TIER.CLASS), // L35, 12–20% increased Rarity of Items found
 
 			new Name("Solar Amulet", TIER.OUTLINE), // L30, +10–15 to Spirit
-			new Name("Gold Amulet", TIER.OUTLINE), // L35, 12–20% increased Rarity of Items found
 
 			// https://poe2db.tw/us/Rings
+			new Name("Iron Ring", TIER.NEVER), // Adds 1 to 4 Physical Damage to Attacks
+			new Name("Lazuli Ring", TIER.NEVER), // +20–30 to maximum Mana
 			new Name("Emerald Ring", TIER.NEVER), // L26, +120–160 to Accuracy Rating
 
-			new Name("Iron Ring", TIER.OTHER), // Adds 1 to 4 Physical Damage to Attacks
-			new Name("Lazuli Ring", TIER.OTHER), // +20–30 to maximum Mana
-			new Name("Ruby Ring", TIER.OTHER), // L8, +20–30% to Fire Resistance
-			new Name("Sapphire Ring", TIER.OTHER), // L12, +20–30% to Cold Resistance
-			new Name("Topaz Ring", TIER.OTHER), // L16, +20–30% to Lightning Resistance
+			new Name("Ruby Ring", TIER.BAD), // L8, +20–30% to Fire Resistance
+			new Name("Sapphire Ring", TIER.BAD), // L12, +20–30% to Cold Resistance
+			new Name("Topaz Ring", TIER.BAD), // L16, +20–30% to Lightning Resistance
+
 			new Name("Amethyst Ring", TIER.OTHER), // L20, +7–13% to Chaos Resistance
 			new Name("Pearl Ring", TIER.OTHER), // L32, 7–10% increased Cast Speed
 			new Name("Prismatic Ring", TIER.OTHER), // L35, +7–10% to all Elemental Resistances
@@ -1198,49 +1222,54 @@ export class NameManager {
 			new Name("Gold Ring", TIER.OUTLINE), // L40, 6–15% increased Rarity of Items found
 
 			// https://poe2db.tw/us/Belts
-			new Name("Rawhide Belt", TIER.OTHER), // 20–30% increased Life Recovery from Flasks
-			new Name("Linen Belt", TIER.OTHER), // 20–30% increased Mana Recovery from Flasks
-			new Name("Wide Belt", TIER.OTHER), // L14, 20–30% increased Flask Charges gained
+			new Name("Wide Belt", TIER.NEVER), // L14, 20–30% increased Flask Charges gained
+			new Name("Double Belt", TIER.NEVER), // L44, 20–30% increased Charm Charges gained
+
+			new Name("Rawhide Belt", TIER.BAD), // 20–30% increased Life Recovery from Flasks
+			new Name("Linen Belt", TIER.BAD), // 20–30% increased Mana Recovery from Flasks
+			new Name("Plate Belt", TIER.BAD), // L25, +100–140 to Armour
+			new Name("Mail Belt", TIER.BAD), // L40, 10–15% reduced Flask Charges used
+			new Name("Utility Belt", TIER.BAD), // L55, 20% of Flask Recovery applied Instantly
+			new Name("Fine Belt", TIER.BAD), // L62, Flasks gain 0.17 charges per Second
+
 			new Name("Long Belt", TIER.OTHER), // L20, 15–20% increased Charm Effect Duration
-			new Name("Plate Belt", TIER.OTHER), // L25, +100–140 to Armour
 			new Name("Ornate Belt", TIER.OTHER), // L31, 10–15% reduced Charm Charges used
-			new Name("Mail Belt", TIER.OTHER), // L40, 10–15% reduced Flask Charges used
-			new Name("Double Belt", TIER.OTHER), // L44, 20–30% increased Charm Charges gained
 			new Name("Heavy Belt", TIER.OTHER), // L50, 20–30% increased Stun Threshold
-			new Name("Utility Belt", TIER.OTHER), // L55, 20% of Flask Recovery applied Instantly
-			new Name("Fine Belt", TIER.OTHER), // L62, Flasks gain 0.17 charges per Second
 
 			// https://poe2db.tw/us/Flasks
-			new Name("Lesser Life Flask", TIER.NEVER), // 50, 10/60, 3s
-			new Name("Lesser Mana Flask", TIER.NEVER), // 50, 10/60, 2s
-			new Name("Medium Life Flask", TIER.NEVER), // L4, 90, 10/65, 5s
-			new Name("Medium Mana Flask", TIER.NEVER), // L4, 70, 10/65, 3s
-			new Name("Greater Life Flask", TIER.NEVER), // L10, 150, 10/70, 4s
-			new Name("Greater Mana Flask", TIER.NEVER), // L10, 90, 10/70, 2.5s
-			new Name("Grand Life Flask", TIER.NEVER), // L16, 260, 10/75, 5s
-			new Name("Grand Mana Flask", TIER.NEVER), // L16, 110, 10/75, 2.5s
-			new Name("Giant Life Flask", TIER.NEVER), // L23, 340, 10/75, 4s
-			new Name("Giant Mana Flask", TIER.NEVER), // L23, 165, 10/75, 3.5s
-			new Name("Colossal Life Flask", TIER.NEVER), // L30, 450, 10/75, 4s
-			new Name("Colossal Mana Flask", TIER.NEVER), // L30, 165, 10/75, 2.5s
-			new Name("Gargantuan Life Flask", TIER.NEVER), // L40, 710, 10/75, 5s
-			new Name("Gargantuan Mana Flask", TIER.NEVER), // L40, 185, 10/75, 2s
-			new Name("Transcendent Life Flask", TIER.NEVER), // L50, 840, 10/75, 4s
-			new Name("Transcendent Mana Flask", TIER.NEVER), // L50, 285, 10/75, 3.5s
+			new Name("Lesser Life Flask", TIER.LOW), // 50, 10/60, 3s
+			new Name("Lesser Mana Flask", TIER.LOW), // 50, 10/60, 2s
+			new Name("Medium Life Flask", TIER.LOW), // L4, 90, 10/65, 5s
+			new Name("Medium Mana Flask", TIER.LOW), // L4, 70, 10/65, 3s
+			new Name("Greater Life Flask", TIER.LOW), // L10, 150, 10/70, 4s
+			new Name("Greater Mana Flask", TIER.LOW), // L10, 90, 10/70, 2.5s
+			new Name("Grand Life Flask", TIER.LOW), // L16, 260, 10/75, 5s
+			new Name("Grand Mana Flask", TIER.LOW), // L16, 110, 10/75, 2.5s
+			new Name("Giant Life Flask", TIER.LOW), // L23, 340, 10/75, 4s
+			new Name("Giant Mana Flask", TIER.LOW), // L23, 165, 10/75, 3.5s
+			new Name("Colossal Life Flask", TIER.LOW), // L30, 450, 10/75, 4s
+			new Name("Colossal Mana Flask", TIER.LOW), // L30, 165, 10/75, 2.5s
+			new Name("Gargantuan Life Flask", TIER.LOW), // L40, 710, 10/75, 5s
+			new Name("Gargantuan Mana Flask", TIER.LOW), // L40, 185, 10/75, 2s
+			new Name("Transcendent Life Flask", TIER.LOW), // L50, 840, 10/75, 4s
+			new Name("Transcendent Mana Flask", TIER.LOW), // L50, 285, 10/75, 3.5s
 
-			new Name("Ultimate Life Flask", TIER.CLASS), // L60, 920, 10/75, 3s
+			new Name("Ultimate Life Flask", TIER.OTHER), // L60, 920, 10/75, 3s
+
 			new Name("Ultimate Mana Flask", TIER.CLASS), // L60, 310, 10/75, 3s
 
 			// https://poe2db.tw/us/Charms
-			new Name("Ruby Charm", TIER.OTHER), // L5, 20/40, 4s, +25% to Fire Resistance
-			new Name("Sapphire Charm", TIER.OTHER), // L5, 20/40, 4s, +25% to Cold Resistance
+			new Name("Ruby Charm", TIER.NEVER), // L5, 20/40, 4s, +25% to Fire Resistance
+			new Name("Sapphire Charm", TIER.NEVER), // L5, 20/40, 4s, +25% to Cold Resistance
+			new Name("Grounding Charm", TIER.NEVER), // L32, 30/40, 3s, Grants Immunity to Shock
+			new Name("Amethyst Charm", TIER.NEVER), // L40, 30/40, 4s, +18% to Chaos Resistance
+
+			new Name("Silver Charm", TIER.BAD), // L10, 20/40, 3s, Your speed is unaffected by Slows
+
 			new Name("Topaz Charm", TIER.OTHER), // L5, 20/40, 4s, +25% to Lightning Resistance
-			new Name("Silver Charm", TIER.OTHER), // L10, 20/40, 3s, Your speed is unaffected by Slows
 			new Name("Thawing Charm", TIER.OTHER), // L12, 40/40, 3s, Grants Immunity to Freeze
 			new Name("Antidote Charm", TIER.OTHER), // L24, 20/40, 3s, Grants Immunity to Poison
 			new Name("Dousing Charm", TIER.OTHER), // L32, 30/40, 3s, Grants Immunity to Ignite
-			new Name("Grounding Charm", TIER.OTHER), // L32, 30/40, 3s, Grants Immunity to Shock
-			new Name("Amethyst Charm", TIER.OTHER), // L40, 30/40, 4s, +18% to Chaos Resistance
 
 			new Name("Stone Charm", TIER.CLASS), // L8, 20/40, 3s, Cannot be Stunned
 			new Name("Staunching Charm", TIER.CLASS), // L18, 30/40, 3s, Grants Immunity to Bleeding
