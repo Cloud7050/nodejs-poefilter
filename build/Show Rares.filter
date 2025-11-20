@@ -1281,7 +1281,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == Wands Staves
 	Rarity == Magic
 	ItemLevel >= 81
@@ -1297,7 +1297,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1329,7 +1329,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == Wands Staves
 	Rarity == Rare
 	ItemLevel >= 81
@@ -1345,7 +1345,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Omen Sceptre" "Razor Quarterstaff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity == Rare
 	ItemLevel >= 82
@@ -2698,7 +2698,7 @@ Show
 	#
 
 Show
-	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Fanatic Bow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Marauding Mace" "Massive Greathammer" "Molten Hammer" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Razor Quarterstaff" "Reaping Staff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Fanatic Bow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Marauding Mace" "Massive Greathammer" "Molten Hammer" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Razor Quarterstaff" "Reaping Staff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" "of Many"
 
@@ -2726,7 +2726,7 @@ Show
 	#
 
 Show
-	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Fanatic Bow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Marauding Mace" "Massive Greathammer" "Molten Hammer" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Razor Quarterstaff" "Reaping Staff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
+	BaseType == "Akoyan Club" "Akoyan Spear" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Elegant Crossbow" "Fanatic Bow" "Flexed Crossbow" "Flying Spear" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Marauding Mace" "Massive Greathammer" "Molten Hammer" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Razor Quarterstaff" "Reaping Staff" "Ruination Maul" "Shrine Sceptre" "Siege Crossbow" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	UnidentifiedItemTier == 5
 
@@ -2780,7 +2780,7 @@ Hide
 	#
 
 Hide
-	BaseType == "Adherent Bow" "Aegis Quarterstaff" "Alloy Crossbow" "Anvil Maul" "Artillery Bow" "Ashen Staff" "Attuned Wand" "Bandit Mace" "Barbed Spear" "Barrier Quarterstaff" "Blackfire Crossbow" "Bladed Quarterstaff" "Bleak Crossbow" "Bombard Crossbow" "Bone Wand" "Branched Spear" "Brigand Mace" "Broad Spear" "Cannonade Crossbow" "Cavalry Bow" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crossblade Spear" "Crown Mace" "Crude Bow" "Crumbling Maul" "Cultist Bow" "Cultist Greathammer" "Disintegrating Maul" "Dreaming Quarterstaff" "Dualstring Bow" "Dyad Crossbow" "Engraved Crossbow" "Fanatic Greathammer" "Felled Greatclub" "Flanged Mace" "Forge Maul" "Forked Spear" "Fortified Hammer" "Gelid Staff" "Gothic Quarterstaff" "Guardian Quarterstaff" "Hardwood Spear" "Heavy Greathammer" "Hefty Quarterstaff" "Helix Spear" "Hunting Spear" "Ironhead Spear" "Ironwood Shortbow" "Jade Club" "Jagged Spear" "Leaden Greathammer" "Long Quarterstaff" "Lunar Quarterstaff" "Makeshift Crossbow" "Marching Mace" "Militant Bow" "Morning Star" "Oak Greathammer" "Orichalcum Spear" "Paralysing Staff" "Piercing Crossbow" "Plated Mace" "Pointed Maul" "Pronged Spear" "Pyrophyte Staff" "Recurve Bow" "Roaring Staff" "Sacred Maul" "Sanctified Staff" "Seaglass Spear" Shortbow "Sinister Quarterstaff" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Smooth Quarterstaff" "Solemn Maul" "Spiked Club" "Steelpoint Quarterstaff" "Stout Crossbow" "Strife Pick" "Structured Hammer" "Studded Greatclub" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Totemic Greatclub" "Tribal Bow" "Twin Bow" "Twin Crossbow" "Varnished Crossbow" "Volatile Wand" "Voltaic Staff" "War Spear" "Warden Bow" Warpick "Waxing Quarterstaff" "Winged Spear" "Wooden Club" "Wrapped Quarterstaff" "Zealot Bow"
+	BaseType == "Adherent Bow" "Aegis Quarterstaff" "Alloy Crossbow" "Anvil Maul" "Artillery Bow" "Ashen Staff" "Attuned Wand" "Bandit Mace" "Barbed Spear" "Barrier Quarterstaff" "Blackfire Crossbow" "Bladed Quarterstaff" "Bleak Crossbow" "Bombard Crossbow" "Bone Wand" "Branched Spear" "Brigand Mace" "Broad Spear" "Cannonade Crossbow" "Cavalry Bow" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crossblade Spear" "Crown Mace" "Crude Bow" "Crumbling Maul" "Cultist Bow" "Cultist Greathammer" "Disintegrating Maul" "Dreaming Quarterstaff" "Dualstring Bow" "Dyad Crossbow" "Engraved Crossbow" "Fanatic Greathammer" "Felled Greatclub" "Flanged Mace" "Forge Maul" "Forked Spear" "Fortified Hammer" "Gelid Staff" "Gothic Quarterstaff" "Guardian Quarterstaff" "Hardwood Spear" "Heavy Greathammer" "Hefty Quarterstaff" "Helix Spear" "Hunting Spear" "Ironhead Spear" "Ironwood Shortbow" "Jade Club" "Jagged Spear" "Leaden Greathammer" "Long Quarterstaff" "Lunar Quarterstaff" "Makeshift Crossbow" "Marching Mace" "Militant Bow" "Morning Star" "Oak Greathammer" "Orichalcum Spear" "Paralysing Staff" "Piercing Crossbow" "Plated Mace" "Pointed Maul" "Pronged Spear" "Pyrophyte Staff" "Recurve Bow" "Roaring Staff" "Sacred Maul" "Sanctified Staff" "Seaglass Spear" Shortbow "Sinister Quarterstaff" "Siphoning Wand" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Smooth Quarterstaff" "Solemn Maul" "Spiked Club" "Steelpoint Quarterstaff" "Stout Crossbow" "Strife Pick" "Structured Hammer" "Studded Greatclub" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Totemic Greatclub" "Tribal Bow" "Twin Bow" "Twin Crossbow" "Varnished Crossbow" "Volatile Wand" "Voltaic Staff" "War Spear" "Warden Bow" Warpick "Waxing Quarterstaff" "Winged Spear" "Wooden Club" "Wrapped Quarterstaff" "Zealot Bow"
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
 	Rarity < Unique
 

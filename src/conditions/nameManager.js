@@ -533,9 +533,9 @@ export class NameManager {
 			new Name("Bone Wand", TIER.NEVER), // Bone Blast
 			new Name("Volatile Wand", TIER.NEVER), // Volatile Dead
 			new Name("Attuned Wand", TIER.NEVER), // Mana Drain
+			new Name("Siphoning Wand", TIER.NEVER), // Power Siphon
 
 			new Name("Withered Wand", TIER.OTHER), // Chaos Bolt
-			new Name("Siphoning Wand", TIER.OTHER), // Power Siphon
 			new Name("Galvanic Wand", TIER.OTHER), // Galvanic Field
 			new Name("Dueling Wand", TIER.OTHER), // Spellslinger
 
