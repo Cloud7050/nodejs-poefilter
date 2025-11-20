@@ -57,6 +57,7 @@ const CURRENCY = new StringList("Stackable Currency");
 const OMEN = new StringList("Omen");
 const UNCUT_MAIN = new StringList("Uncut Skill Gems", "Uncut Spirit Gems");
 const UNCUT_SUPPORT = new StringList("Uncut Support Gems");
+const UNCUT = new StringList(UNCUT_MAIN, UNCUT_SUPPORT);
 const GEM = new StringList("Skill Gems", "Support Gems");
 const SOCKETABLE = new StringList("Socketable");
 const SEKHEMA = new StringList("Trial Coins");
@@ -117,6 +118,7 @@ export const CATEGORY = {
 	OMEN,
 	UNCUT_MAIN,
 	UNCUT_SUPPORT,
+	UNCUT,
 	GEM,
 	SOCKETABLE,
 	SEKHEMA,

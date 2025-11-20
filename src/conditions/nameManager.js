@@ -325,7 +325,55 @@ export class NameManager {
 		).range(min, max);
 	}
 
-	static getGems(min = undefined, max = undefined) {
+	static getUncut(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Uncut Skill Gem (Level 5)", 1 / 3),
+			new Name("Uncut Skill Gem (Level 18)", 1 / 3),
+			new Name("Uncut Support Gem (Level 5)", 1 / 2),
+			new Name("Uncut Skill Gem (Level 12)", 1 / 2),
+			new Name("Uncut Skill Gem (Level 14)", 1 / 2),
+			new Name("Uncut Skill Gem (Level 16)", 1 / 2),
+			new Name("Uncut Skill Gem (Level 17)", 1 / 2),
+			new Name("Uncut Skill Gem (Level 20)", 1 / 1.67),
+
+			new Name("Uncut Support Gem (Level 1)", 1),
+			new Name("Uncut Support Gem (Level 2)", 1),
+			new Name("Uncut Support Gem (Level 3)", 1),
+			new Name("Uncut Support Gem (Level 4)", 1),
+			new Name("Uncut Spirit Gem (Level 17)", 1),
+			new Name("Uncut Spirit Gem (Level 18)", 1),
+			new Name("Uncut Skill Gem (Level 3)", 1),
+			new Name("Uncut Skill Gem (Level 13)", 1),
+			new Name("Uncut Skill Gem (Level 15)", 1),
+			new Name("Uncut Skill Gem (Level 19)", 1),
+			new Name("Uncut Skill Gem (Level 9)", 4),
+			new Name("Uncut Skill Gem (Level 6)", 5),
+			new Name("Uncut Skill Gem (Level 11)", 5),
+			new Name("Uncut Spirit Gem (Level 13)", 6),
+			new Name("Uncut Spirit Gem (Level 11)", 10),
+			new Name("Uncut Spirit Gem (Level 12)", 10),
+			new Name("Uncut Spirit Gem (Level 19)", 10),
+			new Name("Uncut Skill Gem (Level 2)", 10),
+			new Name("Uncut Skill Gem (Level 4)", 10),
+			new Name("Uncut Skill Gem (Level 8)", 10),
+			new Name("Uncut Skill Gem (Level 10)", 10),
+			new Name("Uncut Skill Gem (Level 7)", 11),
+			new Name("Uncut Skill Gem (Level 1)", 15),
+
+			new Name("Uncut Spirit Gem (Level 10)", 28),
+			new Name("Uncut Spirit Gem (Level 5)", 30),
+			new Name("Uncut Spirit Gem (Level 6)", 41),
+			new Name("Uncut Spirit Gem (Level 16)", 45),
+			new Name("Uncut Spirit Gem (Level 7)", 55),
+			new Name("Uncut Spirit Gem (Level 14)", 70),
+			new Name("Uncut Spirit Gem (Level 15)", 80),
+			new Name("Uncut Spirit Gem (Level 4)", 143),
+			new Name("Uncut Spirit Gem (Level 9)", 311),
+			new Name("Uncut Spirit Gem (Level 8)", 480),
+			new Name("Uncut Spirit Gem (Level 20)", 700),
+		).range(min, max);
+	}
+	static getLineage(min = undefined, max = undefined) {
 		return new NameManager(
 			new Name("Tacati's Ire", 1 / 9),
 			new Name("Daresso's Passion", 1 / 8),

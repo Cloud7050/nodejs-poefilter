@@ -523,22 +523,36 @@ Show
 	MinimapIcon 0 Pink Diamond
 
 Show
-	Class == "Uncut Support Gems"
+	BaseType == "Uncut Skill Gem (Level 12)" "Uncut Skill Gem (Level 14)" "Uncut Skill Gem (Level 16)" "Uncut Skill Gem (Level 17)" "Uncut Skill Gem (Level 18)" "Uncut Skill Gem (Level 20)" "Uncut Skill Gem (Level 5)" "Uncut Support Gem (Level 5)"
+	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
 
-	SetFontSize 37
+	SetFontSize 32
 	SetTextColor 80 250 255 255
 	SetBackgroundColor 0 45 46 255
 	SetBorderColor 80 250 255 255
-	MinimapIcon 0 White UpsideDownHouse
+	MinimapIcon 1 White UpsideDownHouse
 
 Show
-	Class == "Uncut Skill Gems" "Uncut Spirit Gems"
+	BaseType == "Uncut Skill Gem (Level 1)" "Uncut Skill Gem (Level 10)" "Uncut Skill Gem (Level 11)" "Uncut Skill Gem (Level 13)" "Uncut Skill Gem (Level 15)" "Uncut Skill Gem (Level 19)" "Uncut Skill Gem (Level 2)" "Uncut Skill Gem (Level 3)" "Uncut Skill Gem (Level 4)" "Uncut Skill Gem (Level 6)" "Uncut Skill Gem (Level 7)" "Uncut Skill Gem (Level 8)" "Uncut Skill Gem (Level 9)" "Uncut Spirit Gem (Level 11)" "Uncut Spirit Gem (Level 12)" "Uncut Spirit Gem (Level 13)" "Uncut Spirit Gem (Level 17)" "Uncut Spirit Gem (Level 18)" "Uncut Spirit Gem (Level 19)" "Uncut Support Gem (Level 1)" "Uncut Support Gem (Level 2)" "Uncut Support Gem (Level 3)" "Uncut Support Gem (Level 4)"
+	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
 
 	SetFontSize 37
-	SetTextColor 80 250 255 255
-	SetBackgroundColor 0 45 46 255
-	SetBorderColor 80 250 255 255
-	MinimapIcon 0 White UpsideDownHouse
+	SetTextColor 0 246 252 255
+	SetBackgroundColor 0 83 86 255
+	SetBorderColor 0 246 252 255
+	MinimapIcon 0 White Cross
+
+Show
+	BaseType == "Uncut Spirit Gem (Level 10)" "Uncut Spirit Gem (Level 14)" "Uncut Spirit Gem (Level 15)" "Uncut Spirit Gem (Level 16)" "Uncut Spirit Gem (Level 20)" "Uncut Spirit Gem (Level 4)" "Uncut Spirit Gem (Level 5)" "Uncut Spirit Gem (Level 6)" "Uncut Spirit Gem (Level 7)" "Uncut Spirit Gem (Level 8)" "Uncut Spirit Gem (Level 9)"
+	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
+
+	SetFontSize 45
+	SetTextColor 0 45 46 255
+	SetBackgroundColor 0 230 236 255
+	SetBorderColor 0 45 46 255
+	PlayEffect White
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 White Star
 
 Show
 	BaseType == "Ahn's Citadel" "Arakaali's Lust" "Daresso's Passion" "Kurgal's Leash" "Romira's Requital" "Sione's Temper" "Tacati's Ire" "Tawhoa's Tending" "Uruk's Smelting" "Varashta's Blessing" "Vilenta's Propulsion"
