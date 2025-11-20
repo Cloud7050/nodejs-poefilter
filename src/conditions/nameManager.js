@@ -1328,23 +1328,32 @@ export class NameManager {
 	static getUniques(tier, operator = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Unique_item
+			new Name("Acrid Wand", TIER.NEVER), // Cursecarver
 			new Name("Bone Wand", TIER.NEVER), // Sanguine Diviner
 			new Name("Cultist Greathammer", TIER.NEVER), // The Empty Roar
+			new Name("Dualstring Bow", TIER.NEVER), // Death's Harp
 			new Name("Dyad Crossbow", TIER.NEVER), // Double Vision
+			new Name("Fanatic Bow", TIER.NEVER), // Voltaxic Rift
+			new Name("Forge Maul", TIER.NEVER), // Trephina
 			new Name("Ironhead Spear", TIER.NEVER), // Tyranny's Grip
 			new Name("Leaden Greathammer", TIER.NEVER), // Chober Chaber
+			new Name("Long Quarterstaff", TIER.NEVER), // Pillar of the Caged God
 			new Name("Recurve Bow", TIER.NEVER), // Splinterheart
 			new Name("Temple Maul", TIER.NEVER), // Shyaba
 			new Name("Voltaic Staff", TIER.NEVER), // Earthbound
 			new Name("Withered Wand", TIER.NEVER), // The Wicked Quill
 			new Name("Wooden Club", TIER.NEVER), // Brynhand's Mark
+			new Name("Zealot Bow", TIER.NEVER), // Slivertongue
 
 			new Name("Anchorite Garb", TIER.NEVER), // Redflare Conduit
 			new Name("Assassin Garb", TIER.NEVER), // Cospri's Will
 			new Name("Barricade Tower Shield", TIER.NEVER), // Window to Paradise
+			new Name("Blazon Crest Shield", TIER.NEVER), // Alkem Eira
 			new Name("Bone Raiment", TIER.NEVER), // Necromantle
 			new Name("Braced Tower Shield", TIER.NEVER), // Doomgate
 			new Name("Chain Mail", TIER.NEVER), // Coat of Red
+			new Name("Cloaked Mail", TIER.NEVER), // Pariah's Embrace
+			new Name("Covered Sabatons", TIER.NEVER), // Shankgonne
 			new Name("Crucible Tower Shield", TIER.NEVER), // Svalinn
 			new Name("Elite Greathelm", TIER.NEVER), // Deidbell
 			new Name("Embossed Boots", TIER.NEVER), // Gamblesprint
@@ -1357,9 +1366,13 @@ export class NameManager {
 			new Name("Havoc Raiment", TIER.NEVER), // Cloak of Defiance
 			new Name("Hewn Mask", TIER.NEVER), // The Hollow Mask
 			new Name("Horned Crown", TIER.NEVER), // Bronzebeard
+			new Name("Iron Cuirass", TIER.NEVER), // Edyrn's Tusks
+			new Name("Jewelled Gloves", TIER.NEVER), // Kitoko's Current
 			new Name("Keth Raiment", TIER.NEVER), // Prayers for Rain
 			new Name("Lace Hood", TIER.NEVER), // Radiant Grief
+			new Name("Laced Boots", TIER.NEVER), // Briarpatch
 			new Name("Leather Vest", TIER.NEVER), // Bristleboar
+			new Name("Linen Wraps", TIER.NEVER), // Killjoy
 			new Name("Mail Vestments", TIER.NEVER), // Icetomb
 			new Name("Maraketh Cuirass", TIER.NEVER), // Titanrot Cataphract
 			new Name("Ornate Buckler", TIER.NEVER), // Calgyra's Arc
@@ -1367,33 +1380,51 @@ export class NameManager {
 			new Name("Rampart Tower Shield", TIER.NEVER), // Lycosidae
 			new Name("Riveted Mitts", TIER.NEVER), // Treefingers
 			new Name("Rough Greaves", TIER.NEVER), // Legionstride
+			new Name("Rusted Greathelm", TIER.NEVER), // Horns of Bynden, Wings of Caelyn
 			new Name("Sacrificial Mantle", TIER.NEVER), // Soul Mantle
 			new Name("Shielded Helm", TIER.NEVER), // The Vile Knight
+			new Name("Spiked Buckler", TIER.NEVER), // Silverthorne
 			new Name("Spiritbone Crown", TIER.NEVER), // Keeper of the Arc
 			new Name("Splintered Tower Shield", TIER.NEVER), // Dionadair
 			new Name("Stacked Sabatons", TIER.NEVER), // Obern's Bastion
+			new Name("Stitched Gloves", TIER.NEVER), // Doedre's Tenure
+			new Name("Stone Greaves", TIER.NEVER), // Birth of Fury
 			new Name("Straw Sandals", TIER.NEVER), // Luminous Pace
 			new Name("Threaded Shoes", TIER.NEVER), // Ghostmarch
+			new Name("Torn Gloves", TIER.NEVER), // Painter's Servant
+			new Name("Twig Circlet", TIER.NEVER), // Crown of Thorns
 			new Name("Vaal Cuirass", TIER.NEVER), // Greed's Embrace
 			new Name("Warrior Greathelm", TIER.NEVER), // Corona of the Red Sun
 			new Name("Wooden Buckler", TIER.NEVER), // Nocturne
+			new Name("Wrapped Greathelm", TIER.NEVER), // Black Sun Crest
 
 			new Name("Antidote Charm", TIER.NEVER), // Arakaali's Gift
+			// new Name("Iron Ring", TIER.NEVER), // Blackheart, Icefang Orbit, Prized Pain, Venopuncture
 			new Name("Linen Belt", TIER.NEVER), // Keelhaul, Umbilicus Immortalis
 			new Name("Mail Belt", TIER.NEVER), // Coward's Legacy
 			new Name("Prismatic Ring", TIER.NEVER), // Gifts from Above
 			new Name("Ruby Ring", TIER.NEVER), // Cracklecreep, Blistering Bond
 			new Name("Sapphire Charm", TIER.NEVER), // Breath of the Mountains
+			new Name("Toxic Quiver", TIER.NEVER), // Murkshaft
 
 			new Name("Barbed Spear", TIER.OTHER), // Saitha's Spear
 			new Name("Crude Bow", TIER.OTHER), // Widowhail
 
+			new Name("Viper Cap", TIER.OTHER), // Constricting Command
 			new Name("Wrapped Sandals", TIER.OTHER), // Wanderlust
 
 			new Name("Amethyst Ring", TIER.OTHER), // Blackflame, Ming's Heart. GOOD: Original Sin
+			new Name("Fire Quiver", TIER.OTHER), // Blackgleam. GOOD: Cadiro's Gambit
+			new Name("Heavy Belt", TIER.OTHER), // Waistgate, Zerphi's Genesis. GOOD: Headhunter
+			new Name("Jade Amulet", TIER.OTHER), // Choir of the Storm, Surefooted Sigil. GOOD: Defiance of Destiny
 			new Name("Pearl Ring", TIER.OTHER), // Evergrasping Ring, Heartbound Loop. GOOD: Snakepit
+			new Name("Sapphire Ring", TIER.OTHER), // Polcirkeln, Whisper of the Brotherhood. GOOD: Dream Fragments
+			new Name("Ultimate Mana Flask", TIER.OTHER), // Melting Maelstrom
 
 			new Name("Lattice Sandals", TIER.CLASS), // Bones of Ullr
+
+			new Name("Fine Belt", TIER.CLASS), // GOOD: Shavronne's Satchel. CLASS: Darkness Enthroned
+			new Name("Ultimate Life Flask", TIER.CLASS), // Olroth's Resolve
 
 			// https://poe2db.tw/us/Relics#RelicsUnique_Unique
 			new Name("Amphora Relic", TIER.NEVER), // The Peacemaker's Draught
