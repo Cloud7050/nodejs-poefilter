@@ -17,7 +17,8 @@ export function sectionRarity(filter) {
 
 	jewels(filter);
 	waystones(filter);
-	mechanics(filter);
+	tablets(filter);
+	relics(filter);
 }
 
 // Style reset per rarity
@@ -547,8 +548,7 @@ function waystones(filter) {
 	});
 }
 
-// Tablets/relics
-function mechanics(filter) {
+function tablets(filter) {
 	filter.block((c, e) => {
 		c.continue();
 		c.categories(CATEGORY.TABLET);
@@ -558,19 +558,6 @@ function mechanics(filter) {
 	});
 
 	filter.multiBlock((c) => {
-		c.continue();
-		c.categories(CATEGORY.RELIC);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.isLowTier();
-	}, (e) => {
-		e.colourAugment(PAIR_MECHANIC).sizeAugment();
-	});
-	filter.multiBlock((c) => {
-		c.continue();
-		c.categories(CATEGORY.RELIC);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.isMaxTier();
-	}, (c) => {
 		c.continue();
 		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.MAGIC);
@@ -588,9 +575,53 @@ function mechanics(filter) {
 
 	filter.block((c, e) => {
 		c.continue();
-		c.categories(CATEGORY.TABLET, CATEGORY.RELIC);
+		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
 		e.colourChance(PAIR_MECHANIC).sizeChance();
+	});
+}
+
+function relics(filter) {
+	filter.multiBlock((c) => {
+		c.continue();
+		c.categories(CATEGORY.RELIC);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.isLowTier();
+	}, (e) => {
+		e.colourAugment(PAIR_MECHANIC).sizeAugment();
+	});
+	filter.multiBlock((c) => {
+		c.continue();
+		c.categories(CATEGORY.RELIC);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.isMaxTier();
+	}, (e) => {
+		e.colourAugment(PAIR_MECHANIC).sizeExalt();
+	});
+
+	filter.block((c, e) => {
+		c.continue();
+		c.names = new Comparison(NameManager.getUniqueRelics(null, 1 / 100));
+		c.categories(CATEGORY.RELIC);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+
+		e.colourChance(PAIR_MECHANIC).sizeWisdom();
+	});
+	filter.block((c, e) => {
+		c.continue();
+		c.names = new Comparison(NameManager.getUniqueRelics(1 / 100, 1));
+		c.categories(CATEGORY.RELIC);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+
+		e.colourChance(PAIR_MECHANIC).sizeAugment();
+	});
+	filter.block((c, e) => {
+		c.continue();
+		c.names = new Comparison(NameManager.getUniqueRelics(1));
+		c.categories(CATEGORY.RELIC);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+
+		e.colourChance(PAIR_MECHANIC).sizeDivine();
 	});
 }

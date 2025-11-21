@@ -266,7 +266,6 @@ export class NameManager {
 		return new NameManager(
 			new Name("Order Artifact", 1 / 40), // Armour
 			new Name("Broken Circle Artifact", 1 / 38), // Weapons
-
 			new Name("Black Scythe Artifact", 1 / 4), // Jewellery/belts
 			new Name("Sun Artifact", 1 / 4), // Wildcard
 		).range(min, max);

@@ -398,17 +398,7 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
-	BaseType == "Broken Circle Artifact" "Order Artifact"
-	Class == "Stackable Currency"
-
-	SetFontSize 27
-	SetTextColor 116 253 179 255
-	SetBackgroundColor 0 46 25 255
-	SetBorderColor 116 253 179 255
-	MinimapIcon 2 Brown UpsideDownHouse
-
-Show
-	BaseType == "Black Scythe Artifact" "Sun Artifact"
+	BaseType == "Black Scythe Artifact" "Broken Circle Artifact" "Order Artifact" "Sun Artifact"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -1796,6 +1786,44 @@ Show
 	Continue
 
 Show
+	Class == Tablet
+	Rarity == Magic
+
+	SetFontSize 37
+	SetTextColor 116 253 179 255
+	SetBackgroundColor 0 46 25 255
+	SetBorderColor 116 253 179 255
+	MinimapIcon 0 Brown UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Tablet
+	Rarity == Rare
+
+	SetFontSize 37
+	SetTextColor 33 252 162 255
+	SetBackgroundColor 0 86 51 255
+	SetBorderColor 33 252 162 255
+	MinimapIcon 0 Brown Cross
+
+	Continue
+
+Show
+	Class == Tablet
+	Rarity == Unique
+
+	SetFontSize 45
+	SetTextColor 0 46 25 255
+	SetBackgroundColor 0 237 150 255
+	SetBorderColor 0 46 25 255
+	PlayEffect Brown
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Brown Star
+
+	Continue
+
+Show
 	Class == Relics
 	Rarity == Magic
 	UnidentifiedItemTier <= 4
@@ -1822,31 +1850,34 @@ Show
 	Continue
 
 Show
-	Class == Tablet
-	Rarity == Magic
+	BaseType == "Amphora Relic" "Tapestry Relic"
+	Class == Relics
+	Rarity == Unique
 
-	SetFontSize 37
-	SetTextColor 116 253 179 255
-	SetBackgroundColor 0 46 25 255
-	SetBorderColor 116 253 179 255
-	MinimapIcon 0 Brown UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Tablet
-	Rarity == Rare
-
-	SetFontSize 37
-	SetTextColor 33 252 162 255
-	SetBackgroundColor 0 86 51 255
-	SetBorderColor 33 252 162 255
-	MinimapIcon 0 Brown Cross
+	SetFontSize 27
+	SetTextColor 0 46 25 255
+	SetBackgroundColor 0 237 150 255
+	SetBorderColor 0 46 25 255
+	MinimapIcon 2 Brown Star
 
 	Continue
 
 Show
-	Class == Tablet Relics
+	BaseType == "Seal Relic"
+	Class == Relics
+	Rarity == Unique
+
+	SetFontSize 32
+	SetTextColor 0 46 25 255
+	SetBackgroundColor 0 237 150 255
+	SetBorderColor 0 46 25 255
+	MinimapIcon 1 Brown Star
+
+	Continue
+
+Show
+	BaseType == "Incense Relic" "Vase Relic"
+	Class == Relics
 	Rarity == Unique
 
 	SetFontSize 45
@@ -1854,7 +1885,7 @@ Show
 	SetBackgroundColor 0 237 150 255
 	SetBorderColor 0 46 25 255
 	PlayEffect Brown
-	CustomAlertSound "WAH.mp3"
+	CustomAlertSound "renoir.wav" 250
 	MinimapIcon 0 Brown Star
 
 	Continue

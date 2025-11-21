@@ -302,13 +302,7 @@ function splinters(filter) {
 
 function expedition(filter) {
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getArtifacts(null, 1 / 10));
-		c.categories(CATEGORY.CURRENCY);
-
-		e.colourAugment(PAIR_MECHANIC).sizeWisdom();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getArtifacts(1 / 10));
+		c.names = new Comparison(NameManager.getArtifacts());
 		c.categories(CATEGORY.CURRENCY);
 
 		e.colourAugment(PAIR_MECHANIC).sizeAugment();
