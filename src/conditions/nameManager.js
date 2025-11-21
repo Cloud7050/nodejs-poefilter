@@ -15,6 +15,12 @@ export class NameManager {
 	names;
 
 	constructor (...names) {
+		names = names.reduce((accumulator, name) => {
+			if (name instanceof NameManager) accumulator.push(...name.names);
+			else accumulator.push(name);
+			return accumulator;
+		}, []);
+
 		this.names = names.map(
 			(name) => name instanceof Name ? name : new Name(name)
 		);
@@ -1425,15 +1431,18 @@ export class NameManager {
 
 			new Name("Fine Belt", TIER.CLASS), // GOOD: Shavronne's Satchel. CLASS: Darkness Enthroned
 			new Name("Ultimate Life Flask", TIER.CLASS), // Olroth's Resolve
-
-			// https://poe2db.tw/us/Relics#RelicsUnique_Unique
-			new Name("Amphora Relic", TIER.NEVER), // The Peacemaker's Draught
-			new Name("Seal Relic", TIER.NEVER), // The Changing Seasons
-			new Name("Tapestry Relic", TIER.NEVER), // The Burden of Leadership
-
-			new Name("Incense Relic", TIER.OTHER), // The Last Flame
-			new Name("Vase Relic", TIER.OTHER), // The Desperate Alliance
 		).compare(tier, operator);
+	}
+	static getUniqueRelics(min = undefined, max = undefined) {
+		return new NameManager(
+			// https://poe2db.tw/us/Relics#RelicsUnique_Unique
+			new Name("Tapestry Relic", 1 / 1000), // The Burden of Leadership
+			new Name("Amphora Relic", 1 / 598), // The Peacemaker's Draught
+			new Name("Seal Relic", 1 / 2), // The Changing Seasons
+
+			new Name("Vase Relic", 3 * DIV), // The Desperate Alliance
+			new Name("Incense Relic", 98 * DIV), // The Last Flame
+		).range(min, max);
 	}
 
 	// Inclusive of min, exclusive of max

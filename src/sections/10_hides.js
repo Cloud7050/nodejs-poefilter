@@ -78,7 +78,10 @@ function uncommons(filter) {
 
 function uniques(filter) {
 		filter.multiHide((c) => { // Trash uniques
-			c.names = new Comparison(NameManager.getUniques(TIER.NEVER, OPERATOR.LTE));
+			c.names = new Comparison(new NameManager(
+				NameManager.getUniques(TIER.NEVER, OPERATOR.LTE),
+				NameManager.getUniqueRelics(null, 2)
+			));
 			c.rarity = new Comparison(RARITY.UNIQUE);
 		});
 	}
