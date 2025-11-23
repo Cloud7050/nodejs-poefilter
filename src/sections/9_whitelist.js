@@ -130,5 +130,6 @@ function other(filter) {
 function rares(filter) {
 	filter.multiWhitelist((c) => {
 		c.rarity = new Comparison(RARITY.RARE);
+		c.categories(CATEGORY.MAIN, CATEGORY.OFF_CLASS, CATEGORY.OFF_OTHER_BLOCK, CATEGORY.ARMOUR, CATEGORY.GEAR_UNCOMMON);
 	});
 }
