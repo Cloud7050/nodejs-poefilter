@@ -12,7 +12,6 @@ export function sectionWhitelist(filter, showRares) {
 	special(filter);
 	outline(filter);
 
-	other(filter);
 	if (showRares) rares(filter);
 }
 
@@ -115,26 +114,6 @@ function outline(filter) {
 		c.names = new Comparison(NameManager.getUncommons(TIER.BAD, OPERATOR.GTE));
 		c.categories(CATEGORY.AMULET, CATEGORY.RING);
 		c.goodModJewellery(true);
-	});
-}
-
-function other(filter) {
-	filter.multiWhitelist((c) => {
-		c.names = new Comparison(NameManager.getMain(TIER.BAD, OPERATOR.GTE));
-		c.categories(CATEGORY.MAIN);
-		c.isMaxTier();
-	}, (c) => {
-		c.names = new Comparison(NameManager.getOff(TIER.BAD, OPERATOR.GTE));
-		c.categories(CATEGORY.OFF);
-		c.isMaxTier();
-	}, (c) => {
-		c.names = new Comparison(NameManager.getArmour(TIER.BAD, OPERATOR.GTE));
-		c.categories(CATEGORY.ARMOUR);
-		c.isMaxTier();
-	}, (c) => {
-		c.names = new Comparison(NameManager.getUncommons(TIER.BAD, OPERATOR.GTE));
-		c.categories(CATEGORY.GEAR_UNCOMMON);
-		c.isMaxTier();
 	});
 }
 
