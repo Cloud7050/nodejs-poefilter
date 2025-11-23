@@ -2667,6 +2667,13 @@ Show
 	MinimapIcon 0 Blue Kite
 
 Show
+	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Penumbra Amulet" "Penumbra Ring" "Tenebrous Amulet" "Tenebrous Ring"
+	Class == Amulets Rings
+	ItemLevel >= 79
+
+	#
+
+Show
 	Class == "Life Flasks" "Mana Flasks"
 	Quality >= 5
 

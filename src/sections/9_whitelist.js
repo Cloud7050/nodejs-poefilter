@@ -9,6 +9,7 @@ import { PAIR_GEAR } from "../index.js";
 export function sectionWhitelist(filter, showRares) {
 	chance(filter);
 
+	special(filter);
 	outline(filter);
 
 	other(filter);
@@ -45,6 +46,16 @@ function chance(filter) {
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR, true).sizeChance();
 	});
+}
+
+// Special tier
+function special(filter) {
+	filter.multiWhitelist((c) => {
+		c.names = new Comparison(NameManager.getUncommons(TIER.SPECIAL));
+		c.categories(CATEGORY.JEWELLERY);
+		c.ilvl = new Comparison(79, OPERATOR.GTE);
+	});
+
 }
 
 // Whitelist logic for items from outline section

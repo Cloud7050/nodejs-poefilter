@@ -9,7 +9,8 @@ export class NameManager {
 		BAD: -1,
 		OTHER: 0,
 		CLASS: 1,
-		OUTLINE: 2,
+		SPECIAL: 2, // For lower ilvl special drops, eg T15 fractured lake's ilvl 79 drops
+		OUTLINE: 3,
 	}
 
 	names;
@@ -1229,7 +1230,6 @@ export class NameManager {
 			new Name("Daggerfoot Shoes", TIER.BAD), // 119 V, 45 ES, L80
 		).compare(tier, operator);
 	}
-	//NOTE Fractured Lake ilvl normally caps at 80 (T16), so we put them as class tier for more lenient filtering vs BiS ilvl
 	static getUncommons(tier, operator = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Amulets
@@ -1244,11 +1244,12 @@ export class NameManager {
 			new Name("Stellar Amulet", TIER.OTHER), // L25, +5–7 to all Attributes
 			new Name("Pearlescent Amulet", TIER.OTHER), // L8, +7–10% to all Elemental Resistances
 
-			new Name("Dusk Amulet", TIER.CLASS), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Amulet", TIER.CLASS), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Amulet", TIER.CLASS), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Amulet", TIER.CLASS), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 			new Name("Gold Amulet", TIER.CLASS), // L35, 12–20% increased Rarity of Items found
+
+			new Name("Dusk Amulet", TIER.SPECIAL), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Amulet", TIER.SPECIAL), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Amulet", TIER.SPECIAL), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Amulet", TIER.SPECIAL), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 
 			new Name("Solar Amulet", TIER.OUTLINE), // L30, +10–15 to Spirit
 
@@ -1267,10 +1268,11 @@ export class NameManager {
 			new Name("Unset Ring", TIER.OTHER), // L44, Grants 1 additional Skill Slot
 
 			new Name("Breach Ring", TIER.CLASS), // L40, Maximum Quality is 40%
-			new Name("Dusk Ring", TIER.CLASS), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Ring", TIER.CLASS), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Ring", TIER.CLASS), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Ring", TIER.CLASS), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+
+			new Name("Dusk Ring", TIER.SPECIAL), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Ring", TIER.SPECIAL), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Ring", TIER.SPECIAL), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Ring", TIER.SPECIAL), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 
 			new Name("Gold Ring", TIER.OUTLINE), // L40, 6–15% increased Rarity of Items found
 
