@@ -59,12 +59,6 @@ function special(filter) {
 
 // Whitelist logic for items from outline section
 function outline(filter) {
-	// Quality
-	filter.multiWhitelist((c) => {
-		c.categories(CATEGORY.FLASK);
-		c.hasQuality(5);
-	});
-
 	// Corrupted/exceptional
 	filter.multiWhitelist((c) => { // Quality charm
 		c.categories(CATEGORY.CHARM);

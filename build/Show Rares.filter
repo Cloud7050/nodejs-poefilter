@@ -2543,12 +2543,6 @@ Show
 	#
 
 Show
-	Class == "Life Flasks" "Mana Flasks"
-	Quality >= 5
-
-	#
-
-Show
 	Class == Charms
 	Quality >= 1
 
