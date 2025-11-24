@@ -1425,6 +1425,7 @@ export class NameManager {
 
 			new Name("Antidote Charm", TIER.NEVER), // Arakaali's Gift
 			new Name("Azure Amulet", TIER.NEVER), // The Everlasting Gaze, Ungil's Harmony
+			new Name("Dousing Charm", TIER.NEVER), // Beira's Anguish
 			// new Name("Emerald Ring", TIER.NEVER), // Death Rush, Thief's Torment, Vigilant View
 			// new Name("Iron Ring", TIER.NEVER), // Blackheart, Icefang Orbit, Prized Pain, Venopuncture
 			new Name("Lapis Amulet", TIER.NEVER), // Ligurium Talisman, Stone of Lazhwar, The Pandemonius
@@ -1433,6 +1434,7 @@ export class NameManager {
 			new Name("Prismatic Ring", TIER.NEVER), // Gifts from Above
 			new Name("Ruby Ring", TIER.NEVER), // Cracklecreep, Blistering Bond
 			new Name("Sapphire Charm", TIER.NEVER), // Breath of the Mountains
+			new Name("Topaz Charm", TIER.NEVER), // Valako's Roar
 			new Name("Toxic Quiver", TIER.NEVER), // Murkshaft
 
 			new Name("Barbed Spear", TIER.OTHER), // Saitha's Spear
