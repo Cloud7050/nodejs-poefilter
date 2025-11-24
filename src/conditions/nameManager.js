@@ -1347,8 +1347,10 @@ export class NameManager {
 			new Name("Ironhead Spear", TIER.NEVER), // Tyranny's Grip
 			new Name("Leaden Greathammer", TIER.NEVER), // Chober Chaber
 			new Name("Long Quarterstaff", TIER.NEVER), // Pillar of the Caged God
+			new Name("Omen Sceptre", TIER.NEVER), // Font of Power
 			new Name("Recurve Bow", TIER.NEVER), // Splinterheart
 			new Name("Temple Maul", TIER.NEVER), // Shyaba
+			new Name("Volatile Wand", TIER.NEVER), // Enezun's Charge
 			new Name("Voltaic Staff", TIER.NEVER), // Earthbound
 			new Name("Withered Wand", TIER.NEVER), // The Wicked Quill
 			new Name("Wooden Club", TIER.NEVER), // Brynhand's Mark
@@ -1380,6 +1382,7 @@ export class NameManager {
 			new Name("Iron Cuirass", TIER.NEVER), // Edyrn's Tusks
 			new Name("Iron Greaves", TIER.NEVER), // Corpsewade
 			new Name("Jewelled Gloves", TIER.NEVER), // Kitoko's Current
+			new Name("Jingling Crest Shield", TIER.NEVER), // Crest of Ardura
 			new Name("Keth Raiment", TIER.NEVER), // Prayers for Rain
 			new Name("Lace Hood", TIER.NEVER), // Radiant Grief
 			new Name("Laced Boots", TIER.NEVER), // Briarpatch
@@ -1424,6 +1427,7 @@ export class NameManager {
 			new Name("Azure Amulet", TIER.NEVER), // The Everlasting Gaze, Ungil's Harmony
 			// new Name("Emerald Ring", TIER.NEVER), // Death Rush, Thief's Torment, Vigilant View
 			// new Name("Iron Ring", TIER.NEVER), // Blackheart, Icefang Orbit, Prized Pain, Venopuncture
+			new Name("Lapis Amulet", TIER.NEVER), // Ligurium Talisman, Stone of Lazhwar, The Pandemonius
 			new Name("Linen Belt", TIER.NEVER), // Keelhaul, Umbilicus Immortalis
 			new Name("Mail Belt", TIER.NEVER), // Coward's Legacy
 			new Name("Prismatic Ring", TIER.NEVER), // Gifts from Above
@@ -1440,6 +1444,7 @@ export class NameManager {
 
 			new Name("Amethyst Ring", TIER.OTHER), // Blackflame, Ming's Heart. GOOD: Original Sin
 			new Name("Fire Quiver", TIER.OTHER), // Blackgleam. GOOD: Cadiro's Gambit
+			new Name("Gold Ring", TIER.OTHER), // Andvarius, Perandus Seal, Ventor's Gamble
 			new Name("Heavy Belt", TIER.OTHER), // Waistgate, Zerphi's Genesis. GOOD: Headhunter
 			new Name("Jade Amulet", TIER.OTHER), // Choir of the Storm, Surefooted Sigil. GOOD: Defiance of Destiny
 			new Name("Lazuli Ring", TIER.OTHER), // Doedre's Damning, Glowswarm. GOOD: Seed of Cataclysm
