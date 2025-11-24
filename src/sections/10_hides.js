@@ -61,12 +61,8 @@ function uncommons(filter) {
 		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(67, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (mana flasks)
-		c.categories(CATEGORY.FLASK_MANA);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(80, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (jewellery, belts, life flasks)
-		c.categories(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK_LIFE);
+	}, (c) => { // Too low ilvl (jewellery, belts, flasks)
+		c.categories(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Trash base

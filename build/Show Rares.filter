@@ -2703,14 +2703,7 @@ Hide
 	#
 
 Hide
-	Class == "Mana Flasks"
-	Rarity < Unique
-	ItemLevel < 80
-
-	#
-
-Hide
-	Class == Amulets Rings Belts "Life Flasks"
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks"
 	Rarity < Unique
 	ItemLevel < 82
 
