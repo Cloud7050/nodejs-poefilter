@@ -138,7 +138,7 @@ export class ConditionSet {
 			// "Persuasive", // 65-74, IL46
 			// "Motivating", // 75-84, IL60
 			// "Inspirational", // 90-104, IL70
-			"Empowering", // 105-119, IL82
+			"Empowering", // 105-119, IL82 //NOTE is also T4 ele damage on quarterstaves
 			////
 
 			//// x% increased Spirit
