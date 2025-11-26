@@ -1227,7 +1227,7 @@ export class NameManager {
 			new Name("Charmed Shoes", TIER.LOW), // 101 V, 38 ES, L70
 			new Name("Quickslip Shoes", TIER.LOW), // 110 V, 42 ES, L75
 
-			new Name("Daggerfoot Shoes", TIER.BAD), // 119 V, 45 ES, L80
+			new Name("Daggerfoot Shoes", TIER.NEVER), // 119 V, 45 ES, L80
 		).compare(tier, operator);
 	}
 	static getUncommons(tier, operator = undefined) {
