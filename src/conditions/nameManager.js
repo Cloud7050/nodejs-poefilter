@@ -625,11 +625,11 @@ export class NameManager {
 			new Name("Flanged Mace", TIER.LOW), // 45-67 phys, 5% cc, x1.55, L67
 			new Name("Crown Mace", TIER.LOW), // 43-89 phys, 5% cc, x1.4, L72
 
+			new Name("Molten Hammer", TIER.NEVER), // 35.5-59 phys, 35.5-59 fire, 5% cc, x1.45, L77
 			new Name("Akoyan Club", TIER.NEVER), // 46-76 phys, 5% cc, x1.45, L78, Always Hits
 			new Name("Strife Pick", TIER.NEVER), // 49-66 phys, 7% cc, x1.45, L78, +5–10% to Critical Damage Bonus
 
 			new Name("Marauding Mace", TIER.BAD), // 51-84 phys, 5% cc, x1.45, L77
-			new Name("Molten Hammer", TIER.BAD), // 35.5-59 phys, 35.5-59 fire, 5% cc, x1.45, L77
 			new Name("Fortified Hammer", TIER.BAD), // 60-73 phys, 5% cc, x1.4, L79, 40% chance to Daze on Hit
 
 			// https://poe2db.tw/us/Spears#SpearsItem
