@@ -2756,7 +2756,7 @@ Hide
 
 Hide
 	BaseType == "Amber Amulet" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Breach Ring" "Dousing Charm" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Heavy Belt" "Jade Amulet" "Lapis Amulet" "Long Belt" "Lunar Amulet" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Penumbra Amulet" "Penumbra Ring" "Prismatic Ring" "Solar Amulet" "Staunching Charm" "Stellar Amulet" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Topaz Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Unset Ring"
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks"
+	Class == Amulets Rings Belts
 	Rarity == Normal
 	ItemLevel < 80
 
@@ -2764,15 +2764,22 @@ Hide
 
 Hide
 	BaseType == "Fine Belt" "Linen Belt" "Mail Belt" "Plate Belt" "Rawhide Belt" "Ruby Ring" "Sapphire Ring" "Silver Charm" "Topaz Ring" "Utility Belt"
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks"
+	Class == Amulets Rings Belts
 	Rarity == Normal
 	ItemLevel < 82
 
 	DisableDropSound
 
 Hide
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks"
+	Class == Amulets Rings Belts
 	Rarity == Magic Rare
+	ItemLevel < 82
+
+	DisableDropSound
+
+Hide
+	Class == "Life Flasks" "Mana Flasks"
+	Rarity < Unique
 	ItemLevel < 82
 
 	DisableDropSound
