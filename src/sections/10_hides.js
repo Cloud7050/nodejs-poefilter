@@ -17,13 +17,38 @@ function weapons(filter) {
 		c.categories(CATEGORY.WEAPON);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.isCorrupted = true;
+	}, (c) => { // Too low ilvl (other+ tier, normal mainhands)
+		c.names = new Comparison(NameManager.getMain(TIER.OTHER, OPERATOR.GTE));
+		c.categories(CATEGORY.MAIN);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(80, OPERATOR.LT);
+	}, (c) => { // Too low ilvl (bad tier, normal other caster mainhands)
+		c.names = new Comparison(NameManager.getMain(TIER.BAD));
+		c.categories(CATEGORY.MAIN_OTHER_CASTER);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(81, OPERATOR.LT);
+	}, (c) => { // Too low ilvl (bad tier, normal class mainhands, other attacker mainhands)
+		c.names = new Comparison(NameManager.getMain(TIER.BAD));
+		c.categories(CATEGORY.MAIN_CLASS, CATEGORY.MAIN_OTHER_ATTACKER);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
+	}, (c) => { // Too low ilvl (other+ tier, normal offhands)
+		c.names = new Comparison(NameManager.getOff(TIER.OTHER, OPERATOR.GTE));
+		c.categories(CATEGORY.OFF);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(80, OPERATOR.LT);
+	}, (c) => { // Too low ilvl (bad tier, normal offhands)
+		c.names = new Comparison(NameManager.getOff(TIER.BAD));
+		c.categories(CATEGORY.OFF);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Too low ilvl (other caster mainhands)
 		c.categories(CATEGORY.MAIN_OTHER_CASTER);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.rarity = new Comparison([RARITY.MAGIC, RARITY.RARE]);
 		c.ilvl = new Comparison(81, OPERATOR.LT);
 	}, (c) => { // Too low ilvl (class weapons, other attacker mainhands, other offhands)
 		c.categories(CATEGORY.WEAPON_CLASS, CATEGORY.MAIN_OTHER_ATTACKER, CATEGORY.OFF_OTHER);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.rarity = new Comparison([RARITY.MAGIC, RARITY.RARE]);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Trash base (mainhands)
 		c.names = new Comparison(NameManager.getMain(TIER.NEVER, OPERATOR.LTE));
@@ -41,9 +66,19 @@ function armour(filter) {
 		c.categories(CATEGORY.ARMOUR);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.isCorrupted = true;
+	}, (c) => { // Too low ilvl (other+ tier, normal)
+		c.names = new Comparison(NameManager.getArmour(TIER.OTHER, OPERATOR.GTE));
+		c.categories(CATEGORY.ARMOUR);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(80, OPERATOR.LT);
+	}, (c) => { // Too low ilvl (bad tier, normal)
+		c.names = new Comparison(NameManager.getArmour(TIER.BAD));
+		c.categories(CATEGORY.ARMOUR);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Too low ilvl
 		c.categories(CATEGORY.ARMOUR);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.rarity = new Comparison([RARITY.MAGIC, RARITY.RARE]);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Trash base
 		c.names = new Comparison(NameManager.getArmour(TIER.NEVER, OPERATOR.LTE));
@@ -61,9 +96,19 @@ function uncommons(filter) {
 		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(67, OPERATOR.LT);
+	}, (c) => { // Too low ilvl (other+ tier, normal jewellery, belts, flasks)
+		c.names = new Comparison(NameManager.getUncommons(TIER.OTHER, OPERATOR.GTE));
+		c.categories(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(80, OPERATOR.LT);
+	}, (c) => { // Too low ilvl (bad tier, normal jewellery, belts, flasks)
+		c.names = new Comparison(NameManager.getUncommons(TIER.BAD));
+		c.categories(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Too low ilvl (jewellery, belts, flasks)
 		c.categories(CATEGORY.JEWELLERY, CATEGORY.BELT, CATEGORY.FLASK);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.rarity = new Comparison([RARITY.MAGIC, RARITY.RARE]);
 		c.ilvl = new Comparison(82, OPERATOR.LT);
 	}, (c) => { // Trash base
 		c.names = new Comparison(NameManager.getUncommons(TIER.NEVER, OPERATOR.LTE));

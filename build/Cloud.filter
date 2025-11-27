@@ -2628,15 +2628,55 @@ Hide
 	#
 
 Hide
+	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Rattling Sceptre" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow"
+	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	Rarity == Normal
+	ItemLevel < 80
+
+	#
+
+Hide
+	BaseType == "Akoyan Spear" "Attuned Wand" "Bolting Quarterstaff" "Dreaming Quarterstaff" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Fortified Hammer" "Galvanic Wand" "Grand Spear" "Marauding Mace" "Molten Hammer" "Razor Quarterstaff" "Siege Crossbow" "Stalking Spear" "Withered Wand"
 	Class == Wands Staves
-	Rarity < Unique
+	Rarity == Normal
+	ItemLevel < 81
+
+	#
+
+Hide
+	BaseType == "Akoyan Spear" "Attuned Wand" "Bolting Quarterstaff" "Dreaming Quarterstaff" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Fortified Hammer" "Galvanic Wand" "Grand Spear" "Marauding Mace" "Molten Hammer" "Razor Quarterstaff" "Siege Crossbow" "Stalking Spear" "Withered Wand"
+	Class == Sceptres "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	Rarity == Normal
+	ItemLevel < 82
+
+	#
+
+Hide
+	BaseType == "Blunt Quiver" "Fire Quiver" "Penetrating Quiver" "Sacral Quiver" "Tasalian Focus" "Visceral Quiver" "Volant Quiver"
+	Class == Foci Bucklers Shields Quivers
+	Rarity == Normal
+	ItemLevel < 80
+
+	#
+
+Hide
+	BaseType == "Primed Quiver" "Tawhoan Tower Shield" "Toxic Quiver"
+	Class == Foci Bucklers Shields Quivers
+	Rarity == Normal
+	ItemLevel < 82
+
+	#
+
+Hide
+	Class == Wands Staves
+	Rarity == Magic Rare
 	ItemLevel < 81
 
 	#
 
 Hide
 	Class == Sceptres Foci "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
-	Rarity < Unique
+	Rarity == Magic Rare
 	ItemLevel < 82
 
 	#
@@ -2663,8 +2703,24 @@ Hide
 	#
 
 Hide
+	BaseType == "Ancestral Tiara" "Falconer's Jacket" "Feathered Raiment" "Flowing Raiment" "Sekhema Sandals" "Sirenscale Gloves" "Sleek Jacket" "Slipstrike Vest" "Soldier Cuirass" "Vile Robe" "Warlord Cuirass"
 	Class == Helmets "Body Armours" Gloves Boots
-	Rarity < Unique
+	Rarity == Normal
+	ItemLevel < 80
+
+	#
+
+Hide
+	BaseType == "Corsair Coat" "Massive Mitts" "Rambler Jacket" "Sacramental Robe" "Secured Wraps" "Tasalian Greaves" "Wolfskin Mantle"
+	Class == Helmets "Body Armours" Gloves Boots
+	Rarity == Normal
+	ItemLevel < 82
+
+	#
+
+Hide
+	Class == Helmets "Body Armours" Gloves Boots
+	Rarity == Magic Rare
 	ItemLevel < 82
 
 	#
@@ -2691,8 +2747,24 @@ Hide
 	#
 
 Hide
+	BaseType == "Amber Amulet" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Breach Ring" "Dousing Charm" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Heavy Belt" "Jade Amulet" "Lapis Amulet" "Long Belt" "Lunar Amulet" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Penumbra Amulet" "Penumbra Ring" "Prismatic Ring" "Solar Amulet" "Staunching Charm" "Stellar Amulet" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Topaz Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Unset Ring"
 	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks"
-	Rarity < Unique
+	Rarity == Normal
+	ItemLevel < 80
+
+	#
+
+Hide
+	BaseType == "Fine Belt" "Linen Belt" "Mail Belt" "Plate Belt" "Rawhide Belt" "Ruby Ring" "Sapphire Ring" "Silver Charm" "Topaz Ring" "Utility Belt"
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks"
+	Rarity == Normal
+	ItemLevel < 82
+
+	#
+
+Hide
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks"
+	Rarity == Magic Rare
 	ItemLevel < 82
 
 	#
