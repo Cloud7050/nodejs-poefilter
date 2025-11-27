@@ -63,6 +63,7 @@ export class EffectSet {
 
 		if (this.beamColour !== null) spans.push(`PlayEffect ${this.beamColour}`);
 		if (this.sound !== null) spans.push(`CustomAlertSound ${this.sound}`);
+		if (!this.isVisible) spans.push(`DisableDropSound`);
 		if (this.mapSize === EffectSet.MAP_SIZE.DISABLE) {
 			spans.push(`MinimapIcon ${EffectSet.MAP_SIZE.DISABLE}`);
 		} else if (this.mapSize !== null) {
