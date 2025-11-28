@@ -1406,7 +1406,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Mana Flask"
+	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Ultimate Mana Flask"
 	Class == Charms
 	Rarity == Normal
 	ItemLevel >= 81
@@ -1421,7 +1421,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Mana Flask"
+	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Ultimate Mana Flask"
 	Class == Amulets Rings
 	Rarity == Normal
 	ItemLevel >= 82
@@ -1436,7 +1436,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Mana Flask"
+	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Ultimate Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity == Normal
 	ItemLevel >= 83
@@ -1453,7 +1453,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Mana Flask"
+	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Ultimate Mana Flask"
 	Class == Charms
 	Rarity == Magic
 	ItemLevel >= 81
@@ -1468,7 +1468,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Mana Flask"
+	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Ultimate Mana Flask"
 	Class == Amulets Rings
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1483,7 +1483,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Mana Flask"
+	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Ultimate Mana Flask"
 	Class == Amulets Rings
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1499,7 +1499,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Mana Flask"
+	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Ultimate Mana Flask"
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity == Magic
 	ItemLevel >= 83
@@ -1516,7 +1516,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Mana Flask"
+	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Ultimate Mana Flask"
 	Class == Amulets Rings
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1531,7 +1531,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Breach Ring" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Ultimate Mana Flask"
+	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Ring" "Golden Charm" "Penumbra Amulet" "Penumbra Ring" "Solar Amulet" "Staunching Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Ultimate Mana Flask"
 	Class == Amulets Rings
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1547,7 +1547,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Amber Amulet" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Dousing Charm" "Heavy Belt" "Jade Amulet" "Lapis Amulet" "Long Belt" "Lunar Amulet" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Prismatic Ring" "Stellar Amulet" "Thawing Charm" "Topaz Charm" "Ultimate Life Flask" "Unset Ring"
+	BaseType == "Amber Amulet" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Breach Ring" "Dousing Charm" "Gold Amulet" "Heavy Belt" "Jade Amulet" "Lapis Amulet" "Long Belt" "Lunar Amulet" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Prismatic Ring" "Stellar Amulet" "Stone Charm" "Topaz Charm" "Ultimate Life Flask" "Unset Ring"
 	Class == Amulets Rings
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1563,7 +1563,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Amber Amulet" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Dousing Charm" "Heavy Belt" "Jade Amulet" "Lapis Amulet" "Long Belt" "Lunar Amulet" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Prismatic Ring" "Stellar Amulet" "Thawing Charm" "Topaz Charm" "Ultimate Life Flask" "Unset Ring"
+	BaseType == "Amber Amulet" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Breach Ring" "Dousing Charm" "Gold Amulet" "Heavy Belt" "Jade Amulet" "Lapis Amulet" "Long Belt" "Lunar Amulet" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Prismatic Ring" "Stellar Amulet" "Stone Charm" "Topaz Charm" "Ultimate Life Flask" "Unset Ring"
 	Class == Amulets Rings
 	Rarity == Rare
 	ItemLevel >= 82
@@ -1812,14 +1812,6 @@ Show
 	ItemLevel >= 83
 
 	SetBorderColor 74 230 58 255
-
-	Continue
-
-Show
-	BaseType == "Gold Ring" "Golden Charm" "Solar Amulet"
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-
-	SetBorderColor 255 225 87 255
 
 	Continue
 
@@ -2585,12 +2577,6 @@ Show
 Show
 	Rarity == Unique
 	Corrupted True
-
-	#
-
-Show
-	BaseType == "Gold Ring" "Golden Charm" "Solar Amulet"
-	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 
 	#
 

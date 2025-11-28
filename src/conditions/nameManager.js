@@ -10,7 +10,6 @@ export class NameManager {
 		OTHER: 0,
 		CLASS: 1,
 		SPECIAL: 2, // For lower ilvl special drops, eg T15 fractured lake's ilvl 79 drops
-		OUTLINE: 3,
 	}
 
 	names;
@@ -1239,19 +1238,18 @@ export class NameManager {
 			new Name("Amber Amulet", TIER.OTHER), // L8, +10–15 to Strength
 			new Name("Jade Amulet", TIER.OTHER), // L8, +10–15 to Dexterity
 			new Name("Lapis Amulet", TIER.OTHER), // L8, +10–15 to Intelligence
+			new Name("Pearlescent Amulet", TIER.OTHER), // L8, +7–10% to all Elemental Resistances
 			new Name("Lunar Amulet", TIER.OTHER), // L14, +20–30 to maximum Energy Shield
 			new Name("Bloodstone Amulet", TIER.OTHER), // L18, +30–40 to maximum Life
 			new Name("Stellar Amulet", TIER.OTHER), // L25, +5–7 to all Attributes
-			new Name("Pearlescent Amulet", TIER.OTHER), // L8, +7–10% to all Elemental Resistances
+			new Name("Gold Amulet", TIER.OTHER), // L35, 12–20% increased Rarity of Items found
 
-			new Name("Gold Amulet", TIER.CLASS), // L35, 12–20% increased Rarity of Items found
+			new Name("Solar Amulet", TIER.CLASS), // L30, +10–15 to Spirit
 
 			new Name("Dusk Amulet", TIER.SPECIAL), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
 			new Name("Gloam Amulet", TIER.SPECIAL), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
 			new Name("Penumbra Amulet", TIER.SPECIAL), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
 			new Name("Tenebrous Amulet", TIER.SPECIAL), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
-
-			new Name("Solar Amulet", TIER.OUTLINE), // L30, +10–15 to Spirit
 
 			// https://poe2db.tw/us/Rings
 			new Name("Iron Ring", TIER.NEVER), // Adds 1 to 4 Physical Damage to Attacks
@@ -1265,16 +1263,15 @@ export class NameManager {
 			new Name("Amethyst Ring", TIER.OTHER), // L20, +7–13% to Chaos Resistance
 			new Name("Pearl Ring", TIER.OTHER), // L32, 7–10% increased Cast Speed
 			new Name("Prismatic Ring", TIER.OTHER), // L35, +7–10% to all Elemental Resistances
+			new Name("Breach Ring", TIER.OTHER), // L40, Maximum Quality is 40%
 			new Name("Unset Ring", TIER.OTHER), // L44, Grants 1 additional Skill Slot
 
-			new Name("Breach Ring", TIER.CLASS), // L40, Maximum Quality is 40%
+			new Name("Gold Ring", TIER.CLASS), // L40, 6–15% increased Rarity of Items found
 
 			new Name("Dusk Ring", TIER.SPECIAL), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
 			new Name("Gloam Ring", TIER.SPECIAL), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
 			new Name("Penumbra Ring", TIER.SPECIAL), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
 			new Name("Tenebrous Ring", TIER.SPECIAL), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
-
-			new Name("Gold Ring", TIER.OUTLINE), // L40, 6–15% increased Rarity of Items found
 
 			// https://poe2db.tw/us/Belts
 			new Name("Wide Belt", TIER.NEVER), // L14, 20–30% increased Flask Charges gained
@@ -1322,14 +1319,14 @@ export class NameManager {
 			new Name("Silver Charm", TIER.BAD), // L10, 20/40, 3s, Your speed is unaffected by Slows
 
 			new Name("Topaz Charm", TIER.OTHER), // L5, 20/40, 4s, +25% to Lightning Resistance
-			new Name("Thawing Charm", TIER.OTHER), // L12, 40/40, 3s, Grants Immunity to Freeze
+			new Name("Stone Charm", TIER.OTHER), // L8, 20/40, 3s, Cannot be Stunned
 			new Name("Antidote Charm", TIER.OTHER), // L24, 20/40, 3s, Grants Immunity to Poison
 			new Name("Dousing Charm", TIER.OTHER), // L32, 30/40, 3s, Grants Immunity to Ignite
 
-			new Name("Stone Charm", TIER.CLASS), // L8, 20/40, 3s, Cannot be Stunned
+			new Name("Thawing Charm", TIER.CLASS), // L12, 40/40, 3s, Grants Immunity to Freeze
 			new Name("Staunching Charm", TIER.CLASS), // L18, 30/40, 3s, Grants Immunity to Bleeding
+			new Name("Golden Charm", TIER.CLASS), // L50, 80/80, 1s, 15% increased Rarity of Items found
 
-			new Name("Golden Charm", TIER.OUTLINE), // L50, 80/80, 1s, 15% increased Rarity of Items found
 		).compare(tier, operator);
 	}
 	static getUniques(tier, operator = undefined) {

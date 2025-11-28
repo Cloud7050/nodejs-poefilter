@@ -90,9 +90,6 @@ function outline(filter) {
 
 	// Good base/mods
 	filter.multiWhitelist((c) => {
-		c.names = new Comparison(NameManager.getUncommons(TIER.OUTLINE));
-		c.categories(CATEGORY.GEAR_UNCOMMON);
-	}, (c) => {
 		c.names = new Comparison(NameManager.getMain(TIER.BAD, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN);
 		c.goodModMainhand(true);
