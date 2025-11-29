@@ -1333,6 +1333,7 @@ export class NameManager {
 		return new NameManager(
 			// https://poe2db.tw/us/Unique_item
 			new Name("Acrid Wand", TIER.NEVER), // Cursecarver
+			new Name("Ashen Staff", TIER.NEVER), // Dusk Vigil
 			new Name("Attuned Wand", TIER.NEVER), // Lifesprig
 			new Name("Bone Wand", TIER.NEVER), // Sanguine Diviner
 			// new Name("Chiming Staff", TIER.NEVER), // Sire of Shards, The Burden of Shadows
@@ -1342,16 +1343,21 @@ export class NameManager {
 			new Name("Fanatic Bow", TIER.NEVER), // Voltaxic Rift
 			new Name("Forge Maul", TIER.NEVER), // Trephina
 			new Name("Gothic Quarterstaff", TIER.NEVER), // The Sentry
+			new Name("Hardwood Spear", TIER.NEVER), // Splinter of Lorrata
 			new Name("Hunting Spear", TIER.NEVER), // Chainsting
 			new Name("Ironhead Spear", TIER.NEVER), // Tyranny's Grip
 			new Name("Leaden Greathammer", TIER.NEVER), // Chober Chaber
 			new Name("Long Quarterstaff", TIER.NEVER), // Pillar of the Caged God
+			new Name("Makeshift Crossbow", TIER.NEVER), // Mist Whisper
 			new Name("Omen Sceptre", TIER.NEVER), // Font of Power
+			new Name("Plated Mace", TIER.NEVER), // Seeing Stars
 			new Name("Rattling Sceptre", TIER.NEVER), // The Dark Defiler
 			new Name("Recurve Bow", TIER.NEVER), // Splinterheart
 			new Name("Temple Maul", TIER.NEVER), // Shyaba
 			new Name("Volatile Wand", TIER.NEVER), // Enezun's Charge
 			new Name("Voltaic Staff", TIER.NEVER), // Earthbound
+			new Name("War Spear", TIER.NEVER), // Daevata's Wind
+			new Name("Warpick", TIER.NEVER), // Sculpted Suffering
 			new Name("Withered Wand", TIER.NEVER), // The Wicked Quill
 			new Name("Wooden Club", TIER.NEVER), // Brynhand's Mark
 			new Name("Wrapped Quarterstaff", TIER.NEVER), // The Blood Thorn
@@ -1363,14 +1369,17 @@ export class NameManager {
 			new Name("Blazon Crest Shield", TIER.NEVER), // Alkem Eira
 			new Name("Blunt Quiver", TIER.NEVER), // Rearguard
 			new Name("Bone Raiment", TIER.NEVER), // Necromantle
+			new Name("Braced Sabatons", TIER.NEVER), // Darkray Vectors
 			new Name("Braced Tower Shield", TIER.NEVER), // Doomgate
 			new Name("Bronze Greaves", TIER.NEVER), // The Infinite Pursuit
 			new Name("Chain Mail", TIER.NEVER), // Coat of Red
 			new Name("Cloaked Mail", TIER.NEVER), // Pariah's Embrace
 			new Name("Corsair Cap", TIER.NEVER), // The Black Insignia
 			new Name("Covered Sabatons", TIER.NEVER), // Shankgonne
+			new Name("Crescent Targe", TIER.NEVER), // Feathered Fortress
 			new Name("Crucible Tower Shield", TIER.NEVER), // Svalinn
 			new Name("Cultist Crown", TIER.NEVER), // Crown of the Pale King
+			new Name("Elementalist Robe", TIER.NEVER), // Gloamgown
 			new Name("Elite Greathelm", TIER.NEVER), // Deidbell
 			new Name("Embossed Boots", TIER.NEVER), // Gamblesprint
 			new Name("Fierce Greathelm", TIER.NEVER), // Blood Price
@@ -1410,9 +1419,12 @@ export class NameManager {
 			new Name("Sacrificial Mantle", TIER.NEVER), // Soul Mantle
 			new Name("Sectioned Bracers", TIER.NEVER), // Idle Hands
 			new Name("Secured Leggings", TIER.NEVER), // Wake of Destruction
+			new Name("Shabby Hood", TIER.NEVER), // Innsmouth
 			new Name("Shielded Helm", TIER.NEVER), // The Vile Knight
 			new Name("Solid Mask", TIER.NEVER), // The Three Dragons
+			new Name("Sombre Gloves", TIER.NEVER), // Candlemaker
 			new Name("Spiked Buckler", TIER.NEVER), // Silverthorne
+			new Name("Spined Bracers", TIER.NEVER), // Snakebite
 			new Name("Spiritbone Crown", TIER.NEVER), // Keeper of the Arc
 			new Name("Splintered Tower Shield", TIER.NEVER), // Dionadair
 			new Name("Stacked Sabatons", TIER.NEVER), // Obern's Bastion
@@ -1420,6 +1432,7 @@ export class NameManager {
 			new Name("Stitched Gloves", TIER.NEVER), // Doedre's Tenure
 			new Name("Stone Greaves", TIER.NEVER), // Birth of Fury
 			new Name("Straw Sandals", TIER.NEVER), // Luminous Pace
+			new Name("Strider Vest", TIER.NEVER), // Yriel's Fostering
 			new Name("Suede Bracers", TIER.NEVER), // Northpaw
 			new Name("Threaded Shoes", TIER.NEVER), // Ghostmarch
 			new Name("Tonal Focus", TIER.NEVER), // Serpent's Lesson
@@ -1437,6 +1450,7 @@ export class NameManager {
 			// new Name("Iron Ring", TIER.NEVER), // Blackheart, Icefang Orbit, Prized Pain, Venopuncture
 			new Name("Lapis Amulet", TIER.NEVER), // Ligurium Talisman, Stone of Lazhwar, The Pandemonius
 			new Name("Linen Belt", TIER.NEVER), // Keelhaul, Umbilicus Immortalis
+			new Name("Long Belt", TIER.NEVER), // Soul Tether
 			new Name("Mail Belt", TIER.NEVER), // Coward's Legacy
 			new Name("Prismatic Ring", TIER.NEVER), // Gifts from Above
 			new Name("Rawhide Belt", TIER.NEVER), // Meginord's Girdle, Midnight Braid
@@ -1449,6 +1463,7 @@ export class NameManager {
 			new Name("Barbed Spear", TIER.OTHER), // Saitha's Spear
 			new Name("Crude Bow", TIER.OTHER), // Widowhail
 			new Name("Helix Spear", TIER.OTHER), // Spire of Ire
+			new Name("Siphoning Wand", TIER.OTHER), // Adonia's Ego
 
 			new Name("Viper Cap", TIER.OTHER), // Constricting Command
 			new Name("Wrapped Sandals", TIER.OTHER), // Wanderlust
