@@ -2630,55 +2630,15 @@ Hide
 	DisableDropSound
 
 Hide
-	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Rattling Sceptre" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow"
-	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
-	Rarity == Normal
-	ItemLevel < 80
-
-	DisableDropSound
-
-Hide
-	BaseType == "Akoyan Spear" "Attuned Wand" "Bolting Quarterstaff" "Dreaming Quarterstaff" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Fortified Hammer" "Galvanic Wand" "Grand Spear" "Marauding Mace" "Razor Quarterstaff" "Siege Crossbow" "Stalking Spear" "Withered Wand"
 	Class == Wands Staves
-	Rarity == Normal
-	ItemLevel < 81
-
-	DisableDropSound
-
-Hide
-	BaseType == "Akoyan Spear" "Attuned Wand" "Bolting Quarterstaff" "Dreaming Quarterstaff" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Fortified Hammer" "Galvanic Wand" "Grand Spear" "Marauding Mace" "Razor Quarterstaff" "Siege Crossbow" "Stalking Spear" "Withered Wand"
-	Class == Sceptres "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
-	Rarity == Normal
-	ItemLevel < 82
-
-	DisableDropSound
-
-Hide
-	BaseType == "Blunt Quiver" "Fire Quiver" "Penetrating Quiver" "Sacral Quiver" "Tasalian Focus" "Visceral Quiver" "Volant Quiver"
-	Class == Foci Bucklers Shields Quivers
-	Rarity == Normal
-	ItemLevel < 80
-
-	DisableDropSound
-
-Hide
-	BaseType == "Primed Quiver" "Tawhoan Tower Shield" "Toxic Quiver"
-	Class == Foci Bucklers Shields Quivers
-	Rarity == Normal
-	ItemLevel < 82
-
-	DisableDropSound
-
-Hide
-	Class == Wands Staves
-	Rarity == Magic Rare
+	Rarity < Unique
 	ItemLevel < 81
 
 	DisableDropSound
 
 Hide
 	Class == Sceptres Foci "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
-	Rarity == Magic Rare
+	Rarity < Unique
 	ItemLevel < 82
 
 	DisableDropSound
@@ -2698,24 +2658,8 @@ Hide
 	DisableDropSound
 
 Hide
-	BaseType == "Ancestral Tiara" "Falconer's Jacket" "Feathered Raiment" "Flowing Raiment" "Sekhema Sandals" "Sirenscale Gloves" "Sleek Jacket" "Slipstrike Vest" "Soldier Cuirass" "Vile Robe" "Warlord Cuirass"
 	Class == Helmets "Body Armours" Gloves Boots
-	Rarity == Normal
-	ItemLevel < 80
-
-	DisableDropSound
-
-Hide
-	BaseType == "Corsair Coat" "Massive Mitts" "Rambler Jacket" "Sacramental Robe" "Secured Wraps" "Tasalian Greaves" "Wolfskin Mantle"
-	Class == Helmets "Body Armours" Gloves Boots
-	Rarity == Normal
-	ItemLevel < 82
-
-	DisableDropSound
-
-Hide
-	Class == Helmets "Body Armours" Gloves Boots
-	Rarity == Magic Rare
+	Rarity < Unique
 	ItemLevel < 82
 
 	DisableDropSound
