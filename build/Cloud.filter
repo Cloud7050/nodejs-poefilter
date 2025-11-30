@@ -413,10 +413,12 @@ Show
 	BaseType == "Exotic Coinage"
 	Class == "Stackable Currency"
 
-	SetFontSize 37
+	SetFontSize 45
 	SetTextColor 33 252 162 255
 	SetBackgroundColor 0 86 51 255
 	SetBorderColor 33 252 162 255
+	PlayEffect Brown
+	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Brown Cross
 
 Show

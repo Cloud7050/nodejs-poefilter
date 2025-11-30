@@ -312,7 +312,7 @@ function expedition(filter) {
 		c.names = new Comparison(NameManager.getCoinage());
 		c.categories(CATEGORY.CURRENCY);
 
-		e.colourExalt(PAIR_MECHANIC).sizeExalt();
+		e.colourExalt(PAIR_MECHANIC).sizeChance();
 	});
 }
 

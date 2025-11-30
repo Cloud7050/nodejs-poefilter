@@ -57,13 +57,13 @@ export class NameManager {
 
 			new Name("Perfect Orb of Augmentation", 1),
 			new Name("Exalted Orb", 1),
+			new Name("Vaal Orb", 1),
 			new Name("Orb of Chance", 1),
 			new Name("Greater Exalted Orb", 2.14),
-			new Name("Vaal Orb", 3.92),
 			new Name("Perfect Regal Orb", 11),
 
 			new Name("Perfect Jeweller's Orb", 20.5),
-			new Name("Chaos Orb", 45),
+			new Name("Chaos Orb", 40),
 			new Name("Greater Chaos Orb", 125),
 			new Name("Fracturing Orb", 280),
 			new Name("Orb of Annulment", DIV / 3.33),
@@ -272,7 +272,7 @@ export class NameManager {
 	}
 	static getCoinage(min = undefined, max = undefined) {
 		return new NameManager(
-			new Name("Exotic Coinage", 2),
+			new Name("Exotic Coinage", 50),
 		).range(min, max);
 	}
 
