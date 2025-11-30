@@ -508,6 +508,23 @@ function tablets(filter) {
 
 	filter.block((c, e) => {
 		c.continue();
+		c.names = new Comparison(NameManager.getUniqueTablets(null, 1));
+		c.categories(CATEGORY.TABLET);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+
+		e.colourChance(PAIR_MECHANIC).sizeAugment();
+	});
+	filter.block((c, e) => {
+		c.continue();
+		c.names = new Comparison(NameManager.getUniqueTablets(1, 20));
+		c.categories(CATEGORY.TABLET);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+
+		e.colourChance(PAIR_MECHANIC).sizeExalt();
+	});
+	filter.block((c, e) => {
+		c.continue();
+		c.names = new Comparison(NameManager.getUniqueTablets(20));
 		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 

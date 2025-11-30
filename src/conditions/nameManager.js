@@ -1487,6 +1487,19 @@ export class NameManager {
 			new Name("Ultimate Life Flask", TIER.CLASS), // Olroth's Resolve
 		).compare(tier, operator);
 	}
+	static getUniqueTablets(min = undefined, max = undefined) {
+		return new NameManager(
+			// https://poe2db.tw/us/Unique_item#OtherUnique
+			new Name("Expedition Precursor Tablet", 1 / 2), // Forgotten By Time
+			new Name("Delirium Precursor Tablet", 1 / 2), // Clear Skies
+
+			new Name("Breach Precursor Tablet", 3), // Wraeclast Besieged
+			new Name("Overseer Precursor Tablet", (24 + 4) / 2), // Season of the Hunt, Cruel Hegemony
+
+			new Name("Precursor Tablet", ((0.9 * DIV) + (DIV / 5)) / 2), // Visions of Paradise > The Grand Project
+			new Name("Ritual Precursor Tablet", 0.9 * DIV), // Freedom of Faith
+		).range(min, max);
+	}
 	static getUniqueRelics(min = undefined, max = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Relics#RelicsUnique_Unique

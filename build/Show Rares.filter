@@ -1695,6 +1695,33 @@ Show
 	Continue
 
 Show
+	BaseType == "Delirium Precursor Tablet" "Expedition Precursor Tablet"
+	Class == Tablet
+	Rarity == Unique
+
+	SetFontSize 32
+	SetTextColor 0 46 25 255
+	SetBackgroundColor 0 237 150 255
+	SetBorderColor 0 46 25 255
+	MinimapIcon 1 Brown Star
+
+	Continue
+
+Show
+	BaseType == "Breach Precursor Tablet" "Overseer Precursor Tablet"
+	Class == Tablet
+	Rarity == Unique
+
+	SetFontSize 37
+	SetTextColor 0 46 25 255
+	SetBackgroundColor 0 237 150 255
+	SetBorderColor 0 46 25 255
+	MinimapIcon 0 Brown Star
+
+	Continue
+
+Show
+	BaseType == "Precursor Tablet" "Ritual Precursor Tablet"
 	Class == Tablet
 	Rarity == Unique
 
