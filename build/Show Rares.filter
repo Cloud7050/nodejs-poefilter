@@ -2643,6 +2643,12 @@ Show
 
 	#
 
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Unique
+
+	#
+
 Hide
 	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers
 	Rarity < Unique
@@ -2714,17 +2720,17 @@ Hide
 	DisableDropSound
 
 Hide
-	Class == Charms
-	Rarity < Unique
-	ItemLevel < 67
-
-	DisableDropSound
-
-Hide
 	BaseType == "Amber Amulet" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Breach Ring" "Dousing Charm" "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Heavy Belt" "Jade Amulet" "Lapis Amulet" "Long Belt" "Lunar Amulet" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Penumbra Amulet" "Penumbra Ring" "Prismatic Ring" "Solar Amulet" "Staunching Charm" "Stellar Amulet" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Topaz Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Unset Ring"
 	Class == Amulets Rings
 	Rarity < Unique
 	ItemLevel < 80
+
+	DisableDropSound
+
+Hide
+	Class == Charms
+	Rarity < Unique
+	ItemLevel < 81
 
 	DisableDropSound
 
