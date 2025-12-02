@@ -61,15 +61,15 @@ function uncommons(filter) {
 		c.names = new Comparison(NameManager.getUncommons(TIER.NEVER, OPERATOR.LTE));
 		c.categories(CATEGORY.GEAR_UNCOMMON);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (charms)
-		c.categories(CATEGORY.CHARM);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(67, OPERATOR.LT);
 	}, (c) => { // Too low ilvl (other+ tier, jewellery)
 		c.names = new Comparison(NameManager.getUncommons(TIER.OTHER, OPERATOR.GTE));
 		c.categories(CATEGORY.JEWELLERY);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(80, OPERATOR.LT);
+	}, (c) => { // Too low ilvl (charms)
+		c.categories(CATEGORY.CHARM);
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.ilvl = new Comparison(81, OPERATOR.LT);
 	}, (c) => { // Too low ilvl (bad tier, jewellery)
 		c.names = new Comparison(NameManager.getUncommons(TIER.BAD));
 		c.categories(CATEGORY.JEWELLERY);
