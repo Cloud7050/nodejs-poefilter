@@ -1368,6 +1368,7 @@ export class NameManager {
 			new Name("Barricade Tower Shield", TIER.NEVER), // Window to Paradise
 			new Name("Blazon Crest Shield", TIER.NEVER), // Alkem Eira
 			new Name("Blunt Quiver", TIER.NEVER), // Rearguard
+			new Name("Bolstered Mitts", TIER.NEVER), // Dreadfist
 			new Name("Bone Raiment", TIER.NEVER), // Necromantle
 			new Name("Braced Sabatons", TIER.NEVER), // Darkray Vectors
 			new Name("Braced Tower Shield", TIER.NEVER), // Doomgate
@@ -1378,6 +1379,7 @@ export class NameManager {
 			new Name("Covered Sabatons", TIER.NEVER), // Shankgonne
 			new Name("Crescent Targe", TIER.NEVER), // Feathered Fortress
 			new Name("Crucible Tower Shield", TIER.NEVER), // Svalinn
+			new Name("Crystal Focus", TIER.NEVER), // The Eternal Spark
 			new Name("Cultist Crown", TIER.NEVER), // Crown of the Pale King
 			new Name("Elementalist Robe", TIER.NEVER), // Gloamgown
 			new Name("Elite Greathelm", TIER.NEVER), // Deidbell
@@ -1402,6 +1404,7 @@ export class NameManager {
 			new Name("Leather Buckler", TIER.NEVER), // Dunkelhalt
 			new Name("Leather Vest", TIER.NEVER), // Bristleboar
 			new Name("Linen Wraps", TIER.NEVER), // Killjoy
+			new Name("Mail Sabatons", TIER.NEVER), // The Knight-errant
 			new Name("Mail Vestments", TIER.NEVER), // Icetomb
 			new Name("Maraketh Cuirass", TIER.NEVER), // Titanrot Cataphract
 			// new Name("Omen Crest Shield", TIER.NEVER), // Mahuxotl's Machination, Rise of the Phoenix
@@ -1435,16 +1438,20 @@ export class NameManager {
 			new Name("Strider Vest", TIER.NEVER), // Yriel's Fostering
 			new Name("Suede Bracers", TIER.NEVER), // Northpaw
 			new Name("Threaded Shoes", TIER.NEVER), // Ghostmarch
+			new Name("Tideseer Mantle", TIER.NEVER), // Waveshaper
 			new Name("Tonal Focus", TIER.NEVER), // Serpent's Lesson
 			new Name("Torn Gloves", TIER.NEVER), // Painter's Servant
 			new Name("Twig Circlet", TIER.NEVER), // Crown of Thorns
 			new Name("Vaal Cuirass", TIER.NEVER), // Greed's Embrace
+			new Name("Verisium Cuffs", TIER.NEVER), // The Prisoner's Manacles
 			new Name("Warrior Greathelm", TIER.NEVER), // Corona of the Red Sun
 			new Name("Wooden Buckler", TIER.NEVER), // Nocturne
 			new Name("Wrapped Greathelm", TIER.NEVER), // Black Sun Crest
 
+			// new Name("Amber Amulet", TIER.NEVER), // Carnage Heart, Revered Resin, Xoph's Blood
 			new Name("Antidote Charm", TIER.NEVER), // Arakaali's Gift
 			new Name("Azure Amulet", TIER.NEVER), // The Everlasting Gaze, Ungil's Harmony
+			new Name("Crimson Amulet", TIER.NEVER), // Idol of Uldurn
 			new Name("Dousing Charm", TIER.NEVER), // Beira's Anguish
 			// new Name("Emerald Ring", TIER.NEVER), // Death Rush, Thief's Torment, Vigilant View
 			// new Name("Iron Ring", TIER.NEVER), // Blackheart, Icefang Orbit, Prized Pain, Venopuncture
@@ -1469,6 +1476,7 @@ export class NameManager {
 			new Name("Wrapped Sandals", TIER.OTHER), // Wanderlust
 
 			new Name("Amethyst Ring", TIER.OTHER), // Blackflame, Ming's Heart. GOOD: Original Sin
+			new Name("Bloodstone Amulet", TIER.OTHER), // The Anvil. GOOD: Yoke of Suffering
 			new Name("Fire Quiver", TIER.OTHER), // Blackgleam. GOOD: Cadiro's Gambit
 			new Name("Gold Ring", TIER.OTHER), // Andvarius, Perandus Seal, Ventor's Gamble
 			new Name("Heavy Belt", TIER.OTHER), // Waistgate, Zerphi's Genesis. GOOD: Headhunter
