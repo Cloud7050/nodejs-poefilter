@@ -73,6 +73,8 @@ let changes = {
 	"Recombinator": at(S, 23),
 	"Relic Locker": at(S, 23, -8),
 
+	"Exile's Treasurer Hideout Decoration": at(W, 39),
+
 	// Left
 	"Sphinx Mystic Hideout Decoration": at(S, -7, 28),
 	"Well": at(S, -11, -16),

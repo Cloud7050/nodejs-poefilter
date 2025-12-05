@@ -21,7 +21,7 @@ export class Hideout {
 
 	// Tries to extract the item name from the given span
 	static #matchItem(span) {
-		let potentialKey = span.match(/^ {4}"([\w ]+)": {$/)?.[1];
+		let potentialKey = span.match(/^ {4}"([\w' ]+)": {$/)?.[1];
 		return potentialKey ?? null;
 	}
 

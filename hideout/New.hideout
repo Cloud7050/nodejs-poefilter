@@ -1256,6 +1256,13 @@
       "y": 1241,
       "r": 28831,
       "fv": 132
+    },
+    "Exile's Treasurer Hideout Decoration": {
+      "hash": 1995005829,
+"x": 1350,
+"y": 1134,
+"r": 40960,
+      "fv": 0
     }
   }
 }

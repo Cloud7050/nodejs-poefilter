@@ -3,7 +3,7 @@
 	"main": "./src/index.js",
 	"scripts": {
 		"start": "node .",
-		"hideout": "node ./hideout/index.js"
+		"hideout": "nodemon ./hideout/index.js"
 	},
 	"dependencies": {
 		"@material/material-color-utilities": "^0.3.0"
