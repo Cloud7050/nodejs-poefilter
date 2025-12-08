@@ -137,20 +137,6 @@
 "r": 24576,
       "fv": 0
     },
-    "Griffin Fledgling Pet": {
-      "hash": 2669344577,
-"x": 1361,
-"y": 1123,
-"r": 40960,
-      "fv": 0
-    },
-    "Hiveborn Crawler Pet": {
-      "hash": 1281978160,
-"x": 1329,
-"y": 1105,
-"r": 35499,
-      "fv": 0
-    },
     "Sphinx Mystic Hideout Decoration": {
       "hash": 1768805880,
 "x": 1332,
@@ -1262,6 +1248,20 @@
 "x": 1350,
 "y": 1134,
 "r": 40960,
+      "fv": 0
+    },
+    "Griffin Fledgling Pet": {
+      "hash": 2669344577,
+"x": 1361,
+"y": 1123,
+"r": 40960,
+      "fv": 0
+    },
+    "Hiveborn Crawler Pet": {
+      "hash": 1281978160,
+"x": 1329,
+"y": 1105,
+"r": 35499,
       "fv": 0
     }
   }

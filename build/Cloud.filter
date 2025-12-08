@@ -985,7 +985,7 @@ Show
 	MinimapIcon 0 Green Star
 
 Show
-	Class == "Map Fragments"
+	Class == "Map Fragments" "Pinnacle Keys"
 
 	SetFontSize 45
 	SetTextColor 166 192 0 255
