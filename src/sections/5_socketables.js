@@ -4,7 +4,6 @@ import { DIV } from "../conditions/name.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { PAIR_SOCKETABLE } from "../index.js";
 
-//TODO talismans x2 sets, prefix named soul cores, 4 abyssal eyes
 export function sectionSocketables(filter) {
 	runes(filter);
 	other(filter);

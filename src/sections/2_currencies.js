@@ -197,12 +197,6 @@ function abyss(filter) {
 		e.colourAugment(PAIR_ABYSS).sizeExalt();
 	});
 
-	// filter.block((c, e) => {
-	// 	c.names = new Comparison(NameManager.getAbyss3(null, 20));
-	// 	c.categories(CATEGORY.CURRENCY);
-
-	// 	e.colourExalt(PAIR_ABYSS).sizeExalt();
-	// });
 	filter.block((c, e) => {
 		c.names = new Comparison(NameManager.getAbyss3());
 		c.categories(CATEGORY.CURRENCY);
@@ -255,12 +249,12 @@ function ritual(filter) {
 
 		e.colourAugment(PAIR_CRAFT).sizeAugment();
 	});
-	// filter.block((c, e) => {
-	// 	c.names = new Comparison(NameManager.getCatalysts(1));
-	// 	c.categories(CATEGORY.CURRENCY);
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getCatalysts(1));
+		c.categories(CATEGORY.CURRENCY);
 
-	// 	e.colourExalt(PAIR_CRAFT).sizeExalt();
-	// });
+		e.colourExalt(PAIR_CRAFT).sizeExalt();
+	});
 }
 
 // Sekhema keys

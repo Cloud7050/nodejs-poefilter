@@ -26,8 +26,13 @@ export class Comparison {
 		}
 	}
 
+	exportValue() {
+		let stringList = this.value instanceof StringList ? this.value : new StringList(this.value.toString())
+		return stringList.export();
+	}
+
 	export(name) {
-		let value = (this.value instanceof StringList ? this.value : new StringList(this.value.toString())).export();
+		let value = this.exportValue();
 		let quantity = this.quantity ?? "";
 		return `${name} ${this.operator}${quantity} ${value}`;
 	}

@@ -1561,8 +1561,6 @@ export class NameManager {
 	}
 
 	export() {
-		if (this.names.length === 0) console.warn("[!] Exporting block with no names!");
-
 		// Alphabetical sort
 		this.names.sort((a, b) => a.name.localeCompare(b.name));
 		// Then custom value sort

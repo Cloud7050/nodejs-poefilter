@@ -35,6 +35,11 @@ export class ConditionSet {
 		return this.isContinue ? "Continue" : null;
 	}
 
+	shouldComment() {
+		// Comment out the block if the filtered list of names is empty
+		return this.names !== null && this.names.exportValue() === "";
+	}
+
 	export() {
 		let spans = [];
 		function handle(props, spanCallback) {

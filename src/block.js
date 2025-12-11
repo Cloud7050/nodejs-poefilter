@@ -25,6 +25,11 @@ export class Block {
 			spans.push(`	${blockEnd}`);
 		}
 
+		// Whether to comment out the whole block
+		if (this.c.shouldComment()) {
+			spans = spans.map(span => `#${span}`);
+		}
+
 		spans.push("");
 		return spans;
 	}
