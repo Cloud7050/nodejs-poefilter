@@ -5,7 +5,7 @@ import { sectionGlobal } from "./sections/1_global.js";
 import { sectionCurrencies } from "./sections/2_currencies.js";
 import { sectionOmens } from "./sections/3_omens.js";
 import { sectionGems } from "./sections/4_gems.js";
-import { sectionSocketables } from "./sections/5_socketables.js";
+import { sectionAugments } from "./sections/5_augments.js";
 import { sectionMisc } from "./sections/6_misc.js";
 import { sectionRarity } from "./sections/7_rarity.js";
 import { sectionOutlines } from "./sections/8_outlines.js";
@@ -23,7 +23,7 @@ export const PAIR_MECHANIC = [Colour.SEAFOAM, PRESET.BROWN];
 // TEAL
 export const PAIR_GEM = [Colour.CYAN, PRESET.GREY];
 // SKY
-export const PAIR_SOCKETABLE = [Colour.CERULEAN, PRESET.CYAN];
+export const PAIR_AUGMENT = [Colour.CERULEAN, PRESET.CYAN];
 export const PAIR_JEWEL = [Colour.BLUE, PRESET.BLUE];
 export const PAIR_GEAR = [Colour.LAPIS, PRESET.BLUE];
 export const PAIR_ESSENCE = [Colour.PURPLE, PRESET.PURPLE];
@@ -38,7 +38,7 @@ function makeFilter(name, showRares = false) {
 	sectionCurrencies(filter);
 	sectionOmens(filter);
 	sectionGems(filter);
-	sectionSocketables(filter);
+	sectionAugments(filter);
 	sectionMisc(filter);
 	sectionRarity(filter);
 

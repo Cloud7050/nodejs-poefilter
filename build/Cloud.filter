@@ -730,7 +730,7 @@ Show
 	MinimapIcon 0 Cyan Diamond
 
 Show
-	BaseType == "Bear Talisman" "Cholotl's Soul Core of War" "Hayoxi's Soul Core of Heatproofing" "Stag Talisman" "Talisman of Grold" "Topotante's Soul Core of Dampening" "Xipocado's Soul Core of Dominion" "Zalatl's Soul Core of Insulation"
+	BaseType == "Bear Idol" "Cholotl's Soul Core of War" "Hayoxi's Soul Core of Heatproofing" "Idol of Grold" "Stag Idol" "Topotante's Soul Core of Dampening" "Xipocado's Soul Core of Dominion" "Zalatl's Soul Core of Insulation"
 	Class == Socketable
 
 	SetFontSize 32
@@ -740,7 +740,7 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	BaseType == "Boar Talisman" "Cat Talisman" "Citaqualotl's Soul Core of Foulness" "Fox Talisman" "Guatelitzi's Soul Core of Endurance" "Opiloti's Soul Core of Assault" "Owl Talisman" "Ox Talisman" "Primate Talisman" "Quipolatl's Soul Core of Flow" "Rabbit Talisman" "Serpent Talisman" "Tacati's Soul Core of Affliction" "Talisman of Eeshta" "Talisman of Egrin" "Talisman of Maxarius" "Talisman of Ralakesh" "Talisman of Thruldana" "Ulaman's Gaze" "Uromoti's Soul Core of Attenuation" "Wolf Talisman" "Xopec's Soul Core of Power"
+	BaseType == "Boar Idol" "Cat Idol" "Citaqualotl's Soul Core of Foulness" "Fox Idol" "Guatelitzi's Soul Core of Endurance" "Idol of Eeshta" "Idol of Egrin" "Idol of Maxarius" "Idol of Ralakesh" "Idol of Thruldana" "Opiloti's Soul Core of Assault" "Owl Idol" "Ox Idol" "Primate Idol" "Quipolatl's Soul Core of Flow" "Rabbit Idol" "Serpent Idol" "Tacati's Soul Core of Affliction" "Ulaman's Gaze" "Uromoti's Soul Core of Attenuation" "Wolf Idol" "Xopec's Soul Core of Power"
 	Class == Socketable
 
 	SetFontSize 37
@@ -750,7 +750,7 @@ Show
 	MinimapIcon 0 Cyan Cross
 
 Show
-	BaseType == "Amanamu's Gaze" "Atmohua's Soul Core of Retreat" "Estazunti's Soul Core of Convalescence" "Kurgal's Gaze" "Soul Core of Atmohua" "Soul Core of Azcapa" "Soul Core of Cholotl" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Puhuarte" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zalatl" "Soul Core of Zantipi" "Talisman of Sirrius" "Tecrod's Gaze" "Tzamoto's Soul Core of Ferocity"
+	BaseType == "Amanamu's Gaze" "Atmohua's Soul Core of Retreat" "Estazunti's Soul Core of Convalescence" "Idol of Sirrius" "Kurgal's Gaze" "Soul Core of Atmohua" "Soul Core of Azcapa" "Soul Core of Cholotl" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Puhuarte" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zalatl" "Soul Core of Zantipi" "Tecrod's Gaze" "Tzamoto's Soul Core of Ferocity"
 	Class == Socketable
 
 	SetFontSize 45
@@ -2771,7 +2771,7 @@ Hide
 	DisableDropSound
 
 Hide
-	BaseType == "Acrid Wand" "Amphora Relic" "Anchorite Garb" "Antidote Charm" "Ashen Staff" "Assassin Garb" "Attuned Wand" "Azure Amulet" "Barricade Tower Shield" "Blazon Crest Shield" "Blunt Quiver" "Bolstered Mitts" "Bone Raiment" "Bone Wand" "Braced Sabatons" "Braced Tower Shield" "Bronze Greaves" "Chain Mail" "Cloaked Mail" "Corsair Cap" "Covered Sabatons" "Crescent Targe" "Crimson Amulet" "Crucible Tower Shield" "Crystal Focus" "Cultist Crown" "Cultist Greathammer" "Dousing Charm" "Dualstring Bow" "Dyad Crossbow" "Elementalist Robe" "Elite Greathelm" "Embossed Boots" "Fanatic Bow" "Fierce Greathelm" "Fire Quiver" "Firm Bracers" "Forge Maul" "Full Plate" "Gold Circlet" "Goldcast Cuffs" "Gothic Quarterstaff" "Guarded Helm" "Hardwood Spear" "Havoc Raiment" "Hewn Mask" "Horned Crown" "Hunting Spear" "Iron Cuirass" "Iron Greaves" "Ironhead Spear" "Jewelled Gloves" "Jingling Crest Shield" "Keth Raiment" "Lace Hood" "Laced Boots" "Lapis Amulet" "Leaden Greathammer" "Leather Buckler" "Leather Vest" "Linen Belt" "Linen Wraps" "Long Belt" "Long Quarterstaff" "Mail Belt" "Mail Sabatons" "Mail Vestments" "Makeshift Crossbow" "Maraketh Cuirass" "Omen Sceptre" "Ornate Buckler" "Pauascale Gloves" "Pilgrim Vestments" "Plate Gauntlets" "Plated Buckler" "Plated Mace" "Prismatic Ring" "Quilted Vest" "Rampart Tower Shield" "Rattling Sceptre" "Rawhide Belt" "Recurve Bow" "Riveted Mitts" "Rogue Armour" "Rough Greaves" "Ruby Ring" "Rusted Greathelm" "Sacrificial Mantle" "Sapphire Charm" "Seal Relic" "Sectioned Bracers" "Secured Leggings" "Shabby Hood" "Shielded Helm" "Solid Mask" "Sombre Gloves" "Spiked Buckler" "Spined Bracers" "Spiritbone Crown" "Splintered Tower Shield" "Stacked Sabatons" "Steel Plate" "Stitched Gloves" "Stone Greaves" "Straw Sandals" "Strider Vest" "Suede Bracers" "Tapestry Relic" "Temple Maul" "Threaded Shoes" "Tideseer Mantle" "Tonal Focus" "Topaz Charm" "Torn Gloves" "Toxic Quiver" "Twig Circlet" "Vaal Cuirass" "Verisium Cuffs" "Volatile Wand" "Voltaic Staff" "War Spear" Warpick "Warrior Greathelm" "Withered Wand" "Wooden Buckler" "Wooden Club" "Wrapped Greathelm" "Wrapped Quarterstaff" "Zealot Bow"
+	BaseType == "Amphora Relic" "Seal Relic" "Tapestry Relic"
 	Rarity == Unique
 
 	DisableDropSound
