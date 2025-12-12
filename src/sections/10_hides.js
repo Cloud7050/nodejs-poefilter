@@ -5,11 +5,11 @@ import { NameManager, TIER } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
 
 export function sectionHides(filter) {
-	weapons(filter);
-	armour(filter);
-	uncommons(filter);
+	// weapons(filter);
+	// armour(filter);
+	// uncommons(filter);
 
-	uniques(filter);
+	// uniques(filter);
 }
 
 function weapons(filter) {
