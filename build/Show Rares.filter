@@ -1015,7 +1015,7 @@ Show
 	MinimapIcon 0 Green Cross
 
 Show
-	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Normal
 
 	SetFontSize 32
@@ -1027,7 +1027,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Magic
 
 	SetFontSize 27
@@ -1039,7 +1039,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Rare
 
 	SetFontSize 27
@@ -1051,7 +1051,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Unique
 
 	SetFontSize 45
@@ -1232,7 +1232,7 @@ Show
 
 Show
 	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow"
-	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces"
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
@@ -1280,7 +1280,7 @@ Show
 
 Show
 	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow"
-	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	Class == "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces"
 	Rarity == Rare
 	ItemLevel >= 82
 	Corrupted False
@@ -1839,7 +1839,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts
+	Class == Sceptres Foci Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts
 	ItemLevel >= 82
 
 	SetBorderColor 74 230 58 255
@@ -1855,7 +1855,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces"
 	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" "of Many"
 
 	SetBorderColor 255 225 87 255
@@ -2014,7 +2014,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Class == Staves Bows Crossbows Quarterstaves Talismans "Two Hand Maces" "Body Armours"
 	Rarity == Normal
 	Sockets >= 3
 	Corrupted False
@@ -2030,7 +2030,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Class == Staves Bows Crossbows Quarterstaves Talismans "Two Hand Maces" "Body Armours"
 	Rarity == Normal
 	Sockets >= 3
 	Corrupted True
@@ -2174,7 +2174,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Class == Staves Bows Crossbows Quarterstaves Talismans "Two Hand Maces" "Body Armours"
 	Rarity == Magic
 	Sockets >= 3
 	Corrupted False
@@ -2190,7 +2190,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Class == Staves Bows Crossbows Quarterstaves Talismans "Two Hand Maces" "Body Armours"
 	Rarity == Magic
 	Sockets >= 3
 	Corrupted True
@@ -2334,7 +2334,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Class == Staves Bows Crossbows Quarterstaves Talismans "Two Hand Maces" "Body Armours"
 	Rarity == Rare
 	Sockets >= 3
 	Corrupted False
@@ -2350,7 +2350,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Class == Staves Bows Crossbows Quarterstaves Talismans "Two Hand Maces" "Body Armours"
 	Rarity == Rare
 	Sockets >= 3
 	Corrupted True
@@ -2494,7 +2494,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Class == Staves Bows Crossbows Quarterstaves Talismans "Two Hand Maces" "Body Armours"
 	Rarity == Unique
 	Sockets >= 3
 	Corrupted False
@@ -2510,7 +2510,7 @@ Show
 	Continue
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Class == Staves Bows Crossbows Quarterstaves Talismans "Two Hand Maces" "Body Armours"
 	Rarity == Unique
 	Sockets >= 3
 	Corrupted True
@@ -2593,7 +2593,7 @@ Show
 	#
 
 Show
-	Class == Staves Bows Crossbows Quarterstaves "Two Hand Maces" "Body Armours"
+	Class == Staves Bows Crossbows Quarterstaves Talismans "Two Hand Maces" "Body Armours"
 	Sockets >= 3
 
 	#
@@ -2621,7 +2621,7 @@ Show
 
 Show
 	BaseType == "Akoyan Spear" "Ashen Staff" "Attuned Wand" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dreaming Quarterstaff" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Fortified Hammer" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Ironwood Greathammer" "Marauding Mace" "Massive Greathammer" "Obliterator Bow" "Rattling Sceptre" "Razor Quarterstaff" "Shrine Sceptre" "Siege Crossbow" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand"
-	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces"
+	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces"
 	HasExplicitMod >=1 Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" "of Many"
 
 	#
@@ -2648,7 +2648,7 @@ Show
 	#
 
 Show
-	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves "Two Hand Maces" Foci Bucklers Shields Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Foci Bucklers Shields Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Rare
 
 	#

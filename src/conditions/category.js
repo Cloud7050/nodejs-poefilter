@@ -14,7 +14,7 @@ const MAIN_OTHER_CASTER_TWO = new StringList("Staves");
 const MAIN_OTHER_CASTER = new StringList(MAIN_OTHER_CASTER_ONE, MAIN_OTHER_CASTER_TWO);
 const MAIN_OTHER_ATTACKER_ONE = new StringList("One Hand Maces", "Spears");
 const MAIN_OTHER_ATTACKER_TWO = new StringList("Bows", "Crossbows", "Quarterstaves",
-	"Two Hand Maces");
+	"Talismans", "Two Hand Maces");
 const MAIN_OTHER_ATTACKER = new StringList(MAIN_OTHER_ATTACKER_ONE, MAIN_OTHER_ATTACKER_TWO);
 const MAIN_OTHER = new StringList(MAIN_OTHER_CASTER, MAIN_OTHER_ATTACKER);
 const OFF_OTHER_BLOCK = new StringList("Bucklers", "Shields");
