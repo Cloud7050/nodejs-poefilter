@@ -728,6 +728,35 @@ export class NameManager {
 
 			new Name("Striking Quarterstaff", TIER.OTHER), // 53-111 phys, 10% cc, x1.4, L77, 16% increased Melee Strike Range with this weapon
 
+			// https://poe2db.tw/us/Talismans#TalismansItem
+			//TODO wait for market to populate then remove unobtainables
+			new Name("Changeling Talisman", TIER.LOW),
+			new Name("Nettle Talisman", TIER.LOW), // L5
+			new Name("Cinderbark Talisman", TIER.LOW), // L10
+			new Name("Familial Talisman", TIER.LOW), // L16
+			new Name("Frenzied Talisman", TIER.LOW), // L22
+			new Name("Primal Talisman", TIER.LOW), // L28
+			new Name("Rabid Talisman", TIER.LOW), // L34
+			new Name("Vicious Talisman", TIER.LOW), // L40
+			new Name("Voltfang Talisman", TIER.LOW), // L46
+			new Name("Lumbering Talisman", TIER.LOW), // L52
+			new Name("Roaring Talisman", TIER.LOW), // L58
+			new Name("Wingbeat Talisman", TIER.LOW), // L65
+			new Name("Condemned Talisman", TIER.LOW), // L65
+			new Name("Howling Talisman", TIER.LOW), // L55
+			new Name("Fury Talisman", TIER.LOW), // L59
+			new Name("Cruel Talisman", TIER.LOW), // L63
+			new Name("Spiny Talisman", TIER.LOW), // L67
+			new Name("Ashbark Talisman", TIER.LOW), // L72
+			new Name("Alpha Talisman", TIER.LOW), // L75
+			new Name("Wildwood Talisman", TIER.LOW), // L70
+
+			new Name("Fang Talisman", TIER.OTHER), // 70-116 phys, 8% cc, x1.25, L77, Minions deal 30—50% increased Damage
+			new Name("Fungal Talisman", TIER.OTHER), // 59-98 phys, 8% cc, x1.4, L78
+			new Name("Maji Talisman", TIER.OTHER), // 61-114 ogts, 8% cc, x.1.25, L79, +8—12 to Maximum Rage
+			new Name("Thunder Talisman", TIER.OTHER), // 23.1-130.9 phys, 9.9-56.1 lightning, 8% cc, x1.3, L77, 15—25% increased Magnitude of Shock you inflict
+			new Name("Jade Talisman", TIER.OTHER), // 101-151 phys, 5% cc, x1.1, L78
+
 			// https://poe2db.tw/us/Two_Hand_Maces#TwoHandMacesItem
 			new Name("Felled Greatclub", TIER.LOW), // 13-18 phys, 5% cc, x1.1
 			new Name("Oak Greathammer", TIER.LOW), // 14-26 phys, 5% cc, x1.05, L4, Causes 30–50% increased Stun Buildup
@@ -755,41 +784,6 @@ export class NameManager {
 	}
 	static getOff(tier, operator = undefined) {
 		return new NameManager(
-			// https://poe2db.tw/us/Foci#FociItem
-			new Name("Twig Focus", TIER.LOW), // 12 ES
-			new Name("Woven Focus", TIER.LOW), // 15 ES, L6
-			new Name("Antler Focus", TIER.LOW), // 17 ES, L10
-			new Name("Engraved Focus", TIER.LOW), // 21 ES, L16
-			new Name("Tonal Focus", TIER.LOW), // 25 ES, L22
-			new Name("Crystal Focus", TIER.LOW), // 28 ES, L26
-			new Name("Voodoo Focus", TIER.LOW), // 32 ES, L33
-			new Name("Plumed Focus", TIER.LOW), // 34 ES, L36
-			new Name("Runed Focus", TIER.LOW), // 40 ES, L45
-			new Name("Whorl Focus", TIER.LOW), // 43 ES, L51
-			new Name("Arrayed Focus", TIER.LOW), // 45 ES, L54
-			new Name("Cultist Focus", TIER.LOW), // 49 ES, L59
-			new Name("Hallowed Focus", TIER.LOW), // 50 ES, L61
-			new Name("Druidic Focus", TIER.LOW), // 52 ES, L65
-			new Name("Leyline Focus", TIER.LOW), // 58 ES, L70
-			new Name("Sacred Focus", TIER.LOW), // 63 ES, L75
-
-			new Name("Tasalian Focus", TIER.CLASS), // 68 ES, L80
-
-			// https://poe2db.tw/us/Quivers#QuiversItem
-			new Name("Broadhead Quiver", TIER.NEVER), // Adds 1 to 3 Physical Damage to Attacks
-			new Name("Two-Point Quiver", TIER.NEVER), // L24, 20–30% increased Accuracy Rating
-			new Name("Serrated Quiver", TIER.NEVER), // L44, Attacks have 20–30% chance to cause Bleeding
-
-			new Name("Toxic Quiver", TIER.BAD), // L39, 20–30% chance to Poison on Hit with Attacks
-			new Name("Primed Quiver", TIER.BAD), // L51, 7–10% increased Attack Speed
-
-			new Name("Fire Quiver", TIER.OTHER), // L8, Adds 3 to 5 Fire damage to Attacks
-			new Name("Sacral Quiver", TIER.OTHER), // L16, Gain 2–3 Life per Enemy Hit with Attacks
-			new Name("Blunt Quiver", TIER.OTHER), // L33, 25–40% increased Stun Buildup
-			new Name("Penetrating Quiver", TIER.OTHER), // L55, 100% chance to Pierce an Enemy
-			new Name("Volant Quiver", TIER.OTHER), // L61, 20–30% increased Arrow Speed
-			new Name("Visceral Quiver", TIER.OTHER), // L65, 20–30% increased Critical Hit Chance for Attacks
-
 			// https://poe2db.tw/us/Bucklers#BucklersItem
 			new Name("Leather Buckler", TIER.LOW), // 10 V
 			new Name("Wooden Buckler", TIER.LOW), // 16 V, L5
@@ -864,6 +858,41 @@ export class NameManager {
 			new Name("Vaal Crest Shield", TIER.LOW), // 100 A, 35 ES, L75
 
 			new Name("Blacksteel Crest Shield", TIER.NEVER), // 109 A, 37 ES, L80
+
+			// https://poe2db.tw/us/Foci#FociItem
+			new Name("Twig Focus", TIER.LOW), // 12 ES
+			new Name("Woven Focus", TIER.LOW), // 15 ES, L6
+			new Name("Antler Focus", TIER.LOW), // 17 ES, L10
+			new Name("Engraved Focus", TIER.LOW), // 21 ES, L16
+			new Name("Tonal Focus", TIER.LOW), // 25 ES, L22
+			new Name("Crystal Focus", TIER.LOW), // 28 ES, L26
+			new Name("Voodoo Focus", TIER.LOW), // 32 ES, L33
+			new Name("Plumed Focus", TIER.LOW), // 34 ES, L36
+			new Name("Runed Focus", TIER.LOW), // 40 ES, L45
+			new Name("Whorl Focus", TIER.LOW), // 43 ES, L51
+			new Name("Arrayed Focus", TIER.LOW), // 45 ES, L54
+			new Name("Cultist Focus", TIER.LOW), // 49 ES, L59
+			new Name("Hallowed Focus", TIER.LOW), // 50 ES, L61
+			new Name("Druidic Focus", TIER.LOW), // 52 ES, L65
+			new Name("Leyline Focus", TIER.LOW), // 58 ES, L70
+			new Name("Sacred Focus", TIER.LOW), // 63 ES, L75
+
+			new Name("Tasalian Focus", TIER.CLASS), // 68 ES, L80
+
+			// https://poe2db.tw/us/Quivers#QuiversItem
+			new Name("Broadhead Quiver", TIER.NEVER), // Adds 1 to 3 Physical Damage to Attacks
+			new Name("Two-Point Quiver", TIER.NEVER), // L24, 20–30% increased Accuracy Rating
+			new Name("Serrated Quiver", TIER.NEVER), // L44, Attacks have 20–30% chance to cause Bleeding
+
+			new Name("Toxic Quiver", TIER.BAD), // L39, 20–30% chance to Poison on Hit with Attacks
+			new Name("Primed Quiver", TIER.BAD), // L51, 7–10% increased Attack Speed
+
+			new Name("Fire Quiver", TIER.OTHER), // L8, Adds 3 to 5 Fire damage to Attacks
+			new Name("Sacral Quiver", TIER.OTHER), // L16, Gain 2–3 Life per Enemy Hit with Attacks
+			new Name("Blunt Quiver", TIER.OTHER), // L33, 25–40% increased Stun Buildup
+			new Name("Penetrating Quiver", TIER.OTHER), // L55, 100% chance to Pierce an Enemy
+			new Name("Volant Quiver", TIER.OTHER), // L61, 20–30% increased Arrow Speed
+			new Name("Visceral Quiver", TIER.OTHER), // L65, 20–30% increased Critical Hit Chance for Attacks
 		).compare(tier, operator);
 	}
 	static getArmour(tier, operator = undefined) {

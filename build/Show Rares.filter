@@ -1215,7 +1215,7 @@ Show
 #	Continue
 
 Show
-	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow"
+	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Fang Talisman" "Fungal Talisman" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Jade Talisman" "Maji Talisman" "Massive Greathammer" "Obliterator Bow" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Thunder Talisman" "Warmonger Bow"
 	Class == Wands Staves
 	Rarity == Magic
 	ItemLevel >= 81
@@ -1231,7 +1231,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow"
+	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Fang Talisman" "Fungal Talisman" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Jade Talisman" "Maji Talisman" "Massive Greathammer" "Obliterator Bow" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Thunder Talisman" "Warmonger Bow"
 	Class == "One Hand Maces" Bows Crossbows Quarterstaves Talismans "Two Hand Maces"
 	Rarity == Magic
 	ItemLevel >= 82
@@ -1263,7 +1263,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow"
+	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Fang Talisman" "Fungal Talisman" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Jade Talisman" "Maji Talisman" "Massive Greathammer" "Obliterator Bow" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Thunder Talisman" "Warmonger Bow"
 	Class == Wands Staves
 	Rarity == Rare
 	ItemLevel >= 81
@@ -1279,7 +1279,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Massive Greathammer" "Obliterator Bow" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow"
+	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Fang Talisman" "Fungal Talisman" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Jade Talisman" "Maji Talisman" "Massive Greathammer" "Obliterator Bow" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Thunder Talisman" "Warmonger Bow"
 	Class == "One Hand Maces" Bows Crossbows Quarterstaves Talismans "Two Hand Maces"
 	Rarity == Rare
 	ItemLevel >= 82
@@ -2620,7 +2620,7 @@ Show
 	#
 
 Show
-	BaseType == "Akoyan Spear" "Ashen Staff" "Attuned Wand" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dreaming Quarterstaff" "Dueling Wand" "Elegant Crossbow" "Flexed Crossbow" "Flying Spear" "Fortified Hammer" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Ironwood Greathammer" "Marauding Mace" "Massive Greathammer" "Obliterator Bow" "Rattling Sceptre" "Razor Quarterstaff" "Shrine Sceptre" "Siege Crossbow" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Warmonger Bow" "Withered Wand"
+	BaseType == "Akoyan Spear" "Ashen Staff" "Attuned Wand" "Bolting Quarterstaff" "Chiming Staff" "Desolate Crossbow" "Dreaming Quarterstaff" "Dueling Wand" "Elegant Crossbow" "Fang Talisman" "Flexed Crossbow" "Flying Spear" "Fortified Hammer" "Fungal Talisman" "Galvanic Wand" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Ironwood Greathammer" "Jade Talisman" "Maji Talisman" "Marauding Mace" "Massive Greathammer" "Obliterator Bow" "Rattling Sceptre" "Razor Quarterstaff" "Shrine Sceptre" "Siege Crossbow" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Thunder Talisman" "Warmonger Bow" "Withered Wand"
 	Class == Spears Sceptres Wands Staves "One Hand Maces" Bows Crossbows Quarterstaves Talismans "Two Hand Maces"
 	HasExplicitMod >=1 Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of Many"
 
