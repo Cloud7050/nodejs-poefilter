@@ -613,7 +613,7 @@ Show
 
 Show
 	BaseType == "Lesser Desert Rune" "Lesser Glacial Rune" "Lesser Mind Rune" "Lesser Rebirth Rune" "Lesser Stone Rune" "Lesser Vision Rune"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 32
 	SetTextColor 212 235 255 255
@@ -623,7 +623,7 @@ Show
 
 Show
 	BaseType == "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 37
 	SetTextColor 212 235 255 255
@@ -633,7 +633,7 @@ Show
 
 Show
 	BaseType == "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 45
 	SetTextColor 212 235 255 255
@@ -645,7 +645,7 @@ Show
 
 Show
 	BaseType == "Inspiration Rune" "Mind Rune" "Resolve Rune" "Robust Rune" "Stone Rune" "Vision Rune"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 32
 	SetTextColor 174 220 255 255
@@ -655,7 +655,7 @@ Show
 
 Show
 	BaseType == "Adept Rune" "Body Rune" "Desert Rune" "Glacial Rune" "Rebirth Rune" "Storm Rune"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 37
 	SetTextColor 174 220 255 255
@@ -665,7 +665,7 @@ Show
 
 Show
 	BaseType == "Iron Rune"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 45
 	SetTextColor 174 220 255 255
@@ -677,7 +677,7 @@ Show
 
 Show
 	BaseType == "Greater Adept Rune" "Greater Body Rune" "Greater Desert Rune" "Greater Glacial Rune" "Greater Inspiration Rune" "Greater Iron Rune" "Greater Mind Rune" "Greater Rebirth Rune" "Greater Resolve Rune" "Greater Robust Rune" "Greater Stone Rune" "Greater Storm Rune" "Greater Vision Rune"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 32
 	SetTextColor 154 213 255 255
@@ -687,7 +687,7 @@ Show
 
 Show
 	BaseType == "Craiceann's Rune of Recovery" "Fenumus' Rune of Draining" "Lady Hestra's Rune of Winter" "Saqawal's Rune of Erosion" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 32
 	SetTextColor 0 38 58 255
@@ -697,7 +697,7 @@ Show
 
 Show
 	BaseType == "Courtesan Mannan's Rune of Cruelty" "Craiceann's Rune of Warding" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Fenumus' Rune of Agony" "Fenumus' Rune of Spinning" "Greater Rune of Leadership" "Greater Rune of Nobility" "Saqawal's Rune of Memory" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "The Greatwolf's Rune of Willpower"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 37
 	SetTextColor 0 38 58 255
@@ -707,7 +707,7 @@ Show
 
 Show
 	BaseType == "Greater Rune of Alacrity" "Greater Rune of Tithing" "Saqawal's Rune of the Sky"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 45
 	SetTextColor 0 38 58 255
@@ -719,7 +719,7 @@ Show
 
 Show
 	BaseType == "Countess Seske's Rune of Archery" "Farrul's Rune of the Chase" "Hedgewitch Assandra's Rune of Wisdom"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 45
 	SetTextColor 0 160 226 255
@@ -731,7 +731,7 @@ Show
 
 Show
 	BaseType == "Bear Idol" "Cholotl's Soul Core of War" "Hayoxi's Soul Core of Heatproofing" "Idol of Grold" "Stag Idol" "Topotante's Soul Core of Dampening" "Xipocado's Soul Core of Dominion" "Zalatl's Soul Core of Insulation"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 32
 	SetTextColor 174 220 255 255
@@ -741,7 +741,7 @@ Show
 
 Show
 	BaseType == "Boar Idol" "Cat Idol" "Citaqualotl's Soul Core of Foulness" "Fox Idol" "Guatelitzi's Soul Core of Endurance" "Idol of Eeshta" "Idol of Egrin" "Idol of Maxarius" "Idol of Ralakesh" "Idol of Thruldana" "Opiloti's Soul Core of Assault" "Owl Idol" "Ox Idol" "Primate Idol" "Quipolatl's Soul Core of Flow" "Rabbit Idol" "Serpent Idol" "Tacati's Soul Core of Affliction" "Ulaman's Gaze" "Uromoti's Soul Core of Attenuation" "Wolf Idol" "Xopec's Soul Core of Power"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 37
 	SetTextColor 154 213 255 255
@@ -751,7 +751,7 @@ Show
 
 Show
 	BaseType == "Amanamu's Gaze" "Atmohua's Soul Core of Retreat" "Estazunti's Soul Core of Convalescence" "Idol of Sirrius" "Kurgal's Gaze" "Soul Core of Atmohua" "Soul Core of Azcapa" "Soul Core of Cholotl" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Puhuarte" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zalatl" "Soul Core of Zantipi" "Tecrod's Gaze" "Tzamoto's Soul Core of Ferocity"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 45
 	SetTextColor 0 38 58 255
@@ -763,7 +763,7 @@ Show
 
 Show
 	BaseType == "Soul Core of Jiquani"
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 45
 	SetTextColor 0 160 226 255
@@ -774,7 +774,7 @@ Show
 	MinimapIcon 0 Cyan Diamond
 
 Show
-	Class == Socketable
+	Class == Augment
 
 	SetFontSize 37
 	SetBorderColor 0 179 252 255
