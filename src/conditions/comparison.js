@@ -20,7 +20,8 @@ export class Comparison {
 		if (Array.isArray(value)) {
 			this.value = new StringList(...value);
 		} else if (value instanceof NameManager) {
-			this.value = value.export();
+			let stringList = value.export()
+			this.value = stringList;
 		} else {
 			this.value = value;
 		}
