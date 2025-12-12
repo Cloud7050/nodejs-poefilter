@@ -46,7 +46,7 @@ function bis(filter) {
 		c.ilvl = new Comparison(80, OPERATOR.GTE);
 	}, (c) => {
 		c.continue();
-		c.categories(CATEGORY.MAIN_OTHER_CASTER, CATEGORY.CHARM);
+		c.categories(CATEGORY.WAND, CATEGORY.STAFF, CATEGORY.CHARM);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 	}, (c) => {
 		c.continue();

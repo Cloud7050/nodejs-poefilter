@@ -160,7 +160,7 @@ function otherWeapons(filter) {
 	filter.multiBlock((c) => { // Good mod (other caster mainhand)
 		c.continue();
 		c.names = new Comparison(NameManager.getMain(TIER.OTHER));
-		c.categories(CATEGORY.MAIN_OTHER_CASTER);
+		c.categories(CATEGORY.WAND, CATEGORY.STAFF);
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 		c.isCorrupted = false;
@@ -189,7 +189,7 @@ function otherWeapons(filter) {
 	filter.multiBlock((c) => { // Good mod (other mainhand)
 		c.continue();
 		c.names = new Comparison(NameManager.getMain(TIER.OTHER));
-		c.categories(CATEGORY.MAIN_OTHER_CASTER);
+		c.categories(CATEGORY.WAND, CATEGORY.STAFF);
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(81, OPERATOR.GTE);
 		c.isCorrupted = false;

@@ -26,7 +26,7 @@ function weapons(filter) {
 		c.categories(CATEGORY.OFF);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	}, (c) => { // Too low ilvl (other caster mainhands)
-		c.categories(CATEGORY.MAIN_OTHER_CASTER);
+		c.categories(CATEGORY.WAND, CATEGORY.STAFF);
 		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		c.ilvl = new Comparison(81, OPERATOR.LT);
 	}, (c) => { // Too low ilvl (class weapons, other attacker mainhands, other offhands)
