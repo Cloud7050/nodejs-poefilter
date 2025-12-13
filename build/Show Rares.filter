@@ -1140,21 +1140,21 @@ Show
 
 	Continue
 
-#Show
-#	BaseType == "Tasalian Focus"
-#	Class == Bucklers
-#	Rarity == Magic
-#	ItemLevel >= 82
-#	Corrupted False
-#	HasExplicitMod >=1 
-#
-#	SetFontSize 37
-#	SetTextColor 182 190 255 255
-#	SetBackgroundColor 10 20 83 255
-#	SetBorderColor 182 190 255 255
-#	MinimapIcon 0 Blue UpsideDownHouse
-#
-#	Continue
+Show
+	BaseType == "Tasalian Focus"
+	Class == Bucklers
+	Rarity == Magic
+	ItemLevel >= 82
+	Corrupted False
+	HasExplicitMod >=1 "of Bameth" "of Harmony" "of the Everlasting"
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
 
 Show
 	BaseType == "Rattling Sceptre"
@@ -1199,20 +1199,20 @@ Show
 
 	Continue
 
-#Show
-#	BaseType == "Tasalian Focus"
-#	Class == Bucklers
-#	Rarity == Rare
-#	ItemLevel >= 82
-#	HasExplicitMod >=1 
-#
-#	SetFontSize 37
-#	SetTextColor 166 176 255 255
-#	SetBackgroundColor 23 38 134 255
-#	SetBorderColor 166 176 255 255
-#	MinimapIcon 0 Blue Cross
-#
-#	Continue
+Show
+	BaseType == "Tasalian Focus"
+	Class == Bucklers
+	Rarity == Rare
+	ItemLevel >= 82
+	HasExplicitMod >=1 "of Bameth" "of Harmony" "of the Everlasting"
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
 
 Show
 	BaseType == "Ashen Staff" "Chiming Staff" "Desolate Crossbow" "Dueling Wand" "Fang Talisman" "Fungal Talisman" "Gemini Bow" "Gemini Crossbow" "Ironwood Greathammer" "Jade Talisman" "Maji Talisman" "Massive Greathammer" "Obliterator Bow" "Shrine Sceptre" "Spiked Spear" "Stoic Sceptre" "Striking Quarterstaff" "Tawhoan Greatclub" "Thunder Talisman" "Warmonger Bow"
@@ -1252,7 +1252,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+	HasExplicitMod >=1 "of Bameth" "of Harmony" "of the Everlasting" Incanter's Magmatic Arctic Smiting Vile Agonising "of the Enchanter" Flaring Cremating Entombing Electrocuting "of the Fletcher"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1300,7 +1300,7 @@ Show
 	Rarity == Rare
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+	HasExplicitMod >=1 "of Bameth" "of Harmony" "of the Everlasting" Incanter's Magmatic Arctic Smiting Vile Agonising "of the Enchanter" Flaring Cremating Entombing Electrocuting "of the Fletcher"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1864,7 +1864,7 @@ Show
 
 Show
 	Class == Bucklers Shields Foci Quivers
-	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+	HasExplicitMod >=1 "of Bameth" "of Harmony" "of the Everlasting" Incanter's Magmatic Arctic Smiting Vile Agonising "of the Enchanter" Flaring Cremating Entombing Electrocuting "of the Fletcher"
 
 	SetBorderColor 255 225 87 255
 
@@ -2629,7 +2629,7 @@ Show
 Show
 	BaseType == "Blunt Quiver" "Fire Quiver" "Penetrating Quiver" "Primed Quiver" "Sacral Quiver" "Tasalian Focus" "Tawhoan Tower Shield" "Toxic Quiver" "Visceral Quiver" "Volant Quiver"
 	Class == Bucklers Shields Foci Quivers
-	HasExplicitMod >=1 "of the Enchanter" "of the Fletcher"
+	HasExplicitMod >=1 "of Bameth" "of Harmony" "of the Everlasting" Incanter's Magmatic Arctic Smiting Vile Agonising "of the Enchanter" Flaring Cremating Entombing Electrocuting "of the Fletcher"
 
 	#
 

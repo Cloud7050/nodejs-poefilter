@@ -139,57 +139,57 @@ export class ConditionSet {
 		let phrases = [
 			//// Adds x to x Physical Damage
 			// One hand maces/spears/bows | crossbows/quarterstaves/talismans/two hand maces
-			// "Glinting", // 1-2 - 4-5 | 2-3 - 5-7, IL1
-			// "Burnished", // 4-6 - 7-11 | 5-8 - 10-15, IL8
-			// "Polished", // 6-9 - 11-16 | 8-12 - 15-22, IL16
-			// "Honed", // 8-12 - 14-21 | 11-17 - 20-30, IL33
-			// "Gleaming", // 10-15 - 18-26 | 14-21 - 25-37, IL46
-			// "Annealed", // 13-20 - 23-35 | 19-29 - 33-49, IL54
-			// "Razor-sharp", // 16-24 - 28-42 | 23-35 - 39-59, IL60
-			// "Tempered", // 21-31 - 36-53 | 29-44 - 50-75, IL65
-			"Flaring", // 26-39 - 44-66 | 37-55 - 63-94, IL75
+			// "Glinting", // IL1
+			// "Burnished", // IL8
+			// "Polished", // IL16
+			// "Honed", // IL33
+			// "Gleaming", // IL46
+			// "Annealed", // IL54
+			// "Razor-sharp", // IL60
+			// "Tempered", // IL65
+			"Flaring", // IL75
 			////
 
 			//// Adds x to x Fire Damage
 			// One hand maces/spears/bows | crossbows/quarterstaves/talismans/two hand maces
-			// "Heated", // 1-2 - 3-5 | 2-4 - 5-7, IL1
-			// "Smouldering", // 4-6 - 7-10 | 6-9 - 10-16, IL8
-			// "Smoking", // 7-11 - 13-19 | 11-17 - 19-28, IL16
-			// "Burning", // 13-19 - 21-29 | 19-27 - 30-42, IL33
-			// "Flaming", // 20-24 - 32-37 | 30-37 - 45-56, IL46
-			// "Scorching", // 25-33 - 38-54 | 39-53 - 59-80, IL54
-			// "Incinerating", // 35-44 - 56-71 | 56-70 - 84-107, IL60
-			// "Blasting", // 47-59 - 74-97 | 73-97 - 112-149, IL65
-			// "Cremating", // 62-85 - 101-129 | 102-130 - 155-198, IL75
-			"Carbonising", // 88-101 - 133-154 | 135-156 - 205-236, IL81
+			// "Heated", // IL1
+			// "Smouldering", // IL8
+			// "Smoking", // IL16
+			// "Burning", // IL33
+			// "Flaming", // IL46
+			// "Scorching", // IL54
+			// "Incinerating", // IL60
+			// "Blasting", // IL65
+			// "Cremating", // IL75
+			"Carbonising", // IL81
 			////
 
 			//// Adds x to x Cold Damage
 			// One hand maces/spears/bows | crossbows/quarterstaves/talismans/two hand maces
-			// "Frosted", // 1-2 - 3-4 | 2-3 - 4-6, IL1
-			// "Chilled", // 3-5 - 6-9 | 5-8 - 9-14, IL8
-			// "Icy", // 6-9 - 10-16 | 10-14 - 15-23, IL16
-			// "Frigid", // 11-15 - 17-24 | 16-23 - 25-35, IL33
-			// "Freezing", // 17-20 - 26-32 | 25-30 -38-46, IL46
-			// "Frozen", // 22-29 - 34-44 | 32-43 - 49-66, IL54
-			// "Glaciated", // 31-38 - 47-59 | 46-57 - 70-88, IL60
-			// "Polar", // 40-53 - 62-80 | 60-80 - 92-121, IL65
-			// "Entombing", // 55-69 - 83-106 | 84-107 - 126-161, IL75
-			"Crystalising", // 72-81 - 110-123 | 112-124 - 168-189, IL81
+			// "Frosted", // IL1
+			// "Chilled", // IL8
+			// "Icy", // IL16
+			// "Frigid", // IL33
+			// "Freezing", // IL46
+			// "Frozen", // IL54
+			// "Glaciated", // IL60
+			// "Polar", // IL65
+			// "Entombing", // IL75
+			"Crystalising", // IL81
 			////
 
 			//// Adds x to x Lightning Damage
 			// One hand maces/spears/bows | crossbows/quarterstaves/talismans/two hand maces
-			// "Humming", // 1 - 4-6 | 1 - 7-10, IL1
-			// "Buzzing", // 1 - 13-19 | 1-2 - 19-27, IL8
-			// "Snapping", // 1-2 - 20-30 | 1-3 - 31-43, IL16
-			// "Crackling", // 1-2 - 36-52 | 1-4 - 53-76, IL33
-			// "Sparking", // 1-3 - 55-60 | 1-4 - 80-88, IL46
-			// "Arcing", // 1-4 - 63-82 | 1-6 - 93-122, IL54
-			// "Shocking", // 1-6 - 85-107 | 1-8 - 128-162, IL60
-			// "Discharging", // 1-8 - 111-152 | 1-13 - 168-231, IL65
-			// "Electrocuting", // 1-10 - 157-196 | 1-16 - 239-300, IL75
-			"Vapourising", // 1-12 - 202-234 | 1-19 - 310-358, IL81
+			// "Humming", // IL1
+			// "Buzzing", // IL8
+			// "Snapping", // IL16
+			// "Crackling", // IL33
+			// "Sparking", // IL46
+			// "Arcing", // IL54
+			// "Shocking", // IL60
+			// "Discharging", // IL65
+			// "Electrocuting", // IL75
+			"Vapourising", // IL81
 			////
 
 			//// x% increased Physical Damage
@@ -404,12 +404,146 @@ export class ConditionSet {
 	}
 	goodModOffhand(includeOther = false) {
 		let phrases = [
+			//// +x% to Chaos Resistance
+			// Bucklers/shields/foci
+			// "of the Lost", // IL16
+			// "of Banishment", // IL30
+			// "of Eviction", // IL44
+			// "of Expulsion", // IL56
+			// "of Exile", // IL68
+			"of Bameth", // IL81
+			////
+
+			//// +x% to Maximum Chaos Resistance
+			// Bucklers/shields
+			// "of Regularity", // IL68
+			// "of Concord", // IL75
+			"of Harmony", // IL81
+			////
+
+			//// +x% to all Maximum Elemental Resistances
+			// Bucklers/shields
+			// "of the Deathless", // IL75
+			"of the Everlasting", // IL81
+			////
 		];
 		if (includeOther) phrases.push(
+			//// x% increased Spell Damage
+			// Foci
+			// "Apprentice's", // IL1
+			// "Adept's", // IL8
+			// "Scholar's", // IL16
+			// "Professor's", // IL33
+			// "Occultist's", // IL46
+			"Incanter's", // IL60
+			////
+
+			//// x% increased Fire Damage
+			// Foci
+			// "Searing", // IL2
+			// "Sizzling", // IL8
+			// "Blistering", // IL16
+			// "Cauterising", // IL33
+			// "Smoldering", // IL46
+			"Magmatic", // IL60
+			////
+
+			//// x% increased Cold Damage
+			// Foci
+			// "Bitter", // IL2
+			// "Biting", // IL8
+			// "Alpine", // IL16
+			// "Snowy", // IL33
+			// "Hailing", // IL46
+			"Arctic", // IL60
+			////
+
+			//// x% increased Lightning Damage
+			// Foci
+			// "Charged", // IL2
+			// "Hissing", // IL8
+			// "Bolting", // IL16
+			// "Coursing", // IL33
+			// "Striking", // IL46
+			"Smiting", // IL60
+			////
+
+			//// x% increased Chaos Damage
+			// Foci
+			// "Impure", // IL2
+			// "Tainted", // IL8
+			// "Clouded", // IL16
+			// "Darkened", // IL33
+			// "Malignant", // IL46
+			"Vile", // IL60
+			////
+
+			//// x% increased Spell Physical Damage
+			// Foci
+			// "Punishing", // IL2
+			// "Unforgiving", // IL8
+			// "Vengeful", // IL16
+			// "Sadistic", // IL33
+			// "Pitiless", // IL46
+			"Agonising", // IL60
+			////
+
 			//// +x to Level of all Spell Skills
 			// Foci
 			// "of the Mage", // 1, IL5
 			"of the Enchanter", // 2, IL41
+			////
+
+			//// Adds x to x Physical Damage
+			// Quivers
+			// "Glinting", // IL1
+			// "Burnished", // IL8
+			// "Polished", // IL16
+			// "Honed", // IL33
+			// "Gleaming", // IL46
+			// "Annealed", // IL54
+			// "Razor-sharp", // IL60
+			// "Tempered", // IL65
+			"Flaring", // IL75
+			////
+
+			//// Adds x to x Fire Damage
+			// Quivers
+			// "Heated", // IL1
+			// "Smouldering", // IL8
+			// "Smoking", // IL16
+			// "Burning", // IL33
+			// "Flaming", // IL46
+			// "Scorching", // IL54
+			// "Incinerating", // IL60
+			// "Blasting", // IL65
+			"Cremating", // IL75
+			////
+
+			//// Adds x to x Cold Damage
+			// Quivers
+			// "Frosted", // IL1
+			// "Chilled", // IL8
+			// "Icy", // IL16
+			// "Frigid", // IL33
+			// "Freezing", // IL46
+			// "Frozen", // IL54
+			// "Glaciated", // IL60
+			// "Polar", // IL65
+			"Entombing", // IL75
+			////
+
+			//// Adds x to x Lightning Damage
+			// Quivers
+			// "Humming", // IL1
+			// "Buzzing", // IL8
+			// "Snapping", // IL16
+			// "Crackling", // IL33
+			// "Sparking", // IL46
+			// "Arcing", // IL54
+			// "Shocking", // IL60
+			// "Discharging", // IL65
+			"Electrocuting", // IL75
 			////
 
 			//// +x to Level of all Projectile Skills
