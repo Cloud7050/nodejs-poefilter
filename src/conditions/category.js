@@ -4,8 +4,10 @@ import { StringList } from "./stringList.js";
 
 //// With rarity
 // Witch weapons
-const MAIN_CLASS = new StringList("Spears");
-const OFF_CLASS = new StringList("Bucklers");
+const SPEAR = new StringList("Spears");
+const MAIN_CLASS = new StringList(SPEAR);
+const BUCKLER = new StringList("Bucklers");
+const OFF_CLASS = new StringList(BUCKLER);
 const WEAPON_CLASS =  new StringList(MAIN_CLASS, OFF_CLASS);
 
 // Other weapons
@@ -15,12 +17,21 @@ const MAIN_OTHER_CASTER_ONE = new StringList(SCEPTRE, WAND);
 const STAFF = new StringList("Staves");
 const MAIN_OTHER_CASTER_TWO = new StringList(STAFF);
 const MAIN_OTHER_CASTER = new StringList(MAIN_OTHER_CASTER_ONE, MAIN_OTHER_CASTER_TWO);
-const MAIN_OTHER_ATTACKER_ONE = new StringList("One Hand Maces");
-const MAIN_OTHER_ATTACKER_TWO = new StringList("Bows", "Crossbows", "Quarterstaves",
-	"Talismans", "Two Hand Maces");
+const ONE_HANDED_MACE = new StringList("One Hand Maces");
+const MAIN_OTHER_ATTACKER_ONE = new StringList(ONE_HANDED_MACE);
+const BOW = new StringList("Bows");
+const CROSSBOW = new StringList("Crossbows");
+const QUARTERSTAFF = new StringList("Quarterstaves");
+const TALISMAN = new StringList("Talismans");
+const TWO_HANDED_MACE = new StringList("Two Hand Maces");
+const MAIN_OTHER_ATTACKER_TWO = new StringList(BOW, CROSSBOW, QUARTERSTAFF, TALISMAN, TWO_HANDED_MACE);
 const MAIN_OTHER_ATTACKER = new StringList(MAIN_OTHER_ATTACKER_ONE, MAIN_OTHER_ATTACKER_TWO);
 const MAIN_OTHER = new StringList(MAIN_OTHER_CASTER, MAIN_OTHER_ATTACKER);
-const OFF_OTHER_BLOCK = new StringList("Shields");
+const SHIELD_ARMOUR = new StringList("Shields_TOWER_SHIELD");
+const SHIELD_ARMOUR_EVASION = new StringList("Shields_TARGE");
+const SHIELD_ARMOUR_ES = new StringList("Shields_CREST_SHIELD");
+const SHIELD = new StringList("Shields");
+const OFF_OTHER_BLOCK = new StringList(SHIELD);
 const FOCUS = new StringList("Foci");
 const QUIVER = new StringList("Quivers");
 const OFF_OTHER = new StringList(OFF_OTHER_BLOCK, FOCUS, QUIVER);
@@ -73,7 +84,9 @@ const QUEST = new StringList("Quest Items", "Instance Local Items");
 ////
 
 export const CATEGORY = {
+	SPEAR,
 	MAIN_CLASS,
+	BUCKLER,
 	OFF_CLASS,
 	WEAPON_CLASS,
 
@@ -83,10 +96,20 @@ export const CATEGORY = {
 	STAFF,
 	MAIN_OTHER_CASTER_TWO,
 	MAIN_OTHER_CASTER,
+	ONE_HANDED_MACE,
 	MAIN_OTHER_ATTACKER_ONE,
+	BOW,
+	CROSSBOW,
+	QUARTERSTAFF,
+	TALISMAN,
+	TWO_HANDED_MACE,
 	MAIN_OTHER_ATTACKER_TWO,
 	MAIN_OTHER_ATTACKER,
 	MAIN_OTHER,
+	SHIELD_ARMOUR,
+	SHIELD_ARMOUR_EVASION,
+	SHIELD_ARMOUR_ES,
+	SHIELD,
 	OFF_OTHER_BLOCK,
 	FOCUS,
 	QUIVER,

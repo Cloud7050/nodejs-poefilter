@@ -1,18 +1,10 @@
 import { PRICE_DIV } from "../constants.js";
+import { CATEGORY } from "./category.js";
 import { Name } from "./name.js";
 import { OPERATOR } from "./operator.js";
 import { StringList } from "./stringList.js";
 
 export class NameManager {
-	static TIER = {
-		LOW: -3,
-		NEVER: -2,
-		BAD: -1,
-		OTHER: 0,
-		CLASS: 1,
-		SPECIAL: 2, // For lower ilvl special drops, eg T15 fractured lake's ilvl 79 drops
-	}
-
 	names;
 
 	constructor (...names) {
@@ -571,311 +563,291 @@ export class NameManager {
 		).range(min, max);
 	}
 
-	static getMain(tier, operator = undefined) {
+	static getNames(tier, operator = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Sceptres#SceptresItem
-			new Name("Omen Sceptre", TIER.NEVER), // Malice
-			new Name("Wrath Sceptre", TIER.NEVER), // Fulmination
+			new Name("Omen Sceptre", 5, CATEGORY.SCEPTRE, 16), // Malice
+			new Name("Wrath Sceptre", 5, CATEGORY.SCEPTRE, 49), // Fulmination
 
-			new Name("Shrine Sceptre", TIER.OTHER), // Purity of Fire/Ice/Lightning
-			new Name("Stoic Sceptre", TIER.OTHER), // Discipline
-
-			new Name("Rattling Sceptre", TIER.CLASS), // Skeletal Warrior
+			new Name("Stoic Sceptre", 10, CATEGORY.SCEPTRE, 6), // Discipline
+			new Name("Shrine Sceptre", 10, CATEGORY.SCEPTRE, 26), // Purity of Fire/Ice/Lightning
+			new Name("Rattling Sceptre", 20, CATEGORY.SCEPTRE, 0), // Skeletal Warrior
 
 			// https://poe2db.tw/us/Wands#WandsItem
-			new Name("Bone Wand", TIER.NEVER), // Bone Blast
-			new Name("Siphoning Wand", TIER.NEVER), // Power Siphon
-			new Name("Volatile Wand", TIER.NEVER), // Volatile Dead
+			new Name("Bone Wand", 5, CATEGORY.WAND, 2), // Bone Blast
+			new Name("Attuned Wand", 5, CATEGORY.WAND, 2), // Mana Drain
+			new Name("Withered Wand", 5, CATEGORY.WAND, 6), // Chaos Bolt
+			new Name("Siphoning Wand", 5, CATEGORY.WAND, 11), // Power Siphon
+			new Name("Volatile Wand", 5, CATEGORY.WAND, 16), // Volatile Dead
+			new Name("Galvanic Wand", 5, CATEGORY.WAND, 25), // Galvanic Field
 
-			new Name("Attuned Wand", TIER.BAD), // Mana Drain
-			new Name("Galvanic Wand", TIER.BAD), // Galvanic Field
-			new Name("Withered Wand", TIER.BAD), // Chaos Bolt
-
-			new Name("Dueling Wand", TIER.OTHER), // Spellslinger
+			new Name("Dueling Wand", 10, CATEGORY.SCEPTRE, 65), // Spellslinger
 
 			// https://poe2db.tw/us/Staves#StavesItem
-			new Name("Gelid Staff", TIER.NEVER), // Freezing Shards
-			new Name("Paralysing Staff", TIER.NEVER), // Enervating Nova
-			new Name("Pyrophyte Staff", TIER.NEVER), // Solar Orb
-			new Name("Reaping Staff", TIER.NEVER), // Reap
-			new Name("Roaring Staff", TIER.NEVER), // Unleash
-			new Name("Sanctified Staff", TIER.NEVER), // Consecrate
-			new Name("Voltaic Staff", TIER.NEVER), // Lightning Bolt
+			new Name("Gelid Staff", 5, CATEGORY.STAFF, 2), // Freezing Shards
+			new Name("Voltaic Staff", 5, CATEGORY.STAFF, 2), // Lightning Bolt
+			new Name("Pyrophyte Staff", 5, CATEGORY.STAFF, 16), // Solar Orb
+			new Name("Reaping Staff", 5, CATEGORY.STAFF, 38), // Reap
+			new Name("Roaring Staff", 5, CATEGORY.STAFF, 49), // Unleash
+			new Name("Paralysing Staff", 5, CATEGORY.STAFF, 52), // Enervating Nova
+			new Name("Sanctified Staff", 5, CATEGORY.STAFF, 56), // Consecrate
 
-			new Name("Ashen Staff", TIER.OTHER), // Firebolt
-			new Name("Chiming Staff", TIER.OTHER), // Sigil of Power
+			new Name("Ashen Staff", 10, CATEGORY.STAFF, 0), // Firebolt
+			new Name("Chiming Staff", 10, CATEGORY.STAFF, 25), // Sigil of Power
 
 			// https://poe2db.tw/us/One_Hand_Maces#OneHandMacesItem
-			new Name("Wooden Club", TIER.LOW), // 6-10 phys, 5% cc, x1.45
-			new Name("Smithing Hammer", TIER.LOW), // 5.5-9 phys, 5.5-9 fire, 5% cc, x1.45, L4
-			new Name("Slim Mace", TIER.LOW), // 11-17 phys, 5% cc, x1.55, L10
-			new Name("Spiked Club", TIER.LOW), // 15-24 phys, 5% cc, x1.45, L16
-			new Name("Warpick",  TIER.LOW), // 18-24 phys, 7% cc, x1.45, L22
-			new Name("Plated Mace", TIER.LOW), // 18-38 phys, 5% cc, x1.4, L26
-			new Name("Brigand Mace", TIER.LOW), // 28-38 phys, 5% cc, x1.45, L33
-			new Name("Construct Hammer", TIER.LOW), // 31-38 phys, 5% cc, x1.4, L36, 40% chance to Daze on Hit
-			new Name("Morning Star", TIER.LOW), // 33-49 phys, 6.5% cc, x1.45, L45
-			new Name("Jade Club", TIER.LOW), // 31-51 phys, 5% cc, x1.45, L49, Always Hits
-			new Name("Marching Mace", TIER.LOW), // 33-69 phys, 5% cc, x1.4, L54
-			new Name("Bandit Mace", TIER.LOW), // 45-61 phys, 5% cc, x1.45, L59
-			new Name("Structured Hammer", TIER.LOW), // 49-60 phys, 5% cc, x1.4, L62, 40% chance to Daze on Hit
-			new Name("Flanged Mace", TIER.LOW), // 45-67 phys, 5% cc, x1.55, L67
-			new Name("Crown Mace", TIER.LOW), // 43-89 phys, 5% cc, x1.4, L72
-
-			new Name("Molten Hammer", TIER.NEVER), // 35.5-59 phys, 35.5-59 fire, 5% cc, x1.45, L77
-			new Name("Akoyan Club", TIER.NEVER), // 46-76 phys, 5% cc, x1.45, L78, Always Hits
-			new Name("Strife Pick", TIER.NEVER), // 49-66 phys, 7% cc, x1.45, L78, +5–10% to Critical Damage Bonus
-
-			new Name("Marauding Mace", TIER.BAD), // 51-84 phys, 5% cc, x1.45, L77
-			new Name("Fortified Hammer", TIER.BAD), // 60-73 phys, 5% cc, x1.4, L79, 40% chance to Daze on Hit
+			new Name("Wooden Club", 1, CATEGORY.ONE_HANDED_MACE, 0),
+			new Name("Smithing Hammer", 1, CATEGORY.ONE_HANDED_MACE, 4),
+			new Name("Slim Mace", 1, CATEGORY.ONE_HANDED_MACE, 10),
+			new Name("Spiked Club", 1, CATEGORY.ONE_HANDED_MACE, 16),
+			new Name("Warpick", 1, CATEGORY.ONE_HANDED_MACE, 22),
+			new Name("Plated Mace", 1, CATEGORY.ONE_HANDED_MACE, 26),
+			new Name("Brigand Mace", 1, CATEGORY.ONE_HANDED_MACE, 33),
+			new Name("Construct Hammer", 1, CATEGORY.ONE_HANDED_MACE, 36),
+			new Name("Morning Star", 1, CATEGORY.ONE_HANDED_MACE, 45),
+			new Name("Jade Club", 1, CATEGORY.ONE_HANDED_MACE, 49),
+			new Name("Marching Mace", 1, CATEGORY.ONE_HANDED_MACE, 54),
+			new Name("Bandit Mace", 1, CATEGORY.ONE_HANDED_MACE, 59),
+			new Name("Structured Hammer", 1, CATEGORY.ONE_HANDED_MACE, 62),
+			new Name("Flanged Mace", 1, CATEGORY.ONE_HANDED_MACE, 67),
+			new Name("Crown Mace", 1, CATEGORY.ONE_HANDED_MACE, 72),
+			new Name("Molten Hammer", 5, CATEGORY.ONE_HANDED_MACE, 77), // 35.5-59 phys, 35.5-59 fire, 5% cc, x1.45
+			new Name("Akoyan Club", 5, CATEGORY.ONE_HANDED_MACE, 78), // 46-76 phys, 5% cc, x1.45, Always Hits
+			new Name("Strife Pick", 5, CATEGORY.ONE_HANDED_MACE, 78), // 49-66 phys, 7% cc, x1.45, +5–10% to Critical Damage Bonus
+			new Name("Marauding Mace", 5, CATEGORY.ONE_HANDED_MACE, 77), // 51-84 phys, 5% cc, x1.45
+			new Name("Fortified Hammer", 5, CATEGORY.ONE_HANDED_MACE, 79), // 60-73 phys, 5% cc, x1.4, 40% chance to Daze on Hit
 
 			// https://poe2db.tw/us/Spears#SpearsItem
-			new Name("Hardwood Spear", TIER.LOW), // 5-9 phys, 5% cc, x1.6
-			new Name("Ironhead Spear", TIER.LOW), // 7-13 phys, 5% cc, x1.6, L5
-			new Name("Hunting Spear", TIER.LOW), // 10-18 phys, 5% cc, x1.55, L10, 15–25% chance to Maim on Hit
-			new Name("Winged Spear", TIER.LOW), // 12-22 phys, 5% cc, x1.65, L16
-			new Name("War Spear", TIER.LOW), // 14-26 phys, 5% cc, x1.6, L21, 25–35% increased Projectile Speed with this Weapon
-			new Name("Forked Spear", TIER.LOW), // 17-32 phys, 5% cc, x1.6, L26
-			new Name("Barbed Spear", TIER.LOW), // 20-38 phys, 6.5% cc, x1.6, L33
-			new Name("Broad Spear", TIER.LOW), // 26-48 phys, 5% cc, x1.5, L40
-			new Name("Crossblade Spear", TIER.LOW), // 28-51 phys, 5% cc, x1.55, L45
-			new Name("Seaglass Spear", TIER.LOW), // 31-57 phys, 7% cc, x1.5, L51
-			new Name("Branched Spear", TIER.LOW), // 31-58 phys, 5% cc, x1.6, L54
-			new Name("Jagged Spear", TIER.LOW), // 33-61 phys, 6.5% cc, x1.6, L59
-			new Name("Helix Spear", TIER.LOW), // 37-68 phys, 5% cc, x1.6, L65
-			new Name("Orichalcum Spear", TIER.LOW), // 38-70 phys, 5% cc, x1.6, L67
-			new Name("Pronged Spear", TIER.LOW), // 40-75 phys, 5% cc, x1.6, L72
+			new Name("Hardwood Spear", 1, CATEGORY.SPEAR, 0),
+			new Name("Ironhead Spear", 1, CATEGORY.SPEAR, 5),
+			new Name("Hunting Spear", 1, CATEGORY.SPEAR, 10),
+			new Name("Winged Spear", 1, CATEGORY.SPEAR, 16),
+			new Name("War Spear", 1, CATEGORY.SPEAR, 21),
+			new Name("Forked Spear", 1, CATEGORY.SPEAR, 26),
+			new Name("Barbed Spear", 1, CATEGORY.SPEAR, 33),
+			new Name("Broad Spear", 1, CATEGORY.SPEAR, 40),
+			new Name("Crossblade Spear", 1, CATEGORY.SPEAR, 45),
+			new Name("Seaglass Spear", 1, CATEGORY.SPEAR, 51),
+			new Name("Branched Spear", 1, CATEGORY.SPEAR, 54),
+			new Name("Jagged Spear", 1, CATEGORY.SPEAR, 59),
+			new Name("Helix Spear", 1, CATEGORY.SPEAR, 65),
+			new Name("Orichalcum Spear", 1, CATEGORY.SPEAR, 67),
+			new Name("Pronged Spear", 1, CATEGORY.SPEAR, 72),
+			new Name("Stalking Spear", 5, CATEGORY.SPEAR, 77), // 47-79 phys, 5% cc, x1.55, 15–25% chance to Maim on Hit
+			new Name("Flying Spear", 5, CATEGORY.SPEAR, 78), // 46-77 phys, 5% cc, x1.6, 25–35% increased Projectile Speed with this Weapon
+			new Name("Akoyan Spear", 5, CATEGORY.SPEAR, 78), // 39-72 phys, 7% cc, x1.6
+			new Name("Grand Spear", 5, CATEGORY.SPEAR, 79), // 56-84 phys, 5% cc, x1.4, 25% increased Melee Strike Range with this weapon
 
-			new Name("Stalking Spear", TIER.BAD), // 44-82 phys, 5% cc, x1.55, L77, 15–25% chance to Maim on Hit
-			new Name("Flying Spear", TIER.BAD), // 41-76 phys, 5% cc, x1.6, L78, 25–35% increased Projectile Speed with this Weapon
-			new Name("Akoyan Spear", TIER.BAD), // 43-80 phys, 7% cc, x1.5, L78
-			new Name("Grand Spear", TIER.BAD), // 46-85 phys, 5% cc, x1.5, L79
-
-			new Name("Spiked Spear", TIER.OTHER), // 41-76 phys, 6.5% cc, x1.6, L77
+			new Name("Spiked Spear", 10, CATEGORY.SPEAR, 77), // 41-76 phys, 6% cc, x1.5, Bleeding you inflict deals Damage 10—20% faster
 
 			// https://poe2db.tw/us/Bows#BowsItem
-			new Name("Crude Bow", TIER.LOW), // 6-9 phys, x1.2
-			new Name("Shortbow", TIER.LOW), // 7-14 phys, x1.25, L5
-			new Name("Warden Bow", TIER.LOW), // 12-18 phys, x1.15, L11, 20–30% chance to Chain an additional time
-			new Name("Recurve Bow", TIER.LOW), // 15-31 phys, x1.1, L16
-			new Name("Composite Bow", TIER.LOW), // 19-31 phys, x1.2, L22
-			new Name("Dualstring Bow", TIER.LOW), // 16-31 phys, x1.1, L28, Bow Attacks fire an additional Arrow
-			new Name("Cultist Bow", TIER.LOW), // 10-17 phys, 19-37 chaos, x1.2, L33
-			new Name("Zealot Bow", TIER.LOW), // 31-47 phys, x1.2, L39
-			new Name("Artillery Bow", TIER.LOW), // 39-72 phys, x1.15, L45, 50% reduced Projectile Range
-			new Name("Tribal Bow", TIER.LOW), // 38-57 phys, x1.2, L50
-			new Name("Twin Bow", TIER.LOW), // 32-60 phys, x1.1, L54, Bow Attacks fire an additional Arrow
-			new Name("Adherent Bow", TIER.LOW), // 21-34 phys, 31-59 chaos, x1.2, L59
-			new Name("Militant Bow", TIER.LOW), // 46-69 phys, x1.2, L62
-			new Name("Ironwood Shortbow", TIER.LOW), // 41-76 phys, x1.25, L67
-			new Name("Cavalry Bow", TIER.LOW), // 49-82 phys, x1.2, L72
+			new Name("Crude Bow", 1, CATEGORY.BOW, 0),
+			new Name("Shortbow", 1, CATEGORY.BOW, 5),
+			new Name("Warden Bow", 1, CATEGORY.BOW, 11),
+			new Name("Recurve Bow", 1, CATEGORY.BOW, 16),
+			new Name("Composite Bow", 1, CATEGORY.BOW, 22),
+			new Name("Dualstring Bow", 1, CATEGORY.BOW, 28),
+			new Name("Cultist Bow", 1, CATEGORY.BOW, 33),
+			new Name("Zealot Bow", 1, CATEGORY.BOW, 39),
+			new Name("Artillery Bow", 1, CATEGORY.BOW, 45),
+			new Name("Tribal Bow", 1, CATEGORY.BOW, 50),
+			new Name("Twin Bow", 1, CATEGORY.BOW, 54),
+			new Name("Adherent Bow", 1, CATEGORY.BOW, 59),
+			new Name("Militant Bow", 1, CATEGORY.BOW, 62),
+			new Name("Ironwood Shortbow", 1, CATEGORY.BOW, 67),
+			new Name("Cavalry Bow", 1, CATEGORY.BOW, 72),
+			new Name("Guardian Bow", 5, CATEGORY.BOW, 77), // 53-80 phys, x1.15, 20–30% chance to Chain an additional time
+			new Name("Fanatic Bow", 5, CATEGORY.BOW, 79), // 47-79 phys, 28-64 chaos, x1.2
 
-			new Name("Guardian Bow", TIER.NEVER), // 53-80 phys, x1.15, L77, 20–30% chance to Chain an additional time
-			new Name("Fanatic Bow", TIER.NEVER), // 42-70 phys, 43-71 chaos, x1.2, L79
-
-			new Name("Warmonger Bow", TIER.OTHER), // 56-84 phys, x1.2, L77
-			new Name("Gemini Bow", TIER.OTHER), // 39-72 phys, x1.1, L78, Bow Attacks fire an additional Arrow
-			new Name("Obliterator Bow", TIER.OTHER), // 62-115 phys, x1.15, L78, 50% reduced Projectile Range
+			new Name("Warmonger Bow", 10, CATEGORY.BOW, 77), // 56-84 phys, x1.2
+			new Name("Obliterator Bow", 10, CATEGORY.BOW, 78), // 62-115 phys, x1.15, 50% reduced Projectile Range
+			new Name("Gemini Bow", 10, CATEGORY.BOW, 78), // 39-72 phys, x1.15, +50% Surpassing chance to fire an additional Arrow
 
 			// https://poe2db.tw/us/Crossbows#CrossbowsItem
-			new Name("Makeshift Crossbow", TIER.LOW), // 7-12 phys, 5% cc, x1.6, r0.8
-			new Name("Tense Crossbow", TIER.LOW), // 8-15 phys, 5% cc, x1.6, r0.85, L4, 20–30% increased Bolt Speed
-			new Name("Sturdy Crossbow", TIER.LOW), // 11-26 phys, 5% cc, x1.55, r0.75, L10
-			new Name("Varnished Crossbow", TIER.LOW), // 12-36 phys, 5% cc, x1.6, r0.8, L16
-			new Name("Dyad Crossbow", TIER.LOW), // 9-37 phys, 5% cc, x1.6, r1.1, L20, Loads an additional bolt
-			new Name("Alloy Crossbow", TIER.LOW), // 12-50 phys, 5% cc, x1.7, r0.7, L26
-			new Name("Bombard Crossbow", TIER.LOW), // 14-56 phys, 5% cc, x1.65, r0.75, L33, Grenade Skills Fire an additional Projectile
-			new Name("Construct Crossbow", TIER.LOW), // 18-72 phys, 5% cc, x1.6, r0.8, L38
-			new Name("Blackfire Crossbow", TIER.LOW), // 20-80 phys, 7% cc, x1.6, r0.85, L45
-			new Name("Piercing Crossbow", TIER.LOW), // 21-84 phys, 5% cc, x1.65, r0.85, L50, 20–30% chance to Pierce an Enemy
-			new Name("Twin Crossbow", TIER.LOW), // 20-82 phys, 5% cc, x1.6, r1.1, L54, Loads an additional bolt
-			new Name("Cannonade Crossbow", TIER.LOW), // 23-90 phys, 5% cc, x1.65, r0.75, L59, Grenade Skills Fire an additional Projectile
-			new Name("Bleak Crossbow", TIER.LOW), // 27-109 phys, 5% cc, x1.6, r0.8, L62
-			new Name("Stout Crossbow", TIER.LOW), // 30-119 phys, 5% cc, x1.55, r0.75, L67
-			new Name("Engraved Crossbow", TIER.LOW), // 31-124 phys, 5% cc, x1.6, r0.8, L72
+			new Name("Makeshift Crossbow", 1, CATEGORY.CROSSBOW, 0),
+			new Name("Tense Crossbow", 1, CATEGORY.CROSSBOW, 4),
+			new Name("Sturdy Crossbow", 1, CATEGORY.CROSSBOW, 10),
+			new Name("Varnished Crossbow", 1, CATEGORY.CROSSBOW, 16),
+			new Name("Dyad Crossbow", 1, CATEGORY.CROSSBOW, 20),
+			new Name("Alloy Crossbow", 1, CATEGORY.CROSSBOW, 26),
+			new Name("Bombard Crossbow", 1, CATEGORY.CROSSBOW, 33),
+			new Name("Construct Crossbow", 1, CATEGORY.CROSSBOW, 38),
+			new Name("Blackfire Crossbow", 1, CATEGORY.CROSSBOW, 45),
+			new Name("Piercing Crossbow", 1, CATEGORY.CROSSBOW, 50),
+			new Name("Twin Crossbow", 1, CATEGORY.CROSSBOW, 54),
+			new Name("Cannonade Crossbow", 1, CATEGORY.CROSSBOW, 59),
+			new Name("Bleak Crossbow", 1, CATEGORY.CROSSBOW, 62),
+			new Name("Stout Crossbow", 1, CATEGORY.CROSSBOW, 67),
+			new Name("Engraved Crossbow", 1, CATEGORY.CROSSBOW, 72),
+			new Name("Flexed Crossbow", 5, CATEGORY.CROSSBOW, 77), // 32-127 phys, 5% cc, x1.6, r0.85, 20–30% increased Bolt Speed
+			new Name("Elegant Crossbow", 5, CATEGORY.CROSSBOW, 78), // 31-123 phys, 5% cc, x1.65, r0.85, 20–30% chance to Pierce an Enemy
+			new Name("Siege Crossbow", 5, CATEGORY.CROSSBOW, 79), // 29-115 phys, 5% cc, x1.65, r0.75, Grenade Skills Fire an additional Projectile
 
-			new Name("Flexed Crossbow", TIER.BAD), // 32-127 phys, 5% cc, x1.6, r0.85, L77, 20–30% increased Bolt Speed
-			new Name("Elegant Crossbow", TIER.BAD), // 31-123 phys, 5% cc, x1.65, r0.85, L78, 20–30% chance to Pierce an Enemy
-			new Name("Siege Crossbow", TIER.BAD), // 29-115 phys, 5% cc, x1.65, r0.75, L79, Grenade Skills Fire an additional Projectile
-
-			new Name("Desolate Crossbow", TIER.OTHER), // 33-132 phys, 5% cc, x1.6, r0.8, L77
-			new Name("Gemini Crossbow", TIER.OTHER), // 28-112 phys, 5% cc, x1.6, r1.1, L78, Loads an additional bolt
+			new Name("Desolate Crossbow", 10, CATEGORY.CROSSBOW, 77), // 33-132 phys, 5% cc, x1.6, r0.8
+			new Name("Gemini Crossbow", 10, CATEGORY.CROSSBOW, 78), // 28-112 phys, 5% cc, x1.6, r1.1, Loads an additional bolt
 
 			// https://poe2db.tw/us/Quarterstaves#QuarterstavesItem
-			new Name("Wrapped Quarterstaff", TIER.LOW), // 7-12 phys, 10% cc, x1.4
-			new Name("Long Quarterstaff", TIER.LOW), // 9-18 phys, 10% cc, x1.4, L4, 16% increased Melee Strike Range with this weapon
-			new Name("Gothic Quarterstaff", TIER.LOW), // 16-26 phys, 11.5% cc, x1.4, L11
-			new Name("Crackling Quarterstaff", TIER.LOW), // 5-22 phys, 1-35 lightning, 10% cc, x1.4, L16
-			new Name("Crescent Quarterstaff", TIER.LOW), // 19-39 phys, 10% cc, x1.5, L20
-			new Name("Steelpoint Quarterstaff", TIER.LOW), // 28-51 phys, 10% cc, x1.4, L28
-			new Name("Slicing Quarterstaff", TIER.LOW), // 29-60 phys, 10% cc, x1.4, L33
-			new Name("Barrier Quarterstaff", TIER.LOW), // 33-55 phys, 10% cc, x1.4, L37, +10–15% to Block chance
-			new Name("Hefty Quarterstaff", TIER.LOW), // 39-80 phys, 10% cc, x1.35, L45
-			new Name("Smooth Quarterstaff", TIER.LOW), // 64-87 phys, 0% cc, x1.5, L49
-			new Name("Waxing Quarterstaff", TIER.LOW), // 39-82 phys, 10% cc, x1.5, L54
-			new Name("Bladed Quarterstaff", TIER.LOW), // 45-94 phys, 10% cc, x1.4, L59
-			new Name("Guardian Quarterstaff", TIER.LOW), // 49-82 phys, 10% cc, x1.4, L62, +10–15% to Block chance
-			new Name("Sinister Quarterstaff", TIER.LOW), // 55-92 phys, 11.5% cc, x1.4, L67
-			new Name("Lunar Quarterstaff", TIER.LOW), // 50-103 phys, 10% cc, x1.5, L72
+			new Name("Wrapped Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 0),
+			new Name("Long Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 4),
+			new Name("Gothic Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 11),
+			new Name("Crackling Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 16),
+			new Name("Crescent Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 20),
+			new Name("Steelpoint Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 28),
+			new Name("Slicing Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 33),
+			new Name("Barrier Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 37),
+			new Name("Hefty Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 45),
+			new Name("Smooth Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 49),
+			new Name("Waxing Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 54),
+			new Name("Bladed Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 59),
+			new Name("Guardian Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 62),
+			new Name("Sinister Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 67),
+			new Name("Lunar Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 72),
+			new Name("Razor Quarterstaff", 5, CATEGORY.QUARTERSTAFF, 77), // 65-108 phys, 10% cc, x1.4
+			new Name("Bolting Quarterstaff", 5, CATEGORY.QUARTERSTAFF, 78), // 24-97 phys, 1-100 lightning, 10% cc, x1.4
+			new Name("Dreaming Quarterstaff", 5, CATEGORY.QUARTERSTAFF, 78), // 99-133 phys, 0% cc, x1.5
+			new Name("Aegis Quarterstaff", 5, CATEGORY.QUARTERSTAFF, 79), // 58-97 phys, 10% cc, x1.4, +12–18% to Block chance
 
-			new Name("Aegis Quarterstaff", TIER.NEVER), // 58-97 phys, 10% cc, x1.4, L79, +10–15% to Block chance
-
-			new Name("Razor Quarterstaff", TIER.BAD), // 65-108 phys, 10% cc, x1.4, L77
-			new Name("Bolting Quarterstaff", TIER.BAD), // 24-97 phys, 1-100 lightning, 10% cc, x1.4, L78
-			new Name("Dreaming Quarterstaff", TIER.BAD), // 99-133 phys, 0% cc, x1.5, L78
-
-			new Name("Striking Quarterstaff", TIER.OTHER), // 53-111 phys, 10% cc, x1.4, L77, 16% increased Melee Strike Range with this weapon
+			new Name("Striking Quarterstaff", 10, CATEGORY.QUARTERSTAFF, 77), // 53-111 phys, 10% cc, x1.4, 16% increased Melee Strike Range with this weapon
 
 			// https://poe2db.tw/us/Talismans#TalismansItem
-			//TODO wait for market to populate then remove unobtainables
-			new Name("Changeling Talisman", TIER.LOW),
-			new Name("Nettle Talisman", TIER.LOW), // L5
-			new Name("Cinderbark Talisman", TIER.LOW), // L10
-			new Name("Familial Talisman", TIER.LOW), // L16
-			new Name("Frenzied Talisman", TIER.LOW), // L22
-			new Name("Primal Talisman", TIER.LOW), // L28
-			new Name("Rabid Talisman", TIER.LOW), // L34
-			new Name("Vicious Talisman", TIER.LOW), // L40
-			new Name("Voltfang Talisman", TIER.LOW), // L46
-			new Name("Lumbering Talisman", TIER.LOW), // L52
-			new Name("Roaring Talisman", TIER.LOW), // L58
-			new Name("Wingbeat Talisman", TIER.LOW), // L65
-			new Name("Condemned Talisman", TIER.LOW), // L65
-			new Name("Howling Talisman", TIER.LOW), // L55
-			new Name("Fury Talisman", TIER.LOW), // L59
-			new Name("Cruel Talisman", TIER.LOW), // L63
-			new Name("Spiny Talisman", TIER.LOW), // L67
-			new Name("Ashbark Talisman", TIER.LOW), // L72
-			new Name("Alpha Talisman", TIER.LOW), // L75
-			new Name("Wildwood Talisman", TIER.LOW), // L70
+			//TODO prices have not been checked
+			new Name("Changeling Talisman", 1, CATEGORY.TALISMAN, 0),
+			new Name("Nettle Talisman", 1, CATEGORY.TALISMAN, 5),
+			new Name("Cinderbark Talisman", 1, CATEGORY.TALISMAN, 10),
+			new Name("Familial Talisman", 1, CATEGORY.TALISMAN, 16),
+			new Name("Frenzied Talisman", 1, CATEGORY.TALISMAN, 22),
+			new Name("Primal Talisman", 1, CATEGORY.TALISMAN, 28),
+			new Name("Rabid Talisman", 1, CATEGORY.TALISMAN, 34),
+			new Name("Vicious Talisman", 1, CATEGORY.TALISMAN, 40),
+			new Name("Voltfang Talisman", 1, CATEGORY.TALISMAN, 46),
+			new Name("Lumbering Talisman", 1, CATEGORY.TALISMAN, 52),
+			new Name("Howling Talisman", 1, CATEGORY.TALISMAN, 55),
+			new Name("Fury Talisman", 1, CATEGORY.TALISMAN, 59),
+			new Name("Cruel Talisman", 1, CATEGORY.TALISMAN, 63),
+			new Name("Spiny Talisman", 1, CATEGORY.TALISMAN, 67),
+			new Name("Wildwood Talisman", 1, CATEGORY.TALISMAN, 70),
+			new Name("Ashbark Talisman", 1, CATEGORY.TALISMAN, 72),
+			new Name("Alpha Talisman", 1, CATEGORY.TALISMAN, 75),
 
-			new Name("Fang Talisman", TIER.OTHER), // 70-116 phys, 8% cc, x1.25, L77, Minions deal 30—50% increased Damage
-			new Name("Fungal Talisman", TIER.OTHER), // 59-98 phys, 8% cc, x1.4, L78
-			new Name("Maji Talisman", TIER.OTHER), // 61-114 ogts, 8% cc, x.1.25, L79, +8—12 to Maximum Rage
-			new Name("Thunder Talisman", TIER.OTHER), // 23.1-130.9 phys, 9.9-56.1 lightning, 8% cc, x1.3, L77, 15—25% increased Magnitude of Shock you inflict
-			new Name("Jade Talisman", TIER.OTHER), // 101-151 phys, 5% cc, x1.1, L78
+			new Name("Fang Talisman", 10, CATEGORY.TALISMAN, 77), // 70-116 phys, 8% cc, x1.25, Minions deal 30—50% increased Damage
+			new Name("Thunder Talisman", 10, CATEGORY.TALISMAN, 77), // 23.1-130.9 phys, 9.9-56.1 lightning, 8% cc, x1.3, 15—25% increased Magnitude of Shock you inflict
+			new Name("Fungal Talisman", 10, CATEGORY.TALISMAN, 78), // 59-98 phys, 8% cc, x1.4
+			new Name("Jade Talisman", 10, CATEGORY.TALISMAN, 78), // 101-151 phys, 5% cc, x1.1
+			new Name("Maji Talisman", 10, CATEGORY.TALISMAN, 79), // 61-114 ogts, 8% cc, x.1.25, +8—12 to Maximum Rage
 
 			// https://poe2db.tw/us/Two_Hand_Maces#TwoHandMacesItem
-			new Name("Felled Greatclub", TIER.LOW), // 13-18 phys, 5% cc, x1.1
-			new Name("Oak Greathammer", TIER.LOW), // 14-26 phys, 5% cc, x1.05, L4, Causes 30–50% increased Stun Buildup
-			new Name("Forge Maul", TIER.LOW), // 29-39 phys, 5% cc, x1.05, L11
-			new Name("Studded Greatclub", TIER.LOW), // 32-48 phys, 5% cc, x1.1, L16
-			new Name("Cultist Greathammer", TIER.LOW), // 32-43 phys, 5% cc, x1.05, L22, Strikes deal Splash damage to targets within 1.5 metres
-			new Name("Temple Maul", TIER.LOW), // 35-72 phys, 5% cc, x1.2, L28
-			new Name("Leaden Greathammer", TIER.LOW), // 58-78 phys, 5% cc, x1.1, L33
-			new Name("Crumbling Maul", TIER.LOW), // 62-75 phys, 5% cc, x1.1, L38, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
-			new Name("Pointed Maul", TIER.LOW), // 68-102 phys, 6.5% cc, x1.1, L45
-			new Name("Totemic Greatclub", TIER.LOW), // 73-99 phys, 5% cc, x1.1, L50, Crushes Enemies on Hit
-			new Name("Solemn Maul", TIER.LOW), // 59-123 phys, 5% cc, x1.2, L54
-			new Name("Heavy Greathammer", TIER.LOW), // 94-127 phys, 5% cc, x1.1, L59
-			new Name("Disintegrating Maul", TIER.LOW), // 93-114 phys, 5% cc, x1.1, L62, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
-			new Name("Anvil Maul", TIER.LOW), // 112-151 phys, 5% cc, x1.05, L67
-			new Name("Sacred Maul", TIER.LOW), // 76-158 phys, 5% cc, x1.2, L72
+			new Name("Felled Greatclub", 1, CATEGORY.TWO_HANDED_MACE, 0),
+			new Name("Oak Greathammer", 1, CATEGORY.TWO_HANDED_MACE, 4),
+			new Name("Forge Maul", 1, CATEGORY.TWO_HANDED_MACE, 11),
+			new Name("Studded Greatclub", 1, CATEGORY.TWO_HANDED_MACE, 16),
+			new Name("Cultist Greathammer", 1, CATEGORY.TWO_HANDED_MACE, 22),
+			new Name("Temple Maul", 1, CATEGORY.TWO_HANDED_MACE, 28),
+			new Name("Leaden Greathammer", 1, CATEGORY.TWO_HANDED_MACE, 33),
+			new Name("Crumbling Maul", 1, CATEGORY.TWO_HANDED_MACE, 38),
+			new Name("Pointed Maul", 1, CATEGORY.TWO_HANDED_MACE, 45),
+			new Name("Totemic Greatclub", 1, CATEGORY.TWO_HANDED_MACE, 50),
+			new Name("Solemn Maul", 1, CATEGORY.TWO_HANDED_MACE, 54),
+			new Name("Heavy Greathammer", 1, CATEGORY.TWO_HANDED_MACE, 59),
+			new Name("Disintegrating Maul", 1, CATEGORY.TWO_HANDED_MACE, 62),
+			new Name("Anvil Maul", 1, CATEGORY.TWO_HANDED_MACE, 67),
+			new Name("Sacred Maul", 1, CATEGORY.TWO_HANDED_MACE, 72),
+			new Name("Fanatic Greathammer", 5, CATEGORY.TWO_HANDED_MACE, 78), // 101-137 phys, 5% cc, x1.05, Strikes deal Splash Damage
+			new Name("Ruination Maul", 5, CATEGORY.TWO_HANDED_MACE, 79), // 104-127 phys, 8% cc, x1.1, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
 
-			new Name("Fanatic Greathammer", TIER.NEVER), // 89-120 phys, 5% cc, x1.05, L78, Strikes deal Splash damage to targets within 1.5 metres
-			new Name("Ruination Maul", TIER.NEVER), // 113-138 phys, 5% cc, x1.1, L79, Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage
+			new Name("Ironwood Greathammer", 10, CATEGORY.TWO_HANDED_MACE, 77), // 105-196 phys, 5% cc, x1, Causes 30–50% increased Stun Buildup
+			new Name("Massive Greathammer", 10, CATEGORY.TWO_HANDED_MACE, 77), // 119-161 phys, 5% cc, x1.1
+			new Name("Tawhoan Greatclub", 10, CATEGORY.TWO_HANDED_MACE, 78), // 113-153 phys, 5% cc, x1.1, Warcries Empower an additional Attack
 
-			new Name("Ironwood Greathammer", TIER.OTHER), // 94-174 phys, 5% cc, x1.05, L77, Causes 30–50% increased Stun Buildup
-			new Name("Massive Greathammer", TIER.OTHER), // 119-161 phys, 5% cc, x1.1, L77
-			new Name("Tawhoan Greatclub", TIER.OTHER), // 107-145 phys, 5% cc, x1.1, L78, Crushes Enemies on Hit
-		).compare(tier, operator);
-	}
-	static getOff(tier, operator = undefined) {
-		return new NameManager(
 			// https://poe2db.tw/us/Bucklers#BucklersItem
-			new Name("Leather Buckler", TIER.LOW), // 10 V
-			new Name("Wooden Buckler", TIER.LOW), // 16 V, L5
-			new Name("Plated Buckler", TIER.LOW), // 26 V, L11
-			new Name("Iron Buckler", TIER.LOW), // 33 V, L16
-			new Name("Ridged Buckler", TIER.LOW), // 43 V, L22
-			new Name("Spiked Buckler", TIER.LOW), // 49 V, L26
-			new Name("Ringed Buckler", TIER.LOW), // 60 V, L33
-			new Name("Edged Buckler", TIER.LOW), // 70 V, L39
-			new Name("Laminate Buckler", TIER.LOW), // 79 V, L45
-			new Name("Pearl Buckler", TIER.LOW), // 87 V, L50
-			new Name("Ornate Buckler", TIER.LOW), // 90 V, L52
-			new Name("Spikeward Buckler", TIER.LOW), // 93 V, L54
-			new Name("Jingling Buckler", TIER.LOW), // 101 V, L59
-			new Name("Bladeguard Buckler", TIER.LOW), // 105 V, L61
-			new Name("Ornate Buckler", TIER.LOW), // 111 V, L65
-			new Name("Gutspike Buckler", TIER.LOW), // 122 V, L70
-			new Name("Ancient Buckler", TIER.LOW), // 133 V, L75
-
-			new Name("Desert Buckler", TIER.NEVER), // 144 V, L80
+			new Name("Leather Buckler", 1, CATEGORY.BUCKLER, 0),
+			new Name("Wooden Buckler", 1, CATEGORY.BUCKLER, 5),
+			new Name("Plated Buckler", 1, CATEGORY.BUCKLER, 11),
+			new Name("Iron Buckler", 1, CATEGORY.BUCKLER, 16),
+			new Name("Ridged Buckler", 1, CATEGORY.BUCKLER, 22),
+			new Name("Spiked Buckler", 1, CATEGORY.BUCKLER, 26),
+			new Name("Ringed Buckler", 1, CATEGORY.BUCKLER, 33),
+			new Name("Edged Buckler", 1, CATEGORY.BUCKLER, 39),
+			new Name("Laminate Buckler", 1, CATEGORY.BUCKLER, 45),
+			new Name("Pearl Buckler", 1, CATEGORY.BUCKLER, 50),
+			new Name("Ornate Buckler", 1, CATEGORY.BUCKLER, 52),
+			new Name("Spikeward Buckler", 1, CATEGORY.BUCKLER, 54),
+			new Name("Jingling Buckler", 1, CATEGORY.BUCKLER, 59),
+			new Name("Bladeguard Buckler", 1, CATEGORY.BUCKLER, 61),
+			new Name("Ornate Buckler", 1, CATEGORY.BUCKLER, 65),
+			new Name("Gutspike Buckler", 1, CATEGORY.BUCKLER, 70),
+			new Name("Ancient Buckler", 1, CATEGORY.BUCKLER, 75),
+			new Name("Desert Buckler", 5, CATEGORY.BUCKLER, 80),
 
 			// https://poe2db.tw/us/Shields#ShieldsItem
-			new Name("Splintered Tower Shield", TIER.LOW), // 18 A
-			new Name("Painted Tower Shield", TIER.LOW), // 29 A, L6
-			new Name("Braced Tower Shield", TIER.LOW), // 41 A, L12
-			new Name("Barricade Tower Shield", TIER.LOW), // 50 A, L16
-			new Name("Effigial Tower Shield", TIER.LOW), // 60 A, L21
-			new Name("Rampart Tower Shield", TIER.LOW), // 75 A, L28
-			new Name("Heraldric Tower Shield", TIER.LOW), // 85 A, L33
-			new Name("Stone Tower Shield", TIER.LOW), // 91 A, L36
-			new Name("Crucible Tower Shield", TIER.LOW), // 110 A, L45
-			new Name("Ancestor Tower Shield", TIER.LOW), // 121 A, L50
-			new Name("Bulwark Tower Shield", TIER.LOW), // 129 A, L54
-			new Name("Noble Tower Shield", TIER.LOW), // 139 A, L59
-			new Name("Goldworked Tower Shield", TIER.LOW), // 144 A, L61
-			new Name("Royal Tower Shield", TIER.LOW), // 152 A, L65
-			new Name("Fortress Tower Shield", TIER.LOW), // 167 A, L70
-			new Name("Vaal Tower Shield", TIER.LOW), // 182 A, L75
+			new Name("Splintered Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 0),
+			new Name("Painted Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 6),
+			new Name("Braced Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 12),
+			new Name("Barricade Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 16),
+			new Name("Effigial Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 21),
+			new Name("Rampart Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 28),
+			new Name("Heraldric Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 33),
+			new Name("Stone Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 36),
+			new Name("Crucible Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 45),
+			new Name("Ancestor Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 50),
+			new Name("Bulwark Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 54),
+			new Name("Noble Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 59),
+			new Name("Goldworked Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 61),
+			new Name("Royal Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 65),
+			new Name("Fortress Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 70),
+			new Name("Vaal Tower Shield", 1, CATEGORY.SHIELD_ARMOUR, 75),
+			new Name("Tawhoan Tower Shield", 5, CATEGORY.SHIELD_ARMOUR, 80),
 
-			new Name("Tawhoan Tower Shield", TIER.BAD), // 197 A, L80
+			new Name("Hardwood Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 0),
+			new Name("Pelage Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 8),
+			new Name("Studded Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 16),
+			new Name("Crescent Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 26),
+			new Name("Chiseled Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 33),
+			new Name("Feathered Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 37),
+			new Name("Stratified Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 46),
+			new Name("Carved Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 51),
+			new Name("Polished Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 54),
+			new Name("Stone Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 59),
+			new Name("Avian Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 62),
+			new Name("Mammoth Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 65),
+			new Name("Baroque Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 70),
+			new Name("Soaring Targe", 1, CATEGORY.SHIELD_ARMOUR_EVASION, 75),
+			new Name("Golden Targe", 5, CATEGORY.SHIELD_ARMOUR_EVASION, 80),
 
-			new Name("Hardwood Targe", TIER.LOW), // 10 A, 7 V
-			new Name("Pelage Targe", TIER.LOW), // 18 A, 14 V, L8
-			new Name("Studded Targe", TIER.LOW), // 27 A, 23 V, L16
-			new Name("Crescent Targe", TIER.LOW), // 39 A, 34 V, L26
-			new Name("Chiseled Targe", TIER.LOW), // 47 A, 41 V, L33
-			new Name("Feathered Targe", TIER.LOW), // 51 A, 46 V, L37
-			new Name("Stratified Targe", TIER.LOW), // 62 A, 56 V, L46
-			new Name("Carved Targe", TIER.LOW), // 67 A, 61 V, L51
-			new Name("Polished Targe", TIER.LOW), // 71 A, 64 V, L54
-			new Name("Stone Targe", TIER.LOW), // 77 A, 70 V, L59
-			new Name("Avian Targe", TIER.LOW), // 80 A, 73 V, L62
-			new Name("Mammoth Targe", TIER.LOW), // 84 A, 76 V, L65
-			new Name("Baroque Targe", TIER.LOW), // 92 A, 84V, L70
-			new Name("Soaring Targe", TIER.LOW), // 100 A, 91 V, L75
-
-			new Name("Golden Targe", TIER.NEVER), // 109 A, 99 V, L80
-
-			new Name("Blazon Crest Shield", TIER.LOW), // 10 A, 6 ES
-			new Name("Sigil Crest Shield", TIER.LOW), // 17 A, 8 ES, L7
-			new Name("Emblem Crest Shield", TIER.LOW), // 27 A, 12 ES, L16
-			new Name("Jingling Crest Shield", TIER.LOW), // 41 A, 16 ES, L28
-			new Name("Sectarian Crest Shield", TIER.LOW), // 47 A, 18 ES, L33
-			new Name("Omen Crest Shield", TIER.LOW), // 50 A, 19 ES, L36
-			new Name("Wayward Crest Shield", TIER.LOW), // 61 A, 22 ES, L45
-			new Name("Seer Crest Shield", TIER.LOW), // 66 A, 24 ES, L50
-			new Name("Dekharan Crest Shield", TIER.LOW), // 71 A, 25 ES, L54
-			new Name("Quartered Crest Shield", TIER.LOW), // 77 A, 27 ES, L59
-			new Name("Glowering Crest Shield", TIER.LOW), // 80 A, 28 ES, L62
-			new Name("Intricate Crest Shield", TIER.LOW), // 84 A, 29 ES, L65
-			new Name("Sekheman Crest Shield", TIER.LOW), // 92 A, 32 ES, L70
-			new Name("Vaal Crest Shield", TIER.LOW), // 100 A, 35 ES, L75
-
-			new Name("Blacksteel Crest Shield", TIER.NEVER), // 109 A, 37 ES, L80
+			new Name("Blazon Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 0),
+			new Name("Sigil Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 7),
+			new Name("Emblem Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 16),
+			new Name("Jingling Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 28),
+			new Name("Sectarian Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 33),
+			new Name("Omen Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 36),
+			new Name("Wayward Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 45),
+			new Name("Seer Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 50),
+			new Name("Dekharan Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 54),
+			new Name("Quartered Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 59),
+			new Name("Glowering Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 62),
+			new Name("Intricate Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 65),
+			new Name("Sekheman Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 70),
+			new Name("Vaal Crest Shield", 1, CATEGORY.SHIELD_ARMOUR_ES, 75),
+			new Name("Blacksteel Crest Shield", 5, CATEGORY.SHIELD_ARMOUR_ES, 80),
 
 			// https://poe2db.tw/us/Foci#FociItem
-			new Name("Twig Focus", TIER.LOW), // 12 ES
-			new Name("Woven Focus", TIER.LOW), // 15 ES, L6
-			new Name("Antler Focus", TIER.LOW), // 17 ES, L10
-			new Name("Engraved Focus", TIER.LOW), // 21 ES, L16
-			new Name("Tonal Focus", TIER.LOW), // 25 ES, L22
-			new Name("Crystal Focus", TIER.LOW), // 28 ES, L26
-			new Name("Voodoo Focus", TIER.LOW), // 32 ES, L33
-			new Name("Plumed Focus", TIER.LOW), // 34 ES, L36
-			new Name("Runed Focus", TIER.LOW), // 40 ES, L45
-			new Name("Whorl Focus", TIER.LOW), // 43 ES, L51
-			new Name("Arrayed Focus", TIER.LOW), // 45 ES, L54
-			new Name("Cultist Focus", TIER.LOW), // 49 ES, L59
-			new Name("Hallowed Focus", TIER.LOW), // 50 ES, L61
-			new Name("Druidic Focus", TIER.LOW), // 52 ES, L65
-			new Name("Leyline Focus", TIER.LOW), // 58 ES, L70
-			new Name("Sacred Focus", TIER.LOW), // 63 ES, L75
+			new Name("Twig Focus", 1, CATEGORY.FOCUS, 0),
+			new Name("Woven Focus", 1, CATEGORY.FOCUS, 6),
+			new Name("Antler Focus", 1, CATEGORY.FOCUS, 10),
+			new Name("Engraved Focus", 1, CATEGORY.FOCUS, 16),
+			new Name("Tonal Focus", 1, CATEGORY.FOCUS, 22),
+			new Name("Crystal Focus", 1, CATEGORY.FOCUS, 26),
+			new Name("Voodoo Focus", 1, CATEGORY.FOCUS, 33),
+			new Name("Plumed Focus", 1, CATEGORY.FOCUS, 36),
+			new Name("Runed Focus", 1, CATEGORY.FOCUS, 45),
+			new Name("Whorl Focus", 1, CATEGORY.FOCUS, 51),
+			new Name("Arrayed Focus", 1, CATEGORY.FOCUS, 54),
+			new Name("Cultist Focus", 1, CATEGORY.FOCUS, 59),
+			new Name("Hallowed Focus", 1, CATEGORY.FOCUS, 61),
+			new Name("Druidic Focus", 1, CATEGORY.FOCUS, 65),
+			new Name("Leyline Focus", 1, CATEGORY.FOCUS, 70),
+			new Name("Sacred Focus", 1, CATEGORY.FOCUS, 75),
 
-			new Name("Tasalian Focus", TIER.CLASS), // 68 ES, L80
+			new Name("Tasalian Focus", 20, CATEGORY.FOCUS, 80),
 
 			// https://poe2db.tw/us/Quivers#QuiversItem
 			new Name("Broadhead Quiver", TIER.NEVER), // Adds 1 to 3 Physical Damage to Attacks
@@ -891,10 +863,7 @@ export class NameManager {
 			new Name("Penetrating Quiver", TIER.OTHER), // L55, 100% chance to Pierce an Enemy
 			new Name("Volant Quiver", TIER.OTHER), // L61, 20–30% increased Arrow Speed
 			new Name("Visceral Quiver", TIER.OTHER), // L65, 20–30% increased Critical Hit Chance for Attacks
-		).compare(tier, operator);
-	}
-	static getArmour(tier, operator = undefined) {
-		return new NameManager(
+
 			// https://poe2db.tw/us/Helmets
 			new Name("Twig Circlet", TIER.LOW), // 19 ES
 			new Name("Wicker Tiara", TIER.LOW), // 28 ES, L10
@@ -1254,10 +1223,7 @@ export class NameManager {
 			new Name("Quickslip Shoes", TIER.LOW), // 110 V, 42 ES, L75
 
 			new Name("Daggerfoot Shoes", TIER.NEVER), // 119 V, 45 ES, L80
-		).compare(tier, operator);
-	}
-	static getUncommons(tier, operator = undefined) {
-		return new NameManager(
+
 			// https://poe2db.tw/us/Amulets
 			new Name("Crimson Amulet", TIER.NEVER), // 2–4 Life Regeneration per second
 

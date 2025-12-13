@@ -49,6 +49,7 @@ function chance(filter) {
 
 // Special tier
 function special(filter) {
+	//FIXME use flags for special tier
 	filter.multiWhitelist((c) => {
 		c.names = new Comparison(NameManager.getUncommons(TIER.SPECIAL));
 		c.categories(CATEGORY.JEWELLERY);
