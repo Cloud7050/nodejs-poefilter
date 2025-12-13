@@ -26,7 +26,7 @@ function general(filter) {
 		c.names = new Comparison(NameManager.getCurrenciesBad());
 		c.categories(CATEGORY.CURRENCY);
 
-		e.hide();
+		// e.hide();
 		e.colourWisdom(PAIR_CURRENCY).sizeWisdom();
 	});
 	filter.block((c, e) => {
@@ -67,7 +67,7 @@ function gold(filter) {
 		c.categories(CATEGORY.CURRENCY);
 		c.count = new Comparison(50, OPERATOR.LT);
 
-		e.hide();
+		// e.hide();
 		e.colourWisdom(PAIR_GOLD).sizeWisdom();
 		e.backgroundColour = Colour.TRANSPARENT;
 	});

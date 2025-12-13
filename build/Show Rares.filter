@@ -7,7 +7,7 @@ Show
 
 	Continue
 
-Hide
+Show
 	BaseType == "Artificer's Shard" "Blacksmith's Whetstone" "Greater Jeweller's Orb" "Greater Orb of Augmentation" "Greater Orb of Transmutation" "Lesser Jeweller's Orb" "Regal Shard" "Transmutation Shard"
 	Class == "Stackable Currency"
 
@@ -15,7 +15,6 @@ Hide
 	SetTextColor 255 217 215 255
 	SetBackgroundColor 35 2 3 255
 	SetBorderColor 255 217 215 255
-	DisableDropSound
 	MinimapIcon 2 Red Kite
 
 Show
@@ -72,7 +71,7 @@ Show
 	CustomAlertSound "renoir.wav" 250
 	MinimapIcon 0 Red Diamond
 
-Hide
+Show
 	BaseType == Gold
 	Class == "Stackable Currency"
 	StackSize < 50
@@ -81,7 +80,6 @@ Hide
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
-	DisableDropSound
 	MinimapIcon 2 Yellow Kite
 
 Show
