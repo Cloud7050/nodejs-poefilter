@@ -26,6 +26,13 @@ export const PRICE_EXALT = 1;
 export const PRICE_CHANCE = 10;
 export const PRICE_DIV = 500; // Exalts per divine
 
+// Character level to impact what ilvl & drop level are deemed usable
+export const LEVEL_PLAYER = 1;
+export const LEVEL_ITEM = 1;
+export const LEVEL_DROP = 1;
+
+export const LEVEL_BIS = 82;
+
 // Maximum price breakpoints for gold piles
 export const GOLD_HIDE = 0; // 50
 export const GOLD_WISDOM = 100; // 100
