@@ -339,7 +339,7 @@ Show
 	MinimapIcon 1 Orange UpsideDownHouse
 
 #Show
-#	BaseType == 
+#	BaseType ==
 #	Class == "Stackable Currency"
 #
 #	SetFontSize 37

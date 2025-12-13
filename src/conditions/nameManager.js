@@ -53,8 +53,8 @@ export class NameManager {
 			new Name("Vaal Orb", 1),
 			new Name("Orb of Chance", 1),
 			new Name("Greater Exalted Orb", 2.14),
-			new Name("Perfect Regal Orb", 11),
 
+			new Name("Perfect Regal Orb", 11),
 			new Name("Perfect Jeweller's Orb", 20.5),
 			new Name("Chaos Orb", 40),
 			new Name("Greater Chaos Orb", 125),

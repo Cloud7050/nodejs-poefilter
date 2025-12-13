@@ -46,7 +46,7 @@ export class Filter {
 
 	save() {
 		let relativeFilePath = `./build/${this.name}.filter`;
-		let content = this.spans.join("\n");
+		let content = this.spans.map((span) => span.trimEnd()).join("\n");
 
 		const BUGGY_TEXT = ["undefined", "null", "[object Object]"];
 		BUGGY_TEXT.some((text) => {
