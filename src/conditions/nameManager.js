@@ -15,15 +15,11 @@ export class NameManager {
 	names;
 
 	constructor (...names) {
-		names = names.reduce((accumulator, name) => {
+		this.names = names.reduce((accumulator, name) => {
 			if (name instanceof NameManager) accumulator.push(...name.names);
 			else accumulator.push(name);
 			return accumulator;
 		}, []);
-
-		this.names = names.map(
-			(name) => name instanceof Name ? name : new Name(name)
-		);
 	}
 
 	static getCurrenciesBad(min = undefined, max = undefined) {
