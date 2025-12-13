@@ -670,6 +670,23 @@ export class ConditionSet {
 	}
 	goodModJewellery(includeOther = false) {
 		let phrases = [
+			//// x% increased maximum Life
+			// Amulets
+			// "Hopeful", // IL33
+			// "Optimistic", // IL60
+			"Confident", // IL75
+			////
+
+			//// +x% to Chaos Resistance
+			// Amulets/rings/belts
+			// "of the Lost", // IL16
+			// "of Banishment", // IL30
+			// "of Eviction", // IL44
+			// "of Expulsion", // IL56
+			// "of Exile", // IL68
+			"of Bameth", // IL81
+			////
+
 			//// +x to Level of all Melee Skills
 			// Amulets
 			// "of Combat", // 1, IL5
@@ -694,6 +711,58 @@ export class ConditionSet {
 			// "of Raiding", // 11-14, IL24
 			"of Archaeology", // 15-18, IL40
 			////
+
+			//// Adds x to x Physical Damage
+			// Rings
+			// "Glinting", // IL1
+			// "Burnished", // IL8
+			// "Polished", // IL16
+			// "Honed", // IL33
+			// "Gleaming", // IL46
+			// "Annealed", // IL54
+			// "Razor-sharp", // IL60
+			// "Tempered", // IL65
+			"Flaring", // IL75
+			////
+
+			//// Adds x to x Fire Damage
+			// Rings
+			// "Heated", // IL1
+			// "Smouldering", // IL8
+			// "Smoking", // IL16
+			// "Burning", // IL33
+			// "Flaming", // IL46
+			// "Scorching", // IL54
+			// "Incinerating", // IL60
+			// "Blasting", // IL65
+			"Cremating", // IL75
+			////
+
+			//// Adds x to x Cold Damage
+			// Rings
+			// "Frosted", // IL1
+			// "Chilled", // IL8
+			// "Icy", // IL16
+			// "Frigid", // IL33
+			// "Freezing", // IL46
+			// "Frozen", // IL54
+			// "Glaciated", // IL60
+			// "Polar", // IL65
+			"Entombing", // IL75
+			////
+
+			//// Adds x to x Lightning Damage
+			// Rings
+			// "Humming", // IL1
+			// "Buzzing", // IL8
+			// "Snapping", // IL16
+			// "Crackling", // IL33
+			// "Sparking", // IL46
+			// "Arcing", // IL54
+			// "Shocking", // IL60
+			// "Discharging", // IL65
+			"Electrocuting", // IL75
+			////
 		];
 		if (includeOther) phrases.push(
 			//// +x to Spirit
@@ -717,6 +786,46 @@ export class ConditionSet {
 			// "of the Mage", // 1, IL5
 			// "of the Enchanter", // 2, IL41
 			"of the Sorcerer", // 3, IL75
+			////
+
+			//// x% increased Fire Damage
+			// Rings
+			// "Searing", // L8
+			// "Sizzling", // L16
+			// "Blistering", // L33
+			// "Cauterising", // L46
+			// "Smoldering", // L65
+			"Magmatic", // L75
+			////
+
+			//// x% increased Cold Damage
+			// Rings
+			// "Bitter", // L8
+			// "Biting", // L16
+			// "Alpine", // L33
+			// "Snowy", // L46
+			// "Hailing", // L65
+			"Arctic", // L75
+			////
+
+			//// x% increased Lightning Damage
+			// Rings
+			// "Charged", // L8
+			// "Hissing", // L16
+			// "Bolting", // L33
+			// "Coursing", // L46
+			// "Striking", // L65
+			"Smiting", // L75
+			////
+
+			//// x% increased Chaos Damage
+			// Rings
+			// "Impure", // L8
+			// "Tainted", // L16
+			// "Clouded", // L33
+			// "Darkened", // L46
+			// "Malignant", // L65
+			"Vile", // L75
 			////
 		);
 		this.mods = new Comparison(phrases, OPERATOR.GTE, 1);
