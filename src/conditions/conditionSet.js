@@ -557,6 +557,79 @@ export class ConditionSet {
 	}
 	goodModArmour(includeOther = false) {
 		let phrases = [
+			//// x% increased Rarity of Items found
+			// Helmets
+			// "Magpie's", // 8-11, IL10
+			// "Collector's", // 12-15, IL29
+			"Hoarder's", // 16-19, IL47
+			// Helmets/gloves/boots
+			// "of Plunder", // 6-10, IL3
+			// "of Raiding", // 11-14, IL24
+			"of Archaeology", // 15-18, IL40
+			////
+
+			//// +x% to Chaos Resistance
+			// Helmets/body armours/gloves/boots
+			// "of the Lost", // IL16
+			// "of Banishment", // IL30
+			// "of Eviction", // IL44
+			// "of Expulsion", // IL56
+			// "of Exile", // IL68
+			"of Bameth", // IL81
+			////
+
+			//// Adds x to x Physical Damage
+			// Gloves
+			// "Glinting", // IL1
+			// "Burnished", // IL8
+			// "Polished", // IL16
+			// "Honed", // IL33
+			// "Gleaming", // IL46
+			// "Annealed", // IL54
+			// "Razor-sharp", // IL60
+			// "Tempered", // IL65
+			"Flaring", // IL75
+			////
+
+			//// Adds x to x Fire Damage
+			// Gloves
+			// "Heated", // IL1
+			// "Smouldering", // IL8
+			// "Smoking", // IL16
+			// "Burning", // IL33
+			// "Flaming", // IL46
+			// "Scorching", // IL54
+			// "Incinerating", // IL60
+			// "Blasting", // IL65
+			"Cremating", // IL75
+			////
+
+			//// Adds x to x Cold Damage
+			// Gloves
+			// "Frosted", // IL1
+			// "Chilled", // IL8
+			// "Icy", // IL16
+			// "Frigid", // IL33
+			// "Freezing", // IL46
+			// "Frozen", // IL54
+			// "Glaciated", // IL60
+			// "Polar", // IL65
+			"Entombing", // IL75
+			////
+
+			//// Adds x to x Lightning Damage
+			// Gloves
+			// "Humming", // IL1
+			// "Buzzing", // IL8
+			// "Snapping", // IL16
+			// "Crackling", // IL33
+			// "Sparking", // IL46
+			// "Arcing", // IL54
+			// "Shocking", // IL60
+			// "Discharging", // IL65
+			"Electrocuting", // IL75
+			////
+
 			//// +x to Level of all Melee Skills
 			// Gloves
 			// "of Combat", // 1, IL5
@@ -571,21 +644,6 @@ export class ConditionSet {
 			// "Gazelle's", // 25, IL46
 			// "Cheetah's", // 30, IL65
 			"Hellion's", // 35, IL82
-			////
-
-			//// x% increased Rarity of Items found
-			// Helmets
-			// "Magpie's", // 8-11, IL10
-			// "Collector's", // 12-15, IL29
-			// "Hoarder's", // 16-19, IL47
-			// "Pirate's", // 20-22, IL65
-			"Dragon's", // 23-25, IL81
-			// Helmets/gloves/boots
-			// "of Plunder", // 6-10, IL3
-			// "of Raiding", // 11-14, IL24
-			// "of Archaeology", // 15-18, IL40
-			// "of Excavation", // 19-21, IL63
-			"of Windfall", // 22-25, IL75
 			////
 		];
 		if (includeOther) phrases.push(
@@ -630,15 +688,11 @@ export class ConditionSet {
 			// Amulets/rings
 			// "Magpie's", // 8-11, IL10
 			// "Collector's", // 12-15, IL29
-			// "Hoarder's", // 16-19, IL47
-			// "Pirate's", // 20-22, IL65
-			"Dragon's", // 23-25, IL81
+			"Hoarder's", // 16-19, IL47
 			// Amulets/rings
 			// "of Plunder", // 6-10, IL3
 			// "of Raiding", // 11-14, IL24
-			// "of Archaeology", // 15-18, IL40
-			// "of Excavation", // 19-21, IL63
-			"of Windfall", // 22-25, IL75
+			"of Archaeology", // 15-18, IL40
 			////
 		];
 		if (includeOther) phrases.push(

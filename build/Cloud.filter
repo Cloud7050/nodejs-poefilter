@@ -1346,7 +1346,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of Dueling" Hellion's Dragon's "of Windfall"
+	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1376,7 +1376,7 @@ Show
 	Rarity == Rare
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of Dueling" Hellion's Dragon's "of Windfall"
+	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1392,7 +1392,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of Dueling" Hellion's Dragon's "of Windfall" "of the Despot" Queen's
+	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's "of the Despot" Queen's
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1407,7 +1407,7 @@ Show
 	Class == Helmets "Body Armours" Gloves Boots
 	Rarity == Rare
 	ItemLevel >= 82
-	HasExplicitMod >=1 "of Dueling" Hellion's Dragon's "of Windfall" "of the Despot" Queen's
+	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's "of the Despot" Queen's
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1500,7 +1500,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Dragon's "of Windfall"
+	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1548,7 +1548,7 @@ Show
 	Rarity == Rare
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Dragon's "of Windfall"
+	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1564,7 +1564,7 @@ Show
 	Rarity == Magic
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Dragon's "of Windfall"
+	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology"
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -1580,7 +1580,7 @@ Show
 	Rarity == Rare
 	ItemLevel >= 82
 	Corrupted False
-	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Dragon's "of Windfall"
+	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology"
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -1872,7 +1872,7 @@ Show
 
 Show
 	Class == Helmets "Body Armours" Gloves Boots
-	HasExplicitMod >=1 "of Dueling" Hellion's Dragon's "of Windfall" "of the Despot" Queen's
+	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's "of the Despot" Queen's
 
 	SetBorderColor 255 225 87 255
 
@@ -1880,7 +1880,7 @@ Show
 
 Show
 	Class == Amulets Rings
-	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Dragon's "of Windfall" Countess' "of the Overseer" "of the Sorcerer"
+	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology" Countess' "of the Overseer" "of the Sorcerer"
 
 	SetBorderColor 255 225 87 255
 
@@ -2636,13 +2636,13 @@ Show
 Show
 	BaseType == "Ancestral Tiara" "Corsair Coat" "Falconer's Jacket" "Feathered Raiment" "Flowing Raiment" "Massive Mitts" "Rambler Jacket" "Sacramental Robe" "Secured Wraps" "Sekhema Sandals" "Sirenscale Gloves" "Sleek Jacket" "Slipstrike Vest" "Soldier Cuirass" "Tasalian Greaves" "Vile Robe" "Warlord Cuirass" "Wolfskin Mantle"
 	Class == Helmets "Body Armours" Gloves Boots
-	HasExplicitMod >=1 "of Dueling" Hellion's Dragon's "of Windfall" "of the Despot" Queen's
+	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's "of the Despot" Queen's
 
 	#
 
 Show
 	BaseType == "Amber Amulet" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Breach Ring" "Dousing Charm" "Dusk Amulet" "Dusk Ring" "Fine Belt" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Heavy Belt" "Jade Amulet" "Lapis Amulet" "Linen Belt" "Long Belt" "Lunar Amulet" "Mail Belt" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Penumbra Amulet" "Penumbra Ring" "Plate Belt" "Prismatic Ring" "Rawhide Belt" "Ruby Ring" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Staunching Charm" "Stellar Amulet" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Topaz Charm" "Topaz Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Unset Ring" "Utility Belt"
 	Class == Amulets Rings
-	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Dragon's "of Windfall" Countess' "of the Overseer" "of the Sorcerer"
+	HasExplicitMod >=1 "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology" Countess' "of the Overseer" "of the Sorcerer"
 
 	#
