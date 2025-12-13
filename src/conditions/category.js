@@ -61,9 +61,14 @@ const GLOVES_ARMOUR_EVASION = new StringList("Gloves_GAUNTLETS");
 const GLOVES_ARMOUR_ES = new StringList("Gloves_CUFFS");
 const GLOVES_EVASION_ES = new StringList("Gloves_WRAPS");
 const GLOVES = new StringList("Gloves");
-const ARMOUR_TOP = new StringList(HELMET, BODY, GLOVES);
+const BOOTS_ARMOUR = new StringList("Boots_GREAVES");
+const BOOTS_EVASION = new StringList("Boots_BOOTS");
+const BOOTS_ES = new StringList("Boots_SANDALS_SLIPPERS");
+const BOOTS_ARMOUR_EVASION = new StringList("Boots_SABATONS");
+const BOOTS_ARMOUR_ES = new StringList("Boots_LEGGINGS");
+const BOOTS_EVASION_ES = new StringList("Boots_SHOES");
 const BOOTS = new StringList("Boots");
-const ARMOUR = new StringList(ARMOUR_TOP, BOOTS);
+const ARMOUR = new StringList(HELMET, BODY, GLOVES, BOOTS);
 const SOCKET_ONE = new StringList(WEAPON_CLASS, MAIN_OTHER_CASTER_ONE, MAIN_OTHER_ATTACKER_ONE, FOCUS, OFF_OTHER_BLOCK, HELMET, GLOVES, BOOTS);
 const SOCKET_TWO = new StringList(MAIN_OTHER_CASTER_TWO, MAIN_OTHER_ATTACKER_TWO, BODY);
 const GEAR_COMMON = new StringList(WEAPON, ARMOUR);
@@ -158,7 +163,12 @@ export const CATEGORY = {
 	GLOVES_ARMOUR_ES,
 	GLOVES_EVASION_ES,
 	GLOVES,
-	ARMOUR_TOP,
+	BOOTS_ARMOUR,
+	BOOTS_EVASION,
+	BOOTS_ES,
+	BOOTS_ARMOUR_EVASION,
+	BOOTS_ARMOUR_ES,
+	BOOTS_EVASION_ES,
 	BOOTS,
 	ARMOUR,
 	SOCKET_ONE,

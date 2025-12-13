@@ -4,8 +4,9 @@ export class Name {
 	category;
 	dropLevel;
 
-	// Bad currencies are flagged. Special map drop items are flagged. Class uniques are flagged.
-	isFlagged;
+	isBad;
+	isClass;
+	isMapDrop;
 
 	constructor(name, value, category = null, dropLevel = null) {
 		this.name = name;
@@ -14,8 +15,14 @@ export class Name {
 		this.dropLevel = dropLevel;
 	}
 
-	flag() {
-		this.isFlagged = true;
+	isBad() {
+		this.isBad = true;
+	}
+	isClass() {
+		this.isClass = true;
+	}
+	isMapDrop() {
+		this.isMapDrop = true;
 	}
 
 	// compare(other) {

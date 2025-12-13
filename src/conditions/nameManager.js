@@ -1128,176 +1128,162 @@ export class NameManager {
 			new Name("Secured Wraps", 5, CATEGORY.GLOVES_EVASION_ES, 80),
 
 			// https://poe2db.tw/us/Boots#BootsItem
-			new Name("Straw Sandals", TIER.LOW), // 14 ES
-			new Name("Wrapped Sandals", TIER.LOW), // 22 ES, L11
-			new Name("Lattice Sandals", TIER.LOW), // 25 ES, L16
-			new Name("Silk Slippers", TIER.LOW), // 34 ES, L27
-			new Name("Feathered Sandals", TIER.LOW), // 38 ES, L33
-			new Name("Flax Sandals", TIER.LOW), // 48 ES, L45
-			new Name("Elegant Slippers", TIER.LOW), // 54 ES, L54
-			new Name("Dunerunner Sandals", TIER.LOW), // 58 ES, L59
-			new Name("Bound Sandals", TIER.LOW), // 63 ES, L65
-			new Name("Luxurious Slippers", TIER.LOW), // 69 ES, L70
-			new Name("Sandsworn Sandals", TIER.LOW), // 75 ES, L75
+			new Name("Rough Greaves", 1, CATEGORY.BOOTS_ARMOUR, 0),
+			new Name("Iron Greaves", 1, CATEGORY.BOOTS_ARMOUR, 11),
+			new Name("Bronze Greaves", 1, CATEGORY.BOOTS_ARMOUR, 16),
+			new Name("Trimmed Greaves", 1, CATEGORY.BOOTS_ARMOUR, 27),
+			new Name("Stone Greaves", 1, CATEGORY.BOOTS_ARMOUR, 33),
+			new Name("Reefsteel Greaves", 1, CATEGORY.BOOTS_ARMOUR, 45),
+			new Name("Elegant Greaves", 1, CATEGORY.BOOTS_ARMOUR, 54),
+			new Name("Carved Greaves", 1, CATEGORY.BOOTS_ARMOUR, 59),
+			new Name("Bulwark Greaves", 1, CATEGORY.BOOTS_ARMOUR, 65),
+			new Name("Ornate Greaves", 1, CATEGORY.BOOTS_ARMOUR, 70),
+			new Name("Vaal Greaves", 1, CATEGORY.BOOTS_ARMOUR, 75),
+			new Name("Tasalian Greaves", 5, CATEGORY.BOOTS_ARMOUR, 80),
 
-			new Name("Sekhema Sandals", TIER.OTHER), // 82 ES, L80
+			new Name("Rawhide Boots", 1, CATEGORY.BOOTS_EVASION, 0),
+			new Name("Laced Boots", 1, CATEGORY.BOOTS_EVASION, 11),
+			new Name("Embossed Boots", 1, CATEGORY.BOOTS_EVASION, 16),
+			new Name("Steeltoe Boots", 1, CATEGORY.BOOTS_EVASION, 28),
+			new Name("Lizardscale Boots", 1, CATEGORY.BOOTS_EVASION, 33),
+			new Name("Flared Boots", 1, CATEGORY.BOOTS_EVASION, 45),
+			new Name("Studded Boots", 1, CATEGORY.BOOTS_EVASION, 54),
+			new Name("Serpentscale Boots", 1, CATEGORY.BOOTS_EVASION, 59),
+			new Name("Cinched Boots", 1, CATEGORY.BOOTS_EVASION, 65),
+			new Name("Cavalry Boots", 1, CATEGORY.BOOTS_EVASION, 70),
+			new Name("Dragonscale Boots", 1, CATEGORY.BOOTS_EVASION, 75),
+			new Name("Drakeskin Boots", 5, CATEGORY.BOOTS_EVASION, 80),
 
-			new Name("Rough Greaves", TIER.LOW), // 22 A
-			new Name("Iron Greaves", TIER.LOW), // 47 A, L11
-			new Name("Bronze Greaves", TIER.LOW), // 60 A, L16
-			new Name("Trimmed Greaves", TIER.LOW), // 87 A, L27
-			new Name("Stone Greaves", TIER.LOW), // 102 A, L33
-			new Name("Reefsteel Greaves", TIER.LOW), // 132 A, L45
-			new Name("Elegant Greaves", TIER.LOW), // 155 A, L54
-			new Name("Carved Greaves", TIER.LOW), // 167 A, L59
-			new Name("Bulwark Greaves", TIER.LOW), // 182 A, L65
-			new Name("Ornate Greaves", TIER.LOW), // 200 A, L70
-			new Name("Vaal Greaves", TIER.LOW), // 219 A, L75
+			new Name("Straw Sandals", 1, CATEGORY.BOOTS_ES, 0),
+			new Name("Wrapped Sandals", 1, CATEGORY.BOOTS_ES, 11),
+			new Name("Lattice Sandals", 1, CATEGORY.BOOTS_ES, 16),
+			new Name("Silk Slippers", 1, CATEGORY.BOOTS_ES, 27),
+			new Name("Feathered Sandals", 1, CATEGORY.BOOTS_ES, 33),
+			new Name("Flax Sandals", 1, CATEGORY.BOOTS_ES, 45),
+			new Name("Elegant Slippers", 1, CATEGORY.BOOTS_ES, 54),
+			new Name("Dunerunner Sandals", 1, CATEGORY.BOOTS_ES, 59),
+			new Name("Bound Sandals", 1, CATEGORY.BOOTS_ES, 65),
+			new Name("Luxurious Slippers", 1, CATEGORY.BOOTS_ES, 70),
+			new Name("Sandsworn Sandals", 1, CATEGORY.BOOTS_ES, 75),
 
-			new Name("Tasalian Greaves", TIER.BAD), // 237 A, L80
+			new Name("Sekhema Sandals", 10, CATEGORY.BOOTS_ES, 80),
 
-			new Name("Rawhide Boots", TIER.LOW), // 15 V
-			new Name("Laced Boots", TIER.LOW), // 38 V, L11
-			new Name("Embossed Boots", TIER.LOW), // 50 V, L16
-			new Name("Steeltoe Boots", TIER.LOW), // 79 V, L28
-			new Name("Lizardscale Boots", TIER.LOW), // 90 V, L33
-			new Name("Flared Boots", TIER.LOW), // 119 V, L45
-			new Name("Studded Boots", TIER.LOW), // 140 V, L54
-			new Name("Serpentscale Boots", TIER.LOW), // 152 V, L59
-			new Name("Cinched Boots", TIER.LOW), // 166 V, L65
-			new Name("Cavalry Boots", TIER.LOW), // 183 V, L70
-			new Name("Dragonscale Boots", TIER.LOW), // 200 V, L75
+			new Name("Mail Sabatons", 1, CATEGORY.BOOTS_ARMOUR_EVASION, 6),
+			new Name("Braced Sabatons", 1, CATEGORY.BOOTS_ARMOUR_EVASION, 16),
+			new Name("Stacked Sabatons", 1, CATEGORY.BOOTS_ARMOUR_EVASION, 33),
+			new Name("Covered Sabatons", 1, CATEGORY.BOOTS_ARMOUR_EVASION, 45),
+			new Name("Bastion Sabatons", 1, CATEGORY.BOOTS_ARMOUR_EVASION, 59),
+			new Name("Veteran Sabatons", 1, CATEGORY.BOOTS_ARMOUR_EVASION, 65),
+			new Name("Noble Sabatons", 1, CATEGORY.BOOTS_ARMOUR_EVASION, 70),
+			new Name("Fortress Sabatons", 1, CATEGORY.BOOTS_ARMOUR_EVASION, 75),
+			new Name("Blacksteel Sabatons", 5, CATEGORY.BOOTS_ARMOUR_EVASION, 80),
 
-			new Name("Drakeskin Boots", TIER.NEVER), // 216 V, L80
+			new Name("Padded Leggings", 1, CATEGORY.BOOTS_ARMOUR_ES, 5),
+			new Name("Secured Leggings", 1, CATEGORY.BOOTS_ARMOUR_ES, 16),
+			new Name("Pelt Leggings", 1, CATEGORY.BOOTS_ARMOUR_ES, 33),
+			new Name("Weaver Leggings", 1, CATEGORY.BOOTS_ARMOUR_ES, 45),
+			new Name("Shamanistic Leggings", 1, CATEGORY.BOOTS_ARMOUR_ES, 59),
+			new Name("Faithful Leggings", 1, CATEGORY.BOOTS_ARMOUR_ES, 65),
+			new Name("Apostle Leggings", 1, CATEGORY.BOOTS_ARMOUR_ES, 70),
+			new Name("Warlock Leggings", 1, CATEGORY.BOOTS_ARMOUR_ES, 75),
+			new Name("Cryptic Leggings", 5, CATEGORY.BOOTS_ARMOUR_ES, 80),
 
-			new Name("Mail Sabatons", TIER.LOW), // 19 A, 15 V, L6
-			new Name("Braced Sabatons", TIER.LOW), // 33 A, 28 V, L16
-			new Name("Stacked Sabatons", TIER.LOW), // 56 A, 50 V, L33
-			new Name("Covered Sabatons", TIER.LOW), // 73 A, 65 V, L45
-			new Name("Bastion Sabatons", TIER.LOW), // 92 A, 84 V, L59
-			new Name("Veteran Sabatons", TIER.LOW), // 100 A, 91 V, L65
-			new Name("Noble Sabatons", TIER.LOW), // 110 A, 101 V, L70
-			new Name("Fortress Sabatons", TIER.LOW), // 120 A, 110 V, L75
+			new Name("Frayed Shoes", 1, CATEGORY.BOOTS_EVASION_ES, 5),
+			new Name("Threaded Shoes", 1, CATEGORY.BOOTS_EVASION_ES, 16),
+			new Name("Hunting Shoes", 1, CATEGORY.BOOTS_EVASION_ES, 33),
+			new Name("Steelpoint Shoes", 1, CATEGORY.BOOTS_EVASION_ES, 45),
+			new Name("Treerunner Shoes", 1, CATEGORY.BOOTS_EVASION_ES, 59),
+			new Name("Wanderer Shoes", 1, CATEGORY.BOOTS_EVASION_ES, 65),
+			new Name("Charmed Shoes", 1, CATEGORY.BOOTS_EVASION_ES, 70),
+			new Name("Quickslip Shoes", 1, CATEGORY.BOOTS_EVASION_ES, 75),
+			new Name("Daggerfoot Shoes", 5, CATEGORY.BOOTS_EVASION_ES, 80),
 
-			new Name("Blacksteel Sabatons", TIER.NEVER), // 130 A, 119 V, L80
+			// https://poe2db.tw/us/Amulets#AmuletsItem
+			new Name("Crimson Amulet", 1, CATEGORY.AMULET, 0), // 2–4 Life Regeneration per second
 
-			new Name("Padded Leggings", TIER.LOW), // 18 A, 9 ES, L5
-			new Name("Secured Leggings", TIER.LOW), // 33 A, 14 ES, L16
-			new Name("Pelt Leggings", TIER.LOW), // 56 A, 21 ES, L33
-			new Name("Weaver Leggings", TIER.LOW), // 73 A, 26 ES, L45
-			new Name("Shamanistic Leggings", TIER.LOW), // 92 A, 32 ES, L59
-			new Name("Faithful Leggings", TIER.LOW), // 100 A, 35 ES, L65
-			new Name("Apostle Leggings", TIER.LOW), // 110 A, 38 ES, L70
-			new Name("Warlock Leggings", TIER.LOW), // 120 A, 42 ES, L75
+			new Name("Azure Amulet", 10, CATEGORY.AMULET, 0), // 20–30% increased Mana Regeneration Rate
+			new Name("Dusk Amulet", 10, CATEGORY.AMULET, 0).isMapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Amulet", 10, CATEGORY.AMULET, 0).isMapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Amulet", 10, CATEGORY.AMULET, 0).isMapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Amulet", 10, CATEGORY.AMULET, 0).isMapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			new Name("Amber Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Strength
+			new Name("Jade Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Dexterity
+			new Name("Lapis Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Intelligence
+			new Name("Pearlescent Amulet", 10, CATEGORY.AMULET, 8), // +7–10% to all Elemental Resistances
+			new Name("Lunar Amulet", 10, CATEGORY.AMULET, 14), // +20–30 to maximum Energy Shield
+			new Name("Bloodstone Amulet", 10, CATEGORY.AMULET, 18), // +30–40 to maximum Life
+			new Name("Stellar Amulet", 10, CATEGORY.AMULET, 25), // +5–7 to all Attributes
+			new Name("Solar Amulet", 20, CATEGORY.AMULET, 30), // +10–15 to Spirit
+			new Name("Gold Amulet", 20, CATEGORY.AMULET, 35), // 12–20% increased Rarity of Items found
 
-			new Name("Cryptic Leggings", TIER.NEVER), // 130 A, 45 ES, L80
+			// https://poe2db.tw/us/Rings#RingsItem
+			new Name("Iron Ring", 1, CATEGORY.RING, 0), // Adds 1 to 4 Physical Damage to Attacks
+			new Name("Lazuli Ring", 1, CATEGORY.RING, 0), // +20–30 to maximum Mana
+			new Name("Emerald Ring", 1, CATEGORY.RING, 26), // +120–160 to Accuracy Rating
+			new Name("Ruby Ring", 5, CATEGORY.RING, 8), // +20–30% to Fire Resistance
+			new Name("Sapphire Ring", 5, CATEGORY.RING, 12), // +20–30% to Cold Resistance
+			new Name("Topaz Ring", 5, CATEGORY.RING, 16), // +20–30% to Lightning Resistance
 
-			new Name("Frayed Shoes", TIER.LOW), // 13 V, 9 ES, L5
-			new Name("Threaded Shoes", TIER.LOW), // 28 V, 14 ES, L16
-			new Name("Hunting Shoes", TIER.LOW), // 50 V, 21 ES, L33
-			new Name("Steelpoint Shoes", TIER.LOW), // 65 V, 26 ES, L45
-			new Name("Treerunner Shoes", TIER.LOW), // 84 V, 32 ES, L59
-			new Name("Wanderer Shoes", TIER.LOW), // 91 V, 35 ES, L65
-			new Name("Charmed Shoes", TIER.LOW), // 101 V, 38 ES, L70
-			new Name("Quickslip Shoes", TIER.LOW), // 110 V, 42 ES, L75
+			new Name("Dusk Ring", 10, CATEGORY.RING, 0).isMapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Ring", 10, CATEGORY.RING, 0).isMapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Ring", 10, CATEGORY.RING, 0).isMapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Ring", 10, CATEGORY.RING, 0).isMapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			new Name("Amethyst Ring", 10, CATEGORY.RING, 20), // +7–13% to Chaos Resistance
+			new Name("Pearl Ring", 10, CATEGORY.RING, 32), // 7–10% increased Cast Speed
+			new Name("Prismatic Ring", 10, CATEGORY.RING, 35), // +7–10% to all Elemental Resistances
+			new Name("Breach Ring", 10, CATEGORY.RING, 40), // Maximum Quality is 40%
+			new Name("Unset Ring", 10, CATEGORY.RING, 44), // Grants 1 additional Skill Slot
+			new Name("Gold Ring", 20, CATEGORY.RING, 40), // 6–15% increased Rarity of Items found
 
-			new Name("Daggerfoot Shoes", TIER.NEVER), // 119 V, 45 ES, L80
+			// https://poe2db.tw/us/Belts#BeltsItem
+			new Name("Wide Belt", 1, CATEGORY.BELT, 14), // 20–30% increased Flask Charges gained
+			new Name("Double Belt", 1, CATEGORY.BELT, 44), // 20–30% increased Charm Charges gained
+			new Name("Rawhide Belt", 5, CATEGORY.BELT, 0), // 20–30% increased Life Recovery from Flasks
+			new Name("Linen Belt", 5, CATEGORY.BELT, 0), // 20–30% increased Mana Recovery from Flasks
+			new Name("Plate Belt", 5, CATEGORY.BELT, 25), // +100–140 to Armour
+			new Name("Mail Belt", 5, CATEGORY.BELT, 40), // 10–15% reduced Flask Charges used
+			new Name("Utility Belt", 5, CATEGORY.BELT, 55), // 20% of Flask Recovery applied Instantly
+			new Name("Fine Belt", 5, CATEGORY.BELT, 62), // Flasks gain 0.17 charges per Second
 
-			// https://poe2db.tw/us/Amulets
-			new Name("Crimson Amulet", TIER.NEVER), // 2–4 Life Regeneration per second
+			new Name("Long Belt", 10, CATEGORY.BELT, 20), // 15–20% increased Charm Effect Duration
+			new Name("Ornate Belt", 10, CATEGORY.BELT, 31), // 10–15% reduced Charm Charges used
+			new Name("Heavy Belt", 10, CATEGORY.BELT, 50), // 20–30% increased Stun Threshold
 
-			new Name("Azure Amulet", TIER.OTHER), // 20–30% increased Mana Regeneration Rate
-			new Name("Amber Amulet", TIER.OTHER), // L8, +10–15 to Strength
-			new Name("Jade Amulet", TIER.OTHER), // L8, +10–15 to Dexterity
-			new Name("Lapis Amulet", TIER.OTHER), // L8, +10–15 to Intelligence
-			new Name("Pearlescent Amulet", TIER.OTHER), // L8, +7–10% to all Elemental Resistances
-			new Name("Lunar Amulet", TIER.OTHER), // L14, +20–30 to maximum Energy Shield
-			new Name("Bloodstone Amulet", TIER.OTHER), // L18, +30–40 to maximum Life
-			new Name("Stellar Amulet", TIER.OTHER), // L25, +5–7 to all Attributes
-			new Name("Gold Amulet", TIER.OTHER), // L35, 12–20% increased Rarity of Items found
+			// https://poe2db.tw/us/Flasks#Flask
+			new Name("Lesser Life Flask", 1, CATEGORY.FLASK_LIFE, 0),
+			new Name("Lesser Mana Flask", 1, CATEGORY.FLASK_MANA, 0),
+			new Name("Medium Life Flask", 1, CATEGORY.FLASK_LIFE, 4),
+			new Name("Medium Mana Flask", 1, CATEGORY.FLASK_MANA, 4),
+			new Name("Greater Life Flask", 1, CATEGORY.FLASK_LIFE, 10),
+			new Name("Greater Mana Flask", 1, CATEGORY.FLASK_MANA, 10),
+			new Name("Grand Life Flask", 1, CATEGORY.FLASK_LIFE, 16),
+			new Name("Grand Mana Flask", 1, CATEGORY.FLASK_MANA, 16),
+			new Name("Giant Life Flask", 1, CATEGORY.FLASK_LIFE, 23),
+			new Name("Giant Mana Flask", 1, CATEGORY.FLASK_MANA, 23),
+			new Name("Colossal Life Flask", 1, CATEGORY.FLASK_LIFE, 30),
+			new Name("Colossal Mana Flask", 1, CATEGORY.FLASK_MANA, 30),
+			new Name("Gargantuan Life Flask", 1, CATEGORY.FLASK_LIFE, 40),
+			new Name("Gargantuan Mana Flask", 1, CATEGORY.FLASK_MANA, 40),
+			new Name("Transcendent Life Flask", 1, CATEGORY.FLASK_LIFE, 50),
+			new Name("Transcendent Mana Flask", 1, CATEGORY.FLASK_MANA, 50),
 
-			new Name("Solar Amulet", TIER.CLASS), // L30, +10–15 to Spirit
+			new Name("Ultimate Life Flask", 20, CATEGORY.FLASK_LIFE, 60),
+			new Name("Ultimate Mana Flask", 20, CATEGORY.FLASK_MANA, 60),
 
-			new Name("Dusk Amulet", TIER.SPECIAL), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Amulet", TIER.SPECIAL), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Amulet", TIER.SPECIAL), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Amulet", TIER.SPECIAL), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			// https://poe2db.tw/us/Charms#CharmsItem
+			new Name("Ruby Charm", 1, CATEGORY.CHARM, 5), // 20/40, 4s, +25% to Fire Resistance
+			new Name("Sapphire Charm", 1, CATEGORY.CHARM, 5), // 20/40, 4s, +25% to Cold Resistance
+			new Name("Grounding Charm", 1, CATEGORY.CHARM, 32), // 30/40, 3s, Grants Immunity to Shock
+			new Name("Amethyst Charm", 1, CATEGORY.CHARM, 40), // 30/40, 4s, +18% to Chaos Resistance
+			new Name("Silver Charm", 5, CATEGORY.CHARM, 10), // 20/40, 3s, Your speed is unaffected by Slows
 
-			// https://poe2db.tw/us/Rings
-			new Name("Iron Ring", TIER.NEVER), // Adds 1 to 4 Physical Damage to Attacks
-			new Name("Lazuli Ring", TIER.NEVER), // +20–30 to maximum Mana
-			new Name("Emerald Ring", TIER.NEVER), // L26, +120–160 to Accuracy Rating
-
-			new Name("Ruby Ring", TIER.BAD), // L8, +20–30% to Fire Resistance
-			new Name("Sapphire Ring", TIER.BAD), // L12, +20–30% to Cold Resistance
-			new Name("Topaz Ring", TIER.BAD), // L16, +20–30% to Lightning Resistance
-
-			new Name("Amethyst Ring", TIER.OTHER), // L20, +7–13% to Chaos Resistance
-			new Name("Pearl Ring", TIER.OTHER), // L32, 7–10% increased Cast Speed
-			new Name("Prismatic Ring", TIER.OTHER), // L35, +7–10% to all Elemental Resistances
-			new Name("Breach Ring", TIER.OTHER), // L40, Maximum Quality is 40%
-			new Name("Unset Ring", TIER.OTHER), // L44, Grants 1 additional Skill Slot
-
-			new Name("Gold Ring", TIER.CLASS), // L40, 6–15% increased Rarity of Items found
-
-			new Name("Dusk Ring", TIER.SPECIAL), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Ring", TIER.SPECIAL), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Ring", TIER.SPECIAL), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Ring", TIER.SPECIAL), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
-
-			// https://poe2db.tw/us/Belts
-			new Name("Wide Belt", TIER.NEVER), // L14, 20–30% increased Flask Charges gained
-			new Name("Double Belt", TIER.NEVER), // L44, 20–30% increased Charm Charges gained
-
-			new Name("Rawhide Belt", TIER.BAD), // 20–30% increased Life Recovery from Flasks
-			new Name("Linen Belt", TIER.BAD), // 20–30% increased Mana Recovery from Flasks
-			new Name("Plate Belt", TIER.BAD), // L25, +100–140 to Armour
-			new Name("Mail Belt", TIER.BAD), // L40, 10–15% reduced Flask Charges used
-			new Name("Utility Belt", TIER.BAD), // L55, 20% of Flask Recovery applied Instantly
-			new Name("Fine Belt", TIER.BAD), // L62, Flasks gain 0.17 charges per Second
-
-			new Name("Long Belt", TIER.OTHER), // L20, 15–20% increased Charm Effect Duration
-			new Name("Ornate Belt", TIER.OTHER), // L31, 10–15% reduced Charm Charges used
-			new Name("Heavy Belt", TIER.OTHER), // L50, 20–30% increased Stun Threshold
-
-			// https://poe2db.tw/us/Flasks
-			new Name("Lesser Life Flask", TIER.LOW), // 50, 10/60, 3s
-			new Name("Lesser Mana Flask", TIER.LOW), // 50, 10/60, 2s
-			new Name("Medium Life Flask", TIER.LOW), // L4, 90, 10/65, 5s
-			new Name("Medium Mana Flask", TIER.LOW), // L4, 70, 10/65, 3s
-			new Name("Greater Life Flask", TIER.LOW), // L10, 150, 10/70, 4s
-			new Name("Greater Mana Flask", TIER.LOW), // L10, 90, 10/70, 2.5s
-			new Name("Grand Life Flask", TIER.LOW), // L16, 260, 10/75, 5s
-			new Name("Grand Mana Flask", TIER.LOW), // L16, 110, 10/75, 2.5s
-			new Name("Giant Life Flask", TIER.LOW), // L23, 340, 10/75, 4s
-			new Name("Giant Mana Flask", TIER.LOW), // L23, 165, 10/75, 3.5s
-			new Name("Colossal Life Flask", TIER.LOW), // L30, 450, 10/75, 4s
-			new Name("Colossal Mana Flask", TIER.LOW), // L30, 165, 10/75, 2.5s
-			new Name("Gargantuan Life Flask", TIER.LOW), // L40, 710, 10/75, 5s
-			new Name("Gargantuan Mana Flask", TIER.LOW), // L40, 185, 10/75, 2s
-			new Name("Transcendent Life Flask", TIER.LOW), // L50, 840, 10/75, 4s
-			new Name("Transcendent Mana Flask", TIER.LOW), // L50, 285, 10/75, 3.5s
-
-			new Name("Ultimate Life Flask", TIER.OTHER), // L60, 920, 10/75, 3s
-
-			new Name("Ultimate Mana Flask", TIER.CLASS), // L60, 310, 10/75, 3s
-
-			// https://poe2db.tw/us/Charms
-			new Name("Ruby Charm", TIER.NEVER), // L5, 20/40, 4s, +25% to Fire Resistance
-			new Name("Sapphire Charm", TIER.NEVER), // L5, 20/40, 4s, +25% to Cold Resistance
-			new Name("Grounding Charm", TIER.NEVER), // L32, 30/40, 3s, Grants Immunity to Shock
-			new Name("Amethyst Charm", TIER.NEVER), // L40, 30/40, 4s, +18% to Chaos Resistance
-
-			new Name("Silver Charm", TIER.BAD), // L10, 20/40, 3s, Your speed is unaffected by Slows
-
-			new Name("Topaz Charm", TIER.OTHER), // L5, 20/40, 4s, +25% to Lightning Resistance
-			new Name("Stone Charm", TIER.OTHER), // L8, 20/40, 3s, Cannot be Stunned
-			new Name("Antidote Charm", TIER.OTHER), // L24, 20/40, 3s, Grants Immunity to Poison
-			new Name("Dousing Charm", TIER.OTHER), // L32, 30/40, 3s, Grants Immunity to Ignite
-
-			new Name("Thawing Charm", TIER.CLASS), // L12, 40/40, 3s, Grants Immunity to Freeze
-			new Name("Staunching Charm", TIER.CLASS), // L18, 30/40, 3s, Grants Immunity to Bleeding
-			new Name("Golden Charm", TIER.CLASS), // L50, 80/80, 1s, 15% increased Rarity of Items found
+			new Name("Topaz Charm", 10, CATEGORY.CHARM, 5), // 20/40, 4s, +25% to Lightning Resistance
+			new Name("Stone Charm", 10, CATEGORY.CHARM, 8), // 20/40, 3s, Cannot be Stunned
+			new Name("Antidote Charm", 10, CATEGORY.CHARM, 24), // 20/40, 3s, Grants Immunity to Poison
+			new Name("Dousing Charm", 10, CATEGORY.CHARM, 32), // 30/40, 3s, Grants Immunity to Ignite
+			new Name("Thawing Charm", 20, CATEGORY.CHARM, 12), // 40/40, 3s, Grants Immunity to Freeze
+			new Name("Staunching Charm", 20, CATEGORY.CHARM, 18), // 30/40, 3s, Grants Immunity to Bleeding
+			new Name("Golden Charm", 20, CATEGORY.CHARM, 50), // 80/80, 1s, 15% increased Rarity of Items found
 
 		).compare(tier, operator);
 	}
