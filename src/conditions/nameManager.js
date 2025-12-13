@@ -564,7 +564,7 @@ export class NameManager {
 	}
 
 	static getNames(c, valueMin = undefined, valueMax = undefined, dropLevel = null, dropLevelOperator = undefined) {
-		let categoriesStringList = c.category.value;
+		let categories = c.category.value;
 
 		let nameManager = new NameManager(
 			// https://poe2db.tw/us/Sceptres#SceptresItem
@@ -1204,10 +1204,10 @@ export class NameManager {
 			new Name("Crimson Amulet", 1, CATEGORY.AMULET, 0), // 2–4 Life Regeneration per second
 
 			new Name("Azure Amulet", 10, CATEGORY.AMULET, 0), // 20–30% increased Mana Regeneration Rate
-			new Name("Dusk Amulet", 10, CATEGORY.AMULET, 0).isMapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Amulet", 10, CATEGORY.AMULET, 0).isMapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Amulet", 10, CATEGORY.AMULET, 0).isMapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Amulet", 10, CATEGORY.AMULET, 0).isMapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			new Name("Dusk Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 			new Name("Amber Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Strength
 			new Name("Jade Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Dexterity
 			new Name("Lapis Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Intelligence
@@ -1226,10 +1226,10 @@ export class NameManager {
 			new Name("Sapphire Ring", 5, CATEGORY.RING, 12), // +20–30% to Cold Resistance
 			new Name("Topaz Ring", 5, CATEGORY.RING, 16), // +20–30% to Lightning Resistance
 
-			new Name("Dusk Ring", 10, CATEGORY.RING, 0).isMapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Ring", 10, CATEGORY.RING, 0).isMapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Ring", 10, CATEGORY.RING, 0).isMapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Ring", 10, CATEGORY.RING, 0).isMapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			new Name("Dusk Ring", 10, CATEGORY.RING, 0).mapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Ring", 10, CATEGORY.RING, 0).mapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Ring", 10, CATEGORY.RING, 0).mapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Ring", 10, CATEGORY.RING, 0).mapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 			new Name("Amethyst Ring", 10, CATEGORY.RING, 20), // +7–13% to Chaos Resistance
 			new Name("Pearl Ring", 10, CATEGORY.RING, 32), // 7–10% increased Cast Speed
 			new Name("Prismatic Ring", 10, CATEGORY.RING, 35), // +7–10% to all Elemental Resistances
@@ -1288,7 +1288,7 @@ export class NameManager {
 			new Name("Golden Charm", 20, CATEGORY.CHARM, 50), // 80/80, 1s, 15% increased Rarity of Items found
 		);
 
-		nameManager = nameManager.categories(categoriesStringList).value(valueMin, valueMax);
+		nameManager = nameManager.categories(categories).value(valueMin, valueMax);
 		if (dropLevel !== null) nameManager = nameManager .dropLevel(dropLevel, dropLevelOperator);
 		return nameManager;
 	}
@@ -1494,10 +1494,12 @@ export class NameManager {
 		return new NameManager(...names);
 	}
 
-	categories(categoriesStringList) {
+	categories(categoriesToMatch) {
 		let names = this.names.filter((name) => {
-			for (let category of categoriesStringList.values) {
-				if (name.category.includes(category)) return true;
+			for (let categorytoMatch of categoriesToMatch.values) {
+				for (let nameCategory of name.category.values) {
+					if (nameCategory.includes(categorytoMatch)) return true;
+				}
 			}
 		});
 		return new NameManager(...names);

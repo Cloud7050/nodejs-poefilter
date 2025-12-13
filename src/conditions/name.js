@@ -4,9 +4,9 @@ export class Name {
 	category;
 	dropLevel;
 
-	isBad;
-	isClass;
-	isMapDrop;
+	isBad = false;
+	isClass = false;
+	isMapDrop = false;
 
 	constructor(name, value, category = null, dropLevel = null) {
 		this.name = name;
@@ -15,14 +15,17 @@ export class Name {
 		this.dropLevel = dropLevel;
 	}
 
-	isBad() {
+	bad() {
 		this.isBad = true;
+		return this;
 	}
-	isClass() {
+	class() {
 		this.isClass = true;
+		return this;
 	}
-	isMapDrop() {
+	mapDrop() {
 		this.isMapDrop = true;
+		return this;
 	}
 
 	// compare(other) {
