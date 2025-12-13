@@ -3,7 +3,7 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager, TIER } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { PAIR_GEAR, PAIR_JEWEL, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../index.js";
+import { PAIR_GEAR, PAIR_JEWEL, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../constants.js";
 
 export function sectionRarity(filter) {
 	reset(filter);

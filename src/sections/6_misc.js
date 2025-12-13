@@ -1,7 +1,7 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { PAIR_QUEST, PAIR_QUESTLIKE } from "../index.js";
+import { PAIR_QUEST, PAIR_QUESTLIKE } from "../constants.js";
 
 export function sectionMisc(filter) {
 	tickets(filter);

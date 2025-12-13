@@ -3,7 +3,7 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager, TIER } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { PAIR_GEAR } from "../index.js";
+import { PAIR_GEAR } from "../constants.js";
 
 // Stop filter here; never hide these. Then need not account for them when hiding
 export function sectionWhitelist(filter, showRares) {

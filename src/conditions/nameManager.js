@@ -1,4 +1,5 @@
-import { DIV, Name } from "./name.js";
+import { DIV } from "../constants.js";
+import { Name } from "./name.js";
 import { OPERATOR } from "./operator.js";
 import { StringList } from "./stringList.js";
 
@@ -22,6 +23,7 @@ export class NameManager {
 		}, []);
 	}
 
+	//TODO update pricing and usefulness of currencies
 	static getCurrenciesBad(min = undefined, max = undefined) {
 		return new NameManager(
 			new Name("Transmutation Shard", 1 / 10000),

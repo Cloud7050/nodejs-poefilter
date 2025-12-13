@@ -220,7 +220,7 @@ Show
 	MinimapIcon 0 Purple Star
 
 Show
-	BaseType == "Essence of Delirium" "Essence of Hysteria" "Essence of the Abyss"
+	BaseType == "Essence of Delirium" "Essence of the Abyss"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -232,7 +232,7 @@ Show
 	MinimapIcon 0 Purple Star
 
 Show
-	BaseType == "Essence of Horror"
+	BaseType == "Essence of Horror" "Essence of Hysteria"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -748,7 +748,7 @@ Show
 	MinimapIcon 0 Cyan Cross
 
 Show
-	BaseType == "Amanamu's Gaze" "Atmohua's Soul Core of Retreat" "Estazunti's Soul Core of Convalescence" "Idol of Sirrius" "Kurgal's Gaze" "Soul Core of Atmohua" "Soul Core of Azcapa" "Soul Core of Cholotl" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Puhuarte" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zalatl" "Soul Core of Zantipi" "Tecrod's Gaze" "Tzamoto's Soul Core of Ferocity"
+	BaseType == "Amanamu's Gaze" "Atmohua's Soul Core of Retreat" "Estazunti's Soul Core of Convalescence" "Kurgal's Gaze" "Soul Core of Atmohua" "Soul Core of Azcapa" "Soul Core of Cholotl" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Puhuarte" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zalatl" "Soul Core of Zantipi" "Tecrod's Gaze" "Tzamoto's Soul Core of Ferocity"
 	Class == Augment
 
 	SetFontSize 45
@@ -760,7 +760,7 @@ Show
 	MinimapIcon 0 Cyan Star
 
 Show
-	BaseType == "Soul Core of Jiquani"
+	BaseType == "Idol of Sirrius" "Soul Core of Jiquani"
 	Class == Augment
 
 	SetFontSize 45

@@ -1,19 +1,20 @@
 export class Name {
-	static DIV = 1850; // Exalts per divine
-
 	name;
 	value;
+	category;
+	dropLevel;
 
-	constructor(name, value = null) {
+	constructor(name, value = null, category = null, dropLevel = null) {
 		this.name = name;
 		this.value = value;
+		this.category = category;
+		this.dropLevel = dropLevel;
 	}
 
-	compare(other) {
-		if (this.value === null && other.value === null) return 0;
-		if (this.value === null) return -1;
-		if (other.value === null) return 1;
-		return this.value - other.value;
-	}
+	// compare(other) {
+	// 	if (this.value === null && other.value === null) return 0;
+	// 	if (this.value === null) return -1;
+	// 	if (other.value === null) return 1;
+	// 	return this.value - other.value;
+	// }
 }
-export const DIV = Name.DIV;

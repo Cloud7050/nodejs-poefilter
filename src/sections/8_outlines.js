@@ -2,8 +2,8 @@ import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { OPERATOR } from "../conditions/operator.js";
+import { PAIR_GEAR } from "../constants.js";
 import { Colour } from "../effects/colour.js";
-import { PAIR_GEAR } from "../index.js";
 
 // Overwrite outlines. Lowest priority first as they can get overwritten below
 export function sectionOutlines(filter) {

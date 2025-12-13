@@ -1,8 +1,7 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
-import { DIV } from "../conditions/name.js";
 import { NameManager } from "../conditions/nameManager.js";
-import { PAIR_GEM } from "../index.js";
+import { DIV, PAIR_GEM } from "../constants.js";
 
 export function sectionGems(filter) {
 	uncut(filter);

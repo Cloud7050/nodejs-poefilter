@@ -1,8 +1,7 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
-import { DIV } from "../conditions/name.js";
 import { NameManager } from "../conditions/nameManager.js";
-import { PAIR_ABYSS, PAIR_CRAFT } from "../index.js";
+import { DIV, PAIR_ABYSS, PAIR_CRAFT } from "../constants.js";
 
 export function sectionOmens(filter) {
 	ritual(filter);
