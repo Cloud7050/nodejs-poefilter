@@ -850,172 +850,161 @@ export class NameManager {
 			new Name("Tasalian Focus", 20, CATEGORY.FOCUS, 80),
 
 			// https://poe2db.tw/us/Quivers#QuiversItem
-			new Name("Broadhead Quiver", TIER.NEVER), // Adds 1 to 3 Physical Damage to Attacks
-			new Name("Two-Point Quiver", TIER.NEVER), // L24, 20–30% increased Accuracy Rating
-			new Name("Serrated Quiver", TIER.NEVER), // L44, Attacks have 20–30% chance to cause Bleeding
+			new Name("Broadhead Quiver", 1, CATEGORY.QUIVER, 0), // Adds 1 to 3 Physical Damage to Attacks
+			new Name("Two-Point Quiver", 1, CATEGORY.QUIVER, 24), // 20–30% increased Accuracy Rating
+			new Name("Serrated Quiver", 1, CATEGORY.QUIVER, 44), // Attacks have 20–30% chance to cause Bleeding
+			new Name("Toxic Quiver", 5, CATEGORY.QUIVER, 39), // 20–30% chance to Poison on Hit with Attacks
+			new Name("Primed Quiver", 5, CATEGORY.QUIVER, 51), // 7–10% increased Attack Speed
 
-			new Name("Toxic Quiver", TIER.BAD), // L39, 20–30% chance to Poison on Hit with Attacks
-			new Name("Primed Quiver", TIER.BAD), // L51, 7–10% increased Attack Speed
-
-			new Name("Fire Quiver", TIER.OTHER), // L8, Adds 3 to 5 Fire damage to Attacks
-			new Name("Sacral Quiver", TIER.OTHER), // L16, Gain 2–3 Life per Enemy Hit with Attacks
-			new Name("Blunt Quiver", TIER.OTHER), // L33, 25–40% increased Stun Buildup
-			new Name("Penetrating Quiver", TIER.OTHER), // L55, 100% chance to Pierce an Enemy
-			new Name("Volant Quiver", TIER.OTHER), // L61, 20–30% increased Arrow Speed
-			new Name("Visceral Quiver", TIER.OTHER), // L65, 20–30% increased Critical Hit Chance for Attacks
+			new Name("Fire Quiver", 10, CATEGORY.QUIVER, 8), // Adds 3 to 5 Fire damage to Attacks
+			new Name("Sacral Quiver", 10, CATEGORY.QUIVER, 16), // Gain 2–3 Life per Enemy Hit with Attacks
+			new Name("Blunt Quiver", 10, CATEGORY.QUIVER, 33), // 25–40% increased Stun Buildup
+			new Name("Penetrating Quiver", 10, CATEGORY.QUIVER, 55), //100% chance to Pierce an Enemy
+			new Name("Volant Quiver", 10, CATEGORY.QUIVER, 61), // 20–30% increased Arrow Speed
+			new Name("Visceral Quiver", 10, CATEGORY.QUIVER, 65), // 20–30% increased Critical Hit Chance for Attacks
 
 			// https://poe2db.tw/us/Helmets
-			new Name("Twig Circlet", TIER.LOW), // 19 ES
-			new Name("Wicker Tiara", TIER.LOW), // 28 ES, L10
-			new Name("Beaded Circlet", TIER.LOW), // 34 ES, L16
-			new Name("Chain Tiara", TIER.LOW), // 44 ES, L26
-			new Name("Feathered Tiara", TIER.LOW), // 51 ES, L33
-			new Name("Gold Circlet", TIER.LOW), // 58 ES, L40
-			new Name("Vermeil Circlet", TIER.LOW), // 63 ES, L45
-			new Name("Jade Tiara", TIER.LOW), // 69 ES, L50
-			new Name("Sandsworn Tiara", TIER.LOW), // 73 ES, L54
-			new Name("Jungle Tiara", TIER.LOW), // 78 ES, L59
-			new Name("Skycrown Tiara", TIER.LOW), // 84 ES, L65
-			new Name("Sorcerous Tiara", TIER.LOW), // 92 ES, L70
-			new Name("Kamasan Tiara", TIER.LOW), // 101 ES, L75
+			new Name("Rusted Greathelm", 1, CATEGORY.HELMET_ARMOUR, 0),
+			new Name("Soldier Greathelm", 1, CATEGORY.HELMET_ARMOUR, 12),
+			new Name("Wrapped Greathelm", 1, CATEGORY.HELMET_ARMOUR, 16),
+			new Name("Spired Greathelm", 1, CATEGORY.HELMET_ARMOUR, 27),
+			new Name("Elite Greathelm", 1, CATEGORY.HELMET_ARMOUR, 33),
+			new Name("Warrior Greathelm", 1, CATEGORY.HELMET_ARMOUR, 36),
+			new Name("Commander Greathelm", 1, CATEGORY.HELMET_ARMOUR, 45),
+			new Name("Fierce Greathelm", 1, CATEGORY.HELMET_ARMOUR, 51),
+			new Name("Elegant Greathelm", 1, CATEGORY.HELMET_ARMOUR, 54),
+			new Name("Noble Greathelm", 1, CATEGORY.HELMET_ARMOUR, 59),
+			new Name("Warmonger Greathelm", 1, CATEGORY.HELMET_ARMOUR, 65),
+			new Name("Masked Greathelm", 1, CATEGORY.HELMET_ARMOUR, 70),
+			new Name("Paragon Greathelm", 1, CATEGORY.HELMET_ARMOUR, 75),
+			new Name("Imperial Greathelm", 5, CATEGORY.HELMET_ARMOUR, 80),
 
-			new Name("Ancestral Tiara", TIER.CLASS), // 109 ES, L80
+			new Name("Shabby Hood", 1, CATEGORY.HELMET_EVASION, 0),
+			new Name("Felt Cap", 1, CATEGORY.HELMET_EVASION, 10),
+			new Name("Lace Hood", 1, CATEGORY.HELMET_EVASION, 16),
+			new Name("Swathed Cap", 1, CATEGORY.HELMET_EVASION, 26),
+			new Name("Hunter Hood", 1, CATEGORY.HELMET_EVASION, 33),
+			new Name("Viper Cap", 1, CATEGORY.HELMET_EVASION, 38),
+			new Name("Corsair Cap", 1, CATEGORY.HELMET_EVASION, 45),
+			new Name("Leatherbound Hood", 1, CATEGORY.HELMET_EVASION, 50),
+			new Name("Wrapped Cap", 1, CATEGORY.HELMET_EVASION, 54),
+			new Name("Deerstalker Hood", 1, CATEGORY.HELMET_EVASION, 59),
+			new Name("Woven Cap", 1, CATEGORY.HELMET_EVASION, 65),
+			new Name("Desert Cap", 1, CATEGORY.HELMET_EVASION, 70),
+			new Name("Trapper Hood", 1, CATEGORY.HELMET_EVASION, 75),
+			new Name("Freebooter Cap", 5, CATEGORY.HELMET_EVASION, 80),
 
-			new Name("Rusted Greathelm", TIER.LOW), // 29 A
-			new Name("Soldier Greathelm", TIER.LOW), // 66 A, L12
-			new Name("Wrapped Greathelm", TIER.LOW), // 79 A, L16
-			new Name("Spired Greathelm", TIER.LOW), // 116 A, L27
-			new Name("Elite Greathelm", TIER.LOW), // 136 A, L33
-			new Name("Warrior Greathelm", TIER.LOW), // 146 A, L36
-			new Name("Commander Greathelm", TIER.LOW), // 176 A, L45
-			new Name("Fierce Greathelm", TIER.LOW), // 196 A, L51
-			new Name("Elegant Greathelm", TIER.LOW), // 206 A, L54
-			new Name("Noble Greathelm", TIER.LOW), // 223 A, L59
-			new Name("Warmonger Greathelm", TIER.LOW), // 243 A, L65
-			new Name("Masked Greathelm", TIER.LOW), // 267 A, L70
-			new Name("Paragon Greathelm", TIER.LOW), // 292 A, L75
+			new Name("Twig Circlet", 1, CATEGORY.HELMET_ES, 0),
+			new Name("Wicker Tiara", 1, CATEGORY.HELMET_ES, 10),
+			new Name("Beaded Circlet", 1, CATEGORY.HELMET_ES, 16),
+			new Name("Chain Tiara", 1, CATEGORY.HELMET_ES, 26),
+			new Name("Feathered Tiara", 1, CATEGORY.HELMET_ES, 33),
+			new Name("Gold Circlet", 1, CATEGORY.HELMET_ES, 40),
+			new Name("Vermeil Circlet", 1, CATEGORY.HELMET_ES, 45),
+			new Name("Jade Tiara", 1, CATEGORY.HELMET_ES, 50),
+			new Name("Sandsworn Tiara", 1, CATEGORY.HELMET_ES, 54),
+			new Name("Jungle Tiara", 1, CATEGORY.HELMET_ES, 59),
+			new Name("Skycrown Tiara", 1, CATEGORY.HELMET_ES, 65),
+			new Name("Sorcerous Tiara", 1, CATEGORY.HELMET_ES, 70),
+			new Name("Kamasan Tiara", 1, CATEGORY.HELMET_ES, 75),
 
-			new Name("Imperial Greathelm", TIER.NEVER), // 316 A, L80
+			new Name("Ancestral Tiara", 20, CATEGORY.HELMET_ES, 80),
 
-			new Name("Shabby Hood", TIER.LOW), // 19 V
-			new Name("Felt Cap", TIER.LOW), // 48 V, L10
-			new Name("Lace Hood", TIER.LOW), // 67 V, L16
-			new Name("Swathed Cap", TIER.LOW), // 98 V, L26
-			new Name("Hunter Hood", TIER.LOW), // 121 V, L33
-			new Name("Viper Cap", TIER.LOW), // 136 V, L38
-			new Name("Corsair Cap", TIER.LOW), // 158 V, L45
-			new Name("Leatherbound Hood", TIER.LOW), // 174 V, L50
-			new Name("Wrapped Cap", TIER.LOW), // 187 V, L54
-			new Name("Deerstalker Hood", TIER.LOW), // 203 V, L59
-			new Name("Woven Cap", TIER.LOW), // 222 V, L65
-			new Name("Desert Cap", TIER.LOW), // 244 V, L70
-			new Name("Trapper Hood", TIER.LOW), // 266 V, L75
+			new Name("Brimmed Helm", 1, CATEGORY.HELMET_ARMOUR_EVASION, 5),
+			new Name("Guarded Helm", 1, CATEGORY.HELMET_ARMOUR_EVASION, 11),
+			new Name("Visored Helm", 1, CATEGORY.HELMET_ARMOUR_EVASION, 16),
+			new Name("Cowled Helm", 1, CATEGORY.HELMET_ARMOUR_EVASION, 26),
+			new Name("Shielded Helm", 1, CATEGORY.HELMET_ARMOUR_EVASION, 33),
+			new Name("Closed Helm", 1, CATEGORY.HELMET_ARMOUR_EVASION, 45),
+			new Name("Cabalist Helm", 1, CATEGORY.HELMET_ARMOUR_EVASION, 54),
+			new Name("Warded Helm", 1, CATEGORY.HELMET_ARMOUR_EVASION, 65),
+			new Name("Cryptic Helm", 1, CATEGORY.HELMET_ARMOUR_EVASION, 70),
+			new Name("Champion Helm", 1, CATEGORY.HELMET_ARMOUR_EVASION, 75),
+			new Name("Gladiatorial Helm", 5, CATEGORY.HELMET_ARMOUR_EVASION, 80),
 
-			new Name("Freebooter Cap", TIER.NEVER), // 288 V, L80
+			new Name("Iron Crown", 1, CATEGORY.HELMET_ARMOUR_ES, 5),
+			new Name("Horned Crown", 1, CATEGORY.HELMET_ARMOUR_ES, 10),
+			new Name("Cultist Crown", 1, CATEGORY.HELMET_ARMOUR_ES, 16),
+			new Name("Martyr Crown", 1, CATEGORY.HELMET_ARMOUR_ES, 28),
+			new Name("Heavy Crown", 1, CATEGORY.HELMET_ARMOUR_ES, 33),
+			new Name("Spiritbone Crown", 1, CATEGORY.HELMET_ARMOUR_ES, 45),
+			new Name("Hallowed Crown", 1, CATEGORY.HELMET_ARMOUR_ES, 54),
+			new Name("Inquisitor Crown", 1, CATEGORY.HELMET_ARMOUR_ES, 59),
+			new Name("Druidic Crown", 1, CATEGORY.HELMET_ARMOUR_ES, 65),
+			new Name("Saintly Crown", 1, CATEGORY.HELMET_ARMOUR_ES, 70),
+			new Name("Divine Crown", 1, CATEGORY.HELMET_ARMOUR_ES, 75),
+			new Name("Cryptic Crown", 5, CATEGORY.HELMET_ARMOUR_ES, 80),
 
-			new Name("Brimmed Helm", TIER.LOW), // 23 A, 18 V, L5
-			new Name("Guarded Helm", TIER.LOW), // 34 A, 28 V, L11
-			new Name("Visored Helm", TIER.LOW), // 44 A, 37 V, L16
-			new Name("Cowled Helm", TIER.LOW), // 62 A, 54 V, L26
-			new Name("Shielded Helm", TIER.LOW), // 75 A, 66 V, L33
-			new Name("Closed Helm", TIER.LOW), // 97 A, 87 V, L45
-			new Name("Cabalist Helm", TIER.LOW), // 113 A, 103 V, L54
-			new Name("Warded Helm", TIER.LOW), // 134 A, 122 V, L65
-			new Name("Cryptic Helm", TIER.LOW), // 147 A, 134 V, L70
-			new Name("Champion Helm", TIER.LOW), // 160 A, 146 V, L75
-
-			new Name("Gladiatorial Helm", TIER.NEVER), // 174 A, 159 V, L80
-
-			new Name("Iron Crown", TIER.LOW), // 23 A, 12 ES, L5
-			new Name("Horned Crown", TIER.LOW), // 33 A, 15 ES, L10
-			new Name("Cultist Crown", TIER.LOW), // 44 A, 19 ES, L16
-			new Name("Martyr Crown", TIER.LOW), // 66 A, 25 ES, L28
-			new Name("Heavy Crown", TIER.LOW), // 75 A, 28 ES, L33
-			new Name("Spiritbone Crown", TIER.LOW), // 97 A, 35 ES, L45
-			new Name("Hallowed Crown", TIER.LOW), // 113 A, 40 ES, L54
-			new Name("Inquisitor Crown", TIER.LOW), // 123 A, 43 ES, L59
-			new Name("Druidic Crown", TIER.LOW), // 134 A, 46 ES, L65
-			new Name("Saintly Crown", TIER.LOW), // 147 A, 51 ES, L70
-			new Name("Divine Crown", TIER.LOW), // 160 A, 55 ES, L75
-
-			new Name("Cryptic Crown", TIER.NEVER), // 174 A, 60 ES, L80
-
-			new Name("Hewn Mask", TIER.LOW), // 18 V, 12 ES, L5
-			new Name("Face Mask", TIER.LOW), // 26 V, 15 ES, L10
-			new Name("Hooded Mask", TIER.LOW), // 37 V, 19 ES, L16
-			new Name("Veiled Mask", TIER.LOW), // 58 V, 25 ES, L28
-			new Name("Tribal Mask", TIER.LOW), // 66 V, 28 ES, L33
-			new Name("Solid Mask", TIER.LOW), // 87 V, 35 ES, L45
-			new Name("Pariah Mask", TIER.LOW), // 103 V, 40 ES, L54
-			new Name("Avian Mask", TIER.LOW), // 111 V, 43 ES, L59
-			new Name("Brigand Mask", TIER.LOW), // 122 V, 46 ES, L65
-			new Name("Faridun Mask", TIER.LOW), // 134 V, 51 ES, L70
-			new Name("Soaring Mask", TIER.LOW), // 146 V, 55 ES, L75
-
-			new Name("Grinning Mask", TIER.NEVER), // 159 V, 60 ES, L80
+			new Name("Hewn Mask", 1, CATEGORY.HELMET_EVASION_ES, 5),
+			new Name("Face Mask", 1, CATEGORY.HELMET_EVASION_ES, 10),
+			new Name("Hooded Mask", 1, CATEGORY.HELMET_EVASION_ES, 16),
+			new Name("Veiled Mask", 1, CATEGORY.HELMET_EVASION_ES, 28),
+			new Name("Tribal Mask", 1, CATEGORY.HELMET_EVASION_ES, 33),
+			new Name("Solid Mask", 1, CATEGORY.HELMET_EVASION_ES, 45),
+			new Name("Pariah Mask", 1, CATEGORY.HELMET_EVASION_ES, 54),
+			new Name("Avian Mask", 1, CATEGORY.HELMET_EVASION_ES, 59),
+			new Name("Brigand Mask", 1, CATEGORY.HELMET_EVASION_ES, 65),
+			new Name("Faridun Mask", 1, CATEGORY.HELMET_EVASION_ES, 70),
+			new Name("Soaring Mask", 1, CATEGORY.HELMET_EVASION_ES, 75),
+			new Name("Grinning Mask", 5, CATEGORY.HELMET_EVASION_ES, 80),
 
 			// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
-			new Name("Tattered Robe", TIER.LOW), // 28 ES
-			new Name("Feathered Robe", TIER.LOW), // 35 ES, L5
-			new Name("Hexer's Robe", TIER.LOW), // 44 ES, L11
-			new Name("Bone Raiment", TIER.LOW), // 52 ES, L16
-			new Name("Silk Robe", TIER.LOW), // 61 ES, L22
-			new Name("Keth Raiment", TIER.LOW), // 70 ES, L28
-			new Name("Votive Raiment", TIER.LOW), // 78 ES, L33
-			new Name("Altar Robe", TIER.LOW), // 89 ES, L40
-			new Name("Elementalist Robe", TIER.LOW), // 97 ES, L45
-			new Name("Mystic Raiment", TIER.LOW), // 103 ES, L49
-			new Name("River Raiment", TIER.LOW), // 111 ES, L54
-			new Name("Adherent's Raiment", TIER.LOW), // 119 ES, L59
-			new Name("Ceremonial Robe", TIER.LOW), /// 123 ES, L62
+			new Name("Rusted Cuirass", 1, CATEGORY.BODY_ARMOUR, 0),
+			new Name("Fur Plate", 1, CATEGORY.BODY_ARMOUR, 4),
+			new Name("Iron Cuirass", 1, CATEGORY.BODY_ARMOUR, 11),
+			new Name("Raider Plate", 1, CATEGORY.BODY_ARMOUR, 16),
+			new Name("Maraketh Cuirass", 1, CATEGORY.BODY_ARMOUR, 20),
+			new Name("Steel Plate", 1, CATEGORY.BODY_ARMOUR, 27),
+			new Name("Full Plate", 1, CATEGORY.BODY_ARMOUR, 33),
+			new Name("Vaal Cuirass", 1, CATEGORY.BODY_ARMOUR, 37),
+			new Name("Juggernaut Plate", 1, CATEGORY.BODY_ARMOUR, 45),
+			new Name("Chieftain Cuirass", 1, CATEGORY.BODY_ARMOUR, 50),
+			new Name("Elegant Plate", 1, CATEGORY.BODY_ARMOUR, 54),
+			new Name("Heavy Plate", 1, CATEGORY.BODY_ARMOUR, 59),
+			new Name("Stone Cuirass", 1, CATEGORY.BODY_ARMOUR, 62),
+			new Name("Ornate Plate", 5, CATEGORY.BODY_ARMOUR, 70), // 445 A, Regenerate 1.5–2.5% of maximum Life per second
+			new Name("Utzaal Cuirass", 5, CATEGORY.BODY_ARMOUR, 75), // 445 A, 30–40% increased Stun Threshold
 
-			new Name("Sacramental Robe", TIER.BAD), /// 153 ES, L75, 40–50% faster start of Energy Shield Recharge
+			new Name("Soldier Cuirass", 10, CATEGORY.BODY_ARMOUR, 65), // 534 A
+			new Name("Warlord Cuirass", 10, CATEGORY.BODY_ARMOUR, 80), // 445 A, +15–25% of Armour also applies to Elemental Damage
 
-			new Name("Flowing Raiment", TIER.OTHER), /// 153 ES, L70, 40–50% increased Mana Regeneration Rate
-			new Name("Feathered Raiment", TIER.OTHER), /// 153 ES, L80, 5–10% of Damage is taken from Mana before Life
+			new Name("Leather Vest", 1, CATEGORY.BODY_EVASION, 0),
+			new Name("Quilted Vest", 1, CATEGORY.BODY_EVASION, 4),
+			new Name("Pathfinder Coat", 1, CATEGORY.BODY_EVASION, 11),
+			new Name("Shrouded Vest", 1, CATEGORY.BODY_EVASION, 16),
+			new Name("Rhoahide Coat", 1, CATEGORY.BODY_EVASION, 22),
+			new Name("Studded Vest", 1, CATEGORY.BODY_EVASION, 26),
+			new Name("Scout's Vest", 1, CATEGORY.BODY_EVASION, 33),
+			new Name("Serpentscale Coat", 1, CATEGORY.BODY_EVASION, 36),
+			new Name("Corsair Vest", 1, CATEGORY.BODY_EVASION, 45),
+			new Name("Smuggler Coat", 1, CATEGORY.BODY_EVASION, 51),
+			new Name("Layered Vest", 1, CATEGORY.BODY_EVASION, 54),
+			new Name("Runner Vest", 1, CATEGORY.BODY_EVASION, 59),
+			new Name("Lizardscale Coat", 1, CATEGORY.BODY_EVASION, 62),
+			new Name("Swiftstalker Coat", 5, CATEGORY.BODY_EVASION, 65), // 406 V, 20–30% reduced Slowing Potency of Debuffs on You
+			new Name("Wyrmscale Coat", 5, CATEGORY.BODY_EVASION, 75), // 406 V, 30–40% increased Elemental Ailment Threshold
 
-			new Name("Vile Robe", TIER.CLASS), /// 184 ES, L65
+			new Name("Slipstrike Vest", 10, CATEGORY.BODY_EVASION, 70), // 487 V
+			new Name("Corsair Coat", 20, CATEGORY.BODY_EVASION, 80), // 406 V, 5% increased Movement Speed
 
-			new Name("Rusted Cuirass", TIER.LOW), // 45 A
-			new Name("Fur Plate", TIER.LOW), // 60 A, L4
-			new Name("Iron Cuirass", TIER.LOW), // 96 A, L11
-			new Name("Raider Plate", TIER.LOW), // 121 A, L16
-			new Name("Maraketh Cuirass", TIER.LOW), // 141 A, L20
-			new Name("Steel Plate", TIER.LOW), // 177 A, L27
-			new Name("Full Plate", TIER.LOW), // 208 A, L33
-			new Name("Vaal Cuirass", TIER.LOW), // 228 A, L37
-			new Name("Juggernaut Plate", TIER.LOW), // 269 A, L45
-			new Name("Chieftain Cuirass", TIER.LOW), // 294 A, L50
-			new Name("Elegant Plate", TIER.LOW), // 315 A, L54
-			new Name("Heavy Plate", TIER.LOW), // 340 A, L59
-			new Name("Stone Cuirass", TIER.LOW), // 355 A, L62
+			new Name("Tattered Robe", 1, CATEGORY.BODY_ES, 0),
+			new Name("Feathered Robe", 1, CATEGORY.BODY_ES, 5),
+			new Name("Hexer's Robe", 1, CATEGORY.BODY_ES, 11),
+			new Name("Bone Raiment", 1, CATEGORY.BODY_ES, 16),
+			new Name("Silk Robe", 1, CATEGORY.BODY_ES, 22),
+			new Name("Keth Raiment", 1, CATEGORY.BODY_ES, 28),
+			new Name("Votive Raiment", 1, CATEGORY.BODY_ES, 33),
+			new Name("Altar Robe", 1, CATEGORY.BODY_ES, 40),
+			new Name("Elementalist Robe", 1, CATEGORY.BODY_ES, 45),
+			new Name("Mystic Raiment", 1, CATEGORY.BODY_ES, 49),
+			new Name("River Raiment", 1, CATEGORY.BODY_ES, 54),
+			new Name("Adherent's Raiment", 1, CATEGORY.BODY_ES, 59),
+			new Name("Ceremonial Robe", 1, CATEGORY.BODY_ES, 62),
+			new Name("Sacramental Robe", 5, CATEGORY.BODY_ES, 75), /// 153 ES, 40–50% faster start of Energy Shield Recharge
 
-			new Name("Ornate Plate", TIER.NEVER), // 445 A, L70, Regenerate 1.5–2.5% of maximum Life per second
-			new Name("Utzaal Cuirass", TIER.NEVER), // 445 A, L75, 30–40% increased Stun Threshold
-
-			new Name("Soldier Cuirass", TIER.OTHER), // 524 A, L65
-			new Name("Warlord Cuirass", TIER.OTHER), // 445 A, L80, +15–25% of Armour also applies to Elemental Damage
-
-			new Name("Leather Vest", TIER.LOW), // 30 V
-			new Name("Quilted Vest", TIER.LOW), // 44 V, L4
-			new Name("Pathfinder Coat", TIER.LOW), // 78 V, L11
-			new Name("Shrouded Vest", TIER.LOW), // 102 V, L16
-			new Name("Rhoahide Coat", TIER.LOW), // 131 V, L22
-			new Name("Studded Vest", TIER.LOW), // 150 V, L26
-			new Name("Scout's Vest", TIER.LOW), // 184 V, L33
-			new Name("Serpentscale Coat", TIER.LOW), // 198 V, L36
-			new Name("Corsair Vest", TIER.LOW), // 242 V, L45
-			new Name("Smuggler Coat", TIER.LOW), // 271 V, L51
-			new Name("Layered Vest", TIER.LOW), // 285 V, L54
-			new Name("Runner Vest", TIER.LOW), // 309 V, L59
-			new Name("Lizardscale Coat", TIER.LOW), // 324 V, L62
-
-			new Name("Swiftstalker Coat", TIER.NEVER), // 406 V, L65, 20–30% reduced Slowing Potency of Debuffs on You
-			new Name("Wyrmscale Coat", TIER.NEVER), // 406 V, L75, 30–40% increased Elemental Ailment Threshold
-
-			new Name("Corsair Coat", TIER.BAD), // 406 V, L80, 10–20% reduced Movement Speed Penalty from using Skills while moving
-
-			new Name("Slipstrike Vest", TIER.OTHER), // 487 V, L70
+			new Name("Flowing Raiment", 10, CATEGORY.BODY_ES, 70), /// 153 ES, 40–50% increased Mana Regeneration Rate
+			new Name("Feathered Raiment", 10, CATEGORY.BODY_ES, 80), /// 153 ES, 5–10% of Damage is taken from Mana before Life
+			new Name("Vile Robe", 20, CATEGORY.BODY_ES, 65), /// 184 ES
 
 			new Name("Chain Mail", TIER.LOW), // 25 A, 16 V
 			new Name("Rogue Armour", TIER.LOW), // 53 A, 43 V, L11

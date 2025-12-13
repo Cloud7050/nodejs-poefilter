@@ -40,7 +40,16 @@ const MAIN = new StringList(MAIN_CLASS, MAIN_OTHER);
 const OFF = new StringList(OFF_CLASS, OFF_OTHER);
 const WEAPON = new StringList(WEAPON_CLASS, WEAPON_OTHER);
 
+const HELMET_ARMOUR = new StringList("Helmets_GREATHELM");
+const HELMET_EVASION = new StringList("Helmets_HOOD_CAP");
+const HELMET_ES = new StringList("Helmets_CIRCLET_TIARA");
+const HELMET_ARMOUR_EVASION = new StringList("Helmets_HELM");
+const HELMET_ARMOUR_ES = new StringList("Helmets_CROWN");
+const HELMET_EVASION_ES = new StringList("Helmets_MASK");
 const HELMET = new StringList("Helmets");
+const BODY_ARMOUR = new StringList("Body Armours_CUIRASS_PLATE");
+const BODY_EVASION = new StringList("Body Armours_VEST_COAT");
+const BODY_ES = new StringList("Body Armours_ROBE_RAIMENT");
 const BODY = new StringList("Body Armours");
 const GLOVE = new StringList("Gloves");
 const ARMOUR_TOP = new StringList(HELMET, BODY, GLOVE);
@@ -119,7 +128,16 @@ export const CATEGORY = {
 	OFF,
 	WEAPON,
 
+	HELMET_ARMOUR,
+	HELMET_EVASION,
+	HELMET_ES,
+	HELMET_ARMOUR_EVASION,
+	HELMET_ARMOUR_ES,
+	HELMET_EVASION_ES,
 	HELMET,
+	BODY_ARMOUR,
+	BODY_EVASION,
+	BODY_ES,
 	BODY,
 	GLOVE,
 	ARMOUR_TOP,
