@@ -40,6 +40,9 @@ export class ConditionSet {
 		if (this.names !== null && this.names.exportValue() === "") return true;
 		if (this.mods !== null && this.mods.exportValue() === "") return true;
 
+		// Comment out the block if the count says <0 which should never match
+		if (this.count !== null && this.count.operator === OPERATOR.LT && this.count.value === 0) return true;
+
 		return false;
 	}
 

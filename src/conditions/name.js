@@ -4,11 +4,18 @@ export class Name {
 	category;
 	dropLevel;
 
+	// Bad currencies are flagged. Class uniques are flagged.
+	isFlagged;
+
 	constructor(name, value = null, category = null, dropLevel = null) {
 		this.name = name;
 		this.value = value;
 		this.category = category;
 		this.dropLevel = dropLevel;
+	}
+
+	flag() {
+		this.isFlagged = true;
 	}
 
 	// compare(other) {

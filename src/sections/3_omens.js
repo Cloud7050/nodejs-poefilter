@@ -1,7 +1,7 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { NameManager } from "../conditions/nameManager.js";
-import { DIV, PAIR_ABYSS, PAIR_CRAFT } from "../constants.js";
+import { PAIR_ABYSS, PAIR_CRAFT, PRICE_AUGMENT, PRICE_CHANCE, PRICE_DIV, PRICE_EXALT } from "../constants.js";
 
 export function sectionOmens(filter) {
 	ritual(filter);
@@ -10,31 +10,31 @@ export function sectionOmens(filter) {
 
 function ritual(filter) {
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getOmens(null, 1 / 100));
+		c.names = new Comparison(NameManager.getOmens(null, PRICE_AUGMENT));
 		c.categories(CATEGORY.OMEN);
 
 		e.colourAugment(PAIR_CRAFT).sizeWisdom();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getOmens(1 / 100, 1));
+		c.names = new Comparison(NameManager.getOmens(PRICE_AUGMENT, PRICE_EXALT));
 		c.categories(CATEGORY.OMEN);
 
 		e.colourAugment(PAIR_CRAFT).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getOmens(1, 20));
+		c.names = new Comparison(NameManager.getOmens(PRICE_EXALT, PRICE_CHANCE));
 		c.categories(CATEGORY.OMEN);
 
 		e.colourExalt(PAIR_CRAFT).sizeExalt();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getOmens(20, DIV));
+		c.names = new Comparison(NameManager.getOmens(PRICE_CHANCE, PRICE_DIV));
 		c.categories(CATEGORY.OMEN);
 
 		e.colourChance(PAIR_CRAFT).sizeChance();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getOmens(DIV));
+		c.names = new Comparison(NameManager.getOmens(PRICE_DIV));
 		c.categories(CATEGORY.OMEN);
 
 		e.colourDivine(PAIR_CRAFT).sizeDivine();
@@ -43,19 +43,19 @@ function ritual(filter) {
 
 function abyss(filter) {
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getOmensAbyss(null, 1));
+		c.names = new Comparison(NameManager.getOmensAbyss(null, PRICE_EXALT));
 		c.categories(CATEGORY.OMEN);
 
 		e.colourAugment(PAIR_ABYSS).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getOmensAbyss(1, DIV));
+		c.names = new Comparison(NameManager.getOmensAbyss(PRICE_EXALT, PRICE_DIV));
 		c.categories(CATEGORY.OMEN);
 
 		e.colourChance(PAIR_ABYSS).sizeChance();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getOmensAbyss(DIV));
+		c.names = new Comparison(NameManager.getOmensAbyss(PRICE_DIV));
 		c.categories(CATEGORY.OMEN);
 
 		e.colourDivine(PAIR_ABYSS).sizeDivine();

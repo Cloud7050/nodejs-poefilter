@@ -8,7 +8,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Artificer's Shard" "Blacksmith's Whetstone" "Greater Jeweller's Orb" "Greater Orb of Augmentation" "Greater Orb of Transmutation" "Lesser Jeweller's Orb" "Regal Shard" "Transmutation Shard"
+	BaseType == "Armourer's Scrap" "Artificer's Orb" "Artificer's Shard" "Blacksmith's Whetstone" "Glassblower's Bauble" "Greater Orb of Augmentation" "Greater Orb of Transmutation" "Lesser Jeweller's Orb" "Orb of Alchemy" "Orb of Augmentation" "Orb of Transmutation" "Perfect Orb of Transmutation" "Regal Orb" "Regal Shard" "Scroll of Wisdom" "Transmutation Shard"
 	Class == "Stackable Currency"
 
 	SetFontSize 27
@@ -18,17 +18,7 @@ Show
 	MinimapIcon 2 Red Kite
 
 Show
-	BaseType == "Armourer's Scrap" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Orb of Augmentation" "Orb of Transmutation" "Perfect Orb of Transmutation" "Regal Orb" "Scroll of Wisdom"
-	Class == "Stackable Currency"
-
-	SetFontSize 27
-	SetTextColor 255 217 215 255
-	SetBackgroundColor 35 2 3 255
-	SetBorderColor 255 217 215 255
-	MinimapIcon 2 Red Kite
-
-Show
-	BaseType == "Arcanist's Etcher" "Chance Shard" "Gemcutter's Prism" "Greater Regal Orb"
+	BaseType == "Arcanist's Etcher" "Chance Shard" "Gemcutter's Prism" "Greater Jeweller's Orb" "Greater Regal Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 32
@@ -38,7 +28,7 @@ Show
 	MinimapIcon 1 Red UpsideDownHouse
 
 Show
-	BaseType == "Exalted Orb" "Greater Exalted Orb" "Orb of Chance" "Perfect Orb of Augmentation" "Perfect Regal Orb" "Vaal Orb"
+	BaseType == "Exalted Orb" "Greater Exalted Orb" "Orb of Chance" "Perfect Orb of Augmentation" "Vaal Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -48,7 +38,7 @@ Show
 	MinimapIcon 0 Red Cross
 
 Show
-	BaseType == "Chaos Orb" "Fracturing Orb" "Greater Chaos Orb" "Orb of Annulment" "Perfect Jeweller's Orb"
+	BaseType == "Chaos Orb" "Fracturing Orb" "Greater Chaos Orb" "Orb of Annulment" "Perfect Jeweller's Orb" "Perfect Regal Orb"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -71,10 +61,22 @@ Show
 	CustomAlertSound "renoir.wav" 250
 	MinimapIcon 0 Red Diamond
 
+#Hide
+#	BaseType == Gold
+#	Class == "Stackable Currency"
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
 Show
 	BaseType == Gold
 	Class == "Stackable Currency"
-	StackSize < 50
+	StackSize < 100
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -87,17 +89,6 @@ Show
 	Class == "Stackable Currency"
 	StackSize < 500
 
-	SetFontSize 27
-	SetTextColor 255 239 173 255
-	SetBackgroundColor 0 0 0 0
-	SetBorderColor 255 239 173 255
-	MinimapIcon 2 Yellow Kite
-
-Show
-	BaseType == Gold
-	Class == "Stackable Currency"
-	StackSize < 2500
-
 	SetFontSize 32
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
@@ -107,7 +98,7 @@ Show
 Show
 	BaseType == Gold
 	Class == "Stackable Currency"
-	StackSize < 5000
+	StackSize < 1000
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -156,7 +147,7 @@ Show
 	MinimapIcon 1 Purple UpsideDownHouse
 
 Show
-	BaseType == "Essence of Abrasion" "Essence of Alacrity" "Essence of Command" "Essence of Electricity" "Essence of Grounding" "Essence of Haste" "Essence of Insulation" "Essence of Ruin" "Essence of Seeking" "Essence of Thawing" "Essence of the Body" "Essence of the Infinite" "Essence of the Mind"
+	BaseType == "Essence of Alacrity" "Essence of Command" "Essence of Electricity" "Essence of Grounding" "Essence of Haste" "Essence of Insulation" "Essence of Ruin" "Essence of Seeking" "Essence of Thawing" "Essence of the Body" "Essence of the Infinite" "Essence of the Mind"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -166,7 +157,7 @@ Show
 	MinimapIcon 0 Purple UpsideDownHouse
 
 Show
-	BaseType == "Essence of Opulence"
+	BaseType == "Essence of Abrasion" "Essence of Opulence"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -188,7 +179,7 @@ Show
 	MinimapIcon 1 Purple Cross
 
 Show
-	BaseType == "Greater Essence of Alacrity" "Greater Essence of Opulence" "Perfect Essence of Abrasion" "Perfect Essence of Battle" "Perfect Essence of Electricity" "Perfect Essence of Enhancement" "Perfect Essence of Flames" "Perfect Essence of Grounding" "Perfect Essence of Ice" "Perfect Essence of Opulence" "Perfect Essence of Seeking" "Perfect Essence of Sorcery"
+	BaseType == "Greater Essence of Alacrity" "Perfect Essence of Abrasion" "Perfect Essence of Battle" "Perfect Essence of Electricity" "Perfect Essence of Flames" "Perfect Essence of Grounding" "Perfect Essence of Ice" "Perfect Essence of Opulence" "Perfect Essence of Seeking" "Perfect Essence of Sorcery"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -198,7 +189,7 @@ Show
 	MinimapIcon 0 Purple Cross
 
 Show
-	BaseType == "Perfect Essence of Haste"
+	BaseType == "Greater Essence of Opulence" "Perfect Essence of Enhancement" "Perfect Essence of Haste"
 	Class == "Stackable Currency"
 
 	SetFontSize 45
@@ -457,7 +448,7 @@ Show
 	MinimapIcon 1 Orange UpsideDownHouse
 
 Show
-	BaseType == "Omen of Amelioration" "Omen of Answered Prayers" "Omen of Bartering" "Omen of Catalysing Exaltation" "Omen of Chaotic Monsters" "Omen of Chaotic Quantity" "Omen of Corruption" "Omen of Dextral Exaltation" "Omen of Homogenising Coronation" "Omen of Resurgence" "Omen of Secret Compartments" "Omen of Sinistral Exaltation" "Omen of the Blessed"
+	BaseType == "Omen of Answered Prayers" "Omen of Bartering" "Omen of Chaotic Quantity" "Omen of Dextral Exaltation" "Omen of Homogenising Coronation" "Omen of Resurgence" "Omen of Sinistral Exaltation"
 	Class == Omen
 
 	SetFontSize 37
@@ -467,7 +458,7 @@ Show
 	MinimapIcon 0 Orange Cross
 
 Show
-	BaseType == "Omen of Chaotic Rarity" "Omen of Dextral Crystallisation" "Omen of Homogenising Exaltation" "Omen of Recombination" "Omen of Reinforcements" "Omen of Sanctification" "Omen of Sinistral Crystallisation" "Omen of the Hunt"
+	BaseType == "Omen of Amelioration" "Omen of Catalysing Exaltation" "Omen of Chaotic Monsters" "Omen of Chaotic Rarity" "Omen of Corruption" "Omen of Dextral Crystallisation" "Omen of Homogenising Exaltation" "Omen of Recombination" "Omen of Reinforcements" "Omen of Sanctification" "Omen of Secret Compartments" "Omen of Sinistral Crystallisation" "Omen of the Blessed" "Omen of the Hunt"
 	Class == Omen
 
 	SetFontSize 45
@@ -535,7 +526,7 @@ Show
 	MinimapIcon 1 White UpsideDownHouse
 
 Show
-	BaseType == "Uncut Skill Gem (Level 1)" "Uncut Skill Gem (Level 10)" "Uncut Skill Gem (Level 11)" "Uncut Skill Gem (Level 13)" "Uncut Skill Gem (Level 15)" "Uncut Skill Gem (Level 19)" "Uncut Skill Gem (Level 2)" "Uncut Skill Gem (Level 3)" "Uncut Skill Gem (Level 4)" "Uncut Skill Gem (Level 6)" "Uncut Skill Gem (Level 7)" "Uncut Skill Gem (Level 8)" "Uncut Skill Gem (Level 9)" "Uncut Spirit Gem (Level 11)" "Uncut Spirit Gem (Level 12)" "Uncut Spirit Gem (Level 13)" "Uncut Spirit Gem (Level 17)" "Uncut Spirit Gem (Level 18)" "Uncut Spirit Gem (Level 19)" "Uncut Support Gem (Level 1)" "Uncut Support Gem (Level 2)" "Uncut Support Gem (Level 3)" "Uncut Support Gem (Level 4)"
+	BaseType == "Uncut Skill Gem (Level 11)" "Uncut Skill Gem (Level 13)" "Uncut Skill Gem (Level 15)" "Uncut Skill Gem (Level 19)" "Uncut Skill Gem (Level 3)" "Uncut Skill Gem (Level 6)" "Uncut Skill Gem (Level 9)" "Uncut Spirit Gem (Level 13)" "Uncut Spirit Gem (Level 17)" "Uncut Spirit Gem (Level 18)" "Uncut Support Gem (Level 1)" "Uncut Support Gem (Level 2)" "Uncut Support Gem (Level 3)" "Uncut Support Gem (Level 4)"
 	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
 
 	SetFontSize 37
@@ -545,7 +536,7 @@ Show
 	MinimapIcon 0 White Cross
 
 Show
-	BaseType == "Uncut Spirit Gem (Level 10)" "Uncut Spirit Gem (Level 14)" "Uncut Spirit Gem (Level 15)" "Uncut Spirit Gem (Level 16)" "Uncut Spirit Gem (Level 20)" "Uncut Spirit Gem (Level 4)" "Uncut Spirit Gem (Level 5)" "Uncut Spirit Gem (Level 6)" "Uncut Spirit Gem (Level 7)" "Uncut Spirit Gem (Level 8)" "Uncut Spirit Gem (Level 9)"
+	BaseType == "Uncut Skill Gem (Level 1)" "Uncut Skill Gem (Level 10)" "Uncut Skill Gem (Level 2)" "Uncut Skill Gem (Level 4)" "Uncut Skill Gem (Level 7)" "Uncut Skill Gem (Level 8)" "Uncut Spirit Gem (Level 10)" "Uncut Spirit Gem (Level 11)" "Uncut Spirit Gem (Level 12)" "Uncut Spirit Gem (Level 14)" "Uncut Spirit Gem (Level 15)" "Uncut Spirit Gem (Level 16)" "Uncut Spirit Gem (Level 19)" "Uncut Spirit Gem (Level 20)" "Uncut Spirit Gem (Level 4)" "Uncut Spirit Gem (Level 5)" "Uncut Spirit Gem (Level 6)" "Uncut Spirit Gem (Level 7)" "Uncut Spirit Gem (Level 8)" "Uncut Spirit Gem (Level 9)"
 	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
 
 	SetFontSize 45
@@ -567,7 +558,7 @@ Show
 	MinimapIcon 1 White Star
 
 Show
-	BaseType == "Ailith's Chimes" "Arbiter's Ignition" "Atziri's Allure" "Brutus' Brain" "Doedre's Undoing" "Einhar's Beastrite" "Garukhan's Resolve" "Kalisa's Crescendo" "Kaom's Madness" "Kulemak's Dominion" "Paquate's Pact" "Piety's Mercy" "Tecrod's Revenge" "Uhtred's Exodus" "Xoph's Pyre" "Zarokh's Refrain"
+	BaseType == "Ailith's Chimes" "Arbiter's Ignition" "Atziri's Allure" "Brutus' Brain" "Doedre's Undoing" "Einhar's Beastrite" "Kalisa's Crescendo" "Kaom's Madness" "Kulemak's Dominion" "Paquate's Pact" "Piety's Mercy" "Tecrod's Revenge" "Xoph's Pyre" "Zarokh's Refrain"
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 37
@@ -577,7 +568,7 @@ Show
 	MinimapIcon 0 White Star
 
 Show
-	BaseType == "Esh's Radiance" "Ixchel's Torment" "Rigwald's Ferocity" "Tul's Stillness"
+	BaseType == "Esh's Radiance" "Garukhan's Resolve" "Ixchel's Torment" "Rigwald's Ferocity" "Tul's Stillness" "Uhtred's Exodus"
 	Class == "Skill Gems" "Support Gems"
 
 	SetFontSize 45
@@ -620,7 +611,7 @@ Show
 	MinimapIcon 1 Cyan Kite
 
 Show
-	BaseType == "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
+	BaseType == "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Robust Rune"
 	Class == Augment
 
 	SetFontSize 37
@@ -630,7 +621,7 @@ Show
 	MinimapIcon 0 Cyan Kite
 
 Show
-	BaseType == "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
+	BaseType == "Lesser Adept Rune" "Lesser Iron Rune" "Lesser Resolve Rune" "Lesser Storm Rune"
 	Class == Augment
 
 	SetFontSize 45
@@ -652,7 +643,7 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	BaseType == "Adept Rune" "Body Rune" "Desert Rune" "Glacial Rune" "Rebirth Rune" "Storm Rune"
+	BaseType == "Adept Rune" "Body Rune" "Desert Rune" "Glacial Rune" "Rebirth Rune"
 	Class == Augment
 
 	SetFontSize 37
@@ -662,7 +653,7 @@ Show
 	MinimapIcon 0 Cyan UpsideDownHouse
 
 Show
-	BaseType == "Iron Rune"
+	BaseType == "Iron Rune" "Storm Rune"
 	Class == Augment
 
 	SetFontSize 45
@@ -694,7 +685,7 @@ Show
 	MinimapIcon 1 Cyan Star
 
 Show
-	BaseType == "Courtesan Mannan's Rune of Cruelty" "Craiceann's Rune of Warding" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Fenumus' Rune of Agony" "Fenumus' Rune of Spinning" "Greater Rune of Leadership" "Greater Rune of Nobility" "Saqawal's Rune of Memory" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "The Greatwolf's Rune of Willpower"
+	BaseType == "Craiceann's Rune of Warding" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Fenumus' Rune of Agony" "Greater Rune of Leadership" "Greater Rune of Nobility" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "The Greatwolf's Rune of Willpower"
 	Class == Augment
 
 	SetFontSize 37
@@ -704,7 +695,7 @@ Show
 	MinimapIcon 0 Cyan Star
 
 Show
-	BaseType == "Greater Rune of Alacrity" "Greater Rune of Tithing" "Saqawal's Rune of the Sky"
+	BaseType == "Courtesan Mannan's Rune of Cruelty" "Fenumus' Rune of Spinning" "Greater Rune of Alacrity" "Greater Rune of Tithing" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Thane Leld's Rune of Spring"
 	Class == Augment
 
 	SetFontSize 45
@@ -738,7 +729,7 @@ Show
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
-	BaseType == "Boar Idol" "Cat Idol" "Citaqualotl's Soul Core of Foulness" "Fox Idol" "Guatelitzi's Soul Core of Endurance" "Idol of Eeshta" "Idol of Egrin" "Idol of Maxarius" "Idol of Ralakesh" "Idol of Thruldana" "Opiloti's Soul Core of Assault" "Owl Idol" "Ox Idol" "Primate Idol" "Quipolatl's Soul Core of Flow" "Rabbit Idol" "Serpent Idol" "Tacati's Soul Core of Affliction" "Ulaman's Gaze" "Uromoti's Soul Core of Attenuation" "Wolf Idol" "Xopec's Soul Core of Power"
+	BaseType == "Boar Idol" "Cat Idol" "Citaqualotl's Soul Core of Foulness" "Fox Idol" "Guatelitzi's Soul Core of Endurance" "Idol of Eeshta" "Idol of Egrin" "Idol of Maxarius" "Idol of Thruldana" "Opiloti's Soul Core of Assault" "Owl Idol" "Ox Idol" "Primate Idol" "Quipolatl's Soul Core of Flow" "Rabbit Idol" "Serpent Idol" "Tacati's Soul Core of Affliction" "Uromoti's Soul Core of Attenuation" "Wolf Idol" "Xopec's Soul Core of Power"
 	Class == Augment
 
 	SetFontSize 37
@@ -748,7 +739,7 @@ Show
 	MinimapIcon 0 Cyan Cross
 
 Show
-	BaseType == "Amanamu's Gaze" "Atmohua's Soul Core of Retreat" "Estazunti's Soul Core of Convalescence" "Kurgal's Gaze" "Soul Core of Atmohua" "Soul Core of Azcapa" "Soul Core of Cholotl" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Puhuarte" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zalatl" "Soul Core of Zantipi" "Tecrod's Gaze" "Tzamoto's Soul Core of Ferocity"
+	BaseType == "Amanamu's Gaze" "Atmohua's Soul Core of Retreat" "Estazunti's Soul Core of Convalescence" "Idol of Ralakesh" "Kurgal's Gaze" "Soul Core of Atmohua" "Soul Core of Azcapa" "Soul Core of Cholotl" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Puhuarte" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zalatl" "Soul Core of Zantipi" "Tecrod's Gaze" "Tzamoto's Soul Core of Ferocity" "Ulaman's Gaze"
 	Class == Augment
 
 	SetFontSize 45
@@ -1718,7 +1709,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Breach Precursor Tablet" "Overseer Precursor Tablet"
+	BaseType == "Breach Precursor Tablet"
 	Class == Tablet
 	Rarity == Unique
 
@@ -1731,7 +1722,7 @@ Show
 	Continue
 
 Show
-	BaseType == "Precursor Tablet" "Ritual Precursor Tablet"
+	BaseType == "Overseer Precursor Tablet" "Precursor Tablet" "Ritual Precursor Tablet"
 	Class == Tablet
 	Rarity == Unique
 

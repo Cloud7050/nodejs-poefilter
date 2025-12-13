@@ -3,7 +3,7 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager, TIER } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { PAIR_GEAR, PAIR_JEWEL, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../constants.js";
+import { PAIR_GEAR, PAIR_JEWEL, PAIR_MECHANIC, PAIR_QUESTLIKE, PRICE_AUGMENT, PRICE_CHANCE, PRICE_EXALT } from "../constants.js";
 
 export function sectionRarity(filter) {
 	reset(filter);
@@ -508,7 +508,7 @@ function tablets(filter) {
 
 	filter.block((c, e) => {
 		c.continue();
-		c.names = new Comparison(NameManager.getUniqueTablets(null, 1));
+		c.names = new Comparison(NameManager.getUniqueTablets(null, PRICE_EXALT));
 		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
@@ -516,7 +516,7 @@ function tablets(filter) {
 	});
 	filter.block((c, e) => {
 		c.continue();
-		c.names = new Comparison(NameManager.getUniqueTablets(1, 20));
+		c.names = new Comparison(NameManager.getUniqueTablets(PRICE_EXALT, PRICE_CHANCE));
 		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
@@ -524,7 +524,7 @@ function tablets(filter) {
 	});
 	filter.block((c, e) => {
 		c.continue();
-		c.names = new Comparison(NameManager.getUniqueTablets(20));
+		c.names = new Comparison(NameManager.getUniqueTablets(PRICE_CHANCE));
 		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
@@ -543,7 +543,7 @@ function relics(filter) {
 
 	filter.block((c, e) => {
 		c.continue();
-		c.names = new Comparison(NameManager.getUniqueRelics(null, 1 / 100));
+		c.names = new Comparison(NameManager.getUniqueRelics(null, PRICE_AUGMENT));
 		c.categories(CATEGORY.RELIC);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
@@ -551,7 +551,7 @@ function relics(filter) {
 	});
 	filter.block((c, e) => {
 		c.continue();
-		c.names = new Comparison(NameManager.getUniqueRelics(1 / 100, 1));
+		c.names = new Comparison(NameManager.getUniqueRelics(PRICE_AUGMENT, PRICE_EXALT));
 		c.categories(CATEGORY.RELIC);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
@@ -559,7 +559,7 @@ function relics(filter) {
 	});
 	filter.block((c, e) => {
 		c.continue();
-		c.names = new Comparison(NameManager.getUniqueRelics(1));
+		c.names = new Comparison(NameManager.getUniqueRelics(PRICE_EXALT));
 		c.categories(CATEGORY.RELIC);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 

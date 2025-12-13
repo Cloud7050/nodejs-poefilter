@@ -1,5 +1,6 @@
 import { Colour, PRESET } from "./effects/colour.js";
 
+// Colour pairs
 // ROSE
 export const PAIR_CURRENCY = [Colour.RED, PRESET.RED];
 // ORANGE
@@ -19,4 +20,16 @@ export const PAIR_ESSENCE = [Colour.PURPLE, PRESET.PURPLE];
 export const PAIR_ABYSS = [Colour.VIOLET, PRESET.PINK];
 // PINK
 
-export const DIV = 500; // Exalts per divine
+// Minimum price breakpoints to style as a certain size
+export const PRICE_AUGMENT = 1 / 100;
+export const PRICE_EXALT = 1;
+export const PRICE_CHANCE = 10;
+export const PRICE_DIV = 500; // Exalts per divine
+
+// Maximum price breakpoints for gold piles
+export const GOLD_HIDE = 0; // 50
+export const GOLD_WISDOM = 100; // 100
+export const GOLD_AUGMENT = 500; // 2500
+export const GOLD_AUGMENT_EXALT = 1000; // 5000
+
+//TODO add unique hiding price breakpoints

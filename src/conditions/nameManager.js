@@ -1,4 +1,4 @@
-import { DIV } from "../constants.js";
+import { PRICE_DIV } from "../constants.js";
 import { Name } from "./name.js";
 import { OPERATOR } from "./operator.js";
 import { StringList } from "./stringList.js";
@@ -23,31 +23,26 @@ export class NameManager {
 		}, []);
 	}
 
-	//TODO update pricing and usefulness of currencies
-	static getCurrenciesBad(min = undefined, max = undefined) {
-		return new NameManager(
-			new Name("Transmutation Shard", 1 / 10000),
-			new Name("Greater Orb of Transmutation", 1 / 4000),
-			new Name("Regal Shard", 1 / 4000),
-			new Name("Artificer's Shard", 1 / 2000),
-			new Name("Greater Orb of Augmentation", 1 / 2000),
-			new Name("Lesser Jeweller's Orb", 1 / 1000),
-			new Name("Blacksmith's Whetstone", 1 / 200),
-			new Name("Greater Jeweller's Orb", 1 / 100),
-		).range(min, max);
-	}
 	static getCurrencies(min = undefined, max = undefined) {
 		return new NameManager(
+			new Name("Transmutation Shard", 1 / 10000),
+			new Name("Regal Shard", 1 / 4000),
+			new Name("Greater Orb of Transmutation", 1 / 4000),
+			new Name("Artificer's Shard", 1 / 2000),
+			new Name("Greater Orb of Augmentation", 1 / 2000),
 			new Name("Orb of Transmutation", 1 / 1000),
+			new Name("Lesser Jeweller's Orb", 1 / 1000),
 			new Name("Orb of Alchemy", 1 / 598),
 			new Name("Orb of Augmentation", 1 / 400),
 			new Name("Regal Orb", 1 / 400),
 			new Name("Artificer's Orb", 1 / 200),
-			new Name("Glassblower's Bauble", 1 / 200),
+			new Name("Blacksmith's Whetstone", 1 / 200),
 			new Name("Armourer's Scrap", 1 / 200),
+			new Name("Glassblower's Bauble", 1 / 200),
 			new Name("Scroll of Wisdom", 1 / 120),
 			new Name("Perfect Orb of Transmutation", 1 / 110),
 
+			new Name("Greater Jeweller's Orb", 1 / 100),
 			new Name("Greater Regal Orb", 1 / 60),
 			new Name("Arcanist's Etcher", 1 / 5),
 			new Name("Gemcutter's Prism", 1 / 5),
@@ -64,13 +59,13 @@ export class NameManager {
 			new Name("Chaos Orb", 40),
 			new Name("Greater Chaos Orb", 125),
 			new Name("Fracturing Orb", 280),
-			new Name("Orb of Annulment", DIV / 3.33),
+			new Name("Orb of Annulment", PRICE_DIV / 3.33),
 
-			new Name("Divine Orb", DIV),
-			new Name("Perfect Exalted Orb", 2.25 * DIV),
-			new Name("Perfect Chaos Orb", 2.5 * DIV),
-			new Name("Hinekora's Lock", 626 * DIV),
-			new Name("Mirror of Kalandra", 1600 * DIV),
+			new Name("Divine Orb", PRICE_DIV),
+			new Name("Perfect Exalted Orb", 2.25 * PRICE_DIV),
+			new Name("Perfect Chaos Orb", 2.5 * PRICE_DIV),
+			new Name("Hinekora's Lock", 626 * PRICE_DIV),
+			new Name("Mirror of Kalandra", 1600 * PRICE_DIV),
 		).range(min, max);
 	}
 
@@ -179,7 +174,7 @@ export class NameManager {
 			new Name("Essence of the Abyss", 54),
 			new Name("Essence of Hysteria", 500),
 
-			new Name("Essence of Horror", 3 * DIV),
+			new Name("Essence of Horror", 3 * PRICE_DIV),
 		).range(min, max);
 	}
 
@@ -202,9 +197,9 @@ export class NameManager {
 	}
 	static getAbyss3(min = undefined, max = undefined) {
 		return new NameManager(
-			new Name("Ancient Rib", 1.5 * DIV),
-			new Name("Ancient Jawbone", 3 * DIV),
-			new Name("Ancient Collarbone", 6 * DIV),
+			new Name("Ancient Rib", 1.5 * PRICE_DIV),
+			new Name("Ancient Jawbone", 3 * PRICE_DIV),
+			new Name("Ancient Collarbone", 6 * PRICE_DIV),
 		).range(min, max);
 	}
 
@@ -305,12 +300,12 @@ export class NameManager {
 			new Name("Omen of Sinistral Crystallisation", 101),
 			new Name("Omen of Sanctification", 334),
 
-			new Name("Omen of Dextral Erasure", 2.18 * DIV),
-			new Name("Omen of Whittling", 2.5 * DIV),
-			new Name("Omen of Dextral Annulment", 3.5 * DIV),
-			new Name("Omen of Sinistral Erasure", 4 * DIV),
-			new Name("Omen of Sinistral Annulment", 5.33 * DIV),
-			new Name("Omen of Chance", 6 * DIV),
+			new Name("Omen of Dextral Erasure", 2.18 * PRICE_DIV),
+			new Name("Omen of Whittling", 2.5 * PRICE_DIV),
+			new Name("Omen of Dextral Annulment", 3.5 * PRICE_DIV),
+			new Name("Omen of Sinistral Erasure", 4 * PRICE_DIV),
+			new Name("Omen of Sinistral Annulment", 5.33 * PRICE_DIV),
+			new Name("Omen of Chance", 6 * PRICE_DIV),
 		).range(min, max);
 	}
 	static getOmensAbyss(min = undefined, max = undefined) {
@@ -324,7 +319,7 @@ export class NameManager {
 			new Name("Omen of Sinistral Necromancy", 26.5),
 			new Name("Omen of Abyssal Echoes", 68),
 
-			new Name("Omen of Light", 3.33 * DIV),
+			new Name("Omen of Light", 3.33 * PRICE_DIV),
 		).range(min, max);
 	}
 
@@ -412,14 +407,14 @@ export class NameManager {
 			new Name("Rigwald's Ferocity", 90),
 			new Name("Ixchel's Torment", 225),
 
-			new Name("Uhtred's Omen", 6 * DIV),
-			new Name("Ratha's Assault", 6 * DIV),
-			new Name("Uul-Netol's Embrace", 11 * DIV),
-			new Name("Atalui's Bloodletting", 16 * DIV),
-			new Name("Rakiata's Flow", 20 * DIV),
-			new Name("Dialla's Desire", 30 * DIV),
-			new Name("Arjun's Medal", 41 * DIV),
-			new Name("Uhtred's Augury", 50 * DIV),
+			new Name("Uhtred's Omen", 6 * PRICE_DIV),
+			new Name("Ratha's Assault", 6 * PRICE_DIV),
+			new Name("Uul-Netol's Embrace", 11 * PRICE_DIV),
+			new Name("Atalui's Bloodletting", 16 * PRICE_DIV),
+			new Name("Rakiata's Flow", 20 * PRICE_DIV),
+			new Name("Dialla's Desire", 30 * PRICE_DIV),
+			new Name("Arjun's Medal", 41 * PRICE_DIV),
+			new Name("Uhtred's Augury", 50 * PRICE_DIV),
 		).range(min, max);
 	}
 
@@ -505,9 +500,9 @@ export class NameManager {
 			new Name("Greater Rune of Alacrity", 40),
 			new Name("Saqawal's Rune of the Sky", 74),
 
-			new Name("Countess Seske's Rune of Archery", 4 * DIV),
-			new Name("Farrul's Rune of the Chase", 10 * DIV),
-			new Name("Hedgewitch Assandra's Rune of Wisdom", 21 * DIV),
+			new Name("Countess Seske's Rune of Archery", 4 * PRICE_DIV),
+			new Name("Farrul's Rune of the Chase", 10 * PRICE_DIV),
+			new Name("Hedgewitch Assandra's Rune of Wisdom", 21 * PRICE_DIV),
 		).range(min, max);
 	}
 
@@ -567,7 +562,7 @@ export class NameManager {
 			new Name("Soul Core of Azcapa", 275),
 			new Name("Idol of Sirrius", 1010),
 
-			new Name("Soul Core of Jiquani", 6 * DIV),
+			new Name("Soul Core of Jiquani", 6 * PRICE_DIV),
 		).range(min, max);
 	}
 
@@ -1531,8 +1526,8 @@ export class NameManager {
 			new Name("Breach Precursor Tablet", 3), // Wraeclast Besieged
 			new Name("Overseer Precursor Tablet", (24 + 4) / 2), // Season of the Hunt, Cruel Hegemony
 
-			new Name("Precursor Tablet", ((0.9 * DIV) + (DIV / 5)) / 2), // Visions of Paradise > The Grand Project
-			new Name("Ritual Precursor Tablet", 0.9 * DIV), // Freedom of Faith
+			new Name("Precursor Tablet", ((0.9 * PRICE_DIV) + (PRICE_DIV / 5)) / 2), // Visions of Paradise > The Grand Project
+			new Name("Ritual Precursor Tablet", 0.9 * PRICE_DIV), // Freedom of Faith
 		).range(min, max);
 	}
 	static getUniqueRelics(min = undefined, max = undefined) {
@@ -1542,8 +1537,8 @@ export class NameManager {
 			new Name("Amphora Relic", 1 / 598), // The Peacemaker's Draught
 			new Name("Seal Relic", 1 / 2), // The Changing Seasons
 
-			new Name("Vase Relic", 3 * DIV), // The Desperate Alliance
-			new Name("Incense Relic", 98 * DIV), // The Last Flame
+			new Name("Vase Relic", 3 * PRICE_DIV), // The Desperate Alliance
+			new Name("Incense Relic", 98 * PRICE_DIV), // The Last Flame
 		).range(min, max);
 	}
 
