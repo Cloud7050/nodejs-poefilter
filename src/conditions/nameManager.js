@@ -58,7 +58,7 @@ export class NameManager {
 			new Name("Perfect Chaos Orb", 2.5 * PRICE_DIV),
 			new Name("Hinekora's Lock", 626 * PRICE_DIV),
 			new Name("Mirror of Kalandra", 1600 * PRICE_DIV),
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getEssences1(min = undefined, max = undefined) {
@@ -85,7 +85,7 @@ export class NameManager {
 
 			new Name("Lesser Essence of Opulence", 10),
 
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getEssences2(min = undefined, max = undefined) {
@@ -111,7 +111,7 @@ export class NameManager {
 
 			new Name("Essence of Abrasion", 10),
 			new Name("Essence of Opulence", 47),
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getEssences3(min = undefined, max = undefined) {
@@ -156,7 +156,7 @@ export class NameManager {
 			new Name("Greater Essence of Opulence", 10),
 			new Name("Perfect Essence of Enhancement", 12),
 			new Name("Perfect Essence of Haste", 25),
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getEssences4(min = undefined, max = undefined) {
@@ -168,7 +168,7 @@ export class NameManager {
 
 			new Name("Essence of Hysteria", 500),
 			new Name("Essence of Horror", 3 * PRICE_DIV),
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getAbyss1(min = undefined, max = undefined) {
@@ -176,7 +176,7 @@ export class NameManager {
 			new Name("Gnawed Jawbone", 1 / 20),
 			new Name("Gnawed Rib", 1 / 20),
 			new Name("Gnawed Collarbone", 1 / 2),
-		).range(min, max);
+		).value(min, max);
 	}
 	static getAbyss2(min = undefined, max = undefined) {
 		return new NameManager(
@@ -188,14 +188,14 @@ export class NameManager {
 
 			//TODO merge abyss as core. This price has no chance sizing block
 			new Name("Preserved Cranium", 10),
-		).range(min, max);
+		).value(min, max);
 	}
 	static getAbyss3(min = undefined, max = undefined) {
 		return new NameManager(
 			new Name("Ancient Rib", 1.5 * PRICE_DIV),
 			new Name("Ancient Jawbone", 3 * PRICE_DIV),
 			new Name("Ancient Collarbone", 6 * PRICE_DIV),
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getEmotions1(min = undefined, max = undefined) {
@@ -204,7 +204,7 @@ export class NameManager {
 
 			new Name("Diluted Liquid Greed", 1.5),
 			new Name("Diluted Liquid Guilt", 4.17),
-		).range(min, max);
+		).value(min, max);
 	}
 	static getEmotions2(min = undefined, max = undefined) {
 		return new NameManager(
@@ -213,14 +213,14 @@ export class NameManager {
 			new Name("Liquid Despair", 4.17),
 
 			new Name("Liquid Disgust", 15.56),
-		).range(min, max);
+		).value(min, max);
 	}
 	static getEmotions3(min = undefined, max = undefined) {
 		return new NameManager(
 			new Name("Concentrated Liquid Suffering", 30),
 			new Name("Concentrated Liquid Fear", 40),
 			new Name("Concentrated Liquid Isolation", 85),
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getCatalysts(min = undefined, max = undefined) {
@@ -238,7 +238,7 @@ export class NameManager {
 			new Name("Flesh Catalyst", 1 / 30), // Life
 			new Name("Reaver Catalyst", 1 / 3), // Attack
 			new Name("Esh's Catalyst", 1 / 1.27), // Lightning
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getSplinters(min = undefined, max = undefined) {
@@ -248,7 +248,7 @@ export class NameManager {
 			new Name("Petition Splinter", 1.29),
 			new Name("Simulacrum Splinter", 1.85),
 			new Name("Runic Splinter", 6.7),
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getArtifacts(min = undefined, max = undefined) {
@@ -257,12 +257,12 @@ export class NameManager {
 			new Name("Broken Circle Artifact", 1 / 38), // Weapons
 			new Name("Black Scythe Artifact", 1 / 4), // Jewellery/belts
 			new Name("Sun Artifact", 1 / 4), // Wildcard
-		).range(min, max);
+		).value(min, max);
 	}
 	static getCoinage(min = undefined, max = undefined) {
 		return new NameManager(
 			new Name("Exotic Coinage", 50),
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getOmens(min = undefined, max = undefined) {
@@ -302,7 +302,7 @@ export class NameManager {
 			new Name("Omen of Sinistral Erasure", 4 * PRICE_DIV),
 			new Name("Omen of Sinistral Annulment", 5.33 * PRICE_DIV),
 			new Name("Omen of Chance", 6 * PRICE_DIV),
-		).range(min, max);
+		).value(min, max);
 	}
 	static getOmensAbyss(min = undefined, max = undefined) {
 		return new NameManager(
@@ -316,7 +316,7 @@ export class NameManager {
 			new Name("Omen of Abyssal Echoes", 68),
 
 			new Name("Omen of Light", 3.33 * PRICE_DIV),
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getUncut(min = undefined, max = undefined) {
@@ -366,7 +366,7 @@ export class NameManager {
 			new Name("Uncut Spirit Gem (Level 8)", 480),
 
 			new Name("Uncut Spirit Gem (Level 20)", 700),
-		).range(min, max);
+		).value(min, max);
 	}
 	static getLineage(min = undefined, max = undefined) {
 		return new NameManager(
@@ -412,7 +412,7 @@ export class NameManager {
 			new Name("Dialla's Desire", 30 * PRICE_DIV),
 			new Name("Arjun's Medal", 41 * PRICE_DIV),
 			new Name("Uhtred's Augury", 50 * PRICE_DIV),
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getRunes1(min = undefined, max = undefined) {
@@ -432,7 +432,7 @@ export class NameManager {
 			new Name("Lesser Storm Rune", 21),
 			new Name("Lesser Iron Rune", 22),
 			new Name("Lesser Adept Rune", 30),
-		).range(min, max);
+		).value(min, max);
 	}
 	static getRunes2(min = undefined, max = undefined) {
 		return new NameManager(
@@ -451,7 +451,7 @@ export class NameManager {
 
 			new Name("Storm Rune", 14),
 			new Name("Iron Rune", 45),
-		).range(min, max);
+		).value(min, max);
 	}
 	static getRunes3(min = undefined, max = undefined) {
 		return new NameManager(
@@ -468,7 +468,7 @@ export class NameManager {
 			new Name("Greater Desert Rune", 1 / 3),
 			new Name("Greater Storm Rune", 1 / 3),
 			new Name("Greater Glacial Rune", 1 / 2),
-		).range(min, max);
+		).value(min, max);
 	}
 	static getRunes4(min = undefined, max = undefined) {
 		return new NameManager(
@@ -500,7 +500,7 @@ export class NameManager {
 			new Name("Countess Seske's Rune of Archery", 4 * PRICE_DIV),
 			new Name("Farrul's Rune of the Chase", 10 * PRICE_DIV),
 			new Name("Hedgewitch Assandra's Rune of Wisdom", 21 * PRICE_DIV),
-		).range(min, max);
+		).value(min, max);
 	}
 
 	static getAugments(min = undefined, max = undefined) {
@@ -560,11 +560,13 @@ export class NameManager {
 
 			new Name("Idol of Sirrius", 1010),
 			new Name("Soul Core of Jiquani", 6 * PRICE_DIV),
-		).range(min, max);
+		).value(min, max);
 	}
 
-	static getNames(tier, operator = undefined) {
-		return new NameManager(
+	static getNames(c, valueMin = undefined, valueMax = undefined, dropLevel = null, dropLevelOperator = undefined) {
+		let categoriesStringList = c.category.value;
+
+		let nameManager = new NameManager(
 			// https://poe2db.tw/us/Sceptres#SceptresItem
 			new Name("Omen Sceptre", 5, CATEGORY.SCEPTRE, 16), // Malice
 			new Name("Wrath Sceptre", 5, CATEGORY.SCEPTRE, 49), // Fulmination
@@ -1284,8 +1286,11 @@ export class NameManager {
 			new Name("Thawing Charm", 20, CATEGORY.CHARM, 12), // 40/40, 3s, Grants Immunity to Freeze
 			new Name("Staunching Charm", 20, CATEGORY.CHARM, 18), // 30/40, 3s, Grants Immunity to Bleeding
 			new Name("Golden Charm", 20, CATEGORY.CHARM, 50), // 80/80, 1s, 15% increased Rarity of Items found
+		);
 
-		).compare(tier, operator);
+		nameManager = nameManager.categories(categoriesStringList).value(valueMin, valueMax);
+		if (dropLevel !== null) nameManager = nameManager .dropLevel(dropLevel, dropLevelOperator);
+		return nameManager;
 	}
 	static getUniques(tier, operator = undefined) {
 		return new NameManager(
@@ -1464,7 +1469,7 @@ export class NameManager {
 
 			new Name("Precursor Tablet", ((0.9 * PRICE_DIV) + (PRICE_DIV / 5)) / 2), // Visions of Paradise > The Grand Project
 			new Name("Ritual Precursor Tablet", 0.9 * PRICE_DIV), // Freedom of Faith
-		).range(min, max);
+		).value(min, max);
 	}
 	static getUniqueRelics(min = undefined, max = undefined) {
 		return new NameManager(
@@ -1475,46 +1480,66 @@ export class NameManager {
 
 			new Name("Vase Relic", 3 * PRICE_DIV), // The Desperate Alliance
 			new Name("Incense Relic", 98 * PRICE_DIV), // The Last Flame
-		).range(min, max);
+		).value(min, max);
 	}
 
 	// Inclusive of min, exclusive of max
-	range(min = null, max = null) {
+	value(min = null, max = null) {
 		let names = this.names.filter((name) => {
-			let passMin = true;
-			if (min !== null) passMin = name.value === null || name.value >= min;
+			// Special case: If min and max are the same, do exact match
+			if (min !== null && max !== null && min === max && name.value === min) return true;
 
-			let passMax = true;
-			if (max !== null) passMax = name.value === null || name.value < max;
-
-			return passMin && passMax;
+			return (min !== null && name.value >= min) && (max !== null && name.value < max);
 		});
 		return new NameManager(...names);
 	}
 
-	compare(value, operator = OPERATOR.EXACT) {
+	categories(categoriesStringList) {
+		let names = this.names.filter((name) => {
+			for (let category of categoriesStringList.values) {
+				if (name.category.includes(category)) return true;
+			}
+		});
+		return new NameManager(...names);
+	}
+
+	dropLevel(dropLevel, operator = OPERATOR.EXACT) {
 		let names = this.names.filter((name) => {
 			switch (operator) {
 				case OPERATOR.EQUAL:
-					return name.value.contains(value);
-				case OPERATOR.NE:
-					return name.value !== value;
-				case OPERATOR.LTE:
-					return name.value <= value;
-				case OPERATOR.GTE:
-					return name.value >= value;
-				case OPERATOR.LT:
-					return name.value < value;
-				case OPERATOR.GT:
-					return name.value > value;
 				case OPERATOR.EXACT:
-					return name.value === value;
+					return name.dropLevel === dropLevel;
+				case OPERATOR.NE:
+					return name.dropLevel !== dropLevel;
+				case OPERATOR.LTE:
+					return name.dropLevel <= dropLevel;
+				case OPERATOR.GTE:
+					return name.dropLevel >= dropLevel;
+				case OPERATOR.LT:
+					return name.dropLevel < dropLevel;
+				case OPERATOR.GT:
+					return name.dropLevel > dropLevel;
 				default:
 					console.error("ERR NameManager#compare() received unknown operator:");
 					console.error(operator);
 					throw new Error();
 			}
 		});
+		return new NameManager(...names);
+	}
+
+	isBad(isBad = true) {
+		let names = this.names.filter((name) => name.isBad === isBad);
+		return new NameManager(...names);
+	}
+
+	isClass(isClass = true) {
+		let names = this.names.filter((name) => name.isClass === isClass);
+		return new NameManager(...names);
+	}
+
+	isMapDrop(isMapDrop = true) {
+		let names = this.names.filter((name) => name.isMapDrop === isMapDrop);
 		return new NameManager(...names);
 	}
 
