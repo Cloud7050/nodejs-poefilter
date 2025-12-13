@@ -1006,136 +1006,126 @@ export class NameManager {
 			new Name("Feathered Raiment", 10, CATEGORY.BODY_ES, 80), /// 153 ES, 5–10% of Damage is taken from Mana before Life
 			new Name("Vile Robe", 20, CATEGORY.BODY_ES, 65), /// 184 ES
 
-			new Name("Chain Mail", TIER.LOW), // 25 A, 16 V
-			new Name("Rogue Armour", TIER.LOW), // 53 A, 43 V, L11
-			new Name("Vagabond Armour", TIER.LOW), // 67 A, 56 V, L16
-			new Name("Cloaked Mail", TIER.LOW), // 95 A, 83 V, L26
-			new Name("Explorer Armour", TIER.LOW), // 114 A, 101 V, L33
-			new Name("Scale Mail", TIER.LOW), // 125 A, 112 V, L37
-			new Name("Knight Armour", TIER.LOW), // 148 A, 133 V, L45
-			new Name("Ancestral Mail", TIER.LOW), // 162 A, 146 V, L50
-			new Name("Mantled Mail", TIER.LOW), // 173 A, 157 V, L54
-			new Name("Trailblazer Armour", TIER.LOW), // 187 A, 170 V, L59
-			new Name("Golden Mail", TIER.LOW), // 195 A, 178 V, L62
+			new Name("Chain Mail", 1, CATEGORY.BODY_ARMOUR_EVASION, 0),
+			new Name("Rogue Armour", 1, CATEGORY.BODY_ARMOUR_EVASION, 11),
+			new Name("Vagabond Armour", 1, CATEGORY.BODY_ARMOUR_EVASION, 16),
+			new Name("Cloaked Mail", 1, CATEGORY.BODY_ARMOUR_EVASION, 26),
+			new Name("Explorer Armour", 1, CATEGORY.BODY_ARMOUR_EVASION, 33),
+			new Name("Scale Mail", 1, CATEGORY.BODY_ARMOUR_EVASION, 37),
+			new Name("Knight Armour", 1, CATEGORY.BODY_ARMOUR_EVASION, 45),
+			new Name("Ancestral Mail", 1, CATEGORY.BODY_ARMOUR_EVASION, 50),
+			new Name("Mantled Mail", 1, CATEGORY.BODY_ARMOUR_EVASION, 54),
+			new Name("Trailblazer Armour", 1, CATEGORY.BODY_ARMOUR_EVASION, 59),
+			new Name("Golden Mail", 1, CATEGORY.BODY_ARMOUR_EVASION, 62),
+			new Name("Dastard Armour", 1, CATEGORY.BODY_ARMOUR_EVASION, 65), // 245 A, 223 V, +60–80 to maximum Life
+			new Name("Shrouded Mail", 1, CATEGORY.BODY_ARMOUR_EVASION, 70), // 245 A, 223 V, +20–25% to Fire/Cold/Lightning Resistance
+			new Name("Thane Mail", 1, CATEGORY.BODY_ARMOUR_EVASION, 80), // 245 A, 223 V, Hits against you have 15–25% reduced Critical Damage Bonus
+			new Name("Death Mail", 5, CATEGORY.BODY_ARMOUR_EVASION, 75), // 294 A, 268 V
 
-			new Name("Dastard Armour", TIER.NEVER), // 245 A, 223 V, L65, +60–80 to maximum Life
-			new Name("Shrouded Mail", TIER.NEVER), // 245 A, 223 V, L70, +20–25% to Fire/Cold/Lightning Resistance
-			new Name("Death Mail", TIER.NEVER), // 294 A, 268 V, L75
-			new Name("Thane Mail", TIER.NEVER), // 245 A, 223 V, L80, Hits against you have 15–25% reduced Critical Damage Bonus
+			new Name("Pilgrim Vestments", 1, CATEGORY.BODY_ARMOUR_ES, 0),
+			new Name("Pelt Mantle", 1, CATEGORY.BODY_ARMOUR_ES, 10),
+			new Name("Mail Vestments", 1, CATEGORY.BODY_ARMOUR_ES, 16),
+			new Name("Shaman Mantle", 1, CATEGORY.BODY_ARMOUR_ES, 28),
+			new Name("Ironclad Vestments", 1, CATEGORY.BODY_ARMOUR_ES, 33),
+			new Name("Sacrificial Mantle", 1, CATEGORY.BODY_ARMOUR_ES, 36),
+			new Name("Cleric Vestments", 1, CATEGORY.BODY_ARMOUR_ES, 45),
+			new Name("Tideseer Mantle", 1, CATEGORY.BODY_ARMOUR_ES, 51),
+			new Name("Occultist Mantle", 1, CATEGORY.BODY_ARMOUR_ES, 54),
+			new Name("Plated Vestments", 1, CATEGORY.BODY_ARMOUR_ES, 59),
+			new Name("Heartcarver Mantle", 1, CATEGORY.BODY_ARMOUR_ES, 62),
+			new Name("Conjurer Mantle", 1, CATEGORY.BODY_ARMOUR_ES, 70), // 245 A, 84 ES, +20–30 to Spirit
+			new Name("Death Mantle", 1, CATEGORY.BODY_ARMOUR_ES, 75), // 245 A, 84 ES, +1% to all Maximum Elemental Resistances
+			new Name("Seastorm Mantle", 1, CATEGORY.BODY_ARMOUR_ES, 80), // 245 A, 84 ES, 8–14% of Damage taken Recouped as Life
+			new Name("Wolfskin Mantle", 5, CATEGORY.BODY_ARMOUR_ES, 65), // 294 A, 101 ES
 
-			new Name("Pilgrim Vestments", TIER.LOW), // 25 A, 16 ES
-			new Name("Pelt Mantle", TIER.LOW), // 50 A, 23 ES, L10
-			new Name("Mail Vestments", TIER.LOW), // 67 A, 28 ES, L16
-			new Name("Shaman Mantle", TIER.LOW), // 100 A, 39 ES, L28
-			new Name("Ironclad Vestments", TIER.LOW), // 114 A, 43 ES, L33
-			new Name("Sacrificial Mantle", TIER.LOW), // 123 A, 46 ES, L36
-			new Name("Cleric Vestments", TIER.LOW), // 148 A, 53 ES, L45
-			new Name("Tideseer Mantle", TIER.LOW), // 165 A, 58 ES, L51
-			new Name("Occultist Mantle", TIER.LOW), // 173 A, 61 ES, L54
-			new Name("Plated Vestments", TIER.LOW), // 187 A, 65 ES, L59
-			new Name("Heartcarver Mantle", TIER.LOW), // 195 A, 68 ES, L62
+			new Name("Hermit Garb", 1, CATEGORY.BODY_EVASION_ES, 0),
+			new Name("Waxed Jacket", 1, CATEGORY.BODY_EVASION_ES, 11),
+			new Name("Marabout Garb", 1, CATEGORY.BODY_EVASION_ES, 16),
+			new Name("Wayfarer Jacket", 1, CATEGORY.BODY_EVASION_ES, 28),
+			new Name("Anchorite Garb", 1, CATEGORY.BODY_EVASION_ES, 33),
+			new Name("Scalper's Jacket", 1, CATEGORY.BODY_EVASION_ES, 39),
+			new Name("Scoundrel Jacket", 1, CATEGORY.BODY_EVASION_ES, 45),
+			new Name("Ascetic Garb", 1, CATEGORY.BODY_EVASION_ES, 51),
+			new Name("Itinerant Jacket", 1, CATEGORY.BODY_EVASION_ES, 54),
+			new Name("Hatungo Garb", 1, CATEGORY.BODY_EVASION_ES, 59),
+			new Name("Hawker's Jacket", 1, CATEGORY.BODY_EVASION_ES, 62),
+			new Name("Austere Garb", 1, CATEGORY.BODY_EVASION_ES, 80), // 223 V, 84 ES, 10–15% reduced Elemental Ailment Duration on you
+			new Name("Rambler Jacket", 5, CATEGORY.BODY_EVASION_ES, 70), // 223 V, 84 ES, +7–13% to Chaos Resistance
 
-			new Name("Conjurer Mantle", TIER.NEVER), // 245 A, 84 ES, L70, +20–30 to Spirit
-			new Name("Death Mantle", TIER.NEVER), // 245 A, 84 ES, L75, +1% to all Maximum Elemental Resistances
-			new Name("Seastorm Mantle", TIER.NEVER), // 245 A, 84 ES, L80, 8–14% of Damage taken Recouped as Life
-
-			new Name("Wolfskin Mantle", TIER.BAD), // 294 A, 101 ES, L65
-
-			new Name("Hermit Garb", TIER.LOW), // 16 V, 16 ES
-			new Name("Waxed Jacket", TIER.LOW), // 43 V, 24 ES, L11
-			new Name("Marabout Garb", TIER.LOW), // 56 V, 28 ES, L16
-			new Name("Wayfarer Jacket", TIER.LOW), // 88 V, 39 ES, L28
-			new Name("Anchorite Garb", TIER.LOW), // 101 V, 43 ES, L33
-			new Name("Scalper's Jacket", TIER.LOW), // 117 V, 48 ES, L39
-			new Name("Scoundrel Jacket", TIER.LOW), // 133 V, 53 ES, L45
-			new Name("Ascetic Garb", TIER.LOW), // 149 V, 58 ES, L51
-			new Name("Itinerant Jacket", TIER.LOW), // 157 V, 61 ES, L54
-			new Name("Hatungo Garb", TIER.LOW), // 170 V, 65 ES, L59
-			new Name("Hawker's Jacket", TIER.LOW), // 178 V, 68 ES, L62
-
-			new Name("Austere Garb", TIER.NEVER), // 223 V, 84 ES, L80, 10–15% reduced Elemental Ailment Duration on you
-
-			new Name("Rambler Jacket", TIER.BAD), // 223 V, 84 ES, L70, +7–13% to Chaos Resistance
-
-			new Name("Sleek Jacket", TIER.OTHER), // 268 V, 101 ES, L65
-			new Name("Falconer's Jacket", TIER.OTHER), // 223 V, 84 ES, L75, 5% increased Movement Speed
+			new Name("Sleek Jacket", 10, CATEGORY.BODY_EVASION_ES, 65), // 268 V, 101 ES
+			new Name("Falconer's Jacket", 10, CATEGORY.BODY_EVASION_ES, 75), // 223 V, 84 ES, 5% increased Movement Speed
 
 			// https://poe2db.tw/us/Gloves
-			new Name("Torn Gloves", TIER.LOW), // 9 ES
-			new Name("Sombre Gloves", TIER.LOW), // 15 ES, L12
-			new Name("Stitched Gloves", TIER.LOW), // 17 ES, L16
-			new Name("Jewelled Gloves", TIER.LOW), // 22 ES, L26
-			new Name("Intricate Gloves", TIER.LOW), // 26 ES, L33
-			new Name("Pauascale Gloves", TIER.LOW), // 32 ES, L45
-			new Name("Embroidered Gloves", TIER.LOW), // 35 ES, L52
-			new Name("Baroque Gloves", TIER.LOW), // 36 ES, L54
-			new Name("Gold Gloves", TIER.LOW), // 39 ES, L59
-			new Name("Grim Gloves", TIER.LOW), // 42 ES, L65
-			new Name("Opulent Gloves", TIER.LOW), // 46 ES, L70
-			new Name("Vaal Gloves", TIER.LOW), // 50 ES, L75
+			new Name("Stocky Mitts", 1, CATEGORY.GLOVES_ARMOUR, 0),
+			new Name("Riveted Mitts", 1, CATEGORY.GLOVES_ARMOUR, 11),
+			new Name("Tempered Mitts", 1, CATEGORY.GLOVES_ARMOUR, 16),
+			new Name("Bolstered Mitts", 1, CATEGORY.GLOVES_ARMOUR, 27),
+			new Name("Moulded Mitts", 1, CATEGORY.GLOVES_ARMOUR, 33),
+			new Name("Detailed Mitts", 1, CATEGORY.GLOVES_ARMOUR, 45),
+			new Name("Ancient Mitts", 1, CATEGORY.GLOVES_ARMOUR, 54),
+			new Name("Feathered Mitts", 1, CATEGORY.GLOVES_ARMOUR, 59),
+			new Name("Knightly Mitts", 1, CATEGORY.GLOVES_ARMOUR, 65),
+			new Name("Ornate Mitts", 1, CATEGORY.GLOVES_ARMOUR, 70),
+			new Name("Vaal Mitts", 1, CATEGORY.GLOVES_ARMOUR, 75),
+			new Name("Massive Mitts", 5, CATEGORY.GLOVES_ARMOUR, 80),
 
-			new Name("Sirenscale Gloves", TIER.CLASS), // 54 ES, L80
+			new Name("Suede Bracers", 1, CATEGORY.GLOVES_EVASION, 0),
+			new Name("Firm Bracers", 1, CATEGORY.GLOVES_EVASION, 11),
+			new Name("Bound Bracers", 1, CATEGORY.GLOVES_EVASION, 16),
+			new Name("Sectioned Bracers", 1, CATEGORY.GLOVES_EVASION, 28),
+			new Name("Spined Bracers", 1, CATEGORY.GLOVES_EVASION, 33),
+			new Name("Fine Bracers", 1, CATEGORY.GLOVES_EVASION, 45),
+			new Name("Refined Bracers", 1, CATEGORY.GLOVES_EVASION, 54),
+			new Name("Spiked Bracers", 1, CATEGORY.GLOVES_EVASION, 59),
+			new Name("Stalking Bracers", 1, CATEGORY.GLOVES_EVASION, 65),
+			new Name("Grand Bracers", 1, CATEGORY.GLOVES_EVASION, 70),
+			new Name("Barbed Bracers", 1, CATEGORY.GLOVES_EVASION, 75),
+			new Name("Polished Bracers", 5, CATEGORY.GLOVES_EVASION, 80),
 
-			new Name("Stocky Mitts", TIER.LOW), // 15 A
-			new Name("Riveted Mitts", TIER.LOW), // 31 A, L11
-			new Name("Tempered Mitts", TIER.LOW), // 40 A, L16
-			new Name("Bolstered Mitts", TIER.LOW), // 58 A, L27
-			new Name("Moulded Mitts", TIER.LOW), // 68 A, L33
-			new Name("Detailed Mitts", TIER.LOW), // 88 A, L45
-			new Name("Ancient Mitts", TIER.LOW), // 103 A, L54
-			new Name("Feathered Mitts", TIER.LOW), // 111 A, L59
-			new Name("Knightly Mitts", TIER.LOW), // 122 A, L65
-			new Name("Ornate Mitts", TIER.LOW), // 134 A, L70
-			new Name("Vaal Mitts", TIER.LOW), // 146 A, L75
+			new Name("Torn Gloves", 1, CATEGORY.GLOVES_ES, 0),
+			new Name("Sombre Gloves", 1, CATEGORY.GLOVES_ES, 12),
+			new Name("Stitched Gloves", 1, CATEGORY.GLOVES_ES, 16),
+			new Name("Jewelled Gloves", 1, CATEGORY.GLOVES_ES, 26),
+			new Name("Intricate Gloves", 1, CATEGORY.GLOVES_ES, 33),
+			new Name("Pauascale Gloves", 1, CATEGORY.GLOVES_ES, 45),
+			new Name("Embroidered Gloves", 1, CATEGORY.GLOVES_ES, 52),
+			new Name("Baroque Gloves", 1, CATEGORY.GLOVES_ES, 54),
+			new Name("Gold Gloves", 1, CATEGORY.GLOVES_ES, 59),
+			new Name("Grim Gloves", 1, CATEGORY.GLOVES_ES, 65),
+			new Name("Opulent Gloves", 1, CATEGORY.GLOVES_ES, 70),
+			new Name("Vaal Gloves", 1, CATEGORY.GLOVES_ES, 75),
 
-			new Name("Massive Mitts", TIER.BAD), // 158 A, L80
+			new Name("Sirenscale Gloves", 10, CATEGORY.GLOVES_ES, 80),
 
-			new Name("Suede Bracers", TIER.LOW), // 10 V
-			new Name("Firm Bracers", TIER.LOW), // 26 V, L11
-			new Name("Bound Bracers", TIER.LOW), // 33 V, L16
-			new Name("Sectioned Bracers", TIER.LOW), // 52 V, L28
-			new Name("Spined Bracers", TIER.LOW), // 60 V, L33
-			new Name("Fine Bracers", TIER.LOW), // 79 V, L45
-			new Name("Refined Bracers", TIER.LOW), // 93 V, L54
-			new Name("Spiked Bracers", TIER.LOW), // 101 V, L59
-			new Name("Stalking Bracers", TIER.LOW), // 111 V, L65
-			new Name("Grand Bracers", TIER.LOW), // 122 V, L70
-			new Name("Barbed Bracers", TIER.LOW), // 133 V, L75
+			new Name("Ringmail Gauntlets", 1, CATEGORY.GLOVES_ARMOUR_EVASION, 6),
+			new Name("Layered Gauntlets", 1, CATEGORY.GLOVES_ARMOUR_EVASION, 16),
+			new Name("Doubled Gauntlets", 1, CATEGORY.GLOVES_ARMOUR_EVASION, 33),
+			new Name("Plate Gauntlets", 1, CATEGORY.GLOVES_ARMOUR_EVASION, 45),
+			new Name("Zealot Gauntlets", 1, CATEGORY.GLOVES_ARMOUR_EVASION, 59),
+			new Name("Steelmail Gauntlets", 1, CATEGORY.GLOVES_ARMOUR_EVASION, 65),
+			new Name("Commander Gauntlets", 1, CATEGORY.GLOVES_ARMOUR_EVASION, 70),
+			new Name("Cultist Gauntlets", 1, CATEGORY.GLOVES_ARMOUR_EVASION, 75),
+			new Name("Blacksteel Gauntlets", 5, CATEGORY.GLOVES_ARMOUR_EVASION, 80),
 
-			new Name("Polished Bracers", TIER.NEVER), // 144 V, L80
+			new Name("Rope Cuffs", 1, CATEGORY.GLOVES_ARMOUR_ES, 5),
+			new Name("Aged Cuffs", 1, CATEGORY.GLOVES_ARMOUR_ES, 16),
+			new Name("Goldcast Cuffs", 1, CATEGORY.GLOVES_ARMOUR_ES, 33),
+			new Name("Verisium Cuffs", 1, CATEGORY.GLOVES_ARMOUR_ES, 45),
+			new Name("Ornate Cuffs", 1, CATEGORY.GLOVES_ARMOUR_ES, 59),
+			new Name("Bound Cuffs", 1, CATEGORY.GLOVES_ARMOUR_ES, 65),
+			new Name("Ancient Cuffs", 1, CATEGORY.GLOVES_ARMOUR_ES, 70),
+			new Name("Gleaming Cuffs", 1, CATEGORY.GLOVES_ARMOUR_ES, 75),
+			new Name("Adherent Cuffs", 5, CATEGORY.GLOVES_ARMOUR_ES, 80),
 
-			new Name("Ringmail Gauntlets", TIER.LOW), // 13 A, 10 V, L6
-			new Name("Layered Gauntlets", TIER.LOW), // 22 A, 18 V, L16
-			new Name("Doubled Gauntlets", TIER.LOW), // 37 A, 33 V, L33
-			new Name("Plate Gauntlets", TIER.LOW), // 48 A, 44 V, L45
-			new Name("Zealot Gauntlets", TIER.LOW), // 61 A, 56 V, L59
-			new Name("Steelmail Gauntlets", TIER.LOW), // 67 A, 61 V, L65
-			new Name("Commander Gauntlets", TIER.LOW), // 74 A, 67 V, L70
-			new Name("Cultist Gauntlets", TIER.LOW), // 80 A, 73 V, L75
-
-			new Name("Blacksteel Gauntlets", TIER.NEVER), // 87 A, 79 V, L80
-
-			new Name("Rope Cuffs", TIER.LOW), // 12 A, 6 ES, L5
-			new Name("Aged Cuffs", TIER.LOW), // 22 A, 9 ES, L16
-			new Name("Goldcast Cuffs", TIER.LOW), // 37 A, 14 ES, L33
-			new Name("Verisium Cuffs", TIER.LOW), // 48 A, 17 ES, L45
-			new Name("Ornate Cuffs", TIER.LOW), // 61 A, 21 ES, L59
-			new Name("Bound Cuffs", TIER.LOW), // 67 A, 23 ES, L65
-			new Name("Ancient Cuffs", TIER.LOW), // 74 A, 25 ES, L70
-			new Name("Gleaming Cuffs", TIER.LOW), // 80 A, 28 ES, L75
-
-			new Name("Adherent Cuffs", TIER.NEVER), // 87 A, 30 ES, L80
-
-			new Name("Gauze Wraps", TIER.LOW), // 8 V, 6 ES, L4
-			new Name("Linen Wraps", TIER.LOW), // 18 V, 9 ES, L16
-			new Name("Spiral Wraps", TIER.LOW), // 33 V, 14 ES, L33
-			new Name("Buckled Wraps", TIER.LOW), // 44 V, 17 ES, L45
-			new Name("Adorned Wraps", TIER.LOW), // 56 V, 21 ES, L59
-			new Name("War Wraps", TIER.LOW), // 61 V, 23 ES, L65
-			new Name("Elegant Wraps", TIER.LOW), // 67 V, 25 ES, L70
-			new Name("Vaal Wraps", TIER.LOW), // 73 V, 28 ES, L75
-
-			new Name("Secured Wraps", TIER.BAD), // 79 V, 30 ES, L80
+			new Name("Gauze Wraps", 1, CATEGORY.GLOVES_EVASION_ES, 4),
+			new Name("Linen Wraps", 1, CATEGORY.GLOVES_EVASION_ES, 16),
+			new Name("Spiral Wraps", 1, CATEGORY.GLOVES_EVASION_ES, 33),
+			new Name("Buckled Wraps", 1, CATEGORY.GLOVES_EVASION_ES, 45),
+			new Name("Adorned Wraps", 1, CATEGORY.GLOVES_EVASION_ES, 59),
+			new Name("War Wraps", 1, CATEGORY.GLOVES_EVASION_ES, 65),
+			new Name("Elegant Wraps", 1, CATEGORY.GLOVES_EVASION_ES, 70),
+			new Name("Vaal Wraps", 1, CATEGORY.GLOVES_EVASION_ES, 75),
+			new Name("Secured Wraps", 5, CATEGORY.GLOVES_EVASION_ES, 80),
 
 			// https://poe2db.tw/us/Boots#BootsItem
 			new Name("Straw Sandals", TIER.LOW), // 14 ES
