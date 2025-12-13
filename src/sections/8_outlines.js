@@ -61,7 +61,7 @@ function bis(filter) {
 	});
 }
 
-// Good base/mods
+// Good mods
 function goodMods(filter) {
 	filter.multiBlock((c) => {
 		c.continue();

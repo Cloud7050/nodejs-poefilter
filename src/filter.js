@@ -1,6 +1,7 @@
 import fs from "fs";
 import { Block } from "./block.js";
 import { ConditionSet } from "./conditions/conditionSet.js";
+import { PRICE_AUGMENT, PRICE_CHANCE, PRICE_DIV, PRICE_EXALT } from "./constants.js";
 import { EffectSet } from "./effects/effectSet.js";
 
 
@@ -42,6 +43,28 @@ export class Filter {
 	}
 	multiHide(...callbacks) {
 		this.multiBlock(...callbacks, (e) => e.hide());
+	}
+
+	priceBlocks(logic) {
+		let b = new Block();
+		logic(b.c, b.e, null, PRICE_AUGMENT, (pair) => b.e.colourWisdom(pair).sizeWisdom());
+		this.spans.push(...b.export());
+
+		b = new Block();
+		logic(b.c, b.e, PRICE_AUGMENT, PRICE_EXALT, (pair) => b.e.colourAugment(pair).sizeAugment());
+		this.spans.push(...b.export());
+
+		b = new Block();
+		logic(b.c, b.e, PRICE_EXALT, PRICE_CHANCE, (pair) => b.e.colourExalt(pair).sizeExalt());
+		this.spans.push(...b.export());
+
+		b = new Block();
+		logic(b.c, b.e, PRICE_CHANCE, PRICE_DIV, (pair) => b.e.colourChance(pair).sizeChance());
+		this.spans.push(...b.export());
+
+		b = new Block();
+		logic(b.c, b.e, PRICE_DIV, null, (pair) => b.e.colourDivine(pair).sizeDivine());
+		this.spans.push(...b.export());
 	}
 
 	save() {
