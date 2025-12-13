@@ -297,7 +297,7 @@ Show
 	MinimapIcon 0 Orange UpsideDownHouse
 
 Show
-	BaseType == "Liquid Despair" "Liquid Disgust" "Liquid Envy" "Liquid Paranoia"
+	BaseType == "Liquid Despair" "Liquid Envy" "Liquid Paranoia"
 	Class == "Stackable Currency"
 
 	SetFontSize 37
@@ -305,6 +305,18 @@ Show
 	SetBackgroundColor 101 54 0 255
 	SetBorderColor 255 194 144 255
 	MinimapIcon 0 Orange Cross
+
+Show
+	BaseType == "Liquid Disgust"
+	Class == "Stackable Currency"
+
+	SetFontSize 45
+	SetTextColor 57 28 0 255
+	SetBackgroundColor 255 166 84 255
+	SetBorderColor 57 28 0 255
+	PlayEffect Orange
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Orange Star
 
 Show
 	BaseType == "Concentrated Liquid Fear" "Concentrated Liquid Isolation" "Concentrated Liquid Suffering"

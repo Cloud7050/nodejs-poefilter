@@ -4,10 +4,10 @@ export class Name {
 	category;
 	dropLevel;
 
-	// Bad currencies are flagged. Class uniques are flagged.
+	// Bad currencies are flagged. Special map drop items are flagged. Class uniques are flagged.
 	isFlagged;
 
-	constructor(name, value = null, category = null, dropLevel = null) {
+	constructor(name, value, category = null, dropLevel = null) {
 		this.name = name;
 		this.value = value;
 		this.category = category;

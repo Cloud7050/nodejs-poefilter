@@ -221,10 +221,16 @@ function delirium(filter) {
 	});
 
 	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getEmotions2());
+		c.names = new Comparison(NameManager.getEmotions2(null, PRICE_CHANCE));
 		c.categories(CATEGORY.CURRENCY);
 
 		e.colourExalt(PAIR_CRAFT).sizeExalt();
+	});
+	filter.block((c, e) => {
+		c.names = new Comparison(NameManager.getEmotions2(PRICE_CHANCE));
+		c.categories(CATEGORY.CURRENCY);
+
+		e.colourChance(PAIR_CRAFT).sizeChance();
 	});
 
 	filter.block((c, e) => {

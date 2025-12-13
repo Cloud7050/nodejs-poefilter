@@ -32,4 +32,4 @@ export const GOLD_WISDOM = 100; // 100
 export const GOLD_AUGMENT = 500; // 2500
 export const GOLD_AUGMENT_EXALT = 1000; // 5000
 
-//TODO add unique hiding price breakpoints
+//TODO add gear & unique hiding price breakpoints

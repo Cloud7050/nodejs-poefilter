@@ -90,6 +90,7 @@ export class NameManager {
 			new Name("Lesser Essence of Flames", 1),
 			new Name("Lesser Essence of Sorcery", 1),
 			new Name("Lesser Essence of Command", 2),
+
 			new Name("Lesser Essence of Opulence", 10),
 
 		).range(min, max);
@@ -115,8 +116,8 @@ export class NameManager {
 			new Name("Essence of Electricity", 4),
 			new Name("Essence of Ruin", 4.33),
 			new Name("Essence of Haste", 8),
-			new Name("Essence of Abrasion", 10),
 
+			new Name("Essence of Abrasion", 10),
 			new Name("Essence of Opulence", 47),
 		).range(min, max);
 	}
@@ -159,9 +160,9 @@ export class NameManager {
 			new Name("Perfect Essence of Opulence", 4),
 			new Name("Perfect Essence of Abrasion", 5),
 			new Name("Perfect Essence of Electricity", 8),
+
 			new Name("Greater Essence of Opulence", 10),
 			new Name("Perfect Essence of Enhancement", 12),
-
 			new Name("Perfect Essence of Haste", 25),
 		).range(min, max);
 	}
@@ -172,8 +173,8 @@ export class NameManager {
 
 			new Name("Essence of Delirium", 46),
 			new Name("Essence of the Abyss", 54),
-			new Name("Essence of Hysteria", 500),
 
+			new Name("Essence of Hysteria", 500),
 			new Name("Essence of Horror", 3 * PRICE_DIV),
 		).range(min, max);
 	}
@@ -192,6 +193,8 @@ export class NameManager {
 
 			new Name("Preserved Collarbone", 1.4),
 			new Name("Preserved Vertebrae", 3.6),
+
+			//TODO merge abyss as core. This price has no chance sizing block
 			new Name("Preserved Cranium", 10),
 		).range(min, max);
 	}
@@ -216,6 +219,7 @@ export class NameManager {
 			new Name("Liquid Envy", 2.57),
 			new Name("Liquid Paranoia", 4.1),
 			new Name("Liquid Despair", 4.17),
+
 			new Name("Liquid Disgust", 15.56),
 		).range(min, max);
 	}
@@ -284,13 +288,13 @@ export class NameManager {
 			new Name("Omen of Chaotic Quantity", 7),
 			new Name("Omen of Bartering", 7.2),
 			new Name("Omen of Answered Prayers", 9),
+
 			new Name("Omen of the Blessed", 10),
 			new Name("Omen of Amelioration", 10),
 			new Name("Omen of Catalysing Exaltation", 11),
 			new Name("Omen of Chaotic Monsters", 13),
 			new Name("Omen of Secret Compartments", 16),
 			new Name("Omen of Corruption", 18.33),
-
 			new Name("Omen of Dextral Crystallisation", 20),
 			new Name("Omen of the Hunt", 23),
 			new Name("Omen of Chaotic Rarity", 25),
@@ -348,6 +352,7 @@ export class NameManager {
 			new Name("Uncut Skill Gem (Level 6)", 5),
 			new Name("Uncut Skill Gem (Level 11)", 5),
 			new Name("Uncut Spirit Gem (Level 13)", 6),
+
 			new Name("Uncut Spirit Gem (Level 11)", 10),
 			new Name("Uncut Spirit Gem (Level 12)", 10),
 			new Name("Uncut Spirit Gem (Level 19)", 10),
@@ -357,7 +362,6 @@ export class NameManager {
 			new Name("Uncut Skill Gem (Level 10)", 10),
 			new Name("Uncut Skill Gem (Level 7)", 11),
 			new Name("Uncut Skill Gem (Level 1)", 15),
-
 			new Name("Uncut Spirit Gem (Level 10)", 28),
 			new Name("Uncut Spirit Gem (Level 5)", 30),
 			new Name("Uncut Spirit Gem (Level 6)", 41),
@@ -368,6 +372,7 @@ export class NameManager {
 			new Name("Uncut Spirit Gem (Level 4)", 143),
 			new Name("Uncut Spirit Gem (Level 9)", 311),
 			new Name("Uncut Spirit Gem (Level 8)", 480),
+
 			new Name("Uncut Spirit Gem (Level 20)", 700),
 		).range(min, max);
 	}
@@ -399,9 +404,9 @@ export class NameManager {
 			new Name("Arbiter's Ignition", 2.5),
 			new Name("Piety's Mercy", 5),
 			new Name("Ailith's Chimes", 6),
+
 			new Name("Garukhan's Resolve", 14),
 			new Name("Uhtred's Exodus", 16),
-
 			new Name("Tul's Stillness", 60),
 			new Name("Esh's Radiance", 65),
 			new Name("Rigwald's Ferocity", 90),
@@ -430,8 +435,8 @@ export class NameManager {
 			new Name("Lesser Inspiration Rune", 1),
 			new Name("Lesser Body Rune", 2),
 			new Name("Lesser Robust Rune", 5),
-			new Name("Lesser Resolve Rune", 10),
 
+			new Name("Lesser Resolve Rune", 10),
 			new Name("Lesser Storm Rune", 21),
 			new Name("Lesser Iron Rune", 22),
 			new Name("Lesser Adept Rune", 30),
@@ -451,8 +456,8 @@ export class NameManager {
 			new Name("Adept Rune", 1),
 			new Name("Body Rune", 2),
 			new Name("Glacial Rune", 3),
-			new Name("Storm Rune", 14),
 
+			new Name("Storm Rune", 14),
 			new Name("Iron Rune", 45),
 		).range(min, max);
 	}
@@ -491,11 +496,11 @@ export class NameManager {
 			new Name("Greater Rune of Leadership", 5),
 			new Name("The Greatwolf's Rune of Willpower", 5),
 			new Name("Farrul's Rune of Grace", 9),
+
 			new Name("Saqawal's Rune of Memory", 10),
 			new Name("Fenumus' Rune of Spinning", 11),
 			new Name("Thane Leld's Rune of Spring", 13),
 			new Name("Courtesan Mannan's Rune of Cruelty", 16),
-
 			new Name("Greater Rune of Tithing", 26),
 			new Name("Greater Rune of Alacrity", 40),
 			new Name("Saqawal's Rune of the Sky", 74),
@@ -537,9 +542,9 @@ export class NameManager {
 			new Name("Quipolatl's Soul Core of Flow", 5),
 			new Name("Rabbit Idol", 5),
 			new Name("Xopec's Soul Core of Power", 6),
+
 			new Name("Ulaman's Gaze", 17),
 			new Name("Idol of Ralakesh", 18),
-
 			new Name("Tzamoto's Soul Core of Ferocity", 24),
 			new Name("Atmohua's Soul Core of Retreat", 28),
 			new Name("Soul Core of Zantipi", 40.5),
@@ -560,8 +565,8 @@ export class NameManager {
 			new Name("Soul Core of Citaqualotl", 179),
 			new Name("Kurgal's Gaze", 252),
 			new Name("Soul Core of Azcapa", 275),
-			new Name("Idol of Sirrius", 1010),
 
+			new Name("Idol of Sirrius", 1010),
 			new Name("Soul Core of Jiquani", 6 * PRICE_DIV),
 		).range(min, max);
 	}
