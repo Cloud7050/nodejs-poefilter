@@ -138,7 +138,7 @@ export class ConditionSet {
 		// https://poe2db.tw/us/Modifiers
 		let phrases = [
 			//// Adds x to x Physical Damage
-			// Spears/one hand maces/bows | quarterstaves/two hand maces/crossbows
+			// One hand maces/spears/bows | crossbows/quarterstaves/talismans/two hand maces
 			// "Glinting", // 1-2 - 4-5 | 2-3 - 5-7, IL1
 			// "Burnished", // 4-6 - 7-11 | 5-8 - 10-15, IL8
 			// "Polished", // 6-9 - 11-16 | 8-12 - 15-22, IL16
@@ -151,7 +151,7 @@ export class ConditionSet {
 			////
 
 			//// Adds x to x Fire Damage
-			// Spears/one hand maces/bows | quarterstaves/two hand maces/crossbows
+			// One hand maces/spears/bows | crossbows/quarterstaves/talismans/two hand maces
 			// "Heated", // 1-2 - 3-5 | 2-4 - 5-7, IL1
 			// "Smouldering", // 4-6 - 7-10 | 6-9 - 10-16, IL8
 			// "Smoking", // 7-11 - 13-19 | 11-17 - 19-28, IL16
@@ -165,7 +165,7 @@ export class ConditionSet {
 			////
 
 			//// Adds x to x Cold Damage
-			// Spears/one hand maces/bows | quarterstaves/two hand maces/crossbows
+			// One hand maces/spears/bows | crossbows/quarterstaves/talismans/two hand maces
 			// "Frosted", // 1-2 - 3-4 | 2-3 - 4-6, IL1
 			// "Chilled", // 3-5 - 6-9 | 5-8 - 9-14, IL8
 			// "Icy", // 6-9 - 10-16 | 10-14 - 15-23, IL16
@@ -179,7 +179,7 @@ export class ConditionSet {
 			////
 
 			//// Adds x to x Lightning Damage
-			// Spears/one hand maces/bows | quarterstaves/two hand maces/crossbows
+			// One hand maces/spears/bows | crossbows/quarterstaves/talismans/two hand maces
 			// "Humming", // 1 - 4-6 | 1 - 7-10, IL1
 			// "Buzzing", // 1 - 13-19 | 1-2 - 19-27, IL8
 			// "Snapping", // 1-2 - 20-30 | 1-3 - 31-43, IL16
@@ -193,7 +193,7 @@ export class ConditionSet {
 			////
 
 			//// x% increased Physical Damage
-			// Spears/quarterstaves/bows/crossbows / one/two hand maces
+			// Spears/bows/crossbows/quarterstaves/talismans / one/two hand maces
 			// "Heavy", // 40-49, IL1
 			// "Serrated", // 50-64, IL8
 			// "Wicked", // 65-84, IL16
@@ -205,7 +205,7 @@ export class ConditionSet {
 			////
 
 			//// +x to Level of all Melee Skills
-			// Spears/one hand maces | quarterstaves/two hand maces
+			// One hand maces/spears | quarterstaves/talismans/two hand maces
 			// "of Combat", // 1 | 2, IL2
 			// "of Dueling", // 2 | 3, IL18
 			// "of Conflict", // 3 | 4, IL36
@@ -267,7 +267,7 @@ export class ConditionSet {
 			////
 
 			//// x% increased Spell Damage
-			// Wands | Staves
+			// Wands | staves
 			// "Apprentice's", // 25-34 | 35-49, IL1
 			// "Adept's", // 35-44 | 50-64, IL8
 			// "Scholar's", // 45-54 | 65-79, IL16
@@ -391,10 +391,12 @@ export class ConditionSet {
 			"of Grief", // 7, IL81
 			////
 
-			//// Bow Attacks fire x additional Arrows
+			//// +x% Surpassing chance to fire an additional Arrow
 			// Bows
-			// "of Splintering", // 1, IL55
-			"of Many", // 2, IL82
+			// "of Surplus", // 25-50, IL46
+			// "of Splintering", // 75-100, IL55
+			// "of Shards", // 125-150, IL66
+			"of Many", // 175-200, IL82
 			////
 		);
 		this.mods = new Comparison(phrases, OPERATOR.GTE, 1);

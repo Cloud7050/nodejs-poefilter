@@ -350,7 +350,7 @@ Show
 	MinimapIcon 1 Orange UpsideDownHouse
 
 #Show
-#	BaseType ==
+#	BaseType == 
 #	Class == "Stackable Currency"
 #
 #	SetFontSize 37
@@ -1146,7 +1146,7 @@ Show
 #	Rarity == Magic
 #	ItemLevel >= 82
 #	Corrupted False
-#	HasExplicitMod >=1
+#	HasExplicitMod >=1 
 #
 #	SetFontSize 37
 #	SetTextColor 182 190 255 255
@@ -1204,7 +1204,7 @@ Show
 #	Class == Bucklers
 #	Rarity == Rare
 #	ItemLevel >= 82
-#	HasExplicitMod >=1
+#	HasExplicitMod >=1 
 #
 #	SetFontSize 37
 #	SetTextColor 166 176 255 255
