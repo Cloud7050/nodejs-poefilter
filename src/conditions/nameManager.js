@@ -1487,7 +1487,7 @@ export class NameManager {
 			// Special case: If min and max are the same, do exact match
 			if (min !== null && max !== null && min === max && name.value === min) return true;
 
-			return (min !== null && name.value >= min) && (max !== null && name.value < max);
+			return (min === null || name.value >= min) && (max === null || name.value < max);
 		});
 		return new NameManager(...names);
 	}

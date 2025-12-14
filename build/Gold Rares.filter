@@ -64,15 +64,15 @@ Show
 #	CustomAlertSound "renoir.wav" 250
 #	MinimapIcon 0 Red Diamond
 
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 27
-#	SetTextColor 255 217 215 255
-#	SetBackgroundColor 35 2 3 255
-#	SetBorderColor 255 217 215 255
-#	MinimapIcon 2 Red Kite
+Show
+	Class == "Stackable Currency"
+	BaseType == "Armourer's Scrap" "Artificer's Orb" "Artificer's Shard" "Blacksmith's Whetstone" "Glassblower's Bauble" "Greater Orb of Augmentation" "Greater Orb of Transmutation" "Lesser Jeweller's Orb" "Orb of Alchemy" "Orb of Augmentation" "Orb of Transmutation" "Perfect Orb of Transmutation" "Regal Orb" "Regal Shard" "Scroll of Wisdom" "Transmutation Shard"
+
+	SetFontSize 27
+	SetTextColor 255 217 215 255
+	SetBackgroundColor 35 2 3 255
+	SetBorderColor 255 217 215 255
+	MinimapIcon 2 Red Kite
 
 Show
 	Class == "Stackable Currency"
@@ -106,17 +106,17 @@ Show
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Red Star
 
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 240 65 75 255
-#	SetBackgroundColor 255 241 240 255
-#	SetBorderColor 240 65 75 255
-#	PlayEffect Red
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Red Diamond
+Show
+	Class == "Stackable Currency"
+	BaseType == "Divine Orb" "Hinekora's Lock" "Mirror of Kalandra" "Perfect Chaos Orb" "Perfect Exalted Orb"
+
+	SetFontSize 45
+	SetTextColor 240 65 75 255
+	SetBackgroundColor 255 241 240 255
+	SetBorderColor 240 65 75 255
+	PlayEffect Red
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Red Diamond
 
 #Hide
 #	Class == "Stackable Currency"
@@ -377,17 +377,17 @@ Show
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Purple Star
 
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 133 75 255 255
-#	SetBackgroundColor 247 239 255 255
-#	SetBorderColor 133 75 255 255
-#	PlayEffect Purple
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Purple Diamond
+Show
+	Class == "Stackable Currency"
+	BaseType == "Essence of Horror" "Essence of Hysteria"
+
+	SetFontSize 45
+	SetTextColor 133 75 255 255
+	SetBackgroundColor 247 239 255 255
+	SetBorderColor 133 75 255 255
+	PlayEffect Purple
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Purple Diamond
 
 #Show
 #	Class == "Stackable Currency"
@@ -539,17 +539,17 @@ Show
 #	CustomAlertSound "WAH.mp3"
 #	MinimapIcon 0 Pink Star
 
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 191 62 248 255
-#	SetBackgroundColor 255 238 255 255
-#	SetBorderColor 191 62 248 255
-#	PlayEffect Pink
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Pink Diamond
+Show
+	Class == "Stackable Currency"
+	BaseType == "Ancient Collarbone" "Ancient Jawbone" "Ancient Rib"
+
+	SetFontSize 45
+	SetTextColor 191 62 248 255
+	SetBackgroundColor 255 238 255 255
+	SetBorderColor 191 62 248 255
+	PlayEffect Pink
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Pink Diamond
 
 #Show
 #	Class == "Stackable Currency"
@@ -605,15 +605,15 @@ Show
 #	CustomAlertSound "renoir.wav" 250
 #	MinimapIcon 0 Orange Diamond
 
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 27
-#	SetTextColor 255 227 207 255
-#	SetBackgroundColor 27 10 0 255
-#	SetBorderColor 255 227 207 255
-#	MinimapIcon 2 Orange Kite
+Show
+	Class == "Stackable Currency"
+	BaseType == "Neural Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Uul-Netol's Catalyst"
+
+	SetFontSize 27
+	SetTextColor 255 227 207 255
+	SetBackgroundColor 27 10 0 255
+	SetBorderColor 255 227 207 255
+	MinimapIcon 2 Orange Kite
 
 Show
 	Class == "Stackable Currency"
@@ -858,15 +858,15 @@ Show
 	SetBorderColor 252 0 54 255
 	MinimapIcon 0 Red Cross
 
-#Show
-#	Class == Omen
-#	BaseType ==
-#
-#	SetFontSize 27
-#	SetTextColor 255 227 207 255
-#	SetBackgroundColor 27 10 0 255
-#	SetBorderColor 255 227 207 255
-#	MinimapIcon 2 Orange Kite
+Show
+	Class == Omen
+	BaseType == "Omen of Gambling"
+
+	SetFontSize 27
+	SetTextColor 255 227 207 255
+	SetBackgroundColor 27 10 0 255
+	SetBorderColor 255 227 207 255
+	MinimapIcon 2 Orange Kite
 
 Show
 	Class == Omen
@@ -900,17 +900,17 @@ Show
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Orange Star
 
-#Show
-#	Class == Omen
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 226 126 0 255
-#	SetBackgroundColor 255 244 238 255
-#	SetBorderColor 226 126 0 255
-#	PlayEffect Orange
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Orange Diamond
+Show
+	Class == Omen
+	BaseType == "Omen of Chance" "Omen of Dextral Annulment" "Omen of Dextral Erasure" "Omen of Sinistral Annulment" "Omen of Sinistral Erasure" "Omen of Whittling"
+
+	SetFontSize 45
+	SetTextColor 226 126 0 255
+	SetBackgroundColor 255 244 238 255
+	SetBorderColor 226 126 0 255
+	PlayEffect Orange
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Orange Diamond
 
 #Show
 #	Class == Omen
@@ -954,17 +954,17 @@ Show
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Pink Star
 
-#Show
-#	Class == Omen
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 191 62 248 255
-#	SetBackgroundColor 255 238 255 255
-#	SetBorderColor 191 62 248 255
-#	PlayEffect Pink
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Pink Diamond
+Show
+	Class == Omen
+	BaseType == "Omen of Light"
+
+	SetFontSize 45
+	SetTextColor 191 62 248 255
+	SetBackgroundColor 255 238 255 255
+	SetBorderColor 191 62 248 255
+	PlayEffect Pink
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Pink Diamond
 
 #Show
 #	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
@@ -1008,17 +1008,17 @@ Show
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 White Star
 
-#Show
-#	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 0 194 198 255
-#	SetBackgroundColor 226 255 255 255
-#	SetBorderColor 0 194 198 255
-#	PlayEffect White
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 White Diamond
+Show
+	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
+	BaseType == "Uncut Spirit Gem (Level 20)"
+
+	SetFontSize 45
+	SetTextColor 0 194 198 255
+	SetBackgroundColor 226 255 255 255
+	SetBorderColor 0 194 198 255
+	PlayEffect White
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 White Diamond
 
 #Show
 #	Class == "Skill Gems" "Support Gems"
@@ -1062,17 +1062,17 @@ Show
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 White Star
 
-#Show
-#	Class == "Skill Gems" "Support Gems"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 0 194 198 255
-#	SetBackgroundColor 226 255 255 255
-#	SetBorderColor 0 194 198 255
-#	PlayEffect White
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 White Diamond
+Show
+	Class == "Skill Gems" "Support Gems"
+	BaseType == "Arjun's Medal" "Atalui's Bloodletting" "Dialla's Desire" "Rakiata's Flow" "Ratha's Assault" "Uhtred's Augury" "Uhtred's Omen" "Uul-Netol's Embrace"
+
+	SetFontSize 45
+	SetTextColor 0 194 198 255
+	SetBackgroundColor 226 255 255 255
+	SetBorderColor 0 194 198 255
+	PlayEffect White
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 White Diamond
 
 Show
 	Class == "Skill Gems" "Support Gems"
@@ -1287,17 +1287,17 @@ Show
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Cyan Star
 
-#Show
-#	Class == Augment
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 0 160 226 255
-#	SetBackgroundColor 240 247 255 255
-#	SetBorderColor 0 160 226 255
-#	PlayEffect Cyan
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Cyan Diamond
+Show
+	Class == Augment
+	BaseType == "Countess Seske's Rune of Archery" "Farrul's Rune of the Chase" "Hedgewitch Assandra's Rune of Wisdom"
+
+	SetFontSize 45
+	SetTextColor 0 160 226 255
+	SetBackgroundColor 240 247 255 255
+	SetBorderColor 0 160 226 255
+	PlayEffect Cyan
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Cyan Diamond
 
 #Show
 #	Class == Augment
@@ -1341,17 +1341,17 @@ Show
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Cyan Star
 
-#Show
-#	Class == Augment
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 0 160 226 255
-#	SetBackgroundColor 240 247 255 255
-#	SetBorderColor 0 160 226 255
-#	PlayEffect Cyan
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Cyan Diamond
+Show
+	Class == Augment
+	BaseType == "Idol of Sirrius" "Soul Core of Jiquani"
+
+	SetFontSize 45
+	SetTextColor 0 160 226 255
+	SetBackgroundColor 240 247 255 255
+	SetBorderColor 0 160 226 255
+	PlayEffect Cyan
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Cyan Diamond
 
 Show
 	Class == Augment
@@ -1853,143 +1853,143 @@ Show
 
 	Continue
 
-#Show
-#	Class == Helmets "Body Armours" Gloves Boots
-#	BaseType ==
-#	Rarity == Normal
-#
-#	SetFontSize 37
-#	SetTextColor 215 218 255 255
-#	SetBackgroundColor 3 7 44 255
-#	SetBorderColor 215 218 255 255
-#	MinimapIcon 0 Blue Kite
-#
-#	Continue
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Barbed Bracers" "Bound Bracers" "Cavalry Boots" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Embossed Boots" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Freebooter Cap" "Grand Bracers" "Hunter Hood" "Lace Hood" "Laced Boots" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Lizardscale Boots" "Lizardscale Coat" "Pathfinder Coat" "Polished Bracers" "Quilted Vest" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "Runner Vest" "Scout's Vest" "Sectioned Bracers" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Slipstrike Vest" "Smuggler Coat" "Spiked Bracers" "Spined Bracers" "Stalking Bracers" "Steeltoe Boots" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Trapper Hood" "Viper Cap" "Woven Cap" "Wrapped Cap" "Wyrmscale Coat"
+	Rarity == Normal
 
-#Show
-#	Class == Helmets "Body Armours" Gloves Boots
-#	BaseType ==
-#	Rarity == Magic
-#	UnidentifiedItemTier <= 4
-#
-#	SetFontSize 32
-#	SetTextColor 182 190 255 255
-#	SetBackgroundColor 10 20 83 255
-#	SetBorderColor 182 190 255 255
-#	MinimapIcon 1 Blue UpsideDownHouse
-#
-#	Continue
+	SetFontSize 37
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	MinimapIcon 0 Blue Kite
 
-#Show
-#	Class == Helmets "Body Armours" Gloves Boots
-#	BaseType ==
-#	Rarity == Magic
-#	ItemLevel >= 82
-#
-#	SetFontSize 37
-#	SetTextColor 182 190 255 255
-#	SetBackgroundColor 10 20 83 255
-#	SetBorderColor 182 190 255 255
-#	MinimapIcon 0 Blue UpsideDownHouse
-#
-#	Continue
+	Continue
 
-#Show
-#	Class == Helmets "Body Armours" Gloves Boots
-#	BaseType ==
-#	Rarity == Magic
-#	UnidentifiedItemTier == 5
-#
-#	SetFontSize 37
-#	SetTextColor 182 190 255 255
-#	SetBackgroundColor 10 20 83 255
-#	SetBorderColor 182 190 255 255
-#	MinimapIcon 0 Blue UpsideDownHouse
-#
-#	Continue
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Barbed Bracers" "Bound Bracers" "Cavalry Boots" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Embossed Boots" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Freebooter Cap" "Grand Bracers" "Hunter Hood" "Lace Hood" "Laced Boots" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Lizardscale Boots" "Lizardscale Coat" "Pathfinder Coat" "Polished Bracers" "Quilted Vest" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "Runner Vest" "Scout's Vest" "Sectioned Bracers" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Slipstrike Vest" "Smuggler Coat" "Spiked Bracers" "Spined Bracers" "Stalking Bracers" "Steeltoe Boots" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Trapper Hood" "Viper Cap" "Woven Cap" "Wrapped Cap" "Wyrmscale Coat"
+	Rarity == Magic
+	UnidentifiedItemTier <= 4
 
-#Show
-#	Class == Helmets "Body Armours" Gloves Boots
-#	BaseType ==
-#	Rarity == Magic
-#	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's
-#
-#	SetFontSize 37
-#	SetTextColor 182 190 255 255
-#	SetBackgroundColor 10 20 83 255
-#	SetBorderColor 182 190 255 255
-#	MinimapIcon 0 Blue UpsideDownHouse
-#
-#	Continue
+	SetFontSize 32
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 1 Blue UpsideDownHouse
 
-#Show
-#	Class == Helmets "Body Armours" Gloves Boots
-#	BaseType ==
-#	Rarity == Rare
-#
-#	SetFontSize 32
-#	SetTextColor 166 176 255 255
-#	SetBackgroundColor 23 38 134 255
-#	SetBorderColor 166 176 255 255
-#	MinimapIcon 1 Blue Cross
-#
-#	Continue
+	Continue
 
-#Show
-#	Class == Helmets "Body Armours" Gloves Boots
-#	BaseType ==
-#	Rarity == Rare
-#	ItemLevel >= 82
-#
-#	SetFontSize 37
-#	SetTextColor 166 176 255 255
-#	SetBackgroundColor 23 38 134 255
-#	SetBorderColor 166 176 255 255
-#	MinimapIcon 0 Blue Cross
-#
-#	Continue
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Barbed Bracers" "Bound Bracers" "Cavalry Boots" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Embossed Boots" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Freebooter Cap" "Grand Bracers" "Hunter Hood" "Lace Hood" "Laced Boots" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Lizardscale Boots" "Lizardscale Coat" "Pathfinder Coat" "Polished Bracers" "Quilted Vest" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "Runner Vest" "Scout's Vest" "Sectioned Bracers" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Slipstrike Vest" "Smuggler Coat" "Spiked Bracers" "Spined Bracers" "Stalking Bracers" "Steeltoe Boots" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Trapper Hood" "Viper Cap" "Woven Cap" "Wrapped Cap" "Wyrmscale Coat"
+	Rarity == Magic
+	ItemLevel >= 82
 
-#Show
-#	Class == Helmets "Body Armours" Gloves Boots
-#	BaseType ==
-#	Rarity == Rare
-#	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's
-#
-#	SetFontSize 37
-#	SetTextColor 166 176 255 255
-#	SetBackgroundColor 23 38 134 255
-#	SetBorderColor 166 176 255 255
-#	MinimapIcon 0 Blue Cross
-#
-#	Continue
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
 
-#Show
-#	Class == Helmets "Body Armours" Gloves Boots
-#	BaseType ==
-#	Rarity == Magic
-#	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's "of the Despot" Queen's
-#
-#	SetFontSize 37
-#	SetTextColor 182 190 255 255
-#	SetBackgroundColor 10 20 83 255
-#	SetBorderColor 182 190 255 255
-#	MinimapIcon 0 Blue UpsideDownHouse
-#
-#	Continue
+	Continue
 
-#Show
-#	Class == Helmets "Body Armours" Gloves Boots
-#	BaseType ==
-#	Rarity == Rare
-#	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's "of the Despot" Queen's
-#
-#	SetFontSize 37
-#	SetTextColor 166 176 255 255
-#	SetBackgroundColor 23 38 134 255
-#	SetBorderColor 166 176 255 255
-#	MinimapIcon 0 Blue Cross
-#
-#	Continue
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Barbed Bracers" "Bound Bracers" "Cavalry Boots" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Embossed Boots" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Freebooter Cap" "Grand Bracers" "Hunter Hood" "Lace Hood" "Laced Boots" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Lizardscale Boots" "Lizardscale Coat" "Pathfinder Coat" "Polished Bracers" "Quilted Vest" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "Runner Vest" "Scout's Vest" "Sectioned Bracers" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Slipstrike Vest" "Smuggler Coat" "Spiked Bracers" "Spined Bracers" "Stalking Bracers" "Steeltoe Boots" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Trapper Hood" "Viper Cap" "Woven Cap" "Wrapped Cap" "Wyrmscale Coat"
+	Rarity == Magic
+	UnidentifiedItemTier == 5
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Barbed Bracers" "Bound Bracers" "Cavalry Boots" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Embossed Boots" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Freebooter Cap" "Grand Bracers" "Hunter Hood" "Lace Hood" "Laced Boots" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Lizardscale Boots" "Lizardscale Coat" "Pathfinder Coat" "Polished Bracers" "Quilted Vest" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "Runner Vest" "Scout's Vest" "Sectioned Bracers" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Slipstrike Vest" "Smuggler Coat" "Spiked Bracers" "Spined Bracers" "Stalking Bracers" "Steeltoe Boots" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Trapper Hood" "Viper Cap" "Woven Cap" "Wrapped Cap" "Wyrmscale Coat"
+	Rarity == Magic
+	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Barbed Bracers" "Bound Bracers" "Cavalry Boots" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Embossed Boots" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Freebooter Cap" "Grand Bracers" "Hunter Hood" "Lace Hood" "Laced Boots" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Lizardscale Boots" "Lizardscale Coat" "Pathfinder Coat" "Polished Bracers" "Quilted Vest" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "Runner Vest" "Scout's Vest" "Sectioned Bracers" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Slipstrike Vest" "Smuggler Coat" "Spiked Bracers" "Spined Bracers" "Stalking Bracers" "Steeltoe Boots" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Trapper Hood" "Viper Cap" "Woven Cap" "Wrapped Cap" "Wyrmscale Coat"
+	Rarity == Rare
+
+	SetFontSize 32
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 1 Blue Cross
+
+	Continue
+
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Barbed Bracers" "Bound Bracers" "Cavalry Boots" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Embossed Boots" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Freebooter Cap" "Grand Bracers" "Hunter Hood" "Lace Hood" "Laced Boots" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Lizardscale Boots" "Lizardscale Coat" "Pathfinder Coat" "Polished Bracers" "Quilted Vest" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "Runner Vest" "Scout's Vest" "Sectioned Bracers" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Slipstrike Vest" "Smuggler Coat" "Spiked Bracers" "Spined Bracers" "Stalking Bracers" "Steeltoe Boots" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Trapper Hood" "Viper Cap" "Woven Cap" "Wrapped Cap" "Wyrmscale Coat"
+	Rarity == Rare
+	ItemLevel >= 82
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Barbed Bracers" "Bound Bracers" "Cavalry Boots" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Embossed Boots" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Freebooter Cap" "Grand Bracers" "Hunter Hood" "Lace Hood" "Laced Boots" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Lizardscale Boots" "Lizardscale Coat" "Pathfinder Coat" "Polished Bracers" "Quilted Vest" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "Runner Vest" "Scout's Vest" "Sectioned Bracers" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Slipstrike Vest" "Smuggler Coat" "Spiked Bracers" "Spined Bracers" "Stalking Bracers" "Steeltoe Boots" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Trapper Hood" "Viper Cap" "Woven Cap" "Wrapped Cap" "Wyrmscale Coat"
+	Rarity == Rare
+	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
+
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Adherent Cuffs" "Adherent's Raiment" "Adorned Wraps" "Aged Cuffs" "Altar Robe" "Ancestral Mail" "Ancestral Tiara" "Anchorite Garb" "Ancient Cuffs" "Ancient Mitts" "Apostle Leggings" "Ascetic Garb" "Austere Garb" "Avian Mask" "Barbed Bracers" "Baroque Gloves" "Bastion Sabatons" "Beaded Circlet" "Blacksteel Gauntlets" "Blacksteel Sabatons" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Bound Cuffs" "Bound Sandals" "Braced Sabatons" "Brigand Mask" "Brimmed Helm" "Bronze Greaves" "Buckled Wraps" "Bulwark Greaves" "Cabalist Helm" "Carved Greaves" "Cavalry Boots" "Ceremonial Robe" "Chain Mail" "Chain Tiara" "Champion Helm" "Charmed Shoes" "Chieftain Cuirass" "Cinched Boots" "Cleric Vestments" "Cloaked Mail" "Closed Helm" "Commander Gauntlets" "Commander Greathelm" "Conjurer Mantle" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Covered Sabatons" "Cowled Helm" "Cryptic Crown" "Cryptic Helm" "Cryptic Leggings" "Cultist Crown" "Cultist Gauntlets" "Daggerfoot Shoes" "Dastard Armour" "Death Mail" "Death Mantle" "Deerstalker Hood" "Desert Cap" "Detailed Mitts" "Divine Crown" "Doubled Gauntlets" "Dragonscale Boots" "Drakeskin Boots" "Druidic Crown" "Dunerunner Sandals" "Elegant Greathelm" "Elegant Greaves" "Elegant Plate" "Elegant Slippers" "Elegant Wraps" "Elementalist Robe" "Elite Greathelm" "Embossed Boots" "Embroidered Gloves" "Explorer Armour" "Face Mask" "Faithful Leggings" "Falconer's Jacket" "Faridun Mask" "Feathered Mitts" "Feathered Raiment" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fierce Greathelm" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Flowing Raiment" "Fortress Sabatons" "Frayed Shoes" "Freebooter Cap" "Full Plate" "Fur Plate" "Gauze Wraps" "Gladiatorial Helm" "Gleaming Cuffs" "Gold Circlet" "Gold Gloves" "Goldcast Cuffs" "Golden Mail" "Grand Bracers" "Grim Gloves" "Grinning Mask" "Guarded Helm" "Hallowed Crown" "Hatungo Garb" "Hawker's Jacket" "Heartcarver Mantle" "Heavy Crown" "Heavy Plate" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Hunting Shoes" "Imperial Greathelm" "Inquisitor Crown" "Intricate Gloves" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Juggernaut Plate" "Jungle Tiara" "Kamasan Tiara" "Keth Raiment" "Knight Armour" "Knightly Mitts" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Lizardscale Coat" "Luxurious Slippers" "Mail Sabatons" "Mail Vestments" "Mantled Mail" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Masked Greathelm" "Massive Mitts" "Moulded Mitts" "Mystic Raiment" "Noble Greathelm" "Noble Sabatons" "Occultist Mantle" "Opulent Gloves" "Ornate Cuffs" "Ornate Greaves" "Ornate Mitts" "Ornate Plate" "Padded Leggings" "Paragon Greathelm" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Pelt Leggings" "Pelt Mantle" "Pilgrim Vestments" "Plate Gauntlets" "Plated Vestments" "Polished Bracers" "Quickslip Shoes" "Quilted Vest" "Raider Plate" "Rambler Jacket" "Rawhide Boots" "Reefsteel Greaves" "Refined Bracers" "Rhoahide Coat" "Ringmail Gauntlets" "River Raiment" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Runner Vest" "Rusted Cuirass" "Rusted Greathelm" "Sacramental Robe" "Sacrificial Mantle" "Saintly Crown" "Sandsworn Sandals" "Sandsworn Tiara" "Scale Mail" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Seastorm Mantle" "Sectioned Bracers" "Secured Leggings" "Secured Wraps" "Sekhema Sandals" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shaman Mantle" "Shamanistic Leggings" "Shielded Helm" "Shrouded Mail" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Sirenscale Gloves" "Skycrown Tiara" "Sleek Jacket" "Slipstrike Vest" "Smuggler Coat" "Soaring Mask" "Soldier Cuirass" "Soldier Greathelm" "Solid Mask" "Sombre Gloves" "Sorcerous Tiara" "Spiked Bracers" "Spined Bracers" "Spiral Wraps" "Spired Greathelm" "Spiritbone Crown" "Stacked Sabatons" "Stalking Bracers" "Steel Plate" "Steelmail Gauntlets" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Stone Cuirass" "Stone Greaves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Tasalian Greaves" "Tattered Robe" "Tempered Mitts" "Thane Mail" "Threaded Shoes" "Tideseer Mantle" "Torn Gloves" "Trailblazer Armour" "Trapper Hood" "Treerunner Shoes" "Tribal Mask" "Trimmed Greaves" "Twig Circlet" "Utzaal Cuirass" "Vaal Cuirass" "Vaal Gloves" "Vaal Greaves" "Vaal Mitts" "Vaal Wraps" "Vagabond Armour" "Veiled Mask" "Verisium Cuffs" "Vermeil Circlet" "Veteran Sabatons" "Vile Robe" "Viper Cap" "Visored Helm" "Votive Raiment" "Wanderer Shoes" "War Wraps" "Warded Helm" "Warlock Leggings" "Warlord Cuirass" "Warmonger Greathelm" "Warrior Greathelm" "Waxed Jacket" "Wayfarer Jacket" "Weaver Leggings" "Wicker Tiara" "Wolfskin Mantle" "Woven Cap" "Wrapped Cap" "Wrapped Greathelm" "Wrapped Sandals" "Wyrmscale Coat" "Zealot Gauntlets"
+	Rarity == Magic
+	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's "of the Despot" Queen's
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Adherent Cuffs" "Adherent's Raiment" "Adorned Wraps" "Aged Cuffs" "Altar Robe" "Ancestral Mail" "Ancestral Tiara" "Anchorite Garb" "Ancient Cuffs" "Ancient Mitts" "Apostle Leggings" "Ascetic Garb" "Austere Garb" "Avian Mask" "Barbed Bracers" "Baroque Gloves" "Bastion Sabatons" "Beaded Circlet" "Blacksteel Gauntlets" "Blacksteel Sabatons" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Bound Cuffs" "Bound Sandals" "Braced Sabatons" "Brigand Mask" "Brimmed Helm" "Bronze Greaves" "Buckled Wraps" "Bulwark Greaves" "Cabalist Helm" "Carved Greaves" "Cavalry Boots" "Ceremonial Robe" "Chain Mail" "Chain Tiara" "Champion Helm" "Charmed Shoes" "Chieftain Cuirass" "Cinched Boots" "Cleric Vestments" "Cloaked Mail" "Closed Helm" "Commander Gauntlets" "Commander Greathelm" "Conjurer Mantle" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Covered Sabatons" "Cowled Helm" "Cryptic Crown" "Cryptic Helm" "Cryptic Leggings" "Cultist Crown" "Cultist Gauntlets" "Daggerfoot Shoes" "Dastard Armour" "Death Mail" "Death Mantle" "Deerstalker Hood" "Desert Cap" "Detailed Mitts" "Divine Crown" "Doubled Gauntlets" "Dragonscale Boots" "Drakeskin Boots" "Druidic Crown" "Dunerunner Sandals" "Elegant Greathelm" "Elegant Greaves" "Elegant Plate" "Elegant Slippers" "Elegant Wraps" "Elementalist Robe" "Elite Greathelm" "Embossed Boots" "Embroidered Gloves" "Explorer Armour" "Face Mask" "Faithful Leggings" "Falconer's Jacket" "Faridun Mask" "Feathered Mitts" "Feathered Raiment" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fierce Greathelm" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Flowing Raiment" "Fortress Sabatons" "Frayed Shoes" "Freebooter Cap" "Full Plate" "Fur Plate" "Gauze Wraps" "Gladiatorial Helm" "Gleaming Cuffs" "Gold Circlet" "Gold Gloves" "Goldcast Cuffs" "Golden Mail" "Grand Bracers" "Grim Gloves" "Grinning Mask" "Guarded Helm" "Hallowed Crown" "Hatungo Garb" "Hawker's Jacket" "Heartcarver Mantle" "Heavy Crown" "Heavy Plate" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Hunting Shoes" "Imperial Greathelm" "Inquisitor Crown" "Intricate Gloves" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Juggernaut Plate" "Jungle Tiara" "Kamasan Tiara" "Keth Raiment" "Knight Armour" "Knightly Mitts" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Lizardscale Coat" "Luxurious Slippers" "Mail Sabatons" "Mail Vestments" "Mantled Mail" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Masked Greathelm" "Massive Mitts" "Moulded Mitts" "Mystic Raiment" "Noble Greathelm" "Noble Sabatons" "Occultist Mantle" "Opulent Gloves" "Ornate Cuffs" "Ornate Greaves" "Ornate Mitts" "Ornate Plate" "Padded Leggings" "Paragon Greathelm" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Pelt Leggings" "Pelt Mantle" "Pilgrim Vestments" "Plate Gauntlets" "Plated Vestments" "Polished Bracers" "Quickslip Shoes" "Quilted Vest" "Raider Plate" "Rambler Jacket" "Rawhide Boots" "Reefsteel Greaves" "Refined Bracers" "Rhoahide Coat" "Ringmail Gauntlets" "River Raiment" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Runner Vest" "Rusted Cuirass" "Rusted Greathelm" "Sacramental Robe" "Sacrificial Mantle" "Saintly Crown" "Sandsworn Sandals" "Sandsworn Tiara" "Scale Mail" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Seastorm Mantle" "Sectioned Bracers" "Secured Leggings" "Secured Wraps" "Sekhema Sandals" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shaman Mantle" "Shamanistic Leggings" "Shielded Helm" "Shrouded Mail" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Sirenscale Gloves" "Skycrown Tiara" "Sleek Jacket" "Slipstrike Vest" "Smuggler Coat" "Soaring Mask" "Soldier Cuirass" "Soldier Greathelm" "Solid Mask" "Sombre Gloves" "Sorcerous Tiara" "Spiked Bracers" "Spined Bracers" "Spiral Wraps" "Spired Greathelm" "Spiritbone Crown" "Stacked Sabatons" "Stalking Bracers" "Steel Plate" "Steelmail Gauntlets" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Stone Cuirass" "Stone Greaves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Tasalian Greaves" "Tattered Robe" "Tempered Mitts" "Thane Mail" "Threaded Shoes" "Tideseer Mantle" "Torn Gloves" "Trailblazer Armour" "Trapper Hood" "Treerunner Shoes" "Tribal Mask" "Trimmed Greaves" "Twig Circlet" "Utzaal Cuirass" "Vaal Cuirass" "Vaal Gloves" "Vaal Greaves" "Vaal Mitts" "Vaal Wraps" "Vagabond Armour" "Veiled Mask" "Verisium Cuffs" "Vermeil Circlet" "Veteran Sabatons" "Vile Robe" "Viper Cap" "Visored Helm" "Votive Raiment" "Wanderer Shoes" "War Wraps" "Warded Helm" "Warlock Leggings" "Warlord Cuirass" "Warmonger Greathelm" "Warrior Greathelm" "Waxed Jacket" "Wayfarer Jacket" "Weaver Leggings" "Wicker Tiara" "Wolfskin Mantle" "Woven Cap" "Wrapped Cap" "Wrapped Greathelm" "Wrapped Sandals" "Wyrmscale Coat" "Zealot Gauntlets"
+	Rarity == Rare
+	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's "of the Despot" Queen's
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
 
 #Show
 #	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
@@ -2004,21 +2004,21 @@ Show
 #
 #	Continue
 
-#Show
-#	Class == "Life Flasks" "Mana Flasks"
-#	BaseType ==
-#	Rarity == Normal
-#	ItemLevel >= 83
-#
-#	SetFontSize 45
-#	SetTextColor 215 218 255 255
-#	SetBackgroundColor 3 7 44 255
-#	SetBorderColor 215 218 255 255
-#	PlayEffect Blue
-#	CustomAlertSound "WAH.mp3"
-#	MinimapIcon 0 Blue Kite
-#
-#	Continue
+Show
+	Class == "Life Flasks" "Mana Flasks"
+	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask" "Ultimate Life Flask" "Ultimate Mana Flask"
+	Rarity == Normal
+	ItemLevel >= 83
+
+	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue Kite
+
+	Continue
 
 #Show
 #	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
@@ -2090,21 +2090,21 @@ Show
 #
 #	Continue
 
-#Show
-#	Class == "Life Flasks" "Mana Flasks"
-#	BaseType ==
-#	Rarity == Magic
-#	ItemLevel >= 83
-#
-#	SetFontSize 45
-#	SetTextColor 182 190 255 255
-#	SetBackgroundColor 10 20 83 255
-#	SetBorderColor 182 190 255 255
-#	PlayEffect Blue
-#	CustomAlertSound "WAH.mp3"
-#	MinimapIcon 0 Blue UpsideDownHouse
-#
-#	Continue
+Show
+	Class == "Life Flasks" "Mana Flasks"
+	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask" "Ultimate Life Flask" "Ultimate Mana Flask"
+	Rarity == Magic
+	ItemLevel >= 83
+
+	SetFontSize 45
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	PlayEffect Blue
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
 
 #Show
 #	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
@@ -2148,33 +2148,33 @@ Show
 #
 #	Continue
 
-#Show
-#	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-#	BaseType ==
-#	Rarity == Magic
-#	HasExplicitMod >=1 Confident "of Bameth" "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology" Flaring Cremating Entombing Electrocuting Countess' "of the Overseer" "of the Sorcerer" Magmatic Arctic Smiting Vile
-#
-#	SetFontSize 37
-#	SetTextColor 182 190 255 255
-#	SetBackgroundColor 10 20 83 255
-#	SetBorderColor 182 190 255 255
-#	MinimapIcon 0 Blue UpsideDownHouse
-#
-#	Continue
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	BaseType == "Amber Amulet" "Amethyst Charm" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Breach Ring" "Colossal Life Flask" "Colossal Mana Flask" "Crimson Amulet" "Double Belt" "Dousing Charm" "Dusk Amulet" "Dusk Ring" "Emerald Ring" "Fine Belt" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grounding Charm" "Heavy Belt" "Iron Ring" "Jade Amulet" "Lapis Amulet" "Lazuli Ring" "Lesser Life Flask" "Lesser Mana Flask" "Linen Belt" "Long Belt" "Lunar Amulet" "Mail Belt" "Medium Life Flask" "Medium Mana Flask" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Penumbra Amulet" "Penumbra Ring" "Plate Belt" "Prismatic Ring" "Rawhide Belt" "Ruby Charm" "Ruby Ring" "Sapphire Charm" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Staunching Charm" "Stellar Amulet" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Topaz Charm" "Topaz Ring" "Transcendent Life Flask" "Transcendent Mana Flask" "Ultimate Life Flask" "Ultimate Mana Flask" "Unset Ring" "Utility Belt" "Wide Belt"
+	Rarity == Magic
+	HasExplicitMod >=1 Confident "of Bameth" "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology" Flaring Cremating Entombing Electrocuting Countess' "of the Overseer" "of the Sorcerer" Magmatic Arctic Smiting Vile
 
-#Show
-#	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-#	BaseType ==
-#	Rarity == Rare
-#	HasExplicitMod >=1 Confident "of Bameth" "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology" Flaring Cremating Entombing Electrocuting Countess' "of the Overseer" "of the Sorcerer" Magmatic Arctic Smiting Vile
-#
-#	SetFontSize 37
-#	SetTextColor 166 176 255 255
-#	SetBackgroundColor 23 38 134 255
-#	SetBorderColor 166 176 255 255
-#	MinimapIcon 0 Blue Cross
-#
-#	Continue
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	BaseType == "Amber Amulet" "Amethyst Charm" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Breach Ring" "Colossal Life Flask" "Colossal Mana Flask" "Crimson Amulet" "Double Belt" "Dousing Charm" "Dusk Amulet" "Dusk Ring" "Emerald Ring" "Fine Belt" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Grounding Charm" "Heavy Belt" "Iron Ring" "Jade Amulet" "Lapis Amulet" "Lazuli Ring" "Lesser Life Flask" "Lesser Mana Flask" "Linen Belt" "Long Belt" "Lunar Amulet" "Mail Belt" "Medium Life Flask" "Medium Mana Flask" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Penumbra Amulet" "Penumbra Ring" "Plate Belt" "Prismatic Ring" "Rawhide Belt" "Ruby Charm" "Ruby Ring" "Sapphire Charm" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Staunching Charm" "Stellar Amulet" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Topaz Charm" "Topaz Ring" "Transcendent Life Flask" "Transcendent Mana Flask" "Ultimate Life Flask" "Ultimate Mana Flask" "Unset Ring" "Utility Belt" "Wide Belt"
+	Rarity == Rare
+	HasExplicitMod >=1 Confident "of Bameth" "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology" Flaring Cremating Entombing Electrocuting Countess' "of the Overseer" "of the Sorcerer" Magmatic Arctic Smiting Vile
+
+	SetFontSize 37
+	SetTextColor 166 176 255 255
+	SetBackgroundColor 23 38 134 255
+	SetBorderColor 166 176 255 255
+	MinimapIcon 0 Blue Cross
+
+	Continue
 
 Show
 	Class == Jewels
@@ -2387,18 +2387,18 @@ Show
 
 	Continue
 
-#Show
-#	Class == Relics
-#	BaseType ==
-#	Rarity == Unique
-#
-#	SetFontSize 27
-#	SetTextColor 0 46 25 255
-#	SetBackgroundColor 0 237 150 255
-#	SetBorderColor 0 46 25 255
-#	MinimapIcon 2 Brown Star
-#
-#	Continue
+Show
+	Class == Relics
+	BaseType == "Amphora Relic" "Tapestry Relic"
+	Rarity == Unique
+
+	SetFontSize 27
+	SetTextColor 0 46 25 255
+	SetBackgroundColor 0 237 150 255
+	SetBorderColor 0 46 25 255
+	MinimapIcon 2 Brown Star
+
+	Continue
 
 Show
 	Class == Relics
@@ -2441,20 +2441,20 @@ Show
 #
 #	Continue
 
-#Show
-#	Class == Relics
-#	BaseType ==
-#	Rarity == Unique
-#
-#	SetFontSize 45
-#	SetTextColor 0 199 125 255
-#	SetBackgroundColor 232 255 236 255
-#	SetBorderColor 0 199 125 255
-#	PlayEffect Brown
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Brown Diamond
-#
-#	Continue
+Show
+	Class == Relics
+	BaseType == "Incense Relic" "Vase Relic"
+	Rarity == Unique
+
+	SetFontSize 45
+	SetTextColor 0 199 125 255
+	SetBackgroundColor 232 255 236 255
+	SetBorderColor 0 199 125 255
+	PlayEffect Brown
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Brown Diamond
+
+	Continue
 
 Show
 	Quality >= 1
@@ -3234,11 +3234,11 @@ Show
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue Kite
 
-#Show
-#	BaseType ==
-#	ItemLevel >= 79
-#
-#	#
+Show
+	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Penumbra Amulet" "Penumbra Ring" "Tenebrous Amulet" "Tenebrous Ring"
+	ItemLevel >= 79
+
+	#
 
 Show
 	Class == Charms
@@ -3294,33 +3294,33 @@ Show
 
 	#
 
-#Show
-#	Class == Spears Sceptres Wands Staves "One Hand Maces" Bows Crossbows Quarterstaves Talismans "Two Hand Maces"
-#	BaseType ==
-#	HasExplicitMod >=1 Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of Many"
-#
-#	#
+Show
+	Class == Spears Sceptres Wands Staves "One Hand Maces" Bows Crossbows Quarterstaves Talismans "Two Hand Maces"
+	BaseType == "Aegis Quarterstaff" "Akoyan Club" "Akoyan Spear" "Ashen Staff" "Attuned Wand" "Bolting Quarterstaff" "Bone Wand" "Chiming Staff" "Desolate Crossbow" "Dreaming Quarterstaff" "Dueling Wand" "Elegant Crossbow" "Fanatic Bow" "Fanatic Greathammer" "Fang Talisman" "Flexed Crossbow" "Flying Spear" "Fortified Hammer" "Fungal Talisman" "Galvanic Wand" "Gelid Staff" "Gemini Bow" "Gemini Crossbow" "Grand Spear" "Guardian Bow" "Ironwood Greathammer" "Jade Talisman" "Maji Talisman" "Marauding Mace" "Massive Greathammer" "Molten Hammer" "Obliterator Bow" "Omen Sceptre" "Paralysing Staff" "Pyrophyte Staff" "Rattling Sceptre" "Razor Quarterstaff" "Reaping Staff" "Roaring Staff" "Ruination Maul" "Sanctified Staff" "Shrine Sceptre" "Siege Crossbow" "Siphoning Wand" "Spiked Spear" "Stalking Spear" "Stoic Sceptre" "Strife Pick" "Striking Quarterstaff" "Tawhoan Greatclub" "Thunder Talisman" "Volatile Wand" "Voltaic Staff" "Warmonger Bow" "Withered Wand" "Wrath Sceptre"
+	HasExplicitMod >=1 Flaring Carbonising Crystalising Vapourising Merciless "of War" "of the Sniper" Empowering King's Chancellor's "of the Slavedriver" Runic Pyromancer's Cryomancer's Electromancer's Malevolent Torturer's "of the Wizard" "of Inferno" "of Frostbite" "of Thunder" "of Armageddon" "of Grief" "of Many"
 
-#Show
-#	Class == Bucklers Shields Foci Quivers
-#	BaseType ==
-#	HasExplicitMod >=1 "of Bameth" "of Harmony" "of the Everlasting" Incanter's Magmatic Arctic Smiting Vile Agonising "of the Enchanter" Flaring Cremating Entombing Electrocuting "of the Fletcher"
-#
-#	#
+	#
 
-#Show
-#	Class == Helmets "Body Armours" Gloves Boots
-#	BaseType ==
-#	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's "of the Despot" Queen's
-#
-#	#
+Show
+	Class == Bucklers Shields Foci Quivers
+	BaseType == "Blacksteel Crest Shield" "Blunt Quiver" "Desert Buckler" "Fire Quiver" "Golden Targe" "Penetrating Quiver" "Primed Quiver" "Sacral Quiver" "Tasalian Focus" "Tawhoan Tower Shield" "Toxic Quiver" "Visceral Quiver" "Volant Quiver"
+	HasExplicitMod >=1 "of Bameth" "of Harmony" "of the Everlasting" Incanter's Magmatic Arctic Smiting Vile Agonising "of the Enchanter" Flaring Cremating Entombing Electrocuting "of the Fletcher"
 
-#Show
-#	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-#	BaseType ==
-#	HasExplicitMod >=1 Confident "of Bameth" "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology" Flaring Cremating Entombing Electrocuting Countess' "of the Overseer" "of the Sorcerer" Magmatic Arctic Smiting Vile
-#
-#	#
+	#
+
+Show
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Adherent Cuffs" "Ancestral Tiara" "Blacksteel Gauntlets" "Blacksteel Sabatons" "Corsair Coat" "Cryptic Crown" "Cryptic Leggings" "Daggerfoot Shoes" "Death Mail" "Drakeskin Boots" "Falconer's Jacket" "Feathered Raiment" "Flowing Raiment" "Freebooter Cap" "Gladiatorial Helm" "Grinning Mask" "Imperial Greathelm" "Massive Mitts" "Ornate Plate" "Polished Bracers" "Rambler Jacket" "Sacramental Robe" "Secured Wraps" "Sekhema Sandals" "Sirenscale Gloves" "Sleek Jacket" "Slipstrike Vest" "Soldier Cuirass" "Swiftstalker Coat" "Tasalian Greaves" "Utzaal Cuirass" "Vile Robe" "Warlord Cuirass" "Wolfskin Mantle" "Wyrmscale Coat"
+	HasExplicitMod >=1 Hoarder's "of Archaeology" "of Bameth" Flaring Cremating Entombing Electrocuting "of Dueling" Hellion's "of the Despot" Queen's
+
+	#
+
+Show
+	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	BaseType == "Amber Amulet" "Amethyst Ring" "Antidote Charm" "Azure Amulet" "Bloodstone Amulet" "Breach Ring" "Dousing Charm" "Dusk Amulet" "Dusk Ring" "Fine Belt" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Heavy Belt" "Jade Amulet" "Lapis Amulet" "Linen Belt" "Long Belt" "Lunar Amulet" "Mail Belt" "Ornate Belt" "Pearl Ring" "Pearlescent Amulet" "Penumbra Amulet" "Penumbra Ring" "Plate Belt" "Prismatic Ring" "Rawhide Belt" "Ruby Ring" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Staunching Charm" "Stellar Amulet" "Stone Charm" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Topaz Charm" "Topaz Ring" "Ultimate Life Flask" "Ultimate Mana Flask" "Unset Ring" "Utility Belt"
+	HasExplicitMod >=1 Confident "of Bameth" "of Battle" "of the Sharpshooter" Hoarder's "of Archaeology" Flaring Cremating Entombing Electrocuting Countess' "of the Overseer" "of the Sorcerer" Magmatic Arctic Smiting Vile
+
+	#
 
 Show
 	Class == Spears Bucklers Sceptres Wands Staves "One Hand Maces" Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Shields Foci Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
