@@ -1,18 +1,17 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
-import { NameManager, TIER } from "../conditions/nameManager.js";
+import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { PAIR_GEAR } from "../constants.js";
+import { LEVEL_BIS_MAP_DROP, PAIR_GEAR, VALUE_BAD } from "../constants.js";
 
 // Stop filter here; never hide these. Then need not account for them when hiding
-export function sectionWhitelist(filter, showRares) {
+export function sectionWhitelist(filter, isGoldRares) {
 	chance(filter);
-
-	special(filter);
+	mapDrop(filter);
 	outline(filter);
 
-	if (showRares) rares(filter);
+	if (isGoldRares) goldRares(filter);
 }
 
 // Chance bases
@@ -20,7 +19,6 @@ function chance(filter) {
 	// Resize & whitelist
 	filter.multiBlock((c) => {
 		c.names = new Comparison("Viper Cap"); // Constricting Command
-		c.categories(CATEGORY.HELMET);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.isCorrupted = false;
 	}, (e) => {
@@ -29,17 +27,14 @@ function chance(filter) {
 
 	filter.multiBlock((c) => {
 		c.names = new Comparison("Heavy Belt"); // Headhunter
-		c.categories(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.isCorrupted = false;
 	}, (c) => {
 		c.names = new Comparison("Martyr Crown"); // Veil of the Night
-		c.categories(CATEGORY.HELMET);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.isCorrupted = false;
 	}, (c) => {
 		c.names = new Comparison("Silver Charm"); // The Fall of the Axe
-		c.categories(CATEGORY.CHARM);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.isCorrupted = false;
 	}, (e) => {
@@ -47,20 +42,17 @@ function chance(filter) {
 	});
 }
 
-// Special tier
-function special(filter) {
-	//FIXME use flags for special tier
+// Unique map drops
+function mapDrop(filter) {
 	filter.multiWhitelist((c) => {
-		c.names = new Comparison(NameManager.getUncommons(TIER.SPECIAL));
-		c.categories(CATEGORY.JEWELLERY);
-		c.ilvl = new Comparison(79, OPERATOR.GTE);
+		c.names = new Comparison(NameManager.getGear(c).isMapDrop());
+		c.ilvl = new Comparison(LEVEL_BIS_MAP_DROP, OPERATOR.GTE);
 	});
-
 }
 
 // Whitelist logic for items from outline section
 function outline(filter) {
-	// Corrupted/exceptional
+	// Corrupted (or possibly exceptional)
 	filter.multiWhitelist((c) => { // Quality charm
 		c.categories(CATEGORY.CHARM);
 		c.hasQuality();
@@ -87,34 +79,45 @@ function outline(filter) {
 		c.isCorrupted = true;
 	});
 
+	// Incursion
+	filter.multiWhitelist((c) => {
+		c.isCorruptedTwice = true;
+	}, (c) => {
+		c.isIncursionMod = true;
+	});
+
 	// BiS ilvl works via explicit blacklist in hides section, alongside specific sizing in rarity section
 
-	// Good base/mods
+	// Good mods
 	filter.multiWhitelist((c) => {
-		c.names = new Comparison(NameManager.getMain(TIER.BAD, OPERATOR.GTE));
 		c.categories(CATEGORY.MAIN);
+		c.names = new Comparison(NameManager.getGear(c, VALUE_BAD));
 		c.goodModMainhand(true);
 	}, (c) => {
-		c.names = new Comparison(NameManager.getOff(TIER.BAD, OPERATOR.GTE));
 		c.categories(CATEGORY.OFF);
+		c.names = new Comparison(NameManager.getGear(c, VALUE_BAD));
 		c.goodModOffhand(true);
 	}, (c) => {
-		c.names = new Comparison(NameManager.getArmour(TIER.BAD, OPERATOR.GTE));
 		c.categories(CATEGORY.ARMOUR);
+		c.names = new Comparison(NameManager.getGear(c, VALUE_BAD));
 		c.goodModArmour(true);
 	}, (c) => {
-		c.names = new Comparison(NameManager.getUncommons(TIER.BAD, OPERATOR.GTE));
-		c.categories(CATEGORY.AMULET, CATEGORY.RING);
-		c.goodModJewellery(true);
+		c.categories(CATEGORY.GEAR_UNCOMMON);
+		c.names = new Comparison(NameManager.getGear(c, VALUE_BAD));
+		c.goodModUncommon(true);
 	});
 }
 
-function rares(filter) {
+function goldRares(filter) {
 	filter.multiWhitelist((c) => {
 		c.rarity = new Comparison(RARITY.RARE);
-		c.categories(CATEGORY.MAIN, CATEGORY.OFF_CLASS, CATEGORY.FOCUS, CATEGORY.OFF_OTHER_BLOCK, CATEGORY.ARMOUR, CATEGORY.GEAR_UNCOMMON);
+		c.categories(
+			// Quivers don't tend to sell for much, for their size
+			CATEGORY.GEAR.subtract(CATEGORY.QUIVER)
+		);
 	}, (c) => {
 		c.rarity = new Comparison(RARITY.UNIQUE);
+		// Include small-sized uniques to fill inv
 		c.categories(CATEGORY.GEAR_UNCOMMON);
 	});
 }

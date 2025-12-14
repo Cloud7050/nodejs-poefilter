@@ -3,7 +3,6 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { StringList } from "../conditions/stringList.js";
 import { LEVEL_BIS, LEVEL_BIS_CHARM, LEVEL_BIS_FLASK, PAIR_GEAR, PAIR_JEWEL, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../constants.js";
 import { COLOUR_CHANCE } from "../effects/effectSet.js";
 
@@ -303,13 +302,9 @@ function otherArmour(filter) {
 	(c) => { // Good mod (other)
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(new StringList(
-			CATEGORY.ARMOUR_AM,
-			CATEGORY.ARMOUR_ES,
-			CATEGORY.ARMOUR_AM_EV,
-			CATEGORY.ARMOUR_AM_ES,
-			CATEGORY.ARMOUR_EV_ES
-		)));
+		c.names = new Comparison(NameManager.getGear(
+			CATEGORY.ARMOUR.subtract(CATEGORY.ARMOUR_EV)
+		));
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModArmour(true);
 	}, (e) => {
@@ -334,13 +329,9 @@ function otherArmour(filter) {
 	(c) => { // Good mod (other)
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(new StringList(
-			CATEGORY.ARMOUR_AM,
-			CATEGORY.ARMOUR_ES,
-			CATEGORY.ARMOUR_AM_EV,
-			CATEGORY.ARMOUR_AM_ES,
-			CATEGORY.ARMOUR_EV_ES
-		)));
+		c.names = new Comparison(NameManager.getGear(
+			CATEGORY.ARMOUR.subtract(CATEGORY.ARMOUR_EV)
+		));
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModArmour(true);
 	}, (e) => {

@@ -9,6 +9,12 @@ export class StringList {
 		}, []);
 	}
 
+	subtract(other) {
+		return new StringList(
+			...this.values.filter((value) => !other.values.includes(value))
+		);
+	}
+
 	export() {
 		let wrappedValues = this.values.map(value => {
 			if (value.includes(" ")) return `"${value}"`;

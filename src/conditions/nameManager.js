@@ -556,9 +556,12 @@ export class NameManager {
 		).value(min, max);
 	}
 
-	static getGear(
-		cOrStringList, valueMin = undefined, valueMax = undefined, dropLevel = null, dropLevelOperator = undefined) {
-		let categories = cOrStringList instanceof ConditionSet ? cOrStringList.category.value : cOrStringList;
+	static getGear(cOrStringList, valueMin = undefined, valueMax = undefined, dropLevel = null, dropLevelOperator = undefined) {
+		let categories = cOrStringList;
+		if (cOrStringList instanceof ConditionSet) {
+			if (cOrStringList.category === null) categories = null;
+			else categories = cOrStringList.category.value;
+		}
 
 		let nameManager = new NameManager(
 			// https://poe2db.tw/us/Sceptres#SceptresItem
@@ -1282,9 +1285,10 @@ export class NameManager {
 			new Name("Golden Charm", 20, CATEGORY.CHARM, 50), // 80/80, 1s, 15% increased Rarity of Items found
 		);
 
-		nameManager = nameManager.categories(categories).value(valueMin, valueMax);
-		if (dropLevel !== null) nameManager = nameManager .dropLevel(dropLevel, dropLevelOperator);
-		return nameManager;
+		return nameManager
+			.categories(categories)
+			.value(valueMin, valueMax)
+			.dropLevel(dropLevel, dropLevelOperator);
 	}
 	static getUniques(tier, operator = undefined) {
 		return new NameManager(
@@ -1489,6 +1493,8 @@ export class NameManager {
 	}
 
 	categories(categoriesToMatch) {
+		if (categoriesToMatch === null) return this;
+
 		let names = this.names.filter((name) => {
 			for (let categorytoMatch of categoriesToMatch.values) {
 				for (let nameCategory of name.category.values) {
@@ -1500,6 +1506,8 @@ export class NameManager {
 	}
 
 	dropLevel(dropLevel, operator = OPERATOR.EXACT) {
+		if (dropLevel === null) return this;
+
 		let names = this.names.filter((name) => {
 			switch (operator) {
 				case OPERATOR.EQUAL:

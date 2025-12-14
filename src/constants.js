@@ -26,21 +26,25 @@ export const PRICE_EXALT = 1;
 export const PRICE_CHANCE = 10;
 export const PRICE_DIV = 500; // Exalts per divine
 
-// Character level to impact what ilvl & drop level are deemed usable
-export const LEVEL_PLAYER = 1;
-export const LEVEL_ITEM = 1;
-export const LEVEL_DROP = 1;
+// Minimum price breakpoints to whitelist or hide
+export const VALUE_BAD = 2;
+export const VALUE_OTHER = 5;
 
+// BiS item levels
 export const LEVEL_BIS = 82;
+export const LEVEL_BIS_MAP_DROP = 79;
 export const LEVEL_BIS_RELIC = 80;
 export const LEVEL_BIS_WAND_STAFF = 81;
 export const LEVEL_BIS_CHARM = 81;
 export const LEVEL_BIS_FLASK = 83;
+
+// Character level to impact what ilvl & drop level are deemed usable
+export const LEVEL_PLAYER = 1;
+export const LEVEL_ITEM = 1;
+export const LEVEL_DROP = 1;
 
 // Maximum price breakpoints for gold piles
 export const GOLD_HIDE = 0; // 50
 export const GOLD_WISDOM = 100; // 100
 export const GOLD_AUGMENT = 500; // 2500
 export const GOLD_AUGMENT_EXALT = 1000; // 5000
-
-//TODO add gear & unique hiding price breakpoints

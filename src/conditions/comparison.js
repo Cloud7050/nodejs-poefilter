@@ -28,7 +28,7 @@ export class Comparison {
 	}
 
 	exportValue() {
-		let stringList = this.value instanceof StringList ? this.value : new StringList(this.value.toString())
+		let stringList = (this.value instanceof StringList) ? this.value : new StringList(this.value.toString())
 		return stringList.export();
 	}
 

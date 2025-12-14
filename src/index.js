@@ -10,7 +10,7 @@ import { sectionRarity } from "./sections/7_rarity.js";
 import { sectionOutlines } from "./sections/8_outlines.js";
 import { sectionWhitelist } from "./sections/9_whitelist.js";
 
-function makeFilter(name, showRares = false) {
+function makeFilter(name, isGoldRares = false) {
 	let filter = new Filter(name);
 
 	sectionGlobal(filter);
@@ -23,7 +23,7 @@ function makeFilter(name, showRares = false) {
 	sectionRarity(filter);
 
 	sectionOutlines(filter);
-	sectionWhitelist(filter, showRares);
+	sectionWhitelist(filter, isGoldRares);
 
 	sectionHides(filter);
 
@@ -31,4 +31,4 @@ function makeFilter(name, showRares = false) {
 }
 
 makeFilter("Cloud");
-makeFilter("Show Rares", true);
+makeFilter("Gold Rares", true);

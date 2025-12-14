@@ -60,7 +60,7 @@ export class Filter {
 			SIZE_CHANCE,
 			SIZE_DIVINE
 		];
-		const smartBlock = (refIndex, min, max) => { // Arrow function for `this` binding
+		const smartBlock = (refIndex, min = undefined, max = undefined) => { // Arrow function for `this` binding
 			let colour = colours[refIndex];
 			let size = sizes[refIndex];
 
@@ -84,7 +84,7 @@ export class Filter {
 		smartBlock(1, PRICE_AUGMENT, PRICE_EXALT);
 		smartBlock(2, PRICE_EXALT, PRICE_CHANCE);
 		smartBlock(3, PRICE_CHANCE, PRICE_DIV);
-		smartBlock(4, PRICE_DIV, null);
+		smartBlock(4, PRICE_DIV);
 	}
 
 	save() {
