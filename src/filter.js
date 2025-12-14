@@ -2,7 +2,7 @@ import fs from "fs";
 import { Block } from "./block.js";
 import { ConditionSet } from "./conditions/conditionSet.js";
 import { PRICE_AUGMENT, PRICE_CHANCE, PRICE_DIV, PRICE_EXALT } from "./constants.js";
-import { EffectSet } from "./effects/effectSet.js";
+import { COLOUR_AUGMENT, COLOUR_CHANCE, COLOUR_DIVINE, COLOUR_EXALT, COLOUR_WISDOM, EffectSet, SIZE_AUGMENT, SIZE_CHANCE, SIZE_DIVINE, SIZE_EXALT, SIZE_WISDOM } from "./effects/effectSet.js";
 
 
 
@@ -46,25 +46,45 @@ export class Filter {
 	}
 
 	priceBlocks(logic) {
-		let b = new Block();
-		logic(b.c, b.e, null, PRICE_AUGMENT, (pair) => b.e.colourWisdom(pair).sizeWisdom());
-		this.spans.push(...b.export());
+		let colours = [
+			COLOUR_WISDOM,
+			COLOUR_AUGMENT,
+			COLOUR_EXALT,
+			COLOUR_CHANCE,
+			COLOUR_DIVINE
+		];
+		let sizes = [
+			SIZE_WISDOM,
+			SIZE_AUGMENT,
+			SIZE_EXALT,
+			SIZE_CHANCE,
+			SIZE_DIVINE
+		];
+		function smartBlock(refIndex, min, max) {
+			let colour = colours[refIndex];
+			let size = sizes[refIndex];
 
-		b = new Block();
-		logic(b.c, b.e, PRICE_AUGMENT, PRICE_EXALT, (pair) => b.e.colourAugment(pair).sizeAugment());
-		this.spans.push(...b.export());
+			let b = new Block();
+			let c = b.c, e = b.e;
 
-		b = new Block();
-		logic(b.c, b.e, PRICE_EXALT, PRICE_CHANCE, (pair) => b.e.colourExalt(pair).sizeExalt());
-		this.spans.push(...b.export());
+			logic(c, e, min, max, (pair, colourOverwrite = null) => {
+				if (colourOverwrite !== null && refIndex < colours.length - 1) {
+					// Only overwrite non-divine
+					colour = colourOverwrite;
+				}
 
-		b = new Block();
-		logic(b.c, b.e, PRICE_CHANCE, PRICE_DIV, (pair) => b.e.colourChance(pair).sizeChance());
-		this.spans.push(...b.export());
+				colour.call(e, pair);
+				size.call(e);
+			});
 
-		b = new Block();
-		logic(b.c, b.e, PRICE_DIV, null, (pair) => b.e.colourDivine(pair).sizeDivine());
-		this.spans.push(...b.export());
+			this.spans.push(...b.export());
+		}
+
+		smartBlock(0, null, PRICE_AUGMENT);
+		smartBlock(1, PRICE_AUGMENT, PRICE_EXALT);
+		smartBlock(2, PRICE_EXALT, PRICE_CHANCE);
+		smartBlock(3, PRICE_CHANCE, PRICE_DIV);
+		smartBlock(4, PRICE_DIV, null);
 	}
 
 	save() {
