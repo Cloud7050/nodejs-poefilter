@@ -1527,9 +1527,9 @@ export class NameManager {
 		return new NameManager(...names);
 	}
 
-	isClass(isClass = true) {
-		let names = this.names.filter((name) => name.isClass === isClass);
-		return new NameManager(...names);
+	andClass() {
+		let names = this.names.filter((name) => name.isClass);
+		return new NameManager(this, ...names);
 	}
 
 	isMapDrop(isMapDrop = true) {
