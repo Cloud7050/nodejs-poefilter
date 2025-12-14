@@ -32,6 +32,9 @@ export const LEVEL_ITEM = 1;
 export const LEVEL_DROP = 1;
 
 export const LEVEL_BIS = 82;
+export const LEVEL_BIS_WAND_STAFF = 81;
+export const LEVEL_BIS_CHARM = 81;
+export const LEVEL_BIS_FLASK = 83;
 
 // Maximum price breakpoints for gold piles
 export const GOLD_HIDE = 0; // 50
