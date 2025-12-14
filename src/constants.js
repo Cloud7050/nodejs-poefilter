@@ -32,6 +32,7 @@ export const LEVEL_ITEM = 1;
 export const LEVEL_DROP = 1;
 
 export const LEVEL_BIS = 82;
+export const LEVEL_BIS_RELIC = 80;
 export const LEVEL_BIS_WAND_STAFF = 81;
 export const LEVEL_BIS_CHARM = 81;
 export const LEVEL_BIS_FLASK = 83;

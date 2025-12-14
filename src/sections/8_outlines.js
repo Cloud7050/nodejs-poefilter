@@ -2,13 +2,14 @@ import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { PAIR_GEAR } from "../constants.js";
+import { LEVEL_BIS, LEVEL_BIS_FLASK, LEVEL_BIS_RELIC, LEVEL_BIS_WAND_STAFF, PAIR_GEAR } from "../constants.js";
 import { Colour } from "../effects/colour.js";
 
 // Overwrite outlines. Lowest priority first as they can get overwritten below
 export function sectionOutlines(filter) {
 	quality(filter);
 	corrupted(filter);
+	incursion(filter);
 	bis(filter);
 	goodMods(filter);
 	exceptional(filter);
@@ -38,24 +39,36 @@ function corrupted(filter) {
 	});
 }
 
+function incursion(filter) {
+	filter.multiBlock((c) => {
+		c.continue();
+		c.isCorruptedTwice = true;
+	}, (c) => {
+		c.continue();
+		c.isIncursionMod = true;
+	}, (e) => {
+		e.outlineColour = Colour.CHAOS;
+	});
+}
+
 // BiS ilvl
 function bis(filter) {
 	filter.multiBlock((c) => {
 		c.continue();
+		c.categories(CATEGORY.GEAR_COMMON, CATEGORY.JEWELLERY, CATEGORY.BELT);
+		c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
+	}, (c) => {
+		c.continue();
 		c.categories(CATEGORY.RELIC);
-		c.ilvl = new Comparison(80, OPERATOR.GTE);
+		c.ilvl = new Comparison(LEVEL_BIS_RELIC, OPERATOR.GTE);
 	}, (c) => {
 		c.continue();
 		c.categories(CATEGORY.WAND, CATEGORY.STAFF, CATEGORY.CHARM);
-		c.ilvl = new Comparison(81, OPERATOR.GTE);
-	}, (c) => {
-		c.continue();
-		c.categories(CATEGORY.GEAR_COMMON, CATEGORY.JEWELLERY, CATEGORY.BELT);
-		c.ilvl = new Comparison(82, OPERATOR.GTE);
+		c.ilvl = new Comparison(LEVEL_BIS_WAND_STAFF, OPERATOR.GTE);
 	}, (c) => {
 		c.continue();
 		c.categories(CATEGORY.FLASK);
-		c.ilvl = new Comparison(83, OPERATOR.GTE);
+		c.ilvl = new Comparison(LEVEL_BIS_FLASK, OPERATOR.GTE);
 	}, (e) => {
 		e.outlineColour = Colour.QUEST;
 	});
@@ -77,8 +90,8 @@ function goodMods(filter) {
 		c.goodModArmour(true);
 	}, (c) => {
 		c.continue();
-		c.categories(CATEGORY.JEWELLERY);
-		c.goodModJewellery(true);
+		c.categories(CATEGORY.GEAR_UNCOMMON);
+		c.goodModUncommon(true);
 	}, (e) => {
 		e.outlineColour = Colour.RARE;
 	});

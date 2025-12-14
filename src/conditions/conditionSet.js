@@ -26,6 +26,8 @@ export class ConditionSet {
 	sockets = null; // Comparison
 	isCorrupted = null; // bool
 	isEnchanted = null; // bool
+	isCorruptedTwice = null; // bool
+	isIncursionMod = null; // bool
 	energyShield = null; // Comparison
 	armour = null; // Comparison
 	evasion = null; // Comparison
@@ -69,6 +71,8 @@ export class ConditionSet {
 		handle(this.sockets, (prop) => prop.export("Sockets"));
 		handle(this.isCorrupted, (prop) => `Corrupted ${this.isCorrupted ? "True" : "False"}`);
 		handle(this.isEnchanted, (prop) => `AnyEnchantment ${this.isEnchanted ? "True" : "False"}`);
+		handle(this.isCorruptedTwice, (prop) => `TwiceCorrupted ${this.isCorruptedTwice ? "True" : "False"}`);
+		handle(this.isIncursionMod, (prop) => `HasVaalUniqueMod ${this.isIncursionMod ? "True" : "False"}`);
 		handle(this.energyShield, (prop) => prop.export("BaseEnergyShield"));
 		handle(this.armour, (prop) => prop.export("BaseArmour"));
 		handle(this.evasion, (prop) => prop.export("BaseEvasion"));
