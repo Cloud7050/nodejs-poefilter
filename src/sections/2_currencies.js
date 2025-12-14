@@ -23,16 +23,16 @@ export function sectionCurrencies(filter) {
 
 function general(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getCurrencies(min, max).isBad());
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getCurrencies(min, max).isBad());
 
 		e.hide();
 		effect(PAIR_CURRENCY);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getCurrencies(min, max).isBad(false));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getCurrencies(min, max).isBad(false));
 
 		effect(PAIR_CURRENCY);
 	});
@@ -40,8 +40,8 @@ function general(filter) {
 
 function gold(filter) {
 	filter.block((c, e) => {
-		c.names = new Comparison("Gold");
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison("Gold");
 		c.count = new Comparison(GOLD_HIDE, OPERATOR.LT);
 
 		e.hide();
@@ -49,32 +49,32 @@ function gold(filter) {
 		e.backgroundColour = Colour.TRANSPARENT;
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Gold");
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison("Gold");
 		c.count = new Comparison(GOLD_WISDOM, OPERATOR.LT);
 
 		e.colourWisdom(PAIR_GOLD).sizeWisdom();
 		e.backgroundColour = Colour.TRANSPARENT;
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Gold");
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison("Gold");
 		c.count = new Comparison(GOLD_AUGMENT, OPERATOR.LT);
 
 		e.colourAugment(PAIR_GOLD).sizeAugment();
 		e.backgroundColour = Colour.TRANSPARENT;
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Gold");
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison("Gold");
 		c.count = new Comparison(GOLD_AUGMENT_EXALT, OPERATOR.LT);
 
 		e.colourExalt(PAIR_GOLD).sizeAugment();
 		e.backgroundColour = Colour.TRANSPARENT;
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Gold");
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison("Gold");
 
 		e.colourExalt(PAIR_GOLD).sizeExalt();
 		e.backgroundColour = Colour.TRANSPARENT;
@@ -83,29 +83,29 @@ function gold(filter) {
 
 function essences(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getEssences1(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getEssences1(min, max));
 
 		effect(PAIR_ESSENCE, COLOUR_WISDOM);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getEssences2(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getEssences2(min, max));
 
 		effect(PAIR_ESSENCE, COLOUR_AUGMENT);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getEssences3(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getEssences3(min, max));
 
 		effect(PAIR_ESSENCE, COLOUR_EXALT);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getEssences4(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getEssences4(min, max));
 
 		effect(PAIR_ESSENCE, COLOUR_CHANCE);
 	});
@@ -113,22 +113,22 @@ function essences(filter) {
 
 function abyss(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getAbyss1(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getAbyss1(min, max));
 
 		effect(PAIR_ABYSS, COLOUR_AUGMENT);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getAbyss2(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getAbyss2(min, max));
 
 		effect(PAIR_ABYSS, COLOUR_EXALT);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getAbyss3(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getAbyss3(min, max));
 
 		effect(PAIR_ABYSS, COLOUR_CHANCE);
 	});
@@ -137,8 +137,8 @@ function abyss(filter) {
 // Liquid emotions
 function delirium(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getEmotions(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getEmotions(min, max));
 
 		effect(PAIR_CRAFT);
 	});
@@ -147,8 +147,8 @@ function delirium(filter) {
 // Catalysts
 function ritual(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getCatalysts(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getCatalysts(min, max));
 
 		effect(PAIR_CRAFT);
 	});
@@ -157,20 +157,20 @@ function ritual(filter) {
 // Sekhema keys
 function keys(filter) {
 	filter.block((c, e) => {
-		c.names = new Comparison("Bronze Key");
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison("Bronze Key");
 
 		e.colourWisdom(PAIR_QUESTLIKE).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Silver Key");
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison("Silver Key");
 
 		e.colourAugment(PAIR_QUESTLIKE).sizeAugment();
 	});
 	filter.block((c, e) => {
-		c.names = new Comparison("Gold Key");
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison("Gold Key");
 
 		e.colourExalt(PAIR_QUESTLIKE).sizeExalt();
 	});
@@ -178,8 +178,8 @@ function keys(filter) {
 
 function splinters(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getSplinters(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getSplinters(min, max));
 
 		effect(PAIR_QUESTLIKE);
 	});
@@ -187,15 +187,15 @@ function splinters(filter) {
 
 function expedition(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getArtifacts(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getArtifacts(min, max));
 
 		effect(PAIR_MECHANIC, COLOUR_AUGMENT);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getCoinage(min, max));
 		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getCoinage(min, max));
 
 		effect(PAIR_MECHANIC, COLOUR_EXALT);
 	});

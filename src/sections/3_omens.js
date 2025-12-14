@@ -10,8 +10,8 @@ export function sectionOmens(filter) {
 
 function ritual(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getOmens(min, max));
 		c.categories(CATEGORY.OMEN);
+		c.names = new Comparison(NameManager.getOmens(min, max));
 
 		effect(PAIR_CRAFT);
 	});
@@ -19,8 +19,8 @@ function ritual(filter) {
 
 function abyss(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
-		c.names = new Comparison(NameManager.getOmensAbyss(min, max));
 		c.categories(CATEGORY.OMEN);
+		c.names = new Comparison(NameManager.getOmensAbyss(min, max));
 
 		effect(PAIR_ABYSS);
 	});
