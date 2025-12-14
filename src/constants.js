@@ -38,6 +38,8 @@ export const LEVEL_BIS_WAND_STAFF = 81;
 export const LEVEL_BIS_CHARM = 81;
 export const LEVEL_BIS_FLASK = 83;
 
+export const LEVEL_HEAVY_BELT = 50;
+
 // Character level to impact what ilvl & drop level are deemed usable
 export const LEVEL_PLAYER = 1;
 export const LEVEL_ITEM = 1;

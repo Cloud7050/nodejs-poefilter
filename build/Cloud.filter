@@ -3197,35 +3197,16 @@ Show
 	Continue
 
 Show
-	BaseType == "Viper Cap"
+	Class == Belts
 	Rarity == Normal
+	ItemLevel >= 50
 	Corrupted False
 
 	SetFontSize 37
 	MinimapIcon 0 Blue Kite
 
 Show
-	BaseType == "Heavy Belt"
-	Rarity == Normal
-	Corrupted False
-
-	SetFontSize 45
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Kite
-
-Show
-	BaseType == "Martyr Crown"
-	Rarity == Normal
-	Corrupted False
-
-	SetFontSize 45
-	PlayEffect Blue
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Blue Kite
-
-Show
-	BaseType == "Silver Charm"
+	BaseType == "Heavy Belt" "Martyr Crown" "Silver Charm" "Viper Cap"
 	Rarity == Normal
 	Corrupted False
 

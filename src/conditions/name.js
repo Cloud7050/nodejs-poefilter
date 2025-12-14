@@ -1,13 +1,15 @@
 export class Name {
+	static FLAG_BAD = "Currency to hide";
+	static FLAG_SPECIAL = "The Fractured Lake unique map drop";
+	static FLAG_CLASS = "Explicitly mark as class item";
+	static FLAG_CHANCE = "Valued as chance base";
+
 	name;
 	value;
 	category;
 	dropLevel;
 
-	isBad = false;
-	isMapDrop = false;
-
-	isClass = false;
+	flags = new Set();
 
 	constructor(name, value, category = null, dropLevel = null) {
 		this.name = name;
@@ -16,17 +18,27 @@ export class Name {
 		this.dropLevel = dropLevel;
 	}
 
+	flag(flag) {
+		this.flags.add(flag);
+		return this;
+	}
+	isFlag(flag) {
+		return this.flags.has(flag);
+	}
 	bad() {
-		this.isBad = true;
+		this.flag(Name.FLAG_BAD);
 		return this;
 	}
-	mapDrop() {
-		this.isMapDrop = true;
+	special() {
+		this.flag(Name.FLAG_SPECIAL);
 		return this;
 	}
-
 	class() {
-		this.isClass = true;
+		this.flag(Name.FLAG_CLASS);
+		return this;
+	}
+	chance() {
+		this.flag(Name.FLAG_CHANCE);
 		return this;
 	}
 

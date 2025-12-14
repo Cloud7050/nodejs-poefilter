@@ -1,4 +1,4 @@
-import { PRICE_DIV } from "../constants.js";
+import { LEVEL_HEAVY_BELT, PRICE_DIV } from "../constants.js";
 import { CATEGORY } from "./category.js";
 import { ConditionSet } from "./conditionSet.js";
 import { Name } from "./name.js";
@@ -187,7 +187,6 @@ export class NameManager {
 			new Name("Preserved Collarbone", 1.4),
 			new Name("Preserved Vertebrae", 3.6),
 
-			//TODO merge abyss as core. This price has no chance sizing block
 			new Name("Preserved Cranium", 10),
 		).value(min, max);
 	}
@@ -556,7 +555,7 @@ export class NameManager {
 		).value(min, max);
 	}
 
-	static getGear(cOrStringList, valueMin = undefined, valueMax = undefined, dropLevel = null, dropLevelOperator = undefined) {
+	static getGear(cOrStringList = null, valueMin = undefined, valueMax = undefined, dropLevel = null, dropLevelOperator = undefined) {
 		let categories = cOrStringList;
 		if (cOrStringList instanceof ConditionSet) {
 			if (cOrStringList.category === null) categories = null;
@@ -1201,10 +1200,10 @@ export class NameManager {
 			new Name("Crimson Amulet", 1, CATEGORY.AMULET, 0), // 2–4 Life Regeneration per second
 
 			new Name("Azure Amulet", 10, CATEGORY.AMULET, 0), // 20–30% increased Mana Regeneration Rate
-			new Name("Dusk Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			new Name("Dusk Amulet", 10, CATEGORY.AMULET, 0).special(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Amulet", 10, CATEGORY.AMULET, 0).special(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Amulet", 10, CATEGORY.AMULET, 0).special(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Amulet", 10, CATEGORY.AMULET, 0).special(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 			new Name("Amber Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Strength
 			new Name("Jade Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Dexterity
 			new Name("Lapis Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Intelligence
@@ -1223,10 +1222,10 @@ export class NameManager {
 			new Name("Sapphire Ring", 5, CATEGORY.RING, 12), // +20–30% to Cold Resistance
 			new Name("Topaz Ring", 5, CATEGORY.RING, 16), // +20–30% to Lightning Resistance
 
-			new Name("Dusk Ring", 10, CATEGORY.RING, 0).mapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Ring", 10, CATEGORY.RING, 0).mapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Ring", 10, CATEGORY.RING, 0).mapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Ring", 10, CATEGORY.RING, 0).mapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			new Name("Dusk Ring", 10, CATEGORY.RING, 0).special(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Ring", 10, CATEGORY.RING, 0).special(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Ring", 10, CATEGORY.RING, 0).special(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Ring", 10, CATEGORY.RING, 0).special(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 			new Name("Amethyst Ring", 10, CATEGORY.RING, 20), // +7–13% to Chaos Resistance
 			new Name("Pearl Ring", 10, CATEGORY.RING, 32), // 7–10% increased Cast Speed
 			new Name("Prismatic Ring", 10, CATEGORY.RING, 35), // +7–10% to all Elemental Resistances
@@ -1246,7 +1245,7 @@ export class NameManager {
 
 			new Name("Long Belt", 10, CATEGORY.BELT, 20), // 15–20% increased Charm Effect Duration
 			new Name("Ornate Belt", 10, CATEGORY.BELT, 31), // 10–15% reduced Charm Charges used
-			new Name("Heavy Belt", 10, CATEGORY.BELT, 50), // 20–30% increased Stun Threshold
+			new Name("Heavy Belt", 10, CATEGORY.BELT, LEVEL_HEAVY_BELT), // 20–30% increased Stun Threshold
 
 			// https://poe2db.tw/us/Flasks#Flask
 			new Name("Lesser Life Flask", 1, CATEGORY.FLASK_LIFE, 0),
@@ -1290,9 +1289,19 @@ export class NameManager {
 			.value(valueMin, valueMax)
 			.dropLevel(dropLevel, dropLevelOperator);
 	}
-	static getUniques(tier, operator = undefined) {
+
+	static getUniques(min = undefined, max = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Unique_item
+			//TODO these are the normal base prices, and other outcomes have not been commented
+			new Name("Viper Cap", 5).chance(), // Constricting Command
+
+			new Name("Heavy Belt", 20).chance(), // Headhunter
+			new Name("Martyr Crown", 20).chance(), // Veil of the Night
+			new Name("Silver Charm", 20).chance(), // The Fall of the Axe
+
+
+
 			// new Name("Acrid Wand", TIER.NEVER), // Cursecarver
 			// new Name("Ashen Staff", TIER.NEVER), // Dusk Vigil
 			// new Name("Attuned Wand", TIER.NEVER), // Lifesprig
@@ -1454,7 +1463,7 @@ export class NameManager {
 
 			// new Name("Fine Belt", TIER.CLASS), // GOOD: Shavronne's Satchel. CLASS: Darkness Enthroned
 			// new Name("Ultimate Life Flask", TIER.CLASS), // Olroth's Resolve
-		).compare(tier, operator);
+		).value(min, max);
 	}
 	static getUniqueTablets(min = undefined, max = undefined) {
 		return new NameManager(
@@ -1463,8 +1472,8 @@ export class NameManager {
 			new Name("Delirium Precursor Tablet", 1 / 2), // Clear Skies
 
 			new Name("Breach Precursor Tablet", 3), // Wraeclast Besieged
-			new Name("Overseer Precursor Tablet", (24 + 4) / 2), // Season of the Hunt, Cruel Hegemony
 
+			new Name("Overseer Precursor Tablet", (24 + 4) / 2), // Season of the Hunt, Cruel Hegemony
 			new Name("Precursor Tablet", ((0.9 * PRICE_DIV) + (PRICE_DIV / 5)) / 2), // Visions of Paradise > The Grand Project
 			new Name("Ritual Precursor Tablet", 0.9 * PRICE_DIV), // Freedom of Faith
 		).value(min, max);
@@ -1480,6 +1489,16 @@ export class NameManager {
 			new Name("Incense Relic", 98 * PRICE_DIV), // The Last Flame
 		).value(min, max);
 	}
+
+	// static getChanceBases(min = undefined, max = undefined) {
+	// 	return new NameManager(
+	// 		new Name("Viper Cap", 5), // Constricting Command
+
+	// 		new Name("Heavy Belt", 20), // Headhunter
+	// 		new Name("Martyr Crown", 20), // Veil of the Night
+	// 		new Name("Silver Charm", 20), // The Fall of the Axe
+	// 	).value(min, max);
+	// }
 
 	// Inclusive of min, exclusive of max
 	value(min = null, max = null) {
@@ -1532,21 +1551,24 @@ export class NameManager {
 		return new NameManager(...names);
 	}
 
-	isBad(isBad = true) {
-		let names = this.names.filter((name) => name.isBad === isBad);
+	isFlag(flag, has = true) {
+		let names = this.names.filter((name) => name.isFlag(flag) === has);
 		return new NameManager(...names);
 	}
-	isMapDrop(isMapDrop = true) {
-		let names = this.names.filter((name) => name.isMapDrop === isMapDrop);
-		return new NameManager(...names);
+	isBad(has = undefined) {
+		return this.isFlag(Name.FLAG_BAD, has);
 	}
-
-	isClass(isClass = true) {
-		let names = this.names.filter((name) => name.isClass === isClass);
-		return new NameManager(...names);
+	isSpecial(has = undefined) {
+		return this.isFlag(Name.FLAG_SPECIAL, has);
 	}
-	andClass() {
-		return new NameManager(this, this.isClass());
+	isClass(has = undefined) {
+		return this.isFlag(Name.FLAG_CLASS, has);
+	}
+	// andClass() {
+	// 	return new NameManager(this, this.isClass());
+	// }
+	isChance(has = undefined) {
+		return this.isFlag(Name.FLAG_CHANCE, has);
 	}
 
 	export() {

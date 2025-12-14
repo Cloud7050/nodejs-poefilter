@@ -3,7 +3,7 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { LEVEL_BIS_MAP_DROP, PAIR_GEAR, VALUE_BAD } from "../constants.js";
+import { LEVEL_BIS_MAP_DROP, LEVEL_HEAVY_BELT, PAIR_GEAR, VALUE_BAD } from "../constants.js";
 
 // Stop filter here; never hide these. Then need not account for them when hiding
 export function sectionWhitelist(filter, isGoldRares) {
@@ -17,24 +17,24 @@ export function sectionWhitelist(filter, isGoldRares) {
 // Chance bases
 function chance(filter) {
 	// Resize & whitelist
-	filter.multiBlock((c) => {
-		c.names = new Comparison("Viper Cap"); // Constricting Command
+	filter.multiBlock((c) => { // Omen of the Ancients > Heavy Belt
+		c.categories(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(LEVEL_HEAVY_BELT, OPERATOR.GTE);
 		c.isCorrupted = false;
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR, true).sizeExalt();
 	});
 
+	// filter.priceBlocks((c, e, min, max, effect) => {
+	// 	c.names = new Comparison(NameManager.getChanceBases(min, max));
+	// 	c.rarity = new Comparison(RARITY.NORMAL);
+	// 	c.isCorrupted = false;
+
+	// 	effect(PAIR_GEAR, COLOUR_WISDOM);
+	// });
 	filter.multiBlock((c) => {
-		c.names = new Comparison("Heavy Belt"); // Headhunter
-		c.rarity = new Comparison(RARITY.NORMAL);
-		c.isCorrupted = false;
-	}, (c) => {
-		c.names = new Comparison("Martyr Crown"); // Veil of the Night
-		c.rarity = new Comparison(RARITY.NORMAL);
-		c.isCorrupted = false;
-	}, (c) => {
-		c.names = new Comparison("Silver Charm"); // The Fall of the Axe
+		c.names = new Comparison(NameManager.getUniques().isChance());
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.isCorrupted = false;
 	}, (e) => {
@@ -45,7 +45,7 @@ function chance(filter) {
 // Unique map drops
 function mapDrop(filter) {
 	filter.multiWhitelist((c) => {
-		c.names = new Comparison(NameManager.getGear(c).isMapDrop());
+		c.names = new Comparison(NameManager.getGear().isSpecial());
 		c.ilvl = new Comparison(LEVEL_BIS_MAP_DROP, OPERATOR.GTE);
 	});
 }
