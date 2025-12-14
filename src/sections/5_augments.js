@@ -1,7 +1,8 @@
 import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { NameManager } from "../conditions/nameManager.js";
-import { PAIR_AUGMENT, PRICE_CHANCE, PRICE_DIV, PRICE_EXALT } from "../constants.js";
+import { PAIR_AUGMENT } from "../constants.js";
+import { COLOUR_AUGMENT, COLOUR_WISDOM } from "../effects/effectSet.js";
 
 export function sectionAugments(filter) {
 	runes(filter);
@@ -11,101 +12,41 @@ export function sectionAugments(filter) {
 }
 
 function runes(filter) {
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getRunes1(null, PRICE_EXALT));
+	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.AUGMENT);
+		c.names = new Comparison(NameManager.getRunes1(min, max));
 
-		e.colourWisdom(PAIR_AUGMENT).sizeAugment();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getRunes1(PRICE_EXALT, PRICE_CHANCE));
-		c.categories(CATEGORY.AUGMENT);
-
-		e.colourWisdom(PAIR_AUGMENT).sizeExalt();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getRunes1(PRICE_CHANCE));
-		c.categories(CATEGORY.AUGMENT);
-
-		e.colourWisdom(PAIR_AUGMENT).sizeChance();
+		effect(PAIR_AUGMENT, COLOUR_WISDOM);
 	});
 
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getRunes2(null, PRICE_EXALT));
+	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.AUGMENT);
+		c.names = new Comparison(NameManager.getRunes2(min, max));
 
-		e.colourAugment(PAIR_AUGMENT).sizeAugment();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getRunes2(PRICE_EXALT, PRICE_CHANCE));
-		c.categories(CATEGORY.AUGMENT);
-
-		e.colourAugment(PAIR_AUGMENT).sizeExalt();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getRunes2(PRICE_CHANCE));
-		c.categories(CATEGORY.AUGMENT);
-
-		e.colourAugment(PAIR_AUGMENT).sizeChance();
+		effect(PAIR_AUGMENT, COLOUR_AUGMENT);
 	});
 
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getRunes3());
+	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.AUGMENT);
+		c.names = new Comparison(NameManager.getRunes3(min, max));
 
-		e.colourExalt(PAIR_AUGMENT).sizeAugment();
+		effect(PAIR_AUGMENT, COLOUR_EXALT);
 	});
 
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getRunes4(null, PRICE_EXALT));
+	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.AUGMENT);
+		c.names = new Comparison(NameManager.getRunes4(min, max));
 
-		e.colourChance(PAIR_AUGMENT).sizeAugment();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getRunes4(PRICE_EXALT, PRICE_CHANCE));
-		c.categories(CATEGORY.AUGMENT);
-
-		e.colourChance(PAIR_AUGMENT).sizeExalt();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getRunes4(PRICE_CHANCE, PRICE_DIV));
-		c.categories(CATEGORY.AUGMENT);
-
-		e.colourChance(PAIR_AUGMENT).sizeChance();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getRunes4(PRICE_DIV));
-		c.categories(CATEGORY.AUGMENT);
-
-		e.colourDivine(PAIR_AUGMENT).sizeDivine();
+		effect(PAIR_AUGMENT, COLOUR_CHANCE);
 	});
 }
 
 function other(filter) {
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getAugments(null, PRICE_EXALT));
+	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.AUGMENT);
+		c.names = new Comparison(NameManager.getAugments(min, max));
 
-		e.colourAugment(PAIR_AUGMENT).sizeAugment();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getAugments(PRICE_EXALT, PRICE_CHANCE));
-		c.categories(CATEGORY.AUGMENT);
-
-		e.colourExalt(PAIR_AUGMENT).sizeExalt();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getAugments(PRICE_CHANCE, PRICE_DIV));
-		c.categories(CATEGORY.AUGMENT);
-
-		e.colourChance(PAIR_AUGMENT).sizeChance();
-	});
-	filter.block((c, e) => {
-		c.names = new Comparison(NameManager.getAugments(PRICE_DIV));
-		c.categories(CATEGORY.AUGMENT);
-
-		e.colourDivine(PAIR_AUGMENT).sizeDivine();
+		effect(PAIR_AUGMENT);
 	});
 }
 
