@@ -60,7 +60,7 @@ export class Filter {
 			SIZE_CHANCE,
 			SIZE_DIVINE
 		];
-		function smartBlock(refIndex, min, max) {
+		const smartBlock = (refIndex, min, max) => { // Arrow function for `this` binding
 			let colour = colours[refIndex];
 			let size = sizes[refIndex];
 

@@ -2,7 +2,7 @@ import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { PAIR_AUGMENT } from "../constants.js";
-import { COLOUR_AUGMENT, COLOUR_WISDOM } from "../effects/effectSet.js";
+import { COLOUR_AUGMENT, COLOUR_CHANCE, COLOUR_EXALT, COLOUR_WISDOM } from "../effects/effectSet.js";
 
 export function sectionAugments(filter) {
 	runes(filter);

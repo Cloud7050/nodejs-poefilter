@@ -3,6 +3,7 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
+import { StringList } from "../conditions/stringList.js";
 import { LEVEL_BIS, LEVEL_BIS_CHARM, LEVEL_BIS_FLASK, PAIR_GEAR, PAIR_JEWEL, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../constants.js";
 import { COLOUR_CHANCE } from "../effects/effectSet.js";
 
