@@ -12,8 +12,8 @@ export class ConditionSet {
 	isContinue = false;
 
 	// Multi-word names must be wrapped in double quotes
-	names = null; // Comparison
 	category = null; // Comparison
+	names = null; // Comparison
 	rarity = null; // Comparison
 	ilvl = null // Comparison
 	dropLevel = null // Comparison
@@ -55,8 +55,8 @@ export class ConditionSet {
 			for (let prop of props) spans.push(spanCallback(prop));
 		}
 
-		handle(this.names, (prop) => prop.export("BaseType"));
 		handle(this.category, (prop) => prop.export("Class"));
+		handle(this.names, (prop) => prop.export("BaseType"));
 		handle(this.rarity, (prop) => prop.export("Rarity"));
 		handle(this.ilvl, (prop) => prop.export("ItemLevel"));
 		handle(this.dropLevel, (prop) => prop.export("DropLevel"));
@@ -116,20 +116,20 @@ export class ConditionSet {
 		return this;
 	}
 
-	onlyEnergyShield() {
-		this.energyShield = new Comparison(0, OPERATOR.GT);
-		this.armour = new Comparison(0);
-		this.evasion = new Comparison(0);
-		return this;
-	}
-	hasArmour() {
-		this.armour = new Comparison(0, OPERATOR.GT);
-		return this;
-	}
-	hasEvasion() {
-		this.evasion = new Comparison(0, OPERATOR.GT);
-		return this;
-	}
+	// onlyEnergyShield() {
+	// 	this.energyShield = new Comparison(0, OPERATOR.GT);
+	// 	this.armour = new Comparison(0);
+	// 	this.evasion = new Comparison(0);
+	// 	return this;
+	// }
+	// hasArmour() {
+	// 	this.armour = new Comparison(0, OPERATOR.GT);
+	// 	return this;
+	// }
+	// hasEvasion() {
+	// 	this.evasion = new Comparison(0, OPERATOR.GT);
+	// 	return this;
+	// }
 
 	hasModCount(count, operator = OPERATOR.EXACT) {
 		const LETTERS = [..."abcdefghijklmnopqrstuvwxyz"];
