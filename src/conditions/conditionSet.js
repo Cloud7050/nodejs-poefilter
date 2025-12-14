@@ -671,7 +671,7 @@ export class ConditionSet {
 		this.mods = new Comparison(phrases, OPERATOR.GTE, 1);
 		return this;
 	}
-	goodModJewellery(includeOther = false) {
+	goodModUncommon(includeOther = false) {
 		let phrases = [
 			//// x% increased maximum Life
 			// Amulets

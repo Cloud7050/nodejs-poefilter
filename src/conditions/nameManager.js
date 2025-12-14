@@ -1528,15 +1528,17 @@ export class NameManager {
 		let names = this.names.filter((name) => name.isBad === isBad);
 		return new NameManager(...names);
 	}
-
-	andClass() {
-		let names = this.names.filter((name) => name.isClass);
-		return new NameManager(this, ...names);
-	}
-
 	isMapDrop(isMapDrop = true) {
 		let names = this.names.filter((name) => name.isMapDrop === isMapDrop);
 		return new NameManager(...names);
+	}
+
+	isClass(isClass = true) {
+		let names = this.names.filter((name) => name.isClass === isClass);
+		return new NameManager(...names);
+	}
+	andClass() {
+		return new NameManager(this, this.isClass());
 	}
 
 	export() {
