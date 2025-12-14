@@ -26,13 +26,6 @@ function chance(filter) {
 		e.colourWisdom(PAIR_GEAR, true).sizeExalt();
 	});
 
-	// filter.priceBlocks((c, e, min, max, effect) => {
-	// 	c.names = new Comparison(NameManager.getChanceBases(min, max));
-	// 	c.rarity = new Comparison(RARITY.NORMAL);
-	// 	c.isCorrupted = false;
-
-	// 	effect(PAIR_GEAR, COLOUR_WISDOM);
-	// });
 	filter.multiBlock((c) => {
 		c.names = new Comparison(NameManager.getUniques().isChance());
 		c.rarity = new Comparison(RARITY.NORMAL);

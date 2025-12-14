@@ -1490,16 +1490,6 @@ export class NameManager {
 		).value(min, max);
 	}
 
-	// static getChanceBases(min = undefined, max = undefined) {
-	// 	return new NameManager(
-	// 		new Name("Viper Cap", 5), // Constricting Command
-
-	// 		new Name("Heavy Belt", 20), // Headhunter
-	// 		new Name("Martyr Crown", 20), // Veil of the Night
-	// 		new Name("Silver Charm", 20), // The Fall of the Axe
-	// 	).value(min, max);
-	// }
-
 	// Inclusive of min, exclusive of max
 	value(min = null, max = null) {
 		let names = this.names.filter((name) => {
