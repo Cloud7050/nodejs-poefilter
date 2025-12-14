@@ -198,25 +198,17 @@ export class NameManager {
 		).value(min, max);
 	}
 
-	static getEmotions1(min = undefined, max = undefined) {
+	static getEmotions(min = undefined, max = undefined) {
 		return new NameManager(
 			new Name("Diluted Liquid Ire", 1 / 3),
 
 			new Name("Diluted Liquid Greed", 1.5),
-			new Name("Diluted Liquid Guilt", 4.17),
-		).value(min, max);
-	}
-	static getEmotions2(min = undefined, max = undefined) {
-		return new NameManager(
 			new Name("Liquid Envy", 2.57),
 			new Name("Liquid Paranoia", 4.1),
+			new Name("Diluted Liquid Guilt", 4.17),
 			new Name("Liquid Despair", 4.17),
 
 			new Name("Liquid Disgust", 15.56),
-		).value(min, max);
-	}
-	static getEmotions3(min = undefined, max = undefined) {
-		return new NameManager(
 			new Name("Concentrated Liquid Suffering", 30),
 			new Name("Concentrated Liquid Fear", 40),
 			new Name("Concentrated Liquid Isolation", 85),
