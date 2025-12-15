@@ -3,22 +3,22 @@ import { Colour, PRESET } from "./effects/colour.js";
 // Colour pairs
 // ROSE
 export const PAIR_CURRENCY = [Colour.RED, PRESET.RED];
-// ORANGE
-export const PAIR_CRAFT = [Colour.TANGERINE, PRESET.ORANGE];
+export const PAIR_MECHANIC2 = [Colour.ORANGE, PRESET.ORANGE]; // Abyssal omens, expedition coinage
+export const PAIR_MECHANIC1 = [Colour.TANGERINE, PRESET.ORANGE]; // Ritual omens, abyssal bones, expedition artifacts, breach catalysts, delirium emotions
 // GOLD
 export const PAIR_GOLD = [Colour.YELLOW, PRESET.YELLOW];
-export const PAIR_QUESTLIKE = [Colour.LIME, PRESET.GREEN];
-export const PAIR_QUEST = [Colour.GREEN, PRESET.GREEN];
-export const PAIR_MECHANIC = [Colour.SEAFOAM, PRESET.BROWN];
+export const PAIR_MAP1 = [Colour.LIME, PRESET.GREEN]; // Waystones, expedition logbooks
+export const PAIR_QUEST = [Colour.GREEN, PRESET.GREEN]; // Sekhema keys, idols of estazunti, rotten satchel charges
+export const PAIR_MAPLIKE = [Colour.SEAFOAM, PRESET.BROWN]; // Tablets, relics
 // TEAL
 export const PAIR_GEM = [Colour.CYAN, PRESET.GREY];
 // SKY
 export const PAIR_AUGMENT = [Colour.CERULEAN, PRESET.CYAN];
 export const PAIR_JEWEL = [Colour.BLUE, PRESET.BLUE];
-export const PAIR_GEAR = [Colour.LAPIS, PRESET.BLUE];
+export const PAIR_GEAR = [Colour.LAPIS, PRESET.BLUE]; // Vault reliquary keys
 export const PAIR_ESSENCE = [Colour.PURPLE, PRESET.PURPLE];
-export const PAIR_ABYSS = [Colour.VIOLET, PRESET.PINK];
-// PINK
+export const PAIR_LEAGUE = [Colour.VIOLET, PRESET.PURPLE];
+export const PAIR_MAP2 = [Colour.PINK, PRESET.PINK]; // Pinnacle fragment keys, trial tickets > chaos fate keys, splinters/kulemak's invitations
 
 // Minimum price breakpoints to style as a certain size
 export const PRICE_AUGMENT = 1 / 100;

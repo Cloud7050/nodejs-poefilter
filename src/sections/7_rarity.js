@@ -3,7 +3,7 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { LEVEL_BIS, LEVEL_BIS_CHARM, LEVEL_BIS_FLASK, PAIR_GEAR, PAIR_JEWEL, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../constants.js";
+import { LEVEL_BIS, LEVEL_BIS_CHARM, LEVEL_BIS_FLASK, PAIR_GEAR, PAIR_JEWEL, PAIR_MAP1, PAIR_MAPLIKE } from "../constants.js";
 import { COLOUR_CHANCE } from "../effects/effectSet.js";
 
 export function sectionRarity(filter) {
@@ -494,7 +494,7 @@ function waystones(filter) {
 		c.categories(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
-		e.colourWisdom(PAIR_QUESTLIKE).sizeChance();
+		e.colourWisdom(PAIR_MAP1).sizeChance();
 	});
 
 	filter.block((c, e) => {
@@ -502,7 +502,7 @@ function waystones(filter) {
 		c.categories(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
-		e.colourAugment(PAIR_QUESTLIKE).sizeChance();
+		e.colourAugment(PAIR_MAP1).sizeChance();
 	});
 
 	filter.block((c, e) => {
@@ -510,7 +510,7 @@ function waystones(filter) {
 		c.categories(CATEGORY.WAYSTONE);
 		c.rarity = new Comparison(RARITY.RARE);
 
-		e.colourExalt(PAIR_QUESTLIKE).sizeChance();
+		e.colourExalt(PAIR_MAP1).sizeChance();
 	});
 }
 
@@ -520,7 +520,7 @@ function tablets(filter) {
 		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
-		e.colourWisdom(PAIR_MECHANIC).sizeExalt();
+		e.colourWisdom(PAIR_MAPLIKE).sizeExalt();
 	});
 
 	filter.multiBlock((c) => {
@@ -528,7 +528,7 @@ function tablets(filter) {
 		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.MAGIC);
 	}, (e) => {
-		e.colourAugment(PAIR_MECHANIC).sizeExalt();
+		e.colourAugment(PAIR_MAPLIKE).sizeExalt();
 	});
 
 	filter.block((c, e) => {
@@ -536,7 +536,7 @@ function tablets(filter) {
 		c.categories(CATEGORY.TABLET);
 		c.rarity = new Comparison(RARITY.RARE);
 
-		e.colourExalt(PAIR_MECHANIC).sizeExalt();
+		e.colourExalt(PAIR_MAPLIKE).sizeExalt();
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
@@ -545,7 +545,7 @@ function tablets(filter) {
 		c.names = new Comparison(NameManager.getUniqueTablets(min, max));
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		effect(PAIR_MECHANIC, COLOUR_CHANCE);
+		effect(PAIR_MAPLIKE, COLOUR_CHANCE);
 	});
 }
 
@@ -556,7 +556,7 @@ function relics(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isLowTier();
 	}, (e) => {
-		e.colourAugment(PAIR_MECHANIC).sizeAugment();
+		e.colourAugment(PAIR_MAPLIKE).sizeAugment();
 	});
 
 	filter.multiBlock((c) => {
@@ -565,7 +565,7 @@ function relics(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isMaxTier();
 	}, (e) => {
-		e.colourAugment(PAIR_MECHANIC).sizeExalt();
+		e.colourAugment(PAIR_MAPLIKE).sizeExalt();
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
@@ -574,6 +574,6 @@ function relics(filter) {
 		c.names = new Comparison(NameManager.getUniqueRelics(min, max));
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		effect(PAIR_MECHANIC, COLOUR_CHANCE);
+		effect(PAIR_MAPLIKE, COLOUR_CHANCE);
 	});
 }

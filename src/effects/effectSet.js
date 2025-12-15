@@ -1,4 +1,3 @@
-import { Colour } from "./colour.js";
 
 export class EffectSet {
 	static TEXT_SIZE = {
@@ -77,11 +76,16 @@ export class EffectSet {
 		return spans;
 	}
 
-	fade() {
-		this.textSize = EffectSet.TEXT_SIZE.SMALLEST;
-		this.backgroundColour = Colour.BLACK_TRANSLUCENT;
-		this.outlineColour = Colour.TRANSPARENT;
-		this.mapSize = EffectSet.MAP_SIZE.DISABLE;
+	// fade() {
+	// 	this.textSize = EffectSet.TEXT_SIZE.SMALLEST;
+	// 	this.backgroundColour = Colour.BLACK_TRANSLUCENT;
+	// 	this.outlineColour = Colour.TRANSPARENT;
+	// 	this.mapSize = EffectSet.MAP_SIZE.DISABLE;
+	// 	return this;
+	// }
+
+	muteCustom() {
+		this.sound = null;
 		return this;
 	}
 

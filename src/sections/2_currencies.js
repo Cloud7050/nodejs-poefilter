@@ -2,7 +2,7 @@ import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { GOLD_AUGMENT, GOLD_AUGMENT_EXALT, GOLD_HIDE, GOLD_WISDOM, PAIR_ABYSS, PAIR_CRAFT, PAIR_CURRENCY, PAIR_ESSENCE, PAIR_GOLD, PAIR_MECHANIC, PAIR_QUESTLIKE } from "../constants.js";
+import { GOLD_AUGMENT, GOLD_AUGMENT_EXALT, GOLD_HIDE, GOLD_WISDOM, PAIR_CURRENCY, PAIR_ESSENCE, PAIR_GOLD, PAIR_MAP2, PAIR_MECHANIC1, PAIR_MECHANIC2, PAIR_QUEST } from "../constants.js";
 import { Colour } from "../effects/colour.js";
 import { COLOUR_AUGMENT, COLOUR_CHANCE, COLOUR_EXALT, COLOUR_WISDOM } from "../effects/effectSet.js";
 
@@ -12,11 +12,12 @@ export function sectionCurrencies(filter) {
 
 	essences(filter);
 	abyss(filter);
-	delirium(filter);
-	ritual(filter);
-	keys(filter);
-	splinters(filter);
 	expedition(filter);
+	breach(filter);
+	delirium(filter);
+
+	splinters(filter);
+	keys(filter);
 
 	base(filter);
 }
@@ -111,26 +112,54 @@ function essences(filter) {
 	});
 }
 
+// Abyssal bones
 function abyss(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.CURRENCY);
 		c.names = new Comparison(NameManager.getAbyss1(min, max));
 
-		effect(PAIR_ABYSS, COLOUR_AUGMENT);
+		effect(PAIR_MECHANIC1, COLOUR_AUGMENT);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.CURRENCY);
 		c.names = new Comparison(NameManager.getAbyss2(min, max));
 
-		effect(PAIR_ABYSS, COLOUR_EXALT);
+		effect(PAIR_MECHANIC1, COLOUR_EXALT);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.CURRENCY);
 		c.names = new Comparison(NameManager.getAbyss3(min, max));
 
-		effect(PAIR_ABYSS, COLOUR_CHANCE);
+		effect(PAIR_MECHANIC1, COLOUR_CHANCE);
+	});
+}
+
+// Artifacts, coinage
+function expedition(filter) {
+	filter.priceBlocks((c, e, min, max, effect) => {
+		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getArtifacts(min, max));
+
+		effect(PAIR_MECHANIC1, COLOUR_AUGMENT);
+	});
+
+	filter.priceBlocks((c, e, min, max, effect) => {
+		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getCoinage(min, max));
+
+		effect(PAIR_MECHANIC2, COLOUR_EXALT);
+	});
+}
+
+// Catalysts
+function breach(filter) {
+	filter.priceBlocks((c, e, min, max, effect) => {
+		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getCatalysts(min, max));
+
+		effect(PAIR_MECHANIC1);
 	});
 }
 
@@ -140,17 +169,16 @@ function delirium(filter) {
 		c.categories(CATEGORY.CURRENCY);
 		c.names = new Comparison(NameManager.getEmotions(min, max));
 
-		effect(PAIR_CRAFT);
+		effect(PAIR_MECHANIC1);
 	});
 }
 
-// Catalysts
-function ritual(filter) {
+function splinters(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.CURRENCY);
-		c.names = new Comparison(NameManager.getCatalysts(min, max));
+		c.names = new Comparison(NameManager.getSplinters(min, max));
 
-		effect(PAIR_CRAFT);
+		effect(PAIR_MAP2);
 	});
 }
 
@@ -160,44 +188,19 @@ function keys(filter) {
 		c.categories(CATEGORY.CURRENCY);
 		c.names = new Comparison("Bronze Key");
 
-		e.colourWisdom(PAIR_QUESTLIKE).sizeAugment();
+		e.colourWisdom(PAIR_QUEST).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.categories(CATEGORY.CURRENCY);
 		c.names = new Comparison("Silver Key");
 
-		e.colourAugment(PAIR_QUESTLIKE).sizeAugment();
+		e.colourAugment(PAIR_QUEST).sizeAugment();
 	});
 	filter.block((c, e) => {
 		c.categories(CATEGORY.CURRENCY);
 		c.names = new Comparison("Gold Key");
 
-		e.colourExalt(PAIR_QUESTLIKE).sizeExalt();
-	});
-}
-
-function splinters(filter) {
-	filter.priceBlocks((c, e, min, max, effect) => {
-		c.categories(CATEGORY.CURRENCY);
-		c.names = new Comparison(NameManager.getSplinters(min, max));
-
-		effect(PAIR_QUESTLIKE);
-	});
-}
-
-function expedition(filter) {
-	filter.priceBlocks((c, e, min, max, effect) => {
-		c.categories(CATEGORY.CURRENCY);
-		c.names = new Comparison(NameManager.getArtifacts(min, max));
-
-		effect(PAIR_MECHANIC, COLOUR_AUGMENT);
-	});
-
-	filter.priceBlocks((c, e, min, max, effect) => {
-		c.categories(CATEGORY.CURRENCY);
-		c.names = new Comparison(NameManager.getCoinage(min, max));
-
-		effect(PAIR_MECHANIC, COLOUR_EXALT);
+		e.colourExalt(PAIR_QUEST).sizeExalt();
 	});
 }
 

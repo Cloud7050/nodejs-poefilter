@@ -3,7 +3,7 @@ import { StringList } from "./stringList.js";
 // https://poe2db.tw/us/Items
 
 //// With rarity
-// Witch weapons
+// Class weapons
 const SPEAR = new StringList("Spears");
 const MAIN_CLASS = new StringList(SPEAR);
 const BUCKLER = new StringList("Bucklers");
@@ -104,12 +104,14 @@ const UNCUT_SUPPORT = new StringList("Uncut Support Gems");
 const UNCUT = new StringList(UNCUT_MAIN, UNCUT_SUPPORT);
 const GEM = new StringList("Skill Gems", "Support Gems");
 const AUGMENT = new StringList("Augment");
+const QUEST = new StringList("Quest Items", "Instance Local Items");
+
 const SEKHEMA = new StringList("Trial Coins");
 const CHAOS = new StringList("Inscribed Ultimatum");
-const LOGBOOK = new StringList("Expedition Logbooks");
+const MAP = new StringList("Map Fragments");
 const VAULT = new StringList("Vault Keys");
-const FRAGMENT = new StringList("Map Fragments", "Pinnacle Keys");
-const QUEST = new StringList("Quest Items", "Instance Local Items");
+const LOGBOOK = new StringList("Expedition Logbooks");
+const PINNACLE = new StringList("Pinnacle Keys");
 ////
 
 export const CATEGORY = {
@@ -210,10 +212,12 @@ export const CATEGORY = {
 	UNCUT,
 	GEM,
 	AUGMENT,
+	QUEST,
+
 	SEKHEMA,
 	CHAOS,
-	LOGBOOK,
+	MAP,
 	VAULT,
-	FRAGMENT,
-	QUEST,
+	LOGBOOK,
+	PINNACLE,
 };

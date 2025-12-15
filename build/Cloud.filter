@@ -394,176 +394,14 @@ Show
 #	BaseType ==
 #
 #	SetFontSize 27
-#	SetTextColor 236 183 255 255
-#	SetBackgroundColor 52 9 71 255
-#	SetBorderColor 236 183 255 255
-#	MinimapIcon 2 Pink UpsideDownHouse
+#	SetTextColor 255 206 166 255
+#	SetBackgroundColor 57 28 0 255
+#	SetBorderColor 255 206 166 255
+#	MinimapIcon 2 Orange UpsideDownHouse
 
 Show
 	Class == "Stackable Currency"
 	BaseType == "Gnawed Collarbone" "Gnawed Jawbone" "Gnawed Rib"
-
-	SetFontSize 32
-	SetTextColor 236 183 255 255
-	SetBackgroundColor 52 9 71 255
-	SetBorderColor 236 183 255 255
-	MinimapIcon 1 Pink UpsideDownHouse
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 37
-#	SetTextColor 236 183 255 255
-#	SetBackgroundColor 52 9 71 255
-#	SetBorderColor 236 183 255 255
-#	MinimapIcon 0 Pink UpsideDownHouse
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 236 183 255 255
-#	SetBackgroundColor 52 9 71 255
-#	SetBorderColor 236 183 255 255
-#	PlayEffect Pink
-#	CustomAlertSound "WAH.mp3"
-#	MinimapIcon 0 Pink UpsideDownHouse
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 191 62 248 255
-#	SetBackgroundColor 255 238 255 255
-#	SetBorderColor 191 62 248 255
-#	PlayEffect Pink
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Pink Diamond
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 27
-#	SetTextColor 231 167 255 255
-#	SetBackgroundColor 89 21 118 255
-#	SetBorderColor 231 167 255 255
-#	MinimapIcon 2 Pink Cross
-
-Show
-	Class == "Stackable Currency"
-	BaseType == "Preserved Jawbone" "Preserved Rib"
-
-	SetFontSize 32
-	SetTextColor 231 167 255 255
-	SetBackgroundColor 89 21 118 255
-	SetBorderColor 231 167 255 255
-	MinimapIcon 1 Pink Cross
-
-Show
-	Class == "Stackable Currency"
-	BaseType == "Preserved Collarbone" "Preserved Vertebrae"
-
-	SetFontSize 37
-	SetTextColor 231 167 255 255
-	SetBackgroundColor 89 21 118 255
-	SetBorderColor 231 167 255 255
-	MinimapIcon 0 Pink Cross
-
-Show
-	Class == "Stackable Currency"
-	BaseType == "Preserved Cranium"
-
-	SetFontSize 45
-	SetTextColor 231 167 255 255
-	SetBackgroundColor 89 21 118 255
-	SetBorderColor 231 167 255 255
-	PlayEffect Pink
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Pink Cross
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 191 62 248 255
-#	SetBackgroundColor 255 238 255 255
-#	SetBorderColor 191 62 248 255
-#	PlayEffect Pink
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Pink Diamond
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 27
-#	SetTextColor 52 9 71 255
-#	SetBackgroundColor 216 127 255 255
-#	SetBorderColor 52 9 71 255
-#	MinimapIcon 2 Pink Star
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 32
-#	SetTextColor 52 9 71 255
-#	SetBackgroundColor 216 127 255 255
-#	SetBorderColor 52 9 71 255
-#	MinimapIcon 1 Pink Star
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 37
-#	SetTextColor 52 9 71 255
-#	SetBackgroundColor 216 127 255 255
-#	SetBorderColor 52 9 71 255
-#	MinimapIcon 0 Pink Star
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 52 9 71 255
-#	SetBackgroundColor 216 127 255 255
-#	SetBorderColor 52 9 71 255
-#	PlayEffect Pink
-#	CustomAlertSound "WAH.mp3"
-#	MinimapIcon 0 Pink Star
-
-Show
-	Class == "Stackable Currency"
-	BaseType == "Ancient Collarbone" "Ancient Jawbone" "Ancient Rib"
-
-	SetFontSize 45
-	SetTextColor 191 62 248 255
-	SetBackgroundColor 255 238 255 255
-	SetBorderColor 191 62 248 255
-	PlayEffect Pink
-	CustomAlertSound "renoir.wav" 250
-	MinimapIcon 0 Pink Diamond
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 27
-#	SetTextColor 255 227 207 255
-#	SetBackgroundColor 27 10 0 255
-#	SetBorderColor 255 227 207 255
-#	MinimapIcon 2 Orange Kite
-
-Show
-	Class == "Stackable Currency"
-	BaseType == "Diluted Liquid Ire"
 
 	SetFontSize 32
 	SetTextColor 255 206 166 255
@@ -571,27 +409,27 @@ Show
 	SetBorderColor 255 206 166 255
 	MinimapIcon 1 Orange UpsideDownHouse
 
-Show
-	Class == "Stackable Currency"
-	BaseType == "Diluted Liquid Greed" "Diluted Liquid Guilt" "Liquid Despair" "Liquid Envy" "Liquid Paranoia"
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 37
+#	SetTextColor 255 206 166 255
+#	SetBackgroundColor 57 28 0 255
+#	SetBorderColor 255 206 166 255
+#	MinimapIcon 0 Orange UpsideDownHouse
 
-	SetFontSize 37
-	SetTextColor 255 194 144 255
-	SetBackgroundColor 101 54 0 255
-	SetBorderColor 255 194 144 255
-	MinimapIcon 0 Orange Cross
-
-Show
-	Class == "Stackable Currency"
-	BaseType == "Concentrated Liquid Fear" "Concentrated Liquid Isolation" "Concentrated Liquid Suffering" "Liquid Disgust"
-
-	SetFontSize 45
-	SetTextColor 57 28 0 255
-	SetBackgroundColor 255 166 84 255
-	SetBorderColor 57 28 0 255
-	PlayEffect Orange
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Orange Star
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 45
+#	SetTextColor 255 206 166 255
+#	SetBackgroundColor 57 28 0 255
+#	SetBorderColor 255 206 166 255
+#	PlayEffect Orange
+#	CustomAlertSound "WAH.mp3"
+#	MinimapIcon 0 Orange UpsideDownHouse
 
 #Show
 #	Class == "Stackable Currency"
@@ -601,6 +439,222 @@ Show
 #	SetTextColor 226 126 0 255
 #	SetBackgroundColor 255 244 238 255
 #	SetBorderColor 226 126 0 255
+#	PlayEffect Orange
+#	CustomAlertSound "renoir.wav" 250
+#	MinimapIcon 0 Orange Diamond
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 27
+#	SetTextColor 255 194 144 255
+#	SetBackgroundColor 101 54 0 255
+#	SetBorderColor 255 194 144 255
+#	MinimapIcon 2 Orange Cross
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Preserved Jawbone" "Preserved Rib"
+
+	SetFontSize 32
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	MinimapIcon 1 Orange Cross
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Preserved Collarbone" "Preserved Vertebrae"
+
+	SetFontSize 37
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	MinimapIcon 0 Orange Cross
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Preserved Cranium"
+
+	SetFontSize 45
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	PlayEffect Orange
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Orange Cross
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 45
+#	SetTextColor 226 126 0 255
+#	SetBackgroundColor 255 244 238 255
+#	SetBorderColor 226 126 0 255
+#	PlayEffect Orange
+#	CustomAlertSound "renoir.wav" 250
+#	MinimapIcon 0 Orange Diamond
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 27
+#	SetTextColor 57 28 0 255
+#	SetBackgroundColor 255 166 84 255
+#	SetBorderColor 57 28 0 255
+#	MinimapIcon 2 Orange Star
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 32
+#	SetTextColor 57 28 0 255
+#	SetBackgroundColor 255 166 84 255
+#	SetBorderColor 57 28 0 255
+#	MinimapIcon 1 Orange Star
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 37
+#	SetTextColor 57 28 0 255
+#	SetBackgroundColor 255 166 84 255
+#	SetBorderColor 57 28 0 255
+#	MinimapIcon 0 Orange Star
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 45
+#	SetTextColor 57 28 0 255
+#	SetBackgroundColor 255 166 84 255
+#	SetBorderColor 57 28 0 255
+#	PlayEffect Orange
+#	CustomAlertSound "WAH.mp3"
+#	MinimapIcon 0 Orange Star
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Ancient Collarbone" "Ancient Jawbone" "Ancient Rib"
+
+	SetFontSize 45
+	SetTextColor 226 126 0 255
+	SetBackgroundColor 255 244 238 255
+	SetBorderColor 226 126 0 255
+	PlayEffect Orange
+	CustomAlertSound "renoir.wav" 250
+	MinimapIcon 0 Orange Diamond
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 27
+#	SetTextColor 255 206 166 255
+#	SetBackgroundColor 57 28 0 255
+#	SetBorderColor 255 206 166 255
+#	MinimapIcon 2 Orange UpsideDownHouse
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Black Scythe Artifact" "Broken Circle Artifact" "Order Artifact" "Sun Artifact"
+
+	SetFontSize 32
+	SetTextColor 255 206 166 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 206 166 255
+	MinimapIcon 1 Orange UpsideDownHouse
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 37
+#	SetTextColor 255 206 166 255
+#	SetBackgroundColor 57 28 0 255
+#	SetBorderColor 255 206 166 255
+#	MinimapIcon 0 Orange UpsideDownHouse
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 45
+#	SetTextColor 255 206 166 255
+#	SetBackgroundColor 57 28 0 255
+#	SetBorderColor 255 206 166 255
+#	PlayEffect Orange
+#	CustomAlertSound "WAH.mp3"
+#	MinimapIcon 0 Orange UpsideDownHouse
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 45
+#	SetTextColor 226 126 0 255
+#	SetBackgroundColor 255 244 238 255
+#	SetBorderColor 226 126 0 255
+#	PlayEffect Orange
+#	CustomAlertSound "renoir.wav" 250
+#	MinimapIcon 0 Orange Diamond
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 27
+#	SetTextColor 255 183 155 255
+#	SetBackgroundColor 112 37 0 255
+#	SetBorderColor 255 183 155 255
+#	MinimapIcon 2 Orange Cross
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 32
+#	SetTextColor 255 183 155 255
+#	SetBackgroundColor 112 37 0 255
+#	SetBorderColor 255 183 155 255
+#	MinimapIcon 1 Orange Cross
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 37
+#	SetTextColor 255 183 155 255
+#	SetBackgroundColor 112 37 0 255
+#	SetBorderColor 255 183 155 255
+#	MinimapIcon 0 Orange Cross
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Exotic Coinage"
+
+	SetFontSize 45
+	SetTextColor 255 183 155 255
+	SetBackgroundColor 112 37 0 255
+	SetBorderColor 255 183 155 255
+	PlayEffect Orange
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Orange Cross
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 45
+#	SetTextColor 244 90 0 255
+#	SetBackgroundColor 255 242 239 255
+#	SetBorderColor 244 90 0 255
 #	PlayEffect Orange
 #	CustomAlertSound "renoir.wav" 250
 #	MinimapIcon 0 Orange Diamond
@@ -659,14 +713,122 @@ Show
 #	CustomAlertSound "renoir.wav" 250
 #	MinimapIcon 0 Orange Diamond
 
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 27
+#	SetTextColor 255 227 207 255
+#	SetBackgroundColor 27 10 0 255
+#	SetBorderColor 255 227 207 255
+#	MinimapIcon 2 Orange Kite
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Diluted Liquid Ire"
+
+	SetFontSize 32
+	SetTextColor 255 206 166 255
+	SetBackgroundColor 57 28 0 255
+	SetBorderColor 255 206 166 255
+	MinimapIcon 1 Orange UpsideDownHouse
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Diluted Liquid Greed" "Diluted Liquid Guilt" "Liquid Despair" "Liquid Envy" "Liquid Paranoia"
+
+	SetFontSize 37
+	SetTextColor 255 194 144 255
+	SetBackgroundColor 101 54 0 255
+	SetBorderColor 255 194 144 255
+	MinimapIcon 0 Orange Cross
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Concentrated Liquid Fear" "Concentrated Liquid Isolation" "Concentrated Liquid Suffering" "Liquid Disgust"
+
+	SetFontSize 45
+	SetTextColor 57 28 0 255
+	SetBackgroundColor 255 166 84 255
+	SetBorderColor 57 28 0 255
+	PlayEffect Orange
+	CustomAlertSound "WAH.mp3"
+	MinimapIcon 0 Orange Star
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 45
+#	SetTextColor 226 126 0 255
+#	SetBackgroundColor 255 244 238 255
+#	SetBorderColor 226 126 0 255
+#	PlayEffect Orange
+#	CustomAlertSound "renoir.wav" 250
+#	MinimapIcon 0 Orange Diamond
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 27
+#	SetTextColor 255 218 241 255
+#	SetBackgroundColor 32 2 27 255
+#	SetBorderColor 255 218 241 255
+#	MinimapIcon 2 Pink Kite
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Breach Splinter"
+
+	SetFontSize 32
+	SetTextColor 255 188 234 255
+	SetBackgroundColor 65 6 56 255
+	SetBorderColor 255 188 234 255
+	MinimapIcon 1 Pink UpsideDownHouse
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Petition Splinter" "Runic Splinter" "Simulacrum Splinter"
+
+	SetFontSize 37
+	SetTextColor 255 172 231 255
+	SetBackgroundColor 110 17 97 255
+	SetBorderColor 255 172 231 255
+	MinimapIcon 0 Pink Cross
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 45
+#	SetTextColor 65 6 56 255
+#	SetBackgroundColor 255 129 227 255
+#	SetBorderColor 65 6 56 255
+#	PlayEffect Pink
+#	CustomAlertSound "WAH.mp3"
+#	MinimapIcon 0 Pink Star
+
+#Show
+#	Class == "Stackable Currency"
+#	BaseType ==
+#
+#	SetFontSize 45
+#	SetTextColor 231 69 205 255
+#	SetBackgroundColor 255 241 247 255
+#	SetBorderColor 231 69 205 255
+#	PlayEffect Pink
+#	CustomAlertSound "renoir.wav" 250
+#	MinimapIcon 0 Pink Diamond
+
 Show
 	Class == "Stackable Currency"
 	BaseType == "Bronze Key"
 
 	SetFontSize 32
-	SetTextColor 233 251 145 255
-	SetBackgroundColor 14 18 0 255
-	SetBorderColor 233 251 145 255
+	SetTextColor 197 255 170 255
+	SetBackgroundColor 2 20 0 255
+	SetBorderColor 197 255 170 255
 	MinimapIcon 1 Green Kite
 
 Show
@@ -674,9 +836,9 @@ Show
 	BaseType == "Silver Key"
 
 	SetFontSize 32
-	SetTextColor 219 242 110 255
-	SetBackgroundColor 36 44 0 255
-	SetBorderColor 219 242 110 255
+	SetTextColor 165 248 133 255
+	SetBackgroundColor 8 46 0 255
+	SetBorderColor 165 248 133 255
 	MinimapIcon 1 Green UpsideDownHouse
 
 Show
@@ -684,172 +846,10 @@ Show
 	BaseType == "Gold Key"
 
 	SetFontSize 37
-	SetTextColor 212 238 80 255
-	SetBackgroundColor 70 82 0 255
-	SetBorderColor 212 238 80 255
+	SetTextColor 143 245 106 255
+	SetBackgroundColor 21 86 0 255
+	SetBorderColor 143 245 106 255
 	MinimapIcon 0 Green Cross
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 27
-#	SetTextColor 233 251 145 255
-#	SetBackgroundColor 14 18 0 255
-#	SetBorderColor 233 251 145 255
-#	MinimapIcon 2 Green Kite
-
-Show
-	Class == "Stackable Currency"
-	BaseType == "Breach Splinter"
-
-	SetFontSize 32
-	SetTextColor 219 242 110 255
-	SetBackgroundColor 36 44 0 255
-	SetBorderColor 219 242 110 255
-	MinimapIcon 1 Green UpsideDownHouse
-
-Show
-	Class == "Stackable Currency"
-	BaseType == "Petition Splinter" "Runic Splinter" "Simulacrum Splinter"
-
-	SetFontSize 37
-	SetTextColor 212 238 80 255
-	SetBackgroundColor 70 82 0 255
-	SetBorderColor 212 238 80 255
-	MinimapIcon 0 Green Cross
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 36 44 0 255
-#	SetBackgroundColor 197 226 29 255
-#	SetBorderColor 36 44 0 255
-#	PlayEffect Green
-#	CustomAlertSound "WAH.mp3"
-#	MinimapIcon 0 Green Star
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 166 192 0 255
-#	SetBackgroundColor 249 253 217 255
-#	SetBorderColor 166 192 0 255
-#	PlayEffect Green
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Green Diamond
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 27
-#	SetTextColor 116 253 179 255
-#	SetBackgroundColor 0 46 25 255
-#	SetBorderColor 116 253 179 255
-#	MinimapIcon 2 Brown UpsideDownHouse
-
-Show
-	Class == "Stackable Currency"
-	BaseType == "Black Scythe Artifact" "Broken Circle Artifact" "Order Artifact" "Sun Artifact"
-
-	SetFontSize 32
-	SetTextColor 116 253 179 255
-	SetBackgroundColor 0 46 25 255
-	SetBorderColor 116 253 179 255
-	MinimapIcon 1 Brown UpsideDownHouse
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 37
-#	SetTextColor 116 253 179 255
-#	SetBackgroundColor 0 46 25 255
-#	SetBorderColor 116 253 179 255
-#	MinimapIcon 0 Brown UpsideDownHouse
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 116 253 179 255
-#	SetBackgroundColor 0 46 25 255
-#	SetBorderColor 116 253 179 255
-#	PlayEffect Brown
-#	CustomAlertSound "WAH.mp3"
-#	MinimapIcon 0 Brown UpsideDownHouse
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 0 199 125 255
-#	SetBackgroundColor 232 255 236 255
-#	SetBorderColor 0 199 125 255
-#	PlayEffect Brown
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Brown Diamond
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 27
-#	SetTextColor 33 252 162 255
-#	SetBackgroundColor 0 86 51 255
-#	SetBorderColor 33 252 162 255
-#	MinimapIcon 2 Brown Cross
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 32
-#	SetTextColor 33 252 162 255
-#	SetBackgroundColor 0 86 51 255
-#	SetBorderColor 33 252 162 255
-#	MinimapIcon 1 Brown Cross
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 37
-#	SetTextColor 33 252 162 255
-#	SetBackgroundColor 0 86 51 255
-#	SetBorderColor 33 252 162 255
-#	MinimapIcon 0 Brown Cross
-
-Show
-	Class == "Stackable Currency"
-	BaseType == "Exotic Coinage"
-
-	SetFontSize 45
-	SetTextColor 33 252 162 255
-	SetBackgroundColor 0 86 51 255
-	SetBorderColor 33 252 162 255
-	PlayEffect Brown
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Brown Cross
-
-#Show
-#	Class == "Stackable Currency"
-#	BaseType ==
-#
-#	SetFontSize 45
-#	SetTextColor 0 199 125 255
-#	SetBackgroundColor 232 255 236 255
-#	SetBorderColor 0 199 125 255
-#	PlayEffect Brown
-#	CustomAlertSound "renoir.wav" 250
-#	MinimapIcon 0 Brown Diamond
 
 Show
 	Class == "Stackable Currency"
@@ -917,54 +917,54 @@ Show
 #	BaseType ==
 #
 #	SetFontSize 27
-#	SetTextColor 247 214 255 255
-#	SetBackgroundColor 25 2 36 255
-#	SetBorderColor 247 214 255 255
-#	MinimapIcon 2 Pink Kite
+#	SetTextColor 255 222 211 255
+#	SetBackgroundColor 32 6 0 255
+#	SetBorderColor 255 222 211 255
+#	MinimapIcon 2 Orange Kite
 
 Show
 	Class == Omen
 	BaseType == "Omen of Dextral Necromancy" "Omen of Putrefaction" "Omen of the Blackblooded" "Omen of the Liege" "Omen of the Sovereign"
 
 	SetFontSize 32
-	SetTextColor 236 183 255 255
-	SetBackgroundColor 52 9 71 255
-	SetBorderColor 236 183 255 255
-	MinimapIcon 1 Pink UpsideDownHouse
+	SetTextColor 255 196 174 255
+	SetBackgroundColor 65 18 0 255
+	SetBorderColor 255 196 174 255
+	MinimapIcon 1 Orange UpsideDownHouse
 
 #Show
 #	Class == Omen
 #	BaseType ==
 #
 #	SetFontSize 37
-#	SetTextColor 231 167 255 255
-#	SetBackgroundColor 89 21 118 255
-#	SetBorderColor 231 167 255 255
-#	MinimapIcon 0 Pink Cross
+#	SetTextColor 255 183 155 255
+#	SetBackgroundColor 112 37 0 255
+#	SetBorderColor 255 183 155 255
+#	MinimapIcon 0 Orange Cross
 
 Show
 	Class == Omen
 	BaseType == "Omen of Abyssal Echoes" "Omen of Sinistral Necromancy"
 
 	SetFontSize 45
-	SetTextColor 52 9 71 255
-	SetBackgroundColor 216 127 255 255
-	SetBorderColor 52 9 71 255
-	PlayEffect Pink
+	SetTextColor 65 18 0 255
+	SetBackgroundColor 255 149 106 255
+	SetBorderColor 65 18 0 255
+	PlayEffect Orange
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Pink Star
+	MinimapIcon 0 Orange Star
 
 Show
 	Class == Omen
 	BaseType == "Omen of Light"
 
 	SetFontSize 45
-	SetTextColor 191 62 248 255
-	SetBackgroundColor 255 238 255 255
-	SetBorderColor 191 62 248 255
-	PlayEffect Pink
+	SetTextColor 244 90 0 255
+	SetBackgroundColor 255 242 239 255
+	SetBorderColor 244 90 0 255
+	PlayEffect Orange
 	CustomAlertSound "renoir.wav" 250
-	MinimapIcon 0 Pink Diamond
+	MinimapIcon 0 Orange Diamond
 
 #Show
 #	Class == "Uncut Skill Gems" "Uncut Spirit Gems" "Uncut Support Gems"
@@ -1365,206 +1365,237 @@ Show
 	ItemLevel <= 25
 
 	SetFontSize 37
-	SetTextColor 233 251 145 255
-	SetBackgroundColor 14 18 0 255
-	SetBorderColor 233 251 145 255
-	MinimapIcon 0 Green Kite
+	SetTextColor 255 218 241 255
+	SetBackgroundColor 32 2 27 255
+	SetBorderColor 255 218 241 255
+	MinimapIcon 0 Pink Kite
 
 Show
 	Class == "Trial Coins"
 	ItemLevel <= 44
 
 	SetFontSize 32
-	SetTextColor 233 251 145 255
-	SetBackgroundColor 14 18 0 255
-	SetBorderColor 233 251 145 255
-	MinimapIcon 1 Green Kite
+	SetTextColor 255 218 241 255
+	SetBackgroundColor 32 2 27 255
+	SetBorderColor 255 218 241 255
+	MinimapIcon 1 Pink Kite
 
 Show
 	Class == "Trial Coins"
 	ItemLevel == 45
 
 	SetFontSize 45
-	SetTextColor 233 251 145 255
-	SetBackgroundColor 14 18 0 255
-	SetBorderColor 233 251 145 255
-	PlayEffect Green
+	SetTextColor 255 218 241 255
+	SetBackgroundColor 32 2 27 255
+	SetBorderColor 255 218 241 255
+	PlayEffect Pink
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green Kite
+	MinimapIcon 0 Pink Kite
 
 Show
 	Class == "Trial Coins"
 	ItemLevel <= 59
 
 	SetFontSize 32
-	SetTextColor 233 251 145 255
-	SetBackgroundColor 14 18 0 255
-	SetBorderColor 233 251 145 255
-	MinimapIcon 1 Green Kite
+	SetTextColor 255 218 241 255
+	SetBackgroundColor 32 2 27 255
+	SetBorderColor 255 218 241 255
+	MinimapIcon 1 Pink Kite
 
 Show
 	Class == "Trial Coins"
 	ItemLevel <= 65
 
 	SetFontSize 45
-	SetTextColor 219 242 110 255
-	SetBackgroundColor 36 44 0 255
-	SetBorderColor 219 242 110 255
-	PlayEffect Green
+	SetTextColor 255 188 234 255
+	SetBackgroundColor 65 6 56 255
+	SetBorderColor 255 188 234 255
+	PlayEffect Pink
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green UpsideDownHouse
+	MinimapIcon 0 Pink UpsideDownHouse
 
 Show
 	Class == "Trial Coins"
 	ItemLevel <= 67
 
 	SetFontSize 37
-	SetTextColor 219 242 110 255
-	SetBackgroundColor 36 44 0 255
-	SetBorderColor 219 242 110 255
-	MinimapIcon 0 Green UpsideDownHouse
+	SetTextColor 255 188 234 255
+	SetBackgroundColor 65 6 56 255
+	SetBorderColor 255 188 234 255
+	MinimapIcon 0 Pink UpsideDownHouse
 
 Show
 	Class == "Trial Coins"
 	ItemLevel <= 74
 
 	SetFontSize 32
-	SetTextColor 219 242 110 255
-	SetBackgroundColor 36 44 0 255
-	SetBorderColor 219 242 110 255
-	MinimapIcon 1 Green UpsideDownHouse
+	SetTextColor 255 188 234 255
+	SetBackgroundColor 65 6 56 255
+	SetBorderColor 255 188 234 255
+	MinimapIcon 1 Pink UpsideDownHouse
 
 Show
 	Class == "Trial Coins"
 	ItemLevel == 75
 
 	SetFontSize 45
-	SetTextColor 212 238 80 255
-	SetBackgroundColor 70 82 0 255
-	SetBorderColor 212 238 80 255
-	PlayEffect Green
+	SetTextColor 255 172 231 255
+	SetBackgroundColor 110 17 97 255
+	SetBorderColor 255 172 231 255
+	PlayEffect Pink
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green Cross
+	MinimapIcon 0 Pink Cross
 
 Show
 	Class == "Trial Coins"
 	ItemLevel == 76
 
 	SetFontSize 37
-	SetTextColor 212 238 80 255
-	SetBackgroundColor 70 82 0 255
-	SetBorderColor 212 238 80 255
-	MinimapIcon 0 Green Cross
+	SetTextColor 255 172 231 255
+	SetBackgroundColor 110 17 97 255
+	SetBorderColor 255 172 231 255
+	MinimapIcon 0 Pink Cross
 
 Show
 	Class == "Trial Coins"
 	ItemLevel >= 77
 
 	SetFontSize 32
-	SetTextColor 212 238 80 255
-	SetBackgroundColor 70 82 0 255
-	SetBorderColor 212 238 80 255
-	MinimapIcon 1 Green Cross
+	SetTextColor 255 172 231 255
+	SetBackgroundColor 110 17 97 255
+	SetBorderColor 255 172 231 255
+	MinimapIcon 1 Pink Cross
 
 Show
 	Class == "Inscribed Ultimatum"
 	ItemLevel <= 52
 
 	SetFontSize 45
-	SetTextColor 233 251 145 255
-	SetBackgroundColor 14 18 0 255
-	SetBorderColor 233 251 145 255
-	PlayEffect Green
+	SetTextColor 255 218 241 255
+	SetBackgroundColor 32 2 27 255
+	SetBorderColor 255 218 241 255
+	PlayEffect Pink
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green Kite
+	MinimapIcon 0 Pink Kite
 
 Show
 	Class == "Inscribed Ultimatum"
 	ItemLevel <= 59
 
 	SetFontSize 37
-	SetTextColor 233 251 145 255
-	SetBackgroundColor 14 18 0 255
-	SetBorderColor 233 251 145 255
-	MinimapIcon 0 Green Kite
+	SetTextColor 255 218 241 255
+	SetBackgroundColor 32 2 27 255
+	SetBorderColor 255 218 241 255
+	MinimapIcon 0 Pink Kite
 
 Show
 	Class == "Inscribed Ultimatum"
 	ItemLevel <= 61
 
 	SetFontSize 45
-	SetTextColor 219 242 110 255
-	SetBackgroundColor 36 44 0 255
-	SetBorderColor 219 242 110 255
-	PlayEffect Green
+	SetTextColor 255 188 234 255
+	SetBackgroundColor 65 6 56 255
+	SetBorderColor 255 188 234 255
+	PlayEffect Pink
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green UpsideDownHouse
+	MinimapIcon 0 Pink UpsideDownHouse
 
 Show
 	Class == "Inscribed Ultimatum"
 	ItemLevel <= 65
 
 	SetFontSize 37
-	SetTextColor 219 242 110 255
-	SetBackgroundColor 36 44 0 255
-	SetBorderColor 219 242 110 255
-	MinimapIcon 0 Green UpsideDownHouse
+	SetTextColor 255 188 234 255
+	SetBackgroundColor 65 6 56 255
+	SetBorderColor 255 188 234 255
+	MinimapIcon 0 Pink UpsideDownHouse
 
 Show
 	Class == "Inscribed Ultimatum"
 	ItemLevel <= 74
 
 	SetFontSize 32
-	SetTextColor 219 242 110 255
-	SetBackgroundColor 36 44 0 255
-	SetBorderColor 219 242 110 255
-	MinimapIcon 1 Green UpsideDownHouse
+	SetTextColor 255 188 234 255
+	SetBackgroundColor 65 6 56 255
+	SetBorderColor 255 188 234 255
+	MinimapIcon 1 Pink UpsideDownHouse
 
 Show
 	Class == "Inscribed Ultimatum"
 	ItemLevel <= 77
 
 	SetFontSize 45
-	SetTextColor 212 238 80 255
-	SetBackgroundColor 70 82 0 255
-	SetBorderColor 212 238 80 255
-	PlayEffect Green
+	SetTextColor 255 172 231 255
+	SetBackgroundColor 110 17 97 255
+	SetBorderColor 255 172 231 255
+	PlayEffect Pink
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green Cross
+	MinimapIcon 0 Pink Cross
 
 Show
 	Class == "Inscribed Ultimatum"
 	ItemLevel == 78
 
 	SetFontSize 37
-	SetTextColor 212 238 80 255
-	SetBackgroundColor 70 82 0 255
-	SetBorderColor 212 238 80 255
-	MinimapIcon 0 Green Cross
+	SetTextColor 255 172 231 255
+	SetBackgroundColor 110 17 97 255
+	SetBorderColor 255 172 231 255
+	MinimapIcon 0 Pink Cross
 
 Show
 	Class == "Inscribed Ultimatum"
 	ItemLevel >= 79
 
 	SetFontSize 32
-	SetTextColor 212 238 80 255
-	SetBackgroundColor 70 82 0 255
-	SetBorderColor 212 238 80 255
-	MinimapIcon 1 Green Cross
+	SetTextColor 255 172 231 255
+	SetBackgroundColor 110 17 97 255
+	SetBorderColor 255 172 231 255
+	MinimapIcon 1 Pink Cross
 
 Show
-	Class == "Expedition Logbooks"
+	Class == "Map Fragments"
+	BaseType == "Idol of Estazunti"
 
 	SetFontSize 45
-	SetTextColor 212 238 80 255
-	SetBackgroundColor 70 82 0 255
-	SetBorderColor 212 238 80 255
+	SetTextColor 8 46 0 255
+	SetBackgroundColor 127 230 92 255
+	SetBorderColor 8 46 0 255
 	PlayEffect Green
 	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green Cross
+	MinimapIcon 0 Green Star
+
+Show
+	Class == "Map Fragments"
+	BaseType == "Kulemak's Invitation"
+
+	SetFontSize 37
+	SetTextColor 255 172 231 255
+	SetBackgroundColor 110 17 97 255
+	SetBorderColor 255 172 231 255
+	MinimapIcon 0 Pink Cross
+
+Show
+	Class == "Map Fragments"
+	BaseType == "Deadly Fate" "Cowardly Fate" "Victorious Fate"
+
+	SetFontSize 45
+	SetTextColor 65 6 56 255
+	SetBackgroundColor 255 129 227 255
+	SetBorderColor 65 6 56 255
+	PlayEffect Pink
+	MinimapIcon 0 Pink Star
 
 Show
 	Class == "Vault Keys"
+
+	SetFontSize 37
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 10 20 83 255
+	MinimapIcon 0 Blue Star
+
+Show
+	Class == "Expedition Logbooks"
 
 	SetFontSize 45
 	SetTextColor 36 44 0 255
@@ -1575,15 +1606,14 @@ Show
 	MinimapIcon 0 Green Star
 
 Show
-	Class == "Map Fragments" "Pinnacle Keys"
+	Class == "Pinnacle Keys"
 
 	SetFontSize 45
-	SetTextColor 166 192 0 255
-	SetBackgroundColor 249 253 217 255
-	SetBorderColor 166 192 0 255
-	PlayEffect Green
-	CustomAlertSound "renoir.wav" 250
-	MinimapIcon 0 Green Diamond
+	SetTextColor 231 69 205 255
+	SetBackgroundColor 255 241 247 255
+	SetBorderColor 231 69 205 255
+	PlayEffect Pink
+	MinimapIcon 0 Pink Diamond
 
 Show
 	Class == "Quest Items" "Instance Local Items"
