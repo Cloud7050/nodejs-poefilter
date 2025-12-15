@@ -1,6 +1,6 @@
 export class Name {
 	static FLAG_BAD = "Currency to hide";
-	static FLAG_SPECIAL = "The Fractured Lake unique map drop";
+	static FLAG_MAP = "The Fractured Lake unique map drop";
 	static FLAG_CLASS = "Explicitly mark as class item";
 	static FLAG_CHANCE = "Valued as chance base";
 
@@ -29,8 +29,8 @@ export class Name {
 		this.flag(Name.FLAG_BAD);
 		return this;
 	}
-	special() {
-		this.flag(Name.FLAG_SPECIAL);
+	mapDrop() {
+		this.flag(Name.FLAG_MAP);
 		return this;
 	}
 	class() {

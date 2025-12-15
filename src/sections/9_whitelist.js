@@ -38,10 +38,10 @@ function chance(filter) {
 	});
 }
 
-// Unique map drops
+// Unique map's drops
 function mapDrop(filter) {
 	filter.multiWhitelist((c) => {
-		c.names = new Comparison(NameManager.getGear().isSpecial());
+		c.names = new Comparison(NameManager.getGear().isMapDrop());
 		c.ilvl = new Comparison(LEVEL_BIS_MAP_DROP, OPERATOR.GTE);
 	});
 }

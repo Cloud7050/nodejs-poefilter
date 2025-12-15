@@ -31,6 +31,7 @@ export const VALUE_BAD = 2;
 export const VALUE_OTHER = 5;
 
 // BiS item levels
+export const LEVEL_OK = 80;
 export const LEVEL_BIS = 82;
 export const LEVEL_BIS_MAP_DROP = 79;
 export const LEVEL_BIS_RELIC = 80;

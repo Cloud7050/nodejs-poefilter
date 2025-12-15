@@ -1197,10 +1197,10 @@ export class NameManager {
 			new Name("Crimson Amulet", 1, CATEGORY.AMULET, 0), // 2–4 Life Regeneration per second
 
 			new Name("Azure Amulet", 10, CATEGORY.AMULET, 0), // 20–30% increased Mana Regeneration Rate
-			new Name("Dusk Amulet", 10, CATEGORY.AMULET, 0).special(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Amulet", 10, CATEGORY.AMULET, 0).special(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Amulet", 10, CATEGORY.AMULET, 0).special(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Amulet", 10, CATEGORY.AMULET, 0).special(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			new Name("Dusk Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 			new Name("Amber Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Strength
 			new Name("Jade Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Dexterity
 			new Name("Lapis Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Intelligence
@@ -1219,10 +1219,10 @@ export class NameManager {
 			new Name("Sapphire Ring", 5, CATEGORY.RING, 12), // +20–30% to Cold Resistance
 			new Name("Topaz Ring", 5, CATEGORY.RING, 16), // +20–30% to Lightning Resistance
 
-			new Name("Dusk Ring", 10, CATEGORY.RING, 0).special(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Ring", 10, CATEGORY.RING, 0).special(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Ring", 10, CATEGORY.RING, 0).special(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Ring", 10, CATEGORY.RING, 0).special(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			new Name("Dusk Ring", 10, CATEGORY.RING, 0).mapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Ring", 10, CATEGORY.RING, 0).mapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Ring", 10, CATEGORY.RING, 0).mapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Ring", 10, CATEGORY.RING, 0).mapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 			new Name("Amethyst Ring", 10, CATEGORY.RING, 20), // +7–13% to Chaos Resistance
 			new Name("Pearl Ring", 10, CATEGORY.RING, 32), // 7–10% increased Cast Speed
 			new Name("Prismatic Ring", 10, CATEGORY.RING, 35), // +7–10% to all Elemental Resistances
@@ -1552,8 +1552,8 @@ export class NameManager {
 	isBad(has = undefined) {
 		return this.isFlag(Name.FLAG_BAD, has);
 	}
-	isSpecial(has = undefined) {
-		return this.isFlag(Name.FLAG_SPECIAL, has);
+	isMapDrop(has = undefined) {
+		return this.isFlag(Name.FLAG_MAP, has);
 	}
 	isClass(has = undefined) {
 		return this.isFlag(Name.FLAG_CLASS, has);

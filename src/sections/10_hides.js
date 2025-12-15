@@ -3,53 +3,69 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager, TIER } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
+import { LEVEL_OK } from "../constants.js";
 
 export function sectionHides(filter) {
-	// weapons(filter);
-	// armour(filter);
+	weapons(filter);
+	armour(filter);
 	// uncommons(filter);
 
 	// uniques(filter);
 }
 
 function weapons(filter) {
-	filter.multiHide((c) => { // Remaining corrupts
-		c.categories(CATEGORY.WEAPON);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.isCorrupted = true;
-	}, (c) => { // Trash base (mainhands)
-		c.names = new Comparison(NameManager.getMain(TIER.NEVER, OPERATOR.LTE));
-		c.categories(CATEGORY.MAIN);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	}, (c) => { // Trash base (offhands)
-		c.names = new Comparison(NameManager.getOff(TIER.NEVER, OPERATOR.LTE));
-		c.categories(CATEGORY.OFF);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (other caster mainhands)
-		c.categories(CATEGORY.WAND, CATEGORY.STAFF);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(81, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (class weapons, other attacker mainhands, other offhands)
-		c.categories(CATEGORY.WEAPON_CLASS, CATEGORY.MAIN_OTHER_ATTACKER, CATEGORY.OFF_OTHER);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
+	filter.multiHide((c) => { // Other normal weapons
+		c.categories(CATEGORY.WEAPON_OTHER);
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	});
+
+	// filter.multiHide((c) => { // Remaining corrupts
+	// 	c.categories(CATEGORY.WEAPON);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// 	c.isCorrupted = true;
+	// }, (c) => { // Trash base (mainhands)
+	// 	c.names = new Comparison(NameManager.getMain(TIER.NEVER, OPERATOR.LTE));
+	// 	c.categories(CATEGORY.MAIN);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// }, (c) => { // Trash base (offhands)
+	// 	c.names = new Comparison(NameManager.getOff(TIER.NEVER, OPERATOR.LTE));
+	// 	c.categories(CATEGORY.OFF);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// }, (c) => { // Too low ilvl (other caster mainhands)
+	// 	c.categories(CATEGORY.WAND, CATEGORY.STAFF);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// 	c.ilvl = new Comparison(81, OPERATOR.LT);
+	// }, (c) => { // Too low ilvl (class weapons, other attacker mainhands, other offhands)
+	// 	c.categories(CATEGORY.WEAPON_CLASS, CATEGORY.MAIN_OTHER_ATTACKER, CATEGORY.OFF_OTHER);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// 	c.ilvl = new Comparison(82, OPERATOR.LT);
+	// });
 }
 
 function armour(filter) {
-	filter.multiHide((c) => { // Remaining corrupts
+	filter.multiHide((c) => { // Other normal armour
 		c.categories(CATEGORY.ARMOUR);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.isCorrupted = true;
-	}, (c) => { // Trash base
-		c.names = new Comparison(NameManager.getArmour(TIER.NEVER, OPERATOR.LTE));
-		c.categories(CATEGORY.ARMOUR);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	}, (c) => { // Too low ilvl
-		c.categories(CATEGORY.ARMOUR);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
+		c.names = new Comparison(NameManager.getGear(
+			CATEGORY.ARMOUR.subtract(CATEGORY.ARMOUR_EV)
+		));
+		c.rarity = new Comparison(RARITY.NORMAL);
+		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	});
+
+	// filter.multiHide((c) => { // Remaining corrupts
+	// 	c.categories(CATEGORY.ARMOUR);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// 	c.isCorrupted = true;
+	// }, (c) => { // Trash base
+	// 	c.names = new Comparison(NameManager.getArmour(TIER.NEVER, OPERATOR.LTE));
+	// 	c.categories(CATEGORY.ARMOUR);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// }, (c) => { // Too low ilvl
+	// 	c.categories(CATEGORY.ARMOUR);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// 	c.ilvl = new Comparison(82, OPERATOR.LT);
+	// });
 }
 
 function uncommons(filter) {
