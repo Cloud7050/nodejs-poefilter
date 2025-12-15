@@ -1290,7 +1290,14 @@ export class NameManager {
 	static getUniques(min = undefined, max = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Unique_item
-			//TODO these are the normal base prices, and other outcomes have not been commented
+			// Weapons
+
+			// Armour
+			new Name("Hardwood Targe", 1 / 2), // Arvil's Wheel
+
+			// Other
+
+			//TODO price check these, then start adding uniques
 			new Name("Viper Cap", 5).chance(), // Constricting Command
 
 			new Name("Heavy Belt", 20).chance(), // Headhunter
