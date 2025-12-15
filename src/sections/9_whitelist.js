@@ -9,6 +9,8 @@ import { LEVEL_BIS_MAP_DROP, LEVEL_HEAVY_BELT, PAIR_GEAR, VALUE_BAD } from "../c
 export function sectionWhitelist(filter, isGoldRares) {
 	chance(filter);
 	mapDrop(filter);
+	tier(filter);
+
 	outline(filter);
 
 	if (isGoldRares) goldRares(filter);
@@ -40,6 +42,14 @@ function mapDrop(filter) {
 	filter.multiWhitelist((c) => {
 		c.names = new Comparison(NameManager.getGear().isSpecial());
 		c.ilvl = new Comparison(LEVEL_BIS_MAP_DROP, OPERATOR.GTE);
+	});
+}
+
+// High tier
+function tier(filter) {
+	filter.multiWhitelist((c) => {
+		c.names = new Comparison(NameManager.getGear(null, VALUE_BAD));
+		c.isMaxTier();
 	});
 }
 
