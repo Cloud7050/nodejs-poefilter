@@ -303,7 +303,7 @@ function otherArmour(filter) {
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(
-			CATEGORY.ARMOUR.subtract(CATEGORY.ARMOUR_EV)
+			CATEGORY.ARMOUR_ALL.subtract(CATEGORY.ARMOUR_EV)
 		));
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModArmour(true);
@@ -330,7 +330,7 @@ function otherArmour(filter) {
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(
-			CATEGORY.ARMOUR.subtract(CATEGORY.ARMOUR_EV)
+			CATEGORY.ARMOUR_ALL.subtract(CATEGORY.ARMOUR_EV)
 		));
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModArmour(true);

@@ -44,10 +44,13 @@ function weapons(filter) {
 }
 
 function armour(filter) {
-	filter.multiHide((c) => { // Other normal armour
+	filter.multiHide((c) => { // Strictly other normal armour
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(
-			CATEGORY.ARMOUR.subtract(CATEGORY.ARMOUR_EV)
+			CATEGORY.ARMOUR_ALL
+				.subtract(CATEGORY.ARMOUR_EV)
+				.subtract(CATEGORY.ARMOUR_AM_EV)
+				.subtract(CATEGORY.ARMOUR_EV_ES)
 		));
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);

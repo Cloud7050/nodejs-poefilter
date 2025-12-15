@@ -46,6 +46,7 @@ const HELMET_ES = new StringList("Helmets_CIRCLET_TIARA");
 const HELMET_AM_EV = new StringList("Helmets_HELM");
 const HELMET_AM_ES = new StringList("Helmets_CROWN");
 const HELMET_EV_ES = new StringList("Helmets_MASK");
+const HELMET_ALL = new StringList(HELMET_AM, HELMET_EV, HELMET_ES, HELMET_AM_EV, HELMET_AM_ES, HELMET_EV_ES);
 const HELMET = new StringList("Helmets");
 const BODY_AM = new StringList("Body Armours_CUIRASS_PLATE");
 const BODY_EV = new StringList("Body Armours_VEST_COAT");
@@ -53,6 +54,7 @@ const BODY_ES = new StringList("Body Armours_ROBE_RAIMENT");
 const BODY_AM_EV = new StringList("Body Armours_MAIL_ARMOUR");
 const BODY_AM_ES = new StringList("Body Armours_VESTMENTS_MANTLE");
 const BODY_EV_ES = new StringList("Body Armours_GARB_JACKET");
+const BODY_ALL = new StringList(BODY_AM, BODY_EV, BODY_ES, BODY_AM_EV, BODY_AM_ES, BODY_EV_ES);
 const BODY = new StringList("Body Armours");
 const GLOVES_AM = new StringList("Gloves_MITTS");
 const GLOVES_EV = new StringList("Gloves_BRACERS");
@@ -60,6 +62,7 @@ const GLOVES_ES = new StringList("Gloves_GLOVES");
 const GLOVES_AM_EV = new StringList("Gloves_GAUNTLETS");
 const GLOVES_AM_ES = new StringList("Gloves_CUFFS");
 const GLOVES_EV_ES = new StringList("Gloves_WRAPS");
+const GLOVES_ALL = new StringList(GLOVES_AM, GLOVES_EV, GLOVES_ES, GLOVES_AM_EV, GLOVES_AM_ES, GLOVES_EV_ES);
 const GLOVES = new StringList("Gloves");
 const BOOTS_AM = new StringList("Boots_GREAVES");
 const BOOTS_EV = new StringList("Boots_BOOTS");
@@ -67,6 +70,7 @@ const BOOTS_ES = new StringList("Boots_SANDALS_SLIPPERS");
 const BOOTS_AM_EV = new StringList("Boots_SABATONS");
 const BOOTS_AM_ES = new StringList("Boots_LEGGINGS");
 const BOOTS_EV_ES = new StringList("Boots_SHOES");
+const BOOTS_ALL = new StringList(BOOTS_AM, BOOTS_EV, BOOTS_ES, BOOTS_AM_EV, BOOTS_AM_ES, BOOTS_EV_ES);
 const BOOTS = new StringList("Boots");
 const ARMOUR_AM = new StringList(HELMET_AM, BODY_AM, GLOVES_AM, BOOTS_AM);
 const ARMOUR_EV = new StringList(HELMET_EV, BODY_EV, GLOVES_EV, BOOTS_EV);
@@ -74,6 +78,7 @@ const ARMOUR_ES = new StringList(HELMET_ES, BODY_ES, GLOVES_ES, BOOTS_ES);
 const ARMOUR_AM_EV = new StringList(HELMET_AM_EV, BODY_AM_EV, GLOVES_AM_EV, BOOTS_AM_EV);
 const ARMOUR_AM_ES = new StringList(HELMET_AM_ES, BODY_AM_ES, GLOVES_AM_ES, BOOTS_AM_ES);
 const ARMOUR_EV_ES = new StringList(HELMET_EV_ES, BODY_EV_ES, GLOVES_EV_ES, BOOTS_EV_ES);
+const ARMOUR_ALL = new StringList(HELMET_ALL, BODY_ALL, GLOVES_ALL, BOOTS_ALL);
 const ARMOUR = new StringList(HELMET, BODY, GLOVES, BOOTS);
 const SOCKET_ONE = new StringList(WEAPON_CLASS, MAIN_OTHER_CASTER_ONE, MAIN_OTHER_ATTACKER_ONE, FOCUS, OFF_OTHER_BLOCK, HELMET, GLOVES, BOOTS);
 const SOCKET_TWO = new StringList(MAIN_OTHER_CASTER_TWO, MAIN_OTHER_ATTACKER_TWO, BODY);
@@ -156,6 +161,7 @@ export const CATEGORY = {
 	HELMET_AM_EV,
 	HELMET_AM_ES,
 	HELMET_EV_ES,
+	HELMET_ALL,
 	HELMET,
 	BODY_AM,
 	BODY_EV,
@@ -163,6 +169,7 @@ export const CATEGORY = {
 	BODY_AM_EV,
 	BODY_AM_ES,
 	BODY_EV_ES,
+	BODY_ALL,
 	BODY,
 	GLOVES_AM,
 	GLOVES_EV,
@@ -170,6 +177,7 @@ export const CATEGORY = {
 	GLOVES_AM_EV,
 	GLOVES_AM_ES,
 	GLOVES_EV_ES,
+	GLOVES_ALL,
 	GLOVES,
 	BOOTS_AM,
 	BOOTS_EV,
@@ -177,6 +185,7 @@ export const CATEGORY = {
 	BOOTS_AM_EV,
 	BOOTS_AM_ES,
 	BOOTS_EV_ES,
+	BOOTS_ALL,
 	BOOTS,
 	ARMOUR_AM,
 	ARMOUR_EV,
@@ -184,6 +193,7 @@ export const CATEGORY = {
 	ARMOUR_AM_EV,
 	ARMOUR_AM_ES,
 	ARMOUR_EV_ES,
+	ARMOUR_ALL,
 	ARMOUR,
 	SOCKET_ONE,
 	SOCKET_TWO,
