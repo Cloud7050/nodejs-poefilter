@@ -8,7 +8,7 @@ export const PAIR_MECHANIC1 = [Colour.TANGERINE, PRESET.ORANGE]; // Ritual omens
 // GOLD
 export const PAIR_GOLD = [Colour.YELLOW, PRESET.YELLOW];
 export const PAIR_MAP1 = [Colour.LIME, PRESET.GREEN]; // Waystones, expedition logbooks
-export const PAIR_QUEST = [Colour.GREEN, PRESET.GREEN]; // Sekhema keys, idols of estazunti, rotten satchel charges
+export const PAIR_QUEST = [Colour.GREEN, PRESET.GREEN]; // Sekhema keys, rotten satchel charges
 export const PAIR_MAPLIKE = [Colour.SEAFOAM, PRESET.BROWN]; // Tablets, relics
 // TEAL
 export const PAIR_GEM = [Colour.CYAN, PRESET.GREY];

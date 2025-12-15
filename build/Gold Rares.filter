@@ -1554,18 +1554,6 @@ Show
 
 Show
 	Class == "Map Fragments"
-	BaseType == "Idol of Estazunti"
-
-	SetFontSize 45
-	SetTextColor 8 46 0 255
-	SetBackgroundColor 127 230 92 255
-	SetBorderColor 8 46 0 255
-	PlayEffect Green
-	CustomAlertSound "WAH.mp3"
-	MinimapIcon 0 Green Star
-
-Show
-	Class == "Map Fragments"
 	BaseType == "Kulemak's Invitation"
 
 	SetFontSize 37

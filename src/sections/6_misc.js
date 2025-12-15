@@ -152,13 +152,6 @@ function tickets(filter) {
 function keys(filter) {
 	filter.block((c, e) => {
 		c.categories(CATEGORY.MAP);
-		c.names = new Comparison("Idol of Estazunti");
-
-		e.colourChance(PAIR_QUEST).sizeChance();
-	});
-
-	filter.block((c, e) => {
-		c.categories(CATEGORY.MAP);
 		c.names = new Comparison("Kulemak's Invitation");
 
 		e.colourExalt(PAIR_MAP2).sizeExalt();
