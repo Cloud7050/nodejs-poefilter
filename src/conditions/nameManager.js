@@ -383,7 +383,7 @@ export class NameManager {
 			new Name("Brutus' Brain", 2),
 			new Name("Xoph's Pyre", 2),
 			new Name("Arbiter's Ignition", 2.5),
-			new Name("Piety's Mercy", 5),
+			new Name("Dominus' Grasp", 5), //TODO new price unknown
 			new Name("Ailith's Chimes", 6),
 
 			new Name("Garukhan's Resolve", 14),
@@ -509,7 +509,7 @@ export class NameManager {
 			new Name("Uromoti's Soul Core of Attenuation", 1),
 			new Name("Primate Idol", 1),
 			new Name("Boar Idol", 1),
-			new Name("Serpent Idol", 1),
+			new Name("Snake Idol", 1),
 			new Name("Wolf Idol", 1),
 			new Name("Cat Idol", 1),
 			new Name("Owl Idol", 1),

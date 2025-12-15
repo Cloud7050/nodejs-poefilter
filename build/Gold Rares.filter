@@ -1042,7 +1042,7 @@ Show
 
 Show
 	Class == "Skill Gems" "Support Gems"
-	BaseType == "Ailith's Chimes" "Arbiter's Ignition" "Atziri's Allure" "Brutus' Brain" "Doedre's Undoing" "Einhar's Beastrite" "Kalisa's Crescendo" "Kaom's Madness" "Kulemak's Dominion" "Paquate's Pact" "Piety's Mercy" "Tecrod's Revenge" "Xoph's Pyre" "Zarokh's Refrain"
+	BaseType == "Ailith's Chimes" "Arbiter's Ignition" "Atziri's Allure" "Brutus' Brain" "Doedre's Undoing" "Dominus' Grasp" "Einhar's Beastrite" "Kalisa's Crescendo" "Kaom's Madness" "Kulemak's Dominion" "Paquate's Pact" "Tecrod's Revenge" "Xoph's Pyre" "Zarokh's Refrain"
 
 	SetFontSize 37
 	SetTextColor 0 45 46 255
@@ -1321,7 +1321,7 @@ Show
 
 Show
 	Class == Augment
-	BaseType == "Boar Idol" "Cat Idol" "Citaqualotl's Soul Core of Foulness" "Fox Idol" "Guatelitzi's Soul Core of Endurance" "Idol of Eeshta" "Idol of Egrin" "Idol of Maxarius" "Idol of Thruldana" "Opiloti's Soul Core of Assault" "Owl Idol" "Ox Idol" "Primate Idol" "Quipolatl's Soul Core of Flow" "Rabbit Idol" "Serpent Idol" "Tacati's Soul Core of Affliction" "Uromoti's Soul Core of Attenuation" "Wolf Idol" "Xopec's Soul Core of Power"
+	BaseType == "Boar Idol" "Cat Idol" "Citaqualotl's Soul Core of Foulness" "Fox Idol" "Guatelitzi's Soul Core of Endurance" "Idol of Eeshta" "Idol of Egrin" "Idol of Maxarius" "Idol of Thruldana" "Opiloti's Soul Core of Assault" "Owl Idol" "Ox Idol" "Primate Idol" "Quipolatl's Soul Core of Flow" "Rabbit Idol" "Snake Idol" "Tacati's Soul Core of Affliction" "Uromoti's Soul Core of Attenuation" "Wolf Idol" "Xopec's Soul Core of Power"
 
 	SetFontSize 37
 	SetTextColor 154 213 255 255
