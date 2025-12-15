@@ -109,7 +109,7 @@ export class ConditionSet {
 		return this;
 	}
 
-	hasSockets(minimum = 2) {
+	hasSockets(minimum = 1) {
 		this.sockets = new Comparison(minimum, OPERATOR.GTE);
 		return this;
 	}

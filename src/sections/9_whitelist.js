@@ -9,7 +9,8 @@ import { LEVEL_BIS_MAP_DROP, LEVEL_HEAVY_BELT, PAIR_GEAR, VALUE_BAD } from "../c
 export function sectionWhitelist(filter, isGoldRares) {
 	chance(filter);
 	mapDrop(filter);
-	tier(filter);
+
+	other(filter);
 
 	outline(filter);
 
@@ -45,8 +46,13 @@ function mapDrop(filter) {
 	});
 }
 
-// High tier
-function tier(filter) {
+function other(filter) {
+	// Sockets
+	filter.multiWhitelist((c) => {
+		c.hasSockets(1);
+	});
+
+	// High tier
 	filter.multiWhitelist((c) => {
 		c.names = new Comparison(NameManager.getGear(null, VALUE_BAD));
 		c.isMaxTier();
@@ -55,6 +61,11 @@ function tier(filter) {
 
 // Whitelist logic for items from outline section
 function outline(filter) {
+	// Quality
+	filter.multiWhitelist((c) => {
+		c.hasQuality(5);
+	});
+
 	// Corrupted (or possibly exceptional)
 	filter.multiWhitelist((c) => { // Quality charm
 		c.categories(CATEGORY.CHARM);
