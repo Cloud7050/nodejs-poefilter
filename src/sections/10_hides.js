@@ -3,12 +3,12 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager, TIER } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { LEVEL_OK } from "../constants.js";
+import { LEVEL_DROP_FLASK, LEVEL_OK } from "../constants.js";
 
 export function sectionHides(filter) {
 	weapons(filter);
 	armour(filter);
-	// uncommons(filter);
+	uncommons(filter);
 
 	// uniques(filter);
 }
@@ -72,47 +72,52 @@ function armour(filter) {
 }
 
 function uncommons(filter) {
-	filter.multiHide((c) => { // Remaining corrupts
-		c.categories(CATEGORY.GEAR_UNCOMMON);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.isCorrupted = true;
-	}, (c) => { // Trash base
-		c.names = new Comparison(NameManager.getUncommons(TIER.NEVER, OPERATOR.LTE));
-		c.categories(CATEGORY.GEAR_UNCOMMON);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (other+ tier, jewellery)
-		c.names = new Comparison(NameManager.getUncommons(TIER.OTHER, OPERATOR.GTE));
-		c.categories(CATEGORY.JEWELLERY);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(80, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (charms)
-		c.categories(CATEGORY.CHARM);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(81, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (bad tier, jewellery)
-		c.names = new Comparison(NameManager.getUncommons(TIER.BAD));
-		c.categories(CATEGORY.JEWELLERY);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (other+ tier, normal belts)
-		c.names = new Comparison(NameManager.getUncommons(TIER.OTHER, OPERATOR.GTE));
-		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.NORMAL);
-		c.ilvl = new Comparison(80, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (bad tier, normal belts)
-		c.names = new Comparison(NameManager.getUncommons(TIER.BAD));
-		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.NORMAL);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (belts)
-		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison([RARITY.MAGIC, RARITY.RARE]);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
-	}, (c) => { // Too low ilvl (flasks)
+	filter.multiHide((c) => { // Low drop level flasks
 		c.categories(CATEGORY.FLASK);
-		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-		c.ilvl = new Comparison(82, OPERATOR.LT);
+		c.names = new Comparison(NameManager.getGear(c, undefined, undefined, LEVEL_DROP_FLASK, OPERATOR.LT));
 	});
+
+	// filter.multiHide((c) => { // Remaining corrupts
+	// 	c.categories(CATEGORY.GEAR_UNCOMMON);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// 	c.isCorrupted = true;
+	// }, (c) => { // Trash base
+	// 	c.names = new Comparison(NameManager.getUncommons(TIER.NEVER, OPERATOR.LTE));
+	// 	c.categories(CATEGORY.GEAR_UNCOMMON);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// }, (c) => { // Too low ilvl (other+ tier, jewellery)
+	// 	c.names = new Comparison(NameManager.getUncommons(TIER.OTHER, OPERATOR.GTE));
+	// 	c.categories(CATEGORY.JEWELLERY);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// 	c.ilvl = new Comparison(80, OPERATOR.LT);
+	// }, (c) => { // Too low ilvl (charms)
+	// 	c.categories(CATEGORY.CHARM);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// 	c.ilvl = new Comparison(81, OPERATOR.LT);
+	// }, (c) => { // Too low ilvl (bad tier, jewellery)
+	// 	c.names = new Comparison(NameManager.getUncommons(TIER.BAD));
+	// 	c.categories(CATEGORY.JEWELLERY);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// 	c.ilvl = new Comparison(82, OPERATOR.LT);
+	// }, (c) => { // Too low ilvl (other+ tier, normal belts)
+	// 	c.names = new Comparison(NameManager.getUncommons(TIER.OTHER, OPERATOR.GTE));
+	// 	c.categories(CATEGORY.BELT);
+	// 	c.rarity = new Comparison(RARITY.NORMAL);
+	// 	c.ilvl = new Comparison(80, OPERATOR.LT);
+	// }, (c) => { // Too low ilvl (bad tier, normal belts)
+	// 	c.names = new Comparison(NameManager.getUncommons(TIER.BAD));
+	// 	c.categories(CATEGORY.BELT);
+	// 	c.rarity = new Comparison(RARITY.NORMAL);
+	// 	c.ilvl = new Comparison(82, OPERATOR.LT);
+	// }, (c) => { // Too low ilvl (belts)
+	// 	c.categories(CATEGORY.BELT);
+	// 	c.rarity = new Comparison([RARITY.MAGIC, RARITY.RARE]);
+	// 	c.ilvl = new Comparison(82, OPERATOR.LT);
+	// }, (c) => { // Too low ilvl (flasks)
+	// 	c.categories(CATEGORY.FLASK);
+	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+	// 	c.ilvl = new Comparison(82, OPERATOR.LT);
+	// });
 }
 
 function uniques(filter) {

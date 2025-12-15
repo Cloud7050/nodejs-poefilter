@@ -42,9 +42,10 @@ export const LEVEL_BIS_FLASK = 83;
 export const LEVEL_HEAVY_BELT = 50;
 
 // Character level to impact what ilvl & drop level are deemed usable
-export const LEVEL_PLAYER = 1;
-export const LEVEL_ITEM = 1;
-export const LEVEL_DROP = 1;
+// export const LEVEL_PLAYER = 11;
+// export const LEVEL_ITEM = 1;
+// export const LEVEL_DROP = 1;
+export const LEVEL_DROP_FLASK = 4;
 
 // Maximum price breakpoints for gold piles
 export const GOLD_HIDE = 0; // 50

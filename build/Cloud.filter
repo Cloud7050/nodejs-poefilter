@@ -3351,3 +3351,9 @@ Hide
 	ItemLevel < 80
 
 	DisableDropSound
+
+Hide
+	Class == "Life Flasks" "Mana Flasks"
+	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
+
+	DisableDropSound
