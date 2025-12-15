@@ -72,9 +72,10 @@ function armour(filter) {
 }
 
 function uncommons(filter) {
-	filter.multiHide((c) => { // Low drop level flasks
+	filter.multiHide((c) => { // Normal low drop level flasks
 		c.categories(CATEGORY.FLASK);
 		c.names = new Comparison(NameManager.getGear(c, undefined, undefined, LEVEL_DROP_FLASK, OPERATOR.LT));
+		c.rarity = new Comparison(RARITY.NORMAL);
 	});
 
 	// filter.multiHide((c) => { // Remaining corrupts

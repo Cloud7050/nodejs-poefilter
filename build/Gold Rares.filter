@@ -3367,5 +3367,6 @@ Hide
 Hide
 	Class == "Life Flasks" "Mana Flasks"
 	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
+	Rarity == Normal
 
 	DisableDropSound
