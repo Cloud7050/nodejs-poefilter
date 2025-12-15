@@ -185,7 +185,6 @@ export class NameManager {
 			new Name("Preserved Rib", 1 / 50),
 
 			new Name("Preserved Collarbone", 1.4),
-			new Name("Preserved Vertebrae", 3.6),
 
 			new Name("Preserved Cranium", 10),
 		).value(min, max);

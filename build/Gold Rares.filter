@@ -465,7 +465,7 @@ Show
 
 Show
 	Class == "Stackable Currency"
-	BaseType == "Preserved Collarbone" "Preserved Vertebrae"
+	BaseType == "Preserved Collarbone"
 
 	SetFontSize 37
 	SetTextColor 255 194 144 255
