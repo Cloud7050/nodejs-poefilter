@@ -265,7 +265,6 @@ export class NameManager {
 			new Name("Omen of Greater Exaltation", 1 / 3),
 
 			new Name("Omen of Dextral Exaltation", 3),
-			new Name("Omen of Homogenising Coronation", 3.5),
 			new Name("Omen of Resurgence", 4),
 			new Name("Omen of Sinistral Exaltation", 4),
 			new Name("Omen of Chaotic Quantity", 7),
@@ -283,7 +282,6 @@ export class NameManager {
 			new Name("Omen of Chaotic Rarity", 25),
 			new Name("Omen of Recombination", 28),
 			new Name("Omen of Reinforcements", 77),
-			new Name("Omen of Homogenising Exaltation", 80),
 			new Name("Omen of Sinistral Crystallisation", 101),
 			new Name("Omen of Sanctification", 334),
 

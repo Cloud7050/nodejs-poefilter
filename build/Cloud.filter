@@ -880,7 +880,7 @@ Show
 
 Show
 	Class == Omen
-	BaseType == "Omen of Answered Prayers" "Omen of Bartering" "Omen of Chaotic Quantity" "Omen of Dextral Exaltation" "Omen of Homogenising Coronation" "Omen of Resurgence" "Omen of Sinistral Exaltation"
+	BaseType == "Omen of Answered Prayers" "Omen of Bartering" "Omen of Chaotic Quantity" "Omen of Dextral Exaltation" "Omen of Resurgence" "Omen of Sinistral Exaltation"
 
 	SetFontSize 37
 	SetTextColor 255 194 144 255
@@ -890,7 +890,7 @@ Show
 
 Show
 	Class == Omen
-	BaseType == "Omen of Amelioration" "Omen of Catalysing Exaltation" "Omen of Chaotic Monsters" "Omen of Chaotic Rarity" "Omen of Corruption" "Omen of Dextral Crystallisation" "Omen of Homogenising Exaltation" "Omen of Recombination" "Omen of Reinforcements" "Omen of Sanctification" "Omen of Secret Compartments" "Omen of Sinistral Crystallisation" "Omen of the Blessed" "Omen of the Hunt"
+	BaseType == "Omen of Amelioration" "Omen of Catalysing Exaltation" "Omen of Chaotic Monsters" "Omen of Chaotic Rarity" "Omen of Corruption" "Omen of Dextral Crystallisation" "Omen of Recombination" "Omen of Reinforcements" "Omen of Sanctification" "Omen of Secret Compartments" "Omen of Sinistral Crystallisation" "Omen of the Blessed" "Omen of the Hunt"
 
 	SetFontSize 45
 	SetTextColor 57 28 0 255
