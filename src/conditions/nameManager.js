@@ -589,6 +589,7 @@ export class NameManager {
 
 			new Name("Ashen Staff", 10, CATEGORY.STAFF, 0), // Firebolt
 			new Name("Chiming Staff", 10, CATEGORY.STAFF, 25), // Sigil of Power
+			new Name("Reflecting Staff", 10, CATEGORY.STAFF, 70), // Mirror of Refraction  //TODO price unknown
 
 			// https://poe2db.tw/us/One_Hand_Maces#OneHandMacesItem
 			new Name("Wooden Club", 1, CATEGORY.ONE_HANDED_MACE, 0),
@@ -627,7 +628,9 @@ export class NameManager {
 			new Name("Jagged Spear", 1, CATEGORY.SPEAR, 59),
 			new Name("Helix Spear", 1, CATEGORY.SPEAR, 65),
 			new Name("Orichalcum Spear", 1, CATEGORY.SPEAR, 67),
+			new Name("Soaring Spear", 1, CATEGORY.SPEAR, 70), //TODO price unknown
 			new Name("Pronged Spear", 1, CATEGORY.SPEAR, 72),
+			new Name("Guardian Spear", 1, CATEGORY.SPEAR, 75), // 38-79 phys, 5% cc, x1.55, Prevent +3—7% of Damage from Deflected Hits //TODO price unknown
 			new Name("Stalking Spear", 5, CATEGORY.SPEAR, 77), // 47-79 phys, 5% cc, x1.55, 15–25% chance to Maim on Hit
 			new Name("Flying Spear", 5, CATEGORY.SPEAR, 78), // 46-77 phys, 5% cc, x1.6, 25–35% increased Projectile Speed with this Weapon
 			new Name("Akoyan Spear", 5, CATEGORY.SPEAR, 78), // 39-72 phys, 7% cc, x1.6
@@ -697,6 +700,7 @@ export class NameManager {
 			new Name("Guardian Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 62),
 			new Name("Sinister Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 67),
 			new Name("Lunar Quarterstaff", 1, CATEGORY.QUARTERSTAFF, 72),
+			new Name("Skullcrusher Quarterstaff", 5, CATEGORY.QUARTERSTAFF, 75), // 59-122 phys, 10% cc, x1.3, 20—50% chance to Daze on Hit //TODO price unknown
 			new Name("Razor Quarterstaff", 5, CATEGORY.QUARTERSTAFF, 77), // 65-108 phys, 10% cc, x1.4
 			new Name("Bolting Quarterstaff", 5, CATEGORY.QUARTERSTAFF, 78), // 24-97 phys, 1-100 lightning, 10% cc, x1.4
 			new Name("Dreaming Quarterstaff", 5, CATEGORY.QUARTERSTAFF, 78), // 99-133 phys, 0% cc, x1.5
@@ -705,7 +709,7 @@ export class NameManager {
 			new Name("Striking Quarterstaff", 10, CATEGORY.QUARTERSTAFF, 77), // 53-111 phys, 10% cc, x1.4, 16% increased Melee Strike Range with this weapon
 
 			// https://poe2db.tw/us/Talismans#TalismansItem
-			//TODO prices have not been checked
+			//TODO prices unknown
 			new Name("Changeling Talisman", 1, CATEGORY.TALISMAN, 0),
 			new Name("Nettle Talisman", 1, CATEGORY.TALISMAN, 5),
 			new Name("Cinderbark Talisman", 1, CATEGORY.TALISMAN, 10),
@@ -943,7 +947,7 @@ export class NameManager {
 			new Name("Soaring Mask", 1, CATEGORY.HELMET_EV_ES, 75),
 			new Name("Grinning Mask", 5, CATEGORY.HELMET_EV_ES, 80),
 
-			// https://poe2db.tw/us/Body_AMs#BodyArmoursItem
+			// https://poe2db.tw/us/Body_Armours#BodyArmoursItem
 			new Name("Rusted Cuirass", 1, CATEGORY.BODY_AM, 0),
 			new Name("Fur Plate", 1, CATEGORY.BODY_AM, 4),
 			new Name("Iron Cuirass", 1, CATEGORY.BODY_AM, 11),
@@ -1049,6 +1053,8 @@ export class NameManager {
 
 			new Name("Sleek Jacket", 10, CATEGORY.BODY_EV_ES, 65), // 268 EV, 101 ES
 			new Name("Falconer's Jacket", 10, CATEGORY.BODY_EV_ES, 75), // 223 EV, 84 ES, 5% increased Movement Speed
+
+			new Name("Sacrificial Regalia", 10, CATEGORY.BODY_EV_ES, 75), // 269 AM, 245 EV, 93 ES, +1 to Level of all Corrupted Skill Gems //TODO price unknown
 
 			// https://poe2db.tw/us/Gloves
 			new Name("Stocky Mitts", 1, CATEGORY.GLOVES_AM, 0),
