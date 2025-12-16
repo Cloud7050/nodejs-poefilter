@@ -3350,23 +3350,51 @@ Show
 	#
 
 Hide
+	Class == Spears Bucklers Sceptres Wands Staves "One Hand Maces" Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Shields Foci Quivers
+	BaseType == "Blazon Crest Shield" "Broadhead Quiver" "Changeling Talisman" "Crude Bow" "Felled Greatclub" "Hardwood Spear" "Hardwood Targe" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Oak Greathammer" "Smithing Hammer" "Splintered Tower Shield" "Tense Crossbow" "Twig Focus" "Wooden Club" "Wrapped Quarterstaff"
+	Rarity == Normal Magic
+
+	DisableDropSound
+
+Hide
+	Class == Spears Bucklers Sceptres Wands Staves "One Hand Maces" Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Shields Foci Quivers
+	Rarity == Normal Magic
+	ItemLevel < 5
+
+	DisableDropSound
+
+Hide
 	Class == Sceptres Wands Staves "One Hand Maces" Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Shields Foci Quivers
-	Rarity == Normal
+	Rarity == Normal Magic
 	ItemLevel < 80
 
 	DisableDropSound
 
 Hide
 	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Chain Mail" "Fur Plate" "Gauze Wraps" "Hermit Garb" "Leather Vest" "Pilgrim Vestments" "Quilted Vest" "Rawhide Boots" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Torn Gloves" "Twig Circlet"
+	Rarity == Normal Magic
+
+	DisableDropSound
+
+Hide
+	Class == Helmets "Body Armours" Gloves Boots
+	Rarity == Normal Magic
+	ItemLevel < 5
+
+	DisableDropSound
+
+Hide
+	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Adherent Cuffs" "Adherent's Raiment" "Aged Cuffs" "Altar Robe" "Ancestral Tiara" "Ancient Cuffs" "Ancient Mitts" "Apostle Leggings" "Baroque Gloves" "Beaded Circlet" "Bolstered Mitts" "Bone Raiment" "Bound Cuffs" "Bound Sandals" "Bronze Greaves" "Bulwark Greaves" "Carved Greaves" "Ceremonial Robe" "Chain Tiara" "Chieftain Cuirass" "Cleric Vestments" "Commander Greathelm" "Conjurer Mantle" "Cryptic Crown" "Cryptic Leggings" "Cultist Crown" "Death Mantle" "Detailed Mitts" "Divine Crown" "Druidic Crown" "Dunerunner Sandals" "Elegant Greathelm" "Elegant Greaves" "Elegant Plate" "Elegant Slippers" "Elementalist Robe" "Elite Greathelm" "Embroidered Gloves" "Faithful Leggings" "Feathered Mitts" "Feathered Raiment" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Fierce Greathelm" "Flax Sandals" "Flowing Raiment" "Full Plate" "Fur Plate" "Gleaming Cuffs" "Gold Circlet" "Gold Gloves" "Goldcast Cuffs" "Grim Gloves" "Hallowed Crown" "Heartcarver Mantle" "Heavy Crown" "Heavy Plate" "Hexer's Robe" "Horned Crown" "Imperial Greathelm" "Inquisitor Crown" "Intricate Gloves" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Jade Tiara" "Jewelled Gloves" "Juggernaut Plate" "Jungle Tiara" "Kamasan Tiara" "Keth Raiment" "Knightly Mitts" "Lattice Sandals" "Luxurious Slippers" "Mail Vestments" "Maraketh Cuirass" "Martyr Crown" "Masked Greathelm" "Massive Mitts" "Moulded Mitts" "Mystic Raiment" "Noble Greathelm" "Occultist Mantle" "Opulent Gloves" "Ornate Cuffs" "Ornate Greaves" "Ornate Mitts" "Ornate Plate" "Padded Leggings" "Paragon Greathelm" "Pauascale Gloves" "Pelt Leggings" "Pelt Mantle" "Pilgrim Vestments" "Plated Vestments" "Raider Plate" "Reefsteel Greaves" "River Raiment" "Riveted Mitts" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Sacramental Robe" "Sacrificial Mantle" "Saintly Crown" "Sandsworn Sandals" "Sandsworn Tiara" "Seastorm Mantle" "Secured Leggings" "Sekhema Sandals" "Shaman Mantle" "Shamanistic Leggings" "Silk Robe" "Silk Slippers" "Sirenscale Gloves" "Skycrown Tiara" "Soldier Cuirass" "Soldier Greathelm" "Sombre Gloves" "Sorcerous Tiara" "Spired Greathelm" "Spiritbone Crown" "Steel Plate" "Stitched Gloves" "Stocky Mitts" "Stone Cuirass" "Stone Greaves" "Straw Sandals" "Tasalian Greaves" "Tattered Robe" "Tempered Mitts" "Tideseer Mantle" "Torn Gloves" "Trimmed Greaves" "Twig Circlet" "Utzaal Cuirass" "Vaal Cuirass" "Vaal Gloves" "Vaal Greaves" "Vaal Mitts" "Verisium Cuffs" "Vermeil Circlet" "Vile Robe" "Votive Raiment" "Warlock Leggings" "Warlord Cuirass" "Warmonger Greathelm" "Warrior Greathelm" "Weaver Leggings" "Wicker Tiara" "Wolfskin Mantle" "Wrapped Greathelm" "Wrapped Sandals"
-	Rarity == Normal
+	Rarity == Normal Magic
 	ItemLevel < 80
 
 	DisableDropSound
 
 Hide
 	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
-	Rarity == Normal
+	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
+	Rarity == Normal Magic
 
 	DisableDropSound

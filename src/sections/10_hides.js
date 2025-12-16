@@ -3,7 +3,7 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager, TIER } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { LEVEL_DROP_FLASK, LEVEL_OK } from "../constants.js";
+import { LEVEL_DROP, LEVEL_DROP_FLASK, LEVEL_ITEM, LEVEL_OK, VALUE_BAD } from "../constants.js";
 
 export function sectionHides(filter) {
 	weapons(filter);
@@ -14,9 +14,17 @@ export function sectionHides(filter) {
 }
 
 function weapons(filter) {
-	filter.multiHide((c) => { // Other normal weapons
+	filter.multiHide((c) => { // Too low drop level normal/magic
+		c.categories(CATEGORY.WEAPON);
+		c.names = new Comparison(NameManager.getGear(c, null, VALUE_BAD, LEVEL_DROP, OPERATOR.LT));
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
+	}, (c) => { // Too low ilvl normal/magic
+		c.categories(CATEGORY.WEAPON);
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
+		c.ilvl = new Comparison(LEVEL_ITEM, OPERATOR.LT);
+	}, (c) => { // Other normal/magic weapons
 		c.categories(CATEGORY.WEAPON_OTHER);
-		c.rarity = new Comparison(RARITY.NORMAL);
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	});
 
@@ -24,14 +32,6 @@ function weapons(filter) {
 	// 	c.categories(CATEGORY.WEAPON);
 	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	// 	c.isCorrupted = true;
-	// }, (c) => { // Trash base (mainhands)
-	// 	c.names = new Comparison(NameManager.getMain(TIER.NEVER, OPERATOR.LTE));
-	// 	c.categories(CATEGORY.MAIN);
-	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	// }, (c) => { // Trash base (offhands)
-	// 	c.names = new Comparison(NameManager.getOff(TIER.NEVER, OPERATOR.LTE));
-	// 	c.categories(CATEGORY.OFF);
-	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	// }, (c) => { // Too low ilvl (other caster mainhands)
 	// 	c.categories(CATEGORY.WAND, CATEGORY.STAFF);
 	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
@@ -44,7 +44,15 @@ function weapons(filter) {
 }
 
 function armour(filter) {
-	filter.multiHide((c) => { // Strictly other normal armour
+	filter.multiHide((c) => { // Too low drop level normal/magic
+		c.categories(CATEGORY.ARMOUR);
+		c.names = new Comparison(NameManager.getGear(c, null, VALUE_BAD, LEVEL_DROP, OPERATOR.LT));
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
+	}, (c) => { // Too low ilvl normal/magic
+		c.categories(CATEGORY.ARMOUR);
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
+		c.ilvl = new Comparison(LEVEL_ITEM, OPERATOR.LT);
+	}, (c) => { // Strictly other normal/magic armour
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(
 			CATEGORY.ARMOUR_ALL
@@ -52,7 +60,7 @@ function armour(filter) {
 				.subtract(CATEGORY.ARMOUR_AM_EV)
 				.subtract(CATEGORY.ARMOUR_EV_ES)
 		));
-		c.rarity = new Comparison(RARITY.NORMAL);
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	});
 
@@ -60,22 +68,14 @@ function armour(filter) {
 	// 	c.categories(CATEGORY.ARMOUR);
 	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	// 	c.isCorrupted = true;
-	// }, (c) => { // Trash base
-	// 	c.names = new Comparison(NameManager.getArmour(TIER.NEVER, OPERATOR.LTE));
-	// 	c.categories(CATEGORY.ARMOUR);
-	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	// }, (c) => { // Too low ilvl
-	// 	c.categories(CATEGORY.ARMOUR);
-	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	// 	c.ilvl = new Comparison(82, OPERATOR.LT);
 	// });
 }
 
 function uncommons(filter) {
-	filter.multiHide((c) => { // Normal low drop level flasks
+	filter.multiHide((c) => { // Too low drop level normal/magic flasks
 		c.categories(CATEGORY.FLASK);
 		c.names = new Comparison(NameManager.getGear(c, undefined, undefined, LEVEL_DROP_FLASK, OPERATOR.LT));
-		c.rarity = new Comparison(RARITY.NORMAL);
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 	});
 
 	// filter.multiHide((c) => { // Remaining corrupts
