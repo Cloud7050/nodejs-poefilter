@@ -53,9 +53,10 @@ export const LEVEL_HEAVY_BELT = 50;
 ////
 
 //// Character level to impact what ilvl & drop level are deemed usable
-// export const LEVEL_PLAYER = 13;
-export const LEVEL_ITEM = 5;
-export const LEVEL_DROP = 5;
+// export const LEVEL_PLAYER = 15;
+// export const LEVEL_AREA = 14;
+export const LEVEL_ITEM = 8;
+export const LEVEL_DROP = 8;
 export const LEVEL_DROP_FLASK = 10;
 ////
 
