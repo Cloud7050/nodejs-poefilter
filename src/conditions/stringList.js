@@ -15,6 +15,16 @@ export class StringList {
 		);
 	}
 
+	containsLoose(other) {
+		for (let otherValue of other.values) {
+			for (let value of this.values) {
+				if (value.includes(otherValue)) return true;
+			}
+		}
+
+		return false;
+	}
+
 	export() {
 		let wrappedValues = this.values.map(value => {
 			if (value.includes(" ")) return `"${value}"`;

@@ -1,4 +1,4 @@
-import { CATEGORY } from "../conditions/category.js";
+import { CATEGORY, CATEGORY_CUSTOM } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
@@ -217,7 +217,7 @@ function classArmour(filter) {
 	filter.multiBlock((c) => {
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY.ARMOUR_EV));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.NORMAL);
 	}, (e) => {
 		e.colourWisdom(PAIR_GEAR).sizeExalt();
@@ -227,7 +227,7 @@ function classArmour(filter) {
 	filter.multiBlock((c) => {
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY.ARMOUR_EV));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isLowTier();
 	}, (e) => {
@@ -237,19 +237,19 @@ function classArmour(filter) {
 	filter.multiBlock((c) => { // BiS ilvl
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY.ARMOUR_EV));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
 	}, (c) => { // Max tier
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY.ARMOUR_EV));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isMaxTier();
 	}, (c) => { // Good mod (class)
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY.ARMOUR_EV));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModArmour();
 	}, (e) => {
@@ -260,7 +260,7 @@ function classArmour(filter) {
 	filter.multiBlock((c) => { // Low tier
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY.ARMOUR_EV));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.RARE);
 	}, (e) => {
 		e.colourExalt(PAIR_GEAR).sizeAugment();
@@ -269,13 +269,13 @@ function classArmour(filter) {
 	filter.multiBlock((c) => { // BiS ilvl
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY.ARMOUR_EV));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.RARE);
 		c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
 	}, (c) => { // Good mod (class)
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY.ARMOUR_EV));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModArmour();
 	}, (e) => {
@@ -302,9 +302,7 @@ function otherArmour(filter) {
 	(c) => { // Good mod (other)
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(
-			CATEGORY.ARMOUR_ALL.subtract(CATEGORY.ARMOUR_EV)
-		));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModArmour(true);
 	}, (e) => {
@@ -329,9 +327,7 @@ function otherArmour(filter) {
 	(c) => { // Good mod (other)
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(
-			CATEGORY.ARMOUR_ALL.subtract(CATEGORY.ARMOUR_EV)
-		));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModArmour(true);
 	}, (e) => {

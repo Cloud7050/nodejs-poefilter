@@ -1,6 +1,6 @@
 import { Colour, PRESET } from "./effects/colour.js";
 
-// Colour pairs
+//// Colour pairs
 // ROSE
 export const PAIR_CURRENCY = [Colour.RED, PRESET.RED];
 export const PAIR_MECHANIC2 = [Colour.ORANGE, PRESET.ORANGE]; // Abyssal omens, expedition coinage
@@ -19,19 +19,23 @@ export const PAIR_GEAR = [Colour.LAPIS, PRESET.BLUE]; // Vault reliquary keys
 export const PAIR_ESSENCE = [Colour.PURPLE, PRESET.PURPLE];
 export const PAIR_LEAGUE = [Colour.VIOLET, PRESET.PURPLE];
 export const PAIR_MAP2 = [Colour.PINK, PRESET.PINK]; // Pinnacle fragment keys, trial tickets > chaos fate keys, splinters/kulemak's invitations
+////
 
-// Minimum price breakpoints to style as a certain size
+//// Minimum price breakpoints to style as a certain size
 export const PRICE_AUGMENT = 1 / 100;
 export const PRICE_EXALT = 1;
 export const PRICE_CHANCE = 10;
 export const PRICE_DIV = 500; // Exalts per divine
+////
 
-// Minimum price breakpoints to whitelist or hide
+//// Minimum price breakpoints to whitelist or hide
 export const VALUE_BAD = 2;
-export const VALUE_OTHER = 5;
+// export const VALUE_OTHER = 5;
+////
 
-// BiS item levels
+//// BiS item levels
 export const LEVEL_OK = 80;
+
 export const LEVEL_BIS = 82;
 export const LEVEL_BIS_MAP_DROP = 79;
 export const LEVEL_BIS_RELIC = 80;
@@ -39,16 +43,25 @@ export const LEVEL_BIS_WAND_STAFF = 81;
 export const LEVEL_BIS_CHARM = 81;
 export const LEVEL_BIS_FLASK = 83;
 
-export const LEVEL_HEAVY_BELT = 50;
+// Drop levels to not be too-low tier
+export const LEVEL_DROP_CASTER_QUIVER = 1;
+export const LEVEL_DROP_ATTACKER = 75;
+export const LEVEL_DROP_OFF_ARMOUR = 80;
+export const LEVEL_DROP_BODY = 65;
 
-// Character level to impact what ilvl & drop level are deemed usable
-export const LEVEL_PLAYER = 13;
+export const LEVEL_HEAVY_BELT = 50;
+////
+
+//// Character level to impact what ilvl & drop level are deemed usable
+// export const LEVEL_PLAYER = 13;
 export const LEVEL_ITEM = 5;
 export const LEVEL_DROP = 5;
 export const LEVEL_DROP_FLASK = 10;
+////
 
-// Maximum price breakpoints for gold piles
+//// Maximum price breakpoints for gold piles
 export const GOLD_HIDE = 0; // 50
 export const GOLD_WISDOM = 100; // 100
 export const GOLD_AUGMENT = 500; // 2500
 export const GOLD_AUGMENT_EXALT = 1000; // 5000
+////

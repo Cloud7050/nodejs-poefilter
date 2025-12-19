@@ -4,85 +4,51 @@ import { StringList } from "./stringList.js";
 
 //// With rarity
 // Class weapons
-const SPEAR = new StringList("Spears");
-const MAIN_CLASS = new StringList(SPEAR);
-const BUCKLER = new StringList("Bucklers");
-const OFF_CLASS = new StringList(BUCKLER);
-const WEAPON_CLASS =  new StringList(MAIN_CLASS, OFF_CLASS);
+
 
 // Other weapons
 const SCEPTRE = new StringList("Sceptres");
 const WAND = new StringList("Wands");
-const MAIN_OTHER_CASTER_ONE = new StringList(SCEPTRE, WAND);
+const MAIN_CASTER_ONE = new StringList(SCEPTRE, WAND);
 const STAFF = new StringList("Staves");
-const MAIN_OTHER_CASTER_TWO = new StringList(STAFF);
-const MAIN_OTHER_CASTER = new StringList(MAIN_OTHER_CASTER_ONE, MAIN_OTHER_CASTER_TWO);
+const MAIN_CASTER_TWO = new StringList(STAFF);
+const MAIN_CASTER = new StringList(MAIN_CASTER_ONE, MAIN_CASTER_TWO);
+
 const ONE_HANDED_MACE = new StringList("One Hand Maces");
-const MAIN_OTHER_ATTACKER_ONE = new StringList(ONE_HANDED_MACE);
+const SPEAR = new StringList("Spears");
+const MAIN_ATTACKER_ONE = new StringList(ONE_HANDED_MACE, SPEAR);
 const BOW = new StringList("Bows");
 const CROSSBOW = new StringList("Crossbows");
 const QUARTERSTAFF = new StringList("Quarterstaves");
 const TALISMAN = new StringList("Talismans");
 const TWO_HANDED_MACE = new StringList("Two Hand Maces");
-const MAIN_OTHER_ATTACKER_TWO = new StringList(BOW, CROSSBOW, QUARTERSTAFF, TALISMAN, TWO_HANDED_MACE);
-const MAIN_OTHER_ATTACKER = new StringList(MAIN_OTHER_ATTACKER_ONE, MAIN_OTHER_ATTACKER_TWO);
-const MAIN_OTHER = new StringList(MAIN_OTHER_CASTER, MAIN_OTHER_ATTACKER);
-const SHIELD_AM = new StringList("Shields_TOWER_SHIELD");
-const SHIELD_AM_EV = new StringList("Shields_TARGE");
-const SHIELD_AM_ES = new StringList("Shields_CREST_SHIELD");
+const MAIN_ATTACKER_TWO = new StringList(BOW, CROSSBOW, QUARTERSTAFF, TALISMAN, TWO_HANDED_MACE);
+const MAIN_ATTACKER = new StringList(MAIN_ATTACKER_ONE, MAIN_ATTACKER_TWO);
+const MAIN = new StringList(MAIN_CASTER, MAIN_ATTACKER);
+
+const BUCKLER = new StringList("Bucklers");
 const SHIELD = new StringList("Shields");
-const OFF_OTHER_BLOCK = new StringList(SHIELD);
 const FOCUS = new StringList("Foci");
 const QUIVER = new StringList("Quivers");
-const OFF_OTHER = new StringList(OFF_OTHER_BLOCK, FOCUS, QUIVER);
-const WEAPON_OTHER = new StringList(MAIN_OTHER, OFF_OTHER);
-const MAIN = new StringList(MAIN_CLASS, MAIN_OTHER);
-const OFF = new StringList(OFF_CLASS, OFF_OTHER);
-const WEAPON = new StringList(WEAPON_CLASS, WEAPON_OTHER);
+const OFF = new StringList(BUCKLER, SHIELD, FOCUS, QUIVER);
+const WEAPON = new StringList(MAIN, OFF);
 
-const HELMET_AM = new StringList("Helmets_GREATHELM");
-const HELMET_EV = new StringList("Helmets_HOOD_CAP");
-const HELMET_ES = new StringList("Helmets_CIRCLET_TIARA");
-const HELMET_AM_EV = new StringList("Helmets_HELM");
-const HELMET_AM_ES = new StringList("Helmets_CROWN");
-const HELMET_EV_ES = new StringList("Helmets_MASK");
-const HELMET_ALL = new StringList(HELMET_AM, HELMET_EV, HELMET_ES, HELMET_AM_EV, HELMET_AM_ES, HELMET_EV_ES);
+const MAIN_CLASS = new StringList(SPEAR);
+const OFF_CLASS = new StringList(BUCKLER);
+const WEAPON_CLASS =  new StringList(MAIN_CLASS, OFF_CLASS);
+const MAIN_OTHER = MAIN.subtract(MAIN_CLASS);
+const OFF_OTHER = OFF.subtract(OFF_CLASS);
+const WEAPON_OTHER = WEAPON.subtract(WEAPON_CLASS);
+
 const HELMET = new StringList("Helmets");
-const BODY_AM = new StringList("Body Armours_CUIRASS_PLATE");
-const BODY_EV = new StringList("Body Armours_VEST_COAT");
-const BODY_ES = new StringList("Body Armours_ROBE_RAIMENT");
-const BODY_AM_EV = new StringList("Body Armours_MAIL_ARMOUR");
-const BODY_AM_ES = new StringList("Body Armours_VESTMENTS_MANTLE");
-const BODY_EV_ES = new StringList("Body Armours_GARB_JACKET");
-const BODY_ALL = new StringList(BODY_AM, BODY_EV, BODY_ES, BODY_AM_EV, BODY_AM_ES, BODY_EV_ES);
 const BODY = new StringList("Body Armours");
-const GLOVES_AM = new StringList("Gloves_MITTS");
-const GLOVES_EV = new StringList("Gloves_BRACERS");
-const GLOVES_ES = new StringList("Gloves_GLOVES");
-const GLOVES_AM_EV = new StringList("Gloves_GAUNTLETS");
-const GLOVES_AM_ES = new StringList("Gloves_CUFFS");
-const GLOVES_EV_ES = new StringList("Gloves_WRAPS");
-const GLOVES_ALL = new StringList(GLOVES_AM, GLOVES_EV, GLOVES_ES, GLOVES_AM_EV, GLOVES_AM_ES, GLOVES_EV_ES);
 const GLOVES = new StringList("Gloves");
-const BOOTS_AM = new StringList("Boots_GREAVES");
-const BOOTS_EV = new StringList("Boots_BOOTS");
-const BOOTS_ES = new StringList("Boots_SANDALS_SLIPPERS");
-const BOOTS_AM_EV = new StringList("Boots_SABATONS");
-const BOOTS_AM_ES = new StringList("Boots_LEGGINGS");
-const BOOTS_EV_ES = new StringList("Boots_SHOES");
-const BOOTS_ALL = new StringList(BOOTS_AM, BOOTS_EV, BOOTS_ES, BOOTS_AM_EV, BOOTS_AM_ES, BOOTS_EV_ES);
 const BOOTS = new StringList("Boots");
-const ARMOUR_AM = new StringList(HELMET_AM, BODY_AM, GLOVES_AM, BOOTS_AM);
-const ARMOUR_EV = new StringList(HELMET_EV, BODY_EV, GLOVES_EV, BOOTS_EV);
-const ARMOUR_ES = new StringList(HELMET_ES, BODY_ES, GLOVES_ES, BOOTS_ES);
-const ARMOUR_AM_EV = new StringList(HELMET_AM_EV, BODY_AM_EV, GLOVES_AM_EV, BOOTS_AM_EV);
-const ARMOUR_AM_ES = new StringList(HELMET_AM_ES, BODY_AM_ES, GLOVES_AM_ES, BOOTS_AM_ES);
-const ARMOUR_EV_ES = new StringList(HELMET_EV_ES, BODY_EV_ES, GLOVES_EV_ES, BOOTS_EV_ES);
-const ARMOUR_ALL = new StringList(HELMET_ALL, BODY_ALL, GLOVES_ALL, BOOTS_ALL);
 const ARMOUR = new StringList(HELMET, BODY, GLOVES, BOOTS);
-const SOCKET_ONE = new StringList(WEAPON_CLASS, MAIN_OTHER_CASTER_ONE, MAIN_OTHER_ATTACKER_ONE, FOCUS, OFF_OTHER_BLOCK, HELMET, GLOVES, BOOTS);
-const SOCKET_TWO = new StringList(MAIN_OTHER_CASTER_TWO, MAIN_OTHER_ATTACKER_TWO, BODY);
+const SOCKET_ONE = new StringList(MAIN_CASTER_ONE, MAIN_ATTACKER_ONE, BUCKLER, SHIELD, FOCUS, HELMET, GLOVES, BOOTS);
+const SOCKET_TWO = new StringList(MAIN_CASTER_TWO, MAIN_ATTACKER_TWO, BODY);
 const GEAR_COMMON = new StringList(WEAPON, ARMOUR);
+
 const AMULET = new StringList("Amulets");
 const RING = new StringList("Rings");
 const JEWELLERY = new StringList(AMULET, RING);
@@ -99,6 +65,64 @@ const JEWEL = new StringList("Jewels");
 const WAYSTONE = new StringList("Waystones");
 const TABLET = new StringList("Tablet");
 const RELIC = new StringList("Relics");
+////
+
+//// Custom
+const SHIELD_AM = new StringList("Shields_TOWER_SHIELD");
+const SHIELD_AM_EV = new StringList("Shields_TARGE");
+const SHIELD_AM_ES = new StringList("Shields_CREST_SHIELD");
+const SHIELD_ALL = new StringList(SHIELD_AM, SHIELD_AM_EV, SHIELD_AM_ES);
+
+const HELMET_AM = new StringList("Helmets_GREATHELM");
+const HELMET_EV = new StringList("Helmets_HOOD_CAP");
+const HELMET_ES = new StringList("Helmets_CIRCLET_TIARA");
+const HELMET_AM_EV = new StringList("Helmets_HELM");
+const HELMET_AM_ES = new StringList("Helmets_CROWN");
+const HELMET_EV_ES = new StringList("Helmets_MASK");
+const HELMET_ALL = new StringList(HELMET_AM, HELMET_EV, HELMET_ES, HELMET_AM_EV, HELMET_AM_ES, HELMET_EV_ES);
+
+const BODY_AM = new StringList("Body Armours_CUIRASS_PLATE");
+const BODY_EV = new StringList("Body Armours_VEST_COAT");
+const BODY_ES = new StringList("Body Armours_ROBE_RAIMENT");
+const BODY_AM_EV = new StringList("Body Armours_MAIL_ARMOUR");
+const BODY_AM_ES = new StringList("Body Armours_VESTMENTS_MANTLE");
+const BODY_EV_ES = new StringList("Body Armours_GARB_JACKET");
+const BODY_ALL = new StringList(BODY_AM, BODY_EV, BODY_ES, BODY_AM_EV, BODY_AM_ES, BODY_EV_ES);
+
+const GLOVES_AM = new StringList("Gloves_MITTS");
+const GLOVES_EV = new StringList("Gloves_BRACERS");
+const GLOVES_ES = new StringList("Gloves_GLOVES");
+const GLOVES_AM_EV = new StringList("Gloves_GAUNTLETS");
+const GLOVES_AM_ES = new StringList("Gloves_CUFFS");
+const GLOVES_EV_ES = new StringList("Gloves_WRAPS");
+const GLOVES_ALL = new StringList(GLOVES_AM, GLOVES_EV, GLOVES_ES, GLOVES_AM_EV, GLOVES_AM_ES, GLOVES_EV_ES);
+
+const BOOTS_AM = new StringList("Boots_GREAVES");
+const BOOTS_EV = new StringList("Boots_BOOTS");
+const BOOTS_ES = new StringList("Boots_SANDALS_SLIPPERS");
+const BOOTS_AM_EV = new StringList("Boots_SABATONS");
+const BOOTS_AM_ES = new StringList("Boots_LEGGINGS");
+const BOOTS_EV_ES = new StringList("Boots_SHOES");
+const BOOTS_ALL = new StringList(BOOTS_AM, BOOTS_EV, BOOTS_ES, BOOTS_AM_EV, BOOTS_AM_ES, BOOTS_EV_ES);
+
+const ARMOUR_AM = new StringList(HELMET_AM, BODY_AM, GLOVES_AM, BOOTS_AM);
+const ARMOUR_EV = new StringList(HELMET_EV, BODY_EV, GLOVES_EV, BOOTS_EV);
+const ARMOUR_ES = new StringList(HELMET_ES, BODY_ES, GLOVES_ES, BOOTS_ES);
+const ARMOUR_AM_EV = new StringList(HELMET_AM_EV, BODY_AM_EV, GLOVES_AM_EV, BOOTS_AM_EV);
+const ARMOUR_AM_ES = new StringList(HELMET_AM_ES, BODY_AM_ES, GLOVES_AM_ES, BOOTS_AM_ES);
+const ARMOUR_EV_ES = new StringList(HELMET_EV_ES, BODY_EV_ES, GLOVES_EV_ES, BOOTS_EV_ES);
+const ARMOUR_ALL = new StringList(HELMET_ALL, BODY_ALL, GLOVES_ALL, BOOTS_ALL);
+
+const HELMET_CLASS = new StringList(HELMET_EV, HELMET_ES, HELMET_EV_ES, HELMET_AM_EV);
+const BODY_CLASS = new StringList(BODY_EV, BODY_ES, BODY_EV_ES, BODY_AM_EV);
+const GLOVES_CLASS = new StringList(GLOVES_EV, GLOVES_ES, GLOVES_EV_ES, GLOVES_AM_EV);
+const BOOTS_CLASS = new StringList(BOOTS_EV, BOOTS_ES, BOOTS_EV_ES, BOOTS_AM_EV);
+const ARMOUR_CLASS =  new StringList(HELMET_CLASS, BODY_CLASS, GLOVES_CLASS, BOOTS_CLASS);
+const HELMET_OTHER = HELMET_ALL.subtract(HELMET_CLASS);
+const BODY_OTHER = BODY_ALL.subtract(BODY_CLASS);
+const GLOVES_OTHER = GLOVES_ALL.subtract(GLOVES_CLASS);
+const BOOTS_OTHER = BOOTS_ALL.subtract(BOOTS_CLASS);
+const ARMOUR_OTHER = ARMOUR_ALL.subtract(ARMOUR_CLASS);
 ////
 
 //// No rarity
@@ -120,84 +144,48 @@ const PINNACLE = new StringList("Pinnacle Keys");
 ////
 
 export const CATEGORY = {
-	SPEAR,
-	MAIN_CLASS,
-	BUCKLER,
-	OFF_CLASS,
-	WEAPON_CLASS,
-
 	SCEPTRE,
 	WAND,
-	MAIN_OTHER_CASTER_ONE,
+	MAIN_CASTER_ONE,
 	STAFF,
-	MAIN_OTHER_CASTER_TWO,
-	MAIN_OTHER_CASTER,
+	MAIN_CASTER_TWO,
+	MAIN_CASTER,
+
 	ONE_HANDED_MACE,
-	MAIN_OTHER_ATTACKER_ONE,
+	SPEAR,
+	MAIN_ATTACKER_ONE,
 	BOW,
 	CROSSBOW,
 	QUARTERSTAFF,
 	TALISMAN,
 	TWO_HANDED_MACE,
-	MAIN_OTHER_ATTACKER_TWO,
-	MAIN_OTHER_ATTACKER,
-	MAIN_OTHER,
-	SHIELD_AM,
-	SHIELD_AM_EV,
-	SHIELD_AM_ES,
+	MAIN_ATTACKER_TWO,
+	MAIN_ATTACKER,
+	MAIN,
+
+	BUCKLER,
 	SHIELD,
-	OFF_OTHER_BLOCK,
 	FOCUS,
 	QUIVER,
-	OFF_OTHER,
-	WEAPON_OTHER,
-	MAIN,
 	OFF,
 	WEAPON,
 
-	HELMET_AM,
-	HELMET_EV,
-	HELMET_ES,
-	HELMET_AM_EV,
-	HELMET_AM_ES,
-	HELMET_EV_ES,
-	HELMET_ALL,
+	MAIN_CLASS,
+	OFF_CLASS,
+	WEAPON_CLASS,
+	MAIN_OTHER,
+	OFF_OTHER,
+	WEAPON_OTHER,
+
 	HELMET,
-	BODY_AM,
-	BODY_EV,
-	BODY_ES,
-	BODY_AM_EV,
-	BODY_AM_ES,
-	BODY_EV_ES,
-	BODY_ALL,
 	BODY,
-	GLOVES_AM,
-	GLOVES_EV,
-	GLOVES_ES,
-	GLOVES_AM_EV,
-	GLOVES_AM_ES,
-	GLOVES_EV_ES,
-	GLOVES_ALL,
 	GLOVES,
-	BOOTS_AM,
-	BOOTS_EV,
-	BOOTS_ES,
-	BOOTS_AM_EV,
-	BOOTS_AM_ES,
-	BOOTS_EV_ES,
-	BOOTS_ALL,
 	BOOTS,
-	ARMOUR_AM,
-	ARMOUR_EV,
-	ARMOUR_ES,
-	ARMOUR_AM_EV,
-	ARMOUR_AM_ES,
-	ARMOUR_EV_ES,
-	ARMOUR_ALL,
 	ARMOUR,
 	SOCKET_ONE,
 	SOCKET_TWO,
 	GEAR_COMMON,
+
 	AMULET,
 	RING,
 	JEWELLERY,
@@ -230,4 +218,62 @@ export const CATEGORY = {
 	VAULT,
 	LOGBOOK,
 	PINNACLE,
+};
+
+export const CATEGORY_CUSTOM = {
+	SHIELD_AM,
+	SHIELD_AM_EV,
+	SHIELD_AM_ES,
+	SHIELD_ALL,
+
+	HELMET_AM,
+	HELMET_EV,
+	HELMET_ES,
+	HELMET_AM_EV,
+	HELMET_AM_ES,
+	HELMET_EV_ES,
+	HELMET_ALL,
+
+	BODY_AM,
+	BODY_EV,
+	BODY_ES,
+	BODY_AM_EV,
+	BODY_AM_ES,
+	BODY_EV_ES,
+	BODY_ALL,
+
+	GLOVES_AM,
+	GLOVES_EV,
+	GLOVES_ES,
+	GLOVES_AM_EV,
+	GLOVES_AM_ES,
+	GLOVES_EV_ES,
+	GLOVES_ALL,
+
+	BOOTS_AM,
+	BOOTS_EV,
+	BOOTS_ES,
+	BOOTS_AM_EV,
+	BOOTS_AM_ES,
+	BOOTS_EV_ES,
+	BOOTS_ALL,
+
+	ARMOUR_AM,
+	ARMOUR_EV,
+	ARMOUR_ES,
+	ARMOUR_AM_EV,
+	ARMOUR_AM_ES,
+	ARMOUR_EV_ES,
+	ARMOUR_ALL,
+
+	HELMET_CLASS,
+	BODY_CLASS,
+	GLOVES_CLASS,
+	BOOTS_CLASS,
+	ARMOUR_CLASS,
+	HELMET_OTHER,
+	BODY_OTHER,
+	GLOVES_OTHER,
+	BOOTS_OTHER,
+	ARMOUR_OTHER,
 };

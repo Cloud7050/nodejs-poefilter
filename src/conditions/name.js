@@ -1,3 +1,6 @@
+import { LEVEL_DROP_ATTACKER, LEVEL_DROP_BODY, LEVEL_DROP_CASTER_QUIVER, LEVEL_DROP_OFF_ARMOUR } from "../constants.js";
+import { CATEGORY } from "./category.js";
+
 export class Name {
 	static FLAG_BAD = "Currency to hide";
 	static FLAG_MAP = "The Fractured Lake unique map drop";
@@ -40,6 +43,35 @@ export class Name {
 	chance() {
 		this.flag(Name.FLAG_CHANCE);
 		return this;
+	}
+
+	isLowTier() {
+		if (this.category === null) {
+			console.error(`ERR Cannot determine tier for Name ${this.name} with null category!`);
+			throw new Error();
+		}
+		if (this.dropLevel === null) {
+			console.error(`ERR Cannot determine tier for Name ${this.name} with null drop level!`);
+			throw new Error();
+		}
+
+		if (this.category.containsLoose(
+			new StringList(CATEGORY.MAIN_CASTER, CATEGORY.QUIVER)
+		)) {
+			return this.dropLevel < LEVEL_DROP_CASTER_QUIVER;
+		} else if (this.category.containsLoose(
+			new StringList(CATEGORY.MAIN_ATTACKER)
+		)) {
+			return this.dropLevel < LEVEL_DROP_ATTACKER;
+		} else if (this.category.containsLoose(
+			new StringList(CATEGORY.OFF, CATEGORY.ARMOUR).subtract(new StringList(CATEGORY.QUIVER, CATEGORY.BODY))
+		)) {
+			return this.dropLevel < LEVEL_DROP_OFF_ARMOUR;
+		} else if (this.category.containsLoose(
+			new StringList(CATEGORY.BODY)
+		)) {
+			return this.dropLevel < LEVEL_DROP_BODY;
+		}
 	}
 
 	// compare(other) {

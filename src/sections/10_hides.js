@@ -1,4 +1,4 @@
-import { CATEGORY } from "../conditions/category.js";
+import { CATEGORY, CATEGORY_CUSTOM } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager, TIER } from "../conditions/nameManager.js";
@@ -54,12 +54,7 @@ function armour(filter) {
 		c.ilvl = new Comparison(LEVEL_ITEM, OPERATOR.LT);
 	}, (c) => { // Strictly other normal/magic armour
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(
-			CATEGORY.ARMOUR_ALL
-				.subtract(CATEGORY.ARMOUR_EV)
-				.subtract(CATEGORY.ARMOUR_AM_EV)
-				.subtract(CATEGORY.ARMOUR_EV_ES)
-		));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	});
