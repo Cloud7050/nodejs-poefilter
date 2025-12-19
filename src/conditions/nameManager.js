@@ -1576,6 +1576,16 @@ export class NameManager {
 		);
 	}
 
+	isCloseTier(dropLevel, tierDiff) {
+		//TODO use this in campaign to stay within x tiers of current area level (not player level)
+
+		//TODO for each category, find all drop levels and sort ascending
+		//TODO find highest drop level that's <= area level, then walk back x indices before if possible (get max(it, 0))
+		//TODO for each name, get its category's target drop level and filter accordingly
+
+		//TODO error if no category or drop level
+	}
+
 	export() {
 		// Alphabetical sort
 		this.names.sort((a, b) => a.name.localeCompare(b.name));
