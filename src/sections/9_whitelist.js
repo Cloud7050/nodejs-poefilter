@@ -7,6 +7,8 @@ import { LEVEL_BIS_MAP_DROP, LEVEL_HEAVY_BELT, PAIR_GEAR, VALUE_BAD } from "../c
 
 // Stop filter here; never hide these. Then need not account for them when hiding
 export function sectionWhitelist(filter, isGoldRares) {
+	campaign(filter);
+
 	chance(filter);
 	mapDrop(filter);
 
@@ -15,6 +17,15 @@ export function sectionWhitelist(filter, isGoldRares) {
 	outline(filter);
 
 	if (isGoldRares) goldRares(filter);
+}
+
+function campaign(filter) {
+	// Salvage
+	filter.multiWhitelist((c) => { // Sockets
+		c.hasSockets(1);
+	}, (c) => { // Quality (under outline section)
+		c.hasQuality(5);
+	});
 }
 
 // Chance bases
@@ -47,11 +58,6 @@ function mapDrop(filter) {
 }
 
 function other(filter) {
-	// Sockets
-	filter.multiWhitelist((c) => {
-		c.hasSockets(1);
-	});
-
 	// High tier
 	filter.multiWhitelist((c) => {
 		c.names = new Comparison(NameManager.getGear(null, VALUE_BAD));
@@ -61,11 +67,6 @@ function other(filter) {
 
 // Whitelist logic for items from outline section
 function outline(filter) {
-	// Quality
-	filter.multiWhitelist((c) => {
-		c.hasQuality(5);
-	});
-
 	// Corrupted (or possibly exceptional)
 	filter.multiWhitelist((c) => { // Quality charm
 		c.categories(CATEGORY.CHARM);

@@ -3135,6 +3135,16 @@ Show
 	Continue
 
 Show
+	Sockets >= 1
+
+	#
+
+Show
+	Quality >= 5
+
+	#
+
+Show
 	Class == Belts
 	Rarity == Normal
 	ItemLevel >= 50
@@ -3160,18 +3170,8 @@ Show
 	#
 
 Show
-	Sockets >= 1
-
-	#
-
-Show
 	BaseType == "Adherent Cuffs" "Aegis Quarterstaff" "Akoyan Club" "Akoyan Spear" "Alpha Talisman" "Amber Amulet" "Amethyst Ring" "Ancestral Tiara" "Antidote Charm" "Ashen Staff" "Attuned Wand" "Azure Amulet" "Blacksteel Crest Shield" "Blacksteel Gauntlets" "Blacksteel Sabatons" "Bloodstone Amulet" "Blunt Quiver" "Bolting Quarterstaff" "Bone Wand" "Breach Ring" "Chiming Staff" "Corsair Coat" "Cryptic Crown" "Cryptic Leggings" "Daggerfoot Shoes" "Death Mail" "Desert Buckler" "Desolate Crossbow" "Dousing Charm" "Drakeskin Boots" "Dreaming Quarterstaff" "Dueling Wand" "Dusk Amulet" "Dusk Ring" "Elegant Crossbow" "Falconer's Jacket" "Fanatic Bow" "Fanatic Greathammer" "Fang Talisman" "Feathered Raiment" "Fine Belt" "Fire Quiver" "Flexed Crossbow" "Flowing Raiment" "Flying Spear" "Fortified Hammer" "Freebooter Cap" "Fungal Talisman" "Galvanic Wand" "Gelid Staff" "Gemini Bow" "Gemini Crossbow" "Gladiatorial Helm" "Gloam Amulet" "Gloam Ring" "Gold Amulet" "Gold Ring" "Golden Charm" "Golden Targe" "Grand Spear" "Grinning Mask" "Guardian Bow" "Heavy Belt" "Imperial Greathelm" "Ironwood Greathammer" "Jade Amulet" "Jade Talisman" "Lapis Amulet" "Linen Belt" "Long Belt" "Lunar Amulet" "Mail Belt" "Maji Talisman" "Marauding Mace" "Massive Greathammer" "Massive Mitts" "Molten Hammer" "Obliterator Bow" "Omen Sceptre" "Ornate Belt" "Ornate Plate" "Paralysing Staff" "Pearl Ring" "Pearlescent Amulet" "Penetrating Quiver" "Penumbra Amulet" "Penumbra Ring" "Plate Belt" "Polished Bracers" "Primed Quiver" "Prismatic Ring" "Pyrophyte Staff" "Rambler Jacket" "Rattling Sceptre" "Rawhide Belt" "Razor Quarterstaff" "Reaping Staff" "Reflecting Staff" "Roaring Staff" "Ruby Ring" "Ruination Maul" "Sacral Quiver" "Sacramental Robe" "Sacrificial Regalia" "Sanctified Staff" "Sapphire Ring" "Secured Wraps" "Sekhema Sandals" "Shrine Sceptre" "Siege Crossbow" "Silver Charm" "Siphoning Wand" "Sirenscale Gloves" "Skullcrusher Quarterstaff" "Sleek Jacket" "Slipstrike Vest" "Solar Amulet" "Soldier Cuirass" "Spiked Spear" "Stalking Spear" "Staunching Charm" "Stellar Amulet" "Stoic Sceptre" "Stone Charm" "Strife Pick" "Striking Quarterstaff" "Swiftstalker Coat" "Tasalian Focus" "Tasalian Greaves" "Tawhoan Greatclub" "Tawhoan Tower Shield" "Tenebrous Amulet" "Tenebrous Ring" "Thawing Charm" "Thunder Talisman" "Topaz Charm" "Topaz Ring" "Toxic Quiver" "Ultimate Life Flask" "Ultimate Mana Flask" "Unset Ring" "Utility Belt" "Utzaal Cuirass" "Vile Robe" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Voltaic Staff" "Warlord Cuirass" "Warmonger Bow" "Withered Wand" "Wolfskin Mantle" "Wrath Sceptre" "Wyrmscale Coat"
 	UnidentifiedItemTier == 5
-
-	#
-
-Show
-	Quality >= 5
 
 	#
 
