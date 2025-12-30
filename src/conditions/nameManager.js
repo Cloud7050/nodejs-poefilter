@@ -1299,6 +1299,7 @@ export class NameManager {
 			// Weapons
 
 			// Armour
+			new Name("Engraved Focus", 1 / 2), // Carrion Call
 			new Name("Hardwood Targe", 1 / 2), // Arvil's Wheel
 
 			new Name("Viper Cap", 5 / 7 * PRICE_DIV), // Constricting Command
@@ -1596,12 +1597,10 @@ export class NameManager {
 			// Sort descending
 			array.sort((a, b) => b - a);
 
-			// console.log(`${key.export()}: ${array}`)
 			let targetIndex = Math.min(0 + maxGap, array.length - 1);
 			// Replace values with target drop level
 			map.set(key, array[targetIndex]);
 		}
-		// console.log(map)
 
 		// Use map to filter current names
 		return new NameManager(
