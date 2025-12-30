@@ -1568,20 +1568,46 @@ export class NameManager {
 		return this.isFlag(Name.FLAG_CLASS, has);
 	}
 
-	isLowTier(is = true) {
+	isEndgame(is = true) {
 		return new NameManager(
-			...this.names.filter(this.names.filter((name) => name.isLowTier() === is))
+			...this.names.filter((name) => name.isEndgame() === is)
 		);
 	}
 
 	isCloseTier(areaLevel, tierDiff) {
-		//TODO use this in campaign to stay within x tiers of current area level (not player level)
+		// For each category, store its drop levels
+		let map = new Map();
+		for (let name of this.names) {
+			// Ignore anything above areaLevel as we can't obtain those
+			if (name.dropLevel > areaLevel) continue;
 
-		//TODO for each category, find all drop levels and sort ascending
-		//TODO find highest drop level that's <= area level, then walk back x indices before if possible (get max(it, 0))
-		//TODO for each name, get its category's target drop level and filter accordingly
+			// Use Set for no duplicates.
+			if (!map.has(name.category)) {
+				map.set(name.category, new Set());
+			}
+			let set = map.get(name.category);
+			set.add(name.dropLevel);
+		}
+		// If the key exists, its set will not be empty
 
-		//TODO error if no category or drop level
+		// For each category, sort set to find lowest acceptable drop level (inclusive)
+		for (let [key, set] of map) {
+			let array = [...set];
+			// Sort descending
+			array.sort((a, b) => b.dropLevel - a.dropLevel);
+
+			let targetIndex = min(0 + tierDiff, array.length - 1);
+			// Replace values with target drop level
+			map.set(key, array[targetIndex]);
+		}
+
+		// Use map to filter current names
+		return new NameManager(
+			...this.names.filter((name) => {
+				return name.dropLevel >= map.get(name.category)
+					|| name.isEndgame();
+			})
+		);
 	}
 
 	export() {

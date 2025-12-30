@@ -40,32 +40,32 @@ export class Name {
 		return this;
 	}
 
-	isLowTier() {
-		if (this.category === null) {
-			console.error(`ERR Cannot determine tier for Name ${this.name} with null category!`);
-			throw new Error();
-		}
-		if (this.dropLevel === null) {
-			console.error(`ERR Cannot determine tier for Name ${this.name} with null drop level!`);
-			throw new Error();
-		}
+	isEndgame() {
+		// if (this.category === null) {
+		// 	console.error(`ERR Cannot determine endgame suitability for Name ${this.name} with null category!`);
+		// 	throw new Error();
+		// }
+		// if (this.dropLevel === null) {
+		// 	console.error(`ERR Cannot determine endgame suitability for Name ${this.name} with null drop level!`);
+		// 	throw new Error();
+		// }
 
 		if (this.category.containsLoose(
 			new StringList(CATEGORY.MAIN_CASTER, CATEGORY.QUIVER)
 		)) {
-			return this.dropLevel < LEVEL_DROP_CASTER_QUIVER;
+			return this.dropLevel >= LEVEL_DROP_CASTER_QUIVER;
 		} else if (this.category.containsLoose(
 			new StringList(CATEGORY.MAIN_ATTACKER)
 		)) {
-			return this.dropLevel < LEVEL_DROP_ATTACKER;
+			return this.dropLevel >= LEVEL_DROP_ATTACKER;
 		} else if (this.category.containsLoose(
 			new StringList(CATEGORY.OFF, CATEGORY.ARMOUR).subtract(new StringList(CATEGORY.QUIVER, CATEGORY.BODY))
 		)) {
-			return this.dropLevel < LEVEL_DROP_OFF_ARMOUR;
+			return this.dropLevel >= LEVEL_DROP_OFF_ARMOUR;
 		} else if (this.category.containsLoose(
 			new StringList(CATEGORY.BODY)
 		)) {
-			return this.dropLevel < LEVEL_DROP_BODY;
+			return this.dropLevel >= LEVEL_DROP_BODY;
 		}
 	}
 

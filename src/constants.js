@@ -43,7 +43,7 @@ export const LEVEL_BIS_WAND_STAFF = 81;
 export const LEVEL_BIS_CHARM = 81;
 export const LEVEL_BIS_FLASK = 83;
 
-// Drop levels to not be too-low tier
+// Minimum drop levels to be suitable for endgame
 export const LEVEL_DROP_CASTER_QUIVER = 1;
 export const LEVEL_DROP_ATTACKER = 75;
 export const LEVEL_DROP_OFF_ARMOUR = 80;
@@ -53,8 +53,8 @@ export const LEVEL_HEAVY_BELT = 50;
 ////
 
 //// Character level to impact what ilvl & drop level are deemed usable
-// export const LEVEL_PLAYER = 15;
-// export const LEVEL_AREA = 14;
+// export const LEVEL_PLAYER = 16;
+// export const LEVEL_AREA = 15;
 export const LEVEL_ITEM = 8;
 export const LEVEL_DROP = 8;
 export const LEVEL_DROP_FLASK = 10;
