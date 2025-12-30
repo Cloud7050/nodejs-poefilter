@@ -1574,7 +1574,7 @@ export class NameManager {
 		);
 	}
 
-	isCloseTier(areaLevel, tierDiff) {
+	isCloseDrop(areaLevel, maxGap, is = true) {
 		// For each category, store its drop levels
 		let map = new Map();
 		for (let name of this.names) {
@@ -1594,18 +1594,22 @@ export class NameManager {
 		for (let [key, set] of map) {
 			let array = [...set];
 			// Sort descending
-			array.sort((a, b) => b.dropLevel - a.dropLevel);
+			array.sort((a, b) => b - a);
 
-			let targetIndex = min(0 + tierDiff, array.length - 1);
+			// console.log(`${key.export()}: ${array}`)
+			let targetIndex = Math.min(0 + maxGap, array.length - 1);
 			// Replace values with target drop level
 			map.set(key, array[targetIndex]);
 		}
+		// console.log(map)
 
 		// Use map to filter current names
 		return new NameManager(
 			...this.names.filter((name) => {
-				return name.dropLevel >= map.get(name.category)
-					|| name.isEndgame();
+				return (
+					name.dropLevel >= map.get(name.category)
+					|| name.isEndgame()
+				) === is;
 			})
 		);
 	}

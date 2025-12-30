@@ -1,5 +1,6 @@
-import { LEVEL_DROP_ATTACKER, LEVEL_DROP_BODY, LEVEL_DROP_CASTER_QUIVER, LEVEL_DROP_OFF_ARMOUR } from "../constants.js";
+import { LEVEL_DROP_ATTACKER, LEVEL_DROP_BODY, LEVEL_DROP_CASTER_QUIVER } from "../constants.js";
 import { CATEGORY } from "./category.js";
+import { StringList } from "./stringList.js";
 
 export class Name {
 	static FLAG_BAD = "Currency to hide";
@@ -41,15 +42,6 @@ export class Name {
 	}
 
 	isEndgame() {
-		// if (this.category === null) {
-		// 	console.error(`ERR Cannot determine endgame suitability for Name ${this.name} with null category!`);
-		// 	throw new Error();
-		// }
-		// if (this.dropLevel === null) {
-		// 	console.error(`ERR Cannot determine endgame suitability for Name ${this.name} with null drop level!`);
-		// 	throw new Error();
-		// }
-
 		if (this.category.containsLoose(
 			new StringList(CATEGORY.MAIN_CASTER, CATEGORY.QUIVER)
 		)) {
@@ -59,14 +51,13 @@ export class Name {
 		)) {
 			return this.dropLevel >= LEVEL_DROP_ATTACKER;
 		} else if (this.category.containsLoose(
-			new StringList(CATEGORY.OFF, CATEGORY.ARMOUR).subtract(new StringList(CATEGORY.QUIVER, CATEGORY.BODY))
-		)) {
-			return this.dropLevel >= LEVEL_DROP_OFF_ARMOUR;
-		} else if (this.category.containsLoose(
 			new StringList(CATEGORY.BODY)
 		)) {
 			return this.dropLevel >= LEVEL_DROP_BODY;
 		}
+
+		// Nothing else gets whitelisted automatically
+		return false;
 	}
 
 	// compare(other) {

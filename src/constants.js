@@ -43,10 +43,11 @@ export const LEVEL_BIS_WAND_STAFF = 81;
 export const LEVEL_BIS_CHARM = 81;
 export const LEVEL_BIS_FLASK = 83;
 
-// Minimum drop levels to be suitable for endgame
-export const LEVEL_DROP_CASTER_QUIVER = 1;
+// Special cases of lower minimum drop levels being suitable for endgame,
+// instead of defaulting to highest possible drop level in category
+export const LEVEL_DROP_CASTER_QUIVER = 0;
 export const LEVEL_DROP_ATTACKER = 75;
-export const LEVEL_DROP_OFF_ARMOUR = 80;
+// export const LEVEL_DROP_OFF_ARMOUR = 80;
 export const LEVEL_DROP_BODY = 65;
 
 export const LEVEL_HEAVY_BELT = 50;
@@ -54,10 +55,7 @@ export const LEVEL_HEAVY_BELT = 50;
 
 //// Character level to impact what ilvl & drop level are deemed usable
 // export const LEVEL_PLAYER = 16;
-// export const LEVEL_AREA = 15;
-export const LEVEL_ITEM = 8;
-export const LEVEL_DROP = 8;
-export const LEVEL_DROP_FLASK = 10;
+export const LEVEL_AREA = 15;
 ////
 
 //// Maximum price breakpoints for gold piles

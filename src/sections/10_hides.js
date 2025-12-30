@@ -3,7 +3,7 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager, TIER } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { LEVEL_DROP, LEVEL_DROP_FLASK, LEVEL_ITEM, LEVEL_OK, VALUE_BAD } from "../constants.js";
+import { LEVEL_AREA, LEVEL_OK } from "../constants.js";
 
 export function sectionHides(filter) {
 	weapons(filter);
@@ -14,14 +14,10 @@ export function sectionHides(filter) {
 }
 
 function weapons(filter) {
-	filter.multiHide((c) => { // Too low drop level normal/magic
+	filter.multiHide((c) => { // Too far drop level normal/magic
 		c.categories(CATEGORY.WEAPON);
-		c.names = new Comparison(NameManager.getGear(c, null, VALUE_BAD, LEVEL_DROP, OPERATOR.LT));
+		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(LEVEL_AREA, 0, false));
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-	}, (c) => { // Too low ilvl normal/magic
-		c.categories(CATEGORY.WEAPON);
-		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-		c.ilvl = new Comparison(LEVEL_ITEM, OPERATOR.LT);
 	}, (c) => { // Other normal/magic weapons
 		c.categories(CATEGORY.WEAPON_OTHER);
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
@@ -44,14 +40,10 @@ function weapons(filter) {
 }
 
 function armour(filter) {
-	filter.multiHide((c) => { // Too low drop level normal/magic
+	filter.multiHide((c) => { // Too far drop level normal/magic
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(c, null, VALUE_BAD, LEVEL_DROP, OPERATOR.LT));
+		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(LEVEL_AREA, 0, false));
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-	}, (c) => { // Too low ilvl normal/magic
-		c.categories(CATEGORY.ARMOUR);
-		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-		c.ilvl = new Comparison(LEVEL_ITEM, OPERATOR.LT);
 	}, (c) => { // Strictly other normal/magic armour
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
@@ -67,9 +59,9 @@ function armour(filter) {
 }
 
 function uncommons(filter) {
-	filter.multiHide((c) => { // Too low drop level normal/magic flasks
+	filter.multiHide((c) => { // Too far drop level normal/magic flasks
 		c.categories(CATEGORY.FLASK);
-		c.names = new Comparison(NameManager.getGear(c, undefined, undefined, LEVEL_DROP_FLASK, OPERATOR.LT));
+		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(LEVEL_AREA, 0, false));
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 	});
 

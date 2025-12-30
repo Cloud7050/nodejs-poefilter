@@ -3259,15 +3259,8 @@ Show
 
 Hide
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
-	BaseType == "Blazon Crest Shield" "Broadhead Quiver" "Changeling Talisman" "Crude Bow" "Felled Greatclub" "Hardwood Spear" "Hardwood Targe" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" Shortbow "Sigil Crest Shield" "Smithing Hammer" "Splintered Tower Shield" "Tense Crossbow" "Twig Focus" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
+	BaseType == "Blazon Crest Shield" "Changeling Talisman" "Crude Bow" "Felled Greatclub" "Hardwood Spear" "Hardwood Targe" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" Shortbow "Smithing Hammer" "Splintered Tower Shield" "Tense Crossbow" "Twig Focus" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
 	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
-	Rarity == Normal Magic
-	ItemLevel < 8
 
 	DisableDropSound
 
@@ -3280,15 +3273,8 @@ Hide
 
 Hide
 	Class == Helmets "Body Armours" Gloves Boots
-	BaseType == "Brimmed Helm" "Chain Mail" "Feathered Robe" "Frayed Shoes" "Fur Plate" "Gauze Wraps" "Hermit Garb" "Hewn Mask" "Iron Crown" "Leather Vest" "Mail Sabatons" "Padded Leggings" "Pilgrim Vestments" "Quilted Vest" "Rawhide Boots" "Ringmail Gauntlets" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Torn Gloves" "Twig Circlet"
+	BaseType == "Brimmed Helm" "Chain Mail" "Feathered Robe" "Fur Plate" "Hermit Garb" "Hewn Mask" "Iron Crown" "Leather Vest" "Pilgrim Vestments" "Quilted Vest" "Rawhide Boots" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Torn Gloves" "Twig Circlet"
 	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	Class == Helmets "Body Armours" Gloves Boots
-	Rarity == Normal Magic
-	ItemLevel < 8
 
 	DisableDropSound
 
