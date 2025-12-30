@@ -54,7 +54,7 @@ function armour(filter) {
 		c.ilvl = new Comparison(LEVEL_ITEM, OPERATOR.LT);
 	}, (c) => { // Strictly other normal/magic armour
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	});
