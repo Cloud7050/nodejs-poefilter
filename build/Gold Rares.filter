@@ -3154,7 +3154,7 @@ Show
 	MinimapIcon 0 Blue Kite
 
 Show
-	BaseType == "Heavy Belt" "Martyr Crown" "Silver Charm" "Viper Cap"
+	BaseType == "Heavy Belt" "Tribal Mask"
 	Rarity == Normal
 	Corrupted False
 

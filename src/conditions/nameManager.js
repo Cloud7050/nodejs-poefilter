@@ -1301,17 +1301,15 @@ export class NameManager {
 			// Armour
 			new Name("Hardwood Targe", 1 / 2), // Arvil's Wheel
 
+			new Name("Viper Cap", 5 / 7 * PRICE_DIV), // Constricting Command
+
+			new Name("Tribal Mask", 22 * PRICE_DIV), // The Vertex
+
 			// Other
+			new Name("Silver Charm", 2 * PRICE_DIV), // The Fall of the Axe
+			new Name("Heavy Belt", 50 * PRICE_DIV), // Headhunter
 
-			//TODO price check these, then start adding uniques
-			new Name("Viper Cap", 5).chance(), // Constricting Command
-
-			new Name("Heavy Belt", 20).chance(), // Headhunter
-			new Name("Martyr Crown", 20).chance(), // Veil of the Night
-			new Name("Silver Charm", 20).chance(), // The Fall of the Axe
-
-
-
+			//TODO add all uniques
 			// new Name("Acrid Wand", TIER.NEVER), // Cursecarver
 			// new Name("Ashen Staff", TIER.NEVER), // Dusk Vigil
 			// new Name("Attuned Wand", TIER.NEVER), // Lifesprig
@@ -1475,6 +1473,12 @@ export class NameManager {
 			// new Name("Ultimate Life Flask", TIER.CLASS), // Olroth's Resolve
 		).value(min, max);
 	}
+	static getChanceBases(min = undefined, max = undefined) {
+		return new NameManager(
+			new Name("Tribal Mask", 39), // The Vertex
+			new Name("Heavy Belt", 79), // Headhunter
+		).value(min, max);
+	}
 	static getUniqueTablets(min = undefined, max = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Unique_item#OtherUnique
@@ -1563,12 +1567,6 @@ export class NameManager {
 	isClass(has = undefined) {
 		return this.isFlag(Name.FLAG_CLASS, has);
 	}
-	// andClass() {
-	// 	return new NameManager(this, this.isClass());
-	// }
-	isChance(has = undefined) {
-		return this.isFlag(Name.FLAG_CHANCE, has);
-	}
 
 	isLowTier(is = true) {
 		return new NameManager(
@@ -1576,7 +1574,7 @@ export class NameManager {
 		);
 	}
 
-	isCloseTier(dropLevel, tierDiff) {
+	isCloseTier(areaLevel, tierDiff) {
 		//TODO use this in campaign to stay within x tiers of current area level (not player level)
 
 		//TODO for each category, find all drop levels and sort ascending

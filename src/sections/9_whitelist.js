@@ -41,7 +41,7 @@ function chance(filter) {
 	});
 
 	filter.multiBlock((c) => {
-		c.names = new Comparison(NameManager.getUniques().isChance());
+		c.names = new Comparison(NameManager.getChanceBases());
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.isCorrupted = false;
 	}, (e) => {
