@@ -182,7 +182,7 @@ Hide
 	AreaLevel >= 75
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 33.33333333333333
+	StackSize < 33
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -242,7 +242,7 @@ Hide
 	AreaLevel >= 70
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 16.666666666666664
+	StackSize < 17
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -435,7 +435,7 @@ Show
 	AreaLevel >= 60
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 185.3846153846154
+	StackSize < 185
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -447,7 +447,7 @@ Show
 	AreaLevel >= 60
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 926.9230769230769
+	StackSize < 927
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -459,7 +459,7 @@ Show
 	AreaLevel >= 60
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 1853.8461538461538
+	StackSize < 1854
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -495,7 +495,7 @@ Show
 	AreaLevel >= 55
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 170.76923076923077
+	StackSize < 171
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -507,7 +507,7 @@ Show
 	AreaLevel >= 55
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 853.8461538461539
+	StackSize < 854
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -519,7 +519,7 @@ Show
 	AreaLevel >= 55
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 1707.6923076923078
+	StackSize < 1708
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -555,7 +555,7 @@ Show
 	AreaLevel >= 50
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 156.1538461538462
+	StackSize < 156
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -567,7 +567,7 @@ Show
 	AreaLevel >= 50
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 780.7692307692308
+	StackSize < 781
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -579,7 +579,7 @@ Show
 	AreaLevel >= 50
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 1561.5384615384617
+	StackSize < 1562
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -615,7 +615,7 @@ Show
 	AreaLevel >= 45
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 141.53846153846152
+	StackSize < 142
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -627,7 +627,7 @@ Show
 	AreaLevel >= 45
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 707.6923076923076
+	StackSize < 708
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -639,7 +639,7 @@ Show
 	AreaLevel >= 45
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 1415.3846153846152
+	StackSize < 1415
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -675,7 +675,7 @@ Show
 	AreaLevel >= 40
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 126.92307692307692
+	StackSize < 127
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -687,7 +687,7 @@ Show
 	AreaLevel >= 40
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 634.6153846153848
+	StackSize < 635
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -699,7 +699,7 @@ Show
 	AreaLevel >= 40
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 1269.2307692307695
+	StackSize < 1269
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -735,7 +735,7 @@ Show
 	AreaLevel >= 35
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 112.3076923076923
+	StackSize < 112
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -747,7 +747,7 @@ Show
 	AreaLevel >= 35
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 561.5384615384615
+	StackSize < 562
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -759,7 +759,7 @@ Show
 	AreaLevel >= 35
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 1123.076923076923
+	StackSize < 1123
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -795,7 +795,7 @@ Show
 	AreaLevel >= 30
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 97.6923076923077
+	StackSize < 98
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -807,7 +807,7 @@ Show
 	AreaLevel >= 30
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 488.46153846153845
+	StackSize < 488
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -819,7 +819,7 @@ Show
 	AreaLevel >= 30
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 976.9230769230769
+	StackSize < 977
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -855,7 +855,7 @@ Show
 	AreaLevel >= 25
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 83.0769230769231
+	StackSize < 83
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -867,7 +867,7 @@ Show
 	AreaLevel >= 25
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 415.3846153846154
+	StackSize < 415
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -879,7 +879,7 @@ Show
 	AreaLevel >= 25
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 830.7692307692308
+	StackSize < 831
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -915,7 +915,7 @@ Show
 	AreaLevel >= 20
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 68.46153846153847
+	StackSize < 68
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -927,7 +927,7 @@ Show
 	AreaLevel >= 20
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 342.3076923076924
+	StackSize < 342
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -939,7 +939,7 @@ Show
 	AreaLevel >= 20
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 684.6153846153848
+	StackSize < 685
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -975,7 +975,7 @@ Show
 	AreaLevel >= 15
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 53.84615384615385
+	StackSize < 54
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -987,7 +987,7 @@ Show
 	AreaLevel >= 15
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 269.2307692307692
+	StackSize < 269
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -999,7 +999,7 @@ Show
 	AreaLevel >= 15
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 538.4615384615385
+	StackSize < 538
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -1035,7 +1035,7 @@ Show
 	AreaLevel >= 10
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 39.23076923076923
+	StackSize < 39
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -1047,7 +1047,7 @@ Show
 	AreaLevel >= 10
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 196.1538461538462
+	StackSize < 196
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -1059,7 +1059,7 @@ Show
 	AreaLevel >= 10
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 392.3076923076924
+	StackSize < 392
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -1095,7 +1095,7 @@ Show
 	AreaLevel >= 5
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 24.615384615384617
+	StackSize < 25
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -1107,7 +1107,7 @@ Show
 	AreaLevel >= 5
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 123.0769230769231
+	StackSize < 123
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -1119,7 +1119,7 @@ Show
 	AreaLevel >= 5
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 246.1538461538462
+	StackSize < 246
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
