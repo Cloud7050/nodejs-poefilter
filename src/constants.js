@@ -57,9 +57,17 @@ export const LEVEL_HEAVY_BELT = 50;
 export const LEVEL_AREA = 20;
 ////
 
-//// Maximum price breakpoints for gold piles
-export const GOLD_HIDE = 0; // 50
-export const GOLD_WISDOM = 100; // 100
-export const GOLD_AUGMENT = 500; // 2500
-export const GOLD_AUGMENT_EXALT = 1000; // 5000
+//// Price breakpoints for gold
+export const CAMPAIGN_1 = 0;
+export const CAMPAIGN_2 = 10;
+export const CAMPAIGN_3 = 50;
+export const CAMPAIGN_4 = 100;
+export const MAP_1 = 0;
+export const MAP_2 = 200;
+export const MAP_3 = 1000;
+export const MAP_4 = 2000;
+export const ENDGAME_1 = 50;
+export const ENDGAME_2 = 500;
+export const ENDGAME_3 = 2500;
+export const ENDGAME_4 = 5000;
 ////

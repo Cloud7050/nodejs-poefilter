@@ -118,7 +118,188 @@ Show
 	CustomAlertSound "renoir.wav" 250
 	MinimapIcon 0 Red Diamond
 
+Hide
+	AreaLevel >= 80
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 50
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	DisableDropSound
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 80
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 500
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 80
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 2500
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 80
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 5000
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 80
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+Hide
+	AreaLevel >= 75
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 33.33333333333333
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	DisableDropSound
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 75
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 400
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 75
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 2000
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 75
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 4000
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 75
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+Hide
+	AreaLevel >= 70
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 16.666666666666664
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	DisableDropSound
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 70
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 300
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 70
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 1500
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 70
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 3000
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 70
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
 #Hide
+#	AreaLevel >= 65
 #	Class == "Stackable Currency"
 #	BaseType == Gold
 #	StackSize < 0
@@ -131,9 +312,10 @@ Show
 #	MinimapIcon 2 Yellow Kite
 
 Show
+	AreaLevel >= 65
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 100
+	StackSize < 200
 
 	SetFontSize 27
 	SetTextColor 255 239 173 255
@@ -142,9 +324,10 @@ Show
 	MinimapIcon 2 Yellow Kite
 
 Show
+	AreaLevel >= 65
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 500
+	StackSize < 1000
 
 	SetFontSize 32
 	SetTextColor 255 227 74 255
@@ -153,9 +336,10 @@ Show
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
+	AreaLevel >= 65
 	Class == "Stackable Currency"
 	BaseType == Gold
-	StackSize < 1000
+	StackSize < 2000
 
 	SetFontSize 32
 	SetTextColor 252 220 0 255
@@ -164,6 +348,847 @@ Show
 	MinimapIcon 1 Yellow Cross
 
 Show
+	AreaLevel >= 65
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 65
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 65
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 200
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 65
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 1000
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 65
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 2000
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 65
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 60
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 60
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 185.3846153846154
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 60
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 926.9230769230769
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 60
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 1853.8461538461538
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 60
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 55
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 55
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 170.76923076923077
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 55
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 853.8461538461539
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 55
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 1707.6923076923078
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 55
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 50
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 50
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 156.1538461538462
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 50
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 780.7692307692308
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 50
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 1561.5384615384617
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 50
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 45
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 45
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 141.53846153846152
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 45
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 707.6923076923076
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 45
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 1415.3846153846152
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 45
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 40
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 40
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 126.92307692307692
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 40
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 634.6153846153848
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 40
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 1269.2307692307695
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 40
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 35
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 35
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 112.3076923076923
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 35
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 561.5384615384615
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 35
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 1123.076923076923
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 35
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 30
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 30
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 97.6923076923077
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 30
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 488.46153846153845
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 30
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 976.9230769230769
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 30
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 25
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 25
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 83.0769230769231
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 25
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 415.3846153846154
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 25
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 830.7692307692308
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 25
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 20
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 20
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 68.46153846153847
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 20
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 342.3076923076924
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 20
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 684.6153846153848
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 20
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 15
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 15
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 53.84615384615385
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 15
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 269.2307692307692
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 15
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 538.4615384615385
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 15
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 10
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 10
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 39.23076923076923
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 10
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 196.1538461538462
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 10
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 392.3076923076924
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 10
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 5
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 5
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 24.615384615384617
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 5
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 123.0769230769231
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 5
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 246.1538461538462
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 5
+	Class == "Stackable Currency"
+	BaseType == Gold
+
+	SetFontSize 37
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 0 Yellow Cross
+
+#Hide
+#	AreaLevel >= 0
+#	Class == "Stackable Currency"
+#	BaseType == Gold
+#	StackSize < 0
+#
+#	SetFontSize 27
+#	SetTextColor 255 239 173 255
+#	SetBackgroundColor 0 0 0 0
+#	SetBorderColor 255 239 173 255
+#	DisableDropSound
+#	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 0
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 10
+
+	SetFontSize 27
+	SetTextColor 255 239 173 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 239 173 255
+	MinimapIcon 2 Yellow Kite
+
+Show
+	AreaLevel >= 0
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 50
+
+	SetFontSize 32
+	SetTextColor 255 227 74 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 255 227 74 255
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	AreaLevel >= 0
+	Class == "Stackable Currency"
+	BaseType == Gold
+	StackSize < 100
+
+	SetFontSize 32
+	SetTextColor 252 220 0 255
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 252 220 0 255
+	MinimapIcon 1 Yellow Cross
+
+Show
+	AreaLevel >= 0
 	Class == "Stackable Currency"
 	BaseType == Gold
 

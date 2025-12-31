@@ -11,7 +11,8 @@ export class ConditionSet {
 
 	isContinue = false;
 
-	// Multi-word names must be wrapped in double quotes
+	areaLevel = null; // Comparison
+
 	category = null; // Comparison
 	names = null; // Comparison
 	rarity = null; // Comparison
@@ -56,6 +57,8 @@ export class ConditionSet {
 			if (!Array.isArray(props)) props = [props];
 			for (let prop of props) spans.push(spanCallback(prop));
 		}
+
+		handle(this.areaLevel, (prop) => prop.export("AreaLevel"));
 
 		handle(this.category, (prop) => prop.export("Class"));
 		handle(this.names, (prop) => prop.export("BaseType"));
