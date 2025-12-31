@@ -3271,7 +3271,7 @@ Show
 
 Hide
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
-	BaseType == "Antler Focus" "Blazon Crest Shield" "Braced Tower Shield" "Changeling Talisman" "Cinderbark Talisman" "Crude Bow" "Felled Greatclub" "Forge Maul" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hunting Spear" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" Shortbow "Sigil Crest Shield" "Slim Mace" "Smithing Hammer" "Splintered Tower Shield" "Sturdy Crossbow" "Tense Crossbow" "Twig Focus" "Warden Bow" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
+	BaseType == "Antler Focus" "Blazon Crest Shield" "Braced Tower Shield" "Changeling Talisman" "Cinderbark Talisman" "Crackling Quarterstaff" "Crude Bow" "Felled Greatclub" "Forge Maul" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hunting Spear" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" Shortbow "Sigil Crest Shield" "Slim Mace" "Smithing Hammer" "Splintered Tower Shield" "Sturdy Crossbow" "Tense Crossbow" "Twig Focus" "Varnished Crossbow" "Warden Bow" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -3285,7 +3285,7 @@ Hide
 
 Hide
 	Class == Helmets "Body Armours" Gloves Boots
-	BaseType == "Brimmed Helm" "Chain Mail" "Face Mask" "Feathered Robe" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Fur Plate" "Gauze Wraps" "Guarded Helm" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Horned Crown" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Laced Boots" "Leather Vest" "Mail Sabatons" "Padded Leggings" "Pathfinder Coat" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Rawhide Boots" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Soldier Greathelm" "Sombre Gloves" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Torn Gloves" "Twig Circlet" "Waxed Jacket" "Wicker Tiara" "Wrapped Sandals"
+	BaseType == "Brimmed Helm" "Chain Mail" "Face Mask" "Feathered Robe" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Fur Plate" "Gauze Wraps" "Guarded Helm" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Horned Crown" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Laced Boots" "Leather Vest" "Mail Sabatons" "Padded Leggings" "Pathfinder Coat" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Soldier Greathelm" "Sombre Gloves" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Torn Gloves" "Twig Circlet" "Waxed Jacket" "Wicker Tiara" "Wrapped Sandals"
 	Rarity == Normal Magic
 
 	DisableDropSound

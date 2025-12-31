@@ -54,8 +54,7 @@ export const LEVEL_HEAVY_BELT = 50;
 ////
 
 //// Character level to impact what ilvl & drop level are deemed usable
-// export const LEVEL_PLAYER = 16;
-export const LEVEL_AREA = 17;
+export const LEVEL_AREA = 20;
 ////
 
 //// Maximum price breakpoints for gold piles
