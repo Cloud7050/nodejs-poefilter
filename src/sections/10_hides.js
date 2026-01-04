@@ -108,6 +108,7 @@ function uncommons(filter) {
 	// });
 }
 
+//TODO
 function uniques(filter) {
 		filter.multiHide((c) => { // Trash uniques
 			c.names = new Comparison(new NameManager(

@@ -1368,47 +1368,59 @@ export class NameManager {
 			// new Name("Zealot Bow", ), // Slivertongue
 
 			// Armour
-			new Name("Engraved Focus", 1 / 2), // Carrion Call
-			new Name("Hardwood Targe", 1 / 2), // Arvil's Wheel
+			new Name("Engraved Focus", 0.5), // Carrion Call
+			new Name("Hardwood Targe", 0.5), // Arvil's Wheel
 
 			new Name("Viper Cap", 5 / 7 * PRICE_DIV), // Constricting Command
 
 			new Name("Tribal Mask", 22 * PRICE_DIV), // The Vertex
 
 			// Other
-			// new Name("Amber Amulet", ), // Carnage Heart, Revered Resin, Xoph's Blood
+			new Name("Amber Amulet", ), // Carnage Heart, Revered Resin, Xoph's Blood
 			// new Name("Amethyst Ring", TIER.OTHER), // Blackflame, Ming's Heart. GOOD: Original Sin
 			// new Name("Antidote Charm", ), // Arakaali's Gift
-			// new Name("Azure Amulet", ), // The Everlasting Gaze, Ungil's Harmony
-			// new Name("Bloodstone Amulet", TIER.OTHER), // The Anvil. GOOD: Yoke of Suffering
-			// new Name("Crimson Amulet", ), // Idol of Uldurn
+			new Name("Azure Amulet", ), // The Everlasting Gaze, Ungil's Harmony
+			new Name("Bloodstone Amulet", 70), // Yoke of Suffering >>> The Anvil // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/opRyVOQKil
+			new Name("Blunt Quiver", ), // Rearguard
+			new Name("Broadhead Quiver", ), // Asphyxia's Wrath
+			new Name("Crimson Amulet", ), // Idol of Uldurn, Igniferis
+			new Name("Diamond", ), // Controlled Metamorphosis, Flesh Crucible, From Nothing, Heart of the Well, Megalomaniac, Prism of Belief, The Adorned
 			// new Name("Dousing Charm", ), // Beira's Anguish
 			// new Name("Emerald Ring", ), // Death Rush, Thief's Torment, Vigilant View
 			// new Name("Fine Belt", TIER.CLASS), // GOOD: Shavronne's Satchel. CLASS: Darkness Enthroned
-			// new Name("Fire Quiver", TIER.OTHER), // Blackgleam. GOOD: Cadiro's Gambit
+			new Name("Fire Quiver", 0.5), // Blackgleam
+			new Name("Gold Amulet", ), // Eye of Chayula, Serpent's Egg
 			// new Name("Gold Ring", TIER.OTHER), // Andvarius, Perandus Seal, Ventor's Gamble
 			new Name("Heavy Belt", 50 * PRICE_DIV), // Headhunter >>> Waistgate, Zerphi's Genesis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/YpZdJDOOcY
 			// new Name("Iron Ring", ), // Blackheart, Icefang Orbit, Prized Pain, Venopuncture
-			// new Name("Jade Amulet", TIER.OTHER), // Choir of the Storm, Surefooted Sigil. GOOD: Defiance of Destiny
-			// new Name("Lapis Amulet", ), // Ligurium Talisman, Stone of Lazhwar, The Pandemonius
+			new Name("Jade Amulet", (PRICE_DIV + 250) / 2), // Defiance of Destiny > Choir of the Storm >>> Surefooted Sigil // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/4mEV49rZI9 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Md3PE5QRiJ
+			new Name("Lapis Amulet", ), // Ligurium Talisman, Stone of Lazhwar, The Pandemonius
 			// new Name("Lazuli Ring", TIER.OTHER), // Doedre's Damning, Glowswarm. GOOD: Seed of Cataclysm
 			// new Name("Linen Belt", ), // Keelhaul, Umbilicus Immortalis
 			// new Name("Long Belt", ), // Soul Tether
+			new Name("Lunar Amulet", ), // Rondel of Fragility
 			// new Name("Mail Belt", ), // Coward's Legacy
 			// new Name("Pearl Ring", TIER.OTHER), // Evergrasping Ring, Heartbound Loop. GOOD: Snakepit
+			new Name("Penetrating Quiver", ), // Drillneck
+			new Name("Primed Quiver", 299), // Cadiro's Gambit // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/rPeXJzXgfQ
 			// new Name("Prismatic Ring", ), // Gifts from Above
 			// new Name("Rawhide Belt", ), // Meginord's Girdle, Midnight Braid
+			new Name("Ruby", ), // Grand Spectrum
 			// new Name("Ruby Ring", ), // Cracklecreep, Blistering Bond
+			new Name("Sacral Quiver", ), // The Lethal Draw
 			// new Name("Sapphire Charm", ), // Breath of the Mountains
 			// new Name("Sapphire Ring", TIER.OTHER), // Polcirkeln, Whisper of the Brotherhood. GOOD: Dream Fragments
 			new Name("Silver Charm", 150), // The Fall of the Axe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/7nLVBp8yC5
-			// new Name("Solar Amulet", TIER.OTHER), // Beacon of Azis. GOOD: Fireflower
-			// new Name("Stellar Amulet", TIER.OTHER), // Fixation of Yix, Hinekora's Sight, Strugglescream. GOOD: Astramentis
+			new Name("Solar Amulet", 200), // Fireflower >>> Beacon of Azis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/G65QoLe9cb
+			new Name("Stellar Amulet", (125 + 29) / 2), // Astramentis > Strugglescream >>> Fixation of Yix, Hinekora's Sight // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/mkw8WVBBt6 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/6zzWMqGMIG
+			new Name("Time-Lost Diamond", ), // Against the Darkness
+			new Name("Timeless Jewel", ), // Heroic Tragery, Undying Hate
 			// new Name("Topaz Charm", ), // Valako's Roar
 			// new Name("Topaz Ring", ), // Call of the Brotherhood, Levinstone, The Burrower
-			// new Name("Toxic Quiver", ), // Murkshaft
+			new Name("Toxic Quiver", 0.5), // Murkshaft
 			// new Name("Ultimate Life Flask", TIER.CLASS), // Olroth's Resolve
 			// new Name("Ultimate Mana Flask", TIER.OTHER), // Melting Maelstrom
+			new Name("Visceral Quiver", ), // Beyond Reach
 			// new Name("Wide Belt", TIER.OTHER), // Birthright Buckle, Byrnabas. GOOD: The Gnashing Sash
 
 
@@ -1418,7 +1430,6 @@ export class NameManager {
 			// new Name("Assassin Garb", TIER.NEVER), // Cospri's Will
 			// new Name("Barricade Tower Shield", TIER.NEVER), // Window to Paradise
 			// new Name("Blazon Crest Shield", TIER.NEVER), // Alkem Eira
-			// new Name("Blunt Quiver", TIER.NEVER), // Rearguard
 			// new Name("Bolstered Mitts", TIER.NEVER), // Dreadfist
 			// new Name("Bone Raiment", TIER.NEVER), // Necromantle
 			// new Name("Braced Sabatons", TIER.NEVER), // Darkray Vectors
@@ -1436,7 +1447,6 @@ export class NameManager {
 			// new Name("Elite Greathelm", TIER.NEVER), // Deidbell
 			// new Name("Embossed Boots", TIER.NEVER), // Gamblesprint
 			// new Name("Fierce Greathelm", TIER.NEVER), // Blood Price
-			// new Name("Fire Quiver", TIER.NEVER), // Blackgleam
 			// new Name("Firm Bracers", TIER.NEVER), // Grip of Winter
 			// new Name("Full Plate", TIER.NEVER), // Kingsguard
 			// new Name("Gold Circlet", TIER.NEVER), // Atziri's Disdain
