@@ -4,6 +4,7 @@ import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
 import { LEVEL_BIS_MAP_DROP, LEVEL_HEAVY_BELT, PAIR_GEAR, VALUE_BAD } from "../constants.js";
+import { COLOUR_WISDOM } from "../effects/effectSet.js";
 
 // Stop filter here; never hide these. Then need not account for them when hiding
 export function sectionWhitelist(filter, isGoldRares) {
@@ -31,21 +32,22 @@ function campaign(filter) {
 // Chance bases
 function chance(filter) {
 	// Resize & whitelist
-	filter.multiBlock((c) => { // Omen of the Ancients > Heavy Belt
+	filter.multiBlock((c) => { // Omen of the Ancients → Heavy Belt // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/D6QzEE7dH5
 		c.categories(CATEGORY.BELT);
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.ilvl = new Comparison(LEVEL_HEAVY_BELT, OPERATOR.GTE);
 		c.isCorrupted = false;
 	}, (e) => {
-		e.colourWisdom(PAIR_GEAR, true).sizeExalt();
+		// 9 exalts
+		e.colourWisdom(PAIR_GEAR).sizeExalt();
 	});
 
-	filter.multiBlock((c) => {
-		c.names = new Comparison(NameManager.getChanceBases());
+	filter.priceBlocks((c, e, min, max, effect) => {
+		c.names = new Comparison(NameManager.getChanceBases(VALUE_BAD).value(min, max));
 		c.rarity = new Comparison(RARITY.NORMAL);
 		c.isCorrupted = false;
-	}, (e) => {
-		e.colourWisdom(PAIR_GEAR, true).sizeChance();
+
+		effect(PAIR_GEAR, COLOUR_WISDOM);
 	});
 }
 

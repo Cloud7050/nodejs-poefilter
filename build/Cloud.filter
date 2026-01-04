@@ -4176,7 +4176,43 @@ Show
 	Corrupted False
 
 	SetFontSize 37
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
 	MinimapIcon 0 Blue Kite
+
+#Show
+#	BaseType ==
+#	Rarity == Normal
+#	Corrupted False
+#
+#	SetFontSize 27
+#	SetTextColor 215 218 255 255
+#	SetBackgroundColor 3 7 44 255
+#	SetBorderColor 215 218 255 255
+#	MinimapIcon 2 Blue Kite
+
+#Show
+#	BaseType ==
+#	Rarity == Normal
+#	Corrupted False
+#
+#	SetFontSize 32
+#	SetTextColor 215 218 255 255
+#	SetBackgroundColor 3 7 44 255
+#	SetBorderColor 215 218 255 255
+#	MinimapIcon 1 Blue Kite
+
+#Show
+#	BaseType ==
+#	Rarity == Normal
+#	Corrupted False
+#
+#	SetFontSize 37
+#	SetTextColor 215 218 255 255
+#	SetBackgroundColor 3 7 44 255
+#	SetBorderColor 215 218 255 255
+#	MinimapIcon 0 Blue Kite
 
 Show
 	BaseType == "Heavy Belt" "Tribal Mask"
@@ -4184,9 +4220,25 @@ Show
 	Corrupted False
 
 	SetFontSize 45
+	SetTextColor 215 218 255 255
+	SetBackgroundColor 3 7 44 255
+	SetBorderColor 215 218 255 255
 	PlayEffect Blue
 	CustomAlertSound "WAH.mp3"
 	MinimapIcon 0 Blue Kite
+
+#Show
+#	BaseType ==
+#	Rarity == Normal
+#	Corrupted False
+#
+#	SetFontSize 45
+#	SetTextColor 71 94 255 255
+#	SetBackgroundColor 241 240 255 255
+#	SetBorderColor 71 94 255 255
+#	PlayEffect Blue
+#	CustomAlertSound "renoir.wav" 250
+#	MinimapIcon 0 Blue Diamond
 
 Show
 	BaseType == "Dusk Amulet" "Dusk Ring" "Gloam Amulet" "Gloam Ring" "Penumbra Amulet" "Penumbra Ring" "Tenebrous Amulet" "Tenebrous Ring"
