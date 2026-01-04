@@ -69,12 +69,13 @@ function reset(filter) {
 	});
 
 	// Unique
-	filter.block((c, e) => {
+	filter.priceBlocks((c, e, min, max, effect) => {
 		c.continue();
 		c.categories(CATEGORY.GEAR);
+		c.names = new Comparison(NameManager.getUniques(min, max));
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		e.colourChance(PAIR_GEAR).sizeChance();
+		effect(PAIR_GEAR, COLOUR_CHANCE);
 	});
 }
 
@@ -475,12 +476,13 @@ function jewels(filter) {
 		e.colourExalt(PAIR_JEWEL).sizeAugment();
 	});
 
-	filter.block((c, e) => {
+	filter.priceBlocks((c, e, min, max, effect) => {
 		c.continue();
 		c.categories(CATEGORY.JEWEL);
+		c.names = new Comparison(NameManager.getUniques(min, max));
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		e.colourChance(PAIR_JEWEL).sizeChance();
+		effect(PAIR_JEWEL, COLOUR_CHANCE);
 	});
 }
 
