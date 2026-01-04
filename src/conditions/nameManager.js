@@ -1294,9 +1294,77 @@ export class NameManager {
 	}
 
 	static getUniques(min = undefined, max = undefined) {
+		const TRASH = 0.5;
 		return new NameManager(
 			// https://poe2db.tw/us/Unique_item
 			// Weapons
+			// new Name("Acrid Wand", ), // Cursecarver
+			// new Name("Artillery Bow", ), // Fairgraves' Curse
+			// new Name("Ashbark Talisman", ), // Fury of the King
+			// new Name("Ashen Staff", ), // Dusk Vigil
+			// new Name("Attuned Wand", ), // Lifesprig
+			// new Name("Barbed Spear", TIER.OTHER), // Saitha's Spear
+			// new Name("Bone Wand", ), // Sanguine Diviner
+			// new Name("Changeling Talisman", ), // Amor Mandragora
+			// new Name("Chiming Staff", ), // Sire of Shards, The Burden of Shadows
+			// new Name("Composite Bow", ), // Doomfletch
+			// new Name("Crescent Quarterstaff", ), // Matsya
+			// new Name("Crude Bow", 1), // Widowhail
+			// new Name("Crumbling Maul", ), // Quecholli
+			// new Name("Cultist Greathammer", ), // The Empty Roar
+			// new Name("Desolate Crossbow", ), // The Last Lament
+			// new Name("Dualstring Bow", ), // Death's Harp
+			// new Name("Dyad Crossbow", ), // Double Vision
+			// new Name("Execratus Hammer", ), // Nebuloch
+			// new Name("Familial Talisman", ), // Hysseg's Claw
+			// new Name("Fanatic Bow", ), // Voltaxic Rift
+			// new Name("Felled Greatclub", ), // Hoghunt
+			// new Name("Forge Maul", ), // Trephina
+			// new Name("Forked Spear", ), // Tangletongue
+			// new Name("Gelid Staff", ), // Taryn's Shiver
+			// new Name("Giant Maul", ), // The Hammer of Faith
+			// new Name("Gothic Quarterstaff", ), // The Sentry
+			// new Name("Hardwood Spear", ), // Splinter of Lorrata
+			// new Name("Heavy Bow", ), // Lioneye's Glare
+			// new Name("Helix Spear", TIER.OTHER), // Spire of Ire
+			// new Name("Hunting Spear", ), // Chainsting
+			// new Name("Ironhead Spear", ), // Tyranny's Grip
+			// new Name("Leaden Greathammer", ), // Chober Chaber
+			// new Name("Long Quarterstaff", ), // Pillar of the Caged God
+			// new Name("Makeshift Crossbow", ), // Mist Whisper
+			// new Name("Marching Mace", ), // Seeing Stars
+			// new Name("Oak Greathammer", ), // Hrimnor's Hymn
+			// new Name("Omen Sceptre", ), // Font of Power
+			// new Name("Permafrost Staff", ), // The Whispering Ice
+			// new Name("Pointed Maul", ), // Tidebreaker
+			// new Name("Pronged Spear", ), // Atziri's Contempt
+			// new Name("Pyrophyte Staff", ), // The Searing Touch
+			// new Name("Rattling Sceptre", ), // The Dark Defiler
+			// new Name("Ravenous Staff", ), // The Unborn Lich
+			// new Name("Recurve Bow", ), // Splinterheart
+			// new Name("Reflecting Staff", ), // Atziri's Rule
+			// new Name("Shortbow", ), // Quill Rain
+			// new Name("Shrine Sceptre", ), // Guiding Palm of the Eye, Guiding Palm of the Heart, Guiding Palm of the Mind, Palm of the Dreamer, Sacred Flame
+			// new Name("Siphoning Wand", TIER.OTHER), // Adonia's Ego
+			// new Name("Slim Mace", ), // Frostbreath
+			// new Name("Spiked Club", ), // Trenchtimbre
+			// new Name("Steelpoint Quarterstaff", ), // Nazir's Judgement
+			// new Name("Studded Greatclub", ), // Brain Rattler
+			// new Name("Temple Maul", ), // Shyaba
+			// new Name("Tense Crossbow", ), // Rampart Raptor
+			// new Name("Torment Club", ), // Mjölner, Olrovasara
+			// new Name("Totemic Greatclub", ), // Marohi Erqi
+			// new Name("Vicious Talisman", ), // The Flesh Poppet
+			// new Name("Volatile Wand", ), // Enezun's Charge
+			// new Name("Voltaic Staff", ), // Earthbound
+			// new Name("War Spear", ), // Daevata's Wind
+			// new Name("Warpick", ), // Sculpted Suffering
+			// new Name("Winged Spear", ), // Skysliver
+			// new Name("Withered Wand", ), // The Wicked Quill
+			// new Name("Wooden Club", ), // Brynhand's Mark
+			// new Name("Wrapped Quarterstaff", ), // The Blood Thorn
+			// new Name("Wyrm Quarterstaff", ), // Collapsing Horizon/
+			// new Name("Zealot Bow", ), // Slivertongue
 
 			// Armour
 			new Name("Engraved Focus", 1 / 2), // Carrion Call
@@ -1311,37 +1379,6 @@ export class NameManager {
 			new Name("Heavy Belt", 50 * PRICE_DIV), // Headhunter
 
 			//TODO add all uniques
-			// new Name("Acrid Wand", TIER.NEVER), // Cursecarver
-			// new Name("Ashen Staff", TIER.NEVER), // Dusk Vigil
-			// new Name("Attuned Wand", TIER.NEVER), // Lifesprig
-			// new Name("Bone Wand", TIER.NEVER), // Sanguine Diviner
-			// new Name("Chiming Staff", TIER.NEVER), // Sire of Shards, The Burden of Shadows
-			// new Name("Cultist Greathammer", TIER.NEVER), // The Empty Roar
-			// new Name("Dualstring Bow", TIER.NEVER), // Death's Harp
-			// new Name("Dyad Crossbow", TIER.NEVER), // Double Vision
-			// new Name("Fanatic Bow", TIER.NEVER), // Voltaxic Rift
-			// new Name("Forge Maul", TIER.NEVER), // Trephina
-			// new Name("Gothic Quarterstaff", TIER.NEVER), // The Sentry
-			// new Name("Hardwood Spear", TIER.NEVER), // Splinter of Lorrata
-			// new Name("Hunting Spear", TIER.NEVER), // Chainsting
-			// new Name("Ironhead Spear", TIER.NEVER), // Tyranny's Grip
-			// new Name("Leaden Greathammer", TIER.NEVER), // Chober Chaber
-			// new Name("Long Quarterstaff", TIER.NEVER), // Pillar of the Caged God
-			// new Name("Makeshift Crossbow", TIER.NEVER), // Mist Whisper
-			// new Name("Omen Sceptre", TIER.NEVER), // Font of Power
-			// new Name("Plated Mace", TIER.NEVER), // Seeing Stars
-			// new Name("Rattling Sceptre", TIER.NEVER), // The Dark Defiler
-			// new Name("Recurve Bow", TIER.NEVER), // Splinterheart
-			// new Name("Temple Maul", TIER.NEVER), // Shyaba
-			// new Name("Volatile Wand", TIER.NEVER), // Enezun's Charge
-			// new Name("Voltaic Staff", TIER.NEVER), // Earthbound
-			// new Name("War Spear", TIER.NEVER), // Daevata's Wind
-			// new Name("Warpick", TIER.NEVER), // Sculpted Suffering
-			// new Name("Withered Wand", TIER.NEVER), // The Wicked Quill
-			// new Name("Wooden Club", TIER.NEVER), // Brynhand's Mark
-			// new Name("Wrapped Quarterstaff", TIER.NEVER), // The Blood Thorn
-			// new Name("Zealot Bow", TIER.NEVER), // Slivertongue
-
 			// new Name("Anchorite Garb", TIER.NEVER), // Redflare Conduit
 			// new Name("Assassin Garb", TIER.NEVER), // Cospri's Will
 			// new Name("Barricade Tower Shield", TIER.NEVER), // Window to Paradise
@@ -1445,11 +1482,6 @@ export class NameManager {
 			// new Name("Topaz Charm", TIER.NEVER), // Valako's Roar
 			// new Name("Topaz Ring", TIER.NEVER), // Call of the Brotherhood, Levinstone, The Burrower
 			// new Name("Toxic Quiver", TIER.NEVER), // Murkshaft
-
-			// new Name("Barbed Spear", TIER.OTHER), // Saitha's Spear
-			// new Name("Crude Bow", TIER.OTHER), // Widowhail
-			// new Name("Helix Spear", TIER.OTHER), // Spire of Ire
-			// new Name("Siphoning Wand", TIER.OTHER), // Adonia's Ego
 
 			// new Name("Viper Cap", TIER.OTHER), // Constricting Command
 			// new Name("Wrapped Sandals", TIER.OTHER), // Wanderlust
