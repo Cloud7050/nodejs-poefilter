@@ -1377,41 +1377,39 @@ export class NameManager {
 
 			// Other
 			// new Name("Amber Amulet", ), // Carnage Heart, Revered Resin, Xoph's Blood
+			// new Name("Amethyst Ring", TIER.OTHER), // Blackflame, Ming's Heart. GOOD: Original Sin
 			// new Name("Antidote Charm", ), // Arakaali's Gift
 			// new Name("Azure Amulet", ), // The Everlasting Gaze, Ungil's Harmony
+			// new Name("Bloodstone Amulet", TIER.OTHER), // The Anvil. GOOD: Yoke of Suffering
 			// new Name("Crimson Amulet", ), // Idol of Uldurn
 			// new Name("Dousing Charm", ), // Beira's Anguish
 			// new Name("Emerald Ring", ), // Death Rush, Thief's Torment, Vigilant View
+			// new Name("Fine Belt", TIER.CLASS), // GOOD: Shavronne's Satchel. CLASS: Darkness Enthroned
+			// new Name("Fire Quiver", TIER.OTHER), // Blackgleam. GOOD: Cadiro's Gambit
+			// new Name("Gold Ring", TIER.OTHER), // Andvarius, Perandus Seal, Ventor's Gamble
 			new Name("Heavy Belt", 50 * PRICE_DIV), // Headhunter >>> Waistgate, Zerphi's Genesis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/YpZdJDOOcY
 			// new Name("Iron Ring", ), // Blackheart, Icefang Orbit, Prized Pain, Venopuncture
+			// new Name("Jade Amulet", TIER.OTHER), // Choir of the Storm, Surefooted Sigil. GOOD: Defiance of Destiny
 			// new Name("Lapis Amulet", ), // Ligurium Talisman, Stone of Lazhwar, The Pandemonius
+			// new Name("Lazuli Ring", TIER.OTHER), // Doedre's Damning, Glowswarm. GOOD: Seed of Cataclysm
 			// new Name("Linen Belt", ), // Keelhaul, Umbilicus Immortalis
 			// new Name("Long Belt", ), // Soul Tether
 			// new Name("Mail Belt", ), // Coward's Legacy
+			// new Name("Pearl Ring", TIER.OTHER), // Evergrasping Ring, Heartbound Loop. GOOD: Snakepit
 			// new Name("Prismatic Ring", ), // Gifts from Above
 			// new Name("Rawhide Belt", ), // Meginord's Girdle, Midnight Braid
 			// new Name("Ruby Ring", ), // Cracklecreep, Blistering Bond
 			// new Name("Sapphire Charm", ), // Breath of the Mountains
+			// new Name("Sapphire Ring", TIER.OTHER), // Polcirkeln, Whisper of the Brotherhood. GOOD: Dream Fragments
 			new Name("Silver Charm", 150), // The Fall of the Axe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/7nLVBp8yC5
+			// new Name("Solar Amulet", TIER.OTHER), // Beacon of Azis. GOOD: Fireflower
+			// new Name("Stellar Amulet", TIER.OTHER), // Fixation of Yix, Hinekora's Sight, Strugglescream. GOOD: Astramentis
 			// new Name("Topaz Charm", ), // Valako's Roar
 			// new Name("Topaz Ring", ), // Call of the Brotherhood, Levinstone, The Burrower
 			// new Name("Toxic Quiver", ), // Murkshaft
-
-			// new Name("Amethyst Ring", TIER.OTHER), // Blackflame, Ming's Heart. GOOD: Original Sin
-			// new Name("Bloodstone Amulet", TIER.OTHER), // The Anvil. GOOD: Yoke of Suffering
-			// new Name("Fire Quiver", TIER.OTHER), // Blackgleam. GOOD: Cadiro's Gambit
-			// new Name("Gold Ring", TIER.OTHER), // Andvarius, Perandus Seal, Ventor's Gamble
-			// new Name("Jade Amulet", TIER.OTHER), // Choir of the Storm, Surefooted Sigil. GOOD: Defiance of Destiny
-			// new Name("Lazuli Ring", TIER.OTHER), // Doedre's Damning, Glowswarm. GOOD: Seed of Cataclysm
-			// new Name("Pearl Ring", TIER.OTHER), // Evergrasping Ring, Heartbound Loop. GOOD: Snakepit
-			// new Name("Solar Amulet", TIER.OTHER), // Beacon of Azis. GOOD: Fireflower
-			// new Name("Sapphire Ring", TIER.OTHER), // Polcirkeln, Whisper of the Brotherhood. GOOD: Dream Fragments
-			// new Name("Stellar Amulet", TIER.OTHER), // Fixation of Yix, Hinekora's Sight, Strugglescream. GOOD: Astramentis
+			// new Name("Ultimate Life Flask", TIER.CLASS), // Olroth's Resolve
 			// new Name("Ultimate Mana Flask", TIER.OTHER), // Melting Maelstrom
 			// new Name("Wide Belt", TIER.OTHER), // Birthright Buckle, Byrnabas. GOOD: The Gnashing Sash
-
-			// new Name("Fine Belt", TIER.CLASS), // GOOD: Shavronne's Satchel. CLASS: Darkness Enthroned
-			// new Name("Ultimate Life Flask", TIER.CLASS), // Olroth's Resolve
 
 
 
