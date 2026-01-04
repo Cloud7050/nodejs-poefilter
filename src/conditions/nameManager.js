@@ -1205,10 +1205,10 @@ export class NameManager {
 			new Name("Crimson Amulet", 1, CATEGORY.AMULET, 0), // 2–4 Life Regeneration per second
 
 			new Name("Azure Amulet", 10, CATEGORY.AMULET, 0), // 20–30% increased Mana Regeneration Rate
-			new Name("Dusk Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Amulet", 10, CATEGORY.AMULET, 0).mapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			new Name("Dusk Amulet", 10, CATEGORY.AMULET, 0).special(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Amulet", 10, CATEGORY.AMULET, 0).special(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Amulet", 10, CATEGORY.AMULET, 0).special(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Amulet", 10, CATEGORY.AMULET, 0).special(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 			new Name("Amber Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Strength
 			new Name("Jade Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Dexterity
 			new Name("Lapis Amulet", 10, CATEGORY.AMULET, 8), // +10–15 to Intelligence
@@ -1227,10 +1227,10 @@ export class NameManager {
 			new Name("Sapphire Ring", 5, CATEGORY.RING, 12), // +20–30% to Cold Resistance
 			new Name("Topaz Ring", 5, CATEGORY.RING, 16), // +20–30% to Lightning Resistance
 
-			new Name("Dusk Ring", 10, CATEGORY.RING, 0).mapDrop(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
-			new Name("Gloam Ring", 10, CATEGORY.RING, 0).mapDrop(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
-			new Name("Penumbra Ring", 10, CATEGORY.RING, 0).mapDrop(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
-			new Name("Tenebrous Ring", 10, CATEGORY.RING, 0).mapDrop(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
+			new Name("Dusk Ring", 10, CATEGORY.RING, 0).special(), // +1 Prefix Modifier allowed, -1 Suffix Modifier allowed
+			new Name("Gloam Ring", 10, CATEGORY.RING, 0).special(), // -1 Prefix Modifier allowed, +1 Suffix Modifier allowed
+			new Name("Penumbra Ring", 10, CATEGORY.RING, 0).special(), // +2 Prefix Modifier allowed, -2 Suffix Modifier allowed
+			new Name("Tenebrous Ring", 10, CATEGORY.RING, 0).special(), // -2 Prefix Modifier allowed, +2 Suffix Modifier allowed
 			new Name("Amethyst Ring", 10, CATEGORY.RING, 20), // +7–13% to Chaos Resistance
 			new Name("Pearl Ring", 10, CATEGORY.RING, 32), // 7–10% increased Cast Speed
 			new Name("Prismatic Ring", 10, CATEGORY.RING, 35), // +7–10% to all Elemental Resistances
@@ -1376,52 +1376,68 @@ export class NameManager {
 			new Name("Tribal Mask", 22 * PRICE_DIV), // The Vertex
 
 			// Other
-			new Name("Amber Amulet", ), // Carnage Heart, Revered Resin, Xoph's Blood
-			// new Name("Amethyst Ring", TIER.OTHER), // Blackflame, Ming's Heart. GOOD: Original Sin
+			// new Name("Abyssal Signet", 0.5).special(), // Grip of Kulemak
+			// new Name("Amber Amulet", ), // Carnage Heart, Revered Resin, Xoph's Blood
+			// new Name("Amethyst Charm", 9), // Forsaken Bangle // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/022Xl4gpFg
+			new Name("Amethyst Ring", 35), // Original Sin >>> Blackflame, Ming's Heart // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/8rnMPnLqcV
 			// new Name("Antidote Charm", ), // Arakaali's Gift
-			new Name("Azure Amulet", ), // The Everlasting Gaze, Ungil's Harmony
+			// new Name("Azure Amulet", ), // The Everlasting Gaze, Ungil's Harmony
 			new Name("Bloodstone Amulet", 70), // Yoke of Suffering >>> The Anvil // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/opRyVOQKil
-			new Name("Blunt Quiver", ), // Rearguard
-			new Name("Broadhead Quiver", ), // Asphyxia's Wrath
-			new Name("Crimson Amulet", ), // Idol of Uldurn, Igniferis
-			new Name("Diamond", ), // Controlled Metamorphosis, Flesh Crucible, From Nothing, Heart of the Well, Megalomaniac, Prism of Belief, The Adorned
+			// new Name("Blunt Quiver", ), // Rearguard
+			// new Name("Broadhead Quiver", ), // Asphyxia's Wrath
+			// new Name("Crimson Amulet", ), // Idol of Uldurn, Igniferis
+			// new Name("Diamond", ), // Controlled Metamorphosis, Flesh Crucible, From Nothing, Heart of the Well, Megalomaniac, Prism of Belief, The Adorned
+			// new Name("Double Belt", ), // Bijouborne
 			// new Name("Dousing Charm", ), // Beira's Anguish
 			// new Name("Emerald Ring", ), // Death Rush, Thief's Torment, Vigilant View
-			// new Name("Fine Belt", TIER.CLASS), // GOOD: Shavronne's Satchel. CLASS: Darkness Enthroned
-			new Name("Fire Quiver", 0.5), // Blackgleam
-			new Name("Gold Amulet", ), // Eye of Chayula, Serpent's Egg
-			// new Name("Gold Ring", TIER.OTHER), // Andvarius, Perandus Seal, Ventor's Gamble
+			new Name("Fine Belt", (100 + 39) / 2), // Darkness Enthroned > Shavronne's Satchel // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/yYM6P3QlcR https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/lgeEMkr2HV
+			// new Name("Fire Quiver", 0.5), // Blackgleam
+			// new Name("Gargantuan Life Flask", ), // Blood of the Warrior
+			new Name("Gargantuan Mana Flask", 38), // Lavianga's Spirits // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/lgRneYdrSV
+			// new Name("Gold Amulet", ), // Eye of Chayula, Serpent's Egg
+			new Name("Gold Ring", ((0.95 * PRICE_DIV) + 295) / 2), // Ventor's Gamble > Andvarius >>> Perandus Seal // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Og30dBXKHE https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/EBr0d7kRS5
+			new Name("Golden Charm", 100 * PRICE_DIV), // Rite of Passage // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/7JoJ8Prf5
+			// new Name("Grounding Charm", 1), // The Black Cat // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/8rL4pDJnIV
 			new Name("Heavy Belt", 50 * PRICE_DIV), // Headhunter >>> Waistgate, Zerphi's Genesis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/YpZdJDOOcY
 			// new Name("Iron Ring", ), // Blackheart, Icefang Orbit, Prized Pain, Venopuncture
 			new Name("Jade Amulet", (PRICE_DIV + 250) / 2), // Defiance of Destiny > Choir of the Storm >>> Surefooted Sigil // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/4mEV49rZI9 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Md3PE5QRiJ
-			new Name("Lapis Amulet", ), // Ligurium Talisman, Stone of Lazhwar, The Pandemonius
-			// new Name("Lazuli Ring", TIER.OTHER), // Doedre's Damning, Glowswarm. GOOD: Seed of Cataclysm
+			// new Name("Lapis Amulet", ), // Ligurium Talisman, Stone of Lazhwar, The Pandemonius
+			new Name("Lazuli Ring", 180), // Seed of Cataclysm >>> Doedre's Damning, Glowswarm // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/opRyPbwqcl
 			// new Name("Linen Belt", ), // Keelhaul, Umbilicus Immortalis
 			// new Name("Long Belt", ), // Soul Tether
-			new Name("Lunar Amulet", ), // Rondel of Fragility
+			// new Name("Lunar Amulet", ), // Rondel of Fragility
 			// new Name("Mail Belt", ), // Coward's Legacy
-			// new Name("Pearl Ring", TIER.OTHER), // Evergrasping Ring, Heartbound Loop. GOOD: Snakepit
-			new Name("Penetrating Quiver", ), // Drillneck
+			// new Name("Ornate Belt", ), // Ryslatha's Coil
+			new Name("Pearl Ring", 45), // Snakepit >>> Evergrasping Ring, Heartbound Loop // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/q9RkG7vpFg
+			// new Name("Penetrating Quiver", ), // Drillneck
+			new Name("Plate Belt", 19), // Goregirdle // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/JB30qgYJhl
 			new Name("Primed Quiver", 299), // Cadiro's Gambit // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/rPeXJzXgfQ
 			// new Name("Prismatic Ring", ), // Gifts from Above
 			// new Name("Rawhide Belt", ), // Meginord's Girdle, Midnight Braid
-			new Name("Ruby", ), // Grand Spectrum
-			// new Name("Ruby Ring", ), // Cracklecreep, Blistering Bond
-			new Name("Sacral Quiver", ), // The Lethal Draw
-			// new Name("Sapphire Charm", ), // Breath of the Mountains
-			// new Name("Sapphire Ring", TIER.OTHER), // Polcirkeln, Whisper of the Brotherhood. GOOD: Dream Fragments
+			new Name("Ring", (400 + 95) / 2), // Kalandra's Touch > Sekhema's Resolve // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/3wWVvDkf5 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Kll7zLMni5
+			// new Name("Ruby", ), // Grand Spectrum
+			// new Name("Ruby Charm", 0.5), // Ngamahu's Chosen
+			// new Name("Ruby Ring", ), // Blistering Bond, Cracklecreep
+			// new Name("Sacral Quiver", ), // The Lethal Draw
+			// new Name("Sapphire Charm", 0.5), // Breath of the Mountains
+			new Name("Sapphire Ring", 80), // Dream Fragments >>> Polcirkeln, Whisper of the Brotherhood // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/3qLR2MEdI5
 			new Name("Silver Charm", 150), // The Fall of the Axe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/7nLVBp8yC5
 			new Name("Solar Amulet", 200), // Fireflower >>> Beacon of Azis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/G65QoLe9cb
+			// new Name("Staunching Charm", 3), // Sanguis Heroum // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/V5P0d3YoTp
 			new Name("Stellar Amulet", (125 + 29) / 2), // Astramentis > Strugglescream >>> Fixation of Yix, Hinekora's Sight // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/mkw8WVBBt6 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/6zzWMqGMIG
-			new Name("Time-Lost Diamond", ), // Against the Darkness
-			new Name("Timeless Jewel", ), // Heroic Tragery, Undying Hate
-			// new Name("Topaz Charm", ), // Valako's Roar
+			new Name("Stone Charm", 69), // For Utopia // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/V5eZr9D2hp
+			new Name("Thawing Charm", 32), // Nascent Hope // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/q9RkQRLWug
+			// new Name("Time-Lost Diamond", ), // Against the Darkness
+			// new Name("Timeless Jewel", ), // Heroic Tragery, Undying Hate
+			// new Name("Topaz Charm", 0.5), // Valako's Roar
 			// new Name("Topaz Ring", ), // Call of the Brotherhood, Levinstone, The Burrower
-			new Name("Toxic Quiver", 0.5), // Murkshaft
-			// new Name("Ultimate Life Flask", TIER.CLASS), // Olroth's Resolve
-			// new Name("Ultimate Mana Flask", TIER.OTHER), // Melting Maelstrom
-			new Name("Visceral Quiver", ), // Beyond Reach
-			// new Name("Wide Belt", TIER.OTHER), // Birthright Buckle, Byrnabas. GOOD: The Gnashing Sash
+			// new Name("Toxic Quiver", 0.5), // Murkshaft
+			new Name("Ultimate Life Flask", 68), // Olroth's Resolve // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/zbW4RVwas4
+			new Name("Ultimate Mana Flask", 29), // Melting Maelstrom // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/zbW4YkRKU4
+			// new Name("Unset Ring", ), // Bursting Decay
+			new Name("Utility Belt", 95), // Ingenuity // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/rPRD9OmgHQ
+			// new Name("Visceral Quiver", ), // Beyond Reach
+			new Name("Wide Belt", 120 * PRICE_DIV), // The Gnashing Sash >>> Birthright Buckle, Byrnabas // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Klr09KoDc5
 
 
 
@@ -1522,6 +1538,7 @@ export class NameManager {
 			new Name("Viper Cap", 0.5), // Constricting Command // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/vW3XqKMfE
 
 			new Name("Tribal Mask", 30), // The Vertex // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/pJoO8KJJt0
+			new Name("Wide Belt", 39), // The Gnashing Sash // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/EB3ebnXRT5 // NOTE may not be chanceable but people buy anyway
 			new Name("Heavy Belt", 48), // Headhunter // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82eQO8ZcJ
 		).value(min, max);
 	}
@@ -1607,8 +1624,8 @@ export class NameManager {
 	isBad(has = undefined) {
 		return this.isFlag(Name.FLAG_BAD, has);
 	}
-	isMapDrop(has = undefined) {
-		return this.isFlag(Name.FLAG_MAP, has);
+	isSpecial(has = undefined) {
+		return this.isFlag(Name.FLAG_SPECIAL, has);
 	}
 	isClass(has = undefined) {
 		return this.isFlag(Name.FLAG_CLASS, has);

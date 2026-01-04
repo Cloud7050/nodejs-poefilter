@@ -37,7 +37,8 @@ export const VALUE_BAD = 2;
 export const LEVEL_OK = 80;
 
 export const LEVEL_BIS = 82;
-export const LEVEL_BIS_MAP_DROP = 79;
+export const LEVEL_BIS_LAKE = 79;
+export const LEVEL_BIS_VESSEL = 80;
 export const LEVEL_BIS_RELIC = 80;
 export const LEVEL_BIS_WAND_STAFF = 81;
 export const LEVEL_BIS_CHARM = 81;

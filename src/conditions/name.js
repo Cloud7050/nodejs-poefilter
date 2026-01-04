@@ -4,7 +4,7 @@ import { StringList } from "./stringList.js";
 
 export class Name {
 	static FLAG_BAD = "Currency to hide";
-	static FLAG_MAP = "The Fractured Lake unique map drop";
+	static FLAG_SPECIAL = "Drops from specific content, like The Fractured Lake unique map or Vessel of Kulemak boss";
 	static FLAG_CLASS = "Explicitly mark as class item";
 
 	name;
@@ -32,8 +32,8 @@ export class Name {
 		this.flag(Name.FLAG_BAD);
 		return this;
 	}
-	mapDrop() {
-		this.flag(Name.FLAG_MAP);
+	special() {
+		this.flag(Name.FLAG_SPECIAL);
 		return this;
 	}
 	class() {
