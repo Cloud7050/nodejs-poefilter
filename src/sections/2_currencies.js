@@ -46,7 +46,7 @@ function gold(filter) {
 			c.areaLevel = new Comparison(levelMin, OPERATOR.GTE);
 			c.categories(CATEGORY.CURRENCY);
 			c.names = new Comparison("Gold");
-			c.count = new Comparison(round(goldHide), OPERATOR.LT);
+			c.count = new Comparison(Math.round(goldHide), OPERATOR.LT);
 
 			e.hide();
 			e.colourWisdom(PAIR_GOLD).sizeWisdom();
@@ -56,7 +56,7 @@ function gold(filter) {
 			c.areaLevel = new Comparison(levelMin, OPERATOR.GTE);
 			c.categories(CATEGORY.CURRENCY);
 			c.names = new Comparison("Gold");
-			c.count = new Comparison(round(goldWisdom), OPERATOR.LT);
+			c.count = new Comparison(Math.round(goldWisdom), OPERATOR.LT);
 
 			e.colourWisdom(PAIR_GOLD).sizeWisdom();
 			e.backgroundColour = Colour.TRANSPARENT;
@@ -65,7 +65,7 @@ function gold(filter) {
 			c.areaLevel = new Comparison(levelMin, OPERATOR.GTE);
 			c.categories(CATEGORY.CURRENCY);
 			c.names = new Comparison("Gold");
-			c.count = new Comparison(round(goldAugment), OPERATOR.LT);
+			c.count = new Comparison(Math.round(goldAugment), OPERATOR.LT);
 
 			e.colourAugment(PAIR_GOLD).sizeAugment();
 			e.backgroundColour = Colour.TRANSPARENT;
@@ -74,7 +74,7 @@ function gold(filter) {
 			c.areaLevel = new Comparison(levelMin, OPERATOR.GTE);
 			c.categories(CATEGORY.CURRENCY);
 			c.names = new Comparison("Gold");
-			c.count = new Comparison(round(goldAugmentExalt), OPERATOR.LT);
+			c.count = new Comparison(Math.round(goldAugmentExalt), OPERATOR.LT);
 
 			e.colourExalt(PAIR_GOLD).sizeAugment();
 			e.backgroundColour = Colour.TRANSPARENT;
