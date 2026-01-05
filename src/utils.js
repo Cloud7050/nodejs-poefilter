@@ -15,3 +15,7 @@ export function range(start1, end1, start2, end2, value) {
 	let multiplier = unlerp(start1, end1, value);
 	return lerp(start2, end2, multiplier);
 }
+
+export function average(...values) {
+	return values.reduce((sum, value) => sum + value, 0) / values.length;
+}

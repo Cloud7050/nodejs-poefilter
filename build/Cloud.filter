@@ -3311,18 +3311,18 @@ Show
 #
 #	Continue
 
-Show
-	Class == Jewels
-	BaseType == "Engraved Focus" "Hardwood Targe"
-	Rarity == Unique
-
-	SetFontSize 32
-	SetTextColor 0 33 68 255
-	SetBackgroundColor 120 175 255 255
-	SetBorderColor 0 33 68 255
-	MinimapIcon 1 Blue Star
-
-	Continue
+#Show
+#	Class == Jewels
+#	BaseType ==
+#	Rarity == Unique
+#
+#	SetFontSize 32
+#	SetTextColor 0 33 68 255
+#	SetBackgroundColor 120 175 255 255
+#	SetBorderColor 0 33 68 255
+#	MinimapIcon 1 Blue Star
+#
+#	Continue
 
 #Show
 #	Class == Jewels
@@ -3339,7 +3339,7 @@ Show
 
 Show
 	Class == Jewels
-	BaseType == "Amethyst Ring" "Bloodstone Amulet" "Fine Belt" "Gargantuan Mana Flask" "Gold Ring" "Jade Amulet" "Lazuli Ring" "Pearl Ring" "Plate Belt" "Primed Quiver" Ring "Sapphire Ring" "Silver Charm" "Solar Amulet" "Stellar Amulet" "Stone Charm" "Thawing Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Viper Cap"
+	BaseType == Ruby
 	Rarity == Unique
 
 	SetFontSize 45
@@ -3354,7 +3354,7 @@ Show
 
 Show
 	Class == Jewels
-	BaseType == "Golden Charm" "Heavy Belt" "Tribal Mask" "Wide Belt"
+	BaseType == Diamond Emerald Sapphire "Time-Lost Diamond" "Timeless Jewel"
 	Rarity == Unique
 
 	SetFontSize 45

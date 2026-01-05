@@ -479,7 +479,7 @@ function jewels(filter) {
 	filter.priceBlocks((c, e, min, max, effect) => {
 		c.continue();
 		c.categories(CATEGORY.JEWEL);
-		c.names = new Comparison(NameManager.getUniques(min, max));
+		c.names = new Comparison(NameManager.getUniqueJewels(min, max));
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
 		effect(PAIR_JEWEL, COLOUR_CHANCE);

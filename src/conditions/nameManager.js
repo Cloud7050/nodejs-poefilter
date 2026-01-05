@@ -1,4 +1,5 @@
 import { LEVEL_HEAVY_BELT, PRICE_DIV } from "../constants.js";
+import { average } from "../utils.js";
 import { CATEGORY, CATEGORY_CUSTOM } from "./category.js";
 import { ConditionSet } from "./conditionSet.js";
 import { Name } from "./name.js";
@@ -1370,9 +1371,7 @@ export class NameManager {
 			// Armour
 			new Name("Engraved Focus", 0.5), // Carrion Call
 			new Name("Hardwood Targe", 0.5), // Arvil's Wheel
-
 			new Name("Viper Cap", 5 / 7 * PRICE_DIV), // Constricting Command
-
 			new Name("Tribal Mask", 22 * PRICE_DIV), // The Vertex
 
 			// Other
@@ -1386,21 +1385,20 @@ export class NameManager {
 			// new Name("Blunt Quiver", ), // Rearguard
 			// new Name("Broadhead Quiver", ), // Asphyxia's Wrath
 			// new Name("Crimson Amulet", ), // Idol of Uldurn, Igniferis
-			// new Name("Diamond", ), // Controlled Metamorphosis, Flesh Crucible, From Nothing, Heart of the Well, Megalomaniac, Prism of Belief, The Adorned
 			// new Name("Double Belt", ), // Bijouborne
 			// new Name("Dousing Charm", ), // Beira's Anguish
 			// new Name("Emerald Ring", ), // Death Rush, Thief's Torment, Vigilant View
-			new Name("Fine Belt", (100 + 39) / 2), // Darkness Enthroned > Shavronne's Satchel // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/yYM6P3QlcR https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/lgeEMkr2HV
+			new Name("Fine Belt", average(100, 39)), // Darkness Enthroned > Shavronne's Satchel // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/yYM6P3QlcR https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/lgeEMkr2HV
 			// new Name("Fire Quiver", 0.5), // Blackgleam
 			// new Name("Gargantuan Life Flask", ), // Blood of the Warrior
 			new Name("Gargantuan Mana Flask", 38), // Lavianga's Spirits // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/lgRneYdrSV
 			// new Name("Gold Amulet", ), // Eye of Chayula, Serpent's Egg
-			new Name("Gold Ring", ((0.95 * PRICE_DIV) + 295) / 2), // Ventor's Gamble > Andvarius >>> Perandus Seal // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Og30dBXKHE https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/EBr0d7kRS5
+			new Name("Gold Ring", average(0.95 * PRICE_DIV, 295)), // Ventor's Gamble > Andvarius >>> Perandus Seal // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Og30dBXKHE https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/EBr0d7kRS5
 			new Name("Golden Charm", 100 * PRICE_DIV), // Rite of Passage // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/7JoJ8Prf5
 			// new Name("Grounding Charm", 1), // The Black Cat // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/8rL4pDJnIV
 			new Name("Heavy Belt", 50 * PRICE_DIV), // Headhunter >>> Waistgate, Zerphi's Genesis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/YpZdJDOOcY
 			// new Name("Iron Ring", ), // Blackheart, Icefang Orbit, Prized Pain, Venopuncture
-			new Name("Jade Amulet", (PRICE_DIV + 250) / 2), // Defiance of Destiny > Choir of the Storm >>> Surefooted Sigil // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/4mEV49rZI9 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Md3PE5QRiJ
+			new Name("Jade Amulet", average(PRICE_DIV, 250)), // Defiance of Destiny > Choir of the Storm >>> Surefooted Sigil // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/4mEV49rZI9 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Md3PE5QRiJ
 			// new Name("Lapis Amulet", ), // Ligurium Talisman, Stone of Lazhwar, The Pandemonius
 			new Name("Lazuli Ring", 180), // Seed of Cataclysm >>> Doedre's Damning, Glowswarm // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/opRyPbwqcl
 			// new Name("Linen Belt", ), // Keelhaul, Umbilicus Immortalis
@@ -1414,8 +1412,7 @@ export class NameManager {
 			new Name("Primed Quiver", 299), // Cadiro's Gambit // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/rPeXJzXgfQ
 			// new Name("Prismatic Ring", ), // Gifts from Above
 			// new Name("Rawhide Belt", ), // Meginord's Girdle, Midnight Braid
-			new Name("Ring", (400 + 95) / 2), // Kalandra's Touch > Sekhema's Resolve // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/3wWVvDkf5 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Kll7zLMni5
-			// new Name("Ruby", ), // Grand Spectrum
+			new Name("Ring", average(400, 95)), // Kalandra's Touch > Sekhema's Resolve // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/3wWVvDkf5 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Kll7zLMni5
 			// new Name("Ruby Charm", 0.5), // Ngamahu's Chosen
 			// new Name("Ruby Ring", ), // Blistering Bond, Cracklecreep
 			// new Name("Sacral Quiver", ), // The Lethal Draw
@@ -1424,11 +1421,9 @@ export class NameManager {
 			new Name("Silver Charm", 150), // The Fall of the Axe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/7nLVBp8yC5
 			new Name("Solar Amulet", 200), // Fireflower >>> Beacon of Azis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/G65QoLe9cb
 			// new Name("Staunching Charm", 3), // Sanguis Heroum // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/V5P0d3YoTp
-			new Name("Stellar Amulet", (125 + 29) / 2), // Astramentis > Strugglescream >>> Fixation of Yix, Hinekora's Sight // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/mkw8WVBBt6 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/6zzWMqGMIG
+			new Name("Stellar Amulet", average(125, 29)), // Astramentis > Strugglescream >>> Fixation of Yix, Hinekora's Sight // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/mkw8WVBBt6 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/6zzWMqGMIG
 			new Name("Stone Charm", 69), // For Utopia // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/V5eZr9D2hp
 			new Name("Thawing Charm", 32), // Nascent Hope // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/q9RkQRLWug
-			// new Name("Time-Lost Diamond", ), // Against the Darkness
-			// new Name("Timeless Jewel", ), // Heroic Tragery, Undying Hate
 			// new Name("Topaz Charm", 0.5), // Valako's Roar
 			// new Name("Topaz Ring", ), // Call of the Brotherhood, Levinstone, The Burrower
 			// new Name("Toxic Quiver", 0.5), // Murkshaft
@@ -1542,16 +1537,27 @@ export class NameManager {
 			new Name("Heavy Belt", 48), // Headhunter // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82eQO8ZcJ
 		).value(min, max);
 	}
+	static getUniqueJewels(min = undefined, max = undefined) {
+		return new NameManager(
+			// https://poe2db.tw/Jewels#JewelsUnique
+			new Name("Diamond", average(800 * PRICE_DIV, 75 * PRICE_DIV, 55 * PRICE_DIV, 1650, 1.9 * PRICE_DIV, PRICE_DIV, 540)), // The Adorned, Flesh Crucible, Prism of Belief, Heart of the Well, From Nothing, Megalomaniac > Controlled Metamorphosis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/XOn0XvWfP https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/bG2l9zbGcL https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/5gZY0LeUa https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/4nRMZwYC9 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/jz9Z63kHX https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/9GzvM5QIK https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/WXlMW2Dfm
+			new Name("Emerald", 6 * PRICE_DIV), // Grand Spectrum // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/5g4pVBeHa
+			new Name("Ruby", 290), // Grand Spectrum // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/XO04jD4sP
+			new Name("Sapphire", 11.5 * PRICE_DIV), // Grand Spectrum // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/E8YPeq0H5
+			new Name("Time-Lost Diamond", 95 * PRICE_DIV), // Against the Darkness // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/5zYWlwVta
+			new Name("Timeless Jewel", average(9 * PRICE_DIV, 390)), // Undying Hate > Heroic Tragery // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/vmmylRJFE https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/y4ja28qUR
+		).value(min, max);
+	}
 	static getUniqueTablets(min = undefined, max = undefined) {
 		return new NameManager(
-			// https://poe2db.tw/us/Unique_item#OtherUnique
+			// https://poe2db.tw/us/Tablet#TabletUnique
 			new Name("Expedition Precursor Tablet", 1 / 2), // Forgotten By Time
 			new Name("Delirium Precursor Tablet", 1 / 2), // Clear Skies
 
 			new Name("Breach Precursor Tablet", 3), // Wraeclast Besieged
 
-			new Name("Overseer Precursor Tablet", (24 + 4) / 2), // Season of the Hunt, Cruel Hegemony
-			new Name("Precursor Tablet", ((0.9 * PRICE_DIV) + (PRICE_DIV / 5)) / 2), // Visions of Paradise > The Grand Project
+			new Name("Overseer Precursor Tablet", average(24, 4)), // Season of the Hunt, Cruel Hegemony
+			new Name("Precursor Tablet", average(0.9 * PRICE_DIV, PRICE_DIV / 5)), // Visions of Paradise > The Grand Project
 			new Name("Ritual Precursor Tablet", 0.9 * PRICE_DIV), // Freedom of Faith
 
 			new Name("Abyss Precursor Tablet", 14 * PRICE_DIV), // Unforeseen Consequences
