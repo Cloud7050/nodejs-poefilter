@@ -69,6 +69,13 @@ function reset(filter) {
 	});
 
 	// Unique
+	filter.block((c, e) => {
+		c.continue();
+		c.categories(CATEGORY.GEAR);
+		c.rarity = new Comparison(RARITY.UNIQUE);
+
+		e.colourChance(PAIR_GEAR).sizeChance();
+	});
 	filter.priceBlocks((c, e, min, max, effect) => {
 		c.continue();
 		c.categories(CATEGORY.GEAR);
