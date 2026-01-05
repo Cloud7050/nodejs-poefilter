@@ -2743,7 +2743,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Brimmed Helm" "Tattered Robe"
+	BaseType == "Brimmed Helm" "Spiral Wraps" "Tattered Robe"
 	Rarity == Unique
 
 	SetFontSize 37
@@ -2756,7 +2756,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Amethyst Ring" "Bloodstone Amulet" "Corvus Mantle" "Fine Belt" "Gargantuan Mana Flask" "Gold Ring" "Jade Amulet" "Lazuli Ring" "Martyr Crown" "Pearl Ring" "Plate Belt" "Primed Quiver" Ring "Sapphire Ring" "Silver Charm" "Solar Amulet" "Stellar Amulet" "Stone Charm" "Thawing Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Viper Cap"
+	BaseType == "Amethyst Ring" "Bloodstone Amulet" "Corvus Mantle" "Fine Belt" "Furtive Wraps" "Gargantuan Mana Flask" "Gauze Wraps" "Gold Ring" "Jade Amulet" "Lazuli Ring" "Martyr Crown" "Pearl Ring" "Plate Belt" "Primed Quiver" Ring "Rope Cuffs" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Stellar Amulet" "Stone Charm" "Thawing Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Viper Cap"
 	Rarity == Unique
 
 	SetFontSize 45
