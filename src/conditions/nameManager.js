@@ -1654,16 +1654,13 @@ export class NameManager {
 	static getUniqueTablets(min = undefined, max = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Tablet#TabletUnique
-			new Name("Expedition Precursor Tablet", 1 / 2), // Forgotten By Time
-			new Name("Delirium Precursor Tablet", 1 / 2), // Clear Skies
-
-			new Name("Breach Precursor Tablet", 3), // Wraeclast Besieged
-
-			new Name("Overseer Precursor Tablet", average(24, 4)), // Season of the Hunt, Cruel Hegemony
-			new Name("Precursor Tablet", average(0.9 * PRICE_DIV, PRICE_DIV / 5)), // Visions of Paradise > The Grand Project
-			new Name("Ritual Precursor Tablet", 0.9 * PRICE_DIV), // Freedom of Faith
-
-			new Name("Abyss Precursor Tablet", 14 * PRICE_DIV), // Unforeseen Consequences
+			new Name("Breach Precursor Tablet", 0.5), // Wraeclast Besieged // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82Eq8JoiJ
+			new Name("Expedition Precursor Tablet", 12), // Forgotten By Time // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/lgeWGJDpsV
+			new Name("Delirium Precursor Tablet", 0.5), // Clear Skies // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/RJ60oa6Bc7
+			new Name("Ritual Precursor Tablet", 9), // Freedom of Faith // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Og358r60tE
+			new Name("Precursor Tablet", average(480, 59)), // Visions of Paradise > The Grand Project // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/pJVLnWjwH0 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/yYjaDzorCR
+			new Name("Overseer Precursor Tablet", 10), // Season of the Hunt >>> Cruel Hegemony // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/q9b4ZrMltg https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/RJ6XBJMRI7
+			new Name("Abyss Precursor Tablet", 200), // Unforeseen Consequences // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/zbMajqnaI4
 		).value(min, max);
 	}
 	static getUniqueRelics(min = undefined, max = undefined) {
