@@ -2756,7 +2756,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Amethyst Ring" "Armoured Vest" "Array Buckler" "Bloodstone Amulet" "Corvus Mantle" "Fine Belt" "Furtive Wraps" "Gargantuan Mana Flask" Garment "Gauze Wraps" "Gold Ring" "Jade Amulet" "Lattice Sandals" "Lazuli Ring" "Martyr Crown" "Pearl Ring" "Plate Belt" "Primed Quiver" "Pronged Spear" Ring "Rope Cuffs" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Stellar Amulet" "Stone Charm" "Thawing Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Viper Cap"
+	BaseType == "Amethyst Ring" "Armoured Vest" "Array Buckler" "Ashbark Talisman" "Bloodstone Amulet" "Chain Tiara" "Conqueror Plate" "Corvus Mantle" "Desolate Crossbow" "Fine Belt" "Fine Bracers" "Furtive Wraps" "Gargantuan Mana Flask" Garment "Gauze Wraps" "Giant Maul" "Gold Ring" "Jade Amulet" "Lattice Sandals" "Lazuli Ring" "Martyr Crown" "Pearl Ring" "Permafrost Staff" "Plate Belt" "Primed Quiver" "Pronged Spear" Ring "Rope Cuffs" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Stellar Amulet" "Stone Charm" "Thawing Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vermeil Circlet" "Viper Cap"
 	Rarity == Unique
 
 	SetFontSize 45
@@ -2771,7 +2771,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Altar Robe" "Armoured Cap" "Golden Charm" "Grand Manchettes" "Grand Regalia" "Heavy Belt" "Ornate Gauntlets" "Sacred Focus" "Sacrificial Regalia" "Silk Robe" "Siphoning Wand" "Tribal Mask" "Unset Ring" "Wide Belt"
+	BaseType == "Altar Robe" "Armoured Cap" "Golden Charm" "Grand Manchettes" "Grand Regalia" "Heavy Belt" "Ornate Gauntlets" "Sacred Focus" "Sacrificial Regalia" "Shrine Sceptre" "Silk Robe" "Siphoning Wand" "Tribal Mask" "Unset Ring" "Wide Belt"
 	Rarity == Unique
 
 	SetFontSize 45

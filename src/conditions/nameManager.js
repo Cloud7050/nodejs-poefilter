@@ -1302,7 +1302,7 @@ export class NameManager {
 			// Weapons
 			// new Name("Acrid Wand", ), // Cursecarver
 			// new Name("Artillery Bow", ), // Fairgraves' Curse
-			// new Name("Ashbark Talisman", ), // Fury of the King
+			new Name("Ashbark Talisman", 140), // Fury of the King // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/PPbXoMvZsL
 			// new Name("Ashen Staff", ), // Dusk Vigil
 			// new Name("Attuned Wand", ), // Lifesprig
 			// new Name("Barbed Spear", TIER.OTHER), // Saitha's Spear
@@ -1314,7 +1314,7 @@ export class NameManager {
 			// new Name("Crude Bow", 1), // Widowhail
 			// new Name("Crumbling Maul", ), // Quecholli
 			// new Name("Cultist Greathammer", ), // The Empty Roar
-			// new Name("Desolate Crossbow", ), // The Last Lament
+			new Name("Desolate Crossbow", 90), // The Last Lament // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/zbWQVyrRi4
 			// new Name("Dualstring Bow", ), // Death's Harp
 			// new Name("Dyad Crossbow", ), // Double Vision
 			// new Name("Execratus Hammer", ), // Nebuloch
@@ -1324,7 +1324,7 @@ export class NameManager {
 			// new Name("Forge Maul", ), // Trephina
 			// new Name("Forked Spear", ), // Tangletongue
 			// new Name("Gelid Staff", ), // Taryn's Shiver
-			// new Name("Giant Maul", ), // The Hammer of Faith
+			new Name("Giant Maul", 45), // The Hammer of Faith // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/YpZlBb2OiY
 			// new Name("Gothic Quarterstaff", ), // The Sentry
 			// new Name("Hardwood Spear", ), // Splinter of Lorrata
 			// new Name("Heavy Bow", ), // Lioneye's Glare
@@ -1337,7 +1337,7 @@ export class NameManager {
 			// new Name("Marching Mace", ), // Seeing Stars
 			// new Name("Oak Greathammer", ), // Hrimnor's Hymn
 			// new Name("Omen Sceptre", ), // Font of Power
-			// new Name("Permafrost Staff", ), // The Whispering Ice
+			new Name("Permafrost Staff", 0.9 * PRICE_DIV), // The Whispering Ice // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Klr4nObPU5
 			// new Name("Pointed Maul", ), // Tidebreaker
 			new Name("Pronged Spear", 0.8 * PRICE_DIV), // Atziri's Contempt // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/4mEYDodgU9
 			// new Name("Pyrophyte Staff", ), // The Searing Touch
@@ -1346,7 +1346,7 @@ export class NameManager {
 			// new Name("Recurve Bow", ), // Splinterheart
 			// new Name("Reflecting Staff", ), // Atziri's Rule
 			// new Name("Shortbow", ), // Quill Rain
-			// new Name("Shrine Sceptre", ), // Guiding Palm of the Eye, Guiding Palm of the Heart, Guiding Palm of the Mind, Palm of the Dreamer, Sacred Flame
+			new Name("Shrine Sceptre", average(900 * PRICE_DIV, 1.8 * PRICE_DIV, 430, 370, 360)), // Palm of the Dreamer > Sacred Flame, Guiding Palm of the Mind, Guiding Palm of the Heart, Guiding Palm of the Eye // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/G65V5dM9hb https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/nrRVRDlzT0 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/02EopoRpIg https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/5nL9MJ8oCa https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/EBrW9MnKS5
 			new Name("Siphoning Wand", 2 * PRICE_DIV), // Adonia's Ego // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/ky9g72dwu5
 			// new Name("Slim Mace", ), // Frostbreath
 			// new Name("Spiked Club", ), // Trenchtimbre
@@ -1390,13 +1390,13 @@ export class NameManager {
 			// new Name("Bronze Greaves", ), // The Infinite Pursuit
 			// new Name("Burnished Gauntlets", ), // Aerisvane's Wings
 			// new Name("Chain Mail", ), // Coat of Red
-			// new Name("Chain Tiara", ), // Sandstorm Visage
+			new Name("Chain Tiara", 120), // Sandstorm Visage // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Og3BKDaaUE
 			// new Name("Champion Cuirass", ), // The Brass Dome
 			// new Name("Cinched Boots", 2), // Atziri's Step // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/veXnRQoLIE
 			// new Name("Cleric Vestments", ), // The Mutable Star
 			// new Name("Cloaked Mail", ), // Pariah's Embrace
 			// new Name("Closed Helm", ), // Assailum
-			// new Name("Conqueror Plate", ), // Kaom's Heart
+			new Name("Conqueror Plate", 17), // Kaom's Heart // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/pJJ3rvEbt0
 			// new Name("Corsair Cap", ), // The Black Insignia
 			new Name("Corvus Mantle", 45), // Sacrosanctum // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/KlraZRd6I5
 			// new Name("Covered Sabatons", ), // Shankgonne
@@ -1423,7 +1423,7 @@ export class NameManager {
 			// new Name("Feathered Tiara", ), // Mask of the Stitched Demon
 			// new Name("Felt Cap", ), // Goldrim
 			// new Name("Fierce Greathelm", ), // Blood Price
-			// new Name("Fine Bracers", ), // Maligaro's Virtuosity
+			new Name("Fine Bracers", 50), // Maligaro's Virtuosity // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/aLpK6Eapue
 			// new Name("Firm Bracers", ), // Grip of Winter
 			// new Name("Full Plate", ), // Kingsguard
 			// new Name("Fur Plate", ), // Blackbraid
@@ -1554,7 +1554,7 @@ export class NameManager {
 			// new Name("Velvet Cap", ), // Heatshiver
 			// new Name("Veiled Mask", ), // Atsak's Sight
 			// new Name("Verisium Cuffs", ), // The Prisoner's Manacles
-			// new Name("Vermeil Circlet", ), // Crown of Eyes
+			new Name("Vermeil Circlet", 35), // Crown of Eyes // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/JB363e5RFl
 			new Name("Viper Cap", 29), // Constricting Command // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/02Erldw7Fg
 			// new Name("Visored Helm", ), // Ironride
 			// new Name("Voodoo Focus", ), // Apep's Supremacy
