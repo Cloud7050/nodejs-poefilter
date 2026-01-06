@@ -2,7 +2,7 @@ import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { PAIR_AUGMENT } from "../constants.js";
-import { COLOUR_AUGMENT, COLOUR_CHANCE, COLOUR_EXALT, COLOUR_WISDOM } from "../effects/effectSet.js";
+import { EffectSet } from "../effects/effectSet.js";
 
 export function sectionAugments(filter) {
 	runes(filter);
@@ -16,28 +16,28 @@ function runes(filter) {
 		c.categories(CATEGORY.AUGMENT);
 		c.names = new Comparison(NameManager.getRunes1(min, max));
 
-		effect(PAIR_AUGMENT, COLOUR_WISDOM);
+		effect(PAIR_AUGMENT, EffectSet.INDEX_WISDOM);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.AUGMENT);
 		c.names = new Comparison(NameManager.getRunes2(min, max));
 
-		effect(PAIR_AUGMENT, COLOUR_AUGMENT);
+		effect(PAIR_AUGMENT, EffectSet.INDEX_AUGMENT);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.AUGMENT);
 		c.names = new Comparison(NameManager.getRunes3(min, max));
 
-		effect(PAIR_AUGMENT, COLOUR_EXALT);
+		effect(PAIR_AUGMENT, EffectSet.INDEX_EXALT);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.AUGMENT);
 		c.names = new Comparison(NameManager.getRunes4(min, max));
 
-		effect(PAIR_AUGMENT, COLOUR_CHANCE);
+		effect(PAIR_AUGMENT, EffectSet.INDEX_CHANCE);
 	});
 }
 

@@ -4,7 +4,7 @@ import { RARITY } from "../conditions/conditionSet.js";
 import { OPERATOR } from "../conditions/operator.js";
 import { LEVEL_BIS, LEVEL_BIS_FLASK, LEVEL_BIS_RELIC, LEVEL_BIS_WAND_STAFF, PAIR_GEAR } from "../constants.js";
 import { Colour } from "../effects/colour.js";
-import { COLOUR_AUGMENT, COLOUR_CHANCE, COLOUR_EXALT, COLOUR_WISDOM } from "../effects/effectSet.js";
+import { EffectSet } from "../effects/effectSet.js";
 
 // Overwrite outlines. Lowest priority first as they can get overwritten below
 export function sectionOutlines(filter) {
@@ -103,7 +103,7 @@ function exceptional(filter) {
 	// When both exceptional and corrupted, only outlines when sure it has exceptional-only stats,
 	// else it retains the corrupted outline from above
 
-	function perRarity(rarity, colour) {
+	function perRarity(rarity, colourIndex) {
 		filter.multiBlock((c) => {
 			c.continue();
 			c.categories(CATEGORY.CHARM);
@@ -161,14 +161,14 @@ function exceptional(filter) {
 			c.hasSockets(3);
 			c.hasEnchant();
 		}, (e) => {
-			colour.call(e, PAIR_GEAR, true);
+			e.colour(colourIndex, PAIR_GEAR, true);
 			e.sizeChance();
 			e.outlineColour = Colour.UNIQUE;
 		});
 	}
 
-	perRarity(RARITY.NORMAL, COLOUR_WISDOM);
-	perRarity(RARITY.MAGIC, COLOUR_AUGMENT);
-	perRarity(RARITY.RARE, COLOUR_EXALT);
-	perRarity(RARITY.UNIQUE, COLOUR_CHANCE);
+	perRarity(RARITY.NORMAL, EffectSet.INDEX_WISDOM);
+	perRarity(RARITY.MAGIC, EffectSet.INDEX_AUGMENT);
+	perRarity(RARITY.RARE, EffectSet.INDEX_EXALT);
+	perRarity(RARITY.UNIQUE, EffectSet.INDEX_CHANCE);
 }

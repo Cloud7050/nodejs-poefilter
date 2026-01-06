@@ -2,7 +2,7 @@ import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { PAIR_GEM } from "../constants.js";
-import { COLOUR_CHANCE } from "../effects/effectSet.js";
+import { EffectSet } from "../effects/effectSet.js";
 
 export function sectionGems(filter) {
 	uncut(filter);
@@ -24,7 +24,7 @@ function lineage(filter) {
 		c.categories(CATEGORY.GEM);
 		c.names = new Comparison(NameManager.getLineage(min, max));
 
-		effect(PAIR_GEM, COLOUR_CHANCE);
+		effect(PAIR_GEM, EffectSet.INDEX_CHANCE);
 	});
 }
 

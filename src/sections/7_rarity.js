@@ -4,7 +4,7 @@ import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
 import { LEVEL_BIS, LEVEL_BIS_CHARM, LEVEL_BIS_FLASK, PAIR_GEAR, PAIR_JEWEL, PAIR_MAP1, PAIR_MAPLIKE } from "../constants.js";
-import { COLOUR_CHANCE } from "../effects/effectSet.js";
+import { EffectSet } from "../effects/effectSet.js";
 
 export function sectionRarity(filter) {
 	reset(filter);
@@ -82,7 +82,7 @@ function reset(filter) {
 		c.names = new Comparison(NameManager.getUniques(min, max));
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		effect(PAIR_GEAR, COLOUR_CHANCE);
+		effect(PAIR_GEAR, EffectSet.INDEX_CHANCE);
 	});
 }
 
@@ -489,7 +489,7 @@ function jewels(filter) {
 		c.names = new Comparison(NameManager.getUniqueJewels(min, max));
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		effect(PAIR_JEWEL, COLOUR_CHANCE);
+		effect(PAIR_JEWEL, EffectSet.INDEX_CHANCE);
 	});
 }
 
@@ -550,7 +550,7 @@ function tablets(filter) {
 		c.names = new Comparison(NameManager.getUniqueTablets(min, max));
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		effect(PAIR_MAPLIKE, COLOUR_CHANCE);
+		effect(PAIR_MAPLIKE, EffectSet.INDEX_CHANCE);
 	});
 }
 
@@ -579,6 +579,6 @@ function relics(filter) {
 		c.names = new Comparison(NameManager.getUniqueRelics(min, max));
 		c.rarity = new Comparison(RARITY.UNIQUE);
 
-		effect(PAIR_MAPLIKE, COLOUR_CHANCE);
+		effect(PAIR_MAPLIKE, EffectSet.INDEX_CHANCE);
 	});
 }

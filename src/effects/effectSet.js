@@ -231,27 +231,3 @@ export class EffectSet {
 		return this;
 	}
 }
-export const COLOUR_WISDOM = EffectSet.prototype.colourWisdom;
-export const COLOUR_AUGMENT = EffectSet.prototype.colourAugment;
-export const COLOUR_EXALT = EffectSet.prototype.colourExalt;
-export const COLOUR_CHANCE = EffectSet.prototype.colourChance;
-export const COLOUR_DIVINE = EffectSet.prototype.colourDivine;
-export const SIZE_WISDOM = EffectSet.prototype.sizeWisdom;
-export const SIZE_AUGMENT = EffectSet.prototype.sizeAugment;
-export const SIZE_EXALT = EffectSet.prototype.sizeExalt;
-export const SIZE_CHANCE = EffectSet.prototype.sizeChance;
-export const SIZE_DIVINE = EffectSet.prototype.sizeDivine;
-export const COLOUR_FUNCTIONS = [
-	COLOUR_WISDOM,
-	COLOUR_AUGMENT,
-	COLOUR_EXALT,
-	COLOUR_CHANCE,
-	COLOUR_DIVINE
-];
-export const SIZE_FUNCTIONS = [
-	SIZE_WISDOM,
-	SIZE_AUGMENT,
-	SIZE_EXALT,
-	SIZE_CHANCE,
-	SIZE_DIVINE
-];

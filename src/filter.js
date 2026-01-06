@@ -2,7 +2,7 @@ import fs from "fs";
 import { Block } from "./block.js";
 import { ConditionSet } from "./conditions/conditionSet.js";
 import { PRICE_AUGMENT, PRICE_CHANCE, PRICE_DIV, PRICE_EXALT } from "./constants.js";
-import { COLOUR_FUNCTIONS, EffectSet, SIZE_FUNCTIONS } from "./effects/effectSet.js";
+import { EffectSet } from "./effects/effectSet.js";
 
 
 
@@ -46,20 +46,19 @@ export class Filter {
 	}
 
 	priceBlocks(logic) {
-		const smartBlock = (refIndex, min = undefined, max = undefined) => { // Arrow function for `this` binding
-			let colour = COLOUR_FUNCTIONS[refIndex];
-			let size = SIZE_FUNCTIONS[refIndex];
-
+		const smartBlock = (index, min = undefined, max = undefined) => { // Arrow function for `this` binding
 			let b = new Block();
 			let c = b.c, e = b.e;
 
 			logic(c, e, min, max, (pair, colourOverwrite = null) => {
-				if (colourOverwrite !== null && refIndex < EffectSet.INDEX_DIVINE) {
-					colour = colourOverwrite;
+				let colourIndex = index;
+				let sizeIndex = index;
+				if (colourOverwrite !== null && index < EffectSet.INDEX_DIVINE) {
+					colourIndex = colourOverwrite;
 				}
 
-				colour.call(e, pair);
-				size.call(e);
+				e.colour(colourIndex, pair);
+				e.size(sizeIndex);
 			});
 
 			this.spans.push(...b.export());
