@@ -1,4 +1,5 @@
 import { Colour, PRESET } from "./effects/colour.js";
+import { EffectSet } from "./effects/effectSet.js";
 
 //// Colour pairs
 // ROSE
@@ -21,18 +22,6 @@ export const PAIR_LEAGUE = [Colour.VIOLET, PRESET.PURPLE];
 export const PAIR_MAP2 = [Colour.PINK, PRESET.PINK]; // Pinnacle fragment keys, trial tickets > chaos fate keys, splinters/kulemak's invitations
 ////
 
-//// Minimum price breakpoints to style as a certain size
-export const PRICE_AUGMENT = 1 / 100;
-export const PRICE_EXALT = 1;
-export const PRICE_CHANCE = 10;
-export const PRICE_DIV = 500; // Exalts per divine
-////
-
-//// Minimum price breakpoints to whitelist or hide
-export const VALUE_BAD = 2;
-// export const VALUE_OTHER = 5;
-////
-
 //// BiS item levels
 export const LEVEL_OK = 80;
 
@@ -44,18 +33,13 @@ export const LEVEL_BIS_WAND_STAFF = 81;
 export const LEVEL_BIS_CHARM = 81;
 export const LEVEL_BIS_FLASK = 83;
 
-// Special cases of lower minimum drop levels being suitable for endgame,
-// instead of defaulting to highest possible drop level in category
+// Some categories are special cases where lower minimum drop level is still endgame
 export const LEVEL_DROP_CASTER_QUIVER = 0;
 export const LEVEL_DROP_ATTACKER = 75;
 export const LEVEL_DROP_OFF_ARMOUR = 80;
 export const LEVEL_DROP_BODY = 65;
 
 export const LEVEL_HEAVY_BELT = 50;
-////
-
-//// Area level to impact what drop levels are deemed usable
-export const LEVEL_AREA = 28;
 ////
 
 //// Price breakpoints for gold
@@ -76,4 +60,28 @@ export const ENDGAME_1 = 50;
 export const ENDGAME_2 = 500;
 export const ENDGAME_3 = 2500;
 export const ENDGAME_4 = 5000;
+////
+
+
+
+//// Changing constants as you play
+// Area level to impact what drop levels are deemed usable
+export const LEVEL_AREA = 28;
+
+// General style defaults by rarity
+export const SIZE_NORMAL = EffectSet.INDEX_WISDOM;
+export const SIZE_MAGIC = EffectSet.INDEX_AUGMENT;
+export const SIZE_RARE = EffectSet.INDEX_EXALT;
+////
+
+//// Minimum price breakpoints to style as a certain size
+export const PRICE_AUGMENT = 1 / 100;
+export const PRICE_EXALT = 1;
+export const PRICE_CHANCE = 10;
+export const PRICE_DIV = 500; // Exalts per divine
+////
+
+//// Minimum price breakpoints to whitelist or hide
+export const VALUE_BAD = 2;
+// export const VALUE_OTHER = 5;
 ////
