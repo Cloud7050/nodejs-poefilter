@@ -2730,7 +2730,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Engraved Focus" "Grand Cuisses" "Hardwood Targe" "Heroic Armour" "Silk Slippers" "Vaal Tower Shield" "Wicker Tiara"
+	BaseType == "Engraved Focus"
 	Rarity == Unique
 
 	SetFontSize 32
@@ -2741,18 +2741,18 @@ Show
 
 	Continue
 
-Show
-	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Brimmed Helm" "Cinched Boots" "Grand Visage" "Intricate Crest Shield" "Plated Vestments" "Spiral Wraps" "Tattered Robe" "Trimmed Greaves" "Wrapped Sandals"
-	Rarity == Unique
-
-	SetFontSize 37
-	SetTextColor 10 20 83 255
-	SetBackgroundColor 126 142 255 255
-	SetBorderColor 10 20 83 255
-	MinimapIcon 0 Blue Star
-
-	Continue
+#Show
+#	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+#	BaseType ==
+#	Rarity == Unique
+#
+#	SetFontSize 37
+#	SetTextColor 10 20 83 255
+#	SetBackgroundColor 126 142 255 255
+#	SetBorderColor 10 20 83 255
+#	MinimapIcon 0 Blue Star
+#
+#	Continue
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms

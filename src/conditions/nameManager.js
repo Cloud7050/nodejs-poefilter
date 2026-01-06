@@ -1369,204 +1369,204 @@ export class NameManager {
 			// new Name("Zealot Bow", ), // Slivertongue
 
 			// Armour
-			new Name("Aged Cuffs", ), // Shackles of the Wretched
-			new Name("Altar Robe", ), // The Covenant
-			new Name("Ancestral Mail", ), // Lightning Coil
-			new Name("Anchorite Garb", ), // Redflare Conduit
-			new Name("Antler Focus", ), // Effigy of Cruelty
-			new Name("Armoured Cap", ), // Alpha's Howl
-			new Name("Armoured Vest", ), // Hyrri's Ire
+			// new Name("Aged Cuffs", ), // Shackles of the Wretched
+			// new Name("Altar Robe", ), // The Covenant
+			// new Name("Ancestral Mail", ), // Lightning Coil
+			// new Name("Anchorite Garb", ), // Redflare Conduit
+			// new Name("Antler Focus", ), // Effigy of Cruelty
+			// new Name("Armoured Cap", ), // Alpha's Howl
+			// new Name("Armoured Vest", ), // Hyrri's Ire
 			new Name("Array Buckler", 35), // Sunsplinter // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/G65R33e9Ib
-			new Name("Assassin Garb", ), // Cospri's Will
-			new Name("Barricade Tower Shield", ), // Window to Paradise
-			new Name("Beaded Circlet", ), // Visage of Ayah
-			new Name("Blacksteel Tower Shield", ), // Chernobog's Pillar
-			new Name("Blazon Crest Shield", ), // Alkem Eira
-			new Name("Bolstered Mitts", ), // Dreadfist
-			new Name("Bone Raiment", ), // Necromantle
-			new Name("Braced Sabatons", ), // Darkray Vectors
-			new Name("Braced Tower Shield", ), // Doomgate
-			new Name("Brimmed Helm", 2), // Greymake
-			new Name("Bronze Greaves", ), // The Infinite Pursuit
-			new Name("Burnished Gauntlets", ), // Aerisvane's Wings
-			new Name("Chain Mail", ), // Coat of Red
-			new Name("Chain Tiara", ), // Sandstorm Visage
-			new Name("Champion Cuirass", ), // The Brass Dome
-			new Name("Cinched Boots", 2), // Atziri's Step // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/veXnRQoLIE
-			new Name("Cleric Vestments", ), // The Mutable Star
-			new Name("Cloaked Mail", ), // Pariah's Embrace
-			new Name("Closed Helm", ), // Assailum
-			new Name("Conqueror Plate", ), // Kaom's Heart
-			new Name("Corsair Cap", ), // The Black Insignia
+			// new Name("Assassin Garb", ), // Cospri's Will
+			// new Name("Barricade Tower Shield", ), // Window to Paradise
+			// new Name("Beaded Circlet", ), // Visage of Ayah
+			// new Name("Blacksteel Tower Shield", ), // Chernobog's Pillar
+			// new Name("Blazon Crest Shield", ), // Alkem Eira
+			// new Name("Bolstered Mitts", ), // Dreadfist
+			// new Name("Bone Raiment", ), // Necromantle
+			// new Name("Braced Sabatons", ), // Darkray Vectors
+			// new Name("Braced Tower Shield", ), // Doomgate
+			// new Name("Brimmed Helm", 2), // Greymake
+			// new Name("Bronze Greaves", ), // The Infinite Pursuit
+			// new Name("Burnished Gauntlets", ), // Aerisvane's Wings
+			// new Name("Chain Mail", ), // Coat of Red
+			// new Name("Chain Tiara", ), // Sandstorm Visage
+			// new Name("Champion Cuirass", ), // The Brass Dome
+			// new Name("Cinched Boots", 2), // Atziri's Step // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/veXnRQoLIE
+			// new Name("Cleric Vestments", ), // The Mutable Star
+			// new Name("Cloaked Mail", ), // Pariah's Embrace
+			// new Name("Closed Helm", ), // Assailum
+			// new Name("Conqueror Plate", ), // Kaom's Heart
+			// new Name("Corsair Cap", ), // The Black Insignia
 			new Name("Corvus Mantle", 45), // Sacrosanctum // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/KlraZRd6I5
-			new Name("Covered Sabatons", ), // Shankgonne
-			new Name("Covert Hood", ), // Myris Uxor
-			new Name("Cowled Helm", ), // The Smiling Knight
-			new Name("Crescent Targe", ), // Feathered Fortress
-			new Name("Crucible Tower Shield", ), // Svalinn
-			new Name("Crystal Focus", ), // The Eternal Spark
-			new Name("Cultist Crown", ), // Crown of the Pale King
-			new Name("Death Mask", ), // Mind of the Council
-			new Name("Decorated Helm", ), // The Bringer of Rain
-			new Name("Doubled Gauntlets", ), // Deathblow
-			new Name("Elementalist Robe", ), // Gloamgown
-			new Name("Elite Greathelm", ), // Deidbell
-			new Name("Emblem Crest Shield", ), // Saffell's Frame
-			new Name("Embossed Boots", ), // Gamblesprint
-			new Name("Embroidered Gloves", ), // Leopold's Applause
-			new Name("Engraved Focus", 0.5), // Carrion Call //TODO got
-			new Name("Enlightened Robe", ), // Silks of Veneration
-			new Name("Explorer Armour", ), // Belly of the Beast, Pragmatism
-			new Name("Face Mask", ), // Mask of the Sanguimancer
-			new Name("Feathered Robe", ), // Bitterbloom
-			new Name("Feathered Sandals", ), // Windscream
-			new Name("Feathered Tiara", ), // Mask of the Stitched Demon
-			new Name("Felt Cap", ), // Goldrim
-			new Name("Fierce Greathelm", ), // Blood Price
-			new Name("Fine Bracers", ), // Maligaro's Virtuosity
-			new Name("Firm Bracers", ), // Grip of Winter
-			new Name("Full Plate", ), // Kingsguard
-			new Name("Fur Plate", ), // Blackbraid
+			// new Name("Covered Sabatons", ), // Shankgonne
+			// new Name("Covert Hood", ), // Myris Uxor
+			// new Name("Cowled Helm", ), // The Smiling Knight
+			// new Name("Crescent Targe", ), // Feathered Fortress
+			// new Name("Crucible Tower Shield", ), // Svalinn
+			// new Name("Crystal Focus", ), // The Eternal Spark
+			// new Name("Cultist Crown", ), // Crown of the Pale King
+			// new Name("Death Mask", ), // Mind of the Council
+			// new Name("Decorated Helm", ), // The Bringer of Rain
+			// new Name("Doubled Gauntlets", ), // Deathblow
+			// new Name("Elementalist Robe", ), // Gloamgown
+			// new Name("Elite Greathelm", ), // Deidbell
+			// new Name("Emblem Crest Shield", ), // Saffell's Frame
+			// new Name("Embossed Boots", ), // Gamblesprint
+			// new Name("Embroidered Gloves", ), // Leopold's Applause
+			new Name("Engraved Focus", 0.5), // Carrion Call
+			// new Name("Enlightened Robe", ), // Silks of Veneration
+			// new Name("Explorer Armour", ), // Belly of the Beast, Pragmatism
+			// new Name("Face Mask", ), // Mask of the Sanguimancer
+			// new Name("Feathered Robe", ), // Bitterbloom
+			// new Name("Feathered Sandals", ), // Windscream
+			// new Name("Feathered Tiara", ), // Mask of the Stitched Demon
+			// new Name("Felt Cap", ), // Goldrim
+			// new Name("Fierce Greathelm", ), // Blood Price
+			// new Name("Fine Bracers", ), // Maligaro's Virtuosity
+			// new Name("Firm Bracers", ), // Grip of Winter
+			// new Name("Full Plate", ), // Kingsguard
+			// new Name("Fur Plate", ), // Blackbraid
 			new Name("Furtive Wraps", 125), // Essentia Sanguis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/ky98XrYWC5
 			new Name("Garment", 29), // Tabula Rasa >>> Skin of the Loyal // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d83oQXQpIJ https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82n9Wp3sJ
 			new Name("Gauze Wraps", 45), // Plaguefinger // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/D6YL0Jyvf5
-			new Name("Gilded Vestments", ), // Couture of Crimson
-			new Name("Gold Circlet", ), // Atziri's Disdain
-			new Name("Goldcast Cuffs", ), // Blueflame Bracers
-			new Name("Golden Visage", ), // Demigod's Virtue //NOTE doesn't drop
-			new Name("Grand Cuisses", 0.5), // Ab Aeterno // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/8rLvGz0VcV
+			// new Name("Gilded Vestments", ), // Couture of Crimson
+			// new Name("Gold Circlet", ), // Atziri's Disdain
+			// new Name("Goldcast Cuffs", ), // Blueflame Bracers
+			// new Name("Golden Visage", ), // Demigod's Virtue //NOTE doesn't drop
+			// new Name("Grand Cuisses", 0.5), // Ab Aeterno // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/8rLvGz0VcV
 			new Name("Grand Manchettes", 6.9 * PRICE_DIV), // Sine Aequo // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/rPRnDEl4TQ
 			new Name("Grand Regalia", 690), // Morior Invictus // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/2KKGo77VIk
-			new Name("Grand Visage", 1), // Solus Ipse // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/bGmnazkdtL
-			new Name("Guarded Helm", ), // Erian's Cobble
-			new Name("Hardwood Targe", 0.5), // Arvil's Wheel
-			new Name("Havoc Raiment", ), // Cloak of Defiance
-			new Name("Heavy Crown", ), // Cornathaum
-			new Name("Heraldric Tower Shield", ), // Redblade Banner
-			new Name("Hermit Garb", ), // Apron of Emiran
-			new Name("Heroic Armour", 0.5), // The Coming Calamity
-			new Name("Hewn Mask", ), // The Hollow Mask
-			new Name("Hexer's Robe", ), // The Black Doubt
-			new Name("Hooded Mask", ), // Leer Cast
-			new Name("Horned Crown", ), // Bronzebeard
-			new Name("Hunter Hood", ), // Elevore
-			new Name("Hunting Shoes", ), // Powertread
-			new Name("Intricate Crest Shield", 9), // Prism Guardian // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/zbWn6QqgF4
-			new Name("Intricate Gloves", ), // Demon Stitcher
-			new Name("Iron Buckler", ), // Bloodbarrier
-			new Name("Iron Crown", ), // Crown of the Victor
-			new Name("Iron Cuirass", ), // Edyrn's Tusks
-			new Name("Iron Greaves", ), // Corpsewade
-			new Name("Jade Tiara", ), // Scold's Bridle
-			new Name("Jewelled Gloves", ), // Kitoko's Current
-			new Name("Jingling Crest Shield", ), // Crest of Ardura
-			new Name("Keth Raiment", ), // Prayers for Rain
-			new Name("Knight Armour", ), // Perfidy, Widow's Reign
-			new Name("Lace Hood", ), // Radiant Grief
-			new Name("Laced Boots", ), // Briarpatch
+			// new Name("Grand Visage", 1), // Solus Ipse // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/bGmnazkdtL
+			// new Name("Guarded Helm", ), // Erian's Cobble
+			// new Name("Hardwood Targe", 0.5), // Arvil's Wheel
+			// new Name("Havoc Raiment", ), // Cloak of Defiance
+			// new Name("Heavy Crown", ), // Cornathaum
+			// new Name("Heraldric Tower Shield", ), // Redblade Banner
+			// new Name("Hermit Garb", ), // Apron of Emiran
+			// new Name("Heroic Armour", 0.5), // The Coming Calamity
+			// new Name("Hewn Mask", ), // The Hollow Mask
+			// new Name("Hexer's Robe", ), // The Black Doubt
+			// new Name("Hooded Mask", ), // Leer Cast
+			// new Name("Horned Crown", ), // Bronzebeard
+			// new Name("Hunter Hood", ), // Elevore
+			// new Name("Hunting Shoes", ), // Powertread
+			// new Name("Intricate Crest Shield", 9), // Prism Guardian // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/zbWn6QqgF4
+			// new Name("Intricate Gloves", ), // Demon Stitcher
+			// new Name("Iron Buckler", ), // Bloodbarrier
+			// new Name("Iron Crown", ), // Crown of the Victor
+			// new Name("Iron Cuirass", ), // Edyrn's Tusks
+			// new Name("Iron Greaves", ), // Corpsewade
+			// new Name("Jade Tiara", ), // Scold's Bridle
+			// new Name("Jewelled Gloves", ), // Kitoko's Current
+			// new Name("Jingling Crest Shield", ), // Crest of Ardura
+			// new Name("Keth Raiment", ), // Prayers for Rain
+			// new Name("Knight Armour", ), // Perfidy, Widow's Reign
+			// new Name("Lace Hood", ), // Radiant Grief
+			// new Name("Laced Boots", ), // Briarpatch
 			new Name("Lattice Sandals", 35), // Bones of Ullr // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/veXnP72zTE
-			new Name("Layered Gauntlets", ), // Aurseize
-			new Name("Leather Buckler", ), // Dunkelhalt
-			new Name("Leatherbound Hood", ), // Starkonja's Head
-			new Name("Leather Vest", ), // Bristleboar
-			new Name("Linen Wraps", ), // Blessed Bonds, Killjoy
-			new Name("Lizardscale Boots", ), // Bushwhack
-			new Name("Magus Tiara", ), // Indigon
-			new Name("Mail Sabatons", ), // The Knight-errant
-			new Name("Mail Vestments", ), // Icetomb
-			new Name("Marabout Garb", ), // Sierran Inheritance
-			new Name("Maraketh Cuirass", ), // Titanrot Cataphract
+			// new Name("Layered Gauntlets", ), // Aurseize
+			// new Name("Leather Buckler", ), // Dunkelhalt
+			// new Name("Leatherbound Hood", ), // Starkonja's Head
+			// new Name("Leather Vest", ), // Bristleboar
+			// new Name("Linen Wraps", ), // Blessed Bonds, Killjoy
+			// new Name("Lizardscale Boots", ), // Bushwhack
+			// new Name("Magus Tiara", ), // Indigon
+			// new Name("Mail Sabatons", ), // The Knight-errant
+			// new Name("Mail Vestments", ), // Icetomb
+			// new Name("Marabout Garb", ), // Sierran Inheritance
+			// new Name("Maraketh Cuirass", ), // Titanrot Cataphract
 			new Name("Martyr Crown", 10), // Veil of the Night // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/lgvaoXWwiV
-			new Name("Moulded Mitts", ), // Atziri's Acuity, Hateforge
-			new Name("Omen Crest Shield", ), // Mahuxotl's Machination, Rise of the Phoenix
-			new Name("Ornate Buckler", ), // Calgyra's Arc
-			new Name("Ornate Gauntlets", ), // Death Articulated
-			new Name("Painted Tower Shield", ), // Wulfsbane
-			new Name("Pathfinder Coat", ), // Ashrend
-			new Name("Pauascale Gloves", ), // Nightscale
-			new Name("Plate Gauntlets", ), // Valako's Vice
-			new Name("Plated Buckler", ), // Rondel de Ezo
-			new Name("Plated Raiment", ), // Vis Mortis
-			new Name("Plated Vestments", 2), // Voll's Protector // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82nY0nRhJ
-			new Name("Pilgrim Vestments", ), // Enfolding Dawn
-			new Name("Quilted Vest", ), // Foxshade
-			new Name("Raider Plate", ), // The Road Warrior
-			new Name("Rampart Tower Shield", ), // Lycosidae
-			new Name("Rhoahide Coat", ), // Briskwrap
-			new Name("Ridged Buckler", ), // Kaltenhalt
-			new Name("Ringmail Gauntlets", ), // Jarngreipr
-			new Name("Riveted Mitts", ), // Treefingers
-			new Name("Rogue Armour", ), // The Barrow Dweller
+			// new Name("Moulded Mitts", ), // Atziri's Acuity, Hateforge
+			// new Name("Omen Crest Shield", ), // Mahuxotl's Machination, Rise of the Phoenix
+			// new Name("Ornate Buckler", ), // Calgyra's Arc
+			// new Name("Ornate Gauntlets", ), // Death Articulated
+			// new Name("Painted Tower Shield", ), // Wulfsbane
+			// new Name("Pathfinder Coat", ), // Ashrend
+			// new Name("Pauascale Gloves", ), // Nightscale
+			// new Name("Plate Gauntlets", ), // Valako's Vice
+			// new Name("Plated Buckler", ), // Rondel de Ezo
+			// new Name("Plated Raiment", ), // Vis Mortis
+			// new Name("Plated Vestments", 2), // Voll's Protector // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82nY0nRhJ
+			// new Name("Pilgrim Vestments", ), // Enfolding Dawn
+			// new Name("Quilted Vest", ), // Foxshade
+			// new Name("Raider Plate", ), // The Road Warrior
+			// new Name("Rampart Tower Shield", ), // Lycosidae
+			// new Name("Rhoahide Coat", ), // Briskwrap
+			// new Name("Ridged Buckler", ), // Kaltenhalt
+			// new Name("Ringmail Gauntlets", ), // Jarngreipr
+			// new Name("Riveted Mitts", ), // Treefingers
+			// new Name("Rogue Armour", ), // The Barrow Dweller
 			new Name("Rope Cuffs", 20), // Gravebind // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/2KmjGRe5Tk
-			new Name("Rough Greaves", ), // Legionstride
-			new Name("Rusted Cuirass", ), // Bramblejack
-			new Name("Rusted Greathelm", ), // Horns of Bynden, Wings of Caelyn
+			// new Name("Rough Greaves", ), // Legionstride
+			// new Name("Rusted Cuirass", ), // Bramblejack
+			// new Name("Rusted Greathelm", ), // Horns of Bynden, Wings of Caelyn
 			new Name("Sacred Focus", 13 * PRICE_DIV), // Rathpith Globe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Og3Pv3RrcE
-			new Name("Sacrificial Mantle", ), // Soul Mantle
+			// new Name("Sacrificial Mantle", ), // Soul Mantle
 			new Name("Sacrificial Regalia", 99 * PRICE_DIV), // Atziri's Splendour // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/WvOLvPDVTm
-			new Name("Scale Mail", ), // Doryani's Prototype
-			new Name("Scalper's Jacket", ), // Zerphi's Serape
-			new Name("Scout's Vest", ), // The Rat Cage
-			new Name("Sectioned Bracers", ), // Idle Hands
-			new Name("Secured Leggings", ), // Wake of Destruction
-			new Name("Serpentscale Coat", ), // Quatl's Molt
-			new Name("Shabby Hood", ), // Innsmouth
-			new Name("Shaman Mantle", ), // Husk of Dreams
-			new Name("Shielded Helm", ), // The Vile Knight
-			new Name("Shrouded Vest", ), // Sands of Silk
-			new Name("Sigil Crest Shield", ), // Oaksworn
+			// new Name("Scale Mail", ), // Doryani's Prototype
+			// new Name("Scalper's Jacket", ), // Zerphi's Serape
+			// new Name("Scout's Vest", ), // The Rat Cage
+			// new Name("Sectioned Bracers", ), // Idle Hands
+			// new Name("Secured Leggings", ), // Wake of Destruction
+			// new Name("Serpentscale Coat", ), // Quatl's Molt
+			// new Name("Shabby Hood", ), // Innsmouth
+			// new Name("Shaman Mantle", ), // Husk of Dreams
+			// new Name("Shielded Helm", ), // The Vile Knight
+			// new Name("Shrouded Vest", ), // Sands of Silk
+			// new Name("Sigil Crest Shield", ), // Oaksworn
 			new Name("Silk Robe", 6000 * PRICE_DIV), // Temporalis >>> Cloak of Flame // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/jzJK09rSX
-			new Name("Silk Slippers", 0.5), // Wondertrap
-			new Name("Smuggler Coat", ), // Queen of the Forest
-			new Name("Soldier Greathelm", ), // Ezomyte Peak
-			new Name("Solid Mask", ), // The Three Dragons
-			new Name("Sombre Gloves", ), // Candlemaker
-			new Name("Spiked Buckler", ), // Silverthorne
-			new Name("Spined Bracers", ), // Snakebite
-			new Name("Spiral Wraps", 5), // Hand of Wisdom and Action // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/aLLVdmpKTe
-			new Name("Spired Greathelm", ), // Thrillsteel
-			new Name("Spiritbone Crown", ), // Keeper of the Arc
-			new Name("Splintered Tower Shield", ), // Dionadair
-			new Name("Stacked Sabatons", ), // Obern's Bastion
-			new Name("Steel Plate", ), // Wandering Reliquary
-			new Name("Stitched Gloves", ), // Doedre's Tenure
-			new Name("Stone Greaves", ), // Birth of Fury
-			new Name("Straw Sandals", ), // Luminous Pace
-			new Name("Strider Vest", ), // Yriel's Fostering
-			new Name("Studded Vest", ), // Dustbloom
-			new Name("Suede Bracers", ), // Northpaw
-			new Name("Tattered Robe", 8), // Ghostwrithe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Bg4jKppQt8
-			new Name("Tempered Mitts", ), // Lochtonial Caress
-			new Name("Threaded Shoes", ), // Ghostmarch
-			new Name("Tideseer Mantle", ), // Waveshaper
-			new Name("Titan Mitts", ), // Empire's Grasp
-			new Name("Tonal Focus", ), // Serpent's Lesson
-			new Name("Torn Gloves", ), // Painter's Servant
+			// new Name("Silk Slippers", 0.5), // Wondertrap
+			// new Name("Smuggler Coat", ), // Queen of the Forest
+			// new Name("Soldier Greathelm", ), // Ezomyte Peak
+			// new Name("Solid Mask", ), // The Three Dragons
+			// new Name("Sombre Gloves", ), // Candlemaker
+			// new Name("Spiked Buckler", ), // Silverthorne
+			// new Name("Spined Bracers", ), // Snakebite
+			// new Name("Spiral Wraps", 5), // Hand of Wisdom and Action // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/aLLVdmpKTe
+			// new Name("Spired Greathelm", ), // Thrillsteel
+			// new Name("Spiritbone Crown", ), // Keeper of the Arc
+			// new Name("Splintered Tower Shield", ), // Dionadair
+			// new Name("Stacked Sabatons", ), // Obern's Bastion
+			// new Name("Steel Plate", ), // Wandering Reliquary
+			// new Name("Stitched Gloves", ), // Doedre's Tenure
+			// new Name("Stone Greaves", ), // Birth of Fury
+			// new Name("Straw Sandals", ), // Luminous Pace
+			// new Name("Strider Vest", ), // Yriel's Fostering
+			// new Name("Studded Vest", ), // Dustbloom
+			// new Name("Suede Bracers", ), // Northpaw
+			// new Name("Tattered Robe", 8), // Ghostwrithe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Bg4jKppQt8
+			// new Name("Tempered Mitts", ), // Lochtonial Caress
+			// new Name("Threaded Shoes", ), // Ghostmarch
+			// new Name("Tideseer Mantle", ), // Waveshaper
+			// new Name("Titan Mitts", ), // Empire's Grasp
+			// new Name("Tonal Focus", ), // Serpent's Lesson
+			// new Name("Torn Gloves", ), // Painter's Servant
 			new Name("Tribal Mask", 34 * PRICE_DIV), // The Vertex >>> Glimpse of Chaos // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/ky9zpPB6C5 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Md39bG86iJ
-			new Name("Trimmed Greaves", 7), // Trampletoe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/eRpnEnvgsL
-			new Name("Twig Circlet", ), // Crown of Thorns
-			new Name("Twig Focus", ), // Deathrattle
-			new Name("Utility Wraps", ), // Thunderfist
-			new Name("Vaal Cuirass", ), // Greed's Embrace
-			new Name("Vaal Tower Shield", 0.5), // The Surrender // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/glZnv3j5UQ
-			new Name("Vagabond Armour", ), // Irongrasp
-			new Name("Velour Shoes", ), // Beetlebite
-			new Name("Velvet Cap", ), // Heatshiver
-			new Name("Veiled Mask", ), // Atsak's Sight
-			new Name("Verisium Cuffs", ), // The Prisoner's Manacles
-			new Name("Vermeil Circlet", ), // Crown of Eyes
+			// new Name("Trimmed Greaves", 7), // Trampletoe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/eRpnEnvgsL
+			// new Name("Twig Circlet", ), // Crown of Thorns
+			// new Name("Twig Focus", ), // Deathrattle
+			// new Name("Utility Wraps", ), // Thunderfist
+			// new Name("Vaal Cuirass", ), // Greed's Embrace
+			// new Name("Vaal Tower Shield", 0.5), // The Surrender // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/glZnv3j5UQ
+			// new Name("Vagabond Armour", ), // Irongrasp
+			// new Name("Velour Shoes", ), // Beetlebite
+			// new Name("Velvet Cap", ), // Heatshiver
+			// new Name("Veiled Mask", ), // Atsak's Sight
+			// new Name("Verisium Cuffs", ), // The Prisoner's Manacles
+			// new Name("Vermeil Circlet", ), // Crown of Eyes
 			new Name("Viper Cap", 29), // Constricting Command // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/02Erldw7Fg
-			new Name("Visored Helm", ), // Ironride
-			new Name("Voodoo Focus", ), // Apep's Supremacy
-			new Name("Votive Raiment", ), // Tetzlapokal's Desire
-			new Name("Warrior Greathelm", ), // Corona of the Red Sun
-			new Name("Waxed Jacket", ), // Gloomform
-			new Name("Wayfarer Jacket", ), // The Dancing Mirage
-			new Name("Wicker Tiara", 0.5), // The Devouring Diadem
-			new Name("Wooden Buckler", ), // Nocturne
-			new Name("Woven Focus", ), // Threaded Light
-			new Name("Wrapped Greathelm", ), // Black Sun Crest
-			new Name("Wrapped Sandals", 5), // Wanderlust // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/jWYmbm3LtX
+			// new Name("Visored Helm", ), // Ironride
+			// new Name("Voodoo Focus", ), // Apep's Supremacy
+			// new Name("Votive Raiment", ), // Tetzlapokal's Desire
+			// new Name("Warrior Greathelm", ), // Corona of the Red Sun
+			// new Name("Waxed Jacket", ), // Gloomform
+			// new Name("Wayfarer Jacket", ), // The Dancing Mirage
+			// new Name("Wicker Tiara", 0.5), // The Devouring Diadem
+			// new Name("Wooden Buckler", ), // Nocturne
+			// new Name("Woven Focus", ), // Threaded Light
+			// new Name("Wrapped Greathelm", ), // Black Sun Crest
+			// new Name("Wrapped Sandals", 5), // Wanderlust // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/jWYmbm3LtX
 
 			// Other
 			// new Name("Abyssal Signet", 0.5).special(), // Grip of Kulemak
