@@ -1339,7 +1339,7 @@ export class NameManager {
 			// new Name("Omen Sceptre", ), // Font of Power
 			// new Name("Permafrost Staff", ), // The Whispering Ice
 			// new Name("Pointed Maul", ), // Tidebreaker
-			// new Name("Pronged Spear", ), // Atziri's Contempt
+			new Name("Pronged Spear", 0.8 * PRICE_DIV), // Atziri's Contempt // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/4mEYDodgU9
 			// new Name("Pyrophyte Staff", ), // The Searing Touch
 			// new Name("Rattling Sceptre", ), // The Dark Defiler
 			// new Name("Ravenous Staff", ), // The Unborn Lich
@@ -1347,7 +1347,7 @@ export class NameManager {
 			// new Name("Reflecting Staff", ), // Atziri's Rule
 			// new Name("Shortbow", ), // Quill Rain
 			// new Name("Shrine Sceptre", ), // Guiding Palm of the Eye, Guiding Palm of the Heart, Guiding Palm of the Mind, Palm of the Dreamer, Sacred Flame
-			// new Name("Siphoning Wand", TIER.OTHER), // Adonia's Ego
+			new Name("Siphoning Wand", 2 * PRICE_DIV), // Adonia's Ego // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/ky9g72dwu5
 			// new Name("Slim Mace", ), // Frostbreath
 			// new Name("Spiked Club", ), // Trenchtimbre
 			// new Name("Steelpoint Quarterstaff", ), // Nazir's Judgement
@@ -1370,12 +1370,12 @@ export class NameManager {
 
 			// Armour
 			// new Name("Aged Cuffs", ), // Shackles of the Wretched
-			// new Name("Altar Robe", ), // The Covenant
+			new Name("Altar Robe", 6.5 * PRICE_DIV), // The Covenant // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/G65Vom5Ocb
 			// new Name("Ancestral Mail", ), // Lightning Coil
 			// new Name("Anchorite Garb", ), // Redflare Conduit
 			// new Name("Antler Focus", ), // Effigy of Cruelty
-			// new Name("Armoured Cap", ), // Alpha's Howl
-			// new Name("Armoured Vest", ), // Hyrri's Ire
+			new Name("Armoured Cap", 1.9 * PRICE_DIV), // Alpha's Howl // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/glZy2V95FQ
+			new Name("Armoured Vest", 190), // Hyrri's Ire // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/rPR4GgrrCQ
 			new Name("Array Buckler", 35), // Sunsplinter // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/G65R33e9Ib
 			// new Name("Assassin Garb", ), // Cospri's Will
 			// new Name("Barricade Tower Shield", ), // Window to Paradise
@@ -1480,7 +1480,7 @@ export class NameManager {
 			// new Name("Moulded Mitts", ), // Atziri's Acuity, Hateforge
 			// new Name("Omen Crest Shield", ), // Mahuxotl's Machination, Rise of the Phoenix
 			// new Name("Ornate Buckler", ), // Calgyra's Arc
-			// new Name("Ornate Gauntlets", ), // Death Articulated
+			new Name("Ornate Gauntlets", 5 * PRICE_DIV), // Death Articulated // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82EZ6kRFJ
 			// new Name("Painted Tower Shield", ), // Wulfsbane
 			// new Name("Pathfinder Coat", ), // Ashrend
 			// new Name("Pauascale Gloves", ), // Nightscale
@@ -1623,7 +1623,7 @@ export class NameManager {
 			// new Name("Toxic Quiver", 0.5), // Murkshaft
 			new Name("Ultimate Life Flask", 68), // Olroth's Resolve // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/zbW4RVwas4
 			new Name("Ultimate Mana Flask", 29), // Melting Maelstrom // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/zbW4YkRKU4
-			// new Name("Unset Ring", ), // Bursting Decay
+			new Name("Unset Ring", 530), // Bursting Decay // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/RJ60wOEas7
 			new Name("Utility Belt", 95), // Ingenuity // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/rPRD9OmgHQ
 			// new Name("Visceral Quiver", ), // Beyond Reach
 			new Name("Wide Belt", 120 * PRICE_DIV), // The Gnashing Sash >>> Birthright Buckle, Byrnabas // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Klr09KoDc5
@@ -1669,12 +1669,11 @@ export class NameManager {
 	static getUniqueRelics(min = undefined, max = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/us/Relics#RelicsUnique_Unique
-			new Name("Tapestry Relic", 1 / 1000), // The Burden of Leadership
-			new Name("Amphora Relic", 1 / 598), // The Peacemaker's Draught
-			new Name("Seal Relic", 1 / 2), // The Changing Seasons
-
-			new Name("Vase Relic", 3 * PRICE_DIV), // The Desperate Alliance
-			new Name("Incense Relic", 98 * PRICE_DIV), // The Last Flame
+			new Name("Amphora Relic", 0.5), // The Peacemaker's Draught
+			new Name("Vase Relic", 998), // The Desperate Alliance // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Z6eZ7n5bHQ
+			new Name("Seal Relic", 0.5), // The Changing Seasons
+			new Name("Tapestry Relic", 0.5), // The Burden of Leadership
+			new Name("Incense Relic", 5800 * PRICE_DIV), // The Last Flame // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/dGjnwQPfJ
 		).value(min, max);
 	}
 

@@ -2756,7 +2756,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Amethyst Ring" "Array Buckler" "Bloodstone Amulet" "Corvus Mantle" "Fine Belt" "Furtive Wraps" "Gargantuan Mana Flask" Garment "Gauze Wraps" "Gold Ring" "Jade Amulet" "Lattice Sandals" "Lazuli Ring" "Martyr Crown" "Pearl Ring" "Plate Belt" "Primed Quiver" Ring "Rope Cuffs" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Stellar Amulet" "Stone Charm" "Thawing Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Viper Cap"
+	BaseType == "Amethyst Ring" "Armoured Vest" "Array Buckler" "Bloodstone Amulet" "Corvus Mantle" "Fine Belt" "Furtive Wraps" "Gargantuan Mana Flask" Garment "Gauze Wraps" "Gold Ring" "Jade Amulet" "Lattice Sandals" "Lazuli Ring" "Martyr Crown" "Pearl Ring" "Plate Belt" "Primed Quiver" "Pronged Spear" Ring "Rope Cuffs" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Stellar Amulet" "Stone Charm" "Thawing Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Viper Cap"
 	Rarity == Unique
 
 	SetFontSize 45
@@ -2771,7 +2771,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Golden Charm" "Grand Manchettes" "Grand Regalia" "Heavy Belt" "Sacred Focus" "Sacrificial Regalia" "Silk Robe" "Tribal Mask" "Wide Belt"
+	BaseType == "Altar Robe" "Armoured Cap" "Golden Charm" "Grand Manchettes" "Grand Regalia" "Heavy Belt" "Ornate Gauntlets" "Sacred Focus" "Sacrificial Regalia" "Silk Robe" "Siphoning Wand" "Tribal Mask" "Unset Ring" "Wide Belt"
 	Rarity == Unique
 
 	SetFontSize 45
@@ -3554,22 +3554,22 @@ Show
 
 	Continue
 
+#Show
+#	Class == Relics
+#	BaseType ==
+#	Rarity == Unique
+#
+#	SetFontSize 27
+#	SetTextColor 0 46 25 255
+#	SetBackgroundColor 0 237 150 255
+#	SetBorderColor 0 46 25 255
+#	MinimapIcon 2 Brown Star
+#
+#	Continue
+
 Show
 	Class == Relics
-	BaseType == "Amphora Relic" "Tapestry Relic"
-	Rarity == Unique
-
-	SetFontSize 27
-	SetTextColor 0 46 25 255
-	SetBackgroundColor 0 237 150 255
-	SetBorderColor 0 46 25 255
-	MinimapIcon 2 Brown Star
-
-	Continue
-
-Show
-	Class == Relics
-	BaseType == "Seal Relic"
+	BaseType == "Amphora Relic" "Seal Relic" "Tapestry Relic"
 	Rarity == Unique
 
 	SetFontSize 32
@@ -4478,7 +4478,7 @@ Show
 
 Hide
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
-	BaseType == "Antler Focus" "Barricade Tower Shield" "Blazon Crest Shield" "Braced Tower Shield" "Changeling Talisman" "Cinderbark Talisman" "Crackling Quarterstaff" "Crude Bow" "Dyad Crossbow" "Engraved Focus" "Familial Talisman" "Felled Greatclub" "Forge Maul" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" "Recurve Bow" "Ridged Buckler" Shortbow "Sigil Crest Shield" "Slim Mace" "Smithing Hammer" "Spiked Club" "Splintered Tower Shield" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Tense Crossbow" "Tonal Focus" "Twig Focus" "Varnished Crossbow" "War Spear" "Warden Bow" Warpick "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
+	BaseType == "Antler Focus" "Barricade Tower Shield" "Blazon Crest Shield" "Braced Tower Shield" "Changeling Talisman" "Cinderbark Talisman" "Composite Bow" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crude Bow" "Cultist Greathammer" "Dyad Crossbow" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Felled Greatclub" "Forge Maul" "Frenzied Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" "Recurve Bow" "Ridged Buckler" Shortbow "Sigil Crest Shield" "Slim Mace" "Smithing Hammer" "Spiked Club" "Splintered Tower Shield" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Tense Crossbow" "Tonal Focus" "Twig Focus" "Varnished Crossbow" "War Spear" "Warden Bow" Warpick "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -4492,7 +4492,7 @@ Hide
 
 Hide
 	Class == Helmets "Body Armours" Gloves Boots
-	BaseType == "Beaded Circlet" "Bone Raiment" "Brimmed Helm" "Chain Mail" "Face Mask" "Feathered Robe" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Fur Plate" "Gauze Wraps" "Guarded Helm" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Horned Crown" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Lace Hood" "Laced Boots" "Leather Vest" "Mail Sabatons" "Padded Leggings" "Pathfinder Coat" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Rhoahide Coat" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Shrouded Vest" "Soldier Greathelm" "Sombre Gloves" "Stitched Gloves" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Torn Gloves" "Twig Circlet" "Vagabond Armour" "Visored Helm" "Waxed Jacket" "Wicker Tiara" "Wrapped Sandals"
+	BaseType == "Beaded Circlet" "Bone Raiment" "Bound Bracers" "Brimmed Helm" "Bronze Greaves" "Chain Mail" "Cultist Crown" "Embossed Boots" "Face Mask" "Feathered Robe" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Fur Plate" "Gauze Wraps" "Guarded Helm" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Lace Hood" "Laced Boots" "Lattice Sandals" "Leather Vest" "Mail Sabatons" "Mail Vestments" "Marabout Garb" "Maraketh Cuirass" "Padded Leggings" "Pathfinder Coat" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Rhoahide Coat" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Shrouded Vest" "Silk Robe" "Soldier Greathelm" "Sombre Gloves" "Stitched Gloves" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Tempered Mitts" "Torn Gloves" "Twig Circlet" "Vagabond Armour" "Visored Helm" "Waxed Jacket" "Wicker Tiara" "Wrapped Greathelm" "Wrapped Sandals"
 	Rarity == Normal Magic
 
 	DisableDropSound

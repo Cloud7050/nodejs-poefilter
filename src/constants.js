@@ -55,7 +55,7 @@ export const LEVEL_HEAVY_BELT = 50;
 ////
 
 //// Character level to impact what ilvl & drop level are deemed usable
-export const LEVEL_AREA = 26;
+export const LEVEL_AREA = 28;
 ////
 
 //// Price breakpoints for gold
