@@ -1,3 +1,4 @@
+import { PRICE_AUGMENT, PRICE_CHANCE, PRICE_EXALT } from "../constants.js";
 
 export class EffectSet {
 	static INDEX_WISDOM = 0;
@@ -224,6 +225,20 @@ export class EffectSet {
 	}
 	sizeDivine(muteCustom = undefined) {
 		return this.size(EffectSet.INDEX_DIVINE, muteCustom);
+	}
+	sizeForPrice(price) {
+		let index = EffectSet.INDEX_DIVINE;
+		if (price < PRICE_AUGMENT) {
+			index = EffectSet.INDEX_WISDOM;
+		} else if (price < PRICE_EXALT) {
+			index = EffectSet.INDEX_AUGMENT;
+		} else if (price < PRICE_CHANCE) {
+			index = EffectSet.INDEX_EXALT;
+		} else if (price < PRICE_DIVINE) {
+			index = EffectSet.INDEX_CHANCE;
+		}
+
+		return this.size(index);
 	}
 	size(index, muteCustom = false) {
 		this.sizeIndex = index;

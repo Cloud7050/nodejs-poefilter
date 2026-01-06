@@ -50,15 +50,14 @@ export class Filter {
 			let b = new Block();
 			let c = b.c, e = b.e;
 
-			logic(c, e, min, max, (pair, colourOverwrite = null) => {
+			logic(c, e, min, max, (pair, colourIndexOverwrite = null) => {
 				let colourIndex = index;
-				let sizeIndex = index;
-				if (colourOverwrite !== null && index < EffectSet.INDEX_DIVINE) {
-					colourIndex = colourOverwrite;
+				if (colourIndexOverwrite !== null && index < EffectSet.INDEX_DIVINE) {
+					colourIndex = colourIndexOverwrite;
 				}
 
 				e.colour(colourIndex, pair);
-				e.size(sizeIndex);
+				e.size(index);
 			});
 
 			this.spans.push(...b.export());

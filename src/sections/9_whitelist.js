@@ -38,8 +38,7 @@ function chance(filter) {
 		c.ilvl = new Comparison(LEVEL_HEAVY_BELT, OPERATOR.GTE);
 		c.isCorrupted = false;
 	}, (e) => {
-		// 9 exalts
-		e.colourWisdom(PAIR_GEAR).sizeExalt();
+		e.colourWisdom(PAIR_GEAR).sizeForPrice(9);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {
