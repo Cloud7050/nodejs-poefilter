@@ -64,11 +64,11 @@ export class Filter {
 			this.spans.push(...b.export());
 		}
 
-		smartBlock(0, null, PRICE_AUGMENT);
-		smartBlock(1, PRICE_AUGMENT, PRICE_EXALT);
-		smartBlock(2, PRICE_EXALT, PRICE_CHANCE);
-		smartBlock(3, PRICE_CHANCE, PRICE_DIV);
-		smartBlock(4, PRICE_DIV);
+		smartBlock(EffectSet.INDEX_WISDOM, null, PRICE_AUGMENT);
+		smartBlock(EffectSet.INDEX_AUGMENT, PRICE_AUGMENT, PRICE_EXALT);
+		smartBlock(EffectSet.INDEX_EXALT, PRICE_EXALT, PRICE_CHANCE);
+		smartBlock(EffectSet.INDEX_CHANCE, PRICE_CHANCE, PRICE_DIV);
+		smartBlock(EffectSet.INDEX_DIVINE, PRICE_DIV);
 	}
 
 	save() {
