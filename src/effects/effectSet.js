@@ -240,6 +240,9 @@ export class EffectSet {
 
 		return this.size(index);
 	}
+	sizeCapped(index, indexCap = EffectSet.INDEX_EXALT, muteCustom = undefined) {
+		return this.size(Math.min(index, indexCap), muteCustom);
+	}
 	size(index, muteCustom = false) {
 		this.sizeIndex = index;
 		this.muteCustom = muteCustom;

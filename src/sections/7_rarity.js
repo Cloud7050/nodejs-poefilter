@@ -3,7 +3,7 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { LEVEL_BIS, LEVEL_BIS_CHARM, LEVEL_BIS_FLASK, PAIR_GEAR, PAIR_JEWEL, PAIR_MAP1, PAIR_MAPLIKE } from "../constants.js";
+import { LEVEL_BIS_FLASK, PAIR_GEAR, PAIR_JEWEL, PAIR_MAP1, PAIR_MAPLIKE, SIZE_JEWEL_MAGIC, SIZE_JEWEL_RARE, SIZE_MAGIC, SIZE_NORMAL, SIZE_RARE } from "../constants.js";
 import { EffectSet } from "../effects/effectSet.js";
 
 export function sectionRarity(filter) {
@@ -29,7 +29,7 @@ function reset(filter) {
 		c.categories(CATEGORY.GEAR);
 		c.rarity = new Comparison(RARITY.NORMAL);
 
-		e.colourWisdom(PAIR_GEAR).sizeAugment();
+		e.colourWisdom(PAIR_GEAR).size(SIZE_NORMAL);
 	});
 
 	// Magic
@@ -39,7 +39,7 @@ function reset(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isLowTier();
 
-		e.colourAugment(PAIR_GEAR).sizeWisdom();
+		e.colourAugment(PAIR_GEAR).size(SIZE_MAGIC);
 	});
 	filter.block((c, e) => { // Max tier
 		c.continue();
@@ -47,7 +47,7 @@ function reset(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isMaxTier();
 
-		e.colourAugment(PAIR_GEAR).sizeAugment();
+		e.colourAugment(PAIR_GEAR).sizeCapped(SIZE_MAGIC + 1);
 	});
 
 	// Rare
@@ -57,7 +57,7 @@ function reset(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isLowTier();
 
-		e.colourExalt(PAIR_GEAR).sizeWisdom();
+		e.colourExalt(PAIR_GEAR).size(SIZE_RARE);
 	});
 	filter.block((c, e) => { // Max tier
 		c.continue();
@@ -65,7 +65,7 @@ function reset(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isMaxTier();
 
-		e.colourExalt(PAIR_GEAR).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeCapped(SIZE_RARE + 1);
 	});
 
 	// Unique
@@ -91,13 +91,9 @@ function classWeapons(filter) {
 	filter.multiBlock((c) => {
 		c.continue();
 		c.categories(CATEGORY.WEAPON_CLASS);
-		// c.names = new Comparison(NameManager.getGear(c));
-		// c.names = new Comparison(NameManager.getGear(c, null, null, LEVEL_DROP, OPERATOR.GTE));
 		c.rarity = new Comparison(RARITY.NORMAL);
-		// c.ilvl = new Comparison(LEVEL_ITEM, OPERATOR.GTE);
-		// c.isCorrupted = false;
 	}, (e) => {
-		e.colourWisdom(PAIR_GEAR).sizeExalt();
+		e.colourWisdom(PAIR_GEAR).sizeCapped(SIZE_NORMAL + 1);
 	});
 
 	// Magic
@@ -107,15 +103,10 @@ function classWeapons(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isLowTier();
 	}, (e) => {
-		e.colourAugment(PAIR_GEAR).sizeAugment();
+		e.colourAugment(PAIR_GEAR).sizeCapped(SIZE_MAGIC + 1);
 	});
 
-	filter.multiBlock((c) => { // BiS ilvl
-		c.continue();
-		c.categories(CATEGORY.WEAPON_CLASS);
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
-	}, (c) => { // Max tier
+	filter.multiBlock((c) => { // Max tier
 		c.continue();
 		c.categories(CATEGORY.WEAPON_CLASS);
 		c.rarity = new Comparison(RARITY.MAGIC);
@@ -131,7 +122,7 @@ function classWeapons(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModOffhand();
 	}, (e) => {
-		e.colourAugment(PAIR_GEAR).sizeExalt();
+		e.colourAugment(PAIR_GEAR).sizeCapped(SIZE_MAGIC + 2);
 	});
 
 	// Rare
@@ -141,14 +132,14 @@ function classWeapons(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isLowTier();
 	}, (e) => {
-		e.colourExalt(PAIR_GEAR).sizeAugment();
+		e.colourExalt(PAIR_GEAR).sizeCapped(SIZE_RARE + 1);
 	});
 
-	filter.multiBlock((c) => { // BiS ilvl
+	filter.multiBlock((c) => { // Max tier
 		c.continue();
 		c.categories(CATEGORY.WEAPON_CLASS);
 		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
+		c.isMaxTier();
 	}, (c) => { // Good mod (class mainhand)
 		c.continue();
 		c.categories(CATEGORY.MAIN_CLASS);
@@ -160,25 +151,13 @@ function classWeapons(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModOffhand();
 	}, (e) => {
-		e.colourExalt(PAIR_GEAR).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeCapped(SIZE_RARE + 2);
 	});
 }
 
 function otherWeapons(filter) {
 	// Magic
-	filter.multiBlock(
-	// (c) => { // BiS ilvl (wand/staff)
-	// 	c.continue();
-	// 	c.categories(CATEGORY.WAND, CATEGORY.STAFF);
-	// 	c.rarity = new Comparison(RARITY.MAGIC);
-	// 	c.ilvl = new Comparison(LEVEL_BIS_WAND_STAFF, OPERATOR.GTE);
-	// }, (c) => { // BiS ilvl (other attacker mainhand)
-	// 	c.continue();
-	// 	c.categories(CATEGORY.MAIN_OTHER_ATTACKER);
-	// 	c.rarity = new Comparison(RARITY.MAGIC);
-	// 	c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
-	// },
-	(c) => { // Good mod (other mainhand)
+	filter.multiBlock((c) => { // Good mod (other mainhand)
 		c.continue();
 		c.categories(CATEGORY.MAIN_OTHER);
 		c.rarity = new Comparison(RARITY.MAGIC);
@@ -189,23 +168,11 @@ function otherWeapons(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModOffhand(true);
 	}, (e) => {
-		e.colourAugment(PAIR_GEAR).sizeExalt();
+		e.colourAugment(PAIR_GEAR).sizeCapped(SIZE_MAGIC + 1);
 	});
 
 	// Rare
-	filter.multiBlock(
-	// (c) => { // BiS ilvl (wand/staff)
-	// 	c.continue();
-	// 	c.categories(CATEGORY.WAND, CATEGORY.STAFF);
-	// 	c.rarity = new Comparison(RARITY.RARE);
-	// 	c.ilvl = new Comparison(LEVEL_BIS_WAND_STAFF, OPERATOR.GTE);
-	// }, (c) => { // BiS ilvl (other attacker mainhand)
-	// 	c.continue();
-	// 	c.categories(CATEGORY.MAIN_OTHER_ATTACKER);
-	// 	c.rarity = new Comparison(RARITY.RARE);
-	// 	c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
-	// },
-	(c) => { // Good mod (other mainhand)
+	filter.multiBlock((c) => { // Good mod (other mainhand)
 		c.continue();
 		c.categories(CATEGORY.MAIN_OTHER);
 		c.rarity = new Comparison(RARITY.RARE);
@@ -216,7 +183,7 @@ function otherWeapons(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModOffhand(true);
 	}, (e) => {
-		e.colourExalt(PAIR_GEAR).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeCapped(SIZE_RARE + 1);
 	});
 }
 
@@ -228,27 +195,21 @@ function classArmour(filter) {
 		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.NORMAL);
 	}, (e) => {
-		e.colourWisdom(PAIR_GEAR).sizeExalt();
+		e.colourWisdom(PAIR_GEAR).sizeCapped(SIZE_NORMAL + 1);
 	});
 
 	// Magic
-	filter.multiBlock((c) => {
+	filter.multiBlock((c) => { // Low tier
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isLowTier();
 	}, (e) => {
-		e.colourAugment(PAIR_GEAR).sizeAugment();
+		e.colourAugment(PAIR_GEAR).sizeCapped(SIZE_MAGIC + 1);
 	});
 
-	filter.multiBlock((c) => { // BiS ilvl
-		c.continue();
-		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
-	}, (c) => { // Max tier
+	filter.multiBlock((c) => { // Max tier
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
@@ -261,7 +222,7 @@ function classArmour(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModArmour();
 	}, (e) => {
-		e.colourAugment(PAIR_GEAR).sizeExalt();
+		e.colourAugment(PAIR_GEAR).sizeCapped(SIZE_MAGIC + 2);
 	});
 
 	// Rare
@@ -270,16 +231,17 @@ function classArmour(filter) {
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.RARE);
+		c.isLowTier();
 	}, (e) => {
-		e.colourExalt(PAIR_GEAR).sizeAugment();
+		e.colourExalt(PAIR_GEAR).sizeCapped(SIZE_RARE + 1);
 	});
 
-	filter.multiBlock((c) => { // BiS ilvl
+	filter.multiBlock((c) => { // Max tier
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_CLASS));
 		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
+		c.isMaxTier();
 	}, (c) => { // Good mod (class)
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
@@ -287,59 +249,31 @@ function classArmour(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModArmour();
 	}, (e) => {
-		e.colourExalt(PAIR_GEAR).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeCapped(SIZE_RARE + 2);
 	});
 }
 
 function otherArmour(filter) {
 	// Magic
-	filter.multiBlock(
-	// (c) => { // BiS ilvl
-	// 	c.continue();
-	// 	c.categories(CATEGORY.ARMOUR);
-	// 	c.names = new Comparison(NameManager.getGear(new StringList(
-	// 		CATEGORY.ARMOUR_AM,
-	// 		CATEGORY.ARMOUR_ES,
-	// 		CATEGORY.ARMOUR_AM_EV,
-	// 		CATEGORY.ARMOUR_AM_ES,
-	// 		CATEGORY.ARMOUR_EV_ES
-	// 	)));
-	// 	c.rarity = new Comparison(RARITY.MAGIC);
-	// 	c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
-	// },
-	(c) => { // Good mod (other)
+	filter.multiBlock((c) => { // Good mod (other)
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModArmour(true);
 	}, (e) => {
-		e.colourAugment(PAIR_GEAR).sizeExalt();
+		e.colourAugment(PAIR_GEAR).sizeCapped(SIZE_MAGIC + 1);
 	});
 
 	// Rare
-	filter.multiBlock(
-	// (c) => { // BiS ilvl
-	// 	c.continue();
-	// 	c.categories(CATEGORY.ARMOUR);
-	// 	c.names = new Comparison(NameManager.getGear(new StringList(
-	// 		CATEGORY.ARMOUR_AM,
-	// 		CATEGORY.ARMOUR_ES,
-	// 		CATEGORY.ARMOUR_AM_EV,
-	// 		CATEGORY.ARMOUR_AM_ES,
-	// 		CATEGORY.ARMOUR_EV_ES
-	// 	)));
-	// 	c.rarity = new Comparison(RARITY.RARE);
-	// 	c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
-	// },
-	(c) => { // Good mod (other)
+	filter.multiBlock((c) => { // Good mod (other)
 		c.continue();
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModArmour(true);
 	}, (e) => {
-		e.colourExalt(PAIR_GEAR).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeCapped(SIZE_RARE + 1);
 	});
 }
 
@@ -352,7 +286,7 @@ function classUncommon(filter) {
 		c.names = new Comparison(NameManager.getGear(c).isClass());
 		c.rarity = new Comparison(RARITY.NORMAL);
 	}, (e) => {
-		e.colourWisdom(PAIR_GEAR).sizeExalt();
+		e.colourWisdom(PAIR_GEAR).sizeCapped(SIZE_NORMAL + 1);
 	});
 
 	filter.multiBlock((c) => { // BiS ilvl (flask)
@@ -366,29 +300,17 @@ function classUncommon(filter) {
 	});
 
 	// Magic
-	filter.multiBlock((c) => {
+	filter.multiBlock((c) => { // Low tier
 		c.continue();
 		c.categories(CATEGORY.GEAR_UNCOMMON);
 		c.names = new Comparison(NameManager.getGear(c).isClass());
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.isLowTier();
 	}, (e) => {
-		e.colourAugment(PAIR_GEAR).sizeAugment();
+		e.colourAugment(PAIR_GEAR).sizeCapped(SIZE_MAGIC + 1);
 	});
 
-	filter.multiBlock((c) => { // BiS ilvl (jewellery/belt)
-		c.continue();
-		c.categories(CATEGORY.JEWELLERY, CATEGORY.BELT);
-		c.names = new Comparison(NameManager.getGear(c).isClass());
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
-	}, (c) => { // BiS ilvl (charm)
-		c.continue();
-		c.categories(CATEGORY.CHARM);
-		c.names = new Comparison(NameManager.getGear(c).isClass());
-		c.rarity = new Comparison(RARITY.MAGIC);
-		c.ilvl = new Comparison(LEVEL_BIS_CHARM, OPERATOR.GTE);
-	}, (c) => { // Max tier
+	filter.multiBlock((c) => { // Max tier
 		c.continue();
 		c.categories(CATEGORY.GEAR_UNCOMMON);
 		c.names = new Comparison(NameManager.getGear(c).isClass());
@@ -401,7 +323,7 @@ function classUncommon(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModUncommon();
 	}, (e) => {
-		e.colourAugment(PAIR_GEAR).sizeExalt();
+		e.colourAugment(PAIR_GEAR).sizeCapped(SIZE_MAGIC + 2);
 	});
 
 	filter.multiBlock((c) => { // BiS ilvl (flask)
@@ -415,22 +337,22 @@ function classUncommon(filter) {
 	});
 
 	// Rare
-	filter.multiBlock((c) => {
+	filter.multiBlock((c) => { // Low tier
 		c.continue();
 		c.categories(CATEGORY.GEAR_UNCOMMON);
 		c.names = new Comparison(NameManager.getGear(c).isClass());
 		c.rarity = new Comparison(RARITY.RARE);
 		c.isLowTier();
 	}, (e) => {
-		e.colourExalt(PAIR_GEAR).sizeAugment();
+		e.colourExalt(PAIR_GEAR).sizeCapped(SIZE_RARE + 1);
 	});
 
-	filter.multiBlock((c) => { // BiS ilvl (jewellery/belt)
+	filter.multiBlock((c) => { // Max tier
 		c.continue();
-		c.categories(CATEGORY.JEWELLERY, CATEGORY.BELT);
+		c.categories(CATEGORY.GEAR_UNCOMMON);
 		c.names = new Comparison(NameManager.getGear(c).isClass());
 		c.rarity = new Comparison(RARITY.RARE);
-		c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
+		c.isMaxTier();
 	}, (c) => { // Good mod (class)
 		c.continue();
 		c.categories(CATEGORY.GEAR_UNCOMMON);
@@ -438,7 +360,7 @@ function classUncommon(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModUncommon();
 	}, (e) => {
-		e.colourExalt(PAIR_GEAR).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeCapped(SIZE_RARE + 2);
 	});
 }
 
@@ -451,7 +373,7 @@ function otherUncommon(filter) {
 		c.rarity = new Comparison(RARITY.MAGIC);
 		c.goodModUncommon(true);
 	}, (e) => {
-		e.colourAugment(PAIR_GEAR).sizeExalt();
+		e.colourAugment(PAIR_GEAR).sizeCapped(SIZE_MAGIC + 1);
 	});
 
 	// Rare
@@ -462,7 +384,7 @@ function otherUncommon(filter) {
 		c.rarity = new Comparison(RARITY.RARE);
 		c.goodModUncommon(true);
 	}, (e) => {
-		e.colourExalt(PAIR_GEAR).sizeExalt();
+		e.colourExalt(PAIR_GEAR).sizeCapped(SIZE_RARE + 1);
 	});
 }
 
@@ -472,7 +394,7 @@ function jewels(filter) {
 		c.categories(CATEGORY.JEWEL);
 		c.rarity = new Comparison(RARITY.MAGIC);
 
-		e.colourAugment(PAIR_JEWEL).sizeExalt();
+		e.colourAugment(PAIR_JEWEL).size(SIZE_JEWEL_MAGIC);
 	});
 
 	filter.block((c, e) => {
@@ -480,7 +402,7 @@ function jewels(filter) {
 		c.categories(CATEGORY.JEWEL);
 		c.rarity = new Comparison(RARITY.RARE);
 
-		e.colourExalt(PAIR_JEWEL).sizeAugment();
+		e.colourExalt(PAIR_JEWEL).size(SIZE_JEWEL_RARE);
 	});
 
 	filter.priceBlocks((c, e, min, max, effect) => {

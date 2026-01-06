@@ -72,6 +72,9 @@ export const LEVEL_AREA = 28;
 export const SIZE_NORMAL = EffectSet.INDEX_WISDOM;
 export const SIZE_MAGIC = EffectSet.INDEX_AUGMENT;
 export const SIZE_RARE = EffectSet.INDEX_EXALT;
+
+export const SIZE_JEWEL_MAGIC = EffectSet.INDEX_AUGMENT;
+export const SIZE_JEWEL_RARE = EffectSet.INDEX_EXALT;
 ////
 
 //// Minimum price breakpoints to style as a certain size

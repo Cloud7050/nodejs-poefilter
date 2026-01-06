@@ -2641,11 +2641,11 @@ Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Normal
 
-	SetFontSize 32
+	SetFontSize 27
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
-	MinimapIcon 1 Blue Kite
+	MinimapIcon 2 Blue Kite
 
 	Continue
 
@@ -2653,19 +2653,6 @@ Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Magic
 	UnidentifiedItemTier <= 4
-
-	SetFontSize 27
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 2 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	Rarity == Magic
-	UnidentifiedItemTier == 5
 
 	SetFontSize 32
 	SetTextColor 182 190 255 255
@@ -2677,14 +2664,27 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	Rarity == Magic
+	UnidentifiedItemTier == 5
+
+	SetFontSize 37
+	SetTextColor 182 190 255 255
+	SetBackgroundColor 10 20 83 255
+	SetBorderColor 182 190 255 255
+	MinimapIcon 0 Blue UpsideDownHouse
+
+	Continue
+
+Show
+	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 	Rarity == Rare
 	UnidentifiedItemTier <= 4
 
-	SetFontSize 27
+	SetFontSize 37
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
-	MinimapIcon 2 Blue Cross
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -2788,11 +2788,11 @@ Show
 	Class == Spears Bucklers
 	Rarity == Normal
 
-	SetFontSize 37
+	SetFontSize 32
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
-	MinimapIcon 0 Blue Kite
+	MinimapIcon 1 Blue Kite
 
 	Continue
 
@@ -2800,19 +2800,6 @@ Show
 	Class == Spears Bucklers
 	Rarity == Magic
 	UnidentifiedItemTier <= 4
-
-	SetFontSize 32
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Spears Bucklers
-	Rarity == Magic
-	ItemLevel >= 82
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -2866,18 +2853,18 @@ Show
 	Rarity == Rare
 	UnidentifiedItemTier <= 4
 
-	SetFontSize 32
+	SetFontSize 37
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
-	MinimapIcon 1 Blue Cross
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
 Show
 	Class == Spears Bucklers
 	Rarity == Rare
-	ItemLevel >= 82
+	UnidentifiedItemTier == 5
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -2970,11 +2957,11 @@ Show
 	BaseType == "Adherent's Raiment" "Adorned Wraps" "Altar Robe" "Ancestral Tiara" "Anchorite Garb" "Ascetic Garb" "Austere Garb" "Avian Mask" "Barbed Bracers" "Baroque Gloves" "Beaded Circlet" "Bone Raiment" "Bound Bracers" "Bound Sandals" "Brigand Mask" "Buckled Wraps" "Cavalry Boots" "Ceremonial Robe" "Chain Tiara" "Charmed Shoes" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Daggerfoot Shoes" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Dunerunner Sandals" "Elegant Slippers" "Elegant Wraps" "Elementalist Robe" "Embossed Boots" "Embroidered Gloves" "Face Mask" "Falconer's Jacket" "Faridun Mask" "Feathered Raiment" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Flowing Raiment" "Frayed Shoes" "Freebooter Cap" "Gauze Wraps" "Gold Circlet" "Gold Gloves" "Grand Bracers" "Grim Gloves" "Grinning Mask" "Hatungo Garb" "Hawker's Jacket" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Hunter Hood" "Hunting Shoes" "Intricate Gloves" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Jungle Tiara" "Kamasan Tiara" "Keth Raiment" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Lizardscale Coat" "Luxurious Slippers" "Marabout Garb" "Mystic Raiment" "Opulent Gloves" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Polished Bracers" "Quickslip Shoes" "Quilted Vest" "Rambler Jacket" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "River Raiment" "Runner Vest" "Sacramental Robe" "Sacrificial Regalia" "Sandsworn Sandals" "Sandsworn Tiara" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Wraps" "Sekhema Sandals" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Sirenscale Gloves" "Skycrown Tiara" "Sleek Jacket" "Slipstrike Vest" "Smuggler Coat" "Soaring Mask" "Solid Mask" "Sombre Gloves" "Sorcerous Tiara" "Spiked Bracers" "Spined Bracers" "Spiral Wraps" "Stalking Bracers" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Tattered Robe" "Threaded Shoes" "Torn Gloves" "Trapper Hood" "Treerunner Shoes" "Tribal Mask" "Twig Circlet" "Vaal Gloves" "Vaal Wraps" "Veiled Mask" "Vermeil Circlet" "Vile Robe" "Viper Cap" "Votive Raiment" "Wanderer Shoes" "War Wraps" "Waxed Jacket" "Wayfarer Jacket" "Wicker Tiara" "Woven Cap" "Wrapped Cap" "Wrapped Sandals" "Wyrmscale Coat"
 	Rarity == Normal
 
-	SetFontSize 37
+	SetFontSize 32
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
-	MinimapIcon 0 Blue Kite
+	MinimapIcon 1 Blue Kite
 
 	Continue
 
@@ -2983,20 +2970,6 @@ Show
 	BaseType == "Adherent's Raiment" "Adorned Wraps" "Altar Robe" "Ancestral Tiara" "Anchorite Garb" "Ascetic Garb" "Austere Garb" "Avian Mask" "Barbed Bracers" "Baroque Gloves" "Beaded Circlet" "Bone Raiment" "Bound Bracers" "Bound Sandals" "Brigand Mask" "Buckled Wraps" "Cavalry Boots" "Ceremonial Robe" "Chain Tiara" "Charmed Shoes" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Daggerfoot Shoes" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Dunerunner Sandals" "Elegant Slippers" "Elegant Wraps" "Elementalist Robe" "Embossed Boots" "Embroidered Gloves" "Face Mask" "Falconer's Jacket" "Faridun Mask" "Feathered Raiment" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Flowing Raiment" "Frayed Shoes" "Freebooter Cap" "Gauze Wraps" "Gold Circlet" "Gold Gloves" "Grand Bracers" "Grim Gloves" "Grinning Mask" "Hatungo Garb" "Hawker's Jacket" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Hunter Hood" "Hunting Shoes" "Intricate Gloves" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Jungle Tiara" "Kamasan Tiara" "Keth Raiment" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Lizardscale Coat" "Luxurious Slippers" "Marabout Garb" "Mystic Raiment" "Opulent Gloves" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Polished Bracers" "Quickslip Shoes" "Quilted Vest" "Rambler Jacket" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "River Raiment" "Runner Vest" "Sacramental Robe" "Sacrificial Regalia" "Sandsworn Sandals" "Sandsworn Tiara" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Wraps" "Sekhema Sandals" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Sirenscale Gloves" "Skycrown Tiara" "Sleek Jacket" "Slipstrike Vest" "Smuggler Coat" "Soaring Mask" "Solid Mask" "Sombre Gloves" "Sorcerous Tiara" "Spiked Bracers" "Spined Bracers" "Spiral Wraps" "Stalking Bracers" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Tattered Robe" "Threaded Shoes" "Torn Gloves" "Trapper Hood" "Treerunner Shoes" "Tribal Mask" "Twig Circlet" "Vaal Gloves" "Vaal Wraps" "Veiled Mask" "Vermeil Circlet" "Vile Robe" "Viper Cap" "Votive Raiment" "Wanderer Shoes" "War Wraps" "Waxed Jacket" "Wayfarer Jacket" "Wicker Tiara" "Woven Cap" "Wrapped Cap" "Wrapped Sandals" "Wyrmscale Coat"
 	Rarity == Magic
 	UnidentifiedItemTier <= 4
-
-	SetFontSize 32
-	SetTextColor 182 190 255 255
-	SetBackgroundColor 10 20 83 255
-	SetBorderColor 182 190 255 255
-	MinimapIcon 1 Blue UpsideDownHouse
-
-	Continue
-
-Show
-	Class == Helmets "Body Armours" Gloves Boots
-	BaseType == "Adherent's Raiment" "Adorned Wraps" "Altar Robe" "Ancestral Tiara" "Anchorite Garb" "Ascetic Garb" "Austere Garb" "Avian Mask" "Barbed Bracers" "Baroque Gloves" "Beaded Circlet" "Bone Raiment" "Bound Bracers" "Bound Sandals" "Brigand Mask" "Buckled Wraps" "Cavalry Boots" "Ceremonial Robe" "Chain Tiara" "Charmed Shoes" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Daggerfoot Shoes" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Dunerunner Sandals" "Elegant Slippers" "Elegant Wraps" "Elementalist Robe" "Embossed Boots" "Embroidered Gloves" "Face Mask" "Falconer's Jacket" "Faridun Mask" "Feathered Raiment" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Flowing Raiment" "Frayed Shoes" "Freebooter Cap" "Gauze Wraps" "Gold Circlet" "Gold Gloves" "Grand Bracers" "Grim Gloves" "Grinning Mask" "Hatungo Garb" "Hawker's Jacket" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Hunter Hood" "Hunting Shoes" "Intricate Gloves" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Jungle Tiara" "Kamasan Tiara" "Keth Raiment" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Lizardscale Coat" "Luxurious Slippers" "Marabout Garb" "Mystic Raiment" "Opulent Gloves" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Polished Bracers" "Quickslip Shoes" "Quilted Vest" "Rambler Jacket" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "River Raiment" "Runner Vest" "Sacramental Robe" "Sacrificial Regalia" "Sandsworn Sandals" "Sandsworn Tiara" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Wraps" "Sekhema Sandals" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Sirenscale Gloves" "Skycrown Tiara" "Sleek Jacket" "Slipstrike Vest" "Smuggler Coat" "Soaring Mask" "Solid Mask" "Sombre Gloves" "Sorcerous Tiara" "Spiked Bracers" "Spined Bracers" "Spiral Wraps" "Stalking Bracers" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Tattered Robe" "Threaded Shoes" "Torn Gloves" "Trapper Hood" "Treerunner Shoes" "Tribal Mask" "Twig Circlet" "Vaal Gloves" "Vaal Wraps" "Veiled Mask" "Vermeil Circlet" "Vile Robe" "Viper Cap" "Votive Raiment" "Wanderer Shoes" "War Wraps" "Waxed Jacket" "Wayfarer Jacket" "Wicker Tiara" "Woven Cap" "Wrapped Cap" "Wrapped Sandals" "Wyrmscale Coat"
-	Rarity == Magic
-	ItemLevel >= 82
 
 	SetFontSize 37
 	SetTextColor 182 190 255 255
@@ -3038,12 +3011,13 @@ Show
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Adherent's Raiment" "Adorned Wraps" "Altar Robe" "Ancestral Tiara" "Anchorite Garb" "Ascetic Garb" "Austere Garb" "Avian Mask" "Barbed Bracers" "Baroque Gloves" "Beaded Circlet" "Bone Raiment" "Bound Bracers" "Bound Sandals" "Brigand Mask" "Buckled Wraps" "Cavalry Boots" "Ceremonial Robe" "Chain Tiara" "Charmed Shoes" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Daggerfoot Shoes" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Dunerunner Sandals" "Elegant Slippers" "Elegant Wraps" "Elementalist Robe" "Embossed Boots" "Embroidered Gloves" "Face Mask" "Falconer's Jacket" "Faridun Mask" "Feathered Raiment" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Flowing Raiment" "Frayed Shoes" "Freebooter Cap" "Gauze Wraps" "Gold Circlet" "Gold Gloves" "Grand Bracers" "Grim Gloves" "Grinning Mask" "Hatungo Garb" "Hawker's Jacket" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Hunter Hood" "Hunting Shoes" "Intricate Gloves" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Jungle Tiara" "Kamasan Tiara" "Keth Raiment" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Lizardscale Coat" "Luxurious Slippers" "Marabout Garb" "Mystic Raiment" "Opulent Gloves" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Polished Bracers" "Quickslip Shoes" "Quilted Vest" "Rambler Jacket" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "River Raiment" "Runner Vest" "Sacramental Robe" "Sacrificial Regalia" "Sandsworn Sandals" "Sandsworn Tiara" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Wraps" "Sekhema Sandals" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Sirenscale Gloves" "Skycrown Tiara" "Sleek Jacket" "Slipstrike Vest" "Smuggler Coat" "Soaring Mask" "Solid Mask" "Sombre Gloves" "Sorcerous Tiara" "Spiked Bracers" "Spined Bracers" "Spiral Wraps" "Stalking Bracers" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Tattered Robe" "Threaded Shoes" "Torn Gloves" "Trapper Hood" "Treerunner Shoes" "Tribal Mask" "Twig Circlet" "Vaal Gloves" "Vaal Wraps" "Veiled Mask" "Vermeil Circlet" "Vile Robe" "Viper Cap" "Votive Raiment" "Wanderer Shoes" "War Wraps" "Waxed Jacket" "Wayfarer Jacket" "Wicker Tiara" "Woven Cap" "Wrapped Cap" "Wrapped Sandals" "Wyrmscale Coat"
 	Rarity == Rare
+	UnidentifiedItemTier <= 4
 
-	SetFontSize 32
+	SetFontSize 37
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
-	MinimapIcon 1 Blue Cross
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -3051,7 +3025,7 @@ Show
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Adherent's Raiment" "Adorned Wraps" "Altar Robe" "Ancestral Tiara" "Anchorite Garb" "Ascetic Garb" "Austere Garb" "Avian Mask" "Barbed Bracers" "Baroque Gloves" "Beaded Circlet" "Bone Raiment" "Bound Bracers" "Bound Sandals" "Brigand Mask" "Buckled Wraps" "Cavalry Boots" "Ceremonial Robe" "Chain Tiara" "Charmed Shoes" "Cinched Boots" "Corsair Cap" "Corsair Coat" "Corsair Vest" "Daggerfoot Shoes" "Deerstalker Hood" "Desert Cap" "Dragonscale Boots" "Drakeskin Boots" "Dunerunner Sandals" "Elegant Slippers" "Elegant Wraps" "Elementalist Robe" "Embossed Boots" "Embroidered Gloves" "Face Mask" "Falconer's Jacket" "Faridun Mask" "Feathered Raiment" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Flowing Raiment" "Frayed Shoes" "Freebooter Cap" "Gauze Wraps" "Gold Circlet" "Gold Gloves" "Grand Bracers" "Grim Gloves" "Grinning Mask" "Hatungo Garb" "Hawker's Jacket" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Hunter Hood" "Hunting Shoes" "Intricate Gloves" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Jungle Tiara" "Kamasan Tiara" "Keth Raiment" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Lizardscale Coat" "Luxurious Slippers" "Marabout Garb" "Mystic Raiment" "Opulent Gloves" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Polished Bracers" "Quickslip Shoes" "Quilted Vest" "Rambler Jacket" "Rawhide Boots" "Refined Bracers" "Rhoahide Coat" "River Raiment" "Runner Vest" "Sacramental Robe" "Sacrificial Regalia" "Sandsworn Sandals" "Sandsworn Tiara" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Wraps" "Sekhema Sandals" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Sirenscale Gloves" "Skycrown Tiara" "Sleek Jacket" "Slipstrike Vest" "Smuggler Coat" "Soaring Mask" "Solid Mask" "Sombre Gloves" "Sorcerous Tiara" "Spiked Bracers" "Spined Bracers" "Spiral Wraps" "Stalking Bracers" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Swiftstalker Coat" "Tattered Robe" "Threaded Shoes" "Torn Gloves" "Trapper Hood" "Treerunner Shoes" "Tribal Mask" "Twig Circlet" "Vaal Gloves" "Vaal Wraps" "Veiled Mask" "Vermeil Circlet" "Vile Robe" "Viper Cap" "Votive Raiment" "Wanderer Shoes" "War Wraps" "Waxed Jacket" "Wayfarer Jacket" "Wicker Tiara" "Woven Cap" "Wrapped Cap" "Wrapped Sandals" "Wyrmscale Coat"
 	Rarity == Rare
-	ItemLevel >= 82
+	UnidentifiedItemTier == 5
 
 	SetFontSize 37
 	SetTextColor 166 176 255 255
@@ -3108,11 +3082,11 @@ Show
 #	BaseType ==
 #	Rarity == Normal
 #
-#	SetFontSize 37
+#	SetFontSize 32
 #	SetTextColor 215 218 255 255
 #	SetBackgroundColor 3 7 44 255
 #	SetBorderColor 215 218 255 255
-#	MinimapIcon 0 Blue Kite
+#	MinimapIcon 1 Blue Kite
 #
 #	Continue
 
@@ -3137,34 +3111,6 @@ Show
 #	BaseType ==
 #	Rarity == Magic
 #	UnidentifiedItemTier <= 4
-#
-#	SetFontSize 32
-#	SetTextColor 182 190 255 255
-#	SetBackgroundColor 10 20 83 255
-#	SetBorderColor 182 190 255 255
-#	MinimapIcon 1 Blue UpsideDownHouse
-#
-#	Continue
-
-#Show
-#	Class == Amulets Rings Belts
-#	BaseType ==
-#	Rarity == Magic
-#	ItemLevel >= 82
-#
-#	SetFontSize 37
-#	SetTextColor 182 190 255 255
-#	SetBackgroundColor 10 20 83 255
-#	SetBorderColor 182 190 255 255
-#	MinimapIcon 0 Blue UpsideDownHouse
-#
-#	Continue
-
-#Show
-#	Class == Charms
-#	BaseType ==
-#	Rarity == Magic
-#	ItemLevel >= 81
 #
 #	SetFontSize 37
 #	SetTextColor 182 190 255 255
@@ -3224,19 +3170,19 @@ Show
 #	Rarity == Rare
 #	UnidentifiedItemTier <= 4
 #
-#	SetFontSize 32
+#	SetFontSize 37
 #	SetTextColor 166 176 255 255
 #	SetBackgroundColor 23 38 134 255
 #	SetBorderColor 166 176 255 255
-#	MinimapIcon 1 Blue Cross
+#	MinimapIcon 0 Blue Cross
 #
 #	Continue
 
 #Show
-#	Class == Amulets Rings Belts
+#	Class == Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
 #	BaseType ==
 #	Rarity == Rare
-#	ItemLevel >= 82
+#	UnidentifiedItemTier == 5
 #
 #	SetFontSize 37
 #	SetTextColor 166 176 255 255
@@ -3292,11 +3238,11 @@ Show
 	Class == Jewels
 	Rarity == Magic
 
-	SetFontSize 37
+	SetFontSize 32
 	SetTextColor 182 209 255 255
 	SetBackgroundColor 0 33 68 255
 	SetBorderColor 182 209 255 255
-	MinimapIcon 0 Blue UpsideDownHouse
+	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
 
@@ -3304,11 +3250,11 @@ Show
 	Class == Jewels
 	Rarity == Rare
 
-	SetFontSize 32
+	SetFontSize 37
 	SetTextColor 164 199 255 255
 	SetBackgroundColor 0 61 116 255
 	SetBorderColor 164 199 255 255
-	MinimapIcon 1 Blue Cross
+	MinimapIcon 0 Blue Cross
 
 	Continue
 
@@ -3660,7 +3606,7 @@ Show
 	Continue
 
 Show
-	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts
+	Class == Sceptres "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts
 	ItemLevel >= 82
 
 	SetBorderColor 74 230 58 255
