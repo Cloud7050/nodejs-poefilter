@@ -6,7 +6,7 @@ export class StringList {
 		for (let value of ins) {
 			if (value instanceof StringList) {
 				outs.push(...StringList.#process(...value.values));
-			}  else outs.push(value);
+			} else outs.push(value);
 		}
 		return outs;
 	}
