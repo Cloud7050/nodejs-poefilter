@@ -1373,6 +1373,7 @@ export class NameManager {
 			new Name("Altar Robe", ), // The Covenant
 			new Name("Ancestral Mail", ), // Lightning Coil
 			new Name("Anchorite Garb", ), // Redflare Conduit
+			new Name("Antler Focus", ), // Effigy of Cruelty
 			new Name("Armoured Cap", ), // Alpha's Howl
 			new Name("Armoured Vest", ), // Hyrri's Ire
 			new Name("Array Buckler", 35), // Sunsplinter // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/G65R33e9Ib
@@ -1391,6 +1392,7 @@ export class NameManager {
 			new Name("Chain Mail", ), // Coat of Red
 			new Name("Chain Tiara", ), // Sandstorm Visage
 			new Name("Champion Cuirass", ), // The Brass Dome
+			new Name("Cinched Boots", 2), // Atziri's Step // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/veXnRQoLIE
 			new Name("Cleric Vestments", ), // The Mutable Star
 			new Name("Cloaked Mail", ), // Pariah's Embrace
 			new Name("Closed Helm", ), // Assailum
@@ -1402,7 +1404,7 @@ export class NameManager {
 			new Name("Cowled Helm", ), // The Smiling Knight
 			new Name("Crescent Targe", ), // Feathered Fortress
 			new Name("Crucible Tower Shield", ), // Svalinn
-			// new Name("Crystal Focus", ), // The Eternal Spark
+			new Name("Crystal Focus", ), // The Eternal Spark
 			new Name("Cultist Crown", ), // Crown of the Pale King
 			new Name("Death Mask", ), // Mind of the Council
 			new Name("Decorated Helm", ), // The Bringer of Rain
@@ -1426,10 +1428,16 @@ export class NameManager {
 			new Name("Full Plate", ), // Kingsguard
 			new Name("Fur Plate", ), // Blackbraid
 			new Name("Furtive Wraps", 125), // Essentia Sanguis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/ky98XrYWC5
+			new Name("Garment", 29), // Tabula Rasa >>> Skin of the Loyal // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d83oQXQpIJ https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82n9Wp3sJ
 			new Name("Gauze Wraps", 45), // Plaguefinger // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/D6YL0Jyvf5
 			new Name("Gilded Vestments", ), // Couture of Crimson
 			new Name("Gold Circlet", ), // Atziri's Disdain
 			new Name("Goldcast Cuffs", ), // Blueflame Bracers
+			new Name("Golden Visage", ), // Demigod's Virtue //NOTE doesn't drop
+			new Name("Grand Cuisses", 0.5), // Ab Aeterno // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/8rLvGz0VcV
+			new Name("Grand Manchettes", 6.9 * PRICE_DIV), // Sine Aequo // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/rPRnDEl4TQ
+			new Name("Grand Regalia", 690), // Morior Invictus // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/2KKGo77VIk
+			new Name("Grand Visage", 1), // Solus Ipse // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/bGmnazkdtL
 			new Name("Guarded Helm", ), // Erian's Cobble
 			new Name("Hardwood Targe", 0.5), // Arvil's Wheel
 			new Name("Havoc Raiment", ), // Cloak of Defiance
@@ -1443,6 +1451,7 @@ export class NameManager {
 			new Name("Horned Crown", ), // Bronzebeard
 			new Name("Hunter Hood", ), // Elevore
 			new Name("Hunting Shoes", ), // Powertread
+			new Name("Intricate Crest Shield", 9), // Prism Guardian // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/zbWn6QqgF4
 			new Name("Intricate Gloves", ), // Demon Stitcher
 			new Name("Iron Buckler", ), // Bloodbarrier
 			new Name("Iron Crown", ), // Crown of the Victor
@@ -1478,6 +1487,7 @@ export class NameManager {
 			new Name("Plate Gauntlets", ), // Valako's Vice
 			new Name("Plated Buckler", ), // Rondel de Ezo
 			new Name("Plated Raiment", ), // Vis Mortis
+			new Name("Plated Vestments", 2), // Voll's Protector // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82nY0nRhJ
 			new Name("Pilgrim Vestments", ), // Enfolding Dawn
 			new Name("Quilted Vest", ), // Foxshade
 			new Name("Raider Plate", ), // The Road Warrior
@@ -1491,7 +1501,9 @@ export class NameManager {
 			new Name("Rough Greaves", ), // Legionstride
 			new Name("Rusted Cuirass", ), // Bramblejack
 			new Name("Rusted Greathelm", ), // Horns of Bynden, Wings of Caelyn
+			new Name("Sacred Focus", 13 * PRICE_DIV), // Rathpith Globe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Og3Pv3RrcE
 			new Name("Sacrificial Mantle", ), // Soul Mantle
+			new Name("Sacrificial Regalia", 99 * PRICE_DIV), // Atziri's Splendour // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/WvOLvPDVTm
 			new Name("Scale Mail", ), // Doryani's Prototype
 			new Name("Scalper's Jacket", ), // Zerphi's Serape
 			new Name("Scout's Vest", ), // The Rat Cage
@@ -1528,13 +1540,15 @@ export class NameManager {
 			new Name("Threaded Shoes", ), // Ghostmarch
 			new Name("Tideseer Mantle", ), // Waveshaper
 			new Name("Titan Mitts", ), // Empire's Grasp
-			// new Name("Tonal Focus", ), // Serpent's Lesson
+			new Name("Tonal Focus", ), // Serpent's Lesson
 			new Name("Torn Gloves", ), // Painter's Servant
 			new Name("Tribal Mask", 34 * PRICE_DIV), // The Vertex >>> Glimpse of Chaos // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/ky9zpPB6C5 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Md39bG86iJ
 			new Name("Trimmed Greaves", 7), // Trampletoe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/eRpnEnvgsL
 			new Name("Twig Circlet", ), // Crown of Thorns
+			new Name("Twig Focus", ), // Deathrattle
 			new Name("Utility Wraps", ), // Thunderfist
 			new Name("Vaal Cuirass", ), // Greed's Embrace
+			new Name("Vaal Tower Shield", 0.5), // The Surrender // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/glZnv3j5UQ
 			new Name("Vagabond Armour", ), // Irongrasp
 			new Name("Velour Shoes", ), // Beetlebite
 			new Name("Velvet Cap", ), // Heatshiver
@@ -1543,12 +1557,14 @@ export class NameManager {
 			new Name("Vermeil Circlet", ), // Crown of Eyes
 			new Name("Viper Cap", 29), // Constricting Command // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/02Erldw7Fg
 			new Name("Visored Helm", ), // Ironride
+			new Name("Voodoo Focus", ), // Apep's Supremacy
 			new Name("Votive Raiment", ), // Tetzlapokal's Desire
 			new Name("Warrior Greathelm", ), // Corona of the Red Sun
 			new Name("Waxed Jacket", ), // Gloomform
 			new Name("Wayfarer Jacket", ), // The Dancing Mirage
 			new Name("Wicker Tiara", 0.5), // The Devouring Diadem
 			new Name("Wooden Buckler", ), // Nocturne
+			new Name("Woven Focus", ), // Threaded Light
 			new Name("Wrapped Greathelm", ), // Black Sun Crest
 			new Name("Wrapped Sandals", 5), // Wanderlust // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/jWYmbm3LtX
 

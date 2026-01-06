@@ -2730,7 +2730,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Engraved Focus" "Hardwood Targe" "Heroic Armour" "Silk Slippers" "Wicker Tiara"
+	BaseType == "Engraved Focus" "Grand Cuisses" "Hardwood Targe" "Heroic Armour" "Silk Slippers" "Vaal Tower Shield" "Wicker Tiara"
 	Rarity == Unique
 
 	SetFontSize 32
@@ -2743,7 +2743,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Brimmed Helm" "Spiral Wraps" "Tattered Robe" "Trimmed Greaves" "Wrapped Sandals"
+	BaseType == "Brimmed Helm" "Cinched Boots" "Grand Visage" "Intricate Crest Shield" "Plated Vestments" "Spiral Wraps" "Tattered Robe" "Trimmed Greaves" "Wrapped Sandals"
 	Rarity == Unique
 
 	SetFontSize 37
@@ -2756,7 +2756,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Amethyst Ring" "Array Buckler" "Bloodstone Amulet" "Corvus Mantle" "Fine Belt" "Furtive Wraps" "Gargantuan Mana Flask" "Gauze Wraps" "Gold Ring" "Jade Amulet" "Lattice Sandals" "Lazuli Ring" "Martyr Crown" "Pearl Ring" "Plate Belt" "Primed Quiver" Ring "Rope Cuffs" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Stellar Amulet" "Stone Charm" "Thawing Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Viper Cap"
+	BaseType == "Amethyst Ring" "Array Buckler" "Bloodstone Amulet" "Corvus Mantle" "Fine Belt" "Furtive Wraps" "Gargantuan Mana Flask" Garment "Gauze Wraps" "Gold Ring" "Jade Amulet" "Lattice Sandals" "Lazuli Ring" "Martyr Crown" "Pearl Ring" "Plate Belt" "Primed Quiver" Ring "Rope Cuffs" "Sapphire Ring" "Silver Charm" "Solar Amulet" "Stellar Amulet" "Stone Charm" "Thawing Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Viper Cap"
 	Rarity == Unique
 
 	SetFontSize 45
@@ -2771,7 +2771,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Golden Charm" "Heavy Belt" "Silk Robe" "Tribal Mask" "Wide Belt"
+	BaseType == "Golden Charm" "Grand Manchettes" "Grand Regalia" "Heavy Belt" "Sacred Focus" "Sacrificial Regalia" "Silk Robe" "Tribal Mask" "Wide Belt"
 	Rarity == Unique
 
 	SetFontSize 45
