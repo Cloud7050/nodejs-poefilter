@@ -1409,7 +1409,7 @@ export class NameManager {
 			new Name("Elite Greathelm", ), // Deidbell
 			new Name("Embossed Boots", ), // Gamblesprint
 			new Name("Embroidered Gloves", ), // Leopold's Applause
-			new Name("Engraved Focus", 0.5), // Carrion Call
+			new Name("Engraved Focus", 0.5), // Carrion Call //TODO got
 			new Name("Enlightened Robe", ), // Silks of Veneration
 			new Name("Explorer Armour", ), // Belly of the Beast, Pragmatism
 			new Name("Face Mask", ), // Mask of the Sanguimancer
