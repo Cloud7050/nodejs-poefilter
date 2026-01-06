@@ -2,7 +2,7 @@ import fs from "fs";
 import { Block } from "./block.js";
 import { ConditionSet } from "./conditions/conditionSet.js";
 import { PRICE_AUGMENT, PRICE_CHANCE, PRICE_DIV, PRICE_EXALT } from "./constants.js";
-import { COLOUR_AUGMENT, COLOUR_CHANCE, COLOUR_DIVINE, COLOUR_EXALT, COLOUR_WISDOM, EffectSet, SIZE_AUGMENT, SIZE_CHANCE, SIZE_DIVINE, SIZE_EXALT, SIZE_WISDOM } from "./effects/effectSet.js";
+import { COLOUR_FUNCTIONS, EffectSet, SIZE_FUNCTIONS } from "./effects/effectSet.js";
 
 
 
@@ -46,30 +46,15 @@ export class Filter {
 	}
 
 	priceBlocks(logic) {
-		let colours = [
-			COLOUR_WISDOM,
-			COLOUR_AUGMENT,
-			COLOUR_EXALT,
-			COLOUR_CHANCE,
-			COLOUR_DIVINE
-		];
-		let sizes = [
-			SIZE_WISDOM,
-			SIZE_AUGMENT,
-			SIZE_EXALT,
-			SIZE_CHANCE,
-			SIZE_DIVINE
-		];
 		const smartBlock = (refIndex, min = undefined, max = undefined) => { // Arrow function for `this` binding
-			let colour = colours[refIndex];
-			let size = sizes[refIndex];
+			let colour = COLOUR_FUNCTIONS[refIndex];
+			let size = SIZE_FUNCTIONS[refIndex];
 
 			let b = new Block();
 			let c = b.c, e = b.e;
 
 			logic(c, e, min, max, (pair, colourOverwrite = null) => {
-				if (colourOverwrite !== null && refIndex < colours.length - 1) {
-					// Only overwrite non-divine
+				if (colourOverwrite !== null && refIndex < EffectSet.INDEX_DIVINE) {
 					colour = colourOverwrite;
 				}
 

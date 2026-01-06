@@ -188,59 +188,45 @@ export class EffectSet {
 		return this;
 	}
 
-	colourWisdom(colourPair, colourMapOnly = false) {
-		this.colourIndex = EffectSet.INDEX_WISDOM;
-		this.colourPair = colourPair;
-		this.colourMapOnly = colourMapOnly;
-		return this;
+	colourWisdom(colourPair, colourMapOnly = undefined) {
+		return this.colour(EffectSet.INDEX_WISDOM, colourPair, colourMapOnly);
 	}
-	colourAugment(colourPair, colourMapOnly = false) {
-		this.colourIndex = EffectSet.INDEX_AUGMENT;
-		this.colourPair = colourPair;
-		this.colourMapOnly = colourMapOnly;
-		return this;
+	colourAugment(colourPair, colourMapOnly = undefined) {
+		return this.colour(EffectSet.INDEX_AUGMENT, colourPair, colourMapOnly);
 	}
-	colourExalt(colourPair, colourMapOnly = false) {
-		this.colourIndex = EffectSet.INDEX_EXALT;
-		this.colourPair = colourPair;
-		this.colourMapOnly = colourMapOnly;
-		return this;
+	colourExalt(colourPair, colourMapOnly = undefined) {
+		return this.colour(EffectSet.INDEX_EXALT, colourPair, colourMapOnly);
 	}
-	colourChance(colourPair, colourMapOnly = false) {
-		this.colourIndex = EffectSet.INDEX_CHANCE;
-		this.colourPair = colourPair;
-		this.colourMapOnly = colourMapOnly;
-		return this;
+	colourChance(colourPair, colourMapOnly = undefined) {
+		return this.colour(EffectSet.INDEX_CHANCE, colourPair, colourMapOnly);
 	}
-	colourDivine(colourPair, colourMapOnly = false) {
-		this.colourIndex = EffectSet.INDEX_DIVINE;
+	colourDivine(colourPair, colourMapOnly = undefined) {
+		return this.colour(EffectSet.INDEX_DIVINE, colourPair, colourMapOnly);
+	}
+	colour(index, colourPair, colourMapOnly = false) {
+		this.colourIndex = index;
 		this.colourPair = colourPair;
 		this.colourMapOnly = colourMapOnly;
 		return this;
 	}
 
 	sizeWisdom(muteCustom = false) {
-		this.sizeIndex = EffectSet.INDEX_WISDOM;
-		this.muteCustom = muteCustom;
-		return this;
+		return this.size(EffectSet.INDEX_WISDOM, muteCustom);
 	}
 	sizeAugment(muteCustom = false) {
-		this.sizeIndex = EffectSet.INDEX_AUGMENT;
-		this.muteCustom = muteCustom;
-		return this;
+		return this.size(EffectSet.INDEX_AUGMENT, muteCustom);
 	}
 	sizeExalt(muteCustom = false) {
-		this.sizeIndex = EffectSet.INDEX_EXALT;
-		this.muteCustom = muteCustom;
-		return this;
+		return this.size(EffectSet.INDEX_EXALT, muteCustom);
 	}
 	sizeChance(muteCustom = false) {
-		this.sizeIndex = EffectSet.INDEX_CHANCE;
-		this.muteCustom = muteCustom;
-		return this;
+		return this.size(EffectSet.INDEX_CHANCE, muteCustom);
 	}
-	sizeDivine(muteCustom = false) {
-		this.sizeIndex = EffectSet.INDEX_DIVINE;
+	sizeDivine(muteCustom = undefined) {
+		return this.size(EffectSet.INDEX_DIVINE, muteCustom);
+	}
+	size(index, muteCustom = false) {
+		this.sizeIndex = index;
 		this.muteCustom = muteCustom;
 		return this;
 	}
@@ -255,3 +241,17 @@ export const SIZE_AUGMENT = EffectSet.prototype.sizeAugment;
 export const SIZE_EXALT = EffectSet.prototype.sizeExalt;
 export const SIZE_CHANCE = EffectSet.prototype.sizeChance;
 export const SIZE_DIVINE = EffectSet.prototype.sizeDivine;
+export const COLOUR_FUNCTIONS = [
+	COLOUR_WISDOM,
+	COLOUR_AUGMENT,
+	COLOUR_EXALT,
+	COLOUR_CHANCE,
+	COLOUR_DIVINE
+];
+export const SIZE_FUNCTIONS = [
+	SIZE_WISDOM,
+	SIZE_AUGMENT,
+	SIZE_EXALT,
+	SIZE_CHANCE,
+	SIZE_DIVINE
+];
