@@ -2,7 +2,7 @@ import { CATEGORY } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { CAMPAIGN_1, CAMPAIGN_2, CAMPAIGN_3, CAMPAIGN_4, ENDGAME_1, ENDGAME_2, ENDGAME_3, ENDGAME_4, MAP_1, MAP_2, MAP_3, MAP_4, PAIR_CURRENCY, PAIR_ESSENCE, PAIR_GOLD, PAIR_MAP2, PAIR_MECHANIC1, PAIR_MECHANIC2, PAIR_QUEST } from "../constants.js";
+import { CAMPAIGN_1, CAMPAIGN_2, CAMPAIGN_3, CAMPAIGN_4, ENDGAME_1, ENDGAME_2, ENDGAME_3, ENDGAME_4, LEVEL_CAMPAIGN, LEVEL_ENDGAME, LEVEL_GOLD_HOP, LEVEL_MAP, MAP_1, MAP_2, MAP_3, MAP_4, PAIR_CURRENCY, PAIR_ESSENCE, PAIR_GOLD, PAIR_MAP2, PAIR_MECHANIC1, PAIR_MECHANIC2, PAIR_QUEST } from "../constants.js";
 import { Colour } from "../effects/colour.js";
 import { COLOUR_AUGMENT, COLOUR_CHANCE, COLOUR_EXALT, COLOUR_WISDOM } from "../effects/effectSet.js";
 import { range } from "../utils.js";
@@ -89,12 +89,7 @@ function gold(filter) {
 		});
 	}
 
-	const LEVEL_CAMPAIGN = 0;
-	const LEVEL_MAP = 65;
-	const LEVEL_ENDGAME = 80;
-	const HOP = 5;
-
-	for (let level = LEVEL_ENDGAME; level >= LEVEL_MAP; level -= HOP) {
+	for (let level = LEVEL_ENDGAME; level >= LEVEL_MAP; level -= LEVEL_GOLD_HOP) {
 		perLevel(
 			level,
 			range(LEVEL_MAP, LEVEL_ENDGAME, MAP_1, ENDGAME_1, level),
@@ -104,7 +99,7 @@ function gold(filter) {
 		);
 	}
 
-	for (let level = LEVEL_MAP; level >= LEVEL_CAMPAIGN; level -= HOP) {
+	for (let level = LEVEL_MAP; level >= LEVEL_CAMPAIGN; level -= LEVEL_GOLD_HOP) {
 		perLevel(
 			level,
 			range(LEVEL_CAMPAIGN, LEVEL_MAP, CAMPAIGN_1, MAP_1, level),

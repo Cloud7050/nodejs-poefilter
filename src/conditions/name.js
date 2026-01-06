@@ -1,4 +1,4 @@
-import { LEVEL_DROP_ATTACKER, LEVEL_DROP_BODY, LEVEL_DROP_CASTER_QUIVER } from "../constants.js";
+import { LEVEL_DROP_ATTACKER, LEVEL_DROP_BODY, LEVEL_DROP_CASTER_QUIVER, LEVEL_DROP_OFF_ARMOUR } from "../constants.js";
 import { CATEGORY } from "./category.js";
 import { StringList } from "./stringList.js";
 
@@ -50,6 +50,10 @@ export class Name {
 			new StringList(CATEGORY.MAIN_ATTACKER)
 		)) {
 			return this.dropLevel >= LEVEL_DROP_ATTACKER;
+		} else if (this.category.containsLoose(
+			new StringList(CATEGORY.OFF, CATEGORY.ARMOUR).subtract(new StringList(CATEGORY.QUIVER, CATEGORY.BODY))
+		)) {
+			return this.dropLevel >= LEVEL_DROP_OFF_ARMOUR;
 		} else if (this.category.containsLoose(
 			new StringList(CATEGORY.BODY)
 		)) {
