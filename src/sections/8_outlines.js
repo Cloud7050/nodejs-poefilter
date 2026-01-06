@@ -56,7 +56,7 @@ function incursion(filter) {
 function bis(filter) {
 	filter.multiBlock((c) => {
 		c.continue();
-		c.categories(CATEGORY.GEAR_COMMON, CATEGORY.JEWELLERY, CATEGORY.BELT);
+		c.categories(CATEGORY.GEAR_COMMON.subtract(CATEGORY.WAND, CATEGORY.STAFF), CATEGORY.JEWELLERY, CATEGORY.BELT);
 		c.ilvl = new Comparison(LEVEL_BIS, OPERATOR.GTE);
 	}, (c) => {
 		c.continue();

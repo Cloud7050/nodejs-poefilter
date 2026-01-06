@@ -1,15 +1,24 @@
 export class StringList {
 	values;
 
-	constructor(...values) {
-		this.values = values.reduce((accumulator, value) => {
-			if (value instanceof StringList) accumulator.push(...value.values);
-			else accumulator.push(value);
-			return accumulator;
-		}, []);
+	static #process(...ins) {
+		let outs = [];
+		for (let value of ins) {
+			if (value instanceof StringList) {
+				outs.push(...StringList.#process(...value.values));
+			}  else outs.push(value);
+		}
+		return outs;
 	}
 
-	subtract(other) {
+	constructor(...values) {
+		this.values = StringList.#process(...values);
+	}
+
+	subtract(...others) {
+		// Combine others
+		let other = new StringList(...others);
+
 		return new StringList(
 			...this.values.filter((value) => !other.values.includes(value))
 		);
