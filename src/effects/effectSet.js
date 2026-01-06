@@ -1,5 +1,11 @@
 
 export class EffectSet {
+	static INDEX_WISDOM = 0;
+	static INDEX_AUGMENT = 1;
+	static INDEX_EXALT = 2;
+	static INDEX_CHANCE = 3;
+	static INDEX_DIVINE = 4;
+
 	static TEXT_SIZE = {
 		SMALLEST: "18",
 		SMALL: "27",
@@ -35,6 +41,12 @@ export class EffectSet {
 		// TRIANGLE: "Triangle",
 	};
 
+	colourIndex = null;
+	colourPair = null;
+	colourMapOnly = null;
+	sizeIndex = null;
+	muteCustom = null;
+
 	isVisible = true;
 
 	textSize = null;
@@ -53,20 +65,107 @@ export class EffectSet {
 	}
 
 	export() {
+		//// Set local values by merging custom values atop colour/size index defaults
+		let textColour = this.textColour;
+		let backgroundColour = this.backgroundColour;
+		let outlineColour = this.outlineColour;
+		let mapColour = this.mapColour;
+		let mapIcon = this.mapIcon;
+
+		let textSize = this.textSize;
+		let beamColour = this.beamColour;
+		let sound = this.sound;
+		let mapSize = this.mapSize;
+
+		// Replace remaining nulls with index defaults
+		let mainColour = this.colourPair?.[0] ?? null;
+		mapColour = mapColour ?? this.colourPair?.[1] ?? null;
+
+		switch(this.colourIndex) {
+			case EffectSet.INDEX_WISDOM:
+				if (!this.colourMapOnly) {
+					textColour = textColour ?? mainColour.brightness(87);
+					backgroundColour = backgroundColour ?? mainColour.brightness(3);
+					outlineColour = outlineColour ?? mainColour.brightness(87);
+				}
+				mapIcon = mapIcon ?? EffectSet.MAP_ICON.KITE;
+				break;
+			case EffectSet.INDEX_AUGMENT:
+				if (!this.colourMapOnly) {
+					textColour = textColour ?? mainColour.brightness(77);
+					backgroundColour = backgroundColour ?? mainColour.brightness(10);
+					outlineColour = outlineColour ?? mainColour.brightness(77);
+				}
+				mapIcon = mapIcon ?? EffectSet.MAP_ICON.HOUSE;
+				break;
+			case EffectSet.INDEX_EXALT:
+				if (!this.colourMapOnly) {
+					textColour = textColour ?? mainColour.brightness(72);
+					backgroundColour = backgroundColour ?? mainColour.brightness(20);
+					outlineColour = outlineColour ?? mainColour.brightness(72);
+				}
+				mapIcon = mapIcon ?? EffectSet.MAP_ICON.CROSS;
+				break;
+			case EffectSet.INDEX_CHANCE:
+				if (!this.colourMapOnly) {
+					textColour = textColour ?? mainColour.brightness(10);
+					backgroundColour = backgroundColour ?? mainColour.brightness(60);
+					outlineColour = outlineColour ?? mainColour.brightness(10);
+				}
+				mapIcon = mapIcon ?? EffectSet.MAP_ICON.STAR;
+				break;
+			case EffectSet.INDEX_DIVINE:
+				if (!this.colourMapOnly) {
+					textColour = textColour ?? mainColour.brightness(45);
+					backgroundColour = backgroundColour ?? mainColour.brightness(95);
+					outlineColour = outlineColour ?? mainColour.brightness(45);
+				}
+				mapIcon = mapIcon ?? EffectSet.MAP_ICON.DIAMOND;
+				break;
+		}
+
+		switch(this.sizeIndex) {
+			case EffectSet.INDEX_WISDOM:
+				textSize = textSize ?? EffectSet.TEXT_SIZE.SMALL;
+				mapSize = mapSize ?? EffectSet.MAP_SIZE.SMALL;
+				break;
+			case EffectSet.INDEX_AUGMENT:
+				textSize = textSize ?? EffectSet.TEXT_SIZE.DEFAULT;
+				mapSize = mapSize ?? EffectSet.MAP_SIZE.MEDIUM;
+				break;
+			case EffectSet.INDEX_EXALT:
+				textSize = textSize ?? EffectSet.TEXT_SIZE.LARGE;
+				mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
+				break;
+			case EffectSet.INDEX_CHANCE:
+				textSize = textSize ?? EffectSet.TEXT_SIZE.LARGEST;
+				beamColour = beamColour ?? mapColour;
+				if (!this.muteCustom) sound = sound ?? EffectSet.SOUND.WAH;
+				mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
+				break;
+			case EffectSet.INDEX_DIVINE:
+				textSize = textSize ?? EffectSet.TEXT_SIZE.LARGEST;
+				beamColour = beamColour ?? mapColour;
+				if (!this.muteCustom) sound = sound ?? EffectSet.SOUND.RENOIR;
+				mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
+				break;
+		}
+		////
+
 		let spans = [];
 
-		if (this.textSize !== null) spans.push(`SetFontSize ${this.textSize}`);
-		if (this.textColour !== null) spans.push(`SetTextColor ${this.textColour.export()}`); // Alpha defaults to 255
-		if (this.backgroundColour !== null) spans.push(`SetBackgroundColor ${this.backgroundColour.export()}`); // Alpha defaults to 240
-		if (this.outlineColour !== null) spans.push(`SetBorderColor ${this.outlineColour.export()}`); // Alpha defaults to 255
+		if (textSize !== null) spans.push(`SetFontSize ${textSize}`);
+		if (textColour !== null) spans.push(`SetTextColor ${textColour.export()}`); // Alpha defaults to 255
+		if (backgroundColour !== null) spans.push(`SetBackgroundColor ${backgroundColour.export()}`); // Alpha defaults to 240
+		if (outlineColour !== null) spans.push(`SetBorderColor ${outlineColour.export()}`); // Alpha defaults to 255
 
-		if (this.beamColour !== null) spans.push(`PlayEffect ${this.beamColour}`);
-		if (this.sound !== null) spans.push(`CustomAlertSound ${this.sound}`);
+		if (beamColour !== null) spans.push(`PlayEffect ${beamColour}`);
+		if (sound !== null) spans.push(`CustomAlertSound ${sound}`);
 		else if (!this.isVisible) spans.push(`DisableDropSound`);
-		if (this.mapSize === EffectSet.MAP_SIZE.DISABLE) {
+		if (mapSize === EffectSet.MAP_SIZE.DISABLE) {
 			spans.push(`MinimapIcon ${EffectSet.MAP_SIZE.DISABLE}`);
-		} else if (this.mapSize !== null) {
-			spans.push(`MinimapIcon ${this.mapSize} ${this.mapColour} ${this.mapIcon}`);
+		} else if (mapSize !== null) {
+			spans.push(`MinimapIcon ${mapSize} ${mapColour} ${mapIcon}`);
 		}
 
 		if (spans.length === 0) {
@@ -84,95 +183,65 @@ export class EffectSet {
 	// 	return this;
 	// }
 
-	muteCustom() {
-		this.sound = null;
-		return this;
-	}
-
 	hide() {
 		this.isVisible = false;
 		return this;
 	}
 
-	colourWisdom([mainColour, mapColour], mapOnly = false) {
-		if (!mapOnly) {
-			this.textColour = mainColour.brightness(87);
-			this.backgroundColour = mainColour.brightness(3);
-			this.outlineColour = mainColour.brightness(87);
-		}
-		this.mapColour = mapColour;
-		this.mapIcon = EffectSet.MAP_ICON.KITE;
+	colourWisdom(colourPair, colourMapOnly = false) {
+		this.colourIndex = EffectSet.INDEX_WISDOM;
+		this.colourPair = colourPair;
+		this.colourMapOnly = colourMapOnly;
 		return this;
 	}
-	colourAugment([mainColour, mapColour], mapOnly = false) {
-		if (!mapOnly) {
-			this.textColour = mainColour.brightness(77);
-			this.backgroundColour = mainColour.brightness(10);
-			this.outlineColour = mainColour.brightness(77);
-		}
-		this.mapColour = mapColour;
-		this.mapIcon = EffectSet.MAP_ICON.HOUSE;
+	colourAugment(colourPair, colourMapOnly = false) {
+		this.colourIndex = EffectSet.INDEX_AUGMENT;
+		this.colourPair = colourPair;
+		this.colourMapOnly = colourMapOnly;
 		return this;
 	}
-	colourExalt([mainColour, mapColour], mapOnly = false) {
-		if (!mapOnly) {
-			this.textColour = mainColour.brightness(72);
-			this.backgroundColour = mainColour.brightness(20);
-			this.outlineColour = mainColour.brightness(72);
-		}
-		this.mapColour = mapColour;
-		this.mapIcon = EffectSet.MAP_ICON.CROSS;
+	colourExalt(colourPair, colourMapOnly = false) {
+		this.colourIndex = EffectSet.INDEX_EXALT;
+		this.colourPair = colourPair;
+		this.colourMapOnly = colourMapOnly;
 		return this;
 	}
-	colourChance([mainColour, mapColour], mapOnly = false) {
-		if (!mapOnly) {
-			this.textColour = mainColour.brightness(10);
-			this.backgroundColour = mainColour.brightness(60);
-			this.outlineColour = mainColour.brightness(10);
-		}
-		this.mapColour = mapColour;
-		this.mapIcon = EffectSet.MAP_ICON.STAR;
+	colourChance(colourPair, colourMapOnly = false) {
+		this.colourIndex = EffectSet.INDEX_CHANCE;
+		this.colourPair = colourPair;
+		this.colourMapOnly = colourMapOnly;
 		return this;
 	}
-	colourDivine([mainColour, mapColour], mapOnly = false) {
-		if (!mapOnly) {
-			this.textColour = mainColour.brightness(45);
-			this.backgroundColour = mainColour.brightness(95);
-			this.outlineColour = mainColour.brightness(45);
-		}
-		this.mapColour = mapColour;
-		this.mapIcon = EffectSet.MAP_ICON.DIAMOND;
+	colourDivine(colourPair, colourMapOnly = false) {
+		this.colourIndex = EffectSet.INDEX_DIVINE;
+		this.colourPair = colourPair;
+		this.colourMapOnly = colourMapOnly;
 		return this;
 	}
 
-	// These will require a colour call as well for the map export to work
-	sizeWisdom() {
-		this.textSize = EffectSet.TEXT_SIZE.SMALL;
-		this.mapSize = EffectSet.MAP_SIZE.SMALL;
+	sizeWisdom(muteCustom = false) {
+		this.sizeIndex = EffectSet.INDEX_WISDOM;
+		this.muteCustom = muteCustom;
 		return this;
 	}
-	sizeAugment() {
-		this.textSize = EffectSet.TEXT_SIZE.DEFAULT;
-		this.mapSize = EffectSet.MAP_SIZE.MEDIUM;
+	sizeAugment(muteCustom = false) {
+		this.sizeIndex = EffectSet.INDEX_AUGMENT;
+		this.muteCustom = muteCustom;
 		return this;
 	}
-	sizeExalt() {
-		this.textSize = EffectSet.TEXT_SIZE.LARGE;
-		this.mapSize = EffectSet.MAP_SIZE.LARGE;
+	sizeExalt(muteCustom = false) {
+		this.sizeIndex = EffectSet.INDEX_EXALT;
+		this.muteCustom = muteCustom;
 		return this;
 	}
-	sizeChance() {
-		this.textSize = EffectSet.TEXT_SIZE.LARGEST;
-		this.beamColour = this.mapColour;
-		this.sound = EffectSet.SOUND.WAH;
-		this.mapSize = EffectSet.MAP_SIZE.LARGE;
+	sizeChance(muteCustom = false) {
+		this.sizeIndex = EffectSet.INDEX_CHANCE;
+		this.muteCustom = muteCustom;
 		return this;
 	}
-	sizeDivine() {
-		this.textSize = EffectSet.TEXT_SIZE.LARGEST;
-		this.beamColour = this.mapColour;
-		this.sound = EffectSet.SOUND.RENOIR;
-		this.mapSize = EffectSet.MAP_SIZE.LARGE;
+	sizeDivine(muteCustom = false) {
+		this.sizeIndex = EffectSet.INDEX_DIVINE;
+		this.muteCustom = muteCustom;
 		return this;
 	}
 }

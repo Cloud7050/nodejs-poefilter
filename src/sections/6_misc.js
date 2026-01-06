@@ -154,21 +154,19 @@ function keys(filter) {
 		c.categories(CATEGORY.MAP);
 		c.names = new Comparison("Kulemak's Invitation");
 
-		e.colourExalt(PAIR_MAP2).sizeExalt();
-		// e.muteCustom();
+		e.colourExalt(PAIR_MAP2).sizeExalt(true);
 	});
 	filter.block((c, e) => {
 		c.categories(CATEGORY.MAP);
 		c.names = new Comparison(["Deadly Fate", "Cowardly Fate", "Victorious Fate"]);
 
-		e.colourChance(PAIR_MAP2).sizeChance();
-		e.muteCustom();
+		e.colourChance(PAIR_MAP2).sizeChance(true);
 	});
 
 	filter.block((c, e) => {
 		c.categories(CATEGORY.VAULT);
 
-		e.colourChance(PAIR_GEAR).sizeExalt();
+		e.colourChance(PAIR_GEAR).sizeExalt(true);
 	});
 
 	filter.block((c, e) => {
@@ -180,8 +178,7 @@ function keys(filter) {
 	filter.block((c, e) => {
 		c.categories(CATEGORY.PINNACLE);
 
-		e.colourDivine(PAIR_MAP2).sizeDivine();
-		e.muteCustom();
+		e.colourDivine(PAIR_MAP2).sizeDivine(true);
 	});
 }
 
