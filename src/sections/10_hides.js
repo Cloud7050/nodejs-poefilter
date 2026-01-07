@@ -3,22 +3,30 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager, TIER } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { LEVEL_AREA, LEVEL_OK } from "../constants.js";
+import { LEVEL_CAMPAIGN, LEVEL_ENDGAME, LEVEL_HIDE_HOP, LEVEL_OK } from "../constants.js";
 
 export function sectionHides(filter) {
-	weapons(filter);
-	armour(filter);
-	uncommons(filter);
+	function perLevel(minLevel) {
+		weapons(filter, minLevel);
+		armour(filter, minLevel);
+		uncommons(filter, minLevel);
 
-	// uniques(filter);
+		// uniques(filter);
+	}
+
+	for (let level = LEVEL_ENDGAME; level >= LEVEL_CAMPAIGN; level -= LEVEL_HIDE_HOP) {
+		perLevel(level);
+	}
 }
 
-function weapons(filter) {
+function weapons(filter, minLevel) {
 	filter.multiHide((c) => { // Too far drop level normal/magic
+		c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
 		c.categories(CATEGORY.WEAPON);
-		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(LEVEL_AREA, 0, false));
+		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 	}, (c) => { // Other normal/magic weapons
+		c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
 		c.categories(CATEGORY.WEAPON_OTHER);
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
@@ -39,12 +47,14 @@ function weapons(filter) {
 	// });
 }
 
-function armour(filter) {
+function armour(filter, minLevel) {
 	filter.multiHide((c) => { // Too far drop level normal/magic
+		c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
 		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(LEVEL_AREA, 0, false));
+		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-	}, (c) => { // Strictly other normal/magic armour
+	}, (c) => { // Other normal/magic armour
+		c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
@@ -58,10 +68,11 @@ function armour(filter) {
 	// });
 }
 
-function uncommons(filter) {
+function uncommons(filter, minLevel) {
 	filter.multiHide((c) => { // Too far drop level normal/magic flasks
+		c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
 		c.categories(CATEGORY.FLASK);
-		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(LEVEL_AREA, 0, false));
+		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 	});
 

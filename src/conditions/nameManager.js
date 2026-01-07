@@ -1385,7 +1385,7 @@ export class NameManager {
 			// new Name("Bolstered Mitts", ), // Dreadfist
 			// new Name("Bone Raiment", ), // Necromantle
 			// new Name("Braced Sabatons", ), // Darkray Vectors
-			// new Name("Braced Tower Shield", ), // Doomgate
+			new Name("Braced Tower Shield", 0.5), // Doomgate
 			// new Name("Brimmed Helm", 2), // Greymake
 			// new Name("Bronze Greaves", ), // The Infinite Pursuit
 			// new Name("Burnished Gauntlets", ), // Aerisvane's Wings

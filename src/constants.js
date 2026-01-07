@@ -42,11 +42,12 @@ export const LEVEL_DROP_BODY = 65;
 export const LEVEL_HEAVY_BELT = 50;
 ////
 
-//// Price breakpoints for gold
+//// Breakpoints for gold prices & hides
 export const LEVEL_CAMPAIGN = 0;
 export const LEVEL_MAP = 65;
 export const LEVEL_ENDGAME = 80;
 export const LEVEL_GOLD_HOP = 5;
+export const LEVEL_HIDE_HOP = 2;
 
 export const CAMPAIGN_1 = 0;
 export const CAMPAIGN_2 = 10;

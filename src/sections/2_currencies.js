@@ -41,9 +41,9 @@ function general(filter) {
 }
 
 function gold(filter) {
-	function perLevel(levelMin, goldHide, goldWisdom, goldAugment, goldAugmentExalt) {
+	function perLevel(minLevel, goldHide, goldWisdom, goldAugment, goldAugmentExalt) {
 		filter.block((c, e) => {
-			c.areaLevel = new Comparison(levelMin, OPERATOR.GTE);
+			c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
 			c.categories(CATEGORY.CURRENCY);
 			c.names = new Comparison("Gold");
 			c.count = new Comparison(Math.round(goldHide), OPERATOR.LT);
@@ -53,7 +53,7 @@ function gold(filter) {
 			e.backgroundColour = Colour.TRANSPARENT;
 		});
 		filter.block((c, e) => {
-			c.areaLevel = new Comparison(levelMin, OPERATOR.GTE);
+			c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
 			c.categories(CATEGORY.CURRENCY);
 			c.names = new Comparison("Gold");
 			c.count = new Comparison(Math.round(goldWisdom), OPERATOR.LT);
@@ -62,7 +62,7 @@ function gold(filter) {
 			e.backgroundColour = Colour.TRANSPARENT;
 		});
 		filter.block((c, e) => {
-			c.areaLevel = new Comparison(levelMin, OPERATOR.GTE);
+			c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
 			c.categories(CATEGORY.CURRENCY);
 			c.names = new Comparison("Gold");
 			c.count = new Comparison(Math.round(goldAugment), OPERATOR.LT);
@@ -71,7 +71,7 @@ function gold(filter) {
 			e.backgroundColour = Colour.TRANSPARENT;
 		});
 		filter.block((c, e) => {
-			c.areaLevel = new Comparison(levelMin, OPERATOR.GTE);
+			c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
 			c.categories(CATEGORY.CURRENCY);
 			c.names = new Comparison("Gold");
 			c.count = new Comparison(Math.round(goldAugmentExalt), OPERATOR.LT);
@@ -80,7 +80,7 @@ function gold(filter) {
 			e.backgroundColour = Colour.TRANSPARENT;
 		});
 		filter.block((c, e) => {
-			c.areaLevel = new Comparison(levelMin, OPERATOR.GTE);
+			c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
 			c.categories(CATEGORY.CURRENCY);
 			c.names = new Comparison("Gold");
 
