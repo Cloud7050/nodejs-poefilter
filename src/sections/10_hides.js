@@ -1,17 +1,53 @@
 import { CATEGORY, CATEGORY_CUSTOM } from "../conditions/category.js";
 import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
-import { NameManager, TIER } from "../conditions/nameManager.js";
+import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
 import { LEVEL_CAMPAIGN, LEVEL_ENDGAME, LEVEL_HIDE_HOP, LEVEL_OK } from "../constants.js";
 
 export function sectionHides(filter) {
-	function perLevel(minLevel) {
-		weapons(filter, minLevel);
-		armour(filter, minLevel);
-		uncommons(filter, minLevel);
+	// Weapons
+	filter.multiHide((c) => { // Low ilvl normal/magic other weapons
+		c.categories(CATEGORY.WEAPON_OTHER);
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
+		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
+	});
 
-		// uniques(filter);
+	// Armour
+	filter.multiHide((c) => { // Low ilvl normal/magic other armour
+		c.categories(CATEGORY.ARMOUR);
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
+		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
+	});
+
+	function perLevel(minLevel) {
+		// Weapons
+		filter.multiHide((c) => { // Too far drop level normal/magic weapons
+			c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
+			c.categories(CATEGORY.WEAPON);
+			c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
+			c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
+		});
+
+		// Armour
+		filter.multiHide((c) => { // Too far drop level normal/magic armour
+			c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
+			c.categories(CATEGORY.ARMOUR);
+			c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
+			c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
+		},);
+
+		// Uncommons
+		filter.multiHide((c) => { // Too far drop level normal/magic flasks
+			c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
+			c.categories(CATEGORY.FLASK);
+			c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
+			c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
+		});
+
+		// Uniques
+		//TODO modify all hides as you progress
 	}
 
 	for (let level = LEVEL_ENDGAME; level >= LEVEL_CAMPAIGN; level -= LEVEL_HIDE_HOP) {
@@ -20,18 +56,6 @@ export function sectionHides(filter) {
 }
 
 function weapons(filter, minLevel) {
-	filter.multiHide((c) => { // Too far drop level normal/magic
-		c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
-		c.categories(CATEGORY.WEAPON);
-		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
-		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-	}, (c) => { // Other normal/magic weapons
-		c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
-		c.categories(CATEGORY.WEAPON_OTHER);
-		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
-	});
-
 	// filter.multiHide((c) => { // Remaining corrupts
 	// 	c.categories(CATEGORY.WEAPON);
 	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
@@ -48,19 +72,6 @@ function weapons(filter, minLevel) {
 }
 
 function armour(filter, minLevel) {
-	filter.multiHide((c) => { // Too far drop level normal/magic
-		c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
-		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
-		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-	}, (c) => { // Other normal/magic armour
-		c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
-		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
-		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
-	});
-
 	// filter.multiHide((c) => { // Remaining corrupts
 	// 	c.categories(CATEGORY.ARMOUR);
 	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
@@ -69,13 +80,6 @@ function armour(filter, minLevel) {
 }
 
 function uncommons(filter, minLevel) {
-	filter.multiHide((c) => { // Too far drop level normal/magic flasks
-		c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
-		c.categories(CATEGORY.FLASK);
-		c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
-		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-	});
-
 	// filter.multiHide((c) => { // Remaining corrupts
 	// 	c.categories(CATEGORY.GEAR_UNCOMMON);
 	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
@@ -119,13 +123,12 @@ function uncommons(filter, minLevel) {
 	// });
 }
 
-//TODO
 function uniques(filter) {
-		filter.multiHide((c) => { // Trash uniques
-			c.names = new Comparison(new NameManager(
-				NameManager.getUniques(TIER.NEVER, OPERATOR.LTE),
-				NameManager.getUniqueRelics(null, 2)
-			));
-			c.rarity = new Comparison(RARITY.UNIQUE);
-		});
-	}
+	// filter.multiHide((c) => { // Trash uniques
+	// 	c.names = new Comparison(new NameManager(
+	// 		NameManager.getUniques(TIER.NEVER, OPERATOR.LTE),
+	// 		NameManager.getUniqueRelics(null, 2)
+	// 	));
+	// 	c.rarity = new Comparison(RARITY.UNIQUE);
+	// });
+}
