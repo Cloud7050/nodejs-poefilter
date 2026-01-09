@@ -45,6 +45,7 @@ export const LEVEL_HEAVY_BELT = 50;
 //// Breakpoints for gold prices & hides
 export const LEVEL_CAMPAIGN = 0;
 export const LEVEL_MAP = 65;
+export const LEVEL_UNIQUE = 79;
 export const LEVEL_ENDGAME = 80;
 export const LEVEL_GOLD_HOP = 5;
 export const LEVEL_HIDE_HOP = 2;

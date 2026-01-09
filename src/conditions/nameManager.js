@@ -1458,7 +1458,7 @@ export class NameManager {
 			// new Name("Iron Cuirass", ), // Edyrn's Tusks
 			// new Name("Iron Greaves", ), // Corpsewade
 			// new Name("Jade Tiara", ), // Scold's Bridle
-			// new Name("Jewelled Gloves", ), // Kitoko's Current
+			new Name("Jewelled Gloves", 0.5), // Kitoko's Current
 			// new Name("Jingling Crest Shield", ), // Crest of Ardura
 			// new Name("Keth Raiment", ), // Prayers for Rain
 			// new Name("Knight Armour", ), // Perfidy, Widow's Reign

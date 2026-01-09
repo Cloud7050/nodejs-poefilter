@@ -2730,7 +2730,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Braced Tower Shield" "Engraved Focus"
+	BaseType == "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves"
 	Rarity == Unique
 
 	SetFontSize 32
@@ -4230,11 +4230,13 @@ Show
 	Continue
 
 Show
+	AreaLevel < 79
 	Sockets >= 1
 
 	#
 
 Show
+	AreaLevel < 79
 	Quality >= 5
 
 	#
