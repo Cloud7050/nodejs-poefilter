@@ -1743,11 +1743,15 @@ export class NameManager {
 	}
 
 	getLevelBreakpoints() {
-		// Split drop levels into non-endgame and endgame levels.
-		// Remove the lowest non-endgame level in each category, as there is nothing to hide yet
-		// when at the lowest breakpoint.
-		// Remove all endgame levels except the lowest, as we don't do further hides past said
-		// lowest.
+		/*
+		Split drop levels into non-endgame and endgame levels.
+
+		Ignore all endgame levels above the lowest, as we don't do further hides past said lowest.
+		Ignore the lowest level in each category, as there is nothing to hide yet at that lowest
+		breakpoint.
+
+		If a category has only endgame levels, we ignore it as no leveling hiding is needed.
+		*/
 
 		let mapNonEndgame = new Map();
 		let mapEndgame = new Map();
@@ -1764,25 +1768,24 @@ export class NameManager {
 		}
 		// If the key exists, its set will not be empty
 
-		// For each category, remove lowest non-endgame level
-		for (let [key, set] of mapNonEndgame) {
-			let array = [...set];
-			array.sort(); // Sort ascending
-			set.delete(array[0])
-		}
-
-		// For each category, only preserve lowest endgame level
-		for (let [key, set] of mapEndgame) {
-			let array = [...set];
-			array.sort(); // Sort ascending
-			array.shift();
-			array.forEach((level) => set.delete(level));
-		}
-
-		// Flatten and merge all level values
+		// For each non-endgame category, merge the appropriate levels and store them
 		let levels = new Set();
-		mapNonEndgame.forEach((set) => set.forEach((level) => levels.add(level)));
-		mapEndgame.forEach((set) => set.forEach((level) => levels.add(level)));
+		for (let [key, set] of mapNonEndgame) {
+			let setBoth = new Set(set);
+
+			let setEndgame = mapEndgame.get(key) ?? null;
+			if (setEndgame !== null) {
+				let arrayEndgame = [...setEndgame];
+				arrayEndgame.sort();
+				setBoth.add(arrayEndgame[0]);
+			}
+
+			let array = [...setBoth];
+			array.sort();
+			setBoth.delete(array[0]);
+
+			setBoth.forEach((level) => levels.add(level));
+		}
 
 		return [...levels].sort((a, b) => b - a); // Descending
 	}
