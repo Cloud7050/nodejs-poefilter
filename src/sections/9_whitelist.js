@@ -20,8 +20,8 @@ export function sectionWhitelist(filter, isGoldRares) {
 	if (isGoldRares) goldRares(filter);
 }
 
-// Leveling fodder for salvage/disenchant
 function leveling(filter) {
+	// Fodder for salvage/disenchant
 	filter.multiWhitelist((c) => { // Sockets
 		c.areaLevel = new Comparison(LEVEL_T15, OPERATOR.LT);
 		c.hasSockets(1);

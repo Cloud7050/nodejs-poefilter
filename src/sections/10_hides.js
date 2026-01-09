@@ -3,7 +3,6 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { StringList } from "../conditions/stringList.js";
 import { LEVEL_OK, VALUE_BAD } from "../constants.js";
 
 export function sectionHides(filter) {
@@ -13,13 +12,13 @@ export function sectionHides(filter) {
 }
 
 function leveling(filter) {
-	// Class common gear
-	let commonNames = NameManager.getGear(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY_CUSTOM.ARMOUR_CLASS));
-	let commonLevels = commonNames.getLevelBreakpoints();
-	commonLevels.forEach((level) => {
+	// All gear
+	let gearNames = NameManager.getGear(CATEGORY.GEAR.subtract(CATEGORY.FLASK));
+	let gearLevels = gearNames.getLevelBreakpoints();
+	gearLevels.forEach((level) => {
 		filter.multiHide((c) => { // Leveling normal/magic class weapons, class armour
 			c.areaLevel = new Comparison(level, OPERATOR.GTE);
-			c.names = new Comparison(commonNames.isCloseDrop(level, 0, false));
+			c.names = new Comparison(gearNames.isCloseDrop(level, 0, false));
 			c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		});
 	})
