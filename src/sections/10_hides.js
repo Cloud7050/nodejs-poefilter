@@ -3,7 +3,7 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { LEVEL_OK, VALUE_BAD } from "../constants.js";
+import { LEVEL_NEW, LEVEL_OK, VALUE_BAD } from "../constants.js";
 
 export function sectionHides(filter) {
 	leveling(filter);
@@ -42,6 +42,7 @@ function other(filter) {
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	}, (c) => { // Low ilvl normal/magic other armour
+		c.areaLevel = new Comparison(LEVEL_NEW, OPERATOR.GT); // Allow other armour while new
 		c.categories(CATEGORY.ARMOUR);
 		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);

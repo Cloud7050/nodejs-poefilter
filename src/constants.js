@@ -46,6 +46,7 @@ export const LEVEL_DROP_FLASK = LEVEL_ULTIMATE_FLASK;
 
 //// Breakpoints for gold prices & hides
 export const LEVEL_CAMPAIGN = 0;
+export const LEVEL_NEW = 15;
 export const LEVEL_MAP = 65;
 export const LEVEL_T15 = LEVEL_BIS_LAKE;
 export const LEVEL_ENDGAME = 80;
