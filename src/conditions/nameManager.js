@@ -1743,8 +1743,11 @@ export class NameManager {
 	}
 
 	getLevelBreakpoints() {
-		// Split drop levels into non-endgame and endgame levels. Then remove the lowest non-endgame
-		// level in each category, as there is nothing to hide yet when at the lowest breakpoint
+		// Split drop levels into non-endgame and endgame levels.
+		// Remove the lowest non-endgame level in each category, as there is nothing to hide yet
+		// when at the lowest breakpoint.
+		// Remove all endgame levels except the lowest, as we don't do further hides past said
+		// lowest.
 
 		let mapNonEndgame = new Map();
 		let mapEndgame = new Map();
@@ -1759,12 +1762,21 @@ export class NameManager {
 			}
 			map.get(name.category).add(name.dropLevel);
 		}
+		// If the key exists, its set will not be empty
 
-		// For each category, remove lowest non-endgame level, if any
+		// For each category, remove lowest non-endgame level
 		for (let [key, set] of mapNonEndgame) {
 			let array = [...set];
 			array.sort(); // Sort ascending
-			if (array.length > 0) set.delete(array[0])
+			set.delete(array[0])
+		}
+
+		// For each category, only preserve lowest endgame level
+		for (let [key, set] of mapEndgame) {
+			let array = [...set];
+			array.sort(); // Sort ascending
+			array.shift();
+			array.forEach((level) => set.delete(level));
 		}
 
 		// Flatten and merge all level values
