@@ -68,10 +68,12 @@ export class Name {
 		return false;
 	}
 
-	// compare(other) {
-	// 	if (this.value === null && other.value === null) return 0;
-	// 	if (this.value === null) return -1;
-	// 	if (other.value === null) return 1;
-	// 	return this.value - other.value;
-	// }
+	compare(other) {
+		// Sort by drop level, then alphabetically
+		if (this.dropLevel === null && other.dropLevel === null) return this.name.localeCompare(other.name);
+
+		if (this.dropLevel === null) return -1;
+		if (other.dropLevel === null) return 1;
+		return this.dropLevel - other.dropLevel;
+	}
 }

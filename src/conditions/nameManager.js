@@ -1827,11 +1827,7 @@ export class NameManager {
 	}
 
 	export() {
-		// Alphabetical sort
-		this.names.sort((a, b) => a.name.localeCompare(b.name));
-		// Then custom value sort
-		// this.names.sort((a, b) => a.compare(b));
-
+		this.names.sort((a, b) => a.compare(b));
 		return new StringList(
 			...this.names.map(name => name.name)
 		);
