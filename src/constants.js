@@ -33,19 +33,21 @@ export const LEVEL_BIS_WAND_STAFF = 81;
 export const LEVEL_BIS_CHARM = 81;
 export const LEVEL_BIS_FLASK = 83;
 
+export const LEVEL_HEAVY_BELT = 50;
+export const LEVEL_ULTIMATE_FLASK = 60;
+
 // Some categories are special cases where lower minimum drop level is still endgame
-export const LEVEL_DROP_CASTER_QUIVER = 0;
+export const LEVEL_DROP_ANY = 0;
 export const LEVEL_DROP_ATTACKER = 75;
 export const LEVEL_DROP_OFF_ARMOUR = 80;
 export const LEVEL_DROP_BODY = 65;
-
-export const LEVEL_HEAVY_BELT = 50;
+export const LEVEL_DROP_FLASK = LEVEL_ULTIMATE_FLASK;
 ////
 
 //// Breakpoints for gold prices & hides
 export const LEVEL_CAMPAIGN = 0;
 export const LEVEL_MAP = 65;
-export const LEVEL_UNIQUE = 79;
+export const LEVEL_T15 = LEVEL_BIS_LAKE;
 export const LEVEL_ENDGAME = 80;
 export const LEVEL_GOLD_HOP = 5;
 export const LEVEL_HIDE_HOP = 2;

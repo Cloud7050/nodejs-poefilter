@@ -1,4 +1,4 @@
-import { LEVEL_DROP_ATTACKER, LEVEL_DROP_BODY, LEVEL_DROP_CASTER_QUIVER, LEVEL_DROP_OFF_ARMOUR } from "../constants.js";
+import { LEVEL_DROP_ANY, LEVEL_DROP_ATTACKER, LEVEL_DROP_BODY, LEVEL_DROP_FLASK, LEVEL_DROP_OFF_ARMOUR } from "../constants.js";
 import { CATEGORY } from "./category.js";
 import { StringList } from "./stringList.js";
 
@@ -43,9 +43,9 @@ export class Name {
 
 	isEndgame() {
 		if (this.category.containsLoose(
-			new StringList(CATEGORY.MAIN_CASTER, CATEGORY.QUIVER)
+			new StringList(CATEGORY.MAIN_CASTER, CATEGORY.QUIVER, CATEGORY.GEAR_UNCOMMON.subtract(CATEGORY.FLASK))
 		)) {
-			return this.dropLevel >= LEVEL_DROP_CASTER_QUIVER;
+			return this.dropLevel >= LEVEL_DROP_ANY;
 		} else if (this.category.containsLoose(
 			new StringList(CATEGORY.MAIN_ATTACKER)
 		)) {
@@ -58,6 +58,10 @@ export class Name {
 			new StringList(CATEGORY.BODY)
 		)) {
 			return this.dropLevel >= LEVEL_DROP_BODY;
+		} else if (this.category.containsLoose(
+			new StringList(CATEGORY.FLASK)
+		)) {
+			return this.dropLevel >= LEVEL_DROP_FLASK;
 		}
 
 		// Nothing else gets whitelisted automatically

@@ -21,8 +21,8 @@ export function sectionHides(filter) {
 		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	});
 
-	// Uniques
-	filter.multiHide((c) => { // Trash uniques
+	// Trash uniques
+	filter.multiHide((c) => {
 		c.names = new Comparison(new NameManager(
 			NameManager.getUniques(null, VALUE_BAD),
 			NameManager.getUniqueRelics(null, VALUE_BAD)
