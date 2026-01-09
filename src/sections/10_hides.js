@@ -3,7 +3,8 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { LEVEL_CAMPAIGN, LEVEL_ENDGAME, LEVEL_HIDE_HOP, LEVEL_OK, VALUE_BAD } from "../constants.js";
+import { StringList } from "../conditions/stringList.js";
+import { LEVEL_OK, VALUE_BAD } from "../constants.js";
 
 export function sectionHides(filter) {
 	// Weapons
@@ -30,29 +31,18 @@ export function sectionHides(filter) {
 		c.rarity = new Comparison(RARITY.UNIQUE);
 	});
 
-	//TODO modify all hides as you progress
 
-	function perLevel(minLevel) {
-		// Weapons
-		filter.multiHide((c) => { // Too far drop level normal/magic weapons
-			c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
-			c.categories(CATEGORY.WEAPON);
-			c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
+
+	// Class common gear
+	let commonNames = NameManager.getGear(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY_CUSTOM.ARMOUR_CLASS));
+	let commonLevels = commonNames.getLevelBreakpoints();
+	commonLevels.forEach((level) => {
+		filter.multiHide((c) => { // Leveling normal/magic class weapons, class armour
+			c.areaLevel = new Comparison(level, OPERATOR.GTE);
+			c.names = new Comparison(commonNames.isCloseDrop(level, 0, false));
 			c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		});
-
-		// Armour
-		filter.multiHide((c) => { // Too far drop level normal/magic armour
-			c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
-			c.categories(CATEGORY.ARMOUR);
-			c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
-			c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-		},);
-	}
-
-	for (let level = LEVEL_ENDGAME; level >= LEVEL_CAMPAIGN; level -= LEVEL_HIDE_HOP) {
-		perLevel(level);
-	}
+	})
 
 	// Flasks
 	let flaskNames = NameManager.getGear(CATEGORY.FLASK);
@@ -66,6 +56,7 @@ export function sectionHides(filter) {
 	})
 }
 
+//TODO modify all hides as you progress
 function weapons(filter, minLevel) {
 	// filter.multiHide((c) => { // Remaining corrupts
 	// 	c.categories(CATEGORY.WEAPON);

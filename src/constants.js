@@ -50,7 +50,6 @@ export const LEVEL_MAP = 65;
 export const LEVEL_T15 = LEVEL_BIS_LAKE;
 export const LEVEL_ENDGAME = 80;
 export const LEVEL_GOLD_HOP = 5;
-export const LEVEL_HIDE_HOP = 2;
 
 export const CAMPAIGN_1 = 0;
 export const CAMPAIGN_2 = 10;
