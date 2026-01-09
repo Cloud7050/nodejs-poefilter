@@ -49,6 +49,12 @@ function other(filter) {
 		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	});
 
+	// Remaining corrupts
+	filter.multiHide((c) => {
+		c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		c.isCorrupted = true;
+	});
+
 	// Trash uniques
 	filter.multiHide((c) => {
 		c.names = new Comparison(new NameManager(
@@ -61,11 +67,7 @@ function other(filter) {
 
 //TODO modify all hides as you progress
 function weapons(filter, minLevel) {
-	// filter.multiHide((c) => { // Remaining corrupts
-	// 	c.categories(CATEGORY.WEAPON);
-	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	// 	c.isCorrupted = true;
-	// }, (c) => { // Too low ilvl (other caster mainhands)
+	// filter.multiHide((c) => { // Too low ilvl (other caster mainhands)
 	// 	c.categories(CATEGORY.WAND, CATEGORY.STAFF);
 	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	// 	c.ilvl = new Comparison(81, OPERATOR.LT);
@@ -76,20 +78,8 @@ function weapons(filter, minLevel) {
 	// });
 }
 
-function armour(filter, minLevel) {
-	// filter.multiHide((c) => { // Remaining corrupts
-	// 	c.categories(CATEGORY.ARMOUR);
-	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	// 	c.isCorrupted = true;
-	// });
-}
-
 function uncommons(filter, minLevel) {
-	// filter.multiHide((c) => { // Remaining corrupts
-	// 	c.categories(CATEGORY.GEAR_UNCOMMON);
-	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
-	// 	c.isCorrupted = true;
-	// }, (c) => { // Trash base
+	// filter.multiHide((c) => { // Trash base
 	// 	c.names = new Comparison(NameManager.getUncommons(TIER.NEVER, OPERATOR.LTE));
 	// 	c.categories(CATEGORY.GEAR_UNCOMMON);
 	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);

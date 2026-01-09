@@ -32,6 +32,12 @@ function leveling(filter) {
 		c.areaLevel = new Comparison(LEVEL_T15, OPERATOR.LT);
 		c.rarity = new Comparison(RARITY.UNIQUE);
 	});
+
+	// Allow any corrupts
+	filter.multiWhitelist((c) => {
+		c.areaLevel = new Comparison(LEVEL_T15, OPERATOR.LT);
+		c.isCorrupted = true;
+	});
 }
 
 // Chance bases
