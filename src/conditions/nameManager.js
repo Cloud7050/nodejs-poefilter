@@ -1787,6 +1787,7 @@ export class NameManager {
 		return [...levels].sort((a, b) => b - a); // Descending
 	}
 
+	// Whether the item is sufficiently high drop level
 	isCloseDrop(areaLevel, maxGap, is = true) {
 		// For each category, store its drop levels
 		let map = new Map();
@@ -1817,7 +1818,8 @@ export class NameManager {
 		return new NameManager(
 			...this.names.filter((name) => {
 				return (
-					name.dropLevel >= map.get(name.category)
+					!map.has(name.category) // All the category's drop levels are higher than area level; this name's drop level is sufficiently high
+					|| name.dropLevel >= map.get(name.category)
 					|| name.isEndgame()
 				) === is;
 			})
