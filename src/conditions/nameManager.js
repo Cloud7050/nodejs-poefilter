@@ -1,4 +1,4 @@
-import { LEVEL_HEAVY_BELT, PRICE_DIV } from "../constants.js";
+import { LEVEL_HEAVY_BELT, LEVEL_ULTIMATE_FLASK, PRICE_DIV } from "../constants.js";
 import { average } from "../utils.js";
 import { CATEGORY, CATEGORY_CUSTOM } from "./category.js";
 import { ConditionSet } from "./conditionSet.js";
@@ -1271,8 +1271,8 @@ export class NameManager {
 			new Name("Transcendent Life Flask", 1, CATEGORY.FLASK_LIFE, 50),
 			new Name("Transcendent Mana Flask", 1, CATEGORY.FLASK_MANA, 50),
 
-			new Name("Ultimate Life Flask", 20, CATEGORY.FLASK_LIFE, 60),
-			new Name("Ultimate Mana Flask", 20, CATEGORY.FLASK_MANA, 60),
+			new Name("Ultimate Life Flask", 20, CATEGORY.FLASK_LIFE, LEVEL_ULTIMATE_FLASK),
+			new Name("Ultimate Mana Flask", 20, CATEGORY.FLASK_MANA, LEVEL_ULTIMATE_FLASK),
 
 			// https://poe2db.tw/us/Charms#CharmsItem
 			new Name("Ruby Charm", 1, CATEGORY.CHARM, 5), // 20/40, 4s, +25% to Fire Resistance
@@ -1742,6 +1742,39 @@ export class NameManager {
 		);
 	}
 
+	getLevelBreakpoints() {
+		// Split drop levels into non-endgame and endgame levels. Then remove the lowest non-endgame
+		// level in each category, as there is nothing to hide yet when at the lowest breakpoint
+
+		let mapNonEndgame = new Map();
+		let mapEndgame = new Map();
+
+		// For each category, store its drop levels accordingly
+		for (let name of this.names) {
+			let map = mapNonEndgame;
+			if (name.isEndgame()) map = mapEndgame;
+
+			if (!map.has(name.category)) {
+				map.set(name.category, new Set());
+			}
+			map.get(name.category).add(name.dropLevel);
+		}
+
+		// For each category, remove lowest non-endgame level, if any
+		for (let [key, set] of mapNonEndgame) {
+			let array = [...set];
+			array.sort(); // Sort ascending
+			if (array.length > 0) set.delete(array[0])
+		}
+
+		// Flatten and merge all level values
+		let levels = new Set();
+		mapNonEndgame.forEach((set) => set.forEach((level) => levels.add(level)));
+		mapEndgame.forEach((set) => set.forEach((level) => levels.add(level)));
+
+		return [...levels].sort((a, b) => b - a); // Descending
+	}
+
 	isCloseDrop(areaLevel, maxGap, is = true) {
 		// For each category, store its drop levels
 		let map = new Map();
@@ -1761,8 +1794,7 @@ export class NameManager {
 		// For each category, sort set to find lowest acceptable drop level (inclusive)
 		for (let [key, set] of map) {
 			let array = [...set];
-			// Sort descending
-			array.sort((a, b) => b - a);
+			array.sort((a, b) => b - a); // Descending
 
 			let targetIndex = Math.min(0 + maxGap, array.length - 1);
 			// Replace values with target drop level

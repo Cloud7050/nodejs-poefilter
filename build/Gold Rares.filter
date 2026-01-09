@@ -4468,14 +4468,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 80
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 78
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Adherent Bow" "Alloy Crossbow" "Ancestor Tower Shield" "Antler Focus" "Anvil Maul" "Arrayed Focus" "Artillery Bow" "Ashbark Talisman" "Avian Targe" "Bandit Mace" "Barbed Spear" "Baroque Targe" "Barricade Tower Shield" "Barrier Quarterstaff" "Blackfire Crossbow" "Bladed Quarterstaff" "Bladeguard Buckler" "Blazon Crest Shield" "Bleak Crossbow" "Bombard Crossbow" "Braced Tower Shield" "Branched Spear" "Brigand Mace" "Broad Spear" "Bulwark Tower Shield" "Cannonade Crossbow" "Carved Targe" "Cavalry Bow" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crossblade Spear" "Crown Mace" "Crucible Tower Shield" "Crude Bow" "Cruel Talisman" "Crumbling Maul" "Crystal Focus" "Cultist Bow" "Cultist Focus" "Cultist Greathammer" "Dekharan Crest Shield" "Disintegrating Maul" "Druidic Focus" "Dualstring Bow" "Dyad Crossbow" "Edged Buckler" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Crossbow" "Engraved Focus" "Familial Talisman" "Feathered Targe" "Felled Greatclub" "Flanged Mace" "Forge Maul" "Forked Spear" "Fortress Tower Shield" "Frenzied Talisman" "Fury Talisman" "Glowering Crest Shield" "Goldworked Tower Shield" "Gothic Quarterstaff" "Guardian Quarterstaff" "Gutspike Buckler" "Hallowed Focus" "Hardwood Spear" "Hardwood Targe" "Heavy Greathammer" "Hefty Quarterstaff" "Helix Spear" "Heraldric Tower Shield" "Howling Talisman" "Hunting Spear" "Intricate Crest Shield" "Iron Buckler" "Ironhead Spear" "Ironwood Shortbow" "Jade Club" "Jagged Spear" "Jingling Buckler" "Jingling Crest Shield" "Laminate Buckler" "Leaden Greathammer" "Leather Buckler" "Leyline Focus" "Long Quarterstaff" "Lumbering Talisman" "Lunar Quarterstaff" "Makeshift Crossbow" "Mammoth Targe" "Marching Mace" "Militant Bow" "Morning Star" "Nettle Talisman" "Noble Tower Shield" "Oak Greathammer" "Omen Crest Shield" "Orichalcum Spear" "Ornate Buckler" "Ornate Buckler" "Painted Tower Shield" "Pearl Buckler" "Pelage Targe" "Piercing Crossbow" "Plated Buckler" "Plated Mace" "Plumed Focus" "Pointed Maul" "Polished Targe" "Primal Talisman" "Pronged Spear" "Quartered Crest Shield" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Royal Tower Shield" "Runed Focus" "Sacred Maul" "Seaglass Spear" "Sectarian Crest Shield" "Seer Crest Shield" "Sekheman Crest Shield" Shortbow "Sigil Crest Shield" "Sinister Quarterstaff" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Smooth Quarterstaff" "Soaring Spear" "Solemn Maul" "Spiked Buckler" "Spiked Club" "Spikeward Buckler" "Spiny Talisman" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Stone Targe" "Stone Tower Shield" "Stout Crossbow" "Stratified Targe" "Structured Hammer" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Totemic Greatclub" "Tribal Bow" "Twig Focus" "Twin Bow" "Twin Crossbow" "Varnished Crossbow" "Vicious Talisman" "Voltfang Talisman" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Waxing Quarterstaff" "Wayward Crest Shield" "Whorl Focus" "Wildwood Talisman" "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff" "Zealot Bow"
@@ -4487,14 +4479,6 @@ Hide
 	AreaLevel >= 78
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Adherent's Raiment" "Adorned Wraps" "Aged Cuffs" "Altar Robe" "Ancestral Mail" "Anchorite Garb" "Ancient Cuffs" "Ancient Mitts" "Apostle Leggings" "Ascetic Garb" "Avian Mask" "Baroque Gloves" "Bastion Sabatons" "Beaded Circlet" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Bound Cuffs" "Bound Sandals" "Braced Sabatons" "Brigand Mask" "Brimmed Helm" "Bronze Greaves" "Buckled Wraps" "Bulwark Greaves" "Cabalist Helm" "Carved Greaves" "Cavalry Boots" "Ceremonial Robe" "Chain Mail" "Chain Tiara" "Charmed Shoes" "Chieftain Cuirass" "Cinched Boots" "Cleric Vestments" "Cloaked Mail" "Closed Helm" "Commander Gauntlets" "Commander Greathelm" "Corsair Cap" "Corsair Vest" "Covered Sabatons" "Cowled Helm" "Cryptic Helm" "Cultist Crown" "Deerstalker Hood" "Desert Cap" "Detailed Mitts" "Doubled Gauntlets" "Druidic Crown" "Dunerunner Sandals" "Elegant Greathelm" "Elegant Greaves" "Elegant Plate" "Elegant Slippers" "Elegant Wraps" "Elementalist Robe" "Elite Greathelm" "Embossed Boots" "Embroidered Gloves" "Explorer Armour" "Face Mask" "Faithful Leggings" "Faridun Mask" "Feathered Mitts" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fierce Greathelm" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Frayed Shoes" "Full Plate" "Fur Plate" "Gauze Wraps" "Gold Circlet" "Gold Gloves" "Goldcast Cuffs" "Golden Mail" "Grand Bracers" "Grim Gloves" "Guarded Helm" "Hallowed Crown" "Hatungo Garb" "Hawker's Jacket" "Heartcarver Mantle" "Heavy Crown" "Heavy Plate" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Hunting Shoes" "Inquisitor Crown" "Intricate Gloves" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Juggernaut Plate" "Jungle Tiara" "Keth Raiment" "Knight Armour" "Knightly Mitts" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Lizardscale Coat" "Luxurious Slippers" "Mail Sabatons" "Mail Vestments" "Mantled Mail" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Masked Greathelm" "Moulded Mitts" "Mystic Raiment" "Noble Greathelm" "Noble Sabatons" "Occultist Mantle" "Opulent Gloves" "Ornate Cuffs" "Ornate Greaves" "Ornate Mitts" "Padded Leggings" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Pelt Leggings" "Pelt Mantle" "Pilgrim Vestments" "Plate Gauntlets" "Plated Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Reefsteel Greaves" "Refined Bracers" "Rhoahide Coat" "Ringmail Gauntlets" "River Raiment" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Runner Vest" "Rusted Cuirass" "Rusted Greathelm" "Sacrificial Mantle" "Saintly Crown" "Sandsworn Tiara" "Scale Mail" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Leggings" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shaman Mantle" "Shamanistic Leggings" "Shielded Helm" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Skycrown Tiara" "Smuggler Coat" "Soldier Greathelm" "Solid Mask" "Sombre Gloves" "Sorcerous Tiara" "Spiked Bracers" "Spined Bracers" "Spiral Wraps" "Spired Greathelm" "Spiritbone Crown" "Stacked Sabatons" "Stalking Bracers" "Steel Plate" "Steelmail Gauntlets" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Stone Cuirass" "Stone Greaves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Tattered Robe" "Tempered Mitts" "Threaded Shoes" "Tideseer Mantle" "Torn Gloves" "Trailblazer Armour" "Treerunner Shoes" "Tribal Mask" "Trimmed Greaves" "Twig Circlet" "Vaal Cuirass" "Vagabond Armour" "Veiled Mask" "Verisium Cuffs" "Vermeil Circlet" "Veteran Sabatons" "Viper Cap" "Visored Helm" "Votive Raiment" "Wanderer Shoes" "War Wraps" "Warded Helm" "Warmonger Greathelm" "Warrior Greathelm" "Waxed Jacket" "Wayfarer Jacket" "Weaver Leggings" "Wicker Tiara" "Woven Cap" "Wrapped Cap" "Wrapped Greathelm" "Wrapped Sandals" "Zealot Gauntlets"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 78
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -4516,14 +4500,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 76
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 74
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Adherent Bow" "Alloy Crossbow" "Ancestor Tower Shield" "Antler Focus" "Anvil Maul" "Arrayed Focus" "Artillery Bow" "Avian Targe" "Bandit Mace" "Barbed Spear" "Barricade Tower Shield" "Barrier Quarterstaff" "Blackfire Crossbow" "Bladed Quarterstaff" "Bladeguard Buckler" "Blazon Crest Shield" "Bleak Crossbow" "Bombard Crossbow" "Braced Tower Shield" "Branched Spear" "Brigand Mace" "Broad Spear" "Bulwark Tower Shield" "Cannonade Crossbow" "Carved Targe" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crossblade Spear" "Crucible Tower Shield" "Crude Bow" "Cruel Talisman" "Crumbling Maul" "Crystal Focus" "Cultist Bow" "Cultist Focus" "Cultist Greathammer" "Dekharan Crest Shield" "Disintegrating Maul" "Druidic Focus" "Dualstring Bow" "Dyad Crossbow" "Edged Buckler" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Feathered Targe" "Felled Greatclub" "Flanged Mace" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Fury Talisman" "Glowering Crest Shield" "Goldworked Tower Shield" "Gothic Quarterstaff" "Guardian Quarterstaff" "Hallowed Focus" "Hardwood Spear" "Hardwood Targe" "Heavy Greathammer" "Hefty Quarterstaff" "Helix Spear" "Heraldric Tower Shield" "Howling Talisman" "Hunting Spear" "Intricate Crest Shield" "Iron Buckler" "Ironhead Spear" "Ironwood Shortbow" "Jade Club" "Jagged Spear" "Jingling Buckler" "Jingling Crest Shield" "Laminate Buckler" "Leaden Greathammer" "Leather Buckler" "Long Quarterstaff" "Lumbering Talisman" "Makeshift Crossbow" "Mammoth Targe" "Marching Mace" "Militant Bow" "Morning Star" "Nettle Talisman" "Noble Tower Shield" "Oak Greathammer" "Omen Crest Shield" "Orichalcum Spear" "Ornate Buckler" "Ornate Buckler" "Painted Tower Shield" "Pearl Buckler" "Pelage Targe" "Piercing Crossbow" "Plated Buckler" "Plated Mace" "Plumed Focus" "Pointed Maul" "Polished Targe" "Primal Talisman" "Quartered Crest Shield" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Royal Tower Shield" "Runed Focus" "Seaglass Spear" "Sectarian Crest Shield" "Seer Crest Shield" Shortbow "Sigil Crest Shield" "Sinister Quarterstaff" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Smooth Quarterstaff" "Soaring Spear" "Solemn Maul" "Spiked Buckler" "Spiked Club" "Spikeward Buckler" "Spiny Talisman" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Stone Targe" "Stone Tower Shield" "Stout Crossbow" "Stratified Targe" "Structured Hammer" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Totemic Greatclub" "Tribal Bow" "Twig Focus" "Twin Bow" "Twin Crossbow" "Varnished Crossbow" "Vicious Talisman" "Voltfang Talisman" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Waxing Quarterstaff" "Wayward Crest Shield" "Whorl Focus" "Wildwood Talisman" "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff" "Zealot Bow"
@@ -4540,14 +4516,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 74
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 72
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Adherent Bow" "Alloy Crossbow" "Ancestor Tower Shield" "Antler Focus" "Anvil Maul" "Arrayed Focus" "Artillery Bow" "Avian Targe" "Bandit Mace" "Barbed Spear" "Barricade Tower Shield" "Barrier Quarterstaff" "Blackfire Crossbow" "Bladed Quarterstaff" "Bladeguard Buckler" "Blazon Crest Shield" "Bleak Crossbow" "Bombard Crossbow" "Braced Tower Shield" "Branched Spear" "Brigand Mace" "Broad Spear" "Bulwark Tower Shield" "Cannonade Crossbow" "Carved Targe" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crossblade Spear" "Crucible Tower Shield" "Crude Bow" "Cruel Talisman" "Crumbling Maul" "Crystal Focus" "Cultist Bow" "Cultist Focus" "Cultist Greathammer" "Dekharan Crest Shield" "Disintegrating Maul" "Druidic Focus" "Dualstring Bow" "Dyad Crossbow" "Edged Buckler" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Feathered Targe" "Felled Greatclub" "Flanged Mace" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Fury Talisman" "Glowering Crest Shield" "Goldworked Tower Shield" "Gothic Quarterstaff" "Guardian Quarterstaff" "Hallowed Focus" "Hardwood Spear" "Hardwood Targe" "Heavy Greathammer" "Hefty Quarterstaff" "Helix Spear" "Heraldric Tower Shield" "Howling Talisman" "Hunting Spear" "Intricate Crest Shield" "Iron Buckler" "Ironhead Spear" "Ironwood Shortbow" "Jade Club" "Jagged Spear" "Jingling Buckler" "Jingling Crest Shield" "Laminate Buckler" "Leaden Greathammer" "Leather Buckler" "Long Quarterstaff" "Lumbering Talisman" "Makeshift Crossbow" "Mammoth Targe" "Marching Mace" "Militant Bow" "Morning Star" "Nettle Talisman" "Noble Tower Shield" "Oak Greathammer" "Omen Crest Shield" "Orichalcum Spear" "Ornate Buckler" "Ornate Buckler" "Painted Tower Shield" "Pearl Buckler" "Pelage Targe" "Piercing Crossbow" "Plated Buckler" "Plated Mace" "Plumed Focus" "Pointed Maul" "Polished Targe" "Primal Talisman" "Quartered Crest Shield" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Royal Tower Shield" "Runed Focus" "Seaglass Spear" "Sectarian Crest Shield" "Seer Crest Shield" Shortbow "Sigil Crest Shield" "Sinister Quarterstaff" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Smooth Quarterstaff" "Soaring Spear" "Solemn Maul" "Spiked Buckler" "Spiked Club" "Spikeward Buckler" "Spiny Talisman" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Stone Targe" "Stone Tower Shield" "Stout Crossbow" "Stratified Targe" "Structured Hammer" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Totemic Greatclub" "Tribal Bow" "Twig Focus" "Twin Bow" "Twin Crossbow" "Varnished Crossbow" "Vicious Talisman" "Voltfang Talisman" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Waxing Quarterstaff" "Wayward Crest Shield" "Whorl Focus" "Wildwood Talisman" "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff" "Zealot Bow"
@@ -4559,14 +4527,6 @@ Hide
 	AreaLevel >= 72
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Adherent's Raiment" "Adorned Wraps" "Aged Cuffs" "Altar Robe" "Ancestral Mail" "Anchorite Garb" "Ancient Mitts" "Ascetic Garb" "Avian Mask" "Baroque Gloves" "Bastion Sabatons" "Beaded Circlet" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Bound Cuffs" "Bound Sandals" "Braced Sabatons" "Brigand Mask" "Brimmed Helm" "Bronze Greaves" "Buckled Wraps" "Bulwark Greaves" "Cabalist Helm" "Carved Greaves" "Ceremonial Robe" "Chain Mail" "Chain Tiara" "Chieftain Cuirass" "Cinched Boots" "Cleric Vestments" "Cloaked Mail" "Closed Helm" "Commander Greathelm" "Corsair Cap" "Corsair Vest" "Covered Sabatons" "Cowled Helm" "Cultist Crown" "Deerstalker Hood" "Detailed Mitts" "Doubled Gauntlets" "Druidic Crown" "Dunerunner Sandals" "Elegant Greathelm" "Elegant Greaves" "Elegant Plate" "Elegant Slippers" "Elementalist Robe" "Elite Greathelm" "Embossed Boots" "Embroidered Gloves" "Explorer Armour" "Face Mask" "Faithful Leggings" "Feathered Mitts" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fierce Greathelm" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Frayed Shoes" "Full Plate" "Fur Plate" "Gauze Wraps" "Gold Circlet" "Gold Gloves" "Goldcast Cuffs" "Golden Mail" "Grim Gloves" "Guarded Helm" "Hallowed Crown" "Hatungo Garb" "Hawker's Jacket" "Heartcarver Mantle" "Heavy Crown" "Heavy Plate" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Hunting Shoes" "Inquisitor Crown" "Intricate Gloves" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Juggernaut Plate" "Jungle Tiara" "Keth Raiment" "Knight Armour" "Knightly Mitts" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Lizardscale Coat" "Mail Sabatons" "Mail Vestments" "Mantled Mail" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Moulded Mitts" "Mystic Raiment" "Noble Greathelm" "Occultist Mantle" "Ornate Cuffs" "Padded Leggings" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Pelt Leggings" "Pelt Mantle" "Pilgrim Vestments" "Plate Gauntlets" "Plated Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Reefsteel Greaves" "Refined Bracers" "Rhoahide Coat" "Ringmail Gauntlets" "River Raiment" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Runner Vest" "Rusted Cuirass" "Rusted Greathelm" "Sacrificial Mantle" "Sandsworn Tiara" "Scale Mail" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Leggings" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shaman Mantle" "Shamanistic Leggings" "Shielded Helm" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Skycrown Tiara" "Smuggler Coat" "Soldier Greathelm" "Solid Mask" "Sombre Gloves" "Spiked Bracers" "Spined Bracers" "Spiral Wraps" "Spired Greathelm" "Spiritbone Crown" "Stacked Sabatons" "Stalking Bracers" "Steel Plate" "Steelmail Gauntlets" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Stone Cuirass" "Stone Greaves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Tattered Robe" "Tempered Mitts" "Threaded Shoes" "Tideseer Mantle" "Torn Gloves" "Trailblazer Armour" "Treerunner Shoes" "Tribal Mask" "Trimmed Greaves" "Twig Circlet" "Vaal Cuirass" "Vagabond Armour" "Veiled Mask" "Verisium Cuffs" "Vermeil Circlet" "Veteran Sabatons" "Viper Cap" "Visored Helm" "Votive Raiment" "Wanderer Shoes" "War Wraps" "Warded Helm" "Warmonger Greathelm" "Warrior Greathelm" "Waxed Jacket" "Wayfarer Jacket" "Weaver Leggings" "Wicker Tiara" "Woven Cap" "Wrapped Cap" "Wrapped Greathelm" "Wrapped Sandals" "Zealot Gauntlets"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 72
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -4588,14 +4548,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 70
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 68
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Adherent Bow" "Alloy Crossbow" "Ancestor Tower Shield" "Antler Focus" "Arrayed Focus" "Artillery Bow" "Avian Targe" "Bandit Mace" "Barbed Spear" "Barricade Tower Shield" "Barrier Quarterstaff" "Blackfire Crossbow" "Bladed Quarterstaff" "Bladeguard Buckler" "Blazon Crest Shield" "Bleak Crossbow" "Bombard Crossbow" "Braced Tower Shield" "Branched Spear" "Brigand Mace" "Broad Spear" "Bulwark Tower Shield" "Cannonade Crossbow" "Carved Targe" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crossblade Spear" "Crucible Tower Shield" "Crude Bow" "Cruel Talisman" "Crumbling Maul" "Crystal Focus" "Cultist Bow" "Cultist Focus" "Cultist Greathammer" "Dekharan Crest Shield" "Disintegrating Maul" "Dualstring Bow" "Dyad Crossbow" "Edged Buckler" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Feathered Targe" "Felled Greatclub" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Fury Talisman" "Glowering Crest Shield" "Goldworked Tower Shield" "Gothic Quarterstaff" "Guardian Quarterstaff" "Hallowed Focus" "Hardwood Spear" "Hardwood Targe" "Heavy Greathammer" "Hefty Quarterstaff" "Helix Spear" "Heraldric Tower Shield" "Howling Talisman" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Jade Club" "Jagged Spear" "Jingling Buckler" "Jingling Crest Shield" "Laminate Buckler" "Leaden Greathammer" "Leather Buckler" "Long Quarterstaff" "Lumbering Talisman" "Makeshift Crossbow" "Marching Mace" "Militant Bow" "Morning Star" "Nettle Talisman" "Noble Tower Shield" "Oak Greathammer" "Omen Crest Shield" "Ornate Buckler" "Painted Tower Shield" "Pearl Buckler" "Pelage Targe" "Piercing Crossbow" "Plated Buckler" "Plated Mace" "Plumed Focus" "Pointed Maul" "Polished Targe" "Primal Talisman" "Quartered Crest Shield" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Runed Focus" "Seaglass Spear" "Sectarian Crest Shield" "Seer Crest Shield" Shortbow "Sigil Crest Shield" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Smooth Quarterstaff" "Solemn Maul" "Spiked Buckler" "Spiked Club" "Spikeward Buckler" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Stone Targe" "Stone Tower Shield" "Stratified Targe" "Structured Hammer" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Totemic Greatclub" "Tribal Bow" "Twig Focus" "Twin Bow" "Twin Crossbow" "Varnished Crossbow" "Vicious Talisman" "Voltfang Talisman" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Waxing Quarterstaff" "Wayward Crest Shield" "Whorl Focus" "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff" "Zealot Bow"
@@ -4607,14 +4559,6 @@ Hide
 	AreaLevel >= 68
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Adherent's Raiment" "Adorned Wraps" "Aged Cuffs" "Altar Robe" "Ancestral Mail" "Anchorite Garb" "Ancient Mitts" "Ascetic Garb" "Avian Mask" "Baroque Gloves" "Bastion Sabatons" "Beaded Circlet" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Braced Sabatons" "Brimmed Helm" "Bronze Greaves" "Buckled Wraps" "Cabalist Helm" "Carved Greaves" "Ceremonial Robe" "Chain Mail" "Chain Tiara" "Chieftain Cuirass" "Cleric Vestments" "Cloaked Mail" "Closed Helm" "Commander Greathelm" "Corsair Cap" "Corsair Vest" "Covered Sabatons" "Cowled Helm" "Cultist Crown" "Deerstalker Hood" "Detailed Mitts" "Doubled Gauntlets" "Dunerunner Sandals" "Elegant Greathelm" "Elegant Greaves" "Elegant Plate" "Elegant Slippers" "Elementalist Robe" "Elite Greathelm" "Embossed Boots" "Embroidered Gloves" "Explorer Armour" "Face Mask" "Feathered Mitts" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fierce Greathelm" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Frayed Shoes" "Full Plate" "Fur Plate" "Gauze Wraps" "Gold Circlet" "Gold Gloves" "Goldcast Cuffs" "Golden Mail" "Guarded Helm" "Hallowed Crown" "Hatungo Garb" "Hawker's Jacket" "Heartcarver Mantle" "Heavy Crown" "Heavy Plate" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Hunting Shoes" "Inquisitor Crown" "Intricate Gloves" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Juggernaut Plate" "Jungle Tiara" "Keth Raiment" "Knight Armour" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Lizardscale Coat" "Mail Sabatons" "Mail Vestments" "Mantled Mail" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Moulded Mitts" "Mystic Raiment" "Noble Greathelm" "Occultist Mantle" "Ornate Cuffs" "Padded Leggings" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Pelt Leggings" "Pelt Mantle" "Pilgrim Vestments" "Plate Gauntlets" "Plated Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Reefsteel Greaves" "Refined Bracers" "Rhoahide Coat" "Ringmail Gauntlets" "River Raiment" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Runner Vest" "Rusted Cuirass" "Rusted Greathelm" "Sacrificial Mantle" "Sandsworn Tiara" "Scale Mail" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Leggings" "Serpentscale Boots" "Serpentscale Coat" "Shabby Hood" "Shaman Mantle" "Shamanistic Leggings" "Shielded Helm" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Smuggler Coat" "Soldier Greathelm" "Solid Mask" "Sombre Gloves" "Spiked Bracers" "Spined Bracers" "Spiral Wraps" "Spired Greathelm" "Spiritbone Crown" "Stacked Sabatons" "Steel Plate" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Stone Cuirass" "Stone Greaves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Tattered Robe" "Tempered Mitts" "Threaded Shoes" "Tideseer Mantle" "Torn Gloves" "Trailblazer Armour" "Treerunner Shoes" "Tribal Mask" "Trimmed Greaves" "Twig Circlet" "Vaal Cuirass" "Vagabond Armour" "Veiled Mask" "Verisium Cuffs" "Vermeil Circlet" "Viper Cap" "Visored Helm" "Votive Raiment" "Warrior Greathelm" "Waxed Jacket" "Wayfarer Jacket" "Weaver Leggings" "Wicker Tiara" "Wrapped Cap" "Wrapped Greathelm" "Wrapped Sandals" "Zealot Gauntlets"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 68
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -4636,14 +4580,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 66
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 64
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Adherent Bow" "Alloy Crossbow" "Ancestor Tower Shield" "Antler Focus" "Arrayed Focus" "Artillery Bow" "Bandit Mace" "Barbed Spear" "Barricade Tower Shield" "Barrier Quarterstaff" "Blackfire Crossbow" "Bladed Quarterstaff" "Blazon Crest Shield" "Bombard Crossbow" "Braced Tower Shield" "Branched Spear" "Brigand Mace" "Broad Spear" "Bulwark Tower Shield" "Cannonade Crossbow" "Carved Targe" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crossblade Spear" "Crucible Tower Shield" "Crude Bow" "Crumbling Maul" "Crystal Focus" "Cultist Bow" "Cultist Focus" "Cultist Greathammer" "Dekharan Crest Shield" "Dualstring Bow" "Dyad Crossbow" "Edged Buckler" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Feathered Targe" "Felled Greatclub" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Fury Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Heavy Greathammer" "Hefty Quarterstaff" "Heraldric Tower Shield" "Howling Talisman" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Jade Club" "Jingling Buckler" "Jingling Crest Shield" "Laminate Buckler" "Leaden Greathammer" "Leather Buckler" "Long Quarterstaff" "Lumbering Talisman" "Makeshift Crossbow" "Marching Mace" "Morning Star" "Nettle Talisman" "Noble Tower Shield" "Oak Greathammer" "Omen Crest Shield" "Ornate Buckler" "Painted Tower Shield" "Pearl Buckler" "Pelage Targe" "Piercing Crossbow" "Plated Buckler" "Plated Mace" "Plumed Focus" "Pointed Maul" "Polished Targe" "Primal Talisman" "Quartered Crest Shield" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Runed Focus" "Seaglass Spear" "Sectarian Crest Shield" "Seer Crest Shield" Shortbow "Sigil Crest Shield" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Smooth Quarterstaff" "Solemn Maul" "Spiked Buckler" "Spiked Club" "Spikeward Buckler" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Stone Targe" "Stone Tower Shield" "Stratified Targe" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Totemic Greatclub" "Tribal Bow" "Twig Focus" "Twin Bow" "Twin Crossbow" "Varnished Crossbow" "Vicious Talisman" "Voltfang Talisman" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Waxing Quarterstaff" "Wayward Crest Shield" "Whorl Focus" "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff" "Zealot Bow"
@@ -4655,14 +4591,6 @@ Hide
 	AreaLevel >= 64
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Adherent's Raiment" "Aged Cuffs" "Altar Robe" "Ancestral Mail" "Anchorite Garb" "Ancient Mitts" "Ascetic Garb" "Baroque Gloves" "Beaded Circlet" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Braced Sabatons" "Brimmed Helm" "Bronze Greaves" "Buckled Wraps" "Chain Mail" "Chain Tiara" "Chieftain Cuirass" "Cleric Vestments" "Cloaked Mail" "Closed Helm" "Commander Greathelm" "Corsair Cap" "Corsair Vest" "Covered Sabatons" "Cowled Helm" "Cultist Crown" "Detailed Mitts" "Doubled Gauntlets" "Elegant Greathelm" "Elegant Greaves" "Elegant Plate" "Elegant Slippers" "Elementalist Robe" "Elite Greathelm" "Embossed Boots" "Embroidered Gloves" "Explorer Armour" "Face Mask" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fierce Greathelm" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Frayed Shoes" "Full Plate" "Fur Plate" "Gauze Wraps" "Gold Circlet" "Goldcast Cuffs" "Guarded Helm" "Hallowed Crown" "Hatungo Garb" "Heavy Crown" "Heavy Plate" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Hunting Shoes" "Intricate Gloves" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Itinerant Jacket" "Jade Tiara" "Jewelled Gloves" "Juggernaut Plate" "Keth Raiment" "Knight Armour" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Layered Vest" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Mail Sabatons" "Mail Vestments" "Mantled Mail" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Moulded Mitts" "Mystic Raiment" "Occultist Mantle" "Padded Leggings" "Pariah Mask" "Pathfinder Coat" "Pauascale Gloves" "Pelt Leggings" "Pelt Mantle" "Pilgrim Vestments" "Plate Gauntlets" "Plated Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Reefsteel Greaves" "Refined Bracers" "Rhoahide Coat" "Ringmail Gauntlets" "River Raiment" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Runner Vest" "Rusted Cuirass" "Rusted Greathelm" "Sacrificial Mantle" "Sandsworn Tiara" "Scale Mail" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Leggings" "Serpentscale Coat" "Shabby Hood" "Shaman Mantle" "Shielded Helm" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Smuggler Coat" "Soldier Greathelm" "Solid Mask" "Sombre Gloves" "Spined Bracers" "Spiral Wraps" "Spired Greathelm" "Spiritbone Crown" "Stacked Sabatons" "Steel Plate" "Steelpoint Shoes" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Stone Greaves" "Straw Sandals" "Studded Boots" "Studded Vest" "Suede Bracers" "Swathed Cap" "Tattered Robe" "Tempered Mitts" "Threaded Shoes" "Tideseer Mantle" "Torn Gloves" "Trailblazer Armour" "Tribal Mask" "Trimmed Greaves" "Twig Circlet" "Vaal Cuirass" "Vagabond Armour" "Veiled Mask" "Verisium Cuffs" "Vermeil Circlet" "Viper Cap" "Visored Helm" "Votive Raiment" "Warrior Greathelm" "Waxed Jacket" "Wayfarer Jacket" "Weaver Leggings" "Wicker Tiara" "Wrapped Cap" "Wrapped Greathelm" "Wrapped Sandals"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 64
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -4684,14 +4612,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 62
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 60
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Alloy Crossbow" "Ancestor Tower Shield" "Antler Focus" "Arrayed Focus" "Artillery Bow" "Barbed Spear" "Barricade Tower Shield" "Barrier Quarterstaff" "Blackfire Crossbow" "Blazon Crest Shield" "Bombard Crossbow" "Braced Tower Shield" "Branched Spear" "Brigand Mace" "Broad Spear" "Bulwark Tower Shield" "Carved Targe" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crossblade Spear" "Crucible Tower Shield" "Crude Bow" "Crumbling Maul" "Crystal Focus" "Cultist Bow" "Cultist Greathammer" "Dekharan Crest Shield" "Dualstring Bow" "Dyad Crossbow" "Edged Buckler" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Feathered Targe" "Felled Greatclub" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hefty Quarterstaff" "Heraldric Tower Shield" "Howling Talisman" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Jade Club" "Jingling Crest Shield" "Laminate Buckler" "Leaden Greathammer" "Leather Buckler" "Long Quarterstaff" "Lumbering Talisman" "Makeshift Crossbow" "Marching Mace" "Morning Star" "Nettle Talisman" "Oak Greathammer" "Omen Crest Shield" "Ornate Buckler" "Painted Tower Shield" "Pearl Buckler" "Pelage Targe" "Piercing Crossbow" "Plated Buckler" "Plated Mace" "Plumed Focus" "Pointed Maul" "Polished Targe" "Primal Talisman" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Runed Focus" "Seaglass Spear" "Sectarian Crest Shield" "Seer Crest Shield" Shortbow "Sigil Crest Shield" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Smooth Quarterstaff" "Solemn Maul" "Spiked Buckler" "Spiked Club" "Spikeward Buckler" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Stone Tower Shield" "Stratified Targe" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Totemic Greatclub" "Tribal Bow" "Twig Focus" "Twin Bow" "Twin Crossbow" "Varnished Crossbow" "Vicious Talisman" "Voltfang Talisman" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Waxing Quarterstaff" "Wayward Crest Shield" "Whorl Focus" "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff" "Zealot Bow"
@@ -4708,14 +4628,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 60
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 58
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Alloy Crossbow" "Ancestor Tower Shield" "Antler Focus" "Artillery Bow" "Barbed Spear" "Barricade Tower Shield" "Barrier Quarterstaff" "Blackfire Crossbow" "Blazon Crest Shield" "Bombard Crossbow" "Braced Tower Shield" "Brigand Mace" "Broad Spear" "Carved Targe" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crossblade Spear" "Crucible Tower Shield" "Crude Bow" "Crumbling Maul" "Crystal Focus" "Cultist Bow" "Cultist Greathammer" "Dualstring Bow" "Dyad Crossbow" "Edged Buckler" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Feathered Targe" "Felled Greatclub" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hefty Quarterstaff" "Heraldric Tower Shield" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Jade Club" "Jingling Crest Shield" "Laminate Buckler" "Leaden Greathammer" "Leather Buckler" "Long Quarterstaff" "Lumbering Talisman" "Makeshift Crossbow" "Morning Star" "Nettle Talisman" "Oak Greathammer" "Omen Crest Shield" "Ornate Buckler" "Painted Tower Shield" "Pearl Buckler" "Pelage Targe" "Piercing Crossbow" "Plated Buckler" "Plated Mace" "Plumed Focus" "Pointed Maul" "Primal Talisman" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Runed Focus" "Seaglass Spear" "Sectarian Crest Shield" "Seer Crest Shield" Shortbow "Sigil Crest Shield" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Smooth Quarterstaff" "Spiked Buckler" "Spiked Club" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Stone Tower Shield" "Stratified Targe" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Totemic Greatclub" "Tribal Bow" "Twig Focus" "Varnished Crossbow" "Vicious Talisman" "Voltfang Talisman" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Wayward Crest Shield" "Whorl Focus" "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff" "Zealot Bow"
@@ -4732,14 +4644,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 58
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 56
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Alloy Crossbow" "Ancestor Tower Shield" "Antler Focus" "Artillery Bow" "Barbed Spear" "Barricade Tower Shield" "Barrier Quarterstaff" "Blackfire Crossbow" "Blazon Crest Shield" "Bombard Crossbow" "Braced Tower Shield" "Brigand Mace" "Broad Spear" "Carved Targe" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crossblade Spear" "Crucible Tower Shield" "Crude Bow" "Crumbling Maul" "Crystal Focus" "Cultist Bow" "Cultist Greathammer" "Dualstring Bow" "Dyad Crossbow" "Edged Buckler" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Feathered Targe" "Felled Greatclub" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hefty Quarterstaff" "Heraldric Tower Shield" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Jade Club" "Jingling Crest Shield" "Laminate Buckler" "Leaden Greathammer" "Leather Buckler" "Long Quarterstaff" "Lumbering Talisman" "Makeshift Crossbow" "Morning Star" "Nettle Talisman" "Oak Greathammer" "Omen Crest Shield" "Ornate Buckler" "Painted Tower Shield" "Pearl Buckler" "Pelage Targe" "Piercing Crossbow" "Plated Buckler" "Plated Mace" "Plumed Focus" "Pointed Maul" "Primal Talisman" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Runed Focus" "Seaglass Spear" "Sectarian Crest Shield" "Seer Crest Shield" Shortbow "Sigil Crest Shield" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Smooth Quarterstaff" "Spiked Buckler" "Spiked Club" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Stone Tower Shield" "Stratified Targe" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Totemic Greatclub" "Tribal Bow" "Twig Focus" "Varnished Crossbow" "Vicious Talisman" "Voltfang Talisman" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Wayward Crest Shield" "Whorl Focus" "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff" "Zealot Bow"
@@ -4751,14 +4655,6 @@ Hide
 	AreaLevel >= 56
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Aged Cuffs" "Altar Robe" "Ancestral Mail" "Anchorite Garb" "Ascetic Garb" "Beaded Circlet" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Braced Sabatons" "Brimmed Helm" "Bronze Greaves" "Chain Mail" "Chain Tiara" "Chieftain Cuirass" "Cleric Vestments" "Cloaked Mail" "Closed Helm" "Commander Greathelm" "Corsair Cap" "Corsair Vest" "Cowled Helm" "Cultist Crown" "Detailed Mitts" "Doubled Gauntlets" "Elementalist Robe" "Elite Greathelm" "Embossed Boots" "Embroidered Gloves" "Explorer Armour" "Face Mask" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Fierce Greathelm" "Fine Bracers" "Firm Bracers" "Flared Boots" "Flax Sandals" "Frayed Shoes" "Full Plate" "Fur Plate" "Gauze Wraps" "Gold Circlet" "Goldcast Cuffs" "Guarded Helm" "Heavy Crown" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Hunting Shoes" "Intricate Gloves" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Jade Tiara" "Jewelled Gloves" "Juggernaut Plate" "Keth Raiment" "Knight Armour" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Leather Vest" "Leatherbound Hood" "Linen Wraps" "Lizardscale Boots" "Mail Sabatons" "Mail Vestments" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Moulded Mitts" "Mystic Raiment" "Padded Leggings" "Pathfinder Coat" "Pauascale Gloves" "Pelt Leggings" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Reefsteel Greaves" "Rhoahide Coat" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Sacrificial Mantle" "Scale Mail" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Leggings" "Serpentscale Coat" "Shabby Hood" "Shaman Mantle" "Shielded Helm" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Smuggler Coat" "Soldier Greathelm" "Solid Mask" "Sombre Gloves" "Spined Bracers" "Spiral Wraps" "Spired Greathelm" "Spiritbone Crown" "Stacked Sabatons" "Steel Plate" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Stone Greaves" "Straw Sandals" "Studded Vest" "Suede Bracers" "Swathed Cap" "Tattered Robe" "Tempered Mitts" "Threaded Shoes" "Tideseer Mantle" "Torn Gloves" "Tribal Mask" "Trimmed Greaves" "Twig Circlet" "Vaal Cuirass" "Vagabond Armour" "Veiled Mask" "Vermeil Circlet" "Viper Cap" "Visored Helm" "Votive Raiment" "Warrior Greathelm" "Waxed Jacket" "Wayfarer Jacket" "Wicker Tiara" "Wrapped Greathelm" "Wrapped Sandals"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 56
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -4780,14 +4676,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 54
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 52
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Alloy Crossbow" "Antler Focus" "Artillery Bow" "Barbed Spear" "Barricade Tower Shield" "Barrier Quarterstaff" "Blackfire Crossbow" "Blazon Crest Shield" "Bombard Crossbow" "Braced Tower Shield" "Brigand Mace" "Broad Spear" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crossblade Spear" "Crucible Tower Shield" "Crude Bow" "Crumbling Maul" "Crystal Focus" "Cultist Bow" "Cultist Greathammer" "Dualstring Bow" "Dyad Crossbow" "Edged Buckler" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Feathered Targe" "Felled Greatclub" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hefty Quarterstaff" "Heraldric Tower Shield" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Jingling Crest Shield" "Laminate Buckler" "Leaden Greathammer" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Morning Star" "Nettle Talisman" "Oak Greathammer" "Omen Crest Shield" "Painted Tower Shield" "Pearl Buckler" "Pelage Targe" "Plated Buckler" "Plated Mace" "Plumed Focus" "Pointed Maul" "Primal Talisman" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Runed Focus" "Sectarian Crest Shield" Shortbow "Sigil Crest Shield" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Spiked Buckler" "Spiked Club" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Stone Tower Shield" "Stratified Targe" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Twig Focus" "Varnished Crossbow" "Vicious Talisman" "Voltfang Talisman" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Wayward Crest Shield" "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff" "Zealot Bow"
@@ -4799,14 +4687,6 @@ Hide
 	AreaLevel >= 52
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Aged Cuffs" "Altar Robe" "Anchorite Garb" "Beaded Circlet" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Braced Sabatons" "Brimmed Helm" "Bronze Greaves" "Chain Mail" "Chain Tiara" "Cleric Vestments" "Cloaked Mail" "Commander Greathelm" "Corsair Cap" "Corsair Vest" "Cowled Helm" "Cultist Crown" "Doubled Gauntlets" "Elementalist Robe" "Elite Greathelm" "Embossed Boots" "Explorer Armour" "Face Mask" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Full Plate" "Fur Plate" "Gauze Wraps" "Gold Circlet" "Goldcast Cuffs" "Guarded Helm" "Heavy Crown" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Hunting Shoes" "Intricate Gloves" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Jewelled Gloves" "Juggernaut Plate" "Keth Raiment" "Knight Armour" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Leather Vest" "Linen Wraps" "Lizardscale Boots" "Mail Sabatons" "Mail Vestments" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Moulded Mitts" "Padded Leggings" "Pathfinder Coat" "Pauascale Gloves" "Pelt Leggings" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Rhoahide Coat" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Sacrificial Mantle" "Scale Mail" "Scalper's Jacket" "Scoundrel Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Leggings" "Serpentscale Coat" "Shabby Hood" "Shaman Mantle" "Shielded Helm" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Soldier Greathelm" "Sombre Gloves" "Spined Bracers" "Spiral Wraps" "Spired Greathelm" "Stacked Sabatons" "Steel Plate" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Stone Greaves" "Straw Sandals" "Studded Vest" "Suede Bracers" "Swathed Cap" "Tattered Robe" "Tempered Mitts" "Threaded Shoes" "Torn Gloves" "Tribal Mask" "Trimmed Greaves" "Twig Circlet" "Vaal Cuirass" "Vagabond Armour" "Veiled Mask" "Vermeil Circlet" "Viper Cap" "Visored Helm" "Votive Raiment" "Warrior Greathelm" "Waxed Jacket" "Wayfarer Jacket" "Wicker Tiara" "Wrapped Greathelm" "Wrapped Sandals"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 52
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -4828,14 +4708,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 50
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 48
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Alloy Crossbow" "Antler Focus" "Barbed Spear" "Barricade Tower Shield" "Barrier Quarterstaff" "Blazon Crest Shield" "Bombard Crossbow" "Braced Tower Shield" "Brigand Mace" "Broad Spear" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Construct Crossbow" "Construct Hammer" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crude Bow" "Crumbling Maul" "Crystal Focus" "Cultist Bow" "Cultist Greathammer" "Dualstring Bow" "Dyad Crossbow" "Edged Buckler" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Feathered Targe" "Felled Greatclub" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Heraldric Tower Shield" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Jingling Crest Shield" "Leaden Greathammer" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Omen Crest Shield" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" "Plated Mace" "Plumed Focus" "Primal Talisman" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Sectarian Crest Shield" Shortbow "Sigil Crest Shield" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Spiked Buckler" "Spiked Club" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Stone Tower Shield" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Twig Focus" "Varnished Crossbow" "Vicious Talisman" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff" "Zealot Bow"
@@ -4847,14 +4719,6 @@ Hide
 	AreaLevel >= 48
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Aged Cuffs" "Altar Robe" "Anchorite Garb" "Beaded Circlet" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Braced Sabatons" "Brimmed Helm" "Bronze Greaves" "Chain Mail" "Chain Tiara" "Cloaked Mail" "Cowled Helm" "Cultist Crown" "Doubled Gauntlets" "Elite Greathelm" "Embossed Boots" "Explorer Armour" "Face Mask" "Feathered Robe" "Feathered Sandals" "Feathered Tiara" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Full Plate" "Fur Plate" "Gauze Wraps" "Gold Circlet" "Goldcast Cuffs" "Guarded Helm" "Heavy Crown" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Hunting Shoes" "Intricate Gloves" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Jewelled Gloves" "Keth Raiment" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Leather Vest" "Linen Wraps" "Lizardscale Boots" "Mail Sabatons" "Mail Vestments" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Moulded Mitts" "Padded Leggings" "Pathfinder Coat" "Pelt Leggings" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Rhoahide Coat" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Sacrificial Mantle" "Scale Mail" "Scalper's Jacket" "Scout's Vest" "Sectioned Bracers" "Secured Leggings" "Serpentscale Coat" "Shabby Hood" "Shaman Mantle" "Shielded Helm" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Soldier Greathelm" "Sombre Gloves" "Spined Bracers" "Spiral Wraps" "Spired Greathelm" "Stacked Sabatons" "Steel Plate" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Stone Greaves" "Straw Sandals" "Studded Vest" "Suede Bracers" "Swathed Cap" "Tattered Robe" "Tempered Mitts" "Threaded Shoes" "Torn Gloves" "Tribal Mask" "Trimmed Greaves" "Twig Circlet" "Vaal Cuirass" "Vagabond Armour" "Veiled Mask" "Viper Cap" "Visored Helm" "Votive Raiment" "Warrior Greathelm" "Waxed Jacket" "Wayfarer Jacket" "Wicker Tiara" "Wrapped Greathelm" "Wrapped Sandals"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 48
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -4876,14 +4740,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 46
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 44
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Alloy Crossbow" "Antler Focus" "Barbed Spear" "Barricade Tower Shield" "Blazon Crest Shield" "Bombard Crossbow" "Braced Tower Shield" "Brigand Mace" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crude Bow" "Crystal Focus" "Cultist Bow" "Cultist Greathammer" "Dualstring Bow" "Dyad Crossbow" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Felled Greatclub" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Heraldric Tower Shield" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Jingling Crest Shield" "Leaden Greathammer" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" "Plated Mace" "Primal Talisman" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Sectarian Crest Shield" Shortbow "Sigil Crest Shield" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Spiked Buckler" "Spiked Club" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Twig Focus" "Varnished Crossbow" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
@@ -4895,14 +4751,6 @@ Hide
 	AreaLevel >= 44
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Aged Cuffs" "Anchorite Garb" "Beaded Circlet" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Braced Sabatons" "Brimmed Helm" "Bronze Greaves" "Chain Mail" "Chain Tiara" "Cloaked Mail" "Cowled Helm" "Cultist Crown" "Elite Greathelm" "Embossed Boots" "Explorer Armour" "Face Mask" "Feathered Robe" "Feathered Tiara" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Full Plate" "Fur Plate" "Gauze Wraps" "Guarded Helm" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Jewelled Gloves" "Keth Raiment" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Leather Vest" "Linen Wraps" "Mail Sabatons" "Mail Vestments" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Padded Leggings" "Pathfinder Coat" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Rhoahide Coat" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Scout's Vest" "Sectioned Bracers" "Secured Leggings" "Shabby Hood" "Shaman Mantle" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Soldier Greathelm" "Sombre Gloves" "Spired Greathelm" "Steel Plate" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Straw Sandals" "Studded Vest" "Suede Bracers" "Swathed Cap" "Tattered Robe" "Tempered Mitts" "Threaded Shoes" "Torn Gloves" "Trimmed Greaves" "Twig Circlet" "Vagabond Armour" "Veiled Mask" "Visored Helm" "Votive Raiment" "Waxed Jacket" "Wayfarer Jacket" "Wicker Tiara" "Wrapped Greathelm" "Wrapped Sandals"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 44
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -4924,14 +4772,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 42
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 40
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Alloy Crossbow" "Antler Focus" "Barbed Spear" "Barricade Tower Shield" "Blazon Crest Shield" "Bombard Crossbow" "Braced Tower Shield" "Brigand Mace" "Changeling Talisman" "Chiseled Targe" "Cinderbark Talisman" "Composite Bow" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crude Bow" "Crystal Focus" "Cultist Bow" "Cultist Greathammer" "Dualstring Bow" "Dyad Crossbow" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Felled Greatclub" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Heraldric Tower Shield" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Jingling Crest Shield" "Leaden Greathammer" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" "Plated Mace" "Primal Talisman" "Rabid Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Ringed Buckler" "Sectarian Crest Shield" Shortbow "Sigil Crest Shield" "Slicing Quarterstaff" "Slim Mace" "Smithing Hammer" "Spiked Buckler" "Spiked Club" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Twig Focus" "Varnished Crossbow" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
@@ -4943,14 +4783,6 @@ Hide
 	AreaLevel >= 40
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Aged Cuffs" "Anchorite Garb" "Beaded Circlet" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Braced Sabatons" "Brimmed Helm" "Bronze Greaves" "Chain Mail" "Chain Tiara" "Cloaked Mail" "Cowled Helm" "Cultist Crown" "Elite Greathelm" "Embossed Boots" "Explorer Armour" "Face Mask" "Feathered Robe" "Feathered Tiara" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Full Plate" "Fur Plate" "Gauze Wraps" "Guarded Helm" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Hunter Hood" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Jewelled Gloves" "Keth Raiment" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Leather Vest" "Linen Wraps" "Mail Sabatons" "Mail Vestments" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Padded Leggings" "Pathfinder Coat" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Rhoahide Coat" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Scout's Vest" "Sectioned Bracers" "Secured Leggings" "Shabby Hood" "Shaman Mantle" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Soldier Greathelm" "Sombre Gloves" "Spired Greathelm" "Steel Plate" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Straw Sandals" "Studded Vest" "Suede Bracers" "Swathed Cap" "Tattered Robe" "Tempered Mitts" "Threaded Shoes" "Torn Gloves" "Trimmed Greaves" "Twig Circlet" "Vagabond Armour" "Veiled Mask" "Visored Helm" "Votive Raiment" "Waxed Jacket" "Wayfarer Jacket" "Wicker Tiara" "Wrapped Greathelm" "Wrapped Sandals"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 40
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -4972,14 +4804,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 38
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 36
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Alloy Crossbow" "Antler Focus" "Barricade Tower Shield" "Blazon Crest Shield" "Braced Tower Shield" "Brigand Mace" "Changeling Talisman" "Cinderbark Talisman" "Composite Bow" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crescent Targe" "Crude Bow" "Crystal Focus" "Cultist Greathammer" "Dualstring Bow" "Dyad Crossbow" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Felled Greatclub" "Forge Maul" "Forked Spear" "Frenzied Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Heraldric Tower Shield" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Jingling Crest Shield" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" "Plated Mace" "Primal Talisman" "Rampart Tower Shield" "Recurve Bow" "Ridged Buckler" "Sectarian Crest Shield" Shortbow "Sigil Crest Shield" "Slim Mace" "Smithing Hammer" "Spiked Buckler" "Spiked Club" "Splintered Tower Shield" "Steelpoint Quarterstaff" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Temple Maul" "Tense Crossbow" "Tonal Focus" "Twig Focus" "Varnished Crossbow" "Voodoo Focus" "War Spear" "Warden Bow" Warpick "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
@@ -4991,14 +4815,6 @@ Hide
 	AreaLevel >= 36
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Aged Cuffs" "Beaded Circlet" "Bolstered Mitts" "Bone Raiment" "Bound Bracers" "Braced Sabatons" "Brimmed Helm" "Bronze Greaves" "Chain Mail" "Chain Tiara" "Cloaked Mail" "Cowled Helm" "Cultist Crown" "Elite Greathelm" "Embossed Boots" "Face Mask" "Feathered Robe" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Fur Plate" "Gauze Wraps" "Guarded Helm" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Ironclad Vestments" "Jewelled Gloves" "Keth Raiment" "Lace Hood" "Laced Boots" "Lattice Sandals" "Layered Gauntlets" "Leather Vest" "Linen Wraps" "Mail Sabatons" "Mail Vestments" "Marabout Garb" "Maraketh Cuirass" "Martyr Crown" "Padded Leggings" "Pathfinder Coat" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Rhoahide Coat" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Scout's Vest" "Sectioned Bracers" "Secured Leggings" "Shabby Hood" "Shaman Mantle" "Shrouded Vest" "Silk Robe" "Silk Slippers" "Soldier Greathelm" "Sombre Gloves" "Spired Greathelm" "Steel Plate" "Steeltoe Boots" "Stitched Gloves" "Stocky Mitts" "Straw Sandals" "Studded Vest" "Suede Bracers" "Swathed Cap" "Tattered Robe" "Tempered Mitts" "Threaded Shoes" "Torn Gloves" "Trimmed Greaves" "Twig Circlet" "Vagabond Armour" "Veiled Mask" "Visored Helm" "Waxed Jacket" "Wayfarer Jacket" "Wicker Tiara" "Wrapped Greathelm" "Wrapped Sandals"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 36
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -5020,14 +4836,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 34
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 32
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Antler Focus" "Barricade Tower Shield" "Blazon Crest Shield" "Braced Tower Shield" "Changeling Talisman" "Cinderbark Talisman" "Composite Bow" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crude Bow" "Cultist Greathammer" "Dyad Crossbow" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Felled Greatclub" "Forge Maul" "Frenzied Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" "Recurve Bow" "Ridged Buckler" Shortbow "Sigil Crest Shield" "Slim Mace" "Smithing Hammer" "Spiked Club" "Splintered Tower Shield" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Tense Crossbow" "Tonal Focus" "Twig Focus" "Varnished Crossbow" "War Spear" "Warden Bow" Warpick "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
@@ -5039,14 +4847,6 @@ Hide
 	AreaLevel >= 32
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Beaded Circlet" "Bone Raiment" "Bound Bracers" "Brimmed Helm" "Bronze Greaves" "Chain Mail" "Cultist Crown" "Embossed Boots" "Face Mask" "Feathered Robe" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Fur Plate" "Gauze Wraps" "Guarded Helm" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Lace Hood" "Laced Boots" "Lattice Sandals" "Leather Vest" "Mail Sabatons" "Mail Vestments" "Marabout Garb" "Maraketh Cuirass" "Padded Leggings" "Pathfinder Coat" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Rhoahide Coat" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Shrouded Vest" "Silk Robe" "Soldier Greathelm" "Sombre Gloves" "Stitched Gloves" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Tempered Mitts" "Torn Gloves" "Twig Circlet" "Vagabond Armour" "Visored Helm" "Waxed Jacket" "Wicker Tiara" "Wrapped Greathelm" "Wrapped Sandals"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 32
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -5068,14 +4868,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 30
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 28
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Antler Focus" "Barricade Tower Shield" "Blazon Crest Shield" "Braced Tower Shield" "Changeling Talisman" "Cinderbark Talisman" "Composite Bow" "Crackling Quarterstaff" "Crescent Quarterstaff" "Crude Bow" "Cultist Greathammer" "Dyad Crossbow" "Effigial Tower Shield" "Emblem Crest Shield" "Engraved Focus" "Familial Talisman" "Felled Greatclub" "Forge Maul" "Frenzied Talisman" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" "Recurve Bow" "Ridged Buckler" Shortbow "Sigil Crest Shield" "Slim Mace" "Smithing Hammer" "Spiked Club" "Splintered Tower Shield" "Studded Greatclub" "Studded Targe" "Sturdy Crossbow" "Tense Crossbow" "Tonal Focus" "Twig Focus" "Varnished Crossbow" "War Spear" "Warden Bow" Warpick "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
@@ -5087,14 +4879,6 @@ Hide
 	AreaLevel >= 28
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Beaded Circlet" "Bone Raiment" "Bound Bracers" "Brimmed Helm" "Bronze Greaves" "Chain Mail" "Cultist Crown" "Embossed Boots" "Face Mask" "Feathered Robe" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Fur Plate" "Gauze Wraps" "Guarded Helm" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Hooded Mask" "Horned Crown" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Lace Hood" "Laced Boots" "Lattice Sandals" "Leather Vest" "Mail Sabatons" "Mail Vestments" "Marabout Garb" "Maraketh Cuirass" "Padded Leggings" "Pathfinder Coat" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Rhoahide Coat" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Shrouded Vest" "Silk Robe" "Soldier Greathelm" "Sombre Gloves" "Stitched Gloves" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Tempered Mitts" "Torn Gloves" "Twig Circlet" "Vagabond Armour" "Visored Helm" "Waxed Jacket" "Wicker Tiara" "Wrapped Greathelm" "Wrapped Sandals"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 28
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -5116,14 +4900,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 26
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 24
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Antler Focus" "Barricade Tower Shield" "Blazon Crest Shield" "Braced Tower Shield" "Changeling Talisman" "Cinderbark Talisman" "Crackling Quarterstaff" "Crude Bow" "Engraved Focus" "Familial Talisman" "Felled Greatclub" "Forge Maul" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" "Recurve Bow" Shortbow "Sigil Crest Shield" "Slim Mace" "Smithing Hammer" "Spiked Club" "Splintered Tower Shield" "Studded Greatclub" "Sturdy Crossbow" "Tense Crossbow" "Twig Focus" "Varnished Crossbow" "Warden Bow" "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
@@ -5140,14 +4916,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 24
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 22
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Antler Focus" "Barricade Tower Shield" "Blazon Crest Shield" "Braced Tower Shield" "Changeling Talisman" "Cinderbark Talisman" "Crackling Quarterstaff" "Crude Bow" "Engraved Focus" "Familial Talisman" "Felled Greatclub" "Forge Maul" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hunting Spear" "Iron Buckler" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" "Recurve Bow" Shortbow "Sigil Crest Shield" "Slim Mace" "Smithing Hammer" "Spiked Club" "Splintered Tower Shield" "Studded Greatclub" "Sturdy Crossbow" "Tense Crossbow" "Twig Focus" "Varnished Crossbow" "Warden Bow" "Winged Spear" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
@@ -5159,14 +4927,6 @@ Hide
 	AreaLevel >= 22
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Bone Raiment" "Brimmed Helm" "Chain Mail" "Face Mask" "Feathered Robe" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Fur Plate" "Gauze Wraps" "Guarded Helm" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Horned Crown" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Laced Boots" "Leather Vest" "Mail Sabatons" "Padded Leggings" "Pathfinder Coat" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Raider Plate" "Rawhide Boots" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Shrouded Vest" "Soldier Greathelm" "Sombre Gloves" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Torn Gloves" "Twig Circlet" "Waxed Jacket" "Wicker Tiara" "Wrapped Sandals"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 22
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -5188,14 +4948,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 20
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 18
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Antler Focus" "Blazon Crest Shield" "Braced Tower Shield" "Changeling Talisman" "Cinderbark Talisman" "Crude Bow" "Felled Greatclub" "Forge Maul" "Gothic Quarterstaff" "Hardwood Spear" "Hardwood Targe" "Hunting Spear" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" "Pelage Targe" "Plated Buckler" Shortbow "Sigil Crest Shield" "Slim Mace" "Smithing Hammer" "Splintered Tower Shield" "Sturdy Crossbow" "Tense Crossbow" "Twig Focus" "Warden Bow" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
@@ -5207,14 +4959,6 @@ Hide
 	AreaLevel >= 18
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Brimmed Helm" "Chain Mail" "Face Mask" "Feathered Robe" "Felt Cap" "Firm Bracers" "Frayed Shoes" "Fur Plate" "Gauze Wraps" "Guarded Helm" "Hermit Garb" "Hewn Mask" "Hexer's Robe" "Horned Crown" "Iron Crown" "Iron Cuirass" "Iron Greaves" "Laced Boots" "Leather Vest" "Mail Sabatons" "Padded Leggings" "Pathfinder Coat" "Pelt Mantle" "Pilgrim Vestments" "Quilted Vest" "Rawhide Boots" "Ringmail Gauntlets" "Riveted Mitts" "Rogue Armour" "Rope Cuffs" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Soldier Greathelm" "Sombre Gloves" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Torn Gloves" "Twig Circlet" "Waxed Jacket" "Wicker Tiara" "Wrapped Sandals"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 18
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -5236,14 +4980,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 16
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 14
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Blazon Crest Shield" "Changeling Talisman" "Crude Bow" "Felled Greatclub" "Hardwood Spear" "Hardwood Targe" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" Shortbow "Smithing Hammer" "Splintered Tower Shield" "Tense Crossbow" "Twig Focus" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
@@ -5260,14 +4996,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 14
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 12
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Blazon Crest Shield" "Changeling Talisman" "Crude Bow" "Felled Greatclub" "Hardwood Spear" "Hardwood Targe" "Ironhead Spear" "Leather Buckler" "Long Quarterstaff" "Makeshift Crossbow" "Nettle Talisman" "Oak Greathammer" "Painted Tower Shield" Shortbow "Smithing Hammer" "Splintered Tower Shield" "Tense Crossbow" "Twig Focus" "Wooden Buckler" "Wooden Club" "Woven Focus" "Wrapped Quarterstaff"
@@ -5279,14 +5007,6 @@ Hide
 	AreaLevel >= 12
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Brimmed Helm" "Chain Mail" "Feathered Robe" "Fur Plate" "Hermit Garb" "Hewn Mask" "Iron Crown" "Leather Vest" "Pilgrim Vestments" "Quilted Vest" "Rawhide Boots" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shabby Hood" "Stocky Mitts" "Straw Sandals" "Suede Bracers" "Tattered Robe" "Torn Gloves" "Twig Circlet"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 12
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -5308,14 +5028,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 10
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 8
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Blazon Crest Shield" "Changeling Talisman" "Crude Bow" "Felled Greatclub" "Hardwood Spear" "Hardwood Targe" "Leather Buckler" "Makeshift Crossbow" "Splintered Tower Shield" "Twig Focus" "Wooden Club" "Wrapped Quarterstaff"
@@ -5327,14 +5039,6 @@ Hide
 	AreaLevel >= 8
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Leather Vest" "Rusted Cuirass" "Tattered Robe"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 8
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -5356,14 +5060,6 @@ Hide
 	DisableDropSound
 
 Hide
-	AreaLevel >= 6
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 4
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 	BaseType == "Felled Greatclub" "Makeshift Crossbow" "Wooden Club" "Wrapped Quarterstaff"
@@ -5375,14 +5071,6 @@ Hide
 	AreaLevel >= 4
 	Class == Helmets "Body Armours" Gloves Boots
 	BaseType == "Aged Cuffs" "Ancient Cuffs" "Apostle Leggings" "Avian Mask" "Bastion Sabatons" "Bound Cuffs" "Braced Sabatons" "Brigand Mask" "Brimmed Helm" "Cabalist Helm" "Champion Helm" "Charmed Shoes" "Closed Helm" "Commander Gauntlets" "Covered Sabatons" "Cowled Helm" "Cryptic Helm" "Cultist Crown" "Cultist Gauntlets" "Divine Crown" "Doubled Gauntlets" "Druidic Crown" "Face Mask" "Faithful Leggings" "Faridun Mask" "Fortress Sabatons" "Frayed Shoes" "Gleaming Cuffs" "Goldcast Cuffs" "Guarded Helm" "Hallowed Crown" "Heavy Crown" "Hewn Mask" "Hooded Mask" "Horned Crown" "Hunting Shoes" "Inquisitor Crown" "Iron Crown" "Layered Gauntlets" "Leather Vest" "Mail Sabatons" "Martyr Crown" "Noble Sabatons" "Ornate Cuffs" "Padded Leggings" "Pariah Mask" "Pelt Leggings" "Plate Gauntlets" "Quickslip Shoes" "Ringmail Gauntlets" "Rope Cuffs" "Rusted Cuirass" "Saintly Crown" "Secured Leggings" "Shamanistic Leggings" "Shielded Helm" "Soaring Mask" "Solid Mask" "Spiritbone Crown" "Stacked Sabatons" "Steelmail Gauntlets" "Steelpoint Shoes" "Threaded Shoes" "Treerunner Shoes" "Tribal Mask" "Veiled Mask" "Verisium Cuffs" "Veteran Sabatons" "Visored Helm" "Wanderer Shoes" "Warded Helm" "Warlock Leggings" "Weaver Leggings" "Zealot Gauntlets"
-	Rarity == Normal Magic
-
-	DisableDropSound
-
-Hide
-	AreaLevel >= 4
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
 	Rarity == Normal Magic
 
 	DisableDropSound
@@ -5404,14 +5092,6 @@ Hide
 	DisableDropSound
 
 #Hide
-#	AreaLevel >= 2
-#	Class == "Life Flasks" "Mana Flasks"
-#	BaseType ==
-#	Rarity == Normal Magic
-#
-#	DisableDropSound
-
-#Hide
 #	AreaLevel >= 0
 #	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers
 #	BaseType ==
@@ -5427,10 +5107,58 @@ Hide
 
 	DisableDropSound
 
-#Hide
-#	AreaLevel >= 0
-#	Class == "Life Flasks" "Mana Flasks"
-#	BaseType ==
-#	Rarity == Normal Magic
-#
-#	DisableDropSound
+Hide
+	AreaLevel >= 60
+	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask" "Transcendent Life Flask" "Transcendent Mana Flask"
+	Rarity < Unique
+
+	DisableDropSound
+
+Hide
+	AreaLevel >= 50
+	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Gargantuan Life Flask" "Gargantuan Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
+	Rarity < Unique
+
+	DisableDropSound
+
+Hide
+	AreaLevel >= 40
+	BaseType == "Colossal Life Flask" "Colossal Mana Flask" "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
+	Rarity < Unique
+
+	DisableDropSound
+
+Hide
+	AreaLevel >= 30
+	BaseType == "Giant Life Flask" "Giant Mana Flask" "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
+	Rarity < Unique
+
+	DisableDropSound
+
+Hide
+	AreaLevel >= 23
+	BaseType == "Grand Life Flask" "Grand Mana Flask" "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
+	Rarity < Unique
+
+	DisableDropSound
+
+Hide
+	AreaLevel >= 16
+	BaseType == "Greater Life Flask" "Greater Mana Flask" "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
+	Rarity < Unique
+
+	DisableDropSound
+
+Hide
+	AreaLevel >= 10
+	BaseType == "Lesser Life Flask" "Lesser Mana Flask" "Medium Life Flask" "Medium Mana Flask"
+	Rarity < Unique
+
+	DisableDropSound
+
+Hide
+	AreaLevel >= 4
+	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
+	Rarity < Unique
+
+	DisableDropSound

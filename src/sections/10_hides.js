@@ -48,19 +48,22 @@ export function sectionHides(filter) {
 			c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
 			c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		},);
-
-		// Uncommons
-		filter.multiHide((c) => { // Too far drop level normal/magic flasks
-			c.areaLevel = new Comparison(minLevel, OPERATOR.GTE);
-			c.categories(CATEGORY.FLASK);
-			c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
-			c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-		});
 	}
 
 	for (let level = LEVEL_ENDGAME; level >= LEVEL_CAMPAIGN; level -= LEVEL_HIDE_HOP) {
 		perLevel(level);
 	}
+
+	// Flasks
+	let flaskNames = NameManager.getGear(CATEGORY.FLASK);
+	let flaskLevels = flaskNames.getLevelBreakpoints();
+	flaskLevels.forEach((level) => {
+		filter.multiHide((c) => { // Leveling flasks
+			c.areaLevel = new Comparison(level, OPERATOR.GTE);
+			c.names = new Comparison(flaskNames.isCloseDrop(level, 0, false));
+			c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
+		});
+	})
 }
 
 function weapons(filter, minLevel) {
