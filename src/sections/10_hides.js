@@ -7,32 +7,12 @@ import { StringList } from "../conditions/stringList.js";
 import { LEVEL_OK, VALUE_BAD } from "../constants.js";
 
 export function sectionHides(filter) {
-	// Weapons
-	filter.multiHide((c) => { // Low ilvl normal/magic other weapons
-		c.categories(CATEGORY.WEAPON_OTHER);
-		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
-	});
+	leveling(filter);
 
-	// Armour
-	filter.multiHide((c) => { // Low ilvl normal/magic other armour
-		c.categories(CATEGORY.ARMOUR);
-		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
-		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
-		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
-	});
+	other(filter);
+}
 
-	// Trash uniques
-	filter.multiHide((c) => {
-		c.names = new Comparison(new NameManager(
-			NameManager.getUniques(null, VALUE_BAD),
-			NameManager.getUniqueRelics(null, VALUE_BAD)
-		));
-		c.rarity = new Comparison(RARITY.UNIQUE);
-	});
-
-
-
+function leveling(filter) {
 	// Class common gear
 	let commonNames = NameManager.getGear(new StringList(CATEGORY.WEAPON_CLASS, CATEGORY_CUSTOM.ARMOUR_CLASS));
 	let commonLevels = commonNames.getLevelBreakpoints();
@@ -54,6 +34,29 @@ export function sectionHides(filter) {
 			c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 		});
 	})
+}
+
+function other(filter) {
+	// Other common gear
+	filter.multiHide((c) => { // Low ilvl normal/magic other weapons
+		c.categories(CATEGORY.WEAPON_OTHER);
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
+		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
+	}, (c) => { // Low ilvl normal/magic other armour
+		c.categories(CATEGORY.ARMOUR);
+		c.names = new Comparison(NameManager.getGear(CATEGORY_CUSTOM.ARMOUR_OTHER));
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
+		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
+	});
+
+	// Trash uniques
+	filter.multiHide((c) => {
+		c.names = new Comparison(new NameManager(
+			NameManager.getUniques(null, VALUE_BAD),
+			NameManager.getUniqueRelics(null, VALUE_BAD)
+		));
+		c.rarity = new Comparison(RARITY.UNIQUE);
+	});
 }
 
 //TODO modify all hides as you progress

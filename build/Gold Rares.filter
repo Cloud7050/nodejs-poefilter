@@ -4431,27 +4431,6 @@ Show
 	#
 
 Hide
-	Class == Sceptres Wands Staves "One Hand Maces" Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Shields Foci Quivers
-	Rarity == Normal Magic
-	ItemLevel < 80
-
-	DisableDropSound
-
-Hide
-	Class == Helmets "Body Armours" Gloves Boots
-	BaseType == "Rusted Greathelm" "Rusted Cuirass" "Chain Mail" "Pilgrim Vestments" "Stocky Mitts" "Rough Greaves" "Fur Plate" "Brimmed Helm" "Iron Crown" "Rope Cuffs" "Padded Leggings" "Ringmail Gauntlets" "Mail Sabatons" "Horned Crown" "Pelt Mantle" "Guarded Helm" "Iron Cuirass" "Rogue Armour" "Riveted Mitts" "Iron Greaves" "Soldier Greathelm" "Wrapped Greathelm" "Visored Helm" "Cultist Crown" "Raider Plate" "Vagabond Armour" "Mail Vestments" "Tempered Mitts" "Layered Gauntlets" "Aged Cuffs" "Bronze Greaves" "Braced Sabatons" "Secured Leggings" "Maraketh Cuirass" "Cowled Helm" "Cloaked Mail" "Spired Greathelm" "Steel Plate" "Bolstered Mitts" "Trimmed Greaves" "Martyr Crown" "Shaman Mantle" "Elite Greathelm" "Shielded Helm" "Heavy Crown" "Full Plate" "Explorer Armour" "Ironclad Vestments" "Moulded Mitts" "Doubled Gauntlets" "Goldcast Cuffs" "Stone Greaves" "Stacked Sabatons" "Pelt Leggings" "Warrior Greathelm" "Sacrificial Mantle" "Vaal Cuirass" "Scale Mail" "Commander Greathelm" "Closed Helm" "Spiritbone Crown" "Juggernaut Plate" "Knight Armour" "Cleric Vestments" "Detailed Mitts" "Plate Gauntlets" "Verisium Cuffs" "Reefsteel Greaves" "Covered Sabatons" "Weaver Leggings" "Chieftain Cuirass" "Ancestral Mail" "Fierce Greathelm" "Tideseer Mantle" "Elegant Greathelm" "Cabalist Helm" "Hallowed Crown" "Elegant Plate" "Mantled Mail" "Occultist Mantle" "Ancient Mitts" "Elegant Greaves" "Noble Greathelm" "Inquisitor Crown" "Heavy Plate" "Trailblazer Armour" "Plated Vestments" "Feathered Mitts" "Zealot Gauntlets" "Ornate Cuffs" "Carved Greaves" "Bastion Sabatons" "Shamanistic Leggings" "Stone Cuirass" "Golden Mail" "Heartcarver Mantle" "Warmonger Greathelm" "Warded Helm" "Druidic Crown" "Soldier Cuirass" "Dastard Armour" "Wolfskin Mantle" "Knightly Mitts" "Steelmail Gauntlets" "Bound Cuffs" "Bulwark Greaves" "Veteran Sabatons" "Faithful Leggings" "Masked Greathelm" "Cryptic Helm" "Saintly Crown" "Ornate Plate" "Shrouded Mail" "Conjurer Mantle" "Ornate Mitts" "Commander Gauntlets" "Ancient Cuffs" "Ornate Greaves" "Noble Sabatons" "Apostle Leggings" "Paragon Greathelm" "Champion Helm" "Divine Crown" "Utzaal Cuirass" "Death Mail" "Death Mantle" "Vaal Mitts" "Cultist Gauntlets" "Gleaming Cuffs" "Vaal Greaves" "Fortress Sabatons" "Warlock Leggings" "Imperial Greathelm" "Gladiatorial Helm" "Cryptic Crown" "Warlord Cuirass" "Thane Mail" "Seastorm Mantle" "Massive Mitts" "Blacksteel Gauntlets" "Adherent Cuffs" "Tasalian Greaves" "Blacksteel Sabatons" "Cryptic Leggings"
-	Rarity == Normal Magic
-	ItemLevel < 80
-
-	DisableDropSound
-
-Hide
-	BaseType == "Amphora Relic" "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Seal Relic" "Tapestry Relic"
-	Rarity == Unique
-
-	DisableDropSound
-
-Hide
 	AreaLevel >= 80
 	BaseType == "Hardwood Spear" "Leather Buckler" "Shabby Hood" "Twig Circlet" "Leather Vest" "Tattered Robe" "Hermit Garb" "Suede Bracers" "Torn Gloves" "Rawhide Boots" "Straw Sandals" "Quilted Vest" "Gauze Wraps" "Ironhead Spear" "Wooden Buckler" "Hewn Mask" "Feathered Robe" "Frayed Shoes" "Hunting Spear" "Felt Cap" "Wicker Tiara" "Face Mask" "Plated Buckler" "Pathfinder Coat" "Hexer's Robe" "Waxed Jacket" "Firm Bracers" "Laced Boots" "Wrapped Sandals" "Sombre Gloves" "Winged Spear" "Iron Buckler" "Lace Hood" "Beaded Circlet" "Hooded Mask" "Shrouded Vest" "Bone Raiment" "Marabout Garb" "Bound Bracers" "Stitched Gloves" "Linen Wraps" "Embossed Boots" "Lattice Sandals" "Threaded Shoes" "War Spear" "Ridged Buckler" "Rhoahide Coat" "Silk Robe" "Forked Spear" "Spiked Buckler" "Swathed Cap" "Chain Tiara" "Studded Vest" "Jewelled Gloves" "Silk Slippers" "Veiled Mask" "Keth Raiment" "Wayfarer Jacket" "Sectioned Bracers" "Steeltoe Boots" "Barbed Spear" "Ringed Buckler" "Hunter Hood" "Feathered Tiara" "Tribal Mask" "Scout's Vest" "Votive Raiment" "Anchorite Garb" "Spined Bracers" "Intricate Gloves" "Spiral Wraps" "Lizardscale Boots" "Feathered Sandals" "Hunting Shoes" "Serpentscale Coat" "Viper Cap" "Edged Buckler" "Scalper's Jacket" "Broad Spear" "Gold Circlet" "Altar Robe" "Crossblade Spear" "Laminate Buckler" "Corsair Cap" "Vermeil Circlet" "Solid Mask" "Corsair Vest" "Elementalist Robe" "Scoundrel Jacket" "Fine Bracers" "Pauascale Gloves" "Buckled Wraps" "Flared Boots" "Flax Sandals" "Steelpoint Shoes" "Mystic Raiment" "Pearl Buckler" "Leatherbound Hood" "Jade Tiara" "Seaglass Spear" "Smuggler Coat" "Ascetic Garb" "Ornate Buckler" "Embroidered Gloves" "Branched Spear" "Spikeward Buckler" "Wrapped Cap" "Sandsworn Tiara" "Pariah Mask" "Layered Vest" "River Raiment" "Itinerant Jacket" "Refined Bracers" "Baroque Gloves" "Studded Boots" "Elegant Slippers" "Jagged Spear" "Jingling Buckler" "Deerstalker Hood" "Jungle Tiara" "Avian Mask" "Runner Vest" "Adherent's Raiment" "Hatungo Garb" "Spiked Bracers" "Gold Gloves" "Adorned Wraps" "Serpentscale Boots" "Dunerunner Sandals" "Treerunner Shoes" "Bladeguard Buckler" "Lizardscale Coat" "Ceremonial Robe" "Hawker's Jacket" "Helix Spear" "Ornate Buckler" "Woven Cap" "Skycrown Tiara" "Brigand Mask" "Stalking Bracers" "Grim Gloves" "War Wraps" "Cinched Boots" "Bound Sandals" "Wanderer Shoes" "Orichalcum Spear" "Soaring Spear" "Gutspike Buckler" "Desert Cap" "Sorcerous Tiara" "Faridun Mask" "Grand Bracers" "Opulent Gloves" "Elegant Wraps" "Cavalry Boots" "Luxurious Slippers" "Charmed Shoes" "Pronged Spear" "Ancient Buckler" "Trapper Hood" "Kamasan Tiara" "Soaring Mask" "Barbed Bracers" "Vaal Gloves" "Vaal Wraps" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"
 	Rarity == Normal Magic
@@ -4721,5 +4700,26 @@ Hide
 	AreaLevel >= 4
 	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
 	Rarity < Unique
+
+	DisableDropSound
+
+Hide
+	Class == Sceptres Wands Staves "One Hand Maces" Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Shields Foci Quivers
+	Rarity == Normal Magic
+	ItemLevel < 80
+
+	DisableDropSound
+
+Hide
+	Class == Helmets "Body Armours" Gloves Boots
+	BaseType == "Rusted Greathelm" "Rusted Cuirass" "Chain Mail" "Pilgrim Vestments" "Stocky Mitts" "Rough Greaves" "Fur Plate" "Brimmed Helm" "Iron Crown" "Rope Cuffs" "Padded Leggings" "Ringmail Gauntlets" "Mail Sabatons" "Horned Crown" "Pelt Mantle" "Guarded Helm" "Iron Cuirass" "Rogue Armour" "Riveted Mitts" "Iron Greaves" "Soldier Greathelm" "Wrapped Greathelm" "Visored Helm" "Cultist Crown" "Raider Plate" "Vagabond Armour" "Mail Vestments" "Tempered Mitts" "Layered Gauntlets" "Aged Cuffs" "Bronze Greaves" "Braced Sabatons" "Secured Leggings" "Maraketh Cuirass" "Cowled Helm" "Cloaked Mail" "Spired Greathelm" "Steel Plate" "Bolstered Mitts" "Trimmed Greaves" "Martyr Crown" "Shaman Mantle" "Elite Greathelm" "Shielded Helm" "Heavy Crown" "Full Plate" "Explorer Armour" "Ironclad Vestments" "Moulded Mitts" "Doubled Gauntlets" "Goldcast Cuffs" "Stone Greaves" "Stacked Sabatons" "Pelt Leggings" "Warrior Greathelm" "Sacrificial Mantle" "Vaal Cuirass" "Scale Mail" "Commander Greathelm" "Closed Helm" "Spiritbone Crown" "Juggernaut Plate" "Knight Armour" "Cleric Vestments" "Detailed Mitts" "Plate Gauntlets" "Verisium Cuffs" "Reefsteel Greaves" "Covered Sabatons" "Weaver Leggings" "Chieftain Cuirass" "Ancestral Mail" "Fierce Greathelm" "Tideseer Mantle" "Elegant Greathelm" "Cabalist Helm" "Hallowed Crown" "Elegant Plate" "Mantled Mail" "Occultist Mantle" "Ancient Mitts" "Elegant Greaves" "Noble Greathelm" "Inquisitor Crown" "Heavy Plate" "Trailblazer Armour" "Plated Vestments" "Feathered Mitts" "Zealot Gauntlets" "Ornate Cuffs" "Carved Greaves" "Bastion Sabatons" "Shamanistic Leggings" "Stone Cuirass" "Golden Mail" "Heartcarver Mantle" "Warmonger Greathelm" "Warded Helm" "Druidic Crown" "Soldier Cuirass" "Dastard Armour" "Wolfskin Mantle" "Knightly Mitts" "Steelmail Gauntlets" "Bound Cuffs" "Bulwark Greaves" "Veteran Sabatons" "Faithful Leggings" "Masked Greathelm" "Cryptic Helm" "Saintly Crown" "Ornate Plate" "Shrouded Mail" "Conjurer Mantle" "Ornate Mitts" "Commander Gauntlets" "Ancient Cuffs" "Ornate Greaves" "Noble Sabatons" "Apostle Leggings" "Paragon Greathelm" "Champion Helm" "Divine Crown" "Utzaal Cuirass" "Death Mail" "Death Mantle" "Vaal Mitts" "Cultist Gauntlets" "Gleaming Cuffs" "Vaal Greaves" "Fortress Sabatons" "Warlock Leggings" "Imperial Greathelm" "Gladiatorial Helm" "Cryptic Crown" "Warlord Cuirass" "Thane Mail" "Seastorm Mantle" "Massive Mitts" "Blacksteel Gauntlets" "Adherent Cuffs" "Tasalian Greaves" "Blacksteel Sabatons" "Cryptic Leggings"
+	Rarity == Normal Magic
+	ItemLevel < 80
+
+	DisableDropSound
+
+Hide
+	BaseType == "Amphora Relic" "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Seal Relic" "Tapestry Relic"
+	Rarity == Unique
 
 	DisableDropSound
