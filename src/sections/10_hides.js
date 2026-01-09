@@ -3,7 +3,7 @@ import { Comparison } from "../conditions/comparison.js";
 import { RARITY } from "../conditions/conditionSet.js";
 import { NameManager } from "../conditions/nameManager.js";
 import { OPERATOR } from "../conditions/operator.js";
-import { LEVEL_CAMPAIGN, LEVEL_ENDGAME, LEVEL_HIDE_HOP, LEVEL_OK } from "../constants.js";
+import { LEVEL_CAMPAIGN, LEVEL_ENDGAME, LEVEL_HIDE_HOP, LEVEL_OK, VALUE_BAD } from "../constants.js";
 
 export function sectionHides(filter) {
 	// Weapons
@@ -20,6 +20,17 @@ export function sectionHides(filter) {
 		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	});
+
+	// Uniques
+	filter.multiHide((c) => { // Trash uniques
+		c.names = new Comparison(new NameManager(
+			NameManager.getUniques(null, VALUE_BAD),
+			NameManager.getUniqueRelics(null, VALUE_BAD)
+		));
+		c.rarity = new Comparison(RARITY.UNIQUE);
+	});
+
+	//TODO modify all hides as you progress
 
 	function perLevel(minLevel) {
 		// Weapons
@@ -45,9 +56,6 @@ export function sectionHides(filter) {
 			c.names = new Comparison(NameManager.getGear(c).isCloseDrop(minLevel, 0, false));
 			c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		});
-
-		// Uniques
-		//TODO modify all hides as you progress
 	}
 
 	for (let level = LEVEL_ENDGAME; level >= LEVEL_CAMPAIGN; level -= LEVEL_HIDE_HOP) {
@@ -120,15 +128,5 @@ function uncommons(filter, minLevel) {
 	// 	c.categories(CATEGORY.FLASK);
 	// 	c.rarity = new Comparison(RARITY.UNIQUE, OPERATOR.LT);
 	// 	c.ilvl = new Comparison(82, OPERATOR.LT);
-	// });
-}
-
-function uniques(filter) {
-	// filter.multiHide((c) => { // Trash uniques
-	// 	c.names = new Comparison(new NameManager(
-	// 		NameManager.getUniques(TIER.NEVER, OPERATOR.LTE),
-	// 		NameManager.getUniqueRelics(null, 2)
-	// 	));
-	// 	c.rarity = new Comparison(RARITY.UNIQUE);
 	// });
 }

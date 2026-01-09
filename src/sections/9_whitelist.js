@@ -8,7 +8,7 @@ import { EffectSet } from "../effects/effectSet.js";
 
 // Stop filter here; never hide these. Then need not account for them when hiding
 export function sectionWhitelist(filter, isGoldRares) {
-	salvage(filter);
+	fodder(filter);
 
 	chance(filter);
 	special(filter);
@@ -20,14 +20,17 @@ export function sectionWhitelist(filter, isGoldRares) {
 	if (isGoldRares) goldRares(filter);
 }
 
-function salvage(filter) {
-	// Pre-endgame only
+// Pre-endgame only for salvage/disenchant
+function fodder(filter) {
 	filter.multiWhitelist((c) => { // Sockets
 		c.areaLevel = new Comparison(LEVEL_UNIQUE, OPERATOR.LT);
 		c.hasSockets(1);
-	}, (c) => { // Quality (under outline section)
+	}, (c) => { // Quality (normally under outline section)
 		c.areaLevel = new Comparison(LEVEL_UNIQUE, OPERATOR.LT);
 		c.hasQuality(5);
+	}, (c) => { // Any uniques for chance shards
+		c.areaLevel = new Comparison(LEVEL_UNIQUE, OPERATOR.LT);
+		c.rarity = new Comparison(RARITY.UNIQUE);
 	});
 }
 

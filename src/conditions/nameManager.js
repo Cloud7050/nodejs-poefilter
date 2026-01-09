@@ -1749,7 +1749,7 @@ export class NameManager {
 			// Ignore anything above areaLevel as we can't obtain those
 			if (name.dropLevel > areaLevel) continue;
 
-			// Use Set for no duplicates.
+			// Use Set for no duplicates
 			if (!map.has(name.category)) {
 				map.set(name.category, new Set());
 			}
