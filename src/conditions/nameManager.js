@@ -1353,7 +1353,7 @@ export class NameManager {
 			// new Name("Steelpoint Quarterstaff", ), // Nazir's Judgement
 			// new Name("Studded Greatclub", ), // Brain Rattler
 			// new Name("Temple Maul", ), // Shyaba
-			// new Name("Tense Crossbow", ), // Rampart Raptor
+			new Name("Tense Crossbow", 0.5), // Rampart Raptor
 			// new Name("Torment Club", ), // Mjölner, Olrovasara
 			// new Name("Totemic Greatclub", ), // Marohi Erqi
 			// new Name("Vicious Talisman", ), // The Flesh Poppet

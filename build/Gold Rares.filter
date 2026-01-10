@@ -3,6 +3,7 @@ Show
 
 	SetFontSize 37
 	SetBackgroundColor 0 0 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Grey Circle
 
 	Continue
@@ -15,7 +16,7 @@ Show
 #	SetTextColor 255 217 215 255
 #	SetBackgroundColor 35 2 3 255
 #	SetBorderColor 255 217 215 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Red Kite
 
 #Hide
@@ -26,7 +27,7 @@ Show
 #	SetTextColor 255 187 185 255
 #	SetBackgroundColor 68 8 12 255
 #	SetBorderColor 255 187 185 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 1 Red UpsideDownHouse
 
 #Hide
@@ -37,7 +38,7 @@ Show
 #	SetTextColor 255 172 169 255
 #	SetBackgroundColor 115 20 27 255
 #	SetBorderColor 255 172 169 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Red Cross
 
 #Hide
@@ -72,6 +73,7 @@ Show
 	SetTextColor 255 217 215 255
 	SetBackgroundColor 35 2 3 255
 	SetBorderColor 255 217 215 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Red Kite
 
 Show
@@ -82,6 +84,7 @@ Show
 	SetTextColor 255 187 185 255
 	SetBackgroundColor 68 8 12 255
 	SetBorderColor 255 187 185 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Red UpsideDownHouse
 
 Show
@@ -92,6 +95,7 @@ Show
 	SetTextColor 255 172 169 255
 	SetBackgroundColor 115 20 27 255
 	SetBorderColor 255 172 169 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Red Cross
 
 Show
@@ -128,7 +132,7 @@ Hide
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
-	DisableDropSound
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -141,6 +145,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -153,6 +158,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -165,6 +171,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -176,6 +183,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 Hide
@@ -188,7 +196,7 @@ Hide
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
-	DisableDropSound
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -201,6 +209,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -213,6 +222,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -225,6 +235,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -236,6 +247,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 Hide
@@ -248,7 +260,7 @@ Hide
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
-	DisableDropSound
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -261,6 +273,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -273,6 +286,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -285,6 +299,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -296,6 +311,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -308,7 +324,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -321,6 +337,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -333,6 +350,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -345,6 +363,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -356,6 +375,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -368,7 +388,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -381,6 +401,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -393,6 +414,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -405,6 +427,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -416,6 +439,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -428,7 +452,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -441,6 +465,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -453,6 +478,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -465,6 +491,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -476,6 +503,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -488,7 +516,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -501,6 +529,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -513,6 +542,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -525,6 +555,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -536,6 +567,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -548,7 +580,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -561,6 +593,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -573,6 +606,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -585,6 +619,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -596,6 +631,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -608,7 +644,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -621,6 +657,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -633,6 +670,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -645,6 +683,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -656,6 +695,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -668,7 +708,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -681,6 +721,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -693,6 +734,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -705,6 +747,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -716,6 +759,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -728,7 +772,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -741,6 +785,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -753,6 +798,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -765,6 +811,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -776,6 +823,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -788,7 +836,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -801,6 +849,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -813,6 +862,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -825,6 +875,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -836,6 +887,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -848,7 +900,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -861,6 +913,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -873,6 +926,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -885,6 +939,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -896,6 +951,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -908,7 +964,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -921,6 +977,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -933,6 +990,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -945,6 +1003,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -956,6 +1015,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -968,7 +1028,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -981,6 +1041,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -993,6 +1054,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -1005,6 +1067,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -1016,6 +1079,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -1028,7 +1092,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -1041,6 +1105,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -1053,6 +1118,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -1065,6 +1131,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -1076,6 +1143,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -1088,7 +1156,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -1101,6 +1169,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -1113,6 +1182,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -1125,6 +1195,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -1136,6 +1207,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Hide
@@ -1148,7 +1220,7 @@ Show
 #	SetTextColor 255 239 173 255
 #	SetBackgroundColor 0 0 0 0
 #	SetBorderColor 255 239 173 255
-#	DisableDropSound
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Yellow Kite
 
 Show
@@ -1161,6 +1233,7 @@ Show
 	SetTextColor 255 239 173 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 239 173 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Yellow Kite
 
 Show
@@ -1173,6 +1246,7 @@ Show
 	SetTextColor 255 227 74 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 227 74 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
@@ -1185,6 +1259,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Yellow Cross
 
 Show
@@ -1196,6 +1271,7 @@ Show
 	SetTextColor 252 220 0 255
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 252 220 0 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Yellow Cross
 
 #Show
@@ -1206,6 +1282,7 @@ Show
 #	SetTextColor 228 215 255 255
 #	SetBackgroundColor 16 4 42 255
 #	SetBorderColor 228 215 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Purple Kite
 
 Show
@@ -1216,6 +1293,7 @@ Show
 	SetTextColor 228 215 255 255
 	SetBackgroundColor 16 4 42 255
 	SetBorderColor 228 215 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Purple Kite
 
 Show
@@ -1226,6 +1304,7 @@ Show
 	SetTextColor 228 215 255 255
 	SetBackgroundColor 16 4 42 255
 	SetBorderColor 228 215 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Purple Kite
 
 Show
@@ -1260,6 +1339,7 @@ Show
 #	SetTextColor 205 184 255 255
 #	SetBackgroundColor 35 14 79 255
 #	SetBorderColor 205 184 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Purple UpsideDownHouse
 
 Show
@@ -1270,6 +1350,7 @@ Show
 	SetTextColor 205 184 255 255
 	SetBackgroundColor 35 14 79 255
 	SetBorderColor 205 184 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Purple UpsideDownHouse
 
 Show
@@ -1280,6 +1361,7 @@ Show
 	SetTextColor 205 184 255 255
 	SetBackgroundColor 35 14 79 255
 	SetBorderColor 205 184 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Purple UpsideDownHouse
 
 Show
@@ -1314,6 +1396,7 @@ Show
 #	SetTextColor 194 169 255 255
 #	SetBackgroundColor 61 28 129 255
 #	SetBorderColor 194 169 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Purple Cross
 
 Show
@@ -1324,6 +1407,7 @@ Show
 	SetTextColor 194 169 255 255
 	SetBackgroundColor 61 28 129 255
 	SetBorderColor 194 169 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Purple Cross
 
 Show
@@ -1334,6 +1418,7 @@ Show
 	SetTextColor 194 169 255 255
 	SetBackgroundColor 61 28 129 255
 	SetBorderColor 194 169 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Purple Cross
 
 Show
@@ -1368,6 +1453,7 @@ Show
 #	SetTextColor 35 14 79 255
 #	SetBackgroundColor 168 132 255 255
 #	SetBorderColor 35 14 79 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Purple Star
 
 #Show
@@ -1378,6 +1464,7 @@ Show
 #	SetTextColor 35 14 79 255
 #	SetBackgroundColor 168 132 255 255
 #	SetBorderColor 35 14 79 255
+#	CustomAlertSound "None"
 #	MinimapIcon 1 Purple Star
 
 Show
@@ -1388,6 +1475,7 @@ Show
 	SetTextColor 35 14 79 255
 	SetBackgroundColor 168 132 255 255
 	SetBorderColor 35 14 79 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Purple Star
 
 Show
@@ -1422,6 +1510,7 @@ Show
 #	SetTextColor 255 206 166 255
 #	SetBackgroundColor 57 28 0 255
 #	SetBorderColor 255 206 166 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Orange UpsideDownHouse
 
 Show
@@ -1432,6 +1521,7 @@ Show
 	SetTextColor 255 206 166 255
 	SetBackgroundColor 57 28 0 255
 	SetBorderColor 255 206 166 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Orange UpsideDownHouse
 
 #Show
@@ -1442,6 +1532,7 @@ Show
 #	SetTextColor 255 206 166 255
 #	SetBackgroundColor 57 28 0 255
 #	SetBorderColor 255 206 166 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Orange UpsideDownHouse
 
 #Show
@@ -1476,6 +1567,7 @@ Show
 #	SetTextColor 255 194 144 255
 #	SetBackgroundColor 101 54 0 255
 #	SetBorderColor 255 194 144 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Orange Cross
 
 Show
@@ -1486,6 +1578,7 @@ Show
 	SetTextColor 255 194 144 255
 	SetBackgroundColor 101 54 0 255
 	SetBorderColor 255 194 144 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Orange Cross
 
 Show
@@ -1496,6 +1589,7 @@ Show
 	SetTextColor 255 194 144 255
 	SetBackgroundColor 101 54 0 255
 	SetBorderColor 255 194 144 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Orange Cross
 
 Show
@@ -1530,6 +1624,7 @@ Show
 #	SetTextColor 57 28 0 255
 #	SetBackgroundColor 255 166 84 255
 #	SetBorderColor 57 28 0 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Orange Star
 
 #Show
@@ -1540,6 +1635,7 @@ Show
 #	SetTextColor 57 28 0 255
 #	SetBackgroundColor 255 166 84 255
 #	SetBorderColor 57 28 0 255
+#	CustomAlertSound "None"
 #	MinimapIcon 1 Orange Star
 
 #Show
@@ -1550,6 +1646,7 @@ Show
 #	SetTextColor 57 28 0 255
 #	SetBackgroundColor 255 166 84 255
 #	SetBorderColor 57 28 0 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Orange Star
 
 #Show
@@ -1584,6 +1681,7 @@ Show
 #	SetTextColor 255 206 166 255
 #	SetBackgroundColor 57 28 0 255
 #	SetBorderColor 255 206 166 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Orange UpsideDownHouse
 
 Show
@@ -1594,6 +1692,7 @@ Show
 	SetTextColor 255 206 166 255
 	SetBackgroundColor 57 28 0 255
 	SetBorderColor 255 206 166 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Orange UpsideDownHouse
 
 #Show
@@ -1604,6 +1703,7 @@ Show
 #	SetTextColor 255 206 166 255
 #	SetBackgroundColor 57 28 0 255
 #	SetBorderColor 255 206 166 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Orange UpsideDownHouse
 
 #Show
@@ -1638,6 +1738,7 @@ Show
 #	SetTextColor 255 183 155 255
 #	SetBackgroundColor 112 37 0 255
 #	SetBorderColor 255 183 155 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Orange Cross
 
 #Show
@@ -1648,6 +1749,7 @@ Show
 #	SetTextColor 255 183 155 255
 #	SetBackgroundColor 112 37 0 255
 #	SetBorderColor 255 183 155 255
+#	CustomAlertSound "None"
 #	MinimapIcon 1 Orange Cross
 
 #Show
@@ -1658,6 +1760,7 @@ Show
 #	SetTextColor 255 183 155 255
 #	SetBackgroundColor 112 37 0 255
 #	SetBorderColor 255 183 155 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Orange Cross
 
 Show
@@ -1692,6 +1795,7 @@ Show
 	SetTextColor 255 227 207 255
 	SetBackgroundColor 27 10 0 255
 	SetBorderColor 255 227 207 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Orange Kite
 
 Show
@@ -1702,6 +1806,7 @@ Show
 	SetTextColor 255 206 166 255
 	SetBackgroundColor 57 28 0 255
 	SetBorderColor 255 206 166 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Orange UpsideDownHouse
 
 #Show
@@ -1712,6 +1817,7 @@ Show
 #	SetTextColor 255 194 144 255
 #	SetBackgroundColor 101 54 0 255
 #	SetBorderColor 255 194 144 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Orange Cross
 
 #Show
@@ -1746,6 +1852,7 @@ Show
 #	SetTextColor 255 227 207 255
 #	SetBackgroundColor 27 10 0 255
 #	SetBorderColor 255 227 207 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Orange Kite
 
 Show
@@ -1756,6 +1863,7 @@ Show
 	SetTextColor 255 206 166 255
 	SetBackgroundColor 57 28 0 255
 	SetBorderColor 255 206 166 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Orange UpsideDownHouse
 
 Show
@@ -1766,6 +1874,7 @@ Show
 	SetTextColor 255 194 144 255
 	SetBackgroundColor 101 54 0 255
 	SetBorderColor 255 194 144 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Orange Cross
 
 Show
@@ -1800,6 +1909,7 @@ Show
 #	SetTextColor 255 218 241 255
 #	SetBackgroundColor 32 2 27 255
 #	SetBorderColor 255 218 241 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Pink Kite
 
 Show
@@ -1810,6 +1920,7 @@ Show
 	SetTextColor 255 188 234 255
 	SetBackgroundColor 65 6 56 255
 	SetBorderColor 255 188 234 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Pink UpsideDownHouse
 
 Show
@@ -1820,6 +1931,7 @@ Show
 	SetTextColor 255 172 231 255
 	SetBackgroundColor 110 17 97 255
 	SetBorderColor 255 172 231 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Pink Cross
 
 #Show
@@ -1854,6 +1966,7 @@ Show
 	SetTextColor 197 255 170 255
 	SetBackgroundColor 2 20 0 255
 	SetBorderColor 197 255 170 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Green Kite
 
 Show
@@ -1864,6 +1977,7 @@ Show
 	SetTextColor 165 248 133 255
 	SetBackgroundColor 8 46 0 255
 	SetBorderColor 165 248 133 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Green UpsideDownHouse
 
 Show
@@ -1874,6 +1988,7 @@ Show
 	SetTextColor 143 245 106 255
 	SetBackgroundColor 21 86 0 255
 	SetBorderColor 143 245 106 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Green Cross
 
 Show
@@ -1881,6 +1996,7 @@ Show
 
 	SetFontSize 37
 	SetBorderColor 252 0 54 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Red Cross
 
 Show
@@ -1891,6 +2007,7 @@ Show
 	SetTextColor 255 227 207 255
 	SetBackgroundColor 27 10 0 255
 	SetBorderColor 255 227 207 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Orange Kite
 
 Show
@@ -1901,6 +2018,7 @@ Show
 	SetTextColor 255 206 166 255
 	SetBackgroundColor 57 28 0 255
 	SetBorderColor 255 206 166 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Orange UpsideDownHouse
 
 Show
@@ -1911,6 +2029,7 @@ Show
 	SetTextColor 255 194 144 255
 	SetBackgroundColor 101 54 0 255
 	SetBorderColor 255 194 144 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Orange Cross
 
 Show
@@ -1945,6 +2064,7 @@ Show
 #	SetTextColor 255 222 211 255
 #	SetBackgroundColor 32 6 0 255
 #	SetBorderColor 255 222 211 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Orange Kite
 
 Show
@@ -1955,6 +2075,7 @@ Show
 	SetTextColor 255 196 174 255
 	SetBackgroundColor 65 18 0 255
 	SetBorderColor 255 196 174 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Orange UpsideDownHouse
 
 #Show
@@ -1965,6 +2086,7 @@ Show
 #	SetTextColor 255 183 155 255
 #	SetBackgroundColor 112 37 0 255
 #	SetBorderColor 255 183 155 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Orange Cross
 
 Show
@@ -1999,6 +2121,7 @@ Show
 #	SetTextColor 177 253 255 255
 #	SetBackgroundColor 0 19 20 255
 #	SetBorderColor 177 253 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 White Kite
 
 Show
@@ -2009,6 +2132,7 @@ Show
 	SetTextColor 80 250 255 255
 	SetBackgroundColor 0 45 46 255
 	SetBorderColor 80 250 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 White UpsideDownHouse
 
 Show
@@ -2019,6 +2143,7 @@ Show
 	SetTextColor 0 246 252 255
 	SetBackgroundColor 0 83 86 255
 	SetBorderColor 0 246 252 255
+	CustomAlertSound "None"
 	MinimapIcon 0 White Cross
 
 Show
@@ -2053,6 +2178,7 @@ Show
 #	SetTextColor 0 45 46 255
 #	SetBackgroundColor 0 230 236 255
 #	SetBorderColor 0 45 46 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 White Star
 
 Show
@@ -2063,6 +2189,7 @@ Show
 	SetTextColor 0 45 46 255
 	SetBackgroundColor 0 230 236 255
 	SetBorderColor 0 45 46 255
+	CustomAlertSound "None"
 	MinimapIcon 1 White Star
 
 Show
@@ -2073,6 +2200,7 @@ Show
 	SetTextColor 0 45 46 255
 	SetBackgroundColor 0 230 236 255
 	SetBorderColor 0 45 46 255
+	CustomAlertSound "None"
 	MinimapIcon 0 White Star
 
 Show
@@ -2106,6 +2234,7 @@ Show
 	SetTextColor 177 253 255 255
 	SetBackgroundColor 0 19 20 255
 	SetBorderColor 177 253 255 255
+	CustomAlertSound "None"
 	MinimapIcon 2 White Kite
 
 #Show
@@ -2116,6 +2245,7 @@ Show
 #	SetTextColor 212 235 255 255
 #	SetBackgroundColor 0 16 28 255
 #	SetBorderColor 212 235 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Cyan Kite
 
 Show
@@ -2126,6 +2256,7 @@ Show
 	SetTextColor 212 235 255 255
 	SetBackgroundColor 0 16 28 255
 	SetBorderColor 212 235 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Cyan Kite
 
 Show
@@ -2136,6 +2267,7 @@ Show
 	SetTextColor 212 235 255 255
 	SetBackgroundColor 0 16 28 255
 	SetBorderColor 212 235 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Cyan Kite
 
 Show
@@ -2170,6 +2302,7 @@ Show
 #	SetTextColor 174 220 255 255
 #	SetBackgroundColor 0 38 58 255
 #	SetBorderColor 174 220 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Cyan UpsideDownHouse
 
 Show
@@ -2180,6 +2313,7 @@ Show
 	SetTextColor 174 220 255 255
 	SetBackgroundColor 0 38 58 255
 	SetBorderColor 174 220 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
@@ -2190,6 +2324,7 @@ Show
 	SetTextColor 174 220 255 255
 	SetBackgroundColor 0 38 58 255
 	SetBorderColor 174 220 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Cyan UpsideDownHouse
 
 Show
@@ -2224,6 +2359,7 @@ Show
 #	SetTextColor 154 213 255 255
 #	SetBackgroundColor 0 70 101 255
 #	SetBorderColor 154 213 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Cyan Cross
 
 Show
@@ -2234,6 +2370,7 @@ Show
 	SetTextColor 154 213 255 255
 	SetBackgroundColor 0 70 101 255
 	SetBorderColor 154 213 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Cyan Cross
 
 #Show
@@ -2244,6 +2381,7 @@ Show
 #	SetTextColor 154 213 255 255
 #	SetBackgroundColor 0 70 101 255
 #	SetBorderColor 154 213 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Cyan Cross
 
 #Show
@@ -2278,6 +2416,7 @@ Show
 #	SetTextColor 0 38 58 255
 #	SetBackgroundColor 97 195 255 255
 #	SetBorderColor 0 38 58 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Cyan Star
 
 Show
@@ -2288,6 +2427,7 @@ Show
 	SetTextColor 0 38 58 255
 	SetBackgroundColor 97 195 255 255
 	SetBorderColor 0 38 58 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Cyan Star
 
 Show
@@ -2298,6 +2438,7 @@ Show
 	SetTextColor 0 38 58 255
 	SetBackgroundColor 97 195 255 255
 	SetBorderColor 0 38 58 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Cyan Star
 
 Show
@@ -2332,6 +2473,7 @@ Show
 #	SetTextColor 212 235 255 255
 #	SetBackgroundColor 0 16 28 255
 #	SetBorderColor 212 235 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Cyan Kite
 
 Show
@@ -2342,6 +2484,7 @@ Show
 	SetTextColor 174 220 255 255
 	SetBackgroundColor 0 38 58 255
 	SetBorderColor 174 220 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Cyan UpsideDownHouse
 
 Show
@@ -2352,6 +2495,7 @@ Show
 	SetTextColor 154 213 255 255
 	SetBackgroundColor 0 70 101 255
 	SetBorderColor 154 213 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Cyan Cross
 
 Show
@@ -2383,6 +2527,7 @@ Show
 
 	SetFontSize 37
 	SetBorderColor 0 179 252 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Cyan Cross
 
 Show
@@ -2393,6 +2538,7 @@ Show
 	SetTextColor 255 218 241 255
 	SetBackgroundColor 32 2 27 255
 	SetBorderColor 255 218 241 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Pink Kite
 
 Show
@@ -2403,6 +2549,7 @@ Show
 	SetTextColor 255 218 241 255
 	SetBackgroundColor 32 2 27 255
 	SetBorderColor 255 218 241 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Pink Kite
 
 Show
@@ -2425,6 +2572,7 @@ Show
 	SetTextColor 255 218 241 255
 	SetBackgroundColor 32 2 27 255
 	SetBorderColor 255 218 241 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Pink Kite
 
 Show
@@ -2447,6 +2595,7 @@ Show
 	SetTextColor 255 188 234 255
 	SetBackgroundColor 65 6 56 255
 	SetBorderColor 255 188 234 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Pink UpsideDownHouse
 
 Show
@@ -2457,6 +2606,7 @@ Show
 	SetTextColor 255 188 234 255
 	SetBackgroundColor 65 6 56 255
 	SetBorderColor 255 188 234 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Pink UpsideDownHouse
 
 Show
@@ -2479,6 +2629,7 @@ Show
 	SetTextColor 255 172 231 255
 	SetBackgroundColor 110 17 97 255
 	SetBorderColor 255 172 231 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Pink Cross
 
 Show
@@ -2489,6 +2640,7 @@ Show
 	SetTextColor 255 172 231 255
 	SetBackgroundColor 110 17 97 255
 	SetBorderColor 255 172 231 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Pink Cross
 
 Show
@@ -2511,6 +2663,7 @@ Show
 	SetTextColor 255 218 241 255
 	SetBackgroundColor 32 2 27 255
 	SetBorderColor 255 218 241 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Pink Kite
 
 Show
@@ -2533,6 +2686,7 @@ Show
 	SetTextColor 255 188 234 255
 	SetBackgroundColor 65 6 56 255
 	SetBorderColor 255 188 234 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Pink UpsideDownHouse
 
 Show
@@ -2543,6 +2697,7 @@ Show
 	SetTextColor 255 188 234 255
 	SetBackgroundColor 65 6 56 255
 	SetBorderColor 255 188 234 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Pink UpsideDownHouse
 
 Show
@@ -2565,6 +2720,7 @@ Show
 	SetTextColor 255 172 231 255
 	SetBackgroundColor 110 17 97 255
 	SetBorderColor 255 172 231 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Pink Cross
 
 Show
@@ -2575,6 +2731,7 @@ Show
 	SetTextColor 255 172 231 255
 	SetBackgroundColor 110 17 97 255
 	SetBorderColor 255 172 231 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Pink Cross
 
 Show
@@ -2635,6 +2792,7 @@ Show
 	SetTextColor 143 245 106 255
 	SetBackgroundColor 21 86 0 255
 	SetBorderColor 143 245 106 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Green Cross
 
 Show
@@ -2645,6 +2803,7 @@ Show
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
+	CustomAlertSound "None"
 	MinimapIcon 2 Blue Kite
 
 	Continue
@@ -2658,6 +2817,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
@@ -2671,6 +2831,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -2684,6 +2845,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -2697,6 +2859,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -2724,19 +2887,21 @@ Show
 #	SetTextColor 10 20 83 255
 #	SetBackgroundColor 126 142 255 255
 #	SetBorderColor 10 20 83 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Blue Star
 #
 #	Continue
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves"
+	BaseType == "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Tense Crossbow"
 	Rarity == Unique
 
 	SetFontSize 32
 	SetTextColor 10 20 83 255
 	SetBackgroundColor 126 142 255 255
 	SetBorderColor 10 20 83 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Blue Star
 
 	Continue
@@ -2750,6 +2915,7 @@ Show
 #	SetTextColor 10 20 83 255
 #	SetBackgroundColor 126 142 255 255
 #	SetBorderColor 10 20 83 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Blue Star
 #
 #	Continue
@@ -2792,6 +2958,7 @@ Show
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Blue Kite
 
 	Continue
@@ -2805,6 +2972,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -2818,6 +2986,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -2831,6 +3000,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -2844,6 +3014,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -2857,6 +3028,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -2870,6 +3042,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -2883,6 +3056,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -2896,6 +3070,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -2909,6 +3084,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -2922,6 +3098,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -2935,6 +3112,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -2948,6 +3126,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -2961,6 +3140,7 @@ Show
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Blue Kite
 
 	Continue
@@ -2975,6 +3155,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -2989,6 +3170,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -3003,6 +3185,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -3017,6 +3200,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -3031,6 +3215,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -3045,6 +3230,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -3059,6 +3245,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -3073,6 +3260,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -3086,6 +3274,7 @@ Show
 #	SetTextColor 215 218 255 255
 #	SetBackgroundColor 3 7 44 255
 #	SetBorderColor 215 218 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 1 Blue Kite
 #
 #	Continue
@@ -3116,6 +3305,7 @@ Show
 #	SetTextColor 182 190 255 255
 #	SetBackgroundColor 10 20 83 255
 #	SetBorderColor 182 190 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Blue UpsideDownHouse
 #
 #	Continue
@@ -3130,6 +3320,7 @@ Show
 #	SetTextColor 182 190 255 255
 #	SetBackgroundColor 10 20 83 255
 #	SetBorderColor 182 190 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Blue UpsideDownHouse
 #
 #	Continue
@@ -3144,6 +3335,7 @@ Show
 #	SetTextColor 182 190 255 255
 #	SetBackgroundColor 10 20 83 255
 #	SetBorderColor 182 190 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Blue UpsideDownHouse
 #
 #	Continue
@@ -3174,6 +3366,7 @@ Show
 #	SetTextColor 166 176 255 255
 #	SetBackgroundColor 23 38 134 255
 #	SetBorderColor 166 176 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Blue Cross
 #
 #	Continue
@@ -3188,6 +3381,7 @@ Show
 #	SetTextColor 166 176 255 255
 #	SetBackgroundColor 23 38 134 255
 #	SetBorderColor 166 176 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Blue Cross
 #
 #	Continue
@@ -3202,6 +3396,7 @@ Show
 #	SetTextColor 166 176 255 255
 #	SetBackgroundColor 23 38 134 255
 #	SetBorderColor 166 176 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Blue Cross
 #
 #	Continue
@@ -3216,6 +3411,7 @@ Show
 	SetTextColor 182 190 255 255
 	SetBackgroundColor 10 20 83 255
 	SetBorderColor 182 190 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue UpsideDownHouse
 
 	Continue
@@ -3230,6 +3426,7 @@ Show
 	SetTextColor 166 176 255 255
 	SetBackgroundColor 23 38 134 255
 	SetBorderColor 166 176 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -3242,6 +3439,7 @@ Show
 	SetTextColor 182 209 255 255
 	SetBackgroundColor 0 33 68 255
 	SetBorderColor 182 209 255 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Blue UpsideDownHouse
 
 	Continue
@@ -3254,6 +3452,7 @@ Show
 	SetTextColor 164 199 255 255
 	SetBackgroundColor 0 61 116 255
 	SetBorderColor 164 199 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Cross
 
 	Continue
@@ -3267,6 +3466,7 @@ Show
 #	SetTextColor 0 33 68 255
 #	SetBackgroundColor 120 175 255 255
 #	SetBorderColor 0 33 68 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Blue Star
 #
 #	Continue
@@ -3280,6 +3480,7 @@ Show
 #	SetTextColor 0 33 68 255
 #	SetBackgroundColor 120 175 255 255
 #	SetBorderColor 0 33 68 255
+#	CustomAlertSound "None"
 #	MinimapIcon 1 Blue Star
 #
 #	Continue
@@ -3293,6 +3494,7 @@ Show
 #	SetTextColor 0 33 68 255
 #	SetBackgroundColor 120 175 255 255
 #	SetBorderColor 0 33 68 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Blue Star
 #
 #	Continue
@@ -3377,6 +3579,7 @@ Show
 	SetTextColor 186 255 210 255
 	SetBackgroundColor 0 20 8 255
 	SetBorderColor 186 255 210 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Brown Kite
 
 	Continue
@@ -3389,6 +3592,7 @@ Show
 	SetTextColor 116 253 179 255
 	SetBackgroundColor 0 46 25 255
 	SetBorderColor 116 253 179 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Brown UpsideDownHouse
 
 	Continue
@@ -3401,6 +3605,7 @@ Show
 	SetTextColor 33 252 162 255
 	SetBackgroundColor 0 86 51 255
 	SetBorderColor 33 252 162 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Brown Cross
 
 	Continue
@@ -3414,6 +3619,7 @@ Show
 #	SetTextColor 0 46 25 255
 #	SetBackgroundColor 0 237 150 255
 #	SetBorderColor 0 46 25 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Brown Star
 #
 #	Continue
@@ -3427,6 +3633,7 @@ Show
 	SetTextColor 0 46 25 255
 	SetBackgroundColor 0 237 150 255
 	SetBorderColor 0 46 25 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Brown Star
 
 	Continue
@@ -3440,6 +3647,7 @@ Show
 	SetTextColor 0 46 25 255
 	SetBackgroundColor 0 237 150 255
 	SetBorderColor 0 46 25 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Brown Star
 
 	Continue
@@ -3483,6 +3691,7 @@ Show
 	SetTextColor 116 253 179 255
 	SetBackgroundColor 0 46 25 255
 	SetBorderColor 116 253 179 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Brown UpsideDownHouse
 
 	Continue
@@ -3496,6 +3705,7 @@ Show
 	SetTextColor 116 253 179 255
 	SetBackgroundColor 0 46 25 255
 	SetBorderColor 116 253 179 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Brown UpsideDownHouse
 
 	Continue
@@ -3509,6 +3719,7 @@ Show
 #	SetTextColor 0 46 25 255
 #	SetBackgroundColor 0 237 150 255
 #	SetBorderColor 0 46 25 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Brown Star
 #
 #	Continue
@@ -3522,6 +3733,7 @@ Show
 	SetTextColor 0 46 25 255
 	SetBackgroundColor 0 237 150 255
 	SetBorderColor 0 46 25 255
+	CustomAlertSound "None"
 	MinimapIcon 1 Brown Star
 
 	Continue
@@ -3535,6 +3747,7 @@ Show
 #	SetTextColor 0 46 25 255
 #	SetBackgroundColor 0 237 150 255
 #	SetBorderColor 0 46 25 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Brown Star
 #
 #	Continue
@@ -4263,6 +4476,7 @@ Show
 	SetTextColor 215 218 255 255
 	SetBackgroundColor 3 7 44 255
 	SetBorderColor 215 218 255 255
+	CustomAlertSound "None"
 	MinimapIcon 0 Blue Kite
 
 #Show
@@ -4274,6 +4488,7 @@ Show
 #	SetTextColor 215 218 255 255
 #	SetBackgroundColor 3 7 44 255
 #	SetBorderColor 215 218 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 2 Blue Kite
 
 #Show
@@ -4285,6 +4500,7 @@ Show
 #	SetTextColor 215 218 255 255
 #	SetBackgroundColor 3 7 44 255
 #	SetBorderColor 215 218 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 1 Blue Kite
 
 #Show
@@ -4296,6 +4512,7 @@ Show
 #	SetTextColor 215 218 255 255
 #	SetBackgroundColor 3 7 44 255
 #	SetBorderColor 215 218 255 255
+#	CustomAlertSound "None"
 #	MinimapIcon 0 Blue Kite
 
 Show
@@ -4802,7 +5019,7 @@ Hide
 	DisableDropSound
 
 Hide
-	BaseType == "Amphora Relic" "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Seal Relic" "Tapestry Relic"
+	BaseType == "Amphora Relic" "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Seal Relic" "Tapestry Relic" "Tense Crossbow"
 	Rarity == Unique
 
 	DisableDropSound

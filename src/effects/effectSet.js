@@ -19,7 +19,7 @@ export class EffectSet {
 		// Custom sounds default to 100 volume, of 0-300
 		WAH: "\"WAH.mp3\"",
 		RENOIR: "\"renoir.wav\" 250",
-		DISABLE: "None",
+		DISABLE: "\"None\"",
 	};
 	static MAP_SIZE = {
 		SMALL: "2",
@@ -46,7 +46,7 @@ export class EffectSet {
 	colourPair = null;
 	colourMapOnly = null;
 	sizeIndex = null;
-	muteCustom = null;
+	visualOnly = null;
 
 	isVisible = true;
 
@@ -128,26 +128,29 @@ export class EffectSet {
 		switch(this.sizeIndex) {
 			case EffectSet.INDEX_WISDOM:
 				textSize = textSize ?? EffectSet.TEXT_SIZE.SMALL;
+				if (!this.visualOnly) sound = sound ?? EffectSet.SOUND.DISABLE;
 				mapSize = mapSize ?? EffectSet.MAP_SIZE.SMALL;
 				break;
 			case EffectSet.INDEX_AUGMENT:
 				textSize = textSize ?? EffectSet.TEXT_SIZE.DEFAULT;
+				if (!this.visualOnly) sound = sound ?? EffectSet.SOUND.DISABLE;
 				mapSize = mapSize ?? EffectSet.MAP_SIZE.MEDIUM;
 				break;
 			case EffectSet.INDEX_EXALT:
 				textSize = textSize ?? EffectSet.TEXT_SIZE.LARGE;
+				if (!this.visualOnly) sound = sound ?? EffectSet.SOUND.DISABLE;
 				mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
 				break;
 			case EffectSet.INDEX_CHANCE:
 				textSize = textSize ?? EffectSet.TEXT_SIZE.LARGEST;
 				beamColour = beamColour ?? mapColour;
-				if (!this.muteCustom) sound = sound ?? EffectSet.SOUND.WAH;
+				if (!this.visualOnly) sound = sound ?? EffectSet.SOUND.WAH;
 				mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
 				break;
 			case EffectSet.INDEX_DIVINE:
 				textSize = textSize ?? EffectSet.TEXT_SIZE.LARGEST;
 				beamColour = beamColour ?? mapColour;
-				if (!this.muteCustom) sound = sound ?? EffectSet.SOUND.RENOIR;
+				if (!this.visualOnly) sound = sound ?? EffectSet.SOUND.RENOIR;
 				mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
 				break;
 		}
@@ -211,20 +214,20 @@ export class EffectSet {
 		return this;
 	}
 
-	sizeWisdom(muteCustom = false) {
-		return this.size(EffectSet.INDEX_WISDOM, muteCustom);
+	sizeWisdom(visualOnly = undefined) {
+		return this.size(EffectSet.INDEX_WISDOM, visualOnly);
 	}
-	sizeAugment(muteCustom = false) {
-		return this.size(EffectSet.INDEX_AUGMENT, muteCustom);
+	sizeAugment(visualOnly = undefined) {
+		return this.size(EffectSet.INDEX_AUGMENT, visualOnly);
 	}
-	sizeExalt(muteCustom = false) {
-		return this.size(EffectSet.INDEX_EXALT, muteCustom);
+	sizeExalt(visualOnly = undefined) {
+		return this.size(EffectSet.INDEX_EXALT, visualOnly);
 	}
-	sizeChance(muteCustom = false) {
-		return this.size(EffectSet.INDEX_CHANCE, muteCustom);
+	sizeChance(visualOnly = undefined) {
+		return this.size(EffectSet.INDEX_CHANCE, visualOnly);
 	}
-	sizeDivine(muteCustom = undefined) {
-		return this.size(EffectSet.INDEX_DIVINE, muteCustom);
+	sizeDivine(visualOnly = undefined) {
+		return this.size(EffectSet.INDEX_DIVINE, visualOnly);
 	}
 	sizeForPrice(price) {
 		let index = EffectSet.INDEX_DIVINE;
@@ -243,9 +246,9 @@ export class EffectSet {
 	sizeCapped(index, indexCap = EffectSet.INDEX_EXALT, muteCustom = undefined) {
 		return this.size(Math.min(index, indexCap), muteCustom);
 	}
-	size(index, muteCustom = false) {
+	size(index, visualOnly = false) {
 		this.sizeIndex = index;
-		this.muteCustom = muteCustom;
+		this.visualOnly = visualOnly;
 		return this;
 	}
 }
