@@ -2894,7 +2894,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Tense Crossbow"
+	BaseType == "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Keth Raiment" "Tense Crossbow"
 	Rarity == Unique
 
 	SetFontSize 32
@@ -5007,7 +5007,7 @@ Hide
 	DisableDropSound
 
 Hide
-	BaseType == "Amphora Relic" "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Seal Relic" "Tapestry Relic" "Tense Crossbow"
+	BaseType == "Amphora Relic" "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Keth Raiment" "Seal Relic" "Tapestry Relic" "Tense Crossbow"
 	Rarity == Unique
 
 	DisableDropSound
