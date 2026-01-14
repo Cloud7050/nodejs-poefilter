@@ -33,7 +33,7 @@ export class NameManager {
 			new Name("Blacksmith's Whetstone", 1 / 200),
 			new Name("Armourer's Scrap", 1 / 200),
 			new Name("Glassblower's Bauble", 1 / 200),
-			new Name("Scroll of Wisdom", 1 / 120),
+			new Name("Scroll of Wisdom", 1 / 120).noMap(),
 			new Name("Perfect Orb of Transmutation", 1 / 110),
 
 			new Name("Greater Jeweller's Orb", 1 / 100),
@@ -1728,6 +1728,9 @@ export class NameManager {
 	}
 	isBad(has = undefined) {
 		return this.isFlag(Name.FLAG_BAD, has);
+	}
+	isNoMap(has = undefined) {
+		return this.isFlag(Name.FLAG_NO_MAP, has);
 	}
 	isSpecial(has = undefined) {
 		return this.isFlag(Name.FLAG_SPECIAL, has);

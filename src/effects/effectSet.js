@@ -44,9 +44,10 @@ export class EffectSet {
 
 	colourIndex = null;
 	colourPair = null;
-	colourMapOnly = null;
+	noGroundColour = null; // (refers to merging in defaults)
 	sizeIndex = null;
-	visualOnly = null;
+	noSound = null; // (refers to merging in defaults)
+	noMap = null; // (refers to merging in defaults)
 
 	isVisible = true;
 
@@ -84,7 +85,7 @@ export class EffectSet {
 
 		switch(this.colourIndex) {
 			case EffectSet.INDEX_WISDOM:
-				if (!this.colourMapOnly) {
+				if (!this.noGroundColour) {
 					textColour = textColour ?? mainColour.brightness(87);
 					backgroundColour = backgroundColour ?? mainColour.brightness(3);
 					outlineColour = outlineColour ?? mainColour.brightness(87);
@@ -92,7 +93,7 @@ export class EffectSet {
 				mapIcon = mapIcon ?? EffectSet.MAP_ICON.KITE;
 				break;
 			case EffectSet.INDEX_AUGMENT:
-				if (!this.colourMapOnly) {
+				if (!this.noGroundColour) {
 					textColour = textColour ?? mainColour.brightness(77);
 					backgroundColour = backgroundColour ?? mainColour.brightness(10);
 					outlineColour = outlineColour ?? mainColour.brightness(77);
@@ -100,7 +101,7 @@ export class EffectSet {
 				mapIcon = mapIcon ?? EffectSet.MAP_ICON.HOUSE;
 				break;
 			case EffectSet.INDEX_EXALT:
-				if (!this.colourMapOnly) {
+				if (!this.noGroundColour) {
 					textColour = textColour ?? mainColour.brightness(72);
 					backgroundColour = backgroundColour ?? mainColour.brightness(20);
 					outlineColour = outlineColour ?? mainColour.brightness(72);
@@ -108,7 +109,7 @@ export class EffectSet {
 				mapIcon = mapIcon ?? EffectSet.MAP_ICON.CROSS;
 				break;
 			case EffectSet.INDEX_CHANCE:
-				if (!this.colourMapOnly) {
+				if (!this.noGroundColour) {
 					textColour = textColour ?? mainColour.brightness(10);
 					backgroundColour = backgroundColour ?? mainColour.brightness(60);
 					outlineColour = outlineColour ?? mainColour.brightness(10);
@@ -116,7 +117,7 @@ export class EffectSet {
 				mapIcon = mapIcon ?? EffectSet.MAP_ICON.STAR;
 				break;
 			case EffectSet.INDEX_DIVINE:
-				if (!this.colourMapOnly) {
+				if (!this.noGroundColour) {
 					textColour = textColour ?? mainColour.brightness(45);
 					backgroundColour = backgroundColour ?? mainColour.brightness(95);
 					outlineColour = outlineColour ?? mainColour.brightness(45);
@@ -128,30 +129,30 @@ export class EffectSet {
 		switch(this.sizeIndex) {
 			case EffectSet.INDEX_WISDOM:
 				textSize = textSize ?? EffectSet.TEXT_SIZE.SMALL;
-				if (!this.visualOnly) sound = sound ?? EffectSet.SOUND.DISABLE;
-				mapSize = mapSize ?? EffectSet.MAP_SIZE.SMALL;
+				if (!this.noSound) sound = sound ?? EffectSet.SOUND.DISABLE;
+				if (!this.noMap) mapSize = mapSize ?? EffectSet.MAP_SIZE.SMALL;
 				break;
 			case EffectSet.INDEX_AUGMENT:
 				textSize = textSize ?? EffectSet.TEXT_SIZE.DEFAULT;
-				if (!this.visualOnly) sound = sound ?? EffectSet.SOUND.DISABLE;
-				mapSize = mapSize ?? EffectSet.MAP_SIZE.MEDIUM;
+				if (!this.noSound) sound = sound ?? EffectSet.SOUND.DISABLE;
+				if (!this.noMap) mapSize = mapSize ?? EffectSet.MAP_SIZE.MEDIUM;
 				break;
 			case EffectSet.INDEX_EXALT:
 				textSize = textSize ?? EffectSet.TEXT_SIZE.LARGE;
-				if (!this.visualOnly) sound = sound ?? EffectSet.SOUND.DISABLE;
-				mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
+				if (!this.noSound) sound = sound ?? EffectSet.SOUND.DISABLE;
+				if (!this.noMap) mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
 				break;
 			case EffectSet.INDEX_CHANCE:
 				textSize = textSize ?? EffectSet.TEXT_SIZE.LARGEST;
 				beamColour = beamColour ?? mapColour;
-				if (!this.visualOnly) sound = sound ?? EffectSet.SOUND.WAH;
-				mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
+				if (!this.noSound) sound = sound ?? EffectSet.SOUND.WAH;
+				if (!this.noMap) mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
 				break;
 			case EffectSet.INDEX_DIVINE:
 				textSize = textSize ?? EffectSet.TEXT_SIZE.LARGEST;
 				beamColour = beamColour ?? mapColour;
-				if (!this.visualOnly) sound = sound ?? EffectSet.SOUND.RENOIR;
-				mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
+				if (!this.noSound) sound = sound ?? EffectSet.SOUND.RENOIR;
+				if (!this.noMap) mapSize = mapSize ?? EffectSet.MAP_SIZE.LARGE;
 				break;
 		}
 		////
@@ -192,42 +193,52 @@ export class EffectSet {
 		return this;
 	}
 
-	colourWisdom(colourPair, colourMapOnly = undefined) {
-		return this.colour(EffectSet.INDEX_WISDOM, colourPair, colourMapOnly);
-	}
-	colourAugment(colourPair, colourMapOnly = undefined) {
-		return this.colour(EffectSet.INDEX_AUGMENT, colourPair, colourMapOnly);
-	}
-	colourExalt(colourPair, colourMapOnly = undefined) {
-		return this.colour(EffectSet.INDEX_EXALT, colourPair, colourMapOnly);
-	}
-	colourChance(colourPair, colourMapOnly = undefined) {
-		return this.colour(EffectSet.INDEX_CHANCE, colourPair, colourMapOnly);
-	}
-	colourDivine(colourPair, colourMapOnly = undefined) {
-		return this.colour(EffectSet.INDEX_DIVINE, colourPair, colourMapOnly);
-	}
-	colour(index, colourPair, colourMapOnly = false) {
-		this.colourIndex = index;
-		this.colourPair = colourPair;
-		this.colourMapOnly = colourMapOnly;
+	// Explicitly disables the map icon, overriding previous blocks' continues if any.
+	// Differs from #noMap as that only overwrites this's null with a default, but never disables.
+	disableMap() {
+		this.mapSize = EffectSet.MAP_SIZE.DISABLE;
 		return this;
 	}
 
-	sizeWisdom(visualOnly = undefined) {
-		return this.size(EffectSet.INDEX_WISDOM, visualOnly);
+	colourWisdom(colourPair, noGroundColour = undefined) {
+		return this.colour(EffectSet.INDEX_WISDOM, colourPair, noGroundColour);
 	}
-	sizeAugment(visualOnly = undefined) {
-		return this.size(EffectSet.INDEX_AUGMENT, visualOnly);
+	colourAugment(colourPair, noGroundColour = undefined) {
+		return this.colour(EffectSet.INDEX_AUGMENT, colourPair, noGroundColour);
 	}
-	sizeExalt(visualOnly = undefined) {
-		return this.size(EffectSet.INDEX_EXALT, visualOnly);
+	colourExalt(colourPair, noGroundColour = undefined) {
+		return this.colour(EffectSet.INDEX_EXALT, colourPair, noGroundColour);
 	}
-	sizeChance(visualOnly = undefined) {
-		return this.size(EffectSet.INDEX_CHANCE, visualOnly);
+	colourChance(colourPair, noGroundColour = undefined) {
+		return this.colour(EffectSet.INDEX_CHANCE, colourPair, noGroundColour);
 	}
-	sizeDivine(visualOnly = undefined) {
-		return this.size(EffectSet.INDEX_DIVINE, visualOnly);
+	colourDivine(colourPair, noGroundColour = undefined) {
+		return this.colour(EffectSet.INDEX_DIVINE, colourPair, noGroundColour);
+	}
+	colour(index, colourPair, noGroundColour = false) {
+		this.colourIndex = index;
+		this.colourPair = colourPair;
+		this.noGroundColour = noGroundColour;
+		return this;
+	}
+
+	sizeWisdom(noSound = undefined, noMap = undefined) {
+		return this.size(EffectSet.INDEX_WISDOM, noSound, noMap);
+	}
+	sizeAugment(noSound = undefined, noMap = undefined) {
+		return this.size(EffectSet.INDEX_AUGMENT, noSound, noMap);
+	}
+	sizeExalt(noSound = undefined, noMap = undefined) {
+		return this.size(EffectSet.INDEX_EXALT, noSound, noMap);
+	}
+	sizeChance(noSound = undefined, noMap = undefined) {
+		return this.size(EffectSet.INDEX_CHANCE, noSound, noMap);
+	}
+	sizeDivine(noSound = undefined, noMap = undefined) {
+		return this.size(EffectSet.INDEX_DIVINE, noSound, noMap);
+	}
+	sizeCapped(index, indexCap = EffectSet.INDEX_EXALT, noSound = undefined, noMap = undefined) {
+		return this.size(Math.min(index, indexCap), noSound, noMap);
 	}
 	sizeForPrice(price) {
 		let index = EffectSet.INDEX_DIVINE;
@@ -243,12 +254,10 @@ export class EffectSet {
 
 		return this.size(index);
 	}
-	sizeCapped(index, indexCap = EffectSet.INDEX_EXALT, muteCustom = undefined) {
-		return this.size(Math.min(index, indexCap), muteCustom);
-	}
-	size(index, visualOnly = false) {
+	size(index, noSound = false, noMap = false) {
 		this.sizeIndex = index;
-		this.visualOnly = visualOnly;
+		this.noSound = noSound;
+		this.noMap = noMap;
 		return this;
 	}
 }

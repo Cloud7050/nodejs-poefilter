@@ -4,6 +4,7 @@ import { StringList } from "./stringList.js";
 
 export class Name {
 	static FLAG_BAD = "Currency to hide";
+	static FLAG_NO_MAP = "Currency to not mark on minimap";
 	static FLAG_SPECIAL = "Drops from specific content, like The Fractured Lake unique map or Vessel of Kulemak boss";
 	static FLAG_CLASS = "Explicitly mark as class item";
 
@@ -30,6 +31,10 @@ export class Name {
 	}
 	bad() {
 		this.flag(Name.FLAG_BAD);
+		return this;
+	}
+	noMap() {
+		this.flag(Name.FLAG_NO_MAP);
 		return this;
 	}
 	special() {

@@ -32,9 +32,17 @@ function general(filter) {
 		effect(PAIR_CURRENCY);
 	});
 
+
 	filter.priceBlocks((c, e, min, max, effect) => {
 		c.categories(CATEGORY.CURRENCY);
-		c.names = new Comparison(NameManager.getCurrencies(min, max).isBad(false));
+		c.names = new Comparison(NameManager.getCurrencies(min, max).isBad(false).isNoMap());
+
+		effect(PAIR_CURRENCY);
+		e.disableMap();
+	});
+	filter.priceBlocks((c, e, min, max, effect) => {
+		c.categories(CATEGORY.CURRENCY);
+		c.names = new Comparison(NameManager.getCurrencies(min, max).isBad(false).isNoMap(false));
 
 		effect(PAIR_CURRENCY);
 	});
