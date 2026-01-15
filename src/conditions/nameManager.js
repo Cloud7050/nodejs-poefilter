@@ -1383,7 +1383,7 @@ export class NameManager {
 			// new Name("Blacksteel Tower Shield", ), // Chernobog's Pillar
 			// new Name("Blazon Crest Shield", ), // Alkem Eira
 			// new Name("Bolstered Mitts", ), // Dreadfist
-			// new Name("Bone Raiment", ), // Necromantle
+			new Name("Bone Raiment", 0.5), // Necromantle // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/RJoG0XmqU7
 			// new Name("Braced Sabatons", ), // Darkray Vectors
 			new Name("Braced Tower Shield", 0.5), // Doomgate
 			// new Name("Brimmed Helm", 2), // Greymake
@@ -1558,7 +1558,7 @@ export class NameManager {
 			new Name("Viper Cap", 29), // Constricting Command // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/02Erldw7Fg
 			// new Name("Visored Helm", ), // Ironride
 			// new Name("Voodoo Focus", ), // Apep's Supremacy
-			// new Name("Votive Raiment", ), // Tetzlapokal's Desire
+			// new Name("Votive Raiment", 1), // Tetzlapokal's Desire // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/lgG0YyknCV
 			// new Name("Warrior Greathelm", ), // Corona of the Red Sun
 			// new Name("Waxed Jacket", ), // Gloomform
 			// new Name("Wayfarer Jacket", ), // The Dancing Mirage
