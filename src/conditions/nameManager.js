@@ -1528,7 +1528,7 @@ export class NameManager {
 			// new Name("Spiritbone Crown", ), // Keeper of the Arc
 			// new Name("Splintered Tower Shield", ), // Dionadair
 			// new Name("Stacked Sabatons", ), // Obern's Bastion
-			// new Name("Steel Plate", ), // Wandering Reliquary
+			new Name("Steel Plate", 0.5), // Wandering Reliquary // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/EBaEaMjKS5
 			// new Name("Stitched Gloves", ), // Doedre's Tenure
 			// new Name("Stone Greaves", ), // Birth of Fury
 			// new Name("Straw Sandals", ), // Luminous Pace
