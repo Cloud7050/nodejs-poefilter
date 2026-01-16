@@ -1361,7 +1361,7 @@ export class NameManager {
 			// new Name("Voltaic Staff", ), // Earthbound
 			// new Name("War Spear", ), // Daevata's Wind
 			// new Name("Warpick", ), // Sculpted Suffering
-			// new Name("Winged Spear", ), // Skysliver
+			new Name("Winged Spear", 10), // Skysliver // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Z6gPagw7tQ
 			// new Name("Withered Wand", ), // The Wicked Quill
 			// new Name("Wooden Club", ), // Brynhand's Mark
 			// new Name("Wrapped Quarterstaff", ), // The Blood Thorn
