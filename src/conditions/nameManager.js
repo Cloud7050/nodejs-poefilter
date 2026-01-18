@@ -1417,7 +1417,7 @@ export class NameManager {
 			new Name("Engraved Focus", 0.5), // Carrion Call
 			// new Name("Enlightened Robe", ), // Silks of Veneration
 			// new Name("Explorer Armour", ), // Belly of the Beast, Pragmatism
-			// new Name("Face Mask", ), // Mask of the Sanguimancer
+			new Name("Face Mask", 7), //  // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/9znegoZRuK
 			// new Name("Feathered Robe", ), // Bitterbloom
 			// new Name("Feathered Sandals", ), // Windscream
 			// new Name("Feathered Tiara", ), // Mask of the Stitched Demon
@@ -1508,7 +1508,7 @@ export class NameManager {
 			// new Name("Scalper's Jacket", ), // Zerphi's Serape
 			// new Name("Scout's Vest", ), // The Rat Cage
 			// new Name("Sectioned Bracers", ), // Idle Hands
-			// new Name("Secured Leggings", ), // Wake of Destruction
+			// new Name("Secured Leggings", 1), // Wake of Destruction // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/rP0YvmerHQ
 			// new Name("Serpentscale Coat", ), // Quatl's Molt
 			// new Name("Shabby Hood", ), // Innsmouth
 			// new Name("Shaman Mantle", ), // Husk of Dreams

@@ -9,6 +9,7 @@ export function sectionHides(filter) {
 	leveling(filter);
 
 	other(filter);
+	belts(filter);
 }
 
 function leveling(filter) {
@@ -62,6 +63,15 @@ function other(filter) {
 			NameManager.getUniqueRelics(null, VALUE_BAD)
 		));
 		c.rarity = new Comparison(RARITY.UNIQUE);
+	});
+}
+
+function belts(filter) {
+	// Other common gear
+	filter.multiHide((c) => { // Low ilvl magic belts
+		c.categories(CATEGORY.BELT);
+		c.rarity = new Comparison(RARITY.MAGIC);
+		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	});
 }
 

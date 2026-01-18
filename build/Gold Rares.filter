@@ -2963,19 +2963,19 @@ Show
 
 	Continue
 
-#Show
-#	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-#	BaseType ==
-#	Rarity == Unique
-#
-#	SetFontSize 37
-#	SetTextColor 10 20 83 255
-#	SetBackgroundColor 126 142 255 255
-#	SetBorderColor 10 20 83 255
-#	CustomAlertSound "None"
-#	MinimapIcon 0 Blue Star
-#
-#	Continue
+Show
+	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
+	BaseType == "Face Mask"
+	Rarity == Unique
+
+	SetFontSize 37
+	SetTextColor 10 20 83 255
+	SetBackgroundColor 126 142 255 255
+	SetBorderColor 10 20 83 255
+	CustomAlertSound "None"
+	MinimapIcon 0 Blue Star
+
+	Continue
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
@@ -5078,5 +5078,12 @@ Hide
 Hide
 	BaseType == "Amphora Relic" "Bone Raiment" "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Keth Raiment" "Seal Relic" "Steel Plate" "Tapestry Relic" "Tense Crossbow"
 	Rarity == Unique
+
+	DisableDropSound
+
+Hide
+	Class == Belts
+	Rarity == Magic
+	ItemLevel < 80
 
 	DisableDropSound
