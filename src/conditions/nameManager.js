@@ -1526,7 +1526,7 @@ export class NameManager {
 			// new Name("Spiral Wraps", 5), // Hand of Wisdom and Action // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/aLLVdmpKTe
 			// new Name("Spired Greathelm", ), // Thrillsteel
 			// new Name("Spiritbone Crown", ), // Keeper of the Arc
-			// new Name("Splintered Tower Shield", ), // Dionadair
+			new Name("Splintered Tower Shield", 0.5), // Dionadair
 			// new Name("Stacked Sabatons", ), // Obern's Bastion
 			new Name("Steel Plate", 0.5), // Wandering Reliquary // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/EBaEaMjKS5
 			// new Name("Stitched Gloves", ), // Doedre's Tenure
@@ -1634,10 +1634,10 @@ export class NameManager {
 			new Name("Martyr Crown", 0.5), // Veil of the Night // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/YppKb6zbiY
 			new Name("Silver Charm", 0.5), // The Fall of the Axe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/aLEkmEwBue
 			new Name("Viper Cap", 0.5), // Constricting Command // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/vW3XqKMfE
+			new Name("Wide Belt", 0.5), // The Gnashing Sash // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/EB3ebnXRT5 // NOTE may not be chanceable but people buy anyway
 
-			new Name("Tribal Mask", 30), // The Vertex // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/pJoO8KJJt0
-			new Name("Wide Belt", 39), // The Gnashing Sash // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/EB3ebnXRT5 // NOTE may not be chanceable but people buy anyway
-			new Name("Heavy Belt", 48), // Headhunter // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82eQO8ZcJ
+			new Name("Heavy Belt", 6), // Headhunter // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82eQO8ZcJ
+			new Name("Tribal Mask", 23), // The Vertex // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/pJoO8KJJt0
 		).value(min, max);
 	}
 	static getUniqueJewels(min = undefined, max = undefined) {
