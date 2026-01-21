@@ -11,7 +11,7 @@ export function sectionWhitelist(filter, isGoldRares) {
 	leveling(filter);
 
 	chance(filter);
-	// ancients(filter);
+	ancients(filter);
 	special(filter);
 
 	other(filter);
@@ -52,6 +52,9 @@ function chance(filter) {
 	});
 }
 function ancients(filter) {
+	let price = NameManager.getAncientsPrice();
+	if (price < VALUE_BAD) return;
+
 	// Resize & whitelist
 	filter.multiBlock((c) => { // Omen of the Ancients → Heavy Belt // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/D6QzEE7dH5
 		c.categories(CATEGORY.BELT);
@@ -59,7 +62,7 @@ function ancients(filter) {
 		c.ilvl = new Comparison(LEVEL_HEAVY_BELT, OPERATOR.GTE);
 		c.isCorrupted = false;
 	}, (e) => {
-		e.colourWisdom(PAIR_GEAR).sizeForPrice(0.5);
+		e.colourWisdom(PAIR_GEAR).sizeForPrice(price);
 	});
 }
 

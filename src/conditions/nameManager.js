@@ -1640,6 +1640,10 @@ export class NameManager {
 			new Name("Tribal Mask", 23), // The Vertex // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/pJoO8KJJt0
 		).value(min, max);
 	}
+	// Price of using Omen of the Ancients on normal belts to get Headhunter Heavy Belts
+	static getAncientsPrice() {
+		return 0.5;
+	}
 	static getUniqueJewels(min = undefined, max = undefined) {
 		return new NameManager(
 			// https://poe2db.tw/Jewels#JewelsUnique
