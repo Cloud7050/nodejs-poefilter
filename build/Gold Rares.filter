@@ -2951,7 +2951,7 @@ Show
 
 Show
 	Class == Sceptres Wands Staves "One Hand Maces" Spears Bows Crossbows Quarterstaves Talismans "Two Hand Maces" Bucklers Shields Foci Quivers Helmets "Body Armours" Gloves Boots Amulets Rings Belts "Life Flasks" "Mana Flasks" Charms
-	BaseType == "Bone Raiment" "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Keth Raiment" "Splintered Tower Shield" "Steel Plate" "Tense Crossbow"
+	BaseType == "Bone Raiment" "Braced Tower Shield" "Engraved Focus" "Intricate Gloves" "Jewelled Gloves" "Keth Raiment" "Splintered Tower Shield" "Steel Plate" "Tense Crossbow"
 	Rarity == Unique
 
 	SetFontSize 32
@@ -5063,14 +5063,14 @@ Hide
 	DisableDropSound
 
 Hide
-	BaseType == "Amphora Relic" "Bone Raiment" "Braced Tower Shield" "Engraved Focus" "Jewelled Gloves" "Keth Raiment" "Seal Relic" "Splintered Tower Shield" "Steel Plate" "Tapestry Relic" "Tense Crossbow"
+	BaseType == "Amphora Relic" "Bone Raiment" "Braced Tower Shield" "Engraved Focus" "Intricate Gloves" "Jewelled Gloves" "Keth Raiment" "Seal Relic" "Splintered Tower Shield" "Steel Plate" "Tapestry Relic" "Tense Crossbow"
 	Rarity == Unique
 
 	DisableDropSound
 
 Hide
 	Class == Belts
-	Rarity == Magic
+	Rarity == Normal Magic
 	ItemLevel < 80
 
 	DisableDropSound

@@ -1452,7 +1452,7 @@ export class NameManager {
 			// new Name("Hunter Hood", ), // Elevore
 			// new Name("Hunting Shoes", ), // Powertread
 			// new Name("Intricate Crest Shield", 9), // Prism Guardian // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/zbWn6QqgF4
-			// new Name("Intricate Gloves", ), // Demon Stitcher
+			new Name("Intricate Gloves", 0.5), // Demon Stitcher // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/7nD3MgkBf5
 			// new Name("Iron Buckler", ), // Bloodbarrier
 			// new Name("Iron Crown", ), // Crown of the Victor
 			// new Name("Iron Cuirass", ), // Edyrn's Tusks

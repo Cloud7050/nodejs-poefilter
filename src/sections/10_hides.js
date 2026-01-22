@@ -68,9 +68,9 @@ function other(filter) {
 
 function belts(filter) {
 	// Other common gear
-	filter.multiHide((c) => { // Low ilvl magic belts
+	filter.multiHide((c) => { // Low ilvl normal/magic belts
 		c.categories(CATEGORY.BELT);
-		c.rarity = new Comparison(RARITY.MAGIC);
+		c.rarity = new Comparison([RARITY.NORMAL, RARITY.MAGIC]);
 		c.ilvl = new Comparison(LEVEL_OK, OPERATOR.LT);
 	});
 }
