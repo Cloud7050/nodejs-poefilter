@@ -1498,7 +1498,7 @@ export class NameManager {
 			// new Name("Riveted Mitts", ), // Treefingers
 			// new Name("Rogue Armour", ), // The Barrow Dweller
 			new Name("Rope Cuffs", 20), // Gravebind // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/2KmjGRe5Tk
-			// new Name("Rough Greaves", ), // Legionstride
+			new Name("Rough Greaves", 0.5), // Legionstride
 			// new Name("Rusted Cuirass", ), // Bramblejack
 			// new Name("Rusted Greathelm", ), // Horns of Bynden, Wings of Caelyn
 			new Name("Sacred Focus", 13 * PRICE_DIV), // Rathpith Globe // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/Og3Pv3RrcE
@@ -1578,7 +1578,7 @@ export class NameManager {
 			new Name("Bloodstone Amulet", 70), // Yoke of Suffering >>> The Anvil // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/opRyVOQKil
 			// new Name("Blunt Quiver", ), // Rearguard
 			// new Name("Broadhead Quiver", ), // Asphyxia's Wrath
-			// new Name("Crimson Amulet", ), // Idol of Uldurn, Igniferis
+			// new Name("Crimson Amulet", average(4, 0.5)), // Idol of Uldurn, Igniferis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/pJGkEwPWS0 https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/bGEYpyBKTL
 			// new Name("Double Belt", ), // Bijouborne
 			// new Name("Dousing Charm", ), // Beira's Anguish
 			// new Name("Emerald Ring", ), // Death Rush, Thief's Torment, Vigilant View
