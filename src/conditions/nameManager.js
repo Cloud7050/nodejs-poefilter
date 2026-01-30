@@ -1425,7 +1425,7 @@ export class NameManager {
 			// new Name("Fierce Greathelm", ), // Blood Price
 			new Name("Fine Bracers", 50), // Maligaro's Virtuosity // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/aLpK6Eapue
 			// new Name("Firm Bracers", ), // Grip of Winter
-			// new Name("Full Plate", ), // Kingsguard
+			new Name("Full Plate", 0.5), // Kingsguard // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/mkGmLZoBF6
 			// new Name("Fur Plate", ), // Blackbraid
 			new Name("Furtive Wraps", 125), // Essentia Sanguis // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/ky98XrYWC5
 			new Name("Garment", 29), // Tabula Rasa >>> Skin of the Loyal // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d83oQXQpIJ https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/d82n9Wp3sJ
