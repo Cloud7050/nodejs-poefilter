@@ -1313,7 +1313,7 @@ export class NameManager {
 			// new Name("Crescent Quarterstaff", ), // Matsya
 			// new Name("Crude Bow", 1), // Widowhail
 			// new Name("Crumbling Maul", ), // Quecholli
-			// new Name("Cultist Greathammer", ), // The Empty Roar
+			new Name("Cultist Greathammer", 0.5), // The Empty Roar // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/7ngKYzKnC5
 			new Name("Desolate Crossbow", 90), // The Last Lament // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/zbWQVyrRi4
 			// new Name("Dualstring Bow", ), // Death's Harp
 			// new Name("Dyad Crossbow", ), // Double Vision
@@ -1493,7 +1493,7 @@ export class NameManager {
 			// new Name("Raider Plate", ), // The Road Warrior
 			// new Name("Rampart Tower Shield", ), // Lycosidae
 			// new Name("Rhoahide Coat", ), // Briskwrap
-			// new Name("Ridged Buckler", ), // Kaltenhalt
+			new Name("Ridged Buckler", 0.5), // Kaltenhalt // https://www.pathofexile.com/trade2/search/poe2/Fate%20of%20the%20Vaal/7ngKYPDRu5
 			// new Name("Ringmail Gauntlets", ), // Jarngreipr
 			// new Name("Riveted Mitts", ), // Treefingers
 			// new Name("Rogue Armour", ), // The Barrow Dweller
